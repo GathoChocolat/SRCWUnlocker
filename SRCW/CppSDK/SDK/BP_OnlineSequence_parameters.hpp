@@ -13,9 +13,9 @@
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UnionLib_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -259,8 +259,8 @@ public:
 	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_6;   // 0x0438(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CheckLegendCompeStartDateTime_ReturnValue; // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0441(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EOnlineSequenceState                          CallFunc_GetCurrentOnlineState_ReturnValue;        // 0x0442(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0443(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0442(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EOnlineSequenceState                          CallFunc_GetCurrentOnlineState_ReturnValue;        // 0x0443(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_444[0x4];                                      // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_7;   // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_8;   // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -284,10 +284,10 @@ public:
 	EMenuSpeedClassId                             CallFunc_GetSelectedMenuSpeedClassId_ReturnValue;  // 0x0489(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_48A[0x2];                                      // 0x048A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_MakeLiteralInt_ReturnValue_2;             // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_3;        // 0x0490(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_13;         // 0x0498(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AAppPlayerController*                   CallFunc_SetPlayer_ReturnValue;                    // 0x04A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULevelStreaming*                        CallFunc_LoadLevelTopMenu_ReturnValue_2;           // 0x04A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_13;         // 0x0490(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_3;        // 0x0498(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULevelStreaming*                        CallFunc_LoadLevelTopMenu_ReturnValue_2;           // 0x04A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AAppPlayerController*                   CallFunc_SetPlayer_ReturnValue;                    // 0x04A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_2; // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4B1[0x7];                                      // 0x04B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULevelStreaming*                        CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_2; // 0x04B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -439,8 +439,8 @@ static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, K
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x000438, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_CheckLegendCompeStartDateTime_ReturnValue) == 0x000440, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_CheckLegendCompeStartDateTime_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanAND_ReturnValue_1) == 0x000441, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetCurrentOnlineState_ReturnValue) == 0x000442, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetCurrentOnlineState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanOR_ReturnValue_1) == 0x000443, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_BooleanOR_ReturnValue_1) == 0x000442, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetCurrentOnlineState_ReturnValue) == 0x000443, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetCurrentOnlineState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_7) == 0x000448, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_7' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_8) == 0x000450, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_8' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPrivateLobbyContext_ReturnValue) == 0x000458, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPrivateLobbyContext_ReturnValue' has a wrong offset!");
@@ -460,10 +460,10 @@ static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, C
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_Not_PreBool_ReturnValue_1) == 0x000488, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetSelectedMenuSpeedClassId_ReturnValue) == 0x000489, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetSelectedMenuSpeedClassId_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_MakeLiteralInt_ReturnValue_2) == 0x00048C, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_MakeLiteralInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPlayerController_ReturnValue_3) == 0x000490, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_13) == 0x000498, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_SetPlayer_ReturnValue) == 0x0004A0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_SetPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_LoadLevelTopMenu_ReturnValue_2) == 0x0004A8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_LoadLevelTopMenu_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetWorldSubsystem_ReturnValue_13) == 0x000490, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetWorldSubsystem_ReturnValue_13' has a wrong offset!");
+static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetPlayerController_ReturnValue_3) == 0x000498, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetPlayerController_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_LoadLevelTopMenu_ReturnValue_2) == 0x0004A0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_LoadLevelTopMenu_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_SetPlayer_ReturnValue) == 0x0004A8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_SetPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_2) == 0x0004B0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_bIsAlreadyLoad_2' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_2) == 0x0004B8, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_GetAlreadyLoadNeedSubLevel_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence, CallFunc_IsValid_ReturnValue_15) == 0x0004C0, "Member 'BP_OnlineSequence_C_ExecuteUbergraph_BP_OnlineSequence::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");

@@ -10,60 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "ActorLayerUtilities_structs.hpp"
 #include "MovieRenderPipelineCore_classes.hpp"
-#include "OpenColorIO_structs.hpp"
 #include "Engine_structs.hpp"
 #include "MovieRenderPipelineRenderPasses_structs.hpp"
+#include "ActorLayerUtilities_structs.hpp"
+#include "OpenColorIO_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
-
-// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode
-// 0x0118 (0x01C8 - 0x00B0)
-class UMovieGraphImageSequenceOutputNode : public UMovieGraphFileOutputNode
-{
-public:
-	uint8                                         bOverride_OCIOConfiguration : 1;                   // 0x00B0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bOverride_OCIOContext : 1;                         // 0x00B0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FOpenColorIODisplayConfiguration       OCIOConfiguration;                                 // 0x00B8(0x00A0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, class FString>            OCIOContext;                                       // 0x0158(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8[0x20];                                     // 0x01A8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MovieGraphImageSequenceOutputNode">();
-	}
-	static class UMovieGraphImageSequenceOutputNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode>();
-	}
-};
-static_assert(alignof(UMovieGraphImageSequenceOutputNode) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode");
-static_assert(sizeof(UMovieGraphImageSequenceOutputNode) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode");
-static_assert(offsetof(UMovieGraphImageSequenceOutputNode, OCIOConfiguration) == 0x0000B8, "Member 'UMovieGraphImageSequenceOutputNode::OCIOConfiguration' has a wrong offset!");
-static_assert(offsetof(UMovieGraphImageSequenceOutputNode, OCIOContext) == 0x000158, "Member 'UMovieGraphImageSequenceOutputNode::OCIOContext' has a wrong offset!");
-
-// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode_PNG
-// 0x0000 (0x01C8 - 0x01C8)
-class UMovieGraphImageSequenceOutputNode_PNG final : public UMovieGraphImageSequenceOutputNode
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MovieGraphImageSequenceOutputNode_PNG">();
-	}
-	static class UMovieGraphImageSequenceOutputNode_PNG* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode_PNG>();
-	}
-};
-static_assert(alignof(UMovieGraphImageSequenceOutputNode_PNG) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode_PNG");
-static_assert(sizeof(UMovieGraphImageSequenceOutputNode_PNG) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode_PNG");
 
 // Class MovieRenderPipelineRenderPasses.MovieGraphImagePassBaseNode
 // 0x0020 (0x00B8 - 0x0098)
@@ -88,23 +44,6 @@ public:
 static_assert(alignof(UMovieGraphImagePassBaseNode) == 0x000008, "Wrong alignment on UMovieGraphImagePassBaseNode");
 static_assert(sizeof(UMovieGraphImagePassBaseNode) == 0x0000B8, "Wrong size on UMovieGraphImagePassBaseNode");
 static_assert(offsetof(UMovieGraphImagePassBaseNode, ShowFlags) == 0x0000A0, "Member 'UMovieGraphImagePassBaseNode::ShowFlags' has a wrong offset!");
-
-// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode_JPG
-// 0x0000 (0x01C8 - 0x01C8)
-class UMovieGraphImageSequenceOutputNode_JPG final : public UMovieGraphImageSequenceOutputNode
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MovieGraphImageSequenceOutputNode_JPG">();
-	}
-	static class UMovieGraphImageSequenceOutputNode_JPG* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode_JPG>();
-	}
-};
-static_assert(alignof(UMovieGraphImageSequenceOutputNode_JPG) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode_JPG");
-static_assert(sizeof(UMovieGraphImageSequenceOutputNode_JPG) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode_JPG");
 
 // Class MovieRenderPipelineRenderPasses.MovieGraphDeferredRenderPassNode
 // 0x0020 (0x00D8 - 0x00B8)
@@ -148,22 +87,32 @@ static_assert(offsetof(UMovieGraphDeferredRenderPassNode, bAllowOCIO) == 0x0000C
 static_assert(offsetof(UMovieGraphDeferredRenderPassNode, ViewModeIndex) == 0x0000C4, "Member 'UMovieGraphDeferredRenderPassNode::ViewModeIndex' has a wrong offset!");
 static_assert(offsetof(UMovieGraphDeferredRenderPassNode, AdditionalPostProcessMaterials) == 0x0000C8, "Member 'UMovieGraphDeferredRenderPassNode::AdditionalPostProcessMaterials' has a wrong offset!");
 
-// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode_BMP
-// 0x0000 (0x01C8 - 0x01C8)
-class UMovieGraphImageSequenceOutputNode_BMP final : public UMovieGraphImageSequenceOutputNode
+// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode
+// 0x0118 (0x01C8 - 0x00B0)
+class UMovieGraphImageSequenceOutputNode : public UMovieGraphFileOutputNode
 {
+public:
+	uint8                                         bOverride_OCIOConfiguration : 1;                   // 0x00B0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bOverride_OCIOContext : 1;                         // 0x00B0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FOpenColorIODisplayConfiguration       OCIOConfiguration;                                 // 0x00B8(0x00A0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, class FString>            OCIOContext;                                       // 0x0158(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A8[0x20];                                     // 0x01A8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieGraphImageSequenceOutputNode_BMP">();
+		return StaticClassImpl<"MovieGraphImageSequenceOutputNode">();
 	}
-	static class UMovieGraphImageSequenceOutputNode_BMP* GetDefaultObj()
+	static class UMovieGraphImageSequenceOutputNode* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode_BMP>();
+		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode>();
 	}
 };
-static_assert(alignof(UMovieGraphImageSequenceOutputNode_BMP) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode_BMP");
-static_assert(sizeof(UMovieGraphImageSequenceOutputNode_BMP) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode_BMP");
+static_assert(alignof(UMovieGraphImageSequenceOutputNode) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode");
+static_assert(sizeof(UMovieGraphImageSequenceOutputNode) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode");
+static_assert(offsetof(UMovieGraphImageSequenceOutputNode, OCIOConfiguration) == 0x0000B8, "Member 'UMovieGraphImageSequenceOutputNode::OCIOConfiguration' has a wrong offset!");
+static_assert(offsetof(UMovieGraphImageSequenceOutputNode, OCIOContext) == 0x000158, "Member 'UMovieGraphImageSequenceOutputNode::OCIOContext' has a wrong offset!");
 
 // Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode_EXR
 // 0x0008 (0x01D0 - 0x01C8)
@@ -204,6 +153,57 @@ public:
 };
 static_assert(alignof(UMovieGraphImageSequenceOutputNode_MultiLayerEXR) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode_MultiLayerEXR");
 static_assert(sizeof(UMovieGraphImageSequenceOutputNode_MultiLayerEXR) == 0x0001D0, "Wrong size on UMovieGraphImageSequenceOutputNode_MultiLayerEXR");
+
+// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode_BMP
+// 0x0000 (0x01C8 - 0x01C8)
+class UMovieGraphImageSequenceOutputNode_BMP final : public UMovieGraphImageSequenceOutputNode
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MovieGraphImageSequenceOutputNode_BMP">();
+	}
+	static class UMovieGraphImageSequenceOutputNode_BMP* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode_BMP>();
+	}
+};
+static_assert(alignof(UMovieGraphImageSequenceOutputNode_BMP) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode_BMP");
+static_assert(sizeof(UMovieGraphImageSequenceOutputNode_BMP) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode_BMP");
+
+// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode_JPG
+// 0x0000 (0x01C8 - 0x01C8)
+class UMovieGraphImageSequenceOutputNode_JPG final : public UMovieGraphImageSequenceOutputNode
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MovieGraphImageSequenceOutputNode_JPG">();
+	}
+	static class UMovieGraphImageSequenceOutputNode_JPG* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode_JPG>();
+	}
+};
+static_assert(alignof(UMovieGraphImageSequenceOutputNode_JPG) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode_JPG");
+static_assert(sizeof(UMovieGraphImageSequenceOutputNode_JPG) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode_JPG");
+
+// Class MovieRenderPipelineRenderPasses.MovieGraphImageSequenceOutputNode_PNG
+// 0x0000 (0x01C8 - 0x01C8)
+class UMovieGraphImageSequenceOutputNode_PNG final : public UMovieGraphImageSequenceOutputNode
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MovieGraphImageSequenceOutputNode_PNG">();
+	}
+	static class UMovieGraphImageSequenceOutputNode_PNG* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieGraphImageSequenceOutputNode_PNG>();
+	}
+};
+static_assert(alignof(UMovieGraphImageSequenceOutputNode_PNG) == 0x000008, "Wrong alignment on UMovieGraphImageSequenceOutputNode_PNG");
+static_assert(sizeof(UMovieGraphImageSequenceOutputNode_PNG) == 0x0001C8, "Wrong size on UMovieGraphImageSequenceOutputNode_PNG");
 
 // Class MovieRenderPipelineRenderPasses.MovieGraphPathTracerRenderPassNode
 // 0x0028 (0x00E0 - 0x00B8)

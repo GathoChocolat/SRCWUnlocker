@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
 #include "UnionRun_structs.hpp"
@@ -21,13 +21,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DriverPawn.BP_DriverPawn_C
-// 0x0420 (0x0968 - 0x0548)
+// 0x0418 (0x0968 - 0x0550)
 class ABP_DriverPawn_C final : public ADriver
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0548(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UGFurComponent*                         GFur;                                              // 0x0550(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UTextureSwitcherComponent*              TextureSwitcher;                                   // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UGFurComponent*                         GFur;                                              // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SteeringWheel;                                     // 0x0560(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -54,10 +53,11 @@ public:
 	void PlayHoldItemDirectionEffect(EItemThrowDirection In_ItemThrowDirection);
 	void ReceiveBeginPlay();
 	void SetAnimClass(const class UClass* NewClass);
-	void SetEnableGfur(bool Enable);
+	void SetEnableGFur(bool Enable);
 	void SetItemParam(const struct FHoldItemCreateParam& InHoldItemParam, bool* Return);
 	void SetLightingChannels(bool Channel0, bool Channel1, bool Channel2);
 	void SetRideableStatusType(ECarStatusType StatusType);
+	void SetupCharacterById(EDriverId In_DriverId);
 	bool UseItem();
 	bool UseItemInDirection(const EDriverDirection Direction);
 	bool UseItemWithoutAnimation();
@@ -78,9 +78,8 @@ public:
 };
 static_assert(alignof(ABP_DriverPawn_C) == 0x000008, "Wrong alignment on ABP_DriverPawn_C");
 static_assert(sizeof(ABP_DriverPawn_C) == 0x000968, "Wrong size on ABP_DriverPawn_C");
-static_assert(offsetof(ABP_DriverPawn_C, UberGraphFrame) == 0x000548, "Member 'ABP_DriverPawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, GFur) == 0x000550, "Member 'ABP_DriverPawn_C::GFur' has a wrong offset!");
-static_assert(offsetof(ABP_DriverPawn_C, TextureSwitcher) == 0x000558, "Member 'ABP_DriverPawn_C::TextureSwitcher' has a wrong offset!");
+static_assert(offsetof(ABP_DriverPawn_C, UberGraphFrame) == 0x000550, "Member 'ABP_DriverPawn_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_DriverPawn_C, GFur) == 0x000558, "Member 'ABP_DriverPawn_C::GFur' has a wrong offset!");
 static_assert(offsetof(ABP_DriverPawn_C, SteeringWheel) == 0x000560, "Member 'ABP_DriverPawn_C::SteeringWheel' has a wrong offset!");
 static_assert(offsetof(ABP_DriverPawn_C, SkeletalMesh) == 0x000568, "Member 'ABP_DriverPawn_C::SkeletalMesh' has a wrong offset!");
 static_assert(offsetof(ABP_DriverPawn_C, DefaultSceneRoot) == 0x000570, "Member 'ABP_DriverPawn_C::DefaultSceneRoot' has a wrong offset!");

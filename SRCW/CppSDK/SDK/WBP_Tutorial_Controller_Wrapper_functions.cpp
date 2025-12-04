@@ -42,7 +42,7 @@ void UWBP_Tutorial_Controller_Wrapper_C::Create(class FName InRowName, EUnionCon
 
 
 // Function WBP_Tutorial_Controller_Wrapper.WBP_Tutorial_Controller_Wrapper_C.CreateController
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EUnionControllerType                    InType                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EUnionPlatform                          InPlatform                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

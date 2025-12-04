@@ -85,5 +85,19 @@ void UWBP_CMN_SubMenu_List_C::InitializeAnimButtons()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function WBP_CMN_SubMenu_List.WBP_CMN_SubMenu_List_C.SetupSubMenuButtons
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CMN_SubMenu_List_C::SetupSubMenuButtons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CMN_SubMenu_List_C", "SetupSubMenuButtons");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

@@ -411,6 +411,26 @@ void UWBP_PrivateMatch_Popup_Sub_Info_C::SetLoadingText(const class FText& InTex
 }
 
 
+// Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetOpenShowMenuType
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPrivateMatchShowMenuType               InMenuType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PrivateMatch_Popup_Sub_Info_C::SetOpenShowMenuType(EPrivateMatchShowMenuType InMenuType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PrivateMatch_Popup_Sub_Info_C", "SetOpenShowMenuType");
+
+	Params::WBP_PrivateMatch_Popup_Sub_Info_C_SetOpenShowMenuType Parms{};
+
+	Parms.InMenuType = InMenuType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C.SetParentPopupWidget
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

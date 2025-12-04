@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "AnimationCore_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "RigVM_structs.hpp"
-#include "AnimationCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -4146,103 +4146,6 @@ static_assert(offsetof(ModularRigController_UnBindModuleVariable, InVariableName
 static_assert(offsetof(ModularRigController_UnBindModuleVariable, bSetupUndo) == 0x000018, "Member 'ModularRigController_UnBindModuleVariable::bSetupUndo' has a wrong offset!");
 static_assert(offsetof(ModularRigController_UnBindModuleVariable, ReturnValue) == 0x000019, "Member 'ModularRigController_UnBindModuleVariable::ReturnValue' has a wrong offset!");
 
-// Function ControlRig.ControlRigPoseAsset.GetCurrentPose
-// 0x0068 (0x0068 - 0x0000)
-struct ControlRigPoseAsset_GetCurrentPose final
-{
-public:
-	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FControlRigControlPose                 OutPose;                                           // 0x0008(0x0060)(Parm, OutParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ControlRigPoseAsset_GetCurrentPose) == 0x000008, "Wrong alignment on ControlRigPoseAsset_GetCurrentPose");
-static_assert(sizeof(ControlRigPoseAsset_GetCurrentPose) == 0x000068, "Wrong size on ControlRigPoseAsset_GetCurrentPose");
-static_assert(offsetof(ControlRigPoseAsset_GetCurrentPose, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_GetCurrentPose::InControlRig' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_GetCurrentPose, OutPose) == 0x000008, "Member 'ControlRigPoseAsset_GetCurrentPose::OutPose' has a wrong offset!");
-
-// Function ControlRig.ControlRigPoseAsset.PastePose
-// 0x0010 (0x0010 - 0x0000)
-struct ControlRigPoseAsset_PastePose final
-{
-public:
-	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDoKey;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDoMirror;                                         // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(ControlRigPoseAsset_PastePose) == 0x000008, "Wrong alignment on ControlRigPoseAsset_PastePose");
-static_assert(sizeof(ControlRigPoseAsset_PastePose) == 0x000010, "Wrong size on ControlRigPoseAsset_PastePose");
-static_assert(offsetof(ControlRigPoseAsset_PastePose, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_PastePose::InControlRig' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_PastePose, bDoKey) == 0x000008, "Member 'ControlRigPoseAsset_PastePose::bDoKey' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_PastePose, bDoMirror) == 0x000009, "Member 'ControlRigPoseAsset_PastePose::bDoMirror' has a wrong offset!");
-
-// Function ControlRig.ControlRigPoseAsset.ReplaceControlName
-// 0x0010 (0x0010 - 0x0000)
-struct ControlRigPoseAsset_ReplaceControlName final
-{
-public:
-	class FName                                   CurrentName;                                       // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   NewName;                                           // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ControlRigPoseAsset_ReplaceControlName) == 0x000004, "Wrong alignment on ControlRigPoseAsset_ReplaceControlName");
-static_assert(sizeof(ControlRigPoseAsset_ReplaceControlName) == 0x000010, "Wrong size on ControlRigPoseAsset_ReplaceControlName");
-static_assert(offsetof(ControlRigPoseAsset_ReplaceControlName, CurrentName) == 0x000000, "Member 'ControlRigPoseAsset_ReplaceControlName::CurrentName' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_ReplaceControlName, NewName) == 0x000008, "Member 'ControlRigPoseAsset_ReplaceControlName::NewName' has a wrong offset!");
-
-// Function ControlRig.ControlRigPoseAsset.SavePose
-// 0x0010 (0x0010 - 0x0000)
-struct ControlRigPoseAsset_SavePose final
-{
-public:
-	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseAll;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(ControlRigPoseAsset_SavePose) == 0x000008, "Wrong alignment on ControlRigPoseAsset_SavePose");
-static_assert(sizeof(ControlRigPoseAsset_SavePose) == 0x000010, "Wrong size on ControlRigPoseAsset_SavePose");
-static_assert(offsetof(ControlRigPoseAsset_SavePose, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_SavePose::InControlRig' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_SavePose, bUseAll) == 0x000008, "Member 'ControlRigPoseAsset_SavePose::bUseAll' has a wrong offset!");
-
-// Function ControlRig.ControlRigPoseAsset.SelectControls
-// 0x0010 (0x0010 - 0x0000)
-struct ControlRigPoseAsset_SelectControls final
-{
-public:
-	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDoMirror;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(ControlRigPoseAsset_SelectControls) == 0x000008, "Wrong alignment on ControlRigPoseAsset_SelectControls");
-static_assert(sizeof(ControlRigPoseAsset_SelectControls) == 0x000010, "Wrong size on ControlRigPoseAsset_SelectControls");
-static_assert(offsetof(ControlRigPoseAsset_SelectControls, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_SelectControls::InControlRig' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_SelectControls, bDoMirror) == 0x000008, "Member 'ControlRigPoseAsset_SelectControls::bDoMirror' has a wrong offset!");
-
-// Function ControlRig.ControlRigPoseAsset.DoesMirrorMatch
-// 0x0018 (0x0018 - 0x0000)
-struct ControlRigPoseAsset_DoesMirrorMatch final
-{
-public:
-	class UControlRig*                            ControlRig;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ControlName;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(ControlRigPoseAsset_DoesMirrorMatch) == 0x000008, "Wrong alignment on ControlRigPoseAsset_DoesMirrorMatch");
-static_assert(sizeof(ControlRigPoseAsset_DoesMirrorMatch) == 0x000018, "Wrong size on ControlRigPoseAsset_DoesMirrorMatch");
-static_assert(offsetof(ControlRigPoseAsset_DoesMirrorMatch, ControlRig) == 0x000000, "Member 'ControlRigPoseAsset_DoesMirrorMatch::ControlRig' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_DoesMirrorMatch, ControlName) == 0x000008, "Member 'ControlRigPoseAsset_DoesMirrorMatch::ControlName' has a wrong offset!");
-static_assert(offsetof(ControlRigPoseAsset_DoesMirrorMatch, ReturnValue) == 0x000010, "Member 'ControlRigPoseAsset_DoesMirrorMatch::ReturnValue' has a wrong offset!");
-
-// Function ControlRig.ControlRigPoseAsset.GetControlNames
-// 0x0010 (0x0010 - 0x0000)
-struct ControlRigPoseAsset_GetControlNames final
-{
-public:
-	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ControlRigPoseAsset_GetControlNames) == 0x000008, "Wrong alignment on ControlRigPoseAsset_GetControlNames");
-static_assert(sizeof(ControlRigPoseAsset_GetControlNames) == 0x000010, "Wrong size on ControlRigPoseAsset_GetControlNames");
-static_assert(offsetof(ControlRigPoseAsset_GetControlNames, ReturnValue) == 0x000000, "Member 'ControlRigPoseAsset_GetControlNames::ReturnValue' has a wrong offset!");
-
 // Function ControlRig.RigHierarchyController.AddAnimationChannel_ForBlueprint
 // 0x01E0 (0x01E0 - 0x0000)
 struct RigHierarchyController_AddAnimationChannel_ForBlueprint final
@@ -4854,6 +4757,103 @@ static_assert(offsetof(RigHierarchyController_SetControlSettings, InKey) == 0x00
 static_assert(offsetof(RigHierarchyController_SetControlSettings, InSettings) == 0x000010, "Member 'RigHierarchyController_SetControlSettings::InSettings' has a wrong offset!");
 static_assert(offsetof(RigHierarchyController_SetControlSettings, bSetupUndo) == 0x0001C8, "Member 'RigHierarchyController_SetControlSettings::bSetupUndo' has a wrong offset!");
 static_assert(offsetof(RigHierarchyController_SetControlSettings, ReturnValue) == 0x0001C9, "Member 'RigHierarchyController_SetControlSettings::ReturnValue' has a wrong offset!");
+
+// Function ControlRig.ControlRigPoseAsset.GetCurrentPose
+// 0x0068 (0x0068 - 0x0000)
+struct ControlRigPoseAsset_GetCurrentPose final
+{
+public:
+	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FControlRigControlPose                 OutPose;                                           // 0x0008(0x0060)(Parm, OutParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ControlRigPoseAsset_GetCurrentPose) == 0x000008, "Wrong alignment on ControlRigPoseAsset_GetCurrentPose");
+static_assert(sizeof(ControlRigPoseAsset_GetCurrentPose) == 0x000068, "Wrong size on ControlRigPoseAsset_GetCurrentPose");
+static_assert(offsetof(ControlRigPoseAsset_GetCurrentPose, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_GetCurrentPose::InControlRig' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_GetCurrentPose, OutPose) == 0x000008, "Member 'ControlRigPoseAsset_GetCurrentPose::OutPose' has a wrong offset!");
+
+// Function ControlRig.ControlRigPoseAsset.PastePose
+// 0x0010 (0x0010 - 0x0000)
+struct ControlRigPoseAsset_PastePose final
+{
+public:
+	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDoKey;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDoMirror;                                         // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(ControlRigPoseAsset_PastePose) == 0x000008, "Wrong alignment on ControlRigPoseAsset_PastePose");
+static_assert(sizeof(ControlRigPoseAsset_PastePose) == 0x000010, "Wrong size on ControlRigPoseAsset_PastePose");
+static_assert(offsetof(ControlRigPoseAsset_PastePose, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_PastePose::InControlRig' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_PastePose, bDoKey) == 0x000008, "Member 'ControlRigPoseAsset_PastePose::bDoKey' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_PastePose, bDoMirror) == 0x000009, "Member 'ControlRigPoseAsset_PastePose::bDoMirror' has a wrong offset!");
+
+// Function ControlRig.ControlRigPoseAsset.ReplaceControlName
+// 0x0010 (0x0010 - 0x0000)
+struct ControlRigPoseAsset_ReplaceControlName final
+{
+public:
+	class FName                                   CurrentName;                                       // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   NewName;                                           // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ControlRigPoseAsset_ReplaceControlName) == 0x000004, "Wrong alignment on ControlRigPoseAsset_ReplaceControlName");
+static_assert(sizeof(ControlRigPoseAsset_ReplaceControlName) == 0x000010, "Wrong size on ControlRigPoseAsset_ReplaceControlName");
+static_assert(offsetof(ControlRigPoseAsset_ReplaceControlName, CurrentName) == 0x000000, "Member 'ControlRigPoseAsset_ReplaceControlName::CurrentName' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_ReplaceControlName, NewName) == 0x000008, "Member 'ControlRigPoseAsset_ReplaceControlName::NewName' has a wrong offset!");
+
+// Function ControlRig.ControlRigPoseAsset.SavePose
+// 0x0010 (0x0010 - 0x0000)
+struct ControlRigPoseAsset_SavePose final
+{
+public:
+	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseAll;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(ControlRigPoseAsset_SavePose) == 0x000008, "Wrong alignment on ControlRigPoseAsset_SavePose");
+static_assert(sizeof(ControlRigPoseAsset_SavePose) == 0x000010, "Wrong size on ControlRigPoseAsset_SavePose");
+static_assert(offsetof(ControlRigPoseAsset_SavePose, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_SavePose::InControlRig' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_SavePose, bUseAll) == 0x000008, "Member 'ControlRigPoseAsset_SavePose::bUseAll' has a wrong offset!");
+
+// Function ControlRig.ControlRigPoseAsset.SelectControls
+// 0x0010 (0x0010 - 0x0000)
+struct ControlRigPoseAsset_SelectControls final
+{
+public:
+	class UControlRig*                            InControlRig;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDoMirror;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(ControlRigPoseAsset_SelectControls) == 0x000008, "Wrong alignment on ControlRigPoseAsset_SelectControls");
+static_assert(sizeof(ControlRigPoseAsset_SelectControls) == 0x000010, "Wrong size on ControlRigPoseAsset_SelectControls");
+static_assert(offsetof(ControlRigPoseAsset_SelectControls, InControlRig) == 0x000000, "Member 'ControlRigPoseAsset_SelectControls::InControlRig' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_SelectControls, bDoMirror) == 0x000008, "Member 'ControlRigPoseAsset_SelectControls::bDoMirror' has a wrong offset!");
+
+// Function ControlRig.ControlRigPoseAsset.DoesMirrorMatch
+// 0x0018 (0x0018 - 0x0000)
+struct ControlRigPoseAsset_DoesMirrorMatch final
+{
+public:
+	class UControlRig*                            ControlRig;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   ControlName;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(ControlRigPoseAsset_DoesMirrorMatch) == 0x000008, "Wrong alignment on ControlRigPoseAsset_DoesMirrorMatch");
+static_assert(sizeof(ControlRigPoseAsset_DoesMirrorMatch) == 0x000018, "Wrong size on ControlRigPoseAsset_DoesMirrorMatch");
+static_assert(offsetof(ControlRigPoseAsset_DoesMirrorMatch, ControlRig) == 0x000000, "Member 'ControlRigPoseAsset_DoesMirrorMatch::ControlRig' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_DoesMirrorMatch, ControlName) == 0x000008, "Member 'ControlRigPoseAsset_DoesMirrorMatch::ControlName' has a wrong offset!");
+static_assert(offsetof(ControlRigPoseAsset_DoesMirrorMatch, ReturnValue) == 0x000010, "Member 'ControlRigPoseAsset_DoesMirrorMatch::ReturnValue' has a wrong offset!");
+
+// Function ControlRig.ControlRigPoseAsset.GetControlNames
+// 0x0010 (0x0010 - 0x0000)
+struct ControlRigPoseAsset_GetControlNames final
+{
+public:
+	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ControlRigPoseAsset_GetControlNames) == 0x000008, "Wrong alignment on ControlRigPoseAsset_GetControlNames");
+static_assert(sizeof(ControlRigPoseAsset_GetControlNames) == 0x000010, "Wrong size on ControlRigPoseAsset_GetControlNames");
+static_assert(offsetof(ControlRigPoseAsset_GetControlNames, ReturnValue) == 0x000000, "Member 'ControlRigPoseAsset_GetControlNames::ReturnValue' has a wrong offset!");
 
 // Function ControlRig.ControlRigWorkflowOptions.EnsureAtLeastOneRigElementSelected
 // 0x0001 (0x0001 - 0x0000)

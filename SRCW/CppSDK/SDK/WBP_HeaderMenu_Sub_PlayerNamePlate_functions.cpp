@@ -60,8 +60,11 @@ void UWBP_HeaderMenu_Sub_PlayerNamePlate_C::ExecuteUbergraph_WBP_HeaderMenu_Sub_
 // int32                                   InWinCounts                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // uint8                                   InRateRank                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   InRankPercent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsShowingLegendCompeIcon                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ELegendCompeRateGrade                   LegendGrade                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InLegendRate                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HeaderMenu_Sub_PlayerNamePlate_C::SetUpUserData(const class FText& InUserName, int32 InHonorId, ECrossplayPlatform InPlatform, int32 InWinCounts, uint8 InRateRank, float InRankPercent)
+void UWBP_HeaderMenu_Sub_PlayerNamePlate_C::SetUpUserData(const class FText& InUserName, int32 InHonorId, ECrossplayPlatform InPlatform, int32 InWinCounts, uint8 InRateRank, float InRankPercent, bool IsShowingLegendCompeIcon, ELegendCompeRateGrade LegendGrade, int32 InLegendRate)
 {
 	static class UFunction* Func = nullptr;
 
@@ -76,6 +79,9 @@ void UWBP_HeaderMenu_Sub_PlayerNamePlate_C::SetUpUserData(const class FText& InU
 	Parms.InWinCounts = InWinCounts;
 	Parms.InRateRank = InRateRank;
 	Parms.InRankPercent = InRankPercent;
+	Parms.IsShowingLegendCompeIcon = IsShowingLegendCompeIcon;
+	Parms.LegendGrade = LegendGrade;
+	Parms.InLegendRate = InLegendRate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

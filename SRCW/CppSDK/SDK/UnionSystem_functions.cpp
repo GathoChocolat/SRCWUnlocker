@@ -17,82 +17,6 @@
 namespace SDK
 {
 
-// Function UnionSystem.UnionStaticMeshComponent.ChangeMaterial
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   MaterialID                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bChange                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UMaterialInterface*               InMaterial                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionStaticMeshComponent::ChangeMaterial(int32 MaterialID, bool bChange, class UMaterialInterface* InMaterial)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionStaticMeshComponent", "ChangeMaterial");
-
-	Params::UnionStaticMeshComponent_ChangeMaterial Parms{};
-
-	Parms.MaterialID = MaterialID;
-	Parms.bChange = bChange;
-	Parms.InMaterial = InMaterial;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.UnionStaticMeshComponent.ResetMaterialAll
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionStaticMeshComponent::ResetMaterialAll()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionStaticMeshComponent", "ResetMaterialAll");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.UnionStaticMeshComponent.IsNotChangedMaterial
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   MaterialID                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionStaticMeshComponent::IsNotChangedMaterial(int32 MaterialID) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionStaticMeshComponent", "IsNotChangedMaterial");
-
-	Params::UnionStaticMeshComponent_IsNotChangedMaterial Parms{};
-
-	Parms.MaterialID = MaterialID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function UnionSystem.AppControllerInputManager.GetMenuPlayerController
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -947,6 +871,34 @@ bool UAppFunctionLibrary::IsPre2ndRom()
 		Func = StaticClass()->GetFunction("AppFunctionLibrary", "IsPre2ndRom");
 
 	Params::AppFunctionLibrary_IsPre2ndRom Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppFunctionLibrary.IsReachedTargetVersion
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// EUnionRomVersion                        TargetVersion                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppFunctionLibrary::IsReachedTargetVersion(EUnionRomVersion TargetVersion)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppFunctionLibrary", "IsReachedTargetVersion");
+
+	Params::AppFunctionLibrary_IsReachedTargetVersion Parms{};
+
+	Parms.TargetVersion = TargetVersion;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1840,24 +1792,24 @@ void UChallengeStatsUtility::SetChallengeStats(EChallengeId InChallengeId, int32
 }
 
 
-// Function UnionSystem.MilestoneUtil.GetEnablePrelaunchAnotherStageLotteryMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EMilestoneVersion                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EMilestoneVersion UMilestoneUtil::GetEnablePrelaunchAnotherStageLotteryMilestoneVersion()
+class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationIn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "GetEnablePrelaunchAnotherStageLotteryMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationIn");
 
-	Params::MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_GetAnimationIn Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1865,24 +1817,24 @@ EMilestoneVersion UMilestoneUtil::GetEnablePrelaunchAnotherStageLotteryMilestone
 }
 
 
-// Function UnionSystem.MilestoneUtil.GetGrandPrixRivalDriverIds
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const TArray<EDriverId>                 ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-const TArray<EDriverId> UMilestoneUtil::GetGrandPrixRivalDriverIds()
+class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationLoop()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "GetGrandPrixRivalDriverIds");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationLoop");
 
-	Params::MilestoneUtil_GetGrandPrixRivalDriverIds Parms{};
+	Params::MenuPopupWindowInterface_GetAnimationLoop Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1890,24 +1842,24 @@ const TArray<EDriverId> UMilestoneUtil::GetGrandPrixRivalDriverIds()
 }
 
 
-// Function UnionSystem.MilestoneUtil.GetRivalByMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EDriverId                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EDriverId UMilestoneUtil::GetRivalByMilestoneVersion()
+class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationOut()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "GetRivalByMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationOut");
 
-	Params::MilestoneUtil_GetRivalByMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_GetAnimationOut Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1915,24 +1867,24 @@ EDriverId UMilestoneUtil::GetRivalByMilestoneVersion()
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsAlreadyGrandPrixLeast1Play
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPopupWindowButtonType                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsAlreadyGrandPrixLeast1Play()
+EPopupWindowButtonType IMenuPopupWindowInterface::GetPopupWindowButtonType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsAlreadyGrandPrixLeast1Play");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowButtonType");
 
-	Params::MilestoneUtil_IsAlreadyGrandPrixLeast1Play Parms{};
+	Params::MenuPopupWindowInterface_GetPopupWindowButtonType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1940,27 +1892,24 @@ bool UMilestoneUtil::IsAlreadyGrandPrixLeast1Play()
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsCharaIconLockCover
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPopupWindowType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsCharaIconLockCover(EDriverId DriverId)
+EPopupWindowType IMenuPopupWindowInterface::GetPopupWindowType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsCharaIconLockCover");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowType");
 
-	Params::MilestoneUtil_IsCharaIconLockCover Parms{};
-
-	Parms.DriverId = DriverId;
+	Params::MenuPopupWindowInterface_GetPopupWindowType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1968,1148 +1917,382 @@ bool UMilestoneUtil::IsCharaIconLockCover(EDriverId DriverId)
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsCloseCourseInRaceParkCustomMatchMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.InitParam
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPopupWindowButtonType                  ButtonType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsCloseCourseInRaceParkCustomMatchMilestoneVersion()
+void IMenuPopupWindowInterface::InitParam(EPopupWindowButtonType ButtonType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsCloseCourseInRaceParkCustomMatchMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "InitParam");
 
-	Params::MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_InitParam Parms{};
+
+	Parms.ButtonType = ButtonType;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableDecisionInRaceParkMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionSystem.MenuPopupWindowInterface.PlayAnimationIn
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 
-bool UMilestoneUtil::IsDisableDecisionInRaceParkMilestoneVersion()
+void IMenuPopupWindowInterface::PlayAnimationIn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableDecisionInRaceParkMilestoneVersion");
-
-	Params::MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion Parms{};
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "PlayAnimationIn");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraChallengeMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InTime                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableEtceteraChallengeMilestoneVersion()
+void IMenuPopupWindowInterface::SetButtonControlDelayTime(float InTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraChallengeMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonControlDelayTime");
 
-	Params::MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetButtonControlDelayTime Parms{};
+
+	Parms.InTime = InTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraHintMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<class FText>&              BtnTextArray                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableEtceteraHintMilestoneVersion()
+void IMenuPopupWindowInterface::SetButtonText(const TArray<class FText>& BtnTextArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraHintMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonText");
 
-	Params::MilestoneUtil_IsDisableEtceteraHintMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetButtonText Parms{};
+
+	Parms.BtnTextArray = std::move(BtnTextArray);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraOthersMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              InDisplay                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableEtceteraOthersMilestoneVersion()
+void IMenuPopupWindowInterface::SetDisplayFooterButton(const bool InDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraOthersMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDisplayFooterButton");
 
-	Params::MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetDisplayFooterButton Parms{};
+
+	Parms.InDisplay = InDisplay;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraStoreMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   CurrentCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AfterCount                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableEtceteraStoreMilestoneVersion()
+void IMenuPopupWindowInterface::SetDonpaTicketCount(int32 CurrentCount, int32 AfterCount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraStoreMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDonpaTicketCount");
 
-	Params::MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetDonpaTicketCount Parms{};
+
+	Parms.CurrentCount = CurrentCount;
+	Parms.AfterCount = AfterCount;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraTitleMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    InEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableEtceteraTitleMilestoneVersion()
+void IMenuPopupWindowInterface::SetEnableInput(bool InEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraTitleMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetEnableInput");
 
-	Params::MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetEnableInput Parms{};
+
+	Parms.InEnable = InEnable;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableFestaMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   BtnIconIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   BtnIconType                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      BtnText                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableFestaMilestoneVersion()
+void IMenuPopupWindowInterface::SetFooterMenuBtn(int32 BtnIconIndex, int32 BtnIconType, const class FText& BtnText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableFestaMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetFooterMenuBtn");
 
-	Params::MilestoneUtil_IsDisableFestaMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetFooterMenuBtn Parms{};
+
+	Parms.BtnIconIndex = BtnIconIndex;
+	Parms.BtnIconType = BtnIconType;
+	Parms.BtnText = std::move(BtnText);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableFriendlistMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      InText                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableFriendlistMilestoneVersion()
+void IMenuPopupWindowInterface::SetImageButtonSelectText(const class FText& InText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableFriendlistMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageButtonSelectText");
 
-	Params::MilestoneUtil_IsDisableFriendlistMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetImageButtonSelectText Parms{};
+
+	Parms.InText = std::move(InText);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse2MilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UTexture2D*                 Texture2D                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableGrandPrixCourse2MilestoneVersion()
+void IMenuPopupWindowInterface::SetImageTexture(const class UTexture2D* Texture2D)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixCourse2MilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageTexture");
 
-	Params::MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetImageTexture Parms{};
+
+	Parms.Texture2D = Texture2D;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse3MilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             InButtonIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableGrandPrixCourse3MilestoneVersion()
+void IMenuPopupWindowInterface::SetInitialFocusButtonIndex(const int32 InButtonIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixCourse3MilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetInitialFocusButtonIndex");
 
-	Params::MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetInitialFocusButtonIndex Parms{};
+
+	Parms.InButtonIndex = InButtonIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourseMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableGrandPrixCourseMilestoneVersion()
+void IMenuPopupWindowInterface::SetPopupInfoDisplayIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixCourseMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoDisplayIndex");
 
-	Params::MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetPopupInfoDisplayIndex Parms{};
+
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Btn01IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Btn02IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableGrandPrixMilestoneVersion()
+void IMenuPopupWindowInterface::SetPopupInfoMainMenuButtonIconIndex(int32 Btn01IconIndex, int32 Btn02IconIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoMainMenuButtonIconIndex");
 
-	Params::MilestoneUtil_IsDisableGrandPrixMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex Parms{};
+
+	Parms.Btn01IconIndex = Btn01IconIndex;
+	Parms.Btn02IconIndex = Btn02IconIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableHornAuraTabMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableHornAuraTabMilestoneVersion()
+void IMenuPopupWindowInterface::SetTextMessege(const class FText& Text)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableHornAuraTabMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextMessege");
 
-	Params::MilestoneUtil_IsDisableHornAuraTabMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetTextMessege Parms{};
+
+	Parms.Text = std::move(Text);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MilestoneUtil.IsDisableRaceParkMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    Attension                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMilestoneUtil::IsDisableRaceParkMilestoneVersion()
+void IMenuPopupWindowInterface::SetTextTitle(const class FText& Text, bool Attension)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableRaceParkMilestoneVersion");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextTitle");
 
-	Params::MilestoneUtil_IsDisableRaceParkMilestoneVersion Parms{};
+	Params::MenuPopupWindowInterface_SetTextTitle Parms{};
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsDisableRaceParkRivalOnOffMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsDisableRaceParkRivalOnOffMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableRaceParkRivalOnOffMilestoneVersion");
-
-	Params::MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion Parms{};
+	Parms.Text = std::move(Text);
+	Parms.Attension = Attension;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsDisableSelectTimeTrialMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsDisableSelectTimeTrialMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableSelectTimeTrialMilestoneVersion");
-
-	Params::MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsDisableTimeTrialMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsDisableTimeTrialMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTimeTrialMilestoneVersion");
-
-	Params::MilestoneUtil_IsDisableTimeTrialMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsDisableTopMenuFestaRuleMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsDisableTopMenuFestaRuleMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTopMenuFestaRuleMilestoneVersion");
-
-	Params::MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsDisableTopMenuNewsMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsDisableTopMenuNewsMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTopMenuNewsMilestoneVersion");
-
-	Params::MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsDisableTrialMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsDisableTrialMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTrialMilestoneVersion");
-
-	Params::MilestoneUtil_IsDisableTrialMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableAdvertiseRatingMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableAdvertiseRatingMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableAdvertiseRatingMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableEtceteraFullGameStoreMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableEtceteraFullGameStoreMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableEtceteraFullGameStoreMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableResetSaveDataMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableResetSaveDataMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableResetSaveDataMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableResetSaveDataMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableSpecificTitleDebugCommandMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableSpecificTitleDebugCommandMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableSpecificTitleDebugCommandMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableThumbnailCollaboRaceMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableThumbnailCollaboRaceMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableThumbnailCollaboRaceMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableTitleDemoMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableTitleDemoMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTitleDemoMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableTitleDemoMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableTitleStoreMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableTitleStoreMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTitleStoreMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableTitleStoreMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStoreMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableTopMenuStoreMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTopMenuStoreMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStorePopupAutoMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsEnableTopMenuStorePopupAutoMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTopMenuStorePopupAutoMilestoneVersion");
-
-	Params::MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsExclusionGhostUpDownloadEventMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsExclusionGhostUpDownloadEventMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsExclusionGhostUpDownloadEventMilestoneVersion");
-
-	Params::MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsForceEnableTopMenuNewsMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsForceEnableTopMenuNewsMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsForceEnableTopMenuNewsMilestoneVersion");
-
-	Params::MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsHiddenCharacter
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsHiddenCharacter(EDriverId DriverId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenCharacter");
-
-	Params::MilestoneUtil_IsHiddenCharacter Parms{};
-
-	Parms.DriverId = DriverId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsHiddenMachineParts
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EMachineId                              MachineId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsHiddenMachineParts(EMachineId MachineId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenMachineParts");
-
-	Params::MilestoneUtil_IsHiddenMachineParts Parms{};
-
-	Parms.MachineId = MachineId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsHiddenRomVerMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsHiddenRomVerMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenRomVerMilestoneVersion");
-
-	Params::MilestoneUtil_IsHiddenRomVerMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsHiddenWebManualQRcodeMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsHiddenWebManualQRcodeMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenWebManualQRcodeMilestoneVersion");
-
-	Params::MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsInitialMachineParts
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EMachineId                              MachineId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   FrontPrice                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RearPrice                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   TirePrice                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsInitialMachineParts(EMachineId MachineId, int32 FrontPrice, int32 RearPrice, int32 TirePrice)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsInitialMachineParts");
-
-	Params::MilestoneUtil_IsInitialMachineParts Parms{};
-
-	Parms.MachineId = MachineId;
-	Parms.FrontPrice = FrontPrice;
-	Parms.RearPrice = RearPrice;
-	Parms.TirePrice = TirePrice;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsLimitDonpaTicketMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsLimitDonpaTicketMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsLimitDonpaTicketMilestoneVersion");
-
-	Params::MilestoneUtil_IsLimitDonpaTicketMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsLimitRewardInRaceParkMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsLimitRewardInRaceParkMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsLimitRewardInRaceParkMilestoneVersion");
-
-	Params::MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsOfflineMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsOfflineMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsOfflineMilestoneVersion");
-
-	Params::MilestoneUtil_IsOfflineMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsRaceUnLockedMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const EGameModeId                       InGameModeId                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const EStageId                          InStageId                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsRaceUnLockedMilestoneVersion(const EGameModeId InGameModeId, const EStageId InStageId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsRaceUnLockedMilestoneVersion");
-
-	Params::MilestoneUtil_IsRaceUnLockedMilestoneVersion Parms{};
-
-	Parms.InGameModeId = InGameModeId;
-	Parms.InStageId = InStageId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsSkipDodonpaEventMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsSkipDodonpaEventMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsSkipDodonpaEventMilestoneVersion");
-
-	Params::MilestoneUtil_IsSkipDodonpaEventMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsSkipSelectPlayNumMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsSkipSelectPlayNumMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsSkipSelectPlayNumMilestoneVersion");
-
-	Params::MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsTopMenuAccessLoginSuccessOnly
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsTopMenuAccessLoginSuccessOnly()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsTopMenuAccessLoginSuccessOnly");
-
-	Params::MilestoneUtil_IsTopMenuAccessLoginSuccessOnly Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.MilestoneUtil.IsVisibleCompanyNameMilestoneVersion
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMilestoneUtil::IsVisibleCompanyNameMilestoneVersion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MilestoneUtil", "IsVisibleCompanyNameMilestoneVersion");
-
-	Params::MilestoneUtil_IsVisibleCompanyNameMilestoneVersion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -3209,15 +2392,127 @@ void UAppGameInstance::GetVCSRevisionStr(class FString* OutVCSString) const
 }
 
 
-// Function UnionSystem.HonorTitleListDataAsset.ClearData
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionSystem.HashHelper.HashIntoByteArray
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 
-void UHonorTitleListDataAsset::ClearData()
+TArray<uint8> UHashHelper::HashIntoByteArray(const class FString& Data)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "ClearData");
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArray");
+
+	Params::HashHelper_HashIntoByteArray Parms{};
+
+	Parms.Data = std::move(Data);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HashHelper.HashIntoByteArrayFromByteArray
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<uint8> UHashHelper::HashIntoByteArrayFromByteArray(const TArray<uint8>& Bytes)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArrayFromByteArray");
+
+	Params::HashHelper_HashIntoByteArrayFromByteArray Parms{};
+
+	Parms.Bytes = std::move(Bytes);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HashHelper.HashIntoTextString
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UHashHelper::HashIntoTextString(const class FString& Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextString");
+
+	Params::HashHelper_HashIntoTextString Parms{};
+
+	Parms.Data = std::move(Data);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HashHelper.HashIntoTextStringFromByteArray
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UHashHelper::HashIntoTextStringFromByteArray(const TArray<uint8>& Bytes)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextStringFromByteArray");
+
+	Params::HashHelper_HashIntoTextStringFromByteArray Parms{};
+
+	Parms.Bytes = std::move(Bytes);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.JukeboxDataAsset.ClearData
+// (Final, Native, Public, BlueprintCallable)
+
+void UJukeboxDataAsset::ClearData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JukeboxDataAsset", "ClearData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3228,15 +2523,71 @@ void UHonorTitleListDataAsset::ClearData()
 }
 
 
-// Function UnionSystem.HonorTitleListDataAsset.Update
+// Function UnionSystem.JukeboxDataAsset.GetAlbumData
 // (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   AlbumID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAlbumData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 
-void UHonorTitleListDataAsset::Update()
+struct FAlbumData UJukeboxDataAsset::GetAlbumData(int32 AlbumID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "Update");
+		Func = Class->GetFunction("JukeboxDataAsset", "GetAlbumData");
+
+	Params::JukeboxDataAsset_GetAlbumData Parms{};
+
+	Parms.AlbumID = AlbumID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.JukeboxDataAsset.GetTrackData
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   TrackID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTrackData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FTrackData UJukeboxDataAsset::GetTrackData(int32 TrackID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JukeboxDataAsset", "GetTrackData");
+
+	Params::JukeboxDataAsset_GetTrackData Parms{};
+
+	Parms.TrackID = TrackID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.JukeboxDataAsset.Update
+// (Final, Native, Public, BlueprintCallable)
+
+void UJukeboxDataAsset::Update()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JukeboxDataAsset", "Update");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3244,182 +2595,6 @@ void UHonorTitleListDataAsset::Update()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleAndIdWithRarity
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<int32>*                          outHonorTitleIdArray                                   (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleAndIdWithRarity(int32 Rarity, TArray<int32>* outHonorTitleIdArray) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleAndIdWithRarity");
-
-	Params::HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity Parms{};
-
-	Parms.Rarity = Rarity;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (outHonorTitleIdArray != nullptr)
-		*outHonorTitleIdArray = std::move(Parms.outHonorTitleIdArray);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleWithRarity
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleWithRarity(int32 Rarity) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleWithRarity");
-
-	Params::HonorTitleListDataAsset_GetAllHonorTitleWithRarity Parms{};
-
-	Parms.Rarity = Rarity;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitlePlate
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TSoftObjectPtr<class UTexture2D>        ReturnValue                                            (Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-TSoftObjectPtr<class UTexture2D> UHonorTitleListDataAsset::GetHonorTitlePlate(int32 HonorTitleId) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitlePlate");
-
-	Params::HonorTitleListDataAsset_GetHonorTitlePlate Parms{};
-
-	Parms.HonorTitleId = HonorTitleId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleRarity
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UHonorTitleListDataAsset::GetHonorTitleRarity(int32 HonorTitleId) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleRarity");
-
-	Params::HonorTitleListDataAsset_GetHonorTitleRarity Parms{};
-
-	Parms.HonorTitleId = HonorTitleId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleVBName
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-class FText UHonorTitleListDataAsset::GetHonorTitleVBName(int32 HonorTitleId, bool* IsValid) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleVBName");
-
-	Params::HonorTitleListDataAsset_GetHonorTitleVBName Parms{};
-
-	Parms.HonorTitleId = HonorTitleId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsValid != nullptr)
-		*IsValid = Parms.IsValid;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.HonorTitleListDataAsset.GetIsHonorTitleDLC
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   HonorTitleIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UHonorTitleListDataAsset::GetIsHonorTitleDLC(int32 HonorTitleIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HonorTitleListDataAsset", "GetIsHonorTitleDLC");
-
-	Params::HonorTitleListDataAsset_GetIsHonorTitleDLC Parms{};
-
-	Parms.HonorTitleIndex = HonorTitleIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -3610,6 +2785,25 @@ void UAppOptionConfigSaveGameHelper::ApplyBlur()
 
 	if (Func == nullptr)
 		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "ApplyBlur");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppOptionConfigSaveGameHelper.ApplyButtonTextureFromSave
+// (Final, Native, Static, Public, BlueprintCallable)
+
+void UAppOptionConfigSaveGameHelper::ApplyButtonTextureFromSave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppOptionConfigSaveGameHelper", "ApplyButtonTextureFromSave");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5758,56 +4952,6 @@ int32 UAppPlayerControllerSubsystem::GetControllerTextureIndexFromFKey(const str
 }
 
 
-// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentButtonTextureType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EControllerButtonTextureType            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EControllerButtonTextureType UAppPlayerControllerSubsystem::GetCurrentButtonTextureType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerControllerSubsystem", "GetCurrentButtonTextureType");
-
-	Params::AppPlayerControllerSubsystem_GetCurrentButtonTextureType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentDeviceTexture
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UTexture2D*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UTexture2D* UAppPlayerControllerSubsystem::GetCurrentDeviceTexture()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerControllerSubsystem", "GetCurrentDeviceTexture");
-
-	Params::AppPlayerControllerSubsystem_GetCurrentDeviceTexture Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function UnionSystem.AppPlayerControllerSubsystem.GetMenuKeyboardButtonTexture
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -6036,6 +5180,56 @@ void UAppPlayerControllerSubsystem::UpdateCurrentButtonTextureType()
 }
 
 
+// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentButtonTextureType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EControllerButtonTextureType            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EControllerButtonTextureType UAppPlayerControllerSubsystem::GetCurrentButtonTextureType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerControllerSubsystem", "GetCurrentButtonTextureType");
+
+	Params::AppPlayerControllerSubsystem_GetCurrentButtonTextureType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentDeviceTexture
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UTexture2D*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UTexture2D* UAppPlayerControllerSubsystem::GetCurrentDeviceTexture() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerControllerSubsystem", "GetCurrentDeviceTexture");
+
+	Params::AppPlayerControllerSubsystem_GetCurrentDeviceTexture Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentDisplayKeytopPattern
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -6133,6 +5327,59 @@ void UAppSaveGameHelper::AddCompensationData(int32 ID)
 }
 
 
+// Function UnionSystem.AppSaveGameHelper.AddLegendCompeEnteredSeason
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InSeason                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAppSaveGameHelper::AddLegendCompeEnteredSeason(int32 InSeason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppSaveGameHelper", "AddLegendCompeEnteredSeason");
+
+	Params::AppSaveGameHelper_AddLegendCompeEnteredSeason Parms{};
+
+	Parms.InSeason = InSeason;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppSaveGameHelper.AddLegendCompeRecievedFinalResultSeason
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InSeason                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAppSaveGameHelper::AddLegendCompeRecievedFinalResultSeason(int32 InSeason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppSaveGameHelper", "AddLegendCompeRecievedFinalResultSeason");
+
+	Params::AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason Parms{};
+
+	Parms.InSeason = InSeason;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionSystem.AppSaveGameHelper.AddRaceStatsValue
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -6207,6 +5454,31 @@ void UAppSaveGameHelper::AddRivalWinCount(EDriverId DriverId)
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppSaveGameHelper.CalcLegendCompeNeedFinalResultSeason
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// TArray<int32>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<int32> UAppSaveGameHelper::CalcLegendCompeNeedFinalResultSeason()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppSaveGameHelper", "CalcLegendCompeNeedFinalResultSeason");
+
+	Params::AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -7104,6 +6376,31 @@ struct FItemSwitchSettingSave UAppSaveGameHelper::GetItemSwitchSettingSave(EGame
 	Params::AppSaveGameHelper_GetItemSwitchSettingSave Parms{};
 
 	Parms.InGameModeId = InGameModeId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppSaveGameHelper.GetLegendCompeEnteredSeason
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// TArray<int32>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<int32> UAppSaveGameHelper::GetLegendCompeEnteredSeason()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppSaveGameHelper", "GetLegendCompeEnteredSeason");
+
+	Params::AppSaveGameHelper_GetLegendCompeEnteredSeason Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10993,6 +10290,38 @@ class FText UAppTimeUtil::MakeDateTimeText(const struct FDateTime& DateTime)
 }
 
 
+// Function UnionSystem.AppTimeUtil.ReplaceDateTimePlaceholder
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class FText&                      BaseText                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FDateTime&                 StartDateLocalTime                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FDateTime&                 EndDateLocalTime                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText UAppTimeUtil::ReplaceDateTimePlaceholder(const class FText& BaseText, const struct FDateTime& StartDateLocalTime, const struct FDateTime& EndDateLocalTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AppTimeUtil", "ReplaceDateTimePlaceholder");
+
+	Params::AppTimeUtil_ReplaceDateTimePlaceholder Parms{};
+
+	Parms.BaseText = std::move(BaseText);
+	Parms.StartDateLocalTime = std::move(StartDateLocalTime);
+	Parms.EndDateLocalTime = std::move(EndDateLocalTime);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.AppTimeUtil.Sub_DateTimeDateTime
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -12655,6 +11984,31 @@ int32 UDebugOnlineAutoPlaySetting::GetDebugAutoPlayMode()
 }
 
 
+// Function UnionSystem.DebugOnlineAutoPlaySetting.GetMaxDebugAutoPlayModeNum
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UDebugOnlineAutoPlaySetting::GetMaxDebugAutoPlayModeNum()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("DebugOnlineAutoPlaySetting", "GetMaxDebugAutoPlayModeNum");
+
+	Params::DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.DebugOnlineAutoPlaySetting.IsDebugAutoPlay
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -12668,6 +12022,31 @@ bool UDebugOnlineAutoPlaySetting::IsDebugAutoPlay()
 		Func = StaticClass()->GetFunction("DebugOnlineAutoPlaySetting", "IsDebugAutoPlay");
 
 	Params::DebugOnlineAutoPlaySetting_IsDebugAutoPlay Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.DebugOnlineAutoPlaySetting.IsDebugAutoPlayMonkeyTest
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UDebugOnlineAutoPlaySetting::IsDebugAutoPlayMonkeyTest()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("DebugOnlineAutoPlaySetting", "IsDebugAutoPlayMonkeyTest");
+
+	Params::DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -12745,6 +12124,31 @@ void UDebugOnlineAutoPlaySetting::SetDebugAutoPlayMode(int32 Mode)
 	Params::DebugOnlineAutoPlaySetting_SetDebugAutoPlayMode Parms{};
 
 	Parms.Mode = Mode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.DebugOnlineAutoPlaySetting.SetDebugAutoPlayMonkeyTest
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flg                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDebugOnlineAutoPlaySetting::SetDebugAutoPlayMonkeyTest(bool flg)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("DebugOnlineAutoPlaySetting", "SetDebugAutoPlayMonkeyTest");
+
+	Params::DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest Parms{};
+
+	Parms.flg = flg;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -16023,6 +15427,137 @@ bool UFriendSubsystem::GetUserSearchDataByProductUserId(const class FString& Pro
 }
 
 
+// Function UnionSystem.GadgetSettingData.UpdateGadgetSetting
+// (Final, Native, Public)
+
+void UGadgetSettingData::UpdateGadgetSetting()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GadgetSettingData", "UpdateGadgetSetting");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.GadgetSettingData.GadgetMenuCategory
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGadgetId                               gadgetId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EGadgetMenuCategory                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EGadgetMenuCategory UGadgetSettingData::GadgetMenuCategory(EGadgetId gadgetId) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GadgetSettingData", "GadgetMenuCategory");
+
+	Params::GadgetSettingData_GadgetMenuCategory Parms{};
+
+	Parms.gadgetId = gadgetId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.GadgetSettingData.IsEquippable
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGadgetId                               gadgetId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UGadgetSettingData::IsEquippable(EGadgetId gadgetId) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GadgetSettingData", "IsEquippable");
+
+	Params::GadgetSettingData_IsEquippable Parms{};
+
+	Parms.gadgetId = gadgetId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.GadgetSettingData.IsGadgetKit
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGadgetId                               gadgetId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UGadgetSettingData::IsGadgetKit(EGadgetId gadgetId) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GadgetSettingData", "IsGadgetKit");
+
+	Params::GadgetSettingData_IsGadgetKit Parms{};
+
+	Parms.gadgetId = gadgetId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.GadgetSettingData.IsHiddenGadget
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGadgetId                               gadgetId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UGadgetSettingData::IsHiddenGadget(EGadgetId gadgetId) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GadgetSettingData", "IsHiddenGadget");
+
+	Params::GadgetSettingData_IsHiddenGadget Parms{};
+
+	Parms.gadgetId = gadgetId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.GameActivitySubsystem.ChangeActivityAvailability
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -17024,6 +16559,31 @@ void UGhostSubSystem::SetGhostRequestFailed(bool InFailed)
 }
 
 
+// Function UnionSystem.GhostSubSystem.GetDebugEnableGhostUploadCancel
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UGhostSubSystem::GetDebugEnableGhostUploadCancel() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GhostSubSystem", "GetDebugEnableGhostUploadCancel");
+
+	Params::GhostSubSystem_GetDebugEnableGhostUploadCancel Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.GhostSubSystem.IsGhostRequestFailed
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -17173,27 +16733,97 @@ void UUIColorInfoDataAsset::Update()
 }
 
 
-// Function UnionSystem.HashHelper.HashIntoByteArray
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+// Function UnionSystem.HonorTitleListDataAsset.ClearData
+// (Final, Native, Public, BlueprintCallable)
 
-TArray<uint8> UHashHelper::HashIntoByteArray(const class FString& Data)
+void UHonorTitleListDataAsset::ClearData()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArray");
-
-	Params::HashHelper_HashIntoByteArray Parms{};
-
-	Parms.Data = std::move(Data);
+		Func = Class->GetFunction("HonorTitleListDataAsset", "ClearData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.Update
+// (Final, Native, Public, BlueprintCallable)
+
+void UHonorTitleListDataAsset::Update()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "Update");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleAndIdWithRarity
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<int32>*                          outHonorTitleIdArray                                   (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleAndIdWithRarity(int32 Rarity, TArray<int32>* outHonorTitleIdArray) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleAndIdWithRarity");
+
+	Params::HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity Parms{};
+
+	Parms.Rarity = Rarity;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (outHonorTitleIdArray != nullptr)
+		*outHonorTitleIdArray = std::move(Parms.outHonorTitleIdArray);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleWithRarity
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FHonorTitleListData>      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<struct FHonorTitleListData> UHonorTitleListDataAsset::GetAllHonorTitleWithRarity(int32 Rarity) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetAllHonorTitleWithRarity");
+
+	Params::HonorTitleListDataAsset_GetAllHonorTitleWithRarity Parms{};
+
+	Parms.Rarity = Rarity;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -17201,27 +16831,60 @@ TArray<uint8> UHashHelper::HashIntoByteArray(const class FString& Data)
 }
 
 
-// Function UnionSystem.HashHelper.HashIntoByteArrayFromByteArray
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleLegendCompeInfo
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<uint8>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+// int32                                   HonorTitleIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsLegendCompe                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  RoundNum                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-TArray<uint8> UHashHelper::HashIntoByteArrayFromByteArray(const TArray<uint8>& Bytes)
+void UHonorTitleListDataAsset::GetHonorTitleLegendCompeInfo(int32 HonorTitleIndex, bool* IsLegendCompe, int32* RoundNum) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoByteArrayFromByteArray");
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleLegendCompeInfo");
 
-	Params::HashHelper_HashIntoByteArrayFromByteArray Parms{};
+	Params::HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo Parms{};
 
-	Parms.Bytes = std::move(Bytes);
+	Parms.HonorTitleIndex = HonorTitleIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsLegendCompe != nullptr)
+		*IsLegendCompe = Parms.IsLegendCompe;
+
+	if (RoundNum != nullptr)
+		*RoundNum = Parms.RoundNum;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitlePlate
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSoftObjectPtr<class UTexture2D>        ReturnValue                                            (Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+TSoftObjectPtr<class UTexture2D> UHonorTitleListDataAsset::GetHonorTitlePlate(int32 HonorTitleId) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitlePlate");
+
+	Params::HonorTitleListDataAsset_GetHonorTitlePlate Parms{};
+
+	Parms.HonorTitleId = HonorTitleId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -17229,27 +16892,27 @@ TArray<uint8> UHashHelper::HashIntoByteArrayFromByteArray(const TArray<uint8>& B
 }
 
 
-// Function UnionSystem.HashHelper.HashIntoTextString
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleRarity
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// const class FString&                    Data                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UHashHelper::HashIntoTextString(const class FString& Data)
+int32 UHonorTitleListDataAsset::GetHonorTitleRarity(int32 HonorTitleId) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextString");
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleRarity");
 
-	Params::HashHelper_HashIntoTextString Parms{};
+	Params::HonorTitleListDataAsset_GetHonorTitleRarity Parms{};
 
-	Parms.Data = std::move(Data);
+	Parms.HonorTitleId = HonorTitleId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -17257,27 +16920,59 @@ class FString UHashHelper::HashIntoTextString(const class FString& Data)
 }
 
 
-// Function UnionSystem.HashHelper.HashIntoTextStringFromByteArray
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleVBName
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// const TArray<uint8>&                    Bytes                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   HonorTitleId                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 
-class FString UHashHelper::HashIntoTextStringFromByteArray(const TArray<uint8>& Bytes)
+class FText UHonorTitleListDataAsset::GetHonorTitleVBName(int32 HonorTitleId, bool* IsValid) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HashHelper", "HashIntoTextStringFromByteArray");
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetHonorTitleVBName");
 
-	Params::HashHelper_HashIntoTextStringFromByteArray Parms{};
+	Params::HonorTitleListDataAsset_GetHonorTitleVBName Parms{};
 
-	Parms.Bytes = std::move(Bytes);
+	Parms.HonorTitleId = HonorTitleId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsValid != nullptr)
+		*IsValid = Parms.IsValid;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HonorTitleListDataAsset.GetIsHonorTitleDLC
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   HonorTitleIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHonorTitleListDataAsset::GetIsHonorTitleDLC(int32 HonorTitleIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HonorTitleListDataAsset", "GetIsHonorTitleDLC");
+
+	Params::HonorTitleListDataAsset_GetIsHonorTitleDLC Parms{};
+
+	Parms.HonorTitleIndex = HonorTitleIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -17567,6 +17262,105 @@ void UHttpHelper::Parse_DebugChangeFairPlayPoint(const class FString& OutData, i
 		Func = StaticClass()->GetFunction("HttpHelper", "Parse_DebugChangeFairPlayPoint");
 
 	Params::HttpHelper_Parse_DebugChangeFairPlayPoint Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
+// Function UnionSystem.HttpHelper.Parse_DebugChangeFestaLastOrder
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDebugChangeFestaLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_DebugChangeFestaLastOrder(const class FString& OutData, int32* ResCode, struct FDebugChangeFestaLastOrderResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_DebugChangeFestaLastOrder");
+
+	Params::HttpHelper_Parse_DebugChangeFestaLastOrder Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
+// Function UnionSystem.HttpHelper.Parse_DebugChangeLegendCompeLastOrder
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_DebugChangeLegendCompeLastOrder(const class FString& OutData, int32* ResCode, struct FDebugChangeLegendCompeLastOrderResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_DebugChangeLegendCompeLastOrder");
+
+	Params::HttpHelper_Parse_DebugChangeLegendCompeLastOrder Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
+// Function UnionSystem.HttpHelper.Parse_DebugChangeLegendCompeRate
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeRateResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_DebugChangeLegendCompeRate(const class FString& OutData, int32* ResCode, struct FDebugChangeLegendCompeRateResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_DebugChangeLegendCompeRate");
+
+	Params::HttpHelper_Parse_DebugChangeLegendCompeRate Parms{};
 
 	Parms.OutData = std::move(OutData);
 
@@ -20017,6 +19811,126 @@ bool UHttpHelper::Receive_DebugChangeFairPlayPoint(int32 Handle, bool* OutError,
 		Func = StaticClass()->GetFunction("HttpHelper", "Receive_DebugChangeFairPlayPoint");
 
 	Params::HttpHelper_Receive_DebugChangeFairPlayPoint Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Receive_DebugChangeFestaLastOrder
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDebugChangeFestaLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_DebugChangeFestaLastOrder(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeFestaLastOrderResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_DebugChangeFestaLastOrder");
+
+	Params::HttpHelper_Receive_DebugChangeFestaLastOrder Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Receive_DebugChangeLegendCompeLastOrder
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_DebugChangeLegendCompeLastOrder(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeLegendCompeLastOrderResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_DebugChangeLegendCompeLastOrder");
+
+	Params::HttpHelper_Receive_DebugChangeLegendCompeLastOrder Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Receive_DebugChangeLegendCompeRate
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeRateResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_DebugChangeLegendCompeRate(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeLegendCompeRateResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_DebugChangeLegendCompeRate");
+
+	Params::HttpHelper_Receive_DebugChangeLegendCompeRate Parms{};
 
 	Parms.Handle = Handle;
 
@@ -23156,6 +23070,336 @@ int32 UHttpHelper::Send_DebugChangeFairPlayPoint_NoResend(const struct FDebugCha
 		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeFairPlayPoint_NoResend");
 
 	Params::HttpHelper_Send_DebugChangeFairPlayPoint_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_DebugChangeFestaLastOrder(const struct FDebugChangeFestaLastOrderRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeFestaLastOrder");
+
+	Params::HttpHelper_Send_DebugChangeFestaLastOrder Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_DebugChangeFestaLastOrder_Callbacked(const struct FDebugChangeFestaLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeFestaLastOrder_Callbacked");
+
+	Params::HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_DebugChangeFestaLastOrder_Callbacked_NoResend(const struct FDebugChangeFestaLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeFestaLastOrder_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_DebugChangeFestaLastOrder_NoResend(const struct FDebugChangeFestaLastOrderRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeFestaLastOrder_NoResend");
+
+	Params::HttpHelper_Send_DebugChangeFestaLastOrder_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_DebugChangeLegendCompeLastOrder(const struct FDebugChangeLegendCompeLastOrderRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeLastOrder");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeLastOrder Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_DebugChangeLegendCompeLastOrder_Callbacked(const struct FDebugChangeLegendCompeLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeLastOrder_Callbacked");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend(const struct FDebugChangeLegendCompeLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_DebugChangeLegendCompeLastOrder_NoResend(const struct FDebugChangeLegendCompeLastOrderRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeLastOrder_NoResend");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_DebugChangeLegendCompeRate(const struct FDebugChangeLegendCompeRateRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeRate");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeRate Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_DebugChangeLegendCompeRate_Callbacked(const struct FDebugChangeLegendCompeRateRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeRate_Callbacked");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_DebugChangeLegendCompeRate_Callbacked_NoResend(const struct FDebugChangeLegendCompeRateRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeRate_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_DebugChangeLegendCompeRate_NoResend(const struct FDebugChangeLegendCompeRateRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_DebugChangeLegendCompeRate_NoResend");
+
+	Params::HttpHelper_Send_DebugChangeLegendCompeRate_NoResend Parms{};
 
 	Parms.Request = std::move(Request);
 
@@ -31315,100 +31559,6 @@ void IInputProcessInterface::SilentFocus()
 }
 
 
-// Function UnionSystem.JukeboxDataAsset.ClearData
-// (Final, Native, Public, BlueprintCallable)
-
-void UJukeboxDataAsset::ClearData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "ClearData");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.JukeboxDataAsset.GetAlbumData
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   AlbumID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FAlbumData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-struct FAlbumData UJukeboxDataAsset::GetAlbumData(int32 AlbumID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "GetAlbumData");
-
-	Params::JukeboxDataAsset_GetAlbumData Parms{};
-
-	Parms.AlbumID = AlbumID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.JukeboxDataAsset.GetTrackData
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   TrackID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FTrackData                       ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-struct FTrackData UJukeboxDataAsset::GetTrackData(int32 TrackID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "GetTrackData");
-
-	Params::JukeboxDataAsset_GetTrackData Parms{};
-
-	Parms.TrackID = TrackID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.JukeboxDataAsset.Update
-// (Final, Native, Public, BlueprintCallable)
-
-void UJukeboxDataAsset::Update()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JukeboxDataAsset", "Update");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionSystem.KeyConfigItem.ResetToDefault
 // (Final, Native, Public, BlueprintCallable)
 
@@ -32652,6 +32802,31 @@ void ULobbyContextBase::InitializeNoLobbyInfo(int32 LocalUserNum)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.LobbyContextBase.IsSetShortLobbyId
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULobbyContextBase::IsSetShortLobbyId()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LobbyContextBase", "IsSetShortLobbyId");
+
+	Params::LobbyContextBase_IsSetShortLobbyId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -39162,24 +39337,24 @@ bool AMenuPlayerController::GetMenuDirectionKeyEnable() const
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.GetEnablePrelaunchAnotherStageLotteryMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EMilestoneVersion                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationIn()
+EMilestoneVersion UMilestoneUtil::GetEnablePrelaunchAnotherStageLotteryMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationIn");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "GetEnablePrelaunchAnotherStageLotteryMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_GetAnimationIn Parms{};
+	Params::MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -39187,24 +39362,24 @@ class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationIn()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.GetGrandPrixRivalDriverIds
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<EDriverId>                 ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 
-class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationLoop()
+const TArray<EDriverId> UMilestoneUtil::GetGrandPrixRivalDriverIds()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationLoop");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "GetGrandPrixRivalDriverIds");
 
-	Params::MenuPopupWindowInterface_GetAnimationLoop Parms{};
+	Params::MilestoneUtil_GetGrandPrixRivalDriverIds Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -39212,24 +39387,24 @@ class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationLoop()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.GetRivalByMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDriverId                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationOut()
+EDriverId UMilestoneUtil::GetRivalByMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationOut");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "GetRivalByMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_GetAnimationOut Parms{};
+	Params::MilestoneUtil_GetRivalByMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -39237,24 +39412,24 @@ class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationOut()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsAlreadyGrandPrixLeast1Play
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// EPopupWindowButtonType                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EPopupWindowButtonType IMenuPopupWindowInterface::GetPopupWindowButtonType()
+bool UMilestoneUtil::IsAlreadyGrandPrixLeast1Play()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowButtonType");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsAlreadyGrandPrixLeast1Play");
 
-	Params::MenuPopupWindowInterface_GetPopupWindowButtonType Parms{};
+	Params::MilestoneUtil_IsAlreadyGrandPrixLeast1Play Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -39262,24 +39437,27 @@ EPopupWindowButtonType IMenuPopupWindowInterface::GetPopupWindowButtonType()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsCharaIconLockCover
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// EPopupWindowType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EPopupWindowType IMenuPopupWindowInterface::GetPopupWindowType()
+bool UMilestoneUtil::IsCharaIconLockCover(EDriverId DriverId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowType");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsCharaIconLockCover");
 
-	Params::MenuPopupWindowInterface_GetPopupWindowType Parms{};
+	Params::MilestoneUtil_IsCharaIconLockCover Parms{};
+
+	Parms.DriverId = DriverId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -39287,382 +39465,1148 @@ EPopupWindowType IMenuPopupWindowInterface::GetPopupWindowType()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.InitParam
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsCloseCourseInRaceParkCustomMatchMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// EPopupWindowButtonType                  ButtonType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::InitParam(EPopupWindowButtonType ButtonType)
+bool UMilestoneUtil::IsCloseCourseInRaceParkCustomMatchMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "InitParam");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsCloseCourseInRaceParkCustomMatchMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_InitParam Parms{};
-
-	Parms.ButtonType = ButtonType;
+	Params::MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.PlayAnimationIn
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableDecisionInRaceParkMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::PlayAnimationIn()
+bool UMilestoneUtil::IsDisableDecisionInRaceParkMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "PlayAnimationIn");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableDecisionInRaceParkMilestoneVersion");
+
+	Params::MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, nullptr);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraChallengeMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// float                                   InTime                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetButtonControlDelayTime(float InTime)
+bool UMilestoneUtil::IsDisableEtceteraChallengeMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonControlDelayTime");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraChallengeMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetButtonControlDelayTime Parms{};
-
-	Parms.InTime = InTime;
+	Params::MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraHintMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const TArray<class FText>&              BtnTextArray                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetButtonText(const TArray<class FText>& BtnTextArray)
+bool UMilestoneUtil::IsDisableEtceteraHintMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonText");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraHintMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetButtonText Parms{};
-
-	Parms.BtnTextArray = std::move(BtnTextArray);
+	Params::MilestoneUtil_IsDisableEtceteraHintMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraOthersMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const bool                              InDisplay                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetDisplayFooterButton(const bool InDisplay)
+bool UMilestoneUtil::IsDisableEtceteraOthersMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDisplayFooterButton");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraOthersMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetDisplayFooterButton Parms{};
-
-	Parms.InDisplay = InDisplay;
+	Params::MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraStoreMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int32                                   CurrentCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AfterCount                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetDonpaTicketCount(int32 CurrentCount, int32 AfterCount)
+bool UMilestoneUtil::IsDisableEtceteraStoreMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDonpaTicketCount");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraStoreMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetDonpaTicketCount Parms{};
-
-	Parms.CurrentCount = CurrentCount;
-	Parms.AfterCount = AfterCount;
+	Params::MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraTitleMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// bool                                    InEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetEnableInput(bool InEnable)
+bool UMilestoneUtil::IsDisableEtceteraTitleMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetEnableInput");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableEtceteraTitleMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetEnableInput Parms{};
-
-	Parms.InEnable = InEnable;
+	Params::MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableFestaMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int32                                   BtnIconIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   BtnIconType                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FText&                      BtnText                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetFooterMenuBtn(int32 BtnIconIndex, int32 BtnIconType, const class FText& BtnText)
+bool UMilestoneUtil::IsDisableFestaMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetFooterMenuBtn");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableFestaMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetFooterMenuBtn Parms{};
-
-	Parms.BtnIconIndex = BtnIconIndex;
-	Parms.BtnIconType = BtnIconType;
-	Parms.BtnText = std::move(BtnText);
+	Params::MilestoneUtil_IsDisableFestaMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableFriendlistMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class FText&                      InText                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetImageButtonSelectText(const class FText& InText)
+bool UMilestoneUtil::IsDisableFriendlistMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageButtonSelectText");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableFriendlistMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetImageButtonSelectText Parms{};
-
-	Parms.InText = std::move(InText);
+	Params::MilestoneUtil_IsDisableFriendlistMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse2MilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class UTexture2D*                 Texture2D                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetImageTexture(const class UTexture2D* Texture2D)
+bool UMilestoneUtil::IsDisableGrandPrixCourse2MilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageTexture");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixCourse2MilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetImageTexture Parms{};
-
-	Parms.Texture2D = Texture2D;
+	Params::MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse3MilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const int32                             InButtonIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetInitialFocusButtonIndex(const int32 InButtonIndex)
+bool UMilestoneUtil::IsDisableGrandPrixCourse3MilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetInitialFocusButtonIndex");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixCourse3MilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetInitialFocusButtonIndex Parms{};
-
-	Parms.InButtonIndex = InButtonIndex;
+	Params::MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourseMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetPopupInfoDisplayIndex(int32 Index_0)
+bool UMilestoneUtil::IsDisableGrandPrixCourseMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoDisplayIndex");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixCourseMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetPopupInfoDisplayIndex Parms{};
-
-	Parms.Index_0 = Index_0;
+	Params::MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Btn01IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Btn02IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetPopupInfoMainMenuButtonIconIndex(int32 Btn01IconIndex, int32 Btn02IconIndex)
+bool UMilestoneUtil::IsDisableGrandPrixMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoMainMenuButtonIconIndex");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableGrandPrixMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex Parms{};
-
-	Parms.Btn01IconIndex = Btn01IconIndex;
-	Parms.Btn02IconIndex = Btn02IconIndex;
+	Params::MilestoneUtil_IsDisableGrandPrixMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableHornAuraTabMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetTextMessege(const class FText& Text)
+bool UMilestoneUtil::IsDisableHornAuraTabMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextMessege");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableHornAuraTabMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetTextMessege Parms{};
-
-	Parms.Text = std::move(Text);
+	Params::MilestoneUtil_IsDisableHornAuraTabMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.MilestoneUtil.IsDisableRaceParkMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    Attension                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetTextTitle(const class FText& Text, bool Attension)
+bool UMilestoneUtil::IsDisableRaceParkMilestoneVersion()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextTitle");
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableRaceParkMilestoneVersion");
 
-	Params::MenuPopupWindowInterface_SetTextTitle Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.Attension = Attension;
+	Params::MilestoneUtil_IsDisableRaceParkMilestoneVersion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsDisableRaceParkRivalOnOffMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsDisableRaceParkRivalOnOffMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableRaceParkRivalOnOffMilestoneVersion");
+
+	Params::MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsDisableSelectTimeTrialMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsDisableSelectTimeTrialMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableSelectTimeTrialMilestoneVersion");
+
+	Params::MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsDisableTimeTrialMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsDisableTimeTrialMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTimeTrialMilestoneVersion");
+
+	Params::MilestoneUtil_IsDisableTimeTrialMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsDisableTopMenuFestaRuleMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsDisableTopMenuFestaRuleMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTopMenuFestaRuleMilestoneVersion");
+
+	Params::MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsDisableTopMenuNewsMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsDisableTopMenuNewsMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTopMenuNewsMilestoneVersion");
+
+	Params::MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsDisableTrialMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsDisableTrialMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsDisableTrialMilestoneVersion");
+
+	Params::MilestoneUtil_IsDisableTrialMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableAdvertiseRatingMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableAdvertiseRatingMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableAdvertiseRatingMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableEtceteraFullGameStoreMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableEtceteraFullGameStoreMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableEtceteraFullGameStoreMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableResetSaveDataMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableResetSaveDataMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableResetSaveDataMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableResetSaveDataMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableSpecificTitleDebugCommandMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableSpecificTitleDebugCommandMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableSpecificTitleDebugCommandMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableThumbnailCollaboRaceMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableThumbnailCollaboRaceMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableThumbnailCollaboRaceMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableTitleDemoMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableTitleDemoMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTitleDemoMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableTitleDemoMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableTitleStoreMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableTitleStoreMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTitleStoreMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableTitleStoreMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStoreMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableTopMenuStoreMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTopMenuStoreMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStorePopupAutoMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsEnableTopMenuStorePopupAutoMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsEnableTopMenuStorePopupAutoMilestoneVersion");
+
+	Params::MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsExclusionGhostUpDownloadEventMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsExclusionGhostUpDownloadEventMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsExclusionGhostUpDownloadEventMilestoneVersion");
+
+	Params::MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsForceEnableTopMenuNewsMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsForceEnableTopMenuNewsMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsForceEnableTopMenuNewsMilestoneVersion");
+
+	Params::MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsHiddenCharacter
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsHiddenCharacter(EDriverId DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenCharacter");
+
+	Params::MilestoneUtil_IsHiddenCharacter Parms{};
+
+	Parms.DriverId = DriverId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsHiddenMachineParts
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EMachineId                              MachineId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsHiddenMachineParts(EMachineId MachineId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenMachineParts");
+
+	Params::MilestoneUtil_IsHiddenMachineParts Parms{};
+
+	Parms.MachineId = MachineId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsHiddenRomVerMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsHiddenRomVerMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenRomVerMilestoneVersion");
+
+	Params::MilestoneUtil_IsHiddenRomVerMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsHiddenWebManualQRcodeMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsHiddenWebManualQRcodeMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsHiddenWebManualQRcodeMilestoneVersion");
+
+	Params::MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsInitialMachineParts
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EMachineId                              MachineId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   FrontPrice                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RearPrice                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   TirePrice                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsInitialMachineParts(EMachineId MachineId, int32 FrontPrice, int32 RearPrice, int32 TirePrice)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsInitialMachineParts");
+
+	Params::MilestoneUtil_IsInitialMachineParts Parms{};
+
+	Parms.MachineId = MachineId;
+	Parms.FrontPrice = FrontPrice;
+	Parms.RearPrice = RearPrice;
+	Parms.TirePrice = TirePrice;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsLimitDonpaTicketMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsLimitDonpaTicketMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsLimitDonpaTicketMilestoneVersion");
+
+	Params::MilestoneUtil_IsLimitDonpaTicketMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsLimitRewardInRaceParkMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsLimitRewardInRaceParkMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsLimitRewardInRaceParkMilestoneVersion");
+
+	Params::MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsOfflineMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsOfflineMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsOfflineMilestoneVersion");
+
+	Params::MilestoneUtil_IsOfflineMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsRaceUnLockedMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EGameModeId                       InGameModeId                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EStageId                          InStageId                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsRaceUnLockedMilestoneVersion(const EGameModeId InGameModeId, const EStageId InStageId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsRaceUnLockedMilestoneVersion");
+
+	Params::MilestoneUtil_IsRaceUnLockedMilestoneVersion Parms{};
+
+	Parms.InGameModeId = InGameModeId;
+	Parms.InStageId = InStageId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsSkipDodonpaEventMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsSkipDodonpaEventMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsSkipDodonpaEventMilestoneVersion");
+
+	Params::MilestoneUtil_IsSkipDodonpaEventMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsSkipSelectPlayNumMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsSkipSelectPlayNumMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsSkipSelectPlayNumMilestoneVersion");
+
+	Params::MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsTopMenuAccessLoginSuccessOnly
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsTopMenuAccessLoginSuccessOnly()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsTopMenuAccessLoginSuccessOnly");
+
+	Params::MilestoneUtil_IsTopMenuAccessLoginSuccessOnly Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MilestoneUtil.IsVisibleCompanyNameMilestoneVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMilestoneUtil::IsVisibleCompanyNameMilestoneVersion()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MilestoneUtil", "IsVisibleCompanyNameMilestoneVersion");
+
+	Params::MilestoneUtil_IsVisibleCompanyNameMilestoneVersion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -41625,6 +42569,34 @@ bool UPlaylogHelper::CRM_PutCustomMachinePartsSpot(const struct FCRM_CustomMachi
 }
 
 
+// Function UnionSystem.PlaylogHelper.CRM_PutDebugOnlineP2PConnect
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FCRM_DebugOnlineP2PConnect&Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPlaylogHelper::CRM_PutDebugOnlineP2PConnect(const struct FCRM_DebugOnlineP2PConnect& Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("PlaylogHelper", "CRM_PutDebugOnlineP2PConnect");
+
+	Params::PlaylogHelper_CRM_PutDebugOnlineP2PConnect Parms{};
+
+	Parms.Data = std::move(Data);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.PlaylogHelper.CRM_PutDlc
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -42059,6 +43031,34 @@ bool UPlaylogHelper::CRM_PutMatchingResult(const struct FCRM_MatchingResult& Dat
 		Func = StaticClass()->GetFunction("PlaylogHelper", "CRM_PutMatchingResult");
 
 	Params::PlaylogHelper_CRM_PutMatchingResult Parms{};
+
+	Parms.Data = std::move(Data);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.PlaylogHelper.CRM_PutOnlineMatch
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FCRM_OnlineMatch&          Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPlaylogHelper::CRM_PutOnlineMatch(const struct FCRM_OnlineMatch& Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("PlaylogHelper", "CRM_PutOnlineMatch");
+
+	Params::PlaylogHelper_CRM_PutOnlineMatch Parms{};
 
 	Parms.Data = std::move(Data);
 
@@ -48889,6 +49889,31 @@ EStageId UStageIdUtilityLibrary::StringToStageId(const class FString& String)
 }
 
 
+// Function UnionSystem.SwitchPlatformUtility.IsSwitch2
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USwitchPlatformUtility::IsSwitch2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("SwitchPlatformUtility", "IsSwitch2");
+
+	Params::SwitchPlatformUtility_IsSwitch2 Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.SwitchPlatformUtility.SetCPUBoostModeEnabled
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -48904,6 +49929,81 @@ void USwitchPlatformUtility::SetCPUBoostModeEnabled(bool bEnable)
 	Params::SwitchPlatformUtility_SetCPUBoostModeEnabled Parms{};
 
 	Parms.bEnable = bEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.SwitchPlatformUtility.ShowControllerStrapGuide
+// (Final, Native, Static, Public, BlueprintCallable)
+
+void USwitchPlatformUtility::ShowControllerStrapGuide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("SwitchPlatformUtility", "ShowControllerStrapGuide");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.TimeTrialVariousLibrary.AdjustTimeTrialByVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const EStageId                          InStageId                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const ESpeedClassId                     InSpeedClassId                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTimeTrialVariousLibrary::AdjustTimeTrialByVersion(const EStageId InStageId, const ESpeedClassId InSpeedClassId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("TimeTrialVariousLibrary", "AdjustTimeTrialByVersion");
+
+	Params::TimeTrialVariousLibrary_AdjustTimeTrialByVersion Parms{};
+
+	Parms.InStageId = InStageId;
+	Parms.InSpeedClassId = InSpeedClassId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.TimeTrialVariousLibrary.AdjustUploadFlagByVersion
+// (Final, Native, Static, Public)
+// Parameters:
+// const EStageId                          InStageId                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const ESpeedClassId                     InSpeedClassId                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             InCheckVersion                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTimeTrialVariousLibrary::AdjustUploadFlagByVersion(const EStageId InStageId, const ESpeedClassId InSpeedClassId, const int32 InCheckVersion)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("TimeTrialVariousLibrary", "AdjustUploadFlagByVersion");
+
+	Params::TimeTrialVariousLibrary_AdjustUploadFlagByVersion Parms{};
+
+	Parms.InStageId = InStageId;
+	Parms.InSpeedClassId = InSpeedClassId;
+	Parms.InCheckVersion = InCheckVersion;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -49750,6 +50850,82 @@ class UUserWidget* UUISubsystem::GetRewardDisplayWidget()
 		Func = Class->GetFunction("UISubsystem", "GetRewardDisplayWidget");
 
 	Params::UISubsystem_GetRewardDisplayWidget Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.UnionStaticMeshComponent.ChangeMaterial
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   MaterialID                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bChange                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMaterialInterface*               InMaterial                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionStaticMeshComponent::ChangeMaterial(int32 MaterialID, bool bChange, class UMaterialInterface* InMaterial)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionStaticMeshComponent", "ChangeMaterial");
+
+	Params::UnionStaticMeshComponent_ChangeMaterial Parms{};
+
+	Parms.MaterialID = MaterialID;
+	Parms.bChange = bChange;
+	Parms.InMaterial = InMaterial;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.UnionStaticMeshComponent.ResetMaterialAll
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionStaticMeshComponent::ResetMaterialAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionStaticMeshComponent", "ResetMaterialAll");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.UnionStaticMeshComponent.IsNotChangedMaterial
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   MaterialID                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionStaticMeshComponent::IsNotChangedMaterial(int32 MaterialID) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionStaticMeshComponent", "IsNotChangedMaterial");
+
+	Params::UnionStaticMeshComponent_IsNotChangedMaterial Parms{};
+
+	Parms.MaterialID = MaterialID;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -51122,9 +52298,10 @@ EErrorLevel UUnionErrorUtils::GetErrorLevel()
 // EOnlineErrorId                          ErrorID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   AppendId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   NetworkDelayLevel                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPopupWindowType                        WindowType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 
-class FText UUnionErrorUtils::GetOnlineErrorBodyText(EOnlineErrorId ErrorID, int32 AppendId, int32 NetworkDelayLevel)
+class FText UUnionErrorUtils::GetOnlineErrorBodyText(EOnlineErrorId ErrorID, int32 AppendId, int32 NetworkDelayLevel, EPopupWindowType WindowType)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51136,6 +52313,7 @@ class FText UUnionErrorUtils::GetOnlineErrorBodyText(EOnlineErrorId ErrorID, int
 	Parms.ErrorID = ErrorID;
 	Parms.AppendId = AppendId;
 	Parms.NetworkDelayLevel = NetworkDelayLevel;
+	Parms.WindowType = WindowType;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -56368,6 +57546,31 @@ void UUnionSettings::SetEnableBlur(bool Enable)
 }
 
 
+// Function UnionSystem.UnionSettings.SetEnableGFur
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    Enable                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionSettings::SetEnableGFur(bool Enable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionSettings", "SetEnableGFur");
+
+	Params::UnionSettings_SetEnableGFur Parms{};
+
+	Parms.Enable = Enable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionSystem.UnionSettings.SetMinLoDBias
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -57023,6 +58226,34 @@ int32 UUnionStatsManager::GetMachineStatsEventValue(const EStatsEventId StatsEve
 
 	Parms.StatsEventId = StatsEventId;
 	Parms.MachineId = MachineId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.UnionStatsManager.GetMachineUsedType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const EDriverType                       machineType                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionStatsManager::GetMachineUsedType(const EDriverType machineType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionStatsManager", "GetMachineUsedType");
+
+	Params::UnionStatsManager_GetMachineUsedType Parms{};
+
+	Parms.machineType = machineType;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -58400,6 +59631,31 @@ bool UUnionSystemBP::RemoveLevel(class ULevelStreamingDynamic* StreamingLevel)
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.UnionSystemBP.RemoveLevelByNameContain
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionSystemBP::RemoveLevelByNameContain(const class FString& Name_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionSystemBP", "RemoveLevelByNameContain");
+
+	Params::UnionSystemBP_RemoveLevelByNameContain Parms{};
+
+	Parms.Name_0 = std::move(Name_0);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 

@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_PauseMenu.WBP_PauseMenu_C.SequenceEvent__ENTRYPOINTWBP_PauseMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PauseMenu_C::SequenceEvent__ENTRYPOINTWBP_PauseMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PauseMenu_C", "SequenceEvent__ENTRYPOINTWBP_PauseMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PauseMenu.WBP_PauseMenu_C.OnSpecialButtonPressedOptionPanel
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -641,6 +655,20 @@ struct FEventReply UWBP_PauseMenu_C::OnFocusReceived(const struct FGeometry& MyG
 }
 
 
+// Function WBP_PauseMenu.WBP_PauseMenu_C.SequenceEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PauseMenu_C::SequenceEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PauseMenu_C", "SequenceEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PauseMenu.WBP_PauseMenu_C.HideAll
 // (BlueprintCallable, BlueprintEvent)
 
@@ -794,7 +822,7 @@ void UWBP_PauseMenu_C::BindGadgetInfo()
 
 
 // Function WBP_PauseMenu.WBP_PauseMenu_C.ExecuteUbergraph_WBP_PauseMenu
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

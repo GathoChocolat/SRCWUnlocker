@@ -10,26 +10,24 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "UMG_structs.hpp"
-#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_PlayerProfile.BPC_PlayerProfile_C
-// 0x0008 (0x0468 - 0x0460)
+// 0x0008 (0x0438 - 0x0430)
 class UBPC_PlayerProfile_C final : public UPlayerProfileState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void CameraSettings(class AMenuCameraManager* Player_Detail_Camera_Manager);
 	void ExecuteUbergraph_BPC_PlayerProfile(int32 EntryPoint);
 	void OnDetailAnimEndEvent();
 	void OnInitState();
@@ -37,7 +35,6 @@ public:
 	void OnPressedCancel();
 	void OnPressedNextPlayer(bool bIsLeftInput);
 	void OnPressedNice();
-	void OnSetChangedNextProfileEvent(bool bIsSuccess);
 	void SetNextMenuSequenceSubState(EMenuSequenceSubState InState);
 
 public:
@@ -51,8 +48,8 @@ public:
 	}
 };
 static_assert(alignof(UBPC_PlayerProfile_C) == 0x000008, "Wrong alignment on UBPC_PlayerProfile_C");
-static_assert(sizeof(UBPC_PlayerProfile_C) == 0x000468, "Wrong size on UBPC_PlayerProfile_C");
-static_assert(offsetof(UBPC_PlayerProfile_C, UberGraphFrame) == 0x000460, "Member 'UBPC_PlayerProfile_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UBPC_PlayerProfile_C) == 0x000438, "Wrong size on UBPC_PlayerProfile_C");
+static_assert(offsetof(UBPC_PlayerProfile_C, UberGraphFrame) == 0x000430, "Member 'UBPC_PlayerProfile_C::UberGraphFrame' has a wrong offset!");
 
 }
 

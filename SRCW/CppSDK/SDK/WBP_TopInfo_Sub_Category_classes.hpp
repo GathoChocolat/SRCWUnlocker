@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -47,9 +47,9 @@ public:
 	void SetupDLCInfo(const class FText& Title, const class FText& Schedule, class UTexture2D* Texture, bool IsButtonEnable);
 	void SetupFestaInfo(const class FText& Title, const class FText& Schedule, class UTexture2D* Texture);
 	void SetupFreecontentInfo(const class FText& Title, const class FText& Schedule, class UTexture2D* Texture);
+	void SetupLegendInfo(const struct FLegendCompeInfoDispData& DispData);
 	void SetupWorldMatchInfo();
-	void UpdateButtonAnim(bool IsWorldMatch, bool IsSelect);
-	void UpdateButtonFocus(ETopInfoWidgetPageCategory PageCategory, bool ButtonFocus);
+	void UpdateButtonAnim(ETopInfoWidgetPageCategory Category, bool IsSelect);
 	void UpdatePageDisplay(ETopInfoWidgetPageCategory PageCategory, bool ButtonFocus, bool IsNew);
 
 public:

@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CMN_Sub_MatchingState_ModeIcon.WBP_CMN_Sub_MatchingState_ModeIcon_C
-// 0x0080 (0x0460 - 0x03E0)
+// 0x0098 (0x0478 - 0x03E0)
 class UWBP_CMN_Sub_MatchingState_ModeIcon_C final : public UOnlineHeaderGameModeIconBase
 {
 public:
@@ -29,15 +29,18 @@ public:
 	class UWidgetAnimation*                       ModeIcon_In;                                       // 0x03F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Effect_Event;                                      // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Effect_Friend;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Effect_World;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_Event;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_Friend;                                       // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_World;                                        // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Event;                                         // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Friend;                                        // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_World;                                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WS_ModeIcon;                                       // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   FriendMatchText;                                   // 0x0450(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UImage*                                 Effect_Legend;                                     // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Effect_World;                                      // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Event;                                        // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Event_1;                                      // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Friend;                                       // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_World;                                        // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Event;                                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Friend;                                        // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_LEGEND;                                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_World;                                         // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WS_ModeIcon;                                       // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   FriendMatchText;                                   // 0x0468(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void Construct();
@@ -57,22 +60,25 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CMN_Sub_MatchingState_ModeIcon_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_MatchingState_ModeIcon_C");
-static_assert(sizeof(UWBP_CMN_Sub_MatchingState_ModeIcon_C) == 0x000460, "Wrong size on UWBP_CMN_Sub_MatchingState_ModeIcon_C");
+static_assert(sizeof(UWBP_CMN_Sub_MatchingState_ModeIcon_C) == 0x000478, "Wrong size on UWBP_CMN_Sub_MatchingState_ModeIcon_C");
 static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, UberGraphFrame) == 0x0003E0, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, ModeIcon_Out) == 0x0003E8, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::ModeIcon_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, ModeIcon_Loop) == 0x0003F0, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::ModeIcon_Loop' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, ModeIcon_In) == 0x0003F8, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::ModeIcon_In' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_Event) == 0x000400, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_Event' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_Friend) == 0x000408, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_World) == 0x000410, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_World' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Event) == 0x000418, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Event' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Friend) == 0x000420, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_World) == 0x000428, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_World' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_Event) == 0x000430, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_Event' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_Friend) == 0x000438, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_World) == 0x000440, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_World' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, WS_ModeIcon) == 0x000448, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::WS_ModeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, FriendMatchText) == 0x000450, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::FriendMatchText' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_Legend) == 0x000410, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_Legend' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Effect_World) == 0x000418, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Effect_World' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Event) == 0x000420, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Event' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Event_1) == 0x000428, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Event_1' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_Friend) == 0x000430, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_Friend' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, Icon_World) == 0x000438, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::Icon_World' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_Event) == 0x000440, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_Event' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_Friend) == 0x000448, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_Friend' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_LEGEND) == 0x000450, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_LEGEND' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, TXT_World) == 0x000458, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::TXT_World' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, WS_ModeIcon) == 0x000460, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::WS_ModeIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_ModeIcon_C, FriendMatchText) == 0x000468, "Member 'UWBP_CMN_Sub_MatchingState_ModeIcon_C::FriendMatchText' has a wrong offset!");
 
 }
 

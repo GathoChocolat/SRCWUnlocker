@@ -10,48 +10,50 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "UnionLib_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
-#include "UnionLib_structs.hpp"
-#include "UnionUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C
-// 0x0090 (0x0228 - 0x0198)
+// 0x0080 (0x02B0 - 0x0230)
 class UBPC_GadgetCustomize2SelectState_C final : public UGadgetCustomize2SelectState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0198(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ABP_GadgetCustomize2Sequence_C*         Sequence;                                          // 0x01A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	EGadgetCustomizeSelectMode                    SelectMode;                                        // 0x01A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGadgetSelectWindow*                    SelectWindow;                                      // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UDummyWidget*                           DummyWidget;                                       // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_DonpaTicketApp_C*                  RewardDialog;                                      // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<EGadgetId>                             LastGadgetIds;                                     // 0x01C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<EGadgetCustomize2SequenceSubState>     SubStates;                                         // 0x01D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UCommonCountNumberWidget*               TicketBox;                                         // 0x01E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class UClass*>                         CustomizeWindowClasses;                            // 0x01F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UMenuInputRecieveObject*                InputReceiver;                                     // 0x0200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Popup_Window_Hint_C*               TipsWindow;                                        // 0x0208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EHintId                                       TipsIdGadgetPlateRankUp;                           // 0x0210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bCanExecuteShortcut;                               // 0x0211(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_212[0x2];                                      // 0x0212(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         GadgetCustomDecide_ControlPlayer;                  // 0x0214(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetCategory                               GadgetCustomDecide_GadgetCategory;                 // 0x0218(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     GadgetCustomDecide_GadgetId;                       // 0x0219(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetState                                  GadgetCustomDecide_GadgetState;                    // 0x021A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DebugUseSpecialRule;                               // 0x021B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGroupRaceRule                                DebugSpecialRule;                                  // 0x021C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InPlayerIndex;                                     // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class ABP_GadgetCustomize2Sequence_C*         Sequence;                                          // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	EGadgetCustomizeSelectMode                    SelectMode;                                        // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGadgetSelectWindow*                    SelectWindow;                                      // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UDummyWidget*                           DummyWidget;                                       // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_DonpaTicketApp_C*                  RewardDialog;                                      // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<EGadgetId>                             LastGadgetIds;                                     // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UCommonCountNumberWidget*               TicketBox;                                         // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class UClass*>                         CustomizeWindowClasses;                            // 0x0278(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UMenuInputRecieveObject*                InputReceiver;                                     // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Popup_Window_Hint_C*               TipsWindow;                                        // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EHintId                                       TipsIdGadgetPlateRankUp;                           // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCanExecuteShortcut;                               // 0x0299(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29A[0x2];                                      // 0x029A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         GadgetCustomDecide_ControlPlayer;                  // 0x029C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetCategory                               GadgetCustomDecide_GadgetCategory;                 // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     GadgetCustomDecide_GadgetId;                       // 0x02A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetState                                  GadgetCustomDecide_GadgetState;                    // 0x02A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DebugUseSpecialRule;                               // 0x02A3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGroupRaceRule                                DebugSpecialRule;                                  // 0x02A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InPlayerIndex;                                     // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void PlaySoundGadgetAttachCancel();
+	void PlaySoundGadgetAttach();
+	void SetSequenceDirty(const bool InDirty);
 	void UpdateGadgetDetailWindowFromGadgetPlateLastFocus(const int32 InPlayerIndex_0);
 	void UnbindGadgetPlateDelegate(const int32 InPlayerIndex_0);
 	void BindGadgetPlateDelegate(const int32 InPlayerIndex_0);
@@ -109,13 +111,13 @@ public:
 	void PlateWindow_OnRightShoulder(int32 PlayerIndex);
 	void Finished_SequenceEnd_FadeIn(EUnionUIFadeDirection FadeDirection);
 	void GadgetTabSelect(int32 InPlayerIndex_0, int32 InPresetNum);
-	void GadgetCustomWindow_OnSctollStart(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState);
-	void GadgetCustomWindow_OnGadgetCategoryCancel(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState);
-	void GadgetCustomWindow_OnGadgetCategoryDecide(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState);
 	void OnInitState();
 	void OnExitState();
 	void ShowTipsWindow();
 	void Finished_SequenceBegin_FadeOut(EUnionUIFadeDirection FadeDirection);
+	void GadgetCustomWindow_OnSctollStart(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState);
+	void GadgetCustomWindow_OnGadgetCategoryCancel(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState);
+	void GadgetCustomWindow_OnGadgetCategoryDecide(int32 SelectedPlayerControllerIndex, EGadgetCategory SelectedGadgetCategory, EGadgetId SelectedGadgetId, EGadgetState SelectedGadgetState);
 	void ExecuteUbergraph_BPC_GadgetCustomize2SelectState(int32 EntryPoint);
 
 public:
@@ -129,28 +131,27 @@ public:
 	}
 };
 static_assert(alignof(UBPC_GadgetCustomize2SelectState_C) == 0x000008, "Wrong alignment on UBPC_GadgetCustomize2SelectState_C");
-static_assert(sizeof(UBPC_GadgetCustomize2SelectState_C) == 0x000228, "Wrong size on UBPC_GadgetCustomize2SelectState_C");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, UberGraphFrame) == 0x000198, "Member 'UBPC_GadgetCustomize2SelectState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, Sequence) == 0x0001A0, "Member 'UBPC_GadgetCustomize2SelectState_C::Sequence' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, SelectMode) == 0x0001A8, "Member 'UBPC_GadgetCustomize2SelectState_C::SelectMode' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, SelectWindow) == 0x0001B0, "Member 'UBPC_GadgetCustomize2SelectState_C::SelectWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, DummyWidget) == 0x0001B8, "Member 'UBPC_GadgetCustomize2SelectState_C::DummyWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, RewardDialog) == 0x0001C0, "Member 'UBPC_GadgetCustomize2SelectState_C::RewardDialog' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, LastGadgetIds) == 0x0001C8, "Member 'UBPC_GadgetCustomize2SelectState_C::LastGadgetIds' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, SubStates) == 0x0001D8, "Member 'UBPC_GadgetCustomize2SelectState_C::SubStates' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, TicketBox) == 0x0001E8, "Member 'UBPC_GadgetCustomize2SelectState_C::TicketBox' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, CustomizeWindowClasses) == 0x0001F0, "Member 'UBPC_GadgetCustomize2SelectState_C::CustomizeWindowClasses' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, InputReceiver) == 0x000200, "Member 'UBPC_GadgetCustomize2SelectState_C::InputReceiver' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, TipsWindow) == 0x000208, "Member 'UBPC_GadgetCustomize2SelectState_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, TipsIdGadgetPlateRankUp) == 0x000210, "Member 'UBPC_GadgetCustomize2SelectState_C::TipsIdGadgetPlateRankUp' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, bCanExecuteShortcut) == 0x000211, "Member 'UBPC_GadgetCustomize2SelectState_C::bCanExecuteShortcut' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_ControlPlayer) == 0x000214, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_ControlPlayer' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_GadgetCategory) == 0x000218, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_GadgetCategory' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_GadgetId) == 0x000219, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_GadgetId' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_GadgetState) == 0x00021A, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_GadgetState' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, DebugUseSpecialRule) == 0x00021B, "Member 'UBPC_GadgetCustomize2SelectState_C::DebugUseSpecialRule' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, DebugSpecialRule) == 0x00021C, "Member 'UBPC_GadgetCustomize2SelectState_C::DebugSpecialRule' has a wrong offset!");
-static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, InPlayerIndex) == 0x000220, "Member 'UBPC_GadgetCustomize2SelectState_C::InPlayerIndex' has a wrong offset!");
+static_assert(sizeof(UBPC_GadgetCustomize2SelectState_C) == 0x0002B0, "Wrong size on UBPC_GadgetCustomize2SelectState_C");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, UberGraphFrame) == 0x000230, "Member 'UBPC_GadgetCustomize2SelectState_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, Sequence) == 0x000238, "Member 'UBPC_GadgetCustomize2SelectState_C::Sequence' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, SelectMode) == 0x000240, "Member 'UBPC_GadgetCustomize2SelectState_C::SelectMode' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, SelectWindow) == 0x000248, "Member 'UBPC_GadgetCustomize2SelectState_C::SelectWindow' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, DummyWidget) == 0x000250, "Member 'UBPC_GadgetCustomize2SelectState_C::DummyWidget' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, RewardDialog) == 0x000258, "Member 'UBPC_GadgetCustomize2SelectState_C::RewardDialog' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, LastGadgetIds) == 0x000260, "Member 'UBPC_GadgetCustomize2SelectState_C::LastGadgetIds' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, TicketBox) == 0x000270, "Member 'UBPC_GadgetCustomize2SelectState_C::TicketBox' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, CustomizeWindowClasses) == 0x000278, "Member 'UBPC_GadgetCustomize2SelectState_C::CustomizeWindowClasses' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, InputReceiver) == 0x000288, "Member 'UBPC_GadgetCustomize2SelectState_C::InputReceiver' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, TipsWindow) == 0x000290, "Member 'UBPC_GadgetCustomize2SelectState_C::TipsWindow' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, TipsIdGadgetPlateRankUp) == 0x000298, "Member 'UBPC_GadgetCustomize2SelectState_C::TipsIdGadgetPlateRankUp' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, bCanExecuteShortcut) == 0x000299, "Member 'UBPC_GadgetCustomize2SelectState_C::bCanExecuteShortcut' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_ControlPlayer) == 0x00029C, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_ControlPlayer' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_GadgetCategory) == 0x0002A0, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_GadgetCategory' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_GadgetId) == 0x0002A1, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_GadgetId' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, GadgetCustomDecide_GadgetState) == 0x0002A2, "Member 'UBPC_GadgetCustomize2SelectState_C::GadgetCustomDecide_GadgetState' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, DebugUseSpecialRule) == 0x0002A3, "Member 'UBPC_GadgetCustomize2SelectState_C::DebugUseSpecialRule' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, DebugSpecialRule) == 0x0002A4, "Member 'UBPC_GadgetCustomize2SelectState_C::DebugSpecialRule' has a wrong offset!");
+static_assert(offsetof(UBPC_GadgetCustomize2SelectState_C, InPlayerIndex) == 0x0002A8, "Member 'UBPC_GadgetCustomize2SelectState_C::InPlayerIndex' has a wrong offset!");
 
 }
 

@@ -71,6 +71,26 @@ void UWBP_CMN_Sub_MatchingState_CharaIcon_C::OnLoaded_059828894949E7A9162E1F8DAA
 }
 
 
+// Function WBP_CMN_Sub_MatchingState_CharaIcon.WBP_CMN_Sub_MatchingState_CharaIcon_C.OnNGCharaIconEvent
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsNGCharaIcon                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CMN_Sub_MatchingState_CharaIcon_C::OnNGCharaIconEvent(bool bIsNGCharaIcon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CMN_Sub_MatchingState_CharaIcon_C", "OnNGCharaIconEvent");
+
+	Params::WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent Parms{};
+
+	Parms.bIsNGCharaIcon = bIsNGCharaIcon;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_CMN_Sub_MatchingState_CharaIcon.WBP_CMN_Sub_MatchingState_CharaIcon_C.OnSetUpCharaIconEvent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

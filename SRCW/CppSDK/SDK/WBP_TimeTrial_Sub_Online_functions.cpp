@@ -83,6 +83,20 @@ void UWBP_TimeTrial_Sub_Online_C::ExecuteUbergraph_WBP_TimeTrial_Sub_Online(int3
 }
 
 
+// Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.OnFirstFocus
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TimeTrial_Sub_Online_C::OnFirstFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TimeTrial_Sub_Online_C", "OnFirstFocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.SetIsFocusable
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

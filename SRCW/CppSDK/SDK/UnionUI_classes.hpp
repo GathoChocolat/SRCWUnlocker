@@ -14,11 +14,11 @@
 #include "UnionSystem_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "UMG_structs.hpp"
-#include "UMG_classes.hpp"
 #include "UnionUI_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "UMG_structs.hpp"
+#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "ImageWriteQueue_structs.hpp"
 #include "Slate_structs.hpp"
@@ -85,6 +85,44 @@ public:
 static_assert(alignof(UBPFL_UnionUI) == 0x000008, "Wrong alignment on UBPFL_UnionUI");
 static_assert(sizeof(UBPFL_UnionUI) == 0x000028, "Wrong size on UBPFL_UnionUI");
 
+// Class UnionUI.WidgetManBaseWidget
+// 0x0080 (0x0360 - 0x02E0)
+class UWidgetManBaseWidget final : public UUserWidget
+{
+public:
+	class UCanvasPanel*                           RootPanel;                                         // 0x02E0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DebugString;                                       // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              DebugInfoPosition;                                 // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowDebugInfo;                                     // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<class UWidgetManDebugString*>            DebugStringObjectSet;                              // 0x0310(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+
+public:
+	void AddChild(class UUserWidget* ChildWidget, class UCanvasPanelSlot* ChildSlot, int32 ZOrder);
+	void AppendDebugString(const class FString& String__const);
+	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
+	void ClearDebugString();
+	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
+	void RemoveChild(class UUserWidget* Widget, bool* IsSucceeded);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"WidgetManBaseWidget">();
+	}
+	static class UWidgetManBaseWidget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWidgetManBaseWidget>();
+	}
+};
+static_assert(alignof(UWidgetManBaseWidget) == 0x000008, "Wrong alignment on UWidgetManBaseWidget");
+static_assert(sizeof(UWidgetManBaseWidget) == 0x000360, "Wrong size on UWidgetManBaseWidget");
+static_assert(offsetof(UWidgetManBaseWidget, RootPanel) == 0x0002E0, "Member 'UWidgetManBaseWidget::RootPanel' has a wrong offset!");
+static_assert(offsetof(UWidgetManBaseWidget, DebugString) == 0x0002E8, "Member 'UWidgetManBaseWidget::DebugString' has a wrong offset!");
+static_assert(offsetof(UWidgetManBaseWidget, DebugInfoPosition) == 0x0002F8, "Member 'UWidgetManBaseWidget::DebugInfoPosition' has a wrong offset!");
+static_assert(offsetof(UWidgetManBaseWidget, ShowDebugInfo) == 0x000308, "Member 'UWidgetManBaseWidget::ShowDebugInfo' has a wrong offset!");
+static_assert(offsetof(UWidgetManBaseWidget, DebugStringObjectSet) == 0x000310, "Member 'UWidgetManBaseWidget::DebugStringObjectSet' has a wrong offset!");
+
 // Class UnionUI.FontFunctionObject
 // 0x00A0 (0x00C8 - 0x0028)
 class UFontFunctionObject final : public UObject
@@ -110,48 +148,6 @@ static_assert(alignof(UFontFunctionObject) == 0x000008, "Wrong alignment on UFon
 static_assert(sizeof(UFontFunctionObject) == 0x0000C8, "Wrong size on UFontFunctionObject");
 static_assert(offsetof(UFontFunctionObject, DinToMoriMap) == 0x000028, "Member 'UFontFunctionObject::DinToMoriMap' has a wrong offset!");
 static_assert(offsetof(UFontFunctionObject, MoriToDinMap) == 0x000078, "Member 'UFontFunctionObject::MoriToDinMap' has a wrong offset!");
-
-// Class UnionUI.WidgetManContainer
-// 0x0040 (0x0068 - 0x0028)
-class UWidgetManContainer final : public UObject
-{
-public:
-	class UObject*                                Logic;                                             // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    WidgetArray;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<class UCanvasPanelSlot*>               CanvasPanelSlotArray;                              // 0x0040(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<class UObject*>                        LogicArray;                                        // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          IsSubWidget;                                       // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ContainerZOrder;                                   // 0x0064(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void AddWidget(class UUserWidget* Widget, class UCanvasPanelSlot* Slot, class UObject* LogicObjectRef, bool* bSucceeded);
-	void FindWidget(class UUserWidget* Widget, bool* IsFound, int32* Index_0);
-	void GetWidgetAt(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, class UObject** LogicObject);
-	void GetWidgetCount(int32* WidgetCount);
-	void Initialize(class UUserWidget* Widget, const int32 ZOrder, class UCanvasPanelSlot* Slot, class UObject* LogicObjectRef, bool bSubWidget);
-	void IsSubWidgetContainer(bool* bSubWidget);
-	void OffsetZOrder(int32 Offset);
-	void SetZOrder(int32 InZOrder);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WidgetManContainer">();
-	}
-	static class UWidgetManContainer* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWidgetManContainer>();
-	}
-};
-static_assert(alignof(UWidgetManContainer) == 0x000008, "Wrong alignment on UWidgetManContainer");
-static_assert(sizeof(UWidgetManContainer) == 0x000068, "Wrong size on UWidgetManContainer");
-static_assert(offsetof(UWidgetManContainer, Logic) == 0x000028, "Member 'UWidgetManContainer::Logic' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, WidgetArray) == 0x000030, "Member 'UWidgetManContainer::WidgetArray' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, CanvasPanelSlotArray) == 0x000040, "Member 'UWidgetManContainer::CanvasPanelSlotArray' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, LogicArray) == 0x000050, "Member 'UWidgetManContainer::LogicArray' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, IsSubWidget) == 0x000060, "Member 'UWidgetManContainer::IsSubWidget' has a wrong offset!");
-static_assert(offsetof(UWidgetManContainer, ContainerZOrder) == 0x000064, "Member 'UWidgetManContainer::ContainerZOrder' has a wrong offset!");
 
 // Class UnionUI.MenuCameraManager
 // 0x01F0 (0x0480 - 0x0290)
@@ -1500,6 +1496,47 @@ static_assert(offsetof(UUnionUIGridNavigationBuilder, ButtonDataList) == 0x00002
 static_assert(offsetof(UUnionUIGridNavigationBuilder, EventHandler) == 0x000038, "Member 'UUnionUIGridNavigationBuilder::EventHandler' has a wrong offset!");
 static_assert(offsetof(UUnionUIGridNavigationBuilder, SideNavigation) == 0x000048, "Member 'UUnionUIGridNavigationBuilder::SideNavigation' has a wrong offset!");
 
+// Class UnionUI.WidgetMenuFunctionLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UWidgetMenuFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"WidgetMenuFunctionLibrary">();
+	}
+	static class UWidgetMenuFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWidgetMenuFunctionLibrary>();
+	}
+};
+static_assert(alignof(UWidgetMenuFunctionLibrary) == 0x000008, "Wrong alignment on UWidgetMenuFunctionLibrary");
+static_assert(sizeof(UWidgetMenuFunctionLibrary) == 0x000028, "Wrong size on UWidgetMenuFunctionLibrary");
+
+// Class UnionUI.UnionUIListView
+// 0x0010 (0x0C80 - 0x0C70)
+class UUnionUIListView final : public UListView
+{
+public:
+	uint8                                         Pad_C70[0x10];                                     // 0x0C70(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetHorizontalEntrySpacing(float InLeftEntrySpacing, float InRightEntrySpacing);
+	void SetVerticalEntrySpacing(float InTopEntrySpacing, float InBottomEntrySpacing);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"UnionUIListView">();
+	}
+	static class UUnionUIListView* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionUIListView>();
+	}
+};
+static_assert(alignof(UUnionUIListView) == 0x000010, "Wrong alignment on UUnionUIListView");
+static_assert(sizeof(UUnionUIListView) == 0x000C80, "Wrong size on UUnionUIListView");
+
 // Class UnionUI.UnionUILoadingDisplay
 // 0x0020 (0x0300 - 0x02E0)
 class UUnionUILoadingDisplay : public UUserWidget
@@ -1533,75 +1570,36 @@ static_assert(sizeof(UUnionUILoadingDisplay) == 0x000300, "Wrong size on UUnionU
 static_assert(offsetof(UUnionUILoadingDisplay, OnLoadingEndAnimFinished) == 0x0002E0, "Member 'UUnionUILoadingDisplay::OnLoadingEndAnimFinished' has a wrong offset!");
 static_assert(offsetof(UUnionUILoadingDisplay, OnLoadingDisplayHideFinished) == 0x0002F0, "Member 'UUnionUILoadingDisplay::OnLoadingDisplayHideFinished' has a wrong offset!");
 
-// Class UnionUI.WidgetManComponent
-// 0x00D0 (0x0170 - 0x00A0)
-class UWidgetManComponent final : public UActorComponent
+// Class UnionUI.UnionUISceneCaptureManager
+// 0x0020 (0x0050 - 0x0030)
+class UUnionUISceneCaptureManager final : public UWorldSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnLostPriority; // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnRegainPriority; // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPushed; // 0x00C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPoped; // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMap<EWidgetManZLayer, int32>                 ZLayerToZOrder;                                    // 0x00E0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          CreateDebugInfo;                                   // 0x0130(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowDebugInfo;                                     // 0x0131(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_132[0x6];                                      // 0x0132(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              DebugInfoPosition;                                 // 0x0138(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BaseWidgetZOrder;                                  // 0x0148(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UWidgetManContainer*>            WidgetStack;                                       // 0x0158(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class UWidgetManBaseWidget*                   BaseWidget;                                        // 0x0168(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class AActor*>                         CaptureTargetActors;                               // 0x0030(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class AUnionUICapture2DActor*>         UICapture2DActors;                                 // 0x0040(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
-	void AddWidgetToTopAsGroup(class UUserWidget* Widget, class UObject* Logic, bool* IsSucceeded);
-	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
-	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
-	void EventBeginBaseWidget();
-	void EventBeginDebug();
-	void EventBeginStack();
-	void EventDrawDebug();
-	void EventEndBaseWidget();
-	void EventEndDebug();
-	void EventEndStack();
-	void FindWidget(class UUserWidget* Widget, bool* IsFound, int32* IndexFromTop, int32* IndexInGroup);
-	void GetTopWidget(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, bool* IsSubWidget, class UObject** Logic);
-	void GetTopWidgetCount(int32* WidgetCount);
-	void NotifyLostPriority();
-	void NotifyPoped(class UUserWidget* Widget, class UObject* Logic);
-	void NotifyPushed(class UUserWidget* Widget, class UObject* Logic);
-	void NotifyRegainPriority();
-	void PopAllWidgets();
-	void PopWidget(bool* IsSucceeded);
-	void PushSubWidget(class UUserWidget* SubWidget, class UObject* Logic);
-	int32 PushWidget(class UUserWidget* Widget, class UObject* Logic, EWidgetManZLayer ZLayer);
-	void SwapTopWidget(class UUserWidget* Widget, bool* IsSucceeded);
-	void SwapTopWidgetByIndex(int32 IndexFromTop, bool* IsSucceeded);
+	TArray<class AUnionUICapture2DActor*> GetCaptureCameraActor();
+	class AUnionUICapture2DActor* GetCaptureCameraActorByPlayerControllerIndex(const int32& PlayerControllerIndex);
+	TArray<class AActor*> GetCaptureTargetActor();
+	void RegisterCaptureCameraActor(const int32& PlayerControllerIndex, class AUnionUICapture2DActor* CaptureActor);
+	void RegisterCaptureTargetActor(const int32& PlayerControllerIndex, class AActor* CaptureActor);
+	void UnRegisterCaptureCameraActor(const int32& PlayerControllerIndex);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetManComponent">();
+		return StaticClassImpl<"UnionUISceneCaptureManager">();
 	}
-	static class UWidgetManComponent* GetDefaultObj()
+	static class UUnionUISceneCaptureManager* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UWidgetManComponent>();
+		return GetDefaultObjImpl<UUnionUISceneCaptureManager>();
 	}
 };
-static_assert(alignof(UWidgetManComponent) == 0x000008, "Wrong alignment on UWidgetManComponent");
-static_assert(sizeof(UWidgetManComponent) == 0x000170, "Wrong size on UWidgetManComponent");
-static_assert(offsetof(UWidgetManComponent, OnLostPriority) == 0x0000A0, "Member 'UWidgetManComponent::OnLostPriority' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, OnRegainPriority) == 0x0000B0, "Member 'UWidgetManComponent::OnRegainPriority' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, OnPushed) == 0x0000C0, "Member 'UWidgetManComponent::OnPushed' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, OnPoped) == 0x0000D0, "Member 'UWidgetManComponent::OnPoped' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, ZLayerToZOrder) == 0x0000E0, "Member 'UWidgetManComponent::ZLayerToZOrder' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, CreateDebugInfo) == 0x000130, "Member 'UWidgetManComponent::CreateDebugInfo' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, ShowDebugInfo) == 0x000131, "Member 'UWidgetManComponent::ShowDebugInfo' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, DebugInfoPosition) == 0x000138, "Member 'UWidgetManComponent::DebugInfoPosition' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, BaseWidgetZOrder) == 0x000148, "Member 'UWidgetManComponent::BaseWidgetZOrder' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, DebugStringObject) == 0x000150, "Member 'UWidgetManComponent::DebugStringObject' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, WidgetStack) == 0x000158, "Member 'UWidgetManComponent::WidgetStack' has a wrong offset!");
-static_assert(offsetof(UWidgetManComponent, BaseWidget) == 0x000168, "Member 'UWidgetManComponent::BaseWidget' has a wrong offset!");
+static_assert(alignof(UUnionUISceneCaptureManager) == 0x000008, "Wrong alignment on UUnionUISceneCaptureManager");
+static_assert(sizeof(UUnionUISceneCaptureManager) == 0x000050, "Wrong size on UUnionUISceneCaptureManager");
+static_assert(offsetof(UUnionUISceneCaptureManager, CaptureTargetActors) == 0x000030, "Member 'UUnionUISceneCaptureManager::CaptureTargetActors' has a wrong offset!");
+static_assert(offsetof(UUnionUISceneCaptureManager, UICapture2DActors) == 0x000040, "Member 'UUnionUISceneCaptureManager::UICapture2DActors' has a wrong offset!");
 
 // Class UnionUI.UnionUILoopScrollBox
 // 0x0060 (0x0D50 - 0x0CF0)
@@ -1698,31 +1696,6 @@ static_assert(offsetof(UUnionUIMovieTransition, OnMovieTransitionPlayStart) == 0
 static_assert(offsetof(UUnionUIMovieTransition, OnMovieTransitionPlayEnd) == 0x0002F0, "Member 'UUnionUIMovieTransition::OnMovieTransitionPlayEnd' has a wrong offset!");
 static_assert(offsetof(UUnionUIMovieTransition, OnMovieTransitionSceneChange) == 0x000300, "Member 'UUnionUIMovieTransition::OnMovieTransitionSceneChange' has a wrong offset!");
 
-// Class UnionUI.UnionUITextBlock
-// 0x0000 (0x0370 - 0x0370)
-class UUnionUITextBlock final : public UTextBlock
-{
-public:
-	int32                                         BaseEnFontSize;                                    // 0x0368(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_36C[0x4];                                      // 0x036C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void UpdateFontSize();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UnionUITextBlock">();
-	}
-	static class UUnionUITextBlock* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUnionUITextBlock>();
-	}
-};
-static_assert(alignof(UUnionUITextBlock) == 0x000010, "Wrong alignment on UUnionUITextBlock");
-static_assert(sizeof(UUnionUITextBlock) == 0x000370, "Wrong size on UUnionUITextBlock");
-static_assert(offsetof(UUnionUITextBlock, BaseEnFontSize) == 0x000368, "Member 'UUnionUITextBlock::BaseEnFontSize' has a wrong offset!");
-
 // Class UnionUI.UnionUISceneBase
 // 0x00C8 (0x03D8 - 0x0310)
 class UUnionUISceneBase : public UUnionUIWidgetBase
@@ -1815,6 +1788,41 @@ static_assert(alignof(UUnionUIPopupWindowBase) == 0x000008, "Wrong alignment on 
 static_assert(sizeof(UUnionUIPopupWindowBase) == 0x0003F0, "Wrong size on UUnionUIPopupWindowBase");
 static_assert(offsetof(UUnionUIPopupWindowBase, OnRemoveFromParent) == 0x0003D8, "Member 'UUnionUIPopupWindowBase::OnRemoveFromParent' has a wrong offset!");
 static_assert(offsetof(UUnionUIPopupWindowBase, bAutoFocusPrevWidget) == 0x0003E8, "Member 'UUnionUIPopupWindowBase::bAutoFocusPrevWidget' has a wrong offset!");
+
+// Class UnionUI.UnionUIWheelMenu
+// 0x0168 (0x0540 - 0x03D8)
+class UUnionUIWheelMenu final : public UUnionUISceneBase
+{
+public:
+	uint8                                         Pad_3D8[0x8];                                      // 0x03D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> OnUISceneWheelSelectEvent; // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMap<EWheelDirection, class UUnionUIButtonBase*> SelectDirectStamp;                              // 0x03F0(0x0050)(Edit, BlueprintVisible, ExportObject, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class UMenuInputRecieveObject*                MenuInputReceiveObject;                            // 0x0440(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_448[0xF8];                                     // 0x0448(0x00F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnUISceneWheelSelectEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex);
+	void SetUpWheelParam(bool bInIsLeftTurn, float InLStickIgone, bool bInIsTopHalf, float InBitweenDeathZone);
+	void UISceneWheelMenuKeyBind(class APlayerController* InPlayerController);
+	void UISceneWheelMenuKeyUnBind(class APlayerController* InPlayerController);
+	void WheelMenuSelect_Impl(const struct FVector& InStickVector);
+	void WheelMenuSelectInput_Impl(class UObject* Object, const struct FVector2D& InStickVector);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"UnionUIWheelMenu">();
+	}
+	static class UUnionUIWheelMenu* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionUIWheelMenu>();
+	}
+};
+static_assert(alignof(UUnionUIWheelMenu) == 0x000008, "Wrong alignment on UUnionUIWheelMenu");
+static_assert(sizeof(UUnionUIWheelMenu) == 0x000540, "Wrong size on UUnionUIWheelMenu");
+static_assert(offsetof(UUnionUIWheelMenu, OnUISceneWheelSelectEvent) == 0x0003E0, "Member 'UUnionUIWheelMenu::OnUISceneWheelSelectEvent' has a wrong offset!");
+static_assert(offsetof(UUnionUIWheelMenu, SelectDirectStamp) == 0x0003F0, "Member 'UUnionUIWheelMenu::SelectDirectStamp' has a wrong offset!");
+static_assert(offsetof(UUnionUIWheelMenu, MenuInputReceiveObject) == 0x000440, "Member 'UUnionUIWheelMenu::MenuInputReceiveObject' has a wrong offset!");
 
 // Class UnionUI.UnionUIPopupWindowManager
 // 0x0050 (0x0080 - 0x0030)
@@ -1936,23 +1944,6 @@ static_assert(offsetof(UUnionRichTextBlock, ScrollFadeInDelay) == 0x0009B0, "Mem
 static_assert(offsetof(UUnionRichTextBlock, ScrollFadeOutDelay) == 0x0009B4, "Member 'UUnionRichTextBlock::ScrollFadeOutDelay' has a wrong offset!");
 static_assert(offsetof(UUnionRichTextBlock, PlayerIndex) == 0x0009B8, "Member 'UUnionRichTextBlock::PlayerIndex' has a wrong offset!");
 
-// Class UnionUI.WidgetMenuFunctionLibrary
-// 0x0000 (0x0028 - 0x0028)
-class UWidgetMenuFunctionLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WidgetMenuFunctionLibrary">();
-	}
-	static class UWidgetMenuFunctionLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWidgetMenuFunctionLibrary>();
-	}
-};
-static_assert(alignof(UWidgetMenuFunctionLibrary) == 0x000008, "Wrong alignment on UWidgetMenuFunctionLibrary");
-static_assert(sizeof(UWidgetMenuFunctionLibrary) == 0x000028, "Wrong size on UWidgetMenuFunctionLibrary");
-
 // Class UnionUI.UnionUIRivalTransition
 // 0x0028 (0x0308 - 0x02E0)
 class UUnionUIRivalTransition final : public UUserWidget
@@ -1984,37 +1975,6 @@ static_assert(offsetof(UUnionUIRivalTransition, OnFinishedTransition) == 0x0002E
 static_assert(offsetof(UUnionUIRivalTransition, OnFinishedTransitionEffect) == 0x0002F0, "Member 'UUnionUIRivalTransition::OnFinishedTransitionEffect' has a wrong offset!");
 static_assert(offsetof(UUnionUIRivalTransition, WS_Fire_Level) == 0x000300, "Member 'UUnionUIRivalTransition::WS_Fire_Level' has a wrong offset!");
 
-// Class UnionUI.UnionUISceneCaptureManager
-// 0x0020 (0x0050 - 0x0030)
-class UUnionUISceneCaptureManager final : public UWorldSubsystem
-{
-public:
-	TArray<class AActor*>                         CaptureTargetActors;                               // 0x0030(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class AUnionUICapture2DActor*>         UICapture2DActors;                                 // 0x0040(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-
-public:
-	TArray<class AUnionUICapture2DActor*> GetCaptureCameraActor();
-	class AUnionUICapture2DActor* GetCaptureCameraActorByPlayerControllerIndex(const int32& PlayerControllerIndex);
-	TArray<class AActor*> GetCaptureTargetActor();
-	void RegisterCaptureCameraActor(const int32& PlayerControllerIndex, class AUnionUICapture2DActor* CaptureActor);
-	void RegisterCaptureTargetActor(const int32& PlayerControllerIndex, class AActor* CaptureActor);
-	void UnRegisterCaptureCameraActor(const int32& PlayerControllerIndex);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UnionUISceneCaptureManager">();
-	}
-	static class UUnionUISceneCaptureManager* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUnionUISceneCaptureManager>();
-	}
-};
-static_assert(alignof(UUnionUISceneCaptureManager) == 0x000008, "Wrong alignment on UUnionUISceneCaptureManager");
-static_assert(sizeof(UUnionUISceneCaptureManager) == 0x000050, "Wrong size on UUnionUISceneCaptureManager");
-static_assert(offsetof(UUnionUISceneCaptureManager, CaptureTargetActors) == 0x000030, "Member 'UUnionUISceneCaptureManager::CaptureTargetActors' has a wrong offset!");
-static_assert(offsetof(UUnionUISceneCaptureManager, UICapture2DActors) == 0x000040, "Member 'UUnionUISceneCaptureManager::UICapture2DActors' has a wrong offset!");
-
 // Class UnionUI.UnionUISequenceInterface
 // 0x0000 (0x0000 - 0x0000)
 class IUnionUISequenceInterface final
@@ -2045,6 +2005,31 @@ public:
 };
 static_assert(alignof(IUnionUISequenceInterface) == 0x000001, "Wrong alignment on IUnionUISequenceInterface");
 static_assert(sizeof(IUnionUISequenceInterface) == 0x000001, "Wrong size on IUnionUISequenceInterface");
+
+// Class UnionUI.UnionUITextBlock
+// 0x0000 (0x0370 - 0x0370)
+class UUnionUITextBlock final : public UTextBlock
+{
+public:
+	int32                                         BaseEnFontSize;                                    // 0x0368(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_36C[0x4];                                      // 0x036C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void UpdateFontSize();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"UnionUITextBlock">();
+	}
+	static class UUnionUITextBlock* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionUITextBlock>();
+	}
+};
+static_assert(alignof(UUnionUITextBlock) == 0x000010, "Wrong alignment on UUnionUITextBlock");
+static_assert(sizeof(UUnionUITextBlock) == 0x000370, "Wrong size on UUnionUITextBlock");
+static_assert(offsetof(UUnionUITextBlock, BaseEnFontSize) == 0x000368, "Member 'UUnionUITextBlock::BaseEnFontSize' has a wrong offset!");
 
 // Class UnionUI.UnionUITransitionManager
 // 0x0098 (0x00C8 - 0x0030)
@@ -2122,41 +2107,6 @@ static_assert(offsetof(UUnionUITransitionManager, MovieTransitionWidget) == 0x00
 static_assert(offsetof(UUnionUITransitionManager, LoadingDisplayWidget) == 0x0000A8, "Member 'UUnionUITransitionManager::LoadingDisplayWidget' has a wrong offset!");
 static_assert(offsetof(UUnionUITransitionManager, RivalTransitionWidget) == 0x0000B8, "Member 'UUnionUITransitionManager::RivalTransitionWidget' has a wrong offset!");
 
-// Class UnionUI.UnionUIWheelMenu
-// 0x0168 (0x0540 - 0x03D8)
-class UUnionUIWheelMenu final : public UUnionUISceneBase
-{
-public:
-	uint8                                         Pad_3D8[0x8];                                      // 0x03D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> OnUISceneWheelSelectEvent; // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMap<EWheelDirection, class UUnionUIButtonBase*> SelectDirectStamp;                              // 0x03F0(0x0050)(Edit, BlueprintVisible, ExportObject, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class UMenuInputRecieveObject*                MenuInputReceiveObject;                            // 0x0440(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_448[0xF8];                                     // 0x0448(0x00F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnUISceneWheelSelectEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex);
-	void SetUpWheelParam(bool bInIsLeftTurn, float InLStickIgone, bool bInIsTopHalf, float InBitweenDeathZone);
-	void UISceneWheelMenuKeyBind(class APlayerController* InPlayerController);
-	void UISceneWheelMenuKeyUnBind(class APlayerController* InPlayerController);
-	void WheelMenuSelect_Impl(const struct FVector& InStickVector);
-	void WheelMenuSelectInput_Impl(class UObject* Object, const struct FVector2D& InStickVector);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UnionUIWheelMenu">();
-	}
-	static class UUnionUIWheelMenu* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUnionUIWheelMenu>();
-	}
-};
-static_assert(alignof(UUnionUIWheelMenu) == 0x000008, "Wrong alignment on UUnionUIWheelMenu");
-static_assert(sizeof(UUnionUIWheelMenu) == 0x000540, "Wrong size on UUnionUIWheelMenu");
-static_assert(offsetof(UUnionUIWheelMenu, OnUISceneWheelSelectEvent) == 0x0003E0, "Member 'UUnionUIWheelMenu::OnUISceneWheelSelectEvent' has a wrong offset!");
-static_assert(offsetof(UUnionUIWheelMenu, SelectDirectStamp) == 0x0003F0, "Member 'UUnionUIWheelMenu::SelectDirectStamp' has a wrong offset!");
-static_assert(offsetof(UUnionUIWheelMenu, MenuInputReceiveObject) == 0x000440, "Member 'UUnionUIWheelMenu::MenuInputReceiveObject' has a wrong offset!");
-
 // Class UnionUI.WidgetFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
 class UWidgetFunctionLibrary final : public UBlueprintFunctionLibrary
@@ -2185,43 +2135,117 @@ public:
 static_assert(alignof(UWidgetFunctionLibrary) == 0x000008, "Wrong alignment on UWidgetFunctionLibrary");
 static_assert(sizeof(UWidgetFunctionLibrary) == 0x000028, "Wrong size on UWidgetFunctionLibrary");
 
-// Class UnionUI.WidgetManBaseWidget
-// 0x0080 (0x0360 - 0x02E0)
-class UWidgetManBaseWidget final : public UUserWidget
+// Class UnionUI.WidgetManComponent
+// 0x00D0 (0x0170 - 0x00A0)
+class UWidgetManComponent final : public UActorComponent
 {
 public:
-	class UCanvasPanel*                           RootPanel;                                         // 0x02E0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DebugString;                                       // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              DebugInfoPosition;                                 // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowDebugInfo;                                     // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<class UWidgetManDebugString*>            DebugStringObjectSet;                              // 0x0310(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnLostPriority; // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnRegainPriority; // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPushed; // 0x00C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* EventedWidget, class UObject* LogicObject)> OnPoped; // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMap<EWidgetManZLayer, int32>                 ZLayerToZOrder;                                    // 0x00E0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          CreateDebugInfo;                                   // 0x0130(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowDebugInfo;                                     // 0x0131(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_132[0x6];                                      // 0x0132(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              DebugInfoPosition;                                 // 0x0138(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BaseWidgetZOrder;                                  // 0x0148(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetManDebugString*                  DebugStringObject;                                 // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UWidgetManContainer*>            WidgetStack;                                       // 0x0158(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class UWidgetManBaseWidget*                   BaseWidget;                                        // 0x0168(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
-	void AddChild(class UUserWidget* ChildWidget, class UCanvasPanelSlot* ChildSlot, int32 ZOrder);
-	void AppendDebugString(const class FString& String__const);
-	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
-	void ClearDebugString();
-	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObject);
-	void RemoveChild(class UUserWidget* Widget, bool* IsSucceeded);
+	void AddWidgetToTopAsGroup(class UUserWidget* Widget, class UObject* Logic, bool* IsSucceeded);
+	void AttachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
+	void DetachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef);
+	void EventBeginBaseWidget();
+	void EventBeginDebug();
+	void EventBeginStack();
+	void EventDrawDebug();
+	void EventEndBaseWidget();
+	void EventEndDebug();
+	void EventEndStack();
+	void FindWidget(class UUserWidget* Widget, bool* IsFound, int32* IndexFromTop, int32* IndexInGroup);
+	void GetTopWidget(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, bool* IsSubWidget, class UObject** Logic);
+	void GetTopWidgetCount(int32* WidgetCount);
+	void NotifyLostPriority();
+	void NotifyPoped(class UUserWidget* Widget, class UObject* Logic);
+	void NotifyPushed(class UUserWidget* Widget, class UObject* Logic);
+	void NotifyRegainPriority();
+	void PopAllWidgets();
+	void PopWidget(bool* IsSucceeded);
+	void PushSubWidget(class UUserWidget* SubWidget, class UObject* Logic);
+	int32 PushWidget(class UUserWidget* Widget, class UObject* Logic, EWidgetManZLayer ZLayer);
+	void SwapTopWidget(class UUserWidget* Widget, bool* IsSucceeded);
+	void SwapTopWidgetByIndex(int32 IndexFromTop, bool* IsSucceeded);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetManBaseWidget">();
+		return StaticClassImpl<"WidgetManComponent">();
 	}
-	static class UWidgetManBaseWidget* GetDefaultObj()
+	static class UWidgetManComponent* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UWidgetManBaseWidget>();
+		return GetDefaultObjImpl<UWidgetManComponent>();
 	}
 };
-static_assert(alignof(UWidgetManBaseWidget) == 0x000008, "Wrong alignment on UWidgetManBaseWidget");
-static_assert(sizeof(UWidgetManBaseWidget) == 0x000360, "Wrong size on UWidgetManBaseWidget");
-static_assert(offsetof(UWidgetManBaseWidget, RootPanel) == 0x0002E0, "Member 'UWidgetManBaseWidget::RootPanel' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, DebugString) == 0x0002E8, "Member 'UWidgetManBaseWidget::DebugString' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, DebugInfoPosition) == 0x0002F8, "Member 'UWidgetManBaseWidget::DebugInfoPosition' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, ShowDebugInfo) == 0x000308, "Member 'UWidgetManBaseWidget::ShowDebugInfo' has a wrong offset!");
-static_assert(offsetof(UWidgetManBaseWidget, DebugStringObjectSet) == 0x000310, "Member 'UWidgetManBaseWidget::DebugStringObjectSet' has a wrong offset!");
+static_assert(alignof(UWidgetManComponent) == 0x000008, "Wrong alignment on UWidgetManComponent");
+static_assert(sizeof(UWidgetManComponent) == 0x000170, "Wrong size on UWidgetManComponent");
+static_assert(offsetof(UWidgetManComponent, OnLostPriority) == 0x0000A0, "Member 'UWidgetManComponent::OnLostPriority' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, OnRegainPriority) == 0x0000B0, "Member 'UWidgetManComponent::OnRegainPriority' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, OnPushed) == 0x0000C0, "Member 'UWidgetManComponent::OnPushed' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, OnPoped) == 0x0000D0, "Member 'UWidgetManComponent::OnPoped' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, ZLayerToZOrder) == 0x0000E0, "Member 'UWidgetManComponent::ZLayerToZOrder' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, CreateDebugInfo) == 0x000130, "Member 'UWidgetManComponent::CreateDebugInfo' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, ShowDebugInfo) == 0x000131, "Member 'UWidgetManComponent::ShowDebugInfo' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, DebugInfoPosition) == 0x000138, "Member 'UWidgetManComponent::DebugInfoPosition' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, BaseWidgetZOrder) == 0x000148, "Member 'UWidgetManComponent::BaseWidgetZOrder' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, DebugStringObject) == 0x000150, "Member 'UWidgetManComponent::DebugStringObject' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, WidgetStack) == 0x000158, "Member 'UWidgetManComponent::WidgetStack' has a wrong offset!");
+static_assert(offsetof(UWidgetManComponent, BaseWidget) == 0x000168, "Member 'UWidgetManComponent::BaseWidget' has a wrong offset!");
+
+// Class UnionUI.WidgetManContainer
+// 0x0040 (0x0068 - 0x0028)
+class UWidgetManContainer final : public UObject
+{
+public:
+	class UObject*                                Logic;                                             // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    WidgetArray;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<class UCanvasPanelSlot*>               CanvasPanelSlotArray;                              // 0x0040(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<class UObject*>                        LogicArray;                                        // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          IsSubWidget;                                       // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ContainerZOrder;                                   // 0x0064(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void AddWidget(class UUserWidget* Widget, class UCanvasPanelSlot* Slot, class UObject* LogicObjectRef, bool* bSucceeded);
+	void FindWidget(class UUserWidget* Widget, bool* IsFound, int32* Index_0);
+	void GetWidgetAt(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, class UObject** LogicObject);
+	void GetWidgetCount(int32* WidgetCount);
+	void Initialize(class UUserWidget* Widget, const int32 ZOrder, class UCanvasPanelSlot* Slot, class UObject* LogicObjectRef, bool bSubWidget);
+	void IsSubWidgetContainer(bool* bSubWidget);
+	void OffsetZOrder(int32 Offset);
+	void SetZOrder(int32 InZOrder);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"WidgetManContainer">();
+	}
+	static class UWidgetManContainer* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWidgetManContainer>();
+	}
+};
+static_assert(alignof(UWidgetManContainer) == 0x000008, "Wrong alignment on UWidgetManContainer");
+static_assert(sizeof(UWidgetManContainer) == 0x000068, "Wrong size on UWidgetManContainer");
+static_assert(offsetof(UWidgetManContainer, Logic) == 0x000028, "Member 'UWidgetManContainer::Logic' has a wrong offset!");
+static_assert(offsetof(UWidgetManContainer, WidgetArray) == 0x000030, "Member 'UWidgetManContainer::WidgetArray' has a wrong offset!");
+static_assert(offsetof(UWidgetManContainer, CanvasPanelSlotArray) == 0x000040, "Member 'UWidgetManContainer::CanvasPanelSlotArray' has a wrong offset!");
+static_assert(offsetof(UWidgetManContainer, LogicArray) == 0x000050, "Member 'UWidgetManContainer::LogicArray' has a wrong offset!");
+static_assert(offsetof(UWidgetManContainer, IsSubWidget) == 0x000060, "Member 'UWidgetManContainer::IsSubWidget' has a wrong offset!");
+static_assert(offsetof(UWidgetManContainer, ContainerZOrder) == 0x000064, "Member 'UWidgetManContainer::ContainerZOrder' has a wrong offset!");
 
 // Class UnionUI.WidgetManDebugString
 // 0x0058 (0x0080 - 0x0028)

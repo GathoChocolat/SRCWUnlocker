@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -29,9 +29,13 @@ public:
 	class UUnionUIButton*                         MouseInteraction;                                  // 0x0560(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void BP_OnEntryReleased();
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
 	void Construct();
 	void ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable(int32 EntryPoint);
 	class UButton* GetMouseButton();
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void PreConstruct(bool IsDesignTime);
 
 public:

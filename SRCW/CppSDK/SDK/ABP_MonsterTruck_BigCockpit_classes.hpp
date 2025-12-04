@@ -10,65 +10,65 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_classes.hpp"
 #include "ControlRig_structs.hpp"
-#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "ABP_MonsterTruck_BigCockpit_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ABP_MonsterTruck_BigCockpit.ABP_MonsterTruck_BigCockpit_C
-// 0x1040 (0x20C0 - 0x1080)
+// 0x1040 (0x20D0 - 0x1090)
 class UABP_MonsterTruck_BigCockpit_C final : public UMonsterTruckAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1080(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct ABP_MonsterTruck_BigCockpit::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;  // 0x1088(0x0010)(HasGetValueTypeHash)
-	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x1098(0x0008)()
-	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x10A0(0x0008)()
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x10A8(0x0020)()
-	struct FAnimNode_ControlRig                   AnimGraphNode_ControlRig_1;                        // 0x10C8(0x04D0)(ContainsInstancedReference)
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_11;                 // 0x1598(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_10;                 // 0x15C0(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9;                  // 0x15E8(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_8;                  // 0x1610(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_7;                  // 0x1638(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_6;                  // 0x1660(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_5;                  // 0x1688(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_4;                  // 0x16B0(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3;                  // 0x16D8(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_2;                  // 0x1700(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1;                  // 0x1728(0x0028)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult;                    // 0x1750(0x0028)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_3;                    // 0x1778(0x0048)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_6;                       // 0x17C0(0x0020)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x17E0(0x0048)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_5;                       // 0x1828(0x0020)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x1848(0x0048)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_4;                       // 0x1890(0x0020)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x18B0(0x0048)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_3;                       // 0x18F8(0x0020)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_1;                  // 0x1918(0x0070)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_2;                       // 0x1988(0x0020)()
-	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x19A8(0x0070)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_1;                       // 0x1A18(0x0020)()
-	struct FAnimNode_StateResult                  AnimGraphNode_StateResult;                         // 0x1A38(0x0020)()
-	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x1A58(0x00C8)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x1B20(0x0048)()
-	struct FAnimNode_ControlRig                   AnimGraphNode_ControlRig;                          // 0x1B68(0x04D0)(ContainsInstancedReference)
-	bool                                          __CustomProperty_IsEnableWheelUpdate_9AE3DE6C4C0F9B47507D61BF6C6A7286; // 0x2038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2039[0x7];                                     // 0x2039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRotator>                       __CustomProperty_WheelRot_9AE3DE6C4C0F9B47507D61BF6C6A7286; // 0x2040(0x0010)()
-	bool                                          __CustomProperty_IsEnableWheelUpdate_06FBC3784E0313F8922CC2BB491DA074; // 0x2050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2051[0x7];                                     // 0x2051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                __CustomProperty_WheelPosRR_06FBC3784E0313F8922CC2BB491DA074; // 0x2058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                __CustomProperty_WheelPosRL_06FBC3784E0313F8922CC2BB491DA074; // 0x2070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                __CustomProperty_WheelPosFR_06FBC3784E0313F8922CC2BB491DA074; // 0x2088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                __CustomProperty_WheelPosFL_06FBC3784E0313F8922CC2BB491DA074; // 0x20A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1090(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct ABP_MonsterTruck_BigCockpit::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;  // 0x1098(0x0010)(HasGetValueTypeHash)
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x10A8(0x0008)()
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x10B0(0x0008)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x10B8(0x0020)()
+	struct FAnimNode_ControlRig                   AnimGraphNode_ControlRig_1;                        // 0x10D8(0x04D0)(ContainsInstancedReference)
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_11;                 // 0x15A8(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_10;                 // 0x15D0(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9;                  // 0x15F8(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_8;                  // 0x1620(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_7;                  // 0x1648(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_6;                  // 0x1670(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_5;                  // 0x1698(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_4;                  // 0x16C0(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3;                  // 0x16E8(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_2;                  // 0x1710(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1;                  // 0x1738(0x0028)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult;                    // 0x1760(0x0028)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_3;                    // 0x1788(0x0048)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_6;                       // 0x17D0(0x0020)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x17F0(0x0048)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_5;                       // 0x1838(0x0020)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x1858(0x0048)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_4;                       // 0x18A0(0x0020)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x18C0(0x0048)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_3;                       // 0x1908(0x0020)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer_1;                  // 0x1928(0x0070)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_2;                       // 0x1998(0x0020)()
+	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x19B8(0x0070)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_1;                       // 0x1A28(0x0020)()
+	struct FAnimNode_StateResult                  AnimGraphNode_StateResult;                         // 0x1A48(0x0020)()
+	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x1A68(0x00C8)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x1B30(0x0048)()
+	struct FAnimNode_ControlRig                   AnimGraphNode_ControlRig;                          // 0x1B78(0x04D0)(ContainsInstancedReference)
+	bool                                          __CustomProperty_IsEnableWheelUpdate_9AE3DE6C4C0F9B47507D61BF6C6A7286; // 0x2048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2049[0x7];                                     // 0x2049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRotator>                       __CustomProperty_WheelRot_9AE3DE6C4C0F9B47507D61BF6C6A7286; // 0x2050(0x0010)()
+	bool                                          __CustomProperty_IsEnableWheelUpdate_06FBC3784E0313F8922CC2BB491DA074; // 0x2060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2061[0x7];                                     // 0x2061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                __CustomProperty_WheelPosRR_06FBC3784E0313F8922CC2BB491DA074; // 0x2068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                __CustomProperty_WheelPosRL_06FBC3784E0313F8922CC2BB491DA074; // 0x2080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                __CustomProperty_WheelPosFR_06FBC3784E0313F8922CC2BB491DA074; // 0x2098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                __CustomProperty_WheelPosFL_06FBC3784E0313F8922CC2BB491DA074; // 0x20B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
@@ -100,48 +100,48 @@ public:
 	}
 };
 static_assert(alignof(UABP_MonsterTruck_BigCockpit_C) == 0x000010, "Wrong alignment on UABP_MonsterTruck_BigCockpit_C");
-static_assert(sizeof(UABP_MonsterTruck_BigCockpit_C) == 0x0020C0, "Wrong size on UABP_MonsterTruck_BigCockpit_C");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, UberGraphFrame) == 0x001080, "Member 'UABP_MonsterTruck_BigCockpit_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __AnimBlueprintMutables) == 0x001088, "Member 'UABP_MonsterTruck_BigCockpit_C::__AnimBlueprintMutables' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimBlueprintExtension_PropertyAccess) == 0x001098, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimBlueprintExtension_Base) == 0x0010A0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_Root) == 0x0010A8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_ControlRig_1) == 0x0010C8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_ControlRig_1' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_11) == 0x001598, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_11' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_10) == 0x0015C0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_10' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_9) == 0x0015E8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_9' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_8) == 0x001610, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_8' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_7) == 0x001638, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_6) == 0x001660, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_5) == 0x001688, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_4) == 0x0016B0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_3) == 0x0016D8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_2) == 0x001700, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_1) == 0x001728, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult) == 0x001750, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer_3) == 0x001778, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_6) == 0x0017C0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_6' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer_2) == 0x0017E0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_5) == 0x001828, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer_1) == 0x001848, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_4) == 0x001890, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer) == 0x0018B0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_3) == 0x0018F8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_BlendSpacePlayer_1) == 0x001918, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_BlendSpacePlayer_1' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_2) == 0x001988, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_BlendSpacePlayer) == 0x0019A8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_1) == 0x001A18, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult) == 0x001A38, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateMachine) == 0x001A58, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_Slot) == 0x001B20, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_Slot' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_ControlRig) == 0x001B68, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_ControlRig' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_IsEnableWheelUpdate_9AE3DE6C4C0F9B47507D61BF6C6A7286) == 0x002038, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_IsEnableWheelUpdate_9AE3DE6C4C0F9B47507D61BF6C6A7286' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelRot_9AE3DE6C4C0F9B47507D61BF6C6A7286) == 0x002040, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelRot_9AE3DE6C4C0F9B47507D61BF6C6A7286' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_IsEnableWheelUpdate_06FBC3784E0313F8922CC2BB491DA074) == 0x002050, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_IsEnableWheelUpdate_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosRR_06FBC3784E0313F8922CC2BB491DA074) == 0x002058, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosRR_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosRL_06FBC3784E0313F8922CC2BB491DA074) == 0x002070, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosRL_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosFR_06FBC3784E0313F8922CC2BB491DA074) == 0x002088, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosFR_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
-static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosFL_06FBC3784E0313F8922CC2BB491DA074) == 0x0020A0, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosFL_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
+static_assert(sizeof(UABP_MonsterTruck_BigCockpit_C) == 0x0020D0, "Wrong size on UABP_MonsterTruck_BigCockpit_C");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, UberGraphFrame) == 0x001090, "Member 'UABP_MonsterTruck_BigCockpit_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __AnimBlueprintMutables) == 0x001098, "Member 'UABP_MonsterTruck_BigCockpit_C::__AnimBlueprintMutables' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimBlueprintExtension_PropertyAccess) == 0x0010A8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimBlueprintExtension_Base) == 0x0010B0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimBlueprintExtension_Base' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_Root) == 0x0010B8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_Root' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_ControlRig_1) == 0x0010D8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_ControlRig_1' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_11) == 0x0015A8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_11' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_10) == 0x0015D0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_10' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_9) == 0x0015F8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_9' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_8) == 0x001620, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_8' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_7) == 0x001648, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_6) == 0x001670, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_5) == 0x001698, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_4) == 0x0016C0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_3) == 0x0016E8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_2) == 0x001710, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult_1) == 0x001738, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_TransitionResult) == 0x001760, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_TransitionResult' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer_3) == 0x001788, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer_3' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_6) == 0x0017D0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_6' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer_2) == 0x0017F0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer_2' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_5) == 0x001838, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_5' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer_1) == 0x001858, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_4) == 0x0018A0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_4' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_SequencePlayer) == 0x0018C0, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_3) == 0x001908, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_3' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_BlendSpacePlayer_1) == 0x001928, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_BlendSpacePlayer_1' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_2) == 0x001998, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_2' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_BlendSpacePlayer) == 0x0019B8, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult_1) == 0x001A28, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult_1' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateResult) == 0x001A48, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateResult' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_StateMachine) == 0x001A68, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_StateMachine' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_Slot) == 0x001B30, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_Slot' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, AnimGraphNode_ControlRig) == 0x001B78, "Member 'UABP_MonsterTruck_BigCockpit_C::AnimGraphNode_ControlRig' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_IsEnableWheelUpdate_9AE3DE6C4C0F9B47507D61BF6C6A7286) == 0x002048, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_IsEnableWheelUpdate_9AE3DE6C4C0F9B47507D61BF6C6A7286' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelRot_9AE3DE6C4C0F9B47507D61BF6C6A7286) == 0x002050, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelRot_9AE3DE6C4C0F9B47507D61BF6C6A7286' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_IsEnableWheelUpdate_06FBC3784E0313F8922CC2BB491DA074) == 0x002060, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_IsEnableWheelUpdate_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosRR_06FBC3784E0313F8922CC2BB491DA074) == 0x002068, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosRR_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosRL_06FBC3784E0313F8922CC2BB491DA074) == 0x002080, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosRL_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosFR_06FBC3784E0313F8922CC2BB491DA074) == 0x002098, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosFR_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
+static_assert(offsetof(UABP_MonsterTruck_BigCockpit_C, __CustomProperty_WheelPosFL_06FBC3784E0313F8922CC2BB491DA074) == 0x0020B0, "Member 'UABP_MonsterTruck_BigCockpit_C::__CustomProperty_WheelPosFL_06FBC3784E0313F8922CC2BB491DA074' has a wrong offset!");
 
 }
 

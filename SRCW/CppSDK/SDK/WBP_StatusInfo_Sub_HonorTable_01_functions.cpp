@@ -17,6 +17,60 @@
 namespace SDK
 {
 
+// Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_StatusInfo_Sub_HonorTable_01_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_Sub_HonorTable_01_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StatusInfo_Sub_HonorTable_01_C::ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_Sub_HonorTable_01_C", "ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01");
+
+	Params::WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StatusInfo_Sub_HonorTable_01_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_Sub_HonorTable_01_C", "PreConstruct");
+
+	Params::WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.SetCheckIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,6 +86,26 @@ void UWBP_StatusInfo_Sub_HonorTable_01_C::SetCheckIcon(bool IsTaked)
 	Params::WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon Parms{};
 
 	Parms.IsTaked = IsTaked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.SetHonorTitle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InHonorId                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StatusInfo_Sub_HonorTable_01_C::SetHonorTitle(int32 InHonorId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_Sub_HonorTable_01_C", "SetHonorTitle");
+
+	Params::WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle Parms{};
+
+	Parms.InHonorId = InHonorId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

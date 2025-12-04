@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -67,22 +67,24 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0010)()
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_DebugNeedsDisplayLoadTimeWidget_ReturnValue; // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLapTimerResult                        CallFunc_Array_Get_Item;                           // 0x00D0(0x0018)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue;          // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue;          // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsShippingBuild_ReturnValue;              // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FE[0x2];                                       // 0x00FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsShippingBuild_ReturnValue;              // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_DebugOneMessage_C*                 CallFunc_Create_ReturnValue_1;                     // 0x0108(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0110(0x0010)()
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0130(0x0048)(HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0188(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0198(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01A8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0120(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0168(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0178(0x0010)()
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0198(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x01B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_DoubleToText_Value_ImplicitCast;     // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_DoubleToString_InDouble_ImplicitCast; // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -103,20 +105,21 @@ static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement,
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, K2Node_MakeArray_Array) == 0x0000A8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Format_ReturnValue) == 0x0000B8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, Temp_int_Array_Index_Variable) == 0x0000C8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, Temp_int_Loop_Counter_Variable) == 0x0000CC, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_DebugNeedsDisplayLoadTimeWidget_ReturnValue) == 0x0000CC, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_DebugNeedsDisplayLoadTimeWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Less_IntInt_ReturnValue) == 0x0000E8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Conv_DoubleToString_ReturnValue) == 0x0000F0, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Conv_DoubleToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Conv_DoubleToString_ReturnValue) == 0x0000E8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Conv_DoubleToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, Temp_int_Loop_Counter_Variable) == 0x0000F8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_IsShippingBuild_ReturnValue) == 0x0000FC, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Less_IntInt_ReturnValue) == 0x0000FD, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Add_IntInt_ReturnValue) == 0x000100, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_IsShippingBuild_ReturnValue) == 0x000104, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Create_ReturnValue_1) == 0x000108, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Create_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Conv_StringToText_ReturnValue) == 0x000110, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Concat_StrStr_ReturnValue) == 0x000120, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, K2Node_MakeStruct_FormatArgumentData_1) == 0x000130, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000178, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, K2Node_MakeArray_Array_1) == 0x000188, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000198, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Format_ReturnValue_1) == 0x0001A8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, K2Node_MakeStruct_FormatArgumentData_1) == 0x000120, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, K2Node_MakeArray_Array_1) == 0x000168, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Format_ReturnValue_1) == 0x000178, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Concat_StrStr_ReturnValue) == 0x000188, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000198, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0001A8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0001B8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Conv_DoubleToText_Value_ImplicitCast) == 0x0001C8, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Conv_DoubleToText_Value_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement, CallFunc_Conv_DoubleToString_InDouble_ImplicitCast) == 0x0001D0, "Member 'BPC_RaceSequenceStateCreateRace_C_EndLoadTimeMeasurement::CallFunc_Conv_DoubleToString_InDouble_ImplicitCast' has a wrong offset!");

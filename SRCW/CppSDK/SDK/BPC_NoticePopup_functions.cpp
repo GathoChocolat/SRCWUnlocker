@@ -17,6 +17,27 @@
 namespace SDK
 {
 
+// Function BPC_NoticePopup.BPC_NoticePopup_C.CheckFirstDisplayPage
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ETopInfoWidgetPageCategory*             newParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_NoticePopup_C::CheckFirstDisplayPage(ETopInfoWidgetPageCategory* newParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_NoticePopup_C", "CheckFirstDisplayPage");
+
+	Params::BPC_NoticePopup_C_CheckFirstDisplayPage Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (newParam != nullptr)
+		*newParam = Parms.newParam;
+}
+
+
 // Function BPC_NoticePopup.BPC_NoticePopup_C.DLCInfoClosed_CreateTopInfo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

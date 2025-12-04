@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -223,9 +223,10 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_TimeTrial_Sub_Ranking_C*           CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_TimeTrialSequence_C*                K2Node_DynamicCast_AsBP_Time_Trial_Sequence;       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -253,8 +254,7 @@ public:
 	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller_3;      // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EStageId                                      CallFunc_GetSelectedStageId_Selected_Stage_Id_Single; // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BB[0x1];                                       // 0x00BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BA[0x2];                                       // 0x00BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetCurrentIndex_ReturnValue;              // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMenuRankingLineData                   CallFunc_Array_Get_Item;                           // 0x00C0(0x0038)()
 	float                                         K2Node_Event_InDeltaTime;                          // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -279,8 +279,9 @@ public:
 	bool                                          CallFunc_GetRankingTimeTrialData_OutIsValid;       // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_185[0x3];                                      // 0x0185(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRankingDataTimeTrial                  CallFunc_GetRankingTimeTrialData_ReturnValue;      // 0x0188(0x00D0)()
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_259[0x3];                                      // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable_1;                              // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25A[0x2];                                      // 0x025A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool Success)>                 K2Node_CreateDelegate_OutputDelegate_6;            // 0x025C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x026C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_IsVisible;                      // 0x027C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -290,9 +291,9 @@ public:
 	class ABP_GhostDownloadActor_C*               CallFunc_FinishSpawningActor_ReturnValue;          // 0x02E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMenuInputRecieveObject*                CallFunc_SpawnObject_ReturnValue;                  // 0x02F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x02F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0301(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetInputEnable_input;                     // 0x0302(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetInputEnable_input;                     // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0301(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0302(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0303(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESpeedClassId                                 CallFunc_GetSelectedClassId_ReturnValue_1;         // 0x0304(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EStageId                                      CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1; // 0x0305(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -318,7 +319,9 @@ static_assert(sizeof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRankin
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, EntryPoint) == 0x000000, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, Temp_bool_Variable) == 0x000010, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_MakeLiteralByte_ReturnValue) == 0x000011, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000024, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetOwnerSequence_ReturnValue) == 0x000028, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_DynamicCast_AsBP_Time_Trial_Sequence) == 0x000030, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_DynamicCast_AsBP_Time_Trial_Sequence' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_DynamicCast_bSuccess' has a wrong offset!");
@@ -341,7 +344,6 @@ static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRank
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_DynamicCast_AsApp_Player_Controller_3) == 0x0000B0, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_DynamicCast_AsApp_Player_Controller_3' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_DynamicCast_bSuccess_4) == 0x0000B8, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single) == 0x0000B9, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, Temp_bool_Variable_1) == 0x0000BA, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetCurrentIndex_ReturnValue) == 0x0000BC, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetCurrentIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_Event_InDeltaTime) == 0x0000F8, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_Event_InDeltaTime' has a wrong offset!");
@@ -363,7 +365,8 @@ static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRank
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_SoundPlay_ReturnValue_1) == 0x000180, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetRankingTimeTrialData_OutIsValid) == 0x000184, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetRankingTimeTrialData_OutIsValid' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetRankingTimeTrialData_ReturnValue) == 0x000188, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetRankingTimeTrialData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_IsValid_ReturnValue_2) == 0x000258, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, Temp_bool_Variable_1) == 0x000258, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_IsValid_ReturnValue_2) == 0x000259, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_CreateDelegate_OutputDelegate_6) == 0x00025C, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_CreateDelegate_OutputDelegate_7) == 0x00026C, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, K2Node_CustomEvent_IsVisible) == 0x00027C, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::K2Node_CustomEvent_IsVisible' has a wrong offset!");
@@ -372,9 +375,9 @@ static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRank
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_FinishSpawningActor_ReturnValue) == 0x0002E8, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_SpawnObject_ReturnValue) == 0x0002F0, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetWorldSubsystem_ReturnValue) == 0x0002F8, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_IsValid_ReturnValue_3) == 0x000300, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_IsValid_ReturnValue_4) == 0x000301, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetInputEnable_input) == 0x000302, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetInputEnable_input' has a wrong offset!");
+static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetInputEnable_input) == 0x000300, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetInputEnable_input' has a wrong offset!");
+static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_IsValid_ReturnValue_3) == 0x000301, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_IsValid_ReturnValue_4) == 0x000302, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_IsValid_ReturnValue_5) == 0x000303, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetSelectedClassId_ReturnValue_1) == 0x000304, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetSelectedClassId_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking, CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1) == 0x000305, "Member 'BPC_TimeTrialRanking_C_ExecuteUbergraph_BPC_TimeTrialRanking::CallFunc_GetSelectedStageId_Selected_Stage_Id_Single_1' has a wrong offset!");

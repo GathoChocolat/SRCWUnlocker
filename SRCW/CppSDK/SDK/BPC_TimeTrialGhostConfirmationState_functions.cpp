@@ -51,20 +51,6 @@ void UBPC_TimeTrialGhostConfirmationState_C::Finished_EE235D9843DAC19A31BA1DB147
 }
 
 
-// Function BPC_TimeTrialGhostConfirmationState.BPC_TimeTrialGhostConfirmationState_C.SubCommandFinalize
-// (BlueprintCallable, BlueprintEvent)
-
-void UBPC_TimeTrialGhostConfirmationState_C::SubCommandFinalize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_TimeTrialGhostConfirmationState_C", "SubCommandFinalize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BPC_TimeTrialGhostConfirmationState.BPC_TimeTrialGhostConfirmationState_C.OnFaceButtonTopPressedEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -102,6 +88,20 @@ void UBPC_TimeTrialGhostConfirmationState_C::OnFaceButtonLeftPressedEvent(class 
 	Parms.Object = Object;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_TimeTrialGhostConfirmationState.BPC_TimeTrialGhostConfirmationState_C.SubCommandFinalize
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_TimeTrialGhostConfirmationState_C::SubCommandFinalize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_TimeTrialGhostConfirmationState_C", "SubCommandFinalize");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -449,20 +449,6 @@ void UBPC_TimeTrialGhostConfirmationState_C::BindEventOffline()
 }
 
 
-// Function BPC_TimeTrialGhostConfirmationState.BPC_TimeTrialGhostConfirmationState_C.SubCommandInitialize
-// (BlueprintCallable, BlueprintEvent)
-
-void UBPC_TimeTrialGhostConfirmationState_C::SubCommandInitialize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_TimeTrialGhostConfirmationState_C", "SubCommandInitialize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BPC_TimeTrialGhostConfirmationState.BPC_TimeTrialGhostConfirmationState_C.HashErrorWindow_OnDecide
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -504,6 +490,20 @@ void UBPC_TimeTrialGhostConfirmationState_C::OnGhostHashCheckCompleted(bool bIsG
 	Parms.bIsGhostHashOK = bIsGhostHashOK;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_TimeTrialGhostConfirmationState.BPC_TimeTrialGhostConfirmationState_C.SubCommandInitialize
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_TimeTrialGhostConfirmationState_C::SubCommandInitialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_TimeTrialGhostConfirmationState_C", "SubCommandInitialize");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

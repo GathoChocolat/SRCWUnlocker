@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionLib_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -39,7 +39,6 @@ public:
 	void SetupRacerConfig();
 	void ConvertDriverIdToIndex(EDriverId ID, int32* Index_0);
 	void ConvertIndexToDriverId(int32 Index_0, EDriverId* ID);
-	void CreateRewardGetDisplay();
 	void OnRewardDisplayEnd_Impl();
 	void SetRewardDisplayParam();
 	void ClearRewardDisplayRequest();
@@ -51,6 +50,7 @@ public:
 	void OnInitState();
 	void OnUpdateState(float InDeltaTime);
 	void OnExitState();
+	void CreateRewardGetDisplay();
 	void OnPopupOK(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void NgCreatePopupWindow();
 	void EventFinishedFade(EUnionUIFadeDirection FadeDirection);

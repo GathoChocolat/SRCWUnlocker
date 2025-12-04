@@ -282,5 +282,19 @@ void UWBP_HeaderMenu_Sub_Rule_TimeTable_C::SetVisibilityRankCalcWidget(ESlateVis
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_HeaderMenu_Sub_Rule_TimeTable.WBP_HeaderMenu_Sub_Rule_TimeTable_C.StartInAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeaderMenu_Sub_Rule_TimeTable_C::StartInAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeaderMenu_Sub_Rule_TimeTable_C", "StartInAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -44,14 +44,14 @@ public:
 	class UGroupSelect*                           GroupSelectParentWidget;                           // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionAccept_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionBottom_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionLeft_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionRight_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionTop_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionBottom_K2Node_ComponentBoundEvent_9_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionFocus_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionLeft_K2Node_ComponentBoundEvent_6_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionRight_K2Node_ComponentBoundEvent_7_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_GroupSelect_Sub_Table_Line_MouseInteractionTop_K2Node_ComponentBoundEvent_8_OnButtonPressedEvent__DelegateSignature();
 	void Construct();
 	void ExecuteUbergraph_WBP_GroupSelect_Sub_Table_Line(int32 EntryPoint);
-	void Finished_0FE9E3194AEC8C6BA5E44693B0A687DB();
+	void Finished_1C9AEFA24235D0D637AAC49A8AC81FDF();
 	void IsRacePark1P(bool* Result);
 	void MoveToDirectionBP(EUnionUIControlDir ToDirection, int32 Count_0);
 	void OnAcceptKeyPressed();

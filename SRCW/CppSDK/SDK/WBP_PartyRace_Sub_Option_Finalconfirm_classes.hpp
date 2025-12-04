@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 

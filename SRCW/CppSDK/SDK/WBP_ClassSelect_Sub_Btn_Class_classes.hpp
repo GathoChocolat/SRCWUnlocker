@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -67,7 +67,7 @@ public:
 	void SetCompleteCount(int32 Current, int32 Max);
 	void SetLock(bool bLock);
 	void SetMenuSpeedClass(EMenuSpeedClassId InMenuSpeedClass);
-	void SetTimeTrialMedalCount(int32 NormalMedalCount, int32 NormalMedalMax);
+	void SetTimeTrialMedalCount(int32 MedalCount, int32 MedalMax);
 
 public:
 	static class UClass* StaticClass()

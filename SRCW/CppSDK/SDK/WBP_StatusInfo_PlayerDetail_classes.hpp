@@ -11,16 +11,16 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C
-// 0x0100 (0x0400 - 0x0300)
+// 0x0108 (0x0408 - 0x0300)
 class UWBP_StatusInfo_PlayerDetail_C final : public UStatusInfoPlayerDetail
 {
 public:
@@ -34,21 +34,22 @@ public:
 	class UImage*                                 BG_Black;                                          // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Detail_Base;                                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_FooterMenu_Sub_CommonBtn_C*        DSP_GamerCard_WBP_FooterMenu_Sub_CommonBtn;        // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_Accept;                           // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_Back;                             // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_PlatformIcon;                                  // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RaceFlag_Left;                                     // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RaceFlag_Right;                                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Name;                                          // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_PlayerDetail_Sub_Info_Gadget_C* WBP_CMN_PlayerDetail_Sub_Info_Gadget;             // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_PlayerDetail_Sub_Info_Machine_C* WBP_CMN_PlayerDetail_Sub_Info_Machine;           // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn;                      // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate;                              // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ResultRate_Sub_RankIcon_C*         WBP_ResultRate_Sub_RankIcon;                       // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FGadgetPlateUIData                     GadgetPlateUIData;                                 // 0x03A8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void()>              OnErrorWindowOpen;                                 // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnErrorWindowClose;                                // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<struct FUserGadgetData>                SetGadgetData;                                     // 0x03F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_ResultLegend_Sub_NUM_C*            DSP_WBP_ResultLegend_Sub_NUM;                      // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction_Accept;                           // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction_Back;                             // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_PlatformIcon;                                  // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RaceFlag_Left;                                     // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RaceFlag_Right;                                    // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Name;                                          // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_PlayerDetail_Sub_Info_Gadget_C* WBP_CMN_PlayerDetail_Sub_Info_Gadget;             // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_PlayerDetail_Sub_Info_Machine_C* WBP_CMN_PlayerDetail_Sub_Info_Machine;           // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn;                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate;                              // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ResultRate_Sub_RankIcon_C*         WBP_ResultRate_Sub_RankIcon;                       // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FGadgetPlateUIData                     GadgetPlateUIData;                                 // 0x03B0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMulticastInlineDelegate<void()>              OnErrorWindowOpen;                                 // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnErrorWindowClose;                                // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<struct FUserGadgetData>                SetGadgetData;                                     // 0x03F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void Close();
@@ -63,6 +64,7 @@ public:
 	void OnShowPfProfileErrorWindowEnd();
 	void Open();
 	void SetupDetailData(int32 DriverId, const struct FRankingDataUserNoteCarParts& CarPartsNote, const struct FRankingDataUserNoteGadget& GadgetNote);
+	void SetupLegendCompeIcon(int32 RankRate);
 	void SetupMachineInfo(EDriverId DriverId, const struct FRankingDataUserNoteCarParts& RankingDataUserNoteCarParts, const struct FRankingDataUserNoteGadget& RankingDataUserNoteGadget);
 	void SetupPFButton(bool IsVisible_0);
 	void SetupPlayerData(const class FString& playerName, int32 HonorTitleId, ECrossplayPlatform CrossplayPlatform);
@@ -79,7 +81,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_StatusInfo_PlayerDetail_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_PlayerDetail_C");
-static_assert(sizeof(UWBP_StatusInfo_PlayerDetail_C) == 0x000400, "Wrong size on UWBP_StatusInfo_PlayerDetail_C");
+static_assert(sizeof(UWBP_StatusInfo_PlayerDetail_C) == 0x000408, "Wrong size on UWBP_StatusInfo_PlayerDetail_C");
 static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, UberGraphFrame) == 0x000300, "Member 'UWBP_StatusInfo_PlayerDetail_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, Out) == 0x000308, "Member 'UWBP_StatusInfo_PlayerDetail_C::Out' has a wrong offset!");
 static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, InLoop) == 0x000310, "Member 'UWBP_StatusInfo_PlayerDetail_C::InLoop' has a wrong offset!");
@@ -90,21 +92,22 @@ static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, BaseWindow) == 0x000330, 
 static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, BG_Black) == 0x000338, "Member 'UWBP_StatusInfo_PlayerDetail_C::BG_Black' has a wrong offset!");
 static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, Detail_Base) == 0x000340, "Member 'UWBP_StatusInfo_PlayerDetail_C::Detail_Base' has a wrong offset!");
 static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, DSP_GamerCard_WBP_FooterMenu_Sub_CommonBtn) == 0x000348, "Member 'UWBP_StatusInfo_PlayerDetail_C::DSP_GamerCard_WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, MouseInteraction_Accept) == 0x000350, "Member 'UWBP_StatusInfo_PlayerDetail_C::MouseInteraction_Accept' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, MouseInteraction_Back) == 0x000358, "Member 'UWBP_StatusInfo_PlayerDetail_C::MouseInteraction_Back' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, PAT_PlatformIcon) == 0x000360, "Member 'UWBP_StatusInfo_PlayerDetail_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, RaceFlag_Left) == 0x000368, "Member 'UWBP_StatusInfo_PlayerDetail_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, RaceFlag_Right) == 0x000370, "Member 'UWBP_StatusInfo_PlayerDetail_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, TXT_Name) == 0x000378, "Member 'UWBP_StatusInfo_PlayerDetail_C::TXT_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_CMN_PlayerDetail_Sub_Info_Gadget) == 0x000380, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_CMN_PlayerDetail_Sub_Info_Gadget' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_CMN_PlayerDetail_Sub_Info_Machine) == 0x000388, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_CMN_PlayerDetail_Sub_Info_Machine' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000390, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_HonorTitle_Plate) == 0x000398, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_HonorTitle_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_ResultRate_Sub_RankIcon) == 0x0003A0, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, GadgetPlateUIData) == 0x0003A8, "Member 'UWBP_StatusInfo_PlayerDetail_C::GadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, OnErrorWindowOpen) == 0x0003D0, "Member 'UWBP_StatusInfo_PlayerDetail_C::OnErrorWindowOpen' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, OnErrorWindowClose) == 0x0003E0, "Member 'UWBP_StatusInfo_PlayerDetail_C::OnErrorWindowClose' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, SetGadgetData) == 0x0003F0, "Member 'UWBP_StatusInfo_PlayerDetail_C::SetGadgetData' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, DSP_WBP_ResultLegend_Sub_NUM) == 0x000350, "Member 'UWBP_StatusInfo_PlayerDetail_C::DSP_WBP_ResultLegend_Sub_NUM' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, MouseInteraction_Accept) == 0x000358, "Member 'UWBP_StatusInfo_PlayerDetail_C::MouseInteraction_Accept' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, MouseInteraction_Back) == 0x000360, "Member 'UWBP_StatusInfo_PlayerDetail_C::MouseInteraction_Back' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, PAT_PlatformIcon) == 0x000368, "Member 'UWBP_StatusInfo_PlayerDetail_C::PAT_PlatformIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, RaceFlag_Left) == 0x000370, "Member 'UWBP_StatusInfo_PlayerDetail_C::RaceFlag_Left' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, RaceFlag_Right) == 0x000378, "Member 'UWBP_StatusInfo_PlayerDetail_C::RaceFlag_Right' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, TXT_Name) == 0x000380, "Member 'UWBP_StatusInfo_PlayerDetail_C::TXT_Name' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_CMN_PlayerDetail_Sub_Info_Gadget) == 0x000388, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_CMN_PlayerDetail_Sub_Info_Gadget' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_CMN_PlayerDetail_Sub_Info_Machine) == 0x000390, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_CMN_PlayerDetail_Sub_Info_Machine' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000398, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_HonorTitle_Plate) == 0x0003A0, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_HonorTitle_Plate' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, WBP_ResultRate_Sub_RankIcon) == 0x0003A8, "Member 'UWBP_StatusInfo_PlayerDetail_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, GadgetPlateUIData) == 0x0003B0, "Member 'UWBP_StatusInfo_PlayerDetail_C::GadgetPlateUIData' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, OnErrorWindowOpen) == 0x0003D8, "Member 'UWBP_StatusInfo_PlayerDetail_C::OnErrorWindowOpen' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, OnErrorWindowClose) == 0x0003E8, "Member 'UWBP_StatusInfo_PlayerDetail_C::OnErrorWindowClose' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_PlayerDetail_C, SetGadgetData) == 0x0003F8, "Member 'UWBP_StatusInfo_PlayerDetail_C::SetGadgetData' has a wrong offset!");
 
 }
 

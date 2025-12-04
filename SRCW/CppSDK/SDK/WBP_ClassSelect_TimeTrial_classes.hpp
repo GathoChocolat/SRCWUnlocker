@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -36,7 +36,7 @@ public:
 	class UUnionRichTextBlock*                    TXT_Title;                                         // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_ClassSelect_Sub_Btn_Class_C*       WBP_ClassSelect_Sub_Btn_Class_01;                  // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_ClassSelect_Sub_Btn_Class_C*       WBP_ClassSelect_Sub_Btn_Class_02;                  // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         ClassNormalMedalMax;                               // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ClassMedalMax;                                     // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_48C[0x4];                                      // 0x048C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUIButtonsPanel*                   ClassButtonPanel;                                  // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              OnInFinished;                                      // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -79,7 +79,7 @@ static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, TXT_Num_Medal_Count_Normal)
 static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, TXT_Title) == 0x000470, "Member 'UWBP_ClassSelect_TimeTrial_C::TXT_Title' has a wrong offset!");
 static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, WBP_ClassSelect_Sub_Btn_Class_01) == 0x000478, "Member 'UWBP_ClassSelect_TimeTrial_C::WBP_ClassSelect_Sub_Btn_Class_01' has a wrong offset!");
 static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, WBP_ClassSelect_Sub_Btn_Class_02) == 0x000480, "Member 'UWBP_ClassSelect_TimeTrial_C::WBP_ClassSelect_Sub_Btn_Class_02' has a wrong offset!");
-static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, ClassNormalMedalMax) == 0x000488, "Member 'UWBP_ClassSelect_TimeTrial_C::ClassNormalMedalMax' has a wrong offset!");
+static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, ClassMedalMax) == 0x000488, "Member 'UWBP_ClassSelect_TimeTrial_C::ClassMedalMax' has a wrong offset!");
 static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, ClassButtonPanel) == 0x000490, "Member 'UWBP_ClassSelect_TimeTrial_C::ClassButtonPanel' has a wrong offset!");
 static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, OnInFinished) == 0x000498, "Member 'UWBP_ClassSelect_TimeTrial_C::OnInFinished' has a wrong offset!");
 static_assert(offsetof(UWBP_ClassSelect_TimeTrial_C, OnOutFinished) == 0x0004A8, "Member 'UWBP_ClassSelect_TimeTrial_C::OnOutFinished' has a wrong offset!");

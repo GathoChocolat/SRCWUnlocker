@@ -113,6 +113,20 @@ void UBPC_MenuStatePartyRaceSelectGroup_C::ForceUpdateUIComponents(const TArray<
 }
 
 
+// Function BPC_MenuStatePartyRaceSelectGroup.BPC_MenuStatePartyRaceSelectGroup_C.InitGroupSelect
+// (Event, Protected, BlueprintEvent)
+
+void UBPC_MenuStatePartyRaceSelectGroup_C::InitGroupSelect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_MenuStatePartyRaceSelectGroup_C", "InitGroupSelect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_MenuStatePartyRaceSelectGroup.BPC_MenuStatePartyRaceSelectGroup_C.OnExitState
 // (Event, Public, BlueprintEvent)
 
@@ -290,20 +304,6 @@ void UBPC_MenuStatePartyRaceSelectGroup_C::UpdateUIComponents()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BPC_MenuStatePartyRaceSelectGroup_C", "UpdateUIComponents");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPC_MenuStatePartyRaceSelectGroup.BPC_MenuStatePartyRaceSelectGroup_C.WatchPlateMoveFinishHost
-// (BlueprintCallable, BlueprintEvent)
-
-void UBPC_MenuStatePartyRaceSelectGroup_C::WatchPlateMoveFinishHost()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_MenuStatePartyRaceSelectGroup_C", "WatchPlateMoveFinishHost");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

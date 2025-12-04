@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -48,6 +48,8 @@ public:
 	void ExecuteUbergraph_WBP_GadgetCutom_M2_Div(int32 EntryPoint);
 	void OnInitialized();
 	void PreConstruct(bool IsDesignTime);
+	void SequenceEvent();
+	void SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M2_Div();
 	void Setup(const struct FGadgetCustomizeWindowData& InWindowData, const bool bInFestaSpecialRule);
 
 	void GetCharaNameBoxes(TArray<class UUnionRichTextBlock*>* OutCharaNameBoxes) const;

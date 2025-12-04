@@ -98,18 +98,95 @@ static_assert(alignof(UnionCourseObjectBase_GetDomainNumber) == 0x000001, "Wrong
 static_assert(sizeof(UnionCourseObjectBase_GetDomainNumber) == 0x000001, "Wrong size on UnionCourseObjectBase_GetDomainNumber");
 static_assert(offsetof(UnionCourseObjectBase_GetDomainNumber, ReturnValue) == 0x000000, "Member 'UnionCourseObjectBase_GetDomainNumber::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.GimmickBigBakubaku.InitStaticBody
-// 0x0010 (0x0010 - 0x0000)
-struct GimmickBigBakubaku_InitStaticBody final
+// Function UnionRun.ObakeAnimInstance.GetIsAttack
+// 0x0001 (0x0001 - 0x0000)
+struct ObakeAnimInstance_GetIsAttack final
 {
 public:
-	const class UGimmickStaticBodyComponent*      StaticBody;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SocketName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GimmickBigBakubaku_InitStaticBody) == 0x000008, "Wrong alignment on GimmickBigBakubaku_InitStaticBody");
-static_assert(sizeof(GimmickBigBakubaku_InitStaticBody) == 0x000010, "Wrong size on GimmickBigBakubaku_InitStaticBody");
-static_assert(offsetof(GimmickBigBakubaku_InitStaticBody, StaticBody) == 0x000000, "Member 'GimmickBigBakubaku_InitStaticBody::StaticBody' has a wrong offset!");
-static_assert(offsetof(GimmickBigBakubaku_InitStaticBody, SocketName) == 0x000008, "Member 'GimmickBigBakubaku_InitStaticBody::SocketName' has a wrong offset!");
+static_assert(alignof(ObakeAnimInstance_GetIsAttack) == 0x000001, "Wrong alignment on ObakeAnimInstance_GetIsAttack");
+static_assert(sizeof(ObakeAnimInstance_GetIsAttack) == 0x000001, "Wrong size on ObakeAnimInstance_GetIsAttack");
+static_assert(offsetof(ObakeAnimInstance_GetIsAttack, ReturnValue) == 0x000000, "Member 'ObakeAnimInstance_GetIsAttack::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ObakeAnimInstance.GetIsIdle
+// 0x0001 (0x0001 - 0x0000)
+struct ObakeAnimInstance_GetIsIdle final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ObakeAnimInstance_GetIsIdle) == 0x000001, "Wrong alignment on ObakeAnimInstance_GetIsIdle");
+static_assert(sizeof(ObakeAnimInstance_GetIsIdle) == 0x000001, "Wrong size on ObakeAnimInstance_GetIsIdle");
+static_assert(offsetof(ObakeAnimInstance_GetIsIdle, ReturnValue) == 0x000000, "Member 'ObakeAnimInstance_GetIsIdle::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ObakeAnimInstance.SetIsAttack
+// 0x0001 (0x0001 - 0x0000)
+struct ObakeAnimInstance_SetIsAttack final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ObakeAnimInstance_SetIsAttack) == 0x000001, "Wrong alignment on ObakeAnimInstance_SetIsAttack");
+static_assert(sizeof(ObakeAnimInstance_SetIsAttack) == 0x000001, "Wrong size on ObakeAnimInstance_SetIsAttack");
+static_assert(offsetof(ObakeAnimInstance_SetIsAttack, flag) == 0x000000, "Member 'ObakeAnimInstance_SetIsAttack::flag' has a wrong offset!");
+
+// Function UnionRun.ObakeAnimInstance.SetIsIdle
+// 0x0001 (0x0001 - 0x0000)
+struct ObakeAnimInstance_SetIsIdle final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ObakeAnimInstance_SetIsIdle) == 0x000001, "Wrong alignment on ObakeAnimInstance_SetIsIdle");
+static_assert(sizeof(ObakeAnimInstance_SetIsIdle) == 0x000001, "Wrong size on ObakeAnimInstance_SetIsIdle");
+static_assert(offsetof(ObakeAnimInstance_SetIsIdle, flag) == 0x000000, "Member 'ObakeAnimInstance_SetIsIdle::flag' has a wrong offset!");
+
+// Function UnionRun.RaceUISubRuleCount.GetCount
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubRuleCount_GetCount final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubRuleCount_GetCount) == 0x000004, "Wrong alignment on RaceUISubRuleCount_GetCount");
+static_assert(sizeof(RaceUISubRuleCount_GetCount) == 0x000008, "Wrong size on RaceUISubRuleCount_GetCount");
+static_assert(offsetof(RaceUISubRuleCount_GetCount, RacerIndex) == 0x000000, "Member 'RaceUISubRuleCount_GetCount::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubRuleCount_GetCount, ReturnValue) == 0x000004, "Member 'RaceUISubRuleCount_GetCount::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubRuleCount.GetGroupRaceBonusData
+// 0x0070 (0x0070 - 0x0000)
+struct RaceUISubRuleCount_GetGroupRaceBonusData final
+{
+public:
+	struct FMenuGroupRaceBonusData                ReturnValue;                                       // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubRuleCount_GetGroupRaceBonusData) == 0x000008, "Wrong alignment on RaceUISubRuleCount_GetGroupRaceBonusData");
+static_assert(sizeof(RaceUISubRuleCount_GetGroupRaceBonusData) == 0x000070, "Wrong size on RaceUISubRuleCount_GetGroupRaceBonusData");
+static_assert(offsetof(RaceUISubRuleCount_GetGroupRaceBonusData, ReturnValue) == 0x000000, "Member 'RaceUISubRuleCount_GetGroupRaceBonusData::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubRuleCount.SetNewCount
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubRuleCount_SetNewCount final
+{
+public:
+	int32                                         NewCuont;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubRuleCount_SetNewCount) == 0x000004, "Wrong alignment on RaceUISubRuleCount_SetNewCount");
+static_assert(sizeof(RaceUISubRuleCount_SetNewCount) == 0x000004, "Wrong size on RaceUISubRuleCount_SetNewCount");
+static_assert(offsetof(RaceUISubRuleCount_SetNewCount, NewCuont) == 0x000000, "Member 'RaceUISubRuleCount_SetNewCount::NewCuont' has a wrong offset!");
+
+// Function UnionRun.RaceUISubRuleCount.UpdateRuleCountImpl
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubRuleCount_UpdateRuleCountImpl final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubRuleCount_UpdateRuleCountImpl) == 0x000004, "Wrong alignment on RaceUISubRuleCount_UpdateRuleCountImpl");
+static_assert(sizeof(RaceUISubRuleCount_UpdateRuleCountImpl) == 0x000004, "Wrong size on RaceUISubRuleCount_UpdateRuleCountImpl");
+static_assert(offsetof(RaceUISubRuleCount_UpdateRuleCountImpl, RacerIndex) == 0x000000, "Member 'RaceUISubRuleCount_UpdateRuleCountImpl::RacerIndex' has a wrong offset!");
 
 // Function UnionRun.AsuraAnimInstance.SetAsuraState
 // 0x0001 (0x0001 - 0x0000)
@@ -134,82 +211,6 @@ static_assert(alignof(AsuraAnimInstance_IsAsuraState) == 0x000001, "Wrong alignm
 static_assert(sizeof(AsuraAnimInstance_IsAsuraState) == 0x000002, "Wrong size on AsuraAnimInstance_IsAsuraState");
 static_assert(offsetof(AsuraAnimInstance_IsAsuraState, State) == 0x000000, "Member 'AsuraAnimInstance_IsAsuraState::State' has a wrong offset!");
 static_assert(offsetof(AsuraAnimInstance_IsAsuraState, ReturnValue) == 0x000001, "Member 'AsuraAnimInstance_IsAsuraState::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceLogUtil.GetRacerLapInfo
-// 0x0018 (0x0018 - 0x0000)
-struct RaceLogUtil_GetRacerLapInfo final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceLogUtil_GetRacerLapInfo) == 0x000008, "Wrong alignment on RaceLogUtil_GetRacerLapInfo");
-static_assert(sizeof(RaceLogUtil_GetRacerLapInfo) == 0x000018, "Wrong size on RaceLogUtil_GetRacerLapInfo");
-static_assert(offsetof(RaceLogUtil_GetRacerLapInfo, RacerIndex) == 0x000000, "Member 'RaceLogUtil_GetRacerLapInfo::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_GetRacerLapInfo, ReturnValue) == 0x000008, "Member 'RaceLogUtil_GetRacerLapInfo::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceLogUtil.GetRacerStatusInfo
-// 0x0018 (0x0018 - 0x0000)
-struct RaceLogUtil_GetRacerStatusInfo final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceLogUtil_GetRacerStatusInfo) == 0x000008, "Wrong alignment on RaceLogUtil_GetRacerStatusInfo");
-static_assert(sizeof(RaceLogUtil_GetRacerStatusInfo) == 0x000018, "Wrong size on RaceLogUtil_GetRacerStatusInfo");
-static_assert(offsetof(RaceLogUtil_GetRacerStatusInfo, RacerIndex) == 0x000000, "Member 'RaceLogUtil_GetRacerStatusInfo::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_GetRacerStatusInfo, ReturnValue) == 0x000008, "Member 'RaceLogUtil_GetRacerStatusInfo::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceLogUtil.PrintRaceLog
-// 0x0028 (0x0028 - 0x0000)
-struct RaceLogUtil_PrintRaceLog final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 str;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 at;                                                // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceLogUtil_PrintRaceLog) == 0x000008, "Wrong alignment on RaceLogUtil_PrintRaceLog");
-static_assert(sizeof(RaceLogUtil_PrintRaceLog) == 0x000028, "Wrong size on RaceLogUtil_PrintRaceLog");
-static_assert(offsetof(RaceLogUtil_PrintRaceLog, RacerIndex) == 0x000000, "Member 'RaceLogUtil_PrintRaceLog::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_PrintRaceLog, str) == 0x000008, "Member 'RaceLogUtil_PrintRaceLog::str' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_PrintRaceLog, at) == 0x000018, "Member 'RaceLogUtil_PrintRaceLog::at' has a wrong offset!");
-
-// Function UnionRun.RaceLogUtil.PrintRunLog
-// 0x0028 (0x0028 - 0x0000)
-struct RaceLogUtil_PrintRunLog final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 str;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 at;                                                // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceLogUtil_PrintRunLog) == 0x000008, "Wrong alignment on RaceLogUtil_PrintRunLog");
-static_assert(sizeof(RaceLogUtil_PrintRunLog) == 0x000028, "Wrong size on RaceLogUtil_PrintRunLog");
-static_assert(offsetof(RaceLogUtil_PrintRunLog, RacerIndex) == 0x000000, "Member 'RaceLogUtil_PrintRunLog::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_PrintRunLog, str) == 0x000008, "Member 'RaceLogUtil_PrintRunLog::str' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_PrintRunLog, at) == 0x000018, "Member 'RaceLogUtil_PrintRunLog::at' has a wrong offset!");
-
-// Function UnionRun.RaceLogUtil.PrintWarpLog
-// 0x0028 (0x0028 - 0x0000)
-struct RaceLogUtil_PrintWarpLog final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 str;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 at;                                                // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceLogUtil_PrintWarpLog) == 0x000008, "Wrong alignment on RaceLogUtil_PrintWarpLog");
-static_assert(sizeof(RaceLogUtil_PrintWarpLog) == 0x000028, "Wrong size on RaceLogUtil_PrintWarpLog");
-static_assert(offsetof(RaceLogUtil_PrintWarpLog, RacerIndex) == 0x000000, "Member 'RaceLogUtil_PrintWarpLog::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_PrintWarpLog, str) == 0x000008, "Member 'RaceLogUtil_PrintWarpLog::str' has a wrong offset!");
-static_assert(offsetof(RaceLogUtil_PrintWarpLog, at) == 0x000018, "Member 'RaceLogUtil_PrintWarpLog::at' has a wrong offset!");
 
 // Function UnionRun.AttackReplyInterface.NotifyAttackFailed
 // 0x0028 (0x0028 - 0x0000)
@@ -299,49 +300,21 @@ static_assert(alignof(AttackReplyInterface_NotifyAttackTimeElapsed) == 0x000008,
 static_assert(sizeof(AttackReplyInterface_NotifyAttackTimeElapsed) == 0x000028, "Wrong size on AttackReplyInterface_NotifyAttackTimeElapsed");
 static_assert(offsetof(AttackReplyInterface_NotifyAttackTimeElapsed, Info) == 0x000000, "Member 'AttackReplyInterface_NotifyAttackTimeElapsed::Info' has a wrong offset!");
 
-// Function UnionRun.UnionCameraBase.IsCurrentViewTarget
-// 0x0001 (0x0001 - 0x0000)
-struct UnionCameraBase_IsCurrentViewTarget final
+// Function UnionRun.RaceUISubItemSummonButton.SetSummonInputKey
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubItemSummonButton_SetSummonInputKey final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsKeyboard;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PlayerControllerIndex;                             // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionCameraBase_IsCurrentViewTarget) == 0x000001, "Wrong alignment on UnionCameraBase_IsCurrentViewTarget");
-static_assert(sizeof(UnionCameraBase_IsCurrentViewTarget) == 0x000001, "Wrong size on UnionCameraBase_IsCurrentViewTarget");
-static_assert(offsetof(UnionCameraBase_IsCurrentViewTarget, ReturnValue) == 0x000000, "Member 'UnionCameraBase_IsCurrentViewTarget::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionCameraBase.IsInBlending
-// 0x0001 (0x0001 - 0x0000)
-struct UnionCameraBase_IsInBlending final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionCameraBase_IsInBlending) == 0x000001, "Wrong alignment on UnionCameraBase_IsInBlending");
-static_assert(sizeof(UnionCameraBase_IsInBlending) == 0x000001, "Wrong size on UnionCameraBase_IsInBlending");
-static_assert(offsetof(UnionCameraBase_IsInBlending, ReturnValue) == 0x000000, "Member 'UnionCameraBase_IsInBlending::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionCameraBase.RequestEndCamera
-// 0x0001 (0x0001 - 0x0000)
-struct UnionCameraBase_RequestEndCamera final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionCameraBase_RequestEndCamera) == 0x000001, "Wrong alignment on UnionCameraBase_RequestEndCamera");
-static_assert(sizeof(UnionCameraBase_RequestEndCamera) == 0x000001, "Wrong size on UnionCameraBase_RequestEndCamera");
-static_assert(offsetof(UnionCameraBase_RequestEndCamera, ReturnValue) == 0x000000, "Member 'UnionCameraBase_RequestEndCamera::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionCameraBase.RequestStartCamera
-// 0x0001 (0x0001 - 0x0000)
-struct UnionCameraBase_RequestStartCamera final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionCameraBase_RequestStartCamera) == 0x000001, "Wrong alignment on UnionCameraBase_RequestStartCamera");
-static_assert(sizeof(UnionCameraBase_RequestStartCamera) == 0x000001, "Wrong size on UnionCameraBase_RequestStartCamera");
-static_assert(offsetof(UnionCameraBase_RequestStartCamera, ReturnValue) == 0x000000, "Member 'UnionCameraBase_RequestStartCamera::ReturnValue' has a wrong offset!");
+static_assert(alignof(RaceUISubItemSummonButton_SetSummonInputKey) == 0x000008, "Wrong alignment on RaceUISubItemSummonButton_SetSummonInputKey");
+static_assert(sizeof(RaceUISubItemSummonButton_SetSummonInputKey) == 0x000020, "Wrong size on RaceUISubItemSummonButton_SetSummonInputKey");
+static_assert(offsetof(RaceUISubItemSummonButton_SetSummonInputKey, Key) == 0x000000, "Member 'RaceUISubItemSummonButton_SetSummonInputKey::Key' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemSummonButton_SetSummonInputKey, IsKeyboard) == 0x000018, "Member 'RaceUISubItemSummonButton_SetSummonInputKey::IsKeyboard' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemSummonButton_SetSummonInputKey, PlayerControllerIndex) == 0x00001C, "Member 'RaceUISubItemSummonButton_SetSummonInputKey::PlayerControllerIndex' has a wrong offset!");
 
 // Function UnionRun.BoostPadObject.OnVATUpdate
 // 0x0018 (0x0018 - 0x0000)
@@ -380,6 +353,17 @@ public:
 static_assert(alignof(BoostPadObject_SetGateScaleRate) == 0x000004, "Wrong alignment on BoostPadObject_SetGateScaleRate");
 static_assert(sizeof(BoostPadObject_SetGateScaleRate) == 0x000004, "Wrong size on BoostPadObject_SetGateScaleRate");
 static_assert(offsetof(BoostPadObject_SetGateScaleRate, Rate) == 0x000000, "Member 'BoostPadObject_SetGateScaleRate::Rate' has a wrong offset!");
+
+// Function UnionRun.ItemBlackBombBaseObject.OnTriggerConflict
+// 0x0060 (0x0060 - 0x0000)
+struct ItemBlackBombBaseObject_OnTriggerConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemBlackBombBaseObject_OnTriggerConflict) == 0x000008, "Wrong alignment on ItemBlackBombBaseObject_OnTriggerConflict");
+static_assert(sizeof(ItemBlackBombBaseObject_OnTriggerConflict) == 0x000060, "Wrong size on ItemBlackBombBaseObject_OnTriggerConflict");
+static_assert(offsetof(ItemBlackBombBaseObject_OnTriggerConflict, HitInfo) == 0x000000, "Member 'ItemBlackBombBaseObject_OnTriggerConflict::HitInfo' has a wrong offset!");
 
 // Function UnionRun.BPFL_UnionRunTuningUtil.GetHoverBaseHeight
 // 0x0008 (0x0008 - 0x0000)
@@ -511,138 +495,6 @@ static_assert(alignof(BreakObjectAnimInstance_SetHit) == 0x000004, "Wrong alignm
 static_assert(sizeof(BreakObjectAnimInstance_SetHit) == 0x000004, "Wrong size on BreakObjectAnimInstance_SetHit");
 static_assert(offsetof(BreakObjectAnimInstance_SetHit, Speed) == 0x000000, "Member 'BreakObjectAnimInstance_SetHit::Speed' has a wrong offset!");
 
-// Function UnionRun.KingBoomBooAnimInstance.GetIsAttack
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_GetIsAttack final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_GetIsAttack) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsAttack");
-static_assert(sizeof(KingBoomBooAnimInstance_GetIsAttack) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsAttack");
-static_assert(offsetof(KingBoomBooAnimInstance_GetIsAttack, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsAttack::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsAttackEnd
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_GetIsAttackEnd final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_GetIsAttackEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsAttackEnd");
-static_assert(sizeof(KingBoomBooAnimInstance_GetIsAttackEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsAttackEnd");
-static_assert(offsetof(KingBoomBooAnimInstance_GetIsAttackEnd, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsAttackEnd::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsEnd
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_GetIsEnd final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_GetIsEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsEnd");
-static_assert(sizeof(KingBoomBooAnimInstance_GetIsEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsEnd");
-static_assert(offsetof(KingBoomBooAnimInstance_GetIsEnd, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsEnd::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsExit
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_GetIsExit final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_GetIsExit) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsExit");
-static_assert(sizeof(KingBoomBooAnimInstance_GetIsExit) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsExit");
-static_assert(offsetof(KingBoomBooAnimInstance_GetIsExit, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsExit::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsMove
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_GetIsMove final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_GetIsMove) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsMove");
-static_assert(sizeof(KingBoomBooAnimInstance_GetIsMove) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsMove");
-static_assert(offsetof(KingBoomBooAnimInstance_GetIsMove, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsMove::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsStart
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_GetIsStart final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_GetIsStart) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsStart");
-static_assert(sizeof(KingBoomBooAnimInstance_GetIsStart) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsStart");
-static_assert(offsetof(KingBoomBooAnimInstance_GetIsStart, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsStart::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsAttack
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_SetIsAttack final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_SetIsAttack) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsAttack");
-static_assert(sizeof(KingBoomBooAnimInstance_SetIsAttack) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsAttack");
-static_assert(offsetof(KingBoomBooAnimInstance_SetIsAttack, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsAttack::flag' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsAttackEnd
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_SetIsAttackEnd final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_SetIsAttackEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsAttackEnd");
-static_assert(sizeof(KingBoomBooAnimInstance_SetIsAttackEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsAttackEnd");
-static_assert(offsetof(KingBoomBooAnimInstance_SetIsAttackEnd, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsAttackEnd::flag' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsEnd
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_SetIsEnd final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_SetIsEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsEnd");
-static_assert(sizeof(KingBoomBooAnimInstance_SetIsEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsEnd");
-static_assert(offsetof(KingBoomBooAnimInstance_SetIsEnd, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsEnd::flag' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsExit
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_SetIsExit final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_SetIsExit) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsExit");
-static_assert(sizeof(KingBoomBooAnimInstance_SetIsExit) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsExit");
-static_assert(offsetof(KingBoomBooAnimInstance_SetIsExit, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsExit::flag' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsMove
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_SetIsMove final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_SetIsMove) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsMove");
-static_assert(sizeof(KingBoomBooAnimInstance_SetIsMove) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsMove");
-static_assert(offsetof(KingBoomBooAnimInstance_SetIsMove, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsMove::flag' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsStart
-// 0x0001 (0x0001 - 0x0000)
-struct KingBoomBooAnimInstance_SetIsStart final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooAnimInstance_SetIsStart) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsStart");
-static_assert(sizeof(KingBoomBooAnimInstance_SetIsStart) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsStart");
-static_assert(offsetof(KingBoomBooAnimInstance_SetIsStart, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsStart::flag' has a wrong offset!");
-
 // Function UnionRun.BreakObjectBase.HitRacer
 // 0x0004 (0x0004 - 0x0000)
 struct BreakObjectBase_HitRacer final
@@ -675,6 +527,28 @@ public:
 static_assert(alignof(BreakObjectBase_IsBroken) == 0x000001, "Wrong alignment on BreakObjectBase_IsBroken");
 static_assert(sizeof(BreakObjectBase_IsBroken) == 0x000001, "Wrong size on BreakObjectBase_IsBroken");
 static_assert(offsetof(BreakObjectBase_IsBroken, ReturnValue) == 0x000000, "Member 'BreakObjectBase_IsBroken::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ReplayMoveCameraCollision.OnCollisionBaseHit
+// 0x0060 (0x0060 - 0x0000)
+struct ReplayMoveCameraCollision_OnCollisionBaseHit final
+{
+public:
+	struct FCollisionHitInfo                      Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ReplayMoveCameraCollision_OnCollisionBaseHit) == 0x000008, "Wrong alignment on ReplayMoveCameraCollision_OnCollisionBaseHit");
+static_assert(sizeof(ReplayMoveCameraCollision_OnCollisionBaseHit) == 0x000060, "Wrong size on ReplayMoveCameraCollision_OnCollisionBaseHit");
+static_assert(offsetof(ReplayMoveCameraCollision_OnCollisionBaseHit, Info) == 0x000000, "Member 'ReplayMoveCameraCollision_OnCollisionBaseHit::Info' has a wrong offset!");
+
+// Function UnionRun.ReplayMoveCameraCollision.SetCameraData
+// 0x0018 (0x0018 - 0x0000)
+struct ReplayMoveCameraCollision_SetCameraData final
+{
+public:
+	struct FVector                                NewBoxSize;                                        // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ReplayMoveCameraCollision_SetCameraData) == 0x000008, "Wrong alignment on ReplayMoveCameraCollision_SetCameraData");
+static_assert(sizeof(ReplayMoveCameraCollision_SetCameraData) == 0x000018, "Wrong size on ReplayMoveCameraCollision_SetCameraData");
+static_assert(offsetof(ReplayMoveCameraCollision_SetCameraData, NewBoxSize) == 0x000000, "Member 'ReplayMoveCameraCollision_SetCameraData::NewBoxSize' has a wrong offset!");
 
 // Function UnionRun.BtDebugDispActor.Execute_AreaDataBlockDisp
 // 0x0010 (0x0010 - 0x0000)
@@ -774,6 +648,97 @@ public:
 static_assert(alignof(BtDebugDispActor_Execute_RayCast) == 0x000008, "Wrong alignment on BtDebugDispActor_Execute_RayCast");
 static_assert(sizeof(BtDebugDispActor_Execute_RayCast) == 0x000010, "Wrong size on BtDebugDispActor_Execute_RayCast");
 static_assert(offsetof(BtDebugDispActor_Execute_RayCast, args) == 0x000000, "Member 'BtDebugDispActor_Execute_RayCast::args' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamHUD.ExecChangeRank
+// 0x0010 (0x0010 - 0x0000)
+struct RaceUISubTeamHUD_ExecChangeRank final
+{
+public:
+	int32                                         PanelIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     DriverId;                                          // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsDispPlayer;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Rank;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubTeamHUD_ExecChangeRank) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_ExecChangeRank");
+static_assert(sizeof(RaceUISubTeamHUD_ExecChangeRank) == 0x000010, "Wrong size on RaceUISubTeamHUD_ExecChangeRank");
+static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, PanelIndex) == 0x000000, "Member 'RaceUISubTeamHUD_ExecChangeRank::PanelIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, DriverId) == 0x000004, "Member 'RaceUISubTeamHUD_ExecChangeRank::DriverId' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, IsDispPlayer) == 0x000005, "Member 'RaceUISubTeamHUD_ExecChangeRank::IsDispPlayer' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, Rank) == 0x000008, "Member 'RaceUISubTeamHUD_ExecChangeRank::Rank' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, ReturnValue) == 0x00000C, "Member 'RaceUISubTeamHUD_ExecChangeRank::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamHUD.ExecPlayChangeRank
+// 0x0010 (0x0010 - 0x0000)
+struct RaceUISubTeamHUD_ExecPlayChangeRank final
+{
+public:
+	int32                                         PanelIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     DriverId;                                          // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsDispPlayer;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Rank;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubTeamHUD_ExecPlayChangeRank) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_ExecPlayChangeRank");
+static_assert(sizeof(RaceUISubTeamHUD_ExecPlayChangeRank) == 0x000010, "Wrong size on RaceUISubTeamHUD_ExecPlayChangeRank");
+static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, PanelIndex) == 0x000000, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::PanelIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, DriverId) == 0x000004, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::DriverId' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, IsDispPlayer) == 0x000005, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::IsDispPlayer' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, Rank) == 0x000008, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::Rank' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, ReturnValue) == 0x00000C, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamHUD.ExecSetRankOnly
+// 0x000C (0x000C - 0x0000)
+struct RaceUISubTeamHUD_ExecSetRankOnly final
+{
+public:
+	int32                                         PanelIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Rank;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubTeamHUD_ExecSetRankOnly) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_ExecSetRankOnly");
+static_assert(sizeof(RaceUISubTeamHUD_ExecSetRankOnly) == 0x00000C, "Wrong size on RaceUISubTeamHUD_ExecSetRankOnly");
+static_assert(offsetof(RaceUISubTeamHUD_ExecSetRankOnly, PanelIndex) == 0x000000, "Member 'RaceUISubTeamHUD_ExecSetRankOnly::PanelIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecSetRankOnly, Rank) == 0x000004, "Member 'RaceUISubTeamHUD_ExecSetRankOnly::Rank' has a wrong offset!");
+static_assert(offsetof(RaceUISubTeamHUD_ExecSetRankOnly, ReturnValue) == 0x000008, "Member 'RaceUISubTeamHUD_ExecSetRankOnly::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamHUD.GetTeamRankRough
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubTeamHUD_GetTeamRankRough final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTeamHUD_GetTeamRankRough) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_GetTeamRankRough");
+static_assert(sizeof(RaceUISubTeamHUD_GetTeamRankRough) == 0x000004, "Wrong size on RaceUISubTeamHUD_GetTeamRankRough");
+static_assert(offsetof(RaceUISubTeamHUD_GetTeamRankRough, ReturnValue) == 0x000000, "Member 'RaceUISubTeamHUD_GetTeamRankRough::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamHUD.SetTeamRank
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubTeamHUD_SetTeamRank final
+{
+public:
+	int32                                         TeamRank;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTeamHUD_SetTeamRank) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_SetTeamRank");
+static_assert(sizeof(RaceUISubTeamHUD_SetTeamRank) == 0x000004, "Wrong size on RaceUISubTeamHUD_SetTeamRank");
+static_assert(offsetof(RaceUISubTeamHUD_SetTeamRank, TeamRank) == 0x000000, "Member 'RaceUISubTeamHUD_SetTeamRank::TeamRank' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamHUD.UpdateCharaRank
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubTeamHUD_UpdateCharaRank final
+{
+public:
+	bool                                          IsForce;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTeamHUD_UpdateCharaRank) == 0x000001, "Wrong alignment on RaceUISubTeamHUD_UpdateCharaRank");
+static_assert(sizeof(RaceUISubTeamHUD_UpdateCharaRank) == 0x000001, "Wrong size on RaceUISubTeamHUD_UpdateCharaRank");
+static_assert(offsetof(RaceUISubTeamHUD_UpdateCharaRank, IsForce) == 0x000000, "Member 'RaceUISubTeamHUD_UpdateCharaRank::IsForce' has a wrong offset!");
 
 // Function UnionRun.BubbleItemBox.HitRacer
 // 0x0004 (0x0004 - 0x0000)
@@ -885,72 +850,6 @@ static_assert(alignof(BubbleItemBox_GetSoundPan) == 0x000001, "Wrong alignment o
 static_assert(sizeof(BubbleItemBox_GetSoundPan) == 0x000001, "Wrong size on BubbleItemBox_GetSoundPan");
 static_assert(offsetof(BubbleItemBox_GetSoundPan, ReturnValue) == 0x000000, "Member 'BubbleItemBox_GetSoundPan::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.SimpleTravelRingObject.GetTransformRingType
-// 0x0001 (0x0001 - 0x0000)
-struct SimpleTravelRingObject_GetTransformRingType final
-{
-public:
-	ETransformRingType                            ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SimpleTravelRingObject_GetTransformRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_GetTransformRingType");
-static_assert(sizeof(SimpleTravelRingObject_GetTransformRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_GetTransformRingType");
-static_assert(offsetof(SimpleTravelRingObject_GetTransformRingType, ReturnValue) == 0x000000, "Member 'SimpleTravelRingObject_GetTransformRingType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.SimpleTravelRingObject.GetTravelRingSizeType
-// 0x0001 (0x0001 - 0x0000)
-struct SimpleTravelRingObject_GetTravelRingSizeType final
-{
-public:
-	ETravelRingSizeType                           ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SimpleTravelRingObject_GetTravelRingSizeType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_GetTravelRingSizeType");
-static_assert(sizeof(SimpleTravelRingObject_GetTravelRingSizeType) == 0x000001, "Wrong size on SimpleTravelRingObject_GetTravelRingSizeType");
-static_assert(offsetof(SimpleTravelRingObject_GetTravelRingSizeType, ReturnValue) == 0x000000, "Member 'SimpleTravelRingObject_GetTravelRingSizeType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.SimpleTravelRingObject.GetTravelRingType
-// 0x0001 (0x0001 - 0x0000)
-struct SimpleTravelRingObject_GetTravelRingType final
-{
-public:
-	ETravelRingType                               ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SimpleTravelRingObject_GetTravelRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_GetTravelRingType");
-static_assert(sizeof(SimpleTravelRingObject_GetTravelRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_GetTravelRingType");
-static_assert(offsetof(SimpleTravelRingObject_GetTravelRingType, ReturnValue) == 0x000000, "Member 'SimpleTravelRingObject_GetTravelRingType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.SimpleTravelRingObject.SetTransformRingType
-// 0x0001 (0x0001 - 0x0000)
-struct SimpleTravelRingObject_SetTransformRingType final
-{
-public:
-	ETransformRingType                            Type;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SimpleTravelRingObject_SetTransformRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_SetTransformRingType");
-static_assert(sizeof(SimpleTravelRingObject_SetTransformRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_SetTransformRingType");
-static_assert(offsetof(SimpleTravelRingObject_SetTransformRingType, Type) == 0x000000, "Member 'SimpleTravelRingObject_SetTransformRingType::Type' has a wrong offset!");
-
-// Function UnionRun.SimpleTravelRingObject.SetTravelRingSizeType
-// 0x0001 (0x0001 - 0x0000)
-struct SimpleTravelRingObject_SetTravelRingSizeType final
-{
-public:
-	ETravelRingSizeType                           Type;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SimpleTravelRingObject_SetTravelRingSizeType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_SetTravelRingSizeType");
-static_assert(sizeof(SimpleTravelRingObject_SetTravelRingSizeType) == 0x000001, "Wrong size on SimpleTravelRingObject_SetTravelRingSizeType");
-static_assert(offsetof(SimpleTravelRingObject_SetTravelRingSizeType, Type) == 0x000000, "Member 'SimpleTravelRingObject_SetTravelRingSizeType::Type' has a wrong offset!");
-
-// Function UnionRun.SimpleTravelRingObject.SetTravelRingType
-// 0x0001 (0x0001 - 0x0000)
-struct SimpleTravelRingObject_SetTravelRingType final
-{
-public:
-	ETravelRingType                               Type;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SimpleTravelRingObject_SetTravelRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_SetTravelRingType");
-static_assert(sizeof(SimpleTravelRingObject_SetTravelRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_SetTravelRingType");
-static_assert(offsetof(SimpleTravelRingObject_SetTravelRingType, Type) == 0x000000, "Member 'SimpleTravelRingObject_SetTravelRingType::Type' has a wrong offset!");
-
 // Function UnionRun.BubbleRing.HitRacer
 // 0x0004 (0x0004 - 0x0000)
 struct BubbleRing_HitRacer final
@@ -1005,17 +904,6 @@ public:
 static_assert(alignof(BubbleRing_Update) == 0x000004, "Wrong alignment on BubbleRing_Update");
 static_assert(sizeof(BubbleRing_Update) == 0x000004, "Wrong size on BubbleRing_Update");
 static_assert(offsetof(BubbleRing_Update, InDeltaTime) == 0x000000, "Member 'BubbleRing_Update::InDeltaTime' has a wrong offset!");
-
-// Function UnionRun.RespotObject.UpdateRespotMatrix
-// 0x0060 (0x0060 - 0x0000)
-struct RespotObject_UpdateRespotMatrix final
-{
-public:
-	struct FTransform                             NewTransform;                                      // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RespotObject_UpdateRespotMatrix) == 0x000010, "Wrong alignment on RespotObject_UpdateRespotMatrix");
-static_assert(sizeof(RespotObject_UpdateRespotMatrix) == 0x000060, "Wrong size on RespotObject_UpdateRespotMatrix");
-static_assert(offsetof(RespotObject_UpdateRespotMatrix, NewTransform) == 0x000000, "Member 'RespotObject_UpdateRespotMatrix::NewTransform' has a wrong offset!");
 
 // Function UnionRun.CameraCollision.SetCameraData
 // 0x0028 (0x0028 - 0x0000)
@@ -1084,56 +972,6 @@ public:
 static_assert(alignof(CarObject_OnHitRingTriggerConflict) == 0x000008, "Wrong alignment on CarObject_OnHitRingTriggerConflict");
 static_assert(sizeof(CarObject_OnHitRingTriggerConflict) == 0x000060, "Wrong size on CarObject_OnHitRingTriggerConflict");
 static_assert(offsetof(CarObject_OnHitRingTriggerConflict, HitInfo) == 0x000000, "Member 'CarObject_OnHitRingTriggerConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.GUNHunterAnimInstance.SetIsAttackCharge
-// 0x0001 (0x0001 - 0x0000)
-struct GUNHunterAnimInstance_SetIsAttackCharge final
-{
-public:
-	bool                                          isChange;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GUNHunterAnimInstance_SetIsAttackCharge) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_SetIsAttackCharge");
-static_assert(sizeof(GUNHunterAnimInstance_SetIsAttackCharge) == 0x000001, "Wrong size on GUNHunterAnimInstance_SetIsAttackCharge");
-static_assert(offsetof(GUNHunterAnimInstance_SetIsAttackCharge, isChange) == 0x000000, "Member 'GUNHunterAnimInstance_SetIsAttackCharge::isChange' has a wrong offset!");
-
-// Function UnionRun.GUNHunterAnimInstance.SetIsDead
-// 0x0001 (0x0001 - 0x0000)
-struct GUNHunterAnimInstance_SetIsDead final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GUNHunterAnimInstance_SetIsDead) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_SetIsDead");
-static_assert(sizeof(GUNHunterAnimInstance_SetIsDead) == 0x000001, "Wrong size on GUNHunterAnimInstance_SetIsDead");
-static_assert(offsetof(GUNHunterAnimInstance_SetIsDead, flag) == 0x000000, "Member 'GUNHunterAnimInstance_SetIsDead::flag' has a wrong offset!");
-
-// Function UnionRun.GUNHunterAnimInstance.IsShootState
-// 0x0003 (0x0003 - 0x0000)
-struct GUNHunterAnimInstance_IsShootState final
-{
-public:
-	EGUNHunterShootState                          State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          isDown;                                            // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GUNHunterAnimInstance_IsShootState) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_IsShootState");
-static_assert(sizeof(GUNHunterAnimInstance_IsShootState) == 0x000003, "Wrong size on GUNHunterAnimInstance_IsShootState");
-static_assert(offsetof(GUNHunterAnimInstance_IsShootState, State) == 0x000000, "Member 'GUNHunterAnimInstance_IsShootState::State' has a wrong offset!");
-static_assert(offsetof(GUNHunterAnimInstance_IsShootState, isDown) == 0x000001, "Member 'GUNHunterAnimInstance_IsShootState::isDown' has a wrong offset!");
-static_assert(offsetof(GUNHunterAnimInstance_IsShootState, ReturnValue) == 0x000002, "Member 'GUNHunterAnimInstance_IsShootState::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.GUNHunterAnimInstance.IsStartMotion
-// 0x0002 (0x0002 - 0x0000)
-struct GUNHunterAnimInstance_IsStartMotion final
-{
-public:
-	EGUNHunterStartType                           Motion;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GUNHunterAnimInstance_IsStartMotion) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_IsStartMotion");
-static_assert(sizeof(GUNHunterAnimInstance_IsStartMotion) == 0x000002, "Wrong size on GUNHunterAnimInstance_IsStartMotion");
-static_assert(offsetof(GUNHunterAnimInstance_IsStartMotion, Motion) == 0x000000, "Member 'GUNHunterAnimInstance_IsStartMotion::Motion' has a wrong offset!");
-static_assert(offsetof(GUNHunterAnimInstance_IsStartMotion, ReturnValue) == 0x000001, "Member 'GUNHunterAnimInstance_IsStartMotion::ReturnValue' has a wrong offset!");
 
 // Function UnionRun.CheatItem.Execute_AllRacerUseItemMode
 // 0x0010 (0x0010 - 0x0000)
@@ -1289,6 +1127,50 @@ static_assert(alignof(CheatPerformance_Execute_RaceTestConfig_SetAutoUnrealInsig
 static_assert(sizeof(CheatPerformance_Execute_RaceTestConfig_SetAutoUnrealInsights) == 0x000010, "Wrong size on CheatPerformance_Execute_RaceTestConfig_SetAutoUnrealInsights");
 static_assert(offsetof(CheatPerformance_Execute_RaceTestConfig_SetAutoUnrealInsights, args) == 0x000000, "Member 'CheatPerformance_Execute_RaceTestConfig_SetAutoUnrealInsights::args' has a wrong offset!");
 
+// Function UnionRun.UnionCameraBase.IsCurrentViewTarget
+// 0x0001 (0x0001 - 0x0000)
+struct UnionCameraBase_IsCurrentViewTarget final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionCameraBase_IsCurrentViewTarget) == 0x000001, "Wrong alignment on UnionCameraBase_IsCurrentViewTarget");
+static_assert(sizeof(UnionCameraBase_IsCurrentViewTarget) == 0x000001, "Wrong size on UnionCameraBase_IsCurrentViewTarget");
+static_assert(offsetof(UnionCameraBase_IsCurrentViewTarget, ReturnValue) == 0x000000, "Member 'UnionCameraBase_IsCurrentViewTarget::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionCameraBase.IsInBlending
+// 0x0001 (0x0001 - 0x0000)
+struct UnionCameraBase_IsInBlending final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionCameraBase_IsInBlending) == 0x000001, "Wrong alignment on UnionCameraBase_IsInBlending");
+static_assert(sizeof(UnionCameraBase_IsInBlending) == 0x000001, "Wrong size on UnionCameraBase_IsInBlending");
+static_assert(offsetof(UnionCameraBase_IsInBlending, ReturnValue) == 0x000000, "Member 'UnionCameraBase_IsInBlending::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionCameraBase.RequestEndCamera
+// 0x0001 (0x0001 - 0x0000)
+struct UnionCameraBase_RequestEndCamera final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionCameraBase_RequestEndCamera) == 0x000001, "Wrong alignment on UnionCameraBase_RequestEndCamera");
+static_assert(sizeof(UnionCameraBase_RequestEndCamera) == 0x000001, "Wrong size on UnionCameraBase_RequestEndCamera");
+static_assert(offsetof(UnionCameraBase_RequestEndCamera, ReturnValue) == 0x000000, "Member 'UnionCameraBase_RequestEndCamera::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionCameraBase.RequestStartCamera
+// 0x0001 (0x0001 - 0x0000)
+struct UnionCameraBase_RequestStartCamera final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionCameraBase_RequestStartCamera) == 0x000001, "Wrong alignment on UnionCameraBase_RequestStartCamera");
+static_assert(sizeof(UnionCameraBase_RequestStartCamera) == 0x000001, "Wrong size on UnionCameraBase_RequestStartCamera");
+static_assert(offsetof(UnionCameraBase_RequestStartCamera, ReturnValue) == 0x000000, "Member 'UnionCameraBase_RequestStartCamera::ReturnValue' has a wrong offset!");
+
 // Function UnionRun.CheatRaceCommon.EnableSplitScreen
 // 0x0001 (0x0001 - 0x0000)
 struct CheatRaceCommon_EnableSplitScreen final
@@ -1310,86 +1192,6 @@ public:
 static_assert(alignof(CheatRaceCommon_SetVisibleUnionRunParam) == 0x000001, "Wrong alignment on CheatRaceCommon_SetVisibleUnionRunParam");
 static_assert(sizeof(CheatRaceCommon_SetVisibleUnionRunParam) == 0x000001, "Wrong size on CheatRaceCommon_SetVisibleUnionRunParam");
 static_assert(offsetof(CheatRaceCommon_SetVisibleUnionRunParam, bInVisible) == 0x000000, "Member 'CheatRaceCommon_SetVisibleUnionRunParam::bInVisible' has a wrong offset!");
-
-// Function UnionRun.PauseManager.SetGamePaused
-// 0x0008 (0x0008 - 0x0000)
-struct PauseManager_SetGamePaused final
-{
-public:
-	bool                                          Paused;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RacerIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PauseManager_SetGamePaused) == 0x000004, "Wrong alignment on PauseManager_SetGamePaused");
-static_assert(sizeof(PauseManager_SetGamePaused) == 0x000008, "Wrong size on PauseManager_SetGamePaused");
-static_assert(offsetof(PauseManager_SetGamePaused, Paused) == 0x000000, "Member 'PauseManager_SetGamePaused::Paused' has a wrong offset!");
-static_assert(offsetof(PauseManager_SetGamePaused, RacerIndex) == 0x000004, "Member 'PauseManager_SetGamePaused::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.PauseManager.SetGamePauseOwnerRacerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct PauseManager_SetGamePauseOwnerRacerIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PauseManager_SetGamePauseOwnerRacerIndex) == 0x000004, "Wrong alignment on PauseManager_SetGamePauseOwnerRacerIndex");
-static_assert(sizeof(PauseManager_SetGamePauseOwnerRacerIndex) == 0x000004, "Wrong size on PauseManager_SetGamePauseOwnerRacerIndex");
-static_assert(offsetof(PauseManager_SetGamePauseOwnerRacerIndex, Index_0) == 0x000000, "Member 'PauseManager_SetGamePauseOwnerRacerIndex::Index_0' has a wrong offset!");
-
-// Function UnionRun.PauseManager.SetIsOnlineMode
-// 0x0001 (0x0001 - 0x0000)
-struct PauseManager_SetIsOnlineMode final
-{
-public:
-	bool                                          IsOnlineMode;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PauseManager_SetIsOnlineMode) == 0x000001, "Wrong alignment on PauseManager_SetIsOnlineMode");
-static_assert(sizeof(PauseManager_SetIsOnlineMode) == 0x000001, "Wrong size on PauseManager_SetIsOnlineMode");
-static_assert(offsetof(PauseManager_SetIsOnlineMode, IsOnlineMode) == 0x000000, "Member 'PauseManager_SetIsOnlineMode::IsOnlineMode' has a wrong offset!");
-
-// Function UnionRun.PauseManager.GetGamePauseOwnerRacerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct PauseManager_GetGamePauseOwnerRacerIndex final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PauseManager_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong alignment on PauseManager_GetGamePauseOwnerRacerIndex");
-static_assert(sizeof(PauseManager_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong size on PauseManager_GetGamePauseOwnerRacerIndex");
-static_assert(offsetof(PauseManager_GetGamePauseOwnerRacerIndex, ReturnValue) == 0x000000, "Member 'PauseManager_GetGamePauseOwnerRacerIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.PauseManager.IsGamePaused
-// 0x0001 (0x0001 - 0x0000)
-struct PauseManager_IsGamePaused final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PauseManager_IsGamePaused) == 0x000001, "Wrong alignment on PauseManager_IsGamePaused");
-static_assert(sizeof(PauseManager_IsGamePaused) == 0x000001, "Wrong size on PauseManager_IsGamePaused");
-static_assert(offsetof(PauseManager_IsGamePaused, ReturnValue) == 0x000000, "Member 'PauseManager_IsGamePaused::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.PauseManager.IsGamePauseOwnerGoaled
-// 0x0001 (0x0001 - 0x0000)
-struct PauseManager_IsGamePauseOwnerGoaled final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PauseManager_IsGamePauseOwnerGoaled) == 0x000001, "Wrong alignment on PauseManager_IsGamePauseOwnerGoaled");
-static_assert(sizeof(PauseManager_IsGamePauseOwnerGoaled) == 0x000001, "Wrong size on PauseManager_IsGamePauseOwnerGoaled");
-static_assert(offsetof(PauseManager_IsGamePauseOwnerGoaled, ReturnValue) == 0x000000, "Member 'PauseManager_IsGamePauseOwnerGoaled::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.PauseManager.IsOnlineMode
-// 0x0001 (0x0001 - 0x0000)
-struct PauseManager_IsOnlineMode final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PauseManager_IsOnlineMode) == 0x000001, "Wrong alignment on PauseManager_IsOnlineMode");
-static_assert(sizeof(PauseManager_IsOnlineMode) == 0x000001, "Wrong size on PauseManager_IsOnlineMode");
-static_assert(offsetof(PauseManager_IsOnlineMode, ReturnValue) == 0x000000, "Member 'PauseManager_IsOnlineMode::ReturnValue' has a wrong offset!");
 
 // Function UnionRun.ColliderComponent.SetCheckScaleEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -1613,6 +1415,147 @@ static_assert(alignof(CollisionBaseComponent_IsCollisionEnabled) == 0x000001, "W
 static_assert(sizeof(CollisionBaseComponent_IsCollisionEnabled) == 0x000001, "Wrong size on CollisionBaseComponent_IsCollisionEnabled");
 static_assert(offsetof(CollisionBaseComponent_IsCollisionEnabled, ReturnValue) == 0x000000, "Member 'CollisionBaseComponent_IsCollisionEnabled::ReturnValue' has a wrong offset!");
 
+// Function UnionRun.RaceUISubBtnGuide.GetControllerType
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubBtnGuide_GetControllerType final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNotSetKey;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EBtnGuidePlatFormController                   ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubBtnGuide_GetControllerType) == 0x000004, "Wrong alignment on RaceUISubBtnGuide_GetControllerType");
+static_assert(sizeof(RaceUISubBtnGuide_GetControllerType) == 0x000008, "Wrong size on RaceUISubBtnGuide_GetControllerType");
+static_assert(offsetof(RaceUISubBtnGuide_GetControllerType, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetControllerType::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetControllerType, IsNotSetKey) == 0x000004, "Member 'RaceUISubBtnGuide_GetControllerType::IsNotSetKey' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetControllerType, ReturnValue) == 0x000005, "Member 'RaceUISubBtnGuide_GetControllerType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.GetUseItemKey
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubBtnGuide_GetUseItemKey final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnGuide_GetUseItemKey) == 0x000004, "Wrong alignment on RaceUISubBtnGuide_GetUseItemKey");
+static_assert(sizeof(RaceUISubBtnGuide_GetUseItemKey) == 0x000004, "Wrong size on RaceUISubBtnGuide_GetUseItemKey");
+static_assert(offsetof(RaceUISubBtnGuide_GetUseItemKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetUseItemKey::PlayerControllerIndex' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.SetUseItemKey
+// 0x0018 (0x0018 - 0x0000)
+struct RaceUISubBtnGuide_SetUseItemKey final
+{
+public:
+	struct FKey                                   UseItemKey;                                        // 0x0000(0x0018)(ConstParm, Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnGuide_SetUseItemKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_SetUseItemKey");
+static_assert(sizeof(RaceUISubBtnGuide_SetUseItemKey) == 0x000018, "Wrong size on RaceUISubBtnGuide_SetUseItemKey");
+static_assert(offsetof(RaceUISubBtnGuide_SetUseItemKey, UseItemKey) == 0x000000, "Member 'RaceUISubBtnGuide_SetUseItemKey::UseItemKey' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.GetFlightGuideKey
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubBtnGuide_GetFlightGuideKey final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSuggestUpInput;                                   // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnGuide_GetFlightGuideKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetFlightGuideKey");
+static_assert(sizeof(RaceUISubBtnGuide_GetFlightGuideKey) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetFlightGuideKey");
+static_assert(offsetof(RaceUISubBtnGuide_GetFlightGuideKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetFlightGuideKey::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetFlightGuideKey, bSuggestUpInput) == 0x000004, "Member 'RaceUISubBtnGuide_GetFlightGuideKey::bSuggestUpInput' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetFlightGuideKey, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetFlightGuideKey::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.GetKeyDisplayName
+// 0x0030 (0x0030 - 0x0000)
+struct RaceUISubBtnGuide_GetKeyDisplayName final
+{
+public:
+	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerControllerIndex;                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnGuide_GetKeyDisplayName) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetKeyDisplayName");
+static_assert(sizeof(RaceUISubBtnGuide_GetKeyDisplayName) == 0x000030, "Wrong size on RaceUISubBtnGuide_GetKeyDisplayName");
+static_assert(offsetof(RaceUISubBtnGuide_GetKeyDisplayName, InKey) == 0x000000, "Member 'RaceUISubBtnGuide_GetKeyDisplayName::InKey' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetKeyDisplayName, PlayerControllerIndex) == 0x000018, "Member 'RaceUISubBtnGuide_GetKeyDisplayName::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetKeyDisplayName, ReturnValue) == 0x000020, "Member 'RaceUISubBtnGuide_GetKeyDisplayName::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.GetMouseButtonIndex
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubBtnGuide_GetMouseButtonIndex final
+{
+public:
+	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubBtnGuide_GetMouseButtonIndex) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetMouseButtonIndex");
+static_assert(sizeof(RaceUISubBtnGuide_GetMouseButtonIndex) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetMouseButtonIndex");
+static_assert(offsetof(RaceUISubBtnGuide_GetMouseButtonIndex, InKey) == 0x000000, "Member 'RaceUISubBtnGuide_GetMouseButtonIndex::InKey' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetMouseButtonIndex, ReturnValue) == 0x000018, "Member 'RaceUISubBtnGuide_GetMouseButtonIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.GetReleaseEffectKey
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubBtnGuide_GetReleaseEffectKey final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnGuide_GetReleaseEffectKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetReleaseEffectKey");
+static_assert(sizeof(RaceUISubBtnGuide_GetReleaseEffectKey) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetReleaseEffectKey");
+static_assert(offsetof(RaceUISubBtnGuide_GetReleaseEffectKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetReleaseEffectKey::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetReleaseEffectKey, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetReleaseEffectKey::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.GetSteerKey
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubBtnGuide_GetSteerKey final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SteerNo;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnGuide_GetSteerKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetSteerKey");
+static_assert(sizeof(RaceUISubBtnGuide_GetSteerKey) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetSteerKey");
+static_assert(offsetof(RaceUISubBtnGuide_GetSteerKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetSteerKey::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetSteerKey, SteerNo) == 0x000004, "Member 'RaceUISubBtnGuide_GetSteerKey::SteerNo' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetSteerKey, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetSteerKey::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.GetUseItemKeyPC
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubBtnGuide_GetUseItemKeyPC final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnGuide_GetUseItemKeyPC) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetUseItemKeyPC");
+static_assert(sizeof(RaceUISubBtnGuide_GetUseItemKeyPC) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetUseItemKeyPC");
+static_assert(offsetof(RaceUISubBtnGuide_GetUseItemKeyPC, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetUseItemKeyPC::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_GetUseItemKeyPC, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetUseItemKeyPC::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnGuide.IsKeyboard
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubBtnGuide_IsKeyboard final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubBtnGuide_IsKeyboard) == 0x000004, "Wrong alignment on RaceUISubBtnGuide_IsKeyboard");
+static_assert(sizeof(RaceUISubBtnGuide_IsKeyboard) == 0x000008, "Wrong size on RaceUISubBtnGuide_IsKeyboard");
+static_assert(offsetof(RaceUISubBtnGuide_IsKeyboard, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_IsKeyboard::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnGuide_IsKeyboard, ReturnValue) == 0x000004, "Member 'RaceUISubBtnGuide_IsKeyboard::ReturnValue' has a wrong offset!");
+
 // Function UnionRun.CollisionMessageInterface.NotifyTriggerConflict
 // 0x0060 (0x0060 - 0x0000)
 struct CollisionMessageInterface_NotifyTriggerConflict final
@@ -1623,28 +1566,6 @@ public:
 static_assert(alignof(CollisionMessageInterface_NotifyTriggerConflict) == 0x000008, "Wrong alignment on CollisionMessageInterface_NotifyTriggerConflict");
 static_assert(sizeof(CollisionMessageInterface_NotifyTriggerConflict) == 0x000060, "Wrong size on CollisionMessageInterface_NotifyTriggerConflict");
 static_assert(offsetof(CollisionMessageInterface_NotifyTriggerConflict, Info) == 0x000000, "Member 'CollisionMessageInterface_NotifyTriggerConflict::Info' has a wrong offset!");
-
-// Function UnionRun.RaceUISubPlayerName.GetGhostPfId
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubPlayerName_GetGhostPfId final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubPlayerName_GetGhostPfId) == 0x000004, "Wrong alignment on RaceUISubPlayerName_GetGhostPfId");
-static_assert(sizeof(RaceUISubPlayerName_GetGhostPfId) == 0x000004, "Wrong size on RaceUISubPlayerName_GetGhostPfId");
-static_assert(offsetof(RaceUISubPlayerName_GetGhostPfId, ReturnValue) == 0x000000, "Member 'RaceUISubPlayerName_GetGhostPfId::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ItemBlackBombBaseObject.OnTriggerConflict
-// 0x0060 (0x0060 - 0x0000)
-struct ItemBlackBombBaseObject_OnTriggerConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemBlackBombBaseObject_OnTriggerConflict) == 0x000008, "Wrong alignment on ItemBlackBombBaseObject_OnTriggerConflict");
-static_assert(sizeof(ItemBlackBombBaseObject_OnTriggerConflict) == 0x000060, "Wrong size on ItemBlackBombBaseObject_OnTriggerConflict");
-static_assert(offsetof(ItemBlackBombBaseObject_OnTriggerConflict, HitInfo) == 0x000000, "Member 'ItemBlackBombBaseObject_OnTriggerConflict::HitInfo' has a wrong offset!");
 
 // Function UnionRun.CourseSequenceActorSpawner.GetSpawnActor
 // 0x0010 (0x0010 - 0x0000)
@@ -1670,6 +1591,17 @@ public:
 static_assert(alignof(CourseSequenceActorSpawner_SetSize) == 0x000008, "Wrong alignment on CourseSequenceActorSpawner_SetSize");
 static_assert(sizeof(CourseSequenceActorSpawner_SetSize) == 0x000018, "Wrong size on CourseSequenceActorSpawner_SetSize");
 static_assert(offsetof(CourseSequenceActorSpawner_SetSize, Size) == 0x000000, "Member 'CourseSequenceActorSpawner_SetSize::Size' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooProjectile.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct KingBoomBooProjectile_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooProjectile_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on KingBoomBooProjectile_OnTriggerColliderConflict");
+static_assert(sizeof(KingBoomBooProjectile_OnTriggerColliderConflict) == 0x000060, "Wrong size on KingBoomBooProjectile_OnTriggerColliderConflict");
+static_assert(offsetof(KingBoomBooProjectile_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'KingBoomBooProjectile_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
 
 // Function UnionRun.DarkGaiaPhoenixAnimInstance.GetIsPhase1Attack
 // 0x0001 (0x0001 - 0x0000)
@@ -1794,133 +1726,76 @@ static_assert(sizeof(DeathEggAnimInstance_IsPunchState) == 0x000002, "Wrong size
 static_assert(offsetof(DeathEggAnimInstance_IsPunchState, State) == 0x000000, "Member 'DeathEggAnimInstance_IsPunchState::State' has a wrong offset!");
 static_assert(offsetof(DeathEggAnimInstance_IsPunchState, ReturnValue) == 0x000001, "Member 'DeathEggAnimInstance_IsPunchState::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapDiffTime
+// Function UnionRun.RaceUISubHitInfo.SetCharaIndex
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubHitInfo_SetCharaIndex final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRival;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubHitInfo_SetCharaIndex) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetCharaIndex");
+static_assert(sizeof(RaceUISubHitInfo_SetCharaIndex) == 0x000008, "Wrong size on RaceUISubHitInfo_SetCharaIndex");
+static_assert(offsetof(RaceUISubHitInfo_SetCharaIndex, Index_0) == 0x000000, "Member 'RaceUISubHitInfo_SetCharaIndex::Index_0' has a wrong offset!");
+static_assert(offsetof(RaceUISubHitInfo_SetCharaIndex, IsRival) == 0x000004, "Member 'RaceUISubHitInfo_SetCharaIndex::IsRival' has a wrong offset!");
+
+// Function UnionRun.RaceUISubHitInfo.SetGroupColorMaterial
 // 0x0004 (0x0004 - 0x0000)
-struct RaceUISubTimeTrialTimeLap_SetLapDiffTime final
+struct RaceUISubHitInfo_SetGroupColorMaterial final
 {
 public:
-	int32                                         LapNum;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapDiffTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapDiffTime");
-static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapDiffTime) == 0x000004, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapDiffTime");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapDiffTime, LapNum) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapDiffTime::LapNum' has a wrong offset!");
+static_assert(alignof(RaceUISubHitInfo_SetGroupColorMaterial) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetGroupColorMaterial");
+static_assert(sizeof(RaceUISubHitInfo_SetGroupColorMaterial) == 0x000004, "Wrong size on RaceUISubHitInfo_SetGroupColorMaterial");
+static_assert(offsetof(RaceUISubHitInfo_SetGroupColorMaterial, Index_0) == 0x000000, "Member 'RaceUISubHitInfo_SetGroupColorMaterial::Index_0' has a wrong offset!");
 
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTime
-// 0x0024 (0x0024 - 0x0000)
-struct RaceUISubTimeTrialTimeLap_SetLapTime final
-{
-public:
-	struct FRaceUITimeTrialTime                   NewTime;                                           // 0x0000(0x0020)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Lap;                                               // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapTime");
-static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapTime) == 0x000024, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapTime");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTime, NewTime) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapTime::NewTime' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTime, Lap) == 0x000020, "Member 'RaceUISubTimeTrialTimeLap_SetLapTime::Lap' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeIsGhostReplay
+// Function UnionRun.RaceUISubHitInfo.SetLocalPlayerColorMaterial
 // 0x0004 (0x0004 - 0x0000)
-struct RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay final
+struct RaceUISubHitInfo_SetLocalPlayerColorMaterial final
 {
 public:
-	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay");
-static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay) == 0x000004, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay, Lap) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay::Lap' has a wrong offset!");
+static_assert(alignof(RaceUISubHitInfo_SetLocalPlayerColorMaterial) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetLocalPlayerColorMaterial");
+static_assert(sizeof(RaceUISubHitInfo_SetLocalPlayerColorMaterial) == 0x000004, "Wrong size on RaceUISubHitInfo_SetLocalPlayerColorMaterial");
+static_assert(offsetof(RaceUISubHitInfo_SetLocalPlayerColorMaterial, Index_0) == 0x000000, "Member 'RaceUISubHitInfo_SetLocalPlayerColorMaterial::Index_0' has a wrong offset!");
 
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeWithDiff
-// 0x0028 (0x0028 - 0x0000)
-struct RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff final
-{
-public:
-	struct FRaceUITimeTrialTime                   NewTime;                                           // 0x0000(0x0020)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Lap;                                               // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsVisibleDiff;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff");
-static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff) == 0x000028, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff, NewTime) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff::NewTime' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff, Lap) == 0x000020, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff::Lap' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff, IsVisibleDiff) == 0x000024, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff::IsVisibleDiff' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTimeTrialTimeLap.UpdateLapTime
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubTimeTrialTimeLap_UpdateLapTime final
-{
-public:
-	struct FRaceUITimeTrialTime                   ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTimeTrialTimeLap_UpdateLapTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_UpdateLapTime");
-static_assert(sizeof(RaceUISubTimeTrialTimeLap_UpdateLapTime) == 0x000020, "Wrong size on RaceUISubTimeTrialTimeLap_UpdateLapTime");
-static_assert(offsetof(RaceUISubTimeTrialTimeLap_UpdateLapTime, ReturnValue) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_UpdateLapTime::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ItemBoxObject.OnChangeItemBox
-// 0x0001 (0x0001 - 0x0000)
-struct ItemBoxObject_OnChangeItemBox final
-{
-public:
-	EItemBoxType                                  ItemBoxType_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemBoxObject_OnChangeItemBox) == 0x000001, "Wrong alignment on ItemBoxObject_OnChangeItemBox");
-static_assert(sizeof(ItemBoxObject_OnChangeItemBox) == 0x000001, "Wrong size on ItemBoxObject_OnChangeItemBox");
-static_assert(offsetof(ItemBoxObject_OnChangeItemBox, ItemBoxType_0) == 0x000000, "Member 'ItemBoxObject_OnChangeItemBox::ItemBoxType_0' has a wrong offset!");
-
-// Function UnionRun.ItemBoxObject.OnHitRacer
+// Function UnionRun.RaceUISubHitInfo.SetLostItemIdIndex_Implement
 // 0x0004 (0x0004 - 0x0000)
-struct ItemBoxObject_OnHitRacer final
+struct RaceUISubHitInfo_SetLostItemIdIndex_Implement final
 {
 public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InItemIdIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ItemBoxObject_OnHitRacer) == 0x000004, "Wrong alignment on ItemBoxObject_OnHitRacer");
-static_assert(sizeof(ItemBoxObject_OnHitRacer) == 0x000004, "Wrong size on ItemBoxObject_OnHitRacer");
-static_assert(offsetof(ItemBoxObject_OnHitRacer, RacerIndex) == 0x000000, "Member 'ItemBoxObject_OnHitRacer::RacerIndex' has a wrong offset!");
+static_assert(alignof(RaceUISubHitInfo_SetLostItemIdIndex_Implement) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetLostItemIdIndex_Implement");
+static_assert(sizeof(RaceUISubHitInfo_SetLostItemIdIndex_Implement) == 0x000004, "Wrong size on RaceUISubHitInfo_SetLostItemIdIndex_Implement");
+static_assert(offsetof(RaceUISubHitInfo_SetLostItemIdIndex_Implement, InItemIdIndex) == 0x000000, "Member 'RaceUISubHitInfo_SetLostItemIdIndex_Implement::InItemIdIndex' has a wrong offset!");
 
-// Function UnionRun.ItemBoxObject.OnPlayForceFeedback
-// 0x0004 (0x0004 - 0x0000)
-struct ItemBoxObject_OnPlayForceFeedback final
-{
-public:
-	int32                                         LocalPlayerIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemBoxObject_OnPlayForceFeedback) == 0x000004, "Wrong alignment on ItemBoxObject_OnPlayForceFeedback");
-static_assert(sizeof(ItemBoxObject_OnPlayForceFeedback) == 0x000004, "Wrong size on ItemBoxObject_OnPlayForceFeedback");
-static_assert(offsetof(ItemBoxObject_OnPlayForceFeedback, LocalPlayerIndex) == 0x000000, "Member 'ItemBoxObject_OnPlayForceFeedback::LocalPlayerIndex' has a wrong offset!");
-
-// Function UnionRun.ItemBoxObject.SetItemBoxType
+// Function UnionRun.RaceUISubHitInfo.SetPlatformIcon
 // 0x0001 (0x0001 - 0x0000)
-struct ItemBoxObject_SetItemBoxType final
+struct RaceUISubHitInfo_SetPlatformIcon final
 {
 public:
-	EItemBoxType                                  Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECrossplayPlatform                            Platform;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ItemBoxObject_SetItemBoxType) == 0x000001, "Wrong alignment on ItemBoxObject_SetItemBoxType");
-static_assert(sizeof(ItemBoxObject_SetItemBoxType) == 0x000001, "Wrong size on ItemBoxObject_SetItemBoxType");
-static_assert(offsetof(ItemBoxObject_SetItemBoxType, Type) == 0x000000, "Member 'ItemBoxObject_SetItemBoxType::Type' has a wrong offset!");
+static_assert(alignof(RaceUISubHitInfo_SetPlatformIcon) == 0x000001, "Wrong alignment on RaceUISubHitInfo_SetPlatformIcon");
+static_assert(sizeof(RaceUISubHitInfo_SetPlatformIcon) == 0x000001, "Wrong size on RaceUISubHitInfo_SetPlatformIcon");
+static_assert(offsetof(RaceUISubHitInfo_SetPlatformIcon, Platform) == 0x000000, "Member 'RaceUISubHitInfo_SetPlatformIcon::Platform' has a wrong offset!");
 
-// Function UnionRun.ItemBoxObject.SetSpecifiedItem
-// 0x0001 (0x0001 - 0x0000)
-struct ItemBoxObject_SetSpecifiedItem final
+// Function UnionRun.RaceUISubHitInfo.SwitchBaseUI
+// 0x0002 (0x0002 - 0x0000)
+struct RaceUISubHitInfo_SwitchBaseUI final
 {
 public:
-	EItemId                                       Item;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRival;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPowerRival;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ItemBoxObject_SetSpecifiedItem) == 0x000001, "Wrong alignment on ItemBoxObject_SetSpecifiedItem");
-static_assert(sizeof(ItemBoxObject_SetSpecifiedItem) == 0x000001, "Wrong size on ItemBoxObject_SetSpecifiedItem");
-static_assert(offsetof(ItemBoxObject_SetSpecifiedItem, Item) == 0x000000, "Member 'ItemBoxObject_SetSpecifiedItem::Item' has a wrong offset!");
-
-// Function UnionRun.ItemBoxObject.GetSoundPan
-// 0x0001 (0x0001 - 0x0000)
-struct ItemBoxObject_GetSoundPan final
-{
-public:
-	ESoundPan                                     ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemBoxObject_GetSoundPan) == 0x000001, "Wrong alignment on ItemBoxObject_GetSoundPan");
-static_assert(sizeof(ItemBoxObject_GetSoundPan) == 0x000001, "Wrong size on ItemBoxObject_GetSoundPan");
-static_assert(offsetof(ItemBoxObject_GetSoundPan, ReturnValue) == 0x000000, "Member 'ItemBoxObject_GetSoundPan::ReturnValue' has a wrong offset!");
+static_assert(alignof(RaceUISubHitInfo_SwitchBaseUI) == 0x000001, "Wrong alignment on RaceUISubHitInfo_SwitchBaseUI");
+static_assert(sizeof(RaceUISubHitInfo_SwitchBaseUI) == 0x000002, "Wrong size on RaceUISubHitInfo_SwitchBaseUI");
+static_assert(offsetof(RaceUISubHitInfo_SwitchBaseUI, IsRival) == 0x000000, "Member 'RaceUISubHitInfo_SwitchBaseUI::IsRival' has a wrong offset!");
+static_assert(offsetof(RaceUISubHitInfo_SwitchBaseUI, IsPowerRival) == 0x000001, "Member 'RaceUISubHitInfo_SwitchBaseUI::IsPowerRival' has a wrong offset!");
 
 // Function UnionRun.DroppedRingFactory.OnPlayDroppedRingSound_DAMAGE_01
 // 0x0001 (0x0001 - 0x0000)
@@ -1976,6 +1851,17 @@ public:
 static_assert(alignof(DroppedRingFactory_OnPlayDroppedRingSound_Small) == 0x000001, "Wrong alignment on DroppedRingFactory_OnPlayDroppedRingSound_Small");
 static_assert(sizeof(DroppedRingFactory_OnPlayDroppedRingSound_Small) == 0x000001, "Wrong size on DroppedRingFactory_OnPlayDroppedRingSound_Small");
 static_assert(offsetof(DroppedRingFactory_OnPlayDroppedRingSound_Small, SoundPan) == 0x000000, "Member 'DroppedRingFactory_OnPlayDroppedRingSound_Small::SoundPan' has a wrong offset!");
+
+// Function UnionRun.RaceObjectSkeletal.SetBodySkeletalMesh
+// 0x0008 (0x0008 - 0x0000)
+struct RaceObjectSkeletal_SetBodySkeletalMesh final
+{
+public:
+	class USkeletalMesh*                          NewSkeletalMesh;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceObjectSkeletal_SetBodySkeletalMesh) == 0x000008, "Wrong alignment on RaceObjectSkeletal_SetBodySkeletalMesh");
+static_assert(sizeof(RaceObjectSkeletal_SetBodySkeletalMesh) == 0x000008, "Wrong size on RaceObjectSkeletal_SetBodySkeletalMesh");
+static_assert(offsetof(RaceObjectSkeletal_SetBodySkeletalMesh, NewSkeletalMesh) == 0x000000, "Member 'RaceObjectSkeletal_SetBodySkeletalMesh::NewSkeletalMesh' has a wrong offset!");
 
 // Function UnionRun.DroppedRingObject.HitRacer
 // 0x0004 (0x0004 - 0x0000)
@@ -2120,386 +2006,6 @@ static_assert(alignof(EggChaserAnimInstance_SetIsWaitToFly) == 0x000001, "Wrong 
 static_assert(sizeof(EggChaserAnimInstance_SetIsWaitToFly) == 0x000001, "Wrong size on EggChaserAnimInstance_SetIsWaitToFly");
 static_assert(offsetof(EggChaserAnimInstance_SetIsWaitToFly, flag) == 0x000000, "Member 'EggChaserAnimInstance_SetIsWaitToFly::flag' has a wrong offset!");
 
-// Function UnionRun.RaceUISubBoost.CheckBoostLevelInGhostReplay
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubBoost_CheckBoostLevelInGhostReplay final
-{
-public:
-	int32                                         Level;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBoost_CheckBoostLevelInGhostReplay) == 0x000004, "Wrong alignment on RaceUISubBoost_CheckBoostLevelInGhostReplay");
-static_assert(sizeof(RaceUISubBoost_CheckBoostLevelInGhostReplay) == 0x000004, "Wrong size on RaceUISubBoost_CheckBoostLevelInGhostReplay");
-static_assert(offsetof(RaceUISubBoost_CheckBoostLevelInGhostReplay, Level) == 0x000000, "Member 'RaceUISubBoost_CheckBoostLevelInGhostReplay::Level' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.IsFastFirstCharge
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubBoost_IsFastFirstCharge final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubBoost_IsFastFirstCharge) == 0x000004, "Wrong alignment on RaceUISubBoost_IsFastFirstCharge");
-static_assert(sizeof(RaceUISubBoost_IsFastFirstCharge) == 0x000008, "Wrong size on RaceUISubBoost_IsFastFirstCharge");
-static_assert(offsetof(RaceUISubBoost_IsFastFirstCharge, RacerIndex) == 0x000000, "Member 'RaceUISubBoost_IsFastFirstCharge::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBoost_IsFastFirstCharge, ReturnValue) == 0x000004, "Member 'RaceUISubBoost_IsFastFirstCharge::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.IsFastSecondCharge
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubBoost_IsFastSecondCharge final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubBoost_IsFastSecondCharge) == 0x000004, "Wrong alignment on RaceUISubBoost_IsFastSecondCharge");
-static_assert(sizeof(RaceUISubBoost_IsFastSecondCharge) == 0x000008, "Wrong size on RaceUISubBoost_IsFastSecondCharge");
-static_assert(offsetof(RaceUISubBoost_IsFastSecondCharge, RacerIndex) == 0x000000, "Member 'RaceUISubBoost_IsFastSecondCharge::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBoost_IsFastSecondCharge, ReturnValue) == 0x000004, "Member 'RaceUISubBoost_IsFastSecondCharge::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.IsFastThirdCharge
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubBoost_IsFastThirdCharge final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubBoost_IsFastThirdCharge) == 0x000004, "Wrong alignment on RaceUISubBoost_IsFastThirdCharge");
-static_assert(sizeof(RaceUISubBoost_IsFastThirdCharge) == 0x000008, "Wrong size on RaceUISubBoost_IsFastThirdCharge");
-static_assert(offsetof(RaceUISubBoost_IsFastThirdCharge, RacerIndex) == 0x000000, "Member 'RaceUISubBoost_IsFastThirdCharge::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBoost_IsFastThirdCharge, ReturnValue) == 0x000004, "Member 'RaceUISubBoost_IsFastThirdCharge::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.IsViewGhostReplay
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubBoost_IsViewGhostReplay final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBoost_IsViewGhostReplay) == 0x000001, "Wrong alignment on RaceUISubBoost_IsViewGhostReplay");
-static_assert(sizeof(RaceUISubBoost_IsViewGhostReplay) == 0x000001, "Wrong size on RaceUISubBoost_IsViewGhostReplay");
-static_assert(offsetof(RaceUISubBoost_IsViewGhostReplay, ReturnValue) == 0x000000, "Member 'RaceUISubBoost_IsViewGhostReplay::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.SetVisibleHUD
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubBoost_SetVisibleHUD final
-{
-public:
-	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DeltaTime;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBoost_SetVisibleHUD) == 0x000004, "Wrong alignment on RaceUISubBoost_SetVisibleHUD");
-static_assert(sizeof(RaceUISubBoost_SetVisibleHUD) == 0x000008, "Wrong size on RaceUISubBoost_SetVisibleHUD");
-static_assert(offsetof(RaceUISubBoost_SetVisibleHUD, IsVisible_0) == 0x000000, "Member 'RaceUISubBoost_SetVisibleHUD::IsVisible_0' has a wrong offset!");
-static_assert(offsetof(RaceUISubBoost_SetVisibleHUD, DeltaTime) == 0x000004, "Member 'RaceUISubBoost_SetVisibleHUD::DeltaTime' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.SetWaitTimeJustBoostInGhostReplay
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay final
-{
-public:
-	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay) == 0x000004, "Wrong alignment on RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay");
-static_assert(sizeof(RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay) == 0x000004, "Wrong size on RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay");
-static_assert(offsetof(RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay, Time) == 0x000000, "Member 'RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay::Time' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.UpdateChargeInfo
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubBoost_UpdateChargeInfo final
-{
-public:
-	int32                                         ChargeLevel;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChargeRate;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBoost_UpdateChargeInfo) == 0x000004, "Wrong alignment on RaceUISubBoost_UpdateChargeInfo");
-static_assert(sizeof(RaceUISubBoost_UpdateChargeInfo) == 0x000008, "Wrong size on RaceUISubBoost_UpdateChargeInfo");
-static_assert(offsetof(RaceUISubBoost_UpdateChargeInfo, ChargeLevel) == 0x000000, "Member 'RaceUISubBoost_UpdateChargeInfo::ChargeLevel' has a wrong offset!");
-static_assert(offsetof(RaceUISubBoost_UpdateChargeInfo, ChargeRate) == 0x000004, "Member 'RaceUISubBoost_UpdateChargeInfo::ChargeRate' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBoost.GetIsOpened
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubBoost_GetIsOpened final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBoost_GetIsOpened) == 0x000001, "Wrong alignment on RaceUISubBoost_GetIsOpened");
-static_assert(sizeof(RaceUISubBoost_GetIsOpened) == 0x000001, "Wrong size on RaceUISubBoost_GetIsOpened");
-static_assert(offsetof(RaceUISubBoost_GetIsOpened, ReturnValue) == 0x000000, "Member 'RaceUISubBoost_GetIsOpened::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.Gimmick_Extnd05_Enemy04004.IsDamaged
-// 0x0001 (0x0001 - 0x0000)
-struct Gimmick_Extnd05_Enemy04004_IsDamaged final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(Gimmick_Extnd05_Enemy04004_IsDamaged) == 0x000001, "Wrong alignment on Gimmick_Extnd05_Enemy04004_IsDamaged");
-static_assert(sizeof(Gimmick_Extnd05_Enemy04004_IsDamaged) == 0x000001, "Wrong size on Gimmick_Extnd05_Enemy04004_IsDamaged");
-static_assert(offsetof(Gimmick_Extnd05_Enemy04004_IsDamaged, ReturnValue) == 0x000000, "Member 'Gimmick_Extnd05_Enemy04004_IsDamaged::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.EggDragoonAnimInstance.IsAttackState
-// 0x0002 (0x0002 - 0x0000)
-struct EggDragoonAnimInstance_IsAttackState final
-{
-public:
-	EEggDragoonState                              State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EggDragoonAnimInstance_IsAttackState) == 0x000001, "Wrong alignment on EggDragoonAnimInstance_IsAttackState");
-static_assert(sizeof(EggDragoonAnimInstance_IsAttackState) == 0x000002, "Wrong size on EggDragoonAnimInstance_IsAttackState");
-static_assert(offsetof(EggDragoonAnimInstance_IsAttackState, State) == 0x000000, "Member 'EggDragoonAnimInstance_IsAttackState::State' has a wrong offset!");
-static_assert(offsetof(EggDragoonAnimInstance_IsAttackState, ReturnValue) == 0x000001, "Member 'EggDragoonAnimInstance_IsAttackState::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.EggDragoonAnimInstance.IsStateActivate
-// 0x0001 (0x0001 - 0x0000)
-struct EggDragoonAnimInstance_IsStateActivate final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EggDragoonAnimInstance_IsStateActivate) == 0x000001, "Wrong alignment on EggDragoonAnimInstance_IsStateActivate");
-static_assert(sizeof(EggDragoonAnimInstance_IsStateActivate) == 0x000001, "Wrong size on EggDragoonAnimInstance_IsStateActivate");
-static_assert(offsetof(EggDragoonAnimInstance_IsStateActivate, ReturnValue) == 0x000000, "Member 'EggDragoonAnimInstance_IsStateActivate::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.EnemyAmbushTrex.HitRacer
-// 0x0004 (0x0004 - 0x0000)
-struct EnemyAmbushTrex_HitRacer final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyAmbushTrex_HitRacer) == 0x000004, "Wrong alignment on EnemyAmbushTrex_HitRacer");
-static_assert(sizeof(EnemyAmbushTrex_HitRacer) == 0x000004, "Wrong size on EnemyAmbushTrex_HitRacer");
-static_assert(offsetof(EnemyAmbushTrex_HitRacer, RacerIndex) == 0x000000, "Member 'EnemyAmbushTrex_HitRacer::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnKey.SetButtonState
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubBtnKey_SetButtonState final
-{
-public:
-	int32                                         InState;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnKey_SetButtonState) == 0x000004, "Wrong alignment on RaceUISubBtnKey_SetButtonState");
-static_assert(sizeof(RaceUISubBtnKey_SetButtonState) == 0x000004, "Wrong size on RaceUISubBtnKey_SetButtonState");
-static_assert(offsetof(RaceUISubBtnKey_SetButtonState, InState) == 0x000000, "Member 'RaceUISubBtnKey_SetButtonState::InState' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnKey.GetKeyDisplayName
-// 0x0030 (0x0030 - 0x0000)
-struct RaceUISubBtnKey_GetKeyDisplayName final
-{
-public:
-	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerControllerIndex;                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnKey_GetKeyDisplayName) == 0x000008, "Wrong alignment on RaceUISubBtnKey_GetKeyDisplayName");
-static_assert(sizeof(RaceUISubBtnKey_GetKeyDisplayName) == 0x000030, "Wrong size on RaceUISubBtnKey_GetKeyDisplayName");
-static_assert(offsetof(RaceUISubBtnKey_GetKeyDisplayName, InKey) == 0x000000, "Member 'RaceUISubBtnKey_GetKeyDisplayName::InKey' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnKey_GetKeyDisplayName, PlayerControllerIndex) == 0x000018, "Member 'RaceUISubBtnKey_GetKeyDisplayName::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnKey_GetKeyDisplayName, ReturnValue) == 0x000020, "Member 'RaceUISubBtnKey_GetKeyDisplayName::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnKey.GetMouseButtonIndex
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubBtnKey_GetMouseButtonIndex final
-{
-public:
-	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubBtnKey_GetMouseButtonIndex) == 0x000008, "Wrong alignment on RaceUISubBtnKey_GetMouseButtonIndex");
-static_assert(sizeof(RaceUISubBtnKey_GetMouseButtonIndex) == 0x000020, "Wrong size on RaceUISubBtnKey_GetMouseButtonIndex");
-static_assert(offsetof(RaceUISubBtnKey_GetMouseButtonIndex, InKey) == 0x000000, "Member 'RaceUISubBtnKey_GetMouseButtonIndex::InKey' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnKey_GetMouseButtonIndex, ReturnValue) == 0x000018, "Member 'RaceUISubBtnKey_GetMouseButtonIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.EnemyAttackStoneStatue.MovePositionUpdate
-// 0x0004 (0x0004 - 0x0000)
-struct EnemyAttackStoneStatue_MovePositionUpdate final
-{
-public:
-	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyAttackStoneStatue_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyAttackStoneStatue_MovePositionUpdate");
-static_assert(sizeof(EnemyAttackStoneStatue_MovePositionUpdate) == 0x000004, "Wrong size on EnemyAttackStoneStatue_MovePositionUpdate");
-static_assert(offsetof(EnemyAttackStoneStatue_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyAttackStoneStatue_MovePositionUpdate::Ratio' has a wrong offset!");
-
-// Function UnionRun.EnemyAttackStoneStatue.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct EnemyAttackStoneStatue_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyAttackStoneStatue_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyAttackStoneStatue_OnTriggerColliderConflict");
-static_assert(sizeof(EnemyAttackStoneStatue_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyAttackStoneStatue_OnTriggerColliderConflict");
-static_assert(offsetof(EnemyAttackStoneStatue_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyAttackStoneStatue_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.EnemyBigTrain.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct EnemyBigTrain_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyBigTrain_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyBigTrain_OnTriggerColliderConflict");
-static_assert(sizeof(EnemyBigTrain_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyBigTrain_OnTriggerColliderConflict");
-static_assert(offsetof(EnemyBigTrain_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyBigTrain_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.EnemyBigTrain.OnTriggerColliderConflictSteamAttack
-// 0x0060 (0x0060 - 0x0000)
-struct EnemyBigTrain_OnTriggerColliderConflictSteamAttack final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyBigTrain_OnTriggerColliderConflictSteamAttack) == 0x000008, "Wrong alignment on EnemyBigTrain_OnTriggerColliderConflictSteamAttack");
-static_assert(sizeof(EnemyBigTrain_OnTriggerColliderConflictSteamAttack) == 0x000060, "Wrong size on EnemyBigTrain_OnTriggerColliderConflictSteamAttack");
-static_assert(offsetof(EnemyBigTrain_OnTriggerColliderConflictSteamAttack, HitInfo) == 0x000000, "Member 'EnemyBigTrain_OnTriggerColliderConflictSteamAttack::HitInfo' has a wrong offset!");
-
-// Function UnionRun.EnemyDarkGaiaPhoenixPhase3.ActivateAttackEffect
-// 0x0002 (0x0002 - 0x0000)
-struct EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect final
-{
-public:
-	bool                                          IsRight;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          isMirrer;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect) == 0x000001, "Wrong alignment on EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect");
-static_assert(sizeof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect) == 0x000002, "Wrong size on EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect");
-static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect, IsRight) == 0x000000, "Member 'EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect::IsRight' has a wrong offset!");
-static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect, isMirrer) == 0x000001, "Member 'EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect::isMirrer' has a wrong offset!");
-
-// Function UnionRun.EnemyDarkGaiaPhoenixPhase3.WingAttack
-// 0x0002 (0x0002 - 0x0000)
-struct EnemyDarkGaiaPhoenixPhase3_WingAttack final
-{
-public:
-	bool                                          IsRight;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          isMirrer;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyDarkGaiaPhoenixPhase3_WingAttack) == 0x000001, "Wrong alignment on EnemyDarkGaiaPhoenixPhase3_WingAttack");
-static_assert(sizeof(EnemyDarkGaiaPhoenixPhase3_WingAttack) == 0x000002, "Wrong size on EnemyDarkGaiaPhoenixPhase3_WingAttack");
-static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_WingAttack, IsRight) == 0x000000, "Member 'EnemyDarkGaiaPhoenixPhase3_WingAttack::IsRight' has a wrong offset!");
-static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_WingAttack, isMirrer) == 0x000001, "Member 'EnemyDarkGaiaPhoenixPhase3_WingAttack::isMirrer' has a wrong offset!");
-
-// Function UnionRun.GimmckEventCollision.SetEventId
-// 0x0001 (0x0001 - 0x0000)
-struct GimmckEventCollision_SetEventId final
-{
-public:
-	EUnionEventId                                 EventId;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GimmckEventCollision_SetEventId) == 0x000001, "Wrong alignment on GimmckEventCollision_SetEventId");
-static_assert(sizeof(GimmckEventCollision_SetEventId) == 0x000001, "Wrong size on GimmckEventCollision_SetEventId");
-static_assert(offsetof(GimmckEventCollision_SetEventId, EventId) == 0x000000, "Member 'GimmckEventCollision_SetEventId::EventId' has a wrong offset!");
-
-// Function UnionRun.EnemyEggChaser.StartAttack
-// 0x0001 (0x0001 - 0x0000)
-struct EnemyEggChaser_StartAttack final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyEggChaser_StartAttack) == 0x000001, "Wrong alignment on EnemyEggChaser_StartAttack");
-static_assert(sizeof(EnemyEggChaser_StartAttack) == 0x000001, "Wrong size on EnemyEggChaser_StartAttack");
-static_assert(offsetof(EnemyEggChaser_StartAttack, IsEnable) == 0x000000, "Member 'EnemyEggChaser_StartAttack::IsEnable' has a wrong offset!");
-
-// Function UnionRun.EnemyMoai.MovePositionUpdate
-// 0x0004 (0x0004 - 0x0000)
-struct EnemyMoai_MovePositionUpdate final
-{
-public:
-	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyMoai_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyMoai_MovePositionUpdate");
-static_assert(sizeof(EnemyMoai_MovePositionUpdate) == 0x000004, "Wrong size on EnemyMoai_MovePositionUpdate");
-static_assert(offsetof(EnemyMoai_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyMoai_MovePositionUpdate::Ratio' has a wrong offset!");
-
-// Function UnionRun.EnemyMoai.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct EnemyMoai_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyMoai_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyMoai_OnTriggerColliderConflict");
-static_assert(sizeof(EnemyMoai_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyMoai_OnTriggerColliderConflict");
-static_assert(offsetof(EnemyMoai_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyMoai_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.EnemyMoaiFinalLap.MovePositionUpdate
-// 0x0004 (0x0004 - 0x0000)
-struct EnemyMoaiFinalLap_MovePositionUpdate final
-{
-public:
-	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyMoaiFinalLap_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyMoaiFinalLap_MovePositionUpdate");
-static_assert(sizeof(EnemyMoaiFinalLap_MovePositionUpdate) == 0x000004, "Wrong size on EnemyMoaiFinalLap_MovePositionUpdate");
-static_assert(offsetof(EnemyMoaiFinalLap_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyMoaiFinalLap_MovePositionUpdate::Ratio' has a wrong offset!");
-
-// Function UnionRun.EnemyMoaiFinalLap.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct EnemyMoaiFinalLap_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyMoaiFinalLap_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyMoaiFinalLap_OnTriggerColliderConflict");
-static_assert(sizeof(EnemyMoaiFinalLap_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyMoaiFinalLap_OnTriggerColliderConflict");
-static_assert(offsetof(EnemyMoaiFinalLap_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyMoaiFinalLap_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.GimmickRingDropper.DropRings
-// 0x0004 (0x0004 - 0x0000)
-struct GimmickRingDropper_DropRings final
-{
-public:
-	int32                                         DropRingCount;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GimmickRingDropper_DropRings) == 0x000004, "Wrong alignment on GimmickRingDropper_DropRings");
-static_assert(sizeof(GimmickRingDropper_DropRings) == 0x000004, "Wrong size on GimmickRingDropper_DropRings");
-static_assert(offsetof(GimmickRingDropper_DropRings, DropRingCount) == 0x000000, "Member 'GimmickRingDropper_DropRings::DropRingCount' has a wrong offset!");
-
-// Function UnionRun.EnemyShipPaddle.MovePositionUpdate
-// 0x0004 (0x0004 - 0x0000)
-struct EnemyShipPaddle_MovePositionUpdate final
-{
-public:
-	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemyShipPaddle_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyShipPaddle_MovePositionUpdate");
-static_assert(sizeof(EnemyShipPaddle_MovePositionUpdate) == 0x000004, "Wrong size on EnemyShipPaddle_MovePositionUpdate");
-static_assert(offsetof(EnemyShipPaddle_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyShipPaddle_MovePositionUpdate::Ratio' has a wrong offset!");
-
-// Function UnionRun.EnemySmallTrain.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct EnemySmallTrain_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemySmallTrain_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemySmallTrain_OnTriggerColliderConflict");
-static_assert(sizeof(EnemySmallTrain_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemySmallTrain_OnTriggerColliderConflict");
-static_assert(offsetof(EnemySmallTrain_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemySmallTrain_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.EnemySnake.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct EnemySnake_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(EnemySnake_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemySnake_OnTriggerColliderConflict");
-static_assert(sizeof(EnemySnake_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemySnake_OnTriggerColliderConflict");
-static_assert(offsetof(EnemySnake_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemySnake_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
 // Function UnionRun.GimmickBubble.BubbleIdleMoveUpdate
 // 0x0004 (0x0004 - 0x0000)
 struct GimmickBubble_BubbleIdleMoveUpdate final
@@ -2580,6 +2086,268 @@ static_assert(alignof(GimmickBubble_SetVisivleBonusItemType) == 0x000001, "Wrong
 static_assert(sizeof(GimmickBubble_SetVisivleBonusItemType) == 0x000001, "Wrong size on GimmickBubble_SetVisivleBonusItemType");
 static_assert(offsetof(GimmickBubble_SetVisivleBonusItemType, BonusType) == 0x000000, "Member 'GimmickBubble_SetVisivleBonusItemType::BonusType' has a wrong offset!");
 
+// Function UnionRun.EggDragoonAnimInstance.IsAttackState
+// 0x0002 (0x0002 - 0x0000)
+struct EggDragoonAnimInstance_IsAttackState final
+{
+public:
+	EEggDragoonState                              State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EggDragoonAnimInstance_IsAttackState) == 0x000001, "Wrong alignment on EggDragoonAnimInstance_IsAttackState");
+static_assert(sizeof(EggDragoonAnimInstance_IsAttackState) == 0x000002, "Wrong size on EggDragoonAnimInstance_IsAttackState");
+static_assert(offsetof(EggDragoonAnimInstance_IsAttackState, State) == 0x000000, "Member 'EggDragoonAnimInstance_IsAttackState::State' has a wrong offset!");
+static_assert(offsetof(EggDragoonAnimInstance_IsAttackState, ReturnValue) == 0x000001, "Member 'EggDragoonAnimInstance_IsAttackState::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.EggDragoonAnimInstance.IsStateActivate
+// 0x0001 (0x0001 - 0x0000)
+struct EggDragoonAnimInstance_IsStateActivate final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EggDragoonAnimInstance_IsStateActivate) == 0x000001, "Wrong alignment on EggDragoonAnimInstance_IsStateActivate");
+static_assert(sizeof(EggDragoonAnimInstance_IsStateActivate) == 0x000001, "Wrong size on EggDragoonAnimInstance_IsStateActivate");
+static_assert(offsetof(EggDragoonAnimInstance_IsStateActivate, ReturnValue) == 0x000000, "Member 'EggDragoonAnimInstance_IsStateActivate::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.EnemyAmbushTrex.HitRacer
+// 0x0004 (0x0004 - 0x0000)
+struct EnemyAmbushTrex_HitRacer final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyAmbushTrex_HitRacer) == 0x000004, "Wrong alignment on EnemyAmbushTrex_HitRacer");
+static_assert(sizeof(EnemyAmbushTrex_HitRacer) == 0x000004, "Wrong size on EnemyAmbushTrex_HitRacer");
+static_assert(offsetof(EnemyAmbushTrex_HitRacer, RacerIndex) == 0x000000, "Member 'EnemyAmbushTrex_HitRacer::RacerIndex' has a wrong offset!");
+
+// Function UnionRun.GimmickManipulatedVehicle.DebugUpdateIdleMove
+// 0x0004 (0x0004 - 0x0000)
+struct GimmickManipulatedVehicle_DebugUpdateIdleMove final
+{
+public:
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickManipulatedVehicle_DebugUpdateIdleMove) == 0x000004, "Wrong alignment on GimmickManipulatedVehicle_DebugUpdateIdleMove");
+static_assert(sizeof(GimmickManipulatedVehicle_DebugUpdateIdleMove) == 0x000004, "Wrong size on GimmickManipulatedVehicle_DebugUpdateIdleMove");
+static_assert(offsetof(GimmickManipulatedVehicle_DebugUpdateIdleMove, DeltaTime) == 0x000000, "Member 'GimmickManipulatedVehicle_DebugUpdateIdleMove::DeltaTime' has a wrong offset!");
+
+// Function UnionRun.EnemyAttackStoneStatue.MovePositionUpdate
+// 0x0004 (0x0004 - 0x0000)
+struct EnemyAttackStoneStatue_MovePositionUpdate final
+{
+public:
+	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyAttackStoneStatue_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyAttackStoneStatue_MovePositionUpdate");
+static_assert(sizeof(EnemyAttackStoneStatue_MovePositionUpdate) == 0x000004, "Wrong size on EnemyAttackStoneStatue_MovePositionUpdate");
+static_assert(offsetof(EnemyAttackStoneStatue_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyAttackStoneStatue_MovePositionUpdate::Ratio' has a wrong offset!");
+
+// Function UnionRun.EnemyAttackStoneStatue.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct EnemyAttackStoneStatue_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyAttackStoneStatue_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyAttackStoneStatue_OnTriggerColliderConflict");
+static_assert(sizeof(EnemyAttackStoneStatue_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyAttackStoneStatue_OnTriggerColliderConflict");
+static_assert(offsetof(EnemyAttackStoneStatue_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyAttackStoneStatue_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
+// Function UnionRun.EnemyBigTrain.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct EnemyBigTrain_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyBigTrain_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyBigTrain_OnTriggerColliderConflict");
+static_assert(sizeof(EnemyBigTrain_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyBigTrain_OnTriggerColliderConflict");
+static_assert(offsetof(EnemyBigTrain_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyBigTrain_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
+// Function UnionRun.EnemyBigTrain.OnTriggerColliderConflictSteamAttack
+// 0x0060 (0x0060 - 0x0000)
+struct EnemyBigTrain_OnTriggerColliderConflictSteamAttack final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyBigTrain_OnTriggerColliderConflictSteamAttack) == 0x000008, "Wrong alignment on EnemyBigTrain_OnTriggerColliderConflictSteamAttack");
+static_assert(sizeof(EnemyBigTrain_OnTriggerColliderConflictSteamAttack) == 0x000060, "Wrong size on EnemyBigTrain_OnTriggerColliderConflictSteamAttack");
+static_assert(offsetof(EnemyBigTrain_OnTriggerColliderConflictSteamAttack, HitInfo) == 0x000000, "Member 'EnemyBigTrain_OnTriggerColliderConflictSteamAttack::HitInfo' has a wrong offset!");
+
+// Function UnionRun.EnemyDarkGaiaPhoenixPhase3.ActivateAttackEffect
+// 0x0002 (0x0002 - 0x0000)
+struct EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect final
+{
+public:
+	bool                                          IsRight;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          isMirrer;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect) == 0x000001, "Wrong alignment on EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect");
+static_assert(sizeof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect) == 0x000002, "Wrong size on EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect");
+static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect, IsRight) == 0x000000, "Member 'EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect::IsRight' has a wrong offset!");
+static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect, isMirrer) == 0x000001, "Member 'EnemyDarkGaiaPhoenixPhase3_ActivateAttackEffect::isMirrer' has a wrong offset!");
+
+// Function UnionRun.EnemyDarkGaiaPhoenixPhase3.WingAttack
+// 0x0002 (0x0002 - 0x0000)
+struct EnemyDarkGaiaPhoenixPhase3_WingAttack final
+{
+public:
+	bool                                          IsRight;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          isMirrer;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyDarkGaiaPhoenixPhase3_WingAttack) == 0x000001, "Wrong alignment on EnemyDarkGaiaPhoenixPhase3_WingAttack");
+static_assert(sizeof(EnemyDarkGaiaPhoenixPhase3_WingAttack) == 0x000002, "Wrong size on EnemyDarkGaiaPhoenixPhase3_WingAttack");
+static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_WingAttack, IsRight) == 0x000000, "Member 'EnemyDarkGaiaPhoenixPhase3_WingAttack::IsRight' has a wrong offset!");
+static_assert(offsetof(EnemyDarkGaiaPhoenixPhase3_WingAttack, isMirrer) == 0x000001, "Member 'EnemyDarkGaiaPhoenixPhase3_WingAttack::isMirrer' has a wrong offset!");
+
+// Function UnionRun.EnemyEggChaser.StartAttack
+// 0x0001 (0x0001 - 0x0000)
+struct EnemyEggChaser_StartAttack final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyEggChaser_StartAttack) == 0x000001, "Wrong alignment on EnemyEggChaser_StartAttack");
+static_assert(sizeof(EnemyEggChaser_StartAttack) == 0x000001, "Wrong size on EnemyEggChaser_StartAttack");
+static_assert(offsetof(EnemyEggChaser_StartAttack, IsEnable) == 0x000000, "Member 'EnemyEggChaser_StartAttack::IsEnable' has a wrong offset!");
+
+// Function UnionRun.GimmickBakubaku.GetIsFlinching
+// 0x0001 (0x0001 - 0x0000)
+struct GimmickBakubaku_GetIsFlinching final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickBakubaku_GetIsFlinching) == 0x000001, "Wrong alignment on GimmickBakubaku_GetIsFlinching");
+static_assert(sizeof(GimmickBakubaku_GetIsFlinching) == 0x000001, "Wrong size on GimmickBakubaku_GetIsFlinching");
+static_assert(offsetof(GimmickBakubaku_GetIsFlinching, ReturnValue) == 0x000000, "Member 'GimmickBakubaku_GetIsFlinching::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.EnemyMoai.MovePositionUpdate
+// 0x0004 (0x0004 - 0x0000)
+struct EnemyMoai_MovePositionUpdate final
+{
+public:
+	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyMoai_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyMoai_MovePositionUpdate");
+static_assert(sizeof(EnemyMoai_MovePositionUpdate) == 0x000004, "Wrong size on EnemyMoai_MovePositionUpdate");
+static_assert(offsetof(EnemyMoai_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyMoai_MovePositionUpdate::Ratio' has a wrong offset!");
+
+// Function UnionRun.EnemyMoai.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct EnemyMoai_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyMoai_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyMoai_OnTriggerColliderConflict");
+static_assert(sizeof(EnemyMoai_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyMoai_OnTriggerColliderConflict");
+static_assert(offsetof(EnemyMoai_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyMoai_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
+// Function UnionRun.EnemyMoaiFinalLap.MovePositionUpdate
+// 0x0004 (0x0004 - 0x0000)
+struct EnemyMoaiFinalLap_MovePositionUpdate final
+{
+public:
+	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyMoaiFinalLap_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyMoaiFinalLap_MovePositionUpdate");
+static_assert(sizeof(EnemyMoaiFinalLap_MovePositionUpdate) == 0x000004, "Wrong size on EnemyMoaiFinalLap_MovePositionUpdate");
+static_assert(offsetof(EnemyMoaiFinalLap_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyMoaiFinalLap_MovePositionUpdate::Ratio' has a wrong offset!");
+
+// Function UnionRun.EnemyMoaiFinalLap.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct EnemyMoaiFinalLap_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyMoaiFinalLap_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemyMoaiFinalLap_OnTriggerColliderConflict");
+static_assert(sizeof(EnemyMoaiFinalLap_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyMoaiFinalLap_OnTriggerColliderConflict");
+static_assert(offsetof(EnemyMoaiFinalLap_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyMoaiFinalLap_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
+// Function UnionRun.GimmickRingDropper.DropRings
+// 0x0004 (0x0004 - 0x0000)
+struct GimmickRingDropper_DropRings final
+{
+public:
+	int32                                         DropRingCount;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickRingDropper_DropRings) == 0x000004, "Wrong alignment on GimmickRingDropper_DropRings");
+static_assert(sizeof(GimmickRingDropper_DropRings) == 0x000004, "Wrong size on GimmickRingDropper_DropRings");
+static_assert(offsetof(GimmickRingDropper_DropRings, DropRingCount) == 0x000000, "Member 'GimmickRingDropper_DropRings::DropRingCount' has a wrong offset!");
+
+// Function UnionRun.VATBreakObjectBase.OnVATUpdate
+// 0x0018 (0x0018 - 0x0000)
+struct VATBreakObjectBase_OnVATUpdate final
+{
+public:
+	class UUnionVATMeshComponent*                 VATComponent;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUnionVATSequenceInfo                  SequenceInfo;                                      // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(VATBreakObjectBase_OnVATUpdate) == 0x000008, "Wrong alignment on VATBreakObjectBase_OnVATUpdate");
+static_assert(sizeof(VATBreakObjectBase_OnVATUpdate) == 0x000018, "Wrong size on VATBreakObjectBase_OnVATUpdate");
+static_assert(offsetof(VATBreakObjectBase_OnVATUpdate, VATComponent) == 0x000000, "Member 'VATBreakObjectBase_OnVATUpdate::VATComponent' has a wrong offset!");
+static_assert(offsetof(VATBreakObjectBase_OnVATUpdate, SequenceInfo) == 0x000008, "Member 'VATBreakObjectBase_OnVATUpdate::SequenceInfo' has a wrong offset!");
+
+// Function UnionRun.VATBreakObjectBase.GetBreakSpeedType
+// 0x0001 (0x0001 - 0x0000)
+struct VATBreakObjectBase_GetBreakSpeedType final
+{
+public:
+	EBreakSpeedType                               ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(VATBreakObjectBase_GetBreakSpeedType) == 0x000001, "Wrong alignment on VATBreakObjectBase_GetBreakSpeedType");
+static_assert(sizeof(VATBreakObjectBase_GetBreakSpeedType) == 0x000001, "Wrong size on VATBreakObjectBase_GetBreakSpeedType");
+static_assert(offsetof(VATBreakObjectBase_GetBreakSpeedType, ReturnValue) == 0x000000, "Member 'VATBreakObjectBase_GetBreakSpeedType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.EnemyShipPaddle.MovePositionUpdate
+// 0x0004 (0x0004 - 0x0000)
+struct EnemyShipPaddle_MovePositionUpdate final
+{
+public:
+	float                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemyShipPaddle_MovePositionUpdate) == 0x000004, "Wrong alignment on EnemyShipPaddle_MovePositionUpdate");
+static_assert(sizeof(EnemyShipPaddle_MovePositionUpdate) == 0x000004, "Wrong size on EnemyShipPaddle_MovePositionUpdate");
+static_assert(offsetof(EnemyShipPaddle_MovePositionUpdate, Ratio) == 0x000000, "Member 'EnemyShipPaddle_MovePositionUpdate::Ratio' has a wrong offset!");
+
+// Function UnionRun.GimmckEventCollision.SetEventId
+// 0x0001 (0x0001 - 0x0000)
+struct GimmckEventCollision_SetEventId final
+{
+public:
+	EUnionEventId                                 EventId;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmckEventCollision_SetEventId) == 0x000001, "Wrong alignment on GimmckEventCollision_SetEventId");
+static_assert(sizeof(GimmckEventCollision_SetEventId) == 0x000001, "Wrong size on GimmckEventCollision_SetEventId");
+static_assert(offsetof(GimmckEventCollision_SetEventId, EventId) == 0x000000, "Member 'GimmckEventCollision_SetEventId::EventId' has a wrong offset!");
+
+// Function UnionRun.EnemySmallTrain.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct EnemySmallTrain_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemySmallTrain_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemySmallTrain_OnTriggerColliderConflict");
+static_assert(sizeof(EnemySmallTrain_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemySmallTrain_OnTriggerColliderConflict");
+static_assert(offsetof(EnemySmallTrain_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemySmallTrain_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
+// Function UnionRun.EnemySnake.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct EnemySnake_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(EnemySnake_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on EnemySnake_OnTriggerColliderConflict");
+static_assert(sizeof(EnemySnake_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemySnake_OnTriggerColliderConflict");
+static_assert(offsetof(EnemySnake_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemySnake_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
 // Function UnionRun.EnemySquidDestination.EditorUpdatePathLocation
 // 0x0028 (0x0028 - 0x0000)
 struct EnemySquidDestination_EditorUpdatePathLocation final
@@ -2613,42 +2381,6 @@ static_assert(alignof(EnemyStoneStatue_OnTriggerColliderConflict) == 0x000008, "
 static_assert(sizeof(EnemyStoneStatue_OnTriggerColliderConflict) == 0x000060, "Wrong size on EnemyStoneStatue_OnTriggerColliderConflict");
 static_assert(offsetof(EnemyStoneStatue_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'EnemyStoneStatue_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
 
-// Function UnionRun.RaceUISubAiming.ReStartAimingUseBeforeSound
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubAiming_ReStartAimingUseBeforeSound final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubAiming_ReStartAimingUseBeforeSound) == 0x000004, "Wrong alignment on RaceUISubAiming_ReStartAimingUseBeforeSound");
-static_assert(sizeof(RaceUISubAiming_ReStartAimingUseBeforeSound) == 0x000004, "Wrong size on RaceUISubAiming_ReStartAimingUseBeforeSound");
-static_assert(offsetof(RaceUISubAiming_ReStartAimingUseBeforeSound, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubAiming_ReStartAimingUseBeforeSound::PlayerControllerIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubAiming.SetRaceHUD
-// 0x0010 (0x0010 - 0x0000)
-struct RaceUISubAiming_SetRaceHUD final
-{
-public:
-	class UUnionRaceUI*                           inRaceHud;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         localPlayerNum;                                    // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubAiming_SetRaceHUD) == 0x000008, "Wrong alignment on RaceUISubAiming_SetRaceHUD");
-static_assert(sizeof(RaceUISubAiming_SetRaceHUD) == 0x000010, "Wrong size on RaceUISubAiming_SetRaceHUD");
-static_assert(offsetof(RaceUISubAiming_SetRaceHUD, inRaceHud) == 0x000000, "Member 'RaceUISubAiming_SetRaceHUD::inRaceHud' has a wrong offset!");
-static_assert(offsetof(RaceUISubAiming_SetRaceHUD, localPlayerNum) == 0x000008, "Member 'RaceUISubAiming_SetRaceHUD::localPlayerNum' has a wrong offset!");
-
-// Function UnionRun.RaceUISubAiming.StopSound
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubAiming_StopSound final
-{
-public:
-	bool                                          bPause;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubAiming_StopSound) == 0x000001, "Wrong alignment on RaceUISubAiming_StopSound");
-static_assert(sizeof(RaceUISubAiming_StopSound) == 0x000001, "Wrong size on RaceUISubAiming_StopSound");
-static_assert(offsetof(RaceUISubAiming_StopSound, bPause) == 0x000000, "Member 'RaceUISubAiming_StopSound::bPause' has a wrong offset!");
-
 // Function UnionRun.EnemyTentacle.TimelineStep
 // 0x0004 (0x0004 - 0x0000)
 struct EnemyTentacle_TimelineStep final
@@ -2672,19 +2404,6 @@ static_assert(alignof(Enemy_Extnd04_Enemy04001Anim_IsAnimState) == 0x000001, "Wr
 static_assert(sizeof(Enemy_Extnd04_Enemy04001Anim_IsAnimState) == 0x000002, "Wrong size on Enemy_Extnd04_Enemy04001Anim_IsAnimState");
 static_assert(offsetof(Enemy_Extnd04_Enemy04001Anim_IsAnimState, State) == 0x000000, "Member 'Enemy_Extnd04_Enemy04001Anim_IsAnimState::State' has a wrong offset!");
 static_assert(offsetof(Enemy_Extnd04_Enemy04001Anim_IsAnimState, ReturnValue) == 0x000001, "Member 'Enemy_Extnd04_Enemy04001Anim_IsAnimState::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubGadget.IsNotEnableGadget
-// 0x0002 (0x0002 - 0x0000)
-struct RaceUISubGadget_IsNotEnableGadget final
-{
-public:
-	EGadgetId                                     gadgetId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubGadget_IsNotEnableGadget) == 0x000001, "Wrong alignment on RaceUISubGadget_IsNotEnableGadget");
-static_assert(sizeof(RaceUISubGadget_IsNotEnableGadget) == 0x000002, "Wrong size on RaceUISubGadget_IsNotEnableGadget");
-static_assert(offsetof(RaceUISubGadget_IsNotEnableGadget, gadgetId) == 0x000000, "Member 'RaceUISubGadget_IsNotEnableGadget::gadgetId' has a wrong offset!");
-static_assert(offsetof(RaceUISubGadget_IsNotEnableGadget, ReturnValue) == 0x000001, "Member 'RaceUISubGadget_IsNotEnableGadget::ReturnValue' has a wrong offset!");
 
 // Function UnionRun.Enemy_Extnd06_Object_06001.OnTriggerColliderConflict
 // 0x0060 (0x0060 - 0x0000)
@@ -2719,6 +2438,28 @@ static_assert(alignof(Enemy_Extnd09_Enemy09001_Attack_IsDamaged) == 0x000001, "W
 static_assert(sizeof(Enemy_Extnd09_Enemy09001_Attack_IsDamaged) == 0x000001, "Wrong size on Enemy_Extnd09_Enemy09001_Attack_IsDamaged");
 static_assert(offsetof(Enemy_Extnd09_Enemy09001_Attack_IsDamaged, ReturnValue) == 0x000000, "Member 'Enemy_Extnd09_Enemy09001_Attack_IsDamaged::ReturnValue' has a wrong offset!");
 
+// Function UnionRun.Enemy_Extnd09_Enemy09001_Move.IsDamaged
+// 0x0001 (0x0001 - 0x0000)
+struct Enemy_Extnd09_Enemy09001_Move_IsDamaged final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(Enemy_Extnd09_Enemy09001_Move_IsDamaged) == 0x000001, "Wrong alignment on Enemy_Extnd09_Enemy09001_Move_IsDamaged");
+static_assert(sizeof(Enemy_Extnd09_Enemy09001_Move_IsDamaged) == 0x000001, "Wrong size on Enemy_Extnd09_Enemy09001_Move_IsDamaged");
+static_assert(offsetof(Enemy_Extnd09_Enemy09001_Move_IsDamaged, ReturnValue) == 0x000000, "Member 'Enemy_Extnd09_Enemy09001_Move_IsDamaged::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.Enemy_Extnd09_Enemy09001_Move.IsMoving
+// 0x0001 (0x0001 - 0x0000)
+struct Enemy_Extnd09_Enemy09001_Move_IsMoving final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(Enemy_Extnd09_Enemy09001_Move_IsMoving) == 0x000001, "Wrong alignment on Enemy_Extnd09_Enemy09001_Move_IsMoving");
+static_assert(sizeof(Enemy_Extnd09_Enemy09001_Move_IsMoving) == 0x000001, "Wrong size on Enemy_Extnd09_Enemy09001_Move_IsMoving");
+static_assert(offsetof(Enemy_Extnd09_Enemy09001_Move_IsMoving, ReturnValue) == 0x000000, "Member 'Enemy_Extnd09_Enemy09001_Move_IsMoving::ReturnValue' has a wrong offset!");
+
 // Function UnionRun.Enemy_Extnd09_Enemy09002.IsDefensive
 // 0x0001 (0x0001 - 0x0000)
 struct Enemy_Extnd09_Enemy09002_IsDefensive final
@@ -2730,27 +2471,71 @@ static_assert(alignof(Enemy_Extnd09_Enemy09002_IsDefensive) == 0x000001, "Wrong 
 static_assert(sizeof(Enemy_Extnd09_Enemy09002_IsDefensive) == 0x000001, "Wrong size on Enemy_Extnd09_Enemy09002_IsDefensive");
 static_assert(offsetof(Enemy_Extnd09_Enemy09002_IsDefensive, ReturnValue) == 0x000000, "Member 'Enemy_Extnd09_Enemy09002_IsDefensive::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.GimmickBakubaku.GetIsFlinching
+// Function UnionRun.NalAnimInstance.IsTakeDamageMotion
 // 0x0001 (0x0001 - 0x0000)
-struct GimmickBakubaku_GetIsFlinching final
+struct NalAnimInstance_IsTakeDamageMotion final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GimmickBakubaku_GetIsFlinching) == 0x000001, "Wrong alignment on GimmickBakubaku_GetIsFlinching");
-static_assert(sizeof(GimmickBakubaku_GetIsFlinching) == 0x000001, "Wrong size on GimmickBakubaku_GetIsFlinching");
-static_assert(offsetof(GimmickBakubaku_GetIsFlinching, ReturnValue) == 0x000000, "Member 'GimmickBakubaku_GetIsFlinching::ReturnValue' has a wrong offset!");
+static_assert(alignof(NalAnimInstance_IsTakeDamageMotion) == 0x000001, "Wrong alignment on NalAnimInstance_IsTakeDamageMotion");
+static_assert(sizeof(NalAnimInstance_IsTakeDamageMotion) == 0x000001, "Wrong size on NalAnimInstance_IsTakeDamageMotion");
+static_assert(offsetof(NalAnimInstance_IsTakeDamageMotion, ReturnValue) == 0x000000, "Member 'NalAnimInstance_IsTakeDamageMotion::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.GimmickManipulatedVehicle.DebugUpdateIdleMove
+// Function UnionRun.Enemy_Extnd09_Enemy09003.GetAnimMoveTime
 // 0x0004 (0x0004 - 0x0000)
-struct GimmickManipulatedVehicle_DebugUpdateIdleMove final
+struct Enemy_Extnd09_Enemy09003_GetAnimMoveTime final
 {
 public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GimmickManipulatedVehicle_DebugUpdateIdleMove) == 0x000004, "Wrong alignment on GimmickManipulatedVehicle_DebugUpdateIdleMove");
-static_assert(sizeof(GimmickManipulatedVehicle_DebugUpdateIdleMove) == 0x000004, "Wrong size on GimmickManipulatedVehicle_DebugUpdateIdleMove");
-static_assert(offsetof(GimmickManipulatedVehicle_DebugUpdateIdleMove, DeltaTime) == 0x000000, "Member 'GimmickManipulatedVehicle_DebugUpdateIdleMove::DeltaTime' has a wrong offset!");
+static_assert(alignof(Enemy_Extnd09_Enemy09003_GetAnimMoveTime) == 0x000004, "Wrong alignment on Enemy_Extnd09_Enemy09003_GetAnimMoveTime");
+static_assert(sizeof(Enemy_Extnd09_Enemy09003_GetAnimMoveTime) == 0x000004, "Wrong size on Enemy_Extnd09_Enemy09003_GetAnimMoveTime");
+static_assert(offsetof(Enemy_Extnd09_Enemy09003_GetAnimMoveTime, ReturnValue) == 0x000000, "Member 'Enemy_Extnd09_Enemy09003_GetAnimMoveTime::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.Enemy_Extnd09_Enemy09003.IsDamaged
+// 0x0001 (0x0001 - 0x0000)
+struct Enemy_Extnd09_Enemy09003_IsDamaged final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(Enemy_Extnd09_Enemy09003_IsDamaged) == 0x000001, "Wrong alignment on Enemy_Extnd09_Enemy09003_IsDamaged");
+static_assert(sizeof(Enemy_Extnd09_Enemy09003_IsDamaged) == 0x000001, "Wrong size on Enemy_Extnd09_Enemy09003_IsDamaged");
+static_assert(offsetof(Enemy_Extnd09_Enemy09003_IsDamaged, ReturnValue) == 0x000000, "Member 'Enemy_Extnd09_Enemy09003_IsDamaged::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.Extnd08_Enemy08001AnimInstance.SetIsAttack
+// 0x0001 (0x0001 - 0x0000)
+struct Extnd08_Enemy08001AnimInstance_SetIsAttack final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(Extnd08_Enemy08001AnimInstance_SetIsAttack) == 0x000001, "Wrong alignment on Extnd08_Enemy08001AnimInstance_SetIsAttack");
+static_assert(sizeof(Extnd08_Enemy08001AnimInstance_SetIsAttack) == 0x000001, "Wrong size on Extnd08_Enemy08001AnimInstance_SetIsAttack");
+static_assert(offsetof(Extnd08_Enemy08001AnimInstance_SetIsAttack, flag) == 0x000000, "Member 'Extnd08_Enemy08001AnimInstance_SetIsAttack::flag' has a wrong offset!");
+
+// Function UnionRun.Extnd08_Enemy08001AnimInstance.SetIsIdle
+// 0x0001 (0x0001 - 0x0000)
+struct Extnd08_Enemy08001AnimInstance_SetIsIdle final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(Extnd08_Enemy08001AnimInstance_SetIsIdle) == 0x000001, "Wrong alignment on Extnd08_Enemy08001AnimInstance_SetIsIdle");
+static_assert(sizeof(Extnd08_Enemy08001AnimInstance_SetIsIdle) == 0x000001, "Wrong size on Extnd08_Enemy08001AnimInstance_SetIsIdle");
+static_assert(offsetof(Extnd08_Enemy08001AnimInstance_SetIsIdle, flag) == 0x000000, "Member 'Extnd08_Enemy08001AnimInstance_SetIsIdle::flag' has a wrong offset!");
+
+// Function UnionRun.GimmickWaterfall.OnCarHitEvent
+// 0x0018 (0x0018 - 0x0000)
+struct GimmickWaterfall_OnCarHitEvent final
+{
+public:
+	struct FVector                                HitLocation;                                       // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickWaterfall_OnCarHitEvent) == 0x000008, "Wrong alignment on GimmickWaterfall_OnCarHitEvent");
+static_assert(sizeof(GimmickWaterfall_OnCarHitEvent) == 0x000018, "Wrong size on GimmickWaterfall_OnCarHitEvent");
+static_assert(offsetof(GimmickWaterfall_OnCarHitEvent, HitLocation) == 0x000000, "Member 'GimmickWaterfall_OnCarHitEvent::HitLocation' has a wrong offset!");
 
 // Function UnionRun.FlowerTentacleAnimInstance.GetIIsAppear
 // 0x0001 (0x0001 - 0x0000)
@@ -2873,168 +2658,51 @@ static_assert(alignof(FossilTrexAnimInstance_SetIsTypeB) == 0x000001, "Wrong ali
 static_assert(sizeof(FossilTrexAnimInstance_SetIsTypeB) == 0x000001, "Wrong size on FossilTrexAnimInstance_SetIsTypeB");
 static_assert(offsetof(FossilTrexAnimInstance_SetIsTypeB, flag) == 0x000000, "Member 'FossilTrexAnimInstance_SetIsTypeB::flag' has a wrong offset!");
 
-// Function UnionRun.VATBreakObjectBase.OnVATUpdate
-// 0x0018 (0x0018 - 0x0000)
-struct VATBreakObjectBase_OnVATUpdate final
+// Function UnionRun.GimmickBigBakubaku.InitStaticBody
+// 0x0010 (0x0010 - 0x0000)
+struct GimmickBigBakubaku_InitStaticBody final
 {
 public:
-	class UUnionVATMeshComponent*                 VATComponent;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FUnionVATSequenceInfo                  SequenceInfo;                                      // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	const class UGimmickStaticBodyComponent*      StaticBody;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SocketName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(VATBreakObjectBase_OnVATUpdate) == 0x000008, "Wrong alignment on VATBreakObjectBase_OnVATUpdate");
-static_assert(sizeof(VATBreakObjectBase_OnVATUpdate) == 0x000018, "Wrong size on VATBreakObjectBase_OnVATUpdate");
-static_assert(offsetof(VATBreakObjectBase_OnVATUpdate, VATComponent) == 0x000000, "Member 'VATBreakObjectBase_OnVATUpdate::VATComponent' has a wrong offset!");
-static_assert(offsetof(VATBreakObjectBase_OnVATUpdate, SequenceInfo) == 0x000008, "Member 'VATBreakObjectBase_OnVATUpdate::SequenceInfo' has a wrong offset!");
+static_assert(alignof(GimmickBigBakubaku_InitStaticBody) == 0x000008, "Wrong alignment on GimmickBigBakubaku_InitStaticBody");
+static_assert(sizeof(GimmickBigBakubaku_InitStaticBody) == 0x000010, "Wrong size on GimmickBigBakubaku_InitStaticBody");
+static_assert(offsetof(GimmickBigBakubaku_InitStaticBody, StaticBody) == 0x000000, "Member 'GimmickBigBakubaku_InitStaticBody::StaticBody' has a wrong offset!");
+static_assert(offsetof(GimmickBigBakubaku_InitStaticBody, SocketName) == 0x000008, "Member 'GimmickBigBakubaku_InitStaticBody::SocketName' has a wrong offset!");
 
-// Function UnionRun.VATBreakObjectBase.GetBreakSpeedType
-// 0x0001 (0x0001 - 0x0000)
-struct VATBreakObjectBase_GetBreakSpeedType final
-{
-public:
-	EBreakSpeedType                               ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(VATBreakObjectBase_GetBreakSpeedType) == 0x000001, "Wrong alignment on VATBreakObjectBase_GetBreakSpeedType");
-static_assert(sizeof(VATBreakObjectBase_GetBreakSpeedType) == 0x000001, "Wrong size on VATBreakObjectBase_GetBreakSpeedType");
-static_assert(offsetof(VATBreakObjectBase_GetBreakSpeedType, ReturnValue) == 0x000000, "Member 'VATBreakObjectBase_GetBreakSpeedType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.GadgetBoatJumpSplashPeformance.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict");
-static_assert(sizeof(GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict) == 0x000060, "Wrong size on GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict");
-static_assert(offsetof(GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict, Info) == 0x000000, "Member 'GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict::Info' has a wrong offset!");
-
-// Function UnionRun.GimmickTriggerMotionBase.GetPlayRate
-// 0x0008 (0x0008 - 0x0000)
-struct GimmickTriggerMotionBase_GetPlayRate final
-{
-public:
-	ETriggerMotionState                           State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GimmickTriggerMotionBase_GetPlayRate) == 0x000004, "Wrong alignment on GimmickTriggerMotionBase_GetPlayRate");
-static_assert(sizeof(GimmickTriggerMotionBase_GetPlayRate) == 0x000008, "Wrong size on GimmickTriggerMotionBase_GetPlayRate");
-static_assert(offsetof(GimmickTriggerMotionBase_GetPlayRate, State) == 0x000000, "Member 'GimmickTriggerMotionBase_GetPlayRate::State' has a wrong offset!");
-static_assert(offsetof(GimmickTriggerMotionBase_GetPlayRate, ReturnValue) == 0x000004, "Member 'GimmickTriggerMotionBase_GetPlayRate::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.GimmickTriggerMotionBase.GetTriggerMotionType
-// 0x0001 (0x0001 - 0x0000)
-struct GimmickTriggerMotionBase_GetTriggerMotionType final
-{
-public:
-	ETriggerMotionType                            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GimmickTriggerMotionBase_GetTriggerMotionType) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_GetTriggerMotionType");
-static_assert(sizeof(GimmickTriggerMotionBase_GetTriggerMotionType) == 0x000001, "Wrong size on GimmickTriggerMotionBase_GetTriggerMotionType");
-static_assert(offsetof(GimmickTriggerMotionBase_GetTriggerMotionType, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_GetTriggerMotionType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.GimmickTriggerMotionBase.IsPlayIdle
-// 0x0001 (0x0001 - 0x0000)
-struct GimmickTriggerMotionBase_IsPlayIdle final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GimmickTriggerMotionBase_IsPlayIdle) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_IsPlayIdle");
-static_assert(sizeof(GimmickTriggerMotionBase_IsPlayIdle) == 0x000001, "Wrong size on GimmickTriggerMotionBase_IsPlayIdle");
-static_assert(offsetof(GimmickTriggerMotionBase_IsPlayIdle, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_IsPlayIdle::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.GimmickTriggerMotionBase.IsPlayOneShot
-// 0x0001 (0x0001 - 0x0000)
-struct GimmickTriggerMotionBase_IsPlayOneShot final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GimmickTriggerMotionBase_IsPlayOneShot) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_IsPlayOneShot");
-static_assert(sizeof(GimmickTriggerMotionBase_IsPlayOneShot) == 0x000001, "Wrong size on GimmickTriggerMotionBase_IsPlayOneShot");
-static_assert(offsetof(GimmickTriggerMotionBase_IsPlayOneShot, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_IsPlayOneShot::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.GimmickTriggerMotionBase.IsTriggered
-// 0x0001 (0x0001 - 0x0000)
-struct GimmickTriggerMotionBase_IsTriggered final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GimmickTriggerMotionBase_IsTriggered) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_IsTriggered");
-static_assert(sizeof(GimmickTriggerMotionBase_IsTriggered) == 0x000001, "Wrong size on GimmickTriggerMotionBase_IsTriggered");
-static_assert(offsetof(GimmickTriggerMotionBase_IsTriggered, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_IsTriggered::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.GimmickTriggerMotionVAT.OnVATSequence
-// 0x0018 (0x0018 - 0x0000)
-struct GimmickTriggerMotionVAT_OnVATSequence final
-{
-public:
-	class UUnionVATMeshComponent*                 VATMeshComponent;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FUnionVATSequenceInfo                  SequenceInfo;                                      // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(GimmickTriggerMotionVAT_OnVATSequence) == 0x000008, "Wrong alignment on GimmickTriggerMotionVAT_OnVATSequence");
-static_assert(sizeof(GimmickTriggerMotionVAT_OnVATSequence) == 0x000018, "Wrong size on GimmickTriggerMotionVAT_OnVATSequence");
-static_assert(offsetof(GimmickTriggerMotionVAT_OnVATSequence, VATMeshComponent) == 0x000000, "Member 'GimmickTriggerMotionVAT_OnVATSequence::VATMeshComponent' has a wrong offset!");
-static_assert(offsetof(GimmickTriggerMotionVAT_OnVATSequence, SequenceInfo) == 0x000008, "Member 'GimmickTriggerMotionVAT_OnVATSequence::SequenceInfo' has a wrong offset!");
-
-// Function UnionRun.NalAnimInstance.IsTakeDamageMotion
-// 0x0001 (0x0001 - 0x0000)
-struct NalAnimInstance_IsTakeDamageMotion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(NalAnimInstance_IsTakeDamageMotion) == 0x000001, "Wrong alignment on NalAnimInstance_IsTakeDamageMotion");
-static_assert(sizeof(NalAnimInstance_IsTakeDamageMotion) == 0x000001, "Wrong size on NalAnimInstance_IsTakeDamageMotion");
-static_assert(offsetof(NalAnimInstance_IsTakeDamageMotion, ReturnValue) == 0x000000, "Member 'NalAnimInstance_IsTakeDamageMotion::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionFlightCourseDebugDisp.SetUseAssistLength
-// 0x0001 (0x0001 - 0x0000)
-struct UnionFlightCourseDebugDisp_SetUseAssistLength final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionFlightCourseDebugDisp_SetUseAssistLength) == 0x000001, "Wrong alignment on UnionFlightCourseDebugDisp_SetUseAssistLength");
-static_assert(sizeof(UnionFlightCourseDebugDisp_SetUseAssistLength) == 0x000001, "Wrong size on UnionFlightCourseDebugDisp_SetUseAssistLength");
-static_assert(offsetof(UnionFlightCourseDebugDisp_SetUseAssistLength, flag) == 0x000000, "Member 'UnionFlightCourseDebugDisp_SetUseAssistLength::flag' has a wrong offset!");
-
-// Function UnionRun.UnionDroneInfoInterface.NotifyCallDroneEvent
+// Function UnionRun.PackageRingObject.HitRacer
 // 0x0004 (0x0004 - 0x0000)
-struct UnionDroneInfoInterface_NotifyCallDroneEvent final
+struct PackageRingObject_HitRacer final
 {
 public:
-	struct FCallDroneInfo                         Info;                                              // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionDroneInfoInterface_NotifyCallDroneEvent) == 0x000001, "Wrong alignment on UnionDroneInfoInterface_NotifyCallDroneEvent");
-static_assert(sizeof(UnionDroneInfoInterface_NotifyCallDroneEvent) == 0x000004, "Wrong size on UnionDroneInfoInterface_NotifyCallDroneEvent");
-static_assert(offsetof(UnionDroneInfoInterface_NotifyCallDroneEvent, Info) == 0x000000, "Member 'UnionDroneInfoInterface_NotifyCallDroneEvent::Info' has a wrong offset!");
+static_assert(alignof(PackageRingObject_HitRacer) == 0x000004, "Wrong alignment on PackageRingObject_HitRacer");
+static_assert(sizeof(PackageRingObject_HitRacer) == 0x000004, "Wrong size on PackageRingObject_HitRacer");
+static_assert(offsetof(PackageRingObject_HitRacer, RacerIndex) == 0x000000, "Member 'PackageRingObject_HitRacer::RacerIndex' has a wrong offset!");
 
-// Function UnionRun.UnionDroneInfoInterface.NotifyDroneVisibilityEvent
+// Function UnionRun.PackageRingObject.SetRingType
 // 0x0001 (0x0001 - 0x0000)
-struct UnionDroneInfoInterface_NotifyDroneVisibilityEvent final
+struct PackageRingObject_SetRingType final
 {
 public:
-	bool                                          Visibility;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPackageRingType                              Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionDroneInfoInterface_NotifyDroneVisibilityEvent) == 0x000001, "Wrong alignment on UnionDroneInfoInterface_NotifyDroneVisibilityEvent");
-static_assert(sizeof(UnionDroneInfoInterface_NotifyDroneVisibilityEvent) == 0x000001, "Wrong size on UnionDroneInfoInterface_NotifyDroneVisibilityEvent");
-static_assert(offsetof(UnionDroneInfoInterface_NotifyDroneVisibilityEvent, Visibility) == 0x000000, "Member 'UnionDroneInfoInterface_NotifyDroneVisibilityEvent::Visibility' has a wrong offset!");
+static_assert(alignof(PackageRingObject_SetRingType) == 0x000001, "Wrong alignment on PackageRingObject_SetRingType");
+static_assert(sizeof(PackageRingObject_SetRingType) == 0x000001, "Wrong size on PackageRingObject_SetRingType");
+static_assert(offsetof(PackageRingObject_SetRingType, Type) == 0x000000, "Member 'PackageRingObject_SetRingType::Type' has a wrong offset!");
 
-// Function UnionRun.ItemSplashProjectile.OnTriggerColliderConflict
+// Function UnionRun.ItemOmochaoObject.OnTriggerColliderConflict
 // 0x0060 (0x0060 - 0x0000)
-struct ItemSplashProjectile_OnTriggerColliderConflict final
+struct ItemOmochaoObject_OnTriggerColliderConflict final
 {
 public:
-	struct FHitTriggerInfo                        Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ItemSplashProjectile_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemSplashProjectile_OnTriggerColliderConflict");
-static_assert(sizeof(ItemSplashProjectile_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemSplashProjectile_OnTriggerColliderConflict");
-static_assert(offsetof(ItemSplashProjectile_OnTriggerColliderConflict, Info) == 0x000000, "Member 'ItemSplashProjectile_OnTriggerColliderConflict::Info' has a wrong offset!");
+static_assert(alignof(ItemOmochaoObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemOmochaoObject_OnTriggerColliderConflict");
+static_assert(sizeof(ItemOmochaoObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemOmochaoObject_OnTriggerColliderConflict");
+static_assert(offsetof(ItemOmochaoObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemOmochaoObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
 
 // Function UnionRun.GimmickStatueBeam.SetAttackEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -3047,38 +2715,136 @@ static_assert(alignof(GimmickStatueBeam_SetAttackEnable) == 0x000001, "Wrong ali
 static_assert(sizeof(GimmickStatueBeam_SetAttackEnable) == 0x000001, "Wrong size on GimmickStatueBeam_SetAttackEnable");
 static_assert(offsetof(GimmickStatueBeam_SetAttackEnable, IsEnable) == 0x000000, "Member 'GimmickStatueBeam_SetAttackEnable::IsEnable' has a wrong offset!");
 
-// Function UnionRun.GadgetMessageInterface.GadgetNotifyAttack
-// 0x0070 (0x0070 - 0x0000)
-struct GadgetMessageInterface_GadgetNotifyAttack final
-{
-public:
-	struct FGadgetNotifyAttackInfo                Info;                                              // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GadgetMessageInterface_GadgetNotifyAttack) == 0x000008, "Wrong alignment on GadgetMessageInterface_GadgetNotifyAttack");
-static_assert(sizeof(GadgetMessageInterface_GadgetNotifyAttack) == 0x000070, "Wrong size on GadgetMessageInterface_GadgetNotifyAttack");
-static_assert(offsetof(GadgetMessageInterface_GadgetNotifyAttack, Info) == 0x000000, "Member 'GadgetMessageInterface_GadgetNotifyAttack::Info' has a wrong offset!");
-
-// Function UnionRun.GadgetMessageInterface.GadgetNotifyMessage
-// 0x0008 (0x0008 - 0x0000)
-struct GadgetMessageInterface_GadgetNotifyMessage final
-{
-public:
-	class FName                                   Message;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GadgetMessageInterface_GadgetNotifyMessage) == 0x000004, "Wrong alignment on GadgetMessageInterface_GadgetNotifyMessage");
-static_assert(sizeof(GadgetMessageInterface_GadgetNotifyMessage) == 0x000008, "Wrong size on GadgetMessageInterface_GadgetNotifyMessage");
-static_assert(offsetof(GadgetMessageInterface_GadgetNotifyMessage, Message) == 0x000000, "Member 'GadgetMessageInterface_GadgetNotifyMessage::Message' has a wrong offset!");
-
-// Function UnionRun.ItemRocketPunchObject.OnTriggerColliderConflict
+// Function UnionRun.GadgetBoatJumpSplashPeformance.OnTriggerColliderConflict
 // 0x0060 (0x0060 - 0x0000)
-struct ItemRocketPunchObject_OnTriggerColliderConflict final
+struct GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict");
+static_assert(sizeof(GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict) == 0x000060, "Wrong size on GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict");
+static_assert(offsetof(GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict, Info) == 0x000000, "Member 'GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict::Info' has a wrong offset!");
+
+// Function UnionRun.UnionDebugStringSubsystem.Draw
+// 0x0010 (0x0010 - 0x0000)
+struct UnionDebugStringSubsystem_Draw final
+{
+public:
+	class UCanvas*                                InCanvas;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      InPC;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionDebugStringSubsystem_Draw) == 0x000008, "Wrong alignment on UnionDebugStringSubsystem_Draw");
+static_assert(sizeof(UnionDebugStringSubsystem_Draw) == 0x000010, "Wrong size on UnionDebugStringSubsystem_Draw");
+static_assert(offsetof(UnionDebugStringSubsystem_Draw, InCanvas) == 0x000000, "Member 'UnionDebugStringSubsystem_Draw::InCanvas' has a wrong offset!");
+static_assert(offsetof(UnionDebugStringSubsystem_Draw, InPC) == 0x000008, "Member 'UnionDebugStringSubsystem_Draw::InPC' has a wrong offset!");
+
+// Function UnionRun.UnionDebugStringSubsystem.PrintDebugString
+// 0x0028 (0x0028 - 0x0000)
+struct UnionDebugStringSubsystem_PrintDebugString final
+{
+public:
+	struct FDebugPrintStringStruct                DebugString;                                       // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionDebugStringSubsystem_PrintDebugString) == 0x000008, "Wrong alignment on UnionDebugStringSubsystem_PrintDebugString");
+static_assert(sizeof(UnionDebugStringSubsystem_PrintDebugString) == 0x000028, "Wrong size on UnionDebugStringSubsystem_PrintDebugString");
+static_assert(offsetof(UnionDebugStringSubsystem_PrintDebugString, DebugString) == 0x000000, "Member 'UnionDebugStringSubsystem_PrintDebugString::DebugString' has a wrong offset!");
+
+// Function UnionRun.UnionDebugStringSubsystem.SetDebugStringVisibleFlag
+// 0x0001 (0x0001 - 0x0000)
+struct UnionDebugStringSubsystem_SetDebugStringVisibleFlag final
+{
+public:
+	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionDebugStringSubsystem_SetDebugStringVisibleFlag) == 0x000001, "Wrong alignment on UnionDebugStringSubsystem_SetDebugStringVisibleFlag");
+static_assert(sizeof(UnionDebugStringSubsystem_SetDebugStringVisibleFlag) == 0x000001, "Wrong size on UnionDebugStringSubsystem_SetDebugStringVisibleFlag");
+static_assert(offsetof(UnionDebugStringSubsystem_SetDebugStringVisibleFlag, bVisible) == 0x000000, "Member 'UnionDebugStringSubsystem_SetDebugStringVisibleFlag::bVisible' has a wrong offset!");
+
+// Function UnionRun.UnionGroupInfoInterface.NoticeCompletedChargeGroupEvent
+// 0x0008 (0x0008 - 0x0000)
+struct UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETeamBoostType                                TeamBoostType;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent) == 0x000004, "Wrong alignment on UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent");
+static_assert(sizeof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent) == 0x000008, "Wrong size on UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent");
+static_assert(offsetof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent, RacerIndex) == 0x000000, "Member 'UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent, TeamBoostType) == 0x000004, "Member 'UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent::TeamBoostType' has a wrong offset!");
+
+// Function UnionRun.ItemVioletVoidObject.IsMeshAnimEating
+// 0x0001 (0x0001 - 0x0000)
+struct ItemVioletVoidObject_IsMeshAnimEating final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemVioletVoidObject_IsMeshAnimEating) == 0x000001, "Wrong alignment on ItemVioletVoidObject_IsMeshAnimEating");
+static_assert(sizeof(ItemVioletVoidObject_IsMeshAnimEating) == 0x000001, "Wrong size on ItemVioletVoidObject_IsMeshAnimEating");
+static_assert(offsetof(ItemVioletVoidObject_IsMeshAnimEating, ReturnValue) == 0x000000, "Member 'ItemVioletVoidObject_IsMeshAnimEating::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ItemVioletVoidObject.IsMeshAnimInSleep
+// 0x0001 (0x0001 - 0x0000)
+struct ItemVioletVoidObject_IsMeshAnimInSleep final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemVioletVoidObject_IsMeshAnimInSleep) == 0x000001, "Wrong alignment on ItemVioletVoidObject_IsMeshAnimInSleep");
+static_assert(sizeof(ItemVioletVoidObject_IsMeshAnimInSleep) == 0x000001, "Wrong size on ItemVioletVoidObject_IsMeshAnimInSleep");
+static_assert(offsetof(ItemVioletVoidObject_IsMeshAnimInSleep, ReturnValue) == 0x000000, "Member 'ItemVioletVoidObject_IsMeshAnimInSleep::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ItemVioletVoidObject.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct ItemVioletVoidObject_OnTriggerColliderConflict final
 {
 public:
 	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ItemRocketPunchObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemRocketPunchObject_OnTriggerColliderConflict");
-static_assert(sizeof(ItemRocketPunchObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemRocketPunchObject_OnTriggerColliderConflict");
-static_assert(offsetof(ItemRocketPunchObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemRocketPunchObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+static_assert(alignof(ItemVioletVoidObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemVioletVoidObject_OnTriggerColliderConflict");
+static_assert(sizeof(ItemVioletVoidObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemVioletVoidObject_OnTriggerColliderConflict");
+static_assert(offsetof(ItemVioletVoidObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemVioletVoidObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
+// Function UnionRun.ItemVioletVoidObject.PlaySE
+// 0x0008 (0x0008 - 0x0000)
+struct ItemVioletVoidObject_PlaySE final
+{
+public:
+	class FName                                   SEName;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemVioletVoidObject_PlaySE) == 0x000004, "Wrong alignment on ItemVioletVoidObject_PlaySE");
+static_assert(sizeof(ItemVioletVoidObject_PlaySE) == 0x000008, "Wrong size on ItemVioletVoidObject_PlaySE");
+static_assert(offsetof(ItemVioletVoidObject_PlaySE, SEName) == 0x000000, "Member 'ItemVioletVoidObject_PlaySE::SEName' has a wrong offset!");
+
+// Function UnionRun.ItemVioletVoidObject.RequestMeshAnimAppearance
+// 0x0001 (0x0001 - 0x0000)
+struct ItemVioletVoidObject_RequestMeshAnimAppearance final
+{
+public:
+	bool                                          bAppearance;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemVioletVoidObject_RequestMeshAnimAppearance) == 0x000001, "Wrong alignment on ItemVioletVoidObject_RequestMeshAnimAppearance");
+static_assert(sizeof(ItemVioletVoidObject_RequestMeshAnimAppearance) == 0x000001, "Wrong size on ItemVioletVoidObject_RequestMeshAnimAppearance");
+static_assert(offsetof(ItemVioletVoidObject_RequestMeshAnimAppearance, bAppearance) == 0x000000, "Member 'ItemVioletVoidObject_RequestMeshAnimAppearance::bAppearance' has a wrong offset!");
+
+// Function UnionRun.UnionCameraModifierPostEffect.SetCameraPostEffectParameter
+// 0x0010 (0x0010 - 0x0000)
+struct UnionCameraModifierPostEffect_SetCameraPostEffectParameter final
+{
+public:
+	EUnionCameraModifierPostEffectType            EffectType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   ParameterName;                                     // 0x0004(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Value;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter) == 0x000004, "Wrong alignment on UnionCameraModifierPostEffect_SetCameraPostEffectParameter");
+static_assert(sizeof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter) == 0x000010, "Wrong size on UnionCameraModifierPostEffect_SetCameraPostEffectParameter");
+static_assert(offsetof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter, EffectType) == 0x000000, "Member 'UnionCameraModifierPostEffect_SetCameraPostEffectParameter::EffectType' has a wrong offset!");
+static_assert(offsetof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter, ParameterName) == 0x000004, "Member 'UnionCameraModifierPostEffect_SetCameraPostEffectParameter::ParameterName' has a wrong offset!");
+static_assert(offsetof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter, Value) == 0x00000C, "Member 'UnionCameraModifierPostEffect_SetCameraPostEffectParameter::Value' has a wrong offset!");
 
 // Function UnionRun.GimmickStaticBodyComponent.SetCameraId
 // 0x0004 (0x0004 - 0x0000)
@@ -3156,6 +2922,122 @@ public:
 static_assert(alignof(GimmickStaticBodyComponent_SetSurfaceType) == 0x000001, "Wrong alignment on GimmickStaticBodyComponent_SetSurfaceType");
 static_assert(sizeof(GimmickStaticBodyComponent_SetSurfaceType) == 0x000001, "Wrong size on GimmickStaticBodyComponent_SetSurfaceType");
 static_assert(offsetof(GimmickStaticBodyComponent_SetSurfaceType, Type) == 0x000000, "Member 'GimmickStaticBodyComponent_SetSurfaceType::Type' has a wrong offset!");
+
+// Function UnionRun.UnionItemSkeletalMeshContainer.OnBeginItem
+// 0x0008 (0x0008 - 0x0000)
+struct UnionItemSkeletalMeshContainer_OnBeginItem final
+{
+public:
+	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionItemSkeletalMeshContainer_OnBeginItem) == 0x000008, "Wrong alignment on UnionItemSkeletalMeshContainer_OnBeginItem");
+static_assert(sizeof(UnionItemSkeletalMeshContainer_OnBeginItem) == 0x000008, "Wrong size on UnionItemSkeletalMeshContainer_OnBeginItem");
+static_assert(offsetof(UnionItemSkeletalMeshContainer_OnBeginItem, OwnerActor) == 0x000000, "Member 'UnionItemSkeletalMeshContainer_OnBeginItem::OwnerActor' has a wrong offset!");
+
+// Function UnionRun.Gimmick_Extnd05_Enemy04004.IsDamaged
+// 0x0001 (0x0001 - 0x0000)
+struct Gimmick_Extnd05_Enemy04004_IsDamaged final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(Gimmick_Extnd05_Enemy04004_IsDamaged) == 0x000001, "Wrong alignment on Gimmick_Extnd05_Enemy04004_IsDamaged");
+static_assert(sizeof(Gimmick_Extnd05_Enemy04004_IsDamaged) == 0x000001, "Wrong size on Gimmick_Extnd05_Enemy04004_IsDamaged");
+static_assert(offsetof(Gimmick_Extnd05_Enemy04004_IsDamaged, ReturnValue) == 0x000000, "Member 'Gimmick_Extnd05_Enemy04004_IsDamaged::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.GadgetMessageInterface.GadgetNotifyAttack
+// 0x0070 (0x0070 - 0x0000)
+struct GadgetMessageInterface_GadgetNotifyAttack final
+{
+public:
+	struct FGadgetNotifyAttackInfo                Info;                                              // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GadgetMessageInterface_GadgetNotifyAttack) == 0x000008, "Wrong alignment on GadgetMessageInterface_GadgetNotifyAttack");
+static_assert(sizeof(GadgetMessageInterface_GadgetNotifyAttack) == 0x000070, "Wrong size on GadgetMessageInterface_GadgetNotifyAttack");
+static_assert(offsetof(GadgetMessageInterface_GadgetNotifyAttack, Info) == 0x000000, "Member 'GadgetMessageInterface_GadgetNotifyAttack::Info' has a wrong offset!");
+
+// Function UnionRun.GadgetMessageInterface.GadgetNotifyMessage
+// 0x0008 (0x0008 - 0x0000)
+struct GadgetMessageInterface_GadgetNotifyMessage final
+{
+public:
+	class FName                                   Message;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GadgetMessageInterface_GadgetNotifyMessage) == 0x000004, "Wrong alignment on GadgetMessageInterface_GadgetNotifyMessage");
+static_assert(sizeof(GadgetMessageInterface_GadgetNotifyMessage) == 0x000008, "Wrong size on GadgetMessageInterface_GadgetNotifyMessage");
+static_assert(offsetof(GadgetMessageInterface_GadgetNotifyMessage, Message) == 0x000000, "Member 'GadgetMessageInterface_GadgetNotifyMessage::Message' has a wrong offset!");
+
+// Function UnionRun.GimmickTriggerMotionBase.GetPlayRate
+// 0x0008 (0x0008 - 0x0000)
+struct GimmickTriggerMotionBase_GetPlayRate final
+{
+public:
+	ETriggerMotionState                           State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickTriggerMotionBase_GetPlayRate) == 0x000004, "Wrong alignment on GimmickTriggerMotionBase_GetPlayRate");
+static_assert(sizeof(GimmickTriggerMotionBase_GetPlayRate) == 0x000008, "Wrong size on GimmickTriggerMotionBase_GetPlayRate");
+static_assert(offsetof(GimmickTriggerMotionBase_GetPlayRate, State) == 0x000000, "Member 'GimmickTriggerMotionBase_GetPlayRate::State' has a wrong offset!");
+static_assert(offsetof(GimmickTriggerMotionBase_GetPlayRate, ReturnValue) == 0x000004, "Member 'GimmickTriggerMotionBase_GetPlayRate::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.GimmickTriggerMotionBase.GetTriggerMotionType
+// 0x0001 (0x0001 - 0x0000)
+struct GimmickTriggerMotionBase_GetTriggerMotionType final
+{
+public:
+	ETriggerMotionType                            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickTriggerMotionBase_GetTriggerMotionType) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_GetTriggerMotionType");
+static_assert(sizeof(GimmickTriggerMotionBase_GetTriggerMotionType) == 0x000001, "Wrong size on GimmickTriggerMotionBase_GetTriggerMotionType");
+static_assert(offsetof(GimmickTriggerMotionBase_GetTriggerMotionType, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_GetTriggerMotionType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.GimmickTriggerMotionBase.IsPlayIdle
+// 0x0001 (0x0001 - 0x0000)
+struct GimmickTriggerMotionBase_IsPlayIdle final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickTriggerMotionBase_IsPlayIdle) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_IsPlayIdle");
+static_assert(sizeof(GimmickTriggerMotionBase_IsPlayIdle) == 0x000001, "Wrong size on GimmickTriggerMotionBase_IsPlayIdle");
+static_assert(offsetof(GimmickTriggerMotionBase_IsPlayIdle, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_IsPlayIdle::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.GimmickTriggerMotionBase.IsPlayOneShot
+// 0x0001 (0x0001 - 0x0000)
+struct GimmickTriggerMotionBase_IsPlayOneShot final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickTriggerMotionBase_IsPlayOneShot) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_IsPlayOneShot");
+static_assert(sizeof(GimmickTriggerMotionBase_IsPlayOneShot) == 0x000001, "Wrong size on GimmickTriggerMotionBase_IsPlayOneShot");
+static_assert(offsetof(GimmickTriggerMotionBase_IsPlayOneShot, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_IsPlayOneShot::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.GimmickTriggerMotionBase.IsTriggered
+// 0x0001 (0x0001 - 0x0000)
+struct GimmickTriggerMotionBase_IsTriggered final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GimmickTriggerMotionBase_IsTriggered) == 0x000001, "Wrong alignment on GimmickTriggerMotionBase_IsTriggered");
+static_assert(sizeof(GimmickTriggerMotionBase_IsTriggered) == 0x000001, "Wrong size on GimmickTriggerMotionBase_IsTriggered");
+static_assert(offsetof(GimmickTriggerMotionBase_IsTriggered, ReturnValue) == 0x000000, "Member 'GimmickTriggerMotionBase_IsTriggered::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.GimmickTriggerMotionVAT.OnVATSequence
+// 0x0018 (0x0018 - 0x0000)
+struct GimmickTriggerMotionVAT_OnVATSequence final
+{
+public:
+	class UUnionVATMeshComponent*                 VATMeshComponent;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUnionVATSequenceInfo                  SequenceInfo;                                      // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(GimmickTriggerMotionVAT_OnVATSequence) == 0x000008, "Wrong alignment on GimmickTriggerMotionVAT_OnVATSequence");
+static_assert(sizeof(GimmickTriggerMotionVAT_OnVATSequence) == 0x000018, "Wrong size on GimmickTriggerMotionVAT_OnVATSequence");
+static_assert(offsetof(GimmickTriggerMotionVAT_OnVATSequence, VATMeshComponent) == 0x000000, "Member 'GimmickTriggerMotionVAT_OnVATSequence::VATMeshComponent' has a wrong offset!");
+static_assert(offsetof(GimmickTriggerMotionVAT_OnVATSequence, SequenceInfo) == 0x000008, "Member 'GimmickTriggerMotionVAT_OnVATSequence::SequenceInfo' has a wrong offset!");
 
 // Function UnionRun.GimmickBingoBall.SetCollisionSocketName
 // 0x0008 (0x0008 - 0x0000)
@@ -3353,16 +3235,55 @@ static_assert(alignof(GimmickTriggerMotionAnimInstance_NativeUpdateAnimation) ==
 static_assert(sizeof(GimmickTriggerMotionAnimInstance_NativeUpdateAnimation) == 0x000004, "Wrong size on GimmickTriggerMotionAnimInstance_NativeUpdateAnimation");
 static_assert(offsetof(GimmickTriggerMotionAnimInstance_NativeUpdateAnimation, DeltaSeconds) == 0x000000, "Member 'GimmickTriggerMotionAnimInstance_NativeUpdateAnimation::DeltaSeconds' has a wrong offset!");
 
-// Function UnionRun.GimmickWaterfall.OnCarHitEvent
-// 0x0018 (0x0018 - 0x0000)
-struct GimmickWaterfall_OnCarHitEvent final
+// Function UnionRun.GUNHunterAnimInstance.SetIsAttackCharge
+// 0x0001 (0x0001 - 0x0000)
+struct GUNHunterAnimInstance_SetIsAttackCharge final
 {
 public:
-	struct FVector                                HitLocation;                                       // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          isChange;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GimmickWaterfall_OnCarHitEvent) == 0x000008, "Wrong alignment on GimmickWaterfall_OnCarHitEvent");
-static_assert(sizeof(GimmickWaterfall_OnCarHitEvent) == 0x000018, "Wrong size on GimmickWaterfall_OnCarHitEvent");
-static_assert(offsetof(GimmickWaterfall_OnCarHitEvent, HitLocation) == 0x000000, "Member 'GimmickWaterfall_OnCarHitEvent::HitLocation' has a wrong offset!");
+static_assert(alignof(GUNHunterAnimInstance_SetIsAttackCharge) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_SetIsAttackCharge");
+static_assert(sizeof(GUNHunterAnimInstance_SetIsAttackCharge) == 0x000001, "Wrong size on GUNHunterAnimInstance_SetIsAttackCharge");
+static_assert(offsetof(GUNHunterAnimInstance_SetIsAttackCharge, isChange) == 0x000000, "Member 'GUNHunterAnimInstance_SetIsAttackCharge::isChange' has a wrong offset!");
+
+// Function UnionRun.GUNHunterAnimInstance.SetIsDead
+// 0x0001 (0x0001 - 0x0000)
+struct GUNHunterAnimInstance_SetIsDead final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GUNHunterAnimInstance_SetIsDead) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_SetIsDead");
+static_assert(sizeof(GUNHunterAnimInstance_SetIsDead) == 0x000001, "Wrong size on GUNHunterAnimInstance_SetIsDead");
+static_assert(offsetof(GUNHunterAnimInstance_SetIsDead, flag) == 0x000000, "Member 'GUNHunterAnimInstance_SetIsDead::flag' has a wrong offset!");
+
+// Function UnionRun.GUNHunterAnimInstance.IsShootState
+// 0x0003 (0x0003 - 0x0000)
+struct GUNHunterAnimInstance_IsShootState final
+{
+public:
+	EGUNHunterShootState                          State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          isDown;                                            // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GUNHunterAnimInstance_IsShootState) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_IsShootState");
+static_assert(sizeof(GUNHunterAnimInstance_IsShootState) == 0x000003, "Wrong size on GUNHunterAnimInstance_IsShootState");
+static_assert(offsetof(GUNHunterAnimInstance_IsShootState, State) == 0x000000, "Member 'GUNHunterAnimInstance_IsShootState::State' has a wrong offset!");
+static_assert(offsetof(GUNHunterAnimInstance_IsShootState, isDown) == 0x000001, "Member 'GUNHunterAnimInstance_IsShootState::isDown' has a wrong offset!");
+static_assert(offsetof(GUNHunterAnimInstance_IsShootState, ReturnValue) == 0x000002, "Member 'GUNHunterAnimInstance_IsShootState::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.GUNHunterAnimInstance.IsStartMotion
+// 0x0002 (0x0002 - 0x0000)
+struct GUNHunterAnimInstance_IsStartMotion final
+{
+public:
+	EGUNHunterStartType                           Motion;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GUNHunterAnimInstance_IsStartMotion) == 0x000001, "Wrong alignment on GUNHunterAnimInstance_IsStartMotion");
+static_assert(sizeof(GUNHunterAnimInstance_IsStartMotion) == 0x000002, "Wrong size on GUNHunterAnimInstance_IsStartMotion");
+static_assert(offsetof(GUNHunterAnimInstance_IsStartMotion, Motion) == 0x000000, "Member 'GUNHunterAnimInstance_IsStartMotion::Motion' has a wrong offset!");
+static_assert(offsetof(GUNHunterAnimInstance_IsStartMotion, ReturnValue) == 0x000001, "Member 'GUNHunterAnimInstance_IsStartMotion::ReturnValue' has a wrong offset!");
 
 // Function UnionRun.HeadButtTrexAnimInstance.GetIsAppear
 // 0x0001 (0x0001 - 0x0000)
@@ -3452,120 +3373,125 @@ static_assert(alignof(HeadButtTrexAnimInstance_SetIsMirror) == 0x000001, "Wrong 
 static_assert(sizeof(HeadButtTrexAnimInstance_SetIsMirror) == 0x000001, "Wrong size on HeadButtTrexAnimInstance_SetIsMirror");
 static_assert(offsetof(HeadButtTrexAnimInstance_SetIsMirror, flag) == 0x000000, "Member 'HeadButtTrexAnimInstance_SetIsMirror::flag' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.ContainsLevel
-// 0x0020 (0x0020 - 0x0000)
-struct UnionMiscFunction_ContainsLevel final
+// Function UnionRun.RespotObject.UpdateRespotMatrix
+// 0x0060 (0x0060 - 0x0000)
+struct RespotObject_UpdateRespotMatrix final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 LevelName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FTransform                             NewTransform;                                      // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_ContainsLevel) == 0x000008, "Wrong alignment on UnionMiscFunction_ContainsLevel");
-static_assert(sizeof(UnionMiscFunction_ContainsLevel) == 0x000020, "Wrong size on UnionMiscFunction_ContainsLevel");
-static_assert(offsetof(UnionMiscFunction_ContainsLevel, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_ContainsLevel::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_ContainsLevel, LevelName) == 0x000008, "Member 'UnionMiscFunction_ContainsLevel::LevelName' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_ContainsLevel, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_ContainsLevel::ReturnValue' has a wrong offset!");
+static_assert(alignof(RespotObject_UpdateRespotMatrix) == 0x000010, "Wrong alignment on RespotObject_UpdateRespotMatrix");
+static_assert(sizeof(RespotObject_UpdateRespotMatrix) == 0x000060, "Wrong size on RespotObject_UpdateRespotMatrix");
+static_assert(offsetof(RespotObject_UpdateRespotMatrix, NewTransform) == 0x000000, "Member 'RespotObject_UpdateRespotMatrix::NewTransform' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.GetCourseEditorStageAssetDir
-// 0x0018 (0x0018 - 0x0000)
-struct UnionMiscFunction_GetCourseEditorStageAssetDir final
+// Function UnionRun.SimpleTravelRingObject.GetTransformRingType
+// 0x0001 (0x0001 - 0x0000)
+struct SimpleTravelRingObject_GetTransformRingType final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETransformRingType                            ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_GetCourseEditorStageAssetDir) == 0x000008, "Wrong alignment on UnionMiscFunction_GetCourseEditorStageAssetDir");
-static_assert(sizeof(UnionMiscFunction_GetCourseEditorStageAssetDir) == 0x000018, "Wrong size on UnionMiscFunction_GetCourseEditorStageAssetDir");
-static_assert(offsetof(UnionMiscFunction_GetCourseEditorStageAssetDir, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_GetCourseEditorStageAssetDir::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_GetCourseEditorStageAssetDir, ReturnValue) == 0x000008, "Member 'UnionMiscFunction_GetCourseEditorStageAssetDir::ReturnValue' has a wrong offset!");
+static_assert(alignof(SimpleTravelRingObject_GetTransformRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_GetTransformRingType");
+static_assert(sizeof(SimpleTravelRingObject_GetTransformRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_GetTransformRingType");
+static_assert(offsetof(SimpleTravelRingObject_GetTransformRingType, ReturnValue) == 0x000000, "Member 'SimpleTravelRingObject_GetTransformRingType::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.GetStageAssetDir
-// 0x0018 (0x0018 - 0x0000)
-struct UnionMiscFunction_GetStageAssetDir final
+// Function UnionRun.SimpleTravelRingObject.GetTravelRingSizeType
+// 0x0001 (0x0001 - 0x0000)
+struct SimpleTravelRingObject_GetTravelRingSizeType final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETravelRingSizeType                           ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_GetStageAssetDir) == 0x000008, "Wrong alignment on UnionMiscFunction_GetStageAssetDir");
-static_assert(sizeof(UnionMiscFunction_GetStageAssetDir) == 0x000018, "Wrong size on UnionMiscFunction_GetStageAssetDir");
-static_assert(offsetof(UnionMiscFunction_GetStageAssetDir, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_GetStageAssetDir::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_GetStageAssetDir, ReturnValue) == 0x000008, "Member 'UnionMiscFunction_GetStageAssetDir::ReturnValue' has a wrong offset!");
+static_assert(alignof(SimpleTravelRingObject_GetTravelRingSizeType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_GetTravelRingSizeType");
+static_assert(sizeof(SimpleTravelRingObject_GetTravelRingSizeType) == 0x000001, "Wrong size on SimpleTravelRingObject_GetTravelRingSizeType");
+static_assert(offsetof(SimpleTravelRingObject_GetTravelRingSizeType, ReturnValue) == 0x000000, "Member 'SimpleTravelRingObject_GetTravelRingSizeType::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.GetStageAssetFilenameTrunk
-// 0x0018 (0x0018 - 0x0000)
-struct UnionMiscFunction_GetStageAssetFilenameTrunk final
+// Function UnionRun.SimpleTravelRingObject.GetTravelRingType
+// 0x0001 (0x0001 - 0x0000)
+struct SimpleTravelRingObject_GetTravelRingType final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETravelRingType                               ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_GetStageAssetFilenameTrunk) == 0x000008, "Wrong alignment on UnionMiscFunction_GetStageAssetFilenameTrunk");
-static_assert(sizeof(UnionMiscFunction_GetStageAssetFilenameTrunk) == 0x000018, "Wrong size on UnionMiscFunction_GetStageAssetFilenameTrunk");
-static_assert(offsetof(UnionMiscFunction_GetStageAssetFilenameTrunk, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_GetStageAssetFilenameTrunk::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_GetStageAssetFilenameTrunk, ReturnValue) == 0x000008, "Member 'UnionMiscFunction_GetStageAssetFilenameTrunk::ReturnValue' has a wrong offset!");
+static_assert(alignof(SimpleTravelRingObject_GetTravelRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_GetTravelRingType");
+static_assert(sizeof(SimpleTravelRingObject_GetTravelRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_GetTravelRingType");
+static_assert(offsetof(SimpleTravelRingObject_GetTravelRingType, ReturnValue) == 0x000000, "Member 'SimpleTravelRingObject_GetTravelRingType::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.LoadComPathAssetByFilePath
-// 0x0020 (0x0020 - 0x0000)
-struct UnionMiscFunction_LoadComPathAssetByFilePath final
+// Function UnionRun.SimpleTravelRingObject.SetTransformRingType
+// 0x0001 (0x0001 - 0x0000)
+struct SimpleTravelRingObject_SetTransformRingType final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUnionComPathBinaryDataAsset*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETransformRingType                            Type;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_LoadComPathAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadComPathAssetByFilePath");
-static_assert(sizeof(UnionMiscFunction_LoadComPathAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadComPathAssetByFilePath");
-static_assert(offsetof(UnionMiscFunction_LoadComPathAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadComPathAssetByFilePath::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadComPathAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadComPathAssetByFilePath::FilePath' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadComPathAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadComPathAssetByFilePath::ReturnValue' has a wrong offset!");
+static_assert(alignof(SimpleTravelRingObject_SetTransformRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_SetTransformRingType");
+static_assert(sizeof(SimpleTravelRingObject_SetTransformRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_SetTransformRingType");
+static_assert(offsetof(SimpleTravelRingObject_SetTransformRingType, Type) == 0x000000, "Member 'SimpleTravelRingObject_SetTransformRingType::Type' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.LoadCourseCollisionAssetByFilePath
-// 0x0020 (0x0020 - 0x0000)
-struct UnionMiscFunction_LoadCourseCollisionAssetByFilePath final
+// Function UnionRun.SimpleTravelRingObject.SetTravelRingSizeType
+// 0x0001 (0x0001 - 0x0000)
+struct SimpleTravelRingObject_SetTravelRingSizeType final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUnionBtCollisionBinaryAsset*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETravelRingSizeType                           Type;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadCourseCollisionAssetByFilePath");
-static_assert(sizeof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadCourseCollisionAssetByFilePath");
-static_assert(offsetof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadCourseCollisionAssetByFilePath::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadCourseCollisionAssetByFilePath::FilePath' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadCourseCollisionAssetByFilePath::ReturnValue' has a wrong offset!");
+static_assert(alignof(SimpleTravelRingObject_SetTravelRingSizeType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_SetTravelRingSizeType");
+static_assert(sizeof(SimpleTravelRingObject_SetTravelRingSizeType) == 0x000001, "Wrong size on SimpleTravelRingObject_SetTravelRingSizeType");
+static_assert(offsetof(SimpleTravelRingObject_SetTravelRingSizeType, Type) == 0x000000, "Member 'SimpleTravelRingObject_SetTravelRingSizeType::Type' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.LoadCourseNavigationAssetByFilePath
-// 0x0020 (0x0020 - 0x0000)
-struct UnionMiscFunction_LoadCourseNavigationAssetByFilePath final
+// Function UnionRun.SimpleTravelRingObject.SetTravelRingType
+// 0x0001 (0x0001 - 0x0000)
+struct SimpleTravelRingObject_SetTravelRingType final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUnionNavigationBinaryDataAsset*        ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETravelRingType                               Type;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadCourseNavigationAssetByFilePath");
-static_assert(sizeof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadCourseNavigationAssetByFilePath");
-static_assert(offsetof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadCourseNavigationAssetByFilePath::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadCourseNavigationAssetByFilePath::FilePath' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadCourseNavigationAssetByFilePath::ReturnValue' has a wrong offset!");
+static_assert(alignof(SimpleTravelRingObject_SetTravelRingType) == 0x000001, "Wrong alignment on SimpleTravelRingObject_SetTravelRingType");
+static_assert(sizeof(SimpleTravelRingObject_SetTravelRingType) == 0x000001, "Wrong size on SimpleTravelRingObject_SetTravelRingType");
+static_assert(offsetof(SimpleTravelRingObject_SetTravelRingType, Type) == 0x000000, "Member 'SimpleTravelRingObject_SetTravelRingType::Type' has a wrong offset!");
 
-// Function UnionRun.UnionMiscFunction.LoadRunPathAssetByFilePath
-// 0x0020 (0x0020 - 0x0000)
-struct UnionMiscFunction_LoadRunPathAssetByFilePath final
+// Function UnionRun.TireMark.AddPoint3D
+// 0x0060 (0x0060 - 0x0000)
+struct TireMark_AddPoint3D final
 {
 public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUnionRunPathBinaryDataAsset*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Position;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Normal;                                            // 0x0018(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Side;                                              // 0x0030(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Density;                                           // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 Color;                                             // 0x004C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              OffsetUV;                                          // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionMiscFunction_LoadRunPathAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadRunPathAssetByFilePath");
-static_assert(sizeof(UnionMiscFunction_LoadRunPathAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadRunPathAssetByFilePath");
-static_assert(offsetof(UnionMiscFunction_LoadRunPathAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadRunPathAssetByFilePath::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadRunPathAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadRunPathAssetByFilePath::FilePath' has a wrong offset!");
-static_assert(offsetof(UnionMiscFunction_LoadRunPathAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadRunPathAssetByFilePath::ReturnValue' has a wrong offset!");
+static_assert(alignof(TireMark_AddPoint3D) == 0x000008, "Wrong alignment on TireMark_AddPoint3D");
+static_assert(sizeof(TireMark_AddPoint3D) == 0x000060, "Wrong size on TireMark_AddPoint3D");
+static_assert(offsetof(TireMark_AddPoint3D, Position) == 0x000000, "Member 'TireMark_AddPoint3D::Position' has a wrong offset!");
+static_assert(offsetof(TireMark_AddPoint3D, Normal) == 0x000018, "Member 'TireMark_AddPoint3D::Normal' has a wrong offset!");
+static_assert(offsetof(TireMark_AddPoint3D, Side) == 0x000030, "Member 'TireMark_AddPoint3D::Side' has a wrong offset!");
+static_assert(offsetof(TireMark_AddPoint3D, Density) == 0x000048, "Member 'TireMark_AddPoint3D::Density' has a wrong offset!");
+static_assert(offsetof(TireMark_AddPoint3D, Color) == 0x00004C, "Member 'TireMark_AddPoint3D::Color' has a wrong offset!");
+static_assert(offsetof(TireMark_AddPoint3D, OffsetUV) == 0x000050, "Member 'TireMark_AddPoint3D::OffsetUV' has a wrong offset!");
+
+// Function UnionRun.TireMark.GetTireMarkMaterial
+// 0x0008 (0x0008 - 0x0000)
+struct TireMark_GetTireMarkMaterial final
+{
+public:
+	class UMaterialInterface*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TireMark_GetTireMarkMaterial) == 0x000008, "Wrong alignment on TireMark_GetTireMarkMaterial");
+static_assert(sizeof(TireMark_GetTireMarkMaterial) == 0x000008, "Wrong size on TireMark_GetTireMarkMaterial");
+static_assert(offsetof(TireMark_GetTireMarkMaterial, ReturnValue) == 0x000000, "Member 'TireMark_GetTireMarkMaterial::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TireMark.SetTireMarkMaterial
+// 0x0008 (0x0008 - 0x0000)
+struct TireMark_SetTireMarkMaterial final
+{
+public:
+	class UMaterialInterface*                     MaterialInterface;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TireMark_SetTireMarkMaterial) == 0x000008, "Wrong alignment on TireMark_SetTireMarkMaterial");
+static_assert(sizeof(TireMark_SetTireMarkMaterial) == 0x000008, "Wrong size on TireMark_SetTireMarkMaterial");
+static_assert(offsetof(TireMark_SetTireMarkMaterial, MaterialInterface) == 0x000000, "Member 'TireMark_SetTireMarkMaterial::MaterialInterface' has a wrong offset!");
 
 // Function UnionRun.SnakeAnimInstance.GetIsAttack
 // 0x0001 (0x0001 - 0x0000)
@@ -3688,6 +3614,97 @@ static_assert(alignof(SummonRingAnimInstance_SetIsStart) == 0x000001, "Wrong ali
 static_assert(sizeof(SummonRingAnimInstance_SetIsStart) == 0x000001, "Wrong size on SummonRingAnimInstance_SetIsStart");
 static_assert(offsetof(SummonRingAnimInstance_SetIsStart, flag) == 0x000000, "Member 'SummonRingAnimInstance_SetIsStart::flag' has a wrong offset!");
 
+// Function UnionRun.ItemBoxObject.OnChangeItemBox
+// 0x0001 (0x0001 - 0x0000)
+struct ItemBoxObject_OnChangeItemBox final
+{
+public:
+	EItemBoxType                                  ItemBoxType_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemBoxObject_OnChangeItemBox) == 0x000001, "Wrong alignment on ItemBoxObject_OnChangeItemBox");
+static_assert(sizeof(ItemBoxObject_OnChangeItemBox) == 0x000001, "Wrong size on ItemBoxObject_OnChangeItemBox");
+static_assert(offsetof(ItemBoxObject_OnChangeItemBox, ItemBoxType_0) == 0x000000, "Member 'ItemBoxObject_OnChangeItemBox::ItemBoxType_0' has a wrong offset!");
+
+// Function UnionRun.ItemBoxObject.OnHitRacer
+// 0x0004 (0x0004 - 0x0000)
+struct ItemBoxObject_OnHitRacer final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemBoxObject_OnHitRacer) == 0x000004, "Wrong alignment on ItemBoxObject_OnHitRacer");
+static_assert(sizeof(ItemBoxObject_OnHitRacer) == 0x000004, "Wrong size on ItemBoxObject_OnHitRacer");
+static_assert(offsetof(ItemBoxObject_OnHitRacer, RacerIndex) == 0x000000, "Member 'ItemBoxObject_OnHitRacer::RacerIndex' has a wrong offset!");
+
+// Function UnionRun.ItemBoxObject.OnPlayForceFeedback
+// 0x0004 (0x0004 - 0x0000)
+struct ItemBoxObject_OnPlayForceFeedback final
+{
+public:
+	int32                                         LocalPlayerIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemBoxObject_OnPlayForceFeedback) == 0x000004, "Wrong alignment on ItemBoxObject_OnPlayForceFeedback");
+static_assert(sizeof(ItemBoxObject_OnPlayForceFeedback) == 0x000004, "Wrong size on ItemBoxObject_OnPlayForceFeedback");
+static_assert(offsetof(ItemBoxObject_OnPlayForceFeedback, LocalPlayerIndex) == 0x000000, "Member 'ItemBoxObject_OnPlayForceFeedback::LocalPlayerIndex' has a wrong offset!");
+
+// Function UnionRun.ItemBoxObject.SetItemBoxType
+// 0x0001 (0x0001 - 0x0000)
+struct ItemBoxObject_SetItemBoxType final
+{
+public:
+	EItemBoxType                                  Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemBoxObject_SetItemBoxType) == 0x000001, "Wrong alignment on ItemBoxObject_SetItemBoxType");
+static_assert(sizeof(ItemBoxObject_SetItemBoxType) == 0x000001, "Wrong size on ItemBoxObject_SetItemBoxType");
+static_assert(offsetof(ItemBoxObject_SetItemBoxType, Type) == 0x000000, "Member 'ItemBoxObject_SetItemBoxType::Type' has a wrong offset!");
+
+// Function UnionRun.ItemBoxObject.SetSpecifiedItem
+// 0x0001 (0x0001 - 0x0000)
+struct ItemBoxObject_SetSpecifiedItem final
+{
+public:
+	EItemId                                       Item;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemBoxObject_SetSpecifiedItem) == 0x000001, "Wrong alignment on ItemBoxObject_SetSpecifiedItem");
+static_assert(sizeof(ItemBoxObject_SetSpecifiedItem) == 0x000001, "Wrong size on ItemBoxObject_SetSpecifiedItem");
+static_assert(offsetof(ItemBoxObject_SetSpecifiedItem, Item) == 0x000000, "Member 'ItemBoxObject_SetSpecifiedItem::Item' has a wrong offset!");
+
+// Function UnionRun.ItemBoxObject.GetSoundPan
+// 0x0001 (0x0001 - 0x0000)
+struct ItemBoxObject_GetSoundPan final
+{
+public:
+	ESoundPan                                     ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemBoxObject_GetSoundPan) == 0x000001, "Wrong alignment on ItemBoxObject_GetSoundPan");
+static_assert(sizeof(ItemBoxObject_GetSoundPan) == 0x000001, "Wrong size on ItemBoxObject_GetSoundPan");
+static_assert(offsetof(ItemBoxObject_GetSoundPan, ReturnValue) == 0x000000, "Member 'ItemBoxObject_GetSoundPan::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ItemCountDownComponent.InitializeCountDown
+// 0x0010 (0x0010 - 0x0000)
+struct ItemCountDownComponent_InitializeCountDown final
+{
+public:
+	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bReset;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(ItemCountDownComponent_InitializeCountDown) == 0x000008, "Wrong alignment on ItemCountDownComponent_InitializeCountDown");
+static_assert(sizeof(ItemCountDownComponent_InitializeCountDown) == 0x000010, "Wrong size on ItemCountDownComponent_InitializeCountDown");
+static_assert(offsetof(ItemCountDownComponent_InitializeCountDown, Component) == 0x000000, "Member 'ItemCountDownComponent_InitializeCountDown::Component' has a wrong offset!");
+static_assert(offsetof(ItemCountDownComponent_InitializeCountDown, bReset) == 0x000008, "Member 'ItemCountDownComponent_InitializeCountDown::bReset' has a wrong offset!");
+
+// Function UnionRun.ItemCountDownComponent.ResetTargetParameter
+// 0x0008 (0x0008 - 0x0000)
+struct ItemCountDownComponent_ResetTargetParameter final
+{
+public:
+	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemCountDownComponent_ResetTargetParameter) == 0x000008, "Wrong alignment on ItemCountDownComponent_ResetTargetParameter");
+static_assert(sizeof(ItemCountDownComponent_ResetTargetParameter) == 0x000008, "Wrong size on ItemCountDownComponent_ResetTargetParameter");
+static_assert(offsetof(ItemCountDownComponent_ResetTargetParameter, Component) == 0x000000, "Member 'ItemCountDownComponent_ResetTargetParameter::Component' has a wrong offset!");
+
 // Function UnionRun.TrainAnimInstance.GetIsDamage
 // 0x0001 (0x0001 - 0x0000)
 struct TrainAnimInstance_GetIsDamage final
@@ -3731,31 +3748,6 @@ public:
 static_assert(alignof(TrainAnimInstance_SetIsMove) == 0x000001, "Wrong alignment on TrainAnimInstance_SetIsMove");
 static_assert(sizeof(TrainAnimInstance_SetIsMove) == 0x000001, "Wrong size on TrainAnimInstance_SetIsMove");
 static_assert(offsetof(TrainAnimInstance_SetIsMove, flag) == 0x000000, "Member 'TrainAnimInstance_SetIsMove::flag' has a wrong offset!");
-
-// Function UnionRun.ItemCountDownComponent.InitializeCountDown
-// 0x0010 (0x0010 - 0x0000)
-struct ItemCountDownComponent_InitializeCountDown final
-{
-public:
-	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bReset;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(ItemCountDownComponent_InitializeCountDown) == 0x000008, "Wrong alignment on ItemCountDownComponent_InitializeCountDown");
-static_assert(sizeof(ItemCountDownComponent_InitializeCountDown) == 0x000010, "Wrong size on ItemCountDownComponent_InitializeCountDown");
-static_assert(offsetof(ItemCountDownComponent_InitializeCountDown, Component) == 0x000000, "Member 'ItemCountDownComponent_InitializeCountDown::Component' has a wrong offset!");
-static_assert(offsetof(ItemCountDownComponent_InitializeCountDown, bReset) == 0x000008, "Member 'ItemCountDownComponent_InitializeCountDown::bReset' has a wrong offset!");
-
-// Function UnionRun.ItemCountDownComponent.ResetTargetParameter
-// 0x0008 (0x0008 - 0x0000)
-struct ItemCountDownComponent_ResetTargetParameter final
-{
-public:
-	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemCountDownComponent_ResetTargetParameter) == 0x000008, "Wrong alignment on ItemCountDownComponent_ResetTargetParameter");
-static_assert(sizeof(ItemCountDownComponent_ResetTargetParameter) == 0x000008, "Wrong size on ItemCountDownComponent_ResetTargetParameter");
-static_assert(offsetof(ItemCountDownComponent_ResetTargetParameter, Component) == 0x000000, "Member 'ItemCountDownComponent_ResetTargetParameter::Component' has a wrong offset!");
 
 // Function UnionRun.ItemDarkChaoAnimInstance.GetIsGift
 // 0x0001 (0x0001 - 0x0000)
@@ -3955,115 +3947,16 @@ static_assert(alignof(ItemDarkChaoAnimInstance_SetThrowAnimController) == 0x0000
 static_assert(sizeof(ItemDarkChaoAnimInstance_SetThrowAnimController) == 0x000004, "Wrong size on ItemDarkChaoAnimInstance_SetThrowAnimController");
 static_assert(offsetof(ItemDarkChaoAnimInstance_SetThrowAnimController, NewValue) == 0x000000, "Member 'ItemDarkChaoAnimInstance_SetThrowAnimController::NewValue' has a wrong offset!");
 
-// Function UnionRun.TrexAnimInstance.GetIsAttack
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_GetIsAttack final
+// Function UnionRun.ItemExtnd09Object.OnStartMoveProjectile
+// 0x0008 (0x0008 - 0x0000)
+struct ItemExtnd09Object_OnStartMoveProjectile final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class AItemExtnd09Projectile*           projectile;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrexAnimInstance_GetIsAttack) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsAttack");
-static_assert(sizeof(TrexAnimInstance_GetIsAttack) == 0x000001, "Wrong size on TrexAnimInstance_GetIsAttack");
-static_assert(offsetof(TrexAnimInstance_GetIsAttack, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsAttack::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.GetIsDamage
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_GetIsDamage final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_GetIsDamage) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsDamage");
-static_assert(sizeof(TrexAnimInstance_GetIsDamage) == 0x000001, "Wrong size on TrexAnimInstance_GetIsDamage");
-static_assert(offsetof(TrexAnimInstance_GetIsDamage, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsDamage::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.GetIsMove
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_GetIsMove final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_GetIsMove) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsMove");
-static_assert(sizeof(TrexAnimInstance_GetIsMove) == 0x000001, "Wrong size on TrexAnimInstance_GetIsMove");
-static_assert(offsetof(TrexAnimInstance_GetIsMove, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsMove::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.GetIsTurn
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_GetIsTurn final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_GetIsTurn) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsTurn");
-static_assert(sizeof(TrexAnimInstance_GetIsTurn) == 0x000001, "Wrong size on TrexAnimInstance_GetIsTurn");
-static_assert(offsetof(TrexAnimInstance_GetIsTurn, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsTurn::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.GetIsTurnEnd
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_GetIsTurnEnd final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_GetIsTurnEnd) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsTurnEnd");
-static_assert(sizeof(TrexAnimInstance_GetIsTurnEnd) == 0x000001, "Wrong size on TrexAnimInstance_GetIsTurnEnd");
-static_assert(offsetof(TrexAnimInstance_GetIsTurnEnd, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsTurnEnd::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.SetIsAttack
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_SetIsAttack final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_SetIsAttack) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsAttack");
-static_assert(sizeof(TrexAnimInstance_SetIsAttack) == 0x000001, "Wrong size on TrexAnimInstance_SetIsAttack");
-static_assert(offsetof(TrexAnimInstance_SetIsAttack, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsAttack::flag' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.SetIsDamage
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_SetIsDamage final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_SetIsDamage) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsDamage");
-static_assert(sizeof(TrexAnimInstance_SetIsDamage) == 0x000001, "Wrong size on TrexAnimInstance_SetIsDamage");
-static_assert(offsetof(TrexAnimInstance_SetIsDamage, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsDamage::flag' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.SetIsMove
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_SetIsMove final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_SetIsMove) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsMove");
-static_assert(sizeof(TrexAnimInstance_SetIsMove) == 0x000001, "Wrong size on TrexAnimInstance_SetIsMove");
-static_assert(offsetof(TrexAnimInstance_SetIsMove, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsMove::flag' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.SetIsTurn
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_SetIsTurn final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_SetIsTurn) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsTurn");
-static_assert(sizeof(TrexAnimInstance_SetIsTurn) == 0x000001, "Wrong size on TrexAnimInstance_SetIsTurn");
-static_assert(offsetof(TrexAnimInstance_SetIsTurn, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsTurn::flag' has a wrong offset!");
-
-// Function UnionRun.TrexAnimInstance.SetIsTurnEnd
-// 0x0001 (0x0001 - 0x0000)
-struct TrexAnimInstance_SetIsTurnEnd final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TrexAnimInstance_SetIsTurnEnd) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsTurnEnd");
-static_assert(sizeof(TrexAnimInstance_SetIsTurnEnd) == 0x000001, "Wrong size on TrexAnimInstance_SetIsTurnEnd");
-static_assert(offsetof(TrexAnimInstance_SetIsTurnEnd, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsTurnEnd::flag' has a wrong offset!");
+static_assert(alignof(ItemExtnd09Object_OnStartMoveProjectile) == 0x000008, "Wrong alignment on ItemExtnd09Object_OnStartMoveProjectile");
+static_assert(sizeof(ItemExtnd09Object_OnStartMoveProjectile) == 0x000008, "Wrong size on ItemExtnd09Object_OnStartMoveProjectile");
+static_assert(offsetof(ItemExtnd09Object_OnStartMoveProjectile, projectile) == 0x000000, "Member 'ItemExtnd09Object_OnStartMoveProjectile::projectile' has a wrong offset!");
 
 // Function UnionRun.ItemExtnd09Projectile.OnTriggerColliderConflict
 // 0x0060 (0x0060 - 0x0000)
@@ -4075,49 +3968,6 @@ public:
 static_assert(alignof(ItemExtnd09Projectile_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemExtnd09Projectile_OnTriggerColliderConflict");
 static_assert(sizeof(ItemExtnd09Projectile_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemExtnd09Projectile_OnTriggerColliderConflict");
 static_assert(offsetof(ItemExtnd09Projectile_OnTriggerColliderConflict, Info) == 0x000000, "Member 'ItemExtnd09Projectile_OnTriggerColliderConflict::Info' has a wrong offset!");
-
-// Function UnionRun.TireMark.AddPoint3D
-// 0x0060 (0x0060 - 0x0000)
-struct TireMark_AddPoint3D final
-{
-public:
-	struct FVector                                Position;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Normal;                                            // 0x0018(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Side;                                              // 0x0030(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Density;                                           // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 Color;                                             // 0x004C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              OffsetUV;                                          // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TireMark_AddPoint3D) == 0x000008, "Wrong alignment on TireMark_AddPoint3D");
-static_assert(sizeof(TireMark_AddPoint3D) == 0x000060, "Wrong size on TireMark_AddPoint3D");
-static_assert(offsetof(TireMark_AddPoint3D, Position) == 0x000000, "Member 'TireMark_AddPoint3D::Position' has a wrong offset!");
-static_assert(offsetof(TireMark_AddPoint3D, Normal) == 0x000018, "Member 'TireMark_AddPoint3D::Normal' has a wrong offset!");
-static_assert(offsetof(TireMark_AddPoint3D, Side) == 0x000030, "Member 'TireMark_AddPoint3D::Side' has a wrong offset!");
-static_assert(offsetof(TireMark_AddPoint3D, Density) == 0x000048, "Member 'TireMark_AddPoint3D::Density' has a wrong offset!");
-static_assert(offsetof(TireMark_AddPoint3D, Color) == 0x00004C, "Member 'TireMark_AddPoint3D::Color' has a wrong offset!");
-static_assert(offsetof(TireMark_AddPoint3D, OffsetUV) == 0x000050, "Member 'TireMark_AddPoint3D::OffsetUV' has a wrong offset!");
-
-// Function UnionRun.TireMark.GetTireMarkMaterial
-// 0x0008 (0x0008 - 0x0000)
-struct TireMark_GetTireMarkMaterial final
-{
-public:
-	class UMaterialInterface*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TireMark_GetTireMarkMaterial) == 0x000008, "Wrong alignment on TireMark_GetTireMarkMaterial");
-static_assert(sizeof(TireMark_GetTireMarkMaterial) == 0x000008, "Wrong size on TireMark_GetTireMarkMaterial");
-static_assert(offsetof(TireMark_GetTireMarkMaterial, ReturnValue) == 0x000000, "Member 'TireMark_GetTireMarkMaterial::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TireMark.SetTireMarkMaterial
-// 0x0008 (0x0008 - 0x0000)
-struct TireMark_SetTireMarkMaterial final
-{
-public:
-	class UMaterialInterface*                     MaterialInterface;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TireMark_SetTireMarkMaterial) == 0x000008, "Wrong alignment on TireMark_SetTireMarkMaterial");
-static_assert(sizeof(TireMark_SetTireMarkMaterial) == 0x000008, "Wrong size on TireMark_SetTireMarkMaterial");
-static_assert(offsetof(TireMark_SetTireMarkMaterial, MaterialInterface) == 0x000000, "Member 'TireMark_SetTireMarkMaterial::MaterialInterface' has a wrong offset!");
 
 // Function UnionRun.ItemHomingPunchObject.EventHitRacer
 // 0x0004 (0x0004 - 0x0000)
@@ -4379,17 +4229,6 @@ static_assert(alignof(ItemMessageInterface_NotifyWarpTargetEnd) == 0x000004, "Wr
 static_assert(sizeof(ItemMessageInterface_NotifyWarpTargetEnd) == 0x000004, "Wrong size on ItemMessageInterface_NotifyWarpTargetEnd");
 static_assert(offsetof(ItemMessageInterface_NotifyWarpTargetEnd, WarpRingAttacRacerIndex) == 0x000000, "Member 'ItemMessageInterface_NotifyWarpTargetEnd::WarpRingAttacRacerIndex' has a wrong offset!");
 
-// Function UnionRun.ItemOmochaoObject.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct ItemOmochaoObject_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemOmochaoObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemOmochaoObject_OnTriggerColliderConflict");
-static_assert(sizeof(ItemOmochaoObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemOmochaoObject_OnTriggerColliderConflict");
-static_assert(offsetof(ItemOmochaoObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemOmochaoObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
 // Function UnionRun.ItemPerformanceInterface.GetAttachedRacerIndex
 // 0x0004 (0x0004 - 0x0000)
 struct ItemPerformanceInterface_GetAttachedRacerIndex final
@@ -4434,6 +4273,17 @@ static_assert(alignof(ItemPerformanceInterface_IsPerformanceObjectInAlart) == 0x
 static_assert(sizeof(ItemPerformanceInterface_IsPerformanceObjectInAlart) == 0x000001, "Wrong size on ItemPerformanceInterface_IsPerformanceObjectInAlart");
 static_assert(offsetof(ItemPerformanceInterface_IsPerformanceObjectInAlart, ReturnValue) == 0x000000, "Member 'ItemPerformanceInterface_IsPerformanceObjectInAlart::ReturnValue' has a wrong offset!");
 
+// Function UnionRun.ItemRocketPunchObject.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct ItemRocketPunchObject_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemRocketPunchObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemRocketPunchObject_OnTriggerColliderConflict");
+static_assert(sizeof(ItemRocketPunchObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemRocketPunchObject_OnTriggerColliderConflict");
+static_assert(offsetof(ItemRocketPunchObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemRocketPunchObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
 // Function UnionRun.ItemSlicerObject.OnTriggerColliderConflict
 // 0x0060 (0x0060 - 0x0000)
 struct ItemSlicerObject_OnTriggerColliderConflict final
@@ -4444,6 +4294,17 @@ public:
 static_assert(alignof(ItemSlicerObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemSlicerObject_OnTriggerColliderConflict");
 static_assert(sizeof(ItemSlicerObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemSlicerObject_OnTriggerColliderConflict");
 static_assert(offsetof(ItemSlicerObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemSlicerObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
+
+// Function UnionRun.ItemSplashProjectile.OnTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct ItemSplashProjectile_OnTriggerColliderConflict final
+{
+public:
+	struct FHitTriggerInfo                        Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ItemSplashProjectile_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemSplashProjectile_OnTriggerColliderConflict");
+static_assert(sizeof(ItemSplashProjectile_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemSplashProjectile_OnTriggerColliderConflict");
+static_assert(offsetof(ItemSplashProjectile_OnTriggerColliderConflict, Info) == 0x000000, "Member 'ItemSplashProjectile_OnTriggerColliderConflict::Info' has a wrong offset!");
 
 // Function UnionRun.ItemThornBallObject.GetHitSpeedRatio
 // 0x0004 (0x0004 - 0x0000)
@@ -4499,97 +4360,6 @@ public:
 static_assert(alignof(ItemThornBallObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemThornBallObject_OnTriggerColliderConflict");
 static_assert(sizeof(ItemThornBallObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemThornBallObject_OnTriggerColliderConflict");
 static_assert(offsetof(ItemThornBallObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemThornBallObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.UnionGroupInfoInterface.NoticeCompletedChargeGroupEvent
-// 0x0008 (0x0008 - 0x0000)
-struct UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETeamBoostType                                TeamBoostType;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent) == 0x000004, "Wrong alignment on UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent");
-static_assert(sizeof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent) == 0x000008, "Wrong size on UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent");
-static_assert(offsetof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent, RacerIndex) == 0x000000, "Member 'UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent, TeamBoostType) == 0x000004, "Member 'UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent::TeamBoostType' has a wrong offset!");
-
-// Function UnionRun.ItemVioletVoidObject.IsMeshAnimEating
-// 0x0001 (0x0001 - 0x0000)
-struct ItemVioletVoidObject_IsMeshAnimEating final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemVioletVoidObject_IsMeshAnimEating) == 0x000001, "Wrong alignment on ItemVioletVoidObject_IsMeshAnimEating");
-static_assert(sizeof(ItemVioletVoidObject_IsMeshAnimEating) == 0x000001, "Wrong size on ItemVioletVoidObject_IsMeshAnimEating");
-static_assert(offsetof(ItemVioletVoidObject_IsMeshAnimEating, ReturnValue) == 0x000000, "Member 'ItemVioletVoidObject_IsMeshAnimEating::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ItemVioletVoidObject.IsMeshAnimInSleep
-// 0x0001 (0x0001 - 0x0000)
-struct ItemVioletVoidObject_IsMeshAnimInSleep final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemVioletVoidObject_IsMeshAnimInSleep) == 0x000001, "Wrong alignment on ItemVioletVoidObject_IsMeshAnimInSleep");
-static_assert(sizeof(ItemVioletVoidObject_IsMeshAnimInSleep) == 0x000001, "Wrong size on ItemVioletVoidObject_IsMeshAnimInSleep");
-static_assert(offsetof(ItemVioletVoidObject_IsMeshAnimInSleep, ReturnValue) == 0x000000, "Member 'ItemVioletVoidObject_IsMeshAnimInSleep::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ItemVioletVoidObject.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct ItemVioletVoidObject_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemVioletVoidObject_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemVioletVoidObject_OnTriggerColliderConflict");
-static_assert(sizeof(ItemVioletVoidObject_OnTriggerColliderConflict) == 0x000060, "Wrong size on ItemVioletVoidObject_OnTriggerColliderConflict");
-static_assert(offsetof(ItemVioletVoidObject_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemVioletVoidObject_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.ItemVioletVoidObject.PlaySE
-// 0x0008 (0x0008 - 0x0000)
-struct ItemVioletVoidObject_PlaySE final
-{
-public:
-	class FName                                   SEName;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemVioletVoidObject_PlaySE) == 0x000004, "Wrong alignment on ItemVioletVoidObject_PlaySE");
-static_assert(sizeof(ItemVioletVoidObject_PlaySE) == 0x000008, "Wrong size on ItemVioletVoidObject_PlaySE");
-static_assert(offsetof(ItemVioletVoidObject_PlaySE, SEName) == 0x000000, "Member 'ItemVioletVoidObject_PlaySE::SEName' has a wrong offset!");
-
-// Function UnionRun.ItemVioletVoidObject.RequestMeshAnimAppearance
-// 0x0001 (0x0001 - 0x0000)
-struct ItemVioletVoidObject_RequestMeshAnimAppearance final
-{
-public:
-	bool                                          bAppearance;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemVioletVoidObject_RequestMeshAnimAppearance) == 0x000001, "Wrong alignment on ItemVioletVoidObject_RequestMeshAnimAppearance");
-static_assert(sizeof(ItemVioletVoidObject_RequestMeshAnimAppearance) == 0x000001, "Wrong size on ItemVioletVoidObject_RequestMeshAnimAppearance");
-static_assert(offsetof(ItemVioletVoidObject_RequestMeshAnimAppearance, bAppearance) == 0x000000, "Member 'ItemVioletVoidObject_RequestMeshAnimAppearance::bAppearance' has a wrong offset!");
-
-// Function UnionRun.ItemWarpRingObject.OnHitTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct ItemWarpRingObject_OnHitTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ItemWarpRingObject_OnHitTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemWarpRingObject_OnHitTriggerColliderConflict");
-static_assert(sizeof(ItemWarpRingObject_OnHitTriggerColliderConflict) == 0x000060, "Wrong size on ItemWarpRingObject_OnHitTriggerColliderConflict");
-static_assert(offsetof(ItemWarpRingObject_OnHitTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemWarpRingObject_OnHitTriggerColliderConflict::HitInfo' has a wrong offset!");
-
-// Function UnionRun.KingBoomBooProjectile.OnTriggerColliderConflict
-// 0x0060 (0x0060 - 0x0000)
-struct KingBoomBooProjectile_OnTriggerColliderConflict final
-{
-public:
-	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KingBoomBooProjectile_OnTriggerColliderConflict) == 0x000008, "Wrong alignment on KingBoomBooProjectile_OnTriggerColliderConflict");
-static_assert(sizeof(KingBoomBooProjectile_OnTriggerColliderConflict) == 0x000060, "Wrong size on KingBoomBooProjectile_OnTriggerColliderConflict");
-static_assert(offsetof(KingBoomBooProjectile_OnTriggerColliderConflict, HitInfo) == 0x000000, "Member 'KingBoomBooProjectile_OnTriggerColliderConflict::HitInfo' has a wrong offset!");
 
 // Function UnionRun.UnionItemInfoInterface.NoticeChangeThrowDirectionEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -4786,6 +4556,22 @@ static_assert(sizeof(UnionItemInfoInterface_NoticeStartLotteryItemEvent) == 0x00
 static_assert(offsetof(UnionItemInfoInterface_NoticeStartLotteryItemEvent, RacerIndex) == 0x000000, "Member 'UnionItemInfoInterface_NoticeStartLotteryItemEvent::RacerIndex' has a wrong offset!");
 static_assert(offsetof(UnionItemInfoInterface_NoticeStartLotteryItemEvent, ItemInfoType) == 0x000004, "Member 'UnionItemInfoInterface_NoticeStartLotteryItemEvent::ItemInfoType' has a wrong offset!");
 
+// Function UnionRun.UnionItemInfoInterface.NoticeStartLotterySpecificItemEvent
+// 0x0008 (0x0008 - 0x0000)
+struct UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemInfoType                                 ItemInfoType;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemId                                       ItemId;                                            // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent) == 0x000004, "Wrong alignment on UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent");
+static_assert(sizeof(UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent) == 0x000008, "Wrong size on UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent");
+static_assert(offsetof(UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent, RacerIndex) == 0x000000, "Member 'UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent, ItemInfoType) == 0x000004, "Member 'UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent::ItemInfoType' has a wrong offset!");
+static_assert(offsetof(UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent, ItemId) == 0x000005, "Member 'UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent::ItemId' has a wrong offset!");
+
 // Function UnionRun.UnionItemInfoInterface.NoticeStartShuffleItemEvent
 // 0x0004 (0x0004 - 0x0000)
 struct UnionItemInfoInterface_NoticeStartShuffleItemEvent final
@@ -4837,342 +4623,274 @@ static_assert(offsetof(UnionItemInfoInterface_NoticeUseItemEvent, RacerIndex) ==
 static_assert(offsetof(UnionItemInfoInterface_NoticeUseItemEvent, ItemId) == 0x000004, "Member 'UnionItemInfoInterface_NoticeUseItemEvent::ItemId' has a wrong offset!");
 static_assert(offsetof(UnionItemInfoInterface_NoticeUseItemEvent, ThrowType) == 0x000005, "Member 'UnionItemInfoInterface_NoticeUseItemEvent::ThrowType' has a wrong offset!");
 
-// Function UnionRun.ObakeAnimInstance.GetIsAttack
-// 0x0001 (0x0001 - 0x0000)
-struct ObakeAnimInstance_GetIsAttack final
+// Function UnionRun.ItemWarpRingObject.OnHitTriggerColliderConflict
+// 0x0060 (0x0060 - 0x0000)
+struct ItemWarpRingObject_OnHitTriggerColliderConflict final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitTriggerInfo                        HitInfo;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ObakeAnimInstance_GetIsAttack) == 0x000001, "Wrong alignment on ObakeAnimInstance_GetIsAttack");
-static_assert(sizeof(ObakeAnimInstance_GetIsAttack) == 0x000001, "Wrong size on ObakeAnimInstance_GetIsAttack");
-static_assert(offsetof(ObakeAnimInstance_GetIsAttack, ReturnValue) == 0x000000, "Member 'ObakeAnimInstance_GetIsAttack::ReturnValue' has a wrong offset!");
+static_assert(alignof(ItemWarpRingObject_OnHitTriggerColliderConflict) == 0x000008, "Wrong alignment on ItemWarpRingObject_OnHitTriggerColliderConflict");
+static_assert(sizeof(ItemWarpRingObject_OnHitTriggerColliderConflict) == 0x000060, "Wrong size on ItemWarpRingObject_OnHitTriggerColliderConflict");
+static_assert(offsetof(ItemWarpRingObject_OnHitTriggerColliderConflict, HitInfo) == 0x000000, "Member 'ItemWarpRingObject_OnHitTriggerColliderConflict::HitInfo' has a wrong offset!");
 
-// Function UnionRun.ObakeAnimInstance.GetIsIdle
+// Function UnionRun.UnionFlightCourseDebugDisp.SetUseAssistLength
 // 0x0001 (0x0001 - 0x0000)
-struct ObakeAnimInstance_GetIsIdle final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ObakeAnimInstance_GetIsIdle) == 0x000001, "Wrong alignment on ObakeAnimInstance_GetIsIdle");
-static_assert(sizeof(ObakeAnimInstance_GetIsIdle) == 0x000001, "Wrong size on ObakeAnimInstance_GetIsIdle");
-static_assert(offsetof(ObakeAnimInstance_GetIsIdle, ReturnValue) == 0x000000, "Member 'ObakeAnimInstance_GetIsIdle::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ObakeAnimInstance.SetIsAttack
-// 0x0001 (0x0001 - 0x0000)
-struct ObakeAnimInstance_SetIsAttack final
+struct UnionFlightCourseDebugDisp_SetUseAssistLength final
 {
 public:
 	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ObakeAnimInstance_SetIsAttack) == 0x000001, "Wrong alignment on ObakeAnimInstance_SetIsAttack");
-static_assert(sizeof(ObakeAnimInstance_SetIsAttack) == 0x000001, "Wrong size on ObakeAnimInstance_SetIsAttack");
-static_assert(offsetof(ObakeAnimInstance_SetIsAttack, flag) == 0x000000, "Member 'ObakeAnimInstance_SetIsAttack::flag' has a wrong offset!");
+static_assert(alignof(UnionFlightCourseDebugDisp_SetUseAssistLength) == 0x000001, "Wrong alignment on UnionFlightCourseDebugDisp_SetUseAssistLength");
+static_assert(sizeof(UnionFlightCourseDebugDisp_SetUseAssistLength) == 0x000001, "Wrong size on UnionFlightCourseDebugDisp_SetUseAssistLength");
+static_assert(offsetof(UnionFlightCourseDebugDisp_SetUseAssistLength, flag) == 0x000000, "Member 'UnionFlightCourseDebugDisp_SetUseAssistLength::flag' has a wrong offset!");
 
-// Function UnionRun.ObakeAnimInstance.SetIsIdle
-// 0x0001 (0x0001 - 0x0000)
-struct ObakeAnimInstance_SetIsIdle final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ObakeAnimInstance_SetIsIdle) == 0x000001, "Wrong alignment on ObakeAnimInstance_SetIsIdle");
-static_assert(sizeof(ObakeAnimInstance_SetIsIdle) == 0x000001, "Wrong size on ObakeAnimInstance_SetIsIdle");
-static_assert(offsetof(ObakeAnimInstance_SetIsIdle, flag) == 0x000000, "Member 'ObakeAnimInstance_SetIsIdle::flag' has a wrong offset!");
-
-// Function UnionRun.PackageRingObject.HitRacer
-// 0x0004 (0x0004 - 0x0000)
-struct PackageRingObject_HitRacer final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PackageRingObject_HitRacer) == 0x000004, "Wrong alignment on PackageRingObject_HitRacer");
-static_assert(sizeof(PackageRingObject_HitRacer) == 0x000004, "Wrong size on PackageRingObject_HitRacer");
-static_assert(offsetof(PackageRingObject_HitRacer, RacerIndex) == 0x000000, "Member 'PackageRingObject_HitRacer::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.PackageRingObject.SetRingType
-// 0x0001 (0x0001 - 0x0000)
-struct PackageRingObject_SetRingType final
-{
-public:
-	EPackageRingType                              Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PackageRingObject_SetRingType) == 0x000001, "Wrong alignment on PackageRingObject_SetRingType");
-static_assert(sizeof(PackageRingObject_SetRingType) == 0x000001, "Wrong size on PackageRingObject_SetRingType");
-static_assert(offsetof(PackageRingObject_SetRingType, Type) == 0x000000, "Member 'PackageRingObject_SetRingType::Type' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.ApplyPauseInput
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRacer_ApplyPauseInput final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_ApplyPauseInput) == 0x000001, "Wrong alignment on UnionRacer_ApplyPauseInput");
-static_assert(sizeof(UnionRacer_ApplyPauseInput) == 0x000001, "Wrong size on UnionRacer_ApplyPauseInput");
-static_assert(offsetof(UnionRacer_ApplyPauseInput, ReturnValue) == 0x000000, "Member 'UnionRacer_ApplyPauseInput::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.ChangeVehicleDisplayMode
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRacer_ChangeVehicleDisplayMode final
-{
-public:
-	EVehicleDisplayMode                           InVehicleDisplayMode;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_ChangeVehicleDisplayMode) == 0x000001, "Wrong alignment on UnionRacer_ChangeVehicleDisplayMode");
-static_assert(sizeof(UnionRacer_ChangeVehicleDisplayMode) == 0x000001, "Wrong size on UnionRacer_ChangeVehicleDisplayMode");
-static_assert(offsetof(UnionRacer_ChangeVehicleDisplayMode, InVehicleDisplayMode) == 0x000000, "Member 'UnionRacer_ChangeVehicleDisplayMode::InVehicleDisplayMode' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.Destroy
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRacer_Destroy final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_Destroy) == 0x000001, "Wrong alignment on UnionRacer_Destroy");
-static_assert(sizeof(UnionRacer_Destroy) == 0x000001, "Wrong size on UnionRacer_Destroy");
-static_assert(offsetof(UnionRacer_Destroy, ReturnValue) == 0x000000, "Member 'UnionRacer_Destroy::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.ExecTick
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_ExecTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_ExecTick) == 0x000004, "Wrong alignment on UnionRacer_ExecTick");
-static_assert(sizeof(UnionRacer_ExecTick) == 0x000004, "Wrong size on UnionRacer_ExecTick");
-static_assert(offsetof(UnionRacer_ExecTick, DeltaSeconds) == 0x000000, "Member 'UnionRacer_ExecTick::DeltaSeconds' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.GetPlayerControllerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_GetPlayerControllerIndex final
-{
-public:
-	int32                                         OutPlayerControllerIndex;                          // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_GetPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacer_GetPlayerControllerIndex");
-static_assert(sizeof(UnionRacer_GetPlayerControllerIndex) == 0x000004, "Wrong size on UnionRacer_GetPlayerControllerIndex");
-static_assert(offsetof(UnionRacer_GetPlayerControllerIndex, OutPlayerControllerIndex) == 0x000000, "Member 'UnionRacer_GetPlayerControllerIndex::OutPlayerControllerIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.GetRaceLapInfo
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacer_GetRaceLapInfo final
-{
-public:
-	class UUnionRaceLapInfo*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_GetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacer_GetRaceLapInfo");
-static_assert(sizeof(UnionRacer_GetRaceLapInfo) == 0x000008, "Wrong size on UnionRacer_GetRaceLapInfo");
-static_assert(offsetof(UnionRacer_GetRaceLapInfo, ReturnValue) == 0x000000, "Member 'UnionRacer_GetRaceLapInfo::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.GetRacerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_GetRacerIndex final
-{
-public:
-	int32                                         OutRacerIndex;                                     // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_GetRacerIndex) == 0x000004, "Wrong alignment on UnionRacer_GetRacerIndex");
-static_assert(sizeof(UnionRacer_GetRacerIndex) == 0x000004, "Wrong size on UnionRacer_GetRacerIndex");
-static_assert(offsetof(UnionRacer_GetRacerIndex, OutRacerIndex) == 0x000000, "Member 'UnionRacer_GetRacerIndex::OutRacerIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.GetRacerSituationObject
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacer_GetRacerSituationObject final
-{
-public:
-	class UUnionRaceSituationObject*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_GetRacerSituationObject) == 0x000008, "Wrong alignment on UnionRacer_GetRacerSituationObject");
-static_assert(sizeof(UnionRacer_GetRacerSituationObject) == 0x000008, "Wrong size on UnionRacer_GetRacerSituationObject");
-static_assert(offsetof(UnionRacer_GetRacerSituationObject, ReturnValue) == 0x000000, "Member 'UnionRacer_GetRacerSituationObject::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.GetRacerStatusObject
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacer_GetRacerStatusObject final
-{
-public:
-	class UUnionRacerStatusObject*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_GetRacerStatusObject) == 0x000008, "Wrong alignment on UnionRacer_GetRacerStatusObject");
-static_assert(sizeof(UnionRacer_GetRacerStatusObject) == 0x000008, "Wrong size on UnionRacer_GetRacerStatusObject");
-static_assert(offsetof(UnionRacer_GetRacerStatusObject, ReturnValue) == 0x000000, "Member 'UnionRacer_GetRacerStatusObject::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.GetTestRaceCount
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_GetTestRaceCount final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_GetTestRaceCount) == 0x000004, "Wrong alignment on UnionRacer_GetTestRaceCount");
-static_assert(sizeof(UnionRacer_GetTestRaceCount) == 0x000004, "Wrong size on UnionRacer_GetTestRaceCount");
-static_assert(offsetof(UnionRacer_GetTestRaceCount, ReturnValue) == 0x000000, "Member 'UnionRacer_GetTestRaceCount::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.SetPlayerControllerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_SetPlayerControllerIndex final
-{
-public:
-	int32                                         InPlayerControllerIndex;                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_SetPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacer_SetPlayerControllerIndex");
-static_assert(sizeof(UnionRacer_SetPlayerControllerIndex) == 0x000004, "Wrong size on UnionRacer_SetPlayerControllerIndex");
-static_assert(offsetof(UnionRacer_SetPlayerControllerIndex, InPlayerControllerIndex) == 0x000000, "Member 'UnionRacer_SetPlayerControllerIndex::InPlayerControllerIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.SetRaceLapInfo
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacer_SetRaceLapInfo final
-{
-public:
-	class UUnionRaceLapInfo*                      InRaceLapInfo;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_SetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacer_SetRaceLapInfo");
-static_assert(sizeof(UnionRacer_SetRaceLapInfo) == 0x000008, "Wrong size on UnionRacer_SetRaceLapInfo");
-static_assert(offsetof(UnionRacer_SetRaceLapInfo, InRaceLapInfo) == 0x000000, "Member 'UnionRacer_SetRaceLapInfo::InRaceLapInfo' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.SetRacerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_SetRacerIndex final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_SetRacerIndex) == 0x000004, "Wrong alignment on UnionRacer_SetRacerIndex");
-static_assert(sizeof(UnionRacer_SetRacerIndex) == 0x000004, "Wrong size on UnionRacer_SetRacerIndex");
-static_assert(offsetof(UnionRacer_SetRacerIndex, InRacerIndex) == 0x000000, "Member 'UnionRacer_SetRacerIndex::InRacerIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.SetTickable
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRacer_SetTickable final
-{
-public:
-	bool                                          bTickable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_SetTickable) == 0x000001, "Wrong alignment on UnionRacer_SetTickable");
-static_assert(sizeof(UnionRacer_SetTickable) == 0x000001, "Wrong size on UnionRacer_SetTickable");
-static_assert(offsetof(UnionRacer_SetTickable, bTickable) == 0x000000, "Member 'UnionRacer_SetTickable::bTickable' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.SetVehicle
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacer_SetVehicle final
-{
-public:
-	class APawn*                                  InVehicle;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_SetVehicle) == 0x000008, "Wrong alignment on UnionRacer_SetVehicle");
-static_assert(sizeof(UnionRacer_SetVehicle) == 0x000008, "Wrong size on UnionRacer_SetVehicle");
-static_assert(offsetof(UnionRacer_SetVehicle, InVehicle) == 0x000000, "Member 'UnionRacer_SetVehicle::InVehicle' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.SetViewSplitId
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRacer_SetViewSplitId final
-{
-public:
-	EViewSplitId                                  InViewSplitId;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacer_SetViewSplitId) == 0x000001, "Wrong alignment on UnionRacer_SetViewSplitId");
-static_assert(sizeof(UnionRacer_SetViewSplitId) == 0x000001, "Wrong size on UnionRacer_SetViewSplitId");
-static_assert(offsetof(UnionRacer_SetViewSplitId, InViewSplitId) == 0x000000, "Member 'UnionRacer_SetViewSplitId::InViewSplitId' has a wrong offset!");
-
-// Function UnionRun.UnionRacer.UnionRacer_SetTimerDelegate
+// Function UnionRun.UnionMiscFunction.ContainsLevel
 // 0x0020 (0x0020 - 0x0000)
-struct UnionRacer_UnionRacer_SetTimerDelegate final
+struct UnionMiscFunction_ContainsLevel final
 {
 public:
-	TDelegate<void()>                             Delegate;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLooping;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LevelName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(UnionRacer_UnionRacer_SetTimerDelegate) == 0x000008, "Wrong alignment on UnionRacer_UnionRacer_SetTimerDelegate");
-static_assert(sizeof(UnionRacer_UnionRacer_SetTimerDelegate) == 0x000020, "Wrong size on UnionRacer_UnionRacer_SetTimerDelegate");
-static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, Delegate) == 0x000000, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::Delegate' has a wrong offset!");
-static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, Time) == 0x000010, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::Time' has a wrong offset!");
-static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, bLooping) == 0x000014, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::bLooping' has a wrong offset!");
-static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, ReturnValue) == 0x000018, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::ReturnValue' has a wrong offset!");
+static_assert(alignof(UnionMiscFunction_ContainsLevel) == 0x000008, "Wrong alignment on UnionMiscFunction_ContainsLevel");
+static_assert(sizeof(UnionMiscFunction_ContainsLevel) == 0x000020, "Wrong size on UnionMiscFunction_ContainsLevel");
+static_assert(offsetof(UnionMiscFunction_ContainsLevel, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_ContainsLevel::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_ContainsLevel, LevelName) == 0x000008, "Member 'UnionMiscFunction_ContainsLevel::LevelName' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_ContainsLevel, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_ContainsLevel::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.UnionRacer.UpdateTestRace
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_UpdateTestRace final
+// Function UnionRun.UnionMiscFunction.GetCourseEditorStageAssetDir
+// 0x0018 (0x0018 - 0x0000)
+struct UnionMiscFunction_GetCourseEditorStageAssetDir final
 {
 public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRacer_UpdateTestRace) == 0x000004, "Wrong alignment on UnionRacer_UpdateTestRace");
-static_assert(sizeof(UnionRacer_UpdateTestRace) == 0x000004, "Wrong size on UnionRacer_UpdateTestRace");
-static_assert(offsetof(UnionRacer_UpdateTestRace, Delta) == 0x000000, "Member 'UnionRacer_UpdateTestRace::Delta' has a wrong offset!");
+static_assert(alignof(UnionMiscFunction_GetCourseEditorStageAssetDir) == 0x000008, "Wrong alignment on UnionMiscFunction_GetCourseEditorStageAssetDir");
+static_assert(sizeof(UnionMiscFunction_GetCourseEditorStageAssetDir) == 0x000018, "Wrong size on UnionMiscFunction_GetCourseEditorStageAssetDir");
+static_assert(offsetof(UnionMiscFunction_GetCourseEditorStageAssetDir, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_GetCourseEditorStageAssetDir::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_GetCourseEditorStageAssetDir, ReturnValue) == 0x000008, "Member 'UnionMiscFunction_GetCourseEditorStageAssetDir::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.UnionRacer.UpdateVehicle
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacer_UpdateVehicle final
+// Function UnionRun.UnionMiscFunction.GetStageAssetDir
+// 0x0018 (0x0018 - 0x0000)
+struct UnionMiscFunction_GetStageAssetDir final
 {
 public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRacer_UpdateVehicle) == 0x000004, "Wrong alignment on UnionRacer_UpdateVehicle");
-static_assert(sizeof(UnionRacer_UpdateVehicle) == 0x000004, "Wrong size on UnionRacer_UpdateVehicle");
-static_assert(offsetof(UnionRacer_UpdateVehicle, Delta) == 0x000000, "Member 'UnionRacer_UpdateVehicle::Delta' has a wrong offset!");
+static_assert(alignof(UnionMiscFunction_GetStageAssetDir) == 0x000008, "Wrong alignment on UnionMiscFunction_GetStageAssetDir");
+static_assert(sizeof(UnionMiscFunction_GetStageAssetDir) == 0x000018, "Wrong size on UnionMiscFunction_GetStageAssetDir");
+static_assert(offsetof(UnionMiscFunction_GetStageAssetDir, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_GetStageAssetDir::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_GetStageAssetDir, ReturnValue) == 0x000008, "Member 'UnionMiscFunction_GetStageAssetDir::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.UnionRacer.GetViewSplitId
+// Function UnionRun.UnionMiscFunction.GetStageAssetFilenameTrunk
+// 0x0018 (0x0018 - 0x0000)
+struct UnionMiscFunction_GetStageAssetFilenameTrunk final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionMiscFunction_GetStageAssetFilenameTrunk) == 0x000008, "Wrong alignment on UnionMiscFunction_GetStageAssetFilenameTrunk");
+static_assert(sizeof(UnionMiscFunction_GetStageAssetFilenameTrunk) == 0x000018, "Wrong size on UnionMiscFunction_GetStageAssetFilenameTrunk");
+static_assert(offsetof(UnionMiscFunction_GetStageAssetFilenameTrunk, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_GetStageAssetFilenameTrunk::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_GetStageAssetFilenameTrunk, ReturnValue) == 0x000008, "Member 'UnionMiscFunction_GetStageAssetFilenameTrunk::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionMiscFunction.LoadComPathAssetByFilePath
+// 0x0020 (0x0020 - 0x0000)
+struct UnionMiscFunction_LoadComPathAssetByFilePath final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUnionComPathBinaryDataAsset*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionMiscFunction_LoadComPathAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadComPathAssetByFilePath");
+static_assert(sizeof(UnionMiscFunction_LoadComPathAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadComPathAssetByFilePath");
+static_assert(offsetof(UnionMiscFunction_LoadComPathAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadComPathAssetByFilePath::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadComPathAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadComPathAssetByFilePath::FilePath' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadComPathAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadComPathAssetByFilePath::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionMiscFunction.LoadCourseCollisionAssetByFilePath
+// 0x0020 (0x0020 - 0x0000)
+struct UnionMiscFunction_LoadCourseCollisionAssetByFilePath final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUnionBtCollisionBinaryAsset*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadCourseCollisionAssetByFilePath");
+static_assert(sizeof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadCourseCollisionAssetByFilePath");
+static_assert(offsetof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadCourseCollisionAssetByFilePath::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadCourseCollisionAssetByFilePath::FilePath' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadCourseCollisionAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadCourseCollisionAssetByFilePath::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionMiscFunction.LoadCourseNavigationAssetByFilePath
+// 0x0020 (0x0020 - 0x0000)
+struct UnionMiscFunction_LoadCourseNavigationAssetByFilePath final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUnionNavigationBinaryDataAsset*        ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadCourseNavigationAssetByFilePath");
+static_assert(sizeof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadCourseNavigationAssetByFilePath");
+static_assert(offsetof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadCourseNavigationAssetByFilePath::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadCourseNavigationAssetByFilePath::FilePath' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadCourseNavigationAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadCourseNavigationAssetByFilePath::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionMiscFunction.LoadRunPathAssetByFilePath
+// 0x0020 (0x0020 - 0x0000)
+struct UnionMiscFunction_LoadRunPathAssetByFilePath final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 FilePath;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUnionRunPathBinaryDataAsset*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionMiscFunction_LoadRunPathAssetByFilePath) == 0x000008, "Wrong alignment on UnionMiscFunction_LoadRunPathAssetByFilePath");
+static_assert(sizeof(UnionMiscFunction_LoadRunPathAssetByFilePath) == 0x000020, "Wrong size on UnionMiscFunction_LoadRunPathAssetByFilePath");
+static_assert(offsetof(UnionMiscFunction_LoadRunPathAssetByFilePath, WorldContextObject) == 0x000000, "Member 'UnionMiscFunction_LoadRunPathAssetByFilePath::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadRunPathAssetByFilePath, FilePath) == 0x000008, "Member 'UnionMiscFunction_LoadRunPathAssetByFilePath::FilePath' has a wrong offset!");
+static_assert(offsetof(UnionMiscFunction_LoadRunPathAssetByFilePath, ReturnValue) == 0x000018, "Member 'UnionMiscFunction_LoadRunPathAssetByFilePath::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsAttack
 // 0x0001 (0x0001 - 0x0000)
-struct UnionRacer_GetViewSplitId final
+struct KingBoomBooAnimInstance_GetIsAttack final
 {
 public:
-	EViewSplitId                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRacer_GetViewSplitId) == 0x000001, "Wrong alignment on UnionRacer_GetViewSplitId");
-static_assert(sizeof(UnionRacer_GetViewSplitId) == 0x000001, "Wrong size on UnionRacer_GetViewSplitId");
-static_assert(offsetof(UnionRacer_GetViewSplitId, ReturnValue) == 0x000000, "Member 'UnionRacer_GetViewSplitId::ReturnValue' has a wrong offset!");
+static_assert(alignof(KingBoomBooAnimInstance_GetIsAttack) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsAttack");
+static_assert(sizeof(KingBoomBooAnimInstance_GetIsAttack) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsAttack");
+static_assert(offsetof(KingBoomBooAnimInstance_GetIsAttack, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsAttack::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.RaceObjectSkeletal.SetBodySkeletalMesh
-// 0x0008 (0x0008 - 0x0000)
-struct RaceObjectSkeletal_SetBodySkeletalMesh final
+// Function UnionRun.KingBoomBooAnimInstance.GetIsAttackEnd
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_GetIsAttackEnd final
 {
 public:
-	class USkeletalMesh*                          NewSkeletalMesh;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(RaceObjectSkeletal_SetBodySkeletalMesh) == 0x000008, "Wrong alignment on RaceObjectSkeletal_SetBodySkeletalMesh");
-static_assert(sizeof(RaceObjectSkeletal_SetBodySkeletalMesh) == 0x000008, "Wrong size on RaceObjectSkeletal_SetBodySkeletalMesh");
-static_assert(offsetof(RaceObjectSkeletal_SetBodySkeletalMesh, NewSkeletalMesh) == 0x000000, "Member 'RaceObjectSkeletal_SetBodySkeletalMesh::NewSkeletalMesh' has a wrong offset!");
+static_assert(alignof(KingBoomBooAnimInstance_GetIsAttackEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsAttackEnd");
+static_assert(sizeof(KingBoomBooAnimInstance_GetIsAttackEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsAttackEnd");
+static_assert(offsetof(KingBoomBooAnimInstance_GetIsAttackEnd, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsAttackEnd::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.RacerReactionManager.ForcePlayVoice
-// 0x00A8 (0x00A8 - 0x0000)
-struct RacerReactionManager_ForcePlayVoice final
+// Function UnionRun.KingBoomBooAnimInstance.GetIsEnd
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_GetIsEnd final
 {
 public:
-	struct FRacerReactionVoice                    ReactionVoice;                                     // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int32                                         RacerIndex;                                        // 0x00A0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinimumCoolTime;                                   // 0x00A4(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(RacerReactionManager_ForcePlayVoice) == 0x000008, "Wrong alignment on RacerReactionManager_ForcePlayVoice");
-static_assert(sizeof(RacerReactionManager_ForcePlayVoice) == 0x0000A8, "Wrong size on RacerReactionManager_ForcePlayVoice");
-static_assert(offsetof(RacerReactionManager_ForcePlayVoice, ReactionVoice) == 0x000000, "Member 'RacerReactionManager_ForcePlayVoice::ReactionVoice' has a wrong offset!");
-static_assert(offsetof(RacerReactionManager_ForcePlayVoice, RacerIndex) == 0x0000A0, "Member 'RacerReactionManager_ForcePlayVoice::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RacerReactionManager_ForcePlayVoice, MinimumCoolTime) == 0x0000A4, "Member 'RacerReactionManager_ForcePlayVoice::MinimumCoolTime' has a wrong offset!");
+static_assert(alignof(KingBoomBooAnimInstance_GetIsEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsEnd");
+static_assert(sizeof(KingBoomBooAnimInstance_GetIsEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsEnd");
+static_assert(offsetof(KingBoomBooAnimInstance_GetIsEnd, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsEnd::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.RacerReactionManager.SoundPlayIrregularInfoDod
-// 0x00B0 (0x00B0 - 0x0000)
-struct RacerReactionManager_SoundPlayIrregularInfoDod final
+// Function UnionRun.KingBoomBooAnimInstance.GetIsExit
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_GetIsExit final
 {
 public:
-	struct FRacerReactionVoice                    ReactionVoice;                                     // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int32                                         RacerIndex;                                        // 0x00A0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinimumCoolTime;                                   // 0x00A4(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Duration;                                          // 0x00A8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(RacerReactionManager_SoundPlayIrregularInfoDod) == 0x000008, "Wrong alignment on RacerReactionManager_SoundPlayIrregularInfoDod");
-static_assert(sizeof(RacerReactionManager_SoundPlayIrregularInfoDod) == 0x0000B0, "Wrong size on RacerReactionManager_SoundPlayIrregularInfoDod");
-static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, ReactionVoice) == 0x000000, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::ReactionVoice' has a wrong offset!");
-static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, RacerIndex) == 0x0000A0, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, MinimumCoolTime) == 0x0000A4, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::MinimumCoolTime' has a wrong offset!");
-static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, Duration) == 0x0000A8, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::Duration' has a wrong offset!");
+static_assert(alignof(KingBoomBooAnimInstance_GetIsExit) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsExit");
+static_assert(sizeof(KingBoomBooAnimInstance_GetIsExit) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsExit");
+static_assert(offsetof(KingBoomBooAnimInstance_GetIsExit, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsExit::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsMove
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_GetIsMove final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_GetIsMove) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsMove");
+static_assert(sizeof(KingBoomBooAnimInstance_GetIsMove) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsMove");
+static_assert(offsetof(KingBoomBooAnimInstance_GetIsMove, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsMove::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsStart
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_GetIsStart final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_GetIsStart) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_GetIsStart");
+static_assert(sizeof(KingBoomBooAnimInstance_GetIsStart) == 0x000001, "Wrong size on KingBoomBooAnimInstance_GetIsStart");
+static_assert(offsetof(KingBoomBooAnimInstance_GetIsStart, ReturnValue) == 0x000000, "Member 'KingBoomBooAnimInstance_GetIsStart::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsAttack
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_SetIsAttack final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_SetIsAttack) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsAttack");
+static_assert(sizeof(KingBoomBooAnimInstance_SetIsAttack) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsAttack");
+static_assert(offsetof(KingBoomBooAnimInstance_SetIsAttack, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsAttack::flag' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsAttackEnd
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_SetIsAttackEnd final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_SetIsAttackEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsAttackEnd");
+static_assert(sizeof(KingBoomBooAnimInstance_SetIsAttackEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsAttackEnd");
+static_assert(offsetof(KingBoomBooAnimInstance_SetIsAttackEnd, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsAttackEnd::flag' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsEnd
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_SetIsEnd final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_SetIsEnd) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsEnd");
+static_assert(sizeof(KingBoomBooAnimInstance_SetIsEnd) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsEnd");
+static_assert(offsetof(KingBoomBooAnimInstance_SetIsEnd, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsEnd::flag' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsExit
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_SetIsExit final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_SetIsExit) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsExit");
+static_assert(sizeof(KingBoomBooAnimInstance_SetIsExit) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsExit");
+static_assert(offsetof(KingBoomBooAnimInstance_SetIsExit, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsExit::flag' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsMove
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_SetIsMove final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_SetIsMove) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsMove");
+static_assert(sizeof(KingBoomBooAnimInstance_SetIsMove) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsMove");
+static_assert(offsetof(KingBoomBooAnimInstance_SetIsMove, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsMove::flag' has a wrong offset!");
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsStart
+// 0x0001 (0x0001 - 0x0000)
+struct KingBoomBooAnimInstance_SetIsStart final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(KingBoomBooAnimInstance_SetIsStart) == 0x000001, "Wrong alignment on KingBoomBooAnimInstance_SetIsStart");
+static_assert(sizeof(KingBoomBooAnimInstance_SetIsStart) == 0x000001, "Wrong size on KingBoomBooAnimInstance_SetIsStart");
+static_assert(offsetof(KingBoomBooAnimInstance_SetIsStart, flag) == 0x000000, "Member 'KingBoomBooAnimInstance_SetIsStart::flag' has a wrong offset!");
 
 // Function UnionRun.UnionNavMarker.GetUseSplineActor
 // 0x0028 (0x0028 - 0x0000)
@@ -5383,42 +5101,216 @@ static_assert(alignof(UnionNavMarker_IsInvalid) == 0x000001, "Wrong alignment on
 static_assert(sizeof(UnionNavMarker_IsInvalid) == 0x000001, "Wrong size on UnionNavMarker_IsInvalid");
 static_assert(offsetof(UnionNavMarker_IsInvalid, ReturnValue) == 0x000000, "Member 'UnionNavMarker_IsInvalid::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.UnionRaceInfoInterface.NoticeChangeCountDownEvent
+// Function UnionRun.PauseManager.SetGamePaused
 // 0x0008 (0x0008 - 0x0000)
-struct UnionRaceInfoInterface_NoticeChangeCountDownEvent final
+struct PauseManager_SetGamePaused final
 {
 public:
-	int32                                         InNewValue;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InOldValue;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Paused;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RacerIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRaceInfoInterface_NoticeChangeCountDownEvent) == 0x000004, "Wrong alignment on UnionRaceInfoInterface_NoticeChangeCountDownEvent");
-static_assert(sizeof(UnionRaceInfoInterface_NoticeChangeCountDownEvent) == 0x000008, "Wrong size on UnionRaceInfoInterface_NoticeChangeCountDownEvent");
-static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeCountDownEvent, InNewValue) == 0x000000, "Member 'UnionRaceInfoInterface_NoticeChangeCountDownEvent::InNewValue' has a wrong offset!");
-static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeCountDownEvent, InOldValue) == 0x000004, "Member 'UnionRaceInfoInterface_NoticeChangeCountDownEvent::InOldValue' has a wrong offset!");
+static_assert(alignof(PauseManager_SetGamePaused) == 0x000004, "Wrong alignment on PauseManager_SetGamePaused");
+static_assert(sizeof(PauseManager_SetGamePaused) == 0x000008, "Wrong size on PauseManager_SetGamePaused");
+static_assert(offsetof(PauseManager_SetGamePaused, Paused) == 0x000000, "Member 'PauseManager_SetGamePaused::Paused' has a wrong offset!");
+static_assert(offsetof(PauseManager_SetGamePaused, RacerIndex) == 0x000004, "Member 'PauseManager_SetGamePaused::RacerIndex' has a wrong offset!");
 
-// Function UnionRun.UnionRaceInfoInterface.NoticeChangeRaceStateEvent
-// 0x0002 (0x0002 - 0x0000)
-struct UnionRaceInfoInterface_NoticeChangeRaceStateEvent final
+// Function UnionRun.PauseManager.SetGamePauseOwnerRacerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct PauseManager_SetGamePauseOwnerRacerIndex final
 {
 public:
-	ERaceInfoStateType                            InNewState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERaceInfoStateType                            InOldState;                                        // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent) == 0x000001, "Wrong alignment on UnionRaceInfoInterface_NoticeChangeRaceStateEvent");
-static_assert(sizeof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent) == 0x000002, "Wrong size on UnionRaceInfoInterface_NoticeChangeRaceStateEvent");
-static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent, InNewState) == 0x000000, "Member 'UnionRaceInfoInterface_NoticeChangeRaceStateEvent::InNewState' has a wrong offset!");
-static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent, InOldState) == 0x000001, "Member 'UnionRaceInfoInterface_NoticeChangeRaceStateEvent::InOldState' has a wrong offset!");
+static_assert(alignof(PauseManager_SetGamePauseOwnerRacerIndex) == 0x000004, "Wrong alignment on PauseManager_SetGamePauseOwnerRacerIndex");
+static_assert(sizeof(PauseManager_SetGamePauseOwnerRacerIndex) == 0x000004, "Wrong size on PauseManager_SetGamePauseOwnerRacerIndex");
+static_assert(offsetof(PauseManager_SetGamePauseOwnerRacerIndex, Index_0) == 0x000000, "Member 'PauseManager_SetGamePauseOwnerRacerIndex::Index_0' has a wrong offset!");
 
-// Function UnionRun.UnionRaceInfoInterface.SetRaceInfo
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceInfoInterface_SetRaceInfo final
+// Function UnionRun.PauseManager.SetIsOnlineMode
+// 0x0001 (0x0001 - 0x0000)
+struct PauseManager_SetIsOnlineMode final
 {
 public:
-	class UUnionRaceInfo*                         InRaceInfo;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOnlineMode;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UnionRaceInfoInterface_SetRaceInfo) == 0x000008, "Wrong alignment on UnionRaceInfoInterface_SetRaceInfo");
-static_assert(sizeof(UnionRaceInfoInterface_SetRaceInfo) == 0x000008, "Wrong size on UnionRaceInfoInterface_SetRaceInfo");
-static_assert(offsetof(UnionRaceInfoInterface_SetRaceInfo, InRaceInfo) == 0x000000, "Member 'UnionRaceInfoInterface_SetRaceInfo::InRaceInfo' has a wrong offset!");
+static_assert(alignof(PauseManager_SetIsOnlineMode) == 0x000001, "Wrong alignment on PauseManager_SetIsOnlineMode");
+static_assert(sizeof(PauseManager_SetIsOnlineMode) == 0x000001, "Wrong size on PauseManager_SetIsOnlineMode");
+static_assert(offsetof(PauseManager_SetIsOnlineMode, IsOnlineMode) == 0x000000, "Member 'PauseManager_SetIsOnlineMode::IsOnlineMode' has a wrong offset!");
+
+// Function UnionRun.PauseManager.GetGamePauseOwnerRacerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct PauseManager_GetGamePauseOwnerRacerIndex final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(PauseManager_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong alignment on PauseManager_GetGamePauseOwnerRacerIndex");
+static_assert(sizeof(PauseManager_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong size on PauseManager_GetGamePauseOwnerRacerIndex");
+static_assert(offsetof(PauseManager_GetGamePauseOwnerRacerIndex, ReturnValue) == 0x000000, "Member 'PauseManager_GetGamePauseOwnerRacerIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.PauseManager.IsGamePaused
+// 0x0001 (0x0001 - 0x0000)
+struct PauseManager_IsGamePaused final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(PauseManager_IsGamePaused) == 0x000001, "Wrong alignment on PauseManager_IsGamePaused");
+static_assert(sizeof(PauseManager_IsGamePaused) == 0x000001, "Wrong size on PauseManager_IsGamePaused");
+static_assert(offsetof(PauseManager_IsGamePaused, ReturnValue) == 0x000000, "Member 'PauseManager_IsGamePaused::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.PauseManager.IsGamePauseOwnerGoaled
+// 0x0001 (0x0001 - 0x0000)
+struct PauseManager_IsGamePauseOwnerGoaled final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(PauseManager_IsGamePauseOwnerGoaled) == 0x000001, "Wrong alignment on PauseManager_IsGamePauseOwnerGoaled");
+static_assert(sizeof(PauseManager_IsGamePauseOwnerGoaled) == 0x000001, "Wrong size on PauseManager_IsGamePauseOwnerGoaled");
+static_assert(offsetof(PauseManager_IsGamePauseOwnerGoaled, ReturnValue) == 0x000000, "Member 'PauseManager_IsGamePauseOwnerGoaled::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.PauseManager.IsOnlineMode
+// 0x0001 (0x0001 - 0x0000)
+struct PauseManager_IsOnlineMode final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(PauseManager_IsOnlineMode) == 0x000001, "Wrong alignment on PauseManager_IsOnlineMode");
+static_assert(sizeof(PauseManager_IsOnlineMode) == 0x000001, "Wrong size on PauseManager_IsOnlineMode");
+static_assert(offsetof(PauseManager_IsOnlineMode, ReturnValue) == 0x000000, "Member 'PauseManager_IsOnlineMode::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRaceHitInfoGroup.SetItemIdIndex_Impl
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceHitInfoGroup_SetItemIdIndex_Impl final
+{
+public:
+	int32                                         InItemIdIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceHitInfoGroup_SetItemIdIndex_Impl) == 0x000004, "Wrong alignment on UnionRaceHitInfoGroup_SetItemIdIndex_Impl");
+static_assert(sizeof(UnionRaceHitInfoGroup_SetItemIdIndex_Impl) == 0x000004, "Wrong size on UnionRaceHitInfoGroup_SetItemIdIndex_Impl");
+static_assert(offsetof(UnionRaceHitInfoGroup_SetItemIdIndex_Impl, InItemIdIndex) == 0x000000, "Member 'UnionRaceHitInfoGroup_SetItemIdIndex_Impl::InItemIdIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRaceHitInfoGroup.UpdateHitInfoGroup
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceHitInfoGroup_UpdateHitInfoGroup final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceHitInfoGroup_UpdateHitInfoGroup) == 0x000004, "Wrong alignment on UnionRaceHitInfoGroup_UpdateHitInfoGroup");
+static_assert(sizeof(UnionRaceHitInfoGroup_UpdateHitInfoGroup) == 0x000004, "Wrong size on UnionRaceHitInfoGroup_UpdateHitInfoGroup");
+static_assert(offsetof(UnionRaceHitInfoGroup_UpdateHitInfoGroup, Delta) == 0x000000, "Member 'UnionRaceHitInfoGroup_UpdateHitInfoGroup::Delta' has a wrong offset!");
+
+// Function UnionRun.RaceLogUtil.GetRacerLapInfo
+// 0x0018 (0x0018 - 0x0000)
+struct RaceLogUtil_GetRacerLapInfo final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceLogUtil_GetRacerLapInfo) == 0x000008, "Wrong alignment on RaceLogUtil_GetRacerLapInfo");
+static_assert(sizeof(RaceLogUtil_GetRacerLapInfo) == 0x000018, "Wrong size on RaceLogUtil_GetRacerLapInfo");
+static_assert(offsetof(RaceLogUtil_GetRacerLapInfo, RacerIndex) == 0x000000, "Member 'RaceLogUtil_GetRacerLapInfo::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_GetRacerLapInfo, ReturnValue) == 0x000008, "Member 'RaceLogUtil_GetRacerLapInfo::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceLogUtil.GetRacerStatusInfo
+// 0x0018 (0x0018 - 0x0000)
+struct RaceLogUtil_GetRacerStatusInfo final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceLogUtil_GetRacerStatusInfo) == 0x000008, "Wrong alignment on RaceLogUtil_GetRacerStatusInfo");
+static_assert(sizeof(RaceLogUtil_GetRacerStatusInfo) == 0x000018, "Wrong size on RaceLogUtil_GetRacerStatusInfo");
+static_assert(offsetof(RaceLogUtil_GetRacerStatusInfo, RacerIndex) == 0x000000, "Member 'RaceLogUtil_GetRacerStatusInfo::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_GetRacerStatusInfo, ReturnValue) == 0x000008, "Member 'RaceLogUtil_GetRacerStatusInfo::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceLogUtil.PrintRaceLog
+// 0x0028 (0x0028 - 0x0000)
+struct RaceLogUtil_PrintRaceLog final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 str;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 at;                                                // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceLogUtil_PrintRaceLog) == 0x000008, "Wrong alignment on RaceLogUtil_PrintRaceLog");
+static_assert(sizeof(RaceLogUtil_PrintRaceLog) == 0x000028, "Wrong size on RaceLogUtil_PrintRaceLog");
+static_assert(offsetof(RaceLogUtil_PrintRaceLog, RacerIndex) == 0x000000, "Member 'RaceLogUtil_PrintRaceLog::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_PrintRaceLog, str) == 0x000008, "Member 'RaceLogUtil_PrintRaceLog::str' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_PrintRaceLog, at) == 0x000018, "Member 'RaceLogUtil_PrintRaceLog::at' has a wrong offset!");
+
+// Function UnionRun.RaceLogUtil.PrintRunLog
+// 0x0028 (0x0028 - 0x0000)
+struct RaceLogUtil_PrintRunLog final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 str;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 at;                                                // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceLogUtil_PrintRunLog) == 0x000008, "Wrong alignment on RaceLogUtil_PrintRunLog");
+static_assert(sizeof(RaceLogUtil_PrintRunLog) == 0x000028, "Wrong size on RaceLogUtil_PrintRunLog");
+static_assert(offsetof(RaceLogUtil_PrintRunLog, RacerIndex) == 0x000000, "Member 'RaceLogUtil_PrintRunLog::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_PrintRunLog, str) == 0x000008, "Member 'RaceLogUtil_PrintRunLog::str' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_PrintRunLog, at) == 0x000018, "Member 'RaceLogUtil_PrintRunLog::at' has a wrong offset!");
+
+// Function UnionRun.RaceLogUtil.PrintWarpLog
+// 0x0028 (0x0028 - 0x0000)
+struct RaceLogUtil_PrintWarpLog final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 str;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 at;                                                // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceLogUtil_PrintWarpLog) == 0x000008, "Wrong alignment on RaceLogUtil_PrintWarpLog");
+static_assert(sizeof(RaceLogUtil_PrintWarpLog) == 0x000028, "Wrong size on RaceLogUtil_PrintWarpLog");
+static_assert(offsetof(RaceLogUtil_PrintWarpLog, RacerIndex) == 0x000000, "Member 'RaceLogUtil_PrintWarpLog::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_PrintWarpLog, str) == 0x000008, "Member 'RaceLogUtil_PrintWarpLog::str' has a wrong offset!");
+static_assert(offsetof(RaceLogUtil_PrintWarpLog, at) == 0x000018, "Member 'RaceLogUtil_PrintWarpLog::at' has a wrong offset!");
+
+// Function UnionRun.RacerReactionManager.ForcePlayVoice
+// 0x00A8 (0x00A8 - 0x0000)
+struct RacerReactionManager_ForcePlayVoice final
+{
+public:
+	struct FRacerReactionVoice                    ReactionVoice;                                     // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         RacerIndex;                                        // 0x00A0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinimumCoolTime;                                   // 0x00A4(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RacerReactionManager_ForcePlayVoice) == 0x000008, "Wrong alignment on RacerReactionManager_ForcePlayVoice");
+static_assert(sizeof(RacerReactionManager_ForcePlayVoice) == 0x0000A8, "Wrong size on RacerReactionManager_ForcePlayVoice");
+static_assert(offsetof(RacerReactionManager_ForcePlayVoice, ReactionVoice) == 0x000000, "Member 'RacerReactionManager_ForcePlayVoice::ReactionVoice' has a wrong offset!");
+static_assert(offsetof(RacerReactionManager_ForcePlayVoice, RacerIndex) == 0x0000A0, "Member 'RacerReactionManager_ForcePlayVoice::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RacerReactionManager_ForcePlayVoice, MinimumCoolTime) == 0x0000A4, "Member 'RacerReactionManager_ForcePlayVoice::MinimumCoolTime' has a wrong offset!");
+
+// Function UnionRun.RacerReactionManager.SoundPlayIrregularInfoDod
+// 0x00B0 (0x00B0 - 0x0000)
+struct RacerReactionManager_SoundPlayIrregularInfoDod final
+{
+public:
+	struct FRacerReactionVoice                    ReactionVoice;                                     // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         RacerIndex;                                        // 0x00A0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinimumCoolTime;                                   // 0x00A4(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Duration;                                          // 0x00A8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RacerReactionManager_SoundPlayIrregularInfoDod) == 0x000008, "Wrong alignment on RacerReactionManager_SoundPlayIrregularInfoDod");
+static_assert(sizeof(RacerReactionManager_SoundPlayIrregularInfoDod) == 0x0000B0, "Wrong size on RacerReactionManager_SoundPlayIrregularInfoDod");
+static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, ReactionVoice) == 0x000000, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::ReactionVoice' has a wrong offset!");
+static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, RacerIndex) == 0x0000A0, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, MinimumCoolTime) == 0x0000A4, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::MinimumCoolTime' has a wrong offset!");
+static_assert(offsetof(RacerReactionManager_SoundPlayIrregularInfoDod, Duration) == 0x0000A8, "Member 'RacerReactionManager_SoundPlayIrregularInfoDod::Duration' has a wrong offset!");
 
 // Function UnionRun.RaceTestUtils.EndAutoCsvProfile
 // 0x0008 (0x0008 - 0x0000)
@@ -6424,6 +6316,3263 @@ public:
 static_assert(alignof(RaceTestUtils_IsCustomRaceTestAutoConfigMode) == 0x000001, "Wrong alignment on RaceTestUtils_IsCustomRaceTestAutoConfigMode");
 static_assert(sizeof(RaceTestUtils_IsCustomRaceTestAutoConfigMode) == 0x000001, "Wrong size on RaceTestUtils_IsCustomRaceTestAutoConfigMode");
 static_assert(offsetof(RaceTestUtils_IsCustomRaceTestAutoConfigMode, ReturnValue) == 0x000000, "Member 'RaceTestUtils_IsCustomRaceTestAutoConfigMode::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRaceInfoInterface.NoticeChangeCountDownEvent
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceInfoInterface_NoticeChangeCountDownEvent final
+{
+public:
+	int32                                         InNewValue;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InOldValue;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceInfoInterface_NoticeChangeCountDownEvent) == 0x000004, "Wrong alignment on UnionRaceInfoInterface_NoticeChangeCountDownEvent");
+static_assert(sizeof(UnionRaceInfoInterface_NoticeChangeCountDownEvent) == 0x000008, "Wrong size on UnionRaceInfoInterface_NoticeChangeCountDownEvent");
+static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeCountDownEvent, InNewValue) == 0x000000, "Member 'UnionRaceInfoInterface_NoticeChangeCountDownEvent::InNewValue' has a wrong offset!");
+static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeCountDownEvent, InOldValue) == 0x000004, "Member 'UnionRaceInfoInterface_NoticeChangeCountDownEvent::InOldValue' has a wrong offset!");
+
+// Function UnionRun.UnionRaceInfoInterface.NoticeChangeRaceStateEvent
+// 0x0002 (0x0002 - 0x0000)
+struct UnionRaceInfoInterface_NoticeChangeRaceStateEvent final
+{
+public:
+	ERaceInfoStateType                            InNewState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERaceInfoStateType                            InOldState;                                        // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent) == 0x000001, "Wrong alignment on UnionRaceInfoInterface_NoticeChangeRaceStateEvent");
+static_assert(sizeof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent) == 0x000002, "Wrong size on UnionRaceInfoInterface_NoticeChangeRaceStateEvent");
+static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent, InNewState) == 0x000000, "Member 'UnionRaceInfoInterface_NoticeChangeRaceStateEvent::InNewState' has a wrong offset!");
+static_assert(offsetof(UnionRaceInfoInterface_NoticeChangeRaceStateEvent, InOldState) == 0x000001, "Member 'UnionRaceInfoInterface_NoticeChangeRaceStateEvent::InOldState' has a wrong offset!");
+
+// Function UnionRun.UnionRaceInfoInterface.SetRaceInfo
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceInfoInterface_SetRaceInfo final
+{
+public:
+	class UUnionRaceInfo*                         InRaceInfo;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceInfoInterface_SetRaceInfo) == 0x000008, "Wrong alignment on UnionRaceInfoInterface_SetRaceInfo");
+static_assert(sizeof(UnionRaceInfoInterface_SetRaceInfo) == 0x000008, "Wrong size on UnionRaceInfoInterface_SetRaceInfo");
+static_assert(offsetof(UnionRaceInfoInterface_SetRaceInfo, InRaceInfo) == 0x000000, "Member 'UnionRaceInfoInterface_SetRaceInfo::InRaceInfo' has a wrong offset!");
+
+// Function UnionRun.RaceUISubAiming.ReStartAimingUseBeforeSound
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubAiming_ReStartAimingUseBeforeSound final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubAiming_ReStartAimingUseBeforeSound) == 0x000004, "Wrong alignment on RaceUISubAiming_ReStartAimingUseBeforeSound");
+static_assert(sizeof(RaceUISubAiming_ReStartAimingUseBeforeSound) == 0x000004, "Wrong size on RaceUISubAiming_ReStartAimingUseBeforeSound");
+static_assert(offsetof(RaceUISubAiming_ReStartAimingUseBeforeSound, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubAiming_ReStartAimingUseBeforeSound::PlayerControllerIndex' has a wrong offset!");
+
+// Function UnionRun.RaceUISubAiming.SetRaceHUD
+// 0x0010 (0x0010 - 0x0000)
+struct RaceUISubAiming_SetRaceHUD final
+{
+public:
+	class UUnionRaceUI*                           inRaceHud;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         localPlayerNum;                                    // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubAiming_SetRaceHUD) == 0x000008, "Wrong alignment on RaceUISubAiming_SetRaceHUD");
+static_assert(sizeof(RaceUISubAiming_SetRaceHUD) == 0x000010, "Wrong size on RaceUISubAiming_SetRaceHUD");
+static_assert(offsetof(RaceUISubAiming_SetRaceHUD, inRaceHud) == 0x000000, "Member 'RaceUISubAiming_SetRaceHUD::inRaceHud' has a wrong offset!");
+static_assert(offsetof(RaceUISubAiming_SetRaceHUD, localPlayerNum) == 0x000008, "Member 'RaceUISubAiming_SetRaceHUD::localPlayerNum' has a wrong offset!");
+
+// Function UnionRun.RaceUISubAiming.StopSound
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubAiming_StopSound final
+{
+public:
+	bool                                          bPause;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubAiming_StopSound) == 0x000001, "Wrong alignment on RaceUISubAiming_StopSound");
+static_assert(sizeof(RaceUISubAiming_StopSound) == 0x000001, "Wrong size on RaceUISubAiming_StopSound");
+static_assert(offsetof(RaceUISubAiming_StopSound, bPause) == 0x000000, "Member 'RaceUISubAiming_StopSound::bPause' has a wrong offset!");
+
+// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickInfoAndFireAnimation
+// 0x000C (0x000C - 0x0000)
+struct RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation final
+{
+public:
+	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SuccessBonusCount;                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGhostView;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation) == 0x000004, "Wrong alignment on RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation");
+static_assert(sizeof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation) == 0x00000C, "Wrong size on RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation::SuccessCount' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation, SuccessBonusCount) == 0x000004, "Member 'RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation::SuccessBonusCount' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation, IsGhostView) == 0x000008, "Member 'RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation::IsGhostView' has a wrong offset!");
+
+// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickTextInfo
+// 0x0030 (0x0030 - 0x0000)
+struct RaceUISubAirTrickInfo_SetAirTrickTextInfo final
+{
+public:
+	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UImage*                                 Tex_1000;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Tex_0100;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Tex_0010;                                          // 0x0018(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Tex_0001;                                          // 0x0020(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Tex_Unit;                                          // 0x0028(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubAirTrickInfo_SetAirTrickTextInfo) == 0x000008, "Wrong alignment on RaceUISubAirTrickInfo_SetAirTrickTextInfo");
+static_assert(sizeof(RaceUISubAirTrickInfo_SetAirTrickTextInfo) == 0x000030, "Wrong size on RaceUISubAirTrickInfo_SetAirTrickTextInfo");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::SuccessCount' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_1000) == 0x000008, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_1000' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_0100) == 0x000010, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_0100' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_0010) == 0x000018, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_0010' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_0001) == 0x000020, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_0001' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_Unit) == 0x000028, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_Unit' has a wrong offset!");
+
+// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickBonusValue
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubAirTrickInfo_GetAirTrickBonusValue final
+{
+public:
+	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubAirTrickInfo_GetAirTrickBonusValue) == 0x000004, "Wrong alignment on RaceUISubAirTrickInfo_GetAirTrickBonusValue");
+static_assert(sizeof(RaceUISubAirTrickInfo_GetAirTrickBonusValue) == 0x000008, "Wrong size on RaceUISubAirTrickInfo_GetAirTrickBonusValue");
+static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickBonusValue, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_GetAirTrickBonusValue::SuccessCount' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickBonusValue, ReturnValue) == 0x000004, "Member 'RaceUISubAirTrickInfo_GetAirTrickBonusValue::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickValue
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubAirTrickInfo_GetAirTrickValue final
+{
+public:
+	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubAirTrickInfo_GetAirTrickValue) == 0x000004, "Wrong alignment on RaceUISubAirTrickInfo_GetAirTrickValue");
+static_assert(sizeof(RaceUISubAirTrickInfo_GetAirTrickValue) == 0x000008, "Wrong size on RaceUISubAirTrickInfo_GetAirTrickValue");
+static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickValue, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_GetAirTrickValue::SuccessCount' has a wrong offset!");
+static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickValue, ReturnValue) == 0x000004, "Member 'RaceUISubAirTrickInfo_GetAirTrickValue::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubApproachWarning.InitItemEnemyApproachSetting
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubApproachWarning_InitItemEnemyApproachSetting final
+{
+public:
+	float                                         InMaxScale;                                        // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EUnionAttackItemInfoType                      AttackItemInfoType;                                // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         AttackItemId;                                      // 0x0005(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubApproachWarning_InitItemEnemyApproachSetting) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_InitItemEnemyApproachSetting");
+static_assert(sizeof(RaceUISubApproachWarning_InitItemEnemyApproachSetting) == 0x000008, "Wrong size on RaceUISubApproachWarning_InitItemEnemyApproachSetting");
+static_assert(offsetof(RaceUISubApproachWarning_InitItemEnemyApproachSetting, InMaxScale) == 0x000000, "Member 'RaceUISubApproachWarning_InitItemEnemyApproachSetting::InMaxScale' has a wrong offset!");
+static_assert(offsetof(RaceUISubApproachWarning_InitItemEnemyApproachSetting, AttackItemInfoType) == 0x000004, "Member 'RaceUISubApproachWarning_InitItemEnemyApproachSetting::AttackItemInfoType' has a wrong offset!");
+static_assert(offsetof(RaceUISubApproachWarning_InitItemEnemyApproachSetting, AttackItemId) == 0x000005, "Member 'RaceUISubApproachWarning_InitItemEnemyApproachSetting::AttackItemId' has a wrong offset!");
+
+// Function UnionRun.RaceUISubApproachWarning.OnPause
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubApproachWarning_OnPause final
+{
+public:
+	bool                                          bInPause;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubApproachWarning_OnPause) == 0x000001, "Wrong alignment on RaceUISubApproachWarning_OnPause");
+static_assert(sizeof(RaceUISubApproachWarning_OnPause) == 0x000001, "Wrong size on RaceUISubApproachWarning_OnPause");
+static_assert(offsetof(RaceUISubApproachWarning_OnPause, bInPause) == 0x000000, "Member 'RaceUISubApproachWarning_OnPause::bInPause' has a wrong offset!");
+
+// Function UnionRun.RaceUISubApproachWarning.SetAttackTypeandId
+// 0x0002 (0x0002 - 0x0000)
+struct RaceUISubApproachWarning_SetAttackTypeandId final
+{
+public:
+	EUnionAttackItemInfoType                      InAttackType;                                      // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemId                                       InItemId;                                          // 0x0001(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubApproachWarning_SetAttackTypeandId) == 0x000001, "Wrong alignment on RaceUISubApproachWarning_SetAttackTypeandId");
+static_assert(sizeof(RaceUISubApproachWarning_SetAttackTypeandId) == 0x000002, "Wrong size on RaceUISubApproachWarning_SetAttackTypeandId");
+static_assert(offsetof(RaceUISubApproachWarning_SetAttackTypeandId, InAttackType) == 0x000000, "Member 'RaceUISubApproachWarning_SetAttackTypeandId::InAttackType' has a wrong offset!");
+static_assert(offsetof(RaceUISubApproachWarning_SetAttackTypeandId, InItemId) == 0x000001, "Member 'RaceUISubApproachWarning_SetAttackTypeandId::InItemId' has a wrong offset!");
+
+// Function UnionRun.RaceUISubApproachWarning.SetDriverId
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubApproachWarning_SetDriverId final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubApproachWarning_SetDriverId) == 0x000001, "Wrong alignment on RaceUISubApproachWarning_SetDriverId");
+static_assert(sizeof(RaceUISubApproachWarning_SetDriverId) == 0x000001, "Wrong size on RaceUISubApproachWarning_SetDriverId");
+static_assert(offsetof(RaceUISubApproachWarning_SetDriverId, DriverId) == 0x000000, "Member 'RaceUISubApproachWarning_SetDriverId::DriverId' has a wrong offset!");
+
+// Function UnionRun.RaceUISubApproachWarning.SetItemId
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubApproachWarning_SetItemId final
+{
+public:
+	int32                                         InItemId;                                          // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubApproachWarning_SetItemId) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_SetItemId");
+static_assert(sizeof(RaceUISubApproachWarning_SetItemId) == 0x000004, "Wrong size on RaceUISubApproachWarning_SetItemId");
+static_assert(offsetof(RaceUISubApproachWarning_SetItemId, InItemId) == 0x000000, "Member 'RaceUISubApproachWarning_SetItemId::InItemId' has a wrong offset!");
+
+// Function UnionRun.RaceUISubApproachWarning.UpdateItemEnemyApproach
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubApproachWarning_UpdateItemEnemyApproach final
+{
+public:
+	float                                         ValueCM;                                           // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubApproachWarning_UpdateItemEnemyApproach) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_UpdateItemEnemyApproach");
+static_assert(sizeof(RaceUISubApproachWarning_UpdateItemEnemyApproach) == 0x000004, "Wrong size on RaceUISubApproachWarning_UpdateItemEnemyApproach");
+static_assert(offsetof(RaceUISubApproachWarning_UpdateItemEnemyApproach, ValueCM) == 0x000000, "Member 'RaceUISubApproachWarning_UpdateItemEnemyApproach::ValueCM' has a wrong offset!");
+
+// Function UnionRun.RaceUISubApproachWarning.UpdateRacerApproach
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubApproachWarning_UpdateRacerApproach final
+{
+public:
+	float                                         ValueCM;                                           // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubApproachWarning_UpdateRacerApproach) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_UpdateRacerApproach");
+static_assert(sizeof(RaceUISubApproachWarning_UpdateRacerApproach) == 0x000004, "Wrong size on RaceUISubApproachWarning_UpdateRacerApproach");
+static_assert(offsetof(RaceUISubApproachWarning_UpdateRacerApproach, ValueCM) == 0x000000, "Member 'RaceUISubApproachWarning_UpdateRacerApproach::ValueCM' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBasicOperation.IsKeyboard
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubBasicOperation_IsKeyboard final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBasicOperation_IsKeyboard) == 0x000001, "Wrong alignment on RaceUISubBasicOperation_IsKeyboard");
+static_assert(sizeof(RaceUISubBasicOperation_IsKeyboard) == 0x000001, "Wrong size on RaceUISubBasicOperation_IsKeyboard");
+static_assert(offsetof(RaceUISubBasicOperation_IsKeyboard, ReturnValue) == 0x000000, "Member 'RaceUISubBasicOperation_IsKeyboard::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.GetIsAttack
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_GetIsAttack final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_GetIsAttack) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsAttack");
+static_assert(sizeof(TrexAnimInstance_GetIsAttack) == 0x000001, "Wrong size on TrexAnimInstance_GetIsAttack");
+static_assert(offsetof(TrexAnimInstance_GetIsAttack, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsAttack::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.GetIsDamage
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_GetIsDamage final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_GetIsDamage) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsDamage");
+static_assert(sizeof(TrexAnimInstance_GetIsDamage) == 0x000001, "Wrong size on TrexAnimInstance_GetIsDamage");
+static_assert(offsetof(TrexAnimInstance_GetIsDamage, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsDamage::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.GetIsMove
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_GetIsMove final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_GetIsMove) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsMove");
+static_assert(sizeof(TrexAnimInstance_GetIsMove) == 0x000001, "Wrong size on TrexAnimInstance_GetIsMove");
+static_assert(offsetof(TrexAnimInstance_GetIsMove, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsMove::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.GetIsTurn
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_GetIsTurn final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_GetIsTurn) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsTurn");
+static_assert(sizeof(TrexAnimInstance_GetIsTurn) == 0x000001, "Wrong size on TrexAnimInstance_GetIsTurn");
+static_assert(offsetof(TrexAnimInstance_GetIsTurn, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsTurn::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.GetIsTurnEnd
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_GetIsTurnEnd final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_GetIsTurnEnd) == 0x000001, "Wrong alignment on TrexAnimInstance_GetIsTurnEnd");
+static_assert(sizeof(TrexAnimInstance_GetIsTurnEnd) == 0x000001, "Wrong size on TrexAnimInstance_GetIsTurnEnd");
+static_assert(offsetof(TrexAnimInstance_GetIsTurnEnd, ReturnValue) == 0x000000, "Member 'TrexAnimInstance_GetIsTurnEnd::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.SetIsAttack
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_SetIsAttack final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_SetIsAttack) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsAttack");
+static_assert(sizeof(TrexAnimInstance_SetIsAttack) == 0x000001, "Wrong size on TrexAnimInstance_SetIsAttack");
+static_assert(offsetof(TrexAnimInstance_SetIsAttack, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsAttack::flag' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.SetIsDamage
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_SetIsDamage final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_SetIsDamage) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsDamage");
+static_assert(sizeof(TrexAnimInstance_SetIsDamage) == 0x000001, "Wrong size on TrexAnimInstance_SetIsDamage");
+static_assert(offsetof(TrexAnimInstance_SetIsDamage, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsDamage::flag' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.SetIsMove
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_SetIsMove final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_SetIsMove) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsMove");
+static_assert(sizeof(TrexAnimInstance_SetIsMove) == 0x000001, "Wrong size on TrexAnimInstance_SetIsMove");
+static_assert(offsetof(TrexAnimInstance_SetIsMove, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsMove::flag' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.SetIsTurn
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_SetIsTurn final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_SetIsTurn) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsTurn");
+static_assert(sizeof(TrexAnimInstance_SetIsTurn) == 0x000001, "Wrong size on TrexAnimInstance_SetIsTurn");
+static_assert(offsetof(TrexAnimInstance_SetIsTurn, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsTurn::flag' has a wrong offset!");
+
+// Function UnionRun.TrexAnimInstance.SetIsTurnEnd
+// 0x0001 (0x0001 - 0x0000)
+struct TrexAnimInstance_SetIsTurnEnd final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TrexAnimInstance_SetIsTurnEnd) == 0x000001, "Wrong alignment on TrexAnimInstance_SetIsTurnEnd");
+static_assert(sizeof(TrexAnimInstance_SetIsTurnEnd) == 0x000001, "Wrong size on TrexAnimInstance_SetIsTurnEnd");
+static_assert(offsetof(TrexAnimInstance_SetIsTurnEnd, flag) == 0x000000, "Member 'TrexAnimInstance_SetIsTurnEnd::flag' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.CheckBoostLevelInGhostReplay
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubBoost_CheckBoostLevelInGhostReplay final
+{
+public:
+	int32                                         Level;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBoost_CheckBoostLevelInGhostReplay) == 0x000004, "Wrong alignment on RaceUISubBoost_CheckBoostLevelInGhostReplay");
+static_assert(sizeof(RaceUISubBoost_CheckBoostLevelInGhostReplay) == 0x000004, "Wrong size on RaceUISubBoost_CheckBoostLevelInGhostReplay");
+static_assert(offsetof(RaceUISubBoost_CheckBoostLevelInGhostReplay, Level) == 0x000000, "Member 'RaceUISubBoost_CheckBoostLevelInGhostReplay::Level' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.IsFastFirstCharge
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubBoost_IsFastFirstCharge final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubBoost_IsFastFirstCharge) == 0x000004, "Wrong alignment on RaceUISubBoost_IsFastFirstCharge");
+static_assert(sizeof(RaceUISubBoost_IsFastFirstCharge) == 0x000008, "Wrong size on RaceUISubBoost_IsFastFirstCharge");
+static_assert(offsetof(RaceUISubBoost_IsFastFirstCharge, RacerIndex) == 0x000000, "Member 'RaceUISubBoost_IsFastFirstCharge::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBoost_IsFastFirstCharge, ReturnValue) == 0x000004, "Member 'RaceUISubBoost_IsFastFirstCharge::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.IsFastSecondCharge
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubBoost_IsFastSecondCharge final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubBoost_IsFastSecondCharge) == 0x000004, "Wrong alignment on RaceUISubBoost_IsFastSecondCharge");
+static_assert(sizeof(RaceUISubBoost_IsFastSecondCharge) == 0x000008, "Wrong size on RaceUISubBoost_IsFastSecondCharge");
+static_assert(offsetof(RaceUISubBoost_IsFastSecondCharge, RacerIndex) == 0x000000, "Member 'RaceUISubBoost_IsFastSecondCharge::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBoost_IsFastSecondCharge, ReturnValue) == 0x000004, "Member 'RaceUISubBoost_IsFastSecondCharge::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.IsFastThirdCharge
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubBoost_IsFastThirdCharge final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubBoost_IsFastThirdCharge) == 0x000004, "Wrong alignment on RaceUISubBoost_IsFastThirdCharge");
+static_assert(sizeof(RaceUISubBoost_IsFastThirdCharge) == 0x000008, "Wrong size on RaceUISubBoost_IsFastThirdCharge");
+static_assert(offsetof(RaceUISubBoost_IsFastThirdCharge, RacerIndex) == 0x000000, "Member 'RaceUISubBoost_IsFastThirdCharge::RacerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBoost_IsFastThirdCharge, ReturnValue) == 0x000004, "Member 'RaceUISubBoost_IsFastThirdCharge::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.IsViewGhostReplay
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubBoost_IsViewGhostReplay final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBoost_IsViewGhostReplay) == 0x000001, "Wrong alignment on RaceUISubBoost_IsViewGhostReplay");
+static_assert(sizeof(RaceUISubBoost_IsViewGhostReplay) == 0x000001, "Wrong size on RaceUISubBoost_IsViewGhostReplay");
+static_assert(offsetof(RaceUISubBoost_IsViewGhostReplay, ReturnValue) == 0x000000, "Member 'RaceUISubBoost_IsViewGhostReplay::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.SetVisibleHUD
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubBoost_SetVisibleHUD final
+{
+public:
+	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DeltaTime;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBoost_SetVisibleHUD) == 0x000004, "Wrong alignment on RaceUISubBoost_SetVisibleHUD");
+static_assert(sizeof(RaceUISubBoost_SetVisibleHUD) == 0x000008, "Wrong size on RaceUISubBoost_SetVisibleHUD");
+static_assert(offsetof(RaceUISubBoost_SetVisibleHUD, IsVisible_0) == 0x000000, "Member 'RaceUISubBoost_SetVisibleHUD::IsVisible_0' has a wrong offset!");
+static_assert(offsetof(RaceUISubBoost_SetVisibleHUD, DeltaTime) == 0x000004, "Member 'RaceUISubBoost_SetVisibleHUD::DeltaTime' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.SetWaitTimeJustBoostInGhostReplay
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay final
+{
+public:
+	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay) == 0x000004, "Wrong alignment on RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay");
+static_assert(sizeof(RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay) == 0x000004, "Wrong size on RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay");
+static_assert(offsetof(RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay, Time) == 0x000000, "Member 'RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay::Time' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.UpdateChargeInfo
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubBoost_UpdateChargeInfo final
+{
+public:
+	int32                                         ChargeLevel;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeRate;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBoost_UpdateChargeInfo) == 0x000004, "Wrong alignment on RaceUISubBoost_UpdateChargeInfo");
+static_assert(sizeof(RaceUISubBoost_UpdateChargeInfo) == 0x000008, "Wrong size on RaceUISubBoost_UpdateChargeInfo");
+static_assert(offsetof(RaceUISubBoost_UpdateChargeInfo, ChargeLevel) == 0x000000, "Member 'RaceUISubBoost_UpdateChargeInfo::ChargeLevel' has a wrong offset!");
+static_assert(offsetof(RaceUISubBoost_UpdateChargeInfo, ChargeRate) == 0x000004, "Member 'RaceUISubBoost_UpdateChargeInfo::ChargeRate' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBoost.GetIsOpened
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubBoost_GetIsOpened final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBoost_GetIsOpened) == 0x000001, "Wrong alignment on RaceUISubBoost_GetIsOpened");
+static_assert(sizeof(RaceUISubBoost_GetIsOpened) == 0x000001, "Wrong size on RaceUISubBoost_GetIsOpened");
+static_assert(offsetof(RaceUISubBoost_GetIsOpened, ReturnValue) == 0x000000, "Member 'RaceUISubBoost_GetIsOpened::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnKey.SetButtonState
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubBtnKey_SetButtonState final
+{
+public:
+	int32                                         InState;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnKey_SetButtonState) == 0x000004, "Wrong alignment on RaceUISubBtnKey_SetButtonState");
+static_assert(sizeof(RaceUISubBtnKey_SetButtonState) == 0x000004, "Wrong size on RaceUISubBtnKey_SetButtonState");
+static_assert(offsetof(RaceUISubBtnKey_SetButtonState, InState) == 0x000000, "Member 'RaceUISubBtnKey_SetButtonState::InState' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnKey.GetKeyDisplayName
+// 0x0030 (0x0030 - 0x0000)
+struct RaceUISubBtnKey_GetKeyDisplayName final
+{
+public:
+	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerControllerIndex;                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubBtnKey_GetKeyDisplayName) == 0x000008, "Wrong alignment on RaceUISubBtnKey_GetKeyDisplayName");
+static_assert(sizeof(RaceUISubBtnKey_GetKeyDisplayName) == 0x000030, "Wrong size on RaceUISubBtnKey_GetKeyDisplayName");
+static_assert(offsetof(RaceUISubBtnKey_GetKeyDisplayName, InKey) == 0x000000, "Member 'RaceUISubBtnKey_GetKeyDisplayName::InKey' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnKey_GetKeyDisplayName, PlayerControllerIndex) == 0x000018, "Member 'RaceUISubBtnKey_GetKeyDisplayName::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnKey_GetKeyDisplayName, ReturnValue) == 0x000020, "Member 'RaceUISubBtnKey_GetKeyDisplayName::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubBtnKey.GetMouseButtonIndex
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubBtnKey_GetMouseButtonIndex final
+{
+public:
+	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubBtnKey_GetMouseButtonIndex) == 0x000008, "Wrong alignment on RaceUISubBtnKey_GetMouseButtonIndex");
+static_assert(sizeof(RaceUISubBtnKey_GetMouseButtonIndex) == 0x000020, "Wrong size on RaceUISubBtnKey_GetMouseButtonIndex");
+static_assert(offsetof(RaceUISubBtnKey_GetMouseButtonIndex, InKey) == 0x000000, "Member 'RaceUISubBtnKey_GetMouseButtonIndex::InKey' has a wrong offset!");
+static_assert(offsetof(RaceUISubBtnKey_GetMouseButtonIndex, ReturnValue) == 0x000018, "Member 'RaceUISubBtnKey_GetMouseButtonIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubButtonBase.GetControllerButtonTextureType
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubButtonBase_GetControllerButtonTextureType final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EControllerButtonTextureType                  ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubButtonBase_GetControllerButtonTextureType) == 0x000004, "Wrong alignment on RaceUISubButtonBase_GetControllerButtonTextureType");
+static_assert(sizeof(RaceUISubButtonBase_GetControllerButtonTextureType) == 0x000008, "Wrong size on RaceUISubButtonBase_GetControllerButtonTextureType");
+static_assert(offsetof(RaceUISubButtonBase_GetControllerButtonTextureType, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubButtonBase_GetControllerButtonTextureType::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubButtonBase_GetControllerButtonTextureType, ReturnValue) == 0x000004, "Member 'RaceUISubButtonBase_GetControllerButtonTextureType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubButtonBase.GetControllerType
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubButtonBase_GetControllerType final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EBtnGuidePlatFormController                   ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubButtonBase_GetControllerType) == 0x000004, "Wrong alignment on RaceUISubButtonBase_GetControllerType");
+static_assert(sizeof(RaceUISubButtonBase_GetControllerType) == 0x000008, "Wrong size on RaceUISubButtonBase_GetControllerType");
+static_assert(offsetof(RaceUISubButtonBase_GetControllerType, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubButtonBase_GetControllerType::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubButtonBase_GetControllerType, ReturnValue) == 0x000004, "Member 'RaceUISubButtonBase_GetControllerType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubCourseMapIcon.SetReaderFlag
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubCourseMapIcon_SetReaderFlag final
+{
+public:
+	bool                                          InReader;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubCourseMapIcon_SetReaderFlag) == 0x000001, "Wrong alignment on RaceUISubCourseMapIcon_SetReaderFlag");
+static_assert(sizeof(RaceUISubCourseMapIcon_SetReaderFlag) == 0x000001, "Wrong size on RaceUISubCourseMapIcon_SetReaderFlag");
+static_assert(offsetof(RaceUISubCourseMapIcon_SetReaderFlag, InReader) == 0x000000, "Member 'RaceUISubCourseMapIcon_SetReaderFlag::InReader' has a wrong offset!");
+
+// Function UnionRun.RaceUISubGadget.IsAdditionalGadget
+// 0x0002 (0x0002 - 0x0000)
+struct RaceUISubGadget_IsAdditionalGadget final
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubGadget_IsAdditionalGadget) == 0x000001, "Wrong alignment on RaceUISubGadget_IsAdditionalGadget");
+static_assert(sizeof(RaceUISubGadget_IsAdditionalGadget) == 0x000002, "Wrong size on RaceUISubGadget_IsAdditionalGadget");
+static_assert(offsetof(RaceUISubGadget_IsAdditionalGadget, gadgetId) == 0x000000, "Member 'RaceUISubGadget_IsAdditionalGadget::gadgetId' has a wrong offset!");
+static_assert(offsetof(RaceUISubGadget_IsAdditionalGadget, ReturnValue) == 0x000001, "Member 'RaceUISubGadget_IsAdditionalGadget::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubGadget.IsNotEnableGadget
+// 0x0002 (0x0002 - 0x0000)
+struct RaceUISubGadget_IsNotEnableGadget final
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubGadget_IsNotEnableGadget) == 0x000001, "Wrong alignment on RaceUISubGadget_IsNotEnableGadget");
+static_assert(sizeof(RaceUISubGadget_IsNotEnableGadget) == 0x000002, "Wrong size on RaceUISubGadget_IsNotEnableGadget");
+static_assert(offsetof(RaceUISubGadget_IsNotEnableGadget, gadgetId) == 0x000000, "Member 'RaceUISubGadget_IsNotEnableGadget::gadgetId' has a wrong offset!");
+static_assert(offsetof(RaceUISubGadget_IsNotEnableGadget, ReturnValue) == 0x000001, "Member 'RaceUISubGadget_IsNotEnableGadget::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubGadgetIcon.SetGadgetId
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubGadgetIcon_SetGadgetId final
+{
+public:
+	EGadgetId                                     InGadgetId;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubGadgetIcon_SetGadgetId) == 0x000001, "Wrong alignment on RaceUISubGadgetIcon_SetGadgetId");
+static_assert(sizeof(RaceUISubGadgetIcon_SetGadgetId) == 0x000001, "Wrong size on RaceUISubGadgetIcon_SetGadgetId");
+static_assert(offsetof(RaceUISubGadgetIcon_SetGadgetId, InGadgetId) == 0x000000, "Member 'RaceUISubGadgetIcon_SetGadgetId::InGadgetId' has a wrong offset!");
+
+// Function UnionRun.RaceUISubGadgetIcon.SetIconMaterial
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubGadgetIcon_SetIconMaterial final
+{
+public:
+	int32                                         IconIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubGadgetIcon_SetIconMaterial) == 0x000004, "Wrong alignment on RaceUISubGadgetIcon_SetIconMaterial");
+static_assert(sizeof(RaceUISubGadgetIcon_SetIconMaterial) == 0x000004, "Wrong size on RaceUISubGadgetIcon_SetIconMaterial");
+static_assert(offsetof(RaceUISubGadgetIcon_SetIconMaterial, IconIndex) == 0x000000, "Member 'RaceUISubGadgetIcon_SetIconMaterial::IconIndex' has a wrong offset!");
+
+// Function UnionRun.RaceUISubGadgetIcon.GetGadgetId
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubGadgetIcon_GetGadgetId final
+{
+public:
+	EGadgetId                                     ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubGadgetIcon_GetGadgetId) == 0x000001, "Wrong alignment on RaceUISubGadgetIcon_GetGadgetId");
+static_assert(sizeof(RaceUISubGadgetIcon_GetGadgetId) == 0x000001, "Wrong size on RaceUISubGadgetIcon_GetGadgetId");
+static_assert(offsetof(RaceUISubGadgetIcon_GetGadgetId, ReturnValue) == 0x000000, "Member 'RaceUISubGadgetIcon_GetGadgetId::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubRing.SetCurrentRingCount
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubRing_SetCurrentRingCount final
+{
+public:
+	int32                                         NewRingCount;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubRing_SetCurrentRingCount) == 0x000004, "Wrong alignment on RaceUISubRing_SetCurrentRingCount");
+static_assert(sizeof(RaceUISubRing_SetCurrentRingCount) == 0x000004, "Wrong size on RaceUISubRing_SetCurrentRingCount");
+static_assert(offsetof(RaceUISubRing_SetCurrentRingCount, NewRingCount) == 0x000000, "Member 'RaceUISubRing_SetCurrentRingCount::NewRingCount' has a wrong offset!");
+
+// Function UnionRun.RaceUISubRing.SetParams
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubRing_SetParams final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubRing_SetParams) == 0x000004, "Wrong alignment on RaceUISubRing_SetParams");
+static_assert(sizeof(RaceUISubRing_SetParams) == 0x000004, "Wrong size on RaceUISubRing_SetParams");
+static_assert(offsetof(RaceUISubRing_SetParams, RacerIndex) == 0x000000, "Member 'RaceUISubRing_SetParams::RacerIndex' has a wrong offset!");
+
+// Function UnionRun.RaceUISubRing.SetRingBackColor
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubRing_SetRingBackColor final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGroup;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLocalMulti;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubRing_SetRingBackColor) == 0x000004, "Wrong alignment on RaceUISubRing_SetRingBackColor");
+static_assert(sizeof(RaceUISubRing_SetRingBackColor) == 0x000008, "Wrong size on RaceUISubRing_SetRingBackColor");
+static_assert(offsetof(RaceUISubRing_SetRingBackColor, Index_0) == 0x000000, "Member 'RaceUISubRing_SetRingBackColor::Index_0' has a wrong offset!");
+static_assert(offsetof(RaceUISubRing_SetRingBackColor, IsGroup) == 0x000004, "Member 'RaceUISubRing_SetRingBackColor::IsGroup' has a wrong offset!");
+static_assert(offsetof(RaceUISubRing_SetRingBackColor, IsLocalMulti) == 0x000005, "Member 'RaceUISubRing_SetRingBackColor::IsLocalMulti' has a wrong offset!");
+
+// Function UnionRun.RaceUISubGroupRing.SetRingCharaIcon
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubGroupRing_SetRingCharaIcon final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubGroupRing_SetRingCharaIcon) == 0x000001, "Wrong alignment on RaceUISubGroupRing_SetRingCharaIcon");
+static_assert(sizeof(RaceUISubGroupRing_SetRingCharaIcon) == 0x000001, "Wrong size on RaceUISubGroupRing_SetRingCharaIcon");
+static_assert(offsetof(RaceUISubGroupRing_SetRingCharaIcon, DriverId) == 0x000000, "Member 'RaceUISubGroupRing_SetRingCharaIcon::DriverId' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.DisplayHideAnim
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubItemIcon_DisplayHideAnim final
+{
+public:
+	bool                                          Display;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_DisplayHideAnim) == 0x000001, "Wrong alignment on RaceUISubItemIcon_DisplayHideAnim");
+static_assert(sizeof(RaceUISubItemIcon_DisplayHideAnim) == 0x000001, "Wrong size on RaceUISubItemIcon_DisplayHideAnim");
+static_assert(offsetof(RaceUISubItemIcon_DisplayHideAnim, Display) == 0x000000, "Member 'RaceUISubItemIcon_DisplayHideAnim::Display' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.GetRandomLotteryDisplayItemId
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubItemIcon_GetRandomLotteryDisplayItemId final
+{
+public:
+	uint8                                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_GetRandomLotteryDisplayItemId) == 0x000001, "Wrong alignment on RaceUISubItemIcon_GetRandomLotteryDisplayItemId");
+static_assert(sizeof(RaceUISubItemIcon_GetRandomLotteryDisplayItemId) == 0x000001, "Wrong size on RaceUISubItemIcon_GetRandomLotteryDisplayItemId");
+static_assert(offsetof(RaceUISubItemIcon_GetRandomLotteryDisplayItemId, ReturnValue) == 0x000000, "Member 'RaceUISubItemIcon_GetRandomLotteryDisplayItemId::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.ItemLostAnimStart
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubItemIcon_ItemLostAnimStart final
+{
+public:
+	bool                                          bHideIcon;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_ItemLostAnimStart) == 0x000001, "Wrong alignment on RaceUISubItemIcon_ItemLostAnimStart");
+static_assert(sizeof(RaceUISubItemIcon_ItemLostAnimStart) == 0x000001, "Wrong size on RaceUISubItemIcon_ItemLostAnimStart");
+static_assert(offsetof(RaceUISubItemIcon_ItemLostAnimStart, bHideIcon) == 0x000000, "Member 'RaceUISubItemIcon_ItemLostAnimStart::bHideIcon' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.LotterySeqStart
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubItemIcon_LotterySeqStart final
+{
+public:
+	bool                                          LotterySound;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_LotterySeqStart) == 0x000001, "Wrong alignment on RaceUISubItemIcon_LotterySeqStart");
+static_assert(sizeof(RaceUISubItemIcon_LotterySeqStart) == 0x000001, "Wrong size on RaceUISubItemIcon_LotterySeqStart");
+static_assert(offsetof(RaceUISubItemIcon_LotterySeqStart, LotterySound) == 0x000000, "Member 'RaceUISubItemIcon_LotterySeqStart::LotterySound' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.PlayItemUseSound
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubItemIcon_PlayItemUseSound final
+{
+public:
+	EItemId                                       ItemId;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     DriverId;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelectorLabel;                                   // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3[0x1];                                        // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_PlayItemUseSound) == 0x000004, "Wrong alignment on RaceUISubItemIcon_PlayItemUseSound");
+static_assert(sizeof(RaceUISubItemIcon_PlayItemUseSound) == 0x000008, "Wrong size on RaceUISubItemIcon_PlayItemUseSound");
+static_assert(offsetof(RaceUISubItemIcon_PlayItemUseSound, ItemId) == 0x000000, "Member 'RaceUISubItemIcon_PlayItemUseSound::ItemId' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemIcon_PlayItemUseSound, DriverId) == 0x000001, "Member 'RaceUISubItemIcon_PlayItemUseSound::DriverId' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemIcon_PlayItemUseSound, IsSelectorLabel) == 0x000002, "Member 'RaceUISubItemIcon_PlayItemUseSound::IsSelectorLabel' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemIcon_PlayItemUseSound, ReturnValue) == 0x000004, "Member 'RaceUISubItemIcon_PlayItemUseSound::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetAttributeColorIndex
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubItemIcon_SetAttributeColorIndex final
+{
+public:
+	int32                                         InAttributeIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetAttributeColorIndex) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetAttributeColorIndex");
+static_assert(sizeof(RaceUISubItemIcon_SetAttributeColorIndex) == 0x000004, "Wrong size on RaceUISubItemIcon_SetAttributeColorIndex");
+static_assert(offsetof(RaceUISubItemIcon_SetAttributeColorIndex, InAttributeIndex) == 0x000000, "Member 'RaceUISubItemIcon_SetAttributeColorIndex::InAttributeIndex' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetChargeGaugeRate
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubItemIcon_SetChargeGaugeRate final
+{
+public:
+	float                                         Rate;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetChargeGaugeRate) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetChargeGaugeRate");
+static_assert(sizeof(RaceUISubItemIcon_SetChargeGaugeRate) == 0x000004, "Wrong size on RaceUISubItemIcon_SetChargeGaugeRate");
+static_assert(offsetof(RaceUISubItemIcon_SetChargeGaugeRate, Rate) == 0x000000, "Member 'RaceUISubItemIcon_SetChargeGaugeRate::Rate' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetGaugeType
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubItemIcon_SetGaugeType final
+{
+public:
+	bool                                          bRemainCountGauge;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetGaugeType) == 0x000001, "Wrong alignment on RaceUISubItemIcon_SetGaugeType");
+static_assert(sizeof(RaceUISubItemIcon_SetGaugeType) == 0x000001, "Wrong size on RaceUISubItemIcon_SetGaugeType");
+static_assert(offsetof(RaceUISubItemIcon_SetGaugeType, bRemainCountGauge) == 0x000000, "Member 'RaceUISubItemIcon_SetGaugeType::bRemainCountGauge' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetItemIdIndex
+// 0x000C (0x000C - 0x0000)
+struct RaceUISubItemIcon_SetItemIdIndex final
+{
+public:
+	int32                                         InItemIdIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InRemainCount;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIgnoreAttribute;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnLottery;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubItemIcon_SetItemIdIndex) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetItemIdIndex");
+static_assert(sizeof(RaceUISubItemIcon_SetItemIdIndex) == 0x00000C, "Wrong size on RaceUISubItemIcon_SetItemIdIndex");
+static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, InItemIdIndex) == 0x000000, "Member 'RaceUISubItemIcon_SetItemIdIndex::InItemIdIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, InRemainCount) == 0x000004, "Member 'RaceUISubItemIcon_SetItemIdIndex::InRemainCount' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, bIgnoreAttribute) == 0x000008, "Member 'RaceUISubItemIcon_SetItemIdIndex::bIgnoreAttribute' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, bOnLottery) == 0x000009, "Member 'RaceUISubItemIcon_SetItemIdIndex::bOnLottery' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetItemIdTexture
+// 0x0050 (0x0050 - 0x0000)
+struct RaceUISubItemIcon_SetItemIdTexture final
+{
+public:
+	TMap<EItemId, class UTexture2D*>              InItemId_TextureMap;                               // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetItemIdTexture) == 0x000008, "Wrong alignment on RaceUISubItemIcon_SetItemIdTexture");
+static_assert(sizeof(RaceUISubItemIcon_SetItemIdTexture) == 0x000050, "Wrong size on RaceUISubItemIcon_SetItemIdTexture");
+static_assert(offsetof(RaceUISubItemIcon_SetItemIdTexture, InItemId_TextureMap) == 0x000000, "Member 'RaceUISubItemIcon_SetItemIdTexture::InItemId_TextureMap' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetLotteryDisplayItemIds
+// 0x0010 (0x0010 - 0x0000)
+struct RaceUISubItemIcon_SetLotteryDisplayItemIds final
+{
+public:
+	TArray<uint8>                                 ItemIds;                                           // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetLotteryDisplayItemIds) == 0x000008, "Wrong alignment on RaceUISubItemIcon_SetLotteryDisplayItemIds");
+static_assert(sizeof(RaceUISubItemIcon_SetLotteryDisplayItemIds) == 0x000010, "Wrong size on RaceUISubItemIcon_SetLotteryDisplayItemIds");
+static_assert(offsetof(RaceUISubItemIcon_SetLotteryDisplayItemIds, ItemIds) == 0x000000, "Member 'RaceUISubItemIcon_SetLotteryDisplayItemIds::ItemIds' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetRemainCountGauge
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubItemIcon_SetRemainCountGauge final
+{
+public:
+	int32                                         Count;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxCount;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetRemainCountGauge) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetRemainCountGauge");
+static_assert(sizeof(RaceUISubItemIcon_SetRemainCountGauge) == 0x000008, "Wrong size on RaceUISubItemIcon_SetRemainCountGauge");
+static_assert(offsetof(RaceUISubItemIcon_SetRemainCountGauge, Count) == 0x000000, "Member 'RaceUISubItemIcon_SetRemainCountGauge::Count' has a wrong offset!");
+static_assert(offsetof(RaceUISubItemIcon_SetRemainCountGauge, MaxCount) == 0x000004, "Member 'RaceUISubItemIcon_SetRemainCountGauge::MaxCount' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetRingNum
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubItemIcon_SetRingNum final
+{
+public:
+	int32                                         InRingCount;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetRingNum) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetRingNum");
+static_assert(sizeof(RaceUISubItemIcon_SetRingNum) == 0x000004, "Wrong size on RaceUISubItemIcon_SetRingNum");
+static_assert(offsetof(RaceUISubItemIcon_SetRingNum, InRingCount) == 0x000000, "Member 'RaceUISubItemIcon_SetRingNum::InRingCount' has a wrong offset!");
+
+// Function UnionRun.RaceUISubItemIcon.SetRingNumVisible
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubItemIcon_SetRingNumVisible final
+{
+public:
+	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubItemIcon_SetRingNumVisible) == 0x000001, "Wrong alignment on RaceUISubItemIcon_SetRingNumVisible");
+static_assert(sizeof(RaceUISubItemIcon_SetRingNumVisible) == 0x000001, "Wrong size on RaceUISubItemIcon_SetRingNumVisible");
+static_assert(offsetof(RaceUISubItemIcon_SetRingNumVisible, bVisible) == 0x000000, "Member 'RaceUISubItemIcon_SetRingNumVisible::bVisible' has a wrong offset!");
+
+// Function UnionRun.RaceUISubLap.InitializeLapCount
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubLap_InitializeLapCount final
+{
+public:
+	class UTextureRenderTarget2D*                 InRenderTarget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubLap_InitializeLapCount) == 0x000008, "Wrong alignment on RaceUISubLap_InitializeLapCount");
+static_assert(sizeof(RaceUISubLap_InitializeLapCount) == 0x000008, "Wrong size on RaceUISubLap_InitializeLapCount");
+static_assert(offsetof(RaceUISubLap_InitializeLapCount, InRenderTarget) == 0x000000, "Member 'RaceUISubLap_InitializeLapCount::InRenderTarget' has a wrong offset!");
+
+// Function UnionRun.RaceUISubLap.SetCurrentLap
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubLap_SetCurrentLap final
+{
+public:
+	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubLap_SetCurrentLap) == 0x000004, "Wrong alignment on RaceUISubLap_SetCurrentLap");
+static_assert(sizeof(RaceUISubLap_SetCurrentLap) == 0x000004, "Wrong size on RaceUISubLap_SetCurrentLap");
+static_assert(offsetof(RaceUISubLap_SetCurrentLap, Lap) == 0x000000, "Member 'RaceUISubLap_SetCurrentLap::Lap' has a wrong offset!");
+
+// Function UnionRun.RaceUISubLap.SetCurrentLapMID
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubLap_SetCurrentLapMID final
+{
+public:
+	class UMaterialInstanceDynamic*               Mid;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubLap_SetCurrentLapMID) == 0x000008, "Wrong alignment on RaceUISubLap_SetCurrentLapMID");
+static_assert(sizeof(RaceUISubLap_SetCurrentLapMID) == 0x000008, "Wrong size on RaceUISubLap_SetCurrentLapMID");
+static_assert(offsetof(RaceUISubLap_SetCurrentLapMID, Mid) == 0x000000, "Member 'RaceUISubLap_SetCurrentLapMID::Mid' has a wrong offset!");
+
+// Function UnionRun.RaceUISubLap.SetMaxLap
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubLap_SetMaxLap final
+{
+public:
+	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubLap_SetMaxLap) == 0x000004, "Wrong alignment on RaceUISubLap_SetMaxLap");
+static_assert(sizeof(RaceUISubLap_SetMaxLap) == 0x000004, "Wrong size on RaceUISubLap_SetMaxLap");
+static_assert(offsetof(RaceUISubLap_SetMaxLap, Lap) == 0x000000, "Member 'RaceUISubLap_SetMaxLap::Lap' has a wrong offset!");
+
+// Function UnionRun.RaceUISubLap.SetMaxLapMID
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubLap_SetMaxLapMID final
+{
+public:
+	class UMaterialInstanceDynamic*               Mid;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubLap_SetMaxLapMID) == 0x000008, "Wrong alignment on RaceUISubLap_SetMaxLapMID");
+static_assert(sizeof(RaceUISubLap_SetMaxLapMID) == 0x000008, "Wrong size on RaceUISubLap_SetMaxLapMID");
+static_assert(offsetof(RaceUISubLap_SetMaxLapMID, Mid) == 0x000000, "Member 'RaceUISubLap_SetMaxLapMID::Mid' has a wrong offset!");
+
+// Function UnionRun.RaceUISubLap.UpdateLapCount
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubLap_UpdateLapCount final
+{
+public:
+	float                                         InDelta;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubLap_UpdateLapCount) == 0x000004, "Wrong alignment on RaceUISubLap_UpdateLapCount");
+static_assert(sizeof(RaceUISubLap_UpdateLapCount) == 0x000004, "Wrong size on RaceUISubLap_UpdateLapCount");
+static_assert(offsetof(RaceUISubLap_UpdateLapCount, InDelta) == 0x000000, "Member 'RaceUISubLap_UpdateLapCount::InDelta' has a wrong offset!");
+
+// Function UnionRun.RaceUISubPlayerName.GetGhostPfId
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubPlayerName_GetGhostPfId final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubPlayerName_GetGhostPfId) == 0x000004, "Wrong alignment on RaceUISubPlayerName_GetGhostPfId");
+static_assert(sizeof(RaceUISubPlayerName_GetGhostPfId) == 0x000004, "Wrong size on RaceUISubPlayerName_GetGhostPfId");
+static_assert(offsetof(RaceUISubPlayerName_GetGhostPfId, ReturnValue) == 0x000000, "Member 'RaceUISubPlayerName_GetGhostPfId::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubReturnDashGauge.GetButtonWidget
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubReturnDashGauge_GetButtonWidget final
+{
+public:
+	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubReturnDashGauge_GetButtonWidget) == 0x000008, "Wrong alignment on RaceUISubReturnDashGauge_GetButtonWidget");
+static_assert(sizeof(RaceUISubReturnDashGauge_GetButtonWidget) == 0x000008, "Wrong size on RaceUISubReturnDashGauge_GetButtonWidget");
+static_assert(offsetof(RaceUISubReturnDashGauge_GetButtonWidget, ReturnValue) == 0x000000, "Member 'RaceUISubReturnDashGauge_GetButtonWidget::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetDashInputKey
+// 0x0018 (0x0018 - 0x0000)
+struct RaceUISubReturnDashGauge_SetDashInputKey final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubReturnDashGauge_SetDashInputKey) == 0x000008, "Wrong alignment on RaceUISubReturnDashGauge_SetDashInputKey");
+static_assert(sizeof(RaceUISubReturnDashGauge_SetDashInputKey) == 0x000018, "Wrong size on RaceUISubReturnDashGauge_SetDashInputKey");
+static_assert(offsetof(RaceUISubReturnDashGauge_SetDashInputKey, Key) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetDashInputKey::Key' has a wrong offset!");
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetGaugeParcent
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubReturnDashGauge_SetGaugeParcent final
+{
+public:
+	float                                         GaugeRate;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubReturnDashGauge_SetGaugeParcent) == 0x000004, "Wrong alignment on RaceUISubReturnDashGauge_SetGaugeParcent");
+static_assert(sizeof(RaceUISubReturnDashGauge_SetGaugeParcent) == 0x000004, "Wrong size on RaceUISubReturnDashGauge_SetGaugeParcent");
+static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugeParcent, GaugeRate) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetGaugeParcent::GaugeRate' has a wrong offset!");
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetGaugePivotAndRange
+// 0x0010 (0x0010 - 0x0000)
+struct RaceUISubReturnDashGauge_SetGaugePivotAndRange final
+{
+public:
+	class UImage*                                 ImageRef;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PivotRate;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GaugeRateRange;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubReturnDashGauge_SetGaugePivotAndRange) == 0x000008, "Wrong alignment on RaceUISubReturnDashGauge_SetGaugePivotAndRange");
+static_assert(sizeof(RaceUISubReturnDashGauge_SetGaugePivotAndRange) == 0x000010, "Wrong size on RaceUISubReturnDashGauge_SetGaugePivotAndRange");
+static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugePivotAndRange, ImageRef) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetGaugePivotAndRange::ImageRef' has a wrong offset!");
+static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugePivotAndRange, PivotRate) == 0x000008, "Member 'RaceUISubReturnDashGauge_SetGaugePivotAndRange::PivotRate' has a wrong offset!");
+static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugePivotAndRange, GaugeRateRange) == 0x00000C, "Member 'RaceUISubReturnDashGauge_SetGaugePivotAndRange::GaugeRateRange' has a wrong offset!");
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetReturnDashSetting
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubReturnDashGauge_SetReturnDashSetting final
+{
+public:
+	float                                         Pivot;                                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Range;                                             // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubReturnDashGauge_SetReturnDashSetting) == 0x000004, "Wrong alignment on RaceUISubReturnDashGauge_SetReturnDashSetting");
+static_assert(sizeof(RaceUISubReturnDashGauge_SetReturnDashSetting) == 0x000008, "Wrong size on RaceUISubReturnDashGauge_SetReturnDashSetting");
+static_assert(offsetof(RaceUISubReturnDashGauge_SetReturnDashSetting, Pivot) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetReturnDashSetting::Pivot' has a wrong offset!");
+static_assert(offsetof(RaceUISubReturnDashGauge_SetReturnDashSetting, Range) == 0x000004, "Member 'RaceUISubReturnDashGauge_SetReturnDashSetting::Range' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.GetButtonWidget
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubStartGauge_GetButtonWidget final
+{
+public:
+	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubStartGauge_GetButtonWidget) == 0x000008, "Wrong alignment on RaceUISubStartGauge_GetButtonWidget");
+static_assert(sizeof(RaceUISubStartGauge_GetButtonWidget) == 0x000008, "Wrong size on RaceUISubStartGauge_GetButtonWidget");
+static_assert(offsetof(RaceUISubStartGauge_GetButtonWidget, ReturnValue) == 0x000000, "Member 'RaceUISubStartGauge_GetButtonWidget::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.GetKeyAccel
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubStartGauge_GetKeyAccel final
+{
+public:
+	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubStartGauge_GetKeyAccel) == 0x000008, "Wrong alignment on RaceUISubStartGauge_GetKeyAccel");
+static_assert(sizeof(RaceUISubStartGauge_GetKeyAccel) == 0x000020, "Wrong size on RaceUISubStartGauge_GetKeyAccel");
+static_assert(offsetof(RaceUISubStartGauge_GetKeyAccel, PlayerIndex) == 0x000000, "Member 'RaceUISubStartGauge_GetKeyAccel::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_GetKeyAccel, ReturnValue) == 0x000008, "Member 'RaceUISubStartGauge_GetKeyAccel::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.IsPlayControlKeyboard
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubStartGauge_IsPlayControlKeyboard final
+{
+public:
+	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubStartGauge_IsPlayControlKeyboard) == 0x000004, "Wrong alignment on RaceUISubStartGauge_IsPlayControlKeyboard");
+static_assert(sizeof(RaceUISubStartGauge_IsPlayControlKeyboard) == 0x000008, "Wrong size on RaceUISubStartGauge_IsPlayControlKeyboard");
+static_assert(offsetof(RaceUISubStartGauge_IsPlayControlKeyboard, PlayerIndex) == 0x000000, "Member 'RaceUISubStartGauge_IsPlayControlKeyboard::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_IsPlayControlKeyboard, ReturnValue) == 0x000004, "Member 'RaceUISubStartGauge_IsPlayControlKeyboard::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.SetDashInputKey
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubStartGauge_SetDashInputKey final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerIndex;                                       // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubStartGauge_SetDashInputKey) == 0x000008, "Wrong alignment on RaceUISubStartGauge_SetDashInputKey");
+static_assert(sizeof(RaceUISubStartGauge_SetDashInputKey) == 0x000020, "Wrong size on RaceUISubStartGauge_SetDashInputKey");
+static_assert(offsetof(RaceUISubStartGauge_SetDashInputKey, Key) == 0x000000, "Member 'RaceUISubStartGauge_SetDashInputKey::Key' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetDashInputKey, PlayerIndex) == 0x000018, "Member 'RaceUISubStartGauge_SetDashInputKey::PlayerIndex' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.SetGaugeParcent
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubStartGauge_SetGaugeParcent final
+{
+public:
+	float                                         GaugeRate;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubStartGauge_SetGaugeParcent) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetGaugeParcent");
+static_assert(sizeof(RaceUISubStartGauge_SetGaugeParcent) == 0x000004, "Wrong size on RaceUISubStartGauge_SetGaugeParcent");
+static_assert(offsetof(RaceUISubStartGauge_SetGaugeParcent, GaugeRate) == 0x000000, "Member 'RaceUISubStartGauge_SetGaugeParcent::GaugeRate' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.SetGaugeParcentTrigger
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubStartGauge_SetGaugeParcentTrigger final
+{
+public:
+	float                                         GaugeRate;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubStartGauge_SetGaugeParcentTrigger) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetGaugeParcentTrigger");
+static_assert(sizeof(RaceUISubStartGauge_SetGaugeParcentTrigger) == 0x000004, "Wrong size on RaceUISubStartGauge_SetGaugeParcentTrigger");
+static_assert(offsetof(RaceUISubStartGauge_SetGaugeParcentTrigger, GaugeRate) == 0x000000, "Member 'RaceUISubStartGauge_SetGaugeParcentTrigger::GaugeRate' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.SetGaugePivotAndRange
+// 0x0010 (0x0010 - 0x0000)
+struct RaceUISubStartGauge_SetGaugePivotAndRange final
+{
+public:
+	class UImage*                                 ImageRef;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PivotRate;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GaugeRateRange;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubStartGauge_SetGaugePivotAndRange) == 0x000008, "Wrong alignment on RaceUISubStartGauge_SetGaugePivotAndRange");
+static_assert(sizeof(RaceUISubStartGauge_SetGaugePivotAndRange) == 0x000010, "Wrong size on RaceUISubStartGauge_SetGaugePivotAndRange");
+static_assert(offsetof(RaceUISubStartGauge_SetGaugePivotAndRange, ImageRef) == 0x000000, "Member 'RaceUISubStartGauge_SetGaugePivotAndRange::ImageRef' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetGaugePivotAndRange, PivotRate) == 0x000008, "Member 'RaceUISubStartGauge_SetGaugePivotAndRange::PivotRate' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetGaugePivotAndRange, GaugeRateRange) == 0x00000C, "Member 'RaceUISubStartGauge_SetGaugePivotAndRange::GaugeRateRange' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.SetStartDashParamSetting
+// 0x0030 (0x0030 - 0x0000)
+struct RaceUISubStartGauge_SetStartDashParamSetting final
+{
+public:
+	struct FUnionRaceStartDashParam               InStartDashParam;                                  // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubStartGauge_SetStartDashParamSetting) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetStartDashParamSetting");
+static_assert(sizeof(RaceUISubStartGauge_SetStartDashParamSetting) == 0x000030, "Wrong size on RaceUISubStartGauge_SetStartDashParamSetting");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashParamSetting, InStartDashParam) == 0x000000, "Member 'RaceUISubStartGauge_SetStartDashParamSetting::InStartDashParam' has a wrong offset!");
+
+// Function UnionRun.RaceUISubStartGauge.SetStartDashSetting
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubStartGauge_SetStartDashSetting final
+{
+public:
+	float                                         LV3_PIVOT;                                         // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LV3_RANGE;                                         // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LV2_PIVOT;                                         // 0x0008(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LV2_RANGE;                                         // 0x000C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NG1_PIVOT;                                         // 0x0010(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NG1_RANGE;                                         // 0x0014(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NG2_PIVOT;                                         // 0x0018(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NG2_RANGE;                                         // 0x001C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubStartGauge_SetStartDashSetting) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetStartDashSetting");
+static_assert(sizeof(RaceUISubStartGauge_SetStartDashSetting) == 0x000020, "Wrong size on RaceUISubStartGauge_SetStartDashSetting");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV3_PIVOT) == 0x000000, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV3_PIVOT' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV3_RANGE) == 0x000004, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV3_RANGE' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV2_PIVOT) == 0x000008, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV2_PIVOT' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV2_RANGE) == 0x00000C, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV2_RANGE' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG1_PIVOT) == 0x000010, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG1_PIVOT' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG1_RANGE) == 0x000014, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG1_RANGE' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG2_PIVOT) == 0x000018, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG2_PIVOT' has a wrong offset!");
+static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG2_RANGE) == 0x00001C, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG2_RANGE' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamGroup.SetCharaIconNative
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubTeamGroup_SetCharaIconNative final
+{
+public:
+	class UTexture2D*                             IconTex;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTeamGroup_SetCharaIconNative) == 0x000008, "Wrong alignment on RaceUISubTeamGroup_SetCharaIconNative");
+static_assert(sizeof(RaceUISubTeamGroup_SetCharaIconNative) == 0x000008, "Wrong size on RaceUISubTeamGroup_SetCharaIconNative");
+static_assert(offsetof(RaceUISubTeamGroup_SetCharaIconNative, IconTex) == 0x000000, "Member 'RaceUISubTeamGroup_SetCharaIconNative::IconTex' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamGroup.SetDispTextYou
+// 0x0001 (0x0001 - 0x0000)
+struct RaceUISubTeamGroup_SetDispTextYou final
+{
+public:
+	bool                                          IsDisp;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTeamGroup_SetDispTextYou) == 0x000001, "Wrong alignment on RaceUISubTeamGroup_SetDispTextYou");
+static_assert(sizeof(RaceUISubTeamGroup_SetDispTextYou) == 0x000001, "Wrong size on RaceUISubTeamGroup_SetDispTextYou");
+static_assert(offsetof(RaceUISubTeamGroup_SetDispTextYou, IsDisp) == 0x000000, "Member 'RaceUISubTeamGroup_SetDispTextYou::IsDisp' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTeamGroup.SetRankNative
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubTeamGroup_SetRankNative final
+{
+public:
+	int32                                         Rank;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTeamGroup_SetRankNative) == 0x000004, "Wrong alignment on RaceUISubTeamGroup_SetRankNative");
+static_assert(sizeof(RaceUISubTeamGroup_SetRankNative) == 0x000004, "Wrong size on RaceUISubTeamGroup_SetRankNative");
+static_assert(offsetof(RaceUISubTeamGroup_SetRankNative, Rank) == 0x000000, "Member 'RaceUISubTeamGroup_SetRankNative::Rank' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubTimeTrialTime_SetTargetTime final
+{
+public:
+	class URichTextBlock*                         TargetTextBlock;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   TargetName;                                        // 0x0008(0x0010)(Parm, NativeAccessSpecifierPublic)
+	int32                                         TargetTime;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsClockCount;                                      // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubTimeTrialTime_SetTargetTime) == 0x000008, "Wrong alignment on RaceUISubTimeTrialTime_SetTargetTime");
+static_assert(sizeof(RaceUISubTimeTrialTime_SetTargetTime) == 0x000020, "Wrong size on RaceUISubTimeTrialTime_SetTargetTime");
+static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, TargetTextBlock) == 0x000000, "Member 'RaceUISubTimeTrialTime_SetTargetTime::TargetTextBlock' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, TargetName) == 0x000008, "Member 'RaceUISubTimeTrialTime_SetTargetTime::TargetName' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, TargetTime) == 0x000018, "Member 'RaceUISubTimeTrialTime_SetTargetTime::TargetTime' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, IsClockCount) == 0x00001C, "Member 'RaceUISubTimeTrialTime_SetTargetTime::IsClockCount' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime4Best
+// 0x0008 (0x0008 - 0x0000)
+struct RaceUISubTimeTrialTime_SetTargetTime4Best final
+{
+public:
+	class URichTextBlock*                         TargetTextBlock;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTimeTrialTime_SetTargetTime4Best) == 0x000008, "Wrong alignment on RaceUISubTimeTrialTime_SetTargetTime4Best");
+static_assert(sizeof(RaceUISubTimeTrialTime_SetTargetTime4Best) == 0x000008, "Wrong size on RaceUISubTimeTrialTime_SetTargetTime4Best");
+static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime4Best, TargetTextBlock) == 0x000000, "Member 'RaceUISubTimeTrialTime_SetTargetTime4Best::TargetTextBlock' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTime.UpdateLapTime
+// 0x0028 (0x0028 - 0x0000)
+struct RaceUISubTimeTrialTime_UpdateLapTime final
+{
+public:
+	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBestLap;                                         // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRaceUITimeTrialTime                   ReturnValue;                                       // 0x0008(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTimeTrialTime_UpdateLapTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTime_UpdateLapTime");
+static_assert(sizeof(RaceUISubTimeTrialTime_UpdateLapTime) == 0x000028, "Wrong size on RaceUISubTimeTrialTime_UpdateLapTime");
+static_assert(offsetof(RaceUISubTimeTrialTime_UpdateLapTime, Lap) == 0x000000, "Member 'RaceUISubTimeTrialTime_UpdateLapTime::Lap' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTime_UpdateLapTime, IsBestLap) == 0x000004, "Member 'RaceUISubTimeTrialTime_UpdateLapTime::IsBestLap' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTime_UpdateLapTime, ReturnValue) == 0x000008, "Member 'RaceUISubTimeTrialTime_UpdateLapTime::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapDiffTime
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubTimeTrialTimeLap_SetLapDiffTime final
+{
+public:
+	int32                                         LapNum;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapDiffTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapDiffTime");
+static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapDiffTime) == 0x000004, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapDiffTime");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapDiffTime, LapNum) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapDiffTime::LapNum' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTime
+// 0x0024 (0x0024 - 0x0000)
+struct RaceUISubTimeTrialTimeLap_SetLapTime final
+{
+public:
+	struct FRaceUITimeTrialTime                   NewTime;                                           // 0x0000(0x0020)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         Lap;                                               // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapTime");
+static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapTime) == 0x000024, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapTime");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTime, NewTime) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapTime::NewTime' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTime, Lap) == 0x000020, "Member 'RaceUISubTimeTrialTimeLap_SetLapTime::Lap' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeIsGhostReplay
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay final
+{
+public:
+	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay");
+static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay) == 0x000004, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay, Lap) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay::Lap' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeWithDiff
+// 0x0028 (0x0028 - 0x0000)
+struct RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff final
+{
+public:
+	struct FRaceUITimeTrialTime                   NewTime;                                           // 0x0000(0x0020)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         Lap;                                               // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsVisibleDiff;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff");
+static_assert(sizeof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff) == 0x000028, "Wrong size on RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff, NewTime) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff::NewTime' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff, Lap) == 0x000020, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff::Lap' has a wrong offset!");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff, IsVisibleDiff) == 0x000024, "Member 'RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff::IsVisibleDiff' has a wrong offset!");
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.UpdateLapTime
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUISubTimeTrialTimeLap_UpdateLapTime final
+{
+public:
+	struct FRaceUITimeTrialTime                   ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUISubTimeTrialTimeLap_UpdateLapTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTimeLap_UpdateLapTime");
+static_assert(sizeof(RaceUISubTimeTrialTimeLap_UpdateLapTime) == 0x000020, "Wrong size on RaceUISubTimeTrialTimeLap_UpdateLapTime");
+static_assert(offsetof(RaceUISubTimeTrialTimeLap_UpdateLapTime, ReturnValue) == 0x000000, "Member 'RaceUISubTimeTrialTimeLap_UpdateLapTime::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUITutorialControllerKey.GetTutorialKey
+// 0x0020 (0x0020 - 0x0000)
+struct RaceUITutorialControllerKey_GetTutorialKey final
+{
+public:
+	ETutorialAction                               tutorialAction;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUITutorialControllerKey_GetTutorialKey) == 0x000008, "Wrong alignment on RaceUITutorialControllerKey_GetTutorialKey");
+static_assert(sizeof(RaceUITutorialControllerKey_GetTutorialKey) == 0x000020, "Wrong size on RaceUITutorialControllerKey_GetTutorialKey");
+static_assert(offsetof(RaceUITutorialControllerKey_GetTutorialKey, tutorialAction) == 0x000000, "Member 'RaceUITutorialControllerKey_GetTutorialKey::tutorialAction' has a wrong offset!");
+static_assert(offsetof(RaceUITutorialControllerKey_GetTutorialKey, Index_0) == 0x000004, "Member 'RaceUITutorialControllerKey_GetTutorialKey::Index_0' has a wrong offset!");
+static_assert(offsetof(RaceUITutorialControllerKey_GetTutorialKey, ReturnValue) == 0x000008, "Member 'RaceUITutorialControllerKey_GetTutorialKey::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RaceUITutorialControllerKey.UpdateHintIndex
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUITutorialControllerKey_UpdateHintIndex final
+{
+public:
+	int32                                         InIndex;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUITutorialControllerKey_UpdateHintIndex) == 0x000004, "Wrong alignment on RaceUITutorialControllerKey_UpdateHintIndex");
+static_assert(sizeof(RaceUITutorialControllerKey_UpdateHintIndex) == 0x000004, "Wrong size on RaceUITutorialControllerKey_UpdateHintIndex");
+static_assert(offsetof(RaceUITutorialControllerKey_UpdateHintIndex, InIndex) == 0x000000, "Member 'RaceUITutorialControllerKey_UpdateHintIndex::InIndex' has a wrong offset!");
+
+// Function UnionRun.RaceUITutorialControllerKey.UpdateTutorialIndex
+// 0x0004 (0x0004 - 0x0000)
+struct RaceUITutorialControllerKey_UpdateTutorialIndex final
+{
+public:
+	int32                                         InIndex;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RaceUITutorialControllerKey_UpdateTutorialIndex) == 0x000004, "Wrong alignment on RaceUITutorialControllerKey_UpdateTutorialIndex");
+static_assert(sizeof(RaceUITutorialControllerKey_UpdateTutorialIndex) == 0x000004, "Wrong size on RaceUITutorialControllerKey_UpdateTutorialIndex");
+static_assert(offsetof(RaceUITutorialControllerKey_UpdateTutorialIndex, InIndex) == 0x000000, "Member 'RaceUITutorialControllerKey_UpdateTutorialIndex::InIndex' has a wrong offset!");
+
+// Function UnionRun.ReplayFixedCameraCollision.OnCollisionBaseHit
+// 0x0060 (0x0060 - 0x0000)
+struct ReplayFixedCameraCollision_OnCollisionBaseHit final
+{
+public:
+	struct FCollisionHitInfo                      Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ReplayFixedCameraCollision_OnCollisionBaseHit) == 0x000008, "Wrong alignment on ReplayFixedCameraCollision_OnCollisionBaseHit");
+static_assert(sizeof(ReplayFixedCameraCollision_OnCollisionBaseHit) == 0x000060, "Wrong size on ReplayFixedCameraCollision_OnCollisionBaseHit");
+static_assert(offsetof(ReplayFixedCameraCollision_OnCollisionBaseHit, Info) == 0x000000, "Member 'ReplayFixedCameraCollision_OnCollisionBaseHit::Info' has a wrong offset!");
+
+// Function UnionRun.ReplayFixedCameraCollision.SetCameraData
+// 0x0018 (0x0018 - 0x0000)
+struct ReplayFixedCameraCollision_SetCameraData final
+{
+public:
+	struct FVector                                NewBoxSize;                                        // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ReplayFixedCameraCollision_SetCameraData) == 0x000008, "Wrong alignment on ReplayFixedCameraCollision_SetCameraData");
+static_assert(sizeof(ReplayFixedCameraCollision_SetCameraData) == 0x000018, "Wrong size on ReplayFixedCameraCollision_SetCameraData");
+static_assert(offsetof(ReplayFixedCameraCollision_SetCameraData, NewBoxSize) == 0x000000, "Member 'ReplayFixedCameraCollision_SetCameraData::NewBoxSize' has a wrong offset!");
+
+// Function UnionRun.RingObject.GetFinalLapRingNum
+// 0x0004 (0x0004 - 0x0000)
+struct RingObject_GetFinalLapRingNum final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RingObject_GetFinalLapRingNum) == 0x000004, "Wrong alignment on RingObject_GetFinalLapRingNum");
+static_assert(sizeof(RingObject_GetFinalLapRingNum) == 0x000004, "Wrong size on RingObject_GetFinalLapRingNum");
+static_assert(offsetof(RingObject_GetFinalLapRingNum, ReturnValue) == 0x000000, "Member 'RingObject_GetFinalLapRingNum::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RingObject.GetFinalLapRingOffset
+// 0x0004 (0x0004 - 0x0000)
+struct RingObject_GetFinalLapRingOffset final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RingObject_GetFinalLapRingOffset) == 0x000004, "Wrong alignment on RingObject_GetFinalLapRingOffset");
+static_assert(sizeof(RingObject_GetFinalLapRingOffset) == 0x000004, "Wrong size on RingObject_GetFinalLapRingOffset");
+static_assert(offsetof(RingObject_GetFinalLapRingOffset, ReturnValue) == 0x000000, "Member 'RingObject_GetFinalLapRingOffset::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RingObject.IsFinalLapChange
+// 0x0001 (0x0001 - 0x0000)
+struct RingObject_IsFinalLapChange final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RingObject_IsFinalLapChange) == 0x000001, "Wrong alignment on RingObject_IsFinalLapChange");
+static_assert(sizeof(RingObject_IsFinalLapChange) == 0x000001, "Wrong size on RingObject_IsFinalLapChange");
+static_assert(offsetof(RingObject_IsFinalLapChange, ReturnValue) == 0x000000, "Member 'RingObject_IsFinalLapChange::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.RingObject.SetIsFinalLapChange
+// 0x0001 (0x0001 - 0x0000)
+struct RingObject_SetIsFinalLapChange final
+{
+public:
+	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(RingObject_SetIsFinalLapChange) == 0x000001, "Wrong alignment on RingObject_SetIsFinalLapChange");
+static_assert(sizeof(RingObject_SetIsFinalLapChange) == 0x000001, "Wrong size on RingObject_SetIsFinalLapChange");
+static_assert(offsetof(RingObject_SetIsFinalLapChange, flag) == 0x000000, "Member 'RingObject_SetIsFinalLapChange::flag' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.GetOverrideCollisionScale
+// 0x0004 (0x0004 - 0x0000)
+struct ShortcutRingObject_GetOverrideCollisionScale final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_GetOverrideCollisionScale) == 0x000004, "Wrong alignment on ShortcutRingObject_GetOverrideCollisionScale");
+static_assert(sizeof(ShortcutRingObject_GetOverrideCollisionScale) == 0x000004, "Wrong size on ShortcutRingObject_GetOverrideCollisionScale");
+static_assert(offsetof(ShortcutRingObject_GetOverrideCollisionScale, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetOverrideCollisionScale::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.GetRingScale
+// 0x0004 (0x0004 - 0x0000)
+struct ShortcutRingObject_GetRingScale final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_GetRingScale) == 0x000004, "Wrong alignment on ShortcutRingObject_GetRingScale");
+static_assert(sizeof(ShortcutRingObject_GetRingScale) == 0x000004, "Wrong size on ShortcutRingObject_GetRingScale");
+static_assert(offsetof(ShortcutRingObject_GetRingScale, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetRingScale::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.GetShortcutId
+// 0x0004 (0x0004 - 0x0000)
+struct ShortcutRingObject_GetShortcutId final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_GetShortcutId) == 0x000004, "Wrong alignment on ShortcutRingObject_GetShortcutId");
+static_assert(sizeof(ShortcutRingObject_GetShortcutId) == 0x000004, "Wrong size on ShortcutRingObject_GetShortcutId");
+static_assert(offsetof(ShortcutRingObject_GetShortcutId, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetShortcutId::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.GetShortcutRingType
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_GetShortcutRingType final
+{
+public:
+	EShortcutRingType                             ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_GetShortcutRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_GetShortcutRingType");
+static_assert(sizeof(ShortcutRingObject_GetShortcutRingType) == 0x000001, "Wrong size on ShortcutRingObject_GetShortcutRingType");
+static_assert(offsetof(ShortcutRingObject_GetShortcutRingType, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetShortcutRingType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.GetStageId
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_GetStageId final
+{
+public:
+	EStageId                                      ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_GetStageId) == 0x000001, "Wrong alignment on ShortcutRingObject_GetStageId");
+static_assert(sizeof(ShortcutRingObject_GetStageId) == 0x000001, "Wrong size on ShortcutRingObject_GetStageId");
+static_assert(offsetof(ShortcutRingObject_GetStageId, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetStageId::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.IsHalfRing
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_IsHalfRing final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_IsHalfRing) == 0x000001, "Wrong alignment on ShortcutRingObject_IsHalfRing");
+static_assert(sizeof(ShortcutRingObject_IsHalfRing) == 0x000001, "Wrong size on ShortcutRingObject_IsHalfRing");
+static_assert(offsetof(ShortcutRingObject_IsHalfRing, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_IsHalfRing::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.IsUseOverrideCollisionScale
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_IsUseOverrideCollisionScale final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_IsUseOverrideCollisionScale) == 0x000001, "Wrong alignment on ShortcutRingObject_IsUseOverrideCollisionScale");
+static_assert(sizeof(ShortcutRingObject_IsUseOverrideCollisionScale) == 0x000001, "Wrong size on ShortcutRingObject_IsUseOverrideCollisionScale");
+static_assert(offsetof(ShortcutRingObject_IsUseOverrideCollisionScale, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_IsUseOverrideCollisionScale::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.SetHalfRing
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_SetHalfRing final
+{
+public:
+	bool                                          bHalf;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_SetHalfRing) == 0x000001, "Wrong alignment on ShortcutRingObject_SetHalfRing");
+static_assert(sizeof(ShortcutRingObject_SetHalfRing) == 0x000001, "Wrong size on ShortcutRingObject_SetHalfRing");
+static_assert(offsetof(ShortcutRingObject_SetHalfRing, bHalf) == 0x000000, "Member 'ShortcutRingObject_SetHalfRing::bHalf' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.SetRingScale
+// 0x0004 (0x0004 - 0x0000)
+struct ShortcutRingObject_SetRingScale final
+{
+public:
+	float                                         Scale;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_SetRingScale) == 0x000004, "Wrong alignment on ShortcutRingObject_SetRingScale");
+static_assert(sizeof(ShortcutRingObject_SetRingScale) == 0x000004, "Wrong size on ShortcutRingObject_SetRingScale");
+static_assert(offsetof(ShortcutRingObject_SetRingScale, Scale) == 0x000000, "Member 'ShortcutRingObject_SetRingScale::Scale' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.SetShortcutId
+// 0x0004 (0x0004 - 0x0000)
+struct ShortcutRingObject_SetShortcutId final
+{
+public:
+	int32                                         ID;                                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_SetShortcutId) == 0x000004, "Wrong alignment on ShortcutRingObject_SetShortcutId");
+static_assert(sizeof(ShortcutRingObject_SetShortcutId) == 0x000004, "Wrong size on ShortcutRingObject_SetShortcutId");
+static_assert(offsetof(ShortcutRingObject_SetShortcutId, ID) == 0x000000, "Member 'ShortcutRingObject_SetShortcutId::ID' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.SetShortcutRingType
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_SetShortcutRingType final
+{
+public:
+	EShortcutRingType                             Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_SetShortcutRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_SetShortcutRingType");
+static_assert(sizeof(ShortcutRingObject_SetShortcutRingType) == 0x000001, "Wrong size on ShortcutRingObject_SetShortcutRingType");
+static_assert(offsetof(ShortcutRingObject_SetShortcutRingType, Type) == 0x000000, "Member 'ShortcutRingObject_SetShortcutRingType::Type' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.SetTravelRingType
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_SetTravelRingType final
+{
+public:
+	ETravelRingType                               Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_SetTravelRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_SetTravelRingType");
+static_assert(sizeof(ShortcutRingObject_SetTravelRingType) == 0x000001, "Wrong size on ShortcutRingObject_SetTravelRingType");
+static_assert(offsetof(ShortcutRingObject_SetTravelRingType, Type) == 0x000000, "Member 'ShortcutRingObject_SetTravelRingType::Type' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.GetTravelRingType
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_GetTravelRingType final
+{
+public:
+	ETravelRingType                               ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_GetTravelRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_GetTravelRingType");
+static_assert(sizeof(ShortcutRingObject_GetTravelRingType) == 0x000001, "Wrong size on ShortcutRingObject_GetTravelRingType");
+static_assert(offsetof(ShortcutRingObject_GetTravelRingType, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetTravelRingType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.ShortcutRingObject.IsUseAnotherGate
+// 0x0001 (0x0001 - 0x0000)
+struct ShortcutRingObject_IsUseAnotherGate final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(ShortcutRingObject_IsUseAnotherGate) == 0x000001, "Wrong alignment on ShortcutRingObject_IsUseAnotherGate");
+static_assert(sizeof(ShortcutRingObject_IsUseAnotherGate) == 0x000001, "Wrong size on ShortcutRingObject_IsUseAnotherGate");
+static_assert(offsetof(ShortcutRingObject_IsUseAnotherGate, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_IsUseAnotherGate::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.SquidAnimInstance.IsSquidState
+// 0x0002 (0x0002 - 0x0000)
+struct SquidAnimInstance_IsSquidState final
+{
+public:
+	ESquidState                                   State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SquidAnimInstance_IsSquidState) == 0x000001, "Wrong alignment on SquidAnimInstance_IsSquidState");
+static_assert(sizeof(SquidAnimInstance_IsSquidState) == 0x000002, "Wrong size on SquidAnimInstance_IsSquidState");
+static_assert(offsetof(SquidAnimInstance_IsSquidState, State) == 0x000000, "Member 'SquidAnimInstance_IsSquidState::State' has a wrong offset!");
+static_assert(offsetof(SquidAnimInstance_IsSquidState, ReturnValue) == 0x000001, "Member 'SquidAnimInstance_IsSquidState::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TowerAnimInstance.IsTowerState
+// 0x0002 (0x0002 - 0x0000)
+struct TowerAnimInstance_IsTowerState final
+{
+public:
+	ETowerState                                   State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TowerAnimInstance_IsTowerState) == 0x000001, "Wrong alignment on TowerAnimInstance_IsTowerState");
+static_assert(sizeof(TowerAnimInstance_IsTowerState) == 0x000002, "Wrong size on TowerAnimInstance_IsTowerState");
+static_assert(offsetof(TowerAnimInstance_IsTowerState, State) == 0x000000, "Member 'TowerAnimInstance_IsTowerState::State' has a wrong offset!");
+static_assert(offsetof(TowerAnimInstance_IsTowerState, ReturnValue) == 0x000001, "Member 'TowerAnimInstance_IsTowerState::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TransformRingObject.GetRingScaleRate
+// 0x0004 (0x0004 - 0x0000)
+struct TransformRingObject_GetRingScaleRate final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TransformRingObject_GetRingScaleRate) == 0x000004, "Wrong alignment on TransformRingObject_GetRingScaleRate");
+static_assert(sizeof(TransformRingObject_GetRingScaleRate) == 0x000004, "Wrong size on TransformRingObject_GetRingScaleRate");
+static_assert(offsetof(TransformRingObject_GetRingScaleRate, ReturnValue) == 0x000000, "Member 'TransformRingObject_GetRingScaleRate::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.TransformRingObject.SetRingScaleRate
+// 0x0004 (0x0004 - 0x0000)
+struct TransformRingObject_SetRingScaleRate final
+{
+public:
+	float                                         Rate;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TransformRingObject_SetRingScaleRate) == 0x000004, "Wrong alignment on TransformRingObject_SetRingScaleRate");
+static_assert(sizeof(TransformRingObject_SetRingScaleRate) == 0x000004, "Wrong size on TransformRingObject_SetRingScaleRate");
+static_assert(offsetof(TransformRingObject_SetRingScaleRate, Rate) == 0x000000, "Member 'TransformRingObject_SetRingScaleRate::Rate' has a wrong offset!");
+
+// Function UnionRun.TransformRingObject.SetTransformRingType
+// 0x0001 (0x0001 - 0x0000)
+struct TransformRingObject_SetTransformRingType final
+{
+public:
+	ETransformRingType                            Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TransformRingObject_SetTransformRingType) == 0x000001, "Wrong alignment on TransformRingObject_SetTransformRingType");
+static_assert(sizeof(TransformRingObject_SetTransformRingType) == 0x000001, "Wrong size on TransformRingObject_SetTransformRingType");
+static_assert(offsetof(TransformRingObject_SetTransformRingType, Type) == 0x000000, "Member 'TransformRingObject_SetTransformRingType::Type' has a wrong offset!");
+
+// Function UnionRun.TransformRingObject.UpdateParallelMode
+// 0x0004 (0x0004 - 0x0000)
+struct TransformRingObject_UpdateParallelMode final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TransformRingObject_UpdateParallelMode) == 0x000004, "Wrong alignment on TransformRingObject_UpdateParallelMode");
+static_assert(sizeof(TransformRingObject_UpdateParallelMode) == 0x000004, "Wrong size on TransformRingObject_UpdateParallelMode");
+static_assert(offsetof(TransformRingObject_UpdateParallelMode, RacerIndex) == 0x000000, "Member 'TransformRingObject_UpdateParallelMode::RacerIndex' has a wrong offset!");
+
+// Function UnionRun.TriggerComponent.OnCollisionBaseHit
+// 0x0060 (0x0060 - 0x0000)
+struct TriggerComponent_OnCollisionBaseHit final
+{
+public:
+	struct FCollisionHitInfo                      Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TriggerComponent_OnCollisionBaseHit) == 0x000008, "Wrong alignment on TriggerComponent_OnCollisionBaseHit");
+static_assert(sizeof(TriggerComponent_OnCollisionBaseHit) == 0x000060, "Wrong size on TriggerComponent_OnCollisionBaseHit");
+static_assert(offsetof(TriggerComponent_OnCollisionBaseHit, Info) == 0x000000, "Member 'TriggerComponent_OnCollisionBaseHit::Info' has a wrong offset!");
+
+// Function UnionRun.TriggerComponent.OnCollisionHitResult
+// 0x0058 (0x0058 - 0x0000)
+struct TriggerComponent_OnCollisionHitResult final
+{
+public:
+	struct FCollisionHitResultInfo                Info;                                              // 0x0000(0x0058)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TriggerComponent_OnCollisionHitResult) == 0x000008, "Wrong alignment on TriggerComponent_OnCollisionHitResult");
+static_assert(sizeof(TriggerComponent_OnCollisionHitResult) == 0x000058, "Wrong size on TriggerComponent_OnCollisionHitResult");
+static_assert(offsetof(TriggerComponent_OnCollisionHitResult, Info) == 0x000000, "Member 'TriggerComponent_OnCollisionHitResult::Info' has a wrong offset!");
+
+// Function UnionRun.TriggerComponent.SetSurfaceFlag
+// 0x001F (0x001F - 0x0000)
+struct TriggerComponent_SetSurfaceFlag final
+{
+public:
+	struct FUnionSurfaceFlag                      flag;                                              // 0x0000(0x001F)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TriggerComponent_SetSurfaceFlag) == 0x000001, "Wrong alignment on TriggerComponent_SetSurfaceFlag");
+static_assert(sizeof(TriggerComponent_SetSurfaceFlag) == 0x00001F, "Wrong size on TriggerComponent_SetSurfaceFlag");
+static_assert(offsetof(TriggerComponent_SetSurfaceFlag, flag) == 0x000000, "Member 'TriggerComponent_SetSurfaceFlag::flag' has a wrong offset!");
+
+// Function UnionRun.TriggerComponent.SetSurfaceType
+// 0x0001 (0x0001 - 0x0000)
+struct TriggerComponent_SetSurfaceType final
+{
+public:
+	EUnionSurfaceType                             Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TriggerComponent_SetSurfaceType) == 0x000001, "Wrong alignment on TriggerComponent_SetSurfaceType");
+static_assert(sizeof(TriggerComponent_SetSurfaceType) == 0x000001, "Wrong size on TriggerComponent_SetSurfaceType");
+static_assert(offsetof(TriggerComponent_SetSurfaceType, Type) == 0x000000, "Member 'TriggerComponent_SetSurfaceType::Type' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetAttackEnemyItemIdIF
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF final
+{
+public:
+	EEnemyItemId                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemIdIF
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_GetAttackItemIdIF final
+{
+public:
+	EItemId                                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetAttackItemIdIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetAttackItemIdIF");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetAttackItemIdIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetAttackItemIdIF");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetAttackItemIdIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetAttackItemIdIF::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainIndex
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectDomainIndex final
+{
+public:
+	EDomainIndex                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectDomainIndex) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectDomainIndex");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectDomainIndex) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetObjectDomainIndex");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectDomainIndex, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectDomainIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainLocationUE
+// 0x0018 (0x0018 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectDomainLocationUE final
+{
+public:
+	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectDomainLocationUE) == 0x000008, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectDomainLocationUE");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectDomainLocationUE) == 0x000018, "Wrong size on UnionAttackItemInfoInterface_GetObjectDomainLocationUE");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectDomainLocationUE, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectDomainLocationUE::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainNumber
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectDomainNumber final
+{
+public:
+	EDomainNumber                                 ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectDomainNumber) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectDomainNumber");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectDomainNumber) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetObjectDomainNumber");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectDomainNumber, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectDomainNumber::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectLapCount
+// 0x0004 (0x0004 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectLapCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectLapCount) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectLapCount");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectLapCount) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectLapCount");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectLapCount, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectLapCount::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectPathIndexDistance
+// 0x0004 (0x0004 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectPathIndexDistance final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectPathIndexDistance) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectPathIndexDistance");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectPathIndexDistance) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectPathIndexDistance");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectPathIndexDistance, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectPathIndexDistance::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDistance
+// 0x0004 (0x0004 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectRaceDistance final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectRaceDistance) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectRaceDistance");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectRaceDistance) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectRaceDistance");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectRaceDistance, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectRaceDistance::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDomainElapsedRatio
+// 0x0004 (0x0004 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectWorldLocation
+// 0x0018 (0x0018 - 0x0000)
+struct UnionAttackItemInfoInterface_GetObjectWorldLocation final
+{
+public:
+	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetObjectWorldLocation) == 0x000008, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectWorldLocation");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectWorldLocation) == 0x000018, "Wrong size on UnionAttackItemInfoInterface_GetObjectWorldLocation");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectWorldLocation, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectWorldLocation::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetSameDomainOnlyFlag
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_GetSameDomainOnlyFlag final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetSameDomainOnlyFlag) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetSameDomainOnlyFlag");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetSameDomainOnlyFlag) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetSameDomainOnlyFlag");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetSameDomainOnlyFlag, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetSameDomainOnlyFlag::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetUsingRacerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionAttackItemInfoInterface_GetUsingRacerIndex final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetUsingRacerIndex) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetUsingRacerIndex");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetUsingRacerIndex) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetUsingRacerIndex");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetUsingRacerIndex, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetUsingRacerIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemMoveToTargetIgnorePathIF
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF");
+static_assert(sizeof(UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF");
+static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemTargetIF
+// 0x0008 (0x0008 - 0x0000)
+struct UnionAttackItemInfoInterface_IsAttackItemTargetIF final
+{
+public:
+	int32                                         checkRacerIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionAttackItemInfoInterface_IsAttackItemTargetIF) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_IsAttackItemTargetIF");
+static_assert(sizeof(UnionAttackItemInfoInterface_IsAttackItemTargetIF) == 0x000008, "Wrong size on UnionAttackItemInfoInterface_IsAttackItemTargetIF");
+static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemTargetIF, checkRacerIndex) == 0x000000, "Member 'UnionAttackItemInfoInterface_IsAttackItemTargetIF::checkRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemTargetIF, ReturnValue) == 0x000004, "Member 'UnionAttackItemInfoInterface_IsAttackItemTargetIF::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemUsedForBackIF
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF");
+static_assert(sizeof(UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF");
+static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemInfoTypeIF
+// 0x0001 (0x0001 - 0x0000)
+struct UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF final
+{
+public:
+	EUnionAttackItemInfoType                      ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF");
+static_assert(sizeof(UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF");
+static_assert(offsetof(UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionDroneInfoInterface.NotifyCallDroneEvent
+// 0x0004 (0x0004 - 0x0000)
+struct UnionDroneInfoInterface_NotifyCallDroneEvent final
+{
+public:
+	struct FCallDroneInfo                         Info;                                              // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionDroneInfoInterface_NotifyCallDroneEvent) == 0x000001, "Wrong alignment on UnionDroneInfoInterface_NotifyCallDroneEvent");
+static_assert(sizeof(UnionDroneInfoInterface_NotifyCallDroneEvent) == 0x000004, "Wrong size on UnionDroneInfoInterface_NotifyCallDroneEvent");
+static_assert(offsetof(UnionDroneInfoInterface_NotifyCallDroneEvent, Info) == 0x000000, "Member 'UnionDroneInfoInterface_NotifyCallDroneEvent::Info' has a wrong offset!");
+
+// Function UnionRun.UnionDroneInfoInterface.NotifyDroneVisibilityEvent
+// 0x0001 (0x0001 - 0x0000)
+struct UnionDroneInfoInterface_NotifyDroneVisibilityEvent final
+{
+public:
+	bool                                          Visibility;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionDroneInfoInterface_NotifyDroneVisibilityEvent) == 0x000001, "Wrong alignment on UnionDroneInfoInterface_NotifyDroneVisibilityEvent");
+static_assert(sizeof(UnionDroneInfoInterface_NotifyDroneVisibilityEvent) == 0x000001, "Wrong size on UnionDroneInfoInterface_NotifyDroneVisibilityEvent");
+static_assert(offsetof(UnionDroneInfoInterface_NotifyDroneVisibilityEvent, Visibility) == 0x000000, "Member 'UnionDroneInfoInterface_NotifyDroneVisibilityEvent::Visibility' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.GetPhysicalSurfaceType
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_GetPhysicalSurfaceType final
+{
+public:
+	EUnionSurfaceType                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_GetPhysicalSurfaceType) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_GetPhysicalSurfaceType");
+static_assert(sizeof(UnionPhysicalMaterial_GetPhysicalSurfaceType) == 0x000001, "Wrong size on UnionPhysicalMaterial_GetPhysicalSurfaceType");
+static_assert(offsetof(UnionPhysicalMaterial_GetPhysicalSurfaceType, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_GetPhysicalSurfaceType::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.GetSurfaceFlag
+// 0x001F (0x001F - 0x0000)
+struct UnionPhysicalMaterial_GetSurfaceFlag final
+{
+public:
+	struct FUnionSurfaceFlag                      ReturnValue;                                       // 0x0000(0x001F)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_GetSurfaceFlag) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_GetSurfaceFlag");
+static_assert(sizeof(UnionPhysicalMaterial_GetSurfaceFlag) == 0x00001F, "Wrong size on UnionPhysicalMaterial_GetSurfaceFlag");
+static_assert(offsetof(UnionPhysicalMaterial_GetSurfaceFlag, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_GetSurfaceFlag::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsAssistWall
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsAssistWall final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsAssistWall) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsAssistWall");
+static_assert(sizeof(UnionPhysicalMaterial_IsAssistWall) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsAssistWall");
+static_assert(offsetof(UnionPhysicalMaterial_IsAssistWall, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsAssistWall::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsAssistWallItemIgnoret
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsAssistWallItemIgnoret final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsAssistWallItemIgnoret) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsAssistWallItemIgnoret");
+static_assert(sizeof(UnionPhysicalMaterial_IsAssistWallItemIgnoret) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsAssistWallItemIgnoret");
+static_assert(offsetof(UnionPhysicalMaterial_IsAssistWallItemIgnoret, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsAssistWallItemIgnoret::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsBouncy
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsBouncy final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsBouncy) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBouncy");
+static_assert(sizeof(UnionPhysicalMaterial_IsBouncy) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBouncy");
+static_assert(offsetof(UnionPhysicalMaterial_IsBouncy, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBouncy::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsBumpyHeavy
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsBumpyHeavy final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsBumpyHeavy) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBumpyHeavy");
+static_assert(sizeof(UnionPhysicalMaterial_IsBumpyHeavy) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBumpyHeavy");
+static_assert(offsetof(UnionPhysicalMaterial_IsBumpyHeavy, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBumpyHeavy::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsBumpyLight
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsBumpyLight final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsBumpyLight) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBumpyLight");
+static_assert(sizeof(UnionPhysicalMaterial_IsBumpyLight) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBumpyLight");
+static_assert(offsetof(UnionPhysicalMaterial_IsBumpyLight, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBumpyLight::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsBumpyMedium
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsBumpyMedium final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsBumpyMedium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBumpyMedium");
+static_assert(sizeof(UnionPhysicalMaterial_IsBumpyMedium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBumpyMedium");
+static_assert(offsetof(UnionPhysicalMaterial_IsBumpyMedium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBumpyMedium::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsCameraChange
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsCameraChange final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsCameraChange) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsCameraChange");
+static_assert(sizeof(UnionPhysicalMaterial_IsCameraChange) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsCameraChange");
+static_assert(offsetof(UnionPhysicalMaterial_IsCameraChange, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsCameraChange::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsCarDriveable
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsCarDriveable final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsCarDriveable) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsCarDriveable");
+static_assert(sizeof(UnionPhysicalMaterial_IsCarDriveable) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsCarDriveable");
+static_assert(offsetof(UnionPhysicalMaterial_IsCarDriveable, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsCarDriveable::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsCylindrical
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsCylindrical final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsCylindrical) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsCylindrical");
+static_assert(sizeof(UnionPhysicalMaterial_IsCylindrical) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsCylindrical");
+static_assert(offsetof(UnionPhysicalMaterial_IsCylindrical, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsCylindrical::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsDash
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsDash final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsDash) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsDash");
+static_assert(sizeof(UnionPhysicalMaterial_IsDash) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsDash");
+static_assert(offsetof(UnionPhysicalMaterial_IsDash, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsDash::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsGravitySwitch
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsGravitySwitch final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsGravitySwitch) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsGravitySwitch");
+static_assert(sizeof(UnionPhysicalMaterial_IsGravitySwitch) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsGravitySwitch");
+static_assert(offsetof(UnionPhysicalMaterial_IsGravitySwitch, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsGravitySwitch::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsGrindDash
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsGrindDash final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsGrindDash) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsGrindDash");
+static_assert(sizeof(UnionPhysicalMaterial_IsGrindDash) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsGrindDash");
+static_assert(offsetof(UnionPhysicalMaterial_IsGrindDash, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsGrindDash::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsGuidedJump
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsGuidedJump final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsGuidedJump) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsGuidedJump");
+static_assert(sizeof(UnionPhysicalMaterial_IsGuidedJump) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsGuidedJump");
+static_assert(offsetof(UnionPhysicalMaterial_IsGuidedJump, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsGuidedJump::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitBouncyMidium
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsHitBouncyMidium final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsHitBouncyMidium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitBouncyMidium");
+static_assert(sizeof(UnionPhysicalMaterial_IsHitBouncyMidium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitBouncyMidium");
+static_assert(offsetof(UnionPhysicalMaterial_IsHitBouncyMidium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitBouncyMidium::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitLoseRing
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsHitLoseRing final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsHitLoseRing) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitLoseRing");
+static_assert(sizeof(UnionPhysicalMaterial_IsHitLoseRing) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitLoseRing");
+static_assert(offsetof(UnionPhysicalMaterial_IsHitLoseRing, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitLoseRing::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownLight
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsHitSlowdownLight final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsHitSlowdownLight) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitSlowdownLight");
+static_assert(sizeof(UnionPhysicalMaterial_IsHitSlowdownLight) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitSlowdownLight");
+static_assert(offsetof(UnionPhysicalMaterial_IsHitSlowdownLight, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitSlowdownLight::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownMidium
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsHitSlowdownMidium final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsHitSlowdownMidium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitSlowdownMidium");
+static_assert(sizeof(UnionPhysicalMaterial_IsHitSlowdownMidium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitSlowdownMidium");
+static_assert(offsetof(UnionPhysicalMaterial_IsHitSlowdownMidium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitSlowdownMidium::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsIgnoreSticky
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsIgnoreSticky final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsIgnoreSticky) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsIgnoreSticky");
+static_assert(sizeof(UnionPhysicalMaterial_IsIgnoreSticky) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsIgnoreSticky");
+static_assert(offsetof(UnionPhysicalMaterial_IsIgnoreSticky, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsIgnoreSticky::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsItemOnly
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsItemOnly final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsItemOnly) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsItemOnly");
+static_assert(sizeof(UnionPhysicalMaterial_IsItemOnly) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsItemOnly");
+static_assert(offsetof(UnionPhysicalMaterial_IsItemOnly, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsItemOnly::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsMachineOnlyWall
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsMachineOnlyWall final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsMachineOnlyWall) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsMachineOnlyWall");
+static_assert(sizeof(UnionPhysicalMaterial_IsMachineOnlyWall) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsMachineOnlyWall");
+static_assert(offsetof(UnionPhysicalMaterial_IsMachineOnlyWall, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsMachineOnlyWall::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsNoJump
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsNoJump final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsNoJump) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsNoJump");
+static_assert(sizeof(UnionPhysicalMaterial_IsNoJump) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsNoJump");
+static_assert(offsetof(UnionPhysicalMaterial_IsNoJump, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsNoJump::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsNrrow
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsNrrow final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsNrrow) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsNrrow");
+static_assert(sizeof(UnionPhysicalMaterial_IsNrrow) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsNrrow");
+static_assert(offsetof(UnionPhysicalMaterial_IsNrrow, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsNrrow::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsPseudoPlane
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsPseudoPlane final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsPseudoPlane) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsPseudoPlane");
+static_assert(sizeof(UnionPhysicalMaterial_IsPseudoPlane) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsPseudoPlane");
+static_assert(offsetof(UnionPhysicalMaterial_IsPseudoPlane, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsPseudoPlane::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsRespot
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsRespot final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsRespot) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsRespot");
+static_assert(sizeof(UnionPhysicalMaterial_IsRespot) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsRespot");
+static_assert(offsetof(UnionPhysicalMaterial_IsRespot, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsRespot::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlide
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsSlide final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsSlide) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlide");
+static_assert(sizeof(UnionPhysicalMaterial_IsSlide) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlide");
+static_assert(offsetof(UnionPhysicalMaterial_IsSlide, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlide::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlippy
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsSlippy final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsSlippy) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlippy");
+static_assert(sizeof(UnionPhysicalMaterial_IsSlippy) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlippy");
+static_assert(offsetof(UnionPhysicalMaterial_IsSlippy, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlippy::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlowDownLight
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsSlowDownLight final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsSlowDownLight) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlowDownLight");
+static_assert(sizeof(UnionPhysicalMaterial_IsSlowDownLight) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlowDownLight");
+static_assert(offsetof(UnionPhysicalMaterial_IsSlowDownLight, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlowDownLight::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlowDownMedium
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsSlowDownMedium final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsSlowDownMedium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlowDownMedium");
+static_assert(sizeof(UnionPhysicalMaterial_IsSlowDownMedium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlowDownMedium");
+static_assert(offsetof(UnionPhysicalMaterial_IsSlowDownMedium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlowDownMedium::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsWall
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsWall final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsWall) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsWall");
+static_assert(sizeof(UnionPhysicalMaterial_IsWall) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsWall");
+static_assert(offsetof(UnionPhysicalMaterial_IsWall, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsWall::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPhysicalMaterial.IsYellowDrill
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPhysicalMaterial_IsYellowDrill final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPhysicalMaterial_IsYellowDrill) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsYellowDrill");
+static_assert(sizeof(UnionPhysicalMaterial_IsYellowDrill) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsYellowDrill");
+static_assert(offsetof(UnionPhysicalMaterial_IsYellowDrill, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsYellowDrill::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionPlayerInfoBillboardUI.ChangeDriverInfo
+// 0x0001 (0x0001 - 0x0000)
+struct UnionPlayerInfoBillboardUI_ChangeDriverInfo final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionPlayerInfoBillboardUI_ChangeDriverInfo) == 0x000001, "Wrong alignment on UnionPlayerInfoBillboardUI_ChangeDriverInfo");
+static_assert(sizeof(UnionPlayerInfoBillboardUI_ChangeDriverInfo) == 0x000001, "Wrong size on UnionPlayerInfoBillboardUI_ChangeDriverInfo");
+static_assert(offsetof(UnionPlayerInfoBillboardUI_ChangeDriverInfo, DriverId) == 0x000000, "Member 'UnionPlayerInfoBillboardUI_ChangeDriverInfo::DriverId' has a wrong offset!");
+
+// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByGadgetInfo
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRaceGadgetUI_InitializeIconsByGadgetInfo final
+{
+public:
+	TArray<EGadgetId>                             GadgetInfo;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceGadgetUI_InitializeIconsByGadgetInfo) == 0x000008, "Wrong alignment on UnionRaceGadgetUI_InitializeIconsByGadgetInfo");
+static_assert(sizeof(UnionRaceGadgetUI_InitializeIconsByGadgetInfo) == 0x000010, "Wrong size on UnionRaceGadgetUI_InitializeIconsByGadgetInfo");
+static_assert(offsetof(UnionRaceGadgetUI_InitializeIconsByGadgetInfo, GadgetInfo) == 0x000000, "Member 'UnionRaceGadgetUI_InitializeIconsByGadgetInfo::GadgetInfo' has a wrong offset!");
+
+// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByRacerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceGadgetUI_InitializeIconsByRacerIndex final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceGadgetUI_InitializeIconsByRacerIndex) == 0x000004, "Wrong alignment on UnionRaceGadgetUI_InitializeIconsByRacerIndex");
+static_assert(sizeof(UnionRaceGadgetUI_InitializeIconsByRacerIndex) == 0x000004, "Wrong size on UnionRaceGadgetUI_InitializeIconsByRacerIndex");
+static_assert(offsetof(UnionRaceGadgetUI_InitializeIconsByRacerIndex, RacerIndex) == 0x000000, "Member 'UnionRaceGadgetUI_InitializeIconsByRacerIndex::RacerIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRaceInfoNotifier.RegisterRaceInfoListener
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceInfoNotifier_RegisterRaceInfoListener final
+{
+public:
+	class UObject*                                InListener;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceInfoNotifier_RegisterRaceInfoListener) == 0x000008, "Wrong alignment on UnionRaceInfoNotifier_RegisterRaceInfoListener");
+static_assert(sizeof(UnionRaceInfoNotifier_RegisterRaceInfoListener) == 0x000008, "Wrong size on UnionRaceInfoNotifier_RegisterRaceInfoListener");
+static_assert(offsetof(UnionRaceInfoNotifier_RegisterRaceInfoListener, InListener) == 0x000000, "Member 'UnionRaceInfoNotifier_RegisterRaceInfoListener::InListener' has a wrong offset!");
+
+// Function UnionRun.UnionRaceInfoNotifier.UnregisterRaceInfoListener
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceInfoNotifier_UnregisterRaceInfoListener final
+{
+public:
+	class UObject*                                InListener;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceInfoNotifier_UnregisterRaceInfoListener) == 0x000008, "Wrong alignment on UnionRaceInfoNotifier_UnregisterRaceInfoListener");
+static_assert(sizeof(UnionRaceInfoNotifier_UnregisterRaceInfoListener) == 0x000008, "Wrong size on UnionRaceInfoNotifier_UnregisterRaceInfoListener");
+static_assert(offsetof(UnionRaceInfoNotifier_UnregisterRaceInfoListener, InListener) == 0x000000, "Member 'UnionRaceInfoNotifier_UnregisterRaceInfoListener::InListener' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.AddCourseMapActor
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRaceMinimap_AddCourseMapActor final
+{
+public:
+	class AActor*                                 InAttackItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemId                                       InItemId;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_AddCourseMapActor) == 0x000008, "Wrong alignment on UnionRaceMinimap_AddCourseMapActor");
+static_assert(sizeof(UnionRaceMinimap_AddCourseMapActor) == 0x000010, "Wrong size on UnionRaceMinimap_AddCourseMapActor");
+static_assert(offsetof(UnionRaceMinimap_AddCourseMapActor, InAttackItem) == 0x000000, "Member 'UnionRaceMinimap_AddCourseMapActor::InAttackItem' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_AddCourseMapActor, InItemId) == 0x000008, "Member 'UnionRaceMinimap_AddCourseMapActor::InItemId' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.GetGroupColor
+// 0x0014 (0x0014 - 0x0000)
+struct UnionRaceMinimap_GetGroupColor final
+{
+public:
+	int32                                         GouupIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ReturnValue;                                       // 0x0004(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_GetGroupColor) == 0x000004, "Wrong alignment on UnionRaceMinimap_GetGroupColor");
+static_assert(sizeof(UnionRaceMinimap_GetGroupColor) == 0x000014, "Wrong size on UnionRaceMinimap_GetGroupColor");
+static_assert(offsetof(UnionRaceMinimap_GetGroupColor, GouupIndex) == 0x000000, "Member 'UnionRaceMinimap_GetGroupColor::GouupIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_GetGroupColor, ReturnValue) == 0x000004, "Member 'UnionRaceMinimap_GetGroupColor::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.InitializeMinimap
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_InitializeMinimap final
+{
+public:
+	class UTextureRenderTarget2D*                 InRenderTarget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_InitializeMinimap) == 0x000008, "Wrong alignment on UnionRaceMinimap_InitializeMinimap");
+static_assert(sizeof(UnionRaceMinimap_InitializeMinimap) == 0x000008, "Wrong size on UnionRaceMinimap_InitializeMinimap");
+static_assert(offsetof(UnionRaceMinimap_InitializeMinimap, InRenderTarget) == 0x000000, "Member 'UnionRaceMinimap_InitializeMinimap::InRenderTarget' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.RemoveCourseMapActor
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_RemoveCourseMapActor final
+{
+public:
+	class AActor*                                 InAttackItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_RemoveCourseMapActor) == 0x000008, "Wrong alignment on UnionRaceMinimap_RemoveCourseMapActor");
+static_assert(sizeof(UnionRaceMinimap_RemoveCourseMapActor) == 0x000008, "Wrong size on UnionRaceMinimap_RemoveCourseMapActor");
+static_assert(offsetof(UnionRaceMinimap_RemoveCourseMapActor, InAttackItem) == 0x000000, "Member 'UnionRaceMinimap_RemoveCourseMapActor::InAttackItem' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetCourseMapCharaSpin
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceMinimap_SetCourseMapCharaSpin final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetCourseMapCharaSpin) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetCourseMapCharaSpin");
+static_assert(sizeof(UnionRaceMinimap_SetCourseMapCharaSpin) == 0x000004, "Wrong size on UnionRaceMinimap_SetCourseMapCharaSpin");
+static_assert(offsetof(UnionRaceMinimap_SetCourseMapCharaSpin, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetCourseMapCharaSpin::RacerIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetCourseSetting
+// 0x0048 (0x0048 - 0x0000)
+struct UnionRaceMinimap_SetCourseSetting final
+{
+public:
+	TSoftObjectPtr<class UObject>                 CourseTexture;                                     // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InOrthoRate;                                       // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InAngle;                                           // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                InOffset;                                          // 0x0030(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetCourseSetting) == 0x000008, "Wrong alignment on UnionRaceMinimap_SetCourseSetting");
+static_assert(sizeof(UnionRaceMinimap_SetCourseSetting) == 0x000048, "Wrong size on UnionRaceMinimap_SetCourseSetting");
+static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, CourseTexture) == 0x000000, "Member 'UnionRaceMinimap_SetCourseSetting::CourseTexture' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, InOrthoRate) == 0x000028, "Member 'UnionRaceMinimap_SetCourseSetting::InOrthoRate' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, InAngle) == 0x00002C, "Member 'UnionRaceMinimap_SetCourseSetting::InAngle' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, InOffset) == 0x000030, "Member 'UnionRaceMinimap_SetCourseSetting::InOffset' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetDomainIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceMinimap_SetDomainIndex final
+{
+public:
+	int32                                         InDomainIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetDomainIndex) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetDomainIndex");
+static_assert(sizeof(UnionRaceMinimap_SetDomainIndex) == 0x000004, "Wrong size on UnionRaceMinimap_SetDomainIndex");
+static_assert(offsetof(UnionRaceMinimap_SetDomainIndex, InDomainIndex) == 0x000000, "Member 'UnionRaceMinimap_SetDomainIndex::InDomainIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetDomainNumber
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceMinimap_SetDomainNumber final
+{
+public:
+	int32                                         InDomainNumber;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetDomainNumber) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetDomainNumber");
+static_assert(sizeof(UnionRaceMinimap_SetDomainNumber) == 0x000004, "Wrong size on UnionRaceMinimap_SetDomainNumber");
+static_assert(offsetof(UnionRaceMinimap_SetDomainNumber, InDomainNumber) == 0x000000, "Member 'UnionRaceMinimap_SetDomainNumber::InDomainNumber' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetDriverId
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_SetDriverId final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DriverId;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetDriverId) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetDriverId");
+static_assert(sizeof(UnionRaceMinimap_SetDriverId) == 0x000008, "Wrong size on UnionRaceMinimap_SetDriverId");
+static_assert(offsetof(UnionRaceMinimap_SetDriverId, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetDriverId::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetDriverId, DriverId) == 0x000004, "Member 'UnionRaceMinimap_SetDriverId::DriverId' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetGroupIndex
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_SetGroupIndex final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GroupIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetGroupIndex) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetGroupIndex");
+static_assert(sizeof(UnionRaceMinimap_SetGroupIndex) == 0x000008, "Wrong size on UnionRaceMinimap_SetGroupIndex");
+static_assert(offsetof(UnionRaceMinimap_SetGroupIndex, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetGroupIndex::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetGroupIndex, GroupIndex) == 0x000004, "Member 'UnionRaceMinimap_SetGroupIndex::GroupIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetMinimapIconItem
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_SetMinimapIconItem final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemId                                       InItemId;                                          // 0x0004(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_SetMinimapIconItem) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetMinimapIconItem");
+static_assert(sizeof(UnionRaceMinimap_SetMinimapIconItem) == 0x000008, "Wrong size on UnionRaceMinimap_SetMinimapIconItem");
+static_assert(offsetof(UnionRaceMinimap_SetMinimapIconItem, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetMinimapIconItem::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetMinimapIconItem, InItemId) == 0x000004, "Member 'UnionRaceMinimap_SetMinimapIconItem::InItemId' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetMinimapIconType
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_SetMinimapIconType final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMinimapIconType                              InMinimapIconType;                                 // 0x0004(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_SetMinimapIconType) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetMinimapIconType");
+static_assert(sizeof(UnionRaceMinimap_SetMinimapIconType) == 0x000008, "Wrong size on UnionRaceMinimap_SetMinimapIconType");
+static_assert(offsetof(UnionRaceMinimap_SetMinimapIconType, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetMinimapIconType::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetMinimapIconType, InMinimapIconType) == 0x000004, "Member 'UnionRaceMinimap_SetMinimapIconType::InMinimapIconType' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetPlayerIndex
+// 0x000C (0x000C - 0x0000)
+struct UnionRaceMinimap_SetPlayerIndex final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerIndex;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPlayer;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLocalMulti;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_SetPlayerIndex) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetPlayerIndex");
+static_assert(sizeof(UnionRaceMinimap_SetPlayerIndex) == 0x00000C, "Wrong size on UnionRaceMinimap_SetPlayerIndex");
+static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetPlayerIndex::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, PlayerIndex) == 0x000004, "Member 'UnionRaceMinimap_SetPlayerIndex::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, IsPlayer) == 0x000008, "Member 'UnionRaceMinimap_SetPlayerIndex::IsPlayer' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, IsLocalMulti) == 0x000009, "Member 'UnionRaceMinimap_SetPlayerIndex::IsLocalMulti' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetPosition
+// 0x0020 (0x0020 - 0x0000)
+struct UnionRaceMinimap_SetPosition final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                InPosition;                                        // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetPosition) == 0x000008, "Wrong alignment on UnionRaceMinimap_SetPosition");
+static_assert(sizeof(UnionRaceMinimap_SetPosition) == 0x000020, "Wrong size on UnionRaceMinimap_SetPosition");
+static_assert(offsetof(UnionRaceMinimap_SetPosition, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetPosition::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetPosition, InPosition) == 0x000008, "Member 'UnionRaceMinimap_SetPosition::InPosition' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetPositionAndZOrder
+// 0x0028 (0x0028 - 0x0000)
+struct UnionRaceMinimap_SetPositionAndZOrder final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                InPosition;                                        // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InZOrder;                                          // 0x0020(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_SetPositionAndZOrder) == 0x000008, "Wrong alignment on UnionRaceMinimap_SetPositionAndZOrder");
+static_assert(sizeof(UnionRaceMinimap_SetPositionAndZOrder) == 0x000028, "Wrong size on UnionRaceMinimap_SetPositionAndZOrder");
+static_assert(offsetof(UnionRaceMinimap_SetPositionAndZOrder, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetPositionAndZOrder::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetPositionAndZOrder, InPosition) == 0x000008, "Member 'UnionRaceMinimap_SetPositionAndZOrder::InPosition' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetPositionAndZOrder, InZOrder) == 0x000020, "Member 'UnionRaceMinimap_SetPositionAndZOrder::InZOrder' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetRacerCount
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceMinimap_SetRacerCount final
+{
+public:
+	int32                                         RacerCount_0;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_SetRacerCount) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetRacerCount");
+static_assert(sizeof(UnionRaceMinimap_SetRacerCount) == 0x000004, "Wrong size on UnionRaceMinimap_SetRacerCount");
+static_assert(offsetof(UnionRaceMinimap_SetRacerCount, RacerCount_0) == 0x000000, "Member 'UnionRaceMinimap_SetRacerCount::RacerCount_0' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetRacerIconVisibility
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_SetRacerIconVisibility final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESlateVisibility                              NewVisibility;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_SetRacerIconVisibility) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetRacerIconVisibility");
+static_assert(sizeof(UnionRaceMinimap_SetRacerIconVisibility) == 0x000008, "Wrong size on UnionRaceMinimap_SetRacerIconVisibility");
+static_assert(offsetof(UnionRaceMinimap_SetRacerIconVisibility, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetRacerIconVisibility::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetRacerIconVisibility, NewVisibility) == 0x000004, "Member 'UnionRaceMinimap_SetRacerIconVisibility::NewVisibility' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetReaderFlag
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_SetReaderFlag final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          InIsReader;                                        // 0x0004(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_SetReaderFlag) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetReaderFlag");
+static_assert(sizeof(UnionRaceMinimap_SetReaderFlag) == 0x000008, "Wrong size on UnionRaceMinimap_SetReaderFlag");
+static_assert(offsetof(UnionRaceMinimap_SetReaderFlag, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetReaderFlag::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetReaderFlag, InIsReader) == 0x000004, "Member 'UnionRaceMinimap_SetReaderFlag::InIsReader' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.SetRival
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceMinimap_SetRival final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRival;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPowerRival;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRaceMinimap_SetRival) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetRival");
+static_assert(sizeof(UnionRaceMinimap_SetRival) == 0x000008, "Wrong size on UnionRaceMinimap_SetRival");
+static_assert(offsetof(UnionRaceMinimap_SetRival, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetRival::RacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetRival, IsRival) == 0x000004, "Member 'UnionRaceMinimap_SetRival::IsRival' has a wrong offset!");
+static_assert(offsetof(UnionRaceMinimap_SetRival, IsPowerRival) == 0x000005, "Member 'UnionRaceMinimap_SetRival::IsPowerRival' has a wrong offset!");
+
+// Function UnionRun.UnionRaceMinimap.UpdateMinimap
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceMinimap_UpdateMinimap final
+{
+public:
+	float                                         InDelta;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceMinimap_UpdateMinimap) == 0x000004, "Wrong alignment on UnionRaceMinimap_UpdateMinimap");
+static_assert(sizeof(UnionRaceMinimap_UpdateMinimap) == 0x000004, "Wrong size on UnionRaceMinimap_UpdateMinimap");
+static_assert(offsetof(UnionRaceMinimap_UpdateMinimap, InDelta) == 0x000000, "Member 'UnionRaceMinimap_UpdateMinimap::InDelta' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.ApplyPauseInput
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacer_ApplyPauseInput final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_ApplyPauseInput) == 0x000001, "Wrong alignment on UnionRacer_ApplyPauseInput");
+static_assert(sizeof(UnionRacer_ApplyPauseInput) == 0x000001, "Wrong size on UnionRacer_ApplyPauseInput");
+static_assert(offsetof(UnionRacer_ApplyPauseInput, ReturnValue) == 0x000000, "Member 'UnionRacer_ApplyPauseInput::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.ChangeVehicleDisplayMode
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacer_ChangeVehicleDisplayMode final
+{
+public:
+	EVehicleDisplayMode                           InVehicleDisplayMode;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_ChangeVehicleDisplayMode) == 0x000001, "Wrong alignment on UnionRacer_ChangeVehicleDisplayMode");
+static_assert(sizeof(UnionRacer_ChangeVehicleDisplayMode) == 0x000001, "Wrong size on UnionRacer_ChangeVehicleDisplayMode");
+static_assert(offsetof(UnionRacer_ChangeVehicleDisplayMode, InVehicleDisplayMode) == 0x000000, "Member 'UnionRacer_ChangeVehicleDisplayMode::InVehicleDisplayMode' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.Destroy
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacer_Destroy final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_Destroy) == 0x000001, "Wrong alignment on UnionRacer_Destroy");
+static_assert(sizeof(UnionRacer_Destroy) == 0x000001, "Wrong size on UnionRacer_Destroy");
+static_assert(offsetof(UnionRacer_Destroy, ReturnValue) == 0x000000, "Member 'UnionRacer_Destroy::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.ExecTick
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_ExecTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_ExecTick) == 0x000004, "Wrong alignment on UnionRacer_ExecTick");
+static_assert(sizeof(UnionRacer_ExecTick) == 0x000004, "Wrong size on UnionRacer_ExecTick");
+static_assert(offsetof(UnionRacer_ExecTick, DeltaSeconds) == 0x000000, "Member 'UnionRacer_ExecTick::DeltaSeconds' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.GetPlayerControllerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_GetPlayerControllerIndex final
+{
+public:
+	int32                                         OutPlayerControllerIndex;                          // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_GetPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacer_GetPlayerControllerIndex");
+static_assert(sizeof(UnionRacer_GetPlayerControllerIndex) == 0x000004, "Wrong size on UnionRacer_GetPlayerControllerIndex");
+static_assert(offsetof(UnionRacer_GetPlayerControllerIndex, OutPlayerControllerIndex) == 0x000000, "Member 'UnionRacer_GetPlayerControllerIndex::OutPlayerControllerIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.GetRaceLapInfo
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacer_GetRaceLapInfo final
+{
+public:
+	class UUnionRaceLapInfo*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_GetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacer_GetRaceLapInfo");
+static_assert(sizeof(UnionRacer_GetRaceLapInfo) == 0x000008, "Wrong size on UnionRacer_GetRaceLapInfo");
+static_assert(offsetof(UnionRacer_GetRaceLapInfo, ReturnValue) == 0x000000, "Member 'UnionRacer_GetRaceLapInfo::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.GetRacerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_GetRacerIndex final
+{
+public:
+	int32                                         OutRacerIndex;                                     // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_GetRacerIndex) == 0x000004, "Wrong alignment on UnionRacer_GetRacerIndex");
+static_assert(sizeof(UnionRacer_GetRacerIndex) == 0x000004, "Wrong size on UnionRacer_GetRacerIndex");
+static_assert(offsetof(UnionRacer_GetRacerIndex, OutRacerIndex) == 0x000000, "Member 'UnionRacer_GetRacerIndex::OutRacerIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.GetRacerSituationObject
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacer_GetRacerSituationObject final
+{
+public:
+	class UUnionRaceSituationObject*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_GetRacerSituationObject) == 0x000008, "Wrong alignment on UnionRacer_GetRacerSituationObject");
+static_assert(sizeof(UnionRacer_GetRacerSituationObject) == 0x000008, "Wrong size on UnionRacer_GetRacerSituationObject");
+static_assert(offsetof(UnionRacer_GetRacerSituationObject, ReturnValue) == 0x000000, "Member 'UnionRacer_GetRacerSituationObject::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.GetRacerStatusObject
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacer_GetRacerStatusObject final
+{
+public:
+	class UUnionRacerStatusObject*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_GetRacerStatusObject) == 0x000008, "Wrong alignment on UnionRacer_GetRacerStatusObject");
+static_assert(sizeof(UnionRacer_GetRacerStatusObject) == 0x000008, "Wrong size on UnionRacer_GetRacerStatusObject");
+static_assert(offsetof(UnionRacer_GetRacerStatusObject, ReturnValue) == 0x000000, "Member 'UnionRacer_GetRacerStatusObject::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.GetTestRaceCount
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_GetTestRaceCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_GetTestRaceCount) == 0x000004, "Wrong alignment on UnionRacer_GetTestRaceCount");
+static_assert(sizeof(UnionRacer_GetTestRaceCount) == 0x000004, "Wrong size on UnionRacer_GetTestRaceCount");
+static_assert(offsetof(UnionRacer_GetTestRaceCount, ReturnValue) == 0x000000, "Member 'UnionRacer_GetTestRaceCount::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.SetPlayerControllerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_SetPlayerControllerIndex final
+{
+public:
+	int32                                         InPlayerControllerIndex;                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_SetPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacer_SetPlayerControllerIndex");
+static_assert(sizeof(UnionRacer_SetPlayerControllerIndex) == 0x000004, "Wrong size on UnionRacer_SetPlayerControllerIndex");
+static_assert(offsetof(UnionRacer_SetPlayerControllerIndex, InPlayerControllerIndex) == 0x000000, "Member 'UnionRacer_SetPlayerControllerIndex::InPlayerControllerIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.SetRaceLapInfo
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacer_SetRaceLapInfo final
+{
+public:
+	class UUnionRaceLapInfo*                      InRaceLapInfo;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_SetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacer_SetRaceLapInfo");
+static_assert(sizeof(UnionRacer_SetRaceLapInfo) == 0x000008, "Wrong size on UnionRacer_SetRaceLapInfo");
+static_assert(offsetof(UnionRacer_SetRaceLapInfo, InRaceLapInfo) == 0x000000, "Member 'UnionRacer_SetRaceLapInfo::InRaceLapInfo' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.SetRacerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_SetRacerIndex final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_SetRacerIndex) == 0x000004, "Wrong alignment on UnionRacer_SetRacerIndex");
+static_assert(sizeof(UnionRacer_SetRacerIndex) == 0x000004, "Wrong size on UnionRacer_SetRacerIndex");
+static_assert(offsetof(UnionRacer_SetRacerIndex, InRacerIndex) == 0x000000, "Member 'UnionRacer_SetRacerIndex::InRacerIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.SetTickable
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacer_SetTickable final
+{
+public:
+	bool                                          bTickable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_SetTickable) == 0x000001, "Wrong alignment on UnionRacer_SetTickable");
+static_assert(sizeof(UnionRacer_SetTickable) == 0x000001, "Wrong size on UnionRacer_SetTickable");
+static_assert(offsetof(UnionRacer_SetTickable, bTickable) == 0x000000, "Member 'UnionRacer_SetTickable::bTickable' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.SetVehicle
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacer_SetVehicle final
+{
+public:
+	class APawn*                                  InVehicle;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_SetVehicle) == 0x000008, "Wrong alignment on UnionRacer_SetVehicle");
+static_assert(sizeof(UnionRacer_SetVehicle) == 0x000008, "Wrong size on UnionRacer_SetVehicle");
+static_assert(offsetof(UnionRacer_SetVehicle, InVehicle) == 0x000000, "Member 'UnionRacer_SetVehicle::InVehicle' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.SetViewSplitId
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacer_SetViewSplitId final
+{
+public:
+	EViewSplitId                                  InViewSplitId;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_SetViewSplitId) == 0x000001, "Wrong alignment on UnionRacer_SetViewSplitId");
+static_assert(sizeof(UnionRacer_SetViewSplitId) == 0x000001, "Wrong size on UnionRacer_SetViewSplitId");
+static_assert(offsetof(UnionRacer_SetViewSplitId, InViewSplitId) == 0x000000, "Member 'UnionRacer_SetViewSplitId::InViewSplitId' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.UnionRacer_SetTimerDelegate
+// 0x0020 (0x0020 - 0x0000)
+struct UnionRacer_UnionRacer_SetTimerDelegate final
+{
+public:
+	TDelegate<void()>                             Delegate;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Time;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLooping;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_UnionRacer_SetTimerDelegate) == 0x000008, "Wrong alignment on UnionRacer_UnionRacer_SetTimerDelegate");
+static_assert(sizeof(UnionRacer_UnionRacer_SetTimerDelegate) == 0x000020, "Wrong size on UnionRacer_UnionRacer_SetTimerDelegate");
+static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, Delegate) == 0x000000, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::Delegate' has a wrong offset!");
+static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, Time) == 0x000010, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::Time' has a wrong offset!");
+static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, bLooping) == 0x000014, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::bLooping' has a wrong offset!");
+static_assert(offsetof(UnionRacer_UnionRacer_SetTimerDelegate, ReturnValue) == 0x000018, "Member 'UnionRacer_UnionRacer_SetTimerDelegate::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.UpdateTestRace
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_UpdateTestRace final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_UpdateTestRace) == 0x000004, "Wrong alignment on UnionRacer_UpdateTestRace");
+static_assert(sizeof(UnionRacer_UpdateTestRace) == 0x000004, "Wrong size on UnionRacer_UpdateTestRace");
+static_assert(offsetof(UnionRacer_UpdateTestRace, Delta) == 0x000000, "Member 'UnionRacer_UpdateTestRace::Delta' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.UpdateVehicle
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacer_UpdateVehicle final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_UpdateVehicle) == 0x000004, "Wrong alignment on UnionRacer_UpdateVehicle");
+static_assert(sizeof(UnionRacer_UpdateVehicle) == 0x000004, "Wrong size on UnionRacer_UpdateVehicle");
+static_assert(offsetof(UnionRacer_UpdateVehicle, Delta) == 0x000000, "Member 'UnionRacer_UpdateVehicle::Delta' has a wrong offset!");
+
+// Function UnionRun.UnionRacer.GetViewSplitId
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacer_GetViewSplitId final
+{
+public:
+	EViewSplitId                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacer_GetViewSplitId) == 0x000001, "Wrong alignment on UnionRacer_GetViewSplitId");
+static_assert(sizeof(UnionRacer_GetViewSplitId) == 0x000001, "Wrong size on UnionRacer_GetViewSplitId");
+static_assert(offsetof(UnionRacer_GetViewSplitId, ReturnValue) == 0x000000, "Member 'UnionRacer_GetViewSplitId::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRaceReturnDashUI.GetButtonWidget
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceReturnDashUI_GetButtonWidget final
+{
+public:
+	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceReturnDashUI_GetButtonWidget) == 0x000008, "Wrong alignment on UnionRaceReturnDashUI_GetButtonWidget");
+static_assert(sizeof(UnionRaceReturnDashUI_GetButtonWidget) == 0x000008, "Wrong size on UnionRaceReturnDashUI_GetButtonWidget");
+static_assert(offsetof(UnionRaceReturnDashUI_GetButtonWidget, ReturnValue) == 0x000000, "Member 'UnionRaceReturnDashUI_GetButtonWidget::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRaceReturnDashUI.SetGaugeParcent
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRaceReturnDashUI_SetGaugeParcent final
+{
+public:
+	float                                         GaugeRate;                                         // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceReturnDashUI_SetGaugeParcent) == 0x000004, "Wrong alignment on UnionRaceReturnDashUI_SetGaugeParcent");
+static_assert(sizeof(UnionRaceReturnDashUI_SetGaugeParcent) == 0x000004, "Wrong size on UnionRaceReturnDashUI_SetGaugeParcent");
+static_assert(offsetof(UnionRaceReturnDashUI_SetGaugeParcent, GaugeRate) == 0x000000, "Member 'UnionRaceReturnDashUI_SetGaugeParcent::GaugeRate' has a wrong offset!");
+
+// Function UnionRun.UnionRaceReturnDashUI.SetReturnDashSetting
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRaceReturnDashUI_SetReturnDashSetting final
+{
+public:
+	float                                         Pivot;                                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Range;                                             // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceReturnDashUI_SetReturnDashSetting) == 0x000004, "Wrong alignment on UnionRaceReturnDashUI_SetReturnDashSetting");
+static_assert(sizeof(UnionRaceReturnDashUI_SetReturnDashSetting) == 0x000008, "Wrong size on UnionRaceReturnDashUI_SetReturnDashSetting");
+static_assert(offsetof(UnionRaceReturnDashUI_SetReturnDashSetting, Pivot) == 0x000000, "Member 'UnionRaceReturnDashUI_SetReturnDashSetting::Pivot' has a wrong offset!");
+static_assert(offsetof(UnionRaceReturnDashUI_SetReturnDashSetting, Range) == 0x000004, "Member 'UnionRaceReturnDashUI_SetReturnDashSetting::Range' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.GetDistance
+// 0x0038 (0x0038 - 0x0000)
+struct UnionRacerFunction_GetDistance final
+{
+public:
+	struct FVector                                Pos1;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Pos2;                                              // 0x0018(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacerFunction_GetDistance) == 0x000008, "Wrong alignment on UnionRacerFunction_GetDistance");
+static_assert(sizeof(UnionRacerFunction_GetDistance) == 0x000038, "Wrong size on UnionRacerFunction_GetDistance");
+static_assert(offsetof(UnionRacerFunction_GetDistance, Pos1) == 0x000000, "Member 'UnionRacerFunction_GetDistance::Pos1' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_GetDistance, Pos2) == 0x000018, "Member 'UnionRacerFunction_GetDistance::Pos2' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_GetDistance, ReturnValue) == 0x000030, "Member 'UnionRacerFunction_GetDistance::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.GetRacerGroupIndex
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacerFunction_GetRacerGroupIndex final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacerFunction_GetRacerGroupIndex) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRacerGroupIndex");
+static_assert(sizeof(UnionRacerFunction_GetRacerGroupIndex) == 0x000008, "Wrong size on UnionRacerFunction_GetRacerGroupIndex");
+static_assert(offsetof(UnionRacerFunction_GetRacerGroupIndex, InRacerIndex) == 0x000000, "Member 'UnionRacerFunction_GetRacerGroupIndex::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_GetRacerGroupIndex, ReturnValue) == 0x000004, "Member 'UnionRacerFunction_GetRacerGroupIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.GetRacerIndexByDriverID
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacerFunction_GetRacerIndexByDriverID final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacerFunction_GetRacerIndexByDriverID) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRacerIndexByDriverID");
+static_assert(sizeof(UnionRacerFunction_GetRacerIndexByDriverID) == 0x000008, "Wrong size on UnionRacerFunction_GetRacerIndexByDriverID");
+static_assert(offsetof(UnionRacerFunction_GetRacerIndexByDriverID, DriverId) == 0x000000, "Member 'UnionRacerFunction_GetRacerIndexByDriverID::DriverId' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_GetRacerIndexByDriverID, ReturnValue) == 0x000004, "Member 'UnionRacerFunction_GetRacerIndexByDriverID::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.GetRacerIndexByPlayerID
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacerFunction_GetRacerIndexByPlayerID final
+{
+public:
+	int32                                         PlayerId;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacerFunction_GetRacerIndexByPlayerID) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRacerIndexByPlayerID");
+static_assert(sizeof(UnionRacerFunction_GetRacerIndexByPlayerID) == 0x000008, "Wrong size on UnionRacerFunction_GetRacerIndexByPlayerID");
+static_assert(offsetof(UnionRacerFunction_GetRacerIndexByPlayerID, PlayerId) == 0x000000, "Member 'UnionRacerFunction_GetRacerIndexByPlayerID::PlayerId' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_GetRacerIndexByPlayerID, ReturnValue) == 0x000004, "Member 'UnionRacerFunction_GetRacerIndexByPlayerID::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.GetRankingSkipInterval
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacerFunction_GetRankingSkipInterval final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacerFunction_GetRankingSkipInterval) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRankingSkipInterval");
+static_assert(sizeof(UnionRacerFunction_GetRankingSkipInterval) == 0x000004, "Wrong size on UnionRacerFunction_GetRankingSkipInterval");
+static_assert(offsetof(UnionRacerFunction_GetRankingSkipInterval, ReturnValue) == 0x000000, "Member 'UnionRacerFunction_GetRankingSkipInterval::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.GetRankUpGaugeSpeed
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacerFunction_GetRankUpGaugeSpeed final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacerFunction_GetRankUpGaugeSpeed) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRankUpGaugeSpeed");
+static_assert(sizeof(UnionRacerFunction_GetRankUpGaugeSpeed) == 0x000004, "Wrong size on UnionRacerFunction_GetRankUpGaugeSpeed");
+static_assert(offsetof(UnionRacerFunction_GetRankUpGaugeSpeed, ReturnValue) == 0x000000, "Member 'UnionRacerFunction_GetRankUpGaugeSpeed::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.GetUnionRacers
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacerFunction_GetUnionRacers final
+{
+public:
+	class UUnionRacers*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacerFunction_GetUnionRacers) == 0x000008, "Wrong alignment on UnionRacerFunction_GetUnionRacers");
+static_assert(sizeof(UnionRacerFunction_GetUnionRacers) == 0x000008, "Wrong size on UnionRacerFunction_GetUnionRacers");
+static_assert(offsetof(UnionRacerFunction_GetUnionRacers, ReturnValue) == 0x000000, "Member 'UnionRacerFunction_GetUnionRacers::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.IsInScreen
+// 0x0028 (0x0028 - 0x0000)
+struct UnionRacerFunction_IsInScreen final
+{
+public:
+	const class APlayerController*                PlayerController;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Position;                                          // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacerFunction_IsInScreen) == 0x000008, "Wrong alignment on UnionRacerFunction_IsInScreen");
+static_assert(sizeof(UnionRacerFunction_IsInScreen) == 0x000028, "Wrong size on UnionRacerFunction_IsInScreen");
+static_assert(offsetof(UnionRacerFunction_IsInScreen, PlayerController) == 0x000000, "Member 'UnionRacerFunction_IsInScreen::PlayerController' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_IsInScreen, Position) == 0x000008, "Member 'UnionRacerFunction_IsInScreen::Position' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_IsInScreen, ReturnValue) == 0x000020, "Member 'UnionRacerFunction_IsInScreen::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacerFunction.IsSameGroup
+// 0x000C (0x000C - 0x0000)
+struct UnionRacerFunction_IsSameGroup final
+{
+public:
+	int32                                         InRacerIndexA;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InRacerIndexB;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacerFunction_IsSameGroup) == 0x000004, "Wrong alignment on UnionRacerFunction_IsSameGroup");
+static_assert(sizeof(UnionRacerFunction_IsSameGroup) == 0x00000C, "Wrong size on UnionRacerFunction_IsSameGroup");
+static_assert(offsetof(UnionRacerFunction_IsSameGroup, InRacerIndexA) == 0x000000, "Member 'UnionRacerFunction_IsSameGroup::InRacerIndexA' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_IsSameGroup, InRacerIndexB) == 0x000004, "Member 'UnionRacerFunction_IsSameGroup::InRacerIndexB' has a wrong offset!");
+static_assert(offsetof(UnionRacerFunction_IsSameGroup, ReturnValue) == 0x000008, "Member 'UnionRacerFunction_IsSameGroup::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetDriverIdByRacerIndex
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_GetDriverIdByRacerIndex final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacers_GetDriverIdByRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetDriverIdByRacerIndex");
+static_assert(sizeof(UnionRacers_GetDriverIdByRacerIndex) == 0x000008, "Wrong size on UnionRacers_GetDriverIdByRacerIndex");
+static_assert(offsetof(UnionRacers_GetDriverIdByRacerIndex, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetDriverIdByRacerIndex::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetDriverIdByRacerIndex, ReturnValue) == 0x000004, "Member 'UnionRacers_GetDriverIdByRacerIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.ChangeVehicleDisplayMode
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_ChangeVehicleDisplayMode final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EVehicleDisplayMode                           InVehicleDisplayMode;                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacers_ChangeVehicleDisplayMode) == 0x000004, "Wrong alignment on UnionRacers_ChangeVehicleDisplayMode");
+static_assert(sizeof(UnionRacers_ChangeVehicleDisplayMode) == 0x000008, "Wrong size on UnionRacers_ChangeVehicleDisplayMode");
+static_assert(offsetof(UnionRacers_ChangeVehicleDisplayMode, InRacerIndex) == 0x000000, "Member 'UnionRacers_ChangeVehicleDisplayMode::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_ChangeVehicleDisplayMode, InVehicleDisplayMode) == 0x000004, "Member 'UnionRacers_ChangeVehicleDisplayMode::InVehicleDisplayMode' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.Destroy
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacers_Destroy final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_Destroy) == 0x000001, "Wrong alignment on UnionRacers_Destroy");
+static_assert(sizeof(UnionRacers_Destroy) == 0x000001, "Wrong size on UnionRacers_Destroy");
+static_assert(offsetof(UnionRacers_Destroy, ReturnValue) == 0x000000, "Member 'UnionRacers_Destroy::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.ExecTick
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_ExecTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_ExecTick) == 0x000004, "Wrong alignment on UnionRacers_ExecTick");
+static_assert(sizeof(UnionRacers_ExecTick) == 0x000004, "Wrong size on UnionRacers_ExecTick");
+static_assert(offsetof(UnionRacers_ExecTick, DeltaSeconds) == 0x000000, "Member 'UnionRacers_ExecTick::DeltaSeconds' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetLocalPlayers
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_GetLocalPlayers final
+{
+public:
+	TArray<class UUnionRacer*>                    OutRacers;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetLocalPlayers) == 0x000008, "Wrong alignment on UnionRacers_GetLocalPlayers");
+static_assert(sizeof(UnionRacers_GetLocalPlayers) == 0x000010, "Wrong size on UnionRacers_GetLocalPlayers");
+static_assert(offsetof(UnionRacers_GetLocalPlayers, OutRacers) == 0x000000, "Member 'UnionRacers_GetLocalPlayers::OutRacers' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetPlayerRank
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_GetPlayerRank final
+{
+public:
+	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetPlayerRank) == 0x000004, "Wrong alignment on UnionRacers_GetPlayerRank");
+static_assert(sizeof(UnionRacers_GetPlayerRank) == 0x000008, "Wrong size on UnionRacers_GetPlayerRank");
+static_assert(offsetof(UnionRacers_GetPlayerRank, PlayerIndex) == 0x000000, "Member 'UnionRacers_GetPlayerRank::PlayerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetPlayerRank, ReturnValue) == 0x000004, "Member 'UnionRacers_GetPlayerRank::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRaceHUDRef
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_GetRaceHUDRef final
+{
+public:
+	class UUnionRaceUI*                           ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRaceHUDRef) == 0x000008, "Wrong alignment on UnionRacers_GetRaceHUDRef");
+static_assert(sizeof(UnionRacers_GetRaceHUDRef) == 0x000008, "Wrong size on UnionRacers_GetRaceHUDRef");
+static_assert(offsetof(UnionRacers_GetRaceHUDRef, ReturnValue) == 0x000000, "Member 'UnionRacers_GetRaceHUDRef::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRaceLapInfo
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_GetRaceLapInfo final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceLapInfo*                      ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacers_GetRaceLapInfo");
+static_assert(sizeof(UnionRacers_GetRaceLapInfo) == 0x000010, "Wrong size on UnionRacers_GetRaceLapInfo");
+static_assert(offsetof(UnionRacers_GetRaceLapInfo, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRaceLapInfo::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRaceLapInfo, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRaceLapInfo::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRacer
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_GetRacer final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacer*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRacer) == 0x000008, "Wrong alignment on UnionRacers_GetRacer");
+static_assert(sizeof(UnionRacers_GetRacer) == 0x000010, "Wrong size on UnionRacers_GetRacer");
+static_assert(offsetof(UnionRacers_GetRacer, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRacer::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacer, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacer::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRacer3DPositionAndDomainNumber
+// 0x0020 (0x0020 - 0x0000)
+struct UnionRacers_GetRacer3DPositionAndDomainNumber final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDomainNumber                                 DomainNum;                                         // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRacer3DPositionAndDomainNumber) == 0x000008, "Wrong alignment on UnionRacers_GetRacer3DPositionAndDomainNumber");
+static_assert(sizeof(UnionRacers_GetRacer3DPositionAndDomainNumber) == 0x000020, "Wrong size on UnionRacers_GetRacer3DPositionAndDomainNumber");
+static_assert(offsetof(UnionRacers_GetRacer3DPositionAndDomainNumber, Index_0) == 0x000000, "Member 'UnionRacers_GetRacer3DPositionAndDomainNumber::Index_0' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacer3DPositionAndDomainNumber, DomainNum) == 0x000004, "Member 'UnionRacers_GetRacer3DPositionAndDomainNumber::DomainNum' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacer3DPositionAndDomainNumber, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacer3DPositionAndDomainNumber::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRacerIndexByRank
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_GetRacerIndexByRank final
+{
+public:
+	int32                                         InRank;                                            // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRacerIndexByRank) == 0x000004, "Wrong alignment on UnionRacers_GetRacerIndexByRank");
+static_assert(sizeof(UnionRacers_GetRacerIndexByRank) == 0x000008, "Wrong size on UnionRacers_GetRacerIndexByRank");
+static_assert(offsetof(UnionRacers_GetRacerIndexByRank, InRank) == 0x000000, "Member 'UnionRacers_GetRacerIndexByRank::InRank' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacerIndexByRank, ReturnValue) == 0x000004, "Member 'UnionRacers_GetRacerIndexByRank::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRacerRank
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_GetRacerRank final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRacerRank) == 0x000004, "Wrong alignment on UnionRacers_GetRacerRank");
+static_assert(sizeof(UnionRacers_GetRacerRank) == 0x000008, "Wrong size on UnionRacers_GetRacerRank");
+static_assert(offsetof(UnionRacers_GetRacerRank, Index_0) == 0x000000, "Member 'UnionRacers_GetRacerRank::Index_0' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacerRank, ReturnValue) == 0x000004, "Member 'UnionRacers_GetRacerRank::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRacerSituationObject
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_GetRacerSituationObject final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceSituationObject*              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRacerSituationObject) == 0x000008, "Wrong alignment on UnionRacers_GetRacerSituationObject");
+static_assert(sizeof(UnionRacers_GetRacerSituationObject) == 0x000010, "Wrong size on UnionRacers_GetRacerSituationObject");
+static_assert(offsetof(UnionRacers_GetRacerSituationObject, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRacerSituationObject::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacerSituationObject, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacerSituationObject::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRacerStatusObject
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_GetRacerStatusObject final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacerStatusObject*                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRacerStatusObject) == 0x000008, "Wrong alignment on UnionRacers_GetRacerStatusObject");
+static_assert(sizeof(UnionRacers_GetRacerStatusObject) == 0x000010, "Wrong size on UnionRacers_GetRacerStatusObject");
+static_assert(offsetof(UnionRacers_GetRacerStatusObject, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRacerStatusObject::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacerStatusObject, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacerStatusObject::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetTestRaceCount
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_GetTestRaceCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetTestRaceCount) == 0x000004, "Wrong alignment on UnionRacers_GetTestRaceCount");
+static_assert(sizeof(UnionRacers_GetTestRaceCount) == 0x000004, "Wrong size on UnionRacers_GetTestRaceCount");
+static_assert(offsetof(UnionRacers_GetTestRaceCount, ReturnValue) == 0x000000, "Member 'UnionRacers_GetTestRaceCount::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.IsOfflinePlayer
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_IsOfflinePlayer final
+{
+public:
+	class UUnionRacer*                            Racer;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacers_IsOfflinePlayer) == 0x000008, "Wrong alignment on UnionRacers_IsOfflinePlayer");
+static_assert(sizeof(UnionRacers_IsOfflinePlayer) == 0x000010, "Wrong size on UnionRacers_IsOfflinePlayer");
+static_assert(offsetof(UnionRacers_IsOfflinePlayer, Racer) == 0x000000, "Member 'UnionRacers_IsOfflinePlayer::Racer' has a wrong offset!");
+static_assert(offsetof(UnionRacers_IsOfflinePlayer, ReturnValue) == 0x000008, "Member 'UnionRacers_IsOfflinePlayer::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.IsOnlineCom
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_IsOnlineCom final
+{
+public:
+	class UUnionRacer*                            Racer;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacers_IsOnlineCom) == 0x000008, "Wrong alignment on UnionRacers_IsOnlineCom");
+static_assert(sizeof(UnionRacers_IsOnlineCom) == 0x000010, "Wrong size on UnionRacers_IsOnlineCom");
+static_assert(offsetof(UnionRacers_IsOnlineCom, Racer) == 0x000000, "Member 'UnionRacers_IsOnlineCom::Racer' has a wrong offset!");
+static_assert(offsetof(UnionRacers_IsOnlineCom, ReturnValue) == 0x000008, "Member 'UnionRacers_IsOnlineCom::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.IsPlayer
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_IsPlayer final
+{
+public:
+	class UUnionRacer*                            Racer;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionRacers_IsPlayer) == 0x000008, "Wrong alignment on UnionRacers_IsPlayer");
+static_assert(sizeof(UnionRacers_IsPlayer) == 0x000010, "Wrong size on UnionRacers_IsPlayer");
+static_assert(offsetof(UnionRacers_IsPlayer, Racer) == 0x000000, "Member 'UnionRacers_IsPlayer::Racer' has a wrong offset!");
+static_assert(offsetof(UnionRacers_IsPlayer, ReturnValue) == 0x000008, "Member 'UnionRacers_IsPlayer::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.SetLinkPlayerControllerIndexToRacerIndex
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_SetLinkPlayerControllerIndexToRacerIndex final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InRacerIndex;                                      // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_SetLinkPlayerControllerIndexToRacerIndex");
+static_assert(sizeof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex) == 0x000008, "Wrong size on UnionRacers_SetLinkPlayerControllerIndexToRacerIndex");
+static_assert(offsetof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionRacers_SetLinkPlayerControllerIndexToRacerIndex::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex, InRacerIndex) == 0x000004, "Member 'UnionRacers_SetLinkPlayerControllerIndexToRacerIndex::InRacerIndex' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.SetRaceLapInfo
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_SetRaceLapInfo final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceLapInfo*                      InRaceLapInfo;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_SetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacers_SetRaceLapInfo");
+static_assert(sizeof(UnionRacers_SetRaceLapInfo) == 0x000010, "Wrong size on UnionRacers_SetRaceLapInfo");
+static_assert(offsetof(UnionRacers_SetRaceLapInfo, InRacerIndex) == 0x000000, "Member 'UnionRacers_SetRaceLapInfo::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_SetRaceLapInfo, InRaceLapInfo) == 0x000008, "Member 'UnionRacers_SetRaceLapInfo::InRaceLapInfo' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.SetTickable
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRacers_SetTickable final
+{
+public:
+	bool                                          bTickable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_SetTickable) == 0x000001, "Wrong alignment on UnionRacers_SetTickable");
+static_assert(sizeof(UnionRacers_SetTickable) == 0x000001, "Wrong size on UnionRacers_SetTickable");
+static_assert(offsetof(UnionRacers_SetTickable, bTickable) == 0x000000, "Member 'UnionRacers_SetTickable::bTickable' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.SetVehicle
+// 0x0010 (0x0010 - 0x0000)
+struct UnionRacers_SetVehicle final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  InVehicle;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_SetVehicle) == 0x000008, "Wrong alignment on UnionRacers_SetVehicle");
+static_assert(sizeof(UnionRacers_SetVehicle) == 0x000010, "Wrong size on UnionRacers_SetVehicle");
+static_assert(offsetof(UnionRacers_SetVehicle, InRacerIndex) == 0x000000, "Member 'UnionRacers_SetVehicle::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_SetVehicle, InVehicle) == 0x000008, "Member 'UnionRacers_SetVehicle::InVehicle' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.UnionRacers_SetTimerDelegate
+// 0x0020 (0x0020 - 0x0000)
+struct UnionRacers_UnionRacers_SetTimerDelegate final
+{
+public:
+	TDelegate<void()>                             Delegate;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Time;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLooping;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_UnionRacers_SetTimerDelegate) == 0x000008, "Wrong alignment on UnionRacers_UnionRacers_SetTimerDelegate");
+static_assert(sizeof(UnionRacers_UnionRacers_SetTimerDelegate) == 0x000020, "Wrong size on UnionRacers_UnionRacers_SetTimerDelegate");
+static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, Delegate) == 0x000000, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::Delegate' has a wrong offset!");
+static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, Time) == 0x000010, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::Time' has a wrong offset!");
+static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, bLooping) == 0x000014, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::bLooping' has a wrong offset!");
+static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, ReturnValue) == 0x000018, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.UpdateBaggage
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_UpdateBaggage final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_UpdateBaggage) == 0x000004, "Wrong alignment on UnionRacers_UpdateBaggage");
+static_assert(sizeof(UnionRacers_UpdateBaggage) == 0x000004, "Wrong size on UnionRacers_UpdateBaggage");
+static_assert(offsetof(UnionRacers_UpdateBaggage, Delta) == 0x000000, "Member 'UnionRacers_UpdateBaggage::Delta' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.UpdateDomain
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_UpdateDomain final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_UpdateDomain) == 0x000004, "Wrong alignment on UnionRacers_UpdateDomain");
+static_assert(sizeof(UnionRacers_UpdateDomain) == 0x000004, "Wrong size on UnionRacers_UpdateDomain");
+static_assert(offsetof(UnionRacers_UpdateDomain, Delta) == 0x000000, "Member 'UnionRacers_UpdateDomain::Delta' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.UpdatePlayerNameHUD
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_UpdatePlayerNameHUD final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_UpdatePlayerNameHUD) == 0x000004, "Wrong alignment on UnionRacers_UpdatePlayerNameHUD");
+static_assert(sizeof(UnionRacers_UpdatePlayerNameHUD) == 0x000004, "Wrong size on UnionRacers_UpdatePlayerNameHUD");
+static_assert(offsetof(UnionRacers_UpdatePlayerNameHUD, Delta) == 0x000000, "Member 'UnionRacers_UpdatePlayerNameHUD::Delta' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.UpdateTestRace
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_UpdateTestRace final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_UpdateTestRace) == 0x000004, "Wrong alignment on UnionRacers_UpdateTestRace");
+static_assert(sizeof(UnionRacers_UpdateTestRace) == 0x000004, "Wrong size on UnionRacers_UpdateTestRace");
+static_assert(offsetof(UnionRacers_UpdateTestRace, Delta) == 0x000000, "Member 'UnionRacers_UpdateTestRace::Delta' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.UpdateVehicles
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_UpdateVehicles final
+{
+public:
+	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_UpdateVehicles) == 0x000004, "Wrong alignment on UnionRacers_UpdateVehicles");
+static_assert(sizeof(UnionRacers_UpdateVehicles) == 0x000004, "Wrong size on UnionRacers_UpdateVehicles");
+static_assert(offsetof(UnionRacers_UpdateVehicles, Delta) == 0x000000, "Member 'UnionRacers_UpdateVehicles::Delta' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetGamePauseOwnerPlayerControllerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_GetGamePauseOwnerPlayerControllerIndex final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetGamePauseOwnerPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetGamePauseOwnerPlayerControllerIndex");
+static_assert(sizeof(UnionRacers_GetGamePauseOwnerPlayerControllerIndex) == 0x000004, "Wrong size on UnionRacers_GetGamePauseOwnerPlayerControllerIndex");
+static_assert(offsetof(UnionRacers_GetGamePauseOwnerPlayerControllerIndex, ReturnValue) == 0x000000, "Member 'UnionRacers_GetGamePauseOwnerPlayerControllerIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetGamePauseOwnerRacerIndex
+// 0x0004 (0x0004 - 0x0000)
+struct UnionRacers_GetGamePauseOwnerRacerIndex final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetGamePauseOwnerRacerIndex");
+static_assert(sizeof(UnionRacers_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong size on UnionRacers_GetGamePauseOwnerRacerIndex");
+static_assert(offsetof(UnionRacers_GetGamePauseOwnerRacerIndex, ReturnValue) == 0x000000, "Member 'UnionRacers_GetGamePauseOwnerRacerIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetPlayerControllerIndexByRacerIndex
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_GetPlayerControllerIndexByRacerIndex final
+{
+public:
+	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetPlayerControllerIndexByRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetPlayerControllerIndexByRacerIndex");
+static_assert(sizeof(UnionRacers_GetPlayerControllerIndexByRacerIndex) == 0x000008, "Wrong size on UnionRacers_GetPlayerControllerIndexByRacerIndex");
+static_assert(offsetof(UnionRacers_GetPlayerControllerIndexByRacerIndex, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetPlayerControllerIndexByRacerIndex::InRacerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetPlayerControllerIndexByRacerIndex, ReturnValue) == 0x000004, "Member 'UnionRacers_GetPlayerControllerIndexByRacerIndex::ReturnValue' has a wrong offset!");
+
+// Function UnionRun.UnionRacers.GetRacerIndexByPlayerControllerIndex
+// 0x0008 (0x0008 - 0x0000)
+struct UnionRacers_GetRacerIndexByPlayerControllerIndex final
+{
+public:
+	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRacers_GetRacerIndexByPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetRacerIndexByPlayerControllerIndex");
+static_assert(sizeof(UnionRacers_GetRacerIndexByPlayerControllerIndex) == 0x000008, "Wrong size on UnionRacers_GetRacerIndexByPlayerControllerIndex");
+static_assert(offsetof(UnionRacers_GetRacerIndexByPlayerControllerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionRacers_GetRacerIndexByPlayerControllerIndex::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRacers_GetRacerIndexByPlayerControllerIndex, ReturnValue) == 0x000004, "Member 'UnionRacers_GetRacerIndexByPlayerControllerIndex::ReturnValue' has a wrong offset!");
 
 // Function UnionRun.UnionRacerStatusObject.AddRaceCustomParam
 // 0x0014 (0x0014 - 0x0000)
@@ -7468,528 +10617,6 @@ static_assert(alignof(UnionRacerStatusObject_IsTSRKeyAssignEnabled) == 0x000001,
 static_assert(sizeof(UnionRacerStatusObject_IsTSRKeyAssignEnabled) == 0x000001, "Wrong size on UnionRacerStatusObject_IsTSRKeyAssignEnabled");
 static_assert(offsetof(UnionRacerStatusObject_IsTSRKeyAssignEnabled, ReturnValue) == 0x000000, "Member 'UnionRacerStatusObject_IsTSRKeyAssignEnabled::ReturnValue' has a wrong offset!");
 
-// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickInfoAndFireAnimation
-// 0x000C (0x000C - 0x0000)
-struct RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation final
-{
-public:
-	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SuccessBonusCount;                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGhostView;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation) == 0x000004, "Wrong alignment on RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation");
-static_assert(sizeof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation) == 0x00000C, "Wrong size on RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation::SuccessCount' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation, SuccessBonusCount) == 0x000004, "Member 'RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation::SuccessBonusCount' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation, IsGhostView) == 0x000008, "Member 'RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation::IsGhostView' has a wrong offset!");
-
-// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickTextInfo
-// 0x0030 (0x0030 - 0x0000)
-struct RaceUISubAirTrickInfo_SetAirTrickTextInfo final
-{
-public:
-	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UImage*                                 Tex_1000;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Tex_0100;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Tex_0010;                                          // 0x0018(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Tex_0001;                                          // 0x0020(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Tex_Unit;                                          // 0x0028(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubAirTrickInfo_SetAirTrickTextInfo) == 0x000008, "Wrong alignment on RaceUISubAirTrickInfo_SetAirTrickTextInfo");
-static_assert(sizeof(RaceUISubAirTrickInfo_SetAirTrickTextInfo) == 0x000030, "Wrong size on RaceUISubAirTrickInfo_SetAirTrickTextInfo");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::SuccessCount' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_1000) == 0x000008, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_1000' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_0100) == 0x000010, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_0100' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_0010) == 0x000018, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_0010' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_0001) == 0x000020, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_0001' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_SetAirTrickTextInfo, Tex_Unit) == 0x000028, "Member 'RaceUISubAirTrickInfo_SetAirTrickTextInfo::Tex_Unit' has a wrong offset!");
-
-// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickBonusValue
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubAirTrickInfo_GetAirTrickBonusValue final
-{
-public:
-	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubAirTrickInfo_GetAirTrickBonusValue) == 0x000004, "Wrong alignment on RaceUISubAirTrickInfo_GetAirTrickBonusValue");
-static_assert(sizeof(RaceUISubAirTrickInfo_GetAirTrickBonusValue) == 0x000008, "Wrong size on RaceUISubAirTrickInfo_GetAirTrickBonusValue");
-static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickBonusValue, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_GetAirTrickBonusValue::SuccessCount' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickBonusValue, ReturnValue) == 0x000004, "Member 'RaceUISubAirTrickInfo_GetAirTrickBonusValue::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickValue
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubAirTrickInfo_GetAirTrickValue final
-{
-public:
-	int32                                         SuccessCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubAirTrickInfo_GetAirTrickValue) == 0x000004, "Wrong alignment on RaceUISubAirTrickInfo_GetAirTrickValue");
-static_assert(sizeof(RaceUISubAirTrickInfo_GetAirTrickValue) == 0x000008, "Wrong size on RaceUISubAirTrickInfo_GetAirTrickValue");
-static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickValue, SuccessCount) == 0x000000, "Member 'RaceUISubAirTrickInfo_GetAirTrickValue::SuccessCount' has a wrong offset!");
-static_assert(offsetof(RaceUISubAirTrickInfo_GetAirTrickValue, ReturnValue) == 0x000004, "Member 'RaceUISubAirTrickInfo_GetAirTrickValue::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubApproachWarning.InitItemEnemyApproachSetting
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubApproachWarning_InitItemEnemyApproachSetting final
-{
-public:
-	float                                         InMaxScale;                                        // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EUnionAttackItemInfoType                      AttackItemInfoType;                                // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         AttackItemId;                                      // 0x0005(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubApproachWarning_InitItemEnemyApproachSetting) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_InitItemEnemyApproachSetting");
-static_assert(sizeof(RaceUISubApproachWarning_InitItemEnemyApproachSetting) == 0x000008, "Wrong size on RaceUISubApproachWarning_InitItemEnemyApproachSetting");
-static_assert(offsetof(RaceUISubApproachWarning_InitItemEnemyApproachSetting, InMaxScale) == 0x000000, "Member 'RaceUISubApproachWarning_InitItemEnemyApproachSetting::InMaxScale' has a wrong offset!");
-static_assert(offsetof(RaceUISubApproachWarning_InitItemEnemyApproachSetting, AttackItemInfoType) == 0x000004, "Member 'RaceUISubApproachWarning_InitItemEnemyApproachSetting::AttackItemInfoType' has a wrong offset!");
-static_assert(offsetof(RaceUISubApproachWarning_InitItemEnemyApproachSetting, AttackItemId) == 0x000005, "Member 'RaceUISubApproachWarning_InitItemEnemyApproachSetting::AttackItemId' has a wrong offset!");
-
-// Function UnionRun.RaceUISubApproachWarning.OnPause
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubApproachWarning_OnPause final
-{
-public:
-	bool                                          bInPause;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubApproachWarning_OnPause) == 0x000001, "Wrong alignment on RaceUISubApproachWarning_OnPause");
-static_assert(sizeof(RaceUISubApproachWarning_OnPause) == 0x000001, "Wrong size on RaceUISubApproachWarning_OnPause");
-static_assert(offsetof(RaceUISubApproachWarning_OnPause, bInPause) == 0x000000, "Member 'RaceUISubApproachWarning_OnPause::bInPause' has a wrong offset!");
-
-// Function UnionRun.RaceUISubApproachWarning.SetAttackTypeandId
-// 0x0002 (0x0002 - 0x0000)
-struct RaceUISubApproachWarning_SetAttackTypeandId final
-{
-public:
-	EUnionAttackItemInfoType                      InAttackType;                                      // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemId                                       InItemId;                                          // 0x0001(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubApproachWarning_SetAttackTypeandId) == 0x000001, "Wrong alignment on RaceUISubApproachWarning_SetAttackTypeandId");
-static_assert(sizeof(RaceUISubApproachWarning_SetAttackTypeandId) == 0x000002, "Wrong size on RaceUISubApproachWarning_SetAttackTypeandId");
-static_assert(offsetof(RaceUISubApproachWarning_SetAttackTypeandId, InAttackType) == 0x000000, "Member 'RaceUISubApproachWarning_SetAttackTypeandId::InAttackType' has a wrong offset!");
-static_assert(offsetof(RaceUISubApproachWarning_SetAttackTypeandId, InItemId) == 0x000001, "Member 'RaceUISubApproachWarning_SetAttackTypeandId::InItemId' has a wrong offset!");
-
-// Function UnionRun.RaceUISubApproachWarning.SetDriverId
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubApproachWarning_SetDriverId final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubApproachWarning_SetDriverId) == 0x000001, "Wrong alignment on RaceUISubApproachWarning_SetDriverId");
-static_assert(sizeof(RaceUISubApproachWarning_SetDriverId) == 0x000001, "Wrong size on RaceUISubApproachWarning_SetDriverId");
-static_assert(offsetof(RaceUISubApproachWarning_SetDriverId, DriverId) == 0x000000, "Member 'RaceUISubApproachWarning_SetDriverId::DriverId' has a wrong offset!");
-
-// Function UnionRun.RaceUISubApproachWarning.SetItemId
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubApproachWarning_SetItemId final
-{
-public:
-	int32                                         InItemId;                                          // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubApproachWarning_SetItemId) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_SetItemId");
-static_assert(sizeof(RaceUISubApproachWarning_SetItemId) == 0x000004, "Wrong size on RaceUISubApproachWarning_SetItemId");
-static_assert(offsetof(RaceUISubApproachWarning_SetItemId, InItemId) == 0x000000, "Member 'RaceUISubApproachWarning_SetItemId::InItemId' has a wrong offset!");
-
-// Function UnionRun.RaceUISubApproachWarning.UpdateItemEnemyApproach
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubApproachWarning_UpdateItemEnemyApproach final
-{
-public:
-	float                                         ValueCM;                                           // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubApproachWarning_UpdateItemEnemyApproach) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_UpdateItemEnemyApproach");
-static_assert(sizeof(RaceUISubApproachWarning_UpdateItemEnemyApproach) == 0x000004, "Wrong size on RaceUISubApproachWarning_UpdateItemEnemyApproach");
-static_assert(offsetof(RaceUISubApproachWarning_UpdateItemEnemyApproach, ValueCM) == 0x000000, "Member 'RaceUISubApproachWarning_UpdateItemEnemyApproach::ValueCM' has a wrong offset!");
-
-// Function UnionRun.RaceUISubApproachWarning.UpdateRacerApproach
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubApproachWarning_UpdateRacerApproach final
-{
-public:
-	float                                         ValueCM;                                           // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubApproachWarning_UpdateRacerApproach) == 0x000004, "Wrong alignment on RaceUISubApproachWarning_UpdateRacerApproach");
-static_assert(sizeof(RaceUISubApproachWarning_UpdateRacerApproach) == 0x000004, "Wrong size on RaceUISubApproachWarning_UpdateRacerApproach");
-static_assert(offsetof(RaceUISubApproachWarning_UpdateRacerApproach, ValueCM) == 0x000000, "Member 'RaceUISubApproachWarning_UpdateRacerApproach::ValueCM' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.GetDistance
-// 0x0038 (0x0038 - 0x0000)
-struct UnionRacerFunction_GetDistance final
-{
-public:
-	struct FVector                                Pos1;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Pos2;                                              // 0x0018(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacerFunction_GetDistance) == 0x000008, "Wrong alignment on UnionRacerFunction_GetDistance");
-static_assert(sizeof(UnionRacerFunction_GetDistance) == 0x000038, "Wrong size on UnionRacerFunction_GetDistance");
-static_assert(offsetof(UnionRacerFunction_GetDistance, Pos1) == 0x000000, "Member 'UnionRacerFunction_GetDistance::Pos1' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_GetDistance, Pos2) == 0x000018, "Member 'UnionRacerFunction_GetDistance::Pos2' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_GetDistance, ReturnValue) == 0x000030, "Member 'UnionRacerFunction_GetDistance::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.GetRacerGroupIndex
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacerFunction_GetRacerGroupIndex final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacerFunction_GetRacerGroupIndex) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRacerGroupIndex");
-static_assert(sizeof(UnionRacerFunction_GetRacerGroupIndex) == 0x000008, "Wrong size on UnionRacerFunction_GetRacerGroupIndex");
-static_assert(offsetof(UnionRacerFunction_GetRacerGroupIndex, InRacerIndex) == 0x000000, "Member 'UnionRacerFunction_GetRacerGroupIndex::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_GetRacerGroupIndex, ReturnValue) == 0x000004, "Member 'UnionRacerFunction_GetRacerGroupIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.GetRacerIndexByDriverID
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacerFunction_GetRacerIndexByDriverID final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacerFunction_GetRacerIndexByDriverID) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRacerIndexByDriverID");
-static_assert(sizeof(UnionRacerFunction_GetRacerIndexByDriverID) == 0x000008, "Wrong size on UnionRacerFunction_GetRacerIndexByDriverID");
-static_assert(offsetof(UnionRacerFunction_GetRacerIndexByDriverID, DriverId) == 0x000000, "Member 'UnionRacerFunction_GetRacerIndexByDriverID::DriverId' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_GetRacerIndexByDriverID, ReturnValue) == 0x000004, "Member 'UnionRacerFunction_GetRacerIndexByDriverID::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.GetRacerIndexByPlayerID
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacerFunction_GetRacerIndexByPlayerID final
-{
-public:
-	int32                                         PlayerId;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacerFunction_GetRacerIndexByPlayerID) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRacerIndexByPlayerID");
-static_assert(sizeof(UnionRacerFunction_GetRacerIndexByPlayerID) == 0x000008, "Wrong size on UnionRacerFunction_GetRacerIndexByPlayerID");
-static_assert(offsetof(UnionRacerFunction_GetRacerIndexByPlayerID, PlayerId) == 0x000000, "Member 'UnionRacerFunction_GetRacerIndexByPlayerID::PlayerId' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_GetRacerIndexByPlayerID, ReturnValue) == 0x000004, "Member 'UnionRacerFunction_GetRacerIndexByPlayerID::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.GetRankingSkipInterval
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacerFunction_GetRankingSkipInterval final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacerFunction_GetRankingSkipInterval) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRankingSkipInterval");
-static_assert(sizeof(UnionRacerFunction_GetRankingSkipInterval) == 0x000004, "Wrong size on UnionRacerFunction_GetRankingSkipInterval");
-static_assert(offsetof(UnionRacerFunction_GetRankingSkipInterval, ReturnValue) == 0x000000, "Member 'UnionRacerFunction_GetRankingSkipInterval::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.GetRankUpGaugeSpeed
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacerFunction_GetRankUpGaugeSpeed final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacerFunction_GetRankUpGaugeSpeed) == 0x000004, "Wrong alignment on UnionRacerFunction_GetRankUpGaugeSpeed");
-static_assert(sizeof(UnionRacerFunction_GetRankUpGaugeSpeed) == 0x000004, "Wrong size on UnionRacerFunction_GetRankUpGaugeSpeed");
-static_assert(offsetof(UnionRacerFunction_GetRankUpGaugeSpeed, ReturnValue) == 0x000000, "Member 'UnionRacerFunction_GetRankUpGaugeSpeed::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.GetUnionRacers
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacerFunction_GetUnionRacers final
-{
-public:
-	class UUnionRacers*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacerFunction_GetUnionRacers) == 0x000008, "Wrong alignment on UnionRacerFunction_GetUnionRacers");
-static_assert(sizeof(UnionRacerFunction_GetUnionRacers) == 0x000008, "Wrong size on UnionRacerFunction_GetUnionRacers");
-static_assert(offsetof(UnionRacerFunction_GetUnionRacers, ReturnValue) == 0x000000, "Member 'UnionRacerFunction_GetUnionRacers::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.IsInScreen
-// 0x0028 (0x0028 - 0x0000)
-struct UnionRacerFunction_IsInScreen final
-{
-public:
-	const class APlayerController*                PlayerController;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Position;                                          // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacerFunction_IsInScreen) == 0x000008, "Wrong alignment on UnionRacerFunction_IsInScreen");
-static_assert(sizeof(UnionRacerFunction_IsInScreen) == 0x000028, "Wrong size on UnionRacerFunction_IsInScreen");
-static_assert(offsetof(UnionRacerFunction_IsInScreen, PlayerController) == 0x000000, "Member 'UnionRacerFunction_IsInScreen::PlayerController' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_IsInScreen, Position) == 0x000008, "Member 'UnionRacerFunction_IsInScreen::Position' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_IsInScreen, ReturnValue) == 0x000020, "Member 'UnionRacerFunction_IsInScreen::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacerFunction.IsSameGroup
-// 0x000C (0x000C - 0x0000)
-struct UnionRacerFunction_IsSameGroup final
-{
-public:
-	int32                                         InRacerIndexA;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InRacerIndexB;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacerFunction_IsSameGroup) == 0x000004, "Wrong alignment on UnionRacerFunction_IsSameGroup");
-static_assert(sizeof(UnionRacerFunction_IsSameGroup) == 0x00000C, "Wrong size on UnionRacerFunction_IsSameGroup");
-static_assert(offsetof(UnionRacerFunction_IsSameGroup, InRacerIndexA) == 0x000000, "Member 'UnionRacerFunction_IsSameGroup::InRacerIndexA' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_IsSameGroup, InRacerIndexB) == 0x000004, "Member 'UnionRacerFunction_IsSameGroup::InRacerIndexB' has a wrong offset!");
-static_assert(offsetof(UnionRacerFunction_IsSameGroup, ReturnValue) == 0x000008, "Member 'UnionRacerFunction_IsSameGroup::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBasicOperation.IsKeyboard
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubBasicOperation_IsKeyboard final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBasicOperation_IsKeyboard) == 0x000001, "Wrong alignment on RaceUISubBasicOperation_IsKeyboard");
-static_assert(sizeof(RaceUISubBasicOperation_IsKeyboard) == 0x000001, "Wrong size on RaceUISubBasicOperation_IsKeyboard");
-static_assert(offsetof(RaceUISubBasicOperation_IsKeyboard, ReturnValue) == 0x000000, "Member 'RaceUISubBasicOperation_IsKeyboard::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRaceHitInfoGroup.SetItemIdIndex_Impl
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceHitInfoGroup_SetItemIdIndex_Impl final
-{
-public:
-	int32                                         InItemIdIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceHitInfoGroup_SetItemIdIndex_Impl) == 0x000004, "Wrong alignment on UnionRaceHitInfoGroup_SetItemIdIndex_Impl");
-static_assert(sizeof(UnionRaceHitInfoGroup_SetItemIdIndex_Impl) == 0x000004, "Wrong size on UnionRaceHitInfoGroup_SetItemIdIndex_Impl");
-static_assert(offsetof(UnionRaceHitInfoGroup_SetItemIdIndex_Impl, InItemIdIndex) == 0x000000, "Member 'UnionRaceHitInfoGroup_SetItemIdIndex_Impl::InItemIdIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRaceHitInfoGroup.UpdateHitInfoGroup
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceHitInfoGroup_UpdateHitInfoGroup final
-{
-public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceHitInfoGroup_UpdateHitInfoGroup) == 0x000004, "Wrong alignment on UnionRaceHitInfoGroup_UpdateHitInfoGroup");
-static_assert(sizeof(UnionRaceHitInfoGroup_UpdateHitInfoGroup) == 0x000004, "Wrong size on UnionRaceHitInfoGroup_UpdateHitInfoGroup");
-static_assert(offsetof(UnionRaceHitInfoGroup_UpdateHitInfoGroup, Delta) == 0x000000, "Member 'UnionRaceHitInfoGroup_UpdateHitInfoGroup::Delta' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetControllerType
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubBtnGuide_GetControllerType final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsNotSetKey;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EBtnGuidePlatFormController                   ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubBtnGuide_GetControllerType) == 0x000004, "Wrong alignment on RaceUISubBtnGuide_GetControllerType");
-static_assert(sizeof(RaceUISubBtnGuide_GetControllerType) == 0x000008, "Wrong size on RaceUISubBtnGuide_GetControllerType");
-static_assert(offsetof(RaceUISubBtnGuide_GetControllerType, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetControllerType::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetControllerType, IsNotSetKey) == 0x000004, "Member 'RaceUISubBtnGuide_GetControllerType::IsNotSetKey' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetControllerType, ReturnValue) == 0x000005, "Member 'RaceUISubBtnGuide_GetControllerType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetUseItemKey
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubBtnGuide_GetUseItemKey final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_GetUseItemKey) == 0x000004, "Wrong alignment on RaceUISubBtnGuide_GetUseItemKey");
-static_assert(sizeof(RaceUISubBtnGuide_GetUseItemKey) == 0x000004, "Wrong size on RaceUISubBtnGuide_GetUseItemKey");
-static_assert(offsetof(RaceUISubBtnGuide_GetUseItemKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetUseItemKey::PlayerControllerIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.SetUseItemKey
-// 0x0018 (0x0018 - 0x0000)
-struct RaceUISubBtnGuide_SetUseItemKey final
-{
-public:
-	struct FKey                                   UseItemKey;                                        // 0x0000(0x0018)(ConstParm, Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_SetUseItemKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_SetUseItemKey");
-static_assert(sizeof(RaceUISubBtnGuide_SetUseItemKey) == 0x000018, "Wrong size on RaceUISubBtnGuide_SetUseItemKey");
-static_assert(offsetof(RaceUISubBtnGuide_SetUseItemKey, UseItemKey) == 0x000000, "Member 'RaceUISubBtnGuide_SetUseItemKey::UseItemKey' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetFlightGuideKey
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubBtnGuide_GetFlightGuideKey final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSuggestUpInput;                                   // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_GetFlightGuideKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetFlightGuideKey");
-static_assert(sizeof(RaceUISubBtnGuide_GetFlightGuideKey) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetFlightGuideKey");
-static_assert(offsetof(RaceUISubBtnGuide_GetFlightGuideKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetFlightGuideKey::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetFlightGuideKey, bSuggestUpInput) == 0x000004, "Member 'RaceUISubBtnGuide_GetFlightGuideKey::bSuggestUpInput' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetFlightGuideKey, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetFlightGuideKey::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetKeyDisplayName
-// 0x0030 (0x0030 - 0x0000)
-struct RaceUISubBtnGuide_GetKeyDisplayName final
-{
-public:
-	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerControllerIndex;                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_GetKeyDisplayName) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetKeyDisplayName");
-static_assert(sizeof(RaceUISubBtnGuide_GetKeyDisplayName) == 0x000030, "Wrong size on RaceUISubBtnGuide_GetKeyDisplayName");
-static_assert(offsetof(RaceUISubBtnGuide_GetKeyDisplayName, InKey) == 0x000000, "Member 'RaceUISubBtnGuide_GetKeyDisplayName::InKey' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetKeyDisplayName, PlayerControllerIndex) == 0x000018, "Member 'RaceUISubBtnGuide_GetKeyDisplayName::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetKeyDisplayName, ReturnValue) == 0x000020, "Member 'RaceUISubBtnGuide_GetKeyDisplayName::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetMouseButtonIndex
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubBtnGuide_GetMouseButtonIndex final
-{
-public:
-	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubBtnGuide_GetMouseButtonIndex) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetMouseButtonIndex");
-static_assert(sizeof(RaceUISubBtnGuide_GetMouseButtonIndex) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetMouseButtonIndex");
-static_assert(offsetof(RaceUISubBtnGuide_GetMouseButtonIndex, InKey) == 0x000000, "Member 'RaceUISubBtnGuide_GetMouseButtonIndex::InKey' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetMouseButtonIndex, ReturnValue) == 0x000018, "Member 'RaceUISubBtnGuide_GetMouseButtonIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetReleaseEffectKey
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubBtnGuide_GetReleaseEffectKey final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_GetReleaseEffectKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetReleaseEffectKey");
-static_assert(sizeof(RaceUISubBtnGuide_GetReleaseEffectKey) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetReleaseEffectKey");
-static_assert(offsetof(RaceUISubBtnGuide_GetReleaseEffectKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetReleaseEffectKey::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetReleaseEffectKey, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetReleaseEffectKey::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetSteerKey
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubBtnGuide_GetSteerKey final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SteerNo;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_GetSteerKey) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetSteerKey");
-static_assert(sizeof(RaceUISubBtnGuide_GetSteerKey) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetSteerKey");
-static_assert(offsetof(RaceUISubBtnGuide_GetSteerKey, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetSteerKey::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetSteerKey, SteerNo) == 0x000004, "Member 'RaceUISubBtnGuide_GetSteerKey::SteerNo' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetSteerKey, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetSteerKey::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.GetUseItemKeyPC
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubBtnGuide_GetUseItemKeyPC final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_GetUseItemKeyPC) == 0x000008, "Wrong alignment on RaceUISubBtnGuide_GetUseItemKeyPC");
-static_assert(sizeof(RaceUISubBtnGuide_GetUseItemKeyPC) == 0x000020, "Wrong size on RaceUISubBtnGuide_GetUseItemKeyPC");
-static_assert(offsetof(RaceUISubBtnGuide_GetUseItemKeyPC, PlayerControllerIndex) == 0x000000, "Member 'RaceUISubBtnGuide_GetUseItemKeyPC::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubBtnGuide_GetUseItemKeyPC, ReturnValue) == 0x000008, "Member 'RaceUISubBtnGuide_GetUseItemKeyPC::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubBtnGuide.IsKeyboard
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubBtnGuide_IsKeyboard final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubBtnGuide_IsKeyboard) == 0x000001, "Wrong alignment on RaceUISubBtnGuide_IsKeyboard");
-static_assert(sizeof(RaceUISubBtnGuide_IsKeyboard) == 0x000001, "Wrong size on RaceUISubBtnGuide_IsKeyboard");
-static_assert(offsetof(RaceUISubBtnGuide_IsKeyboard, ReturnValue) == 0x000000, "Member 'RaceUISubBtnGuide_IsKeyboard::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubCourseMapIcon.SetReaderFlag
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubCourseMapIcon_SetReaderFlag final
-{
-public:
-	bool                                          InReader;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubCourseMapIcon_SetReaderFlag) == 0x000001, "Wrong alignment on RaceUISubCourseMapIcon_SetReaderFlag");
-static_assert(sizeof(RaceUISubCourseMapIcon_SetReaderFlag) == 0x000001, "Wrong size on RaceUISubCourseMapIcon_SetReaderFlag");
-static_assert(offsetof(RaceUISubCourseMapIcon_SetReaderFlag, InReader) == 0x000000, "Member 'RaceUISubCourseMapIcon_SetReaderFlag::InReader' has a wrong offset!");
-
-// Function UnionRun.RaceUISubGadgetIcon.SetGadgetId
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubGadgetIcon_SetGadgetId final
-{
-public:
-	EGadgetId                                     InGadgetId;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubGadgetIcon_SetGadgetId) == 0x000001, "Wrong alignment on RaceUISubGadgetIcon_SetGadgetId");
-static_assert(sizeof(RaceUISubGadgetIcon_SetGadgetId) == 0x000001, "Wrong size on RaceUISubGadgetIcon_SetGadgetId");
-static_assert(offsetof(RaceUISubGadgetIcon_SetGadgetId, InGadgetId) == 0x000000, "Member 'RaceUISubGadgetIcon_SetGadgetId::InGadgetId' has a wrong offset!");
-
-// Function UnionRun.RaceUISubGadgetIcon.SetIconMaterial
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubGadgetIcon_SetIconMaterial final
-{
-public:
-	int32                                         IconIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubGadgetIcon_SetIconMaterial) == 0x000004, "Wrong alignment on RaceUISubGadgetIcon_SetIconMaterial");
-static_assert(sizeof(RaceUISubGadgetIcon_SetIconMaterial) == 0x000004, "Wrong size on RaceUISubGadgetIcon_SetIconMaterial");
-static_assert(offsetof(RaceUISubGadgetIcon_SetIconMaterial, IconIndex) == 0x000000, "Member 'RaceUISubGadgetIcon_SetIconMaterial::IconIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubGadgetIcon.GetGadgetId
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubGadgetIcon_GetGadgetId final
-{
-public:
-	EGadgetId                                     ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubGadgetIcon_GetGadgetId) == 0x000001, "Wrong alignment on RaceUISubGadgetIcon_GetGadgetId");
-static_assert(sizeof(RaceUISubGadgetIcon_GetGadgetId) == 0x000001, "Wrong size on RaceUISubGadgetIcon_GetGadgetId");
-static_assert(offsetof(RaceUISubGadgetIcon_GetGadgetId, ReturnValue) == 0x000000, "Member 'RaceUISubGadgetIcon_GetGadgetId::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubRing.SetCurrentRingCount
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubRing_SetCurrentRingCount final
-{
-public:
-	int32                                         NewRingCount;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubRing_SetCurrentRingCount) == 0x000004, "Wrong alignment on RaceUISubRing_SetCurrentRingCount");
-static_assert(sizeof(RaceUISubRing_SetCurrentRingCount) == 0x000004, "Wrong size on RaceUISubRing_SetCurrentRingCount");
-static_assert(offsetof(RaceUISubRing_SetCurrentRingCount, NewRingCount) == 0x000000, "Member 'RaceUISubRing_SetCurrentRingCount::NewRingCount' has a wrong offset!");
-
-// Function UnionRun.RaceUISubRing.SetParams
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubRing_SetParams final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubRing_SetParams) == 0x000004, "Wrong alignment on RaceUISubRing_SetParams");
-static_assert(sizeof(RaceUISubRing_SetParams) == 0x000004, "Wrong size on RaceUISubRing_SetParams");
-static_assert(offsetof(RaceUISubRing_SetParams, RacerIndex) == 0x000000, "Member 'RaceUISubRing_SetParams::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubRing.SetRingBackColor
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubRing_SetRingBackColor final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGroup;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLocalMulti;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubRing_SetRingBackColor) == 0x000004, "Wrong alignment on RaceUISubRing_SetRingBackColor");
-static_assert(sizeof(RaceUISubRing_SetRingBackColor) == 0x000008, "Wrong size on RaceUISubRing_SetRingBackColor");
-static_assert(offsetof(RaceUISubRing_SetRingBackColor, Index_0) == 0x000000, "Member 'RaceUISubRing_SetRingBackColor::Index_0' has a wrong offset!");
-static_assert(offsetof(RaceUISubRing_SetRingBackColor, IsGroup) == 0x000004, "Member 'RaceUISubRing_SetRingBackColor::IsGroup' has a wrong offset!");
-static_assert(offsetof(RaceUISubRing_SetRingBackColor, IsLocalMulti) == 0x000005, "Member 'RaceUISubRing_SetRingBackColor::IsLocalMulti' has a wrong offset!");
-
 // Function UnionRun.UnionRaceSituationObject.IsFootCutting
 // 0x0001 (0x0001 - 0x0000)
 struct UnionRaceSituationObject_IsFootCutting final
@@ -8242,2467 +10869,6 @@ public:
 static_assert(alignof(UnionRaceSituationObject_GetRivalDistDiff) == 0x000004, "Wrong alignment on UnionRaceSituationObject_GetRivalDistDiff");
 static_assert(sizeof(UnionRaceSituationObject_GetRivalDistDiff) == 0x000004, "Wrong size on UnionRaceSituationObject_GetRivalDistDiff");
 static_assert(offsetof(UnionRaceSituationObject_GetRivalDistDiff, ReturnValue) == 0x000000, "Member 'UnionRaceSituationObject_GetRivalDistDiff::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubGroupRing.SetRingCharaIcon
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubGroupRing_SetRingCharaIcon final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubGroupRing_SetRingCharaIcon) == 0x000001, "Wrong alignment on RaceUISubGroupRing_SetRingCharaIcon");
-static_assert(sizeof(RaceUISubGroupRing_SetRingCharaIcon) == 0x000001, "Wrong size on RaceUISubGroupRing_SetRingCharaIcon");
-static_assert(offsetof(RaceUISubGroupRing_SetRingCharaIcon, DriverId) == 0x000000, "Member 'RaceUISubGroupRing_SetRingCharaIcon::DriverId' has a wrong offset!");
-
-// Function UnionRun.RaceUISubHitInfo.SetCharaIndex
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubHitInfo_SetCharaIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsRival;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubHitInfo_SetCharaIndex) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetCharaIndex");
-static_assert(sizeof(RaceUISubHitInfo_SetCharaIndex) == 0x000008, "Wrong size on RaceUISubHitInfo_SetCharaIndex");
-static_assert(offsetof(RaceUISubHitInfo_SetCharaIndex, Index_0) == 0x000000, "Member 'RaceUISubHitInfo_SetCharaIndex::Index_0' has a wrong offset!");
-static_assert(offsetof(RaceUISubHitInfo_SetCharaIndex, IsRival) == 0x000004, "Member 'RaceUISubHitInfo_SetCharaIndex::IsRival' has a wrong offset!");
-
-// Function UnionRun.RaceUISubHitInfo.SetGroupColorMaterial
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubHitInfo_SetGroupColorMaterial final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubHitInfo_SetGroupColorMaterial) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetGroupColorMaterial");
-static_assert(sizeof(RaceUISubHitInfo_SetGroupColorMaterial) == 0x000004, "Wrong size on RaceUISubHitInfo_SetGroupColorMaterial");
-static_assert(offsetof(RaceUISubHitInfo_SetGroupColorMaterial, Index_0) == 0x000000, "Member 'RaceUISubHitInfo_SetGroupColorMaterial::Index_0' has a wrong offset!");
-
-// Function UnionRun.RaceUISubHitInfo.SetLocalPlayerColorMaterial
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubHitInfo_SetLocalPlayerColorMaterial final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubHitInfo_SetLocalPlayerColorMaterial) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetLocalPlayerColorMaterial");
-static_assert(sizeof(RaceUISubHitInfo_SetLocalPlayerColorMaterial) == 0x000004, "Wrong size on RaceUISubHitInfo_SetLocalPlayerColorMaterial");
-static_assert(offsetof(RaceUISubHitInfo_SetLocalPlayerColorMaterial, Index_0) == 0x000000, "Member 'RaceUISubHitInfo_SetLocalPlayerColorMaterial::Index_0' has a wrong offset!");
-
-// Function UnionRun.RaceUISubHitInfo.SetLostItemIdIndex_Implement
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubHitInfo_SetLostItemIdIndex_Implement final
-{
-public:
-	int32                                         InItemIdIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubHitInfo_SetLostItemIdIndex_Implement) == 0x000004, "Wrong alignment on RaceUISubHitInfo_SetLostItemIdIndex_Implement");
-static_assert(sizeof(RaceUISubHitInfo_SetLostItemIdIndex_Implement) == 0x000004, "Wrong size on RaceUISubHitInfo_SetLostItemIdIndex_Implement");
-static_assert(offsetof(RaceUISubHitInfo_SetLostItemIdIndex_Implement, InItemIdIndex) == 0x000000, "Member 'RaceUISubHitInfo_SetLostItemIdIndex_Implement::InItemIdIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubHitInfo.SetPlatformIcon
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubHitInfo_SetPlatformIcon final
-{
-public:
-	ECrossplayPlatform                            Platform;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubHitInfo_SetPlatformIcon) == 0x000001, "Wrong alignment on RaceUISubHitInfo_SetPlatformIcon");
-static_assert(sizeof(RaceUISubHitInfo_SetPlatformIcon) == 0x000001, "Wrong size on RaceUISubHitInfo_SetPlatformIcon");
-static_assert(offsetof(RaceUISubHitInfo_SetPlatformIcon, Platform) == 0x000000, "Member 'RaceUISubHitInfo_SetPlatformIcon::Platform' has a wrong offset!");
-
-// Function UnionRun.RaceUISubHitInfo.SwitchBaseUI
-// 0x0002 (0x0002 - 0x0000)
-struct RaceUISubHitInfo_SwitchBaseUI final
-{
-public:
-	bool                                          IsRival;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPowerRival;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubHitInfo_SwitchBaseUI) == 0x000001, "Wrong alignment on RaceUISubHitInfo_SwitchBaseUI");
-static_assert(sizeof(RaceUISubHitInfo_SwitchBaseUI) == 0x000002, "Wrong size on RaceUISubHitInfo_SwitchBaseUI");
-static_assert(offsetof(RaceUISubHitInfo_SwitchBaseUI, IsRival) == 0x000000, "Member 'RaceUISubHitInfo_SwitchBaseUI::IsRival' has a wrong offset!");
-static_assert(offsetof(RaceUISubHitInfo_SwitchBaseUI, IsPowerRival) == 0x000001, "Member 'RaceUISubHitInfo_SwitchBaseUI::IsPowerRival' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.DisplayHideAnim
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubItemIcon_DisplayHideAnim final
-{
-public:
-	bool                                          Display;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_DisplayHideAnim) == 0x000001, "Wrong alignment on RaceUISubItemIcon_DisplayHideAnim");
-static_assert(sizeof(RaceUISubItemIcon_DisplayHideAnim) == 0x000001, "Wrong size on RaceUISubItemIcon_DisplayHideAnim");
-static_assert(offsetof(RaceUISubItemIcon_DisplayHideAnim, Display) == 0x000000, "Member 'RaceUISubItemIcon_DisplayHideAnim::Display' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.GetRandomLotteryDisplayItemId
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubItemIcon_GetRandomLotteryDisplayItemId final
-{
-public:
-	uint8                                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_GetRandomLotteryDisplayItemId) == 0x000001, "Wrong alignment on RaceUISubItemIcon_GetRandomLotteryDisplayItemId");
-static_assert(sizeof(RaceUISubItemIcon_GetRandomLotteryDisplayItemId) == 0x000001, "Wrong size on RaceUISubItemIcon_GetRandomLotteryDisplayItemId");
-static_assert(offsetof(RaceUISubItemIcon_GetRandomLotteryDisplayItemId, ReturnValue) == 0x000000, "Member 'RaceUISubItemIcon_GetRandomLotteryDisplayItemId::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.ItemLostAnimStart
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubItemIcon_ItemLostAnimStart final
-{
-public:
-	bool                                          bHideIcon;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_ItemLostAnimStart) == 0x000001, "Wrong alignment on RaceUISubItemIcon_ItemLostAnimStart");
-static_assert(sizeof(RaceUISubItemIcon_ItemLostAnimStart) == 0x000001, "Wrong size on RaceUISubItemIcon_ItemLostAnimStart");
-static_assert(offsetof(RaceUISubItemIcon_ItemLostAnimStart, bHideIcon) == 0x000000, "Member 'RaceUISubItemIcon_ItemLostAnimStart::bHideIcon' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.LotterySeqStart
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubItemIcon_LotterySeqStart final
-{
-public:
-	bool                                          LotterySound;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_LotterySeqStart) == 0x000001, "Wrong alignment on RaceUISubItemIcon_LotterySeqStart");
-static_assert(sizeof(RaceUISubItemIcon_LotterySeqStart) == 0x000001, "Wrong size on RaceUISubItemIcon_LotterySeqStart");
-static_assert(offsetof(RaceUISubItemIcon_LotterySeqStart, LotterySound) == 0x000000, "Member 'RaceUISubItemIcon_LotterySeqStart::LotterySound' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetAttributeColorIndex
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubItemIcon_SetAttributeColorIndex final
-{
-public:
-	int32                                         InAttributeIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_SetAttributeColorIndex) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetAttributeColorIndex");
-static_assert(sizeof(RaceUISubItemIcon_SetAttributeColorIndex) == 0x000004, "Wrong size on RaceUISubItemIcon_SetAttributeColorIndex");
-static_assert(offsetof(RaceUISubItemIcon_SetAttributeColorIndex, InAttributeIndex) == 0x000000, "Member 'RaceUISubItemIcon_SetAttributeColorIndex::InAttributeIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetGaugeType
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubItemIcon_SetGaugeType final
-{
-public:
-	bool                                          bRemainCountGauge;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_SetGaugeType) == 0x000001, "Wrong alignment on RaceUISubItemIcon_SetGaugeType");
-static_assert(sizeof(RaceUISubItemIcon_SetGaugeType) == 0x000001, "Wrong size on RaceUISubItemIcon_SetGaugeType");
-static_assert(offsetof(RaceUISubItemIcon_SetGaugeType, bRemainCountGauge) == 0x000000, "Member 'RaceUISubItemIcon_SetGaugeType::bRemainCountGauge' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetItemIdIndex
-// 0x000C (0x000C - 0x0000)
-struct RaceUISubItemIcon_SetItemIdIndex final
-{
-public:
-	int32                                         InItemIdIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InRemainCount;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIgnoreAttribute;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnLottery;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubItemIcon_SetItemIdIndex) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetItemIdIndex");
-static_assert(sizeof(RaceUISubItemIcon_SetItemIdIndex) == 0x00000C, "Wrong size on RaceUISubItemIcon_SetItemIdIndex");
-static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, InItemIdIndex) == 0x000000, "Member 'RaceUISubItemIcon_SetItemIdIndex::InItemIdIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, InRemainCount) == 0x000004, "Member 'RaceUISubItemIcon_SetItemIdIndex::InRemainCount' has a wrong offset!");
-static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, bIgnoreAttribute) == 0x000008, "Member 'RaceUISubItemIcon_SetItemIdIndex::bIgnoreAttribute' has a wrong offset!");
-static_assert(offsetof(RaceUISubItemIcon_SetItemIdIndex, bOnLottery) == 0x000009, "Member 'RaceUISubItemIcon_SetItemIdIndex::bOnLottery' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetItemIdTexture
-// 0x0050 (0x0050 - 0x0000)
-struct RaceUISubItemIcon_SetItemIdTexture final
-{
-public:
-	TMap<EItemId, class UTexture2D*>              InItemId_TextureMap;                               // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_SetItemIdTexture) == 0x000008, "Wrong alignment on RaceUISubItemIcon_SetItemIdTexture");
-static_assert(sizeof(RaceUISubItemIcon_SetItemIdTexture) == 0x000050, "Wrong size on RaceUISubItemIcon_SetItemIdTexture");
-static_assert(offsetof(RaceUISubItemIcon_SetItemIdTexture, InItemId_TextureMap) == 0x000000, "Member 'RaceUISubItemIcon_SetItemIdTexture::InItemId_TextureMap' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetLotteryDisplayItemIds
-// 0x0010 (0x0010 - 0x0000)
-struct RaceUISubItemIcon_SetLotteryDisplayItemIds final
-{
-public:
-	TArray<uint8>                                 ItemIds;                                           // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_SetLotteryDisplayItemIds) == 0x000008, "Wrong alignment on RaceUISubItemIcon_SetLotteryDisplayItemIds");
-static_assert(sizeof(RaceUISubItemIcon_SetLotteryDisplayItemIds) == 0x000010, "Wrong size on RaceUISubItemIcon_SetLotteryDisplayItemIds");
-static_assert(offsetof(RaceUISubItemIcon_SetLotteryDisplayItemIds, ItemIds) == 0x000000, "Member 'RaceUISubItemIcon_SetLotteryDisplayItemIds::ItemIds' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetRemainCountGauge
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubItemIcon_SetRemainCountGauge final
-{
-public:
-	int32                                         Count;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxCount;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_SetRemainCountGauge) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetRemainCountGauge");
-static_assert(sizeof(RaceUISubItemIcon_SetRemainCountGauge) == 0x000008, "Wrong size on RaceUISubItemIcon_SetRemainCountGauge");
-static_assert(offsetof(RaceUISubItemIcon_SetRemainCountGauge, Count) == 0x000000, "Member 'RaceUISubItemIcon_SetRemainCountGauge::Count' has a wrong offset!");
-static_assert(offsetof(RaceUISubItemIcon_SetRemainCountGauge, MaxCount) == 0x000004, "Member 'RaceUISubItemIcon_SetRemainCountGauge::MaxCount' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetRingNum
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubItemIcon_SetRingNum final
-{
-public:
-	int32                                         InRingCount;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_SetRingNum) == 0x000004, "Wrong alignment on RaceUISubItemIcon_SetRingNum");
-static_assert(sizeof(RaceUISubItemIcon_SetRingNum) == 0x000004, "Wrong size on RaceUISubItemIcon_SetRingNum");
-static_assert(offsetof(RaceUISubItemIcon_SetRingNum, InRingCount) == 0x000000, "Member 'RaceUISubItemIcon_SetRingNum::InRingCount' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemIcon.SetRingNumVisible
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubItemIcon_SetRingNumVisible final
-{
-public:
-	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemIcon_SetRingNumVisible) == 0x000001, "Wrong alignment on RaceUISubItemIcon_SetRingNumVisible");
-static_assert(sizeof(RaceUISubItemIcon_SetRingNumVisible) == 0x000001, "Wrong size on RaceUISubItemIcon_SetRingNumVisible");
-static_assert(offsetof(RaceUISubItemIcon_SetRingNumVisible, bVisible) == 0x000000, "Member 'RaceUISubItemIcon_SetRingNumVisible::bVisible' has a wrong offset!");
-
-// Function UnionRun.RaceUISubItemSummonButton.SetSummonInputKey
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubItemSummonButton_SetSummonInputKey final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsKeyboard;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PlayerControllerIndex;                             // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubItemSummonButton_SetSummonInputKey) == 0x000008, "Wrong alignment on RaceUISubItemSummonButton_SetSummonInputKey");
-static_assert(sizeof(RaceUISubItemSummonButton_SetSummonInputKey) == 0x000020, "Wrong size on RaceUISubItemSummonButton_SetSummonInputKey");
-static_assert(offsetof(RaceUISubItemSummonButton_SetSummonInputKey, Key) == 0x000000, "Member 'RaceUISubItemSummonButton_SetSummonInputKey::Key' has a wrong offset!");
-static_assert(offsetof(RaceUISubItemSummonButton_SetSummonInputKey, IsKeyboard) == 0x000018, "Member 'RaceUISubItemSummonButton_SetSummonInputKey::IsKeyboard' has a wrong offset!");
-static_assert(offsetof(RaceUISubItemSummonButton_SetSummonInputKey, PlayerControllerIndex) == 0x00001C, "Member 'RaceUISubItemSummonButton_SetSummonInputKey::PlayerControllerIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubLap.InitializeLapCount
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubLap_InitializeLapCount final
-{
-public:
-	class UTextureRenderTarget2D*                 InRenderTarget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubLap_InitializeLapCount) == 0x000008, "Wrong alignment on RaceUISubLap_InitializeLapCount");
-static_assert(sizeof(RaceUISubLap_InitializeLapCount) == 0x000008, "Wrong size on RaceUISubLap_InitializeLapCount");
-static_assert(offsetof(RaceUISubLap_InitializeLapCount, InRenderTarget) == 0x000000, "Member 'RaceUISubLap_InitializeLapCount::InRenderTarget' has a wrong offset!");
-
-// Function UnionRun.RaceUISubLap.SetCurrentLap
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubLap_SetCurrentLap final
-{
-public:
-	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubLap_SetCurrentLap) == 0x000004, "Wrong alignment on RaceUISubLap_SetCurrentLap");
-static_assert(sizeof(RaceUISubLap_SetCurrentLap) == 0x000004, "Wrong size on RaceUISubLap_SetCurrentLap");
-static_assert(offsetof(RaceUISubLap_SetCurrentLap, Lap) == 0x000000, "Member 'RaceUISubLap_SetCurrentLap::Lap' has a wrong offset!");
-
-// Function UnionRun.RaceUISubLap.SetCurrentLapMID
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubLap_SetCurrentLapMID final
-{
-public:
-	class UMaterialInstanceDynamic*               Mid;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubLap_SetCurrentLapMID) == 0x000008, "Wrong alignment on RaceUISubLap_SetCurrentLapMID");
-static_assert(sizeof(RaceUISubLap_SetCurrentLapMID) == 0x000008, "Wrong size on RaceUISubLap_SetCurrentLapMID");
-static_assert(offsetof(RaceUISubLap_SetCurrentLapMID, Mid) == 0x000000, "Member 'RaceUISubLap_SetCurrentLapMID::Mid' has a wrong offset!");
-
-// Function UnionRun.RaceUISubLap.SetMaxLap
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubLap_SetMaxLap final
-{
-public:
-	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubLap_SetMaxLap) == 0x000004, "Wrong alignment on RaceUISubLap_SetMaxLap");
-static_assert(sizeof(RaceUISubLap_SetMaxLap) == 0x000004, "Wrong size on RaceUISubLap_SetMaxLap");
-static_assert(offsetof(RaceUISubLap_SetMaxLap, Lap) == 0x000000, "Member 'RaceUISubLap_SetMaxLap::Lap' has a wrong offset!");
-
-// Function UnionRun.RaceUISubLap.SetMaxLapMID
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubLap_SetMaxLapMID final
-{
-public:
-	class UMaterialInstanceDynamic*               Mid;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubLap_SetMaxLapMID) == 0x000008, "Wrong alignment on RaceUISubLap_SetMaxLapMID");
-static_assert(sizeof(RaceUISubLap_SetMaxLapMID) == 0x000008, "Wrong size on RaceUISubLap_SetMaxLapMID");
-static_assert(offsetof(RaceUISubLap_SetMaxLapMID, Mid) == 0x000000, "Member 'RaceUISubLap_SetMaxLapMID::Mid' has a wrong offset!");
-
-// Function UnionRun.RaceUISubLap.UpdateLapCount
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubLap_UpdateLapCount final
-{
-public:
-	float                                         InDelta;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubLap_UpdateLapCount) == 0x000004, "Wrong alignment on RaceUISubLap_UpdateLapCount");
-static_assert(sizeof(RaceUISubLap_UpdateLapCount) == 0x000004, "Wrong size on RaceUISubLap_UpdateLapCount");
-static_assert(offsetof(RaceUISubLap_UpdateLapCount, InDelta) == 0x000000, "Member 'RaceUISubLap_UpdateLapCount::InDelta' has a wrong offset!");
-
-// Function UnionRun.RaceUISubReturnDashGauge.GetButtonWidget
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubReturnDashGauge_GetButtonWidget final
-{
-public:
-	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubReturnDashGauge_GetButtonWidget) == 0x000008, "Wrong alignment on RaceUISubReturnDashGauge_GetButtonWidget");
-static_assert(sizeof(RaceUISubReturnDashGauge_GetButtonWidget) == 0x000008, "Wrong size on RaceUISubReturnDashGauge_GetButtonWidget");
-static_assert(offsetof(RaceUISubReturnDashGauge_GetButtonWidget, ReturnValue) == 0x000000, "Member 'RaceUISubReturnDashGauge_GetButtonWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetDashInputKey
-// 0x0018 (0x0018 - 0x0000)
-struct RaceUISubReturnDashGauge_SetDashInputKey final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubReturnDashGauge_SetDashInputKey) == 0x000008, "Wrong alignment on RaceUISubReturnDashGauge_SetDashInputKey");
-static_assert(sizeof(RaceUISubReturnDashGauge_SetDashInputKey) == 0x000018, "Wrong size on RaceUISubReturnDashGauge_SetDashInputKey");
-static_assert(offsetof(RaceUISubReturnDashGauge_SetDashInputKey, Key) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetDashInputKey::Key' has a wrong offset!");
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetGaugeParcent
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubReturnDashGauge_SetGaugeParcent final
-{
-public:
-	float                                         GaugeRate;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubReturnDashGauge_SetGaugeParcent) == 0x000004, "Wrong alignment on RaceUISubReturnDashGauge_SetGaugeParcent");
-static_assert(sizeof(RaceUISubReturnDashGauge_SetGaugeParcent) == 0x000004, "Wrong size on RaceUISubReturnDashGauge_SetGaugeParcent");
-static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugeParcent, GaugeRate) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetGaugeParcent::GaugeRate' has a wrong offset!");
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetGaugePivotAndRange
-// 0x0010 (0x0010 - 0x0000)
-struct RaceUISubReturnDashGauge_SetGaugePivotAndRange final
-{
-public:
-	class UImage*                                 ImageRef;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PivotRate;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GaugeRateRange;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubReturnDashGauge_SetGaugePivotAndRange) == 0x000008, "Wrong alignment on RaceUISubReturnDashGauge_SetGaugePivotAndRange");
-static_assert(sizeof(RaceUISubReturnDashGauge_SetGaugePivotAndRange) == 0x000010, "Wrong size on RaceUISubReturnDashGauge_SetGaugePivotAndRange");
-static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugePivotAndRange, ImageRef) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetGaugePivotAndRange::ImageRef' has a wrong offset!");
-static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugePivotAndRange, PivotRate) == 0x000008, "Member 'RaceUISubReturnDashGauge_SetGaugePivotAndRange::PivotRate' has a wrong offset!");
-static_assert(offsetof(RaceUISubReturnDashGauge_SetGaugePivotAndRange, GaugeRateRange) == 0x00000C, "Member 'RaceUISubReturnDashGauge_SetGaugePivotAndRange::GaugeRateRange' has a wrong offset!");
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetReturnDashSetting
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubReturnDashGauge_SetReturnDashSetting final
-{
-public:
-	float                                         Pivot;                                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Range;                                             // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubReturnDashGauge_SetReturnDashSetting) == 0x000004, "Wrong alignment on RaceUISubReturnDashGauge_SetReturnDashSetting");
-static_assert(sizeof(RaceUISubReturnDashGauge_SetReturnDashSetting) == 0x000008, "Wrong size on RaceUISubReturnDashGauge_SetReturnDashSetting");
-static_assert(offsetof(RaceUISubReturnDashGauge_SetReturnDashSetting, Pivot) == 0x000000, "Member 'RaceUISubReturnDashGauge_SetReturnDashSetting::Pivot' has a wrong offset!");
-static_assert(offsetof(RaceUISubReturnDashGauge_SetReturnDashSetting, Range) == 0x000004, "Member 'RaceUISubReturnDashGauge_SetReturnDashSetting::Range' has a wrong offset!");
-
-// Function UnionRun.RaceUISubRuleCount.GetCount
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubRuleCount_GetCount final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubRuleCount_GetCount) == 0x000004, "Wrong alignment on RaceUISubRuleCount_GetCount");
-static_assert(sizeof(RaceUISubRuleCount_GetCount) == 0x000008, "Wrong size on RaceUISubRuleCount_GetCount");
-static_assert(offsetof(RaceUISubRuleCount_GetCount, RacerIndex) == 0x000000, "Member 'RaceUISubRuleCount_GetCount::RacerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubRuleCount_GetCount, ReturnValue) == 0x000004, "Member 'RaceUISubRuleCount_GetCount::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubRuleCount.GetGroupRaceBonusData
-// 0x0070 (0x0070 - 0x0000)
-struct RaceUISubRuleCount_GetGroupRaceBonusData final
-{
-public:
-	struct FMenuGroupRaceBonusData                ReturnValue;                                       // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubRuleCount_GetGroupRaceBonusData) == 0x000008, "Wrong alignment on RaceUISubRuleCount_GetGroupRaceBonusData");
-static_assert(sizeof(RaceUISubRuleCount_GetGroupRaceBonusData) == 0x000070, "Wrong size on RaceUISubRuleCount_GetGroupRaceBonusData");
-static_assert(offsetof(RaceUISubRuleCount_GetGroupRaceBonusData, ReturnValue) == 0x000000, "Member 'RaceUISubRuleCount_GetGroupRaceBonusData::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubRuleCount.SetNewCount
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubRuleCount_SetNewCount final
-{
-public:
-	int32                                         NewCuont;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubRuleCount_SetNewCount) == 0x000004, "Wrong alignment on RaceUISubRuleCount_SetNewCount");
-static_assert(sizeof(RaceUISubRuleCount_SetNewCount) == 0x000004, "Wrong size on RaceUISubRuleCount_SetNewCount");
-static_assert(offsetof(RaceUISubRuleCount_SetNewCount, NewCuont) == 0x000000, "Member 'RaceUISubRuleCount_SetNewCount::NewCuont' has a wrong offset!");
-
-// Function UnionRun.RaceUISubRuleCount.UpdateRuleCountImpl
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubRuleCount_UpdateRuleCountImpl final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubRuleCount_UpdateRuleCountImpl) == 0x000004, "Wrong alignment on RaceUISubRuleCount_UpdateRuleCountImpl");
-static_assert(sizeof(RaceUISubRuleCount_UpdateRuleCountImpl) == 0x000004, "Wrong size on RaceUISubRuleCount_UpdateRuleCountImpl");
-static_assert(offsetof(RaceUISubRuleCount_UpdateRuleCountImpl, RacerIndex) == 0x000000, "Member 'RaceUISubRuleCount_UpdateRuleCountImpl::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.GetButtonWidget
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubStartGauge_GetButtonWidget final
-{
-public:
-	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubStartGauge_GetButtonWidget) == 0x000008, "Wrong alignment on RaceUISubStartGauge_GetButtonWidget");
-static_assert(sizeof(RaceUISubStartGauge_GetButtonWidget) == 0x000008, "Wrong size on RaceUISubStartGauge_GetButtonWidget");
-static_assert(offsetof(RaceUISubStartGauge_GetButtonWidget, ReturnValue) == 0x000000, "Member 'RaceUISubStartGauge_GetButtonWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.GetKeyAccel
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubStartGauge_GetKeyAccel final
-{
-public:
-	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubStartGauge_GetKeyAccel) == 0x000008, "Wrong alignment on RaceUISubStartGauge_GetKeyAccel");
-static_assert(sizeof(RaceUISubStartGauge_GetKeyAccel) == 0x000020, "Wrong size on RaceUISubStartGauge_GetKeyAccel");
-static_assert(offsetof(RaceUISubStartGauge_GetKeyAccel, PlayerIndex) == 0x000000, "Member 'RaceUISubStartGauge_GetKeyAccel::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_GetKeyAccel, ReturnValue) == 0x000008, "Member 'RaceUISubStartGauge_GetKeyAccel::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.IsPlayControlKeyboard
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubStartGauge_IsPlayControlKeyboard final
-{
-public:
-	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubStartGauge_IsPlayControlKeyboard) == 0x000004, "Wrong alignment on RaceUISubStartGauge_IsPlayControlKeyboard");
-static_assert(sizeof(RaceUISubStartGauge_IsPlayControlKeyboard) == 0x000008, "Wrong size on RaceUISubStartGauge_IsPlayControlKeyboard");
-static_assert(offsetof(RaceUISubStartGauge_IsPlayControlKeyboard, PlayerIndex) == 0x000000, "Member 'RaceUISubStartGauge_IsPlayControlKeyboard::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_IsPlayControlKeyboard, ReturnValue) == 0x000004, "Member 'RaceUISubStartGauge_IsPlayControlKeyboard::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.SetDashInputKey
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubStartGauge_SetDashInputKey final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerIndex;                                       // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubStartGauge_SetDashInputKey) == 0x000008, "Wrong alignment on RaceUISubStartGauge_SetDashInputKey");
-static_assert(sizeof(RaceUISubStartGauge_SetDashInputKey) == 0x000020, "Wrong size on RaceUISubStartGauge_SetDashInputKey");
-static_assert(offsetof(RaceUISubStartGauge_SetDashInputKey, Key) == 0x000000, "Member 'RaceUISubStartGauge_SetDashInputKey::Key' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetDashInputKey, PlayerIndex) == 0x000018, "Member 'RaceUISubStartGauge_SetDashInputKey::PlayerIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.SetGaugeParcent
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubStartGauge_SetGaugeParcent final
-{
-public:
-	float                                         GaugeRate;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubStartGauge_SetGaugeParcent) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetGaugeParcent");
-static_assert(sizeof(RaceUISubStartGauge_SetGaugeParcent) == 0x000004, "Wrong size on RaceUISubStartGauge_SetGaugeParcent");
-static_assert(offsetof(RaceUISubStartGauge_SetGaugeParcent, GaugeRate) == 0x000000, "Member 'RaceUISubStartGauge_SetGaugeParcent::GaugeRate' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.SetGaugeParcentTrigger
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubStartGauge_SetGaugeParcentTrigger final
-{
-public:
-	float                                         GaugeRate;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubStartGauge_SetGaugeParcentTrigger) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetGaugeParcentTrigger");
-static_assert(sizeof(RaceUISubStartGauge_SetGaugeParcentTrigger) == 0x000004, "Wrong size on RaceUISubStartGauge_SetGaugeParcentTrigger");
-static_assert(offsetof(RaceUISubStartGauge_SetGaugeParcentTrigger, GaugeRate) == 0x000000, "Member 'RaceUISubStartGauge_SetGaugeParcentTrigger::GaugeRate' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.SetGaugePivotAndRange
-// 0x0010 (0x0010 - 0x0000)
-struct RaceUISubStartGauge_SetGaugePivotAndRange final
-{
-public:
-	class UImage*                                 ImageRef;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PivotRate;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GaugeRateRange;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubStartGauge_SetGaugePivotAndRange) == 0x000008, "Wrong alignment on RaceUISubStartGauge_SetGaugePivotAndRange");
-static_assert(sizeof(RaceUISubStartGauge_SetGaugePivotAndRange) == 0x000010, "Wrong size on RaceUISubStartGauge_SetGaugePivotAndRange");
-static_assert(offsetof(RaceUISubStartGauge_SetGaugePivotAndRange, ImageRef) == 0x000000, "Member 'RaceUISubStartGauge_SetGaugePivotAndRange::ImageRef' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetGaugePivotAndRange, PivotRate) == 0x000008, "Member 'RaceUISubStartGauge_SetGaugePivotAndRange::PivotRate' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetGaugePivotAndRange, GaugeRateRange) == 0x00000C, "Member 'RaceUISubStartGauge_SetGaugePivotAndRange::GaugeRateRange' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.SetStartDashParamSetting
-// 0x0030 (0x0030 - 0x0000)
-struct RaceUISubStartGauge_SetStartDashParamSetting final
-{
-public:
-	struct FUnionRaceStartDashParam               InStartDashParam;                                  // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubStartGauge_SetStartDashParamSetting) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetStartDashParamSetting");
-static_assert(sizeof(RaceUISubStartGauge_SetStartDashParamSetting) == 0x000030, "Wrong size on RaceUISubStartGauge_SetStartDashParamSetting");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashParamSetting, InStartDashParam) == 0x000000, "Member 'RaceUISubStartGauge_SetStartDashParamSetting::InStartDashParam' has a wrong offset!");
-
-// Function UnionRun.RaceUISubStartGauge.SetStartDashSetting
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubStartGauge_SetStartDashSetting final
-{
-public:
-	float                                         LV3_PIVOT;                                         // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LV3_RANGE;                                         // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LV2_PIVOT;                                         // 0x0008(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LV2_RANGE;                                         // 0x000C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NG1_PIVOT;                                         // 0x0010(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NG1_RANGE;                                         // 0x0014(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NG2_PIVOT;                                         // 0x0018(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NG2_RANGE;                                         // 0x001C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubStartGauge_SetStartDashSetting) == 0x000004, "Wrong alignment on RaceUISubStartGauge_SetStartDashSetting");
-static_assert(sizeof(RaceUISubStartGauge_SetStartDashSetting) == 0x000020, "Wrong size on RaceUISubStartGauge_SetStartDashSetting");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV3_PIVOT) == 0x000000, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV3_PIVOT' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV3_RANGE) == 0x000004, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV3_RANGE' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV2_PIVOT) == 0x000008, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV2_PIVOT' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, LV2_RANGE) == 0x00000C, "Member 'RaceUISubStartGauge_SetStartDashSetting::LV2_RANGE' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG1_PIVOT) == 0x000010, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG1_PIVOT' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG1_RANGE) == 0x000014, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG1_RANGE' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG2_PIVOT) == 0x000018, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG2_PIVOT' has a wrong offset!");
-static_assert(offsetof(RaceUISubStartGauge_SetStartDashSetting, NG2_RANGE) == 0x00001C, "Member 'RaceUISubStartGauge_SetStartDashSetting::NG2_RANGE' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamGroup.SetCharaIconNative
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubTeamGroup_SetCharaIconNative final
-{
-public:
-	class UTexture2D*                             IconTex;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTeamGroup_SetCharaIconNative) == 0x000008, "Wrong alignment on RaceUISubTeamGroup_SetCharaIconNative");
-static_assert(sizeof(RaceUISubTeamGroup_SetCharaIconNative) == 0x000008, "Wrong size on RaceUISubTeamGroup_SetCharaIconNative");
-static_assert(offsetof(RaceUISubTeamGroup_SetCharaIconNative, IconTex) == 0x000000, "Member 'RaceUISubTeamGroup_SetCharaIconNative::IconTex' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamGroup.SetDispTextYou
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubTeamGroup_SetDispTextYou final
-{
-public:
-	bool                                          IsDisp;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTeamGroup_SetDispTextYou) == 0x000001, "Wrong alignment on RaceUISubTeamGroup_SetDispTextYou");
-static_assert(sizeof(RaceUISubTeamGroup_SetDispTextYou) == 0x000001, "Wrong size on RaceUISubTeamGroup_SetDispTextYou");
-static_assert(offsetof(RaceUISubTeamGroup_SetDispTextYou, IsDisp) == 0x000000, "Member 'RaceUISubTeamGroup_SetDispTextYou::IsDisp' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamGroup.SetRankNative
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubTeamGroup_SetRankNative final
-{
-public:
-	int32                                         Rank;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTeamGroup_SetRankNative) == 0x000004, "Wrong alignment on RaceUISubTeamGroup_SetRankNative");
-static_assert(sizeof(RaceUISubTeamGroup_SetRankNative) == 0x000004, "Wrong size on RaceUISubTeamGroup_SetRankNative");
-static_assert(offsetof(RaceUISubTeamGroup_SetRankNative, Rank) == 0x000000, "Member 'RaceUISubTeamGroup_SetRankNative::Rank' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamHUD.ExecChangeRank
-// 0x0010 (0x0010 - 0x0000)
-struct RaceUISubTeamHUD_ExecChangeRank final
-{
-public:
-	int32                                         PanelIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     DriverId;                                          // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsDispPlayer;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Rank;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubTeamHUD_ExecChangeRank) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_ExecChangeRank");
-static_assert(sizeof(RaceUISubTeamHUD_ExecChangeRank) == 0x000010, "Wrong size on RaceUISubTeamHUD_ExecChangeRank");
-static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, PanelIndex) == 0x000000, "Member 'RaceUISubTeamHUD_ExecChangeRank::PanelIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, DriverId) == 0x000004, "Member 'RaceUISubTeamHUD_ExecChangeRank::DriverId' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, IsDispPlayer) == 0x000005, "Member 'RaceUISubTeamHUD_ExecChangeRank::IsDispPlayer' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, Rank) == 0x000008, "Member 'RaceUISubTeamHUD_ExecChangeRank::Rank' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecChangeRank, ReturnValue) == 0x00000C, "Member 'RaceUISubTeamHUD_ExecChangeRank::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamHUD.ExecPlayChangeRank
-// 0x0010 (0x0010 - 0x0000)
-struct RaceUISubTeamHUD_ExecPlayChangeRank final
-{
-public:
-	int32                                         PanelIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     DriverId;                                          // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsDispPlayer;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Rank;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubTeamHUD_ExecPlayChangeRank) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_ExecPlayChangeRank");
-static_assert(sizeof(RaceUISubTeamHUD_ExecPlayChangeRank) == 0x000010, "Wrong size on RaceUISubTeamHUD_ExecPlayChangeRank");
-static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, PanelIndex) == 0x000000, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::PanelIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, DriverId) == 0x000004, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::DriverId' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, IsDispPlayer) == 0x000005, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::IsDispPlayer' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, Rank) == 0x000008, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::Rank' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecPlayChangeRank, ReturnValue) == 0x00000C, "Member 'RaceUISubTeamHUD_ExecPlayChangeRank::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamHUD.ExecSetRankOnly
-// 0x000C (0x000C - 0x0000)
-struct RaceUISubTeamHUD_ExecSetRankOnly final
-{
-public:
-	int32                                         PanelIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Rank;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubTeamHUD_ExecSetRankOnly) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_ExecSetRankOnly");
-static_assert(sizeof(RaceUISubTeamHUD_ExecSetRankOnly) == 0x00000C, "Wrong size on RaceUISubTeamHUD_ExecSetRankOnly");
-static_assert(offsetof(RaceUISubTeamHUD_ExecSetRankOnly, PanelIndex) == 0x000000, "Member 'RaceUISubTeamHUD_ExecSetRankOnly::PanelIndex' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecSetRankOnly, Rank) == 0x000004, "Member 'RaceUISubTeamHUD_ExecSetRankOnly::Rank' has a wrong offset!");
-static_assert(offsetof(RaceUISubTeamHUD_ExecSetRankOnly, ReturnValue) == 0x000008, "Member 'RaceUISubTeamHUD_ExecSetRankOnly::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamHUD.GetTeamRankRough
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubTeamHUD_GetTeamRankRough final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTeamHUD_GetTeamRankRough) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_GetTeamRankRough");
-static_assert(sizeof(RaceUISubTeamHUD_GetTeamRankRough) == 0x000004, "Wrong size on RaceUISubTeamHUD_GetTeamRankRough");
-static_assert(offsetof(RaceUISubTeamHUD_GetTeamRankRough, ReturnValue) == 0x000000, "Member 'RaceUISubTeamHUD_GetTeamRankRough::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamHUD.SetTeamRank
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUISubTeamHUD_SetTeamRank final
-{
-public:
-	int32                                         TeamRank;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTeamHUD_SetTeamRank) == 0x000004, "Wrong alignment on RaceUISubTeamHUD_SetTeamRank");
-static_assert(sizeof(RaceUISubTeamHUD_SetTeamRank) == 0x000004, "Wrong size on RaceUISubTeamHUD_SetTeamRank");
-static_assert(offsetof(RaceUISubTeamHUD_SetTeamRank, TeamRank) == 0x000000, "Member 'RaceUISubTeamHUD_SetTeamRank::TeamRank' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTeamHUD.UpdateCharaRank
-// 0x0001 (0x0001 - 0x0000)
-struct RaceUISubTeamHUD_UpdateCharaRank final
-{
-public:
-	bool                                          IsForce;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTeamHUD_UpdateCharaRank) == 0x000001, "Wrong alignment on RaceUISubTeamHUD_UpdateCharaRank");
-static_assert(sizeof(RaceUISubTeamHUD_UpdateCharaRank) == 0x000001, "Wrong size on RaceUISubTeamHUD_UpdateCharaRank");
-static_assert(offsetof(RaceUISubTeamHUD_UpdateCharaRank, IsForce) == 0x000000, "Member 'RaceUISubTeamHUD_UpdateCharaRank::IsForce' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUISubTimeTrialTime_SetTargetTime final
-{
-public:
-	class URichTextBlock*                         TargetTextBlock;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   TargetName;                                        // 0x0008(0x0010)(Parm, NativeAccessSpecifierPublic)
-	int32                                         TargetTime;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsClockCount;                                      // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(RaceUISubTimeTrialTime_SetTargetTime) == 0x000008, "Wrong alignment on RaceUISubTimeTrialTime_SetTargetTime");
-static_assert(sizeof(RaceUISubTimeTrialTime_SetTargetTime) == 0x000020, "Wrong size on RaceUISubTimeTrialTime_SetTargetTime");
-static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, TargetTextBlock) == 0x000000, "Member 'RaceUISubTimeTrialTime_SetTargetTime::TargetTextBlock' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, TargetName) == 0x000008, "Member 'RaceUISubTimeTrialTime_SetTargetTime::TargetName' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, TargetTime) == 0x000018, "Member 'RaceUISubTimeTrialTime_SetTargetTime::TargetTime' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime, IsClockCount) == 0x00001C, "Member 'RaceUISubTimeTrialTime_SetTargetTime::IsClockCount' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime4Best
-// 0x0008 (0x0008 - 0x0000)
-struct RaceUISubTimeTrialTime_SetTargetTime4Best final
-{
-public:
-	class URichTextBlock*                         TargetTextBlock;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTimeTrialTime_SetTargetTime4Best) == 0x000008, "Wrong alignment on RaceUISubTimeTrialTime_SetTargetTime4Best");
-static_assert(sizeof(RaceUISubTimeTrialTime_SetTargetTime4Best) == 0x000008, "Wrong size on RaceUISubTimeTrialTime_SetTargetTime4Best");
-static_assert(offsetof(RaceUISubTimeTrialTime_SetTargetTime4Best, TargetTextBlock) == 0x000000, "Member 'RaceUISubTimeTrialTime_SetTargetTime4Best::TargetTextBlock' has a wrong offset!");
-
-// Function UnionRun.RaceUISubTimeTrialTime.UpdateLapTime
-// 0x0028 (0x0028 - 0x0000)
-struct RaceUISubTimeTrialTime_UpdateLapTime final
-{
-public:
-	int32                                         Lap;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsBestLap;                                         // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRaceUITimeTrialTime                   ReturnValue;                                       // 0x0008(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUISubTimeTrialTime_UpdateLapTime) == 0x000004, "Wrong alignment on RaceUISubTimeTrialTime_UpdateLapTime");
-static_assert(sizeof(RaceUISubTimeTrialTime_UpdateLapTime) == 0x000028, "Wrong size on RaceUISubTimeTrialTime_UpdateLapTime");
-static_assert(offsetof(RaceUISubTimeTrialTime_UpdateLapTime, Lap) == 0x000000, "Member 'RaceUISubTimeTrialTime_UpdateLapTime::Lap' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTime_UpdateLapTime, IsBestLap) == 0x000004, "Member 'RaceUISubTimeTrialTime_UpdateLapTime::IsBestLap' has a wrong offset!");
-static_assert(offsetof(RaceUISubTimeTrialTime_UpdateLapTime, ReturnValue) == 0x000008, "Member 'RaceUISubTimeTrialTime_UpdateLapTime::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUITutorialControllerKey.GetTutorialKey
-// 0x0020 (0x0020 - 0x0000)
-struct RaceUITutorialControllerKey_GetTutorialKey final
-{
-public:
-	ETutorialAction                               tutorialAction;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Index_0;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUITutorialControllerKey_GetTutorialKey) == 0x000008, "Wrong alignment on RaceUITutorialControllerKey_GetTutorialKey");
-static_assert(sizeof(RaceUITutorialControllerKey_GetTutorialKey) == 0x000020, "Wrong size on RaceUITutorialControllerKey_GetTutorialKey");
-static_assert(offsetof(RaceUITutorialControllerKey_GetTutorialKey, tutorialAction) == 0x000000, "Member 'RaceUITutorialControllerKey_GetTutorialKey::tutorialAction' has a wrong offset!");
-static_assert(offsetof(RaceUITutorialControllerKey_GetTutorialKey, Index_0) == 0x000004, "Member 'RaceUITutorialControllerKey_GetTutorialKey::Index_0' has a wrong offset!");
-static_assert(offsetof(RaceUITutorialControllerKey_GetTutorialKey, ReturnValue) == 0x000008, "Member 'RaceUITutorialControllerKey_GetTutorialKey::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RaceUITutorialControllerKey.UpdateHintIndex
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUITutorialControllerKey_UpdateHintIndex final
-{
-public:
-	int32                                         InIndex;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUITutorialControllerKey_UpdateHintIndex) == 0x000004, "Wrong alignment on RaceUITutorialControllerKey_UpdateHintIndex");
-static_assert(sizeof(RaceUITutorialControllerKey_UpdateHintIndex) == 0x000004, "Wrong size on RaceUITutorialControllerKey_UpdateHintIndex");
-static_assert(offsetof(RaceUITutorialControllerKey_UpdateHintIndex, InIndex) == 0x000000, "Member 'RaceUITutorialControllerKey_UpdateHintIndex::InIndex' has a wrong offset!");
-
-// Function UnionRun.RaceUITutorialControllerKey.UpdateTutorialIndex
-// 0x0004 (0x0004 - 0x0000)
-struct RaceUITutorialControllerKey_UpdateTutorialIndex final
-{
-public:
-	int32                                         InIndex;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RaceUITutorialControllerKey_UpdateTutorialIndex) == 0x000004, "Wrong alignment on RaceUITutorialControllerKey_UpdateTutorialIndex");
-static_assert(sizeof(RaceUITutorialControllerKey_UpdateTutorialIndex) == 0x000004, "Wrong size on RaceUITutorialControllerKey_UpdateTutorialIndex");
-static_assert(offsetof(RaceUITutorialControllerKey_UpdateTutorialIndex, InIndex) == 0x000000, "Member 'RaceUITutorialControllerKey_UpdateTutorialIndex::InIndex' has a wrong offset!");
-
-// Function UnionRun.ReplayFixedCameraCollision.OnCollisionBaseHit
-// 0x0060 (0x0060 - 0x0000)
-struct ReplayFixedCameraCollision_OnCollisionBaseHit final
-{
-public:
-	struct FCollisionHitInfo                      Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ReplayFixedCameraCollision_OnCollisionBaseHit) == 0x000008, "Wrong alignment on ReplayFixedCameraCollision_OnCollisionBaseHit");
-static_assert(sizeof(ReplayFixedCameraCollision_OnCollisionBaseHit) == 0x000060, "Wrong size on ReplayFixedCameraCollision_OnCollisionBaseHit");
-static_assert(offsetof(ReplayFixedCameraCollision_OnCollisionBaseHit, Info) == 0x000000, "Member 'ReplayFixedCameraCollision_OnCollisionBaseHit::Info' has a wrong offset!");
-
-// Function UnionRun.ReplayFixedCameraCollision.SetCameraData
-// 0x0018 (0x0018 - 0x0000)
-struct ReplayFixedCameraCollision_SetCameraData final
-{
-public:
-	struct FVector                                NewBoxSize;                                        // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ReplayFixedCameraCollision_SetCameraData) == 0x000008, "Wrong alignment on ReplayFixedCameraCollision_SetCameraData");
-static_assert(sizeof(ReplayFixedCameraCollision_SetCameraData) == 0x000018, "Wrong size on ReplayFixedCameraCollision_SetCameraData");
-static_assert(offsetof(ReplayFixedCameraCollision_SetCameraData, NewBoxSize) == 0x000000, "Member 'ReplayFixedCameraCollision_SetCameraData::NewBoxSize' has a wrong offset!");
-
-// Function UnionRun.ReplayMoveCameraCollision.OnCollisionBaseHit
-// 0x0060 (0x0060 - 0x0000)
-struct ReplayMoveCameraCollision_OnCollisionBaseHit final
-{
-public:
-	struct FCollisionHitInfo                      Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ReplayMoveCameraCollision_OnCollisionBaseHit) == 0x000008, "Wrong alignment on ReplayMoveCameraCollision_OnCollisionBaseHit");
-static_assert(sizeof(ReplayMoveCameraCollision_OnCollisionBaseHit) == 0x000060, "Wrong size on ReplayMoveCameraCollision_OnCollisionBaseHit");
-static_assert(offsetof(ReplayMoveCameraCollision_OnCollisionBaseHit, Info) == 0x000000, "Member 'ReplayMoveCameraCollision_OnCollisionBaseHit::Info' has a wrong offset!");
-
-// Function UnionRun.ReplayMoveCameraCollision.SetCameraData
-// 0x0018 (0x0018 - 0x0000)
-struct ReplayMoveCameraCollision_SetCameraData final
-{
-public:
-	struct FVector                                NewBoxSize;                                        // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ReplayMoveCameraCollision_SetCameraData) == 0x000008, "Wrong alignment on ReplayMoveCameraCollision_SetCameraData");
-static_assert(sizeof(ReplayMoveCameraCollision_SetCameraData) == 0x000018, "Wrong size on ReplayMoveCameraCollision_SetCameraData");
-static_assert(offsetof(ReplayMoveCameraCollision_SetCameraData, NewBoxSize) == 0x000000, "Member 'ReplayMoveCameraCollision_SetCameraData::NewBoxSize' has a wrong offset!");
-
-// Function UnionRun.RingObject.GetFinalLapRingNum
-// 0x0004 (0x0004 - 0x0000)
-struct RingObject_GetFinalLapRingNum final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RingObject_GetFinalLapRingNum) == 0x000004, "Wrong alignment on RingObject_GetFinalLapRingNum");
-static_assert(sizeof(RingObject_GetFinalLapRingNum) == 0x000004, "Wrong size on RingObject_GetFinalLapRingNum");
-static_assert(offsetof(RingObject_GetFinalLapRingNum, ReturnValue) == 0x000000, "Member 'RingObject_GetFinalLapRingNum::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RingObject.GetFinalLapRingOffset
-// 0x0004 (0x0004 - 0x0000)
-struct RingObject_GetFinalLapRingOffset final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RingObject_GetFinalLapRingOffset) == 0x000004, "Wrong alignment on RingObject_GetFinalLapRingOffset");
-static_assert(sizeof(RingObject_GetFinalLapRingOffset) == 0x000004, "Wrong size on RingObject_GetFinalLapRingOffset");
-static_assert(offsetof(RingObject_GetFinalLapRingOffset, ReturnValue) == 0x000000, "Member 'RingObject_GetFinalLapRingOffset::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RingObject.IsFinalLapChange
-// 0x0001 (0x0001 - 0x0000)
-struct RingObject_IsFinalLapChange final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RingObject_IsFinalLapChange) == 0x000001, "Wrong alignment on RingObject_IsFinalLapChange");
-static_assert(sizeof(RingObject_IsFinalLapChange) == 0x000001, "Wrong size on RingObject_IsFinalLapChange");
-static_assert(offsetof(RingObject_IsFinalLapChange, ReturnValue) == 0x000000, "Member 'RingObject_IsFinalLapChange::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.RingObject.SetIsFinalLapChange
-// 0x0001 (0x0001 - 0x0000)
-struct RingObject_SetIsFinalLapChange final
-{
-public:
-	bool                                          flag;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RingObject_SetIsFinalLapChange) == 0x000001, "Wrong alignment on RingObject_SetIsFinalLapChange");
-static_assert(sizeof(RingObject_SetIsFinalLapChange) == 0x000001, "Wrong size on RingObject_SetIsFinalLapChange");
-static_assert(offsetof(RingObject_SetIsFinalLapChange, flag) == 0x000000, "Member 'RingObject_SetIsFinalLapChange::flag' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.GetOverrideCollisionScale
-// 0x0004 (0x0004 - 0x0000)
-struct ShortcutRingObject_GetOverrideCollisionScale final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_GetOverrideCollisionScale) == 0x000004, "Wrong alignment on ShortcutRingObject_GetOverrideCollisionScale");
-static_assert(sizeof(ShortcutRingObject_GetOverrideCollisionScale) == 0x000004, "Wrong size on ShortcutRingObject_GetOverrideCollisionScale");
-static_assert(offsetof(ShortcutRingObject_GetOverrideCollisionScale, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetOverrideCollisionScale::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.GetRingScale
-// 0x0004 (0x0004 - 0x0000)
-struct ShortcutRingObject_GetRingScale final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_GetRingScale) == 0x000004, "Wrong alignment on ShortcutRingObject_GetRingScale");
-static_assert(sizeof(ShortcutRingObject_GetRingScale) == 0x000004, "Wrong size on ShortcutRingObject_GetRingScale");
-static_assert(offsetof(ShortcutRingObject_GetRingScale, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetRingScale::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.GetShortcutId
-// 0x0004 (0x0004 - 0x0000)
-struct ShortcutRingObject_GetShortcutId final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_GetShortcutId) == 0x000004, "Wrong alignment on ShortcutRingObject_GetShortcutId");
-static_assert(sizeof(ShortcutRingObject_GetShortcutId) == 0x000004, "Wrong size on ShortcutRingObject_GetShortcutId");
-static_assert(offsetof(ShortcutRingObject_GetShortcutId, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetShortcutId::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.GetShortcutRingType
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_GetShortcutRingType final
-{
-public:
-	EShortcutRingType                             ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_GetShortcutRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_GetShortcutRingType");
-static_assert(sizeof(ShortcutRingObject_GetShortcutRingType) == 0x000001, "Wrong size on ShortcutRingObject_GetShortcutRingType");
-static_assert(offsetof(ShortcutRingObject_GetShortcutRingType, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetShortcutRingType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.GetStageId
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_GetStageId final
-{
-public:
-	EStageId                                      ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_GetStageId) == 0x000001, "Wrong alignment on ShortcutRingObject_GetStageId");
-static_assert(sizeof(ShortcutRingObject_GetStageId) == 0x000001, "Wrong size on ShortcutRingObject_GetStageId");
-static_assert(offsetof(ShortcutRingObject_GetStageId, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetStageId::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.IsHalfRing
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_IsHalfRing final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_IsHalfRing) == 0x000001, "Wrong alignment on ShortcutRingObject_IsHalfRing");
-static_assert(sizeof(ShortcutRingObject_IsHalfRing) == 0x000001, "Wrong size on ShortcutRingObject_IsHalfRing");
-static_assert(offsetof(ShortcutRingObject_IsHalfRing, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_IsHalfRing::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.IsUseOverrideCollisionScale
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_IsUseOverrideCollisionScale final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_IsUseOverrideCollisionScale) == 0x000001, "Wrong alignment on ShortcutRingObject_IsUseOverrideCollisionScale");
-static_assert(sizeof(ShortcutRingObject_IsUseOverrideCollisionScale) == 0x000001, "Wrong size on ShortcutRingObject_IsUseOverrideCollisionScale");
-static_assert(offsetof(ShortcutRingObject_IsUseOverrideCollisionScale, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_IsUseOverrideCollisionScale::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.SetHalfRing
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_SetHalfRing final
-{
-public:
-	bool                                          bHalf;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_SetHalfRing) == 0x000001, "Wrong alignment on ShortcutRingObject_SetHalfRing");
-static_assert(sizeof(ShortcutRingObject_SetHalfRing) == 0x000001, "Wrong size on ShortcutRingObject_SetHalfRing");
-static_assert(offsetof(ShortcutRingObject_SetHalfRing, bHalf) == 0x000000, "Member 'ShortcutRingObject_SetHalfRing::bHalf' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.SetRingScale
-// 0x0004 (0x0004 - 0x0000)
-struct ShortcutRingObject_SetRingScale final
-{
-public:
-	float                                         Scale;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_SetRingScale) == 0x000004, "Wrong alignment on ShortcutRingObject_SetRingScale");
-static_assert(sizeof(ShortcutRingObject_SetRingScale) == 0x000004, "Wrong size on ShortcutRingObject_SetRingScale");
-static_assert(offsetof(ShortcutRingObject_SetRingScale, Scale) == 0x000000, "Member 'ShortcutRingObject_SetRingScale::Scale' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.SetShortcutId
-// 0x0004 (0x0004 - 0x0000)
-struct ShortcutRingObject_SetShortcutId final
-{
-public:
-	int32                                         ID;                                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_SetShortcutId) == 0x000004, "Wrong alignment on ShortcutRingObject_SetShortcutId");
-static_assert(sizeof(ShortcutRingObject_SetShortcutId) == 0x000004, "Wrong size on ShortcutRingObject_SetShortcutId");
-static_assert(offsetof(ShortcutRingObject_SetShortcutId, ID) == 0x000000, "Member 'ShortcutRingObject_SetShortcutId::ID' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.SetShortcutRingType
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_SetShortcutRingType final
-{
-public:
-	EShortcutRingType                             Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_SetShortcutRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_SetShortcutRingType");
-static_assert(sizeof(ShortcutRingObject_SetShortcutRingType) == 0x000001, "Wrong size on ShortcutRingObject_SetShortcutRingType");
-static_assert(offsetof(ShortcutRingObject_SetShortcutRingType, Type) == 0x000000, "Member 'ShortcutRingObject_SetShortcutRingType::Type' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.SetTravelRingType
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_SetTravelRingType final
-{
-public:
-	ETravelRingType                               Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_SetTravelRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_SetTravelRingType");
-static_assert(sizeof(ShortcutRingObject_SetTravelRingType) == 0x000001, "Wrong size on ShortcutRingObject_SetTravelRingType");
-static_assert(offsetof(ShortcutRingObject_SetTravelRingType, Type) == 0x000000, "Member 'ShortcutRingObject_SetTravelRingType::Type' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.GetTravelRingType
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_GetTravelRingType final
-{
-public:
-	ETravelRingType                               ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_GetTravelRingType) == 0x000001, "Wrong alignment on ShortcutRingObject_GetTravelRingType");
-static_assert(sizeof(ShortcutRingObject_GetTravelRingType) == 0x000001, "Wrong size on ShortcutRingObject_GetTravelRingType");
-static_assert(offsetof(ShortcutRingObject_GetTravelRingType, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_GetTravelRingType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.ShortcutRingObject.IsUseAnotherGate
-// 0x0001 (0x0001 - 0x0000)
-struct ShortcutRingObject_IsUseAnotherGate final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ShortcutRingObject_IsUseAnotherGate) == 0x000001, "Wrong alignment on ShortcutRingObject_IsUseAnotherGate");
-static_assert(sizeof(ShortcutRingObject_IsUseAnotherGate) == 0x000001, "Wrong size on ShortcutRingObject_IsUseAnotherGate");
-static_assert(offsetof(ShortcutRingObject_IsUseAnotherGate, ReturnValue) == 0x000000, "Member 'ShortcutRingObject_IsUseAnotherGate::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.SquidAnimInstance.IsSquidState
-// 0x0002 (0x0002 - 0x0000)
-struct SquidAnimInstance_IsSquidState final
-{
-public:
-	ESquidState                                   State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SquidAnimInstance_IsSquidState) == 0x000001, "Wrong alignment on SquidAnimInstance_IsSquidState");
-static_assert(sizeof(SquidAnimInstance_IsSquidState) == 0x000002, "Wrong size on SquidAnimInstance_IsSquidState");
-static_assert(offsetof(SquidAnimInstance_IsSquidState, State) == 0x000000, "Member 'SquidAnimInstance_IsSquidState::State' has a wrong offset!");
-static_assert(offsetof(SquidAnimInstance_IsSquidState, ReturnValue) == 0x000001, "Member 'SquidAnimInstance_IsSquidState::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TowerAnimInstance.IsTowerState
-// 0x0002 (0x0002 - 0x0000)
-struct TowerAnimInstance_IsTowerState final
-{
-public:
-	ETowerState                                   State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TowerAnimInstance_IsTowerState) == 0x000001, "Wrong alignment on TowerAnimInstance_IsTowerState");
-static_assert(sizeof(TowerAnimInstance_IsTowerState) == 0x000002, "Wrong size on TowerAnimInstance_IsTowerState");
-static_assert(offsetof(TowerAnimInstance_IsTowerState, State) == 0x000000, "Member 'TowerAnimInstance_IsTowerState::State' has a wrong offset!");
-static_assert(offsetof(TowerAnimInstance_IsTowerState, ReturnValue) == 0x000001, "Member 'TowerAnimInstance_IsTowerState::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TransformRingObject.GetRingScaleRate
-// 0x0004 (0x0004 - 0x0000)
-struct TransformRingObject_GetRingScaleRate final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TransformRingObject_GetRingScaleRate) == 0x000004, "Wrong alignment on TransformRingObject_GetRingScaleRate");
-static_assert(sizeof(TransformRingObject_GetRingScaleRate) == 0x000004, "Wrong size on TransformRingObject_GetRingScaleRate");
-static_assert(offsetof(TransformRingObject_GetRingScaleRate, ReturnValue) == 0x000000, "Member 'TransformRingObject_GetRingScaleRate::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.TransformRingObject.SetRingScaleRate
-// 0x0004 (0x0004 - 0x0000)
-struct TransformRingObject_SetRingScaleRate final
-{
-public:
-	float                                         Rate;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TransformRingObject_SetRingScaleRate) == 0x000004, "Wrong alignment on TransformRingObject_SetRingScaleRate");
-static_assert(sizeof(TransformRingObject_SetRingScaleRate) == 0x000004, "Wrong size on TransformRingObject_SetRingScaleRate");
-static_assert(offsetof(TransformRingObject_SetRingScaleRate, Rate) == 0x000000, "Member 'TransformRingObject_SetRingScaleRate::Rate' has a wrong offset!");
-
-// Function UnionRun.TransformRingObject.SetTransformRingType
-// 0x0001 (0x0001 - 0x0000)
-struct TransformRingObject_SetTransformRingType final
-{
-public:
-	ETransformRingType                            Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TransformRingObject_SetTransformRingType) == 0x000001, "Wrong alignment on TransformRingObject_SetTransformRingType");
-static_assert(sizeof(TransformRingObject_SetTransformRingType) == 0x000001, "Wrong size on TransformRingObject_SetTransformRingType");
-static_assert(offsetof(TransformRingObject_SetTransformRingType, Type) == 0x000000, "Member 'TransformRingObject_SetTransformRingType::Type' has a wrong offset!");
-
-// Function UnionRun.TransformRingObject.UpdateParallelMode
-// 0x0004 (0x0004 - 0x0000)
-struct TransformRingObject_UpdateParallelMode final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TransformRingObject_UpdateParallelMode) == 0x000004, "Wrong alignment on TransformRingObject_UpdateParallelMode");
-static_assert(sizeof(TransformRingObject_UpdateParallelMode) == 0x000004, "Wrong size on TransformRingObject_UpdateParallelMode");
-static_assert(offsetof(TransformRingObject_UpdateParallelMode, RacerIndex) == 0x000000, "Member 'TransformRingObject_UpdateParallelMode::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.TriggerComponent.OnCollisionBaseHit
-// 0x0060 (0x0060 - 0x0000)
-struct TriggerComponent_OnCollisionBaseHit final
-{
-public:
-	struct FCollisionHitInfo                      Info;                                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TriggerComponent_OnCollisionBaseHit) == 0x000008, "Wrong alignment on TriggerComponent_OnCollisionBaseHit");
-static_assert(sizeof(TriggerComponent_OnCollisionBaseHit) == 0x000060, "Wrong size on TriggerComponent_OnCollisionBaseHit");
-static_assert(offsetof(TriggerComponent_OnCollisionBaseHit, Info) == 0x000000, "Member 'TriggerComponent_OnCollisionBaseHit::Info' has a wrong offset!");
-
-// Function UnionRun.TriggerComponent.OnCollisionHitResult
-// 0x0058 (0x0058 - 0x0000)
-struct TriggerComponent_OnCollisionHitResult final
-{
-public:
-	struct FCollisionHitResultInfo                Info;                                              // 0x0000(0x0058)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TriggerComponent_OnCollisionHitResult) == 0x000008, "Wrong alignment on TriggerComponent_OnCollisionHitResult");
-static_assert(sizeof(TriggerComponent_OnCollisionHitResult) == 0x000058, "Wrong size on TriggerComponent_OnCollisionHitResult");
-static_assert(offsetof(TriggerComponent_OnCollisionHitResult, Info) == 0x000000, "Member 'TriggerComponent_OnCollisionHitResult::Info' has a wrong offset!");
-
-// Function UnionRun.TriggerComponent.SetSurfaceFlag
-// 0x001F (0x001F - 0x0000)
-struct TriggerComponent_SetSurfaceFlag final
-{
-public:
-	struct FUnionSurfaceFlag                      flag;                                              // 0x0000(0x001F)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TriggerComponent_SetSurfaceFlag) == 0x000001, "Wrong alignment on TriggerComponent_SetSurfaceFlag");
-static_assert(sizeof(TriggerComponent_SetSurfaceFlag) == 0x00001F, "Wrong size on TriggerComponent_SetSurfaceFlag");
-static_assert(offsetof(TriggerComponent_SetSurfaceFlag, flag) == 0x000000, "Member 'TriggerComponent_SetSurfaceFlag::flag' has a wrong offset!");
-
-// Function UnionRun.TriggerComponent.SetSurfaceType
-// 0x0001 (0x0001 - 0x0000)
-struct TriggerComponent_SetSurfaceType final
-{
-public:
-	EUnionSurfaceType                             Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(TriggerComponent_SetSurfaceType) == 0x000001, "Wrong alignment on TriggerComponent_SetSurfaceType");
-static_assert(sizeof(TriggerComponent_SetSurfaceType) == 0x000001, "Wrong size on TriggerComponent_SetSurfaceType");
-static_assert(offsetof(TriggerComponent_SetSurfaceType, Type) == 0x000000, "Member 'TriggerComponent_SetSurfaceType::Type' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetAttackEnemyItemIdIF
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF final
-{
-public:
-	EEnemyItemId                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemIdIF
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_GetAttackItemIdIF final
-{
-public:
-	EItemId                                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetAttackItemIdIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetAttackItemIdIF");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetAttackItemIdIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetAttackItemIdIF");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetAttackItemIdIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetAttackItemIdIF::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainIndex
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectDomainIndex final
-{
-public:
-	EDomainIndex                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectDomainIndex) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectDomainIndex");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectDomainIndex) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetObjectDomainIndex");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectDomainIndex, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectDomainIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainLocationUE
-// 0x0018 (0x0018 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectDomainLocationUE final
-{
-public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectDomainLocationUE) == 0x000008, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectDomainLocationUE");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectDomainLocationUE) == 0x000018, "Wrong size on UnionAttackItemInfoInterface_GetObjectDomainLocationUE");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectDomainLocationUE, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectDomainLocationUE::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainNumber
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectDomainNumber final
-{
-public:
-	EDomainNumber                                 ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectDomainNumber) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectDomainNumber");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectDomainNumber) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetObjectDomainNumber");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectDomainNumber, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectDomainNumber::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectLapCount
-// 0x0004 (0x0004 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectLapCount final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectLapCount) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectLapCount");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectLapCount) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectLapCount");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectLapCount, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectLapCount::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectPathIndexDistance
-// 0x0004 (0x0004 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectPathIndexDistance final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectPathIndexDistance) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectPathIndexDistance");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectPathIndexDistance) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectPathIndexDistance");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectPathIndexDistance, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectPathIndexDistance::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDistance
-// 0x0004 (0x0004 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectRaceDistance final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectRaceDistance) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectRaceDistance");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectRaceDistance) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectRaceDistance");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectRaceDistance, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectRaceDistance::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDomainElapsedRatio
-// 0x0004 (0x0004 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectWorldLocation
-// 0x0018 (0x0018 - 0x0000)
-struct UnionAttackItemInfoInterface_GetObjectWorldLocation final
-{
-public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetObjectWorldLocation) == 0x000008, "Wrong alignment on UnionAttackItemInfoInterface_GetObjectWorldLocation");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetObjectWorldLocation) == 0x000018, "Wrong size on UnionAttackItemInfoInterface_GetObjectWorldLocation");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetObjectWorldLocation, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetObjectWorldLocation::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetSameDomainOnlyFlag
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_GetSameDomainOnlyFlag final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetSameDomainOnlyFlag) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetSameDomainOnlyFlag");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetSameDomainOnlyFlag) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetSameDomainOnlyFlag");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetSameDomainOnlyFlag, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetSameDomainOnlyFlag::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetUsingRacerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionAttackItemInfoInterface_GetUsingRacerIndex final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetUsingRacerIndex) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_GetUsingRacerIndex");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetUsingRacerIndex) == 0x000004, "Wrong size on UnionAttackItemInfoInterface_GetUsingRacerIndex");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetUsingRacerIndex, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetUsingRacerIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemMoveToTargetIgnorePathIF
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF");
-static_assert(sizeof(UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF");
-static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemTargetIF
-// 0x0008 (0x0008 - 0x0000)
-struct UnionAttackItemInfoInterface_IsAttackItemTargetIF final
-{
-public:
-	int32                                         checkRacerIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionAttackItemInfoInterface_IsAttackItemTargetIF) == 0x000004, "Wrong alignment on UnionAttackItemInfoInterface_IsAttackItemTargetIF");
-static_assert(sizeof(UnionAttackItemInfoInterface_IsAttackItemTargetIF) == 0x000008, "Wrong size on UnionAttackItemInfoInterface_IsAttackItemTargetIF");
-static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemTargetIF, checkRacerIndex) == 0x000000, "Member 'UnionAttackItemInfoInterface_IsAttackItemTargetIF::checkRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemTargetIF, ReturnValue) == 0x000004, "Member 'UnionAttackItemInfoInterface_IsAttackItemTargetIF::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemUsedForBackIF
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF");
-static_assert(sizeof(UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF");
-static_assert(offsetof(UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemInfoTypeIF
-// 0x0001 (0x0001 - 0x0000)
-struct UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF final
-{
-public:
-	EUnionAttackItemInfoType                      ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF) == 0x000001, "Wrong alignment on UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF");
-static_assert(sizeof(UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF) == 0x000001, "Wrong size on UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF");
-static_assert(offsetof(UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF, ReturnValue) == 0x000000, "Member 'UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionCameraModifierPostEffect.SetCameraPostEffectParameter
-// 0x0010 (0x0010 - 0x0000)
-struct UnionCameraModifierPostEffect_SetCameraPostEffectParameter final
-{
-public:
-	EUnionCameraModifierPostEffectType            EffectType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   ParameterName;                                     // 0x0004(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Value;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter) == 0x000004, "Wrong alignment on UnionCameraModifierPostEffect_SetCameraPostEffectParameter");
-static_assert(sizeof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter) == 0x000010, "Wrong size on UnionCameraModifierPostEffect_SetCameraPostEffectParameter");
-static_assert(offsetof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter, EffectType) == 0x000000, "Member 'UnionCameraModifierPostEffect_SetCameraPostEffectParameter::EffectType' has a wrong offset!");
-static_assert(offsetof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter, ParameterName) == 0x000004, "Member 'UnionCameraModifierPostEffect_SetCameraPostEffectParameter::ParameterName' has a wrong offset!");
-static_assert(offsetof(UnionCameraModifierPostEffect_SetCameraPostEffectParameter, Value) == 0x00000C, "Member 'UnionCameraModifierPostEffect_SetCameraPostEffectParameter::Value' has a wrong offset!");
-
-// Function UnionRun.UnionDebugStringSubsystem.Draw
-// 0x0010 (0x0010 - 0x0000)
-struct UnionDebugStringSubsystem_Draw final
-{
-public:
-	class UCanvas*                                InCanvas;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APlayerController*                      InPC;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionDebugStringSubsystem_Draw) == 0x000008, "Wrong alignment on UnionDebugStringSubsystem_Draw");
-static_assert(sizeof(UnionDebugStringSubsystem_Draw) == 0x000010, "Wrong size on UnionDebugStringSubsystem_Draw");
-static_assert(offsetof(UnionDebugStringSubsystem_Draw, InCanvas) == 0x000000, "Member 'UnionDebugStringSubsystem_Draw::InCanvas' has a wrong offset!");
-static_assert(offsetof(UnionDebugStringSubsystem_Draw, InPC) == 0x000008, "Member 'UnionDebugStringSubsystem_Draw::InPC' has a wrong offset!");
-
-// Function UnionRun.UnionDebugStringSubsystem.PrintDebugString
-// 0x0028 (0x0028 - 0x0000)
-struct UnionDebugStringSubsystem_PrintDebugString final
-{
-public:
-	struct FDebugPrintStringStruct                DebugString;                                       // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionDebugStringSubsystem_PrintDebugString) == 0x000008, "Wrong alignment on UnionDebugStringSubsystem_PrintDebugString");
-static_assert(sizeof(UnionDebugStringSubsystem_PrintDebugString) == 0x000028, "Wrong size on UnionDebugStringSubsystem_PrintDebugString");
-static_assert(offsetof(UnionDebugStringSubsystem_PrintDebugString, DebugString) == 0x000000, "Member 'UnionDebugStringSubsystem_PrintDebugString::DebugString' has a wrong offset!");
-
-// Function UnionRun.UnionDebugStringSubsystem.SetDebugStringVisibleFlag
-// 0x0001 (0x0001 - 0x0000)
-struct UnionDebugStringSubsystem_SetDebugStringVisibleFlag final
-{
-public:
-	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionDebugStringSubsystem_SetDebugStringVisibleFlag) == 0x000001, "Wrong alignment on UnionDebugStringSubsystem_SetDebugStringVisibleFlag");
-static_assert(sizeof(UnionDebugStringSubsystem_SetDebugStringVisibleFlag) == 0x000001, "Wrong size on UnionDebugStringSubsystem_SetDebugStringVisibleFlag");
-static_assert(offsetof(UnionDebugStringSubsystem_SetDebugStringVisibleFlag, bVisible) == 0x000000, "Member 'UnionDebugStringSubsystem_SetDebugStringVisibleFlag::bVisible' has a wrong offset!");
-
-// Function UnionRun.UnionItemSkeletalMeshContainer.OnBeginItem
-// 0x0008 (0x0008 - 0x0000)
-struct UnionItemSkeletalMeshContainer_OnBeginItem final
-{
-public:
-	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionItemSkeletalMeshContainer_OnBeginItem) == 0x000008, "Wrong alignment on UnionItemSkeletalMeshContainer_OnBeginItem");
-static_assert(sizeof(UnionItemSkeletalMeshContainer_OnBeginItem) == 0x000008, "Wrong size on UnionItemSkeletalMeshContainer_OnBeginItem");
-static_assert(offsetof(UnionItemSkeletalMeshContainer_OnBeginItem, OwnerActor) == 0x000000, "Member 'UnionItemSkeletalMeshContainer_OnBeginItem::OwnerActor' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.GetPhysicalSurfaceType
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_GetPhysicalSurfaceType final
-{
-public:
-	EUnionSurfaceType                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_GetPhysicalSurfaceType) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_GetPhysicalSurfaceType");
-static_assert(sizeof(UnionPhysicalMaterial_GetPhysicalSurfaceType) == 0x000001, "Wrong size on UnionPhysicalMaterial_GetPhysicalSurfaceType");
-static_assert(offsetof(UnionPhysicalMaterial_GetPhysicalSurfaceType, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_GetPhysicalSurfaceType::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.GetSurfaceFlag
-// 0x001F (0x001F - 0x0000)
-struct UnionPhysicalMaterial_GetSurfaceFlag final
-{
-public:
-	struct FUnionSurfaceFlag                      ReturnValue;                                       // 0x0000(0x001F)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_GetSurfaceFlag) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_GetSurfaceFlag");
-static_assert(sizeof(UnionPhysicalMaterial_GetSurfaceFlag) == 0x00001F, "Wrong size on UnionPhysicalMaterial_GetSurfaceFlag");
-static_assert(offsetof(UnionPhysicalMaterial_GetSurfaceFlag, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_GetSurfaceFlag::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsAssistWall
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsAssistWall final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsAssistWall) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsAssistWall");
-static_assert(sizeof(UnionPhysicalMaterial_IsAssistWall) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsAssistWall");
-static_assert(offsetof(UnionPhysicalMaterial_IsAssistWall, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsAssistWall::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsAssistWallItemIgnoret
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsAssistWallItemIgnoret final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsAssistWallItemIgnoret) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsAssistWallItemIgnoret");
-static_assert(sizeof(UnionPhysicalMaterial_IsAssistWallItemIgnoret) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsAssistWallItemIgnoret");
-static_assert(offsetof(UnionPhysicalMaterial_IsAssistWallItemIgnoret, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsAssistWallItemIgnoret::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsBouncy
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsBouncy final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsBouncy) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBouncy");
-static_assert(sizeof(UnionPhysicalMaterial_IsBouncy) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBouncy");
-static_assert(offsetof(UnionPhysicalMaterial_IsBouncy, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBouncy::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsBumpyHeavy
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsBumpyHeavy final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsBumpyHeavy) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBumpyHeavy");
-static_assert(sizeof(UnionPhysicalMaterial_IsBumpyHeavy) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBumpyHeavy");
-static_assert(offsetof(UnionPhysicalMaterial_IsBumpyHeavy, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBumpyHeavy::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsBumpyLight
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsBumpyLight final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsBumpyLight) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBumpyLight");
-static_assert(sizeof(UnionPhysicalMaterial_IsBumpyLight) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBumpyLight");
-static_assert(offsetof(UnionPhysicalMaterial_IsBumpyLight, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBumpyLight::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsBumpyMedium
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsBumpyMedium final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsBumpyMedium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsBumpyMedium");
-static_assert(sizeof(UnionPhysicalMaterial_IsBumpyMedium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsBumpyMedium");
-static_assert(offsetof(UnionPhysicalMaterial_IsBumpyMedium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsBumpyMedium::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsCameraChange
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsCameraChange final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsCameraChange) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsCameraChange");
-static_assert(sizeof(UnionPhysicalMaterial_IsCameraChange) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsCameraChange");
-static_assert(offsetof(UnionPhysicalMaterial_IsCameraChange, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsCameraChange::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsCarDriveable
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsCarDriveable final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsCarDriveable) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsCarDriveable");
-static_assert(sizeof(UnionPhysicalMaterial_IsCarDriveable) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsCarDriveable");
-static_assert(offsetof(UnionPhysicalMaterial_IsCarDriveable, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsCarDriveable::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsCylindrical
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsCylindrical final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsCylindrical) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsCylindrical");
-static_assert(sizeof(UnionPhysicalMaterial_IsCylindrical) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsCylindrical");
-static_assert(offsetof(UnionPhysicalMaterial_IsCylindrical, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsCylindrical::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsDash
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsDash final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsDash) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsDash");
-static_assert(sizeof(UnionPhysicalMaterial_IsDash) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsDash");
-static_assert(offsetof(UnionPhysicalMaterial_IsDash, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsDash::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsGravitySwitch
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsGravitySwitch final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsGravitySwitch) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsGravitySwitch");
-static_assert(sizeof(UnionPhysicalMaterial_IsGravitySwitch) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsGravitySwitch");
-static_assert(offsetof(UnionPhysicalMaterial_IsGravitySwitch, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsGravitySwitch::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsGrindDash
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsGrindDash final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsGrindDash) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsGrindDash");
-static_assert(sizeof(UnionPhysicalMaterial_IsGrindDash) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsGrindDash");
-static_assert(offsetof(UnionPhysicalMaterial_IsGrindDash, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsGrindDash::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsGuidedJump
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsGuidedJump final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsGuidedJump) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsGuidedJump");
-static_assert(sizeof(UnionPhysicalMaterial_IsGuidedJump) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsGuidedJump");
-static_assert(offsetof(UnionPhysicalMaterial_IsGuidedJump, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsGuidedJump::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitBouncyMidium
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsHitBouncyMidium final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsHitBouncyMidium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitBouncyMidium");
-static_assert(sizeof(UnionPhysicalMaterial_IsHitBouncyMidium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitBouncyMidium");
-static_assert(offsetof(UnionPhysicalMaterial_IsHitBouncyMidium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitBouncyMidium::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitLoseRing
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsHitLoseRing final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsHitLoseRing) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitLoseRing");
-static_assert(sizeof(UnionPhysicalMaterial_IsHitLoseRing) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitLoseRing");
-static_assert(offsetof(UnionPhysicalMaterial_IsHitLoseRing, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitLoseRing::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownLight
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsHitSlowdownLight final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsHitSlowdownLight) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitSlowdownLight");
-static_assert(sizeof(UnionPhysicalMaterial_IsHitSlowdownLight) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitSlowdownLight");
-static_assert(offsetof(UnionPhysicalMaterial_IsHitSlowdownLight, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitSlowdownLight::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownMidium
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsHitSlowdownMidium final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsHitSlowdownMidium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsHitSlowdownMidium");
-static_assert(sizeof(UnionPhysicalMaterial_IsHitSlowdownMidium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsHitSlowdownMidium");
-static_assert(offsetof(UnionPhysicalMaterial_IsHitSlowdownMidium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsHitSlowdownMidium::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsIgnoreSticky
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsIgnoreSticky final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsIgnoreSticky) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsIgnoreSticky");
-static_assert(sizeof(UnionPhysicalMaterial_IsIgnoreSticky) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsIgnoreSticky");
-static_assert(offsetof(UnionPhysicalMaterial_IsIgnoreSticky, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsIgnoreSticky::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsItemOnly
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsItemOnly final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsItemOnly) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsItemOnly");
-static_assert(sizeof(UnionPhysicalMaterial_IsItemOnly) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsItemOnly");
-static_assert(offsetof(UnionPhysicalMaterial_IsItemOnly, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsItemOnly::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsMachineOnlyWall
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsMachineOnlyWall final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsMachineOnlyWall) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsMachineOnlyWall");
-static_assert(sizeof(UnionPhysicalMaterial_IsMachineOnlyWall) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsMachineOnlyWall");
-static_assert(offsetof(UnionPhysicalMaterial_IsMachineOnlyWall, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsMachineOnlyWall::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsNoJump
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsNoJump final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsNoJump) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsNoJump");
-static_assert(sizeof(UnionPhysicalMaterial_IsNoJump) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsNoJump");
-static_assert(offsetof(UnionPhysicalMaterial_IsNoJump, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsNoJump::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsNrrow
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsNrrow final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsNrrow) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsNrrow");
-static_assert(sizeof(UnionPhysicalMaterial_IsNrrow) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsNrrow");
-static_assert(offsetof(UnionPhysicalMaterial_IsNrrow, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsNrrow::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsPseudoPlane
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsPseudoPlane final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsPseudoPlane) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsPseudoPlane");
-static_assert(sizeof(UnionPhysicalMaterial_IsPseudoPlane) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsPseudoPlane");
-static_assert(offsetof(UnionPhysicalMaterial_IsPseudoPlane, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsPseudoPlane::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsRespot
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsRespot final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsRespot) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsRespot");
-static_assert(sizeof(UnionPhysicalMaterial_IsRespot) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsRespot");
-static_assert(offsetof(UnionPhysicalMaterial_IsRespot, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsRespot::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlide
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsSlide final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsSlide) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlide");
-static_assert(sizeof(UnionPhysicalMaterial_IsSlide) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlide");
-static_assert(offsetof(UnionPhysicalMaterial_IsSlide, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlide::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlippy
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsSlippy final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsSlippy) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlippy");
-static_assert(sizeof(UnionPhysicalMaterial_IsSlippy) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlippy");
-static_assert(offsetof(UnionPhysicalMaterial_IsSlippy, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlippy::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlowDownLight
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsSlowDownLight final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsSlowDownLight) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlowDownLight");
-static_assert(sizeof(UnionPhysicalMaterial_IsSlowDownLight) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlowDownLight");
-static_assert(offsetof(UnionPhysicalMaterial_IsSlowDownLight, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlowDownLight::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlowDownMedium
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsSlowDownMedium final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsSlowDownMedium) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsSlowDownMedium");
-static_assert(sizeof(UnionPhysicalMaterial_IsSlowDownMedium) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsSlowDownMedium");
-static_assert(offsetof(UnionPhysicalMaterial_IsSlowDownMedium, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsSlowDownMedium::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsWall
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsWall final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsWall) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsWall");
-static_assert(sizeof(UnionPhysicalMaterial_IsWall) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsWall");
-static_assert(offsetof(UnionPhysicalMaterial_IsWall, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsWall::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPhysicalMaterial.IsYellowDrill
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPhysicalMaterial_IsYellowDrill final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPhysicalMaterial_IsYellowDrill) == 0x000001, "Wrong alignment on UnionPhysicalMaterial_IsYellowDrill");
-static_assert(sizeof(UnionPhysicalMaterial_IsYellowDrill) == 0x000001, "Wrong size on UnionPhysicalMaterial_IsYellowDrill");
-static_assert(offsetof(UnionPhysicalMaterial_IsYellowDrill, ReturnValue) == 0x000000, "Member 'UnionPhysicalMaterial_IsYellowDrill::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionPlayerInfoBillboardUI.ChangeDriverInfo
-// 0x0001 (0x0001 - 0x0000)
-struct UnionPlayerInfoBillboardUI_ChangeDriverInfo final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionPlayerInfoBillboardUI_ChangeDriverInfo) == 0x000001, "Wrong alignment on UnionPlayerInfoBillboardUI_ChangeDriverInfo");
-static_assert(sizeof(UnionPlayerInfoBillboardUI_ChangeDriverInfo) == 0x000001, "Wrong size on UnionPlayerInfoBillboardUI_ChangeDriverInfo");
-static_assert(offsetof(UnionPlayerInfoBillboardUI_ChangeDriverInfo, DriverId) == 0x000000, "Member 'UnionPlayerInfoBillboardUI_ChangeDriverInfo::DriverId' has a wrong offset!");
-
-// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByGadgetInfo
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRaceGadgetUI_InitializeIconsByGadgetInfo final
-{
-public:
-	TArray<EGadgetId>                             GadgetInfo;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceGadgetUI_InitializeIconsByGadgetInfo) == 0x000008, "Wrong alignment on UnionRaceGadgetUI_InitializeIconsByGadgetInfo");
-static_assert(sizeof(UnionRaceGadgetUI_InitializeIconsByGadgetInfo) == 0x000010, "Wrong size on UnionRaceGadgetUI_InitializeIconsByGadgetInfo");
-static_assert(offsetof(UnionRaceGadgetUI_InitializeIconsByGadgetInfo, GadgetInfo) == 0x000000, "Member 'UnionRaceGadgetUI_InitializeIconsByGadgetInfo::GadgetInfo' has a wrong offset!");
-
-// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByRacerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceGadgetUI_InitializeIconsByRacerIndex final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceGadgetUI_InitializeIconsByRacerIndex) == 0x000004, "Wrong alignment on UnionRaceGadgetUI_InitializeIconsByRacerIndex");
-static_assert(sizeof(UnionRaceGadgetUI_InitializeIconsByRacerIndex) == 0x000004, "Wrong size on UnionRaceGadgetUI_InitializeIconsByRacerIndex");
-static_assert(offsetof(UnionRaceGadgetUI_InitializeIconsByRacerIndex, RacerIndex) == 0x000000, "Member 'UnionRaceGadgetUI_InitializeIconsByRacerIndex::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRaceInfoNotifier.RegisterRaceInfoListener
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceInfoNotifier_RegisterRaceInfoListener final
-{
-public:
-	class UObject*                                InListener;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceInfoNotifier_RegisterRaceInfoListener) == 0x000008, "Wrong alignment on UnionRaceInfoNotifier_RegisterRaceInfoListener");
-static_assert(sizeof(UnionRaceInfoNotifier_RegisterRaceInfoListener) == 0x000008, "Wrong size on UnionRaceInfoNotifier_RegisterRaceInfoListener");
-static_assert(offsetof(UnionRaceInfoNotifier_RegisterRaceInfoListener, InListener) == 0x000000, "Member 'UnionRaceInfoNotifier_RegisterRaceInfoListener::InListener' has a wrong offset!");
-
-// Function UnionRun.UnionRaceInfoNotifier.UnregisterRaceInfoListener
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceInfoNotifier_UnregisterRaceInfoListener final
-{
-public:
-	class UObject*                                InListener;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceInfoNotifier_UnregisterRaceInfoListener) == 0x000008, "Wrong alignment on UnionRaceInfoNotifier_UnregisterRaceInfoListener");
-static_assert(sizeof(UnionRaceInfoNotifier_UnregisterRaceInfoListener) == 0x000008, "Wrong size on UnionRaceInfoNotifier_UnregisterRaceInfoListener");
-static_assert(offsetof(UnionRaceInfoNotifier_UnregisterRaceInfoListener, InListener) == 0x000000, "Member 'UnionRaceInfoNotifier_UnregisterRaceInfoListener::InListener' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.AddCourseMapActor
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRaceMinimap_AddCourseMapActor final
-{
-public:
-	class AActor*                                 InAttackItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemId                                       InItemId;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_AddCourseMapActor) == 0x000008, "Wrong alignment on UnionRaceMinimap_AddCourseMapActor");
-static_assert(sizeof(UnionRaceMinimap_AddCourseMapActor) == 0x000010, "Wrong size on UnionRaceMinimap_AddCourseMapActor");
-static_assert(offsetof(UnionRaceMinimap_AddCourseMapActor, InAttackItem) == 0x000000, "Member 'UnionRaceMinimap_AddCourseMapActor::InAttackItem' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_AddCourseMapActor, InItemId) == 0x000008, "Member 'UnionRaceMinimap_AddCourseMapActor::InItemId' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.GetGroupColor
-// 0x0014 (0x0014 - 0x0000)
-struct UnionRaceMinimap_GetGroupColor final
-{
-public:
-	int32                                         GouupIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ReturnValue;                                       // 0x0004(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_GetGroupColor) == 0x000004, "Wrong alignment on UnionRaceMinimap_GetGroupColor");
-static_assert(sizeof(UnionRaceMinimap_GetGroupColor) == 0x000014, "Wrong size on UnionRaceMinimap_GetGroupColor");
-static_assert(offsetof(UnionRaceMinimap_GetGroupColor, GouupIndex) == 0x000000, "Member 'UnionRaceMinimap_GetGroupColor::GouupIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_GetGroupColor, ReturnValue) == 0x000004, "Member 'UnionRaceMinimap_GetGroupColor::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.InitializeMinimap
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_InitializeMinimap final
-{
-public:
-	class UTextureRenderTarget2D*                 InRenderTarget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_InitializeMinimap) == 0x000008, "Wrong alignment on UnionRaceMinimap_InitializeMinimap");
-static_assert(sizeof(UnionRaceMinimap_InitializeMinimap) == 0x000008, "Wrong size on UnionRaceMinimap_InitializeMinimap");
-static_assert(offsetof(UnionRaceMinimap_InitializeMinimap, InRenderTarget) == 0x000000, "Member 'UnionRaceMinimap_InitializeMinimap::InRenderTarget' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.RemoveCourseMapActor
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_RemoveCourseMapActor final
-{
-public:
-	class AActor*                                 InAttackItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_RemoveCourseMapActor) == 0x000008, "Wrong alignment on UnionRaceMinimap_RemoveCourseMapActor");
-static_assert(sizeof(UnionRaceMinimap_RemoveCourseMapActor) == 0x000008, "Wrong size on UnionRaceMinimap_RemoveCourseMapActor");
-static_assert(offsetof(UnionRaceMinimap_RemoveCourseMapActor, InAttackItem) == 0x000000, "Member 'UnionRaceMinimap_RemoveCourseMapActor::InAttackItem' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetCourseMapCharaSpin
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceMinimap_SetCourseMapCharaSpin final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetCourseMapCharaSpin) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetCourseMapCharaSpin");
-static_assert(sizeof(UnionRaceMinimap_SetCourseMapCharaSpin) == 0x000004, "Wrong size on UnionRaceMinimap_SetCourseMapCharaSpin");
-static_assert(offsetof(UnionRaceMinimap_SetCourseMapCharaSpin, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetCourseMapCharaSpin::RacerIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetCourseSetting
-// 0x0048 (0x0048 - 0x0000)
-struct UnionRaceMinimap_SetCourseSetting final
-{
-public:
-	TSoftObjectPtr<class UObject>                 CourseTexture;                                     // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InOrthoRate;                                       // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InAngle;                                           // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                InOffset;                                          // 0x0030(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetCourseSetting) == 0x000008, "Wrong alignment on UnionRaceMinimap_SetCourseSetting");
-static_assert(sizeof(UnionRaceMinimap_SetCourseSetting) == 0x000048, "Wrong size on UnionRaceMinimap_SetCourseSetting");
-static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, CourseTexture) == 0x000000, "Member 'UnionRaceMinimap_SetCourseSetting::CourseTexture' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, InOrthoRate) == 0x000028, "Member 'UnionRaceMinimap_SetCourseSetting::InOrthoRate' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, InAngle) == 0x00002C, "Member 'UnionRaceMinimap_SetCourseSetting::InAngle' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetCourseSetting, InOffset) == 0x000030, "Member 'UnionRaceMinimap_SetCourseSetting::InOffset' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetDomainIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceMinimap_SetDomainIndex final
-{
-public:
-	int32                                         InDomainIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetDomainIndex) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetDomainIndex");
-static_assert(sizeof(UnionRaceMinimap_SetDomainIndex) == 0x000004, "Wrong size on UnionRaceMinimap_SetDomainIndex");
-static_assert(offsetof(UnionRaceMinimap_SetDomainIndex, InDomainIndex) == 0x000000, "Member 'UnionRaceMinimap_SetDomainIndex::InDomainIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetDomainNumber
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceMinimap_SetDomainNumber final
-{
-public:
-	int32                                         InDomainNumber;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetDomainNumber) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetDomainNumber");
-static_assert(sizeof(UnionRaceMinimap_SetDomainNumber) == 0x000004, "Wrong size on UnionRaceMinimap_SetDomainNumber");
-static_assert(offsetof(UnionRaceMinimap_SetDomainNumber, InDomainNumber) == 0x000000, "Member 'UnionRaceMinimap_SetDomainNumber::InDomainNumber' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetDriverId
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_SetDriverId final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DriverId;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetDriverId) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetDriverId");
-static_assert(sizeof(UnionRaceMinimap_SetDriverId) == 0x000008, "Wrong size on UnionRaceMinimap_SetDriverId");
-static_assert(offsetof(UnionRaceMinimap_SetDriverId, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetDriverId::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetDriverId, DriverId) == 0x000004, "Member 'UnionRaceMinimap_SetDriverId::DriverId' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetGroupIndex
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_SetGroupIndex final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GroupIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetGroupIndex) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetGroupIndex");
-static_assert(sizeof(UnionRaceMinimap_SetGroupIndex) == 0x000008, "Wrong size on UnionRaceMinimap_SetGroupIndex");
-static_assert(offsetof(UnionRaceMinimap_SetGroupIndex, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetGroupIndex::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetGroupIndex, GroupIndex) == 0x000004, "Member 'UnionRaceMinimap_SetGroupIndex::GroupIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetMinimapIconItem
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_SetMinimapIconItem final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemId                                       InItemId;                                          // 0x0004(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_SetMinimapIconItem) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetMinimapIconItem");
-static_assert(sizeof(UnionRaceMinimap_SetMinimapIconItem) == 0x000008, "Wrong size on UnionRaceMinimap_SetMinimapIconItem");
-static_assert(offsetof(UnionRaceMinimap_SetMinimapIconItem, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetMinimapIconItem::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetMinimapIconItem, InItemId) == 0x000004, "Member 'UnionRaceMinimap_SetMinimapIconItem::InItemId' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetMinimapIconType
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_SetMinimapIconType final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMinimapIconType                              InMinimapIconType;                                 // 0x0004(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_SetMinimapIconType) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetMinimapIconType");
-static_assert(sizeof(UnionRaceMinimap_SetMinimapIconType) == 0x000008, "Wrong size on UnionRaceMinimap_SetMinimapIconType");
-static_assert(offsetof(UnionRaceMinimap_SetMinimapIconType, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetMinimapIconType::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetMinimapIconType, InMinimapIconType) == 0x000004, "Member 'UnionRaceMinimap_SetMinimapIconType::InMinimapIconType' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetPlayerIndex
-// 0x000C (0x000C - 0x0000)
-struct UnionRaceMinimap_SetPlayerIndex final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerIndex;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPlayer;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLocalMulti;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_SetPlayerIndex) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetPlayerIndex");
-static_assert(sizeof(UnionRaceMinimap_SetPlayerIndex) == 0x00000C, "Wrong size on UnionRaceMinimap_SetPlayerIndex");
-static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetPlayerIndex::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, PlayerIndex) == 0x000004, "Member 'UnionRaceMinimap_SetPlayerIndex::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, IsPlayer) == 0x000008, "Member 'UnionRaceMinimap_SetPlayerIndex::IsPlayer' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetPlayerIndex, IsLocalMulti) == 0x000009, "Member 'UnionRaceMinimap_SetPlayerIndex::IsLocalMulti' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetPosition
-// 0x0020 (0x0020 - 0x0000)
-struct UnionRaceMinimap_SetPosition final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                InPosition;                                        // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetPosition) == 0x000008, "Wrong alignment on UnionRaceMinimap_SetPosition");
-static_assert(sizeof(UnionRaceMinimap_SetPosition) == 0x000020, "Wrong size on UnionRaceMinimap_SetPosition");
-static_assert(offsetof(UnionRaceMinimap_SetPosition, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetPosition::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetPosition, InPosition) == 0x000008, "Member 'UnionRaceMinimap_SetPosition::InPosition' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetPositionAndZOrder
-// 0x0028 (0x0028 - 0x0000)
-struct UnionRaceMinimap_SetPositionAndZOrder final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                InPosition;                                        // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         InZOrder;                                          // 0x0020(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_SetPositionAndZOrder) == 0x000008, "Wrong alignment on UnionRaceMinimap_SetPositionAndZOrder");
-static_assert(sizeof(UnionRaceMinimap_SetPositionAndZOrder) == 0x000028, "Wrong size on UnionRaceMinimap_SetPositionAndZOrder");
-static_assert(offsetof(UnionRaceMinimap_SetPositionAndZOrder, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetPositionAndZOrder::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetPositionAndZOrder, InPosition) == 0x000008, "Member 'UnionRaceMinimap_SetPositionAndZOrder::InPosition' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetPositionAndZOrder, InZOrder) == 0x000020, "Member 'UnionRaceMinimap_SetPositionAndZOrder::InZOrder' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetRacerCount
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceMinimap_SetRacerCount final
-{
-public:
-	int32                                         RacerCount_0;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_SetRacerCount) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetRacerCount");
-static_assert(sizeof(UnionRaceMinimap_SetRacerCount) == 0x000004, "Wrong size on UnionRaceMinimap_SetRacerCount");
-static_assert(offsetof(UnionRaceMinimap_SetRacerCount, RacerCount_0) == 0x000000, "Member 'UnionRaceMinimap_SetRacerCount::RacerCount_0' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetRacerIconVisibility
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_SetRacerIconVisibility final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESlateVisibility                              NewVisibility;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_SetRacerIconVisibility) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetRacerIconVisibility");
-static_assert(sizeof(UnionRaceMinimap_SetRacerIconVisibility) == 0x000008, "Wrong size on UnionRaceMinimap_SetRacerIconVisibility");
-static_assert(offsetof(UnionRaceMinimap_SetRacerIconVisibility, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetRacerIconVisibility::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetRacerIconVisibility, NewVisibility) == 0x000004, "Member 'UnionRaceMinimap_SetRacerIconVisibility::NewVisibility' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetReaderFlag
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_SetReaderFlag final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          InIsReader;                                        // 0x0004(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_SetReaderFlag) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetReaderFlag");
-static_assert(sizeof(UnionRaceMinimap_SetReaderFlag) == 0x000008, "Wrong size on UnionRaceMinimap_SetReaderFlag");
-static_assert(offsetof(UnionRaceMinimap_SetReaderFlag, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetReaderFlag::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetReaderFlag, InIsReader) == 0x000004, "Member 'UnionRaceMinimap_SetReaderFlag::InIsReader' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.SetRival
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceMinimap_SetRival final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsRival;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPowerRival;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceMinimap_SetRival) == 0x000004, "Wrong alignment on UnionRaceMinimap_SetRival");
-static_assert(sizeof(UnionRaceMinimap_SetRival) == 0x000008, "Wrong size on UnionRaceMinimap_SetRival");
-static_assert(offsetof(UnionRaceMinimap_SetRival, RacerIndex) == 0x000000, "Member 'UnionRaceMinimap_SetRival::RacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetRival, IsRival) == 0x000004, "Member 'UnionRaceMinimap_SetRival::IsRival' has a wrong offset!");
-static_assert(offsetof(UnionRaceMinimap_SetRival, IsPowerRival) == 0x000005, "Member 'UnionRaceMinimap_SetRival::IsPowerRival' has a wrong offset!");
-
-// Function UnionRun.UnionRaceMinimap.UpdateMinimap
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceMinimap_UpdateMinimap final
-{
-public:
-	float                                         InDelta;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceMinimap_UpdateMinimap) == 0x000004, "Wrong alignment on UnionRaceMinimap_UpdateMinimap");
-static_assert(sizeof(UnionRaceMinimap_UpdateMinimap) == 0x000004, "Wrong size on UnionRaceMinimap_UpdateMinimap");
-static_assert(offsetof(UnionRaceMinimap_UpdateMinimap, InDelta) == 0x000000, "Member 'UnionRaceMinimap_UpdateMinimap::InDelta' has a wrong offset!");
-
-// Function UnionRun.UnionRaceReturnDashUI.GetButtonWidget
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceReturnDashUI_GetButtonWidget final
-{
-public:
-	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceReturnDashUI_GetButtonWidget) == 0x000008, "Wrong alignment on UnionRaceReturnDashUI_GetButtonWidget");
-static_assert(sizeof(UnionRaceReturnDashUI_GetButtonWidget) == 0x000008, "Wrong size on UnionRaceReturnDashUI_GetButtonWidget");
-static_assert(offsetof(UnionRaceReturnDashUI_GetButtonWidget, ReturnValue) == 0x000000, "Member 'UnionRaceReturnDashUI_GetButtonWidget::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRaceReturnDashUI.SetGaugeParcent
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceReturnDashUI_SetGaugeParcent final
-{
-public:
-	float                                         GaugeRate;                                         // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceReturnDashUI_SetGaugeParcent) == 0x000004, "Wrong alignment on UnionRaceReturnDashUI_SetGaugeParcent");
-static_assert(sizeof(UnionRaceReturnDashUI_SetGaugeParcent) == 0x000004, "Wrong size on UnionRaceReturnDashUI_SetGaugeParcent");
-static_assert(offsetof(UnionRaceReturnDashUI_SetGaugeParcent, GaugeRate) == 0x000000, "Member 'UnionRaceReturnDashUI_SetGaugeParcent::GaugeRate' has a wrong offset!");
-
-// Function UnionRun.UnionRaceReturnDashUI.SetReturnDashSetting
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRaceReturnDashUI_SetReturnDashSetting final
-{
-public:
-	float                                         Pivot;                                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Range;                                             // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceReturnDashUI_SetReturnDashSetting) == 0x000004, "Wrong alignment on UnionRaceReturnDashUI_SetReturnDashSetting");
-static_assert(sizeof(UnionRaceReturnDashUI_SetReturnDashSetting) == 0x000008, "Wrong size on UnionRaceReturnDashUI_SetReturnDashSetting");
-static_assert(offsetof(UnionRaceReturnDashUI_SetReturnDashSetting, Pivot) == 0x000000, "Member 'UnionRaceReturnDashUI_SetReturnDashSetting::Pivot' has a wrong offset!");
-static_assert(offsetof(UnionRaceReturnDashUI_SetReturnDashSetting, Range) == 0x000004, "Member 'UnionRaceReturnDashUI_SetReturnDashSetting::Range' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetDriverIdByRacerIndex
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_GetDriverIdByRacerIndex final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacers_GetDriverIdByRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetDriverIdByRacerIndex");
-static_assert(sizeof(UnionRacers_GetDriverIdByRacerIndex) == 0x000008, "Wrong size on UnionRacers_GetDriverIdByRacerIndex");
-static_assert(offsetof(UnionRacers_GetDriverIdByRacerIndex, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetDriverIdByRacerIndex::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetDriverIdByRacerIndex, ReturnValue) == 0x000004, "Member 'UnionRacers_GetDriverIdByRacerIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.ChangeVehicleDisplayMode
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_ChangeVehicleDisplayMode final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EVehicleDisplayMode                           InVehicleDisplayMode;                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacers_ChangeVehicleDisplayMode) == 0x000004, "Wrong alignment on UnionRacers_ChangeVehicleDisplayMode");
-static_assert(sizeof(UnionRacers_ChangeVehicleDisplayMode) == 0x000008, "Wrong size on UnionRacers_ChangeVehicleDisplayMode");
-static_assert(offsetof(UnionRacers_ChangeVehicleDisplayMode, InRacerIndex) == 0x000000, "Member 'UnionRacers_ChangeVehicleDisplayMode::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_ChangeVehicleDisplayMode, InVehicleDisplayMode) == 0x000004, "Member 'UnionRacers_ChangeVehicleDisplayMode::InVehicleDisplayMode' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.Destroy
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRacers_Destroy final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_Destroy) == 0x000001, "Wrong alignment on UnionRacers_Destroy");
-static_assert(sizeof(UnionRacers_Destroy) == 0x000001, "Wrong size on UnionRacers_Destroy");
-static_assert(offsetof(UnionRacers_Destroy, ReturnValue) == 0x000000, "Member 'UnionRacers_Destroy::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.ExecTick
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_ExecTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_ExecTick) == 0x000004, "Wrong alignment on UnionRacers_ExecTick");
-static_assert(sizeof(UnionRacers_ExecTick) == 0x000004, "Wrong size on UnionRacers_ExecTick");
-static_assert(offsetof(UnionRacers_ExecTick, DeltaSeconds) == 0x000000, "Member 'UnionRacers_ExecTick::DeltaSeconds' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetLocalPlayers
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_GetLocalPlayers final
-{
-public:
-	TArray<class UUnionRacer*>                    OutRacers;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetLocalPlayers) == 0x000008, "Wrong alignment on UnionRacers_GetLocalPlayers");
-static_assert(sizeof(UnionRacers_GetLocalPlayers) == 0x000010, "Wrong size on UnionRacers_GetLocalPlayers");
-static_assert(offsetof(UnionRacers_GetLocalPlayers, OutRacers) == 0x000000, "Member 'UnionRacers_GetLocalPlayers::OutRacers' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetPlayerRank
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_GetPlayerRank final
-{
-public:
-	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetPlayerRank) == 0x000004, "Wrong alignment on UnionRacers_GetPlayerRank");
-static_assert(sizeof(UnionRacers_GetPlayerRank) == 0x000008, "Wrong size on UnionRacers_GetPlayerRank");
-static_assert(offsetof(UnionRacers_GetPlayerRank, PlayerIndex) == 0x000000, "Member 'UnionRacers_GetPlayerRank::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetPlayerRank, ReturnValue) == 0x000004, "Member 'UnionRacers_GetPlayerRank::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRaceHUDRef
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_GetRaceHUDRef final
-{
-public:
-	class UUnionRaceUI*                           ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRaceHUDRef) == 0x000008, "Wrong alignment on UnionRacers_GetRaceHUDRef");
-static_assert(sizeof(UnionRacers_GetRaceHUDRef) == 0x000008, "Wrong size on UnionRacers_GetRaceHUDRef");
-static_assert(offsetof(UnionRacers_GetRaceHUDRef, ReturnValue) == 0x000000, "Member 'UnionRacers_GetRaceHUDRef::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRaceLapInfo
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_GetRaceLapInfo final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRaceLapInfo*                      ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacers_GetRaceLapInfo");
-static_assert(sizeof(UnionRacers_GetRaceLapInfo) == 0x000010, "Wrong size on UnionRacers_GetRaceLapInfo");
-static_assert(offsetof(UnionRacers_GetRaceLapInfo, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRaceLapInfo::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRaceLapInfo, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRaceLapInfo::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRacer
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_GetRacer final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacer*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRacer) == 0x000008, "Wrong alignment on UnionRacers_GetRacer");
-static_assert(sizeof(UnionRacers_GetRacer) == 0x000010, "Wrong size on UnionRacers_GetRacer");
-static_assert(offsetof(UnionRacers_GetRacer, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRacer::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacer, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacer::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRacer3DPositionAndDomainNumber
-// 0x0020 (0x0020 - 0x0000)
-struct UnionRacers_GetRacer3DPositionAndDomainNumber final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDomainNumber                                 DomainNum;                                         // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRacer3DPositionAndDomainNumber) == 0x000008, "Wrong alignment on UnionRacers_GetRacer3DPositionAndDomainNumber");
-static_assert(sizeof(UnionRacers_GetRacer3DPositionAndDomainNumber) == 0x000020, "Wrong size on UnionRacers_GetRacer3DPositionAndDomainNumber");
-static_assert(offsetof(UnionRacers_GetRacer3DPositionAndDomainNumber, Index_0) == 0x000000, "Member 'UnionRacers_GetRacer3DPositionAndDomainNumber::Index_0' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacer3DPositionAndDomainNumber, DomainNum) == 0x000004, "Member 'UnionRacers_GetRacer3DPositionAndDomainNumber::DomainNum' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacer3DPositionAndDomainNumber, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacer3DPositionAndDomainNumber::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRacerIndexByRank
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_GetRacerIndexByRank final
-{
-public:
-	int32                                         InRank;                                            // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRacerIndexByRank) == 0x000004, "Wrong alignment on UnionRacers_GetRacerIndexByRank");
-static_assert(sizeof(UnionRacers_GetRacerIndexByRank) == 0x000008, "Wrong size on UnionRacers_GetRacerIndexByRank");
-static_assert(offsetof(UnionRacers_GetRacerIndexByRank, InRank) == 0x000000, "Member 'UnionRacers_GetRacerIndexByRank::InRank' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacerIndexByRank, ReturnValue) == 0x000004, "Member 'UnionRacers_GetRacerIndexByRank::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRacerRank
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_GetRacerRank final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRacerRank) == 0x000004, "Wrong alignment on UnionRacers_GetRacerRank");
-static_assert(sizeof(UnionRacers_GetRacerRank) == 0x000008, "Wrong size on UnionRacers_GetRacerRank");
-static_assert(offsetof(UnionRacers_GetRacerRank, Index_0) == 0x000000, "Member 'UnionRacers_GetRacerRank::Index_0' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacerRank, ReturnValue) == 0x000004, "Member 'UnionRacers_GetRacerRank::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRacerSituationObject
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_GetRacerSituationObject final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRaceSituationObject*              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRacerSituationObject) == 0x000008, "Wrong alignment on UnionRacers_GetRacerSituationObject");
-static_assert(sizeof(UnionRacers_GetRacerSituationObject) == 0x000010, "Wrong size on UnionRacers_GetRacerSituationObject");
-static_assert(offsetof(UnionRacers_GetRacerSituationObject, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRacerSituationObject::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacerSituationObject, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacerSituationObject::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRacerStatusObject
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_GetRacerStatusObject final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacerStatusObject*                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRacerStatusObject) == 0x000008, "Wrong alignment on UnionRacers_GetRacerStatusObject");
-static_assert(sizeof(UnionRacers_GetRacerStatusObject) == 0x000010, "Wrong size on UnionRacers_GetRacerStatusObject");
-static_assert(offsetof(UnionRacers_GetRacerStatusObject, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetRacerStatusObject::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacerStatusObject, ReturnValue) == 0x000008, "Member 'UnionRacers_GetRacerStatusObject::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetTestRaceCount
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_GetTestRaceCount final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetTestRaceCount) == 0x000004, "Wrong alignment on UnionRacers_GetTestRaceCount");
-static_assert(sizeof(UnionRacers_GetTestRaceCount) == 0x000004, "Wrong size on UnionRacers_GetTestRaceCount");
-static_assert(offsetof(UnionRacers_GetTestRaceCount, ReturnValue) == 0x000000, "Member 'UnionRacers_GetTestRaceCount::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.IsOfflinePlayer
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_IsOfflinePlayer final
-{
-public:
-	class UUnionRacer*                            Racer;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacers_IsOfflinePlayer) == 0x000008, "Wrong alignment on UnionRacers_IsOfflinePlayer");
-static_assert(sizeof(UnionRacers_IsOfflinePlayer) == 0x000010, "Wrong size on UnionRacers_IsOfflinePlayer");
-static_assert(offsetof(UnionRacers_IsOfflinePlayer, Racer) == 0x000000, "Member 'UnionRacers_IsOfflinePlayer::Racer' has a wrong offset!");
-static_assert(offsetof(UnionRacers_IsOfflinePlayer, ReturnValue) == 0x000008, "Member 'UnionRacers_IsOfflinePlayer::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.IsOnlineCom
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_IsOnlineCom final
-{
-public:
-	class UUnionRacer*                            Racer;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacers_IsOnlineCom) == 0x000008, "Wrong alignment on UnionRacers_IsOnlineCom");
-static_assert(sizeof(UnionRacers_IsOnlineCom) == 0x000010, "Wrong size on UnionRacers_IsOnlineCom");
-static_assert(offsetof(UnionRacers_IsOnlineCom, Racer) == 0x000000, "Member 'UnionRacers_IsOnlineCom::Racer' has a wrong offset!");
-static_assert(offsetof(UnionRacers_IsOnlineCom, ReturnValue) == 0x000008, "Member 'UnionRacers_IsOnlineCom::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.IsPlayer
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_IsPlayer final
-{
-public:
-	class UUnionRacer*                            Racer;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRacers_IsPlayer) == 0x000008, "Wrong alignment on UnionRacers_IsPlayer");
-static_assert(sizeof(UnionRacers_IsPlayer) == 0x000010, "Wrong size on UnionRacers_IsPlayer");
-static_assert(offsetof(UnionRacers_IsPlayer, Racer) == 0x000000, "Member 'UnionRacers_IsPlayer::Racer' has a wrong offset!");
-static_assert(offsetof(UnionRacers_IsPlayer, ReturnValue) == 0x000008, "Member 'UnionRacers_IsPlayer::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.SetLinkPlayerControllerIndexToRacerIndex
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_SetLinkPlayerControllerIndexToRacerIndex final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InRacerIndex;                                      // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_SetLinkPlayerControllerIndexToRacerIndex");
-static_assert(sizeof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex) == 0x000008, "Wrong size on UnionRacers_SetLinkPlayerControllerIndexToRacerIndex");
-static_assert(offsetof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionRacers_SetLinkPlayerControllerIndexToRacerIndex::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_SetLinkPlayerControllerIndexToRacerIndex, InRacerIndex) == 0x000004, "Member 'UnionRacers_SetLinkPlayerControllerIndexToRacerIndex::InRacerIndex' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.SetRaceLapInfo
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_SetRaceLapInfo final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRaceLapInfo*                      InRaceLapInfo;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_SetRaceLapInfo) == 0x000008, "Wrong alignment on UnionRacers_SetRaceLapInfo");
-static_assert(sizeof(UnionRacers_SetRaceLapInfo) == 0x000010, "Wrong size on UnionRacers_SetRaceLapInfo");
-static_assert(offsetof(UnionRacers_SetRaceLapInfo, InRacerIndex) == 0x000000, "Member 'UnionRacers_SetRaceLapInfo::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_SetRaceLapInfo, InRaceLapInfo) == 0x000008, "Member 'UnionRacers_SetRaceLapInfo::InRaceLapInfo' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.SetTickable
-// 0x0001 (0x0001 - 0x0000)
-struct UnionRacers_SetTickable final
-{
-public:
-	bool                                          bTickable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_SetTickable) == 0x000001, "Wrong alignment on UnionRacers_SetTickable");
-static_assert(sizeof(UnionRacers_SetTickable) == 0x000001, "Wrong size on UnionRacers_SetTickable");
-static_assert(offsetof(UnionRacers_SetTickable, bTickable) == 0x000000, "Member 'UnionRacers_SetTickable::bTickable' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.SetVehicle
-// 0x0010 (0x0010 - 0x0000)
-struct UnionRacers_SetVehicle final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  InVehicle;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_SetVehicle) == 0x000008, "Wrong alignment on UnionRacers_SetVehicle");
-static_assert(sizeof(UnionRacers_SetVehicle) == 0x000010, "Wrong size on UnionRacers_SetVehicle");
-static_assert(offsetof(UnionRacers_SetVehicle, InRacerIndex) == 0x000000, "Member 'UnionRacers_SetVehicle::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_SetVehicle, InVehicle) == 0x000008, "Member 'UnionRacers_SetVehicle::InVehicle' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.UnionRacers_SetTimerDelegate
-// 0x0020 (0x0020 - 0x0000)
-struct UnionRacers_UnionRacers_SetTimerDelegate final
-{
-public:
-	TDelegate<void()>                             Delegate;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLooping;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_UnionRacers_SetTimerDelegate) == 0x000008, "Wrong alignment on UnionRacers_UnionRacers_SetTimerDelegate");
-static_assert(sizeof(UnionRacers_UnionRacers_SetTimerDelegate) == 0x000020, "Wrong size on UnionRacers_UnionRacers_SetTimerDelegate");
-static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, Delegate) == 0x000000, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::Delegate' has a wrong offset!");
-static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, Time) == 0x000010, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::Time' has a wrong offset!");
-static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, bLooping) == 0x000014, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::bLooping' has a wrong offset!");
-static_assert(offsetof(UnionRacers_UnionRacers_SetTimerDelegate, ReturnValue) == 0x000018, "Member 'UnionRacers_UnionRacers_SetTimerDelegate::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.UpdateBaggage
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_UpdateBaggage final
-{
-public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_UpdateBaggage) == 0x000004, "Wrong alignment on UnionRacers_UpdateBaggage");
-static_assert(sizeof(UnionRacers_UpdateBaggage) == 0x000004, "Wrong size on UnionRacers_UpdateBaggage");
-static_assert(offsetof(UnionRacers_UpdateBaggage, Delta) == 0x000000, "Member 'UnionRacers_UpdateBaggage::Delta' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.UpdateDomain
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_UpdateDomain final
-{
-public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_UpdateDomain) == 0x000004, "Wrong alignment on UnionRacers_UpdateDomain");
-static_assert(sizeof(UnionRacers_UpdateDomain) == 0x000004, "Wrong size on UnionRacers_UpdateDomain");
-static_assert(offsetof(UnionRacers_UpdateDomain, Delta) == 0x000000, "Member 'UnionRacers_UpdateDomain::Delta' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.UpdatePlayerNameHUD
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_UpdatePlayerNameHUD final
-{
-public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_UpdatePlayerNameHUD) == 0x000004, "Wrong alignment on UnionRacers_UpdatePlayerNameHUD");
-static_assert(sizeof(UnionRacers_UpdatePlayerNameHUD) == 0x000004, "Wrong size on UnionRacers_UpdatePlayerNameHUD");
-static_assert(offsetof(UnionRacers_UpdatePlayerNameHUD, Delta) == 0x000000, "Member 'UnionRacers_UpdatePlayerNameHUD::Delta' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.UpdateTestRace
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_UpdateTestRace final
-{
-public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_UpdateTestRace) == 0x000004, "Wrong alignment on UnionRacers_UpdateTestRace");
-static_assert(sizeof(UnionRacers_UpdateTestRace) == 0x000004, "Wrong size on UnionRacers_UpdateTestRace");
-static_assert(offsetof(UnionRacers_UpdateTestRace, Delta) == 0x000000, "Member 'UnionRacers_UpdateTestRace::Delta' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.UpdateVehicles
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_UpdateVehicles final
-{
-public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_UpdateVehicles) == 0x000004, "Wrong alignment on UnionRacers_UpdateVehicles");
-static_assert(sizeof(UnionRacers_UpdateVehicles) == 0x000004, "Wrong size on UnionRacers_UpdateVehicles");
-static_assert(offsetof(UnionRacers_UpdateVehicles, Delta) == 0x000000, "Member 'UnionRacers_UpdateVehicles::Delta' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetGamePauseOwnerPlayerControllerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_GetGamePauseOwnerPlayerControllerIndex final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetGamePauseOwnerPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetGamePauseOwnerPlayerControllerIndex");
-static_assert(sizeof(UnionRacers_GetGamePauseOwnerPlayerControllerIndex) == 0x000004, "Wrong size on UnionRacers_GetGamePauseOwnerPlayerControllerIndex");
-static_assert(offsetof(UnionRacers_GetGamePauseOwnerPlayerControllerIndex, ReturnValue) == 0x000000, "Member 'UnionRacers_GetGamePauseOwnerPlayerControllerIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetGamePauseOwnerRacerIndex
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRacers_GetGamePauseOwnerRacerIndex final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetGamePauseOwnerRacerIndex");
-static_assert(sizeof(UnionRacers_GetGamePauseOwnerRacerIndex) == 0x000004, "Wrong size on UnionRacers_GetGamePauseOwnerRacerIndex");
-static_assert(offsetof(UnionRacers_GetGamePauseOwnerRacerIndex, ReturnValue) == 0x000000, "Member 'UnionRacers_GetGamePauseOwnerRacerIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetPlayerControllerIndexByRacerIndex
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_GetPlayerControllerIndexByRacerIndex final
-{
-public:
-	int32                                         InRacerIndex;                                      // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetPlayerControllerIndexByRacerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetPlayerControllerIndexByRacerIndex");
-static_assert(sizeof(UnionRacers_GetPlayerControllerIndexByRacerIndex) == 0x000008, "Wrong size on UnionRacers_GetPlayerControllerIndexByRacerIndex");
-static_assert(offsetof(UnionRacers_GetPlayerControllerIndexByRacerIndex, InRacerIndex) == 0x000000, "Member 'UnionRacers_GetPlayerControllerIndexByRacerIndex::InRacerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetPlayerControllerIndexByRacerIndex, ReturnValue) == 0x000004, "Member 'UnionRacers_GetPlayerControllerIndexByRacerIndex::ReturnValue' has a wrong offset!");
-
-// Function UnionRun.UnionRacers.GetRacerIndexByPlayerControllerIndex
-// 0x0008 (0x0008 - 0x0000)
-struct UnionRacers_GetRacerIndexByPlayerControllerIndex final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRacers_GetRacerIndexByPlayerControllerIndex) == 0x000004, "Wrong alignment on UnionRacers_GetRacerIndexByPlayerControllerIndex");
-static_assert(sizeof(UnionRacers_GetRacerIndexByPlayerControllerIndex) == 0x000008, "Wrong size on UnionRacers_GetRacerIndexByPlayerControllerIndex");
-static_assert(offsetof(UnionRacers_GetRacerIndexByPlayerControllerIndex, PlayerControllerIndex) == 0x000000, "Member 'UnionRacers_GetRacerIndexByPlayerControllerIndex::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UnionRacers_GetRacerIndexByPlayerControllerIndex, ReturnValue) == 0x000004, "Member 'UnionRacers_GetRacerIndexByPlayerControllerIndex::ReturnValue' has a wrong offset!");
 
 // Function UnionRun.UnionRaceStartUI.GetButtonWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -11714,22 +11880,6 @@ static_assert(sizeof(UnionRaceUI_SetWarningBeltVisible_Implementation) == 0x0000
 static_assert(offsetof(UnionRaceUI_SetWarningBeltVisible_Implementation, PlayerControllerIndex) == 0x000000, "Member 'UnionRaceUI_SetWarningBeltVisible_Implementation::PlayerControllerIndex' has a wrong offset!");
 static_assert(offsetof(UnionRaceUI_SetWarningBeltVisible_Implementation, bVisible) == 0x000004, "Member 'UnionRaceUI_SetWarningBeltVisible_Implementation::bVisible' has a wrong offset!");
 
-// Function UnionRun.UnionRaceUI.UpdateAttackInfoPosition
-// 0x0018 (0x0018 - 0x0000)
-struct UnionRaceUI_UpdateAttackInfoPosition final
-{
-public:
-	class UUserWidget*                            InAttackWidget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                InHUDWarningArea;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InPosRate;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionRaceUI_UpdateAttackInfoPosition) == 0x000008, "Wrong alignment on UnionRaceUI_UpdateAttackInfoPosition");
-static_assert(sizeof(UnionRaceUI_UpdateAttackInfoPosition) == 0x000018, "Wrong size on UnionRaceUI_UpdateAttackInfoPosition");
-static_assert(offsetof(UnionRaceUI_UpdateAttackInfoPosition, InAttackWidget) == 0x000000, "Member 'UnionRaceUI_UpdateAttackInfoPosition::InAttackWidget' has a wrong offset!");
-static_assert(offsetof(UnionRaceUI_UpdateAttackInfoPosition, InHUDWarningArea) == 0x000008, "Member 'UnionRaceUI_UpdateAttackInfoPosition::InHUDWarningArea' has a wrong offset!");
-static_assert(offsetof(UnionRaceUI_UpdateAttackInfoPosition, InPosRate) == 0x000010, "Member 'UnionRaceUI_UpdateAttackInfoPosition::InPosRate' has a wrong offset!");
-
 // Function UnionRun.UnionRaceUI.UpdateByHoldItemInfo_Implementation
 // 0x0088 (0x0088 - 0x0000)
 struct UnionRaceUI_UpdateByHoldItemInfo_Implementation final
@@ -11782,17 +11932,6 @@ static_assert(alignof(UnionRaceUI_UpdateHomingAimTargetedLocation_Implementation
 static_assert(sizeof(UnionRaceUI_UpdateHomingAimTargetedLocation_Implementation) == 0x000020, "Wrong size on UnionRaceUI_UpdateHomingAimTargetedLocation_Implementation");
 static_assert(offsetof(UnionRaceUI_UpdateHomingAimTargetedLocation_Implementation, PlayerControllerIndex) == 0x000000, "Member 'UnionRaceUI_UpdateHomingAimTargetedLocation_Implementation::PlayerControllerIndex' has a wrong offset!");
 static_assert(offsetof(UnionRaceUI_UpdateHomingAimTargetedLocation_Implementation, PlayerLocation) == 0x000008, "Member 'UnionRaceUI_UpdateHomingAimTargetedLocation_Implementation::PlayerLocation' has a wrong offset!");
-
-// Function UnionRun.UnionRaceUI.UpdateIrregularInfiniteItem
-// 0x0004 (0x0004 - 0x0000)
-struct UnionRaceUI_UpdateIrregularInfiniteItem final
-{
-public:
-	int32                                         PlayerControllerIndex;                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionRaceUI_UpdateIrregularInfiniteItem) == 0x000004, "Wrong alignment on UnionRaceUI_UpdateIrregularInfiniteItem");
-static_assert(sizeof(UnionRaceUI_UpdateIrregularInfiniteItem) == 0x000004, "Wrong size on UnionRaceUI_UpdateIrregularInfiniteItem");
-static_assert(offsetof(UnionRaceUI_UpdateIrregularInfiniteItem, PlayerControllerIndex) == 0x000000, "Member 'UnionRaceUI_UpdateIrregularInfiniteItem::PlayerControllerIndex' has a wrong offset!");
 
 // Function UnionRun.UnionRaceUI.UpdateIsComSetting
 // 0x0008 (0x0008 - 0x0000)
@@ -12627,6 +12766,17 @@ static_assert(alignof(UnionRaceUIResultLine_SetTotalPointValue) == 0x000004, "Wr
 static_assert(sizeof(UnionRaceUIResultLine_SetTotalPointValue) == 0x000004, "Wrong size on UnionRaceUIResultLine_SetTotalPointValue");
 static_assert(offsetof(UnionRaceUIResultLine_SetTotalPointValue, TotalPoint) == 0x000000, "Member 'UnionRaceUIResultLine_SetTotalPointValue::TotalPoint' has a wrong offset!");
 
+// Function UnionRun.UnionRaceUIResultLine.SetupVisibleSettingByGameMode
+// 0x0001 (0x0001 - 0x0000)
+struct UnionRaceUIResultLine_SetupVisibleSettingByGameMode final
+{
+public:
+	EGameModeId                                   GameMode;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionRaceUIResultLine_SetupVisibleSettingByGameMode) == 0x000001, "Wrong alignment on UnionRaceUIResultLine_SetupVisibleSettingByGameMode");
+static_assert(sizeof(UnionRaceUIResultLine_SetupVisibleSettingByGameMode) == 0x000001, "Wrong size on UnionRaceUIResultLine_SetupVisibleSettingByGameMode");
+static_assert(offsetof(UnionRaceUIResultLine_SetupVisibleSettingByGameMode, GameMode) == 0x000000, "Member 'UnionRaceUIResultLine_SetupVisibleSettingByGameMode::GameMode' has a wrong offset!");
+
 // Function UnionRun.UnionRaceUIGroupResultLine.SetGroupIndex
 // 0x0004 (0x0004 - 0x0000)
 struct UnionRaceUIGroupResultLine_SetGroupIndex final
@@ -13299,7 +13449,8 @@ public:
 	float                                         PosRate;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Distance;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayerControllerIndex;                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bResetPos;                                         // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(UnionRaceUIInterface_SetAttackInfoPosition) == 0x000008, "Wrong alignment on UnionRaceUIInterface_SetAttackInfoPosition");
 static_assert(sizeof(UnionRaceUIInterface_SetAttackInfoPosition) == 0x000018, "Wrong size on UnionRaceUIInterface_SetAttackInfoPosition");
@@ -13307,6 +13458,7 @@ static_assert(offsetof(UnionRaceUIInterface_SetAttackInfoPosition, InAttackWidge
 static_assert(offsetof(UnionRaceUIInterface_SetAttackInfoPosition, PosRate) == 0x000008, "Member 'UnionRaceUIInterface_SetAttackInfoPosition::PosRate' has a wrong offset!");
 static_assert(offsetof(UnionRaceUIInterface_SetAttackInfoPosition, Distance) == 0x00000C, "Member 'UnionRaceUIInterface_SetAttackInfoPosition::Distance' has a wrong offset!");
 static_assert(offsetof(UnionRaceUIInterface_SetAttackInfoPosition, PlayerControllerIndex) == 0x000010, "Member 'UnionRaceUIInterface_SetAttackInfoPosition::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(UnionRaceUIInterface_SetAttackInfoPosition, bResetPos) == 0x000014, "Member 'UnionRaceUIInterface_SetAttackInfoPosition::bResetPos' has a wrong offset!");
 
 // Function UnionRun.UnionRaceUIInterface.SetBeforeHomingAimTargetedUIVisible
 // 0x0008 (0x0008 - 0x0000)
@@ -13510,7 +13662,8 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Scale;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsScaleKeepInHoming;                               // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EItemId                                       ItemId;                                            // 0x000D(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(UnionRaceUIInterface_SetManualAimingUIVisible) == 0x000004, "Wrong alignment on UnionRaceUIInterface_SetManualAimingUIVisible");
 static_assert(sizeof(UnionRaceUIInterface_SetManualAimingUIVisible) == 0x000010, "Wrong size on UnionRaceUIInterface_SetManualAimingUIVisible");
@@ -13518,6 +13671,7 @@ static_assert(offsetof(UnionRaceUIInterface_SetManualAimingUIVisible, PlayerCont
 static_assert(offsetof(UnionRaceUIInterface_SetManualAimingUIVisible, bVisible) == 0x000004, "Member 'UnionRaceUIInterface_SetManualAimingUIVisible::bVisible' has a wrong offset!");
 static_assert(offsetof(UnionRaceUIInterface_SetManualAimingUIVisible, Scale) == 0x000008, "Member 'UnionRaceUIInterface_SetManualAimingUIVisible::Scale' has a wrong offset!");
 static_assert(offsetof(UnionRaceUIInterface_SetManualAimingUIVisible, IsScaleKeepInHoming) == 0x00000C, "Member 'UnionRaceUIInterface_SetManualAimingUIVisible::IsScaleKeepInHoming' has a wrong offset!");
+static_assert(offsetof(UnionRaceUIInterface_SetManualAimingUIVisible, ItemId) == 0x00000D, "Member 'UnionRaceUIInterface_SetManualAimingUIVisible::ItemId' has a wrong offset!");
 
 // Function UnionRun.UnionRaceUIInterface.SetMinimapIconItem
 // 0x0008 (0x0008 - 0x0000)
@@ -13658,7 +13812,8 @@ public:
 	int32                                         PlayerControllerIndex;                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         RankAfterIndex;                                    // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDriverId                                     InDriverId;                                        // 0x000D(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bResetPos;                                         // 0x000E(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F[0x1];                                        // 0x000F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(UnionRaceUIInterface_SetRacerApproachInfoPosition) == 0x000004, "Wrong alignment on UnionRaceUIInterface_SetRacerApproachInfoPosition");
 static_assert(sizeof(UnionRaceUIInterface_SetRacerApproachInfoPosition) == 0x000010, "Wrong size on UnionRaceUIInterface_SetRacerApproachInfoPosition");
@@ -13667,6 +13822,7 @@ static_assert(offsetof(UnionRaceUIInterface_SetRacerApproachInfoPosition, Distan
 static_assert(offsetof(UnionRaceUIInterface_SetRacerApproachInfoPosition, PlayerControllerIndex) == 0x000008, "Member 'UnionRaceUIInterface_SetRacerApproachInfoPosition::PlayerControllerIndex' has a wrong offset!");
 static_assert(offsetof(UnionRaceUIInterface_SetRacerApproachInfoPosition, RankAfterIndex) == 0x00000C, "Member 'UnionRaceUIInterface_SetRacerApproachInfoPosition::RankAfterIndex' has a wrong offset!");
 static_assert(offsetof(UnionRaceUIInterface_SetRacerApproachInfoPosition, InDriverId) == 0x00000D, "Member 'UnionRaceUIInterface_SetRacerApproachInfoPosition::InDriverId' has a wrong offset!");
+static_assert(offsetof(UnionRaceUIInterface_SetRacerApproachInfoPosition, bResetPos) == 0x00000E, "Member 'UnionRaceUIInterface_SetRacerApproachInfoPosition::bResetPos' has a wrong offset!");
 
 // Function UnionRun.UnionRaceUIInterface.SetRacerApproachInfoVisible
 // 0x0008 (0x0008 - 0x0000)
@@ -14883,6 +15039,17 @@ static_assert(alignof(UnionSplineMoveComponent_AddMoveDistance) == 0x000004, "Wr
 static_assert(sizeof(UnionSplineMoveComponent_AddMoveDistance) == 0x000004, "Wrong size on UnionSplineMoveComponent_AddMoveDistance");
 static_assert(offsetof(UnionSplineMoveComponent_AddMoveDistance, AddDistance) == 0x000000, "Member 'UnionSplineMoveComponent_AddMoveDistance::AddDistance' has a wrong offset!");
 
+// Function UnionRun.UnionSplineMoveComponent.CopyParamFrom
+// 0x0008 (0x0008 - 0x0000)
+struct UnionSplineMoveComponent_CopyParamFrom final
+{
+public:
+	class UUnionSplineMoveComponent*              comp;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionSplineMoveComponent_CopyParamFrom) == 0x000008, "Wrong alignment on UnionSplineMoveComponent_CopyParamFrom");
+static_assert(sizeof(UnionSplineMoveComponent_CopyParamFrom) == 0x000008, "Wrong size on UnionSplineMoveComponent_CopyParamFrom");
+static_assert(offsetof(UnionSplineMoveComponent_CopyParamFrom, comp) == 0x000000, "Member 'UnionSplineMoveComponent_CopyParamFrom::comp' has a wrong offset!");
+
 // Function UnionRun.UnionSplineMoveComponent.ForceReverse
 // 0x0001 (0x0001 - 0x0000)
 struct UnionSplineMoveComponent_ForceReverse final
@@ -15496,6 +15663,17 @@ static_assert(alignof(URaceUISubItemIconSet_SetVisibilityIrregular) == 0x000001,
 static_assert(sizeof(URaceUISubItemIconSet_SetVisibilityIrregular) == 0x000002, "Wrong size on URaceUISubItemIconSet_SetVisibilityIrregular");
 static_assert(offsetof(URaceUISubItemIconSet_SetVisibilityIrregular, ItemInfoType) == 0x000000, "Member 'URaceUISubItemIconSet_SetVisibilityIrregular::ItemInfoType' has a wrong offset!");
 static_assert(offsetof(URaceUISubItemIconSet_SetVisibilityIrregular, IsVisible_0) == 0x000001, "Member 'URaceUISubItemIconSet_SetVisibilityIrregular::IsVisible_0' has a wrong offset!");
+
+// Function UnionRun.URaceUISubItemIconSet.UpdateIrregularInfiniteItem
+// 0x0008 (0x0008 - 0x0000)
+struct URaceUISubItemIconSet_UpdateIrregularInfiniteItem final
+{
+public:
+	const class UUnionRacerStatusObject*          RacerStatusObjet;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(URaceUISubItemIconSet_UpdateIrregularInfiniteItem) == 0x000008, "Wrong alignment on URaceUISubItemIconSet_UpdateIrregularInfiniteItem");
+static_assert(sizeof(URaceUISubItemIconSet_UpdateIrregularInfiniteItem) == 0x000008, "Wrong size on URaceUISubItemIconSet_UpdateIrregularInfiniteItem");
+static_assert(offsetof(URaceUISubItemIconSet_UpdateIrregularInfiniteItem, RacerStatusObjet) == 0x000000, "Member 'URaceUISubItemIconSet_UpdateIrregularInfiniteItem::RacerStatusObjet' has a wrong offset!");
 
 // Function UnionRun.URaceUISubItemIconSet.GetHoldItemCount
 // 0x0008 (0x0008 - 0x0000)

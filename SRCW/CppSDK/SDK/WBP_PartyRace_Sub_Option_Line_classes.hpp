@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -38,7 +38,7 @@ public:
 	class UImage*                                 BtnBase;                                           // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 DSP_Btn_Cursor;                                    // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 DSP_Btn_Cursor_NonActive;                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction;                                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteractionBtn;                               // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 RaceFlagWave;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUnionRichTextBlock*                    TXT_BtnDetail;                                     // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUnionRichTextBlock*                    TXT_BtnName;                                       // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -65,8 +65,11 @@ public:
 	class UWBP_PartyRace_Sub_Option_SettingBtn_C* LastSelectedButton;                                // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FName                                   OnlineSpeedClassName;                              // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsFocusingIgnore;                                  // 0x0678(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOpeningPopup;                                    // 0x0679(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UnbindMouseInteraction();
+	void SetupMouseInteraction();
 	void CourseSelectWhenOffline(bool Offline);
 	void ResetSettingIndex();
 	void UpdateIndexView(bool Force);
@@ -132,7 +135,7 @@ static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, Btn_Cursor) == 0x0005B0
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, BtnBase) == 0x0005B8, "Member 'UWBP_PartyRace_Sub_Option_Line_C::BtnBase' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, DSP_Btn_Cursor) == 0x0005C0, "Member 'UWBP_PartyRace_Sub_Option_Line_C::DSP_Btn_Cursor' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, DSP_Btn_Cursor_NonActive) == 0x0005C8, "Member 'UWBP_PartyRace_Sub_Option_Line_C::DSP_Btn_Cursor_NonActive' has a wrong offset!");
-static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, MouseInteraction) == 0x0005D0, "Member 'UWBP_PartyRace_Sub_Option_Line_C::MouseInteraction' has a wrong offset!");
+static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, MouseInteractionBtn) == 0x0005D0, "Member 'UWBP_PartyRace_Sub_Option_Line_C::MouseInteractionBtn' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, RaceFlagWave) == 0x0005D8, "Member 'UWBP_PartyRace_Sub_Option_Line_C::RaceFlagWave' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, TXT_BtnDetail) == 0x0005E0, "Member 'UWBP_PartyRace_Sub_Option_Line_C::TXT_BtnDetail' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, TXT_BtnName) == 0x0005E8, "Member 'UWBP_PartyRace_Sub_Option_Line_C::TXT_BtnName' has a wrong offset!");
@@ -156,6 +159,7 @@ static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, SelectedSubButtonIndex)
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, LastSelectedButton) == 0x000668, "Member 'UWBP_PartyRace_Sub_Option_Line_C::LastSelectedButton' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, OnlineSpeedClassName) == 0x000670, "Member 'UWBP_PartyRace_Sub_Option_Line_C::OnlineSpeedClassName' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, IsFocusingIgnore) == 0x000678, "Member 'UWBP_PartyRace_Sub_Option_Line_C::IsFocusingIgnore' has a wrong offset!");
+static_assert(offsetof(UWBP_PartyRace_Sub_Option_Line_C, IsOpeningPopup) == 0x000679, "Member 'UWBP_PartyRace_Sub_Option_Line_C::IsOpeningPopup' has a wrong offset!");
 
 }
 

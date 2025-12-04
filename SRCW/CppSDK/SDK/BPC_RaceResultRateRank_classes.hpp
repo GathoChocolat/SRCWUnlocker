@@ -10,8 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -27,6 +28,7 @@ public:
 	class UWBP_ResultRate_C*                      ResultRate;                                        // 0x0118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ChildStateMachineExitEvent();
 	void ExecuteUbergraph_BPC_RaceResultRateRank(int32 EntryPoint);
 	void OnInitState();
 	void OnUpdateState(float InDeltaTime);

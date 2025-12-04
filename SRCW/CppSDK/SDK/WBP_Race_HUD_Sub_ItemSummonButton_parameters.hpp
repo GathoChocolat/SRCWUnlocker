@@ -30,6 +30,7 @@ public:
 	bool                                          CallFunc_Key_IsGamepadKey_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetKey_Success;                           // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetKey_Success_1;                         // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetKey_IsSuccess;                         // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton");
 static_assert(sizeof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton) == 0x000030, "Wrong size on WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton");
@@ -40,6 +41,7 @@ static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_
 static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_Key_IsGamepadKey_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_Key_IsGamepadKey_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_SetKey_Success) == 0x000029, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_SetKey_Success' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_SetKey_Success_1) == 0x00002A, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_SetKey_Success_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton, CallFunc_SetKey_IsSuccess) == 0x00002B, "Member 'WBP_Race_HUD_Sub_ItemSummonButton_C_ExecuteUbergraph_WBP_Race_HUD_Sub_ItemSummonButton::CallFunc_SetKey_IsSuccess' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_ItemSummonButton.WBP_Race_HUD_Sub_ItemSummonButton_C.SetSummonInputKey
 // 0x0020 (0x0020 - 0x0000)

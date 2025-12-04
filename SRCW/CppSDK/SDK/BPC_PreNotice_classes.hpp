@@ -12,9 +12,9 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -22,20 +22,20 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_PreNotice.BPC_PreNotice_C
-// 0x0040 (0x0250 - 0x0210)
+// 0x0040 (0x0288 - 0x0248)
 class UBPC_PreNotice_C final : public UPreNoticeState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         LastFestaId;                                       // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         LastFestaPoint;                                    // 0x021C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Popup_Window_Tutorial_C*           TutorialPopup;                                     // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIPopupWindowBase*                PopupWindow;                                       // 0x0228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UBPC_DodonpaEventState_C*               DodonpaEventState;                                 // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIPopupWindowBase*                StreamingInstallPopup;                             // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EMenuSequenceBGM                              DonpaPrevBGM;                                      // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_CommonConnectingUI_C*               CommonConnectingUI;                                // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                         LastFestaId;                                       // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LastFestaPoint;                                    // 0x0254(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Popup_Window_Tutorial_C*           TutorialPopup;                                     // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIPopupWindowBase*                PopupWindow;                                       // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UBPC_DodonpaEventState_C*               DodonpaEventState;                                 // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIPopupWindowBase*                StreamingInstallPopup;                             // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EMenuSequenceBGM                              DonpaPrevBGM;                                      // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_CommonConnectingUI_C*               CommonConnectingUI;                                // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void PlayStoredBgm();
@@ -57,7 +57,6 @@ public:
 	void Call_DodonpaEvent_GrandPrixCleard();
 	void OnDodonpaEvent_FestaIntro(EMenuSequenceSubState State);
 	void Call_DodonpaEvent_FestaIntro();
-	void OnReceiveCheckCompensation(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void OnEndFade_FestaIntro(EUnionUIFadeDirection FadeDirection);
 	void OnInitializeFlow_DLC_Freecontents();
 	void OnEndFade_GrandPrixCleard(EUnionUIFadeDirection FadeDirection);
@@ -71,9 +70,15 @@ public:
 	void ReturnTutorialVideo();
 	void OnInitializeFlow_ClearGrandPrix();
 	void OnInitializeFlow_TutorialCheck();
-	void OnInitializeFlow_Compensation();
+	void OnReceiveCheckCompensation(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void OnReceiveCheckFestaReward(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void OnErrorPopupWindowClose(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
+	void OnDodonpaEventEnd_LegendInfo(EMenuSequenceSubState State);
+	void Call_DodonpaEvent_LegendInfo();
+	void OnEndFade_LegendInfo(EUnionUIFadeDirection FadeDirection);
+	void OnInitializeFlow_LegendCompeEndReward();
+	void OnReceiveCheckLegendCompeReward(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
+	void OnInitializeFlow_Compensation();
 	void OnAttentionPopupWindowDecision(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void ExecuteUbergraph_BPC_PreNotice(int32 EntryPoint);
 
@@ -88,16 +93,16 @@ public:
 	}
 };
 static_assert(alignof(UBPC_PreNotice_C) == 0x000008, "Wrong alignment on UBPC_PreNotice_C");
-static_assert(sizeof(UBPC_PreNotice_C) == 0x000250, "Wrong size on UBPC_PreNotice_C");
-static_assert(offsetof(UBPC_PreNotice_C, UberGraphFrame) == 0x000210, "Member 'UBPC_PreNotice_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, LastFestaId) == 0x000218, "Member 'UBPC_PreNotice_C::LastFestaId' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, LastFestaPoint) == 0x00021C, "Member 'UBPC_PreNotice_C::LastFestaPoint' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, TutorialPopup) == 0x000220, "Member 'UBPC_PreNotice_C::TutorialPopup' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, PopupWindow) == 0x000228, "Member 'UBPC_PreNotice_C::PopupWindow' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, DodonpaEventState) == 0x000230, "Member 'UBPC_PreNotice_C::DodonpaEventState' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, StreamingInstallPopup) == 0x000238, "Member 'UBPC_PreNotice_C::StreamingInstallPopup' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, DonpaPrevBGM) == 0x000240, "Member 'UBPC_PreNotice_C::DonpaPrevBGM' has a wrong offset!");
-static_assert(offsetof(UBPC_PreNotice_C, CommonConnectingUI) == 0x000248, "Member 'UBPC_PreNotice_C::CommonConnectingUI' has a wrong offset!");
+static_assert(sizeof(UBPC_PreNotice_C) == 0x000288, "Wrong size on UBPC_PreNotice_C");
+static_assert(offsetof(UBPC_PreNotice_C, UberGraphFrame) == 0x000248, "Member 'UBPC_PreNotice_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, LastFestaId) == 0x000250, "Member 'UBPC_PreNotice_C::LastFestaId' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, LastFestaPoint) == 0x000254, "Member 'UBPC_PreNotice_C::LastFestaPoint' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, TutorialPopup) == 0x000258, "Member 'UBPC_PreNotice_C::TutorialPopup' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, PopupWindow) == 0x000260, "Member 'UBPC_PreNotice_C::PopupWindow' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, DodonpaEventState) == 0x000268, "Member 'UBPC_PreNotice_C::DodonpaEventState' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, StreamingInstallPopup) == 0x000270, "Member 'UBPC_PreNotice_C::StreamingInstallPopup' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, DonpaPrevBGM) == 0x000278, "Member 'UBPC_PreNotice_C::DonpaPrevBGM' has a wrong offset!");
+static_assert(offsetof(UBPC_PreNotice_C, CommonConnectingUI) == 0x000280, "Member 'UBPC_PreNotice_C::CommonConnectingUI' has a wrong offset!");
 
 }
 

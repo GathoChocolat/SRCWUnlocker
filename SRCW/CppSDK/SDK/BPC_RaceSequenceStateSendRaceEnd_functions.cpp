@@ -305,6 +305,26 @@ void UBPC_RaceSequenceStateSendRaceEnd_C::OnInitState()
 }
 
 
+// Function BPC_RaceSequenceStateSendRaceEnd.BPC_RaceSequenceStateSendRaceEnd_C.OnSaveComplate
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESaveDataStatus                         Status                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_RaceSequenceStateSendRaceEnd_C::OnSaveComplate(ESaveDataStatus Status)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateSendRaceEnd_C", "OnSaveComplate");
+
+	Params::BPC_RaceSequenceStateSendRaceEnd_C_OnSaveComplate Parms{};
+
+	Parms.Status = Status;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPC_RaceSequenceStateSendRaceEnd.BPC_RaceSequenceStateSendRaceEnd_C.OnSendResultSaveFestaResultCallback
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -414,6 +434,20 @@ void UBPC_RaceSequenceStateSendRaceEnd_C::SendPredictLog()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BPC_RaceSequenceStateSendRaceEnd_C", "SendPredictLog");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_RaceSequenceStateSendRaceEnd.BPC_RaceSequenceStateSendRaceEnd_C.UnbindOnSaveEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_RaceSequenceStateSendRaceEnd_C::UnbindOnSaveEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateSendRaceEnd_C", "UnbindOnSaveEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

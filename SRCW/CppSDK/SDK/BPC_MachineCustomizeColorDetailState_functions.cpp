@@ -225,6 +225,20 @@ void UBPC_MachineCustomizeColorDetailState_C::OnSetupPage()
 }
 
 
+// Function BPC_MachineCustomizeColorDetailState.BPC_MachineCustomizeColorDetailState_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+
+void UBPC_MachineCustomizeColorDetailState_C::OnStateChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_MachineCustomizeColorDetailState_C", "OnStateChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_MachineCustomizeColorDetailState.BPC_MachineCustomizeColorDetailState_C.SetColor
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

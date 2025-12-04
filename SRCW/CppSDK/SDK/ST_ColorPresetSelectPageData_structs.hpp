@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ST_ColorPresetSelectPageItemData_structs.hpp"
 #include "EColorPresetSelectPageType_structs.hpp"
+#include "ST_ColorPresetSelectPageItemData_structs.hpp"
 
 
 namespace SDK

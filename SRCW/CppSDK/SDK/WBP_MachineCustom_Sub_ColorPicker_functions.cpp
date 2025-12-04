@@ -233,6 +233,20 @@ void UWBP_MachineCustom_Sub_ColorPicker_C::PullDownMenu_OnItemSelected(const str
 }
 
 
+// Function WBP_MachineCustom_Sub_ColorPicker.WBP_MachineCustom_Sub_ColorPicker_C.ResetPullDownMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MachineCustom_Sub_ColorPicker_C::ResetPullDownMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MachineCustom_Sub_ColorPicker_C", "ResetPullDownMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MachineCustom_Sub_ColorPicker.WBP_MachineCustom_Sub_ColorPicker_C.Scene_OnCancel
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:

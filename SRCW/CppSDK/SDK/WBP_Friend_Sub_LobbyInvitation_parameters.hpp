@@ -11,41 +11,544 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
-#include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.IsOnlyJoinPublicLobby
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby final
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.AddListItemWidgetByListItemIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex final
 {
 public:
-	bool                                          bOutOnlyJoin;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bRetIsOnlyJoin;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetMemberCount_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby) == 0x000028, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, bOutOnlyJoin) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::bOutOnlyJoin' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, bRetIsOnlyJoin) == 0x000001, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::bRetIsOnlyJoin' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_IsJoining_ReturnValue) == 0x000018, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_IsJoining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GetMemberCount_ReturnValue) == 0x00001C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GetMemberCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex) == 0x000004, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex) == 0x000004, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex, InListItemIndex) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex::InListItemIndex' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.Check Lobby Join Attention
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention final
+{
+public:
+	bool                                          bOutAttention;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsOnlyJoinPrivateLobby_bOutOnlyJoin;      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsOnlyJoinPublicLobby_bOutOnlyJoin;       // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention) == 0x000004, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, bOutAttention) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::bOutAttention' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, CallFunc_IsOnlyJoinPrivateLobby_bOutOnlyJoin) == 0x000001, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::CallFunc_IsOnlyJoinPrivateLobby_bOutOnlyJoin' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, CallFunc_IsOnlyJoinPublicLobby_bOutOnlyJoin) == 0x000002, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::CallFunc_IsOnlyJoinPublicLobby_bOutOnlyJoin' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.ExecuteAfterConfirmWidget
+// 0x000C (0x000C - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget final
+{
+public:
+	EFriendListCommandType                        CommandType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InButtonIndex;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInCanceled;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget) == 0x000004, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget) == 0x00000C, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget, CommandType) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget::CommandType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget, InButtonIndex) == 0x000004, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget::InButtonIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget, bInCanceled) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget::bInCanceled' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation
+// 0x09C0 (0x09C0 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetShortLobbyIdButtonText_OutText;        // 0x0008(0x0010)()
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_4;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PanelIndex_1;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex_1;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0030(0x0010)(ConstParm, ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0048(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0058(0x0010)()
+	class FText                                   CallFunc_GetInputText_OutInputText;                // 0x0068(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue;                // 0x00A0(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCommon_UserSearchData>         K2Node_Event_InUserSearchData_1;                   // 0x00A8(0x0010)(ConstParm, ReferenceParm)
+	EFriendListCommandType                        K2Node_Event_CommandType;                          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_InButtonIndex;                        // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInCanceled;                          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckLobbyInvitationReject_ReturnValue;   // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckShowPfProfile_ReturnValue;           // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x00C6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00C7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo;  // 0x00C8(0x00F0)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_NumberInput_Window_C*       CallFunc_Create_ReturnValue;                       // 0x01C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C9[0x3];                                      // 0x01C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInPlayFocusSound_1;                  // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item;                           // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate; // 0x01E4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_3;                       // 0x01F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  CallFunc_Array_Get_Item_1;                         // 0x0200(0x00F0)()
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F5[0x3];                                      // 0x02F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_2;                       // 0x02F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_InLobbyId;                      // 0x0300(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bInWaitDisplay;                 // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0318(0x0010)()
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0329(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32A[0x2];                                      // 0x032A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_InListItemIndex_1;                    // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInEnable_1;                          // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_5;                       // 0x0338(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_CustomEvent_InItemListWidget;               // 0x0340(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo;               // 0x0348(0x00F0)()
+	int32                                         K2Node_CustomEvent_InButtonIndex;                  // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget;              // 0x0440(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_6;                       // 0x0448(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_1;              // 0x0450(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0458(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckRequestLobbyId_ReturnValue;          // 0x0459(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x045A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckGetCurrentLobbyId_ReturnValue;       // 0x045B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x045C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_45D[0x3];                                      // 0x045D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_CustomEvent_InShortLobbyId;                 // 0x0460(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_InRequestSuccess;               // 0x0470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0471(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_472[0x6];                                      // 0x0472(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_ConvertLobbyIdStringForDisplay_OutLobbyIdForDisplay; // 0x0478(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInEnable;                            // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_489[0x3];                                      // 0x0489(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetZOrder_ReturnValue;                    // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_InListItemIndex;                      // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bEnable;                              // 0x0494(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_495[0x3];                                      // 0x0495(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_2;                         // 0x0498(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_1;            // 0x04A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4[0x4];                                      // 0x04B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      K2Node_Event_PlayerController;                     // 0x04B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInPlayFocusSound;                    // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Check_Lobby_Join_Attention_bOutAttention; // 0x04C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C2[0x2];                                      // 0x04C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x04C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x04C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x04CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4CD[0x3];                                      // 0x04CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_SmallWindow_Top_C*          K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top;  // 0x04D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x04D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D9[0x7];                                      // 0x04D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Create_ReturnValue_1;                     // 0x04E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4EC[0x4];                                      // 0x04EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x04F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0500(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_501[0x7];                                      // 0x0501(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFriendListPlayerInfo                  CallFunc_Array_Get_Item_3;                         // 0x0508(0x00F0)()
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5F9[0x7];                                      // 0x05F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0600(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x0610(0x0010)()
+	EFriendListCommandType                        K2Node_CustomEvent_InCommandType;                  // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_621[0x7];                                      // 0x0621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_MakeArray_Array_1;                          // 0x0628(0x0010)(ConstParm, ReferenceParm)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x0638(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x0648(0x0010)()
+	int32                                         CallFunc_GetZOrder_ReturnValue_1;                  // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x065C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x066C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_1;            // 0x0670(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_2;              // 0x0678(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetInLobbySequence_ReturnValue;           // 0x0681(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_682[0x6];                                      // 0x0682(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FCommon_UserSearchData>         K2Node_Event_InUserSearchData;                     // 0x0688(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FLobbyId>                       K2Node_Event_InLobbyIdData;                        // 0x0698(0x0010)(ConstParm, ReferenceParm)
+	ELobbyType                                    K2Node_Event_InLobbyType;                          // 0x06A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x06A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x06AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6AB[0x5];                                      // 0x06AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1; // 0x06B0(0x00F0)()
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x07A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A1[0x3];                                      // 0x07A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x07A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue;            // 0x07A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x07B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B1[0x3];                                      // 0x07B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x07B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_1;           // 0x07B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B9[0x7];                                      // 0x07B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x07C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x07C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x07C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7CA[0x2];                                      // 0x07CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x07CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_4;                         // 0x07D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_4;         // 0x07D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7D9[0x7];                                      // 0x07D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_2;            // 0x07E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x07E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x07F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7F1[0x7];                                      // 0x07F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface; // 0x07F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0808(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_809[0x7];                                      // 0x0809(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1; // 0x0810(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0820(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_821[0x7];                                      // 0x0821(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2; // 0x0828(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0838(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_839[0x7];                                      // 0x0839(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3; // 0x0840(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0850(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_851[0x7];                                      // 0x0851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4; // 0x0858(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0868(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_869[0x7];                                      // 0x0869(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5; // 0x0870(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_881[0x7];                                      // 0x0881(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIPopupWindowManager*             CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0888(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0890(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_891[0x7];                                      // 0x0891(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIPopupWindowBase*                CallFunc_CreatePopupWindow_ReturnValue;            // 0x0898(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bInEnable_1;                    // 0x08A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x08A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8A2[0x6];                                      // 0x08A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_SubMenu_Btn_C*              K2Node_CustomEvent_InSubMenuButton;                // 0x08A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bInEnable;                      // 0x08B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x08B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x08B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasFocusedDescendants_ReturnValue;        // 0x08B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x08B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x08B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x08B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              Temp_byte_Variable_4;                              // 0x08B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x08B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              Temp_byte_Variable_5;                              // 0x08B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x08BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8BB[0x1];                                      // 0x08BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button, EUnionUIControlDir Dir)> K2Node_CreateDelegate_OutputDelegate_2; // 0x08BC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              K2Node_Select_Default_2;                           // 0x08CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8CD[0x3];                                      // 0x08CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x08D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUnionUIControlDir                            K2Node_CustomEvent_Dir;                            // 0x08D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x08D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8DA[0x6];                                      // 0x08DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UScrollBox*                             CallFunc_GetScrollBoxWidget_ReturnValue;           // 0x08E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x08E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x08EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x08ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x08EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8EF[0x1];                                      // 0x08EF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x08F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x08F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8F5[0x3];                                      // 0x08F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x08F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_3; // 0x08FC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_4;        // 0x090C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_5; // 0x091C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EnableShowInvitationWarningWindowFromInvitationAccept_ReturnValue; // 0x092C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_92D[0x3];                                      // 0x092D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_3;              // 0x0930(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_CMN_Window_C*               K2Node_DynamicCast_AsWBP_Friend_CMN_Window;        // 0x0938(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x0940(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_941[0x7];                                      // 0x0941(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0948(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWidget*                                CallFunc_Array_Get_Item_5;                         // 0x0958(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0960(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_964[0x4];                                      // 0x0964(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small; // 0x0968(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x0970(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0971(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_972[0x2];                                      // 0x0972(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0974(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UScrollBox*                             CallFunc_GetScrollBoxWidget_ReturnValue_1;         // 0x0978(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0980(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_6;        // 0x0984(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0994(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Event_Param;                                // 0x0995(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_996[0x2];                                      // 0x0996(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0998(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_7;        // 0x099C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9AC[0x4];                                      // 0x09AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_6;                         // 0x09B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_3;            // 0x09B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation) == 0x0009C0, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, EntryPoint) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::EntryPoint' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetShortLobbyIdButtonText_OutText) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetShortLobbyIdButtonText_OutText' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_4) == 0x000018, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_PanelIndex_1) == 0x000020, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_ButtonIndex_1) == 0x000024, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_SwitchInteger_CmpSuccess) == 0x000028, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_MakeArray_Array) == 0x000030, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Array_Index_Variable) == 0x000040, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue) == 0x000048, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000058, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetInputText_OutInputText) == 0x000068, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetInputText_OutInputText' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_TextToString_ReturnValue) == 0x000078, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Concat_StrStr_ReturnValue) == 0x000088, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetOwningPlayer_ReturnValue) == 0x000098, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue) == 0x0000A0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InUserSearchData_1) == 0x0000A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InUserSearchData_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_CommandType) == 0x0000B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_CommandType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InButtonIndex) == 0x0000BC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InButtonIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInCanceled) == 0x0000C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInCanceled' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckLobbyInvitationReject_ReturnValue) == 0x0000C1, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckLobbyInvitationReject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckShowPfProfile_ReturnValue) == 0x0000C2, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckShowPfProfile_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue) == 0x0000C3, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000C4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C5, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000C6, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_BooleanOR_ReturnValue) == 0x0000C7, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo) == 0x0000C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Length_ReturnValue) == 0x0001B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Loop_Counter_Variable) == 0x0001BC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Create_ReturnValue) == 0x0001C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Less_IntInt_ReturnValue) == 0x0001C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue) == 0x0001CC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInPlayFocusSound_1) == 0x0001D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInPlayFocusSound_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item) == 0x0001D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate) == 0x0001E4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_3) == 0x0001F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_1) == 0x000200, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Length_ReturnValue_1) == 0x0002F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x0002F4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_2) == 0x0002F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InLobbyId) == 0x000300, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InLobbyId' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_bInWaitDisplay) == 0x000310, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_bInWaitDisplay' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_StringToText_ReturnValue) == 0x000318, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsEmpty_ReturnValue) == 0x000328, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_BooleanOR_ReturnValue_1) == 0x000329, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InListItemIndex_1) == 0x00032C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InListItemIndex_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInEnable_1) == 0x000330, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInEnable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_5) == 0x000338, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InItemListWidget) == 0x000340, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InItemListWidget' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InListPlayerInfo) == 0x000348, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InListPlayerInfo' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InButtonIndex) == 0x000438, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InButtonIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget) == 0x000440, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_6) == 0x000448, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_6' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue_1) == 0x000450, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue) == 0x000458, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckRequestLobbyId_ReturnValue) == 0x000459, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckRequestLobbyId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue_2) == 0x00045A, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckGetCurrentLobbyId_ReturnValue) == 0x00045B, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckGetCurrentLobbyId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue_3) == 0x00045C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InShortLobbyId) == 0x000460, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InShortLobbyId' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InRequestSuccess) == 0x000470, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InRequestSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_BooleanAND_ReturnValue) == 0x000471, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_ConvertLobbyIdStringForDisplay_OutLobbyIdForDisplay) == 0x000478, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_ConvertLobbyIdStringForDisplay_OutLobbyIdForDisplay' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInEnable) == 0x000488, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInEnable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetZOrder_ReturnValue) == 0x00048C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetZOrder_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InListItemIndex) == 0x000490, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InListItemIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bEnable) == 0x000494, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bEnable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_2) == 0x000498, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x0004A0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget_1) == 0x0004A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Array_Index_Variable_1) == 0x0004B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_PlayerController) == 0x0004B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_PlayerController' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInPlayFocusSound) == 0x0004C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInPlayFocusSound' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Check_Lobby_Join_Attention_bOutAttention) == 0x0004C1, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Check_Lobby_Join_Attention_bOutAttention' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Loop_Counter_Variable_1) == 0x0004C4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue_1) == 0x0004C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_1) == 0x0004CC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top) == 0x0004D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess) == 0x0004D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Create_ReturnValue_1) == 0x0004E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Add_ReturnValue) == 0x0004E8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_1) == 0x0004F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_PanelIndex) == 0x0004F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_ButtonIndex) == 0x0004FC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000500, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_3) == 0x000508, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x0005F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000600, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000610, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InCommandType) == 0x000620, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InCommandType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_MakeArray_Array_1) == 0x000628, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000638, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000648, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetZOrder_ReturnValue_1) == 0x000658, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetZOrder_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_1) == 0x00065C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue_2) == 0x00066C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000670, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue_2) == 0x000678, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_2) == 0x000680, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetInLobbySequence_ReturnValue) == 0x000681, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetInLobbySequence_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InUserSearchData) == 0x000688, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InUserSearchData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InLobbyIdData) == 0x000698, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InLobbyIdData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InLobbyType) == 0x0006A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InLobbyType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_3) == 0x0006A9, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsInViewport_ReturnValue) == 0x0006AA, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1) == 0x0006B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralByte_ReturnValue) == 0x0007A0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0007A4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetWorldSubsystem_ReturnValue) == 0x0007A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x0007B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x0007B4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsNotEmpty_ReturnValue_1) == 0x0007B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsNotEmpty_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0007C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x0007C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x0007C9, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x0007CC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_4) == 0x0007D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_4) == 0x0007D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget_2) == 0x0007E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0007E8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_4) == 0x0007F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x0007F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_1) == 0x000808, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000810, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_2) == 0x000820, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000828, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_3) == 0x000838, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000840, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_4) == 0x000850, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000858, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_5) == 0x000868, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5) == 0x000870, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_6) == 0x000880, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000888, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable) == 0x000890, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CreatePopupWindow_ReturnValue) == 0x000898, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_bInEnable_1) == 0x0008A0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_bInEnable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_1) == 0x0008A1, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InSubMenuButton) == 0x0008A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InSubMenuButton' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_bInEnable) == 0x0008B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_bInEnable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_bool_Variable) == 0x0008B1, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Select_Default) == 0x0008B2, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_HasFocusedDescendants_ReturnValue) == 0x0008B3, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_HasFocusedDescendants_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_2) == 0x0008B4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_3) == 0x0008B5, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_bool_Variable_1) == 0x0008B6, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_4) == 0x0008B7, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Select_Default_1) == 0x0008B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_5) == 0x0008B9, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_bool_Variable_2) == 0x0008BA, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_2) == 0x0008BC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Select_Default_2) == 0x0008CC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button) == 0x0008D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Dir) == 0x0008D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Dir' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_5) == 0x0008D9, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetScrollBoxWidget_ReturnValue) == 0x0008E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetScrollBoxWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetChildrenCount_ReturnValue) == 0x0008E8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Greater_IntInt_ReturnValue) == 0x0008EC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0008ED, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_6) == 0x0008EE, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Loop_Counter_Variable_2) == 0x0008F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Less_IntInt_ReturnValue_1) == 0x0008F4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue_3) == 0x0008F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_3) == 0x0008FC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_4) == 0x00090C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_5) == 0x00091C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EnableShowInvitationWarningWindowFromInvitationAccept_ReturnValue) == 0x00092C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EnableShowInvitationWarningWindowFromInvitationAccept_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue_3) == 0x000930, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsWBP_Friend_CMN_Window) == 0x000938, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsWBP_Friend_CMN_Window' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_7) == 0x000940, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetAllChildren_ReturnValue) == 0x000948, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_5) == 0x000958, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Length_ReturnValue_2) == 0x000960, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small) == 0x000968, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_8) == 0x000970, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Less_IntInt_ReturnValue_2) == 0x000971, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Add_ReturnValue_1) == 0x000974, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetScrollBoxWidget_ReturnValue_1) == 0x000978, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetScrollBoxWidget_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000980, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_6) == 0x000984, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000994, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_Param) == 0x000995, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_Param' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Array_Index_Variable_2) == 0x000998, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_7) == 0x00099C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_6) == 0x0009B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_6' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget_3) == 0x0009B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget_3' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.FocusListItemWidget
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget final
+{
+public:
+	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget, bInPlayFocusSound) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget::bInPlayFocusSound' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetNumberInputWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget final
+{
+public:
+	class UFriendListNumberInputWidget*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget, ReturnValue) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget::ReturnValue' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetScrollBoxWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget final
+{
+public:
+	class UScrollBox*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget, ReturnValue) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget::ReturnValue' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetShortLobbyIdButtonText
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText final
+{
+public:
+	class FText                                   OutText;                                           // 0x0000(0x0010)(Parm, OutParm)
+	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue;                // 0x0010(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsCreateShortLobbyIdText_ReturnValue;     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText) == 0x000020, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText, OutText) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText::OutText' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText, CallFunc_GetMainWidget_ReturnValue) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText::CallFunc_GetMainWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText, CallFunc_IsCreateShortLobbyIdText_ReturnValue) == 0x000019, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText::CallFunc_IsCreateShortLobbyIdText_ReturnValue' has a wrong offset!");
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.IsOnlyJoinPrivateLobby
 // 0x0028 (0x0028 - 0x0000)
@@ -74,33 +577,71 @@ static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby, 
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetNumberInputWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget final
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.IsOnlyJoinPublicLobby
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby final
 {
 public:
-	class UFriendListNumberInputWidget*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bOutOnlyJoin;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bRetIsOnlyJoin;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetMemberCount_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget, ReturnValue) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget::ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby) == 0x000028, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, bOutOnlyJoin) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::bOutOnlyJoin' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, bRetIsOnlyJoin) == 0x000001, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::bRetIsOnlyJoin' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GetPublicLobbyContext_ReturnValue) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GetPublicLobbyContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_IsJoining_ReturnValue) == 0x000018, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_IsJoining_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GetMemberCount_ReturnValue) == 0x00001C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GetMemberCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.Check Lobby Join Attention
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention final
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnAttentionPopupWindowDecision
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision final
 {
 public:
-	bool                                          bOutAttention;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsOnlyJoinPrivateLobby_bOutOnlyJoin;      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsOnlyJoinPublicLobby_bOutOnlyJoin;       // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention) == 0x000004, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, bOutAttention) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::bOutAttention' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, CallFunc_IsOnlyJoinPrivateLobby_bOutOnlyJoin) == 0x000001, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::CallFunc_IsOnlyJoinPrivateLobby_bOutOnlyJoin' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, CallFunc_IsOnlyJoinPublicLobby_bOutOnlyJoin) == 0x000002, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::CallFunc_IsOnlyJoinPublicLobby_bOutOnlyJoin' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision) == 0x000010, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision::Button' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision, PanelIndex) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision::PanelIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision, ButtonIndex) == 0x00000C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision::ButtonIndex' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnButtonDecisionEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent::Button' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnDirectionChange
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange) == 0x000010, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange::Button' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange, Dir) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange::Dir' has a wrong offset!");
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnFocusReceived
 // 0x01C0 (0x01C0 - 0x0000)
@@ -124,16 +665,16 @@ static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived, K2Node_
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived, CallFunc_GetUserIndexByFocusEvent_ReturnValue) == 0x0001B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived::CallFunc_GetUserIndexByFocusEvent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived, CallFunc_GetPlayerController_ReturnValue) == 0x0001B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetScrollBoxWidget
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnListItemCancelDown
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget final
+struct WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown final
 {
 public:
-	class UScrollBox*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget, ReturnValue) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget::ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown::Button' has a wrong offset!");
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnListItemDecisionDown
 // 0x0008 (0x0008 - 0x0000)
@@ -146,42 +687,31 @@ static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown) =
 static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown");
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown::Button' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupListItemWidgetSingle
-// 0x00F8 (0x00F8 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle final
-{
-public:
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    InItemListWidget;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0008(0x00E8)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         InButtonIndex;                                     // 0x00F0(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle) == 0x0000F8, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle, InItemListWidget) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle::InItemListWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle, InListPlayerInfo) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle::InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle, InButtonIndex) == 0x0000F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle::InButtonIndex' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnListItemCancelDown
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdButtonDecisionEvent
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown final
+struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent final
 {
 public:
 	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown::Button' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent::Button' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.FocusListItemWidget
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget final
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdSearchSuccess
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess final
 {
 public:
-	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<struct FLobbyId>                       InLobbyIdData;                                     // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ELobbyType                                    InLobbyType;                                       // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget, bInPlayFocusSound) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget::bInPlayFocusSound' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess) == 0x000028, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess, InUserSearchData) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess::InUserSearchData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess, InLobbyIdData) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess::InLobbyIdData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess, InLobbyType) == 0x000020, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess::InLobbyType' has a wrong offset!");
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnNumberInputWidgetDecision
 // 0x0010 (0x0010 - 0x0000)
@@ -209,68 +739,6 @@ static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess) == 0
 static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess) == 0x000010, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess");
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess, InUserSearchData) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess::InUserSearchData' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.ExecuteAfterConfirmWidget
-// 0x000C (0x000C - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget final
-{
-public:
-	EFriendListCommandType                        CommandType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InButtonIndex;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInCanceled;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget) == 0x000004, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget) == 0x00000C, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget, CommandType) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget::CommandType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget, InButtonIndex) == 0x000004, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget::InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget, bInCanceled) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget::bInCanceled' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnButtonDecisionEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent::Button' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdButtonDecisionEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent::Button' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetOwnLobbyIdText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText final
-{
-public:
-	class FString                                 InLobbyId;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          bInWaitDisplay;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText) == 0x000018, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText, InLobbyId) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText::InLobbyId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText, bInWaitDisplay) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText::bInWaitDisplay' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.AddListItemWidgetByListItemIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex final
-{
-public:
-	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex) == 0x000004, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex) == 0x000004, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex, InListItemIndex) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex::InListItemIndex' has a wrong offset!");
-
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetButtonControlEnable
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable final
@@ -281,108 +749,6 @@ public:
 static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable");
 static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable");
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable::bInEnable' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.UpdateLobbyId
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId final
-{
-public:
-	class FString                                 InShortLobbyId;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          InRequestSuccess;                                  // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId) == 0x000018, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId, InShortLobbyId) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId::InShortLobbyId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId, InRequestSuccess) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId::InRequestSuccess' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetInteractableState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState::bInEnable' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetButtonChangeableState
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState final
-{
-public:
-	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bEnable;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState) == 0x000004, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState, InListItemIndex) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState::InListItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState, bEnable) == 0x000004, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState::bEnable' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetWidgetFocus
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus final
-{
-public:
-	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInPlayFocusSound;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus) == 0x000010, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus, PlayerController) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus::PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus, bInPlayFocusSound) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus::bInPlayFocusSound' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnAttentionPopupWindowDecision
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision) == 0x000010, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision, PanelIndex) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision::PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision, ButtonIndex) == 0x00000C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision::ButtonIndex' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupAttentionPopupWindow
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow final
-{
-public:
-	EFriendListCommandType                        InCommandType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow, InCommandType) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow::InCommandType' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdSearchSuccess
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess final
-{
-public:
-	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<struct FLobbyId>                       InLobbyIdData;                                     // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ELobbyType                                    InLobbyType;                                       // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess) == 0x000028, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess, InUserSearchData) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess::InUserSearchData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess, InLobbyIdData) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess::InLobbyIdData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess, InLobbyType) == 0x000020, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess::InLobbyType' has a wrong offset!");
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetContentsControlEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable::bInEnable' has a wrong offset!");
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetButtonControlEnableSingle
 // 0x0010 (0x0010 - 0x0000)
@@ -397,18 +763,53 @@ static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSing
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle, InSubMenuButton) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle::InSubMenuButton' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle, bInEnable) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle::bInEnable' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnDirectionChange
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange final
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetContentsControlEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable final
 {
 public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange) == 0x000010, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange, Button) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange::Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange, Dir) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange::Dir' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable::bInEnable' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetButtonChangeableState
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState final
+{
+public:
+	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnable;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState) == 0x000004, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState) == 0x000008, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState, InListItemIndex) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState::InListItemIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState, bEnable) == 0x000004, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState::bEnable' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetInteractableState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState, bInEnable) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState::bInEnable' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetOwnLobbyIdText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText final
+{
+public:
+	class FString                                 InLobbyId;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          bInWaitDisplay;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText) == 0x000018, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText, InLobbyId) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText::InLobbyId' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText, bInWaitDisplay) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText::bInWaitDisplay' has a wrong offset!");
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetScrollBoxVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -421,439 +822,57 @@ static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility) =
 static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility");
 static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility, Param) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility::Param' has a wrong offset!");
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation
-// 0x0988 (0x0988 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation final
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupAttentionPopupWindow
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_4;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PanelIndex_1;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0038(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0048(0x0010)()
-	class FText                                   CallFunc_GetInputText_OutInputText;                // 0x0058(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue;                // 0x0090(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCommon_UserSearchData>         K2Node_Event_InUserSearchData_1;                   // 0x0098(0x0010)(ConstParm, ReferenceParm)
-	EFriendListCommandType                        K2Node_Event_CommandType;                          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_InButtonIndex;                        // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInCanceled;                          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckLobbyInvitationReject_ReturnValue;   // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckShowPfProfile_ReturnValue;           // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x00B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo;  // 0x00B8(0x00E8)()
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item;                           // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget;              // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_NumberInput_Window_C*       CallFunc_Create_ReturnValue;                       // 0x01C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C9[0x3];                                      // 0x01C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInPlayFocusSound_1;                  // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_1;                         // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate; // 0x01E4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendListPlayerInfo                  CallFunc_Array_Get_Item_2;                         // 0x01F8(0x00E8)()
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x02E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_3;                       // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_2;                       // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_InLobbyId;                      // 0x02F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bInWaitDisplay;                 // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0310(0x0010)()
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0321(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_322[0x2];                                      // 0x0322(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_InListItemIndex_1;                    // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInEnable_1;                          // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_329[0x7];                                      // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_5;                       // 0x0330(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_CustomEvent_InItemListWidget;               // 0x0338(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo;               // 0x0340(0x00E8)()
-	int32                                         K2Node_CustomEvent_InButtonIndex;                  // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C[0x4];                                      // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_1;            // 0x0430(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_6;                       // 0x0438(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_1;              // 0x0440(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckRequestLobbyId_ReturnValue;          // 0x0449(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x044A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckGetCurrentLobbyId_ReturnValue;       // 0x044B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x044C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44D[0x3];                                      // 0x044D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_CustomEvent_InShortLobbyId;                 // 0x0450(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_InRequestSuccess;               // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0461(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_462[0x6];                                      // 0x0462(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_ConvertLobbyIdStringForDisplay_OutLobbyIdForDisplay; // 0x0468(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInEnable;                            // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_479[0x3];                                      // 0x0479(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetZOrder_ReturnValue;                    // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_InListItemIndex;                      // 0x0480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bEnable;                              // 0x0484(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_485[0x3];                                      // 0x0485(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_3;                         // 0x0488(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_1;         // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_2;            // 0x0498(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x04A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A4[0x4];                                      // 0x04A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      K2Node_Event_PlayerController;                     // 0x04A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInPlayFocusSound;                    // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Check_Lobby_Join_Attention_bOutAttention; // 0x04B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B2[0x2];                                      // 0x04B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x04B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x04BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4BD[0x3];                                      // 0x04BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_SmallWindow_Top_C*          K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top;  // 0x04C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Create_ReturnValue_1;                     // 0x04D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x04D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4DC[0x4];                                      // 0x04DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x04E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x04EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x04F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4F1[0x7];                                      // 0x04F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendListPlayerInfo                  CallFunc_Array_Get_Item_4;                         // 0x04F8(0x00E8)()
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_2;         // 0x05E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x05E8(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x05F8(0x0010)()
-	EFriendListCommandType                        K2Node_CustomEvent_InCommandType;                  // 0x0608(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_609[0x7];                                      // 0x0609(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           K2Node_MakeArray_Array_1;                          // 0x0610(0x0010)(ConstParm, ReferenceParm)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x0620(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x0630(0x0010)()
-	int32                                         CallFunc_GetZOrder_ReturnValue_1;                  // 0x0640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0644(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0654(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_1;            // 0x0658(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_2;              // 0x0660(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetInLobbySequence_ReturnValue;           // 0x0669(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_66A[0x6];                                      // 0x066A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FCommon_UserSearchData>         K2Node_Event_InUserSearchData;                     // 0x0670(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FLobbyId>                       K2Node_Event_InLobbyIdData;                        // 0x0680(0x0010)(ConstParm, ReferenceParm)
-	ELobbyType                                    K2Node_Event_InLobbyType;                          // 0x0690(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0691(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInViewport_ReturnValue;                 // 0x0692(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_693[0x5];                                      // 0x0693(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendListPlayerInfo                  CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1; // 0x0698(0x00E8)()
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0780(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_781[0x3];                                      // 0x0781(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0784(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0788(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0790(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_791[0x3];                                      // 0x0791(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0794(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_1;           // 0x0798(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_799[0x7];                                      // 0x0799(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x07A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x07A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_3;         // 0x07A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7AA[0x2];                                      // 0x07AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x07AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    CallFunc_Array_Get_Item_5;                         // 0x07B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_4;         // 0x07B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7B9[0x7];                                      // 0x07B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_3;            // 0x07C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x07C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D1[0x7];                                      // 0x07D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface; // 0x07D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x07E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7E9[0x7];                                      // 0x07E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1; // 0x07F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0800(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_801[0x7];                                      // 0x0801(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2; // 0x0808(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0818(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_819[0x7];                                      // 0x0819(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3; // 0x0820(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0830(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_831[0x7];                                      // 0x0831(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4; // 0x0838(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0848(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_849[0x7];                                      // 0x0849(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5; // 0x0850(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0860(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_861[0x7];                                      // 0x0861(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIPopupWindowManager*             CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0868(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0870(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_871[0x7];                                      // 0x0871(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIPopupWindowBase*                CallFunc_CreatePopupWindow_ReturnValue;            // 0x0878(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bInEnable_1;                    // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0881(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_882[0x6];                                      // 0x0882(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_SubMenu_Btn_C*              K2Node_CustomEvent_InSubMenuButton;                // 0x0888(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bInEnable;                      // 0x0890(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0891(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0892(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasFocusedDescendants_ReturnValue;        // 0x0893(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0894(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0895(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0896(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              Temp_byte_Variable_4;                              // 0x0897(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0898(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              Temp_byte_Variable_5;                              // 0x0899(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x089A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89B[0x1];                                      // 0x089B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUnionUIButtonBase* Button, EUnionUIControlDir Dir)> K2Node_CreateDelegate_OutputDelegate_2; // 0x089C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              K2Node_Select_Default_2;                           // 0x08AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8AD[0x3];                                      // 0x08AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x08B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EUnionUIControlDir                            K2Node_CustomEvent_Dir;                            // 0x08B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x08B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8BA[0x6];                                      // 0x08BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UScrollBox*                             CallFunc_GetScrollBoxWidget_ReturnValue;           // 0x08C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x08C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x08CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x08CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x08CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8CF[0x1];                                      // 0x08CF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x08D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x08D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8D5[0x3];                                      // 0x08D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x08D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_3; // 0x08DC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_4;        // 0x08EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_5; // 0x08FC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EnableShowInvitationWarningWindowFromInvitationAccept_ReturnValue; // 0x090C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_90D[0x3];                                      // 0x090D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue_3;              // 0x0910(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Friend_CMN_Window_C*               K2Node_DynamicCast_AsWBP_Friend_CMN_Window;        // 0x0918(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x0920(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_921[0x7];                                      // 0x0921(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0928(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWidget*                                CallFunc_Array_Get_Item_6;                         // 0x0938(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0940(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_944[0x4];                                      // 0x0944(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small; // 0x0948(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x0950(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0951(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_952[0x2];                                      // 0x0952(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0954(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UScrollBox*                             CallFunc_GetScrollBoxWidget_ReturnValue_1;         // 0x0958(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0960(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_6;        // 0x0964(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0974(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Event_Param;                                // 0x0975(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_976[0x2];                                      // 0x0976(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_7;        // 0x0978(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EFriendListCommandType                        InCommandType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation");
-static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation) == 0x000988, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, EntryPoint) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_4) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_PanelIndex_1) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_ButtonIndex_1) == 0x000014, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_SwitchInteger_CmpSuccess) == 0x000018, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_MakeArray_Array) == 0x000020, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Array_Index_Variable_1) == 0x000030, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue) == 0x000038, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000048, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetInputText_OutInputText) == 0x000058, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetInputText_OutInputText' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_TextToString_ReturnValue) == 0x000068, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Concat_StrStr_ReturnValue) == 0x000078, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetOwningPlayer_ReturnValue) == 0x000088, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue) == 0x000090, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InUserSearchData_1) == 0x000098, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InUserSearchData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_CommandType) == 0x0000A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_CommandType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InButtonIndex) == 0x0000AC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInCanceled) == 0x0000B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInCanceled' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckLobbyInvitationReject_ReturnValue) == 0x0000B1, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckLobbyInvitationReject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckShowPfProfile_ReturnValue) == 0x0000B2, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckShowPfProfile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue) == 0x0000B3, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000B4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B5, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000B6, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_BooleanOR_ReturnValue) == 0x0000B7, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo) == 0x0000B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item) == 0x0001A0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Length_ReturnValue) == 0x0001A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget) == 0x0001B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Loop_Counter_Variable) == 0x0001B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Create_ReturnValue) == 0x0001C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Less_IntInt_ReturnValue) == 0x0001C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue) == 0x0001CC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInPlayFocusSound_1) == 0x0001D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInPlayFocusSound_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_1) == 0x0001D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate) == 0x0001E4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_2) == 0x0001F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Length_ReturnValue_1) == 0x0002E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x0002E4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_3) == 0x0002E8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_2) == 0x0002F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InLobbyId) == 0x0002F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InLobbyId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_bInWaitDisplay) == 0x000308, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_bInWaitDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_StringToText_ReturnValue) == 0x000310, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsEmpty_ReturnValue) == 0x000320, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_BooleanOR_ReturnValue_1) == 0x000321, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InListItemIndex_1) == 0x000324, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InListItemIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInEnable_1) == 0x000328, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInEnable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_5) == 0x000330, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InItemListWidget) == 0x000338, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InItemListWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InListPlayerInfo) == 0x000340, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InButtonIndex) == 0x000428, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget_1) == 0x000430, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_6) == 0x000438, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue_1) == 0x000440, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue) == 0x000448, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckRequestLobbyId_ReturnValue) == 0x000449, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckRequestLobbyId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue_2) == 0x00044A, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CheckGetCurrentLobbyId_ReturnValue) == 0x00044B, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CheckGetCurrentLobbyId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Not_PreBool_ReturnValue_3) == 0x00044C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InShortLobbyId) == 0x000450, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InShortLobbyId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InRequestSuccess) == 0x000460, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InRequestSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_BooleanAND_ReturnValue) == 0x000461, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_ConvertLobbyIdStringForDisplay_OutLobbyIdForDisplay) == 0x000468, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_ConvertLobbyIdStringForDisplay_OutLobbyIdForDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInEnable) == 0x000478, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetZOrder_ReturnValue) == 0x00047C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetZOrder_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InListItemIndex) == 0x000480, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InListItemIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bEnable) == 0x000484, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_3) == 0x000488, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x000490, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget_2) == 0x000498, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Array_Index_Variable_2) == 0x0004A0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_PlayerController) == 0x0004A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_PlayerController' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_bInPlayFocusSound) == 0x0004B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_bInPlayFocusSound' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Check_Lobby_Join_Attention_bOutAttention) == 0x0004B1, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Check_Lobby_Join_Attention_bOutAttention' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Loop_Counter_Variable_1) == 0x0004B4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue_1) == 0x0004B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_1) == 0x0004BC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top) == 0x0004C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsWBP_Friend_Small_Window_Top' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess) == 0x0004C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Create_ReturnValue_1) == 0x0004D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Add_ReturnValue) == 0x0004D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button_1) == 0x0004E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_PanelIndex) == 0x0004E8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_ButtonIndex) == 0x0004EC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0004F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_4) == 0x0004F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x0005E0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0005E8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0005F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InCommandType) == 0x000608, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InCommandType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_MakeArray_Array_1) == 0x000610, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000620, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000630, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetZOrder_ReturnValue_1) == 0x000640, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetZOrder_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_1) == 0x000644, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue_2) == 0x000654, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000658, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue_2) == 0x000660, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_2) == 0x000668, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetInLobbySequence_ReturnValue) == 0x000669, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetInLobbySequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InUserSearchData) == 0x000670, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InUserSearchData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InLobbyIdData) == 0x000680, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InLobbyIdData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_InLobbyType) == 0x000690, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_InLobbyType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_3) == 0x000691, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsInViewport_ReturnValue) == 0x000692, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsInViewport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1) == 0x000698, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetSearchPlayerInfo_OutSearchPlayerInfo_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralByte_ReturnValue) == 0x000780, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000784, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000788, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000790, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000794, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsNotEmpty_ReturnValue_1) == 0x000798, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsNotEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0007A0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x0007A8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x0007A9, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x0007AC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_5) == 0x0007B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_IsValidIndex_ReturnValue_4) == 0x0007B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_IsValidIndex_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_OutMainWidget_3) == 0x0007C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_OutMainWidget_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0007C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_4) == 0x0007D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x0007D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_1) == 0x0007E8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x0007F0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_2) == 0x000800, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000808, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_3) == 0x000818, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000820, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_4) == 0x000830, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000838, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_5) == 0x000848, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5) == 0x000850, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_6) == 0x000860, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000868, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable) == 0x000870, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_CreatePopupWindow_ReturnValue) == 0x000878, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_bInEnable_1) == 0x000880, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_bInEnable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_1) == 0x000881, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_InSubMenuButton) == 0x000888, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_InSubMenuButton' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_bInEnable) == 0x000890, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_bInEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_bool_Variable) == 0x000891, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Select_Default) == 0x000892, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_HasFocusedDescendants_ReturnValue) == 0x000893, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_HasFocusedDescendants_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_2) == 0x000894, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_3) == 0x000895, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_bool_Variable_1) == 0x000896, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_4) == 0x000897, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Select_Default_1) == 0x000898, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_byte_Variable_5) == 0x000899, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_bool_Variable_2) == 0x00089A, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_2) == 0x00089C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Select_Default_2) == 0x0008AC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Button) == 0x0008B0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CustomEvent_Dir) == 0x0008B8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CustomEvent_Dir' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_5) == 0x0008B9, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetScrollBoxWidget_ReturnValue) == 0x0008C0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetScrollBoxWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetChildrenCount_ReturnValue) == 0x0008C8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Greater_IntInt_ReturnValue) == 0x0008CC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0008CD, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_IsValid_ReturnValue_6) == 0x0008CE, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, Temp_int_Loop_Counter_Variable_2) == 0x0008D0, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Less_IntInt_ReturnValue_1) == 0x0008D4, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Add_IntInt_ReturnValue_3) == 0x0008D8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_3) == 0x0008DC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_4) == 0x0008EC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_5) == 0x0008FC, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_EnableShowInvitationWarningWindowFromInvitationAccept_ReturnValue) == 0x00090C, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_EnableShowInvitationWarningWindowFromInvitationAccept_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetMainWidget_ReturnValue_3) == 0x000910, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetMainWidget_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsWBP_Friend_CMN_Window) == 0x000918, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsWBP_Friend_CMN_Window' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_7) == 0x000920, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetAllChildren_ReturnValue) == 0x000928, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Get_Item_6) == 0x000938, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Length_ReturnValue_2) == 0x000940, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small) == 0x000948, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_AsWBP_Friend_Sub_Player_Plate_Small' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_DynamicCast_bSuccess_8) == 0x000950, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Less_IntInt_ReturnValue_2) == 0x000951, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Array_Add_ReturnValue_1) == 0x000954, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetScrollBoxWidget_ReturnValue_1) == 0x000958, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetScrollBoxWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000960, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_6) == 0x000964, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000974, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_Event_Param) == 0x000975, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_Event_Param' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation, K2Node_CreateDelegate_OutputDelegate_7) == 0x000978, "Member 'WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow) == 0x000001, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow) == 0x000001, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow, InCommandType) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow::InCommandType' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupListItemWidgetSingle
+// 0x0100 (0x0100 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle final
+{
+public:
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    InItemListWidget;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0008(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         InButtonIndex;                                     // 0x00F8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle) == 0x000100, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle, InItemListWidget) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle::InItemListWidget' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle, InListPlayerInfo) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle::InListPlayerInfo' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle, InButtonIndex) == 0x0000F8, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle::InButtonIndex' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetWidgetFocus
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus final
+{
+public:
+	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInPlayFocusSound;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus) == 0x000010, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus, PlayerController) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus::PlayerController' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus, bInPlayFocusSound) == 0x000008, "Member 'WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus::bInPlayFocusSound' has a wrong offset!");
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.UpdateLobbyId
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId final
+{
+public:
+	class FString                                 InShortLobbyId;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          InRequestSuccess;                                  // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId) == 0x000008, "Wrong alignment on WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId");
+static_assert(sizeof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId) == 0x000018, "Wrong size on WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId, InShortLobbyId) == 0x000000, "Member 'WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId::InShortLobbyId' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId, InRequestSuccess) == 0x000010, "Member 'WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId::InRequestSuccess' has a wrong offset!");
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.CheckButtonWidgetExist
 // 0x0001 (0x0001 - 0x0000)

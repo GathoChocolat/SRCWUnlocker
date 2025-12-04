@@ -158,8 +158,9 @@ void ABP_ReadySequenceActor_C::CheckTimeTrialDisableGadget(bool* bIsValid)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Optimize                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bLoadCharaTexture                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReadySequenceActor_C::CreateReadyWidget(bool Optimize)
+void ABP_ReadySequenceActor_C::CreateReadyWidget(bool Optimize, bool bLoadCharaTexture)
 {
 	static class UFunction* Func = nullptr;
 
@@ -169,6 +170,7 @@ void ABP_ReadySequenceActor_C::CreateReadyWidget(bool Optimize)
 	Params::BP_ReadySequenceActor_C_CreateReadyWidget Parms{};
 
 	Parms.Optimize = Optimize;
+	Parms.bLoadCharaTexture = bLoadCharaTexture;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -347,6 +349,86 @@ void ABP_ReadySequenceActor_C::LeftEvent(class UObject* Object, const int32& Pla
 }
 
 
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.LoadCharaTexture_00
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        TextureObj                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::LoadCharaTexture_00(TSoftObjectPtr<class UTexture2D> TextureObj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "LoadCharaTexture_00");
+
+	Params::BP_ReadySequenceActor_C_LoadCharaTexture_00 Parms{};
+
+	Parms.TextureObj = TextureObj;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.LoadCharaTexture_01
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        TextureObj                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::LoadCharaTexture_01(TSoftObjectPtr<class UTexture2D> TextureObj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "LoadCharaTexture_01");
+
+	Params::BP_ReadySequenceActor_C_LoadCharaTexture_01 Parms{};
+
+	Parms.TextureObj = TextureObj;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.LoadCharaTexture_02
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        TextureObj                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::LoadCharaTexture_02(TSoftObjectPtr<class UTexture2D> TextureObj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "LoadCharaTexture_02");
+
+	Params::BP_ReadySequenceActor_C_LoadCharaTexture_02 Parms{};
+
+	Parms.TextureObj = TextureObj;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.LoadCharaTexture_03
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        TextureObj                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::LoadCharaTexture_03(TSoftObjectPtr<class UTexture2D> TextureObj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "LoadCharaTexture_03");
+
+	Params::BP_ReadySequenceActor_C_LoadCharaTexture_03 Parms{};
+
+	Parms.TextureObj = TextureObj;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.MouseInputSetUpEvent
 // (BlueprintCallable, BlueprintEvent)
 
@@ -396,6 +478,86 @@ void ABP_ReadySequenceActor_C::OnGoAnimationFinished()
 		Func = Class->GetFunction("BP_ReadySequenceActor_C", "OnGoAnimationFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.OnLoaded_120D4D5844F1C53050532AB4297571D6
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::OnLoaded_120D4D5844F1C53050532AB4297571D6(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "OnLoaded_120D4D5844F1C53050532AB4297571D6");
+
+	Params::BP_ReadySequenceActor_C_OnLoaded_120D4D5844F1C53050532AB4297571D6 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.OnLoaded_328D561845C8ED3620B5B5B4AF6AD4DC
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::OnLoaded_328D561845C8ED3620B5B5B4AF6AD4DC(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "OnLoaded_328D561845C8ED3620B5B5B4AF6AD4DC");
+
+	Params::BP_ReadySequenceActor_C_OnLoaded_328D561845C8ED3620B5B5B4AF6AD4DC Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.OnLoaded_C7D8F95244BF69FFBD6F1E8A8F26D9CB
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::OnLoaded_C7D8F95244BF69FFBD6F1E8A8F26D9CB(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "OnLoaded_C7D8F95244BF69FFBD6F1E8A8F26D9CB");
+
+	Params::BP_ReadySequenceActor_C_OnLoaded_C7D8F95244BF69FFBD6F1E8A8F26D9CB Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.OnLoaded_F89C5B884D3D3BA9426375B8B92F997B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReadySequenceActor_C::OnLoaded_F89C5B884D3D3BA9426375B8B92F997B(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "OnLoaded_F89C5B884D3D3BA9426375B8B92F997B");
+
+	Params::BP_ReadySequenceActor_C_OnLoaded_F89C5B884D3D3BA9426375B8B92F997B Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -719,8 +881,9 @@ void ABP_ReadySequenceActor_C::SetupCharaInfo()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Optimize                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bLoadCharaTexture                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReadySequenceActor_C::SetupCreateWidget(bool Optimize)
+void ABP_ReadySequenceActor_C::SetupCreateWidget(bool Optimize, bool bLoadCharaTexture)
 {
 	static class UFunction* Func = nullptr;
 
@@ -730,6 +893,7 @@ void ABP_ReadySequenceActor_C::SetupCreateWidget(bool Optimize)
 	Params::BP_ReadySequenceActor_C_SetupCreateWidget Parms{};
 
 	Parms.Optimize = Optimize;
+	Parms.bLoadCharaTexture = bLoadCharaTexture;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -866,6 +1030,20 @@ void ABP_ReadySequenceActor_C::SetVisibleCharaMachineParam(int32 PlayerIndex, bo
 	Parms.Visible = Visible;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.StartSetUpPlayersParam
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_ReadySequenceActor_C::StartSetUpPlayersParam()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ReadySequenceActor_C", "StartSetUpPlayersParam");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

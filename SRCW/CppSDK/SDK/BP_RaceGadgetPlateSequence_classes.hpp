@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 
 
@@ -58,6 +58,7 @@ public:
 	void OnFinalize();
 	void OnInitialize();
 	void Retry_GadgetLvUpWindow();
+	void SetGadgetPlateWidget(class UWBP_EndMenu_GudgetLv_Window_C* Widget);
 
 public:
 	static class UClass* StaticClass()

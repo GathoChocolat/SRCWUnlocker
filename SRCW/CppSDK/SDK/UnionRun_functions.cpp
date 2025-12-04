@@ -211,23 +211,19 @@ EDomainNumber AUnionCourseObjectBase::GetDomainNumber() const
 }
 
 
-// Function UnionRun.GimmickBigBakubaku.InitStaticBody
-// (Final, Native, Private)
+// Function UnionRun.ObakeAnimInstance.GetIsAttack
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class UGimmickStaticBodyComponent*StaticBody                                             (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             SocketName                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AGimmickBigBakubaku::InitStaticBody(const class UGimmickStaticBodyComponent* StaticBody, class FName SocketName)
+bool UObakeAnimInstance::GetIsAttack()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBigBakubaku", "InitStaticBody");
+		Func = Class->GetFunction("ObakeAnimInstance", "GetIsAttack");
 
-	Params::GimmickBigBakubaku_InitStaticBody Parms{};
-
-	Parms.StaticBody = StaticBody;
-	Parms.SocketName = SocketName;
+	Params::ObakeAnimInstance_GetIsAttack Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -235,6 +231,176 @@ void AGimmickBigBakubaku::InitStaticBody(const class UGimmickStaticBodyComponent
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ObakeAnimInstance.GetIsIdle
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UObakeAnimInstance::GetIsIdle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ObakeAnimInstance", "GetIsIdle");
+
+	Params::ObakeAnimInstance_GetIsIdle Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ObakeAnimInstance.SetIsAttack
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UObakeAnimInstance::SetIsAttack(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ObakeAnimInstance", "SetIsAttack");
+
+	Params::ObakeAnimInstance_SetIsAttack Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ObakeAnimInstance.SetIsIdle
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UObakeAnimInstance::SetIsIdle(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ObakeAnimInstance", "SetIsIdle");
+
+	Params::ObakeAnimInstance_SetIsIdle Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubRuleCount.GetCount
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URaceUISubRuleCount::GetCount(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubRuleCount", "GetCount");
+
+	Params::RaceUISubRuleCount_GetCount Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubRuleCount.GetGroupRaceBonusData
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const struct FMenuGroupRaceBonusData    ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+const struct FMenuGroupRaceBonusData URaceUISubRuleCount::GetGroupRaceBonusData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubRuleCount", "GetGroupRaceBonusData");
+
+	Params::RaceUISubRuleCount_GetGroupRaceBonusData Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubRuleCount.SetNewCount
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCuont                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubRuleCount::SetNewCount(int32 NewCuont)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubRuleCount", "SetNewCount");
+
+	Params::RaceUISubRuleCount_SetNewCount Parms{};
+
+	Parms.NewCuont = NewCuont;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubRuleCount.UpdateRuleCountImpl
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubRuleCount::UpdateRuleCountImpl(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubRuleCount", "UpdateRuleCountImpl");
+
+	Params::RaceUISubRuleCount_UpdateRuleCountImpl Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -288,149 +454,6 @@ bool UAsuraAnimInstance::IsAsuraState(EAsuraState State) const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceLogUtil.GetRacerLapInfo
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString URaceLogUtil::GetRacerLapInfo(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("RaceLogUtil", "GetRacerLapInfo");
-
-	Params::RaceLogUtil_GetRacerLapInfo Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceLogUtil.GetRacerStatusInfo
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString URaceLogUtil::GetRacerStatusInfo(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("RaceLogUtil", "GetRacerStatusInfo");
-
-	Params::RaceLogUtil_GetRacerStatusInfo Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceLogUtil.PrintRaceLog
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    at                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceLogUtil::PrintRaceLog(int32 RacerIndex, const class FString& str, const class FString& at)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("RaceLogUtil", "PrintRaceLog");
-
-	Params::RaceLogUtil_PrintRaceLog Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.str = std::move(str);
-	Parms.at = std::move(at);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceLogUtil.PrintRunLog
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    at                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceLogUtil::PrintRunLog(int32 RacerIndex, const class FString& str, const class FString& at)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("RaceLogUtil", "PrintRunLog");
-
-	Params::RaceLogUtil_PrintRunLog Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.str = std::move(str);
-	Parms.at = std::move(at);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceLogUtil.PrintWarpLog
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    at                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceLogUtil::PrintWarpLog(int32 RacerIndex, const class FString& str, const class FString& at)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("RaceLogUtil", "PrintWarpLog");
-
-	Params::RaceLogUtil_PrintWarpLog Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.str = std::move(str);
-	Parms.at = std::move(at);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -634,103 +657,27 @@ void IAttackReplyInterface::NotifyAttackTimeElapsed(const struct FAttackReply& I
 }
 
 
-// Function UnionRun.UnionCameraBase.IsCurrentViewTarget
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.RaceUISubItemSummonButton.SetSummonInputKey
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FKey&                      Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsKeyboard                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool AUnionCameraBase::IsCurrentViewTarget()
+void URaceUISubItemSummonButton::SetSummonInputKey(const struct FKey& Key, bool IsKeyboard, int32 PlayerControllerIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UnionCameraBase", "IsCurrentViewTarget");
+		Func = Class->GetFunction("RaceUISubItemSummonButton", "SetSummonInputKey");
 
-	Params::UnionCameraBase_IsCurrentViewTarget Parms{};
+	Params::RaceUISubItemSummonButton_SetSummonInputKey Parms{};
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionCameraBase.IsInBlending
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AUnionCameraBase::IsInBlending()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionCameraBase", "IsInBlending");
-
-	Params::UnionCameraBase_IsInBlending Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.Key = std::move(Key);
+	Parms.IsKeyboard = IsKeyboard;
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionCameraBase.RequestEndCamera
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AUnionCameraBase::RequestEndCamera()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionCameraBase", "RequestEndCamera");
-
-	Params::UnionCameraBase_RequestEndCamera Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionCameraBase.RequestStartCamera
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AUnionCameraBase::RequestStartCamera()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionCameraBase", "RequestStartCamera");
-
-	Params::UnionCameraBase_RequestStartCamera Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -827,6 +774,31 @@ void ABounceMoveObject::OnFinishedBounce()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemBlackBombBaseObject.OnTriggerConflict
+// (Native, Public, HasOutParams)
+// Parameters:
+// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AItemBlackBombBaseObject::OnTriggerConflict(const struct FHitTriggerInfo& HitInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBlackBombBaseObject", "OnTriggerConflict");
+
+	Params::ItemBlackBombBaseObject_OnTriggerConflict Parms{};
+
+	Parms.HitInfo = std::move(HitInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -1112,306 +1084,6 @@ void UBreakObjectAnimInstance::SetHit(float Speed)
 }
 
 
-// Function UnionRun.KingBoomBooAnimInstance.GetIsAttack
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UKingBoomBooAnimInstance::GetIsAttack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsAttack");
-
-	Params::KingBoomBooAnimInstance_GetIsAttack Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsAttackEnd
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UKingBoomBooAnimInstance::GetIsAttackEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsAttackEnd");
-
-	Params::KingBoomBooAnimInstance_GetIsAttackEnd Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsEnd
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UKingBoomBooAnimInstance::GetIsEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsEnd");
-
-	Params::KingBoomBooAnimInstance_GetIsEnd Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsExit
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UKingBoomBooAnimInstance::GetIsExit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsExit");
-
-	Params::KingBoomBooAnimInstance_GetIsExit Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsMove
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UKingBoomBooAnimInstance::GetIsMove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsMove");
-
-	Params::KingBoomBooAnimInstance_GetIsMove Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.GetIsStart
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UKingBoomBooAnimInstance::GetIsStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsStart");
-
-	Params::KingBoomBooAnimInstance_GetIsStart Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsAttack
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKingBoomBooAnimInstance::SetIsAttack(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsAttack");
-
-	Params::KingBoomBooAnimInstance_SetIsAttack Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsAttackEnd
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKingBoomBooAnimInstance::SetIsAttackEnd(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsAttackEnd");
-
-	Params::KingBoomBooAnimInstance_SetIsAttackEnd Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsEnd
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKingBoomBooAnimInstance::SetIsEnd(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsEnd");
-
-	Params::KingBoomBooAnimInstance_SetIsEnd Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsExit
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKingBoomBooAnimInstance::SetIsExit(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsExit");
-
-	Params::KingBoomBooAnimInstance_SetIsExit Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsMove
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKingBoomBooAnimInstance::SetIsMove(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsMove");
-
-	Params::KingBoomBooAnimInstance_SetIsMove Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.KingBoomBooAnimInstance.SetIsStart
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKingBoomBooAnimInstance::SetIsStart(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsStart");
-
-	Params::KingBoomBooAnimInstance_SetIsStart Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionRun.BreakObjectBase.HitRacer
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1526,6 +1198,56 @@ bool ABreakObjectBase::IsBroken() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ReplayMoveCameraCollision.OnCollisionBaseHit
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// const struct FCollisionHitInfo&         Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AReplayMoveCameraCollision::OnCollisionBaseHit(const struct FCollisionHitInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ReplayMoveCameraCollision", "OnCollisionBaseHit");
+
+	Params::ReplayMoveCameraCollision_OnCollisionBaseHit Parms{};
+
+	Parms.Info = std::move(Info);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ReplayMoveCameraCollision.SetCameraData
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   NewBoxSize                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AReplayMoveCameraCollision::SetCameraData(const struct FVector& NewBoxSize)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ReplayMoveCameraCollision", "SetCameraData");
+
+	Params::ReplayMoveCameraCollision_SetCameraData Parms{};
+
+	Parms.NewBoxSize = std::move(NewBoxSize);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -1744,6 +1466,159 @@ void ABtDebugDispActor::Execute_RayCast(const TArray<class FString>& args)
 	Params::BtDebugDispActor_Execute_RayCast Parms{};
 
 	Parms.args = std::move(args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTeamHUD.ExecChangeRank
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PanelIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsDispPlayer                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubTeamHUD::ExecChangeRank(int32 PanelIndex, EDriverId DriverId, bool IsDispPlayer, int32 Rank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamHUD", "ExecChangeRank");
+
+	Params::RaceUISubTeamHUD_ExecChangeRank Parms{};
+
+	Parms.PanelIndex = PanelIndex;
+	Parms.DriverId = DriverId;
+	Parms.IsDispPlayer = IsDispPlayer;
+	Parms.Rank = Rank;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubTeamHUD.ExecPlayChangeRank
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PanelIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsDispPlayer                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubTeamHUD::ExecPlayChangeRank(int32 PanelIndex, EDriverId DriverId, bool IsDispPlayer, int32 Rank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamHUD", "ExecPlayChangeRank");
+
+	Params::RaceUISubTeamHUD_ExecPlayChangeRank Parms{};
+
+	Parms.PanelIndex = PanelIndex;
+	Parms.DriverId = DriverId;
+	Parms.IsDispPlayer = IsDispPlayer;
+	Parms.Rank = Rank;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubTeamHUD.ExecSetRankOnly
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PanelIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubTeamHUD::ExecSetRankOnly(int32 PanelIndex, int32 Rank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamHUD", "ExecSetRankOnly");
+
+	Params::RaceUISubTeamHUD_ExecSetRankOnly Parms{};
+
+	Parms.PanelIndex = PanelIndex;
+	Parms.Rank = Rank;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubTeamHUD.GetTeamRankRough
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URaceUISubTeamHUD::GetTeamRankRough()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamHUD", "GetTeamRankRough");
+
+	Params::RaceUISubTeamHUD_GetTeamRankRough Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubTeamHUD.SetTeamRank
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   TeamRank                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTeamHUD::SetTeamRank(int32 TeamRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamHUD", "SetTeamRank");
+
+	Params::RaceUISubTeamHUD_SetTeamRank Parms{};
+
+	Parms.TeamRank = TeamRank;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubTeamHUD.UpdateCharaRank
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsForce                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTeamHUD::UpdateCharaRank(bool IsForce)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamHUD", "UpdateCharaRank");
+
+	Params::RaceUISubTeamHUD_UpdateCharaRank Parms{};
+
+	Parms.IsForce = IsForce;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2017,156 +1892,6 @@ ESoundPan ABubbleItemBox::GetSoundPan() const
 }
 
 
-// Function UnionRun.SimpleTravelRingObject.GetTransformRingType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const ETransformRingType                ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const ETransformRingType ASimpleTravelRingObject::GetTransformRingType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleTravelRingObject", "GetTransformRingType");
-
-	Params::SimpleTravelRingObject_GetTransformRingType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.SimpleTravelRingObject.GetTravelRingSizeType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const ETravelRingSizeType               ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const ETravelRingSizeType ASimpleTravelRingObject::GetTravelRingSizeType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleTravelRingObject", "GetTravelRingSizeType");
-
-	Params::SimpleTravelRingObject_GetTravelRingSizeType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.SimpleTravelRingObject.GetTravelRingType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const ETravelRingType                   ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const ETravelRingType ASimpleTravelRingObject::GetTravelRingType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleTravelRingObject", "GetTravelRingType");
-
-	Params::SimpleTravelRingObject_GetTravelRingType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.SimpleTravelRingObject.SetTransformRingType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const ETransformRingType                Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASimpleTravelRingObject::SetTransformRingType(const ETransformRingType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleTravelRingObject", "SetTransformRingType");
-
-	Params::SimpleTravelRingObject_SetTransformRingType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.SimpleTravelRingObject.SetTravelRingSizeType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const ETravelRingSizeType               Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASimpleTravelRingObject::SetTravelRingSizeType(const ETravelRingSizeType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleTravelRingObject", "SetTravelRingSizeType");
-
-	Params::SimpleTravelRingObject_SetTravelRingSizeType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.SimpleTravelRingObject.SetTravelRingType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const ETravelRingType                   Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASimpleTravelRingObject::SetTravelRingType(const ETravelRingType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleTravelRingObject", "SetTravelRingType");
-
-	Params::SimpleTravelRingObject_SetTravelRingType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionRun.BubbleRing.HitRacer
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2296,69 +2021,6 @@ void ABubbleRing::Update(float InDeltaTime)
 	Params::BubbleRing_Update Parms{};
 
 	Parms.InDeltaTime = InDeltaTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RespotObject.SetRespotMatrix
-// (Final, Native, Public, BlueprintCallable)
-
-void ARespotObject::SetRespotMatrix()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RespotObject", "SetRespotMatrix");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RespotObject.SetRespotType
-// (Final, Native, Public, BlueprintCallable)
-
-void ARespotObject::SetRespotType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RespotObject", "SetRespotType");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RespotObject.UpdateRespotMatrix
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FTransform&                NewTransform                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ARespotObject::UpdateRespotMatrix(const struct FTransform& NewTransform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RespotObject", "UpdateRespotMatrix");
-
-	Params::RespotObject_UpdateRespotMatrix Parms{};
-
-	Parms.NewTransform = std::move(NewTransform);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2501,133 +2163,6 @@ void ACarObject::OnHitRingTriggerConflict(const struct FHitTriggerInfo& HitInfo)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GUNHunterAnimInstance.OnStartShootEnd
-// (Final, Native, Public, BlueprintCallable)
-
-void UGUNHunterAnimInstance::OnStartShootEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GUNHunterAnimInstance", "OnStartShootEnd");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GUNHunterAnimInstance.SetIsAttackCharge
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    isChange                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UGUNHunterAnimInstance::SetIsAttackCharge(bool isChange)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GUNHunterAnimInstance", "SetIsAttackCharge");
-
-	Params::GUNHunterAnimInstance_SetIsAttackCharge Parms{};
-
-	Parms.isChange = isChange;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GUNHunterAnimInstance.SetIsDead
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UGUNHunterAnimInstance::SetIsDead(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GUNHunterAnimInstance", "SetIsDead");
-
-	Params::GUNHunterAnimInstance_SetIsDead Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GUNHunterAnimInstance.IsShootState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EGUNHunterShootState                    State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    isDown                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UGUNHunterAnimInstance::IsShootState(EGUNHunterShootState State, bool isDown) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GUNHunterAnimInstance", "IsShootState");
-
-	Params::GUNHunterAnimInstance_IsShootState Parms{};
-
-	Parms.State = State;
-	Parms.isDown = isDown;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GUNHunterAnimInstance.IsStartMotion
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EGUNHunterStartType                     Motion                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UGUNHunterAnimInstance::IsStartMotion(EGUNHunterStartType Motion) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GUNHunterAnimInstance", "IsStartMotion");
-
-	Params::GUNHunterAnimInstance_IsStartMotion Parms{};
-
-	Parms.Motion = Motion;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -2981,6 +2516,106 @@ void UCheatPerformance::Execute_RaceTestConfig_SetAutoUnrealInsights(const TArra
 }
 
 
+// Function UnionRun.UnionCameraBase.IsCurrentViewTarget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AUnionCameraBase::IsCurrentViewTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionCameraBase", "IsCurrentViewTarget");
+
+	Params::UnionCameraBase_IsCurrentViewTarget Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionCameraBase.IsInBlending
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AUnionCameraBase::IsInBlending()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionCameraBase", "IsInBlending");
+
+	Params::UnionCameraBase_IsInBlending Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionCameraBase.RequestEndCamera
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AUnionCameraBase::RequestEndCamera()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionCameraBase", "RequestEndCamera");
+
+	Params::UnionCameraBase_RequestEndCamera Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionCameraBase.RequestStartCamera
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AUnionCameraBase::RequestStartCamera()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionCameraBase", "RequestStartCamera");
+
+	Params::UnionCameraBase_RequestStartCamera Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionRun.CheatRaceCommon.EnableSplitScreen
 // (Final, Exec, Native, Public)
 // Parameters:
@@ -3047,183 +2682,6 @@ void UCheatRaceCommon::SetVisibleUnionRunParam(bool bInVisible)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.PauseManager.SetGamePaused
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    Paused                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPauseManager::SetGamePaused(bool Paused, int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PauseManager", "SetGamePaused");
-
-	Params::PauseManager_SetGamePaused Parms{};
-
-	Parms.Paused = Paused;
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.PauseManager.SetGamePauseOwnerRacerIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPauseManager::SetGamePauseOwnerRacerIndex(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PauseManager", "SetGamePauseOwnerRacerIndex");
-
-	Params::PauseManager_SetGamePauseOwnerRacerIndex Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.PauseManager.SetIsOnlineMode
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsOnlineMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPauseManager::SetIsOnlineMode(bool IsOnlineMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PauseManager", "SetIsOnlineMode");
-
-	Params::PauseManager_SetIsOnlineMode Parms{};
-
-	Parms.IsOnlineMode = IsOnlineMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.PauseManager.GetGamePauseOwnerRacerIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UPauseManager::GetGamePauseOwnerRacerIndex() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PauseManager", "GetGamePauseOwnerRacerIndex");
-
-	Params::PauseManager_GetGamePauseOwnerRacerIndex Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.PauseManager.IsGamePaused
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UPauseManager::IsGamePaused() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PauseManager", "IsGamePaused");
-
-	Params::PauseManager_IsGamePaused Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.PauseManager.IsGamePauseOwnerGoaled
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UPauseManager::IsGamePauseOwnerGoaled() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PauseManager", "IsGamePauseOwnerGoaled");
-
-	Params::PauseManager_IsGamePauseOwnerGoaled Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.PauseManager.IsOnlineMode
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UPauseManager::IsOnlineMode() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PauseManager", "IsOnlineMode");
-
-	Params::PauseManager_IsOnlineMode Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -3527,25 +2985,6 @@ bool UColliderComponent::GetScaleEnabled() const
 }
 
 
-// Function UnionRun.RaceObjectSimpleAnimation.UpdateTransform
-// (Final, Native, Private, BlueprintCallable)
-
-void ARaceObjectSimpleAnimation::UpdateTransform()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceObjectSimpleAnimation", "UpdateTransform");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionRun.CollisionBaseComponent.SetCollisionEnabled
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -3767,6 +3206,283 @@ bool UCollisionBaseComponent::IsCollisionEnabled() const
 }
 
 
+// Function UnionRun.RaceUISubBtnGuide.GetControllerType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsNotSetKey                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EBtnGuidePlatFormController             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EBtnGuidePlatFormController URaceUISubBtnGuide::GetControllerType(int32 PlayerControllerIndex, bool IsNotSetKey)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetControllerType");
+
+	Params::RaceUISubBtnGuide_GetControllerType Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+	Parms.IsNotSetKey = IsNotSetKey;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.GetUseItemKey
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubBtnGuide::GetUseItemKey(int32 PlayerControllerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetUseItemKey");
+
+	Params::RaceUISubBtnGuide_GetUseItemKey Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.SetUseItemKey
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FKey&                      UseItemKey                                             (ConstParm, Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubBtnGuide::SetUseItemKey(const struct FKey& UseItemKey)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "SetUseItemKey");
+
+	Params::RaceUISubBtnGuide_SetUseItemKey Parms{};
+
+	Parms.UseItemKey = std::move(UseItemKey);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.GetFlightGuideKey
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bSuggestUpInput                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FKey URaceUISubBtnGuide::GetFlightGuideKey(int32 PlayerControllerIndex, bool bSuggestUpInput) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetFlightGuideKey");
+
+	Params::RaceUISubBtnGuide_GetFlightGuideKey Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+	Parms.bSuggestUpInput = bSuggestUpInput;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.GetKeyDisplayName
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText URaceUISubBtnGuide::GetKeyDisplayName(const struct FKey& InKey, int32 PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetKeyDisplayName");
+
+	Params::RaceUISubBtnGuide_GetKeyDisplayName Parms{};
+
+	Parms.InKey = std::move(InKey);
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.GetMouseButtonIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URaceUISubBtnGuide::GetMouseButtonIndex(const struct FKey& InKey) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetMouseButtonIndex");
+
+	Params::RaceUISubBtnGuide_GetMouseButtonIndex Parms{};
+
+	Parms.InKey = std::move(InKey);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.GetReleaseEffectKey
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FKey URaceUISubBtnGuide::GetReleaseEffectKey(int32 PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetReleaseEffectKey");
+
+	Params::RaceUISubBtnGuide_GetReleaseEffectKey Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.GetSteerKey
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   SteerNo                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FKey URaceUISubBtnGuide::GetSteerKey(int32 PlayerControllerIndex, int32 SteerNo) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetSteerKey");
+
+	Params::RaceUISubBtnGuide_GetSteerKey Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+	Parms.SteerNo = SteerNo;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.GetUseItemKeyPC
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FKey URaceUISubBtnGuide::GetUseItemKeyPC(int32 PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "GetUseItemKeyPC");
+
+	Params::RaceUISubBtnGuide_GetUseItemKeyPC Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnGuide.IsKeyboard
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubBtnGuide::IsKeyboard(int32 PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnGuide", "IsKeyboard");
+
+	Params::RaceUISubBtnGuide_IsKeyboard Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionRun.CollisionMessageInterface.NotifyTriggerConflict
 // (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -3787,56 +3503,6 @@ void ICollisionMessageInterface::NotifyTriggerConflict(const struct FHitTriggerI
 	Func->FunctionFlags |= 0x400;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubPlayerName.GetGhostPfId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URaceUISubPlayerName::GetGhostPfId()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubPlayerName", "GetGhostPfId");
-
-	Params::RaceUISubPlayerName_GetGhostPfId Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ItemBlackBombBaseObject.OnTriggerConflict
-// (Native, Public, HasOutParams)
-// Parameters:
-// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AItemBlackBombBaseObject::OnTriggerConflict(const struct FHitTriggerInfo& HitInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBlackBombBaseObject", "OnTriggerConflict");
-
-	Params::ItemBlackBombBaseObject_OnTriggerConflict Parms{};
-
-	Parms.HitInfo = std::move(HitInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -3904,6 +3570,59 @@ void ACourseSequenceActorSpawner::SetSize(const struct FVector& Size)
 	Params::CourseSequenceActorSpawner_SetSize Parms{};
 
 	Parms.Size = std::move(Size);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.PackageRingEffect.OnPlayTakeRingSound
+// (Event, Public, BlueprintEvent)
+
+void APackageRingEffect::OnPlayTakeRingSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PackageRingEffect", "OnPlayTakeRingSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.GimmickFlyingBounceObject.OnHitAnim
+// (Event, Public, BlueprintEvent)
+
+void AGimmickFlyingBounceObject::OnHitAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickFlyingBounceObject", "OnHitAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.KingBoomBooProjectile.OnTriggerColliderConflict
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AKingBoomBooProjectile::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooProjectile", "OnTriggerColliderConflict");
+
+	Params::KingBoomBooProjectile_OnTriggerColliderConflict Parms{};
+
+	Parms.HitInfo = std::move(HitInfo);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4230,240 +3949,97 @@ bool UDeathEggAnimInstance::IsPunchState(EDeathEggState State) const
 }
 
 
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapDiffTime
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.RaceUISubHitInfo.SetCharaIndex
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   LapNum                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsRival                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void URaceUISubTimeTrialTimeLap::SetLapDiffTime(int32 LapNum)
+void URaceUISubHitInfo::SetCharaIndex(int32 Index_0, bool IsRival)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapDiffTime");
+		Func = Class->GetFunction("RaceUISubHitInfo", "SetCharaIndex");
 
-	Params::RaceUISubTimeTrialTimeLap_SetLapDiffTime Parms{};
+	Params::RaceUISubHitInfo_SetCharaIndex Parms{};
 
-	Parms.LapNum = LapNum;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTime
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const struct FRaceUITimeTrialTime&      NewTime                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTimeTrialTimeLap::SetLapTime(const struct FRaceUITimeTrialTime& NewTime, int32 Lap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapTime");
-
-	Params::RaceUISubTimeTrialTimeLap_SetLapTime Parms{};
-
-	Parms.NewTime = std::move(NewTime);
-	Parms.Lap = Lap;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeIsGhostReplay
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTimeTrialTimeLap::SetLapTimeIsGhostReplay(int32 Lap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapTimeIsGhostReplay");
-
-	Params::RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay Parms{};
-
-	Parms.Lap = Lap;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeWithDiff
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const struct FRaceUITimeTrialTime&      NewTime                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsVisibleDiff                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTimeTrialTimeLap::SetLapTimeWithDiff(const struct FRaceUITimeTrialTime& NewTime, int32 Lap, bool IsVisibleDiff)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapTimeWithDiff");
-
-	Params::RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff Parms{};
-
-	Parms.NewTime = std::move(NewTime);
-	Parms.Lap = Lap;
-	Parms.IsVisibleDiff = IsVisibleDiff;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTimeLap.UpdateLapTime
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FRaceUITimeTrialTime             ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FRaceUITimeTrialTime URaceUISubTimeTrialTimeLap::UpdateLapTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "UpdateLapTime");
-
-	Params::RaceUISubTimeTrialTimeLap_UpdateLapTime Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ItemBoxObject.OnChangeItemBox
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EItemBoxType                            ItemBoxType_0                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AItemBoxObject::OnChangeItemBox(EItemBoxType ItemBoxType_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "OnChangeItemBox");
-
-	Params::ItemBoxObject_OnChangeItemBox Parms{};
-
-	Parms.ItemBoxType_0 = ItemBoxType_0;
+	Parms.Index_0 = Index_0;
+	Parms.IsRival = IsRival;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function UnionRun.ItemBoxObject.OnHitRacer
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionRun.RaceUISubHitInfo.SetCOMBackColor
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void AItemBoxObject::OnHitRacer(int32 RacerIndex)
+void URaceUISubHitInfo::SetCOMBackColor()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "OnHitRacer");
-
-	Params::ItemBoxObject_OnHitRacer Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.ItemBoxObject.OnPlayForceFeedback
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int32                                   LocalPlayerIndex                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AItemBoxObject::OnPlayForceFeedback(int32 LocalPlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "OnPlayForceFeedback");
-
-	Params::ItemBoxObject_OnPlayForceFeedback Parms{};
-
-	Parms.LocalPlayerIndex = LocalPlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.ItemBoxObject.OnPlayTakeSound
-// (Event, Public, BlueprintEvent)
-
-void AItemBoxObject::OnPlayTakeSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "OnPlayTakeSound");
+		Func = Class->GetFunction("RaceUISubHitInfo", "SetCOMBackColor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function UnionRun.ItemBoxObject.OnStartRelocation
-// (Event, Public, BlueprintEvent)
+// Function UnionRun.RaceUISubHitInfo.SetGroupColorMaterial
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AItemBoxObject::OnStartRelocation()
+void URaceUISubHitInfo::SetGroupColorMaterial(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "OnStartRelocation");
+		Func = Class->GetFunction("RaceUISubHitInfo", "SetGroupColorMaterial");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::RaceUISubHitInfo_SetGroupColorMaterial Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function UnionRun.ItemBoxObject.SetItemBoxType
+// Function UnionRun.RaceUISubHitInfo.SetLocalPlayerColorMaterial
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubHitInfo::SetLocalPlayerColorMaterial(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubHitInfo", "SetLocalPlayerColorMaterial");
+
+	Params::RaceUISubHitInfo_SetLocalPlayerColorMaterial Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubHitInfo.SetLostItemIdIndex_Implement
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// EItemBoxType                            Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InItemIdIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AItemBoxObject::SetItemBoxType(EItemBoxType Type)
+void URaceUISubHitInfo::SetLostItemIdIndex_Implement(int32 InItemIdIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "SetItemBoxType");
+		Func = Class->GetFunction("RaceUISubHitInfo", "SetLostItemIdIndex_Implement");
 
-	Params::ItemBoxObject_SetItemBoxType Parms{};
+	Params::RaceUISubHitInfo_SetLostItemIdIndex_Implement Parms{};
 
-	Parms.Type = Type;
+	Parms.InItemIdIndex = InItemIdIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4474,53 +4050,45 @@ void AItemBoxObject::SetItemBoxType(EItemBoxType Type)
 }
 
 
-// Function UnionRun.ItemBoxObject.SetSpecifiedItem
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.RaceUISubHitInfo.SetPlatformIcon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EItemId                                 Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ECrossplayPlatform                      Platform                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AItemBoxObject::SetSpecifiedItem(EItemId Item)
+void URaceUISubHitInfo::SetPlatformIcon(ECrossplayPlatform Platform)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "SetSpecifiedItem");
+		Func = Class->GetFunction("RaceUISubHitInfo", "SetPlatformIcon");
 
-	Params::ItemBoxObject_SetSpecifiedItem Parms{};
+	Params::RaceUISubHitInfo_SetPlatformIcon Parms{};
 
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.Platform = Platform;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionRun.ItemBoxObject.GetSoundPan
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function UnionRun.RaceUISubHitInfo.SwitchBaseUI
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESoundPan                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsRival                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsPowerRival                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-ESoundPan AItemBoxObject::GetSoundPan() const
+void URaceUISubHitInfo::SwitchBaseUI(bool IsRival, bool IsPowerRival)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemBoxObject", "GetSoundPan");
+		Func = Class->GetFunction("RaceUISubHitInfo", "SwitchBaseUI");
 
-	Params::ItemBoxObject_GetSoundPan Parms{};
+	Params::RaceUISubHitInfo_SwitchBaseUI Parms{};
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.IsRival = IsRival;
+	Parms.IsPowerRival = IsPowerRival;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -4621,6 +4189,31 @@ void ADroppedRingFactory::OnPlayDroppedRingSound_Small(ESoundPan SoundPan)
 	Parms.SoundPan = SoundPan;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceObjectSkeletal.SetBodySkeletalMesh
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USkeletalMesh*                    NewSkeletalMesh                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ARaceObjectSkeletal::SetBodySkeletalMesh(class USkeletalMesh* NewSkeletalMesh)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceObjectSkeletal", "SetBodySkeletalMesh");
+
+	Params::RaceObjectSkeletal_SetBodySkeletalMesh Parms{};
+
+	Parms.NewSkeletalMesh = NewSkeletalMesh;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -4949,21 +4542,40 @@ void UEggChaserAnimInstance::SetIsWaitToFly(bool flag)
 }
 
 
-// Function UnionRun.RaceUISubBoost.CheckBoostLevelInGhostReplay
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Level                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionRun.GimmickBubble.BubbleIdleMoveFinished
+// (Final, Native, Private)
 
-void URaceUISubBoost::CheckBoostLevelInGhostReplay(int32 Level)
+void AGimmickBubble::BubbleIdleMoveFinished()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "CheckBoostLevelInGhostReplay");
+		Func = Class->GetFunction("GimmickBubble", "BubbleIdleMoveFinished");
 
-	Params::RaceUISubBoost_CheckBoostLevelInGhostReplay Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
-	Parms.Level = Level;
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickBubble.BubbleIdleMoveUpdate
+// (Final, Native, Private)
+// Parameters:
+// float                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AGimmickBubble::BubbleIdleMoveUpdate(float Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickBubble", "BubbleIdleMoveUpdate");
+
+	Params::GimmickBubble_BubbleIdleMoveUpdate Parms{};
+
+	Parms.Ratio = Ratio;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4974,22 +4586,40 @@ void URaceUISubBoost::CheckBoostLevelInGhostReplay(int32 Level)
 }
 
 
-// Function UnionRun.RaceUISubBoost.IsFastFirstCharge
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionRun.GimmickBubble.BubbleScaleFinished
+// (Final, Native, Private)
 
-bool URaceUISubBoost::IsFastFirstCharge(int32 RacerIndex)
+void AGimmickBubble::BubbleScaleFinished()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "IsFastFirstCharge");
+		Func = Class->GetFunction("GimmickBubble", "BubbleScaleFinished");
 
-	Params::RaceUISubBoost_IsFastFirstCharge Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
-	Parms.RacerIndex = RacerIndex;
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickBubble.BubbleScaleUpdate
+// (Final, Native, Private)
+// Parameters:
+// float                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AGimmickBubble::BubbleScaleUpdate(float Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickBubble", "BubbleScaleUpdate");
+
+	Params::GimmickBubble_BubbleScaleUpdate Parms{};
+
+	Parms.Ratio = Ratio;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4997,134 +4627,64 @@ bool URaceUISubBoost::IsFastFirstCharge(int32 RacerIndex)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionRun.RaceUISubBoost.IsFastSecondCharge
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.GimmickBubble.ForceSetDomainNumber
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDomainNumber                           Number                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool URaceUISubBoost::IsFastSecondCharge(int32 RacerIndex)
+void AGimmickBubble::ForceSetDomainNumber(EDomainNumber Number)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "IsFastSecondCharge");
+		Func = Class->GetFunction("GimmickBubble", "ForceSetDomainNumber");
 
-	Params::RaceUISubBoost_IsFastSecondCharge Parms{};
+	Params::GimmickBubble_ForceSetDomainNumber Parms{};
 
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.Number = Number;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionRun.RaceUISubBoost.IsFastThirdCharge
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.GimmickBubble.ForceUpdate
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubBoost::IsFastThirdCharge(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "IsFastThirdCharge");
-
-	Params::RaceUISubBoost_IsFastThirdCharge Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBoost.IsViewGhostReplay
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubBoost::IsViewGhostReplay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "IsViewGhostReplay");
-
-	Params::RaceUISubBoost_IsViewGhostReplay Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBoost.SetVisibleHUD
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsVisible_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void URaceUISubBoost::SetVisibleHUD(bool IsVisible_0, float DeltaTime)
+void AGimmickBubble::ForceUpdate(float DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "SetVisibleHUD");
+		Func = Class->GetFunction("GimmickBubble", "ForceUpdate");
 
-	Params::RaceUISubBoost_SetVisibleHUD Parms{};
+	Params::GimmickBubble_ForceUpdate Parms{};
 
-	Parms.IsVisible_0 = IsVisible_0;
 	Parms.DeltaTime = DeltaTime;
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionRun.RaceUISubBoost.SetWaitTimeJustBoostInGhostReplay
+// Function UnionRun.GimmickBubble.ManualUpdate
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void URaceUISubBoost::SetWaitTimeJustBoostInGhostReplay(float Time)
+void AGimmickBubble::ManualUpdate(float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "SetWaitTimeJustBoostInGhostReplay");
+		Func = Class->GetFunction("GimmickBubble", "ManualUpdate");
 
-	Params::RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay Parms{};
+	Params::GimmickBubble_ManualUpdate Parms{};
 
-	Parms.Time = Time;
+	Parms.InDeltaTime = InDeltaTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5135,80 +4695,45 @@ void URaceUISubBoost::SetWaitTimeJustBoostInGhostReplay(float Time)
 }
 
 
-// Function UnionRun.RaceUISubBoost.UpdateChargeInfo
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.GimmickBubble.OnGetBonusItem
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   ChargeLevel                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ChargeRate                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EBubbleBonusType                        BonusType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void URaceUISubBoost::UpdateChargeInfo(int32 ChargeLevel, float ChargeRate)
+void AGimmickBubble::OnGetBonusItem(EBubbleBonusType BonusType, int32 RacerIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "UpdateChargeInfo");
+		Func = Class->GetFunction("GimmickBubble", "OnGetBonusItem");
 
-	Params::RaceUISubBoost_UpdateChargeInfo Parms{};
+	Params::GimmickBubble_OnGetBonusItem Parms{};
 
-	Parms.ChargeLevel = ChargeLevel;
-	Parms.ChargeRate = ChargeRate;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.BonusType = BonusType;
+	Parms.RacerIndex = RacerIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionRun.RaceUISubBoost.GetIsOpened
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function UnionRun.GimmickBubble.SetVisivleBonusItemType
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EBubbleBonusType                        BonusType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool URaceUISubBoost::GetIsOpened() const
+void AGimmickBubble::SetVisivleBonusItemType(EBubbleBonusType BonusType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBoost", "GetIsOpened");
+		Func = Class->GetFunction("GimmickBubble", "SetVisivleBonusItemType");
 
-	Params::RaceUISubBoost_GetIsOpened Parms{};
+	Params::GimmickBubble_SetVisivleBonusItemType Parms{};
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.Gimmick_Extnd05_Enemy04004.IsDamaged
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AGimmick_Extnd05_Enemy04004::IsDamaged() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Gimmick_Extnd05_Enemy04004", "IsDamaged");
-
-	Params::Gimmick_Extnd05_Enemy04004_IsDamaged Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Parms.BonusType = BonusType;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -5328,44 +4853,21 @@ void AEnemyAmbushTrex::HitRacer(int32 RacerIndex)
 }
 
 
-// Function UnionRun.RaceUISubBtnKey.SetButtonState
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionRun.GimmickManipulatedVehicle.DebugUpdateIdleMove
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void URaceUISubBtnKey::SetButtonState(int32 InState)
+void AGimmickManipulatedVehicle::DebugUpdateIdleMove(float DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnKey", "SetButtonState");
+		Func = Class->GetFunction("GimmickManipulatedVehicle", "DebugUpdateIdleMove");
 
-	Params::RaceUISubBtnKey_SetButtonState Parms{};
+	Params::GimmickManipulatedVehicle_DebugUpdateIdleMove Parms{};
 
-	Parms.InState = InState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubBtnKey.GetKeyDisplayName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-class FText URaceUISubBtnKey::GetKeyDisplayName(const struct FKey& InKey, int32 PlayerControllerIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnKey", "GetKeyDisplayName");
-
-	Params::RaceUISubBtnKey_GetKeyDisplayName Parms{};
-
-	Parms.InKey = std::move(InKey);
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
+	Parms.DeltaTime = DeltaTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5373,36 +4875,6 @@ class FText URaceUISubBtnKey::GetKeyDisplayName(const struct FKey& InKey, int32 
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnKey.GetMouseButtonIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URaceUISubBtnKey::GetMouseButtonIndex(const struct FKey& InKey) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnKey", "GetMouseButtonIndex");
-
-	Params::RaceUISubBtnKey_GetMouseButtonIndex Parms{};
-
-	Parms.InKey = std::move(InKey);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -5828,31 +5300,6 @@ void AEnemyDarkGaiaPhoenixPhase3::WingAttack(bool IsRight, bool isMirrer)
 }
 
 
-// Function UnionRun.GimmckEventCollision.SetEventId
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// EUnionEventId                           EventId                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmckEventCollision::SetEventId(EUnionEventId EventId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmckEventCollision", "SetEventId");
-
-	Params::GimmckEventCollision_SetEventId Parms{};
-
-	Parms.EventId = EventId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionRun.EnemyEggChaser.ActivateAttack
 // (Final, Native, Public, BlueprintCallable)
 
@@ -5908,6 +5355,78 @@ void AEnemyEggChaser::StartAttack(bool IsEnable)
 	Parms.IsEnable = IsEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.GimmickBakubaku.GFurSetting
+// (Final, Native, Public, BlueprintCallable)
+
+void AGimmickBakubaku::GFurSetting()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickBakubaku", "GFurSetting");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickBakubaku.OnFlinch
+// (Event, Public, BlueprintEvent)
+
+void AGimmickBakubaku::OnFlinch()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickBakubaku", "OnFlinch");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.GimmickBakubaku.OnFlinchEnd
+// (Event, Public, BlueprintEvent)
+
+void AGimmickBakubaku::OnFlinchEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickBakubaku", "OnFlinchEnd");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.GimmickBakubaku.GetIsFlinching
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AGimmickBakubaku::GetIsFlinching() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickBakubaku", "GetIsFlinching");
+
+	Params::GimmickBakubaku_GetIsFlinching Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -6131,6 +5650,86 @@ void AGimmickRingDropper::DropRings(int32 DropRingCount)
 }
 
 
+// Function UnionRun.VATBreakObjectBase.OnPlayBreakEvent
+// (Event, Public, BlueprintEvent)
+
+void AVATBreakObjectBase::OnPlayBreakEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("VATBreakObjectBase", "OnPlayBreakEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.VATBreakObjectBase.OnPlayClashSound
+// (Event, Public, BlueprintEvent)
+
+void AVATBreakObjectBase::OnPlayClashSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("VATBreakObjectBase", "OnPlayClashSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.VATBreakObjectBase.OnVATUpdate
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// class UUnionVATMeshComponent*           VATComponent                                           (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FUnionVATSequenceInfo&     SequenceInfo                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void AVATBreakObjectBase::OnVATUpdate(class UUnionVATMeshComponent* VATComponent, const struct FUnionVATSequenceInfo& SequenceInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("VATBreakObjectBase", "OnVATUpdate");
+
+	Params::VATBreakObjectBase_OnVATUpdate Parms{};
+
+	Parms.VATComponent = VATComponent;
+	Parms.SequenceInfo = std::move(SequenceInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.VATBreakObjectBase.GetBreakSpeedType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EBreakSpeedType                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EBreakSpeedType AVATBreakObjectBase::GetBreakSpeedType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("VATBreakObjectBase", "GetBreakSpeedType");
+
+	Params::VATBreakObjectBase_GetBreakSpeedType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionRun.EnemyShipPaddle.MovePositionUpdate
 // (Final, Native, Private)
 // Parameters:
@@ -6146,6 +5745,31 @@ void AEnemyShipPaddle::MovePositionUpdate(float Ratio)
 	Params::EnemyShipPaddle_MovePositionUpdate Parms{};
 
 	Parms.Ratio = Ratio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmckEventCollision.SetEventId
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// EUnionEventId                           EventId                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AGimmckEventCollision::SetEventId(EUnionEventId EventId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmckEventCollision", "SetEventId");
+
+	Params::GimmckEventCollision_SetEventId Parms{};
+
+	Parms.EventId = EventId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6305,201 +5929,6 @@ void AEnemySnake::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInf
 }
 
 
-// Function UnionRun.GimmickBubble.BubbleIdleMoveFinished
-// (Final, Native, Private)
-
-void AGimmickBubble::BubbleIdleMoveFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "BubbleIdleMoveFinished");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GimmickBubble.BubbleIdleMoveUpdate
-// (Final, Native, Private)
-// Parameters:
-// float                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickBubble::BubbleIdleMoveUpdate(float Ratio)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "BubbleIdleMoveUpdate");
-
-	Params::GimmickBubble_BubbleIdleMoveUpdate Parms{};
-
-	Parms.Ratio = Ratio;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GimmickBubble.BubbleScaleFinished
-// (Final, Native, Private)
-
-void AGimmickBubble::BubbleScaleFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "BubbleScaleFinished");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GimmickBubble.BubbleScaleUpdate
-// (Final, Native, Private)
-// Parameters:
-// float                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickBubble::BubbleScaleUpdate(float Ratio)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "BubbleScaleUpdate");
-
-	Params::GimmickBubble_BubbleScaleUpdate Parms{};
-
-	Parms.Ratio = Ratio;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GimmickBubble.ForceSetDomainNumber
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EDomainNumber                           Number                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickBubble::ForceSetDomainNumber(EDomainNumber Number)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "ForceSetDomainNumber");
-
-	Params::GimmickBubble_ForceSetDomainNumber Parms{};
-
-	Parms.Number = Number;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.GimmickBubble.ForceUpdate
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickBubble::ForceUpdate(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "ForceUpdate");
-
-	Params::GimmickBubble_ForceUpdate Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.GimmickBubble.ManualUpdate
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickBubble::ManualUpdate(float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "ManualUpdate");
-
-	Params::GimmickBubble_ManualUpdate Parms{};
-
-	Parms.InDeltaTime = InDeltaTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GimmickBubble.OnGetBonusItem
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EBubbleBonusType                        BonusType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickBubble::OnGetBonusItem(EBubbleBonusType BonusType, int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "OnGetBonusItem");
-
-	Params::GimmickBubble_OnGetBonusItem Parms{};
-
-	Parms.BonusType = BonusType;
-	Parms.RacerIndex = RacerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.GimmickBubble.SetVisivleBonusItemType
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EBubbleBonusType                        BonusType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickBubble::SetVisivleBonusItemType(EBubbleBonusType BonusType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBubble", "SetVisivleBonusItemType");
-
-	Params::GimmickBubble_SetVisivleBonusItemType Parms{};
-
-	Parms.BonusType = BonusType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function UnionRun.EnemySquidDestination.EditorCalcDestination
 // (Final, Native, Public, BlueprintCallable)
 
@@ -6617,102 +6046,6 @@ void AEnemyStoneStatue::OnTriggerColliderConflict(const struct FHitTriggerInfo& 
 	Params::EnemyStoneStatue_OnTriggerColliderConflict Parms{};
 
 	Parms.HitInfo = std::move(HitInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubAiming.InitParam
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceUISubAiming::InitParam()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAiming", "InitParam");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubAiming.ReStartAimingUseBeforeSound
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubAiming::ReStartAimingUseBeforeSound(int32 PlayerControllerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAiming", "ReStartAimingUseBeforeSound");
-
-	Params::RaceUISubAiming_ReStartAimingUseBeforeSound Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubAiming.SetRaceHUD
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRaceUI*                     inRaceHud                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   localPlayerNum                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubAiming::SetRaceHUD(class UUnionRaceUI* inRaceHud, int32 localPlayerNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAiming", "SetRaceHUD");
-
-	Params::RaceUISubAiming_SetRaceHUD Parms{};
-
-	Parms.inRaceHud = inRaceHud;
-	Parms.localPlayerNum = localPlayerNum;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubAiming.StopSound
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bPause                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubAiming::StopSound(bool bPause)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAiming", "StopSound");
-
-	Params::RaceUISubAiming_StopSound Parms{};
-
-	Parms.bPause = bPause;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6884,43 +6217,15 @@ bool UEnemy_Extnd04_Enemy04001Anim::IsAnimState(EEnemy04001State State) const
 }
 
 
-// Function UnionRun.RaceUISubGadget.IsNotEnableGadget
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EGadgetId                               gadgetId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubGadget::IsNotEnableGadget(EGadgetId gadgetId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubGadget", "IsNotEnableGadget");
-
-	Params::RaceUISubGadget_IsNotEnableGadget Parms{};
-
-	Parms.gadgetId = gadgetId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GimmickGandBell.PlayHitAnimation
+// Function UnionRun.ItemWhiteBoostObject.OnPlayUsedItemSound
 // (Event, Public, BlueprintEvent)
 
-void AGimmickGandBell::PlayHitAnimation()
+void AItemWhiteBoostObject::OnPlayUsedItemSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickGandBell", "PlayHitAnimation");
+		Func = Class->GetFunction("ItemWhiteBoostObject", "OnPlayUsedItemSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -7001,6 +6306,94 @@ bool AEnemy_Extnd09_Enemy09001_Attack::IsDamaged() const
 }
 
 
+// Function UnionRun.Enemy_Extnd09_Enemy09001_Move.IsDamaged
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AEnemy_Extnd09_Enemy09001_Move::IsDamaged() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Enemy_Extnd09_Enemy09001_Move", "IsDamaged");
+
+	Params::Enemy_Extnd09_Enemy09001_Move_IsDamaged Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.Enemy_Extnd09_Enemy09001_Move.IsMoving
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AEnemy_Extnd09_Enemy09001_Move::IsMoving() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Enemy_Extnd09_Enemy09001_Move", "IsMoving");
+
+	Params::Enemy_Extnd09_Enemy09001_Move_IsMoving Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GimmickGUNHunter.StartMove
+// (Final, Native, Public, BlueprintCallable)
+
+void AGimmickGUNHunter::StartMove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickGUNHunter", "StartMove");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickGUNHunter.StopMove
+// (Final, Native, Public, BlueprintCallable)
+
+void AGimmickGUNHunter::StopMove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickGUNHunter", "StopMove");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.Enemy_Extnd09_Enemy09002.IsDefensive
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -7026,47 +6419,19 @@ bool AEnemy_Extnd09_Enemy09002::IsDefensive() const
 }
 
 
-// Function UnionRun.GimmickBakubaku.OnFlinch
-// (Event, Public, BlueprintEvent)
-
-void AGimmickBakubaku::OnFlinch()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBakubaku", "OnFlinch");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.GimmickBakubaku.OnFlinchEnd
-// (Event, Public, BlueprintEvent)
-
-void AGimmickBakubaku::OnFlinchEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBakubaku", "OnFlinchEnd");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.GimmickBakubaku.GetIsFlinching
+// Function UnionRun.NalAnimInstance.IsTakeDamageMotion
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool AGimmickBakubaku::GetIsFlinching() const
+bool UNalAnimInstance::IsTakeDamageMotion() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickBakubaku", "GetIsFlinching");
+		Func = Class->GetFunction("NalAnimInstance", "IsTakeDamageMotion");
 
-	Params::GimmickBakubaku_GetIsFlinching Parms{};
+	Params::NalAnimInstance_IsTakeDamageMotion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -7079,21 +6444,19 @@ bool AGimmickBakubaku::GetIsFlinching() const
 }
 
 
-// Function UnionRun.GimmickManipulatedVehicle.DebugUpdateIdleMove
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.Enemy_Extnd09_Enemy09003.GetAnimMoveTime
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AGimmickManipulatedVehicle::DebugUpdateIdleMove(float DeltaTime)
+float AEnemy_Extnd09_Enemy09003::GetAnimMoveTime() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickManipulatedVehicle", "DebugUpdateIdleMove");
+		Func = Class->GetFunction("Enemy_Extnd09_Enemy09003", "GetAnimMoveTime");
 
-	Params::GimmickManipulatedVehicle_DebugUpdateIdleMove Parms{};
-
-	Parms.DeltaTime = DeltaTime;
+	Params::Enemy_Extnd09_Enemy09003_GetAnimMoveTime Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -7101,6 +6464,103 @@ void AGimmickManipulatedVehicle::DebugUpdateIdleMove(float DeltaTime)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.Enemy_Extnd09_Enemy09003.IsDamaged
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AEnemy_Extnd09_Enemy09003::IsDamaged() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Enemy_Extnd09_Enemy09003", "IsDamaged");
+
+	Params::Enemy_Extnd09_Enemy09003_IsDamaged Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.Extnd08_Enemy08001AnimInstance.SetIsAttack
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UExtnd08_Enemy08001AnimInstance::SetIsAttack(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Extnd08_Enemy08001AnimInstance", "SetIsAttack");
+
+	Params::Extnd08_Enemy08001AnimInstance_SetIsAttack Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.Extnd08_Enemy08001AnimInstance.SetIsIdle
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UExtnd08_Enemy08001AnimInstance::SetIsIdle(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Extnd08_Enemy08001AnimInstance", "SetIsIdle");
+
+	Params::Extnd08_Enemy08001AnimInstance_SetIsIdle Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickWaterfall.OnCarHitEvent
+// (Event, Public, HasDefaults, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   HitLocation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AGimmickWaterfall::OnCarHitEvent(const struct FVector& HitLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickWaterfall", "OnCarHitEvent");
+
+	Params::GimmickWaterfall_OnCarHitEvent Parms{};
+
+	Parms.HitLocation = std::move(HitLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -7379,452 +6839,131 @@ void UFossilTrexAnimInstance::SetIsTypeB(bool flag)
 }
 
 
-// Function UnionRun.VATBreakObjectBase.OnPlayBreakEvent
-// (Event, Public, BlueprintEvent)
+// Function UnionRun.GimmickBigBakubaku.GFurSetting
+// (Final, Native, Public, BlueprintCallable)
 
-void AVATBreakObjectBase::OnPlayBreakEvent()
+void AGimmickBigBakubaku::GFurSetting()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VATBreakObjectBase", "OnPlayBreakEvent");
+		Func = Class->GetFunction("GimmickBigBakubaku", "GFurSetting");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickBigBakubaku.InitStaticBody
+// (Final, Native, Private)
+// Parameters:
+// const class UGimmickStaticBodyComponent*StaticBody                                             (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             SocketName                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AGimmickBigBakubaku::InitStaticBody(const class UGimmickStaticBodyComponent* StaticBody, class FName SocketName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickBigBakubaku", "InitStaticBody");
+
+	Params::GimmickBigBakubaku_InitStaticBody Parms{};
+
+	Parms.StaticBody = StaticBody;
+	Parms.SocketName = SocketName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.PackageRingObject.HitRacer
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void APackageRingObject::HitRacer(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PackageRingObject", "HitRacer");
+
+	Params::PackageRingObject_HitRacer Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.PackageRingObject.SetRingType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EPackageRingType                        Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void APackageRingObject::SetRingType(EPackageRingType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PackageRingObject", "SetRingType");
+
+	Params::PackageRingObject_SetRingType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickGandBell.PlayHitAnimation
+// (Event, Public, BlueprintEvent)
+
+void AGimmickGandBell::PlayHitAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickGandBell", "PlayHitAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function UnionRun.VATBreakObjectBase.OnPlayClashSound
-// (Event, Public, BlueprintEvent)
-
-void AVATBreakObjectBase::OnPlayClashSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VATBreakObjectBase", "OnPlayClashSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.VATBreakObjectBase.OnVATUpdate
+// Function UnionRun.ItemOmochaoObject.OnTriggerColliderConflict
 // (Final, Native, Public, HasOutParams)
 // Parameters:
-// class UUnionVATMeshComponent*           VATComponent                                           (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FUnionVATSequenceInfo&     SequenceInfo                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-void AVATBreakObjectBase::OnVATUpdate(class UUnionVATMeshComponent* VATComponent, const struct FUnionVATSequenceInfo& SequenceInfo)
+void AItemOmochaoObject::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VATBreakObjectBase", "OnVATUpdate");
+		Func = Class->GetFunction("ItemOmochaoObject", "OnTriggerColliderConflict");
 
-	Params::VATBreakObjectBase_OnVATUpdate Parms{};
+	Params::ItemOmochaoObject_OnTriggerColliderConflict Parms{};
 
-	Parms.VATComponent = VATComponent;
-	Parms.SequenceInfo = std::move(SequenceInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.VATBreakObjectBase.GetBreakSpeedType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EBreakSpeedType                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EBreakSpeedType AVATBreakObjectBase::GetBreakSpeedType() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VATBreakObjectBase", "GetBreakSpeedType");
-
-	Params::VATBreakObjectBase_GetBreakSpeedType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GadgetBoatJumpSplashPeformance.OnTriggerColliderConflict
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// const struct FHitTriggerInfo&           Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AGadgetBoatJumpSplashPeformance::OnTriggerColliderConflict(const struct FHitTriggerInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GadgetBoatJumpSplashPeformance", "OnTriggerColliderConflict");
-
-	Params::GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict Parms{};
-
-	Parms.Info = std::move(Info);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemWhiteBoostObject.OnPlayUsedItemSound
-// (Event, Public, BlueprintEvent)
-
-void AItemWhiteBoostObject::OnPlayUsedItemSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemWhiteBoostObject", "OnPlayUsedItemSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.GimmickTriggerMotionBase.GetPlayRate
-// (Final, Native, Public, Const)
-// Parameters:
-// ETriggerMotionState                     State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AGimmickTriggerMotionBase::GetPlayRate(ETriggerMotionState State) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickTriggerMotionBase", "GetPlayRate");
-
-	Params::GimmickTriggerMotionBase_GetPlayRate Parms{};
-
-	Parms.State = State;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GimmickTriggerMotionBase.GetTriggerMotionType
-// (Final, Native, Public, Const)
-// Parameters:
-// ETriggerMotionType                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-ETriggerMotionType AGimmickTriggerMotionBase::GetTriggerMotionType() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickTriggerMotionBase", "GetTriggerMotionType");
-
-	Params::GimmickTriggerMotionBase_GetTriggerMotionType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GimmickTriggerMotionBase.IsPlayIdle
-// (Final, Native, Public, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AGimmickTriggerMotionBase::IsPlayIdle() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickTriggerMotionBase", "IsPlayIdle");
-
-	Params::GimmickTriggerMotionBase_IsPlayIdle Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GimmickTriggerMotionBase.IsPlayOneShot
-// (Final, Native, Public, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AGimmickTriggerMotionBase::IsPlayOneShot() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickTriggerMotionBase", "IsPlayOneShot");
-
-	Params::GimmickTriggerMotionBase_IsPlayOneShot Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GimmickTriggerMotionBase.IsTriggered
-// (Final, Native, Public, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AGimmickTriggerMotionBase::IsTriggered() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickTriggerMotionBase", "IsTriggered");
-
-	Params::GimmickTriggerMotionBase_IsTriggered Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.GimmickTriggerMotionVAT.OnVATSequence
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// class UUnionVATMeshComponent*           VATMeshComponent                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FUnionVATSequenceInfo&     SequenceInfo                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void AGimmickTriggerMotionVAT::OnVATSequence(class UUnionVATMeshComponent* VATMeshComponent, const struct FUnionVATSequenceInfo& SequenceInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickTriggerMotionVAT", "OnVATSequence");
-
-	Params::GimmickTriggerMotionVAT_OnVATSequence Parms{};
-
-	Parms.VATMeshComponent = VATMeshComponent;
-	Parms.SequenceInfo = std::move(SequenceInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GimmickTriggerMotionVAT.UpdateState
-// (Final, Native, Private)
-
-void AGimmickTriggerMotionVAT::UpdateState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickTriggerMotionVAT", "UpdateState");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionItemSystemManager.DbgDrawSwitch
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionItemSystemManager::DbgDrawSwitch()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionItemSystemManager", "DbgDrawSwitch");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.NalAnimInstance.IsTakeDamageMotion
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UNalAnimInstance::IsTakeDamageMotion() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NalAnimInstance", "IsTakeDamageMotion");
-
-	Params::NalAnimInstance_IsTakeDamageMotion Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionFlightCourseDebugDisp.SetUseAssistLength
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AUnionFlightCourseDebugDisp::SetUseAssistLength(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionFlightCourseDebugDisp", "SetUseAssistLength");
-
-	Params::UnionFlightCourseDebugDisp_SetUseAssistLength Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionFlightCourseDebugDisp.UpdateDispMesh
-// (Final, Native, Public, BlueprintCallable)
-
-void AUnionFlightCourseDebugDisp::UpdateDispMesh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionFlightCourseDebugDisp", "UpdateDispMesh");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionDroneInfoInterface.NotifyCallDroneEvent
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FCallDroneInfo&            Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void IUnionDroneInfoInterface::NotifyCallDroneEvent(const struct FCallDroneInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionDroneInfoInterface", "NotifyCallDroneEvent");
-
-	Params::UnionDroneInfoInterface_NotifyCallDroneEvent Parms{};
-
-	Parms.Info = std::move(Info);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionDroneInfoInterface.NotifyDroneVisibilityEvent
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visibility                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void IUnionDroneInfoInterface::NotifyDroneVisibilityEvent(bool Visibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionDroneInfoInterface", "NotifyDroneVisibilityEvent");
-
-	Params::UnionDroneInfoInterface_NotifyDroneVisibilityEvent Parms{};
-
-	Parms.Visibility = Visibility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemSplashProjectile.OnTriggerColliderConflict
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// const struct FHitTriggerInfo&           Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AItemSplashProjectile::OnTriggerColliderConflict(const struct FHitTriggerInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemSplashProjectile", "OnTriggerColliderConflict");
-
-	Params::ItemSplashProjectile_OnTriggerColliderConflict Parms{};
-
-	Parms.Info = std::move(Info);
+	Parms.HitInfo = std::move(HitInfo);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -7879,46 +7018,125 @@ void AGimmickStatueBeam::StartBeamScaleTimer()
 }
 
 
-// Function UnionRun.GadgetMessageInterface.GadgetNotifyAttack
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionRun.GadgetBoatJumpSplashPeformance.OnTriggerColliderConflict
+// (Final, Native, Private, HasOutParams)
 // Parameters:
-// const struct FGadgetNotifyAttackInfo&   Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FHitTriggerInfo&           Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-void IGadgetMessageInterface::GadgetNotifyAttack(const struct FGadgetNotifyAttackInfo& Info)
+void AGadgetBoatJumpSplashPeformance::OnTriggerColliderConflict(const struct FHitTriggerInfo& Info)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("GadgetMessageInterface", "GadgetNotifyAttack");
+		Func = Class->GetFunction("GadgetBoatJumpSplashPeformance", "OnTriggerColliderConflict");
 
-	Params::GadgetMessageInterface_GadgetNotifyAttack Parms{};
+	Params::GadgetBoatJumpSplashPeformance_OnTriggerColliderConflict Parms{};
 
 	Parms.Info = std::move(Info);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionRun.GadgetMessageInterface.GadgetNotifyMessage
+// Function UnionRun.UnionDebugStringSubsystem.Draw
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UCanvas*                          InCanvas                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APlayerController*                InPC                                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionDebugStringSubsystem::Draw(class UCanvas* InCanvas, class APlayerController* InPC)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionDebugStringSubsystem", "Draw");
+
+	Params::UnionDebugStringSubsystem_Draw Parms{};
+
+	Parms.InCanvas = InCanvas;
+	Parms.InPC = InPC;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionDebugStringSubsystem.PrintDebugString
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDebugPrintStringStruct&   DebugString                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UUnionDebugStringSubsystem::PrintDebugString(const struct FDebugPrintStringStruct& DebugString)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionDebugStringSubsystem", "PrintDebugString");
+
+	Params::UnionDebugStringSubsystem_PrintDebugString Parms{};
+
+	Parms.DebugString = std::move(DebugString);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionDebugStringSubsystem.SetDebugStringVisibleFlag
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionDebugStringSubsystem::SetDebugStringVisibleFlag(bool bVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionDebugStringSubsystem", "SetDebugStringVisibleFlag");
+
+	Params::UnionDebugStringSubsystem_SetDebugStringVisibleFlag Parms{};
+
+	Parms.bVisible = bVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionGroupInfoInterface.NoticeCompletedChargeGroupEvent
 // (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FName                       Message                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ETeamBoostType                          TeamBoostType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IGadgetMessageInterface::GadgetNotifyMessage(const class FName Message)
+void IUnionGroupInfoInterface::NoticeCompletedChargeGroupEvent(int32 RacerIndex, ETeamBoostType TeamBoostType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("GadgetMessageInterface", "GadgetNotifyMessage");
+		Func = AsUObject()->Class->GetFunction("UnionGroupInfoInterface", "NoticeCompletedChargeGroupEvent");
 
-	Params::GadgetMessageInterface_GadgetNotifyMessage Parms{};
+	Params::UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent Parms{};
 
-	Parms.Message = Message;
+	Parms.RacerIndex = RacerIndex;
+	Parms.TeamBoostType = TeamBoostType;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -7929,73 +7147,135 @@ void IGadgetMessageInterface::GadgetNotifyMessage(const class FName Message)
 }
 
 
-// Function UnionRun.GimmickWhale.OnTremorEvent
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.ItemVioletVoidObject.IsMeshAnimEating
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AGimmickWhale::OnTremorEvent()
+bool AItemVioletVoidObject::IsMeshAnimEating()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickWhale", "OnTremorEvent");
+		Func = Class->GetFunction("ItemVioletVoidObject", "IsMeshAnimEating");
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Params::ItemVioletVoidObject_IsMeshAnimEating Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
-	Func->FunctionFlags = Flgs;
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionRun.GimmickWhale.StartWaveObject
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionRun.ItemVioletVoidObject.IsMeshAnimInSleep
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AGimmickWhale::StartWaveObject()
+bool AItemVioletVoidObject::IsMeshAnimInSleep()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickWhale", "StartWaveObject");
+		Func = Class->GetFunction("ItemVioletVoidObject", "IsMeshAnimInSleep");
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+	Params::ItemVioletVoidObject_IsMeshAnimInSleep Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
-	Func->FunctionFlags = Flgs;
+	return Parms.ReturnValue;
 }
 
 
-// Function UnionRun.GimmickFlyingBounceObject.OnHitAnim
-// (Event, Public, BlueprintEvent)
-
-void AGimmickFlyingBounceObject::OnHitAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickFlyingBounceObject", "OnHitAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.ItemRocketPunchObject.OnTriggerColliderConflict
+// Function UnionRun.ItemVioletVoidObject.OnTriggerColliderConflict
 // (Final, Native, Public, HasOutParams)
 // Parameters:
 // const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-void AItemRocketPunchObject::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
+void AItemVioletVoidObject::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemRocketPunchObject", "OnTriggerColliderConflict");
+		Func = Class->GetFunction("ItemVioletVoidObject", "OnTriggerColliderConflict");
 
-	Params::ItemRocketPunchObject_OnTriggerColliderConflict Parms{};
+	Params::ItemVioletVoidObject_OnTriggerColliderConflict Parms{};
 
 	Parms.HitInfo = std::move(HitInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemVioletVoidObject.PlaySE
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class FName                             SEName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AItemVioletVoidObject::PlaySE(class FName SEName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemVioletVoidObject", "PlaySE");
+
+	Params::ItemVioletVoidObject_PlaySE Parms{};
+
+	Parms.SEName = SEName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemVioletVoidObject.RequestMeshAnimAppearance
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bAppearance                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AItemVioletVoidObject::RequestMeshAnimAppearance(bool bAppearance)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemVioletVoidObject", "RequestMeshAnimAppearance");
+
+	Params::ItemVioletVoidObject_RequestMeshAnimAppearance Parms{};
+
+	Parms.bAppearance = bAppearance;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.UnionCameraModifierPostEffect.SetCameraPostEffectParameter
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EUnionCameraModifierPostEffectType      EffectType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             ParameterName                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionCameraModifierPostEffect::SetCameraPostEffectParameter(EUnionCameraModifierPostEffectType EffectType, class FName ParameterName, float Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionCameraModifierPostEffect", "SetCameraPostEffectParameter");
+
+	Params::UnionCameraModifierPostEffect_SetCameraPostEffectParameter Parms{};
+
+	Parms.EffectType = EffectType;
+	Parms.ParameterName = ParameterName;
+	Parms.Value = Value;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -8181,6 +7461,356 @@ void UGimmickStaticBodyComponent::SetSurfaceType(EUnionSurfaceType Type)
 }
 
 
+// Function UnionRun.UnionItemSkeletalMeshContainer.OnBeginGame
+// (Native, Public, BlueprintCallable)
+
+void UUnionItemSkeletalMeshContainer::OnBeginGame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionItemSkeletalMeshContainer", "OnBeginGame");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionItemSkeletalMeshContainer.OnBeginItem
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionItemSkeletalMeshContainer::OnBeginItem(class AActor* OwnerActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionItemSkeletalMeshContainer", "OnBeginItem");
+
+	Params::UnionItemSkeletalMeshContainer_OnBeginItem Parms{};
+
+	Parms.OwnerActor = OwnerActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionItemSkeletalMeshContainer.OnEndItem
+// (Native, Public, BlueprintCallable)
+
+void UUnionItemSkeletalMeshContainer::OnEndItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionItemSkeletalMeshContainer", "OnEndItem");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.Gimmick_Extnd05_Enemy04004.IsDamaged
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AGimmick_Extnd05_Enemy04004::IsDamaged() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Gimmick_Extnd05_Enemy04004", "IsDamaged");
+
+	Params::Gimmick_Extnd05_Enemy04004_IsDamaged Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GadgetMessageInterface.GadgetNotifyAttack
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGadgetNotifyAttackInfo&   Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void IGadgetMessageInterface::GadgetNotifyAttack(const struct FGadgetNotifyAttackInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("GadgetMessageInterface", "GadgetNotifyAttack");
+
+	Params::GadgetMessageInterface_GadgetNotifyAttack Parms{};
+
+	Parms.Info = std::move(Info);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GadgetMessageInterface.GadgetNotifyMessage
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FName                       Message                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IGadgetMessageInterface::GadgetNotifyMessage(const class FName Message)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("GadgetMessageInterface", "GadgetNotifyMessage");
+
+	Params::GadgetMessageInterface_GadgetNotifyMessage Parms{};
+
+	Parms.Message = Message;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickTriggerMotionBase.GetPlayRate
+// (Final, Native, Public, Const)
+// Parameters:
+// ETriggerMotionState                     State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AGimmickTriggerMotionBase::GetPlayRate(ETriggerMotionState State) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickTriggerMotionBase", "GetPlayRate");
+
+	Params::GimmickTriggerMotionBase_GetPlayRate Parms{};
+
+	Parms.State = State;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GimmickTriggerMotionBase.GetTriggerMotionType
+// (Final, Native, Public, Const)
+// Parameters:
+// ETriggerMotionType                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ETriggerMotionType AGimmickTriggerMotionBase::GetTriggerMotionType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickTriggerMotionBase", "GetTriggerMotionType");
+
+	Params::GimmickTriggerMotionBase_GetTriggerMotionType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GimmickTriggerMotionBase.IsPlayIdle
+// (Final, Native, Public, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AGimmickTriggerMotionBase::IsPlayIdle() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickTriggerMotionBase", "IsPlayIdle");
+
+	Params::GimmickTriggerMotionBase_IsPlayIdle Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GimmickTriggerMotionBase.IsPlayOneShot
+// (Final, Native, Public, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AGimmickTriggerMotionBase::IsPlayOneShot() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickTriggerMotionBase", "IsPlayOneShot");
+
+	Params::GimmickTriggerMotionBase_IsPlayOneShot Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GimmickTriggerMotionBase.IsTriggered
+// (Final, Native, Public, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AGimmickTriggerMotionBase::IsTriggered() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickTriggerMotionBase", "IsTriggered");
+
+	Params::GimmickTriggerMotionBase_IsTriggered Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GimmickTriggerMotionVAT.OnVATSequence
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// class UUnionVATMeshComponent*           VATMeshComponent                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FUnionVATSequenceInfo&     SequenceInfo                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void AGimmickTriggerMotionVAT::OnVATSequence(class UUnionVATMeshComponent* VATMeshComponent, const struct FUnionVATSequenceInfo& SequenceInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickTriggerMotionVAT", "OnVATSequence");
+
+	Params::GimmickTriggerMotionVAT_OnVATSequence Parms{};
+
+	Parms.VATMeshComponent = VATMeshComponent;
+	Parms.SequenceInfo = std::move(SequenceInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickTriggerMotionVAT.UpdateState
+// (Final, Native, Private)
+
+void AGimmickTriggerMotionVAT::UpdateState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickTriggerMotionVAT", "UpdateState");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickWhale.OnTremorEvent
+// (Final, Native, Public, BlueprintCallable)
+
+void AGimmickWhale::OnTremorEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickWhale", "OnTremorEvent");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GimmickWhale.StartWaveObject
+// (Final, Native, Public, BlueprintCallable)
+
+void AGimmickWhale::StartWaveObject()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GimmickWhale", "StartWaveObject");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.GimmickBingoBall.SetCollisionSocketName
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -8350,44 +7980,6 @@ void AGimmickGoalglow::OnPlaySound()
 		Func = Class->GetFunction("GimmickGoalglow", "OnPlaySound");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.GimmickGUNHunter.StartMove
-// (Final, Native, Public, BlueprintCallable)
-
-void AGimmickGUNHunter::StartMove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickGUNHunter", "StartMove");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.GimmickGUNHunter.StopMove
-// (Final, Native, Public, BlueprintCallable)
-
-void AGimmickGUNHunter::StopMove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickGUNHunter", "StopMove");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -8765,26 +8357,6 @@ void UGimmickTriggerMotionAnimInstance::NativeUpdateAnimation(float DeltaSeconds
 }
 
 
-// Function UnionRun.GimmickWaterfall.OnCarHitEvent
-// (Event, Public, HasDefaults, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   HitLocation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AGimmickWaterfall::OnCarHitEvent(const struct FVector& HitLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GimmickWaterfall", "OnCarHitEvent");
-
-	Params::GimmickWaterfall_OnCarHitEvent Parms{};
-
-	Parms.HitLocation = std::move(HitLocation);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function UnionRun.Gimmick_Extnd04_Character04003.OnExplosionEvent
 // (Event, Protected, BlueprintEvent)
 
@@ -8796,6 +8368,133 @@ void AGimmick_Extnd04_Character04003::OnExplosionEvent()
 		Func = Class->GetFunction("Gimmick_Extnd04_Character04003", "OnExplosionEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.GUNHunterAnimInstance.OnStartShootEnd
+// (Final, Native, Public, BlueprintCallable)
+
+void UGUNHunterAnimInstance::OnStartShootEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GUNHunterAnimInstance", "OnStartShootEnd");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GUNHunterAnimInstance.SetIsAttackCharge
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    isChange                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UGUNHunterAnimInstance::SetIsAttackCharge(bool isChange)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GUNHunterAnimInstance", "SetIsAttackCharge");
+
+	Params::GUNHunterAnimInstance_SetIsAttackCharge Parms{};
+
+	Parms.isChange = isChange;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GUNHunterAnimInstance.SetIsDead
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UGUNHunterAnimInstance::SetIsDead(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GUNHunterAnimInstance", "SetIsDead");
+
+	Params::GUNHunterAnimInstance_SetIsDead Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.GUNHunterAnimInstance.IsShootState
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGUNHunterShootState                    State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    isDown                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UGUNHunterAnimInstance::IsShootState(EGUNHunterShootState State, bool isDown) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GUNHunterAnimInstance", "IsShootState");
+
+	Params::GUNHunterAnimInstance_IsShootState Parms{};
+
+	Parms.State = State;
+	Parms.isDown = isDown;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.GUNHunterAnimInstance.IsStartMotion
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGUNHunterStartType                     Motion                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UGUNHunterAnimInstance::IsStartMotion(EGUNHunterStartType Motion) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GUNHunterAnimInstance", "IsStartMotion");
+
+	Params::GUNHunterAnimInstance_IsStartMotion Parms{};
+
+	Parms.Motion = Motion;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -8999,29 +8698,87 @@ void UHeadButtTrexAnimInstance::SetIsMirror(bool flag)
 }
 
 
-// Function UnionRun.UnionMiscFunction.ContainsLevel
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    LevelName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionRun.RespotObject.SetRespotMatrix
+// (Final, Native, Public, BlueprintCallable)
 
-bool UUnionMiscFunction::ContainsLevel(const class UObject* WorldContextObject, const class FString& LevelName)
+void ARespotObject::SetRespotMatrix()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "ContainsLevel");
-
-	Params::UnionMiscFunction_ContainsLevel Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.LevelName = std::move(LevelName);
+		Func = Class->GetFunction("RespotObject", "SetRespotMatrix");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RespotObject.SetRespotType
+// (Final, Native, Public, BlueprintCallable)
+
+void ARespotObject::SetRespotType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RespotObject", "SetRespotType");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RespotObject.UpdateRespotMatrix
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FTransform&                NewTransform                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ARespotObject::UpdateRespotMatrix(const struct FTransform& NewTransform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RespotObject", "UpdateRespotMatrix");
+
+	Params::RespotObject_UpdateRespotMatrix Parms{};
+
+	Parms.NewTransform = std::move(NewTransform);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.SimpleTravelRingObject.GetTransformRingType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const ETransformRingType                ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const ETransformRingType ASimpleTravelRingObject::GetTransformRingType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SimpleTravelRingObject", "GetTransformRingType");
+
+	Params::SimpleTravelRingObject_GetTransformRingType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -9029,27 +8786,24 @@ bool UUnionMiscFunction::ContainsLevel(const class UObject* WorldContextObject, 
 }
 
 
-// Function UnionRun.UnionMiscFunction.GetCourseEditorStageAssetDir
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function UnionRun.SimpleTravelRingObject.GetTravelRingSizeType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const ETravelRingSizeType               ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UUnionMiscFunction::GetCourseEditorStageAssetDir(const class UObject* WorldContextObject)
+const ETravelRingSizeType ASimpleTravelRingObject::GetTravelRingSizeType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "GetCourseEditorStageAssetDir");
+		Func = Class->GetFunction("SimpleTravelRingObject", "GetTravelRingSizeType");
 
-	Params::UnionMiscFunction_GetCourseEditorStageAssetDir Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
+	Params::SimpleTravelRingObject_GetTravelRingSizeType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -9057,27 +8811,24 @@ class FString UUnionMiscFunction::GetCourseEditorStageAssetDir(const class UObje
 }
 
 
-// Function UnionRun.UnionMiscFunction.GetStageAssetDir
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function UnionRun.SimpleTravelRingObject.GetTravelRingType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const ETravelRingType                   ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UUnionMiscFunction::GetStageAssetDir(const class UObject* WorldContextObject)
+const ETravelRingType ASimpleTravelRingObject::GetTravelRingType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "GetStageAssetDir");
+		Func = Class->GetFunction("SimpleTravelRingObject", "GetTravelRingType");
 
-	Params::UnionMiscFunction_GetStageAssetDir Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
+	Params::SimpleTravelRingObject_GetTravelRingType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -9085,27 +8836,134 @@ class FString UUnionMiscFunction::GetStageAssetDir(const class UObject* WorldCon
 }
 
 
-// Function UnionRun.UnionMiscFunction.GetStageAssetFilenameTrunk
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function UnionRun.SimpleTravelRingObject.SetTransformRingType
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const ETransformRingType                Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UUnionMiscFunction::GetStageAssetFilenameTrunk(const class UObject* WorldContextObject)
+void ASimpleTravelRingObject::SetTransformRingType(const ETransformRingType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "GetStageAssetFilenameTrunk");
+		Func = Class->GetFunction("SimpleTravelRingObject", "SetTransformRingType");
 
-	Params::UnionMiscFunction_GetStageAssetFilenameTrunk Parms{};
+	Params::SimpleTravelRingObject_SetTransformRingType Parms{};
 
-	Parms.WorldContextObject = WorldContextObject;
+	Parms.Type = Type;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.SimpleTravelRingObject.SetTravelRingSizeType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const ETravelRingSizeType               Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASimpleTravelRingObject::SetTravelRingSizeType(const ETravelRingSizeType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SimpleTravelRingObject", "SetTravelRingSizeType");
+
+	Params::SimpleTravelRingObject_SetTravelRingSizeType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.SimpleTravelRingObject.SetTravelRingType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const ETravelRingType                   Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASimpleTravelRingObject::SetTravelRingType(const ETravelRingType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SimpleTravelRingObject", "SetTravelRingType");
+
+	Params::SimpleTravelRingObject_SetTravelRingType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TireMark.AddPoint3D
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   Position                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Normal                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Side                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Density                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FColor&                    Color                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector2D&                 OffsetUV                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTireMark::AddPoint3D(const struct FVector& Position, const struct FVector& Normal, const struct FVector& Side, float Density, const struct FColor& Color, const struct FVector2D& OffsetUV)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TireMark", "AddPoint3D");
+
+	Params::TireMark_AddPoint3D Parms{};
+
+	Parms.Position = std::move(Position);
+	Parms.Normal = std::move(Normal);
+	Parms.Side = std::move(Side);
+	Parms.Density = Density;
+	Parms.Color = std::move(Color);
+	Parms.OffsetUV = std::move(OffsetUV);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TireMark.GetTireMarkMaterial
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMaterialInterface* UTireMark::GetTireMarkMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TireMark", "GetTireMarkMaterial");
+
+	Params::TireMark_GetTireMarkMaterial Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -9113,123 +8971,28 @@ class FString UUnionMiscFunction::GetStageAssetFilenameTrunk(const class UObject
 }
 
 
-// Function UnionRun.UnionMiscFunction.LoadComPathAssetByFilePath
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Function UnionRun.TireMark.SetTireMarkMaterial
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionComPathBinaryDataAsset*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMaterialInterface*               MaterialInterface                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UUnionComPathBinaryDataAsset* UUnionMiscFunction::LoadComPathAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
+void UTireMark::SetTireMarkMaterial(class UMaterialInterface* MaterialInterface)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadComPathAssetByFilePath");
+		Func = Class->GetFunction("TireMark", "SetTireMarkMaterial");
 
-	Params::UnionMiscFunction_LoadComPathAssetByFilePath Parms{};
+	Params::TireMark_SetTireMarkMaterial Parms{};
 
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.FilePath = std::move(FilePath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionMiscFunction.LoadCourseCollisionAssetByFilePath
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionBtCollisionBinaryAsset*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionBtCollisionBinaryAsset* UUnionMiscFunction::LoadCourseCollisionAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadCourseCollisionAssetByFilePath");
-
-	Params::UnionMiscFunction_LoadCourseCollisionAssetByFilePath Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.FilePath = std::move(FilePath);
+	Parms.MaterialInterface = MaterialInterface;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionMiscFunction.LoadCourseNavigationAssetByFilePath
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionNavigationBinaryDataAsset*  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionNavigationBinaryDataAsset* UUnionMiscFunction::LoadCourseNavigationAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadCourseNavigationAssetByFilePath");
-
-	Params::UnionMiscFunction_LoadCourseNavigationAssetByFilePath Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.FilePath = std::move(FilePath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionMiscFunction.LoadRunPathAssetByFilePath
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionRunPathBinaryDataAsset*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRunPathBinaryDataAsset* UUnionMiscFunction::LoadRunPathAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadRunPathAssetByFilePath");
-
-	Params::UnionMiscFunction_LoadRunPathAssetByFilePath Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.FilePath = std::move(FilePath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -9408,6 +9171,25 @@ void AItemBodyCutObject::OnTriggerConflict(const struct FHitTriggerInfo& HitInfo
 }
 
 
+// Function UnionRun.RaceObjectSimpleAnimation.UpdateTransform
+// (Final, Native, Private, BlueprintCallable)
+
+void ARaceObjectSimpleAnimation::UpdateTransform()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceObjectSimpleAnimation", "UpdateTransform");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.SummonRingAnimInstance.GetIsExit
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -9508,6 +9290,221 @@ void USummonRingAnimInstance::SetIsStart(bool flag)
 }
 
 
+// Function UnionRun.ItemBoxObject.OnChangeItemBox
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EItemBoxType                            ItemBoxType_0                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AItemBoxObject::OnChangeItemBox(EItemBoxType ItemBoxType_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "OnChangeItemBox");
+
+	Params::ItemBoxObject_OnChangeItemBox Parms{};
+
+	Parms.ItemBoxType_0 = ItemBoxType_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.ItemBoxObject.OnHitRacer
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AItemBoxObject::OnHitRacer(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "OnHitRacer");
+
+	Params::ItemBoxObject_OnHitRacer Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.ItemBoxObject.OnPlayForceFeedback
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                                   LocalPlayerIndex                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AItemBoxObject::OnPlayForceFeedback(int32 LocalPlayerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "OnPlayForceFeedback");
+
+	Params::ItemBoxObject_OnPlayForceFeedback Parms{};
+
+	Parms.LocalPlayerIndex = LocalPlayerIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.ItemBoxObject.OnPlayTakeSound
+// (Event, Public, BlueprintEvent)
+
+void AItemBoxObject::OnPlayTakeSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "OnPlayTakeSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.ItemBoxObject.OnStartRelocation
+// (Event, Public, BlueprintEvent)
+
+void AItemBoxObject::OnStartRelocation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "OnStartRelocation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.ItemBoxObject.SetItemBoxType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EItemBoxType                            Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AItemBoxObject::SetItemBoxType(EItemBoxType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "SetItemBoxType");
+
+	Params::ItemBoxObject_SetItemBoxType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemBoxObject.SetSpecifiedItem
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EItemId                                 Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AItemBoxObject::SetSpecifiedItem(EItemId Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "SetSpecifiedItem");
+
+	Params::ItemBoxObject_SetSpecifiedItem Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemBoxObject.GetSoundPan
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// ESoundPan                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ESoundPan AItemBoxObject::GetSoundPan() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemBoxObject", "GetSoundPan");
+
+	Params::ItemBoxObject_GetSoundPan Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ItemCountDownComponent.InitializeCountDown
+// (Final, Native, Protected)
+// Parameters:
+// class UActorComponent*                  Component                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bReset                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UItemCountDownComponent::InitializeCountDown(class UActorComponent* Component, bool bReset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemCountDownComponent", "InitializeCountDown");
+
+	Params::ItemCountDownComponent_InitializeCountDown Parms{};
+
+	Parms.Component = Component;
+	Parms.bReset = bReset;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemCountDownComponent.ResetTargetParameter
+// (Final, Native, Protected)
+// Parameters:
+// class UActorComponent*                  Component                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UItemCountDownComponent::ResetTargetParameter(class UActorComponent* Component)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemCountDownComponent", "ResetTargetParameter");
+
+	Params::ItemCountDownComponent_ResetTargetParameter Parms{};
+
+	Parms.Component = Component;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.TrainAnimInstance.GetIsDamage
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -9598,58 +9595,6 @@ void UTrainAnimInstance::SetIsMove(bool flag)
 	Params::TrainAnimInstance_SetIsMove Parms{};
 
 	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemCountDownComponent.InitializeCountDown
-// (Final, Native, Protected)
-// Parameters:
-// class UActorComponent*                  Component                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bReset                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UItemCountDownComponent::InitializeCountDown(class UActorComponent* Component, bool bReset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCountDownComponent", "InitializeCountDown");
-
-	Params::ItemCountDownComponent_InitializeCountDown Parms{};
-
-	Parms.Component = Component;
-	Parms.bReset = bReset;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemCountDownComponent.ResetTargetParameter
-// (Final, Native, Protected)
-// Parameters:
-// class UActorComponent*                  Component                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UItemCountDownComponent::ResetTargetParameter(class UActorComponent* Component)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCountDownComponent", "ResetTargetParameter");
-
-	Params::ItemCountDownComponent_ResetTargetParameter Parms{};
-
-	Parms.Component = Component;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10148,246 +10093,21 @@ void AItemDarkChaoObject::PlayThrowSound()
 }
 
 
-// Function UnionRun.TrexAnimInstance.GetIsAttack
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Function UnionRun.ItemExtnd09Object.OnStartMoveProjectile
+// (Final, Native, Private)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class AItemExtnd09Projectile*     projectile                                             (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UTrexAnimInstance::GetIsAttack()
+void AItemExtnd09Object::OnStartMoveProjectile(const class AItemExtnd09Projectile* projectile)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "GetIsAttack");
+		Func = Class->GetFunction("ItemExtnd09Object", "OnStartMoveProjectile");
 
-	Params::TrexAnimInstance_GetIsAttack Parms{};
+	Params::ItemExtnd09Object_OnStartMoveProjectile Parms{};
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TrexAnimInstance.GetIsDamage
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UTrexAnimInstance::GetIsDamage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "GetIsDamage");
-
-	Params::TrexAnimInstance_GetIsDamage Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TrexAnimInstance.GetIsMove
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UTrexAnimInstance::GetIsMove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "GetIsMove");
-
-	Params::TrexAnimInstance_GetIsMove Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TrexAnimInstance.GetIsTurn
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UTrexAnimInstance::GetIsTurn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "GetIsTurn");
-
-	Params::TrexAnimInstance_GetIsTurn Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TrexAnimInstance.GetIsTurnEnd
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UTrexAnimInstance::GetIsTurnEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "GetIsTurnEnd");
-
-	Params::TrexAnimInstance_GetIsTurnEnd Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TrexAnimInstance.SetIsAttack
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTrexAnimInstance::SetIsAttack(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "SetIsAttack");
-
-	Params::TrexAnimInstance_SetIsAttack Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TrexAnimInstance.SetIsDamage
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTrexAnimInstance::SetIsDamage(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "SetIsDamage");
-
-	Params::TrexAnimInstance_SetIsDamage Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TrexAnimInstance.SetIsMove
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTrexAnimInstance::SetIsMove(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "SetIsMove");
-
-	Params::TrexAnimInstance_SetIsMove Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TrexAnimInstance.SetIsTurn
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTrexAnimInstance::SetIsTurn(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "SetIsTurn");
-
-	Params::TrexAnimInstance_SetIsTurn Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TrexAnimInstance.SetIsTurnEnd
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTrexAnimInstance::SetIsTurnEnd(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrexAnimInstance", "SetIsTurnEnd");
-
-	Params::TrexAnimInstance_SetIsTurnEnd Parms{};
-
-	Parms.flag = flag;
+	Parms.projectile = projectile;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -10413,91 +10133,6 @@ void AItemExtnd09Projectile::OnTriggerColliderConflict(const struct FHitTriggerI
 	Params::ItemExtnd09Projectile_OnTriggerColliderConflict Parms{};
 
 	Parms.Info = std::move(Info);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TireMark.AddPoint3D
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   Position                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Normal                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Side                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Density                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FColor&                    Color                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector2D&                 OffsetUV                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTireMark::AddPoint3D(const struct FVector& Position, const struct FVector& Normal, const struct FVector& Side, float Density, const struct FColor& Color, const struct FVector2D& OffsetUV)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TireMark", "AddPoint3D");
-
-	Params::TireMark_AddPoint3D Parms{};
-
-	Parms.Position = std::move(Position);
-	Parms.Normal = std::move(Normal);
-	Parms.Side = std::move(Side);
-	Parms.Density = Density;
-	Parms.Color = std::move(Color);
-	Parms.OffsetUV = std::move(OffsetUV);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TireMark.GetTireMarkMaterial
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UMaterialInterface*               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMaterialInterface* UTireMark::GetTireMarkMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TireMark", "GetTireMarkMaterial");
-
-	Params::TireMark_GetTireMarkMaterial Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TireMark.SetTireMarkMaterial
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UMaterialInterface*               MaterialInterface                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTireMark::SetTireMarkMaterial(class UMaterialInterface* MaterialInterface)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TireMark", "SetTireMarkMaterial");
-
-	Params::TireMark_SetTireMarkMaterial Parms{};
-
-	Parms.MaterialInterface = MaterialInterface;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11099,31 +10734,6 @@ void IItemMessageInterface::NotifyWarpTargetEnd(int32 WarpRingAttacRacerIndex)
 }
 
 
-// Function UnionRun.ItemOmochaoObject.OnTriggerColliderConflict
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AItemOmochaoObject::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOmochaoObject", "OnTriggerColliderConflict");
-
-	Params::ItemOmochaoObject_OnTriggerColliderConflict Parms{};
-
-	Parms.HitInfo = std::move(HitInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionRun.ItemPerformanceInterface.GetAttachedRacerIndex
 // (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -11224,6 +10834,31 @@ bool IItemPerformanceInterface::IsPerformanceObjectInAlart()
 }
 
 
+// Function UnionRun.ItemRocketPunchObject.OnTriggerColliderConflict
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AItemRocketPunchObject::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemRocketPunchObject", "OnTriggerColliderConflict");
+
+	Params::ItemRocketPunchObject_OnTriggerColliderConflict Parms{};
+
+	Parms.HitInfo = std::move(HitInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.ItemSlicerObject.OnTriggerColliderConflict
 // (Final, Native, Public, HasOutParams)
 // Parameters:
@@ -11239,6 +10874,31 @@ void AItemSlicerObject::OnTriggerColliderConflict(const struct FHitTriggerInfo& 
 	Params::ItemSlicerObject_OnTriggerColliderConflict Parms{};
 
 	Parms.HitInfo = std::move(HitInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemSplashProjectile.OnTriggerColliderConflict
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// const struct FHitTriggerInfo&           Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AItemSplashProjectile::OnTriggerColliderConflict(const struct FHitTriggerInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemSplashProjectile", "OnTriggerColliderConflict");
+
+	Params::ItemSplashProjectile_OnTriggerColliderConflict Parms{};
+
+	Parms.Info = std::move(Info);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -11382,254 +11042,6 @@ void AItemThornBallObject::OnTriggerColliderConflict(const struct FHitTriggerInf
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemTripleWhiteBoostObject.OnPlayUsedItemSound
-// (Event, Public, BlueprintEvent)
-
-void AItemTripleWhiteBoostObject::OnPlayUsedItemSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTripleWhiteBoostObject", "OnPlayUsedItemSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.UnionGroupInfoInterface.NoticeCompletedChargeGroupEvent
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ETeamBoostType                          TeamBoostType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void IUnionGroupInfoInterface::NoticeCompletedChargeGroupEvent(int32 RacerIndex, ETeamBoostType TeamBoostType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionGroupInfoInterface", "NoticeCompletedChargeGroupEvent");
-
-	Params::UnionGroupInfoInterface_NoticeCompletedChargeGroupEvent Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.TeamBoostType = TeamBoostType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemVioletVoidObject.IsMeshAnimEating
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AItemVioletVoidObject::IsMeshAnimEating()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemVioletVoidObject", "IsMeshAnimEating");
-
-	Params::ItemVioletVoidObject_IsMeshAnimEating Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ItemVioletVoidObject.IsMeshAnimInSleep
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AItemVioletVoidObject::IsMeshAnimInSleep()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemVioletVoidObject", "IsMeshAnimInSleep");
-
-	Params::ItemVioletVoidObject_IsMeshAnimInSleep Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ItemVioletVoidObject.OnTriggerColliderConflict
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AItemVioletVoidObject::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemVioletVoidObject", "OnTriggerColliderConflict");
-
-	Params::ItemVioletVoidObject_OnTriggerColliderConflict Parms{};
-
-	Parms.HitInfo = std::move(HitInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemVioletVoidObject.PlaySE
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class FName                             SEName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AItemVioletVoidObject::PlaySE(class FName SEName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemVioletVoidObject", "PlaySE");
-
-	Params::ItemVioletVoidObject_PlaySE Parms{};
-
-	Parms.SEName = SEName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemVioletVoidObject.RequestMeshAnimAppearance
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bAppearance                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AItemVioletVoidObject::RequestMeshAnimAppearance(bool bAppearance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemVioletVoidObject", "RequestMeshAnimAppearance");
-
-	Params::ItemVioletVoidObject_RequestMeshAnimAppearance Parms{};
-
-	Parms.bAppearance = bAppearance;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.ItemWarpRingObject.OnHitTriggerColliderConflict
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AItemWarpRingObject::OnHitTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemWarpRingObject", "OnHitTriggerColliderConflict");
-
-	Params::ItemWarpRingObject_OnHitTriggerColliderConflict Parms{};
-
-	Parms.HitInfo = std::move(HitInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ItemYellowDrillObject.OnPlaySound
-// (Event, Public, BlueprintEvent)
-
-void AItemYellowDrillObject::OnPlaySound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemYellowDrillObject", "OnPlaySound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.KingBoomBooProjectile.OnTriggerColliderConflict
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AKingBoomBooProjectile::OnTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KingBoomBooProjectile", "OnTriggerColliderConflict");
-
-	Params::KingBoomBooProjectile_OnTriggerColliderConflict Parms{};
-
-	Parms.HitInfo = std::move(HitInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.LapChangeObject.OnFinalLapEvent
-// (Event, Public, BlueprintEvent)
-
-void ALapChangeObject::OnFinalLapEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LapChangeObject", "OnFinalLapEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.LineGuideDataAsset.ClearData
-// (Final, Native, Public, BlueprintCallable)
-
-void ULineGuideDataAsset::ClearData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LineGuideDataAsset", "ClearData");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -12017,6 +11429,35 @@ void IUnionItemInfoInterface::NoticeStartLotteryItemEvent(int32 RacerIndex, EIte
 }
 
 
+// Function UnionRun.UnionItemInfoInterface.NoticeStartLotterySpecificItemEvent
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EItemInfoType                           ItemInfoType                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EItemId                                 ItemId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IUnionItemInfoInterface::NoticeStartLotterySpecificItemEvent(int32 RacerIndex, EItemInfoType ItemInfoType, EItemId ItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionItemInfoInterface", "NoticeStartLotterySpecificItemEvent");
+
+	Params::UnionItemInfoInterface_NoticeStartLotterySpecificItemEvent Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.ItemInfoType = ItemInfoType;
+	Parms.ItemId = ItemId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.UnionItemInfoInterface.NoticeStartShuffleItemEvent
 // (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -12123,19 +11564,35 @@ void IUnionItemInfoInterface::NoticeUseItemEvent(int32 RacerIndex, EItemId ItemI
 }
 
 
-// Function UnionRun.ObakeAnimInstance.GetIsAttack
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionRun.ItemTripleWhiteBoostObject.OnPlayUsedItemSound
+// (Event, Public, BlueprintEvent)
 
-bool UObakeAnimInstance::GetIsAttack()
+void AItemTripleWhiteBoostObject::OnPlayUsedItemSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ObakeAnimInstance", "GetIsAttack");
+		Func = Class->GetFunction("ItemTripleWhiteBoostObject", "OnPlayUsedItemSound");
 
-	Params::ObakeAnimInstance_GetIsAttack Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.ItemWarpRingObject.OnHitTriggerColliderConflict
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FHitTriggerInfo&           HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AItemWarpRingObject::OnHitTriggerColliderConflict(const struct FHitTriggerInfo& HitInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemWarpRingObject", "OnHitTriggerColliderConflict");
+
+	Params::ItemWarpRingObject_OnHitTriggerColliderConflict Parms{};
+
+	Parms.HitInfo = std::move(HitInfo);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -12143,49 +11600,22 @@ bool UObakeAnimInstance::GetIsAttack()
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
-// Function UnionRun.ObakeAnimInstance.GetIsIdle
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UObakeAnimInstance::GetIsIdle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ObakeAnimInstance", "GetIsIdle");
-
-	Params::ObakeAnimInstance_GetIsIdle Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ObakeAnimInstance.SetIsAttack
+// Function UnionRun.UnionFlightCourseDebugDisp.SetUseAssistLength
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UObakeAnimInstance::SetIsAttack(bool flag)
+void AUnionFlightCourseDebugDisp::SetUseAssistLength(bool flag)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ObakeAnimInstance", "SetIsAttack");
+		Func = Class->GetFunction("UnionFlightCourseDebugDisp", "SetUseAssistLength");
 
-	Params::ObakeAnimInstance_SetIsAttack Parms{};
+	Params::UnionFlightCourseDebugDisp_SetUseAssistLength Parms{};
 
 	Parms.flag = flag;
 
@@ -12198,19 +11628,436 @@ void UObakeAnimInstance::SetIsAttack(bool flag)
 }
 
 
-// Function UnionRun.ObakeAnimInstance.SetIsIdle
+// Function UnionRun.UnionFlightCourseDebugDisp.UpdateDispMesh
 // (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UObakeAnimInstance::SetIsIdle(bool flag)
+void AUnionFlightCourseDebugDisp::UpdateDispMesh()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ObakeAnimInstance", "SetIsIdle");
+		Func = Class->GetFunction("UnionFlightCourseDebugDisp", "UpdateDispMesh");
 
-	Params::ObakeAnimInstance_SetIsIdle Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ItemYellowDrillObject.OnPlaySound
+// (Event, Public, BlueprintEvent)
+
+void AItemYellowDrillObject::OnPlaySound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemYellowDrillObject", "OnPlaySound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UnionRun.UnionMiscFunction.ContainsLevel
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    LevelName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionMiscFunction::ContainsLevel(const class UObject* WorldContextObject, const class FString& LevelName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "ContainsLevel");
+
+	Params::UnionMiscFunction_ContainsLevel Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.LevelName = std::move(LevelName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionMiscFunction.GetCourseEditorStageAssetDir
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UUnionMiscFunction::GetCourseEditorStageAssetDir(const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "GetCourseEditorStageAssetDir");
+
+	Params::UnionMiscFunction_GetCourseEditorStageAssetDir Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionMiscFunction.GetStageAssetDir
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UUnionMiscFunction::GetStageAssetDir(const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "GetStageAssetDir");
+
+	Params::UnionMiscFunction_GetStageAssetDir Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionMiscFunction.GetStageAssetFilenameTrunk
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UUnionMiscFunction::GetStageAssetFilenameTrunk(const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "GetStageAssetFilenameTrunk");
+
+	Params::UnionMiscFunction_GetStageAssetFilenameTrunk Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionMiscFunction.LoadComPathAssetByFilePath
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionComPathBinaryDataAsset*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionComPathBinaryDataAsset* UUnionMiscFunction::LoadComPathAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadComPathAssetByFilePath");
+
+	Params::UnionMiscFunction_LoadComPathAssetByFilePath Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.FilePath = std::move(FilePath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionMiscFunction.LoadCourseCollisionAssetByFilePath
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionBtCollisionBinaryAsset*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionBtCollisionBinaryAsset* UUnionMiscFunction::LoadCourseCollisionAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadCourseCollisionAssetByFilePath");
+
+	Params::UnionMiscFunction_LoadCourseCollisionAssetByFilePath Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.FilePath = std::move(FilePath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionMiscFunction.LoadCourseNavigationAssetByFilePath
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionNavigationBinaryDataAsset*  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionNavigationBinaryDataAsset* UUnionMiscFunction::LoadCourseNavigationAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadCourseNavigationAssetByFilePath");
+
+	Params::UnionMiscFunction_LoadCourseNavigationAssetByFilePath Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.FilePath = std::move(FilePath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionMiscFunction.LoadRunPathAssetByFilePath
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    FilePath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionRunPathBinaryDataAsset*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRunPathBinaryDataAsset* UUnionMiscFunction::LoadRunPathAssetByFilePath(const class UObject* WorldContextObject, const class FString& FilePath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionMiscFunction", "LoadRunPathAssetByFilePath");
+
+	Params::UnionMiscFunction_LoadRunPathAssetByFilePath Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.FilePath = std::move(FilePath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsAttack
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UKingBoomBooAnimInstance::GetIsAttack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsAttack");
+
+	Params::KingBoomBooAnimInstance_GetIsAttack Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsAttackEnd
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UKingBoomBooAnimInstance::GetIsAttackEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsAttackEnd");
+
+	Params::KingBoomBooAnimInstance_GetIsAttackEnd Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsEnd
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UKingBoomBooAnimInstance::GetIsEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsEnd");
+
+	Params::KingBoomBooAnimInstance_GetIsEnd Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsExit
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UKingBoomBooAnimInstance::GetIsExit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsExit");
+
+	Params::KingBoomBooAnimInstance_GetIsExit Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsMove
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UKingBoomBooAnimInstance::GetIsMove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsMove");
+
+	Params::KingBoomBooAnimInstance_GetIsMove Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.GetIsStart
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UKingBoomBooAnimInstance::GetIsStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "GetIsStart");
+
+	Params::KingBoomBooAnimInstance_GetIsStart Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsAttack
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKingBoomBooAnimInstance::SetIsAttack(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsAttack");
+
+	Params::KingBoomBooAnimInstance_SetIsAttack Parms{};
 
 	Parms.flag = flag;
 
@@ -12223,79 +12070,154 @@ void UObakeAnimInstance::SetIsIdle(bool flag)
 }
 
 
-// Function UnionRun.PackageRingEffect.OnPlayTakeRingSound
+// Function UnionRun.KingBoomBooAnimInstance.SetIsAttackEnd
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKingBoomBooAnimInstance::SetIsAttackEnd(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsAttackEnd");
+
+	Params::KingBoomBooAnimInstance_SetIsAttackEnd Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsEnd
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKingBoomBooAnimInstance::SetIsEnd(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsEnd");
+
+	Params::KingBoomBooAnimInstance_SetIsEnd Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsExit
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKingBoomBooAnimInstance::SetIsExit(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsExit");
+
+	Params::KingBoomBooAnimInstance_SetIsExit Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsMove
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKingBoomBooAnimInstance::SetIsMove(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsMove");
+
+	Params::KingBoomBooAnimInstance_SetIsMove Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.KingBoomBooAnimInstance.SetIsStart
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKingBoomBooAnimInstance::SetIsStart(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("KingBoomBooAnimInstance", "SetIsStart");
+
+	Params::KingBoomBooAnimInstance_SetIsStart Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.LapChangeObject.OnFinalLapEvent
 // (Event, Public, BlueprintEvent)
 
-void APackageRingEffect::OnPlayTakeRingSound()
+void ALapChangeObject::OnFinalLapEvent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PackageRingEffect", "OnPlayTakeRingSound");
+		Func = Class->GetFunction("LapChangeObject", "OnFinalLapEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function UnionRun.PackageRingObject.HitRacer
+// Function UnionRun.LineGuideDataAsset.ClearData
 // (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void APackageRingObject::HitRacer(int32 RacerIndex)
+void ULineGuideDataAsset::ClearData()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PackageRingObject", "HitRacer");
-
-	Params::PackageRingObject_HitRacer Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.PackageRingObject.SetRingType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EPackageRingType                        Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void APackageRingObject::SetRingType(EPackageRingType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PackageRingObject", "SetRingType");
-
-	Params::PackageRingObject_SetRingType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceActionTutorialData.LoadStageId
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceActionTutorialData::LoadStageId()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceActionTutorialData", "LoadStageId");
+		Func = Class->GetFunction("LineGuideDataAsset", "ClearData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -12306,647 +12228,20 @@ void URaceActionTutorialData::LoadStageId()
 }
 
 
-// Function UnionRun.UnionRacer.ApplyPauseInput
+// Function UnionRun.UnionItemSystemManager.DbgDrawSwitch
 // (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UUnionRacer::ApplyPauseInput()
+void UUnionItemSystemManager::DbgDrawSwitch()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "ApplyPauseInput");
-
-	Params::UnionRacer_ApplyPauseInput Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacer.ApplyVehicleInput
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacer::ApplyVehicleInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "ApplyVehicleInput");
+		Func = Class->GetFunction("UnionItemSystemManager", "DbgDrawSwitch");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.ChangeVehicleDisplayMode
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EVehicleDisplayMode                     InVehicleDisplayMode                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::ChangeVehicleDisplayMode(EVehicleDisplayMode InVehicleDisplayMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "ChangeVehicleDisplayMode");
-
-	Params::UnionRacer_ChangeVehicleDisplayMode Parms{};
-
-	Parms.InVehicleDisplayMode = InVehicleDisplayMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.ClearVehicle
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacer::ClearVehicle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "ClearVehicle");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.Destroy
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionRacer::Destroy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "Destroy");
-
-	Params::UnionRacer_Destroy Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacer.ExecTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::ExecTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "ExecTick");
-
-	Params::UnionRacer_ExecTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.UnionRacer.GetPlayerControllerIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32*                                  OutPlayerControllerIndex                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::GetPlayerControllerIndex(int32* OutPlayerControllerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "GetPlayerControllerIndex");
-
-	Params::UnionRacer_GetPlayerControllerIndex Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutPlayerControllerIndex != nullptr)
-		*OutPlayerControllerIndex = Parms.OutPlayerControllerIndex;
-}
-
-
-// Function UnionRun.UnionRacer.GetRaceLapInfo
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRaceLapInfo*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRaceLapInfo* UUnionRacer::GetRaceLapInfo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "GetRaceLapInfo");
-
-	Params::UnionRacer_GetRaceLapInfo Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacer.GetRacerIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32*                                  OutRacerIndex                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::GetRacerIndex(int32* OutRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "GetRacerIndex");
-
-	Params::UnionRacer_GetRacerIndex Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutRacerIndex != nullptr)
-		*OutRacerIndex = Parms.OutRacerIndex;
-}
-
-
-// Function UnionRun.UnionRacer.GetRacerSituationObject
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRaceSituationObject*        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRaceSituationObject* UUnionRacer::GetRacerSituationObject()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "GetRacerSituationObject");
-
-	Params::UnionRacer_GetRacerSituationObject Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacer.GetRacerStatusObject
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRacerStatusObject*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRacerStatusObject* UUnionRacer::GetRacerStatusObject()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "GetRacerStatusObject");
-
-	Params::UnionRacer_GetRacerStatusObject Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacer.GetTestRaceCount
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacer::GetTestRaceCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "GetTestRaceCount");
-
-	Params::UnionRacer_GetTestRaceCount Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacer.SetPlayerControllerIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InPlayerControllerIndex                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::SetPlayerControllerIndex(int32 InPlayerControllerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "SetPlayerControllerIndex");
-
-	Params::UnionRacer_SetPlayerControllerIndex Parms{};
-
-	Parms.InPlayerControllerIndex = InPlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.SetRaceLapInfo
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRaceLapInfo*                InRaceLapInfo                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::SetRaceLapInfo(class UUnionRaceLapInfo* InRaceLapInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "SetRaceLapInfo");
-
-	Params::UnionRacer_SetRaceLapInfo Parms{};
-
-	Parms.InRaceLapInfo = InRaceLapInfo;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.SetRacerIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::SetRacerIndex(int32 InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "SetRacerIndex");
-
-	Params::UnionRacer_SetRacerIndex Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.SetTickable
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bTickable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::SetTickable(bool bTickable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "SetTickable");
-
-	Params::UnionRacer_SetTickable Parms{};
-
-	Parms.bTickable = bTickable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.SetVehicle
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class APawn*                            InVehicle                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::SetVehicle(class APawn* InVehicle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "SetVehicle");
-
-	Params::UnionRacer_SetVehicle Parms{};
-
-	Parms.InVehicle = InVehicle;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.SetViewSplitId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EViewSplitId                            InViewSplitId                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::SetViewSplitId(EViewSplitId InViewSplitId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "SetViewSplitId");
-
-	Params::UnionRacer_SetViewSplitId Parms{};
-
-	Parms.InViewSplitId = InViewSplitId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.UnionRacer_SetTimerDelegate
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TDelegate<void()>                       Delegate                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bLooping                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FTimerHandle                     ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FTimerHandle UUnionRacer::UnionRacer_SetTimerDelegate(TDelegate<void()> Delegate, float Time, bool bLooping)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "UnionRacer_SetTimerDelegate");
-
-	Params::UnionRacer_UnionRacer_SetTimerDelegate Parms{};
-
-	Parms.Delegate = Delegate;
-	Parms.Time = Time;
-	Parms.bLooping = bLooping;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacer.UpdateTestRace
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::UpdateTestRace(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "UpdateTestRace");
-
-	Params::UnionRacer_UpdateTestRace Parms{};
-
-	Parms.Delta = Delta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.UpdateVehicle
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacer::UpdateVehicle(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "UpdateVehicle");
-
-	Params::UnionRacer_UpdateVehicle Parms{};
-
-	Parms.Delta = Delta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.UpdateVehicleInput
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacer::UpdateVehicleInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "UpdateVehicleInput");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacer.GetViewSplitId
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EViewSplitId                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EViewSplitId UUnionRacer::GetViewSplitId() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacer", "GetViewSplitId");
-
-	Params::UnionRacer_GetViewSplitId Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceObjectSkeletal.SetBodySkeletalMesh
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class USkeletalMesh*                    NewSkeletalMesh                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ARaceObjectSkeletal::SetBodySkeletalMesh(class USkeletalMesh* NewSkeletalMesh)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceObjectSkeletal", "SetBodySkeletalMesh");
-
-	Params::RaceObjectSkeletal_SetBodySkeletalMesh Parms{};
-
-	Parms.NewSkeletalMesh = NewSkeletalMesh;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RacerReactionManager.ForcePlayVoice
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FRacerReactionVoice&       ReactionVoice                                          (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   MinimumCoolTime                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URacerReactionManager::ForcePlayVoice(const struct FRacerReactionVoice& ReactionVoice, int32 RacerIndex, float MinimumCoolTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RacerReactionManager", "ForcePlayVoice");
-
-	Params::RacerReactionManager_ForcePlayVoice Parms{};
-
-	Parms.ReactionVoice = std::move(ReactionVoice);
-	Parms.RacerIndex = RacerIndex;
-	Parms.MinimumCoolTime = MinimumCoolTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RacerReactionManager.SoundPlayIrregularInfoDod
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FRacerReactionVoice&       ReactionVoice                                          (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   MinimumCoolTime                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URacerReactionManager::SoundPlayIrregularInfoDod(const struct FRacerReactionVoice& ReactionVoice, int32 RacerIndex, float MinimumCoolTime, float Duration)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RacerReactionManager", "SoundPlayIrregularInfoDod");
-
-	Params::RacerReactionManager_SoundPlayIrregularInfoDod Parms{};
-
-	Parms.ReactionVoice = std::move(ReactionVoice);
-	Parms.RacerIndex = RacerIndex;
-	Parms.MinimumCoolTime = MinimumCoolTime;
-	Parms.Duration = Duration;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -13446,99 +12741,445 @@ bool AUnionNavMarker::IsInvalid() const
 }
 
 
-// Function UnionRun.UnionRaceInfoInterface.NoticeChangeCountDownEvent
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionRun.PauseManager.SetGamePaused
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   InNewValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InOldValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    Paused                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IUnionRaceInfoInterface::NoticeChangeCountDownEvent(int32 InNewValue, int32 InOldValue)
+void UPauseManager::SetGamePaused(bool Paused, int32 RacerIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "NoticeChangeCountDownEvent");
+		Func = Class->GetFunction("PauseManager", "SetGamePaused");
 
-	Params::UnionRaceInfoInterface_NoticeChangeCountDownEvent Parms{};
+	Params::PauseManager_SetGamePaused Parms{};
 
-	Parms.InNewValue = InNewValue;
-	Parms.InOldValue = InOldValue;
+	Parms.Paused = Paused;
+	Parms.RacerIndex = RacerIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionRun.UnionRaceInfoInterface.NoticeChangeRaceStateEvent
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionRun.PauseManager.SetGamePauseOwnerRacerIndex
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// ERaceInfoStateType                      InNewState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ERaceInfoStateType                      InOldState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IUnionRaceInfoInterface::NoticeChangeRaceStateEvent(ERaceInfoStateType InNewState, ERaceInfoStateType InOldState)
+void UPauseManager::SetGamePauseOwnerRacerIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "NoticeChangeRaceStateEvent");
+		Func = Class->GetFunction("PauseManager", "SetGamePauseOwnerRacerIndex");
 
-	Params::UnionRaceInfoInterface_NoticeChangeRaceStateEvent Parms{};
+	Params::PauseManager_SetGamePauseOwnerRacerIndex Parms{};
 
-	Parms.InNewState = InNewState;
-	Parms.InOldState = InOldState;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionRun.UnionRaceInfoInterface.NoticeRaceFinishEvent
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionRun.PauseManager.SetIsOnlineMode
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsOnlineMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IUnionRaceInfoInterface::NoticeRaceFinishEvent()
+void UPauseManager::SetIsOnlineMode(bool IsOnlineMode)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "NoticeRaceFinishEvent");
+		Func = Class->GetFunction("PauseManager", "SetIsOnlineMode");
+
+	Params::PauseManager_SetIsOnlineMode Parms{};
+
+	Parms.IsOnlineMode = IsOnlineMode;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionRun.UnionRaceInfoInterface.SetRaceInfo
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionRun.PauseManager.GetGamePauseOwnerRacerIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UUnionRaceInfo*                   InRaceInfo                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IUnionRaceInfoInterface::SetRaceInfo(class UUnionRaceInfo* InRaceInfo)
+int32 UPauseManager::GetGamePauseOwnerRacerIndex() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "SetRaceInfo");
+		Func = Class->GetFunction("PauseManager", "GetGamePauseOwnerRacerIndex");
 
-	Params::UnionRaceInfoInterface_SetRaceInfo Parms{};
-
-	Parms.InRaceInfo = InRaceInfo;
+	Params::PauseManager_GetGamePauseOwnerRacerIndex Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.PauseManager.IsGamePaused
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPauseManager::IsGamePaused() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PauseManager", "IsGamePaused");
+
+	Params::PauseManager_IsGamePaused Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.PauseManager.IsGamePauseOwnerGoaled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPauseManager::IsGamePauseOwnerGoaled() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PauseManager", "IsGamePauseOwnerGoaled");
+
+	Params::PauseManager_IsGamePauseOwnerGoaled Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.PauseManager.IsOnlineMode
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPauseManager::IsOnlineMode() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PauseManager", "IsOnlineMode");
+
+	Params::PauseManager_IsOnlineMode Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRaceHitInfoGroup.SetItemIdIndex_Impl
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InItemIdIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceHitInfoGroup::SetItemIdIndex_Impl(int32 InItemIdIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceHitInfoGroup", "SetItemIdIndex_Impl");
+
+	Params::UnionRaceHitInfoGroup_SetItemIdIndex_Impl Parms{};
+
+	Parms.InItemIdIndex = InItemIdIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceHitInfoGroup.UpdateHitInfoGroup
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceHitInfoGroup::UpdateHitInfoGroup(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceHitInfoGroup", "UpdateHitInfoGroup");
+
+	Params::UnionRaceHitInfoGroup_UpdateHitInfoGroup Parms{};
+
+	Parms.Delta = Delta;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceActionTutorialData.LoadStageId
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceActionTutorialData::LoadStageId()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceActionTutorialData", "LoadStageId");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceLogUtil.GetRacerLapInfo
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString URaceLogUtil::GetRacerLapInfo(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RaceLogUtil", "GetRacerLapInfo");
+
+	Params::RaceLogUtil_GetRacerLapInfo Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceLogUtil.GetRacerStatusInfo
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString URaceLogUtil::GetRacerStatusInfo(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RaceLogUtil", "GetRacerStatusInfo");
+
+	Params::RaceLogUtil_GetRacerStatusInfo Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceLogUtil.PrintRaceLog
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    at                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceLogUtil::PrintRaceLog(int32 RacerIndex, const class FString& str, const class FString& at)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RaceLogUtil", "PrintRaceLog");
+
+	Params::RaceLogUtil_PrintRaceLog Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.str = std::move(str);
+	Parms.at = std::move(at);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceLogUtil.PrintRunLog
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    at                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceLogUtil::PrintRunLog(int32 RacerIndex, const class FString& str, const class FString& at)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RaceLogUtil", "PrintRunLog");
+
+	Params::RaceLogUtil_PrintRunLog Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.str = std::move(str);
+	Parms.at = std::move(at);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceLogUtil.PrintWarpLog
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    at                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceLogUtil::PrintWarpLog(int32 RacerIndex, const class FString& str, const class FString& at)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RaceLogUtil", "PrintWarpLog");
+
+	Params::RaceLogUtil_PrintWarpLog Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.str = std::move(str);
+	Parms.at = std::move(at);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RacerReactionManager.ForcePlayVoice
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FRacerReactionVoice&       ReactionVoice                                          (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   MinimumCoolTime                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URacerReactionManager::ForcePlayVoice(const struct FRacerReactionVoice& ReactionVoice, int32 RacerIndex, float MinimumCoolTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RacerReactionManager", "ForcePlayVoice");
+
+	Params::RacerReactionManager_ForcePlayVoice Parms{};
+
+	Parms.ReactionVoice = std::move(ReactionVoice);
+	Parms.RacerIndex = RacerIndex;
+	Parms.MinimumCoolTime = MinimumCoolTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RacerReactionManager.SoundPlayIrregularInfoDod
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FRacerReactionVoice&       ReactionVoice                                          (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   MinimumCoolTime                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URacerReactionManager::SoundPlayIrregularInfoDod(const struct FRacerReactionVoice& ReactionVoice, int32 RacerIndex, float MinimumCoolTime, float Duration)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RacerReactionManager", "SoundPlayIrregularInfoDod");
+
+	Params::RacerReactionManager_SoundPlayIrregularInfoDod Parms{};
+
+	Parms.ReactionVoice = std::move(ReactionVoice);
+	Parms.RacerIndex = RacerIndex;
+	Parms.MinimumCoolTime = MinimumCoolTime;
+	Parms.Duration = Duration;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -15822,6 +15463,7633 @@ bool URaceTestUtils::IsCustomRaceTestAutoConfigMode()
 		Func = Class->GetFunction("RaceTestUtils", "IsCustomRaceTestAutoConfigMode");
 
 	Params::RaceTestUtils_IsCustomRaceTestAutoConfigMode Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRaceInfoInterface.NoticeChangeCountDownEvent
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InNewValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InOldValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IUnionRaceInfoInterface::NoticeChangeCountDownEvent(int32 InNewValue, int32 InOldValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "NoticeChangeCountDownEvent");
+
+	Params::UnionRaceInfoInterface_NoticeChangeCountDownEvent Parms{};
+
+	Parms.InNewValue = InNewValue;
+	Parms.InOldValue = InOldValue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceInfoInterface.NoticeChangeRaceStateEvent
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ERaceInfoStateType                      InNewState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ERaceInfoStateType                      InOldState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IUnionRaceInfoInterface::NoticeChangeRaceStateEvent(ERaceInfoStateType InNewState, ERaceInfoStateType InOldState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "NoticeChangeRaceStateEvent");
+
+	Params::UnionRaceInfoInterface_NoticeChangeRaceStateEvent Parms{};
+
+	Parms.InNewState = InNewState;
+	Parms.InOldState = InOldState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceInfoInterface.NoticeRaceFinishEvent
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void IUnionRaceInfoInterface::NoticeRaceFinishEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "NoticeRaceFinishEvent");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceInfoInterface.SetRaceInfo
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUnionRaceInfo*                   InRaceInfo                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IUnionRaceInfoInterface::SetRaceInfo(class UUnionRaceInfo* InRaceInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionRaceInfoInterface", "SetRaceInfo");
+
+	Params::UnionRaceInfoInterface_SetRaceInfo Parms{};
+
+	Parms.InRaceInfo = InRaceInfo;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubAiming.InitParam
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceUISubAiming::InitParam()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAiming", "InitParam");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubAiming.ReStartAimingUseBeforeSound
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubAiming::ReStartAimingUseBeforeSound(int32 PlayerControllerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAiming", "ReStartAimingUseBeforeSound");
+
+	Params::RaceUISubAiming_ReStartAimingUseBeforeSound Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubAiming.SetRaceHUD
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRaceUI*                     inRaceHud                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   localPlayerNum                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubAiming::SetRaceHUD(class UUnionRaceUI* inRaceHud, int32 localPlayerNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAiming", "SetRaceHUD");
+
+	Params::RaceUISubAiming_SetRaceHUD Parms{};
+
+	Parms.inRaceHud = inRaceHud;
+	Parms.localPlayerNum = localPlayerNum;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubAiming.StopSound
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bPause                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubAiming::StopSound(bool bPause)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAiming", "StopSound");
+
+	Params::RaceUISubAiming_StopSound Parms{};
+
+	Parms.bPause = bPause;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickInfoAndFireAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   SuccessBonusCount                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsGhostView                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubAirTrickInfo::SetAirTrickInfoAndFireAnimation(int32 SuccessCount, int32 SuccessBonusCount, bool IsGhostView)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAirTrickInfo", "SetAirTrickInfoAndFireAnimation");
+
+	Params::RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation Parms{};
+
+	Parms.SuccessCount = SuccessCount;
+	Parms.SuccessBonusCount = SuccessBonusCount;
+	Parms.IsGhostView = IsGhostView;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickTextInfo
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UImage*                           Tex_1000                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UImage*                           Tex_0100                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UImage*                           Tex_0010                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UImage*                           Tex_0001                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UImage*                           Tex_Unit                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubAirTrickInfo::SetAirTrickTextInfo(int32 SuccessCount, class UImage* Tex_1000, class UImage* Tex_0100, class UImage* Tex_0010, class UImage* Tex_0001, class UImage* Tex_Unit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAirTrickInfo", "SetAirTrickTextInfo");
+
+	Params::RaceUISubAirTrickInfo_SetAirTrickTextInfo Parms{};
+
+	Parms.SuccessCount = SuccessCount;
+	Parms.Tex_1000 = Tex_1000;
+	Parms.Tex_0100 = Tex_0100;
+	Parms.Tex_0010 = Tex_0010;
+	Parms.Tex_0001 = Tex_0001;
+	Parms.Tex_Unit = Tex_Unit;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickBonusValue
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URaceUISubAirTrickInfo::GetAirTrickBonusValue(int32 SuccessCount) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAirTrickInfo", "GetAirTrickBonusValue");
+
+	Params::RaceUISubAirTrickInfo_GetAirTrickBonusValue Parms{};
+
+	Parms.SuccessCount = SuccessCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickValue
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URaceUISubAirTrickInfo::GetAirTrickValue(int32 SuccessCount) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubAirTrickInfo", "GetAirTrickValue");
+
+	Params::RaceUISubAirTrickInfo_GetAirTrickValue Parms{};
+
+	Parms.SuccessCount = SuccessCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.InitItemEnemyApproachSetting
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const float&                            InMaxScale                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EUnionAttackItemInfoType                AttackItemInfoType                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const uint8&                            AttackItemId                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubApproachWarning::InitItemEnemyApproachSetting(const float& InMaxScale, EUnionAttackItemInfoType AttackItemInfoType, const uint8& AttackItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "InitItemEnemyApproachSetting");
+
+	Params::RaceUISubApproachWarning_InitItemEnemyApproachSetting Parms{};
+
+	Parms.InMaxScale = InMaxScale;
+	Parms.AttackItemInfoType = AttackItemInfoType;
+	Parms.AttackItemId = AttackItemId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.InitRacerApproachSetting
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceUISubApproachWarning::InitRacerApproachSetting()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "InitRacerApproachSetting");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.OnPause
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInPause                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubApproachWarning::OnPause(bool bInPause)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "OnPause");
+
+	Params::RaceUISubApproachWarning_OnPause Parms{};
+
+	Parms.bInPause = bInPause;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.OnRemoveApproachWidget
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceUISubApproachWarning::OnRemoveApproachWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "OnRemoveApproachWidget");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.SetAttackTypeandId
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const EUnionAttackItemInfoType&         InAttackType                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EItemId&                          InItemId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubApproachWarning::SetAttackTypeandId(const EUnionAttackItemInfoType& InAttackType, const EItemId& InItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "SetAttackTypeandId");
+
+	Params::RaceUISubApproachWarning_SetAttackTypeandId Parms{};
+
+	Parms.InAttackType = InAttackType;
+	Parms.InItemId = InItemId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.SetDriverId
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubApproachWarning::SetDriverId(EDriverId DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "SetDriverId");
+
+	Params::RaceUISubApproachWarning_SetDriverId Parms{};
+
+	Parms.DriverId = DriverId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.SetItemId
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            InItemId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubApproachWarning::SetItemId(const int32& InItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "SetItemId");
+
+	Params::RaceUISubApproachWarning_SetItemId Parms{};
+
+	Parms.InItemId = InItemId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.UpdateItemEnemyApproach
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const float&                            ValueCM                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubApproachWarning::UpdateItemEnemyApproach(const float& ValueCM)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "UpdateItemEnemyApproach");
+
+	Params::RaceUISubApproachWarning_UpdateItemEnemyApproach Parms{};
+
+	Parms.ValueCM = ValueCM;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubApproachWarning.UpdateRacerApproach
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const float&                            ValueCM                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubApproachWarning::UpdateRacerApproach(const float& ValueCM)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubApproachWarning", "UpdateRacerApproach");
+
+	Params::RaceUISubApproachWarning_UpdateRacerApproach Parms{};
+
+	Parms.ValueCM = ValueCM;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubBasicOperation.IsKeyboard
+// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubBasicOperation::IsKeyboard() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBasicOperation", "IsKeyboard");
+
+	Params::RaceUISubBasicOperation_IsKeyboard Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TrexAnimInstance.GetIsAttack
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UTrexAnimInstance::GetIsAttack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "GetIsAttack");
+
+	Params::TrexAnimInstance_GetIsAttack Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TrexAnimInstance.GetIsDamage
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UTrexAnimInstance::GetIsDamage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "GetIsDamage");
+
+	Params::TrexAnimInstance_GetIsDamage Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TrexAnimInstance.GetIsMove
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UTrexAnimInstance::GetIsMove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "GetIsMove");
+
+	Params::TrexAnimInstance_GetIsMove Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TrexAnimInstance.GetIsTurn
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UTrexAnimInstance::GetIsTurn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "GetIsTurn");
+
+	Params::TrexAnimInstance_GetIsTurn Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TrexAnimInstance.GetIsTurnEnd
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UTrexAnimInstance::GetIsTurnEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "GetIsTurnEnd");
+
+	Params::TrexAnimInstance_GetIsTurnEnd Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TrexAnimInstance.SetIsAttack
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTrexAnimInstance::SetIsAttack(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "SetIsAttack");
+
+	Params::TrexAnimInstance_SetIsAttack Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TrexAnimInstance.SetIsDamage
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTrexAnimInstance::SetIsDamage(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "SetIsDamage");
+
+	Params::TrexAnimInstance_SetIsDamage Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TrexAnimInstance.SetIsMove
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTrexAnimInstance::SetIsMove(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "SetIsMove");
+
+	Params::TrexAnimInstance_SetIsMove Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TrexAnimInstance.SetIsTurn
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTrexAnimInstance::SetIsTurn(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "SetIsTurn");
+
+	Params::TrexAnimInstance_SetIsTurn Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TrexAnimInstance.SetIsTurnEnd
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTrexAnimInstance::SetIsTurnEnd(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrexAnimInstance", "SetIsTurnEnd");
+
+	Params::TrexAnimInstance_SetIsTurnEnd Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubBoost.CheckBoostLevelInGhostReplay
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Level                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubBoost::CheckBoostLevelInGhostReplay(int32 Level)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "CheckBoostLevelInGhostReplay");
+
+	Params::RaceUISubBoost_CheckBoostLevelInGhostReplay Parms{};
+
+	Parms.Level = Level;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubBoost.IsFastFirstCharge
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubBoost::IsFastFirstCharge(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "IsFastFirstCharge");
+
+	Params::RaceUISubBoost_IsFastFirstCharge Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBoost.IsFastSecondCharge
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubBoost::IsFastSecondCharge(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "IsFastSecondCharge");
+
+	Params::RaceUISubBoost_IsFastSecondCharge Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBoost.IsFastThirdCharge
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubBoost::IsFastThirdCharge(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "IsFastThirdCharge");
+
+	Params::RaceUISubBoost_IsFastThirdCharge Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBoost.IsViewGhostReplay
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubBoost::IsViewGhostReplay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "IsViewGhostReplay");
+
+	Params::RaceUISubBoost_IsViewGhostReplay Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBoost.SetVisibleHUD
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsVisible_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubBoost::SetVisibleHUD(bool IsVisible_0, float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "SetVisibleHUD");
+
+	Params::RaceUISubBoost_SetVisibleHUD Parms{};
+
+	Parms.IsVisible_0 = IsVisible_0;
+	Parms.DeltaTime = DeltaTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubBoost.SetWaitTimeJustBoostInGhostReplay
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubBoost::SetWaitTimeJustBoostInGhostReplay(float Time)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "SetWaitTimeJustBoostInGhostReplay");
+
+	Params::RaceUISubBoost_SetWaitTimeJustBoostInGhostReplay Parms{};
+
+	Parms.Time = Time;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubBoost.UpdateChargeInfo
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ChargeLevel                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ChargeRate                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubBoost::UpdateChargeInfo(int32 ChargeLevel, float ChargeRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "UpdateChargeInfo");
+
+	Params::RaceUISubBoost_UpdateChargeInfo Parms{};
+
+	Parms.ChargeLevel = ChargeLevel;
+	Parms.ChargeRate = ChargeRate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubBoost.GetIsOpened
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubBoost::GetIsOpened() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBoost", "GetIsOpened");
+
+	Params::RaceUISubBoost_GetIsOpened Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnKey.SetButtonState
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InState                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubBtnKey::SetButtonState(int32 InState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnKey", "SetButtonState");
+
+	Params::RaceUISubBtnKey_SetButtonState Parms{};
+
+	Parms.InState = InState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubBtnKey.GetKeyDisplayName
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText URaceUISubBtnKey::GetKeyDisplayName(const struct FKey& InKey, int32 PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnKey", "GetKeyDisplayName");
+
+	Params::RaceUISubBtnKey_GetKeyDisplayName Parms{};
+
+	Parms.InKey = std::move(InKey);
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubBtnKey.GetMouseButtonIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URaceUISubBtnKey::GetMouseButtonIndex(const struct FKey& InKey) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubBtnKey", "GetMouseButtonIndex");
+
+	Params::RaceUISubBtnKey_GetMouseButtonIndex Parms{};
+
+	Parms.InKey = std::move(InKey);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubButtonBase.GetControllerButtonTextureType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerButtonTextureType            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EControllerButtonTextureType URaceUISubButtonBase::GetControllerButtonTextureType(int32 PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubButtonBase", "GetControllerButtonTextureType");
+
+	Params::RaceUISubButtonBase_GetControllerButtonTextureType Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubButtonBase.GetControllerType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EBtnGuidePlatFormController             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EBtnGuidePlatFormController URaceUISubButtonBase::GetControllerType(int32 PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubButtonBase", "GetControllerType");
+
+	Params::RaceUISubButtonBase_GetControllerType Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubCourseMapIcon.SetReaderFlag
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    InReader                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubCourseMapIcon::SetReaderFlag(bool InReader)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubCourseMapIcon", "SetReaderFlag");
+
+	Params::RaceUISubCourseMapIcon_SetReaderFlag Parms{};
+
+	Parms.InReader = InReader;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubGadget.IsAdditionalGadget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EGadgetId                               gadgetId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubGadget::IsAdditionalGadget(EGadgetId gadgetId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubGadget", "IsAdditionalGadget");
+
+	Params::RaceUISubGadget_IsAdditionalGadget Parms{};
+
+	Parms.gadgetId = gadgetId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubGadget.IsNotEnableGadget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EGadgetId                               gadgetId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubGadget::IsNotEnableGadget(EGadgetId gadgetId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubGadget", "IsNotEnableGadget");
+
+	Params::RaceUISubGadget_IsNotEnableGadget Parms{};
+
+	Parms.gadgetId = gadgetId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubGadgetIcon.SetGadgetId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EGadgetId                               InGadgetId                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubGadgetIcon::SetGadgetId(EGadgetId InGadgetId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubGadgetIcon", "SetGadgetId");
+
+	Params::RaceUISubGadgetIcon_SetGadgetId Parms{};
+
+	Parms.InGadgetId = InGadgetId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubGadgetIcon.SetIconMaterial
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   IconIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubGadgetIcon::SetIconMaterial(int32 IconIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubGadgetIcon", "SetIconMaterial");
+
+	Params::RaceUISubGadgetIcon_SetIconMaterial Parms{};
+
+	Parms.IconIndex = IconIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubGadgetIcon.GetGadgetId
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGadgetId                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EGadgetId URaceUISubGadgetIcon::GetGadgetId() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubGadgetIcon", "GetGadgetId");
+
+	Params::RaceUISubGadgetIcon_GetGadgetId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubRing.SetCurrentRingCount
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            NewRingCount                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubRing::SetCurrentRingCount(const int32& NewRingCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubRing", "SetCurrentRingCount");
+
+	Params::RaceUISubRing_SetCurrentRingCount Parms{};
+
+	Parms.NewRingCount = NewRingCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubRing.SetParams
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubRing::SetParams(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubRing", "SetParams");
+
+	Params::RaceUISubRing_SetParams Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubRing.SetRingBackColor
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsGroup                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsLocalMulti                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubRing::SetRingBackColor(int32 Index_0, bool IsGroup, bool IsLocalMulti)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubRing", "SetRingBackColor");
+
+	Params::RaceUISubRing_SetRingBackColor Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.IsGroup = IsGroup;
+	Parms.IsLocalMulti = IsLocalMulti;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubGroupRing.SetRingCharaIcon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubGroupRing::SetRingCharaIcon(EDriverId DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubGroupRing", "SetRingCharaIcon");
+
+	Params::RaceUISubGroupRing_SetRingCharaIcon Parms{};
+
+	Parms.DriverId = DriverId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.CloseLottery
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::CloseLottery()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "CloseLottery");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.DisplayHideAnim
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Display                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::DisplayHideAnim(bool Display)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "DisplayHideAnim");
+
+	Params::RaceUISubItemIcon_DisplayHideAnim Parms{};
+
+	Parms.Display = Display;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.FireUseAnim
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceUISubItemIcon::FireUseAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "FireUseAnim");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.GetRandomLotteryDisplayItemId
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// uint8                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+uint8 URaceUISubItemIcon::GetRandomLotteryDisplayItemId()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "GetRandomLotteryDisplayItemId");
+
+	Params::RaceUISubItemIcon_GetRandomLotteryDisplayItemId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.ItemLostAnimStart
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bHideIcon                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::ItemLostAnimStart(bool bHideIcon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "ItemLostAnimStart");
+
+	Params::RaceUISubItemIcon_ItemLostAnimStart Parms{};
+
+	Parms.bHideIcon = bHideIcon;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.LotteryAnimEnd
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::LotteryAnimEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "LotteryAnimEnd");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.LotteryAnimStart
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::LotteryAnimStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "LotteryAnimStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.LotteryDecideFinished
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::LotteryDecideFinished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "LotteryDecideFinished");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.LotterySeqStart
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    LotterySound                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::LotterySeqStart(bool LotterySound)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "LotterySeqStart");
+
+	Params::RaceUISubItemIcon_LotterySeqStart Parms{};
+
+	Parms.LotterySound = LotterySound;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.OnFinishedDecide
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::OnFinishedDecide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "OnFinishedDecide");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.OnFinishedInAnim
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::OnFinishedInAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "OnFinishedInAnim");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.OnFinishedOutAnim
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::OnFinishedOutAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "OnFinishedOutAnim");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.PlayItemUseSound
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// EItemId                                 ItemId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsSelectorLabel                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FSoundHandle                     ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FSoundHandle URaceUISubItemIcon::PlayItemUseSound(EItemId ItemId, EDriverId DriverId, bool IsSelectorLabel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "PlayItemUseSound");
+
+	Params::RaceUISubItemIcon_PlayItemUseSound Parms{};
+
+	Parms.ItemId = ItemId;
+	Parms.DriverId = DriverId;
+	Parms.IsSelectorLabel = IsSelectorLabel;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.PlayLoopAnim
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::PlayLoopAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "PlayLoopAnim");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetAttributeColorIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InAttributeIndex                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetAttributeColorIndex(int32 InAttributeIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetAttributeColorIndex");
+
+	Params::RaceUISubItemIcon_SetAttributeColorIndex Parms{};
+
+	Parms.InAttributeIndex = InAttributeIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetChargeGaugeRate
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Rate                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetChargeGaugeRate(float Rate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetChargeGaugeRate");
+
+	Params::RaceUISubItemIcon_SetChargeGaugeRate Parms{};
+
+	Parms.Rate = Rate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetGaugeType
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bRemainCountGauge                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetGaugeType(bool bRemainCountGauge)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetGaugeType");
+
+	Params::RaceUISubItemIcon_SetGaugeType Parms{};
+
+	Parms.bRemainCountGauge = bRemainCountGauge;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetItemIdIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InItemIdIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InRemainCount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIgnoreAttribute                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bOnLottery                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetItemIdIndex(int32 InItemIdIndex, int32 InRemainCount, bool bIgnoreAttribute, bool bOnLottery)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetItemIdIndex");
+
+	Params::RaceUISubItemIcon_SetItemIdIndex Parms{};
+
+	Parms.InItemIdIndex = InItemIdIndex;
+	Parms.InRemainCount = InRemainCount;
+	Parms.bIgnoreAttribute = bIgnoreAttribute;
+	Parms.bOnLottery = bOnLottery;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetItemIdTexture
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TMap<EItemId, class UTexture2D*>& InItemId_TextureMap                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetItemIdTexture(const TMap<EItemId, class UTexture2D*>& InItemId_TextureMap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetItemIdTexture");
+
+	Params::RaceUISubItemIcon_SetItemIdTexture Parms{};
+
+	Parms.InItemId_TextureMap = std::move(InItemId_TextureMap);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetLotteryDisplayItemIds
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const TArray<uint8>&                    ItemIds                                                (ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetLotteryDisplayItemIds(const TArray<uint8>& ItemIds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetLotteryDisplayItemIds");
+
+	Params::RaceUISubItemIcon_SetLotteryDisplayItemIds Parms{};
+
+	Parms.ItemIds = std::move(ItemIds);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetRemainCountGauge
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Count                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   MaxCount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetRemainCountGauge(int32 Count, int32 MaxCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetRemainCountGauge");
+
+	Params::RaceUISubItemIcon_SetRemainCountGauge Parms{};
+
+	Parms.Count = Count;
+	Parms.MaxCount = MaxCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetRingNum
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRingCount                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetRingNum(int32 InRingCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetRingNum");
+
+	Params::RaceUISubItemIcon_SetRingNum Parms{};
+
+	Parms.InRingCount = InRingCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetRingNumVisible
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubItemIcon::SetRingNumVisible(bool bVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetRingNumVisible");
+
+	Params::RaceUISubItemIcon_SetRingNumVisible Parms{};
+
+	Parms.bVisible = bVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.SetupPackageRing
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::SetupPackageRing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "SetupPackageRing");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.StartCountDownBlink
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::StartCountDownBlink()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "StartCountDownBlink");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubItemIcon.StopCountDownBlink
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void URaceUISubItemIcon::StopCountDownBlink()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubItemIcon", "StopCountDownBlink");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubLap.InitializeLapCount
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UTextureRenderTarget2D*           InRenderTarget                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubLap::InitializeLapCount(class UTextureRenderTarget2D* InRenderTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubLap", "InitializeLapCount");
+
+	Params::RaceUISubLap_InitializeLapCount Parms{};
+
+	Parms.InRenderTarget = InRenderTarget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubLap.SetCurrentLap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubLap::SetCurrentLap(int32 Lap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubLap", "SetCurrentLap");
+
+	Params::RaceUISubLap_SetCurrentLap Parms{};
+
+	Parms.Lap = Lap;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubLap.SetCurrentLapMID
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubLap::SetCurrentLapMID(class UMaterialInstanceDynamic* Mid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubLap", "SetCurrentLapMID");
+
+	Params::RaceUISubLap_SetCurrentLapMID Parms{};
+
+	Parms.Mid = Mid;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubLap.SetMaxLap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubLap::SetMaxLap(int32 Lap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubLap", "SetMaxLap");
+
+	Params::RaceUISubLap_SetMaxLap Parms{};
+
+	Parms.Lap = Lap;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubLap.SetMaxLapMID
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubLap::SetMaxLapMID(class UMaterialInstanceDynamic* Mid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubLap", "SetMaxLapMID");
+
+	Params::RaceUISubLap_SetMaxLapMID Parms{};
+
+	Parms.Mid = Mid;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubLap.UpdateLapCount
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InDelta                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubLap::UpdateLapCount(float InDelta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubLap", "UpdateLapCount");
+
+	Params::RaceUISubLap_UpdateLapCount Parms{};
+
+	Parms.InDelta = InDelta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubPlayerName.GetGhostPfId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 URaceUISubPlayerName::GetGhostPfId()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubPlayerName", "GetGhostPfId");
+
+	Params::RaceUISubPlayerName_GetGhostPfId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubReturnDashGauge.GetButtonWidget
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* URaceUISubReturnDashGauge::GetButtonWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubReturnDashGauge", "GetButtonWidget");
+
+	Params::RaceUISubReturnDashGauge_GetButtonWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetDashInputKey
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FKey&                      Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubReturnDashGauge::SetDashInputKey(const struct FKey& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetDashInputKey");
+
+	Params::RaceUISubReturnDashGauge_SetDashInputKey Parms{};
+
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetGaugeParcent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   GaugeRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubReturnDashGauge::SetGaugeParcent(float GaugeRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetGaugeParcent");
+
+	Params::RaceUISubReturnDashGauge_SetGaugeParcent Parms{};
+
+	Parms.GaugeRate = GaugeRate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetGaugePivotAndRange
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UImage*                           ImageRef                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   PivotRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   GaugeRateRange                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubReturnDashGauge::SetGaugePivotAndRange(class UImage* ImageRef, float PivotRate, float GaugeRateRange)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetGaugePivotAndRange");
+
+	Params::RaceUISubReturnDashGauge_SetGaugePivotAndRange Parms{};
+
+	Parms.ImageRef = ImageRef;
+	Parms.PivotRate = PivotRate;
+	Parms.GaugeRateRange = GaugeRateRange;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubReturnDashGauge.SetReturnDashSetting
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const float&                            Pivot                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            Range                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubReturnDashGauge::SetReturnDashSetting(const float& Pivot, const float& Range)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetReturnDashSetting");
+
+	Params::RaceUISubReturnDashGauge_SetReturnDashSetting Parms{};
+
+	Parms.Pivot = Pivot;
+	Parms.Range = Range;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.GetButtonWidget
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* URaceUISubStartGauge::GetButtonWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "GetButtonWidget");
+
+	Params::RaceUISubStartGauge_GetButtonWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.GetKeyAccel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FKey                       ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const struct FKey URaceUISubStartGauge::GetKeyAccel(int32 PlayerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "GetKeyAccel");
+
+	Params::RaceUISubStartGauge_GetKeyAccel Parms{};
+
+	Parms.PlayerIndex = PlayerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.IsPlayControlKeyboard
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool URaceUISubStartGauge::IsPlayControlKeyboard(int32 PlayerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "IsPlayControlKeyboard");
+
+	Params::RaceUISubStartGauge_IsPlayControlKeyboard Parms{};
+
+	Parms.PlayerIndex = PlayerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.SetDashInputKey
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FKey&                      Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubStartGauge::SetDashInputKey(const struct FKey& Key, int32 PlayerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "SetDashInputKey");
+
+	Params::RaceUISubStartGauge_SetDashInputKey Parms{};
+
+	Parms.Key = std::move(Key);
+	Parms.PlayerIndex = PlayerIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.SetGaugeParcent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   GaugeRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubStartGauge::SetGaugeParcent(float GaugeRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "SetGaugeParcent");
+
+	Params::RaceUISubStartGauge_SetGaugeParcent Parms{};
+
+	Parms.GaugeRate = GaugeRate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.SetGaugeParcentTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   GaugeRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubStartGauge::SetGaugeParcentTrigger(float GaugeRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "SetGaugeParcentTrigger");
+
+	Params::RaceUISubStartGauge_SetGaugeParcentTrigger Parms{};
+
+	Parms.GaugeRate = GaugeRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.SetGaugePivotAndRange
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UImage*                           ImageRef                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   PivotRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   GaugeRateRange                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubStartGauge::SetGaugePivotAndRange(class UImage* ImageRef, float PivotRate, float GaugeRateRange)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "SetGaugePivotAndRange");
+
+	Params::RaceUISubStartGauge_SetGaugePivotAndRange Parms{};
+
+	Parms.ImageRef = ImageRef;
+	Parms.PivotRate = PivotRate;
+	Parms.GaugeRateRange = GaugeRateRange;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.SetStartDashParamSetting
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FUnionRaceStartDashParam&  InStartDashParam                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void URaceUISubStartGauge::SetStartDashParamSetting(const struct FUnionRaceStartDashParam& InStartDashParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "SetStartDashParamSetting");
+
+	Params::RaceUISubStartGauge_SetStartDashParamSetting Parms{};
+
+	Parms.InStartDashParam = std::move(InStartDashParam);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubStartGauge.SetStartDashSetting
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const float&                            LV3_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            LV3_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            LV2_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            LV2_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            NG1_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            NG1_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            NG2_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            NG2_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubStartGauge::SetStartDashSetting(const float& LV3_PIVOT, const float& LV3_RANGE, const float& LV2_PIVOT, const float& LV2_RANGE, const float& NG1_PIVOT, const float& NG1_RANGE, const float& NG2_PIVOT, const float& NG2_RANGE)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubStartGauge", "SetStartDashSetting");
+
+	Params::RaceUISubStartGauge_SetStartDashSetting Parms{};
+
+	Parms.LV3_PIVOT = LV3_PIVOT;
+	Parms.LV3_RANGE = LV3_RANGE;
+	Parms.LV2_PIVOT = LV2_PIVOT;
+	Parms.LV2_RANGE = LV2_RANGE;
+	Parms.NG1_PIVOT = NG1_PIVOT;
+	Parms.NG1_RANGE = NG1_RANGE;
+	Parms.NG2_PIVOT = NG2_PIVOT;
+	Parms.NG2_RANGE = NG2_RANGE;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUISubTeamGroup.SetCharaIconNative
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UTexture2D*                       IconTex                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTeamGroup::SetCharaIconNative(class UTexture2D* IconTex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamGroup", "SetCharaIconNative");
+
+	Params::RaceUISubTeamGroup_SetCharaIconNative Parms{};
+
+	Parms.IconTex = IconTex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTeamGroup.SetDispTextYou
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsDisp                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTeamGroup::SetDispTextYou(bool IsDisp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamGroup", "SetDispTextYou");
+
+	Params::RaceUISubTeamGroup_SetDispTextYou Parms{};
+
+	Parms.IsDisp = IsDisp;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTeamGroup.SetRankNative
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTeamGroup::SetRankNative(int32 Rank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTeamGroup", "SetRankNative");
+
+	Params::RaceUISubTeamGroup_SetRankNative Parms{};
+
+	Parms.Rank = Rank;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTime.SetBestTime
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceUISubTimeTrialTime::SetBestTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetBestTime");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class URichTextBlock*                   TargetTextBlock                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      TargetName                                             (Parm, NativeAccessSpecifierPublic)
+// int32                                   TargetTime                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsClockCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTimeTrialTime::SetTargetTime(class URichTextBlock* TargetTextBlock, const class FText& TargetName, int32 TargetTime, bool IsClockCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetTargetTime");
+
+	Params::RaceUISubTimeTrialTime_SetTargetTime Parms{};
+
+	Parms.TargetTextBlock = TargetTextBlock;
+	Parms.TargetName = std::move(TargetName);
+	Parms.TargetTime = TargetTime;
+	Parms.IsClockCount = IsClockCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime4Best
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class URichTextBlock*                   TargetTextBlock                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTimeTrialTime::SetTargetTime4Best(class URichTextBlock* TargetTextBlock)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetTargetTime4Best");
+
+	Params::RaceUISubTimeTrialTime_SetTargetTime4Best Parms{};
+
+	Parms.TargetTextBlock = TargetTextBlock;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTime.SetVisibilityTime
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceUISubTimeTrialTime::SetVisibilityTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetVisibilityTime");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTime.UpdateLapTime
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsBestLap                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FRaceUITimeTrialTime             ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FRaceUITimeTrialTime URaceUISubTimeTrialTime::UpdateLapTime(int32 Lap, bool* IsBestLap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTime", "UpdateLapTime");
+
+	Params::RaceUISubTimeTrialTime_UpdateLapTime Parms{};
+
+	Parms.Lap = Lap;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsBestLap != nullptr)
+		*IsBestLap = Parms.IsBestLap;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTime.UpdateTime
+// (Final, Native, Public, BlueprintCallable)
+
+void URaceUISubTimeTrialTime::UpdateTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTime", "UpdateTime");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapDiffTime
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   LapNum                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTimeTrialTimeLap::SetLapDiffTime(int32 LapNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapDiffTime");
+
+	Params::RaceUISubTimeTrialTimeLap_SetLapDiffTime Parms{};
+
+	Parms.LapNum = LapNum;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTime
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const struct FRaceUITimeTrialTime&      NewTime                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTimeTrialTimeLap::SetLapTime(const struct FRaceUITimeTrialTime& NewTime, int32 Lap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapTime");
+
+	Params::RaceUISubTimeTrialTimeLap_SetLapTime Parms{};
+
+	Parms.NewTime = std::move(NewTime);
+	Parms.Lap = Lap;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeIsGhostReplay
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTimeTrialTimeLap::SetLapTimeIsGhostReplay(int32 Lap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapTimeIsGhostReplay");
+
+	Params::RaceUISubTimeTrialTimeLap_SetLapTimeIsGhostReplay Parms{};
+
+	Parms.Lap = Lap;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.SetLapTimeWithDiff
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const struct FRaceUITimeTrialTime&      NewTime                                                (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsVisibleDiff                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUISubTimeTrialTimeLap::SetLapTimeWithDiff(const struct FRaceUITimeTrialTime& NewTime, int32 Lap, bool IsVisibleDiff)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "SetLapTimeWithDiff");
+
+	Params::RaceUISubTimeTrialTimeLap_SetLapTimeWithDiff Parms{};
+
+	Parms.NewTime = std::move(NewTime);
+	Parms.Lap = Lap;
+	Parms.IsVisibleDiff = IsVisibleDiff;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RaceUISubTimeTrialTimeLap.UpdateLapTime
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FRaceUITimeTrialTime             ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FRaceUITimeTrialTime URaceUISubTimeTrialTimeLap::UpdateLapTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUISubTimeTrialTimeLap", "UpdateLapTime");
+
+	Params::RaceUISubTimeTrialTimeLap_UpdateLapTime Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUITutorialControllerKey.GetTutorialKey
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// ETutorialAction                         tutorialAction                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FKey                       ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const struct FKey URaceUITutorialControllerKey::GetTutorialKey(ETutorialAction tutorialAction, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUITutorialControllerKey", "GetTutorialKey");
+
+	Params::RaceUITutorialControllerKey_GetTutorialKey Parms{};
+
+	Parms.tutorialAction = tutorialAction;
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RaceUITutorialControllerKey.UpdateHintIndex
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUITutorialControllerKey::UpdateHintIndex(int32 InIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUITutorialControllerKey", "UpdateHintIndex");
+
+	Params::RaceUITutorialControllerKey_UpdateHintIndex Parms{};
+
+	Parms.InIndex = InIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.RaceUITutorialControllerKey.UpdateTutorialIndex
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URaceUITutorialControllerKey::UpdateTutorialIndex(int32 InIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RaceUITutorialControllerKey", "UpdateTutorialIndex");
+
+	Params::RaceUITutorialControllerKey_UpdateTutorialIndex Parms{};
+
+	Parms.InIndex = InIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.ReplayFixedCameraCollision.CreateCameraObject
+// (Final, Native, Private)
+
+void AReplayFixedCameraCollision::CreateCameraObject()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ReplayFixedCameraCollision", "CreateCameraObject");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ReplayFixedCameraCollision.OnCollisionBaseHit
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// const struct FCollisionHitInfo&         Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AReplayFixedCameraCollision::OnCollisionBaseHit(const struct FCollisionHitInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ReplayFixedCameraCollision", "OnCollisionBaseHit");
+
+	Params::ReplayFixedCameraCollision_OnCollisionBaseHit Parms{};
+
+	Parms.Info = std::move(Info);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ReplayFixedCameraCollision.SetCameraData
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   NewBoxSize                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AReplayFixedCameraCollision::SetCameraData(const struct FVector& NewBoxSize)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ReplayFixedCameraCollision", "SetCameraData");
+
+	Params::ReplayFixedCameraCollision_SetCameraData Parms{};
+
+	Parms.NewBoxSize = std::move(NewBoxSize);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RingObject.GetFinalLapRingNum
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 ARingObject::GetFinalLapRingNum()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RingObject", "GetFinalLapRingNum");
+
+	Params::RingObject_GetFinalLapRingNum Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RingObject.GetFinalLapRingOffset
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float ARingObject::GetFinalLapRingOffset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RingObject", "GetFinalLapRingOffset");
+
+	Params::RingObject_GetFinalLapRingOffset Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RingObject.IsFinalLapChange
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ARingObject::IsFinalLapChange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RingObject", "IsFinalLapChange");
+
+	Params::RingObject_IsFinalLapChange Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RingObject.SetIsFinalLapChange
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ARingObject::SetIsFinalLapChange(bool flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RingObject", "SetIsFinalLapChange");
+
+	Params::RingObject_SetIsFinalLapChange Parms{};
+
+	Parms.flag = flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RingObject.SetRingType
+// (Final, Native, Public, BlueprintCallable)
+
+void ARingObject::SetRingType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RingObject", "SetRingType");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ShortcutRingObject.GetOverrideCollisionScale
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const float                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const float AShortcutRingObject::GetOverrideCollisionScale()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "GetOverrideCollisionScale");
+
+	Params::ShortcutRingObject_GetOverrideCollisionScale Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.GetRingScale
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const float                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const float AShortcutRingObject::GetRingScale()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "GetRingScale");
+
+	Params::ShortcutRingObject_GetRingScale Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.GetShortcutId
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const int32                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const int32 AShortcutRingObject::GetShortcutId()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "GetShortcutId");
+
+	Params::ShortcutRingObject_GetShortcutId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.GetShortcutRingType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const EShortcutRingType                 ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const EShortcutRingType AShortcutRingObject::GetShortcutRingType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "GetShortcutRingType");
+
+	Params::ShortcutRingObject_GetShortcutRingType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.GetStageId
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const EStageId                          ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const EStageId AShortcutRingObject::GetStageId()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "GetStageId");
+
+	Params::ShortcutRingObject_GetStageId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.IsHalfRing
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const bool                              ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const bool AShortcutRingObject::IsHalfRing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "IsHalfRing");
+
+	Params::ShortcutRingObject_IsHalfRing Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.IsUseOverrideCollisionScale
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const bool                              ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const bool AShortcutRingObject::IsUseOverrideCollisionScale()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "IsUseOverrideCollisionScale");
+
+	Params::ShortcutRingObject_IsUseOverrideCollisionScale Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.SetHalfRing
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bHalf                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AShortcutRingObject::SetHalfRing(bool bHalf)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "SetHalfRing");
+
+	Params::ShortcutRingObject_SetHalfRing Parms{};
+
+	Parms.bHalf = bHalf;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ShortcutRingObject.SetRingScale
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Scale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AShortcutRingObject::SetRingScale(float Scale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "SetRingScale");
+
+	Params::ShortcutRingObject_SetRingScale Parms{};
+
+	Parms.Scale = Scale;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ShortcutRingObject.SetShortcutId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ID                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AShortcutRingObject::SetShortcutId(int32 ID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "SetShortcutId");
+
+	Params::ShortcutRingObject_SetShortcutId Parms{};
+
+	Parms.ID = ID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ShortcutRingObject.SetShortcutRingType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EShortcutRingType                       Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AShortcutRingObject::SetShortcutRingType(EShortcutRingType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "SetShortcutRingType");
+
+	Params::ShortcutRingObject_SetShortcutRingType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ShortcutRingObject.SetTravelRingType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ETravelRingType                         Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AShortcutRingObject::SetTravelRingType(ETravelRingType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "SetTravelRingType");
+
+	Params::ShortcutRingObject_SetTravelRingType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ShortcutRingObject.SetupShortcutRing
+// (Final, Native, Public, BlueprintCallable)
+
+void AShortcutRingObject::SetupShortcutRing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "SetupShortcutRing");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.ShortcutRingObject.GetTravelRingType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// ETravelRingType                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ETravelRingType AShortcutRingObject::GetTravelRingType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "GetTravelRingType");
+
+	Params::ShortcutRingObject_GetTravelRingType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.ShortcutRingObject.IsUseAnotherGate
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AShortcutRingObject::IsUseAnotherGate() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShortcutRingObject", "IsUseAnotherGate");
+
+	Params::ShortcutRingObject_IsUseAnotherGate Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.SquidAnimInstance.IsSquidState
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// ESquidState                             State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USquidAnimInstance::IsSquidState(ESquidState State) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SquidAnimInstance", "IsSquidState");
+
+	Params::SquidAnimInstance_IsSquidState Parms{};
+
+	Parms.State = State;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TowerAnimInstance.OnEnterBreakLoop
+// (Final, Native, Public, BlueprintCallable)
+
+void UTowerAnimInstance::OnEnterBreakLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TowerAnimInstance", "OnEnterBreakLoop");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TowerAnimInstance.OnEnterWait
+// (Final, Native, Public, BlueprintCallable)
+
+void UTowerAnimInstance::OnEnterWait()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TowerAnimInstance", "OnEnterWait");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TowerAnimInstance.IsTowerState
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// ETowerState                             State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UTowerAnimInstance::IsTowerState(ETowerState State) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TowerAnimInstance", "IsTowerState");
+
+	Params::TowerAnimInstance_IsTowerState Parms{};
+
+	Parms.State = State;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TransformRingObject.GetRingScaleRate
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const float                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const float ATransformRingObject::GetRingScaleRate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TransformRingObject", "GetRingScaleRate");
+
+	Params::TransformRingObject_GetRingScaleRate Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.TransformRingObject.SetRingScaleRate
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Rate                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ATransformRingObject::SetRingScaleRate(float Rate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TransformRingObject", "SetRingScaleRate");
+
+	Params::TransformRingObject_SetRingScaleRate Parms{};
+
+	Parms.Rate = Rate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TransformRingObject.SetTransformRingType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ETransformRingType                      Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ATransformRingObject::SetTransformRingType(ETransformRingType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TransformRingObject", "SetTransformRingType");
+
+	Params::TransformRingObject_SetTransformRingType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TransformRingObject.UpdateParallelMode
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ATransformRingObject::UpdateParallelMode(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TransformRingObject", "UpdateParallelMode");
+
+	Params::TransformRingObject_UpdateParallelMode Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TriggerComponent.OnCollisionBaseHit
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FCollisionHitInfo&         Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UTriggerComponent::OnCollisionBaseHit(const struct FCollisionHitInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TriggerComponent", "OnCollisionBaseHit");
+
+	Params::TriggerComponent_OnCollisionBaseHit Parms{};
+
+	Parms.Info = std::move(Info);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TriggerComponent.OnCollisionHitResult
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FCollisionHitResultInfo&   Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UTriggerComponent::OnCollisionHitResult(const struct FCollisionHitResultInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TriggerComponent", "OnCollisionHitResult");
+
+	Params::TriggerComponent_OnCollisionHitResult Parms{};
+
+	Parms.Info = std::move(Info);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TriggerComponent.SetSurfaceFlag
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// const struct FUnionSurfaceFlag&         flag                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UTriggerComponent::SetSurfaceFlag(const struct FUnionSurfaceFlag& flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TriggerComponent", "SetSurfaceFlag");
+
+	Params::TriggerComponent_SetSurfaceFlag Parms{};
+
+	Parms.flag = std::move(flag);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.TriggerComponent.SetSurfaceType
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// EUnionSurfaceType                       Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTriggerComponent::SetSurfaceType(EUnionSurfaceType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TriggerComponent", "SetSurfaceType");
+
+	Params::TriggerComponent_SetSurfaceType Parms{};
+
+	Parms.Type = Type;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetAttackEnemyItemIdIF
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EEnemyItemId                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EEnemyItemId IUnionAttackItemInfoInterface::GetAttackEnemyItemIdIF()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetAttackEnemyItemIdIF");
+
+	Params::UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemIdIF
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EItemId                                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EItemId IUnionAttackItemInfoInterface::GetAttackItemIdIF()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetAttackItemIdIF");
+
+	Params::UnionAttackItemInfoInterface_GetAttackItemIdIF Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EDomainIndex                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EDomainIndex IUnionAttackItemInfoInterface::GetObjectDomainIndex()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectDomainIndex");
+
+	Params::UnionAttackItemInfoInterface_GetObjectDomainIndex Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainLocationUE
+// (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector IUnionAttackItemInfoInterface::GetObjectDomainLocationUE()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectDomainLocationUE");
+
+	Params::UnionAttackItemInfoInterface_GetObjectDomainLocationUE Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainNumber
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EDomainNumber                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EDomainNumber IUnionAttackItemInfoInterface::GetObjectDomainNumber()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectDomainNumber");
+
+	Params::UnionAttackItemInfoInterface_GetObjectDomainNumber Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectLapCount
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 IUnionAttackItemInfoInterface::GetObjectLapCount()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectLapCount");
+
+	Params::UnionAttackItemInfoInterface_GetObjectLapCount Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectPathIndexDistance
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float IUnionAttackItemInfoInterface::GetObjectPathIndexDistance()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectPathIndexDistance");
+
+	Params::UnionAttackItemInfoInterface_GetObjectPathIndexDistance Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDistance
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float IUnionAttackItemInfoInterface::GetObjectRaceDistance()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectRaceDistance");
+
+	Params::UnionAttackItemInfoInterface_GetObjectRaceDistance Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDomainElapsedRatio
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float IUnionAttackItemInfoInterface::GetObjectRaceDomainElapsedRatio()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectRaceDomainElapsedRatio");
+
+	Params::UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetObjectWorldLocation
+// (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector IUnionAttackItemInfoInterface::GetObjectWorldLocation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectWorldLocation");
+
+	Params::UnionAttackItemInfoInterface_GetObjectWorldLocation Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetSameDomainOnlyFlag
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IUnionAttackItemInfoInterface::GetSameDomainOnlyFlag()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetSameDomainOnlyFlag");
+
+	Params::UnionAttackItemInfoInterface_GetSameDomainOnlyFlag Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetUsingRacerIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 IUnionAttackItemInfoInterface::GetUsingRacerIndex()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetUsingRacerIndex");
+
+	Params::UnionAttackItemInfoInterface_GetUsingRacerIndex Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemMoveToTargetIgnorePathIF
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IUnionAttackItemInfoInterface::IsAttackItemMoveToTargetIgnorePathIF()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "IsAttackItemMoveToTargetIgnorePathIF");
+
+	Params::UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemTargetIF
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   checkRacerIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IUnionAttackItemInfoInterface::IsAttackItemTargetIF(int32 checkRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "IsAttackItemTargetIF");
+
+	Params::UnionAttackItemInfoInterface_IsAttackItemTargetIF Parms{};
+
+	Parms.checkRacerIndex = checkRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemUsedForBackIF
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IUnionAttackItemInfoInterface::IsAttackItemUsedForBackIF()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "IsAttackItemUsedForBackIF");
+
+	Params::UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemInfoTypeIF
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// EUnionAttackItemInfoType                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EUnionAttackItemInfoType IUnionAttackItemInfoInterface::GetAttackItemInfoTypeIF() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetAttackItemInfoTypeIF");
+
+	Params::UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionDroneInfoInterface.NotifyCallDroneEvent
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FCallDroneInfo&            Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void IUnionDroneInfoInterface::NotifyCallDroneEvent(const struct FCallDroneInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionDroneInfoInterface", "NotifyCallDroneEvent");
+
+	Params::UnionDroneInfoInterface_NotifyCallDroneEvent Parms{};
+
+	Parms.Info = std::move(Info);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionDroneInfoInterface.NotifyDroneVisibilityEvent
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Visibility                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IUnionDroneInfoInterface::NotifyDroneVisibilityEvent(bool Visibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionDroneInfoInterface", "NotifyDroneVisibilityEvent");
+
+	Params::UnionDroneInfoInterface_NotifyDroneVisibilityEvent Parms{};
+
+	Parms.Visibility = Visibility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.GetPhysicalSurfaceType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EUnionSurfaceType                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EUnionSurfaceType UUnionPhysicalMaterial::GetPhysicalSurfaceType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "GetPhysicalSurfaceType");
+
+	Params::UnionPhysicalMaterial_GetPhysicalSurfaceType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.GetSurfaceFlag
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FUnionSurfaceFlag                ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FUnionSurfaceFlag UUnionPhysicalMaterial::GetSurfaceFlag() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "GetSurfaceFlag");
+
+	Params::UnionPhysicalMaterial_GetSurfaceFlag Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsAssistWall
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsAssistWall() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsAssistWall");
+
+	Params::UnionPhysicalMaterial_IsAssistWall Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsAssistWallItemIgnoret
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsAssistWallItemIgnoret() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsAssistWallItemIgnoret");
+
+	Params::UnionPhysicalMaterial_IsAssistWallItemIgnoret Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsBouncy
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsBouncy() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBouncy");
+
+	Params::UnionPhysicalMaterial_IsBouncy Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsBumpyHeavy
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsBumpyHeavy() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBumpyHeavy");
+
+	Params::UnionPhysicalMaterial_IsBumpyHeavy Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsBumpyLight
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsBumpyLight() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBumpyLight");
+
+	Params::UnionPhysicalMaterial_IsBumpyLight Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsBumpyMedium
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsBumpyMedium() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBumpyMedium");
+
+	Params::UnionPhysicalMaterial_IsBumpyMedium Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsCameraChange
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsCameraChange() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsCameraChange");
+
+	Params::UnionPhysicalMaterial_IsCameraChange Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsCarDriveable
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsCarDriveable() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsCarDriveable");
+
+	Params::UnionPhysicalMaterial_IsCarDriveable Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsCylindrical
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsCylindrical() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsCylindrical");
+
+	Params::UnionPhysicalMaterial_IsCylindrical Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsDash
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsDash() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsDash");
+
+	Params::UnionPhysicalMaterial_IsDash Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsGravitySwitch
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsGravitySwitch() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsGravitySwitch");
+
+	Params::UnionPhysicalMaterial_IsGravitySwitch Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsGrindDash
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsGrindDash() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsGrindDash");
+
+	Params::UnionPhysicalMaterial_IsGrindDash Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsGuidedJump
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsGuidedJump() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsGuidedJump");
+
+	Params::UnionPhysicalMaterial_IsGuidedJump Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitBouncyMidium
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsHitBouncyMidium() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitBouncyMidium");
+
+	Params::UnionPhysicalMaterial_IsHitBouncyMidium Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitLoseRing
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsHitLoseRing() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitLoseRing");
+
+	Params::UnionPhysicalMaterial_IsHitLoseRing Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownLight
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsHitSlowdownLight() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitSlowdownLight");
+
+	Params::UnionPhysicalMaterial_IsHitSlowdownLight Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownMidium
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsHitSlowdownMidium() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitSlowdownMidium");
+
+	Params::UnionPhysicalMaterial_IsHitSlowdownMidium Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsIgnoreSticky
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsIgnoreSticky() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsIgnoreSticky");
+
+	Params::UnionPhysicalMaterial_IsIgnoreSticky Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsItemOnly
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsItemOnly() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsItemOnly");
+
+	Params::UnionPhysicalMaterial_IsItemOnly Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsMachineOnlyWall
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsMachineOnlyWall() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsMachineOnlyWall");
+
+	Params::UnionPhysicalMaterial_IsMachineOnlyWall Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsNoJump
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsNoJump() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsNoJump");
+
+	Params::UnionPhysicalMaterial_IsNoJump Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsNrrow
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsNrrow() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsNrrow");
+
+	Params::UnionPhysicalMaterial_IsNrrow Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsPseudoPlane
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsPseudoPlane() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsPseudoPlane");
+
+	Params::UnionPhysicalMaterial_IsPseudoPlane Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsRespot
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsRespot() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsRespot");
+
+	Params::UnionPhysicalMaterial_IsRespot Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlide
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsSlide() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlide");
+
+	Params::UnionPhysicalMaterial_IsSlide Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlippy
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsSlippy() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlippy");
+
+	Params::UnionPhysicalMaterial_IsSlippy Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlowDownLight
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsSlowDownLight() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlowDownLight");
+
+	Params::UnionPhysicalMaterial_IsSlowDownLight Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsSlowDownMedium
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsSlowDownMedium() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlowDownMedium");
+
+	Params::UnionPhysicalMaterial_IsSlowDownMedium Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsWall
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsWall() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsWall");
+
+	Params::UnionPhysicalMaterial_IsWall Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPhysicalMaterial.IsYellowDrill
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionPhysicalMaterial::IsYellowDrill() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPhysicalMaterial", "IsYellowDrill");
+
+	Params::UnionPhysicalMaterial_IsYellowDrill Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionPlayerInfoBillboardUI.ChangeDriverInfo
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const EDriverId&                        DriverId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionPlayerInfoBillboardUI::ChangeDriverInfo(const EDriverId& DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionPlayerInfoBillboardUI", "ChangeDriverInfo");
+
+	Params::UnionPlayerInfoBillboardUI_ChangeDriverInfo Parms{};
+
+	Parms.DriverId = DriverId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByGadgetInfo
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<EGadgetId>&                GadgetInfo                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UUnionRaceGadgetUI::InitializeIconsByGadgetInfo(const TArray<EGadgetId>& GadgetInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceGadgetUI", "InitializeIconsByGadgetInfo");
+
+	Params::UnionRaceGadgetUI_InitializeIconsByGadgetInfo Parms{};
+
+	Parms.GadgetInfo = std::move(GadgetInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByRacerIndex
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceGadgetUI::InitializeIconsByRacerIndex(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceGadgetUI", "InitializeIconsByRacerIndex");
+
+	Params::UnionRaceGadgetUI_InitializeIconsByRacerIndex Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.UnionRaceInfoNotifier.RegisterRaceInfoListener
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          InListener                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceInfoNotifier::RegisterRaceInfoListener(class UObject* InListener)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceInfoNotifier", "RegisterRaceInfoListener");
+
+	Params::UnionRaceInfoNotifier_RegisterRaceInfoListener Parms{};
+
+	Parms.InListener = InListener;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceInfoNotifier.Reset
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRaceInfoNotifier::Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceInfoNotifier", "Reset");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceInfoNotifier.UnregisterRaceInfoListener
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          InListener                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceInfoNotifier::UnregisterRaceInfoListener(class UObject* InListener)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceInfoNotifier", "UnregisterRaceInfoListener");
+
+	Params::UnionRaceInfoNotifier_UnregisterRaceInfoListener Parms{};
+
+	Parms.InListener = InListener;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.AddCourseMapActor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           InAttackItem                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EItemId                                 InItemId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::AddCourseMapActor(class AActor* InAttackItem, EItemId InItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "AddCourseMapActor");
+
+	Params::UnionRaceMinimap_AddCourseMapActor Parms{};
+
+	Parms.InAttackItem = InAttackItem;
+	Parms.InItemId = InItemId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.GetGroupColor
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   GouupIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FLinearColor UUnionRaceMinimap::GetGroupColor(int32 GouupIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "GetGroupColor");
+
+	Params::UnionRaceMinimap_GetGroupColor Parms{};
+
+	Parms.GouupIndex = GouupIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.InitializeMinimap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UTextureRenderTarget2D*           InRenderTarget                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::InitializeMinimap(class UTextureRenderTarget2D* InRenderTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "InitializeMinimap");
+
+	Params::UnionRaceMinimap_InitializeMinimap Parms{};
+
+	Parms.InRenderTarget = InRenderTarget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.InitializeRaceData
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRaceMinimap::InitializeRaceData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "InitializeRaceData");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.RemoveCourseMapActor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           InAttackItem                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::RemoveCourseMapActor(class AActor* InAttackItem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "RemoveCourseMapActor");
+
+	Params::UnionRaceMinimap_RemoveCourseMapActor Parms{};
+
+	Parms.InAttackItem = InAttackItem;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetCourseMapCharaSpin
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetCourseMapCharaSpin(int32 RacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetCourseMapCharaSpin");
+
+	Params::UnionRaceMinimap_SetCourseMapCharaSpin Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetCourseSetting
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TSoftObjectPtr<class UObject>&    CourseTexture                                          (ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InOrthoRate                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InAngle                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InOffset                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetCourseSetting(const TSoftObjectPtr<class UObject>& CourseTexture, float InOrthoRate, float InAngle, const struct FVector& InOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetCourseSetting");
+
+	Params::UnionRaceMinimap_SetCourseSetting Parms{};
+
+	Parms.CourseTexture = CourseTexture;
+	Parms.InOrthoRate = InOrthoRate;
+	Parms.InAngle = InAngle;
+	Parms.InOffset = std::move(InOffset);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetDomainIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InDomainIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetDomainIndex(int32 InDomainIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetDomainIndex");
+
+	Params::UnionRaceMinimap_SetDomainIndex Parms{};
+
+	Parms.InDomainIndex = InDomainIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetDomainNumber
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InDomainNumber                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetDomainNumber(int32 InDomainNumber)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetDomainNumber");
+
+	Params::UnionRaceMinimap_SetDomainNumber Parms{};
+
+	Parms.InDomainNumber = InDomainNumber;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetDriverId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetDriverId(int32 RacerIndex, int32 DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetDriverId");
+
+	Params::UnionRaceMinimap_SetDriverId Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.DriverId = DriverId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetGroupIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   GroupIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetGroupIndex(int32 RacerIndex, int32 GroupIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetGroupIndex");
+
+	Params::UnionRaceMinimap_SetGroupIndex Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.GroupIndex = GroupIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetMinimapIconItem
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            RacerIndex                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EItemId&                          InItemId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetMinimapIconItem(const int32& RacerIndex, const EItemId& InItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetMinimapIconItem");
+
+	Params::UnionRaceMinimap_SetMinimapIconItem Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.InItemId = InItemId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetMinimapIconType
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            RacerIndex                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EMinimapIconType&                 InMinimapIconType                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetMinimapIconType(const int32& RacerIndex, const EMinimapIconType& InMinimapIconType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetMinimapIconType");
+
+	Params::UnionRaceMinimap_SetMinimapIconType Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.InMinimapIconType = InMinimapIconType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetPlayerIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsPlayer                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsLocalMulti                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetPlayerIndex(int32 RacerIndex, int32 PlayerIndex, bool IsPlayer, bool IsLocalMulti)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetPlayerIndex");
+
+	Params::UnionRaceMinimap_SetPlayerIndex Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.PlayerIndex = PlayerIndex;
+	Parms.IsPlayer = IsPlayer;
+	Parms.IsLocalMulti = IsLocalMulti;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetPosition
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InPosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetPosition(int32 RacerIndex, const struct FVector& InPosition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetPosition");
+
+	Params::UnionRaceMinimap_SetPosition Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.InPosition = std::move(InPosition);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetPositionAndZOrder
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InPosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const uint8&                            InZOrder                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetPositionAndZOrder(int32 RacerIndex, const struct FVector& InPosition, const uint8& InZOrder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetPositionAndZOrder");
+
+	Params::UnionRaceMinimap_SetPositionAndZOrder Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.InPosition = std::move(InPosition);
+	Parms.InZOrder = InZOrder;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetRacerCount
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerCount_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetRacerCount(int32 RacerCount_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetRacerCount");
+
+	Params::UnionRaceMinimap_SetRacerCount Parms{};
+
+	Parms.RacerCount_0 = RacerCount_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetRacerIconVisibility
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESlateVisibility                        NewVisibility                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetRacerIconVisibility(int32 RacerIndex, ESlateVisibility NewVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetRacerIconVisibility");
+
+	Params::UnionRaceMinimap_SetRacerIconVisibility Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.NewVisibility = NewVisibility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetReaderFlag
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool&                             InIsReader                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetReaderFlag(int32 RacerIndex, const bool& InIsReader)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetReaderFlag");
+
+	Params::UnionRaceMinimap_SetReaderFlag Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.InIsReader = InIsReader;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.SetRival
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsRival                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsPowerRival                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::SetRival(int32 RacerIndex, bool IsRival, bool IsPowerRival)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "SetRival");
+
+	Params::UnionRaceMinimap_SetRival Parms{};
+
+	Parms.RacerIndex = RacerIndex;
+	Parms.IsRival = IsRival;
+	Parms.IsPowerRival = IsPowerRival;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceMinimap.UpdateMinimap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InDelta                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceMinimap::UpdateMinimap(float InDelta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceMinimap", "UpdateMinimap");
+
+	Params::UnionRaceMinimap_UpdateMinimap Parms{};
+
+	Parms.InDelta = InDelta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.ApplyPauseInput
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacer::ApplyPauseInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "ApplyPauseInput");
+
+	Params::UnionRacer_ApplyPauseInput Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacer.ApplyVehicleInput
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacer::ApplyVehicleInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "ApplyVehicleInput");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.ChangeVehicleDisplayMode
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EVehicleDisplayMode                     InVehicleDisplayMode                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::ChangeVehicleDisplayMode(EVehicleDisplayMode InVehicleDisplayMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "ChangeVehicleDisplayMode");
+
+	Params::UnionRacer_ChangeVehicleDisplayMode Parms{};
+
+	Parms.InVehicleDisplayMode = InVehicleDisplayMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.ClearVehicle
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacer::ClearVehicle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "ClearVehicle");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.Destroy
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacer::Destroy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "Destroy");
+
+	Params::UnionRacer_Destroy Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacer.ExecTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::ExecTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "ExecTick");
+
+	Params::UnionRacer_ExecTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.UnionRacer.GetPlayerControllerIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32*                                  OutPlayerControllerIndex                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::GetPlayerControllerIndex(int32* OutPlayerControllerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "GetPlayerControllerIndex");
+
+	Params::UnionRacer_GetPlayerControllerIndex Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutPlayerControllerIndex != nullptr)
+		*OutPlayerControllerIndex = Parms.OutPlayerControllerIndex;
+}
+
+
+// Function UnionRun.UnionRacer.GetRaceLapInfo
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRaceLapInfo*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRaceLapInfo* UUnionRacer::GetRaceLapInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "GetRaceLapInfo");
+
+	Params::UnionRacer_GetRaceLapInfo Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacer.GetRacerIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32*                                  OutRacerIndex                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::GetRacerIndex(int32* OutRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "GetRacerIndex");
+
+	Params::UnionRacer_GetRacerIndex Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutRacerIndex != nullptr)
+		*OutRacerIndex = Parms.OutRacerIndex;
+}
+
+
+// Function UnionRun.UnionRacer.GetRacerSituationObject
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRaceSituationObject*        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRaceSituationObject* UUnionRacer::GetRacerSituationObject()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "GetRacerSituationObject");
+
+	Params::UnionRacer_GetRacerSituationObject Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacer.GetRacerStatusObject
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRacerStatusObject*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRacerStatusObject* UUnionRacer::GetRacerStatusObject()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "GetRacerStatusObject");
+
+	Params::UnionRacer_GetRacerStatusObject Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacer.GetTestRaceCount
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacer::GetTestRaceCount()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "GetTestRaceCount");
+
+	Params::UnionRacer_GetTestRaceCount Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacer.SetPlayerControllerIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InPlayerControllerIndex                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::SetPlayerControllerIndex(int32 InPlayerControllerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "SetPlayerControllerIndex");
+
+	Params::UnionRacer_SetPlayerControllerIndex Parms{};
+
+	Parms.InPlayerControllerIndex = InPlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.SetRaceLapInfo
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRaceLapInfo*                InRaceLapInfo                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::SetRaceLapInfo(class UUnionRaceLapInfo* InRaceLapInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "SetRaceLapInfo");
+
+	Params::UnionRacer_SetRaceLapInfo Parms{};
+
+	Parms.InRaceLapInfo = InRaceLapInfo;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.SetRacerIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::SetRacerIndex(int32 InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "SetRacerIndex");
+
+	Params::UnionRacer_SetRacerIndex Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.SetTickable
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bTickable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::SetTickable(bool bTickable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "SetTickable");
+
+	Params::UnionRacer_SetTickable Parms{};
+
+	Parms.bTickable = bTickable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.SetVehicle
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class APawn*                            InVehicle                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::SetVehicle(class APawn* InVehicle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "SetVehicle");
+
+	Params::UnionRacer_SetVehicle Parms{};
+
+	Parms.InVehicle = InVehicle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.SetViewSplitId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EViewSplitId                            InViewSplitId                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::SetViewSplitId(EViewSplitId InViewSplitId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "SetViewSplitId");
+
+	Params::UnionRacer_SetViewSplitId Parms{};
+
+	Parms.InViewSplitId = InViewSplitId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.UnionRacer_SetTimerDelegate
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TDelegate<void()>                       Delegate                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bLooping                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTimerHandle                     ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FTimerHandle UUnionRacer::UnionRacer_SetTimerDelegate(TDelegate<void()> Delegate, float Time, bool bLooping)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "UnionRacer_SetTimerDelegate");
+
+	Params::UnionRacer_UnionRacer_SetTimerDelegate Parms{};
+
+	Parms.Delegate = Delegate;
+	Parms.Time = Time;
+	Parms.bLooping = bLooping;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacer.UpdateTestRace
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::UpdateTestRace(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "UpdateTestRace");
+
+	Params::UnionRacer_UpdateTestRace Parms{};
+
+	Parms.Delta = Delta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.UpdateVehicle
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacer::UpdateVehicle(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "UpdateVehicle");
+
+	Params::UnionRacer_UpdateVehicle Parms{};
+
+	Parms.Delta = Delta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.UpdateVehicleInput
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacer::UpdateVehicleInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "UpdateVehicleInput");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacer.GetViewSplitId
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EViewSplitId                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EViewSplitId UUnionRacer::GetViewSplitId() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacer", "GetViewSplitId");
+
+	Params::UnionRacer_GetViewSplitId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRaceReturnDashUI.GetButtonWidget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* UUnionRaceReturnDashUI::GetButtonWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceReturnDashUI", "GetButtonWidget");
+
+	Params::UnionRaceReturnDashUI_GetButtonWidget Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRaceReturnDashUI.SetGaugeParcent
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const float&                            GaugeRate                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceReturnDashUI::SetGaugeParcent(const float& GaugeRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceReturnDashUI", "SetGaugeParcent");
+
+	Params::UnionRaceReturnDashUI_SetGaugeParcent Parms{};
+
+	Parms.GaugeRate = GaugeRate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRaceReturnDashUI.SetReturnDashSetting
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const float&                            Pivot                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float&                            Range                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceReturnDashUI::SetReturnDashSetting(const float& Pivot, const float& Range)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceReturnDashUI", "SetReturnDashSetting");
+
+	Params::UnionRaceReturnDashUI_SetReturnDashSetting Parms{};
+
+	Parms.Pivot = Pivot;
+	Parms.Range = Range;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacerFunction.GetDistance
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   Pos1                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Pos2                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UUnionRacerFunction::GetDistance(const struct FVector& Pos1, const struct FVector& Pos2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetDistance");
+
+	Params::UnionRacerFunction_GetDistance Parms{};
+
+	Parms.Pos1 = std::move(Pos1);
+	Parms.Pos2 = std::move(Pos2);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.GetRacerGroupIndex
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacerFunction::GetRacerGroupIndex(int32 InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRacerGroupIndex");
+
+	Params::UnionRacerFunction_GetRacerGroupIndex Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.GetRacerIndexByDriverID
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacerFunction::GetRacerIndexByDriverID(EDriverId DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRacerIndexByDriverID");
+
+	Params::UnionRacerFunction_GetRacerIndexByDriverID Parms{};
+
+	Parms.DriverId = DriverId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.GetRacerIndexByPlayerID
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacerFunction::GetRacerIndexByPlayerID(int32 PlayerId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRacerIndexByPlayerID");
+
+	Params::UnionRacerFunction_GetRacerIndexByPlayerID Parms{};
+
+	Parms.PlayerId = PlayerId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.GetRankingSkipInterval
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UUnionRacerFunction::GetRankingSkipInterval()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRankingSkipInterval");
+
+	Params::UnionRacerFunction_GetRankingSkipInterval Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.GetRankUpGaugeSpeed
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UUnionRacerFunction::GetRankUpGaugeSpeed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRankUpGaugeSpeed");
+
+	Params::UnionRacerFunction_GetRankUpGaugeSpeed Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.GetUnionRacers
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRacers*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRacers* UUnionRacerFunction::GetUnionRacers()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetUnionRacers");
+
+	Params::UnionRacerFunction_GetUnionRacers Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.IsInScreen
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const class APlayerController*          PlayerController                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Position                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacerFunction::IsInScreen(const class APlayerController* PlayerController, const struct FVector& Position)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "IsInScreen");
+
+	Params::UnionRacerFunction_IsInScreen Parms{};
+
+	Parms.PlayerController = PlayerController;
+	Parms.Position = std::move(Position);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacerFunction.IsSameGroup
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRacerIndexA                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InRacerIndexB                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacerFunction::IsSameGroup(int32 InRacerIndexA, int32 InRacerIndexB)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacerFunction", "IsSameGroup");
+
+	Params::UnionRacerFunction_IsSameGroup Parms{};
+
+	Parms.InRacerIndexA = InRacerIndexA;
+	Parms.InRacerIndexB = InRacerIndexB;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.RacerReactionDataAsset.Import
+// (Final, Native, Public)
+
+void URacerReactionDataAsset::Import()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RacerReactionDataAsset", "Import");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RacerReactionInfoDataAsset.Import
+// (Final, Native, Public)
+
+void URacerReactionInfoDataAsset::Import()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RacerReactionInfoDataAsset", "Import");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.RacerReactionTextDataAsset.Import
+// (Final, Native, Public)
+
+void URacerReactionTextDataAsset::Import()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RacerReactionTextDataAsset", "Import");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.GetDriverIdByRacerIndex
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const int32                             InRacerIndex                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDriverId                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EDriverId UUnionRacers::GetDriverIdByRacerIndex(const int32 InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionRacers", "GetDriverIdByRacerIndex");
+
+	Params::UnionRacers_GetDriverIdByRacerIndex Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.ApplyPauseInputs
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacers::ApplyPauseInputs()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "ApplyPauseInputs");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.ApplyVehicleInputs
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacers::ApplyVehicleInputs()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "ApplyVehicleInputs");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.ChangeVehicleDisplayMode
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EVehicleDisplayMode                     InVehicleDisplayMode                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::ChangeVehicleDisplayMode(int32 InRacerIndex, EVehicleDisplayMode InVehicleDisplayMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "ChangeVehicleDisplayMode");
+
+	Params::UnionRacers_ChangeVehicleDisplayMode Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+	Parms.InVehicleDisplayMode = InVehicleDisplayMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.ClearVehicles
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacers::ClearVehicles()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "ClearVehicles");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.Destroy
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacers::Destroy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "Destroy");
+
+	Params::UnionRacers_Destroy Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.ExecTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::ExecTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "ExecTick");
+
+	Params::UnionRacers_ExecTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionRun.UnionRacers.GetLocalPlayers
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<class UUnionRacer*>*             OutRacers                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UUnionRacers::GetLocalPlayers(TArray<class UUnionRacer*>* OutRacers)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetLocalPlayers");
+
+	Params::UnionRacers_GetLocalPlayers Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutRacers != nullptr)
+		*OutRacers = std::move(Parms.OutRacers);
+}
+
+
+// Function UnionRun.UnionRacers.GetPlayerRank
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetPlayerRank(int32 PlayerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetPlayerRank");
+
+	Params::UnionRacers_GetPlayerRank Parms{};
+
+	Parms.PlayerIndex = PlayerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRaceHUDRef
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRaceUI*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRaceUI* UUnionRacers::GetRaceHUDRef()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRaceHUDRef");
+
+	Params::UnionRacers_GetRaceHUDRef Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRaceLapInfo
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionRaceLapInfo*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRaceLapInfo* UUnionRacers::GetRaceLapInfo(const int32& InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRaceLapInfo");
+
+	Params::UnionRacers_GetRaceLapInfo Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRacer
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionRacer*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRacer* UUnionRacers::GetRacer(int32 InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRacer");
+
+	Params::UnionRacers_GetRacer Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRacer3DPositionAndDomainNumber
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDomainNumber*                          DomainNum                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector                    ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const struct FVector UUnionRacers::GetRacer3DPositionAndDomainNumber(int32 Index_0, EDomainNumber* DomainNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRacer3DPositionAndDomainNumber");
+
+	Params::UnionRacers_GetRacer3DPositionAndDomainNumber Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (DomainNum != nullptr)
+		*DomainNum = Parms.DomainNum;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRacerIndexByRank
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            InRank                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetRacerIndexByRank(const int32& InRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRacerIndexByRank");
+
+	Params::UnionRacers_GetRacerIndexByRank Parms{};
+
+	Parms.InRank = InRank;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRacerRank
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetRacerRank(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRacerRank");
+
+	Params::UnionRacers_GetRacerRank Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRacerSituationObject
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionRaceSituationObject*        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRaceSituationObject* UUnionRacers::GetRacerSituationObject(int32 InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRacerSituationObject");
+
+	Params::UnionRacers_GetRacerSituationObject Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRacerStatusObject
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionRacerStatusObject*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionRacerStatusObject* UUnionRacers::GetRacerStatusObject(int32 InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRacerStatusObject");
+
+	Params::UnionRacers_GetRacerStatusObject Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetTestRaceCount
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetTestRaceCount()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetTestRaceCount");
+
+	Params::UnionRacers_GetTestRaceCount Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.HidePlayerNameHUD
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacers::HidePlayerNameHUD()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "HidePlayerNameHUD");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.InitTestRace
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacers::InitTestRace()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "InitTestRace");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.IsOfflinePlayer
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRacer*                      Racer                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacers::IsOfflinePlayer(class UUnionRacer* Racer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "IsOfflinePlayer");
+
+	Params::UnionRacers_IsOfflinePlayer Parms{};
+
+	Parms.Racer = Racer;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.IsOnlineCom
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRacer*                      Racer                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacers::IsOnlineCom(class UUnionRacer* Racer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "IsOnlineCom");
+
+	Params::UnionRacers_IsOnlineCom Parms{};
+
+	Parms.Racer = Racer;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.IsPlayer
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionRacer*                      Racer                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UUnionRacers::IsPlayer(class UUnionRacer* Racer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "IsPlayer");
+
+	Params::UnionRacers_IsPlayer Parms{};
+
+	Parms.Racer = Racer;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.SetLinkPlayerControllerIndexToRacerIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            PlayerControllerIndex                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::SetLinkPlayerControllerIndexToRacerIndex(const int32& PlayerControllerIndex, const int32& InRacerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "SetLinkPlayerControllerIndexToRacerIndex");
+
+	Params::UnionRacers_SetLinkPlayerControllerIndexToRacerIndex Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.SetRaceLapInfo
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionRaceLapInfo*                InRaceLapInfo                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::SetRaceLapInfo(const int32& InRacerIndex, class UUnionRaceLapInfo* InRaceLapInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "SetRaceLapInfo");
+
+	Params::UnionRacers_SetRaceLapInfo Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+	Parms.InRaceLapInfo = InRaceLapInfo;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.SetTickable
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bTickable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::SetTickable(bool bTickable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "SetTickable");
+
+	Params::UnionRacers_SetTickable Parms{};
+
+	Parms.bTickable = bTickable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.SetVehicle
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APawn*                            InVehicle                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::SetVehicle(const int32& InRacerIndex, class APawn* InVehicle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "SetVehicle");
+
+	Params::UnionRacers_SetVehicle Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+	Parms.InVehicle = InVehicle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.UnionRacers_SetTimerDelegate
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TDelegate<void()>                       Delegate                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bLooping                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTimerHandle                     ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FTimerHandle UUnionRacers::UnionRacers_SetTimerDelegate(TDelegate<void()> Delegate, float Time, bool bLooping)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "UnionRacers_SetTimerDelegate");
+
+	Params::UnionRacers_UnionRacers_SetTimerDelegate Parms{};
+
+	Parms.Delegate = Delegate;
+	Parms.Time = Time;
+	Parms.bLooping = bLooping;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.UpdateBaggage
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::UpdateBaggage(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "UpdateBaggage");
+
+	Params::UnionRacers_UpdateBaggage Parms{};
+
+	Parms.Delta = Delta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.UpdateDomain
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::UpdateDomain(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "UpdateDomain");
+
+	Params::UnionRacers_UpdateDomain Parms{};
+
+	Parms.Delta = Delta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.UpdatePlayerNameHUD
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::UpdatePlayerNameHUD(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "UpdatePlayerNameHUD");
+
+	Params::UnionRacers_UpdatePlayerNameHUD Parms{};
+
+	Parms.Delta = Delta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.UpdateTestRace
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::UpdateTestRace(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "UpdateTestRace");
+
+	Params::UnionRacers_UpdateTestRace Parms{};
+
+	Parms.Delta = Delta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.UpdateVehicleInputs
+// (Final, Native, Public, BlueprintCallable)
+
+void UUnionRacers::UpdateVehicleInputs()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "UpdateVehicleInputs");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.UpdateVehicles
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRacers::UpdateVehicles(float Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "UpdateVehicles");
+
+	Params::UnionRacers_UpdateVehicles Parms{};
+
+	Parms.Delta = Delta;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.UnionRacers.GetGamePauseOwnerPlayerControllerIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetGamePauseOwnerPlayerControllerIndex() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetGamePauseOwnerPlayerControllerIndex");
+
+	Params::UnionRacers_GetGamePauseOwnerPlayerControllerIndex Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetGamePauseOwnerRacerIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetGamePauseOwnerRacerIndex() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetGamePauseOwnerRacerIndex");
+
+	Params::UnionRacers_GetGamePauseOwnerRacerIndex Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetPlayerControllerIndexByRacerIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetPlayerControllerIndexByRacerIndex(const int32& InRacerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetPlayerControllerIndexByRacerIndex");
+
+	Params::UnionRacers_GetPlayerControllerIndexByRacerIndex Parms{};
+
+	Parms.InRacerIndex = InRacerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionRun.UnionRacers.GetRacerIndexByPlayerControllerIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const int32&                            PlayerControllerIndex                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UUnionRacers::GetRacerIndexByPlayerControllerIndex(const int32& PlayerControllerIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRacers", "GetRacerIndexByPlayerControllerIndex");
+
+	Params::UnionRacers_GetRacerIndexByPlayerControllerIndex Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -18227,1116 +25495,6 @@ bool UUnionRacerStatusObject::IsTSRKeyAssignEnabled() const
 }
 
 
-// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickInfoAndFireAnimation
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   SuccessBonusCount                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsGhostView                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubAirTrickInfo::SetAirTrickInfoAndFireAnimation(int32 SuccessCount, int32 SuccessBonusCount, bool IsGhostView)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAirTrickInfo", "SetAirTrickInfoAndFireAnimation");
-
-	Params::RaceUISubAirTrickInfo_SetAirTrickInfoAndFireAnimation Parms{};
-
-	Parms.SuccessCount = SuccessCount;
-	Parms.SuccessBonusCount = SuccessBonusCount;
-	Parms.IsGhostView = IsGhostView;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubAirTrickInfo.SetAirTrickTextInfo
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UImage*                           Tex_1000                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UImage*                           Tex_0100                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UImage*                           Tex_0010                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UImage*                           Tex_0001                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UImage*                           Tex_Unit                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubAirTrickInfo::SetAirTrickTextInfo(int32 SuccessCount, class UImage* Tex_1000, class UImage* Tex_0100, class UImage* Tex_0010, class UImage* Tex_0001, class UImage* Tex_Unit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAirTrickInfo", "SetAirTrickTextInfo");
-
-	Params::RaceUISubAirTrickInfo_SetAirTrickTextInfo Parms{};
-
-	Parms.SuccessCount = SuccessCount;
-	Parms.Tex_1000 = Tex_1000;
-	Parms.Tex_0100 = Tex_0100;
-	Parms.Tex_0010 = Tex_0010;
-	Parms.Tex_0001 = Tex_0001;
-	Parms.Tex_Unit = Tex_Unit;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickBonusValue
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URaceUISubAirTrickInfo::GetAirTrickBonusValue(int32 SuccessCount) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAirTrickInfo", "GetAirTrickBonusValue");
-
-	Params::RaceUISubAirTrickInfo_GetAirTrickBonusValue Parms{};
-
-	Parms.SuccessCount = SuccessCount;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubAirTrickInfo.GetAirTrickValue
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   SuccessCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URaceUISubAirTrickInfo::GetAirTrickValue(int32 SuccessCount) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubAirTrickInfo", "GetAirTrickValue");
-
-	Params::RaceUISubAirTrickInfo_GetAirTrickValue Parms{};
-
-	Parms.SuccessCount = SuccessCount;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.InitItemEnemyApproachSetting
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const float&                            InMaxScale                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EUnionAttackItemInfoType                AttackItemInfoType                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const uint8&                            AttackItemId                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubApproachWarning::InitItemEnemyApproachSetting(const float& InMaxScale, EUnionAttackItemInfoType AttackItemInfoType, const uint8& AttackItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "InitItemEnemyApproachSetting");
-
-	Params::RaceUISubApproachWarning_InitItemEnemyApproachSetting Parms{};
-
-	Parms.InMaxScale = InMaxScale;
-	Parms.AttackItemInfoType = AttackItemInfoType;
-	Parms.AttackItemId = AttackItemId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.InitRacerApproachSetting
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceUISubApproachWarning::InitRacerApproachSetting()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "InitRacerApproachSetting");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.OnPause
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bInPause                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubApproachWarning::OnPause(bool bInPause)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "OnPause");
-
-	Params::RaceUISubApproachWarning_OnPause Parms{};
-
-	Parms.bInPause = bInPause;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.OnRemoveApproachWidget
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceUISubApproachWarning::OnRemoveApproachWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "OnRemoveApproachWidget");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.SetAttackTypeandId
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const EUnionAttackItemInfoType&         InAttackType                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const EItemId&                          InItemId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubApproachWarning::SetAttackTypeandId(const EUnionAttackItemInfoType& InAttackType, const EItemId& InItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "SetAttackTypeandId");
-
-	Params::RaceUISubApproachWarning_SetAttackTypeandId Parms{};
-
-	Parms.InAttackType = InAttackType;
-	Parms.InItemId = InItemId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.SetDriverId
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubApproachWarning::SetDriverId(EDriverId DriverId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "SetDriverId");
-
-	Params::RaceUISubApproachWarning_SetDriverId Parms{};
-
-	Parms.DriverId = DriverId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.SetItemId
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            InItemId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubApproachWarning::SetItemId(const int32& InItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "SetItemId");
-
-	Params::RaceUISubApproachWarning_SetItemId Parms{};
-
-	Parms.InItemId = InItemId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.UpdateItemEnemyApproach
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const float&                            ValueCM                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubApproachWarning::UpdateItemEnemyApproach(const float& ValueCM)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "UpdateItemEnemyApproach");
-
-	Params::RaceUISubApproachWarning_UpdateItemEnemyApproach Parms{};
-
-	Parms.ValueCM = ValueCM;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubApproachWarning.UpdateRacerApproach
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const float&                            ValueCM                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubApproachWarning::UpdateRacerApproach(const float& ValueCM)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubApproachWarning", "UpdateRacerApproach");
-
-	Params::RaceUISubApproachWarning_UpdateRacerApproach Parms{};
-
-	Parms.ValueCM = ValueCM;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacerFunction.GetDistance
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   Pos1                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Pos2                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UUnionRacerFunction::GetDistance(const struct FVector& Pos1, const struct FVector& Pos2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetDistance");
-
-	Params::UnionRacerFunction_GetDistance Parms{};
-
-	Parms.Pos1 = std::move(Pos1);
-	Parms.Pos2 = std::move(Pos2);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.GetRacerGroupIndex
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacerFunction::GetRacerGroupIndex(int32 InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRacerGroupIndex");
-
-	Params::UnionRacerFunction_GetRacerGroupIndex Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.GetRacerIndexByDriverID
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacerFunction::GetRacerIndexByDriverID(EDriverId DriverId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRacerIndexByDriverID");
-
-	Params::UnionRacerFunction_GetRacerIndexByDriverID Parms{};
-
-	Parms.DriverId = DriverId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.GetRacerIndexByPlayerID
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacerFunction::GetRacerIndexByPlayerID(int32 PlayerId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRacerIndexByPlayerID");
-
-	Params::UnionRacerFunction_GetRacerIndexByPlayerID Parms{};
-
-	Parms.PlayerId = PlayerId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.GetRankingSkipInterval
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UUnionRacerFunction::GetRankingSkipInterval()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRankingSkipInterval");
-
-	Params::UnionRacerFunction_GetRankingSkipInterval Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.GetRankUpGaugeSpeed
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UUnionRacerFunction::GetRankUpGaugeSpeed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetRankUpGaugeSpeed");
-
-	Params::UnionRacerFunction_GetRankUpGaugeSpeed Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.GetUnionRacers
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRacers*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRacers* UUnionRacerFunction::GetUnionRacers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "GetUnionRacers");
-
-	Params::UnionRacerFunction_GetUnionRacers Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.IsInScreen
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const class APlayerController*          PlayerController                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Position                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionRacerFunction::IsInScreen(const class APlayerController* PlayerController, const struct FVector& Position)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "IsInScreen");
-
-	Params::UnionRacerFunction_IsInScreen Parms{};
-
-	Parms.PlayerController = PlayerController;
-	Parms.Position = std::move(Position);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacerFunction.IsSameGroup
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRacerIndexA                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InRacerIndexB                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionRacerFunction::IsSameGroup(int32 InRacerIndexA, int32 InRacerIndexB)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacerFunction", "IsSameGroup");
-
-	Params::UnionRacerFunction_IsSameGroup Parms{};
-
-	Parms.InRacerIndexA = InRacerIndexA;
-	Parms.InRacerIndexB = InRacerIndexB;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBasicOperation.IsKeyboard
-// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubBasicOperation::IsKeyboard() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBasicOperation", "IsKeyboard");
-
-	Params::RaceUISubBasicOperation_IsKeyboard Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRaceHitInfoGroup.SetItemIdIndex_Impl
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InItemIdIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceHitInfoGroup::SetItemIdIndex_Impl(int32 InItemIdIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceHitInfoGroup", "SetItemIdIndex_Impl");
-
-	Params::UnionRaceHitInfoGroup_SetItemIdIndex_Impl Parms{};
-
-	Parms.InItemIdIndex = InItemIdIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceHitInfoGroup.UpdateHitInfoGroup
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceHitInfoGroup::UpdateHitInfoGroup(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceHitInfoGroup", "UpdateHitInfoGroup");
-
-	Params::UnionRaceHitInfoGroup_UpdateHitInfoGroup Parms{};
-
-	Parms.Delta = Delta;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetControllerType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsNotSetKey                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EBtnGuidePlatFormController             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EBtnGuidePlatFormController URaceUISubBtnGuide::GetControllerType(int32 PlayerControllerIndex, bool IsNotSetKey)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetControllerType");
-
-	Params::RaceUISubBtnGuide_GetControllerType Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-	Parms.IsNotSetKey = IsNotSetKey;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetUseItemKey
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubBtnGuide::GetUseItemKey(int32 PlayerControllerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetUseItemKey");
-
-	Params::RaceUISubBtnGuide_GetUseItemKey Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.SetUseItemKey
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FKey&                      UseItemKey                                             (ConstParm, Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubBtnGuide::SetUseItemKey(const struct FKey& UseItemKey)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "SetUseItemKey");
-
-	Params::RaceUISubBtnGuide_SetUseItemKey Parms{};
-
-	Parms.UseItemKey = std::move(UseItemKey);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetFlightGuideKey
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bSuggestUpInput                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FKey URaceUISubBtnGuide::GetFlightGuideKey(int32 PlayerControllerIndex, bool bSuggestUpInput) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetFlightGuideKey");
-
-	Params::RaceUISubBtnGuide_GetFlightGuideKey Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-	Parms.bSuggestUpInput = bSuggestUpInput;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetKeyDisplayName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-class FText URaceUISubBtnGuide::GetKeyDisplayName(const struct FKey& InKey, int32 PlayerControllerIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetKeyDisplayName");
-
-	Params::RaceUISubBtnGuide_GetKeyDisplayName Parms{};
-
-	Parms.InKey = std::move(InKey);
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetMouseButtonIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FKey&                      InKey                                                  (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URaceUISubBtnGuide::GetMouseButtonIndex(const struct FKey& InKey) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetMouseButtonIndex");
-
-	Params::RaceUISubBtnGuide_GetMouseButtonIndex Parms{};
-
-	Parms.InKey = std::move(InKey);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetReleaseEffectKey
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FKey URaceUISubBtnGuide::GetReleaseEffectKey(int32 PlayerControllerIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetReleaseEffectKey");
-
-	Params::RaceUISubBtnGuide_GetReleaseEffectKey Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetSteerKey
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   SteerNo                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FKey URaceUISubBtnGuide::GetSteerKey(int32 PlayerControllerIndex, int32 SteerNo) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetSteerKey");
-
-	Params::RaceUISubBtnGuide_GetSteerKey Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-	Parms.SteerNo = SteerNo;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.GetUseItemKeyPC
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FKey URaceUISubBtnGuide::GetUseItemKeyPC(int32 PlayerControllerIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "GetUseItemKeyPC");
-
-	Params::RaceUISubBtnGuide_GetUseItemKeyPC Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubBtnGuide.IsKeyboard
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubBtnGuide::IsKeyboard() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubBtnGuide", "IsKeyboard");
-
-	Params::RaceUISubBtnGuide_IsKeyboard Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RacerReactionTextDataAsset.Import
-// (Final, Native, Public)
-
-void URacerReactionTextDataAsset::Import()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RacerReactionTextDataAsset", "Import");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubCourseMapIcon.SetReaderFlag
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    InReader                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubCourseMapIcon::SetReaderFlag(bool InReader)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubCourseMapIcon", "SetReaderFlag");
-
-	Params::RaceUISubCourseMapIcon_SetReaderFlag Parms{};
-
-	Parms.InReader = InReader;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubGadgetIcon.SetGadgetId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EGadgetId                               InGadgetId                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubGadgetIcon::SetGadgetId(EGadgetId InGadgetId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubGadgetIcon", "SetGadgetId");
-
-	Params::RaceUISubGadgetIcon_SetGadgetId Parms{};
-
-	Parms.InGadgetId = InGadgetId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubGadgetIcon.SetIconMaterial
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   IconIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubGadgetIcon::SetIconMaterial(int32 IconIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubGadgetIcon", "SetIconMaterial");
-
-	Params::RaceUISubGadgetIcon_SetIconMaterial Parms{};
-
-	Parms.IconIndex = IconIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubGadgetIcon.GetGadgetId
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EGadgetId                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EGadgetId URaceUISubGadgetIcon::GetGadgetId() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubGadgetIcon", "GetGadgetId");
-
-	Params::RaceUISubGadgetIcon_GetGadgetId Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubRing.SetCurrentRingCount
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            NewRingCount                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubRing::SetCurrentRingCount(const int32& NewRingCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubRing", "SetCurrentRingCount");
-
-	Params::RaceUISubRing_SetCurrentRingCount Parms{};
-
-	Parms.NewRingCount = NewRingCount;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubRing.SetParams
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubRing::SetParams(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubRing", "SetParams");
-
-	Params::RaceUISubRing_SetParams Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubRing.SetRingBackColor
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsGroup                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsLocalMulti                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubRing::SetRingBackColor(int32 Index_0, bool IsGroup, bool IsLocalMulti)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubRing", "SetRingBackColor");
-
-	Params::RaceUISubRing_SetRingBackColor Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.IsGroup = IsGroup;
-	Parms.IsLocalMulti = IsLocalMulti;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function UnionRun.UnionRaceSituationObject.IsFootCutting
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -19900,5783 +26058,6 @@ float UUnionRaceSituationObject::GetRivalDistDiff() const
 		Func = Class->GetFunction("UnionRaceSituationObject", "GetRivalDistDiff");
 
 	Params::UnionRaceSituationObject_GetRivalDistDiff Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubGroupRing.SetRingCharaIcon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubGroupRing::SetRingCharaIcon(EDriverId DriverId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubGroupRing", "SetRingCharaIcon");
-
-	Params::RaceUISubGroupRing_SetRingCharaIcon Parms{};
-
-	Parms.DriverId = DriverId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubHitInfo.SetCharaIndex
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsRival                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubHitInfo::SetCharaIndex(int32 Index_0, bool IsRival)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubHitInfo", "SetCharaIndex");
-
-	Params::RaceUISubHitInfo_SetCharaIndex Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.IsRival = IsRival;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubHitInfo.SetCOMBackColor
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubHitInfo::SetCOMBackColor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubHitInfo", "SetCOMBackColor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionRun.RaceUISubHitInfo.SetGroupColorMaterial
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubHitInfo::SetGroupColorMaterial(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubHitInfo", "SetGroupColorMaterial");
-
-	Params::RaceUISubHitInfo_SetGroupColorMaterial Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubHitInfo.SetLocalPlayerColorMaterial
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubHitInfo::SetLocalPlayerColorMaterial(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubHitInfo", "SetLocalPlayerColorMaterial");
-
-	Params::RaceUISubHitInfo_SetLocalPlayerColorMaterial Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubHitInfo.SetLostItemIdIndex_Implement
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InItemIdIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubHitInfo::SetLostItemIdIndex_Implement(int32 InItemIdIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubHitInfo", "SetLostItemIdIndex_Implement");
-
-	Params::RaceUISubHitInfo_SetLostItemIdIndex_Implement Parms{};
-
-	Parms.InItemIdIndex = InItemIdIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubHitInfo.SetPlatformIcon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ECrossplayPlatform                      Platform                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubHitInfo::SetPlatformIcon(ECrossplayPlatform Platform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubHitInfo", "SetPlatformIcon");
-
-	Params::RaceUISubHitInfo_SetPlatformIcon Parms{};
-
-	Parms.Platform = Platform;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubHitInfo.SwitchBaseUI
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsRival                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsPowerRival                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubHitInfo::SwitchBaseUI(bool IsRival, bool IsPowerRival)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubHitInfo", "SwitchBaseUI");
-
-	Params::RaceUISubHitInfo_SwitchBaseUI Parms{};
-
-	Parms.IsRival = IsRival;
-	Parms.IsPowerRival = IsPowerRival;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RacerReactionDataAsset.Import
-// (Final, Native, Public)
-
-void URacerReactionDataAsset::Import()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RacerReactionDataAsset", "Import");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.CloseLottery
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::CloseLottery()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "CloseLottery");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.DisplayHideAnim
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Display                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::DisplayHideAnim(bool Display)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "DisplayHideAnim");
-
-	Params::RaceUISubItemIcon_DisplayHideAnim Parms{};
-
-	Parms.Display = Display;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.FireUseAnim
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceUISubItemIcon::FireUseAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "FireUseAnim");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.GetRandomLotteryDisplayItemId
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// uint8                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-uint8 URaceUISubItemIcon::GetRandomLotteryDisplayItemId()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "GetRandomLotteryDisplayItemId");
-
-	Params::RaceUISubItemIcon_GetRandomLotteryDisplayItemId Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.ItemLostAnimStart
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bHideIcon                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::ItemLostAnimStart(bool bHideIcon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "ItemLostAnimStart");
-
-	Params::RaceUISubItemIcon_ItemLostAnimStart Parms{};
-
-	Parms.bHideIcon = bHideIcon;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.LotteryAnimEnd
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::LotteryAnimEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "LotteryAnimEnd");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.LotteryAnimStart
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::LotteryAnimStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "LotteryAnimStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.LotteryDecideFinished
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::LotteryDecideFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "LotteryDecideFinished");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.LotterySeqStart
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    LotterySound                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::LotterySeqStart(bool LotterySound)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "LotterySeqStart");
-
-	Params::RaceUISubItemIcon_LotterySeqStart Parms{};
-
-	Parms.LotterySound = LotterySound;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.OnFinishedDecide
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::OnFinishedDecide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "OnFinishedDecide");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.OnFinishedInAnim
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::OnFinishedInAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "OnFinishedInAnim");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.OnFinishedOutAnim
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::OnFinishedOutAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "OnFinishedOutAnim");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.PlayLoopAnim
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::PlayLoopAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "PlayLoopAnim");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetAttributeColorIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InAttributeIndex                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetAttributeColorIndex(int32 InAttributeIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetAttributeColorIndex");
-
-	Params::RaceUISubItemIcon_SetAttributeColorIndex Parms{};
-
-	Parms.InAttributeIndex = InAttributeIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetGaugeType
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bRemainCountGauge                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetGaugeType(bool bRemainCountGauge)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetGaugeType");
-
-	Params::RaceUISubItemIcon_SetGaugeType Parms{};
-
-	Parms.bRemainCountGauge = bRemainCountGauge;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetItemIdIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InItemIdIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InRemainCount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bIgnoreAttribute                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bOnLottery                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetItemIdIndex(int32 InItemIdIndex, int32 InRemainCount, bool bIgnoreAttribute, bool bOnLottery)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetItemIdIndex");
-
-	Params::RaceUISubItemIcon_SetItemIdIndex Parms{};
-
-	Parms.InItemIdIndex = InItemIdIndex;
-	Parms.InRemainCount = InRemainCount;
-	Parms.bIgnoreAttribute = bIgnoreAttribute;
-	Parms.bOnLottery = bOnLottery;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetItemIdTexture
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TMap<EItemId, class UTexture2D*>& InItemId_TextureMap                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetItemIdTexture(const TMap<EItemId, class UTexture2D*>& InItemId_TextureMap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetItemIdTexture");
-
-	Params::RaceUISubItemIcon_SetItemIdTexture Parms{};
-
-	Parms.InItemId_TextureMap = std::move(InItemId_TextureMap);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetLotteryDisplayItemIds
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const TArray<uint8>&                    ItemIds                                                (ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetLotteryDisplayItemIds(const TArray<uint8>& ItemIds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetLotteryDisplayItemIds");
-
-	Params::RaceUISubItemIcon_SetLotteryDisplayItemIds Parms{};
-
-	Parms.ItemIds = std::move(ItemIds);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetRemainCountGauge
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Count                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   MaxCount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetRemainCountGauge(int32 Count, int32 MaxCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetRemainCountGauge");
-
-	Params::RaceUISubItemIcon_SetRemainCountGauge Parms{};
-
-	Parms.Count = Count;
-	Parms.MaxCount = MaxCount;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetRingNum
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRingCount                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetRingNum(int32 InRingCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetRingNum");
-
-	Params::RaceUISubItemIcon_SetRingNum Parms{};
-
-	Parms.InRingCount = InRingCount;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetRingNumVisible
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemIcon::SetRingNumVisible(bool bVisible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetRingNumVisible");
-
-	Params::RaceUISubItemIcon_SetRingNumVisible Parms{};
-
-	Parms.bVisible = bVisible;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.SetupPackageRing
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::SetupPackageRing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "SetupPackageRing");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.StartCountDownBlink
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::StartCountDownBlink()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "StartCountDownBlink");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemIcon.StopCountDownBlink
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void URaceUISubItemIcon::StopCountDownBlink()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemIcon", "StopCountDownBlink");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubItemSummonButton.SetSummonInputKey
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsKeyboard                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubItemSummonButton::SetSummonInputKey(const struct FKey& Key, bool IsKeyboard, int32 PlayerControllerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubItemSummonButton", "SetSummonInputKey");
-
-	Params::RaceUISubItemSummonButton_SetSummonInputKey Parms{};
-
-	Parms.Key = std::move(Key);
-	Parms.IsKeyboard = IsKeyboard;
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubLap.InitializeLapCount
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UTextureRenderTarget2D*           InRenderTarget                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubLap::InitializeLapCount(class UTextureRenderTarget2D* InRenderTarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubLap", "InitializeLapCount");
-
-	Params::RaceUISubLap_InitializeLapCount Parms{};
-
-	Parms.InRenderTarget = InRenderTarget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubLap.SetCurrentLap
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubLap::SetCurrentLap(int32 Lap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubLap", "SetCurrentLap");
-
-	Params::RaceUISubLap_SetCurrentLap Parms{};
-
-	Parms.Lap = Lap;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubLap.SetCurrentLapMID
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubLap::SetCurrentLapMID(class UMaterialInstanceDynamic* Mid)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubLap", "SetCurrentLapMID");
-
-	Params::RaceUISubLap_SetCurrentLapMID Parms{};
-
-	Parms.Mid = Mid;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubLap.SetMaxLap
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubLap::SetMaxLap(int32 Lap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubLap", "SetMaxLap");
-
-	Params::RaceUISubLap_SetMaxLap Parms{};
-
-	Parms.Lap = Lap;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubLap.SetMaxLapMID
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubLap::SetMaxLapMID(class UMaterialInstanceDynamic* Mid)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubLap", "SetMaxLapMID");
-
-	Params::RaceUISubLap_SetMaxLapMID Parms{};
-
-	Parms.Mid = Mid;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubLap.UpdateLapCount
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   InDelta                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubLap::UpdateLapCount(float InDelta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubLap", "UpdateLapCount");
-
-	Params::RaceUISubLap_UpdateLapCount Parms{};
-
-	Parms.InDelta = InDelta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubReturnDashGauge.GetButtonWidget
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* URaceUISubReturnDashGauge::GetButtonWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubReturnDashGauge", "GetButtonWidget");
-
-	Params::RaceUISubReturnDashGauge_GetButtonWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetDashInputKey
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubReturnDashGauge::SetDashInputKey(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetDashInputKey");
-
-	Params::RaceUISubReturnDashGauge_SetDashInputKey Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetGaugeParcent
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   GaugeRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubReturnDashGauge::SetGaugeParcent(float GaugeRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetGaugeParcent");
-
-	Params::RaceUISubReturnDashGauge_SetGaugeParcent Parms{};
-
-	Parms.GaugeRate = GaugeRate;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetGaugePivotAndRange
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UImage*                           ImageRef                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   PivotRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   GaugeRateRange                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubReturnDashGauge::SetGaugePivotAndRange(class UImage* ImageRef, float PivotRate, float GaugeRateRange)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetGaugePivotAndRange");
-
-	Params::RaceUISubReturnDashGauge_SetGaugePivotAndRange Parms{};
-
-	Parms.ImageRef = ImageRef;
-	Parms.PivotRate = PivotRate;
-	Parms.GaugeRateRange = GaugeRateRange;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubReturnDashGauge.SetReturnDashSetting
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const float&                            Pivot                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            Range                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubReturnDashGauge::SetReturnDashSetting(const float& Pivot, const float& Range)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubReturnDashGauge", "SetReturnDashSetting");
-
-	Params::RaceUISubReturnDashGauge_SetReturnDashSetting Parms{};
-
-	Parms.Pivot = Pivot;
-	Parms.Range = Range;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubRuleCount.GetCount
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URaceUISubRuleCount::GetCount(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubRuleCount", "GetCount");
-
-	Params::RaceUISubRuleCount_GetCount Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubRuleCount.GetGroupRaceBonusData
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const struct FMenuGroupRaceBonusData    ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-const struct FMenuGroupRaceBonusData URaceUISubRuleCount::GetGroupRaceBonusData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubRuleCount", "GetGroupRaceBonusData");
-
-	Params::RaceUISubRuleCount_GetGroupRaceBonusData Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubRuleCount.SetNewCount
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewCuont                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubRuleCount::SetNewCount(int32 NewCuont)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubRuleCount", "SetNewCount");
-
-	Params::RaceUISubRuleCount_SetNewCount Parms{};
-
-	Parms.NewCuont = NewCuont;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubRuleCount.UpdateRuleCountImpl
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubRuleCount::UpdateRuleCountImpl(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubRuleCount", "UpdateRuleCountImpl");
-
-	Params::RaceUISubRuleCount_UpdateRuleCountImpl Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.GetButtonWidget
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* URaceUISubStartGauge::GetButtonWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "GetButtonWidget");
-
-	Params::RaceUISubStartGauge_GetButtonWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.GetKeyAccel
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FKey                       ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const struct FKey URaceUISubStartGauge::GetKeyAccel(int32 PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "GetKeyAccel");
-
-	Params::RaceUISubStartGauge_GetKeyAccel Parms{};
-
-	Parms.PlayerIndex = PlayerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.IsPlayControlKeyboard
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubStartGauge::IsPlayControlKeyboard(int32 PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "IsPlayControlKeyboard");
-
-	Params::RaceUISubStartGauge_IsPlayControlKeyboard Parms{};
-
-	Parms.PlayerIndex = PlayerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.SetDashInputKey
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubStartGauge::SetDashInputKey(const struct FKey& Key, int32 PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "SetDashInputKey");
-
-	Params::RaceUISubStartGauge_SetDashInputKey Parms{};
-
-	Parms.Key = std::move(Key);
-	Parms.PlayerIndex = PlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.SetGaugeParcent
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   GaugeRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubStartGauge::SetGaugeParcent(float GaugeRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "SetGaugeParcent");
-
-	Params::RaceUISubStartGauge_SetGaugeParcent Parms{};
-
-	Parms.GaugeRate = GaugeRate;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.SetGaugeParcentTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   GaugeRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubStartGauge::SetGaugeParcentTrigger(float GaugeRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "SetGaugeParcentTrigger");
-
-	Params::RaceUISubStartGauge_SetGaugeParcentTrigger Parms{};
-
-	Parms.GaugeRate = GaugeRate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.SetGaugePivotAndRange
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UImage*                           ImageRef                                               (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   PivotRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   GaugeRateRange                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubStartGauge::SetGaugePivotAndRange(class UImage* ImageRef, float PivotRate, float GaugeRateRange)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "SetGaugePivotAndRange");
-
-	Params::RaceUISubStartGauge_SetGaugePivotAndRange Parms{};
-
-	Parms.ImageRef = ImageRef;
-	Parms.PivotRate = PivotRate;
-	Parms.GaugeRateRange = GaugeRateRange;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.SetStartDashParamSetting
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FUnionRaceStartDashParam&  InStartDashParam                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void URaceUISubStartGauge::SetStartDashParamSetting(const struct FUnionRaceStartDashParam& InStartDashParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "SetStartDashParamSetting");
-
-	Params::RaceUISubStartGauge_SetStartDashParamSetting Parms{};
-
-	Parms.InStartDashParam = std::move(InStartDashParam);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubStartGauge.SetStartDashSetting
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const float&                            LV3_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            LV3_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            LV2_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            LV2_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            NG1_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            NG1_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            NG2_PIVOT                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            NG2_RANGE                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubStartGauge::SetStartDashSetting(const float& LV3_PIVOT, const float& LV3_RANGE, const float& LV2_PIVOT, const float& LV2_RANGE, const float& NG1_PIVOT, const float& NG1_RANGE, const float& NG2_PIVOT, const float& NG2_RANGE)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubStartGauge", "SetStartDashSetting");
-
-	Params::RaceUISubStartGauge_SetStartDashSetting Parms{};
-
-	Parms.LV3_PIVOT = LV3_PIVOT;
-	Parms.LV3_RANGE = LV3_RANGE;
-	Parms.LV2_PIVOT = LV2_PIVOT;
-	Parms.LV2_RANGE = LV2_RANGE;
-	Parms.NG1_PIVOT = NG1_PIVOT;
-	Parms.NG1_RANGE = NG1_RANGE;
-	Parms.NG2_PIVOT = NG2_PIVOT;
-	Parms.NG2_RANGE = NG2_RANGE;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubTeamGroup.SetCharaIconNative
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UTexture2D*                       IconTex                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTeamGroup::SetCharaIconNative(class UTexture2D* IconTex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamGroup", "SetCharaIconNative");
-
-	Params::RaceUISubTeamGroup_SetCharaIconNative Parms{};
-
-	Parms.IconTex = IconTex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTeamGroup.SetDispTextYou
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsDisp                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTeamGroup::SetDispTextYou(bool IsDisp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamGroup", "SetDispTextYou");
-
-	Params::RaceUISubTeamGroup_SetDispTextYou Parms{};
-
-	Parms.IsDisp = IsDisp;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTeamGroup.SetRankNative
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTeamGroup::SetRankNative(int32 Rank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamGroup", "SetRankNative");
-
-	Params::RaceUISubTeamGroup_SetRankNative Parms{};
-
-	Parms.Rank = Rank;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTeamHUD.ExecChangeRank
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   PanelIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsDispPlayer                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubTeamHUD::ExecChangeRank(int32 PanelIndex, EDriverId DriverId, bool IsDispPlayer, int32 Rank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamHUD", "ExecChangeRank");
-
-	Params::RaceUISubTeamHUD_ExecChangeRank Parms{};
-
-	Parms.PanelIndex = PanelIndex;
-	Parms.DriverId = DriverId;
-	Parms.IsDispPlayer = IsDispPlayer;
-	Parms.Rank = Rank;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubTeamHUD.ExecPlayChangeRank
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   PanelIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EDriverId                               DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsDispPlayer                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubTeamHUD::ExecPlayChangeRank(int32 PanelIndex, EDriverId DriverId, bool IsDispPlayer, int32 Rank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamHUD", "ExecPlayChangeRank");
-
-	Params::RaceUISubTeamHUD_ExecPlayChangeRank Parms{};
-
-	Parms.PanelIndex = PanelIndex;
-	Parms.DriverId = DriverId;
-	Parms.IsDispPlayer = IsDispPlayer;
-	Parms.Rank = Rank;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubTeamHUD.ExecSetRankOnly
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   PanelIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Rank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool URaceUISubTeamHUD::ExecSetRankOnly(int32 PanelIndex, int32 Rank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamHUD", "ExecSetRankOnly");
-
-	Params::RaceUISubTeamHUD_ExecSetRankOnly Parms{};
-
-	Parms.PanelIndex = PanelIndex;
-	Parms.Rank = Rank;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubTeamHUD.GetTeamRankRough
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 URaceUISubTeamHUD::GetTeamRankRough()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamHUD", "GetTeamRankRough");
-
-	Params::RaceUISubTeamHUD_GetTeamRankRough Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubTeamHUD.SetTeamRank
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   TeamRank                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTeamHUD::SetTeamRank(int32 TeamRank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamHUD", "SetTeamRank");
-
-	Params::RaceUISubTeamHUD_SetTeamRank Parms{};
-
-	Parms.TeamRank = TeamRank;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUISubTeamHUD.UpdateCharaRank
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsForce                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTeamHUD::UpdateCharaRank(bool IsForce)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTeamHUD", "UpdateCharaRank");
-
-	Params::RaceUISubTeamHUD_UpdateCharaRank Parms{};
-
-	Parms.IsForce = IsForce;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTime.SetBestTime
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceUISubTimeTrialTime::SetBestTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetBestTime");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class URichTextBlock*                   TargetTextBlock                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FText&                      TargetName                                             (Parm, NativeAccessSpecifierPublic)
-// int32                                   TargetTime                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsClockCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTimeTrialTime::SetTargetTime(class URichTextBlock* TargetTextBlock, const class FText& TargetName, int32 TargetTime, bool IsClockCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetTargetTime");
-
-	Params::RaceUISubTimeTrialTime_SetTargetTime Parms{};
-
-	Parms.TargetTextBlock = TargetTextBlock;
-	Parms.TargetName = std::move(TargetName);
-	Parms.TargetTime = TargetTime;
-	Parms.IsClockCount = IsClockCount;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTime.SetTargetTime4Best
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class URichTextBlock*                   TargetTextBlock                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUISubTimeTrialTime::SetTargetTime4Best(class URichTextBlock* TargetTextBlock)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetTargetTime4Best");
-
-	Params::RaceUISubTimeTrialTime_SetTargetTime4Best Parms{};
-
-	Parms.TargetTextBlock = TargetTextBlock;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTime.SetVisibilityTime
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceUISubTimeTrialTime::SetVisibilityTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTime", "SetVisibilityTime");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTime.UpdateLapTime
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   Lap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsBestLap                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FRaceUITimeTrialTime             ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FRaceUITimeTrialTime URaceUISubTimeTrialTime::UpdateLapTime(int32 Lap, bool* IsBestLap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTime", "UpdateLapTime");
-
-	Params::RaceUISubTimeTrialTime_UpdateLapTime Parms{};
-
-	Parms.Lap = Lap;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsBestLap != nullptr)
-		*IsBestLap = Parms.IsBestLap;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUISubTimeTrialTime.UpdateTime
-// (Final, Native, Public, BlueprintCallable)
-
-void URaceUISubTimeTrialTime::UpdateTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUISubTimeTrialTime", "UpdateTime");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RaceUITutorialControllerKey.GetTutorialKey
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// ETutorialAction                         tutorialAction                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FKey                       ReturnValue                                            (ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const struct FKey URaceUITutorialControllerKey::GetTutorialKey(ETutorialAction tutorialAction, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUITutorialControllerKey", "GetTutorialKey");
-
-	Params::RaceUITutorialControllerKey_GetTutorialKey Parms{};
-
-	Parms.tutorialAction = tutorialAction;
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RaceUITutorialControllerKey.UpdateHintIndex
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUITutorialControllerKey::UpdateHintIndex(int32 InIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUITutorialControllerKey", "UpdateHintIndex");
-
-	Params::RaceUITutorialControllerKey_UpdateHintIndex Parms{};
-
-	Parms.InIndex = InIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.RaceUITutorialControllerKey.UpdateTutorialIndex
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void URaceUITutorialControllerKey::UpdateTutorialIndex(int32 InIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RaceUITutorialControllerKey", "UpdateTutorialIndex");
-
-	Params::RaceUITutorialControllerKey_UpdateTutorialIndex Parms{};
-
-	Parms.InIndex = InIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.ReplayFixedCameraCollision.CreateCameraObject
-// (Final, Native, Private)
-
-void AReplayFixedCameraCollision::CreateCameraObject()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ReplayFixedCameraCollision", "CreateCameraObject");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ReplayFixedCameraCollision.OnCollisionBaseHit
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// const struct FCollisionHitInfo&         Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AReplayFixedCameraCollision::OnCollisionBaseHit(const struct FCollisionHitInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ReplayFixedCameraCollision", "OnCollisionBaseHit");
-
-	Params::ReplayFixedCameraCollision_OnCollisionBaseHit Parms{};
-
-	Parms.Info = std::move(Info);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ReplayFixedCameraCollision.SetCameraData
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   NewBoxSize                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AReplayFixedCameraCollision::SetCameraData(const struct FVector& NewBoxSize)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ReplayFixedCameraCollision", "SetCameraData");
-
-	Params::ReplayFixedCameraCollision_SetCameraData Parms{};
-
-	Parms.NewBoxSize = std::move(NewBoxSize);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ReplayMoveCameraCollision.OnCollisionBaseHit
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// const struct FCollisionHitInfo&         Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AReplayMoveCameraCollision::OnCollisionBaseHit(const struct FCollisionHitInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ReplayMoveCameraCollision", "OnCollisionBaseHit");
-
-	Params::ReplayMoveCameraCollision_OnCollisionBaseHit Parms{};
-
-	Parms.Info = std::move(Info);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ReplayMoveCameraCollision.SetCameraData
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   NewBoxSize                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AReplayMoveCameraCollision::SetCameraData(const struct FVector& NewBoxSize)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ReplayMoveCameraCollision", "SetCameraData");
-
-	Params::ReplayMoveCameraCollision_SetCameraData Parms{};
-
-	Parms.NewBoxSize = std::move(NewBoxSize);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RingObject.GetFinalLapRingNum
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 ARingObject::GetFinalLapRingNum()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RingObject", "GetFinalLapRingNum");
-
-	Params::RingObject_GetFinalLapRingNum Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RingObject.GetFinalLapRingOffset
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float ARingObject::GetFinalLapRingOffset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RingObject", "GetFinalLapRingOffset");
-
-	Params::RingObject_GetFinalLapRingOffset Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RingObject.IsFinalLapChange
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool ARingObject::IsFinalLapChange()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RingObject", "IsFinalLapChange");
-
-	Params::RingObject_IsFinalLapChange Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.RingObject.SetIsFinalLapChange
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ARingObject::SetIsFinalLapChange(bool flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RingObject", "SetIsFinalLapChange");
-
-	Params::RingObject_SetIsFinalLapChange Parms{};
-
-	Parms.flag = flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RingObject.SetRingType
-// (Final, Native, Public, BlueprintCallable)
-
-void ARingObject::SetRingType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RingObject", "SetRingType");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ShortcutRingObject.GetOverrideCollisionScale
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const float                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const float AShortcutRingObject::GetOverrideCollisionScale()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "GetOverrideCollisionScale");
-
-	Params::ShortcutRingObject_GetOverrideCollisionScale Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.GetRingScale
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const float                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const float AShortcutRingObject::GetRingScale()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "GetRingScale");
-
-	Params::ShortcutRingObject_GetRingScale Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.GetShortcutId
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const int32                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const int32 AShortcutRingObject::GetShortcutId()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "GetShortcutId");
-
-	Params::ShortcutRingObject_GetShortcutId Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.GetShortcutRingType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const EShortcutRingType                 ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const EShortcutRingType AShortcutRingObject::GetShortcutRingType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "GetShortcutRingType");
-
-	Params::ShortcutRingObject_GetShortcutRingType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.GetStageId
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const EStageId                          ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const EStageId AShortcutRingObject::GetStageId()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "GetStageId");
-
-	Params::ShortcutRingObject_GetStageId Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.IsHalfRing
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const bool                              ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const bool AShortcutRingObject::IsHalfRing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "IsHalfRing");
-
-	Params::ShortcutRingObject_IsHalfRing Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.IsUseOverrideCollisionScale
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const bool                              ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const bool AShortcutRingObject::IsUseOverrideCollisionScale()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "IsUseOverrideCollisionScale");
-
-	Params::ShortcutRingObject_IsUseOverrideCollisionScale Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.SetHalfRing
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bHalf                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AShortcutRingObject::SetHalfRing(bool bHalf)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "SetHalfRing");
-
-	Params::ShortcutRingObject_SetHalfRing Parms{};
-
-	Parms.bHalf = bHalf;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ShortcutRingObject.SetRingScale
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Scale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AShortcutRingObject::SetRingScale(float Scale)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "SetRingScale");
-
-	Params::ShortcutRingObject_SetRingScale Parms{};
-
-	Parms.Scale = Scale;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ShortcutRingObject.SetShortcutId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ID                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AShortcutRingObject::SetShortcutId(int32 ID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "SetShortcutId");
-
-	Params::ShortcutRingObject_SetShortcutId Parms{};
-
-	Parms.ID = ID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ShortcutRingObject.SetShortcutRingType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EShortcutRingType                       Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AShortcutRingObject::SetShortcutRingType(EShortcutRingType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "SetShortcutRingType");
-
-	Params::ShortcutRingObject_SetShortcutRingType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ShortcutRingObject.SetTravelRingType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ETravelRingType                         Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AShortcutRingObject::SetTravelRingType(ETravelRingType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "SetTravelRingType");
-
-	Params::ShortcutRingObject_SetTravelRingType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ShortcutRingObject.SetupShortcutRing
-// (Final, Native, Public, BlueprintCallable)
-
-void AShortcutRingObject::SetupShortcutRing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "SetupShortcutRing");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.ShortcutRingObject.GetTravelRingType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// ETravelRingType                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-ETravelRingType AShortcutRingObject::GetTravelRingType() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "GetTravelRingType");
-
-	Params::ShortcutRingObject_GetTravelRingType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.ShortcutRingObject.IsUseAnotherGate
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AShortcutRingObject::IsUseAnotherGate() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShortcutRingObject", "IsUseAnotherGate");
-
-	Params::ShortcutRingObject_IsUseAnotherGate Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.SquidAnimInstance.IsSquidState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// ESquidState                             State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USquidAnimInstance::IsSquidState(ESquidState State) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquidAnimInstance", "IsSquidState");
-
-	Params::SquidAnimInstance_IsSquidState Parms{};
-
-	Parms.State = State;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TowerAnimInstance.OnEnterBreakLoop
-// (Final, Native, Public, BlueprintCallable)
-
-void UTowerAnimInstance::OnEnterBreakLoop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TowerAnimInstance", "OnEnterBreakLoop");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TowerAnimInstance.OnEnterWait
-// (Final, Native, Public, BlueprintCallable)
-
-void UTowerAnimInstance::OnEnterWait()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TowerAnimInstance", "OnEnterWait");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TowerAnimInstance.IsTowerState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// ETowerState                             State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UTowerAnimInstance::IsTowerState(ETowerState State) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TowerAnimInstance", "IsTowerState");
-
-	Params::TowerAnimInstance_IsTowerState Parms{};
-
-	Parms.State = State;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TransformRingObject.GetRingScaleRate
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const float                             ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const float ATransformRingObject::GetRingScaleRate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TransformRingObject", "GetRingScaleRate");
-
-	Params::TransformRingObject_GetRingScaleRate Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.TransformRingObject.SetRingScaleRate
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Rate                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ATransformRingObject::SetRingScaleRate(float Rate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TransformRingObject", "SetRingScaleRate");
-
-	Params::TransformRingObject_SetRingScaleRate Parms{};
-
-	Parms.Rate = Rate;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TransformRingObject.SetTransformRingType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ETransformRingType                      Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ATransformRingObject::SetTransformRingType(ETransformRingType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TransformRingObject", "SetTransformRingType");
-
-	Params::TransformRingObject_SetTransformRingType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TransformRingObject.UpdateParallelMode
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ATransformRingObject::UpdateParallelMode(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TransformRingObject", "UpdateParallelMode");
-
-	Params::TransformRingObject_UpdateParallelMode Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TriggerComponent.OnCollisionBaseHit
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FCollisionHitInfo&         Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void UTriggerComponent::OnCollisionBaseHit(const struct FCollisionHitInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TriggerComponent", "OnCollisionBaseHit");
-
-	Params::TriggerComponent_OnCollisionBaseHit Parms{};
-
-	Parms.Info = std::move(Info);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TriggerComponent.OnCollisionHitResult
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FCollisionHitResultInfo&   Info                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void UTriggerComponent::OnCollisionHitResult(const struct FCollisionHitResultInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TriggerComponent", "OnCollisionHitResult");
-
-	Params::TriggerComponent_OnCollisionHitResult Parms{};
-
-	Parms.Info = std::move(Info);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TriggerComponent.SetSurfaceFlag
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// const struct FUnionSurfaceFlag&         flag                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UTriggerComponent::SetSurfaceFlag(const struct FUnionSurfaceFlag& flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TriggerComponent", "SetSurfaceFlag");
-
-	Params::TriggerComponent_SetSurfaceFlag Parms{};
-
-	Parms.flag = std::move(flag);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.TriggerComponent.SetSurfaceType
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// EUnionSurfaceType                       Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTriggerComponent::SetSurfaceType(EUnionSurfaceType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TriggerComponent", "SetSurfaceType");
-
-	Params::TriggerComponent_SetSurfaceType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetAttackEnemyItemIdIF
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EEnemyItemId                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EEnemyItemId IUnionAttackItemInfoInterface::GetAttackEnemyItemIdIF()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetAttackEnemyItemIdIF");
-
-	Params::UnionAttackItemInfoInterface_GetAttackEnemyItemIdIF Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemIdIF
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EItemId                                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EItemId IUnionAttackItemInfoInterface::GetAttackItemIdIF()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetAttackItemIdIF");
-
-	Params::UnionAttackItemInfoInterface_GetAttackItemIdIF Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EDomainIndex                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EDomainIndex IUnionAttackItemInfoInterface::GetObjectDomainIndex()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectDomainIndex");
-
-	Params::UnionAttackItemInfoInterface_GetObjectDomainIndex Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainLocationUE
-// (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector IUnionAttackItemInfoInterface::GetObjectDomainLocationUE()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectDomainLocationUE");
-
-	Params::UnionAttackItemInfoInterface_GetObjectDomainLocationUE Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectDomainNumber
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EDomainNumber                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EDomainNumber IUnionAttackItemInfoInterface::GetObjectDomainNumber()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectDomainNumber");
-
-	Params::UnionAttackItemInfoInterface_GetObjectDomainNumber Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectLapCount
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 IUnionAttackItemInfoInterface::GetObjectLapCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectLapCount");
-
-	Params::UnionAttackItemInfoInterface_GetObjectLapCount Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectPathIndexDistance
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float IUnionAttackItemInfoInterface::GetObjectPathIndexDistance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectPathIndexDistance");
-
-	Params::UnionAttackItemInfoInterface_GetObjectPathIndexDistance Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDistance
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float IUnionAttackItemInfoInterface::GetObjectRaceDistance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectRaceDistance");
-
-	Params::UnionAttackItemInfoInterface_GetObjectRaceDistance Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectRaceDomainElapsedRatio
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float IUnionAttackItemInfoInterface::GetObjectRaceDomainElapsedRatio()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectRaceDomainElapsedRatio");
-
-	Params::UnionAttackItemInfoInterface_GetObjectRaceDomainElapsedRatio Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetObjectWorldLocation
-// (Native, Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector IUnionAttackItemInfoInterface::GetObjectWorldLocation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetObjectWorldLocation");
-
-	Params::UnionAttackItemInfoInterface_GetObjectWorldLocation Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetSameDomainOnlyFlag
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool IUnionAttackItemInfoInterface::GetSameDomainOnlyFlag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetSameDomainOnlyFlag");
-
-	Params::UnionAttackItemInfoInterface_GetSameDomainOnlyFlag Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetUsingRacerIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 IUnionAttackItemInfoInterface::GetUsingRacerIndex()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetUsingRacerIndex");
-
-	Params::UnionAttackItemInfoInterface_GetUsingRacerIndex Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemMoveToTargetIgnorePathIF
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool IUnionAttackItemInfoInterface::IsAttackItemMoveToTargetIgnorePathIF()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "IsAttackItemMoveToTargetIgnorePathIF");
-
-	Params::UnionAttackItemInfoInterface_IsAttackItemMoveToTargetIgnorePathIF Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemTargetIF
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   checkRacerIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool IUnionAttackItemInfoInterface::IsAttackItemTargetIF(int32 checkRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "IsAttackItemTargetIF");
-
-	Params::UnionAttackItemInfoInterface_IsAttackItemTargetIF Parms{};
-
-	Parms.checkRacerIndex = checkRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.IsAttackItemUsedForBackIF
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool IUnionAttackItemInfoInterface::IsAttackItemUsedForBackIF()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "IsAttackItemUsedForBackIF");
-
-	Params::UnionAttackItemInfoInterface_IsAttackItemUsedForBackIF Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionAttackItemInfoInterface.GetAttackItemInfoTypeIF
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// EUnionAttackItemInfoType                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EUnionAttackItemInfoType IUnionAttackItemInfoInterface::GetAttackItemInfoTypeIF() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionAttackItemInfoInterface", "GetAttackItemInfoTypeIF");
-
-	Params::UnionAttackItemInfoInterface_GetAttackItemInfoTypeIF Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionCameraModifierPostEffect.SetCameraPostEffectParameter
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EUnionCameraModifierPostEffectType      EffectType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             ParameterName                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionCameraModifierPostEffect::SetCameraPostEffectParameter(EUnionCameraModifierPostEffectType EffectType, class FName ParameterName, float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionCameraModifierPostEffect", "SetCameraPostEffectParameter");
-
-	Params::UnionCameraModifierPostEffect_SetCameraPostEffectParameter Parms{};
-
-	Parms.EffectType = EffectType;
-	Parms.ParameterName = ParameterName;
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionDebugStringSubsystem.Draw
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UCanvas*                          InCanvas                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APlayerController*                InPC                                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionDebugStringSubsystem::Draw(class UCanvas* InCanvas, class APlayerController* InPC)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionDebugStringSubsystem", "Draw");
-
-	Params::UnionDebugStringSubsystem_Draw Parms{};
-
-	Parms.InCanvas = InCanvas;
-	Parms.InPC = InPC;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionDebugStringSubsystem.PrintDebugString
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FDebugPrintStringStruct&   DebugString                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UUnionDebugStringSubsystem::PrintDebugString(const struct FDebugPrintStringStruct& DebugString)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionDebugStringSubsystem", "PrintDebugString");
-
-	Params::UnionDebugStringSubsystem_PrintDebugString Parms{};
-
-	Parms.DebugString = std::move(DebugString);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionDebugStringSubsystem.SetDebugStringVisibleFlag
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionDebugStringSubsystem::SetDebugStringVisibleFlag(bool bVisible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionDebugStringSubsystem", "SetDebugStringVisibleFlag");
-
-	Params::UnionDebugStringSubsystem_SetDebugStringVisibleFlag Parms{};
-
-	Parms.bVisible = bVisible;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionItemSkeletalMeshContainer.OnBeginGame
-// (Native, Public, BlueprintCallable)
-
-void UUnionItemSkeletalMeshContainer::OnBeginGame()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionItemSkeletalMeshContainer", "OnBeginGame");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionItemSkeletalMeshContainer.OnBeginItem
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionItemSkeletalMeshContainer::OnBeginItem(class AActor* OwnerActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionItemSkeletalMeshContainer", "OnBeginItem");
-
-	Params::UnionItemSkeletalMeshContainer_OnBeginItem Parms{};
-
-	Parms.OwnerActor = OwnerActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionItemSkeletalMeshContainer.OnEndItem
-// (Native, Public, BlueprintCallable)
-
-void UUnionItemSkeletalMeshContainer::OnEndItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionItemSkeletalMeshContainer", "OnEndItem");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.GetPhysicalSurfaceType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EUnionSurfaceType                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EUnionSurfaceType UUnionPhysicalMaterial::GetPhysicalSurfaceType() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "GetPhysicalSurfaceType");
-
-	Params::UnionPhysicalMaterial_GetPhysicalSurfaceType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.GetSurfaceFlag
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FUnionSurfaceFlag                ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FUnionSurfaceFlag UUnionPhysicalMaterial::GetSurfaceFlag() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "GetSurfaceFlag");
-
-	Params::UnionPhysicalMaterial_GetSurfaceFlag Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsAssistWall
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsAssistWall() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsAssistWall");
-
-	Params::UnionPhysicalMaterial_IsAssistWall Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsAssistWallItemIgnoret
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsAssistWallItemIgnoret() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsAssistWallItemIgnoret");
-
-	Params::UnionPhysicalMaterial_IsAssistWallItemIgnoret Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsBouncy
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsBouncy() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBouncy");
-
-	Params::UnionPhysicalMaterial_IsBouncy Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsBumpyHeavy
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsBumpyHeavy() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBumpyHeavy");
-
-	Params::UnionPhysicalMaterial_IsBumpyHeavy Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsBumpyLight
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsBumpyLight() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBumpyLight");
-
-	Params::UnionPhysicalMaterial_IsBumpyLight Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsBumpyMedium
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsBumpyMedium() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsBumpyMedium");
-
-	Params::UnionPhysicalMaterial_IsBumpyMedium Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsCameraChange
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsCameraChange() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsCameraChange");
-
-	Params::UnionPhysicalMaterial_IsCameraChange Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsCarDriveable
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsCarDriveable() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsCarDriveable");
-
-	Params::UnionPhysicalMaterial_IsCarDriveable Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsCylindrical
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsCylindrical() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsCylindrical");
-
-	Params::UnionPhysicalMaterial_IsCylindrical Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsDash
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsDash() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsDash");
-
-	Params::UnionPhysicalMaterial_IsDash Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsGravitySwitch
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsGravitySwitch() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsGravitySwitch");
-
-	Params::UnionPhysicalMaterial_IsGravitySwitch Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsGrindDash
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsGrindDash() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsGrindDash");
-
-	Params::UnionPhysicalMaterial_IsGrindDash Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsGuidedJump
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsGuidedJump() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsGuidedJump");
-
-	Params::UnionPhysicalMaterial_IsGuidedJump Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitBouncyMidium
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsHitBouncyMidium() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitBouncyMidium");
-
-	Params::UnionPhysicalMaterial_IsHitBouncyMidium Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitLoseRing
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsHitLoseRing() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitLoseRing");
-
-	Params::UnionPhysicalMaterial_IsHitLoseRing Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownLight
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsHitSlowdownLight() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitSlowdownLight");
-
-	Params::UnionPhysicalMaterial_IsHitSlowdownLight Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsHitSlowdownMidium
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsHitSlowdownMidium() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsHitSlowdownMidium");
-
-	Params::UnionPhysicalMaterial_IsHitSlowdownMidium Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsIgnoreSticky
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsIgnoreSticky() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsIgnoreSticky");
-
-	Params::UnionPhysicalMaterial_IsIgnoreSticky Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsItemOnly
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsItemOnly() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsItemOnly");
-
-	Params::UnionPhysicalMaterial_IsItemOnly Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsMachineOnlyWall
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsMachineOnlyWall() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsMachineOnlyWall");
-
-	Params::UnionPhysicalMaterial_IsMachineOnlyWall Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsNoJump
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsNoJump() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsNoJump");
-
-	Params::UnionPhysicalMaterial_IsNoJump Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsNrrow
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsNrrow() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsNrrow");
-
-	Params::UnionPhysicalMaterial_IsNrrow Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsPseudoPlane
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsPseudoPlane() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsPseudoPlane");
-
-	Params::UnionPhysicalMaterial_IsPseudoPlane Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsRespot
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsRespot() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsRespot");
-
-	Params::UnionPhysicalMaterial_IsRespot Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlide
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsSlide() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlide");
-
-	Params::UnionPhysicalMaterial_IsSlide Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlippy
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsSlippy() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlippy");
-
-	Params::UnionPhysicalMaterial_IsSlippy Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlowDownLight
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsSlowDownLight() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlowDownLight");
-
-	Params::UnionPhysicalMaterial_IsSlowDownLight Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsSlowDownMedium
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsSlowDownMedium() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsSlowDownMedium");
-
-	Params::UnionPhysicalMaterial_IsSlowDownMedium Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsWall
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsWall() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsWall");
-
-	Params::UnionPhysicalMaterial_IsWall Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPhysicalMaterial.IsYellowDrill
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionPhysicalMaterial::IsYellowDrill() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPhysicalMaterial", "IsYellowDrill");
-
-	Params::UnionPhysicalMaterial_IsYellowDrill Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionPlayerInfoBillboardUI.ChangeDriverInfo
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const EDriverId&                        DriverId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionPlayerInfoBillboardUI::ChangeDriverInfo(const EDriverId& DriverId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionPlayerInfoBillboardUI", "ChangeDriverInfo");
-
-	Params::UnionPlayerInfoBillboardUI_ChangeDriverInfo Parms{};
-
-	Parms.DriverId = DriverId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByGadgetInfo
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<EGadgetId>&                GadgetInfo                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UUnionRaceGadgetUI::InitializeIconsByGadgetInfo(const TArray<EGadgetId>& GadgetInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceGadgetUI", "InitializeIconsByGadgetInfo");
-
-	Params::UnionRaceGadgetUI_InitializeIconsByGadgetInfo Parms{};
-
-	Parms.GadgetInfo = std::move(GadgetInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.UnionRaceGadgetUI.InitializeIconsByRacerIndex
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceGadgetUI::InitializeIconsByRacerIndex(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceGadgetUI", "InitializeIconsByRacerIndex");
-
-	Params::UnionRaceGadgetUI_InitializeIconsByRacerIndex Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.UnionRaceInfoNotifier.RegisterRaceInfoListener
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          InListener                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceInfoNotifier::RegisterRaceInfoListener(class UObject* InListener)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceInfoNotifier", "RegisterRaceInfoListener");
-
-	Params::UnionRaceInfoNotifier_RegisterRaceInfoListener Parms{};
-
-	Parms.InListener = InListener;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceInfoNotifier.Reset
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRaceInfoNotifier::Reset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceInfoNotifier", "Reset");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceInfoNotifier.UnregisterRaceInfoListener
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          InListener                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceInfoNotifier::UnregisterRaceInfoListener(class UObject* InListener)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceInfoNotifier", "UnregisterRaceInfoListener");
-
-	Params::UnionRaceInfoNotifier_UnregisterRaceInfoListener Parms{};
-
-	Parms.InListener = InListener;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.AddCourseMapActor
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           InAttackItem                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EItemId                                 InItemId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::AddCourseMapActor(class AActor* InAttackItem, EItemId InItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "AddCourseMapActor");
-
-	Params::UnionRaceMinimap_AddCourseMapActor Parms{};
-
-	Parms.InAttackItem = InAttackItem;
-	Parms.InItemId = InItemId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.GetGroupColor
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   GouupIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FLinearColor UUnionRaceMinimap::GetGroupColor(int32 GouupIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "GetGroupColor");
-
-	Params::UnionRaceMinimap_GetGroupColor Parms{};
-
-	Parms.GouupIndex = GouupIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.InitializeMinimap
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UTextureRenderTarget2D*           InRenderTarget                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::InitializeMinimap(class UTextureRenderTarget2D* InRenderTarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "InitializeMinimap");
-
-	Params::UnionRaceMinimap_InitializeMinimap Parms{};
-
-	Parms.InRenderTarget = InRenderTarget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.InitializeRaceData
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRaceMinimap::InitializeRaceData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "InitializeRaceData");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.RemoveCourseMapActor
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           InAttackItem                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::RemoveCourseMapActor(class AActor* InAttackItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "RemoveCourseMapActor");
-
-	Params::UnionRaceMinimap_RemoveCourseMapActor Parms{};
-
-	Parms.InAttackItem = InAttackItem;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetCourseMapCharaSpin
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetCourseMapCharaSpin(int32 RacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetCourseMapCharaSpin");
-
-	Params::UnionRaceMinimap_SetCourseMapCharaSpin Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetCourseSetting
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TSoftObjectPtr<class UObject>&    CourseTexture                                          (ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   InOrthoRate                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   InAngle                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InOffset                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetCourseSetting(const TSoftObjectPtr<class UObject>& CourseTexture, float InOrthoRate, float InAngle, const struct FVector& InOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetCourseSetting");
-
-	Params::UnionRaceMinimap_SetCourseSetting Parms{};
-
-	Parms.CourseTexture = CourseTexture;
-	Parms.InOrthoRate = InOrthoRate;
-	Parms.InAngle = InAngle;
-	Parms.InOffset = std::move(InOffset);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetDomainIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InDomainIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetDomainIndex(int32 InDomainIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetDomainIndex");
-
-	Params::UnionRaceMinimap_SetDomainIndex Parms{};
-
-	Parms.InDomainIndex = InDomainIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetDomainNumber
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InDomainNumber                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetDomainNumber(int32 InDomainNumber)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetDomainNumber");
-
-	Params::UnionRaceMinimap_SetDomainNumber Parms{};
-
-	Parms.InDomainNumber = InDomainNumber;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetDriverId
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   DriverId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetDriverId(int32 RacerIndex, int32 DriverId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetDriverId");
-
-	Params::UnionRaceMinimap_SetDriverId Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.DriverId = DriverId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetGroupIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   GroupIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetGroupIndex(int32 RacerIndex, int32 GroupIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetGroupIndex");
-
-	Params::UnionRaceMinimap_SetGroupIndex Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.GroupIndex = GroupIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetMinimapIconItem
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            RacerIndex                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const EItemId&                          InItemId                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetMinimapIconItem(const int32& RacerIndex, const EItemId& InItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetMinimapIconItem");
-
-	Params::UnionRaceMinimap_SetMinimapIconItem Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.InItemId = InItemId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetMinimapIconType
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            RacerIndex                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const EMinimapIconType&                 InMinimapIconType                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetMinimapIconType(const int32& RacerIndex, const EMinimapIconType& InMinimapIconType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetMinimapIconType");
-
-	Params::UnionRaceMinimap_SetMinimapIconType Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.InMinimapIconType = InMinimapIconType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetPlayerIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsPlayer                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsLocalMulti                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetPlayerIndex(int32 RacerIndex, int32 PlayerIndex, bool IsPlayer, bool IsLocalMulti)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetPlayerIndex");
-
-	Params::UnionRaceMinimap_SetPlayerIndex Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.PlayerIndex = PlayerIndex;
-	Parms.IsPlayer = IsPlayer;
-	Parms.IsLocalMulti = IsLocalMulti;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetPosition
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InPosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetPosition(int32 RacerIndex, const struct FVector& InPosition)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetPosition");
-
-	Params::UnionRaceMinimap_SetPosition Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.InPosition = std::move(InPosition);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetPositionAndZOrder
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InPosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const uint8&                            InZOrder                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetPositionAndZOrder(int32 RacerIndex, const struct FVector& InPosition, const uint8& InZOrder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetPositionAndZOrder");
-
-	Params::UnionRaceMinimap_SetPositionAndZOrder Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.InPosition = std::move(InPosition);
-	Parms.InZOrder = InZOrder;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetRacerCount
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerCount_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetRacerCount(int32 RacerCount_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetRacerCount");
-
-	Params::UnionRaceMinimap_SetRacerCount Parms{};
-
-	Parms.RacerCount_0 = RacerCount_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetRacerIconVisibility
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ESlateVisibility                        NewVisibility                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetRacerIconVisibility(int32 RacerIndex, ESlateVisibility NewVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetRacerIconVisibility");
-
-	Params::UnionRaceMinimap_SetRacerIconVisibility Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.NewVisibility = NewVisibility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetReaderFlag
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const bool&                             InIsReader                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetReaderFlag(int32 RacerIndex, const bool& InIsReader)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetReaderFlag");
-
-	Params::UnionRaceMinimap_SetReaderFlag Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.InIsReader = InIsReader;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.SetRival
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   RacerIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsRival                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsPowerRival                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::SetRival(int32 RacerIndex, bool IsRival, bool IsPowerRival)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "SetRival");
-
-	Params::UnionRaceMinimap_SetRival Parms{};
-
-	Parms.RacerIndex = RacerIndex;
-	Parms.IsRival = IsRival;
-	Parms.IsPowerRival = IsPowerRival;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceMinimap.UpdateMinimap
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   InDelta                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceMinimap::UpdateMinimap(float InDelta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceMinimap", "UpdateMinimap");
-
-	Params::UnionRaceMinimap_UpdateMinimap Parms{};
-
-	Parms.InDelta = InDelta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceReturnDashUI.GetButtonWidget
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* UUnionRaceReturnDashUI::GetButtonWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceReturnDashUI", "GetButtonWidget");
-
-	Params::UnionRaceReturnDashUI_GetButtonWidget Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRaceReturnDashUI.SetGaugeParcent
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const float&                            GaugeRate                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceReturnDashUI::SetGaugeParcent(const float& GaugeRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceReturnDashUI", "SetGaugeParcent");
-
-	Params::UnionRaceReturnDashUI_SetGaugeParcent Parms{};
-
-	Parms.GaugeRate = GaugeRate;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceReturnDashUI.SetReturnDashSetting
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const float&                            Pivot                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float&                            Range                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceReturnDashUI::SetReturnDashSetting(const float& Pivot, const float& Range)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceReturnDashUI", "SetReturnDashSetting");
-
-	Params::UnionRaceReturnDashUI_SetReturnDashSetting Parms{};
-
-	Parms.Pivot = Pivot;
-	Parms.Range = Range;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.RacerReactionInfoDataAsset.Import
-// (Final, Native, Public)
-
-void URacerReactionInfoDataAsset::Import()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RacerReactionInfoDataAsset", "Import");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.GetDriverIdByRacerIndex
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const int32                             InRacerIndex                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EDriverId                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EDriverId UUnionRacers::GetDriverIdByRacerIndex(const int32 InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("UnionRacers", "GetDriverIdByRacerIndex");
-
-	Params::UnionRacers_GetDriverIdByRacerIndex Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.ApplyPauseInputs
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacers::ApplyPauseInputs()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "ApplyPauseInputs");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.ApplyVehicleInputs
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacers::ApplyVehicleInputs()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "ApplyVehicleInputs");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.ChangeVehicleDisplayMode
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EVehicleDisplayMode                     InVehicleDisplayMode                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::ChangeVehicleDisplayMode(int32 InRacerIndex, EVehicleDisplayMode InVehicleDisplayMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "ChangeVehicleDisplayMode");
-
-	Params::UnionRacers_ChangeVehicleDisplayMode Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-	Parms.InVehicleDisplayMode = InVehicleDisplayMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.ClearVehicles
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacers::ClearVehicles()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "ClearVehicles");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.Destroy
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionRacers::Destroy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "Destroy");
-
-	Params::UnionRacers_Destroy Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.ExecTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::ExecTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "ExecTick");
-
-	Params::UnionRacers_ExecTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionRun.UnionRacers.GetLocalPlayers
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// TArray<class UUnionRacer*>*             OutRacers                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UUnionRacers::GetLocalPlayers(TArray<class UUnionRacer*>* OutRacers)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetLocalPlayers");
-
-	Params::UnionRacers_GetLocalPlayers Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutRacers != nullptr)
-		*OutRacers = std::move(Parms.OutRacers);
-}
-
-
-// Function UnionRun.UnionRacers.GetPlayerRank
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetPlayerRank(int32 PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetPlayerRank");
-
-	Params::UnionRacers_GetPlayerRank Parms{};
-
-	Parms.PlayerIndex = PlayerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRaceHUDRef
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRaceUI*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRaceUI* UUnionRacers::GetRaceHUDRef()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRaceHUDRef");
-
-	Params::UnionRacers_GetRaceHUDRef Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRaceLapInfo
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionRaceLapInfo*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRaceLapInfo* UUnionRacers::GetRaceLapInfo(const int32& InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRaceLapInfo");
-
-	Params::UnionRacers_GetRaceLapInfo Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRacer
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionRacer*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRacer* UUnionRacers::GetRacer(int32 InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRacer");
-
-	Params::UnionRacers_GetRacer Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRacer3DPositionAndDomainNumber
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EDomainNumber*                          DomainNum                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector                    ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-const struct FVector UUnionRacers::GetRacer3DPositionAndDomainNumber(int32 Index_0, EDomainNumber* DomainNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRacer3DPositionAndDomainNumber");
-
-	Params::UnionRacers_GetRacer3DPositionAndDomainNumber Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (DomainNum != nullptr)
-		*DomainNum = Parms.DomainNum;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRacerIndexByRank
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            InRank                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetRacerIndexByRank(const int32& InRank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRacerIndexByRank");
-
-	Params::UnionRacers_GetRacerIndexByRank Parms{};
-
-	Parms.InRank = InRank;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRacerRank
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetRacerRank(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRacerRank");
-
-	Params::UnionRacers_GetRacerRank Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRacerSituationObject
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionRaceSituationObject*        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRaceSituationObject* UUnionRacers::GetRacerSituationObject(int32 InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRacerSituationObject");
-
-	Params::UnionRacers_GetRacerSituationObject Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRacerStatusObject
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InRacerIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionRacerStatusObject*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionRacerStatusObject* UUnionRacers::GetRacerStatusObject(int32 InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRacerStatusObject");
-
-	Params::UnionRacers_GetRacerStatusObject Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetTestRaceCount
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetTestRaceCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetTestRaceCount");
-
-	Params::UnionRacers_GetTestRaceCount Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.HidePlayerNameHUD
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacers::HidePlayerNameHUD()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "HidePlayerNameHUD");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.InitTestRace
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacers::InitTestRace()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "InitTestRace");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.IsOfflinePlayer
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRacer*                      Racer                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionRacers::IsOfflinePlayer(class UUnionRacer* Racer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "IsOfflinePlayer");
-
-	Params::UnionRacers_IsOfflinePlayer Parms{};
-
-	Parms.Racer = Racer;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.IsOnlineCom
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRacer*                      Racer                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionRacers::IsOnlineCom(class UUnionRacer* Racer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "IsOnlineCom");
-
-	Params::UnionRacers_IsOnlineCom Parms{};
-
-	Parms.Racer = Racer;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.IsPlayer
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionRacer*                      Racer                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UUnionRacers::IsPlayer(class UUnionRacer* Racer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "IsPlayer");
-
-	Params::UnionRacers_IsPlayer Parms{};
-
-	Parms.Racer = Racer;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.SetLinkPlayerControllerIndexToRacerIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            PlayerControllerIndex                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::SetLinkPlayerControllerIndexToRacerIndex(const int32& PlayerControllerIndex, const int32& InRacerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "SetLinkPlayerControllerIndexToRacerIndex");
-
-	Params::UnionRacers_SetLinkPlayerControllerIndexToRacerIndex Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.SetRaceLapInfo
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionRaceLapInfo*                InRaceLapInfo                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::SetRaceLapInfo(const int32& InRacerIndex, class UUnionRaceLapInfo* InRaceLapInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "SetRaceLapInfo");
-
-	Params::UnionRacers_SetRaceLapInfo Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-	Parms.InRaceLapInfo = InRaceLapInfo;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.SetTickable
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bTickable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::SetTickable(bool bTickable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "SetTickable");
-
-	Params::UnionRacers_SetTickable Parms{};
-
-	Parms.bTickable = bTickable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.SetVehicle
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APawn*                            InVehicle                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::SetVehicle(const int32& InRacerIndex, class APawn* InVehicle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "SetVehicle");
-
-	Params::UnionRacers_SetVehicle Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-	Parms.InVehicle = InVehicle;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.UnionRacers_SetTimerDelegate
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TDelegate<void()>                       Delegate                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bLooping                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FTimerHandle                     ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FTimerHandle UUnionRacers::UnionRacers_SetTimerDelegate(TDelegate<void()> Delegate, float Time, bool bLooping)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "UnionRacers_SetTimerDelegate");
-
-	Params::UnionRacers_UnionRacers_SetTimerDelegate Parms{};
-
-	Parms.Delegate = Delegate;
-	Parms.Time = Time;
-	Parms.bLooping = bLooping;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.UpdateBaggage
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::UpdateBaggage(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "UpdateBaggage");
-
-	Params::UnionRacers_UpdateBaggage Parms{};
-
-	Parms.Delta = Delta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.UpdateDomain
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::UpdateDomain(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "UpdateDomain");
-
-	Params::UnionRacers_UpdateDomain Parms{};
-
-	Parms.Delta = Delta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.UpdatePlayerNameHUD
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::UpdatePlayerNameHUD(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "UpdatePlayerNameHUD");
-
-	Params::UnionRacers_UpdatePlayerNameHUD Parms{};
-
-	Parms.Delta = Delta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.UpdateTestRace
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::UpdateTestRace(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "UpdateTestRace");
-
-	Params::UnionRacers_UpdateTestRace Parms{};
-
-	Parms.Delta = Delta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.UpdateVehicleInputs
-// (Final, Native, Public, BlueprintCallable)
-
-void UUnionRacers::UpdateVehicleInputs()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "UpdateVehicleInputs");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.UpdateVehicles
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRacers::UpdateVehicles(float Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "UpdateVehicles");
-
-	Params::UnionRacers_UpdateVehicles Parms{};
-
-	Parms.Delta = Delta;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRacers.GetGamePauseOwnerPlayerControllerIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetGamePauseOwnerPlayerControllerIndex() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetGamePauseOwnerPlayerControllerIndex");
-
-	Params::UnionRacers_GetGamePauseOwnerPlayerControllerIndex Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetGamePauseOwnerRacerIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetGamePauseOwnerRacerIndex() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetGamePauseOwnerRacerIndex");
-
-	Params::UnionRacers_GetGamePauseOwnerRacerIndex Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetPlayerControllerIndexByRacerIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const int32&                            InRacerIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetPlayerControllerIndexByRacerIndex(const int32& InRacerIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetPlayerControllerIndexByRacerIndex");
-
-	Params::UnionRacers_GetPlayerControllerIndexByRacerIndex Parms{};
-
-	Parms.InRacerIndex = InRacerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionRun.UnionRacers.GetRacerIndexByPlayerControllerIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const int32&                            PlayerControllerIndex                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UUnionRacers::GetRacerIndexByPlayerControllerIndex(const int32& PlayerControllerIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRacers", "GetRacerIndexByPlayerControllerIndex");
-
-	Params::UnionRacers_GetRacerIndexByPlayerControllerIndex Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -27741,35 +28122,6 @@ void UUnionRaceUI::SetWarningBeltVisible_Implementation(int32 PlayerControllerIn
 }
 
 
-// Function UnionRun.UnionRaceUI.UpdateAttackInfoPosition
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      InAttackWidget                                         (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UWidget*                          InHUDWarningArea                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   InPosRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceUI::UpdateAttackInfoPosition(class UUserWidget* InAttackWidget, class UWidget* InHUDWarningArea, float InPosRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceUI", "UpdateAttackInfoPosition");
-
-	Params::UnionRaceUI_UpdateAttackInfoPosition Parms{};
-
-	Parms.InAttackWidget = InAttackWidget;
-	Parms.InHUDWarningArea = InHUDWarningArea;
-	Parms.InPosRate = InPosRate;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionRun.UnionRaceUI.UpdateByHoldItemInfo_Implementation
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -27873,26 +28225,6 @@ void UUnionRaceUI::UpdateHomingAimTargetedLocation_Implementation(int32 PlayerCo
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionRun.UnionRaceUI.UpdateIrregularInfiniteItem
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionRaceUI::UpdateIrregularInfiniteItem(int32 PlayerControllerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionRaceUI", "UpdateIrregularInfiniteItem");
-
-	Params::UnionRaceUI_UpdateIrregularInfiniteItem Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -29837,6 +30169,26 @@ void UUnionRaceUIResultLine::SetTotalPointValue(int32 TotalPoint)
 }
 
 
+// Function UnionRun.UnionRaceUIResultLine.SetupVisibleSettingByGameMode
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EGameModeId                             GameMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionRaceUIResultLine::SetupVisibleSettingByGameMode(EGameModeId GameMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionRaceUIResultLine", "SetupVisibleSettingByGameMode");
+
+	Params::UnionRaceUIResultLine_SetupVisibleSettingByGameMode Parms{};
+
+	Parms.GameMode = GameMode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function UnionRun.UnionRaceUIGroupResultLine.SetGroupIndex
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -31300,8 +31652,9 @@ void IUnionRaceUIInterface::SetAfterHomingAimUIVisible(int32 PlayerControllerInd
 // float                                   PosRate                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Distance                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bResetPos                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IUnionRaceUIInterface::SetAttackInfoPosition(class URaceUISubApproachWarning* InAttackWidget, float PosRate, float Distance, int32 PlayerControllerIndex)
+void IUnionRaceUIInterface::SetAttackInfoPosition(class URaceUISubApproachWarning* InAttackWidget, float PosRate, float Distance, int32 PlayerControllerIndex, bool bResetPos)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31314,6 +31667,7 @@ void IUnionRaceUIInterface::SetAttackInfoPosition(class URaceUISubApproachWarnin
 	Parms.PosRate = PosRate;
 	Parms.Distance = Distance;
 	Parms.PlayerControllerIndex = PlayerControllerIndex;
+	Parms.bResetPos = bResetPos;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -31696,8 +32050,9 @@ void IUnionRaceUIInterface::SetItemRemainCount(int32 PlayerControllerIndex, EIte
 // bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Scale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    IsScaleKeepInHoming                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EItemId                                 ItemId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IUnionRaceUIInterface::SetManualAimingUIVisible(int32 PlayerControllerIndex, bool bVisible, float Scale, bool IsScaleKeepInHoming)
+void IUnionRaceUIInterface::SetManualAimingUIVisible(int32 PlayerControllerIndex, bool bVisible, float Scale, bool IsScaleKeepInHoming, EItemId ItemId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31710,6 +32065,7 @@ void IUnionRaceUIInterface::SetManualAimingUIVisible(int32 PlayerControllerIndex
 	Parms.bVisible = bVisible;
 	Parms.Scale = Scale;
 	Parms.IsScaleKeepInHoming = IsScaleKeepInHoming;
+	Parms.ItemId = ItemId;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -31977,8 +32333,9 @@ void IUnionRaceUIInterface::SetRaceMinimapRef(class UUnionRaceMinimap* InRaceMin
 // int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // uint8                                   RankAfterIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EDriverId                               InDriverId                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bResetPos                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IUnionRaceUIInterface::SetRacerApproachInfoPosition(float PosRate, float Distance, int32 PlayerControllerIndex, uint8 RankAfterIndex, EDriverId InDriverId)
+void IUnionRaceUIInterface::SetRacerApproachInfoPosition(float PosRate, float Distance, int32 PlayerControllerIndex, uint8 RankAfterIndex, EDriverId InDriverId, bool bResetPos)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31992,6 +32349,7 @@ void IUnionRaceUIInterface::SetRacerApproachInfoPosition(float PosRate, float Di
 	Parms.PlayerControllerIndex = PlayerControllerIndex;
 	Parms.RankAfterIndex = RankAfterIndex;
 	Parms.InDriverId = InDriverId;
+	Parms.bResetPos = bResetPos;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -34865,6 +35223,31 @@ void UUnionSplineMoveComponent::AddMoveDistance(float AddDistance)
 }
 
 
+// Function UnionRun.UnionSplineMoveComponent.CopyParamFrom
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionSplineMoveComponent*        comp                                                   (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionSplineMoveComponent::CopyParamFrom(class UUnionSplineMoveComponent* comp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionSplineMoveComponent", "CopyParamFrom");
+
+	Params::UnionSplineMoveComponent_CopyParamFrom Parms{};
+
+	Parms.comp = comp;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.UnionSplineMoveComponent.ForceMove
 // (Final, Native, Public, BlueprintCallable)
 
@@ -36210,6 +36593,25 @@ bool UURaceUISubItemIconSet::IsTradeCoolTime(int32 PlayerIndex)
 }
 
 
+// Function UnionRun.URaceUISubItemIconSet.RefreshItemIconAll
+// (Final, Native, Public, BlueprintCallable)
+
+void UURaceUISubItemIconSet::RefreshItemIconAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("URaceUISubItemIconSet", "RefreshItemIconAll");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionRun.URaceUISubItemIconSet.SetItemPanelVisibility
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -36311,6 +36713,26 @@ void UURaceUISubItemIconSet::SetVisibilityIrregular(EItemInfoType ItemInfoType, 
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionRun.URaceUISubItemIconSet.UpdateIrregularInfiniteItem
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// const class UUnionRacerStatusObject*    RacerStatusObjet                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UURaceUISubItemIconSet::UpdateIrregularInfiniteItem(const class UUnionRacerStatusObject* RacerStatusObjet)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("URaceUISubItemIconSet", "UpdateIrregularInfiniteItem");
+
+	Params::URaceUISubItemIconSet_UpdateIrregularInfiniteItem Parms{};
+
+	Parms.RacerStatusObjet = RacerStatusObjet;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

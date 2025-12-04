@@ -57,6 +57,34 @@ void UWBP_GadgetCutom_M4_Div_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function WBP_GadgetCutom_M4_Div.WBP_GadgetCutom_M4_Div_C.SequenceEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetCutom_M4_Div_C::SequenceEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCutom_M4_Div_C", "SequenceEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GadgetCutom_M4_Div.WBP_GadgetCutom_M4_Div_C.SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M4_Div
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetCutom_M4_Div_C::SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M4_Div()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCutom_M4_Div_C", "SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M4_Div");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_GadgetCutom_M4_Div.WBP_GadgetCutom_M4_Div_C.SetPlateWindowZorderHigherThanSelectWindow
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

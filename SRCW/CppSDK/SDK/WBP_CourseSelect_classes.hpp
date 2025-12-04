@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionLib_structs.hpp"
+#include "UNION_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "UnionLib_structs.hpp"
 
 
 namespace SDK
@@ -82,6 +82,7 @@ public:
 	TArray<class UWBP_CMN_TextBalloon_C*>         GrandPrixNameBalloons;                             // 0x06E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	EGameModeId                                   NewVar_3;                                          // 0x06F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          GPSelecting;                                       // 0x06F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsCanceling;                                       // 0x06F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CalcRandomStageIndexBP(EGrandPrixId GrandPrix, int32* Index_0);
@@ -119,7 +120,7 @@ public:
 	void OnRivalSelectClicked(class UUnionUIButtonBaseCore* Button);
 	void OnStageCancelEvent_Event_0();
 	void OnStageIconFocusEvent_Event_0(int32 PanelIndex, int32 ButtonIndex);
-	void OnStoreShortcutClicked(EStageId StageId);
+	void OnStoreShortcutPressed(EStageId StageId);
 	void PlayInAnimation();
 	void Set_Control_Button_Opacity(double Render_Opacity);
 	void SetAndUpdateForceOpened(double OpenThreshold);
@@ -197,6 +198,7 @@ static_assert(offsetof(UWBP_CourseSelect_C, bRandoming) == 0x0006D8, "Member 'UW
 static_assert(offsetof(UWBP_CourseSelect_C, GrandPrixNameBalloons) == 0x0006E0, "Member 'UWBP_CourseSelect_C::GrandPrixNameBalloons' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_C, NewVar_3) == 0x0006F0, "Member 'UWBP_CourseSelect_C::NewVar_3' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_C, GPSelecting) == 0x0006F1, "Member 'UWBP_CourseSelect_C::GPSelecting' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_C, IsCanceling) == 0x0006F2, "Member 'UWBP_CourseSelect_C::IsCanceling' has a wrong offset!");
 
 }
 

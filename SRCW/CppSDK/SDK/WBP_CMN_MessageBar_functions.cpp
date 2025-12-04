@@ -87,15 +87,21 @@ void UWBP_CMN_MessageBar_C::SetText(const class FText& InText)
 
 // Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetupDisableGadgetMessage
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bEnableBlinkLoop                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CMN_MessageBar_C::SetupDisableGadgetMessage()
+void UWBP_CMN_MessageBar_C::SetupDisableGadgetMessage(bool bEnableBlinkLoop)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_CMN_MessageBar_C", "SetupDisableGadgetMessage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CMN_MessageBar_C_SetupDisableGadgetMessage Parms{};
+
+	Parms.bEnableBlinkLoop = bEnableBlinkLoop;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

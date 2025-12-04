@@ -49,7 +49,8 @@ public:
 	class FText                                   K2Node_Select_Default_1;                           // 0x0090(0x0010)()
 	bool                                          K2Node_Event_bInIsVisible;                         // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_Event_bEnableBlinkLoop;                     // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A3[0x5];                                       // 0x00A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00A8(0x0010)()
 	int32                                         K2Node_Event_Index;                                // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -79,6 +80,7 @@ static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar,
 static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Select_Default_1) == 0x000090, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Select_Default_1' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_bInIsVisible) == 0x0000A0, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_bInIsVisible' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Select_Default_2) == 0x0000A1, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_bEnableBlinkLoop) == 0x0000A2, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_bEnableBlinkLoop' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, CallFunc_MakeLiteralText_ReturnValue) == 0x0000A8, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar, K2Node_Event_Index) == 0x0000B8, "Member 'WBP_CMN_MessageBar_C_ExecuteUbergraph_WBP_CMN_MessageBar::K2Node_Event_Index' has a wrong offset!");
 
@@ -92,6 +94,17 @@ public:
 static_assert(alignof(WBP_CMN_MessageBar_C_SetText) == 0x000008, "Wrong alignment on WBP_CMN_MessageBar_C_SetText");
 static_assert(sizeof(WBP_CMN_MessageBar_C_SetText) == 0x000010, "Wrong size on WBP_CMN_MessageBar_C_SetText");
 static_assert(offsetof(WBP_CMN_MessageBar_C_SetText, InText) == 0x000000, "Member 'WBP_CMN_MessageBar_C_SetText::InText' has a wrong offset!");
+
+// Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetupDisableGadgetMessage
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CMN_MessageBar_C_SetupDisableGadgetMessage final
+{
+public:
+	bool                                          bEnableBlinkLoop;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CMN_MessageBar_C_SetupDisableGadgetMessage) == 0x000001, "Wrong alignment on WBP_CMN_MessageBar_C_SetupDisableGadgetMessage");
+static_assert(sizeof(WBP_CMN_MessageBar_C_SetupDisableGadgetMessage) == 0x000001, "Wrong size on WBP_CMN_MessageBar_C_SetupDisableGadgetMessage");
+static_assert(offsetof(WBP_CMN_MessageBar_C_SetupDisableGadgetMessage, bEnableBlinkLoop) == 0x000000, "Member 'WBP_CMN_MessageBar_C_SetupDisableGadgetMessage::bEnableBlinkLoop' has a wrong offset!");
 
 // Function WBP_CMN_MessageBar.WBP_CMN_MessageBar_C.SetWaitingTextVisible
 // 0x0001 (0x0001 - 0x0000)

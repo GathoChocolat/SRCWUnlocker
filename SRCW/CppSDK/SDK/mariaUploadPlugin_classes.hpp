@@ -188,6 +188,8 @@ public:
 	static int32 GetPostNgCount();
 	static int32 GetRecoveryWaitModeCount();
 	static class FString GetSegaAccountID();
+	static EMariaSegaAccountType GetSegaAccountType();
+	static int32 GetSentMessagesNum();
 	static class FString GetUserID();
 	static bool Initialize();
 	static bool InitializeNNLibraries();
@@ -196,6 +198,8 @@ public:
 	static bool IsInRecoveryWaitMode();
 	static bool IsLoggingAvailable();
 	static bool IsOnMSPC();
+	static bool IsOnSwitch1();
+	static bool IsOnSwitch2();
 	static bool IsOnXbox();
 	static bool IsRunningUploading();
 	static bool IsSegaAccountLinkPending();
@@ -219,6 +223,7 @@ public:
 	static void SetAccessEndpointDevMode(EMariaDevMode DevMode);
 	static void SetActive(bool Active);
 	static void SetAppInformations(const class FString& AppID, const class FString& PlatformId, const class FString& Language, const class FString& Region);
+	static void SetAppVersion(const class FString& AppVersion);
 	static void SetAuthenticateDevMode_GDK(EMariaDevMode DevMode);
 	static void SetAuthenticateDevMode_Steam(EMariaDevMode DevMode);
 	static void SetAuthenticateDevMode_Switch(EMariaDevMode DevMode);
@@ -236,8 +241,10 @@ public:
 	static bool SetNetworkAccountFromPlayerController_Epic(class APlayerController* PlayerController);
 	static bool SetNetworkAccountFromUniqueNetID_Epic(const struct FUniqueNetIdRepl& UniqueNetId);
 	static void SetPendingUntilNetworkAvailable_Switch(bool Enable);
+	static void SetRecoveryWaitModeSpan(int32 SecondsForNg, int32 SecondsForError);
 	static void SetSaveSlot(int32 Slot);
 	static void SetSegaAccountDevMode(EMariaDevMode DevMode);
+	static bool SetSegaAccountLinkTarget(EMariaSegaAccountLinkTarget LinkTarget);
 	static void SetSendQueueDelay(int32 Milliseconds);
 	static void SetSteamEncryptedAppTicket(const TArray<uint8>& Ticket);
 	static void SetSuspended(bool Suspended);

@@ -164,7 +164,7 @@ void UWBP_CMN_NiceNotice_C::SetupChallengeClearNotice(class UWrapBox* Owner, con
 
 
 // Function WBP_CMN_NiceNotice.WBP_CMN_NiceNotice_C.SetUpNiceNotice
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      InName                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // ECrossplayPlatform                      InPlatformType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

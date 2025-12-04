@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemLotteryObject.BP_ItemLotteryObject_C
-// 0x0008 (0x12D8 - 0x12D0)
+// 0x0008 (0x12E8 - 0x12E0)
 class ABP_ItemLotteryObject_C final : public AItemLotteryObject
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x12D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x12E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(ABP_ItemLotteryObject_C) == 0x000008, "Wrong alignment on ABP_ItemLotteryObject_C");
-static_assert(sizeof(ABP_ItemLotteryObject_C) == 0x0012D8, "Wrong size on ABP_ItemLotteryObject_C");
-static_assert(offsetof(ABP_ItemLotteryObject_C, DefaultSceneRoot) == 0x0012D0, "Member 'ABP_ItemLotteryObject_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ABP_ItemLotteryObject_C) == 0x0012E8, "Wrong size on ABP_ItemLotteryObject_C");
+static_assert(offsetof(ABP_ItemLotteryObject_C, DefaultSceneRoot) == 0x0012E0, "Member 'ABP_ItemLotteryObject_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

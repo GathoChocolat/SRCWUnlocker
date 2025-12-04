@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -69,6 +69,7 @@ public:
 	void SetIsButtonSelected(bool IsSelected_0);
 	void SetLineParent(class UCustomRaceSubOptionSettingLine* LineParent);
 	void SetText(const class FText& InText);
+	void UnfocusEventImpl();
 	void WidgetAnimationEvt_Btn_Active_Loop_K2Node_WidgetAnimationEvent_0();
 	void WidgetAnimationEvt_Btn_NonActive_Loop_K2Node_WidgetAnimationEvent_2();
 	void WidgetAnimationEvt_Btn_Select_Loop_K2Node_WidgetAnimationEvent_1();

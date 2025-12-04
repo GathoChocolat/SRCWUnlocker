@@ -1353,6 +1353,56 @@ class FString UMariaUpload::GetSegaAccountID()
 }
 
 
+// Function mariaUploadPlugin.MariaUpload.GetSegaAccountType
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// EMariaSegaAccountType                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EMariaSegaAccountType UMariaUpload::GetSegaAccountType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MariaUpload", "GetSegaAccountType");
+
+	Params::MariaUpload_GetSegaAccountType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function mariaUploadPlugin.MariaUpload.GetSentMessagesNum
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UMariaUpload::GetSentMessagesNum()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MariaUpload", "GetSentMessagesNum");
+
+	Params::MariaUpload_GetSentMessagesNum Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function mariaUploadPlugin.MariaUpload.GetUserID
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1541,6 +1591,56 @@ bool UMariaUpload::IsOnMSPC()
 		Func = StaticClass()->GetFunction("MariaUpload", "IsOnMSPC");
 
 	Params::MariaUpload_IsOnMSPC Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function mariaUploadPlugin.MariaUpload.IsOnSwitch1
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMariaUpload::IsOnSwitch1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MariaUpload", "IsOnSwitch1");
+
+	Params::MariaUpload_IsOnSwitch1 Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function mariaUploadPlugin.MariaUpload.IsOnSwitch2
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMariaUpload::IsOnSwitch2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MariaUpload", "IsOnSwitch2");
+
+	Params::MariaUpload_IsOnSwitch2 Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2136,6 +2236,31 @@ void UMariaUpload::SetAppInformations(const class FString& AppID, const class FS
 }
 
 
+// Function mariaUploadPlugin.MariaUpload.SetAppVersion
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    AppVersion                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMariaUpload::SetAppVersion(const class FString& AppVersion)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MariaUpload", "SetAppVersion");
+
+	Params::MariaUpload_SetAppVersion Parms{};
+
+	Parms.AppVersion = std::move(AppVersion);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function mariaUploadPlugin.MariaUpload.SetAuthenticateDevMode_GDK
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -2571,6 +2696,33 @@ void UMariaUpload::SetPendingUntilNetworkAvailable_Switch(bool Enable)
 }
 
 
+// Function mariaUploadPlugin.MariaUpload.SetRecoveryWaitModeSpan
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   SecondsForNg                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   SecondsForError                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMariaUpload::SetRecoveryWaitModeSpan(int32 SecondsForNg, int32 SecondsForError)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MariaUpload", "SetRecoveryWaitModeSpan");
+
+	Params::MariaUpload_SetRecoveryWaitModeSpan Parms{};
+
+	Parms.SecondsForNg = SecondsForNg;
+	Parms.SecondsForError = SecondsForError;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function mariaUploadPlugin.MariaUpload.SetSaveSlot
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -2618,6 +2770,34 @@ void UMariaUpload::SetSegaAccountDevMode(EMariaDevMode DevMode)
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function mariaUploadPlugin.MariaUpload.SetSegaAccountLinkTarget
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// EMariaSegaAccountLinkTarget             LinkTarget                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMariaUpload::SetSegaAccountLinkTarget(EMariaSegaAccountLinkTarget LinkTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MariaUpload", "SetSegaAccountLinkTarget");
+
+	Params::MariaUpload_SetSegaAccountLinkTarget Parms{};
+
+	Parms.LinkTarget = LinkTarget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 

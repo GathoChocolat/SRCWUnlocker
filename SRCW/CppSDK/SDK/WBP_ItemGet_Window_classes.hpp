@@ -22,7 +22,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ItemGet_Window.WBP_ItemGet_Window_C
-// 0x0150 (0x04F8 - 0x03A8)
+// 0x0210 (0x05B8 - 0x03A8)
 class UWBP_ItemGet_Window_C final : public URewardGetWindow
 {
 public:
@@ -71,6 +71,8 @@ public:
 	double                                        ForceCount;                                        // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             TargetTexture;                                     // 0x04E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	ERewardType                                   Reward_Type;                                       // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4F1[0x7];                                      // 0x04F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGadgetData                            TempGadgetData;                                    // 0x04F8(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void BndEvt__WBP_ItemGet_Window_MouseInteraction_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
@@ -141,7 +143,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_ItemGet_Window_C) == 0x000008, "Wrong alignment on UWBP_ItemGet_Window_C");
-static_assert(sizeof(UWBP_ItemGet_Window_C) == 0x0004F8, "Wrong size on UWBP_ItemGet_Window_C");
+static_assert(sizeof(UWBP_ItemGet_Window_C) == 0x0005B8, "Wrong size on UWBP_ItemGet_Window_C");
 static_assert(offsetof(UWBP_ItemGet_Window_C, UberGraphFrame) == 0x0003A8, "Member 'UWBP_ItemGet_Window_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowInfo_Out) == 0x0003B0, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowInfo_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_ItemGet_Window_C, ItemGet_WindowInfo_Loop) == 0x0003B8, "Member 'UWBP_ItemGet_Window_C::ItemGet_WindowInfo_Loop' has a wrong offset!");
@@ -186,6 +188,7 @@ static_assert(offsetof(UWBP_ItemGet_Window_C, bRivalReward) == 0x0004D9, "Member
 static_assert(offsetof(UWBP_ItemGet_Window_C, ForceCount) == 0x0004E0, "Member 'UWBP_ItemGet_Window_C::ForceCount' has a wrong offset!");
 static_assert(offsetof(UWBP_ItemGet_Window_C, TargetTexture) == 0x0004E8, "Member 'UWBP_ItemGet_Window_C::TargetTexture' has a wrong offset!");
 static_assert(offsetof(UWBP_ItemGet_Window_C, Reward_Type) == 0x0004F0, "Member 'UWBP_ItemGet_Window_C::Reward_Type' has a wrong offset!");
+static_assert(offsetof(UWBP_ItemGet_Window_C, TempGadgetData) == 0x0004F8, "Member 'UWBP_ItemGet_Window_C::TempGadgetData' has a wrong offset!");
 
 }
 

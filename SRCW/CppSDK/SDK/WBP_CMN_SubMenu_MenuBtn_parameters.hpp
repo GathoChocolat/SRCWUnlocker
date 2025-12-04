@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -103,43 +103,6 @@ static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_Check_Chara_Machine_New, CallFu
 static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_Check_Chara_Machine_New, CallFunc_BooleanOR_ReturnValue_2) == 0x00002F, "Member 'WBP_CMN_SubMenu_MenuBtn_C_Check_Chara_Machine_New::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_Check_Chara_Machine_New, CallFunc_BooleanOR_ReturnValue_3) == 0x000030, "Member 'WBP_CMN_SubMenu_MenuBtn_C_Check_Chara_Machine_New::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_Check_Chara_Machine_New, CallFunc_BooleanOR_ReturnValue_4) == 0x000031, "Member 'WBP_CMN_SubMenu_MenuBtn_C_Check_Chara_Machine_New::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-
-// Function WBP_CMN_SubMenu_MenuBtn.WBP_CMN_SubMenu_MenuBtn_C.CheckDisableGadgetList
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList final
-{
-public:
-	bool                                          IsDisableListAvailable;                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 RefGadgetIds;                                      // 0x0008(0x0010)(Parm, OutParm)
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 CallFunc_GetRaceDisableGadgetsRankMatch_RefGadgetIds; // 0x0028(0x0010)(ReferenceParm)
-	TArray<int32>                                 CallFunc_GetRaceDisableGadgetsFesta_RefGadgetIds;  // 0x0038(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_1;           // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 CallFunc_GetRaceDisableGadgetsLegendCompe_RefGadgetIds; // 0x0058(0x0010)(ReferenceParm)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue_2;           // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList");
-static_assert(sizeof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList) == 0x000070, "Wrong size on WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, IsDisableListAvailable) == 0x000000, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::IsDisableListAvailable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, RefGadgetIds) == 0x000008, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::RefGadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000018, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000020, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_GetRaceDisableGadgetsRankMatch_RefGadgetIds) == 0x000028, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_GetRaceDisableGadgetsRankMatch_RefGadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_GetRaceDisableGadgetsFesta_RefGadgetIds) == 0x000038, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_GetRaceDisableGadgetsFesta_RefGadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000048, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_Array_IsNotEmpty_ReturnValue_1) == 0x000049, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_Array_IsNotEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x000050, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_GetRaceDisableGadgetsLegendCompe_RefGadgetIds) == 0x000058, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_GetRaceDisableGadgetsLegendCompe_RefGadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000068, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, CallFunc_Array_IsNotEmpty_ReturnValue_2) == 0x000069, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::CallFunc_Array_IsNotEmpty_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList, K2Node_SwitchEnum_CmpSuccess) == 0x00006A, "Member 'WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function WBP_CMN_SubMenu_MenuBtn.WBP_CMN_SubMenu_MenuBtn_C.ExecuteUbergraph_WBP_CMN_SubMenu_MenuBtn
 // 0x01B0 (0x01B0 - 0x0000)
@@ -456,21 +419,25 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGadgetPlateUIData                     CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData; // 0x0018(0x0028)()
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUserGadgetData                        CallFunc_Array_Get_Item;                           // 0x0044(0x0008)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckDisableGadgetList_IsDisableListAvailable; // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 CallFunc_CheckDisableGadgetList_RefGadgetIds;      // 0x0060(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Get_Item_1;                         // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckDisableGadgetList_OutDisableListAvailable; // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 CallFunc_CheckDisableGadgetList_OutRefGadgetIds;   // 0x0018(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Get_Item;                           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGadgetPlateUIData                     CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData; // 0x0038(0x0028)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUserGadgetData                        CallFunc_Array_Get_Item_1;                         // 0x0064(0x0008)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped) == 0x000008, "Wrong alignment on WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped");
 static_assert(sizeof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped) == 0x000080, "Wrong size on WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped");
@@ -479,19 +446,20 @@ static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, Temp_i
 static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, Temp_int_Loop_Counter_Variable_1) == 0x000014, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000018, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Add_IntInt_ReturnValue_1) == 0x000040, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Get_Item) == 0x000044, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000054, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_CheckDisableGadgetList_IsDisableListAvailable) == 0x000058, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_CheckDisableGadgetList_IsDisableListAvailable' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_CheckDisableGadgetList_RefGadgetIds) == 0x000060, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_CheckDisableGadgetList_RefGadgetIds' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Get_Item_1) == 0x000070, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Length_ReturnValue_1) == 0x000074, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000014, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_CheckDisableGadgetList_OutDisableListAvailable) == 0x000015, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_CheckDisableGadgetList_OutDisableListAvailable' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_CheckDisableGadgetList_OutRefGadgetIds) == 0x000018, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_CheckDisableGadgetList_OutRefGadgetIds' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Get_Item) == 0x000028, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, Temp_int_Loop_Counter_Variable_1) == 0x000030, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData) == 0x000038, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_GetSelectedGadgetPlateUIData_OutGadgetPlateUIData' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Get_Item_1) == 0x000064, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Array_Length_ReturnValue_1) == 0x00006C, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Less_IntInt_ReturnValue_1) == 0x000070, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000074, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000078, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Less_IntInt_ReturnValue_1) == 0x000079, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped, CallFunc_Add_IntInt_ReturnValue_1) == 0x00007C, "Member 'WBP_CMN_SubMenu_MenuBtn_C_IsDisableGadgetEquipped::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function WBP_CMN_SubMenu_MenuBtn.WBP_CMN_SubMenu_MenuBtn_C.IsGadgetNew
 // 0x0038 (0x0038 - 0x0000)

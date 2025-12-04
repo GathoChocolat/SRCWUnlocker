@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -123,268 +123,281 @@ static_assert(offsetof(WBP_Popup_Window_C_EnableSubMenu, CallFunc_LessEqual_IntI
 static_assert(offsetof(WBP_Popup_Window_C_EnableSubMenu, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'WBP_Popup_Window_C_EnableSubMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function WBP_Popup_Window.WBP_Popup_Window_C.ExecuteUbergraph_WBP_Popup_Window
-// 0x0318 (0x0318 - 0x0000)
+// 0x0340 (0x0340 - 0x0000)
 struct WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_27;             // 0x0010(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_26;             // 0x0014(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_25;             // 0x0018(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_24;             // 0x001C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_23;             // 0x0020(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_22;             // 0x0024(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_21;             // 0x0028(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_20;             // 0x002C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_19;             // 0x0030(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_18;             // 0x0034(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_17;             // 0x0038(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_16;             // 0x003C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_15;             // 0x0040(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_14;             // 0x0044(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_Value_3;                              // 0x0048(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_Value_2;                              // 0x0058(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_13;             // 0x0068(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_12;             // 0x006C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_11;             // 0x0070(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_10;             // 0x0074(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_9;              // 0x0078(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_8;              // 0x007C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_7;              // 0x0080(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              K2Node_Event_Value_1;                              // 0x0088(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_Value;                                // 0x0098(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_6;              // 0x00A8(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_5;              // 0x00AC(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_4;              // 0x00B0(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_3;              // 0x00B4(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_2;              // 0x00B8(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex_1;              // 0x00BC(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PlayerControllerIndex;                // 0x00C0(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bOnce;                                // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_CurrentCount;                         // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_AfterCount;                           // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Event_Text_1;                               // 0x00D0(0x0010)(ConstParm)
-	class FText                                   K2Node_Event_Text;                                 // 0x00E0(0x0010)(ConstParm)
-	bool                                          K2Node_Event_Attension;                            // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPopupWindowButtonType                        K2Node_Event_ButtonType;                           // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0114(0x0004)()
-	class UUnionUIButtonBase*                     CallFunc_GetYesButton_Button;                      // 0x0118(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     CallFunc_GetNoButton_Button;                       // 0x0120(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           K2Node_Event_BtnTextArray;                         // 0x0130(0x0010)(ConstParm, ReferenceParm)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UTexture2D*                       K2Node_Event_Texture2D;                            // 0x0148(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Event_InText;                               // 0x0150(0x0010)(ConstParm)
-	int32                                         K2Node_Event_InButtonIndex;                        // 0x0160(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_InEnable;                             // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_Index;                                // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_Btn01IconIndex;                       // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_Btn02IconIndex;                       // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_BtnIconIndex;                         // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_BtnIconType;                          // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Event_BtnText;                              // 0x0180(0x0010)(ConstParm)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_192[0x2];                                      // 0x0192(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_InDisplay;                            // 0x0198(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19A[0x2];                                      // 0x019A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x019C(0x0004)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonsPanel*                   CallFunc_CreateButtonsPanel_ReturnValue;           // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_UnregisterMainMenu_ReturnValue;           // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_MakeLiteralBool_ReturnValue;              // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1CA[0x2];                                      // 0x01CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UUnionUIButtonBase*>             K2Node_CustomEvent_ButtonArray;                    // 0x01D0(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
-	class UUnionUIButtonBase*                     CallFunc_Array_Get_Item;                           // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonsPanel*                   CallFunc_Array_Get_Item_1;                         // 0x01F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x0200(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x0218(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0220(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x023C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_2; // 0x024C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x025C(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x02B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B3[0x1];                                      // 0x02B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_InTime;                               // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BD[0x3];                                      // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUISubsystem*                           CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x02C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUISubsystem*                           CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPopupWindowType                              CallFunc_GetPopupWindowType_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_27;             // 0x0018(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_26;             // 0x001C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_25;             // 0x0020(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_24;             // 0x0024(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_23;             // 0x0028(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_22;             // 0x002C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_21;             // 0x0030(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_20;             // 0x0034(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_19;             // 0x0038(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_18;             // 0x003C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_17;             // 0x0040(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_16;             // 0x0044(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_15;             // 0x0048(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_14;             // 0x004C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_Value_3;                              // 0x0050(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_Value_2;                              // 0x0060(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_13;             // 0x0070(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_12;             // 0x0074(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_11;             // 0x0078(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_10;             // 0x007C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_9;              // 0x0080(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_8;              // 0x0084(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_7;              // 0x0088(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              K2Node_Event_Value_1;                              // 0x0090(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_Value;                                // 0x00A0(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_6;              // 0x00B0(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_5;              // 0x00B4(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_4;              // 0x00B8(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_3;              // 0x00BC(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_2;              // 0x00C0(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex_1;              // 0x00C4(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PlayerControllerIndex;                // 0x00C8(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bOnce;                                // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_CurrentCount;                         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_AfterCount;                           // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Event_Text_1;                               // 0x00D8(0x0010)(ConstParm)
+	class FText                                   K2Node_Event_Text;                                 // 0x00E8(0x0010)(ConstParm)
+	bool                                          K2Node_Event_Attension;                            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPopupWindowButtonType                        K2Node_Event_ButtonType;                           // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0124(0x0004)()
+	class UUnionUIButtonBase*                     CallFunc_GetYesButton_Button;                      // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     CallFunc_GetNoButton_Button;                       // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13A[0x6];                                      // 0x013A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           K2Node_Event_BtnTextArray;                         // 0x0140(0x0010)(ConstParm, ReferenceParm)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UTexture2D*                       K2Node_Event_Texture2D;                            // 0x0158(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Event_InText;                               // 0x0160(0x0010)(ConstParm)
+	int32                                         K2Node_Event_InButtonIndex;                        // 0x0170(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_InEnable;                             // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_Index;                                // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_Btn01IconIndex;                       // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_Btn02IconIndex;                       // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_BtnIconIndex;                         // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_BtnIconType;                          // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Event_BtnText;                              // 0x0190(0x0010)(ConstParm)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A2[0x2];                                      // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_InDisplay;                            // 0x01A8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AA[0x2];                                      // 0x01AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x01AC(0x0004)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonsPanel*                   CallFunc_CreateButtonsPanel_ReturnValue;           // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_UnregisterMainMenu_ReturnValue;           // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_MakeLiteralBool_ReturnValue;              // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DA[0x2];                                      // 0x01DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UUnionUIButtonBase*>             K2Node_CustomEvent_ButtonArray;                    // 0x01E0(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
+	class UUnionUIButtonBase*                     CallFunc_Array_Get_Item;                           // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonsPanel*                   CallFunc_Array_Get_Item_1;                         // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x0218(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x0230(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0238(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_251[0x3];                                      // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0254(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_291[0x7];                                      // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0298(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x02A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2AA[0x2];                                      // 0x02AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x02B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C1[0x3];                                      // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_InTime;                               // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionUIButtonsPanel*                   CallFunc_Array_Get_Item_2;                         // 0x02D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPopupWindowType                              CallFunc_GetPopupWindowType_ReturnValue;           // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     CallFunc_Array_Get_Item_3;                         // 0x02E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2ED[0x3];                                      // 0x02ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_2; // 0x02D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIButtonBase*                     CallFunc_Array_Get_Item_3;                         // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2F5[0x3];                                      // 0x02F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x02F8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_UpdateButtonControlDelay_InDeltaTime_ImplicitCast; // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_ButtonControlDelayTime_ImplicitCast; // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x02FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FD[0x3];                                      // 0x02FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0300(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_InDeltaTime;                    // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_319[0x7];                                      // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x0329(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32A[0x6];                                      // 0x032A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_UpdateButtonControlDelay_InDeltaTime_ImplicitCast; // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_ButtonControlDelayTime_ImplicitCast; // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window) == 0x000008, "Wrong alignment on WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window");
-static_assert(sizeof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window) == 0x000318, "Wrong size on WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window");
+static_assert(sizeof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window) == 0x000340, "Wrong size on WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window");
 static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, EntryPoint) == 0x000000, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_27) == 0x000010, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_27' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_26) == 0x000014, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_26' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_25) == 0x000018, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_25' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_24) == 0x00001C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_24' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_23) == 0x000020, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_23' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_22) == 0x000024, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_22' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_21) == 0x000028, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_21' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_20) == 0x00002C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_20' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_19) == 0x000030, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_19' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_18) == 0x000034, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_18' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_17) == 0x000038, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_17' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_16) == 0x00003C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_16' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_15) == 0x000040, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_15' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_14) == 0x000044, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_14' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value_3) == 0x000048, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value_2) == 0x000058, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_13) == 0x000068, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_13' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_12) == 0x00006C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_12' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_11) == 0x000070, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_11' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_10) == 0x000074, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_10' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_9) == 0x000078, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_9' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_8) == 0x00007C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_8' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_7) == 0x000080, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_7' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value_1) == 0x000088, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value) == 0x000098, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_6) == 0x0000A8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_6' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_5) == 0x0000AC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_5' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_4) == 0x0000B0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_3) == 0x0000B4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_2) == 0x0000B8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_1) == 0x0000BC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex) == 0x0000C0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_bOnce) == 0x0000C4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_bOnce' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_CurrentCount) == 0x0000C8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_CurrentCount' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_AfterCount) == 0x0000CC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_AfterCount' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Text_1) == 0x0000D0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Text_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Text) == 0x0000E0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Attension) == 0x0000F0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Attension' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue) == 0x0000F8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Array_Index_Variable_1) == 0x000100, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_1) == 0x000108, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_ButtonType) == 0x000110, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_ButtonType' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_SoundPlay_ReturnValue) == 0x000114, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetYesButton_Button) == 0x000118, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetYesButton_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetNoButton_Button) == 0x000120, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetNoButton_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_IsValid_ReturnValue) == 0x000128, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_IsValid_ReturnValue_1) == 0x000129, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnTextArray) == 0x000130, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnTextArray' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_SwitchEnum_CmpSuccess) == 0x000140, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Texture2D) == 0x000148, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Texture2D' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InText) == 0x000150, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InText' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InButtonIndex) == 0x000160, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Clamp_ReturnValue) == 0x000164, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InEnable) == 0x000168, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Index) == 0x00016C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Btn01IconIndex) == 0x000170, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Btn01IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Btn02IconIndex) == 0x000174, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Btn02IconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnIconIndex) == 0x000178, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnIconIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnIconType) == 0x00017C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnIconType' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnText) == 0x000180, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnText' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Conv_IntToByte_ReturnValue) == 0x000190, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetValidValue_ReturnValue) == 0x000191, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Array_Index_Variable_2) == 0x000194, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InDisplay) == 0x000198, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InDisplay' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_SwitchEnum_CmpSuccess_1) == 0x000199, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_SoundPlay_ReturnValue_1) == 0x00019C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_2) == 0x0001A0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetPlayerController_ReturnValue) == 0x0001A8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0001B0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_bSuccess) == 0x0001B8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_CreateButtonsPanel_ReturnValue) == 0x0001C0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0001C8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_MakeLiteralBool_ReturnValue) == 0x0001C9, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_MakeLiteralInt_ReturnValue) == 0x0001CC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_ButtonArray) == 0x0001D0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_ButtonArray' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Get_Item) == 0x0001E0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Length_ReturnValue) == 0x0001E8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Loop_Counter_Variable_1) == 0x0001EC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_LastIndex_ReturnValue) == 0x0001F0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Add_IntInt_ReturnValue_1) == 0x0001F4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Get_Item_1) == 0x0001F8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_Button_1) == 0x000200, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_ButtonIndex) == 0x000208, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_3) == 0x000210, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_Button) == 0x000218, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate) == 0x000220, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_4) == 0x000230, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000238, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate_1) == 0x00023C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate_2) == 0x00024C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_MyGeometry) == 0x00025C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InDeltaTime) == 0x000294, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_IsDesignTime) == 0x000298, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0002A0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_As_____2D) == 0x0002A8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_bSuccess_1) == 0x0002B0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002B1, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_SwitchEnum_CmpSuccess_2) == 0x0002B2, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Loop_Counter_Variable_2) == 0x0002B4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InTime) == 0x0002B8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InTime' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Less_IntInt_ReturnValue) == 0x0002BC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Add_IntInt_ReturnValue_2) == 0x0002C0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x0002C8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetPopupWindowType_ReturnValue) == 0x000010, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetPopupWindowType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_27) == 0x000018, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_27' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_26) == 0x00001C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_26' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_25) == 0x000020, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_25' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_24) == 0x000024, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_24' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_23) == 0x000028, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_23' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_22) == 0x00002C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_22' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_21) == 0x000030, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_21' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_20) == 0x000034, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_20' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_19) == 0x000038, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_19' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_18) == 0x00003C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_18' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_17) == 0x000040, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_17' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_16) == 0x000044, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_16' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_15) == 0x000048, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_15' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_14) == 0x00004C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_14' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value_3) == 0x000050, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value_3' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value_2) == 0x000060, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_13) == 0x000070, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_13' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_12) == 0x000074, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_12' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_11) == 0x000078, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_11' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_10) == 0x00007C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_10' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_9) == 0x000080, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_9' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_8) == 0x000084, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_8' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_7) == 0x000088, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_7' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value_1) == 0x000090, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Value) == 0x0000A0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Value' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_6) == 0x0000B0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_6' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_5) == 0x0000B4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_5' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_4) == 0x0000B8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_4' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_3) == 0x0000BC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_3' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_2) == 0x0000C0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex_1) == 0x0000C4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_PlayerControllerIndex) == 0x0000C8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_bOnce) == 0x0000CC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_bOnce' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_CurrentCount) == 0x0000D0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_CurrentCount' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_AfterCount) == 0x0000D4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_AfterCount' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Text_1) == 0x0000D8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Text_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Text) == 0x0000E8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Text' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Attension) == 0x0000F8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Attension' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue) == 0x000100, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Loop_Counter_Variable) == 0x000108, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_1) == 0x000110, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Add_IntInt_ReturnValue) == 0x000118, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Array_Index_Variable_1) == 0x00011C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_ButtonType) == 0x000120, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_ButtonType' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_SoundPlay_ReturnValue) == 0x000124, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetYesButton_Button) == 0x000128, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetYesButton_Button' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetNoButton_Button) == 0x000130, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetNoButton_Button' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_IsValid_ReturnValue) == 0x000138, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_IsValid_ReturnValue_1) == 0x000139, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnTextArray) == 0x000140, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnTextArray' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_SwitchEnum_CmpSuccess) == 0x000150, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Texture2D) == 0x000158, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Texture2D' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InText) == 0x000160, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InText' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InButtonIndex) == 0x000170, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InButtonIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Clamp_ReturnValue) == 0x000174, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Clamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InEnable) == 0x000178, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InEnable' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Index) == 0x00017C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Index' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Btn01IconIndex) == 0x000180, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Btn01IconIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_Btn02IconIndex) == 0x000184, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_Btn02IconIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnIconIndex) == 0x000188, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnIconIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnIconType) == 0x00018C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnIconType' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_BtnText) == 0x000190, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_BtnText' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Conv_IntToByte_ReturnValue) == 0x0001A0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetValidValue_ReturnValue) == 0x0001A1, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Array_Index_Variable_2) == 0x0001A4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InDisplay) == 0x0001A8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InDisplay' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_SwitchEnum_CmpSuccess_1) == 0x0001A9, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_SoundPlay_ReturnValue_1) == 0x0001AC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_2) == 0x0001B0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetPlayerController_ReturnValue) == 0x0001B8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0001C0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_bSuccess) == 0x0001C8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_CreateButtonsPanel_ReturnValue) == 0x0001D0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_CreateButtonsPanel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0001D8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_MakeLiteralBool_ReturnValue) == 0x0001D9, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_MakeLiteralInt_ReturnValue) == 0x0001DC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_ButtonArray) == 0x0001E0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_ButtonArray' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Get_Item) == 0x0001F0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Length_ReturnValue) == 0x0001F8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Loop_Counter_Variable_1) == 0x0001FC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_LastIndex_ReturnValue) == 0x000200, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Get_Item_1) == 0x000208, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Add_IntInt_ReturnValue_1) == 0x000210, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_Button_1) == 0x000218, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_ButtonIndex) == 0x000220, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_3) == 0x000228, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_Button) == 0x000230, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate) == 0x000238, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_PlayAnimation_ReturnValue_4) == 0x000248, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000250, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_MyGeometry) == 0x000254, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InDeltaTime) == 0x00028C, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_IsDesignTime) == 0x000290, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000298, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_As_____2D) == 0x0002A0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_As_____2D' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_DynamicCast_bSuccess_1) == 0x0002A8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_SwitchEnum_CmpSuccess_2) == 0x0002A9, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, Temp_int_Loop_Counter_Variable_2) == 0x0002AC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate_1) == 0x0002B0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Less_IntInt_ReturnValue) == 0x0002C0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Add_IntInt_ReturnValue_2) == 0x0002C4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_Event_InTime) == 0x0002C8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_Event_InTime' has a wrong offset!");
 static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Get_Item_2) == 0x0002D0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GetPopupWindowType_ReturnValue) == 0x0002D8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GetPopupWindowType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Get_Item_3) == 0x0002E0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Length_ReturnValue_1) == 0x0002E8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002EC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Length_ReturnValue_2) == 0x0002F0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Less_IntInt_ReturnValue_2) == 0x0002F4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate_3) == 0x0002F8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_UpdateButtonControlDelay_InDeltaTime_ImplicitCast) == 0x000308, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_UpdateButtonControlDelay_InDeltaTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_VariableSet_ButtonControlDelayTime_ImplicitCast) == 0x000310, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_VariableSet_ButtonControlDelayTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate_2) == 0x0002D8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Get_Item_3) == 0x0002E8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Length_ReturnValue_1) == 0x0002F0, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002F4, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Array_Length_ReturnValue_2) == 0x0002F8, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Less_IntInt_ReturnValue_2) == 0x0002FC, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CreateDelegate_OutputDelegate_3) == 0x000300, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_CustomEvent_InDeltaTime) == 0x000310, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_CustomEvent_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000318, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000320, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000328, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_SwitchEnum_CmpSuccess_3) == 0x000329, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, CallFunc_UpdateButtonControlDelay_InDeltaTime_ImplicitCast) == 0x000330, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::CallFunc_UpdateButtonControlDelay_InDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window, K2Node_VariableSet_ButtonControlDelayTime_ImplicitCast) == 0x000338, "Member 'WBP_Popup_Window_C_ExecuteUbergraph_WBP_Popup_Window::K2Node_VariableSet_ButtonControlDelayTime_ImplicitCast' has a wrong offset!");
 
 // Function WBP_Popup_Window.WBP_Popup_Window_C.GetAnimationIn
 // 0x0008 (0x0008 - 0x0000)
@@ -1276,22 +1289,15 @@ static_assert(offsetof(WBP_Popup_Window_C_UnregisterMainMenu, K2Node_DynamicCast
 static_assert(offsetof(WBP_Popup_Window_C_UnregisterMainMenu, CallFunc_UnregisterMainMenu_ReturnValue) == 0x000051, "Member 'WBP_Popup_Window_C_UnregisterMainMenu::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
 
 // Function WBP_Popup_Window.WBP_Popup_Window_C.UpdateButtonControlDelay
-// 0x0020 (0x0020 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct WBP_Popup_Window_C_UpdateButtonControlDelay final
 {
 public:
 	double                                        InDeltaTime;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Popup_Window_C_UpdateButtonControlDelay) == 0x000008, "Wrong alignment on WBP_Popup_Window_C_UpdateButtonControlDelay");
-static_assert(sizeof(WBP_Popup_Window_C_UpdateButtonControlDelay) == 0x000020, "Wrong size on WBP_Popup_Window_C_UpdateButtonControlDelay");
+static_assert(sizeof(WBP_Popup_Window_C_UpdateButtonControlDelay) == 0x000008, "Wrong size on WBP_Popup_Window_C_UpdateButtonControlDelay");
 static_assert(offsetof(WBP_Popup_Window_C_UpdateButtonControlDelay, InDeltaTime) == 0x000000, "Member 'WBP_Popup_Window_C_UpdateButtonControlDelay::InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_UpdateButtonControlDelay, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_C_UpdateButtonControlDelay::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_UpdateButtonControlDelay, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000010, "Member 'WBP_Popup_Window_C_UpdateButtonControlDelay::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_C_UpdateButtonControlDelay, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000018, "Member 'WBP_Popup_Window_C_UpdateButtonControlDelay::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 
 }
 

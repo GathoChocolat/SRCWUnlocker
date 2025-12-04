@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function WBP_CMN_Sub_MatchingState_CharaIcon.WBP_CMN_Sub_MatchingState_CharaIcon_C.ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon
-// 0x0110 (0x0110 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon final
 {
 public:
@@ -51,9 +51,12 @@ public:
 	uint8                                         Pad_FA[0x2];                                       // 0x00FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsNGCharaIcon;                       // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon) == 0x000110, "Wrong size on WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon");
+static_assert(sizeof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon) == 0x000118, "Wrong size on WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, Temp_object_Variable) == 0x000008, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, K2Node_DynamicCast_As_____) == 0x000010, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::K2Node_DynamicCast_As_____' has a wrong offset!");
@@ -77,6 +80,8 @@ static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WB
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000F9, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, CallFunc_Add_IntInt_ReturnValue) == 0x0000FC, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, K2Node_Select_Default) == 0x000100, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, K2Node_Event_bIsNGCharaIcon) == 0x000110, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::K2Node_Event_bIsNGCharaIcon' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon, CallFunc_SelectInt_ReturnValue) == 0x000114, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_CharaIcon::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
 
 // Function WBP_CMN_Sub_MatchingState_CharaIcon.WBP_CMN_Sub_MatchingState_CharaIcon_C.OnLoaded_059828894949E7A9162E1F8DAA9DD74A
 // 0x0008 (0x0008 - 0x0000)
@@ -88,6 +93,17 @@ public:
 static_assert(alignof(WBP_CMN_Sub_MatchingState_CharaIcon_C_OnLoaded_059828894949E7A9162E1F8DAA9DD74A) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_CharaIcon_C_OnLoaded_059828894949E7A9162E1F8DAA9DD74A");
 static_assert(sizeof(WBP_CMN_Sub_MatchingState_CharaIcon_C_OnLoaded_059828894949E7A9162E1F8DAA9DD74A) == 0x000008, "Wrong size on WBP_CMN_Sub_MatchingState_CharaIcon_C_OnLoaded_059828894949E7A9162E1F8DAA9DD74A");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_OnLoaded_059828894949E7A9162E1F8DAA9DD74A, Loaded) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_OnLoaded_059828894949E7A9162E1F8DAA9DD74A::Loaded' has a wrong offset!");
+
+// Function WBP_CMN_Sub_MatchingState_CharaIcon.WBP_CMN_Sub_MatchingState_CharaIcon_C.OnNGCharaIconEvent
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent final
+{
+public:
+	bool                                          bIsNGCharaIcon;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent) == 0x000001, "Wrong alignment on WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent");
+static_assert(sizeof(WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent) == 0x000001, "Wrong size on WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent");
+static_assert(offsetof(WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent, bIsNGCharaIcon) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_CharaIcon_C_OnNGCharaIconEvent::bIsNGCharaIcon' has a wrong offset!");
 
 // Function WBP_CMN_Sub_MatchingState_CharaIcon.WBP_CMN_Sub_MatchingState_CharaIcon_C.OnSetUpCharaIconEvent
 // 0x0030 (0x0030 - 0x0000)

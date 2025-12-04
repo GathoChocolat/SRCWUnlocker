@@ -242,6 +242,17 @@ static_assert(alignof(WBP_CMN_PullDownMenu_C_Open) == 0x000008, "Wrong alignment
 static_assert(sizeof(WBP_CMN_PullDownMenu_C_Open) == 0x000008, "Wrong size on WBP_CMN_PullDownMenu_C_Open");
 static_assert(offsetof(WBP_CMN_PullDownMenu_C_Open, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_Open::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
+// Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.Reset
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CMN_PullDownMenu_C_Reset final
+{
+public:
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CMN_PullDownMenu_C_Reset) == 0x000008, "Wrong alignment on WBP_CMN_PullDownMenu_C_Reset");
+static_assert(sizeof(WBP_CMN_PullDownMenu_C_Reset) == 0x000008, "Wrong size on WBP_CMN_PullDownMenu_C_Reset");
+static_assert(offsetof(WBP_CMN_PullDownMenu_C_Reset, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CMN_PullDownMenu_C_Reset::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.Setup
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_CMN_PullDownMenu_C_Setup final

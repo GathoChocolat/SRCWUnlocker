@@ -33,7 +33,7 @@ public:
 	class UImage*                                 DMY_Thumbnail;                                     // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 DMY_Thumbnail_Btn;                                 // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UThrobber*                              DSP_Waiting_dot_Owner;                             // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Eff_ptcl_01;                                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_Ptcl_01;                                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Eff_ptcl_02;                                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Eff_ptcl_03;                                       // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Eff_ptcl_04;                                       // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -93,7 +93,7 @@ static_assert(offsetof(UWBP_Popup_Info_C, Chara_02) == 0x000318, "Member 'UWBP_P
 static_assert(offsetof(UWBP_Popup_Info_C, DMY_Thumbnail) == 0x000320, "Member 'UWBP_Popup_Info_C::DMY_Thumbnail' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Info_C, DMY_Thumbnail_Btn) == 0x000328, "Member 'UWBP_Popup_Info_C::DMY_Thumbnail_Btn' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Info_C, DSP_Waiting_dot_Owner) == 0x000330, "Member 'UWBP_Popup_Info_C::DSP_Waiting_dot_Owner' has a wrong offset!");
-static_assert(offsetof(UWBP_Popup_Info_C, Eff_ptcl_01) == 0x000338, "Member 'UWBP_Popup_Info_C::Eff_ptcl_01' has a wrong offset!");
+static_assert(offsetof(UWBP_Popup_Info_C, Eff_Ptcl_01) == 0x000338, "Member 'UWBP_Popup_Info_C::Eff_Ptcl_01' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Info_C, Eff_ptcl_02) == 0x000340, "Member 'UWBP_Popup_Info_C::Eff_ptcl_02' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Info_C, Eff_ptcl_03) == 0x000348, "Member 'UWBP_Popup_Info_C::Eff_ptcl_03' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Info_C, Eff_ptcl_04) == 0x000350, "Member 'UWBP_Popup_Info_C::Eff_ptcl_04' has a wrong offset!");

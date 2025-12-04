@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "ST_PullDownMenuItemData_structs.hpp"
 #include "ST_ColorDetailWindowData_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
+#include "ST_PullDownMenuItemData_structs.hpp"
 #include "ST_ColorDetailWindowColorItemData_structs.hpp"
 
 
@@ -65,7 +65,7 @@ static_assert(sizeof(BPC_MachineCustomizeColorDetailState_C_ColorDetailWindow_On
 static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ColorDetailWindow_OnSurfaceItemSelected, InItemData) == 0x000000, "Member 'BPC_MachineCustomizeColorDetailState_C_ColorDetailWindow_OnSurfaceItemSelected::InItemData' has a wrong offset!");
 
 // Function BPC_MachineCustomizeColorDetailState.BPC_MachineCustomizeColorDetailState_C.ExecuteUbergraph_BPC_MachineCustomizeColorDetailState
-// 0x04B8 (0x04B8 - 0x0000)
+// 0x04C0 (0x04C0 - 0x0000)
 struct BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState final
 {
 public:
@@ -80,26 +80,29 @@ public:
 	class UMachineCustomTab*                      CallFunc_GetTab_ReturnValue_1;                     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EMachineCustomizeTabID InTabID)> K2Node_CreateDelegate_OutputDelegate_5;          // 0x0068(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FST_ColorDetailWindowColorItemData     K2Node_CustomEvent_InItemData_3;                   // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FST_ColorDetailWindowColorItemData     K2Node_CustomEvent_InItemData_2;                   // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FST_PullDownMenuItemData               K2Node_CustomEvent_InItemData_1;                   // 0x00A8(0x0020)(HasGetValueTypeHash)
-	struct FST_PullDownMenuItemData               K2Node_CustomEvent_InItemData;                     // 0x00C8(0x0020)(HasGetValueTypeHash)
-	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue; // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue_1; // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EA[0x6];                                       // 0x00EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue; // 0x00F0(0x0078)()
-	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1; // 0x0168(0x0078)()
-	struct FUserMachineCustomizeData              CallFunc_SetColor_OutCustomizeData;                // 0x01E0(0x0078)()
-	struct FUserMachineCustomizeData              CallFunc_SetColor_OutCustomizeData_1;              // 0x0258(0x0078)()
-	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue_2; // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue_3; // 0x02D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D2[0x6];                                      // 0x02D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2; // 0x02D8(0x0078)()
-	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_3; // 0x0350(0x0078)()
-	struct FUserMachineCustomizeData              CallFunc_SetSurface_OutCustomizeData;              // 0x03C8(0x0078)()
-	struct FUserMachineCustomizeData              CallFunc_SetSurface_OutCustomizeData_1;            // 0x0440(0x0078)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FST_ColorDetailWindowColorItemData     K2Node_CustomEvent_InItemData_2;                   // 0x0094(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FST_PullDownMenuItemData               K2Node_CustomEvent_InItemData_1;                   // 0x00B0(0x0020)(HasGetValueTypeHash)
+	struct FST_PullDownMenuItemData               K2Node_CustomEvent_InItemData;                     // 0x00D0(0x0020)(HasGetValueTypeHash)
+	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue; // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue_1; // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F2[0x6];                                       // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue; // 0x00F8(0x0078)()
+	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1; // 0x0170(0x0078)()
+	struct FUserMachineCustomizeData              CallFunc_SetColor_OutCustomizeData;                // 0x01E8(0x0078)()
+	struct FUserMachineCustomizeData              CallFunc_SetColor_OutCustomizeData_1;              // 0x0260(0x0078)()
+	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue_2; // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineColorAreaUIId                         CallFunc_GetSelectedMachineColorAreaId_ReturnValue_3; // 0x02D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DA[0x6];                                      // 0x02DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2; // 0x02E0(0x0078)()
+	struct FUserMachineCustomizeData              CallFunc_GetSelectedMachineCustomizeData_ReturnValue_3; // 0x0358(0x0078)()
+	struct FUserMachineCustomizeData              CallFunc_SetSurface_OutCustomizeData;              // 0x03D0(0x0078)()
+	struct FUserMachineCustomizeData              CallFunc_SetSurface_OutCustomizeData_1;            // 0x0448(0x0078)()
 };
 static_assert(alignof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState) == 0x000008, "Wrong alignment on BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState");
-static_assert(sizeof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState) == 0x0004B8, "Wrong size on BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState");
+static_assert(sizeof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState) == 0x0004C0, "Wrong size on BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState");
 static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, EntryPoint) == 0x000000, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
@@ -110,21 +113,22 @@ static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_B
 static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetTab_ReturnValue_1) == 0x000060, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetTab_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CreateDelegate_OutputDelegate_5) == 0x000068, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
 static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CustomEvent_InItemData_3) == 0x000078, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CustomEvent_InItemData_3' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CustomEvent_InItemData_2) == 0x000090, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CustomEvent_InItemData_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CustomEvent_InItemData_1) == 0x0000A8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CustomEvent_InItemData_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CustomEvent_InItemData) == 0x0000C8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CustomEvent_InItemData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue) == 0x0000E8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue_1) == 0x0000E9, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x0000F0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1) == 0x000168, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetColor_OutCustomizeData) == 0x0001E0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetColor_OutCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetColor_OutCustomizeData_1) == 0x000258, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetColor_OutCustomizeData_1' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue_2) == 0x0002D0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue_3) == 0x0002D1, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2) == 0x0002D8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_3) == 0x000350, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetSurface_OutCustomizeData) == 0x0003C8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetSurface_OutCustomizeData' has a wrong offset!");
-static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetSurface_OutCustomizeData_1) == 0x000440, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetSurface_OutCustomizeData_1' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CustomEvent_InItemData_2) == 0x000094, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CustomEvent_InItemData_2' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CustomEvent_InItemData_1) == 0x0000B0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CustomEvent_InItemData_1' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, K2Node_CustomEvent_InItemData) == 0x0000D0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::K2Node_CustomEvent_InItemData' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue) == 0x0000F0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue_1) == 0x0000F1, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue) == 0x0000F8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1) == 0x000170, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetColor_OutCustomizeData) == 0x0001E8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetColor_OutCustomizeData' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetColor_OutCustomizeData_1) == 0x000260, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetColor_OutCustomizeData_1' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue_2) == 0x0002D8, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineColorAreaId_ReturnValue_3) == 0x0002D9, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineColorAreaId_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2) == 0x0002E0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_GetSelectedMachineCustomizeData_ReturnValue_3) == 0x000358, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_GetSelectedMachineCustomizeData_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetSurface_OutCustomizeData) == 0x0003D0, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetSurface_OutCustomizeData' has a wrong offset!");
+static_assert(offsetof(BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState, CallFunc_SetSurface_OutCustomizeData_1) == 0x000448, "Member 'BPC_MachineCustomizeColorDetailState_C_ExecuteUbergraph_BPC_MachineCustomizeColorDetailState::CallFunc_SetSurface_OutCustomizeData_1' has a wrong offset!");
 
 // Function BPC_MachineCustomizeColorDetailState.BPC_MachineCustomizeColorDetailState_C.GetColor
 // 0x0088 (0x0088 - 0x0000)

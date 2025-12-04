@@ -16,6 +16,30 @@
 namespace SDK::Params
 {
 
+// Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01 final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01");
+static_assert(sizeof(WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01) == 0x000008, "Wrong size on WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01");
+static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01::EntryPoint' has a wrong offset!");
+static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_StatusInfo_Sub_HonorTable_01_C_ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01::K2Node_Event_IsDesignTime' has a wrong offset!");
+
+// Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct");
+static_assert(sizeof(WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct) == 0x000001, "Wrong size on WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct");
+static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_StatusInfo_Sub_HonorTable_01_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.SetCheckIcon
 // 0x0005 (0x0005 - 0x0000)
 struct WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon final
@@ -34,6 +58,17 @@ static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon, Temp_boo
 static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon, Temp_byte_Variable) == 0x000002, "Member 'WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon, K2Node_Select_Default) == 0x000004, "Member 'WBP_StatusInfo_Sub_HonorTable_01_C_SetCheckIcon::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.SetHonorTitle
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle final
+{
+public:
+	int32                                         InHonorId;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle) == 0x000004, "Wrong alignment on WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle");
+static_assert(sizeof(WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle) == 0x000004, "Wrong size on WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle");
+static_assert(offsetof(WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle, InHonorId) == 0x000000, "Member 'WBP_StatusInfo_Sub_HonorTable_01_C_SetHonorTitle::InHonorId' has a wrong offset!");
 
 // Function WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C.SetTitleText
 // 0x0010 (0x0010 - 0x0000)

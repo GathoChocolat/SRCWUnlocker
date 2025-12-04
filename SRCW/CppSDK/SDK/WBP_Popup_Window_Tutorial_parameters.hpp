@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "F_HintTutorialStructure_structs.hpp"
 #include "CriWareRuntime_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "F_HintTutorialStructure_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -252,14 +252,14 @@ static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Wi
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial, CallFunc_SetCancelIconGauge_InGaugeParam_ImplicitCast_1) == 0x000180, "Member 'WBP_Popup_Window_Tutorial_C_ExecuteUbergraph_WBP_Popup_Window_Tutorial::CallFunc_SetCancelIconGauge_InGaugeParam_ImplicitCast_1' has a wrong offset!");
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.isEnableMovingNextCursor
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor final
 {
 public:
 	bool                                          newParam;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimespan                              CallFunc_GetMovieTime_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_BreakTimespan_Days;                       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakTimespan_Hours;                      // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -269,14 +269,16 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor) == 0x000008, "Wrong alignment on WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor");
-static_assert(sizeof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor) == 0x000050, "Wrong size on WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor");
+static_assert(sizeof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor) == 0x000058, "Wrong size on WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor");
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, newParam) == 0x000000, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::newParam' has a wrong offset!");
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_GetMovieTime_ReturnValue) == 0x000008, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_GetMovieTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_IsPlaying_ReturnValue) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Days) == 0x000014, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Days' has a wrong offset!");
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Hours) == 0x000018, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Hours' has a wrong offset!");
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_BreakTimespan_Minutes) == 0x00001C, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
@@ -285,8 +287,9 @@ static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, Cal
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000028, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000030, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000038, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000040, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000048, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_IsPlaying_ReturnValue) == 0x000040, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000048, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'WBP_Popup_Window_Tutorial_C_isEnableMovingNextCursor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C.PauseMovie
 // 0x000C (0x000C - 0x0000)

@@ -226,6 +226,20 @@ void UWBP_Advertise_Start_C::PauseAllAdvAnimation()
 }
 
 
+// Function WBP_Advertise_Start.WBP_Advertise_Start_C.Prepare Show Strap Guide
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Advertise_Start_C::Prepare_Show_Strap_Guide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Advertise_Start_C", "Prepare Show Strap Guide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Advertise_Start.WBP_Advertise_Start_C.SetLogosTime
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -305,6 +319,20 @@ void UWBP_Advertise_Start_C::SetSwitcherIndex(EAdvertiseState AdvertiseState)
 	Parms.AdvertiseState = AdvertiseState;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Advertise_Start.WBP_Advertise_Start_C.Show Strap Guide
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Advertise_Start_C::Show_Strap_Guide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Advertise_Start_C", "Show Strap Guide");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

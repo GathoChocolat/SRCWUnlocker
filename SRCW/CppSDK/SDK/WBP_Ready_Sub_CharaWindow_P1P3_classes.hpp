@@ -10,36 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ready_Sub_CharaWindow_P1P3.WBP_Ready_Sub_CharaWindow_P1P3_C
-// 0x0060 (0x0340 - 0x02E0)
+// 0x0058 (0x0348 - 0x02F0)
 class UWBP_Ready_Sub_CharaWindow_P1P3_C final : public UReadyWindowCharacterIcon
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       OK_InLoop;                                         // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Default_Loop;                                      // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Chara_Base;                                        // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Chara_NameBase;                                    // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Check;                                             // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DMY_CharaCutIn_P1P3;                               // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_CharaName_P1P3;                                // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      WBP_FontScroll_CharaName_P1P3;                     // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTexture2D*                             CharaIconTexture;                                  // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CharaName;                                         // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       OK_InLoop;                                         // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Default_Loop;                                      // 0x0300(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Chara_Base;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Chara_NameBase;                                    // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Check;                                             // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DMY_CharaCutIn_P1P3;                               // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_CharaName_P1P3;                                // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_CharaName_P1P3;                     // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   CharaName;                                         // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_Ready_Sub_CharaWindow_P1P3(int32 EntryPoint);
-	void OnLoaded_F4235E7B4BD15ADC84707AA5DC0ABE6B(class UObject* Loaded);
 	void SetCharacterIconCheckMark(bool bIsCheck);
 	void SetCharacterIconData();
-	void SetCharacterIconTexture(const TSoftObjectPtr<class UTexture2D>& Texture, const class FText& Name_0);
+	void SetCharacterIconTextureObj(const class UTexture2D* InTexture);
+	void SetCharacterName(const class FText& InName);
 
 public:
 	static class UClass* StaticClass()
@@ -52,18 +51,17 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Ready_Sub_CharaWindow_P1P3_C) == 0x000008, "Wrong alignment on UWBP_Ready_Sub_CharaWindow_P1P3_C");
-static_assert(sizeof(UWBP_Ready_Sub_CharaWindow_P1P3_C) == 0x000340, "Wrong size on UWBP_Ready_Sub_CharaWindow_P1P3_C");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, OK_InLoop) == 0x0002E8, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::OK_InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Default_Loop) == 0x0002F0, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Default_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Chara_Base) == 0x0002F8, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Chara_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Chara_NameBase) == 0x000300, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Chara_NameBase' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Check) == 0x000308, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Check' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, DMY_CharaCutIn_P1P3) == 0x000310, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::DMY_CharaCutIn_P1P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, TXT_CharaName_P1P3) == 0x000318, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::TXT_CharaName_P1P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, WBP_FontScroll_CharaName_P1P3) == 0x000320, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::WBP_FontScroll_CharaName_P1P3' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, CharaIconTexture) == 0x000328, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::CharaIconTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, CharaName) == 0x000330, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::CharaName' has a wrong offset!");
+static_assert(sizeof(UWBP_Ready_Sub_CharaWindow_P1P3_C) == 0x000348, "Wrong size on UWBP_Ready_Sub_CharaWindow_P1P3_C");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, UberGraphFrame) == 0x0002F0, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, OK_InLoop) == 0x0002F8, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::OK_InLoop' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Default_Loop) == 0x000300, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Default_Loop' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Chara_Base) == 0x000308, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Chara_Base' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Chara_NameBase) == 0x000310, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Chara_NameBase' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, Check) == 0x000318, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::Check' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, DMY_CharaCutIn_P1P3) == 0x000320, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::DMY_CharaCutIn_P1P3' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, TXT_CharaName_P1P3) == 0x000328, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::TXT_CharaName_P1P3' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, WBP_FontScroll_CharaName_P1P3) == 0x000330, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::WBP_FontScroll_CharaName_P1P3' has a wrong offset!");
+static_assert(offsetof(UWBP_Ready_Sub_CharaWindow_P1P3_C, CharaName) == 0x000338, "Member 'UWBP_Ready_Sub_CharaWindow_P1P3_C::CharaName' has a wrong offset!");
 
 }
 

@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -18,17 +19,25 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_StatusInfo_Sub_HonorTable_01.WBP_StatusInfo_Sub_HonorTable_01_C
-// 0x0020 (0x0300 - 0x02E0)
+// 0x0040 (0x0320 - 0x02E0)
 class UWBP_StatusInfo_Sub_HonorTable_01_C final : public UUserWidget
 {
 public:
-	class UImage*                                 Base02;                                            // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DSP_Check;                                         // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Header_Rank;                                   // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate;                              // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Base_Legend;                                       // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_WorldMatch;                                   // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DSP_Check;                                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Header_Rank;                                   // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate;                              // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Base;                               // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         HeaderBackgroundIndex;                             // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Construct();
+	void ExecuteUbergraph_WBP_StatusInfo_Sub_HonorTable_01(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 	void SetCheckIcon(bool IsTaked);
+	void SetHonorTitle(int32 InHonorId);
 	void SetTitleText(const class FText& Text);
 
 public:
@@ -42,11 +51,15 @@ public:
 	}
 };
 static_assert(alignof(UWBP_StatusInfo_Sub_HonorTable_01_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_Sub_HonorTable_01_C");
-static_assert(sizeof(UWBP_StatusInfo_Sub_HonorTable_01_C) == 0x000300, "Wrong size on UWBP_StatusInfo_Sub_HonorTable_01_C");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, Base02) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::Base02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, DSP_Check) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::DSP_Check' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, TXT_Header_Rank) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::TXT_Header_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, WBP_HonorTitle_Plate) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::WBP_HonorTitle_Plate' has a wrong offset!");
+static_assert(sizeof(UWBP_StatusInfo_Sub_HonorTable_01_C) == 0x000320, "Wrong size on UWBP_StatusInfo_Sub_HonorTable_01_C");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, Base_Legend) == 0x0002E8, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::Base_Legend' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, Base_WorldMatch) == 0x0002F0, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::Base_WorldMatch' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, DSP_Check) == 0x0002F8, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::DSP_Check' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, TXT_Header_Rank) == 0x000300, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::TXT_Header_Rank' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, WBP_HonorTitle_Plate) == 0x000308, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::WBP_HonorTitle_Plate' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, WidgetSwitcher_Base) == 0x000310, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::WidgetSwitcher_Base' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_Sub_HonorTable_01_C, HeaderBackgroundIndex) == 0x000318, "Member 'UWBP_StatusInfo_Sub_HonorTable_01_C::HeaderBackgroundIndex' has a wrong offset!");
 
 }
 

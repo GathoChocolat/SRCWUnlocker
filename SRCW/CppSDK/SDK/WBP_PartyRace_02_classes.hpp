@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PartyRace_02.WBP_PartyRace_02_C
-// 0x00C0 (0x05E8 - 0x0528)
+// 0x00C8 (0x05F0 - 0x0528)
 class UWBP_PartyRace_02_C final : public UPartyRacePresetSelect
 {
 public:
@@ -46,9 +46,12 @@ public:
 	uint8                                         Pad_5C1[0x7];                                      // 0x05C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void()>              EnterCustomPreset;                                 // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              ExitCustomPreset;                                  // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UUnionUIButtonBase*                     LastFocusedPresetBtn;                              // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindPresetButton(class UPartyRaceSubPresetBtn* InPresetButton);
+	void BindToChangeControllerInputEvent();
+	void ChangeControllerInputEvent(EAppControllerInputType BeforeType, EAppControllerInputType AfterType);
 	void Construct();
 	void DeselectOtherButtons(int32 SelectedButtonIndex);
 	void ExecuteUbergraph_WBP_PartyRace_02(int32 EntryPoint);
@@ -57,6 +60,7 @@ public:
 	void FocusEnd();
 	void FocusStart();
 	void InSubButton();
+	void OnCancelSubBtn(class UUnionUIButtonBase* Button);
 	void OnGadgetCustomClicked(class UUnionUIButtonBaseCore* Button);
 	void OnRivalSelectClicked(class UUnionUIButtonBaseCore* Button);
 	void OnSelected(class UUnionUIButtonBaseCore* Button);
@@ -68,6 +72,7 @@ public:
 	void RivalSetONOFF();
 	void SetupRomMode();
 	void UnbindPresetButton(class UPartyRaceSubPresetBtn* InPresetButton);
+	void UnbindToChangeControllerInputEvent();
 	void UpdatePresetDetail(int32 ButtonIndex);
 	void UpdateRivalTeamUI();
 	void UpdateSpeedClass();
@@ -83,7 +88,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_PartyRace_02_C) == 0x000008, "Wrong alignment on UWBP_PartyRace_02_C");
-static_assert(sizeof(UWBP_PartyRace_02_C) == 0x0005E8, "Wrong size on UWBP_PartyRace_02_C");
+static_assert(sizeof(UWBP_PartyRace_02_C) == 0x0005F0, "Wrong size on UWBP_PartyRace_02_C");
 static_assert(offsetof(UWBP_PartyRace_02_C, UberGraphFrame) == 0x000528, "Member 'UWBP_PartyRace_02_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_02_C, base) == 0x000530, "Member 'UWBP_PartyRace_02_C::base' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_02_C, DSP_PlayAfter) == 0x000538, "Member 'UWBP_PartyRace_02_C::DSP_PlayAfter' has a wrong offset!");
@@ -106,6 +111,7 @@ static_assert(offsetof(UWBP_PartyRace_02_C, WBP_PartyRace_Sub_RivalTeamNext) == 
 static_assert(offsetof(UWBP_PartyRace_02_C, IsInOrOut) == 0x0005C0, "Member 'UWBP_PartyRace_02_C::IsInOrOut' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_02_C, EnterCustomPreset) == 0x0005C8, "Member 'UWBP_PartyRace_02_C::EnterCustomPreset' has a wrong offset!");
 static_assert(offsetof(UWBP_PartyRace_02_C, ExitCustomPreset) == 0x0005D8, "Member 'UWBP_PartyRace_02_C::ExitCustomPreset' has a wrong offset!");
+static_assert(offsetof(UWBP_PartyRace_02_C, LastFocusedPresetBtn) == 0x0005E8, "Member 'UWBP_PartyRace_02_C::LastFocusedPresetBtn' has a wrong offset!");
 
 }
 

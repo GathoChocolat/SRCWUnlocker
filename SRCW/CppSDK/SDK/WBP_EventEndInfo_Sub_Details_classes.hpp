@@ -12,37 +12,36 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_EventEndInfo_Sub_Details.WBP_EventEndInfo_Sub_Details_C
-// 0x0098 (0x0378 - 0x02E0)
-class UWBP_EventEndInfo_Sub_Details_C final : public UUserWidget
+// 0x0080 (0x03D0 - 0x0350)
+class UWBP_EventEndInfo_Sub_Details_C final : public UUEventEndInfoSubDetailWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Ranking_In;                                        // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Base_FestaPoint_01;                                // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_FestaPoint_02;                                // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 EventEnd_BG;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 FestaPointIcon;                                    // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Line_FestaPoint;                                   // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_FestaCoin;                                 // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_FestaPoint;                                    // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Festapointsaward;                              // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_EventEndInfo_Sub_Ranking_C*        WBP_EventEndInfo_Sub_Ranking;                      // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnFinishedPointDisplay;                            // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnFinishedRankingDisplay;                          // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	int32                                         OriginalPoint;                                     // 0x0358(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35C[0x4];                                      // 0x035C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        PointAnimTimeLength;                               // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        PointAnimTime;                                     // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsPointDisplayAnimating;                           // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371[0x3];                                      // 0x0371(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           PointCountSE;                                      // 0x0374(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Ranking_In;                                        // 0x0358(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Base_FestaPoint_01;                                // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_FestaPoint_02;                                // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 EventEnd_BG;                                       // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FestaPointIcon;                                    // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Line_FestaPoint;                                   // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_FestaCoin;                                 // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_FestaPoint;                                    // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Festapointsaward;                              // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_EventEndInfo_Sub_Ranking_C*        WBP_EventEndInfo_Sub_Ranking;                      // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         OriginalPoint;                                     // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AC[0x4];                                      // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        PointAnimTimeLength;                               // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        PointAnimTime;                                     // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPointDisplayAnimating;                           // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C1[0x3];                                      // 0x03C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           PointCountSE;                                      // 0x03C4(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         BasePoint;                                         // 0x03C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_EventEndInfo_Sub_Details(int32 EntryPoint);
@@ -67,25 +66,24 @@ public:
 	}
 };
 static_assert(alignof(UWBP_EventEndInfo_Sub_Details_C) == 0x000008, "Wrong alignment on UWBP_EventEndInfo_Sub_Details_C");
-static_assert(sizeof(UWBP_EventEndInfo_Sub_Details_C) == 0x000378, "Wrong size on UWBP_EventEndInfo_Sub_Details_C");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_EventEndInfo_Sub_Details_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Ranking_In) == 0x0002E8, "Member 'UWBP_EventEndInfo_Sub_Details_C::Ranking_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Base_FestaPoint_01) == 0x0002F0, "Member 'UWBP_EventEndInfo_Sub_Details_C::Base_FestaPoint_01' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Base_FestaPoint_02) == 0x0002F8, "Member 'UWBP_EventEndInfo_Sub_Details_C::Base_FestaPoint_02' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, EventEnd_BG) == 0x000300, "Member 'UWBP_EventEndInfo_Sub_Details_C::EventEnd_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, FestaPointIcon) == 0x000308, "Member 'UWBP_EventEndInfo_Sub_Details_C::FestaPointIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Line_FestaPoint) == 0x000310, "Member 'UWBP_EventEndInfo_Sub_Details_C::Line_FestaPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Overlay_FestaCoin) == 0x000318, "Member 'UWBP_EventEndInfo_Sub_Details_C::Overlay_FestaCoin' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, TXT_FestaPoint) == 0x000320, "Member 'UWBP_EventEndInfo_Sub_Details_C::TXT_FestaPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, TXT_Festapointsaward) == 0x000328, "Member 'UWBP_EventEndInfo_Sub_Details_C::TXT_Festapointsaward' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, WBP_EventEndInfo_Sub_Ranking) == 0x000330, "Member 'UWBP_EventEndInfo_Sub_Details_C::WBP_EventEndInfo_Sub_Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, OnFinishedPointDisplay) == 0x000338, "Member 'UWBP_EventEndInfo_Sub_Details_C::OnFinishedPointDisplay' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, OnFinishedRankingDisplay) == 0x000348, "Member 'UWBP_EventEndInfo_Sub_Details_C::OnFinishedRankingDisplay' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, OriginalPoint) == 0x000358, "Member 'UWBP_EventEndInfo_Sub_Details_C::OriginalPoint' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointAnimTimeLength) == 0x000360, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointAnimTimeLength' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointAnimTime) == 0x000368, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointAnimTime' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, IsPointDisplayAnimating) == 0x000370, "Member 'UWBP_EventEndInfo_Sub_Details_C::IsPointDisplayAnimating' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointCountSE) == 0x000374, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointCountSE' has a wrong offset!");
+static_assert(sizeof(UWBP_EventEndInfo_Sub_Details_C) == 0x0003D0, "Wrong size on UWBP_EventEndInfo_Sub_Details_C");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, UberGraphFrame) == 0x000350, "Member 'UWBP_EventEndInfo_Sub_Details_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Ranking_In) == 0x000358, "Member 'UWBP_EventEndInfo_Sub_Details_C::Ranking_In' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Base_FestaPoint_01) == 0x000360, "Member 'UWBP_EventEndInfo_Sub_Details_C::Base_FestaPoint_01' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Base_FestaPoint_02) == 0x000368, "Member 'UWBP_EventEndInfo_Sub_Details_C::Base_FestaPoint_02' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, EventEnd_BG) == 0x000370, "Member 'UWBP_EventEndInfo_Sub_Details_C::EventEnd_BG' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, FestaPointIcon) == 0x000378, "Member 'UWBP_EventEndInfo_Sub_Details_C::FestaPointIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Line_FestaPoint) == 0x000380, "Member 'UWBP_EventEndInfo_Sub_Details_C::Line_FestaPoint' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, Overlay_FestaCoin) == 0x000388, "Member 'UWBP_EventEndInfo_Sub_Details_C::Overlay_FestaCoin' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, TXT_FestaPoint) == 0x000390, "Member 'UWBP_EventEndInfo_Sub_Details_C::TXT_FestaPoint' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, TXT_Festapointsaward) == 0x000398, "Member 'UWBP_EventEndInfo_Sub_Details_C::TXT_Festapointsaward' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, WBP_EventEndInfo_Sub_Ranking) == 0x0003A0, "Member 'UWBP_EventEndInfo_Sub_Details_C::WBP_EventEndInfo_Sub_Ranking' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, OriginalPoint) == 0x0003A8, "Member 'UWBP_EventEndInfo_Sub_Details_C::OriginalPoint' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointAnimTimeLength) == 0x0003B0, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointAnimTimeLength' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointAnimTime) == 0x0003B8, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointAnimTime' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, IsPointDisplayAnimating) == 0x0003C0, "Member 'UWBP_EventEndInfo_Sub_Details_C::IsPointDisplayAnimating' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, PointCountSE) == 0x0003C4, "Member 'UWBP_EventEndInfo_Sub_Details_C::PointCountSE' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_Sub_Details_C, BasePoint) == 0x0003C8, "Member 'UWBP_EventEndInfo_Sub_Details_C::BasePoint' has a wrong offset!");
 
 }
 

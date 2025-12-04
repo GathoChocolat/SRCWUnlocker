@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -21,40 +21,40 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_VehicleInRacePawn.BP_VehicleInRacePawn_C
-// 0x0420 (0x0DB0 - 0x0990)
+// 0x0420 (0x0E00 - 0x09E0)
 class ABP_VehicleInRacePawn_C final : public AVehicleInRacePawn
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0990(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FLinearColor                           Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76; // 0x0998(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76; // 0x09A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9A9[0x7];                                      // 0x09A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_Rainbow;                                  // 0x09B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8; // 0x09B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8; // 0x09BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9BD[0x3];                                      // 0x09BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_CountDown;                                // 0x09C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652; // 0x09C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652; // 0x09CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9CD[0x3];                                      // 0x09CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_Damage_Spin_In_Intensity;                 // 0x09D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE; // 0x09D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE; // 0x09DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9DD[0x3];                                      // 0x09DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_Damage_In_Intensity;                      // 0x09E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F; // 0x09E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F; // 0x09EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9ED[0x3];                                      // 0x09ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_FadeOut_Ink;                              // 0x09F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343; // 0x09F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343; // 0x09FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9FD[0x3];                                      // 0x09FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_Drift_In_Intensity;                       // 0x0A00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B; // 0x0A08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B; // 0x0A0C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x09E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FLinearColor                           Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76; // 0x09E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76; // 0x09F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9F9[0x7];                                      // 0x09F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_Rainbow;                                  // 0x0A00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8; // 0x0A08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8; // 0x0A0C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A0D[0x3];                                      // 0x0A0D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_Scale_Down;                               // 0x0A10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FDriverData                            DriverData;                                        // 0x0A18(0x0390)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UTimelineComponent*                     Timeline_CountDown;                                // 0x0A10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652; // 0x0A18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652; // 0x0A1C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1D[0x3];                                      // 0x0A1D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_Damage_Spin_In_Intensity;                 // 0x0A20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE; // 0x0A28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE; // 0x0A2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A2D[0x3];                                      // 0x0A2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_Damage_In_Intensity;                      // 0x0A30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F; // 0x0A38(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F; // 0x0A3C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A3D[0x3];                                      // 0x0A3D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_FadeOut_Ink;                              // 0x0A40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343; // 0x0A48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343; // 0x0A4C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4D[0x3];                                      // 0x0A4D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_Drift_In_Intensity;                       // 0x0A50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B; // 0x0A58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B; // 0x0A5C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A5D[0x3];                                      // 0x0A5D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_Scale_Down;                               // 0x0A60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FDriverData                            DriverData;                                        // 0x0A68(0x0390)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ChangeVehicleSize(float SizeRate);
@@ -96,30 +96,30 @@ public:
 	}
 };
 static_assert(alignof(ABP_VehicleInRacePawn_C) == 0x000010, "Wrong alignment on ABP_VehicleInRacePawn_C");
-static_assert(sizeof(ABP_VehicleInRacePawn_C) == 0x000DB0, "Wrong size on ABP_VehicleInRacePawn_C");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, UberGraphFrame) == 0x000990, "Member 'ABP_VehicleInRacePawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76) == 0x000998, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76) == 0x0009A8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow) == 0x0009B0, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8) == 0x0009B8, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8) == 0x0009BC, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown) == 0x0009C0, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652) == 0x0009C8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652) == 0x0009CC, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity) == 0x0009D0, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE) == 0x0009D8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE) == 0x0009DC, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity) == 0x0009E0, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F) == 0x0009E8, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F) == 0x0009EC, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink) == 0x0009F0, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343) == 0x0009F8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343) == 0x0009FC, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity) == 0x000A00, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B) == 0x000A08, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B) == 0x000A0C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down) == 0x000A10, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down' has a wrong offset!");
-static_assert(offsetof(ABP_VehicleInRacePawn_C, DriverData) == 0x000A18, "Member 'ABP_VehicleInRacePawn_C::DriverData' has a wrong offset!");
+static_assert(sizeof(ABP_VehicleInRacePawn_C) == 0x000E00, "Wrong size on ABP_VehicleInRacePawn_C");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, UberGraphFrame) == 0x0009E0, "Member 'ABP_VehicleInRacePawn_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76) == 0x0009E8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow_ColorRainbow_398F110E4888851C953321BB9EF69A76' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76) == 0x0009F8, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow__Direction_398F110E4888851C953321BB9EF69A76' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Rainbow) == 0x000A00, "Member 'ABP_VehicleInRacePawn_C::Timeline_Rainbow' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8) == 0x000A08, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown_ItemCountDown_D7F13C784585628358525B8BFBB668C8' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8) == 0x000A0C, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown__Direction_D7F13C784585628358525B8BFBB668C8' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_CountDown) == 0x000A10, "Member 'ABP_VehicleInRacePawn_C::Timeline_CountDown' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652) == 0x000A18, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity_Damage_Intensity_E780DC2640C5BFB6924AA5B5B7E94652' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652) == 0x000A1C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity__Direction_E780DC2640C5BFB6924AA5B5B7E94652' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_Spin_In_Intensity) == 0x000A20, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_Spin_In_Intensity' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE) == 0x000A28, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity_Damage_Intensity_1B12843C4C159894D1354B91D4B84FDE' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE) == 0x000A2C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity__Direction_1B12843C4C159894D1354B91D4B84FDE' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Damage_In_Intensity) == 0x000A30, "Member 'ABP_VehicleInRacePawn_C::Timeline_Damage_In_Intensity' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F) == 0x000A38, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink_FadeOut_Ink_51D33DC14B71B11189DA0ABA0855515F' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F) == 0x000A3C, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink__Direction_51D33DC14B71B11189DA0ABA0855515F' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_FadeOut_Ink) == 0x000A40, "Member 'ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343) == 0x000A48, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity_Drift_Intensity_C3149F7E457D97BFB172D1BF2190F343' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343) == 0x000A4C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity__Direction_C3149F7E457D97BFB172D1BF2190F343' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Drift_In_Intensity) == 0x000A50, "Member 'ABP_VehicleInRacePawn_C::Timeline_Drift_In_Intensity' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B) == 0x000A58, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down_ScaleRate_F78E34F74DA4B82C40D04B9705E5A57B' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B) == 0x000A5C, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down__Direction_F78E34F74DA4B82C40D04B9705E5A57B' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, Timeline_Scale_Down) == 0x000A60, "Member 'ABP_VehicleInRacePawn_C::Timeline_Scale_Down' has a wrong offset!");
+static_assert(offsetof(ABP_VehicleInRacePawn_C, DriverData) == 0x000A68, "Member 'ABP_VehicleInRacePawn_C::DriverData' has a wrong offset!");
 
 }
 

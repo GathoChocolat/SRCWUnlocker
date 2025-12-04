@@ -199,16 +199,6 @@ enum class ETriggerEventsSupported : uint8
 	ETriggerEventsSupported_MAX              = 8,
 };
 
-// ScriptStruct EnhancedInput.InputActionValue
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x08) FInputActionValue final
-{
-public:
-	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FInputActionValue) == 0x000008, "Wrong alignment on FInputActionValue");
-static_assert(sizeof(FInputActionValue) == 0x000020, "Wrong size on FInputActionValue");
-
 // ScriptStruct EnhancedInput.PlayerKeyMapping
 // 0x0080 (0x0080 - 0x0000)
 struct FPlayerKeyMapping final
@@ -247,6 +237,16 @@ static_assert(alignof(FKeyMappingRow) == 0x000008, "Wrong alignment on FKeyMappi
 static_assert(sizeof(FKeyMappingRow) == 0x000050, "Wrong size on FKeyMappingRow");
 static_assert(offsetof(FKeyMappingRow, Mappings) == 0x000000, "Member 'FKeyMappingRow::Mappings' has a wrong offset!");
 
+// ScriptStruct EnhancedInput.InputActionValue
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) FInputActionValue final
+{
+public:
+	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FInputActionValue) == 0x000008, "Wrong alignment on FInputActionValue");
+static_assert(sizeof(FInputActionValue) == 0x000020, "Wrong size on FInputActionValue");
+
 // ScriptStruct EnhancedInput.InjectedInput
 // 0x0040 (0x0040 - 0x0000)
 struct FInjectedInput final
@@ -283,6 +283,24 @@ static_assert(offsetof(FMapPlayerKeyArgs, Slot) == 0x000008, "Member 'FMapPlayer
 static_assert(offsetof(FMapPlayerKeyArgs, NewKey) == 0x000010, "Member 'FMapPlayerKeyArgs::NewKey' has a wrong offset!");
 static_assert(offsetof(FMapPlayerKeyArgs, HardwareDeviceId) == 0x000028, "Member 'FMapPlayerKeyArgs::HardwareDeviceId' has a wrong offset!");
 static_assert(offsetof(FMapPlayerKeyArgs, ProfileId) == 0x000030, "Member 'FMapPlayerKeyArgs::ProfileId' has a wrong offset!");
+
+// ScriptStruct EnhancedInput.DefaultContextSetting
+// 0x0030 (0x0030 - 0x0000)
+struct FDefaultContextSetting final
+{
+public:
+	TSoftObjectPtr<class UInputMappingContext>    InputMappingContext;                               // 0x0000(0x0028)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Priority;                                          // 0x0028(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAddImmediately;                                   // 0x002C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRegisterWithUserSettings;                         // 0x002D(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FDefaultContextSetting) == 0x000008, "Wrong alignment on FDefaultContextSetting");
+static_assert(sizeof(FDefaultContextSetting) == 0x000030, "Wrong size on FDefaultContextSetting");
+static_assert(offsetof(FDefaultContextSetting, InputMappingContext) == 0x000000, "Member 'FDefaultContextSetting::InputMappingContext' has a wrong offset!");
+static_assert(offsetof(FDefaultContextSetting, Priority) == 0x000028, "Member 'FDefaultContextSetting::Priority' has a wrong offset!");
+static_assert(offsetof(FDefaultContextSetting, bAddImmediately) == 0x00002C, "Member 'FDefaultContextSetting::bAddImmediately' has a wrong offset!");
+static_assert(offsetof(FDefaultContextSetting, bRegisterWithUserSettings) == 0x00002D, "Member 'FDefaultContextSetting::bRegisterWithUserSettings' has a wrong offset!");
 
 // ScriptStruct EnhancedInput.PlayerMappableKeyProfileCreationArgs
 // 0x0030 (0x0030 - 0x0000)
@@ -409,24 +427,6 @@ static_assert(sizeof(FBlueprintEnhancedInputActionBinding) == 0x000018, "Wrong s
 static_assert(offsetof(FBlueprintEnhancedInputActionBinding, InputAction) == 0x000000, "Member 'FBlueprintEnhancedInputActionBinding::InputAction' has a wrong offset!");
 static_assert(offsetof(FBlueprintEnhancedInputActionBinding, TriggerEvent) == 0x000008, "Member 'FBlueprintEnhancedInputActionBinding::TriggerEvent' has a wrong offset!");
 static_assert(offsetof(FBlueprintEnhancedInputActionBinding, FunctionNameToBind) == 0x00000C, "Member 'FBlueprintEnhancedInputActionBinding::FunctionNameToBind' has a wrong offset!");
-
-// ScriptStruct EnhancedInput.DefaultContextSetting
-// 0x0030 (0x0030 - 0x0000)
-struct FDefaultContextSetting final
-{
-public:
-	TSoftObjectPtr<class UInputMappingContext>    InputMappingContext;                               // 0x0000(0x0028)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Priority;                                          // 0x0028(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAddImmediately;                                   // 0x002C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRegisterWithUserSettings;                         // 0x002D(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FDefaultContextSetting) == 0x000008, "Wrong alignment on FDefaultContextSetting");
-static_assert(sizeof(FDefaultContextSetting) == 0x000030, "Wrong size on FDefaultContextSetting");
-static_assert(offsetof(FDefaultContextSetting, InputMappingContext) == 0x000000, "Member 'FDefaultContextSetting::InputMappingContext' has a wrong offset!");
-static_assert(offsetof(FDefaultContextSetting, Priority) == 0x000028, "Member 'FDefaultContextSetting::Priority' has a wrong offset!");
-static_assert(offsetof(FDefaultContextSetting, bAddImmediately) == 0x00002C, "Member 'FDefaultContextSetting::bAddImmediately' has a wrong offset!");
-static_assert(offsetof(FDefaultContextSetting, bRegisterWithUserSettings) == 0x00002D, "Member 'FDefaultContextSetting::bRegisterWithUserSettings' has a wrong offset!");
 
 // ScriptStruct EnhancedInput.ModifyContextOptions
 // 0x0001 (0x0001 - 0x0000)

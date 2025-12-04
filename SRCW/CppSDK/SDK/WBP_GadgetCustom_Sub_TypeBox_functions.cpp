@@ -170,6 +170,20 @@ void UWBP_GadgetCustom_Sub_TypeBox_C::OnInitialized()
 }
 
 
+// Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.OnInitWidgetRefCategoryNg
+// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetCustom_Sub_TypeBox_C::OnInitWidgetRefCategoryNg()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCustom_Sub_TypeBox_C", "OnInitWidgetRefCategoryNg");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.OnInitWidgetReference
 // (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 

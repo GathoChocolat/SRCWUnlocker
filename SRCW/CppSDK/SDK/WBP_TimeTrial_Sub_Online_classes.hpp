@@ -51,6 +51,7 @@ public:
 	class UWidget* DoCustomNavigation(EUINavigation Navigation_0);
 	class UWidget* DoCustomNavigation_0(EUINavigation Navigation_0);
 	void ExecuteUbergraph_WBP_TimeTrial_Sub_Online(int32 EntryPoint);
+	void OnFirstFocus();
 	void SetIsFocusable(bool InFocus);
 	void SetLastFocusButton();
 	void Setup_Online_Panel(EStageId InStageId, const struct FUserTimeTrialRaceData& TimeTrialRaceData, ECrossplayPlatform InPlatform, const class FText& InUserName, int32 InHonorId);

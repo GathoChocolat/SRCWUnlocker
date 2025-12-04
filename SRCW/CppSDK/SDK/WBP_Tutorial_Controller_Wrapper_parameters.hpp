@@ -44,7 +44,7 @@ static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, CallFunc_GetDat
 static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_Create, CallFunc_IsValid_ReturnValue) == 0x000039, "Member 'WBP_Tutorial_Controller_Wrapper_C_Create::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function WBP_Tutorial_Controller_Wrapper.WBP_Tutorial_Controller_Wrapper_C.CreateController
-// 0x0070 (0x0070 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct WBP_Tutorial_Controller_Wrapper_C_CreateController final
 {
 public:
@@ -52,42 +52,84 @@ public:
 	EUnionPlatform                                InPlatform;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonUIController*                    newParam;                                          // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowName;                                           // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoveChildAt_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonUIController*                    K2Node_DynamicCast_AsCommon_UIController;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                CallFunc_GetPlatformControllerWidgetClass_OutClass; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ClassClass_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CallFunc_Create_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonUIController*                    K2Node_DynamicCast_AsCommon_UIController_1;        // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        NeedToRemove;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
+	class FName                                   RowName;                                           // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0030(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoveChild_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item_1;                         // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonUIController*                    K2Node_DynamicCast_AsCommon_UIController;          // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonUIController*                    K2Node_DynamicCast_AsCommon_UIController_1;        // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class UUserWidget>                CallFunc_GetPlatformControllerWidgetClass_OutClass; // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ClassClass_ReturnValue;          // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_Create_ReturnValue;                       // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonUIController*                    K2Node_DynamicCast_AsCommon_UIController_2;        // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Tutorial_Controller_Wrapper_C_CreateController) == 0x000008, "Wrong alignment on WBP_Tutorial_Controller_Wrapper_C_CreateController");
-static_assert(sizeof(WBP_Tutorial_Controller_Wrapper_C_CreateController) == 0x000070, "Wrong size on WBP_Tutorial_Controller_Wrapper_C_CreateController");
+static_assert(sizeof(WBP_Tutorial_Controller_Wrapper_C_CreateController) == 0x0000E8, "Wrong size on WBP_Tutorial_Controller_Wrapper_C_CreateController");
 static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, InType) == 0x000000, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::InType' has a wrong offset!");
 static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, InPlatform) == 0x000001, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::InPlatform' has a wrong offset!");
 static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, newParam) == 0x000008, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::newParam' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, RowName) == 0x000010, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::RowName' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetChildAt_ReturnValue) == 0x000018, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_RemoveChildAt_ReturnValue) == 0x000020, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_RemoveChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController) == 0x000028, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetPlatformControllerWidgetClass_OutClass) == 0x000038, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetPlatformControllerWidgetClass_OutClass' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_NotEqual_ClassClass_ReturnValue) == 0x000040, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_NotEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_IsValidClass_ReturnValue) == 0x000041, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetPlayerController_ReturnValue) == 0x000048, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Create_ReturnValue) == 0x000050, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController_1) == 0x000058, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess_1) == 0x000060, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_AddChild_ReturnValue) == 0x000068, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, NeedToRemove) == 0x000010, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::NeedToRemove' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, RowName) == 0x000020, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::RowName' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Array_Index_Variable) == 0x000028, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetAllChildren_ReturnValue) == 0x000030, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Get_Item) == 0x000048, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_RemoveChild_ReturnValue) == 0x000054, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Loop_Counter_Variable) == 0x000058, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Loop_Counter_Variable_1) == 0x000064, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Less_IntInt_ReturnValue_1) == 0x000068, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Add_IntInt_ReturnValue_1) == 0x00006C, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, Temp_int_Array_Index_Variable_1) == 0x000070, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Get_Item_1) == 0x000078, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetChildAt_ReturnValue) == 0x000080, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController) == 0x000088, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController_1) == 0x000098, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Array_Add_ReturnValue) == 0x0000A4, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetPlatformControllerWidgetClass_OutClass) == 0x0000A8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetPlatformControllerWidgetClass_OutClass' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_IsValidClass_ReturnValue) == 0x0000B0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_NotEqual_ClassClass_ReturnValue) == 0x0000B1, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_NotEqual_ClassClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_GetPlayerController_ReturnValue) == 0x0000B8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_Create_ReturnValue) == 0x0000C0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_AsCommon_UIController_2) == 0x0000C8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_AsCommon_UIController_2' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, K2Node_DynamicCast_bSuccess_2) == 0x0000D0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_AddChild_ReturnValue) == 0x0000D8, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Tutorial_Controller_Wrapper_C_CreateController, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x0000E0, "Member 'WBP_Tutorial_Controller_Wrapper_C_CreateController::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function WBP_Tutorial_Controller_Wrapper.WBP_Tutorial_Controller_Wrapper_C.CreateHintID
 // 0x0038 (0x0038 - 0x0000)

@@ -32,7 +32,7 @@ void UWBP_HeaderMenu_Sub_NewsBtn_C::Construct()
 
 
 // Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -46,6 +46,26 @@ void UWBP_HeaderMenu_Sub_NewsBtn_C::ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn(
 	Params::WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.FireButtonEvent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Object                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HeaderMenu_Sub_NewsBtn_C::FireButtonEvent(class UObject* Object)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeaderMenu_Sub_NewsBtn_C", "FireButtonEvent");
+
+	Params::WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent Parms{};
+
+	Parms.Object = Object;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

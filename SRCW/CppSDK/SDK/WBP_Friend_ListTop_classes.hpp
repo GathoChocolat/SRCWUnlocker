@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -71,7 +71,7 @@ public:
 	void SetFairPlayPointWidgetVisible(bool bInVisible);
 	void SetPlayerIconListVisible(bool bInVisible);
 	void SetRacerInfoWidgetVisible(bool bInVisible);
-	void Setup(int32 InLocalUserNumber, EFriendListCategory InInitialCategory, int32 InZOrder, bool bInLobbySequence, bool bInLobbyInvitationSendEnable, bool bInLobbyInvitationAcceptEnable, bool bInLobbyInvitationRejectEnable);
+	void Setup(int32 InLocalUserNumber, EFriendListCategory InInitialCategory, int32 InZOrder, const struct FFriendListSetupParameterData& SetupParameterData);
 	void SetupFairPlayPointWidget(int32 InFairPlayPoint, bool bInBan, const class FString& InPenaltyEndTime);
 	void SetupPlayerIconList(int32 InIconId, int32 InBgColorId, bool bInPlayerIconSelect);
 	void SetupRacerInfoWidget(const struct FFriendListPlayerInfo& InListPlayerInfo);

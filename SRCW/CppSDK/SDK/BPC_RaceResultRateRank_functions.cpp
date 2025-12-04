@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BPC_RaceResultRateRank.BPC_RaceResultRateRank_C.ChildStateMachineExitEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_RaceResultRateRank_C::ChildStateMachineExitEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceResultRateRank_C", "ChildStateMachineExitEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_RaceResultRateRank.BPC_RaceResultRateRank_C.ExecuteUbergraph_BPC_RaceResultRateRank
 // (Final, UbergraphFunction)
 // Parameters:

@@ -183,7 +183,7 @@ static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_OnTrickYInput) == 0x000004, "Wrong si
 static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_OnTrickYInput, InValue) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_OnTrickYInput::InValue' has a wrong offset!");
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.SetBtnText
-// 0x0070 (0x0070 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct WBP_Race_Sub_Btn_LR_C_SetBtnText final
 {
 public:
@@ -191,16 +191,16 @@ public:
 	EBtnGuidePlatFormController                   CallFunc_GetControllerType_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FBtnGuidePlatformText                  CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0058)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBtnGuidePlatformText                  CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0068)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_Sub_Btn_LR_C_SetBtnText) == 0x000008, "Wrong alignment on WBP_Race_Sub_Btn_LR_C_SetBtnText");
-static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_SetBtnText) == 0x000070, "Wrong size on WBP_Race_Sub_Btn_LR_C_SetBtnText");
+static_assert(sizeof(WBP_Race_Sub_Btn_LR_C_SetBtnText) == 0x000080, "Wrong size on WBP_Race_Sub_Btn_LR_C_SetBtnText");
 static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, PlayerControllerIndex) == 0x000000, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::PlayerControllerIndex' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetControllerType_ReturnValue) == 0x000004, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetControllerType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetEnumeratorName_ReturnValue) == 0x000008, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000068, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_Btn_LR_C_SetBtnText, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000078, "Member 'WBP_Race_Sub_Btn_LR_C_SetBtnText::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
 
 // Function WBP_Race_Sub_Btn_LR.WBP_Race_Sub_Btn_LR_C.SetKey
 // 0x0040 (0x0040 - 0x0000)

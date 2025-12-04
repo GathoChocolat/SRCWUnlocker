@@ -12,6 +12,7 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionUI_classes.hpp"
 
 
@@ -19,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HeaderMenu_Sub_PlayerNamePlate.WBP_HeaderMenu_Sub_PlayerNamePlate_C
-// 0x0060 (0x0438 - 0x03D8)
+// 0x0080 (0x0458 - 0x03D8)
 class UWBP_HeaderMenu_Sub_PlayerNamePlate_C final : public UUnionUISceneBase
 {
 public:
@@ -28,18 +29,22 @@ public:
 	class UWidgetAnimation*                       PlayerNamePlate_Loop;                              // 0x03E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       PlayerNamePlate_In;                                // 0x03F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Bar_Rank;                                          // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 base;                                              // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_01;                                           // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HeaderMenu_Sub_WinInfo_C*          DSP_WBP_HeaderMenu_Sub_WinInfo;                    // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_PlatformIcon;                                  // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Name;                                          // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate;                              // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ResultRate_Sub_RankIcon_C*         WBP_ResultRate_Sub_RankIcon;                       // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               BarOverlay;                                        // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 base;                                              // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 base_1;                                            // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_01;                                           // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               DSP_LegendNum;                                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HeaderMenu_Sub_WinInfo_C*          DSP_WBP_HeaderMenu_Sub_WinInfo;                    // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ResultLegend_Sub_NUM_C*            DSP_WBP_ResultLegend_Sub_NUM;                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_PlatformIcon;                                  // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Name;                                          // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate;                              // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ResultRate_Sub_RankIcon_C*         WBP_ResultRate_Sub_RankIcon;                       // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void Construct();
 	void ExecuteUbergraph_WBP_HeaderMenu_Sub_PlayerNamePlate(int32 EntryPoint);
-	void SetUpUserData(const class FText& InUserName, int32 InHonorId, ECrossplayPlatform InPlatform, int32 InWinCounts, uint8 InRateRank, float InRankPercent);
+	void SetUpUserData(const class FText& InUserName, int32 InHonorId, ECrossplayPlatform InPlatform, int32 InWinCounts, uint8 InRateRank, float InRankPercent, bool IsShowingLegendCompeIcon, ELegendCompeRateGrade LegendGrade, int32 InLegendRate);
 	void UpdateUserData(const class FText& InUserName, int32 InHonorId);
 
 public:
@@ -53,19 +58,23 @@ public:
 	}
 };
 static_assert(alignof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_PlayerNamePlate_C");
-static_assert(sizeof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C) == 0x000438, "Wrong size on UWBP_HeaderMenu_Sub_PlayerNamePlate_C");
+static_assert(sizeof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C) == 0x000458, "Wrong size on UWBP_HeaderMenu_Sub_PlayerNamePlate_C");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, UberGraphFrame) == 0x0003D8, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PlayerNamePlate_Out) == 0x0003E0, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PlayerNamePlate_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PlayerNamePlate_Loop) == 0x0003E8, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PlayerNamePlate_Loop' has a wrong offset!");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PlayerNamePlate_In) == 0x0003F0, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PlayerNamePlate_In' has a wrong offset!");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, Bar_Rank) == 0x0003F8, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::Bar_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, base) == 0x000400, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, Base_01) == 0x000408, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::Base_01' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, DSP_WBP_HeaderMenu_Sub_WinInfo) == 0x000410, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::DSP_WBP_HeaderMenu_Sub_WinInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PAT_PlatformIcon) == 0x000418, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PAT_PlatformIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, TXT_Name) == 0x000420, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::TXT_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, WBP_HonorTitle_Plate) == 0x000428, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::WBP_HonorTitle_Plate' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, WBP_ResultRate_Sub_RankIcon) == 0x000430, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, BarOverlay) == 0x000400, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::BarOverlay' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, base) == 0x000408, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::base' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, base_1) == 0x000410, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::base_1' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, Base_01) == 0x000418, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::Base_01' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, DSP_LegendNum) == 0x000420, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::DSP_LegendNum' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, DSP_WBP_HeaderMenu_Sub_WinInfo) == 0x000428, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::DSP_WBP_HeaderMenu_Sub_WinInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, DSP_WBP_ResultLegend_Sub_NUM) == 0x000430, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::DSP_WBP_ResultLegend_Sub_NUM' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, PAT_PlatformIcon) == 0x000438, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::PAT_PlatformIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, TXT_Name) == 0x000440, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::TXT_Name' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, WBP_HonorTitle_Plate) == 0x000448, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::WBP_HonorTitle_Plate' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_PlayerNamePlate_C, WBP_ResultRate_Sub_RankIcon) == 0x000450, "Member 'UWBP_HeaderMenu_Sub_PlayerNamePlate_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
 
 }
 

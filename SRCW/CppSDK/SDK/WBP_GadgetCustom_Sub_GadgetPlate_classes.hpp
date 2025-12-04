@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,34 +20,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GadgetCustom_Sub_GadgetPlate.WBP_GadgetCustom_Sub_GadgetPlate_C
-// 0x00A8 (0x0558 - 0x04B0)
+// 0x00A8 (0x0590 - 0x04E8)
 class UWBP_GadgetCustom_Sub_GadgetPlate_C final : public UGadgetPlateWindow
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 base;                                              // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      DSP_PreviewEquippedGadget;                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetCustom_Sub_Tab_C*            DSP_WBP_GadgetCustom_Sub_Tab;                      // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_02;                             // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_03;                             // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_05;                             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_06;                             // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      DummyGadgetIcon;                                   // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_GadgetPlate;                                   // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               PlateOverlay;                                      // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_ClassName;                                     // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_01;                                 // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_04;                                 // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_EX_01;                              // 0x0520(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_EX_02;                              // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_EX_03;                              // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              CaptionEvent;                                      // 0x0538(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          IsVisibleTabWidget;                                // 0x0548(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_549[0x7];                                      // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDummyWidget*                           DummyWidget;                                       // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 base;                                              // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      DSP_PreviewEquippedGadget;                         // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetCustom_Sub_Tab_C*            DSP_WBP_GadgetCustom_Sub_Tab;                      // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_02;                             // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_03;                             // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_05;                             // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      DSP_WBP_GadgetIcon_06;                             // 0x0520(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      DummyGadgetIcon;                                   // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_GadgetPlate;                                   // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               PlateOverlay;                                      // 0x0538(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_ClassName;                                     // 0x0540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_01;                                 // 0x0548(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_04;                                 // 0x0550(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_EX_01;                              // 0x0558(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_EX_02;                              // 0x0560(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GadgetIcon_C*                      WBP_GadgetIcon_EX_03;                              // 0x0568(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              CaptionEvent;                                      // 0x0570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsVisibleTabWidget;                                // 0x0580(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_581[0x7];                                      // 0x0581(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDummyWidget*                           DummyWidget;                                       // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindDelegateEvents();
+	void Construct();
 	void ExecuteUbergraph_WBP_GadgetCustom_Sub_GadgetPlate(int32 EntryPoint);
 	void GetGadgetIds(TArray<EGadgetId>* OutGadgetIds);
 	void InVisiblePreviewEquippedGadget();
@@ -62,6 +63,7 @@ public:
 	void OnConstPreviewEquippedGadgetRef();
 	void OnConstTextClassNameRef();
 	void PlayTabSound();
+	void Refresh();
 	void Scene_OnCancel(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void Scene_OnDecision(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void Scene_OnFocus(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
@@ -87,27 +89,27 @@ public:
 	}
 };
 static_assert(alignof(UWBP_GadgetCustom_Sub_GadgetPlate_C) == 0x000008, "Wrong alignment on UWBP_GadgetCustom_Sub_GadgetPlate_C");
-static_assert(sizeof(UWBP_GadgetCustom_Sub_GadgetPlate_C) == 0x000558, "Wrong size on UWBP_GadgetCustom_Sub_GadgetPlate_C");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, UberGraphFrame) == 0x0004B0, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, base) == 0x0004B8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_PreviewEquippedGadget) == 0x0004C0, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_PreviewEquippedGadget' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetCustom_Sub_Tab) == 0x0004C8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetCustom_Sub_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_02) == 0x0004D0, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_03) == 0x0004D8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_05) == 0x0004E0, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_05' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_06) == 0x0004E8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_06' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DummyGadgetIcon) == 0x0004F0, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DummyGadgetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, PAT_GadgetPlate) == 0x0004F8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::PAT_GadgetPlate' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, PlateOverlay) == 0x000500, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::PlateOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, TXT_ClassName) == 0x000508, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::TXT_ClassName' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_01) == 0x000510, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_04) == 0x000518, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_01) == 0x000520, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_01' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_02) == 0x000528, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_02' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_03) == 0x000530, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_03' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, CaptionEvent) == 0x000538, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::CaptionEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, IsVisibleTabWidget) == 0x000548, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::IsVisibleTabWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DummyWidget) == 0x000550, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DummyWidget' has a wrong offset!");
+static_assert(sizeof(UWBP_GadgetCustom_Sub_GadgetPlate_C) == 0x000590, "Wrong size on UWBP_GadgetCustom_Sub_GadgetPlate_C");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, UberGraphFrame) == 0x0004E8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, base) == 0x0004F0, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::base' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_PreviewEquippedGadget) == 0x0004F8, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_PreviewEquippedGadget' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetCustom_Sub_Tab) == 0x000500, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetCustom_Sub_Tab' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_02) == 0x000508, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_02' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_03) == 0x000510, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_03' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_05) == 0x000518, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_05' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DSP_WBP_GadgetIcon_06) == 0x000520, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DSP_WBP_GadgetIcon_06' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DummyGadgetIcon) == 0x000528, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DummyGadgetIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, PAT_GadgetPlate) == 0x000530, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::PAT_GadgetPlate' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, PlateOverlay) == 0x000538, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::PlateOverlay' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, TXT_ClassName) == 0x000540, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::TXT_ClassName' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_01) == 0x000548, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_01' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_04) == 0x000550, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_04' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_01) == 0x000558, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_01' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_02) == 0x000560, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_02' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, WBP_GadgetIcon_EX_03) == 0x000568, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::WBP_GadgetIcon_EX_03' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, CaptionEvent) == 0x000570, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::CaptionEvent' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, IsVisibleTabWidget) == 0x000580, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::IsVisibleTabWidget' has a wrong offset!");
+static_assert(offsetof(UWBP_GadgetCustom_Sub_GadgetPlate_C, DummyWidget) == 0x000588, "Member 'UWBP_GadgetCustom_Sub_GadgetPlate_C::DummyWidget' has a wrong offset!");
 
 }
 

@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ST_ColorPresetSelectPageItemData_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK

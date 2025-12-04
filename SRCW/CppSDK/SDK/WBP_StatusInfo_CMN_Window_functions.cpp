@@ -135,6 +135,29 @@ void UWBP_StatusInfo_CMN_Window_C::ExecuteUbergraph_WBP_StatusInfo_CMN_Window(in
 }
 
 
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.Get Legend Compe Title Detail Text
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EEventInfoWidgetPageCategory            Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UWBP_StatusInfo_CMN_Window_C::Get_Legend_Compe_Title_Detail_Text(EEventInfoWidgetPageCategory Category)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "Get Legend Compe Title Detail Text");
+
+	Params::WBP_StatusInfo_CMN_Window_C_Get_Legend_Compe_Title_Detail_Text Parms{};
+
+	Parms.Category = Category;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.GetDateString
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -188,6 +211,20 @@ void UWBP_StatusInfo_CMN_Window_C::LeftKeyPressedLoop()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "LeftKeyPressedLoop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.LeftPressedLoop_SeasonChange
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StatusInfo_CMN_Window_C::LeftPressedLoop_SeasonChange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "LeftPressedLoop_SeasonChange");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -624,6 +661,20 @@ void UWBP_StatusInfo_CMN_Window_C::OnFinished_OutAnim()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "OnFinished_OutAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.OnFinishedScrollAnim
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StatusInfo_CMN_Window_C::OnFinishedScrollAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "OnFinishedScrollAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1123,6 +1174,20 @@ void UWBP_StatusInfo_CMN_Window_C::OnMouseUnhovered_PointReward()
 }
 
 
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.OnNextLegendCompeSeasonChange
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StatusInfo_CMN_Window_C::OnNextLegendCompeSeasonChange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "OnNextLegendCompeSeasonChange");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.OnPFProfileError
 // (BlueprintCallable, BlueprintEvent)
 
@@ -1196,6 +1261,20 @@ void UWBP_StatusInfo_CMN_Window_C::OnPressed_Tab(int32 TabIndex)
 	Parms.TabIndex = TabIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.OnPrevLegendCompeSeasonChange
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StatusInfo_CMN_Window_C::OnPrevLegendCompeSeasonChange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "OnPrevLegendCompeSeasonChange");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1735,6 +1814,26 @@ void UWBP_StatusInfo_CMN_Window_C::OpenPointRewardDetail_MouseInput()
 }
 
 
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.Request Legend Compe Season Change
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    isNext                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StatusInfo_CMN_Window_C::Request_Legend_Compe_Season_Change(bool isNext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "Request Legend Compe Season Change");
+
+	Params::WBP_StatusInfo_CMN_Window_C_Request_Legend_Compe_Season_Change Parms{};
+
+	Parms.isNext = isNext;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.ResetInputData
 // (BlueprintCallable, BlueprintEvent)
 
@@ -1758,6 +1857,20 @@ void UWBP_StatusInfo_CMN_Window_C::RightKeyPressedLoop()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "RightKeyPressedLoop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.RightPressedLoop_SeasonChange
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StatusInfo_CMN_Window_C::RightPressedLoop_SeasonChange()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "RightPressedLoop_SeasonChange");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1900,6 +2013,44 @@ void UWBP_StatusInfo_CMN_Window_C::SetupFriendRanking()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "SetupFriendRanking");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.SetupLegendCompeResultInfomation
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FLegendCompeRewardResultData&InDispData                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// EGameEventPhase                         EventPhase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsPlayed                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StatusInfo_CMN_Window_C::SetupLegendCompeResultInfomation(const struct FLegendCompeRewardResultData& InDispData, EGameEventPhase EventPhase, bool IsPlayed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "SetupLegendCompeResultInfomation");
+
+	Params::WBP_StatusInfo_CMN_Window_C_SetupLegendCompeResultInfomation Parms{};
+
+	Parms.InDispData = std::move(InDispData);
+	Parms.EventPhase = EventPhase;
+	Parms.IsPlayed = IsPlayed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C.SetupLobbyInfoMode
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_StatusInfo_CMN_Window_C::SetupLobbyInfoMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_CMN_Window_C", "SetupLobbyInfoMode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

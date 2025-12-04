@@ -1151,26 +1151,6 @@ void UWBP_CMN_PlayerDetail_C::SetNiceCounts(int32 Counts)
 }
 
 
-// Function WBP_CMN_PlayerDetail.WBP_CMN_PlayerDetail_C.SetPageIcon
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InPageIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CMN_PlayerDetail_C::SetPageIcon(int32 InPageIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CMN_PlayerDetail_C", "SetPageIcon");
-
-	Params::WBP_CMN_PlayerDetail_C_SetPageIcon Parms{};
-
-	Parms.InPageIndex = InPageIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CMN_PlayerDetail.WBP_CMN_PlayerDetail_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1179,8 +1159,9 @@ void UWBP_CMN_PlayerDetail_C::SetPageIcon(int32 InPageIndex)
 // EBlockPlayerState                       BlockType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsCom                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsOpenFriendList                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EMatchingLobbyType                      InLobbyType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CMN_PlayerDetail_C::Setup(const struct FLobbyPlayerData& InRacerData, bool bIsOwn, EBlockPlayerState BlockType, bool bIsCom, bool bIsOpenFriendList)
+void UWBP_CMN_PlayerDetail_C::Setup(const struct FLobbyPlayerData& InRacerData, bool bIsOwn, EBlockPlayerState BlockType, bool bIsCom, bool bIsOpenFriendList, EMatchingLobbyType InLobbyType)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1194,30 +1175,7 @@ void UWBP_CMN_PlayerDetail_C::Setup(const struct FLobbyPlayerData& InRacerData, 
 	Parms.BlockType = BlockType;
 	Parms.bIsCom = bIsCom;
 	Parms.bIsOpenFriendList = bIsOpenFriendList;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CMN_PlayerDetail.WBP_CMN_PlayerDetail_C.SetUpData
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FLobbyPlayerData&          InRacerData                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    bIsOwn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBlockPlayerState                       InBlockType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CMN_PlayerDetail_C::SetUpData(const struct FLobbyPlayerData& InRacerData, bool bIsOwn, EBlockPlayerState InBlockType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CMN_PlayerDetail_C", "SetUpData");
-
-	Params::WBP_CMN_PlayerDetail_C_SetUpData Parms{};
-
-	Parms.InRacerData = std::move(InRacerData);
-	Parms.bIsOwn = bIsOwn;
-	Parms.InBlockType = InBlockType;
+	Parms.InLobbyType = InLobbyType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

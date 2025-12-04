@@ -11,11 +11,10 @@
 #include "Basic.hpp"
 
 #include "FieldNotification_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UMG_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -282,7 +281,7 @@ static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetGameModeId, InGameMod
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetGameModeId, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetGameModeId::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function WBP_CourseSelect_Sub_Thumbnail.WBP_CourseSelect_Sub_Thumbnail_C.SetValidCourse
-// 0x002C (0x002C - 0x0000)
+// 0x001E (0x001E - 0x0000)
 struct WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse final
 {
 public:
@@ -290,60 +289,65 @@ public:
 	bool                                          L_DLCInstalled;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          L_IsDLC;                                           // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanUseStage_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGrandPrixId                                  CallFunc_FindGrandPrixId_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGrandPrixOpened_ReturnValue;            // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStoreRequired_ReturnValue;              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue; // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_1;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue_1; // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue; // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EButtonFocusType                              K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue; // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsExtndMainStage_ReturnValue;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              Temp_byte_Variable_2;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              Temp_byte_Variable_3;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanUseStage_ReturnValue;                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGrandPrixId                                  CallFunc_FindGrandPrixId_ReturnValue;              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGrandPrixOpened_ReturnValue;            // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStoreRequired_ReturnValue;              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue; // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_1;      // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue_1; // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue; // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EButtonFocusType                              K2Node_Select_Default;                             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue; // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsExtndMainStage_ReturnValue;             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse) == 0x000004, "Wrong alignment on WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse");
-static_assert(sizeof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse) == 0x00002C, "Wrong size on WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse");
+static_assert(alignof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse) == 0x000001, "Wrong alignment on WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse");
+static_assert(sizeof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse) == 0x00001E, "Wrong size on WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, bValid) == 0x000000, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::bValid' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, L_DLCInstalled) == 0x000001, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::L_DLCInstalled' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, L_IsDLC) == 0x000002, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::L_IsDLC' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, Temp_bool_Variable) == 0x000003, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, Temp_byte_Variable) == 0x000004, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_Not_PreBool_ReturnValue) == 0x000006, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_Not_PreBool_ReturnValue_1) == 0x000007, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_CanUseStage_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_CanUseStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_FindGrandPrixId_ReturnValue) == 0x000009, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_FindGrandPrixId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsGrandPrixOpened_ReturnValue) == 0x00000A, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsGrandPrixOpened_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanAND_ReturnValue) == 0x00000B, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsStoreRequired_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsStoreRequired_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanOR_ReturnValue) == 0x00000D, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x00000E, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue) == 0x00000F, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x000010, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue_1) == 0x000011, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanAND_ReturnValue_1) == 0x000012, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanOR_ReturnValue_1) == 0x000013, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue) == 0x000014, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, K2Node_Select_Default) == 0x000015, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue) == 0x000016, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanAND_ReturnValue_2) == 0x000017, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanOR_ReturnValue_2) == 0x000018, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsExtndMainStage_ReturnValue) == 0x000019, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsExtndMainStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_SelectColor_ReturnValue) == 0x00001C, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, Temp_bool_Variable_1) == 0x000006, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, Temp_byte_Variable_2) == 0x000007, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, Temp_byte_Variable_3) == 0x000008, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_Not_PreBool_ReturnValue) == 0x000009, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_Not_PreBool_ReturnValue_1) == 0x00000A, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_CanUseStage_ReturnValue) == 0x00000B, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_CanUseStage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_FindGrandPrixId_ReturnValue) == 0x00000C, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_FindGrandPrixId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsGrandPrixOpened_ReturnValue) == 0x00000D, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsGrandPrixOpened_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanAND_ReturnValue) == 0x00000E, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsStoreRequired_ReturnValue) == 0x00000F, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsStoreRequired_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanOR_ReturnValue) == 0x000010, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000011, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue) == 0x000012, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_GetSelectedGameModeId_ReturnValue_1) == 0x000013, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_GetSelectedGameModeId_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue_1) == 0x000014, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsRaceUnLockedMilestoneVersion_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanAND_ReturnValue_1) == 0x000015, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanOR_ReturnValue_1) == 0x000016, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue) == 0x000017, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsDisableGrandPrixCourse2MilestoneVersion_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, K2Node_Select_Default) == 0x000018, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue) == 0x000019, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsDisableGrandPrixCourseMilestoneVersion_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanAND_ReturnValue_2) == 0x00001A, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_BooleanOR_ReturnValue_2) == 0x00001B, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, CallFunc_IsExtndMainStage_ReturnValue) == 0x00001C, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::CallFunc_IsExtndMainStage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse, K2Node_Select_Default_1) == 0x00001D, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_SetValidCourse::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function WBP_CourseSelect_Sub_Thumbnail.WBP_CourseSelect_Sub_Thumbnail_C.UpdateDLCCover
 // 0x00C0 (0x00C0 - 0x0000)
@@ -351,14 +355,13 @@ struct WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover final
 {
 public:
 	bool                                          IsDLC;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMasterDataManageSubsystem*             CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPlatformStoreMessageDataAsset*         K2Node_DynamicCast_AsPlatform_Store_Message_Data_Asset; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -366,8 +369,9 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetPlatformStoreButtonMessage_ReturnValue; // 0x0028(0x0010)()
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B[0x1];                                       // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x003C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsCourseSelectDLCStoreEnabled_ReturnValue; // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -389,19 +393,19 @@ public:
 static_assert(alignof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover) == 0x000008, "Wrong alignment on WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover");
 static_assert(sizeof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover) == 0x0000C0, "Wrong size on WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, IsDLC) == 0x000000, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::IsDLC' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable) == 0x000001, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_bool_Variable) == 0x000002, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_bool_Variable) == 0x000001, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable) == 0x000002, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable_2) == 0x000004, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable_2' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000008, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_bool_Variable_1) == 0x000010, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable_3) == 0x000011, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable_2) == 0x000011, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable_2' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, K2Node_DynamicCast_AsPlatform_Store_Message_Data_Asset) == 0x000018, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::K2Node_DynamicCast_AsPlatform_Store_Message_Data_Asset' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, CallFunc_GetPlatformStoreButtonMessage_ReturnValue) == 0x000028, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::CallFunc_GetPlatformStoreButtonMessage_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, CallFunc_IsValid_ReturnValue_1) == 0x000038, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable_4) == 0x000039, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable_3) == 0x000039, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, Temp_byte_Variable_4) == 0x00003A, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::Temp_byte_Variable_4' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, K2Node_CreateDelegate_OutputDelegate) == 0x00003C, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, CallFunc_IsCourseSelectDLCStoreEnabled_ReturnValue) == 0x00004C, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::CallFunc_IsCourseSelectDLCStoreEnabled_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover, K2Node_Select_Default) == 0x00004D, "Member 'WBP_CourseSelect_Sub_Thumbnail_C_UpdateDLCCover::K2Node_Select_Default' has a wrong offset!");

@@ -192,15 +192,15 @@ void UWBP_CourseSelect_Sub_Thumbnail_C::OnSelectedEvent_Event(class UUnionUIButt
 }
 
 
-// Function WBP_CourseSelect_Sub_Thumbnail.WBP_CourseSelect_Sub_Thumbnail_C.OnStoreShortcutClicked
+// Function WBP_CourseSelect_Sub_Thumbnail.WBP_CourseSelect_Sub_Thumbnail_C.OnStoreShortcutPressed
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CourseSelect_Sub_Thumbnail_C::OnStoreShortcutClicked()
+void UWBP_CourseSelect_Sub_Thumbnail_C::OnStoreShortcutPressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CourseSelect_Sub_Thumbnail_C", "OnStoreShortcutClicked");
+		Func = Class->GetFunction("WBP_CourseSelect_Sub_Thumbnail_C", "OnStoreShortcutPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

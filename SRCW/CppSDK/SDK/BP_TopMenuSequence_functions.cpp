@@ -471,30 +471,6 @@ void ABP_TopMenuSequence_C::GadgetCustom_DodonpaEvent_End()
 }
 
 
-// Function BP_TopMenuSequence.BP_TopMenuSequence_C.GetMachineTypes
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ECarStatusType                          InCarStatus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<EMachineId>*                     OutMachineIds                                          (Parm, OutParm)
-
-void ABP_TopMenuSequence_C::GetMachineTypes(ECarStatusType InCarStatus, TArray<EMachineId>* OutMachineIds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TopMenuSequence_C", "GetMachineTypes");
-
-	Params::BP_TopMenuSequence_C_GetMachineTypes Parms{};
-
-	Parms.InCarStatus = InCarStatus;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutMachineIds != nullptr)
-		*OutMachineIds = std::move(Parms.OutMachineIds);
-}
-
-
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.GetOwnerMenuSequence
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -533,30 +509,6 @@ void ABP_TopMenuSequence_C::GetPlayerName(class FString* playerName)
 
 	if (playerName != nullptr)
 		*playerName = std::move(Parms.playerName);
-}
-
-
-// Function BP_TopMenuSequence.BP_TopMenuSequence_C.GetPlayerProfileData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   InPlayerIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLobbyPlayerData*                OutValue                                               (Parm, OutParm)
-
-void ABP_TopMenuSequence_C::GetPlayerProfileData(int32 InPlayerIndex, struct FLobbyPlayerData* OutValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TopMenuSequence_C", "GetPlayerProfileData");
-
-	Params::BP_TopMenuSequence_C_GetPlayerProfileData Parms{};
-
-	Parms.InPlayerIndex = InPlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutValue != nullptr)
-		*OutValue = std::move(Parms.OutValue);
 }
 
 
@@ -606,6 +558,32 @@ void ABP_TopMenuSequence_C::InitBinds()
 		Func = Class->GetFunction("BP_TopMenuSequence_C", "InitBinds");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TopMenuSequence.BP_TopMenuSequence_C.IsShowAddGadgetTips
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EGadgetPlateId                          InGadgetPlateRank                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUnionRomVersion                        InVersionNum                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bOutShowTips                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TopMenuSequence_C::IsShowAddGadgetTips(EGadgetPlateId InGadgetPlateRank, EUnionRomVersion InVersionNum, bool* bOutShowTips)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TopMenuSequence_C", "IsShowAddGadgetTips");
+
+	Params::BP_TopMenuSequence_C_IsShowAddGadgetTips Parms{};
+
+	Parms.InGadgetPlateRank = InGadgetPlateRank;
+	Parms.InVersionNum = InVersionNum;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bOutShowTips != nullptr)
+		*bOutShowTips = Parms.bOutShowTips;
 }
 
 
@@ -1855,7 +1833,7 @@ void ABP_TopMenuSequence_C::SetMenuRacerEffectAll(bool InEnable)
 
 
 // Function BP_TopMenuSequence.BP_TopMenuSequence_C.SetMouseInteraction by in State
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // ETopMenuSequenceState                   In_State                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -1959,6 +1937,20 @@ void ABP_TopMenuSequence_C::StreamingInstallErrorWindow()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_TopMenuSequence_C", "StreamingInstallErrorWindow");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TopMenuSequence.BP_TopMenuSequence_C.UpdateTimeTable
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_TopMenuSequence_C::UpdateTimeTable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TopMenuSequence_C", "UpdateTimeTable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

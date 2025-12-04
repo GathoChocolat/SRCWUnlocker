@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionUI_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CourseSelect_Sub_Thumbnail.WBP_CourseSelect_Sub_Thumbnail_C
-// 0x0128 (0x0770 - 0x0648)
+// 0x0138 (0x0780 - 0x0648)
 class UWBP_CourseSelect_Sub_Thumbnail_C final : public UUnionUIButtonStandard
 {
 public:
@@ -54,17 +54,19 @@ public:
 	class UUnionRichTextBlock*                    TXT_DLC;                                           // 0x0718(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUnionUITextBlock*                      TXT_Num_Time_Count;                                // 0x0720(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUnionRaceUI*                           UnionRaceUI;                                       // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      WBP_FontScroll_CourseName;                         // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      WBP_FontScroll_TimeLabel;                          // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Result_Sub_RSR_5rings_C*           WBP_Result_Sub_RSR_5rings;                         // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CourseThumbnailMat;                                // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      StageCourseId;                                     // 0x0750(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_751[0x3];                                      // 0x0751(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         TextureFlipBookIndex;                              // 0x0754(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bEnableCourse;                                     // 0x0758(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimeTrialClearRankId                         TimeTrialClearRank;                                // 0x0759(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_75A[0x6];                                      // 0x075A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(EStageId StageId)> OnStoreShortcutClickedDelegate;                 // 0x0760(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UVerticalBox*                           VerticalBox_0;                                     // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_CourseName;                         // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_TimeLabel;                          // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Result_Sub_RSR_5rings_C*           WBP_Result_Sub_RSR_5rings;                         // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CourseThumbnailMat;                                // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	EStageId                                      StageCourseId;                                     // 0x0758(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_759[0x3];                                      // 0x0759(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         TextureFlipBookIndex;                              // 0x075C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnableCourse;                                     // 0x0760(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimeTrialClearRankId                         TimeTrialClearRank;                                // 0x0761(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_762[0x6];                                      // 0x0762(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(EStageId StageId)> OnStoreShortcutPressedDelegate;                 // 0x0768(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          bDLCForceClose;                                    // 0x0778(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	bool CanUseStage(EStageId StageId);
@@ -77,7 +79,7 @@ public:
 	void OnLeftKeyPressed();
 	void OnRightKeyPressed();
 	void OnSelectedEvent_Event(class UUnionUIButtonBaseCore* Button);
-	void OnStoreShortcutClicked();
+	void OnStoreShortcutPressed();
 	void OnUpKeyPressed();
 	void PreConstruct(bool IsDesignTime);
 	void PreLaunchSetValidCourse();
@@ -99,7 +101,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CourseSelect_Sub_Thumbnail_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_Sub_Thumbnail_C");
-static_assert(sizeof(UWBP_CourseSelect_Sub_Thumbnail_C) == 0x000770, "Wrong size on UWBP_CourseSelect_Sub_Thumbnail_C");
+static_assert(sizeof(UWBP_CourseSelect_Sub_Thumbnail_C) == 0x000780, "Wrong size on UWBP_CourseSelect_Sub_Thumbnail_C");
 static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, UberGraphFrame) == 0x000648, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, Btn_Select_Out) == 0x000650, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::Btn_Select_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, base) == 0x000658, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::base' has a wrong offset!");
@@ -129,15 +131,17 @@ static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, TXT_ComingSoon) == 0x0
 static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, TXT_DLC) == 0x000718, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::TXT_DLC' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, TXT_Num_Time_Count) == 0x000720, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::TXT_Num_Time_Count' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, UnionRaceUI) == 0x000728, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::UnionRaceUI' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, WBP_FontScroll_CourseName) == 0x000730, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::WBP_FontScroll_CourseName' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, WBP_FontScroll_TimeLabel) == 0x000738, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::WBP_FontScroll_TimeLabel' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, WBP_Result_Sub_RSR_5rings) == 0x000740, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::WBP_Result_Sub_RSR_5rings' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, CourseThumbnailMat) == 0x000748, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::CourseThumbnailMat' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, StageCourseId) == 0x000750, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::StageCourseId' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, TextureFlipBookIndex) == 0x000754, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::TextureFlipBookIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, bEnableCourse) == 0x000758, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::bEnableCourse' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, TimeTrialClearRank) == 0x000759, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::TimeTrialClearRank' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, OnStoreShortcutClickedDelegate) == 0x000760, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::OnStoreShortcutClickedDelegate' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, VerticalBox_0) == 0x000730, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::VerticalBox_0' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, WBP_FontScroll_CourseName) == 0x000738, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::WBP_FontScroll_CourseName' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, WBP_FontScroll_TimeLabel) == 0x000740, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::WBP_FontScroll_TimeLabel' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, WBP_Result_Sub_RSR_5rings) == 0x000748, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::WBP_Result_Sub_RSR_5rings' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, CourseThumbnailMat) == 0x000750, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::CourseThumbnailMat' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, StageCourseId) == 0x000758, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::StageCourseId' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, TextureFlipBookIndex) == 0x00075C, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::TextureFlipBookIndex' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, bEnableCourse) == 0x000760, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::bEnableCourse' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, TimeTrialClearRank) == 0x000761, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::TimeTrialClearRank' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, OnStoreShortcutPressedDelegate) == 0x000768, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::OnStoreShortcutPressedDelegate' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_Thumbnail_C, bDLCForceClose) == 0x000778, "Member 'UWBP_CourseSelect_Sub_Thumbnail_C::bDLCForceClose' has a wrong offset!");
 
 }
 

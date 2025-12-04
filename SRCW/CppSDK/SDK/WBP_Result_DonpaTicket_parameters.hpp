@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
 
@@ -277,7 +277,7 @@ static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_Less_IntIn
 static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddPoint, CallFunc_Add_IntInt_ReturnValue_1) == 0x00009C, "Member 'WBP_Result_DonpaTicket_C_GetAddPoint::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.GetAddTicketCount
-// 0x0530 (0x0530 - 0x0000)
+// 0x05A0 (0x05A0 - 0x0000)
 struct WBP_Result_DonpaTicket_C_GetAddTicketCount final
 {
 public:
@@ -287,40 +287,40 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0xC];                                       // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x0020(0x0490)()
-	TArray<ERewardRedStarRingType>                CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes; // 0x04B0(0x0010)(ReferenceParm)
-	TArray<struct FHonorCommendationData>         CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList; // 0x04C0(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPlayerLevelInfo                       CallFunc_SaveResult_OutPlayerLevelInfo;            // 0x04D4(0x0014)(NoDestructor)
-	TArray<struct FRewardRedStarRingData>         CallFunc_SaveResult_OutRedStarRingData;            // 0x04E8(0x0010)(ReferenceParm)
-	struct FRewardRedStarRingData                 CallFunc_Array_Get_Item;                           // 0x04F8(0x0020)()
-	int32                                         CallFunc_GetRSRDonpaTicket_ReturnValue;            // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x051C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0524(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetAddTicketCount_ReturnValue;            // 0x0528(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x052C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x0020(0x0500)()
+	TArray<ERewardRedStarRingType>                CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes; // 0x0520(0x0010)(ReferenceParm)
+	TArray<struct FHonorCommendationData>         CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList; // 0x0530(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPlayerLevelInfo                       CallFunc_SaveResult_OutPlayerLevelInfo;            // 0x0544(0x0014)(NoDestructor)
+	TArray<struct FRewardRedStarRingData>         CallFunc_SaveResult_OutRedStarRingData;            // 0x0558(0x0010)(ReferenceParm)
+	struct FRewardRedStarRingData                 CallFunc_Array_Get_Item;                           // 0x0568(0x0020)()
+	int32                                         CallFunc_GetRSRDonpaTicket_ReturnValue;            // 0x0588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0594(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetAddTicketCount_ReturnValue;            // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x059C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Result_DonpaTicket_C_GetAddTicketCount) == 0x000010, "Wrong alignment on WBP_Result_DonpaTicket_C_GetAddTicketCount");
-static_assert(sizeof(WBP_Result_DonpaTicket_C_GetAddTicketCount) == 0x000530, "Wrong size on WBP_Result_DonpaTicket_C_GetAddTicketCount");
+static_assert(sizeof(WBP_Result_DonpaTicket_C_GetAddTicketCount) == 0x0005A0, "Wrong size on WBP_Result_DonpaTicket_C_GetAddTicketCount");
 static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, ReturnValue) == 0x000000, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, PointResult) == 0x000004, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::PointResult' has a wrong offset!");
 static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetAppRaceConfigData_OutData) == 0x000020, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetAppRaceConfigData_OutData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes) == 0x0004B0, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList) == 0x0004C0, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_LastIndex_ReturnValue) == 0x0004D0, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_SaveResult_OutPlayerLevelInfo) == 0x0004D4, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_SaveResult_OutPlayerLevelInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_SaveResult_OutRedStarRingData) == 0x0004E8, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_SaveResult_OutRedStarRingData' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_Get_Item) == 0x0004F8, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRSRDonpaTicket_ReturnValue) == 0x000518, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRSRDonpaTicket_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue_1) == 0x00051C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue_2) == 0x000520, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_Length_ReturnValue) == 0x000524, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetAddTicketCount_ReturnValue) == 0x000528, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetAddTicketCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Less_IntInt_ReturnValue) == 0x00052C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes) == 0x000520, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRewardRedStarRingTypeList_OutRewardRedStarRingTypes' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList) == 0x000530, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRewardRedStarRingTypeList_OutRSRHonorList' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_LastIndex_ReturnValue) == 0x000540, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_SaveResult_OutPlayerLevelInfo) == 0x000544, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_SaveResult_OutPlayerLevelInfo' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_SaveResult_OutRedStarRingData) == 0x000558, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_SaveResult_OutRedStarRingData' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_Get_Item) == 0x000568, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetRSRDonpaTicket_ReturnValue) == 0x000588, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetRSRDonpaTicket_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue_1) == 0x00058C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Add_IntInt_ReturnValue_2) == 0x000590, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Array_Length_ReturnValue) == 0x000594, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_GetAddTicketCount_ReturnValue) == 0x000598, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_GetAddTicketCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Result_DonpaTicket_C_GetAddTicketCount, CallFunc_Less_IntInt_ReturnValue) == 0x00059C, "Member 'WBP_Result_DonpaTicket_C_GetAddTicketCount::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetAddDonpaTicketForRival
 // 0x0004 (0x0004 - 0x0000)

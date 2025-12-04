@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UnionUI_structs.hpp"
+#include "UnionUI_classes.hpp"
 #include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UnionUI_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -57,45 +57,45 @@ public:
 	double                                        MovingUpDownDeadzone;                              // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangePlayAnimation(class UWidgetAnimation* InStopAnimation, class UWidgetAnimation* InPlayAnimation);
-	void Check_Release_Response_InputType(bool* bOutReleaseResponseInput);
-	void Construct();
-	void ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate(int32 EntryPoint);
-	void LeftDirectionEvent();
 	class UWidget* LeftNavigationEvent(EUINavigation Navigation_0);
-	void OnAcceptKeyPressed();
-	void OnAcceptKeyPressedImpl();
-	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnBackKeyPressed();
-	void OnFocusAnimStart();
-	void OnFocusImpl(class UUnionUIButtonBase* Button);
-	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
-	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
-	void OnInitialized();
-	void OnLeftKeyReleased();
-	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnRightKeyReleased();
-	void OnUnFocusAnimStart();
-	void RightDirectionEvent();
 	class UWidget* RightNavigationEvent(EUINavigation Navigation_0);
-	void SetButtonFocusType(EButtonFocusType InButtonFocusType);
-	void SetByListPlayerInfo(const struct FFriendListPlayerInfo& InListPlayerInfo, bool InShowPlayerId);
-	void SetCursorVisible(bool bInVisible);
-	void SetDateText(const class FString& InDate);
-	void SetFocusAnimation(bool bInEnable);
-	void SetFocusEnable(bool bInEnable);
-	void SetLobbyInfoVisible(bool bInVisible);
-	void SetLobbyInvitationIconVisible(bool bInVisible);
-	void SetLobbyType(bool bInFriendMatch);
-	void SetMouseInteractionVisible(bool bInVisible);
-	void SetPlatformIcon(ECrossplayPlatform InPlatformType);
-	void SetPlayDecisionSe(bool bInEnable);
+	void Check_Release_Response_InputType(bool* bOutReleaseResponseInput);
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 	void SetPlayerIcon(TSoftObjectPtr<class UTexture2D> InIconTexture, const struct FLinearColor& InBgColor, bool bInNowPlaying);
-	void SetPlayerIconVisible(bool bInVisible);
-	void SetPlayerIdText(const class FString& InPlayerId);
 	void SetPlayerNameText(const class FText& InText);
+	void SetPlayerIdText(const class FString& InPlayerId);
+	void SetPlatformIcon(ECrossplayPlatform InPlatformType);
 	void SetPlayerStatusIcon(bool bInAppBlock, bool bInPFBlock);
+	void SetLobbyInvitationIconVisible(bool bInVisible);
+	void SetFocusAnimation(bool bInEnable);
+	void SetCursorVisible(bool bInVisible);
+	void ChangePlayAnimation(class UWidgetAnimation* InStopAnimation, class UWidgetAnimation* InPlayAnimation);
+	void SetMouseInteractionVisible(bool bInVisible);
+	void SetDateText(const class FString& InDate);
+	void SetByListPlayerInfo(const struct FFriendListPlayerInfo& InListPlayerInfo, bool InShowPlayerId);
+	void SetFocusEnable(bool bInEnable);
+	void SetButtonFocusType(EButtonFocusType InButtonFocusType);
+	void SetPlayDecisionSe(bool bInEnable);
+	void SetPlayerIconVisible(bool bInVisible);
+	void SetLobbyType(bool bInFriendMatch);
+	void SetLobbyInfoVisible(bool bInVisible);
+	void Construct();
+	void OnFocusImpl(class UUnionUIButtonBase* Button);
+	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
+	void OnFocusAnimStart();
+	void OnUnFocusAnimStart();
+	void OnAcceptKeyPressedImpl();
+	void OnBackKeyPressed();
+	void OnAcceptKeyPressed();
+	void OnInitialized();
 	void SetWidgetFocus(bool bInPlayFocusSound);
+	void OnLeftKeyReleased();
+	void OnRightKeyReleased();
+	void LeftDirectionEvent();
+	void RightDirectionEvent();
+	void ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

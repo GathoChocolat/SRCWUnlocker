@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionUI_classes.hpp"
 #include "UnionRun_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -84,6 +84,7 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_PauseMenu_Sub_Option_Btn_03_C* InButton, int32 InIndex)> OnClickedOption; // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void SequenceEvent__ENTRYPOINTWBP_PauseMenu();
 	void OnSpecialButtonPressedOptionPanel();
 	void ChangeOwnerPlayerConntroller();
 	void OnFocusMenuPanel(class UUnionUIButtonBase* Button, int32 ButtonIndex);
@@ -117,6 +118,7 @@ public:
 	void InitializeMenuButton(class UCommonRaceMenuContentsInfo* Contents);
 	void Initialize(int32 OwnerPlayerIndex, class UCommonRaceMenuContentsInfo* Contents, int32 PlayerCount);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
+	void SequenceEvent();
 	void HideAll();
 	void PlayAnimationIn();
 	void OnItemFocused_イベント(int32 PlayerIndex, int32 SlotState, int32 SlotIndex);

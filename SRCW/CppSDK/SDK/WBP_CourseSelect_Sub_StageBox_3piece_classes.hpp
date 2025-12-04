@@ -12,8 +12,8 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -39,7 +39,7 @@ public:
 	TMap<EStageId, TSoftObjectPtr<class UTexture2D>> Stage_Id_Tmb;                                   // 0x04D8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bFocusSoundEnable;                                 // 0x0528(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_529[0x7];                                      // 0x0529(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(EStageId StageId)> OnStoreShortcutClickedDelegate;                 // 0x0530(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(EStageId StageId)> OnStoreShortcutPressedDelegate;                 // 0x0530(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void Construct();
@@ -83,7 +83,7 @@ static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_3piece_C, bCompleteOnly) =
 static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_3piece_C, CourseCompleteRate) == 0x000488, "Member 'UWBP_CourseSelect_Sub_StageBox_3piece_C::CourseCompleteRate' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_3piece_C, Stage_Id_Tmb) == 0x0004D8, "Member 'UWBP_CourseSelect_Sub_StageBox_3piece_C::Stage_Id_Tmb' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_3piece_C, bFocusSoundEnable) == 0x000528, "Member 'UWBP_CourseSelect_Sub_StageBox_3piece_C::bFocusSoundEnable' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_3piece_C, OnStoreShortcutClickedDelegate) == 0x000530, "Member 'UWBP_CourseSelect_Sub_StageBox_3piece_C::OnStoreShortcutClickedDelegate' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_StageBox_3piece_C, OnStoreShortcutPressedDelegate) == 0x000530, "Member 'UWBP_CourseSelect_Sub_StageBox_3piece_C::OnStoreShortcutPressedDelegate' has a wrong offset!");
 
 }
 

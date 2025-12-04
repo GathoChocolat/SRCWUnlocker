@@ -14,21 +14,53 @@
 namespace SDK::Params
 {
 
+// Function WBP_StatusInfo_Sub_RankingTable.WBP_StatusInfo_Sub_RankingTable_C.BP_OnItemExpansionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemExpansionChanged final
+{
+public:
+	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemExpansionChanged");
+static_assert(sizeof(WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemExpansionChanged");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
+
+// Function WBP_StatusInfo_Sub_RankingTable.WBP_StatusInfo_Sub_RankingTable_C.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemSelectionChanged");
+static_assert(sizeof(WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemSelectionChanged");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'WBP_StatusInfo_Sub_RankingTable_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
+
 // Function WBP_StatusInfo_Sub_RankingTable.WBP_StatusInfo_Sub_RankingTable_C.ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable
-// 0x0010 (0x0010 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_Event_bIsExpanded;                          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsSelected;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_Event_ListItemObject;                       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class URankingEntryItem*                      K2Node_DynamicCast_AsRanking_Entry_Item;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable");
-static_assert(sizeof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable) == 0x000010, "Wrong size on WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable");
+static_assert(sizeof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable) == 0x000028, "Wrong size on WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable");
 static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, EntryPoint) == 0x000000, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, K2Node_Event_bIsExpanded) == 0x000004, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::K2Node_Event_bIsExpanded' has a wrong offset!");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, K2Node_Event_bIsSelected) == 0x000005, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::K2Node_Event_bIsSelected' has a wrong offset!");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, K2Node_Event_IsDesignTime) == 0x000006, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, K2Node_Event_ListItemObject) == 0x000010, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::K2Node_Event_ListItemObject' has a wrong offset!");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, K2Node_DynamicCast_AsRanking_Entry_Item) == 0x000018, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::K2Node_DynamicCast_AsRanking_Entry_Item' has a wrong offset!");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_StatusInfo_Sub_RankingTable_C_ExecuteUbergraph_WBP_StatusInfo_Sub_RankingTable::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function WBP_StatusInfo_Sub_RankingTable.WBP_StatusInfo_Sub_RankingTable_C.GetMouseButton
 // 0x0010 (0x0010 - 0x0000)
@@ -42,6 +74,17 @@ static_assert(alignof(WBP_StatusInfo_Sub_RankingTable_C_GetMouseButton) == 0x000
 static_assert(sizeof(WBP_StatusInfo_Sub_RankingTable_C_GetMouseButton) == 0x000010, "Wrong size on WBP_StatusInfo_Sub_RankingTable_C_GetMouseButton");
 static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_GetMouseButton, ReturnValue) == 0x000000, "Member 'WBP_StatusInfo_Sub_RankingTable_C_GetMouseButton::ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_GetMouseButton, CallFunc_GetMouseInteractionButton_ReturnValue) == 0x000008, "Member 'WBP_StatusInfo_Sub_RankingTable_C_GetMouseButton::CallFunc_GetMouseInteractionButton_ReturnValue' has a wrong offset!");
+
+// Function WBP_StatusInfo_Sub_RankingTable.WBP_StatusInfo_Sub_RankingTable_C.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_StatusInfo_Sub_RankingTable_C_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_StatusInfo_Sub_RankingTable_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on WBP_StatusInfo_Sub_RankingTable_C_OnListItemObjectSet");
+static_assert(sizeof(WBP_StatusInfo_Sub_RankingTable_C_OnListItemObjectSet) == 0x000008, "Wrong size on WBP_StatusInfo_Sub_RankingTable_C_OnListItemObjectSet");
+static_assert(offsetof(WBP_StatusInfo_Sub_RankingTable_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'WBP_StatusInfo_Sub_RankingTable_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function WBP_StatusInfo_Sub_RankingTable.WBP_StatusInfo_Sub_RankingTable_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)

@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_RaceSequenceStateResultRival.BPC_RaceSequenceStateResultRival_C
-// 0x0070 (0x01B0 - 0x0140)
+// 0x0078 (0x01B8 - 0x0140)
 class UBPC_RaceSequenceStateResultRival_C final : public URaceSequenceStateResultRival
 {
 public:
@@ -43,6 +43,7 @@ public:
 	double                                        SkipDelaySeconds;                                  // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RivalSelectSkipSeconds;                            // 0x01A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RivalSelectAutoCloseSeconds;                       // 0x01A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AUnionStaticMeshActor*                  CameraOffsetActor;                                 // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ApplyRivalLevel();
@@ -93,7 +94,7 @@ public:
 	}
 };
 static_assert(alignof(UBPC_RaceSequenceStateResultRival_C) == 0x000008, "Wrong alignment on UBPC_RaceSequenceStateResultRival_C");
-static_assert(sizeof(UBPC_RaceSequenceStateResultRival_C) == 0x0001B0, "Wrong size on UBPC_RaceSequenceStateResultRival_C");
+static_assert(sizeof(UBPC_RaceSequenceStateResultRival_C) == 0x0001B8, "Wrong size on UBPC_RaceSequenceStateResultRival_C");
 static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, UberGraphFrame) == 0x000140, "Member 'UBPC_RaceSequenceStateResultRival_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, SubtitleUI) == 0x000148, "Member 'UBPC_RaceSequenceStateResultRival_C::SubtitleUI' has a wrong offset!");
 static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RaceCameraActor) == 0x000150, "Member 'UBPC_RaceSequenceStateResultRival_C::RaceCameraActor' has a wrong offset!");
@@ -110,6 +111,7 @@ static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RivalSelectHUD) == 0
 static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, SkipDelaySeconds) == 0x000198, "Member 'UBPC_RaceSequenceStateResultRival_C::SkipDelaySeconds' has a wrong offset!");
 static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RivalSelectSkipSeconds) == 0x0001A0, "Member 'UBPC_RaceSequenceStateResultRival_C::RivalSelectSkipSeconds' has a wrong offset!");
 static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, RivalSelectAutoCloseSeconds) == 0x0001A8, "Member 'UBPC_RaceSequenceStateResultRival_C::RivalSelectAutoCloseSeconds' has a wrong offset!");
+static_assert(offsetof(UBPC_RaceSequenceStateResultRival_C, CameraOffsetActor) == 0x0001B0, "Member 'UBPC_RaceSequenceStateResultRival_C::CameraOffsetActor' has a wrong offset!");
 
 }
 

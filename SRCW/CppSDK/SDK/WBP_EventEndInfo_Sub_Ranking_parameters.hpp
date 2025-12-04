@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -17,37 +18,50 @@ namespace SDK::Params
 {
 
 // Function WBP_EventEndInfo_Sub_Ranking.WBP_EventEndInfo_Sub_Ranking_C.SetRanking
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct WBP_EventEndInfo_Sub_Ranking_C_SetRanking final
 {
 public:
 	int32                                         Ranking;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0010)()
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0010)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_2;       // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_3;       // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0010)()
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0090(0x0010)()
+	bool                                          Temp_bool_Variable;                                // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_2;       // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_3;       // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking) == 0x000008, "Wrong alignment on WBP_EventEndInfo_Sub_Ranking_C_SetRanking");
-static_assert(sizeof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking) == 0x0000B0, "Wrong size on WBP_EventEndInfo_Sub_Ranking_C_SetRanking");
+static_assert(sizeof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking) == 0x0000C8, "Wrong size on WBP_EventEndInfo_Sub_Ranking_C_SetRanking");
 static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Ranking) == 0x000000, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Ranking' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000018, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_SwitchInteger_CmpSuccess) == 0x000020, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_Format_ReturnValue) == 0x000080, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue) == 0x000090, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000098, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x0000A0, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x0000A8, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Temp_byte_Variable) == 0x000004, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000008, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_SwitchInteger_CmpSuccess) == 0x000058, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_MakeArray_Array) == 0x000060, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Temp_byte_Variable_1) == 0x000070, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_Format_ReturnValue) == 0x000078, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000088, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_MakeLiteralText_ReturnValue) == 0x000090, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, Temp_bool_Variable) == 0x0000A0, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, K2Node_Select_Default) == 0x0000A1, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue) == 0x0000A8, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x0000B0, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x0000B8, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_EventEndInfo_Sub_Ranking_C_SetRanking, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x0000C0, "Member 'WBP_EventEndInfo_Sub_Ranking_C_SetRanking::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
 
 }
 

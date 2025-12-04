@@ -10,6 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "UnionSystem_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
@@ -19,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C
-// 0x0158 (0x0438 - 0x02E0)
+// 0x01D0 (0x04B0 - 0x02E0)
 class UWBP_Race_Sub_BtnGuide_C final : public URaceUISubBtnGuide
 {
 public:
@@ -29,45 +31,55 @@ public:
 	class UWidgetAnimation*                       Btn_Loop;                                          // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Btn_In;                                            // 0x0300(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Arrow_Down;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow_Roll;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow_Up;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 base;                                              // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Btn_Key;                                           // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Btn_LR;                                            // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Btn_Mouse;                                         // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           Btn_Stick;                                         // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Fever;                                             // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Fever_TSR;                                         // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_Bottom;                                        // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_Key;                                           // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_Left;                                          // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_LR;                                            // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_Mouse;                                         // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_Right;                                         // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PAT_Up;                                            // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Stick;                                             // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Key;                                           // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_LR;                                            // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Stick;                                         // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_Arrow;                              // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_Btn;                                // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IsDispOnUseItem;                                   // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsInAnimUseItem;                                   // 0x03C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsDispOnFlightGuide;                               // 0x03C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C3[0x5];                                      // 0x03C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Text_L1;                                           // 0x03C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Text_R1;                                           // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Text_LStick;                                       // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsFaceBtn;                                         // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F9[0x3];                                      // 0x03F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SteerKeyIndex;                                     // 0x03FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PlayerControllerIndex;                             // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           ChangeKeyEventTimerHandle;                         // 0x0408(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEventKeyboard;                                   // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_411[0x7];                                      // 0x0411(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Text_L2;                                           // 0x0418(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Text_R2;                                           // 0x0428(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UImage*                                 Arrow_Push;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Arrow_Roll;                                        // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Arrow_Up;                                          // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 base;                                              // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Btn_Cross;                                         // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Btn_Key;                                           // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Btn_LR;                                            // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Btn_Mouse;                                         // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Btn_Option_01;                                     // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Btn_Option_02;                                     // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Btn_Stick;                                         // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Fever;                                             // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Fever_Option_01;                                   // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Fever_Option_02;                                   // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Fever_TSR;                                         // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Bottom;                                        // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Key;                                           // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Left;                                          // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_LR;                                            // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Mouse;                                         // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Option_01;                                     // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Option_01_Pict;                                // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Option_02;                                     // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Option_02_Pict;                                // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Right;                                         // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PAT_Up;                                            // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Stick;                                             // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Key;                                           // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_LR;                                            // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Stick;                                         // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Arrow;                              // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Btn;                                // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          IsDispOnUseItem;                                   // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsInAnimUseItem;                                   // 0x0411(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDispOnFlightGuide;                               // 0x0412(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_413[0x5];                                      // 0x0413(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Text_L1;                                           // 0x0418(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Text_R1;                                           // 0x0428(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Text_LStick;                                       // 0x0438(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Text_RStick;                                       // 0x0448(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         SteerKeyIndex;                                     // 0x0458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PlayerControllerIndex;                             // 0x045C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           ChangeKeyEventTimerHandle;                         // 0x0460(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEventKeyboard;                                   // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Text_L2;                                           // 0x0470(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Text_R2;                                           // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FKey                                   BtnGuideBtn;                                       // 0x0490(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	EBtnGuideBtnType                              BtnGuideBtnType;                                   // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ChangeSteerKeyText();
@@ -75,6 +87,7 @@ public:
 	void DispOffUseItemGuide();
 	void DispOnReleaseItemEffect(int32 PlayerControllerIndex_0);
 	void DispOnUseItemGuide(int32 PlayerIndex, bool IsFever);
+	void EndKeyboardSwitchingAnim();
 	void ExecuteUbergraph_WBP_Race_Sub_BtnGuide(int32 EntryPoint);
 	void Finished_4F4E9D5A4077C0033A9812A6EE52DEC3();
 	void Finished_67F28257421BB81810DC869A2719BE9D();
@@ -87,7 +100,8 @@ public:
 	void SetBtnLR(const struct FKey& NewKey, bool* IsSuccess);
 	void SetBtnText(int32 PlayerContorllerIndex);
 	void SetFaceBtnKey(const struct FKey& NewKey, bool* IsSuccess);
-	void SetKey(const struct FKey& InKey, int32 PlayerControllerIndex_0);
+	void SetGamepadBtnOption(const struct FKey& NewKey, bool* IsSuccess);
+	void SetKeyboardKey(const struct FKey& InKey, int32 PlayerControllerIndex_0);
 	void SetUseItemKey(const struct FKey& UseItemKey);
 
 public:
@@ -101,48 +115,60 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Race_Sub_BtnGuide_C) == 0x000008, "Wrong alignment on UWBP_Race_Sub_BtnGuide_C");
-static_assert(sizeof(UWBP_Race_Sub_BtnGuide_C) == 0x000438, "Wrong size on UWBP_Race_Sub_BtnGuide_C");
+static_assert(sizeof(UWBP_Race_Sub_BtnGuide_C) == 0x0004B0, "Wrong size on UWBP_Race_Sub_BtnGuide_C");
 static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Race_Sub_BtnGuide_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_StickRoll_Loop) == 0x0002E8, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_StickRoll_Loop' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Out) == 0x0002F0, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Loop) == 0x0002F8, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Loop' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_In) == 0x000300, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_In' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Down) == 0x000308, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Roll) == 0x000310, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Roll' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Up) == 0x000318, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, base) == 0x000320, "Member 'UWBP_Race_Sub_BtnGuide_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Key) == 0x000328, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_LR) == 0x000330, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Mouse) == 0x000338, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Mouse' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Stick) == 0x000340, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever) == 0x000348, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever_TSR) == 0x000350, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever_TSR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Bottom) == 0x000358, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Key) == 0x000360, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Left) == 0x000368, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_LR) == 0x000370, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Mouse) == 0x000378, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Mouse' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Right) == 0x000380, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Up) == 0x000388, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Stick) == 0x000390, "Member 'UWBP_Race_Sub_BtnGuide_C::Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_Key) == 0x000398, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_LR) == 0x0003A0, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_Stick) == 0x0003A8, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_Stick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, WidgetSwitcher_Arrow) == 0x0003B0, "Member 'UWBP_Race_Sub_BtnGuide_C::WidgetSwitcher_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, WidgetSwitcher_Btn) == 0x0003B8, "Member 'UWBP_Race_Sub_BtnGuide_C::WidgetSwitcher_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsDispOnUseItem) == 0x0003C0, "Member 'UWBP_Race_Sub_BtnGuide_C::IsDispOnUseItem' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsInAnimUseItem) == 0x0003C1, "Member 'UWBP_Race_Sub_BtnGuide_C::IsInAnimUseItem' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsDispOnFlightGuide) == 0x0003C2, "Member 'UWBP_Race_Sub_BtnGuide_C::IsDispOnFlightGuide' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_L1) == 0x0003C8, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_L1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_R1) == 0x0003D8, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_R1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_LStick) == 0x0003E8, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_LStick' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsFaceBtn) == 0x0003F8, "Member 'UWBP_Race_Sub_BtnGuide_C::IsFaceBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, SteerKeyIndex) == 0x0003FC, "Member 'UWBP_Race_Sub_BtnGuide_C::SteerKeyIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PlayerControllerIndex) == 0x000400, "Member 'UWBP_Race_Sub_BtnGuide_C::PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, ChangeKeyEventTimerHandle) == 0x000408, "Member 'UWBP_Race_Sub_BtnGuide_C::ChangeKeyEventTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsEventKeyboard) == 0x000410, "Member 'UWBP_Race_Sub_BtnGuide_C::IsEventKeyboard' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_L2) == 0x000418, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_L2' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_R2) == 0x000428, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_R2' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Push) == 0x000310, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Push' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Roll) == 0x000318, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Roll' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Arrow_Up) == 0x000320, "Member 'UWBP_Race_Sub_BtnGuide_C::Arrow_Up' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, base) == 0x000328, "Member 'UWBP_Race_Sub_BtnGuide_C::base' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Cross) == 0x000330, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Cross' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Key) == 0x000338, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Key' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_LR) == 0x000340, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_LR' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Mouse) == 0x000348, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Mouse' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Option_01) == 0x000350, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Option_01' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Option_02) == 0x000358, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Option_02' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Btn_Stick) == 0x000360, "Member 'UWBP_Race_Sub_BtnGuide_C::Btn_Stick' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever) == 0x000368, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever_Option_01) == 0x000370, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever_Option_01' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever_Option_02) == 0x000378, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever_Option_02' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Fever_TSR) == 0x000380, "Member 'UWBP_Race_Sub_BtnGuide_C::Fever_TSR' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Bottom) == 0x000388, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Bottom' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Key) == 0x000390, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Key' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Left) == 0x000398, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Left' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_LR) == 0x0003A0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_LR' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Mouse) == 0x0003A8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Mouse' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_01) == 0x0003B0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_01' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_01_Pict) == 0x0003B8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_01_Pict' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_02) == 0x0003C0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_02' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Option_02_Pict) == 0x0003C8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Option_02_Pict' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Right) == 0x0003D0, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Right' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PAT_Up) == 0x0003D8, "Member 'UWBP_Race_Sub_BtnGuide_C::PAT_Up' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Stick) == 0x0003E0, "Member 'UWBP_Race_Sub_BtnGuide_C::Stick' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_Key) == 0x0003E8, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_Key' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_LR) == 0x0003F0, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_LR' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, TXT_Stick) == 0x0003F8, "Member 'UWBP_Race_Sub_BtnGuide_C::TXT_Stick' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, WidgetSwitcher_Arrow) == 0x000400, "Member 'UWBP_Race_Sub_BtnGuide_C::WidgetSwitcher_Arrow' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, WidgetSwitcher_Btn) == 0x000408, "Member 'UWBP_Race_Sub_BtnGuide_C::WidgetSwitcher_Btn' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsDispOnUseItem) == 0x000410, "Member 'UWBP_Race_Sub_BtnGuide_C::IsDispOnUseItem' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsInAnimUseItem) == 0x000411, "Member 'UWBP_Race_Sub_BtnGuide_C::IsInAnimUseItem' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsDispOnFlightGuide) == 0x000412, "Member 'UWBP_Race_Sub_BtnGuide_C::IsDispOnFlightGuide' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_L1) == 0x000418, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_L1' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_R1) == 0x000428, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_R1' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_LStick) == 0x000438, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_LStick' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_RStick) == 0x000448, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_RStick' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, SteerKeyIndex) == 0x000458, "Member 'UWBP_Race_Sub_BtnGuide_C::SteerKeyIndex' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, PlayerControllerIndex) == 0x00045C, "Member 'UWBP_Race_Sub_BtnGuide_C::PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, ChangeKeyEventTimerHandle) == 0x000460, "Member 'UWBP_Race_Sub_BtnGuide_C::ChangeKeyEventTimerHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, IsEventKeyboard) == 0x000468, "Member 'UWBP_Race_Sub_BtnGuide_C::IsEventKeyboard' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_L2) == 0x000470, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_L2' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, Text_R2) == 0x000480, "Member 'UWBP_Race_Sub_BtnGuide_C::Text_R2' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, BtnGuideBtn) == 0x000490, "Member 'UWBP_Race_Sub_BtnGuide_C::BtnGuideBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_Sub_BtnGuide_C, BtnGuideBtnType) == 0x0004A8, "Member 'UWBP_Race_Sub_BtnGuide_C::BtnGuideBtnType' has a wrong offset!");
 
 }
 

@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C
-// 0x0110 (0x0450 - 0x0340)
+// 0x0118 (0x0458 - 0x0340)
 class UWBP_EndMenu_GudgetLv_Window_C final : public UGadgetPlateRankUpWindow
 {
 public:
@@ -60,10 +60,10 @@ public:
 	uint8                                         Pad_441[0x3];                                      // 0x0441(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoundHandle                           GaugeSE;                                           // 0x0444(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                        ForceCount;                                        // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsStart;                                           // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindFullScreenMouseClick();
-	void Construct();
 	void ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window(int32 EntryPoint);
 	void Finished_D9C901F64C87801986F7E0A71013780E();
 	void Finished_F3338B164A380015FC2E1B998F3B5C14();
@@ -77,6 +77,7 @@ public:
 	void Set_Gadget_Plate_Empty_from_Race_Count(int32 InTotalRaceCount, bool InRunkUp, bool InLevelUp);
 	void SetGadgetPlateLv();
 	void SetGadgetRaceCountReward();
+	void SetupWidget();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void UnbindFullScreenMouseClick();
 
@@ -91,7 +92,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_EndMenu_GudgetLv_Window_C) == 0x000008, "Wrong alignment on UWBP_EndMenu_GudgetLv_Window_C");
-static_assert(sizeof(UWBP_EndMenu_GudgetLv_Window_C) == 0x000450, "Wrong size on UWBP_EndMenu_GudgetLv_Window_C");
+static_assert(sizeof(UWBP_EndMenu_GudgetLv_Window_C) == 0x000458, "Wrong size on UWBP_EndMenu_GudgetLv_Window_C");
 static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, UberGraphFrame) == 0x000340, "Member 'UWBP_EndMenu_GudgetLv_Window_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, EndMenuGudget_WindowBase_Out) == 0x000348, "Member 'UWBP_EndMenu_GudgetLv_Window_C::EndMenuGudget_WindowBase_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, EndMenuGudget_WindowBase_Loop) == 0x000350, "Member 'UWBP_EndMenu_GudgetLv_Window_C::EndMenuGudget_WindowBase_Loop' has a wrong offset!");
@@ -126,6 +127,7 @@ static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, OnEndEvent) == 0x000430, 
 static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, bGaugeAnimation) == 0x000440, "Member 'UWBP_EndMenu_GudgetLv_Window_C::bGaugeAnimation' has a wrong offset!");
 static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, GaugeSE) == 0x000444, "Member 'UWBP_EndMenu_GudgetLv_Window_C::GaugeSE' has a wrong offset!");
 static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, ForceCount) == 0x000448, "Member 'UWBP_EndMenu_GudgetLv_Window_C::ForceCount' has a wrong offset!");
+static_assert(offsetof(UWBP_EndMenu_GudgetLv_Window_C, IsStart) == 0x000450, "Member 'UWBP_EndMenu_GudgetLv_Window_C::IsStart' has a wrong offset!");
 
 }
 

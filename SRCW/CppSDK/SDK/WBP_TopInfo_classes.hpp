@@ -10,50 +10,49 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TopInfo.WBP_TopInfo_C
-// 0x0108 (0x0420 - 0x0318)
+// 0x0100 (0x0430 - 0x0330)
 class UWBP_TopInfo_C final : public UTopInfoWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Page_Right_Scroll;                                 // 0x0320(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Page_Left_Scroll;                                  // 0x0328(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Page_Out;                                          // 0x0330(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Page_Loop;                                         // 0x0338(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Page_In;                                           // 0x0340(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Arrow_01;                                          // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow_02;                                          // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow_03;                                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow_04;                                          // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Black_BG;                                          // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               DSP_Overlay_Arrow;                                 // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_Back;                             // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_Button;                           // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_Left;                             // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_Right;                            // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category;                          // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_L;                        // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_L_Scroll;                 // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_R;                        // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_R_Scroll;                 // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnClosed_NextFestaInfo;                            // 0x03C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnClosed_NextPFStore;                              // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnClosed_NoDetail;                                 // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          IsAccept;                                          // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInAnimEnd;                                        // 0x03F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlayingPageChangeAnim;                            // 0x03F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F3[0x5];                                      // 0x03F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnClosed_NextLegendCompeInfo;                      // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnClosed_NextWorldMatchInfo;                       // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          IsDLCButtonEnable;                                 // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Page_Right_Scroll;                                 // 0x0338(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Page_Left_Scroll;                                  // 0x0340(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Page_Out;                                          // 0x0348(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Page_Loop;                                         // 0x0350(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Page_In;                                           // 0x0358(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Arrow_01;                                          // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Arrow_02;                                          // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Arrow_03;                                          // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Arrow_04;                                          // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Black_BG;                                          // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               DSP_Overlay_Arrow;                                 // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction_Back;                             // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction_Left;                             // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction_Right;                            // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category;                          // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_L;                        // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_L_Scroll;                 // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_R;                        // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TopInfo_Sub_Category_C*            WBP_TopInfo_Sub_Category_R_Scroll;                 // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnClosed_NextFestaInfo;                            // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnClosed_NextPFStore;                              // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnClosed_NoDetail;                                 // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsAccept;                                          // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInAnimEnd;                                        // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlayingPageChangeAnim;                            // 0x0402(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_403[0x5];                                      // 0x0403(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnClosed_NextLegendCompeInfo;                      // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnClosed_NextWorldMatchInfo;                       // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsDLCButtonEnable;                                 // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CheckInputAllow(bool* bAllow);
@@ -135,7 +134,7 @@ public:
 	void SetupDLCInfo(const class FText& Title, const class FText& DateTimeText, const struct FDateTime& StartTime, class UTexture2D* TextureBG, bool IsOnline, bool IsNew);
 	void SetupEmarjencyInfo(bool IsNew);
 	void SetupFestaInfo(const class FText& Title, const struct FDateTime& StartTime, const struct FDateTime& endTime, class UTexture2D* TextureBG, bool IsNew);
-	void SetupLegendInfo(const class FText& Title, const struct FDateTime& StartTime, const struct FDateTime& endTime, class UTexture2D* TextureBG, bool IsNew);
+	void SetupLegendInfo(const struct FDateTime& StartTime, const struct FDateTime& endTime, bool IsNew, const struct FLegendCompeInfoDispData& DispData);
 	void SetupWorldMatchInfo();
 	void SilentFocusReady(bool bOnce);
 	void StartLeftScroll();
@@ -154,37 +153,36 @@ public:
 	}
 };
 static_assert(alignof(UWBP_TopInfo_C) == 0x000008, "Wrong alignment on UWBP_TopInfo_C");
-static_assert(sizeof(UWBP_TopInfo_C) == 0x000420, "Wrong size on UWBP_TopInfo_C");
-static_assert(offsetof(UWBP_TopInfo_C, UberGraphFrame) == 0x000318, "Member 'UWBP_TopInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Right_Scroll) == 0x000320, "Member 'UWBP_TopInfo_C::Page_Right_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Left_Scroll) == 0x000328, "Member 'UWBP_TopInfo_C::Page_Left_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Out) == 0x000330, "Member 'UWBP_TopInfo_C::Page_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_Loop) == 0x000338, "Member 'UWBP_TopInfo_C::Page_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Page_In) == 0x000340, "Member 'UWBP_TopInfo_C::Page_In' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_01) == 0x000348, "Member 'UWBP_TopInfo_C::Arrow_01' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_02) == 0x000350, "Member 'UWBP_TopInfo_C::Arrow_02' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_03) == 0x000358, "Member 'UWBP_TopInfo_C::Arrow_03' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Arrow_04) == 0x000360, "Member 'UWBP_TopInfo_C::Arrow_04' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, Black_BG) == 0x000368, "Member 'UWBP_TopInfo_C::Black_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, DSP_Overlay_Arrow) == 0x000370, "Member 'UWBP_TopInfo_C::DSP_Overlay_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Back) == 0x000378, "Member 'UWBP_TopInfo_C::MouseInteraction_Back' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Button) == 0x000380, "Member 'UWBP_TopInfo_C::MouseInteraction_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Left) == 0x000388, "Member 'UWBP_TopInfo_C::MouseInteraction_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Right) == 0x000390, "Member 'UWBP_TopInfo_C::MouseInteraction_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category) == 0x000398, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_L) == 0x0003A0, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_L' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_L_Scroll) == 0x0003A8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_L_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_R) == 0x0003B0, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_R' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_R_Scroll) == 0x0003B8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_R_Scroll' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextFestaInfo) == 0x0003C0, "Member 'UWBP_TopInfo_C::OnClosed_NextFestaInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextPFStore) == 0x0003D0, "Member 'UWBP_TopInfo_C::OnClosed_NextPFStore' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NoDetail) == 0x0003E0, "Member 'UWBP_TopInfo_C::OnClosed_NoDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, IsAccept) == 0x0003F0, "Member 'UWBP_TopInfo_C::IsAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, bInAnimEnd) == 0x0003F1, "Member 'UWBP_TopInfo_C::bInAnimEnd' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, bPlayingPageChangeAnim) == 0x0003F2, "Member 'UWBP_TopInfo_C::bPlayingPageChangeAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextLegendCompeInfo) == 0x0003F8, "Member 'UWBP_TopInfo_C::OnClosed_NextLegendCompeInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextWorldMatchInfo) == 0x000408, "Member 'UWBP_TopInfo_C::OnClosed_NextWorldMatchInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_TopInfo_C, IsDLCButtonEnable) == 0x000418, "Member 'UWBP_TopInfo_C::IsDLCButtonEnable' has a wrong offset!");
+static_assert(sizeof(UWBP_TopInfo_C) == 0x000430, "Wrong size on UWBP_TopInfo_C");
+static_assert(offsetof(UWBP_TopInfo_C, UberGraphFrame) == 0x000330, "Member 'UWBP_TopInfo_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Page_Right_Scroll) == 0x000338, "Member 'UWBP_TopInfo_C::Page_Right_Scroll' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Page_Left_Scroll) == 0x000340, "Member 'UWBP_TopInfo_C::Page_Left_Scroll' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Page_Out) == 0x000348, "Member 'UWBP_TopInfo_C::Page_Out' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Page_Loop) == 0x000350, "Member 'UWBP_TopInfo_C::Page_Loop' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Page_In) == 0x000358, "Member 'UWBP_TopInfo_C::Page_In' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Arrow_01) == 0x000360, "Member 'UWBP_TopInfo_C::Arrow_01' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Arrow_02) == 0x000368, "Member 'UWBP_TopInfo_C::Arrow_02' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Arrow_03) == 0x000370, "Member 'UWBP_TopInfo_C::Arrow_03' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Arrow_04) == 0x000378, "Member 'UWBP_TopInfo_C::Arrow_04' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, Black_BG) == 0x000380, "Member 'UWBP_TopInfo_C::Black_BG' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, DSP_Overlay_Arrow) == 0x000388, "Member 'UWBP_TopInfo_C::DSP_Overlay_Arrow' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Back) == 0x000390, "Member 'UWBP_TopInfo_C::MouseInteraction_Back' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Left) == 0x000398, "Member 'UWBP_TopInfo_C::MouseInteraction_Left' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, MouseInteraction_Right) == 0x0003A0, "Member 'UWBP_TopInfo_C::MouseInteraction_Right' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category) == 0x0003A8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_L) == 0x0003B0, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_L' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_L_Scroll) == 0x0003B8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_L_Scroll' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_R) == 0x0003C0, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_R' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, WBP_TopInfo_Sub_Category_R_Scroll) == 0x0003C8, "Member 'UWBP_TopInfo_C::WBP_TopInfo_Sub_Category_R_Scroll' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextFestaInfo) == 0x0003D0, "Member 'UWBP_TopInfo_C::OnClosed_NextFestaInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextPFStore) == 0x0003E0, "Member 'UWBP_TopInfo_C::OnClosed_NextPFStore' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NoDetail) == 0x0003F0, "Member 'UWBP_TopInfo_C::OnClosed_NoDetail' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, IsAccept) == 0x000400, "Member 'UWBP_TopInfo_C::IsAccept' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, bInAnimEnd) == 0x000401, "Member 'UWBP_TopInfo_C::bInAnimEnd' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, bPlayingPageChangeAnim) == 0x000402, "Member 'UWBP_TopInfo_C::bPlayingPageChangeAnim' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextLegendCompeInfo) == 0x000408, "Member 'UWBP_TopInfo_C::OnClosed_NextLegendCompeInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, OnClosed_NextWorldMatchInfo) == 0x000418, "Member 'UWBP_TopInfo_C::OnClosed_NextWorldMatchInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_TopInfo_C, IsDLCButtonEnable) == 0x000428, "Member 'UWBP_TopInfo_C::IsDLCButtonEnable' has a wrong offset!");
 
 }
 

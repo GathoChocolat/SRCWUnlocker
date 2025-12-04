@@ -37,6 +37,42 @@ void UWBP_PartyRace_02_C::BindPresetButton(class UPartyRaceSubPresetBtn* InPrese
 }
 
 
+// Function WBP_PartyRace_02.WBP_PartyRace_02_C.BindToChangeControllerInputEvent
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PartyRace_02_C::BindToChangeControllerInputEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyRace_02_C", "BindToChangeControllerInputEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PartyRace_02.WBP_PartyRace_02_C.ChangeControllerInputEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EAppControllerInputType                 BeforeType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EAppControllerInputType                 AfterType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PartyRace_02_C::ChangeControllerInputEvent(EAppControllerInputType BeforeType, EAppControllerInputType AfterType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyRace_02_C", "ChangeControllerInputEvent");
+
+	Params::WBP_PartyRace_02_C_ChangeControllerInputEvent Parms{};
+
+	Parms.BeforeType = BeforeType;
+	Parms.AfterType = AfterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PartyRace_02.WBP_PartyRace_02_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -158,6 +194,26 @@ void UWBP_PartyRace_02_C::InSubButton()
 		Func = Class->GetFunction("WBP_PartyRace_02_C", "InSubButton");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PartyRace_02.WBP_PartyRace_02_C.OnCancelSubBtn
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUnionUIButtonBase*               Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PartyRace_02_C::OnCancelSubBtn(class UUnionUIButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyRace_02_C", "OnCancelSubBtn");
+
+	Params::WBP_PartyRace_02_C_OnCancelSubBtn Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -354,6 +410,20 @@ void UWBP_PartyRace_02_C::UnbindPresetButton(class UPartyRaceSubPresetBtn* InPre
 	Parms.InPresetButton = InPresetButton;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PartyRace_02.WBP_PartyRace_02_C.UnbindToChangeControllerInputEvent
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PartyRace_02_C::UnbindToChangeControllerInputEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyRace_02_C", "UnbindToChangeControllerInputEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

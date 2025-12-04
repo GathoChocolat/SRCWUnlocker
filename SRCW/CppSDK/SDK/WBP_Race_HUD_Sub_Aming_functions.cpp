@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Change Aiming UI
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EItemId                                 Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Sub_Aming_C::Change_Aiming_UI(EItemId Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_Aming_C", "Change Aiming UI");
+
+	Params::WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -48,6 +68,30 @@ void UWBP_Race_HUD_Sub_Aming_C::ExecuteUbergraph_WBP_Race_HUD_Sub_Aming(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Get Manual Aiming UI Widget Index
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EItemId                                 ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Sub_Aming_C::Get_Manual_Aiming_UI_Widget_Index(EItemId ItemId, int32* Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_Aming_C", "Get Manual Aiming UI Widget Index");
+
+	Params::WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index Parms{};
+
+	Parms.ItemId = ItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Index_0 != nullptr)
+		*Index_0 = Parms.Index_0;
 }
 
 
@@ -135,6 +179,46 @@ void UWBP_Race_HUD_Sub_Aming_C::ResetScaleOverlay()
 }
 
 
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Set Default UI Material Param Index
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Sub_Aming_C::Set_Default_UI_Material_Param_Index(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_Aming_C", "Set Default UI Material Param Index");
+
+	Params::WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Set Item Remain Count
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  remain                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Sub_Aming_C::Set_Item_Remain_Count(double remain)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_Aming_C", "Set Item Remain Count");
+
+	Params::WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count Parms{};
+
+	Parms.remain = remain;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Set Manual Aiming
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -192,9 +276,9 @@ void UWBP_Race_HUD_Sub_Aming_C::SetBeforeHomingNotAnim()
 // Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.SetIconScale
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Scale                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Scale_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_HUD_Sub_Aming_C::SetIconScale(double Scale)
+void UWBP_Race_HUD_Sub_Aming_C::SetIconScale(double Scale_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -203,7 +287,7 @@ void UWBP_Race_HUD_Sub_Aming_C::SetIconScale(double Scale)
 
 	Params::WBP_Race_HUD_Sub_Aming_C_SetIconScale Parms{};
 
-	Parms.Scale = Scale;
+	Parms.Scale_0 = Scale_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

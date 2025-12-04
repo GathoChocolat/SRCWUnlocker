@@ -32,8 +32,7 @@ public:
 public:
 	void Construct();
 	void ExecuteUbergraph_WBP_ClassSelect_Sub_TimeTrial_Medal(int32 EntryPoint);
-	void SetTimeTrialDLCMedalCount(int32 DLCMedalCount, int32 DLCMedalMax);
-	void SetTimeTrialMedalCount(int32 NormalMedalCount, int32 NormalMedalMax);
+	void SetTimeTrialMedalCount(int32 MedalCount, int32 MedalMax);
 
 public:
 	static class UClass* StaticClass()

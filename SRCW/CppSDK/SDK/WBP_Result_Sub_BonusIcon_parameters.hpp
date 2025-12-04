@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function WBP_Result_Sub_BonusIcon.WBP_Result_Sub_BonusIcon_C.ExecuteUbergraph_WBP_Result_Sub_BonusIcon
-// 0x0268 (0x0268 - 0x0000)
+// 0x0290 (0x0290 - 0x0000)
 struct WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon final
 {
 public:
@@ -38,12 +38,13 @@ public:
 	TSoftObjectPtr<class UTexture2D>              Temp_softobject_Variable_11;                       // 0x01C0(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              Temp_softobject_Variable_12;                       // 0x01E8(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              Temp_softobject_Variable_13;                       // 0x0210(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	EGroupBonusType                               CallFunc_GetFestaBonusType_ReturnValue;            // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              K2Node_Select_Default;                             // 0x0240(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              Temp_softobject_Variable_14;                       // 0x0238(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	EGroupBonusType                               CallFunc_GetFestaBonusType_ReturnValue;            // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              K2Node_Select_Default;                             // 0x0268(0x0028)(UObjectWrapper, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon) == 0x000008, "Wrong alignment on WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon");
-static_assert(sizeof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon) == 0x000268, "Wrong size on WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon");
+static_assert(sizeof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon) == 0x000290, "Wrong size on WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon");
 static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, EntryPoint) == 0x000000, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, Temp_byte_Variable) == 0x000004, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, Temp_softobject_Variable) == 0x000008, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::Temp_softobject_Variable' has a wrong offset!");
@@ -60,8 +61,9 @@ static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Su
 static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, Temp_softobject_Variable_11) == 0x0001C0, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::Temp_softobject_Variable_11' has a wrong offset!");
 static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, Temp_softobject_Variable_12) == 0x0001E8, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::Temp_softobject_Variable_12' has a wrong offset!");
 static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, Temp_softobject_Variable_13) == 0x000210, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::Temp_softobject_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, CallFunc_GetFestaBonusType_ReturnValue) == 0x000238, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::CallFunc_GetFestaBonusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, K2Node_Select_Default) == 0x000240, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, Temp_softobject_Variable_14) == 0x000238, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::Temp_softobject_Variable_14' has a wrong offset!");
+static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, CallFunc_GetFestaBonusType_ReturnValue) == 0x000260, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::CallFunc_GetFestaBonusType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon, K2Node_Select_Default) == 0x000268, "Member 'WBP_Result_Sub_BonusIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusIcon::K2Node_Select_Default' has a wrong offset!");
 
 }
 

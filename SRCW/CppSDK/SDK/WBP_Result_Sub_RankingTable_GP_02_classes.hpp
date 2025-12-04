@@ -10,9 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionRun_classes.hpp"
+#include "UNION_structs.hpp"
 #include "UnionLib_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -100,6 +101,8 @@ public:
 	void Construct();
 	void DumpStat(float Duration, bool bPrintToLog);
 	void ExecuteUbergraph_WBP_Result_Sub_RankingTable_GP_02(int32 EntryPoint);
+	void GetHonorTitleId(int32 RacerIndex_0, int32* HonorTitleId);
+	void GetLegendGrade(ELegendCompeRateGrade* LegendGrade);
 	void GetRateRank_impl(ERateRank* RateRank);
 	void MVP_Anim();
 	void OnAddMoveFinished();
@@ -164,6 +167,7 @@ public:
 	void SetRivalIF(bool IsRival, bool IsPowerRival);
 	void SetTeamColor(int32 TeamNo);
 	void SetTotalPointValue(int32 TotalPoint_0);
+	void SetupVisibleSettingByGameMode(EGameModeId GameMode);
 	void UpdateRivalRacer();
 
 public:

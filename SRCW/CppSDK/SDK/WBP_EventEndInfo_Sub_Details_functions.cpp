@@ -66,7 +66,7 @@ void UWBP_EventEndInfo_Sub_Details_C::RankingAnimEnd()
 
 
 // Function WBP_EventEndInfo_Sub_Details.WBP_EventEndInfo_Sub_Details_C.SetPointDisplay
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   PlayerPoint                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -86,7 +86,7 @@ void UWBP_EventEndInfo_Sub_Details_C::SetPointDisplay(int32 PlayerPoint)
 
 
 // Function WBP_EventEndInfo_Sub_Details.WBP_EventEndInfo_Sub_Details_C.SetRankingDisplay
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Ranking                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -106,7 +106,7 @@ void UWBP_EventEndInfo_Sub_Details_C::SetRankingDisplay(int32 Ranking)
 
 
 // Function WBP_EventEndInfo_Sub_Details.WBP_EventEndInfo_Sub_Details_C.SetTextureBG
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
@@ -126,7 +126,7 @@ void UWBP_EventEndInfo_Sub_Details_C::SetTextureBG(class UTexture2D* Texture)
 
 
 // Function WBP_EventEndInfo_Sub_Details.WBP_EventEndInfo_Sub_Details_C.StartPointDisplay
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Point                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -146,7 +146,7 @@ void UWBP_EventEndInfo_Sub_Details_C::StartPointDisplay(int32 Point)
 
 
 // Function WBP_EventEndInfo_Sub_Details.WBP_EventEndInfo_Sub_Details_C.StartRankingDisplay
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Ranking                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -188,7 +188,7 @@ void UWBP_EventEndInfo_Sub_Details_C::Tick(const struct FGeometry& MyGeometry, f
 
 
 // Function WBP_EventEndInfo_Sub_Details.WBP_EventEndInfo_Sub_Details_C.UpdateDisplayPoint
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
 void UWBP_EventEndInfo_Sub_Details_C::UpdateDisplayPoint()
 {

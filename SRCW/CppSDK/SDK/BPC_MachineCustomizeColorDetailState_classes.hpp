@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,6 +40,7 @@ public:
 	void GetSurface(const struct FUserMachineCustomizeData& InCustomizeData, EMachineColorAreaUIId InColorAreaId, int32* OutSurfaceId);
 	void OnInitState();
 	void OnSetupPage();
+	void OnStateChanged();
 	void SetColor(const struct FUserMachineCustomizeData& InCustomizeData, EMachineColorAreaUIId InColorAreaId, int32 InColorId, struct FUserMachineCustomizeData* OutCustomizeData);
 	void SetProperties();
 	void SetSurface(const struct FUserMachineCustomizeData& InCustomizeData, EMachineColorAreaUIId InColorAreaId, int32 InSurfaceId, struct FUserMachineCustomizeData* OutCustomizeData);

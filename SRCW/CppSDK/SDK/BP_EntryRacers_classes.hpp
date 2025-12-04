@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "MovieScene_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MovieScene_structs.hpp"
 #include "LevelSequence_classes.hpp"
 
 

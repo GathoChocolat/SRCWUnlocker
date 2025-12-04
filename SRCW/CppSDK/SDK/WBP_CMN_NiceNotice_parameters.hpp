@@ -148,24 +148,28 @@ static_assert(offsetof(WBP_CMN_NiceNotice_C_SetupChallengeClearNotice, InChallen
 static_assert(offsetof(WBP_CMN_NiceNotice_C_SetupChallengeClearNotice, InTime) == 0x00000C, "Member 'WBP_CMN_NiceNotice_C_SetupChallengeClearNotice::InTime' has a wrong offset!");
 
 // Function WBP_CMN_NiceNotice.WBP_CMN_NiceNotice_C.SetUpNiceNotice
-// 0x0030 (0x0030 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct WBP_CMN_NiceNotice_C_SetUpNiceNotice final
 {
 public:
 	class FText                                   InName;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	ECrossplayPlatform                            InPlatformType;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetClampUserNameLength_ReturnValue;       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_TruncateTextWithEllipsis_ReturnValue;     // 0x0020(0x0010)()
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CMN_NiceNotice_C_SetUpNiceNotice) == 0x000008, "Wrong alignment on WBP_CMN_NiceNotice_C_SetUpNiceNotice");
-static_assert(sizeof(WBP_CMN_NiceNotice_C_SetUpNiceNotice) == 0x000030, "Wrong size on WBP_CMN_NiceNotice_C_SetUpNiceNotice");
+static_assert(sizeof(WBP_CMN_NiceNotice_C_SetUpNiceNotice) == 0x000040, "Wrong size on WBP_CMN_NiceNotice_C_SetUpNiceNotice");
 static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, InName) == 0x000000, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::InName' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, InPlatformType) == 0x000010, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::InPlatformType' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, CallFunc_GetClampUserNameLength_ReturnValue) == 0x000014, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::CallFunc_GetClampUserNameLength_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000018, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000028, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, CallFunc_TruncateTextWithEllipsis_ReturnValue) == 0x000020, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::CallFunc_TruncateTextWithEllipsis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_NiceNotice_C_SetUpNiceNotice, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000038, "Member 'WBP_CMN_NiceNotice_C_SetUpNiceNotice::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
 
 // Function WBP_CMN_NiceNotice.WBP_CMN_NiceNotice_C.ShowOnly
 // 0x0001 (0x0001 - 0x0000)

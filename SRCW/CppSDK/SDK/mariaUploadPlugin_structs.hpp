@@ -71,6 +71,25 @@ enum class EMariaEpicLoginType : uint8
 	EMariaEpicLoginType_MAX                  = 4,
 };
 
+// Enum mariaUploadPlugin.EMariaSegaAccountLinkTarget
+// NumValues: 0x0003
+enum class EMariaSegaAccountLinkTarget : uint8
+{
+	Platform                                 = 0,
+	UserID                                   = 1,
+	EMariaSegaAccountLinkTarget_MAX          = 2,
+};
+
+// Enum mariaUploadPlugin.EMariaSegaAccountType
+// NumValues: 0x0004
+enum class EMariaSegaAccountType : uint8
+{
+	Unknown                                  = 0,
+	Child                                    = 1,
+	General                                  = 2,
+	EMariaSegaAccountType_MAX                = 3,
+};
+
 // Enum mariaUploadPlugin.EMariaXboxUserPickMode
 // NumValues: 0x0004
 enum class EMariaXboxUserPickMode : uint8

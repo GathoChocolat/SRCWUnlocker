@@ -71,6 +71,34 @@ void UWBP_GadgetCutom_M2_Div_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.SequenceEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetCutom_M2_Div_C::SequenceEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCutom_M2_Div_C", "SequenceEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M2_Div
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetCutom_M2_Div_C::SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M2_Div()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCutom_M2_Div_C", "SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M2_Div");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_GadgetCutom_M2_Div.WBP_GadgetCutom_M2_Div_C.Setup
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

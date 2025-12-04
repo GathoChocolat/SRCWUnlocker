@@ -21,12 +21,12 @@ struct WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Mo
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_Texture;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa) == 0x000008, "Wrong alignment on WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa");
 static_assert(sizeof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa) == 0x000010, "Wrong size on WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa");
 static_assert(offsetof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa, EntryPoint) == 0x000000, "Member 'WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa, K2Node_Event_texture) == 0x000008, "Member 'WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa, K2Node_Event_Texture) == 0x000008, "Member 'WBP_EventTip_Festa_Monitor_Festa_C_ExecuteUbergraph_WBP_EventTip_Festa_Monitor_Festa::K2Node_Event_Texture' has a wrong offset!");
 
 // Function WBP_EventTip_Festa_Monitor_Festa.WBP_EventTip_Festa_Monitor_Festa_C.SetFestaInfoTexture
 // 0x0008 (0x0008 - 0x0000)

@@ -32,11 +32,11 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x085918B0;
-	constexpr int32 AppendString      = 0x01162580;
-	constexpr int32 GNames            = 0x084DAB00;
-	constexpr int32 GWorld            = 0x0870A6E8;
-	constexpr int32 ProcessEvent      = 0x0134C820;
+	constexpr int32 GObjects          = 0x085209B0;
+	constexpr int32 AppendString      = 0x0107E0E0;
+	constexpr int32 GNames            = 0x00000000;
+	constexpr int32 GWorld            = 0x086999D8;
+	constexpr int32 ProcessEvent      = 0x012684F0;
 	constexpr int32 ProcessEventIdx   = 0x0000004D;
 }
 
@@ -305,7 +305,7 @@ public:
 	static inline void*                           AppendString = nullptr;                            // 0x0000(0x0004)(NOT AUTO-GENERATED PROPERTY)
 
 	int32                                         ComparisonIndex;                                   // 0x0000(0x0004)(NOT AUTO-GENERATED PROPERTY)
-	uint32                                        Number;                                            // 0x0004(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         Number;                                            // 0x0004(0x0004)(NOT AUTO-GENERATED PROPERTY)
 
 public:
 	static void InitInternal()

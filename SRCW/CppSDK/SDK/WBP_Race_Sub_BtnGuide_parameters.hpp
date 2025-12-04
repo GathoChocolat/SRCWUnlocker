@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "UnionRun_structs.hpp"
 
@@ -43,125 +44,124 @@ static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_DispOnUseItemGuide, PlayerIndex) 
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_DispOnUseItemGuide, IsFever) == 0x000004, "Member 'WBP_Race_Sub_BtnGuide_C_DispOnUseItemGuide::IsFever' has a wrong offset!");
 
 // Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.ExecuteUbergraph_WBP_Race_Sub_BtnGuide
-// 0x01E0 (0x01E0 - 0x0000)
+// 0x01D8 (0x01D8 - 0x0000)
 struct WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_Event_UseItemKey;                           // 0x0008(0x0018)(ConstParm, HasGetValueTypeHash)
-	bool                                          CallFunc_SetFaceBtnKey_IsSuccess;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetBtnLR_IsSuccess;                       // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0038(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0050(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerControllerIndex_1;        // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result; // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue; // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1; // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1; // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AA[0x6];                                       // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsKeyboard_ReturnValue;                   // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2; // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2; // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   CallFunc_GetSteerKey_ReturnValue;                  // 0x00E0(0x0018)(HasGetValueTypeHash)
-	struct FKey                                   CallFunc_GetSteerKey_ReturnValue_1;                // 0x00F8(0x0018)(HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PlayerIndex;                    // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsFever;                        // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   CallFunc_GetUseItemKeyPC_ReturnValue;              // 0x0120(0x0018)(HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsKeyboard_ReturnValue_1;                 // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0154(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bSuggestUpInput;                // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_165[0x3];                                      // 0x0165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_PlayerControllerIndex;          // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   CallFunc_GetFlightGuideKey_ReturnValue;            // 0x0170(0x0018)(HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_1;  // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1; // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerControllerIndex_1;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsKeyboard_ReturnValue;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1; // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2; // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2; // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   CallFunc_GetSteerKey_ReturnValue;                  // 0x00A0(0x0018)(HasGetValueTypeHash)
+	struct FKey                                   CallFunc_GetSteerKey_ReturnValue_1;                // 0x00B8(0x0018)(HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00D4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PlayerIndex;                    // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsFever;                        // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   CallFunc_GetUseItemKeyPC_ReturnValue;              // 0x00F8(0x0018)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsKeyboard_ReturnValue_1;                 // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0130(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bSuggestUpInput;                // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_142[0x2];                                      // 0x0142(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_PlayerControllerIndex;          // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsKeyboard_ReturnValue_2;                 // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   CallFunc_GetFlightGuideKey_ReturnValue;            // 0x0150(0x0018)(HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x0168(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_1;  // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1; // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_2;  // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2; // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x01B4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_2;  // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2; // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsKeyboard_ReturnValue_2;                 // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B2[0x6];                                      // 0x01B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_UseItemKey;                           // 0x01B8(0x0018)(ConstParm, HasGetValueTypeHash)
+	bool                                          CallFunc_SetGamepadBtnOption_IsSuccess;            // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetFaceBtnKey_IsSuccess;                  // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetBtnLR_IsSuccess;                       // 0x01D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide) == 0x000008, "Wrong alignment on WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide");
-static_assert(sizeof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide) == 0x0001E0, "Wrong size on WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide");
+static_assert(sizeof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide) == 0x0001D8, "Wrong size on WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide");
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, EntryPoint) == 0x000000, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_Event_UseItemKey) == 0x000008, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_Event_UseItemKey' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_SetFaceBtnKey_IsSuccess) == 0x000020, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_SetFaceBtnKey_IsSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_SetBtnLR_IsSuccess) == 0x000021, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_SetBtnLR_IsSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate) == 0x000024, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000038, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_2) == 0x000050, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_3) == 0x000060, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_4) == 0x000070, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_PlayerControllerIndex_1) == 0x000080, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_PlayerControllerIndex_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result) == 0x000088, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue) == 0x000090, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1) == 0x000098, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1) == 0x0000A0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_1) == 0x0000A9, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue) == 0x0000B0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsKeyboard_ReturnValue) == 0x0000B8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsKeyboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2) == 0x0000C0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2) == 0x0000C8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000D0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_2) == 0x0000D8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetSteerKey_ReturnValue) == 0x0000E0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetSteerKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetSteerKey_ReturnValue_1) == 0x0000F8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetSteerKey_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_Add_IntInt_ReturnValue) == 0x000110, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_Percent_IntInt_ReturnValue) == 0x000114, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_PlayerIndex) == 0x000118, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_IsFever) == 0x00011C, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_IsFever' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetUseItemKeyPC_ReturnValue) == 0x000120, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetUseItemKeyPC_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_2) == 0x000138, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_3) == 0x000140, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_4) == 0x000148, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsKeyboard_ReturnValue_1) == 0x000150, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsKeyboard_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_5) == 0x000154, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_bSuggestUpInput) == 0x000164, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_bSuggestUpInput' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_PlayerControllerIndex) == 0x000168, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_PlayerControllerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetFlightGuideKey_ReturnValue) == 0x000170, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetFlightGuideKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000188, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000190, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_3) == 0x000198, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x0001A0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x0001A8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_PlayerControllerIndex_1) == 0x000044, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_PlayerControllerIndex_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsKeyboard_ReturnValue) == 0x000048, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsKeyboard_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result) == 0x000050, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue) == 0x000058, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1) == 0x000060, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1) == 0x000068, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_1) == 0x000071, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue) == 0x000078, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2) == 0x000080, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2) == 0x000088, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_1) == 0x000090, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_2) == 0x000098, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetSteerKey_ReturnValue) == 0x0000A0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetSteerKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetSteerKey_ReturnValue_1) == 0x0000B8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetSteerKey_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_Add_IntInt_ReturnValue) == 0x0000D0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000D4, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_Percent_IntInt_ReturnValue) == 0x0000E4, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000E8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_PlayerIndex) == 0x0000F0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_PlayerIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_IsFever) == 0x0000F4, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_IsFever' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetUseItemKeyPC_ReturnValue) == 0x0000F8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetUseItemKeyPC_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsKeyboard_ReturnValue_1) == 0x000110, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsKeyboard_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_2) == 0x000118, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_3) == 0x000120, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_PlayAnimation_ReturnValue_4) == 0x000128, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_5) == 0x000130, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_SwitchEnum_CmpSuccess) == 0x000140, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_bSuggestUpInput) == 0x000141, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_bSuggestUpInput' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CustomEvent_PlayerControllerIndex) == 0x000144, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CustomEvent_PlayerControllerIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsKeyboard_ReturnValue_2) == 0x000148, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsKeyboard_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_GetFlightGuideKey_ReturnValue) == 0x000150, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_GetFlightGuideKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_6) == 0x000168, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000178, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000180, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_3) == 0x000188, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_Result_1) == 0x000190, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_Result_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1) == 0x000198, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_Result_2) == 0x0001A0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_Result_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2) == 0x0001A8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_4) == 0x0001B0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_CreateDelegate_OutputDelegate_6) == 0x0001B4, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_Result_2) == 0x0001C8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_Result_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2) == 0x0001D0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_5) == 0x0001D8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsKeyboard_ReturnValue_2) == 0x0001D9, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsKeyboard_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_IsValid_ReturnValue_5) == 0x0001B1, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, K2Node_Event_UseItemKey) == 0x0001B8, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::K2Node_Event_UseItemKey' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_SetGamepadBtnOption_IsSuccess) == 0x0001D0, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_SetGamepadBtnOption_IsSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_SetFaceBtnKey_IsSuccess) == 0x0001D1, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_SetFaceBtnKey_IsSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide, CallFunc_SetBtnLR_IsSuccess) == 0x0001D2, "Member 'WBP_Race_Sub_BtnGuide_C_ExecuteUbergraph_WBP_Race_Sub_BtnGuide::CallFunc_SetBtnLR_IsSuccess' has a wrong offset!");
 
 // Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.FlightGuideOn
 // 0x0008 (0x0008 - 0x0000)
@@ -208,7 +208,7 @@ static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnLR, CallFunc_GetDynamicMate
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnLR, CallFunc_GetDynamicMaterial_ReturnValue_3) == 0x000038, "Member 'WBP_Race_Sub_BtnGuide_C_SetBtnLR::CallFunc_GetDynamicMaterial_ReturnValue_3' has a wrong offset!");
 
 // Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetBtnText
-// 0x0070 (0x0070 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct WBP_Race_Sub_BtnGuide_C_SetBtnText final
 {
 public:
@@ -216,16 +216,16 @@ public:
 	EBtnGuidePlatFormController                   CallFunc_GetControllerType_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FBtnGuidePlatformText                  CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0058)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBtnGuidePlatformText                  CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0068)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_Sub_BtnGuide_C_SetBtnText) == 0x000008, "Wrong alignment on WBP_Race_Sub_BtnGuide_C_SetBtnText");
-static_assert(sizeof(WBP_Race_Sub_BtnGuide_C_SetBtnText) == 0x000070, "Wrong size on WBP_Race_Sub_BtnGuide_C_SetBtnText");
+static_assert(sizeof(WBP_Race_Sub_BtnGuide_C_SetBtnText) == 0x000080, "Wrong size on WBP_Race_Sub_BtnGuide_C_SetBtnText");
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnText, PlayerContorllerIndex) == 0x000000, "Member 'WBP_Race_Sub_BtnGuide_C_SetBtnText::PlayerContorllerIndex' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnText, CallFunc_GetControllerType_ReturnValue) == 0x000004, "Member 'WBP_Race_Sub_BtnGuide_C_SetBtnText::CallFunc_GetControllerType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnText, CallFunc_GetEnumeratorName_ReturnValue) == 0x000008, "Member 'WBP_Race_Sub_BtnGuide_C_SetBtnText::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnText, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'WBP_Race_Sub_BtnGuide_C_SetBtnText::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnText, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000068, "Member 'WBP_Race_Sub_BtnGuide_C_SetBtnText::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetBtnText, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000078, "Member 'WBP_Race_Sub_BtnGuide_C_SetBtnText::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
 
 // Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetFaceBtnKey
 // 0x0070 (0x0070 - 0x0000)
@@ -271,9 +271,61 @@ static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetFaceBtnKey, CallFunc_Array_Len
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetFaceBtnKey, CallFunc_Array_Get_Item) == 0x000060, "Member 'WBP_Race_Sub_BtnGuide_C_SetFaceBtnKey::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetFaceBtnKey, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'WBP_Race_Sub_BtnGuide_C_SetFaceBtnKey::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
-// Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetKey
+// Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetGamepadBtnOption
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption final
+{
+public:
+	struct FKey                                   NewKey;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          IsSuccess;                                         // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_2;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_3;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAppPlayerControllerSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EControllerButtonTextureType                  CallFunc_GetCurrentButtonTextureType_ReturnValue;  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAppPlayerControllerSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EControllerButtonTextureType                  CallFunc_GetCurrentButtonTextureType_ReturnValue_1; // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_3;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_4;         // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_5;         // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_6;         // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_7;         // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption) == 0x000008, "Wrong alignment on WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption");
+static_assert(sizeof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption) == 0x000080, "Wrong size on WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, NewKey) == 0x000000, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::NewKey' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, IsSuccess) == 0x000018, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::IsSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000019, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_EqualEqual_KeyKey_ReturnValue_1) == 0x00001A, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_EqualEqual_KeyKey_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_EqualEqual_KeyKey_ReturnValue_2) == 0x00001B, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_EqualEqual_KeyKey_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_EqualEqual_KeyKey_ReturnValue_3) == 0x00001C, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_EqualEqual_KeyKey_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000020, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetCurrentButtonTextureType_ReturnValue) == 0x000028, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetCurrentButtonTextureType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, K2Node_SwitchEnum_CmpSuccess) == 0x000029, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000030, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetCurrentButtonTextureType_ReturnValue_1) == 0x000038, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetCurrentButtonTextureType_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, K2Node_SwitchEnum_CmpSuccess_1) == 0x000039, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000048, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000050, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue_3) == 0x000058, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue_4) == 0x000060, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue_5) == 0x000068, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue_6) == 0x000070, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption, CallFunc_GetDynamicMaterial_ReturnValue_7) == 0x000078, "Member 'WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption::CallFunc_GetDynamicMaterial_ReturnValue_7' has a wrong offset!");
+
+// Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetKeyboardKey
 // 0x0070 (0x0070 - 0x0000)
-struct WBP_Race_Sub_BtnGuide_C_SetKey final
+struct WBP_Race_Sub_BtnGuide_C_SetKeyboardKey final
 {
 public:
 	struct FKey                                   InKey;                                             // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -291,21 +343,21 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               K2Node_Select_Default;                             // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_Sub_BtnGuide_C_SetKey) == 0x000008, "Wrong alignment on WBP_Race_Sub_BtnGuide_C_SetKey");
-static_assert(sizeof(WBP_Race_Sub_BtnGuide_C_SetKey) == 0x000070, "Wrong size on WBP_Race_Sub_BtnGuide_C_SetKey");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, InKey) == 0x000000, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::InKey' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, PlayerControllerIndex_0) == 0x000018, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::PlayerControllerIndex_0' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, Temp_int_Variable) == 0x00001C, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, CallFunc_GetKeyDisplayName_ReturnValue) == 0x000020, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::CallFunc_GetKeyDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, CallFunc_GetMouseButtonIndex_ReturnValue) == 0x000030, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::CallFunc_GetMouseButtonIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, CallFunc_Key_IsMouseButton_ReturnValue) == 0x000034, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::CallFunc_Key_IsMouseButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, Temp_object_Variable) == 0x000038, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, Temp_object_Variable_1) == 0x000040, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, Temp_object_Variable_2) == 0x000048, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, Temp_object_Variable_3) == 0x000050, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, Temp_object_Variable_4) == 0x000058, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000060, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKey, K2Node_Select_Default) == 0x000068, "Member 'WBP_Race_Sub_BtnGuide_C_SetKey::K2Node_Select_Default' has a wrong offset!");
+static_assert(alignof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey) == 0x000008, "Wrong alignment on WBP_Race_Sub_BtnGuide_C_SetKeyboardKey");
+static_assert(sizeof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey) == 0x000070, "Wrong size on WBP_Race_Sub_BtnGuide_C_SetKeyboardKey");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, InKey) == 0x000000, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::InKey' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, PlayerControllerIndex_0) == 0x000018, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::PlayerControllerIndex_0' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, Temp_int_Variable) == 0x00001C, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, CallFunc_GetKeyDisplayName_ReturnValue) == 0x000020, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::CallFunc_GetKeyDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, CallFunc_GetMouseButtonIndex_ReturnValue) == 0x000030, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::CallFunc_GetMouseButtonIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, CallFunc_Key_IsMouseButton_ReturnValue) == 0x000034, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::CallFunc_Key_IsMouseButton_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, Temp_object_Variable) == 0x000038, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, Temp_object_Variable_1) == 0x000040, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, Temp_object_Variable_2) == 0x000048, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, Temp_object_Variable_3) == 0x000050, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, Temp_object_Variable_4) == 0x000058, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::Temp_object_Variable_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000060, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_Sub_BtnGuide_C_SetKeyboardKey, K2Node_Select_Default) == 0x000068, "Member 'WBP_Race_Sub_BtnGuide_C_SetKeyboardKey::K2Node_Select_Default' has a wrong offset!");
 
 // Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetUseItemKey
 // 0x0018 (0x0018 - 0x0000)

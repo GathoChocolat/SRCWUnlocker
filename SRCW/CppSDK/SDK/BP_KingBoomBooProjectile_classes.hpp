@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_KingBoomBooProjectile.BP_KingBoomBooProjectile_C
-// 0x0010 (0x05E0 - 0x05D0)
+// 0x0010 (0x05F0 - 0x05E0)
 class ABP_KingBoomBooProjectile_C final : public AKingBoomBooProjectile
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_KingBoomBooProjectile(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(ABP_KingBoomBooProjectile_C) == 0x000010, "Wrong alignment on ABP_KingBoomBooProjectile_C");
-static_assert(sizeof(ABP_KingBoomBooProjectile_C) == 0x0005E0, "Wrong size on ABP_KingBoomBooProjectile_C");
-static_assert(offsetof(ABP_KingBoomBooProjectile_C, UberGraphFrame) == 0x0005D0, "Member 'ABP_KingBoomBooProjectile_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(ABP_KingBoomBooProjectile_C) == 0x0005F0, "Wrong size on ABP_KingBoomBooProjectile_C");
+static_assert(offsetof(ABP_KingBoomBooProjectile_C, UberGraphFrame) == 0x0005E0, "Member 'ABP_KingBoomBooProjectile_C::UberGraphFrame' has a wrong offset!");
 
 }
 

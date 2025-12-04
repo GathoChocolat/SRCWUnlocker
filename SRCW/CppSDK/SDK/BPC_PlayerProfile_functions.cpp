@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BPC_PlayerProfile.BPC_PlayerProfile_C.CameraSettings
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMenuCameraManager*               Player_Detail_Camera_Manager                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_PlayerProfile_C::CameraSettings(class AMenuCameraManager* Player_Detail_Camera_Manager)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_PlayerProfile_C", "CameraSettings");
-
-	Params::BPC_PlayerProfile_C_CameraSettings Parms{};
-
-	Parms.Player_Detail_Camera_Manager = Player_Detail_Camera_Manager;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BPC_PlayerProfile.BPC_PlayerProfile_C.ExecuteUbergraph_BPC_PlayerProfile
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -150,26 +130,6 @@ void UBPC_PlayerProfile_C::OnPressedNice()
 		Func = Class->GetFunction("BPC_PlayerProfile_C", "OnPressedNice");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPC_PlayerProfile.BPC_PlayerProfile_C.OnSetChangedNextProfileEvent
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSuccess                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_PlayerProfile_C::OnSetChangedNextProfileEvent(bool bIsSuccess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_PlayerProfile_C", "OnSetChangedNextProfileEvent");
-
-	Params::BPC_PlayerProfile_C_OnSetChangedNextProfileEvent Parms{};
-
-	Parms.bIsSuccess = bIsSuccess;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

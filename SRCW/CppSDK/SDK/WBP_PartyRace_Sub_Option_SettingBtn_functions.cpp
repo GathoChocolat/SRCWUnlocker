@@ -427,6 +427,20 @@ void UWBP_PartyRace_Sub_Option_SettingBtn_C::SetText(const class FText& InText)
 }
 
 
+// Function WBP_PartyRace_Sub_Option_SettingBtn.WBP_PartyRace_Sub_Option_SettingBtn_C.UnfocusEventImpl
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PartyRace_Sub_Option_SettingBtn_C::UnfocusEventImpl()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyRace_Sub_Option_SettingBtn_C", "UnfocusEventImpl");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PartyRace_Sub_Option_SettingBtn.WBP_PartyRace_Sub_Option_SettingBtn_C.WidgetAnimationEvt_Btn_Active_Loop_K2Node_WidgetAnimationEvent_0
 // (BlueprintEvent)
 

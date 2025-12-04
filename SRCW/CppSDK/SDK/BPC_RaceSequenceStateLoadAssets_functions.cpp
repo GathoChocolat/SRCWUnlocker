@@ -369,6 +369,46 @@ void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_F240FC9447C9A18C546668AD2026A8
 }
 
 
+// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_1881E30949760AF8F517E1A8502FCB2D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_1881E30949760AF8F517E1A8502FCB2D(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_1881E30949760AF8F517E1A8502FCB2D");
+
+	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_85DA89AA4A74182281DE208ADD16DAE7
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_85DA89AA4A74182281DE208ADD16DAE7(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_85DA89AA4A74182281DE208ADD16DAE7");
+
+	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.Completed_0236B9464600658108D0BDBEFF5198A5
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -649,39 +689,19 @@ void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_2099005542700D2022F146817F7CD5
 }
 
 
-// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_1881E30949760AF8F517E1A8502FCB2D
+// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_DAE0F2D042E1EE8E981273805EFF7812
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_1881E30949760AF8F517E1A8502FCB2D(class UObject* Loaded)
+void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_DAE0F2D042E1EE8E981273805EFF7812(class UObject* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_1881E30949760AF8F517E1A8502FCB2D");
+		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_DAE0F2D042E1EE8E981273805EFF7812");
 
-	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8502FCB2D Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_85DA89AA4A74182281DE208ADD16DAE7
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_85DA89AA4A74182281DE208ADD16DAE7(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_85DA89AA4A74182281DE208ADD16DAE7");
-
-	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_85DA89AA4A74182281DE208ADD16DAE7 Parms{};
+	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812 Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -769,21 +789,41 @@ void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B
 }
 
 
-// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_DAE0F2D042E1EE8E981273805EFF7812
+// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_F240FC9447C9A18C546668AD7581D862
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_DAE0F2D042E1EE8E981273805EFF7812(class UObject* Loaded)
+void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_F240FC9447C9A18C546668AD7581D862(class UObject* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_DAE0F2D042E1EE8E981273805EFF7812");
+		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_F240FC9447C9A18C546668AD7581D862");
 
-	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_DAE0F2D042E1EE8E981273805EFF7812 Parms{};
+	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862 Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.Completed_C44C0BCB4761CE1EEC04BEB933867411
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class UObject*>&           Loaded                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UBPC_RaceSequenceStateLoadAssets_C::Completed_C44C0BCB4761CE1EEC04BEB933867411(const TArray<class UObject*>& Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "Completed_C44C0BCB4761CE1EEC04BEB933867411");
+
+	Params::BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411 Parms{};
+
+	Parms.Loaded = std::move(Loaded);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -862,46 +902,6 @@ void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_1881E30949760AF8F517E1A8BAAC99
 		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_1881E30949760AF8F517E1A8BAAC9964");
 
 	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_1881E30949760AF8F517E1A8BAAC9964 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.Completed_C44C0BCB4761CE1EEC04BEB933867411
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<class UObject*>&           Loaded                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UBPC_RaceSequenceStateLoadAssets_C::Completed_C44C0BCB4761CE1EEC04BEB933867411(const TArray<class UObject*>& Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "Completed_C44C0BCB4761CE1EEC04BEB933867411");
-
-	Params::BPC_RaceSequenceStateLoadAssets_C_Completed_C44C0BCB4761CE1EEC04BEB933867411 Parms{};
-
-	Parms.Loaded = std::move(Loaded);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPC_RaceSequenceStateLoadAssets.BPC_RaceSequenceStateLoadAssets_C.OnLoaded_F240FC9447C9A18C546668AD7581D862
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_RaceSequenceStateLoadAssets_C::OnLoaded_F240FC9447C9A18C546668AD7581D862(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_RaceSequenceStateLoadAssets_C", "OnLoaded_F240FC9447C9A18C546668AD7581D862");
-
-	Params::BPC_RaceSequenceStateLoadAssets_C_OnLoaded_F240FC9447C9A18C546668AD7581D862 Parms{};
 
 	Parms.Loaded = Loaded;
 

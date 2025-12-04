@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,45 +20,42 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HeaderMenu_Sub_Rule_TimeTable.WBP_HeaderMenu_Sub_Rule_TimeTable_C
-// 0x0130 (0x0550 - 0x0420)
+// 0x0118 (0x0590 - 0x0478)
 class UWBP_HeaderMenu_Sub_Rule_TimeTable_C final : public UCommonMenuRuleTimeTableScene
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       TimeTable_Out;                                     // 0x0428(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       TimeTable_Loop;                                    // 0x0430(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       TimeTable_In;                                      // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 base;                                              // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_Close;                                        // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_NG;                                           // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_Open;                                         // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DMY_GadgetIcon_EX;                                 // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               DSP_Close;                                         // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               DSP_Open;                                          // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_ControllerBtn_C*               DSP_WBP_CMN_ControllerBtn;                         // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_ControllerBtn_C*               DSP_WBP_CMN_ControllerBtn_Legend;                  // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               festa;                                             // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                GadgetIcon_EX;                                     // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                GadgetIcon_NG;                                     // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Header;                                            // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Header_Legend;                                     // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               LEGEND;                                            // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Legend_EX;                                         // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Legend_NG;                                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction;                                  // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 NG;                                                // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_End;                                           // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      WBP_FontScroll_Header;                             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      WBP_FontScroll_Header_Legend;                      // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      WBP_FontScroll_Legend_Rule_EX;                     // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      WBP_FontScroll_Legend_Rule_NG;                     // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01_C* WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01;   // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C* WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02;   // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher;                                    // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_Legend;                             // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UUnionFontScroll*>               TextRule;                                          // 0x0520(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UUnionRichTextBlock*>            TextTime;                                          // 0x0530(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UImage*>                         RuleIcon;                                          // 0x0540(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       TimeTable_Out;                                     // 0x0480(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       TimeTable_Loop;                                    // 0x0488(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       TimeTable_In;                                      // 0x0490(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 base;                                              // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Close;                                        // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Default;                                      // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_NG;                                           // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Open;                                         // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               DSP_Close;                                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               DSP_Open;                                          // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_ControllerBtn_C*               DSP_WBP_CMN_ControllerBtn;                         // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_ControllerBtn_C*               DSP_WBP_CMN_ControllerBtn_Legend;                  // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               festa;                                             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                GadgetIcon_NG;                                     // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Header;                                            // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Header_Legend;                                     // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               LEGEND;                                            // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction;                                  // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 NG;                                                // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Base;                                      // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_End;                                           // 0x0520(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_Header;                             // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_Header_Legend;                      // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_Legend_Rule_Default;                // 0x0538(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_Legend_Rule_EX;                     // 0x0540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      WBP_FontScroll_Legend_Rule_NG;                     // 0x0548(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01_C* WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01;   // 0x0550(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02_C* WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02;   // 0x0558(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UUnionFontScroll*>               TextRule;                                          // 0x0560(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UUnionRichTextBlock*>            TextTime;                                          // 0x0570(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UImage*>                         RuleIcon;                                          // 0x0580(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void BndEvt__WBP_HeaderMenu_Sub_Rule_TimeTable_MouseInteraction_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
@@ -75,6 +72,7 @@ public:
 	void SetVisibilityButtonIcon(ESlateVisibility InVisibility);
 	void SetVisibilityOpenWidget(ESlateVisibility InVisibility);
 	void SetVisibilityRankCalcWidget(ESlateVisibility InVisibility);
+	void StartInAnimation();
 
 public:
 	static class UClass* StaticClass()
@@ -87,42 +85,39 @@ public:
 	}
 };
 static_assert(alignof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_Rule_TimeTable_C");
-static_assert(sizeof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C) == 0x000550, "Wrong size on UWBP_HeaderMenu_Sub_Rule_TimeTable_C");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, UberGraphFrame) == 0x000420, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_Out) == 0x000428, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_Loop) == 0x000430, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_In) == 0x000438, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_In' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, base) == 0x000440, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Close) == 0x000448, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Close' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_NG) == 0x000450, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Open) == 0x000458, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Open' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DMY_GadgetIcon_EX) == 0x000460, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DMY_GadgetIcon_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_Close) == 0x000468, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_Close' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_Open) == 0x000470, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_Open' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_WBP_CMN_ControllerBtn) == 0x000478, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_WBP_CMN_ControllerBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_WBP_CMN_ControllerBtn_Legend) == 0x000480, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_WBP_CMN_ControllerBtn_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, festa) == 0x000488, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::festa' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, GadgetIcon_EX) == 0x000490, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::GadgetIcon_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, GadgetIcon_NG) == 0x000498, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::GadgetIcon_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Header) == 0x0004A0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Header' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Header_Legend) == 0x0004A8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Header_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, LEGEND) == 0x0004B0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::LEGEND' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Legend_EX) == 0x0004B8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Legend_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Legend_NG) == 0x0004C0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Legend_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, MouseInteraction) == 0x0004C8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, NG) == 0x0004D0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TXT_End) == 0x0004D8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TXT_End' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Header) == 0x0004E0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Header' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Header_Legend) == 0x0004E8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Header_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_EX) == 0x0004F0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_EX' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_NG) == 0x0004F8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_NG' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01) == 0x000500, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02) == 0x000508, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WidgetSwitcher) == 0x000510, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WidgetSwitcher_Legend) == 0x000518, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WidgetSwitcher_Legend' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TextRule) == 0x000520, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TextRule' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TextTime) == 0x000530, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TextTime' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, RuleIcon) == 0x000540, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::RuleIcon' has a wrong offset!");
+static_assert(sizeof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C) == 0x000590, "Wrong size on UWBP_HeaderMenu_Sub_Rule_TimeTable_C");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, UberGraphFrame) == 0x000478, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_Out) == 0x000480, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_Out' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_Loop) == 0x000488, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_Loop' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TimeTable_In) == 0x000490, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TimeTable_In' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, base) == 0x000498, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::base' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Close) == 0x0004A0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Close' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Default) == 0x0004A8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Default' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_NG) == 0x0004B0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_NG' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Base_Open) == 0x0004B8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Base_Open' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_Close) == 0x0004C0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_Close' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_Open) == 0x0004C8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_Open' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_WBP_CMN_ControllerBtn) == 0x0004D0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_WBP_CMN_ControllerBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, DSP_WBP_CMN_ControllerBtn_Legend) == 0x0004D8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::DSP_WBP_CMN_ControllerBtn_Legend' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, festa) == 0x0004E0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::festa' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, GadgetIcon_NG) == 0x0004E8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::GadgetIcon_NG' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Header) == 0x0004F0, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Header' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Header_Legend) == 0x0004F8, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Header_Legend' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, LEGEND) == 0x000500, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::LEGEND' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, MouseInteraction) == 0x000508, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::MouseInteraction' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, NG) == 0x000510, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::NG' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, Overlay_Base) == 0x000518, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::Overlay_Base' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TXT_End) == 0x000520, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TXT_End' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Header) == 0x000528, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Header' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Header_Legend) == 0x000530, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Header_Legend' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_Default) == 0x000538, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_Default' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_EX) == 0x000540, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_EX' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_FontScroll_Legend_Rule_NG) == 0x000548, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_FontScroll_Legend_Rule_NG' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01) == 0x000550, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_01' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02) == 0x000558, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::WBP_HeaderMenu_Sub_Rule_TimeTable_Plan_02' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TextRule) == 0x000560, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TextRule' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, TextTime) == 0x000570, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::TextTime' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_Rule_TimeTable_C, RuleIcon) == 0x000580, "Member 'UWBP_HeaderMenu_Sub_Rule_TimeTable_C::RuleIcon' has a wrong offset!");
 
 }
 

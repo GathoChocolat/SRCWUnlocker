@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_EventEndInfo_CMN_window.WBP_EventEndInfo_CMN_window_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_EventEndInfo_CMN_window_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EventEndInfo_CMN_window_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_EventEndInfo_CMN_window.WBP_EventEndInfo_CMN_window_C.ExecuteUbergraph_WBP_EventEndInfo_CMN_window
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -1099,19 +1113,19 @@ void UWBP_EventEndInfo_CMN_window_C::OutAnimationEnd()
 }
 
 
-// Function WBP_EventEndInfo_CMN_window.WBP_EventEndInfo_CMN_window_C.SetFestaName
+// Function WBP_EventEndInfo_CMN_window.WBP_EventEndInfo_CMN_window_C.Set Event Name
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      FestaName                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_EventEndInfo_CMN_window_C::SetFestaName(const class FText& FestaName)
+void UWBP_EventEndInfo_CMN_window_C::Set_Event_Name(const class FText& FestaName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EventEndInfo_CMN_window_C", "SetFestaName");
+		Func = Class->GetFunction("WBP_EventEndInfo_CMN_window_C", "Set Event Name");
 
-	Params::WBP_EventEndInfo_CMN_window_C_SetFestaName Parms{};
+	Params::WBP_EventEndInfo_CMN_window_C_Set_Event_Name Parms{};
 
 	Parms.FestaName = std::move(FestaName);
 
@@ -1200,6 +1214,20 @@ void UWBP_EventEndInfo_CMN_window_C::SetSchedule(const struct FDateTime& StartTi
 	Parms.endTime = std::move(endTime);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EventEndInfo_CMN_window.WBP_EventEndInfo_CMN_window_C.SetSeasonNumber
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_EventEndInfo_CMN_window_C::SetSeasonNumber()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EventEndInfo_CMN_window_C", "SetSeasonNumber");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

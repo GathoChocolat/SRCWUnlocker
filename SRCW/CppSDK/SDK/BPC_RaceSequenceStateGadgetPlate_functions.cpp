@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function BPC_RaceSequenceStateGadgetPlate.BPC_RaceSequenceStateGadgetPlate_C.ExecuteUbergraph_BPC_RaceSequenceStateGadgetPlate
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -82,6 +82,40 @@ void UBPC_RaceSequenceStateGadgetPlate_C::OnInitState()
 		Func = Class->GetFunction("BPC_RaceSequenceStateGadgetPlate_C", "OnInitState");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_RaceSequenceStateGadgetPlate.BPC_RaceSequenceStateGadgetPlate_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
+
+void UBPC_RaceSequenceStateGadgetPlate_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateGadgetPlate_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_RaceSequenceStateGadgetPlate.BPC_RaceSequenceStateGadgetPlate_C.ReceiveEndPlay
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_RaceSequenceStateGadgetPlate_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateGadgetPlate_C", "ReceiveEndPlay");
+
+	Params::BPC_RaceSequenceStateGadgetPlate_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

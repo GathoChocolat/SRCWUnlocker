@@ -22,14 +22,14 @@ struct WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Opti
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsGamePad;                           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEnableMouseClick_ReturnValue;           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEnableMouseClick_ReturnValue;           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsGamePad;                           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03) == 0x000004, "Wrong alignment on WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03");
 static_assert(sizeof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03) == 0x000008, "Wrong size on WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03");
 static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, EntryPoint) == 0x000000, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, K2Node_Event_bIsGamePad) == 0x000004, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::K2Node_Event_bIsGamePad' has a wrong offset!");
-static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, CallFunc_IsEnableMouseClick_ReturnValue) == 0x000005, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, CallFunc_IsEnableMouseClick_ReturnValue) == 0x000004, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::CallFunc_IsEnableMouseClick_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03, K2Node_Event_bIsGamePad) == 0x000005, "Member 'WBP_PauseMenu_Sub_Option_Btn_03_C_ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03::K2Node_Event_bIsGamePad' has a wrong offset!");
 
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.PlayOnOffAnimation
 // 0x0020 (0x0020 - 0x0000)

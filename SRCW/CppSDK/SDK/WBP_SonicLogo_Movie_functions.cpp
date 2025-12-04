@@ -155,6 +155,20 @@ void UWBP_SonicLogo_Movie_C::OnMovieClosedEvent()
 }
 
 
+// Function WBP_SonicLogo_Movie.WBP_SonicLogo_Movie_C.ResetMoviePanelOpacity
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SonicLogo_Movie_C::ResetMoviePanelOpacity()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SonicLogo_Movie_C", "ResetMoviePanelOpacity");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_SonicLogo_Movie.WBP_SonicLogo_Movie_C.SkipAdvertiseLogo
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 

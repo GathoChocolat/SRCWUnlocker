@@ -79,20 +79,6 @@ void UBPC_MenuStateTopMenu_C::ConvertIndexToDriverId(int32 Index_0, EDriverId* I
 }
 
 
-// Function BPC_MenuStateTopMenu.BPC_MenuStateTopMenu_C.CreateRewardGetDisplay
-// (BlueprintCallable, BlueprintEvent)
-
-void UBPC_MenuStateTopMenu_C::CreateRewardGetDisplay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_MenuStateTopMenu_C", "CreateRewardGetDisplay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BPC_MenuStateTopMenu.BPC_MenuStateTopMenu_C.OnRewardDisplayEnd_Impl
 // (BlueprintCallable, BlueprintEvent)
 
@@ -264,6 +250,20 @@ void UBPC_MenuStateTopMenu_C::OnExitState()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BPC_MenuStateTopMenu_C", "OnExitState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_MenuStateTopMenu.BPC_MenuStateTopMenu_C.CreateRewardGetDisplay
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_MenuStateTopMenu_C::CreateRewardGetDisplay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_MenuStateTopMenu_C", "CreateRewardGetDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

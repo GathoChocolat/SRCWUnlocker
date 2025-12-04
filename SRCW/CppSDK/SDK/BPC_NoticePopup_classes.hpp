@@ -11,37 +11,39 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_NoticePopup.BPC_NoticePopup_C
-// 0x0040 (0x0250 - 0x0210)
+// 0x0048 (0x0270 - 0x0228)
 class UBPC_NoticePopup_C final : public UNoticePopupState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_TopInfo_C*                         TopInfoWidget;                                     // 0x0218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class ABP_EventInfoManageActor_C*             EventInfo;                                         // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	ETopMenuSequenceState                         ReturnState;                                       // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFadeEnd;                                         // 0x0229(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnd_ReadPlatformFriend;                          // 0x022A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsNewDisplay_DLC;                                  // 0x022B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsNewDisplay_FreeContents;                         // 0x022C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsNewDisplay_Festa;                                // 0x022D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsNewDisplay_Emerjency;                            // 0x022E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETopInfoWidgetPageCategory                    TopInfoReturnPage;                                 // 0x022F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOnline;                                          // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ADLCStoreDialogActor*                   DLCStoreDialog;                                    // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(ETopMenuSequenceState ReturnState)> OnBackToTopMenuEvent;          // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_TopInfo_C*                         TopInfoWidget;                                     // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ABP_EventInfoManageActor_C*             EventInfo;                                         // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	ETopMenuSequenceState                         ReturnState;                                       // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFadeEnd;                                         // 0x0241(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnd_ReadPlatformFriend;                          // 0x0242(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsNewDisplay_DLC;                                  // 0x0243(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsNewDisplay_FreeContents;                         // 0x0244(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsNewDisplay_Festa;                                // 0x0245(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsNewDisplay_Emerjency;                            // 0x0246(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETopInfoWidgetPageCategory                    TopInfoReturnPage;                                 // 0x0247(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOnline;                                          // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_249[0x7];                                      // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ADLCStoreDialogActor*                   DLCStoreDialog;                                    // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(ETopMenuSequenceState ReturnState)> OnBackToTopMenuEvent;          // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsNewDisplay_Legend;                               // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void CheckFirstDisplayPage(ETopInfoWidgetPageCategory* newParam);
 	void DLCInfoClosed_CreateTopInfo(bool IsAccept);
 	void ExecuteUbergraph_BPC_NoticePopup(int32 EntryPoint);
 	void FestaInfoClosed_CreateTopInfo();
@@ -78,21 +80,22 @@ public:
 	}
 };
 static_assert(alignof(UBPC_NoticePopup_C) == 0x000008, "Wrong alignment on UBPC_NoticePopup_C");
-static_assert(sizeof(UBPC_NoticePopup_C) == 0x000250, "Wrong size on UBPC_NoticePopup_C");
-static_assert(offsetof(UBPC_NoticePopup_C, UberGraphFrame) == 0x000210, "Member 'UBPC_NoticePopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, TopInfoWidget) == 0x000218, "Member 'UBPC_NoticePopup_C::TopInfoWidget' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, EventInfo) == 0x000220, "Member 'UBPC_NoticePopup_C::EventInfo' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, ReturnState) == 0x000228, "Member 'UBPC_NoticePopup_C::ReturnState' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsFadeEnd) == 0x000229, "Member 'UBPC_NoticePopup_C::IsFadeEnd' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsEnd_ReadPlatformFriend) == 0x00022A, "Member 'UBPC_NoticePopup_C::IsEnd_ReadPlatformFriend' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_DLC) == 0x00022B, "Member 'UBPC_NoticePopup_C::IsNewDisplay_DLC' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_FreeContents) == 0x00022C, "Member 'UBPC_NoticePopup_C::IsNewDisplay_FreeContents' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Festa) == 0x00022D, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Festa' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Emerjency) == 0x00022E, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Emerjency' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, TopInfoReturnPage) == 0x00022F, "Member 'UBPC_NoticePopup_C::TopInfoReturnPage' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, IsOnline) == 0x000230, "Member 'UBPC_NoticePopup_C::IsOnline' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, DLCStoreDialog) == 0x000238, "Member 'UBPC_NoticePopup_C::DLCStoreDialog' has a wrong offset!");
-static_assert(offsetof(UBPC_NoticePopup_C, OnBackToTopMenuEvent) == 0x000240, "Member 'UBPC_NoticePopup_C::OnBackToTopMenuEvent' has a wrong offset!");
+static_assert(sizeof(UBPC_NoticePopup_C) == 0x000270, "Wrong size on UBPC_NoticePopup_C");
+static_assert(offsetof(UBPC_NoticePopup_C, UberGraphFrame) == 0x000228, "Member 'UBPC_NoticePopup_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, TopInfoWidget) == 0x000230, "Member 'UBPC_NoticePopup_C::TopInfoWidget' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, EventInfo) == 0x000238, "Member 'UBPC_NoticePopup_C::EventInfo' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, ReturnState) == 0x000240, "Member 'UBPC_NoticePopup_C::ReturnState' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsFadeEnd) == 0x000241, "Member 'UBPC_NoticePopup_C::IsFadeEnd' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsEnd_ReadPlatformFriend) == 0x000242, "Member 'UBPC_NoticePopup_C::IsEnd_ReadPlatformFriend' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_DLC) == 0x000243, "Member 'UBPC_NoticePopup_C::IsNewDisplay_DLC' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_FreeContents) == 0x000244, "Member 'UBPC_NoticePopup_C::IsNewDisplay_FreeContents' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Festa) == 0x000245, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Festa' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Emerjency) == 0x000246, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Emerjency' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, TopInfoReturnPage) == 0x000247, "Member 'UBPC_NoticePopup_C::TopInfoReturnPage' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsOnline) == 0x000248, "Member 'UBPC_NoticePopup_C::IsOnline' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, DLCStoreDialog) == 0x000250, "Member 'UBPC_NoticePopup_C::DLCStoreDialog' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, OnBackToTopMenuEvent) == 0x000258, "Member 'UBPC_NoticePopup_C::OnBackToTopMenuEvent' has a wrong offset!");
+static_assert(offsetof(UBPC_NoticePopup_C, IsNewDisplay_Legend) == 0x000268, "Member 'UBPC_NoticePopup_C::IsNewDisplay_Legend' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CourseSelect_TimeTrial.WBP_CourseSelect_TimeTrial_C
-// 0x0340 (0x0818 - 0x04D8)
+// 0x0348 (0x0820 - 0x04D8)
 class UWBP_CourseSelect_TimeTrial_C final : public UCourseSelectWidgetBase
 {
 public:
@@ -95,6 +95,7 @@ public:
 	uint8                                         Pad_7B1[0x7];                                      // 0x07B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<ETimeTrialClearRankId>                 ClearRankIDs;                                      // 0x07B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<EStageId, int32>                         StageVersionMap;                                   // 0x07C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsCanceling;                                       // 0x0818(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -121,6 +122,7 @@ public:
 	void OnLeftShoulderPressed(class UObject* Object);
 	void OnStageCancelEvent();
 	void OnStageDecisionEvent(EStageId SelectedStageId);
+	void OnStoreShortcutPressed(EStageId StageId);
 	void OnThumbnailLeftButtonClicked();
 	void OnThumbnailRightButtonClicked();
 	void PreConstruct(bool IsDesignTime);
@@ -142,7 +144,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CourseSelect_TimeTrial_C) == 0x000008, "Wrong alignment on UWBP_CourseSelect_TimeTrial_C");
-static_assert(sizeof(UWBP_CourseSelect_TimeTrial_C) == 0x000818, "Wrong size on UWBP_CourseSelect_TimeTrial_C");
+static_assert(sizeof(UWBP_CourseSelect_TimeTrial_C) == 0x000820, "Wrong size on UWBP_CourseSelect_TimeTrial_C");
 static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, UberGraphFrame) == 0x0004D8, "Member 'UWBP_CourseSelect_TimeTrial_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Out) == 0x0004E0, "Member 'UWBP_CourseSelect_TimeTrial_C::Out' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, Loop) == 0x0004E8, "Member 'UWBP_CourseSelect_TimeTrial_C::Loop' has a wrong offset!");
@@ -211,6 +213,7 @@ static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, GrandPrixIdAndTextMap) == 
 static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, CurrentSpeedClass) == 0x0007B0, "Member 'UWBP_CourseSelect_TimeTrial_C::CurrentSpeedClass' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, ClearRankIDs) == 0x0007B8, "Member 'UWBP_CourseSelect_TimeTrial_C::ClearRankIDs' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, StageVersionMap) == 0x0007C8, "Member 'UWBP_CourseSelect_TimeTrial_C::StageVersionMap' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_TimeTrial_C, IsCanceling) == 0x000818, "Member 'UWBP_CourseSelect_TimeTrial_C::IsCanceling' has a wrong offset!");
 
 }
 

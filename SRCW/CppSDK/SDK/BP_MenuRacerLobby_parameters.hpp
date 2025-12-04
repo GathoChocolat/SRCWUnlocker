@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "ST_RacerDataForPreview_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UnionRun_structs.hpp"
+#include "ST_RacerDataForPreview_structs.hpp"
+#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -554,8 +554,10 @@ public:
 	class UStickerBakerHandle*                    StickerBakerHandle;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsCompleteSetSticker;                              // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHoverboard_ReturnValue;                 // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsHandleDead_ReturnValue;                 // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHoverboard_ReturnValue;                 // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue_1;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -572,7 +574,9 @@ static_assert(sizeof(BP_MenuRacerLobby_C_Polling_Set_Sticker) == 0x000058, "Wron
 static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, StickerBakerHandle) == 0x000000, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::StickerBakerHandle' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, IsCompleteSetSticker) == 0x000008, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::IsCompleteSetSticker' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_IsHoverboard_ReturnValue) == 0x00000A, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_IsHandleDead_ReturnValue) == 0x00000A, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_IsHandleDead_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_Not_PreBool_ReturnValue) == 0x00000B, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_IsHoverboard_ReturnValue) == 0x00000C, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue) == 0x000010, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_1) == 0x000018, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue) == 0x000020, "Member 'BP_MenuRacerLobby_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue' has a wrong offset!");
@@ -611,122 +615,123 @@ public:
 	bool                                          bIsFrontMeshChanged;                               // 0x0086(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_87[0x1];                                       // 0x0087(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUserMachineCustomizeData              OldCustomizeData;                                  // 0x0088(0x0078)(Edit, BlueprintVisible)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0108(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FContentItem                           K2Node_MakeStruct_ContentItem;                     // 0x0120(0x000C)(NoDestructor)
-	bool                                          CallFunc_GetIsItemReleased_IsReleased;             // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x012D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12E[0x2];                                      // 0x012E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue_1;        // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x019A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x019B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x019D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x019E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19F[0x1];                                      // 0x019F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x01A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ChampionCrown_C*                    CallFunc_FinishSpawningActor_ReturnValue;          // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0210(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x0222(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x0223(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_7;                  // 0x0225(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0226(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_227[0x1];                                      // 0x0227(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverData                            CallFunc_GetDriverData_DriverData;                 // 0x0228(0x0390)()
-	bool                                          CallFunc_GetDriverData_bFind;                      // 0x05B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x05B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x05BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5BB[0x1];                                      // 0x05BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x05BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x05C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x05C4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x05D0(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FDriverCrownDataTableStruct            CallFunc_GetDataTableRowFromName_OutRow;           // 0x06C8(0x0060)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0728(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_729[0x7];                                      // 0x0729(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0730(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FDriverData                            CallFunc_GetDriverData_OutDriverData;              // 0x0828(0x0390)()
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue_1;          // 0x0BB8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0BC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC1[0x7];                                      // 0x0BC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverCrownDataTableStruct            CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0BC8(0x0060)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0C28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C29[0x3];                                      // 0x0C29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_3;             // 0x0C2C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStickerChanged_ReturnValue;             // 0x0C30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0C31(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStickerChanged_ReturnValue_1;           // 0x0C32(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C33[0x1];                                      // 0x0C33(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_4;             // 0x0C34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0C38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_8;                  // 0x0C39(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_9;                  // 0x0C3A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0C3B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_10;                 // 0x0C3C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_11;                 // 0x0C3D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C3E[0x2];                                      // 0x0C3E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetStickerSize_ReturnValue;               // 0x0C40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStickerSize_ReturnValue_1;             // 0x0C44(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStickerSize_ReturnValue_2;             // 0x0C48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStickerSize_ReturnValue_3;             // 0x0C4C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0C50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0C51(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C52[0x6];                                      // 0x0C52(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverCrownDataTableStruct            CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x0C58(0x0060)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x0CB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x0CB9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x0CBA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_12;                 // 0x0CBB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_13;                 // 0x0CBC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverSize                                   Temp_byte_Variable;                                // 0x0CBD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverSize                                   Temp_byte_Variable_1;                              // 0x0CBE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0CBF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverSize                                   K2Node_Select_Default;                             // 0x0CC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC1[0x7];                                      // 0x0CC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        K2Node_Select_Default_1;                           // 0x0CC8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EMachineHornType                              CallFunc_GetHornID_ReturnValue;                    // 0x0CD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0CD1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CD2[0x6];                                      // 0x0CD2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStickerBakeManagerSubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0CD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStickerBakerHandle*                    CallFunc_StartBake_ReturnValue;                    // 0x0CE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStickerBakerHandle*                    CallFunc_StartBake_ReturnValue_1;                  // 0x0CE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_14;                 // 0x0CF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECarStatusType                                CallFunc_GetCarStatusType_ReturnValue;             // 0x0CF1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CF2[0x6];                                      // 0x0CF2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IDriverAnimator>       CallFunc_SetRideableStatusType_self_CastInput;     // 0x0CF8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckChangeParam_ChangedDriverId;         // 0x0D08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckChangeParam_ChangedVehicleType;      // 0x0D09(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckChangeParam_ChangedFrontPartsId;     // 0x0D0A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckChangeParam_ChangedRearPartsId;      // 0x0D0B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckChangeParam_ChangedTirePartsId;      // 0x0D0C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_15;                 // 0x0D0D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_11;                   // 0x0D0E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0D0F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FST_RacerDataForPreview                K2Node_MakeStruct_ST_RacerDataForPreview;          // 0x0D10(0x000D)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_16;                 // 0x0D1D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_17;                 // 0x0D1E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0D1F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStickerBakeManagerSubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0D20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStickerBakerHandle*                    CallFunc_StartBake_ReturnValue_2;                  // 0x0D28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FContentItem                           K2Node_MakeStruct_ContentItem;                     // 0x0150(0x000C)(NoDestructor)
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0160(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIsItemReleased_IsReleased;             // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ChampionCrown_C*                    CallFunc_FinishSpawningActor_ReturnValue;          // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue_1;        // 0x01E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x01F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0212(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0213(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverCrownDataTableStruct            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0218(0x0060)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27A[0x6];                                      // 0x027A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0280(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0290(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0388(0x00F8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_481[0x3];                                      // 0x0481(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0484(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C[0x4];                                      // 0x048C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverData                            CallFunc_GetDriverData_OutDriverData;              // 0x0490(0x0390)()
+	struct FDriverCrownDataTableStruct            CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0820(0x0060)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_881[0x3];                                      // 0x0881(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue_1;          // 0x0884(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_88C[0x4];                                      // 0x088C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverCrownDataTableStruct            CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x0890(0x0060)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x08F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x08F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x08F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x08F3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x08F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x08F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x08F6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x08F7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_7;                  // 0x08F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x08F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8FA[0x6];                                      // 0x08FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverData                            CallFunc_GetDriverData_DriverData;                 // 0x0900(0x0390)()
+	bool                                          CallFunc_GetDriverData_bFind;                      // 0x0C90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0C91(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0C92(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C93[0x1];                                      // 0x0C93(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0C94(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0C98(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_3;             // 0x0C9C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStickerChanged_ReturnValue;             // 0x0CA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0CA1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStickerChanged_ReturnValue_1;           // 0x0CA2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CA3[0x1];                                      // 0x0CA3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_4;             // 0x0CA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0CA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_8;                  // 0x0CA9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_9;                  // 0x0CAA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0CAB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_10;                 // 0x0CAC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_11;                 // 0x0CAD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CAE[0x2];                                      // 0x0CAE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetStickerSize_ReturnValue;               // 0x0CB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStickerSize_ReturnValue_1;             // 0x0CB4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStickerSize_ReturnValue_2;             // 0x0CB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStickerSize_ReturnValue_3;             // 0x0CBC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0CC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0CC1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0CC2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x0CC3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_12;                 // 0x0CC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_13;                 // 0x0CC5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverSize                                   Temp_byte_Variable;                                // 0x0CC6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverSize                                   Temp_byte_Variable_1;                              // 0x0CC7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0CC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverSize                                   K2Node_Select_Default;                             // 0x0CC9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CCA[0x6];                                      // 0x0CCA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        K2Node_Select_Default_1;                           // 0x0CD0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EMachineHornType                              CallFunc_GetHornID_ReturnValue;                    // 0x0CD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0CD9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CDA[0x6];                                      // 0x0CDA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStickerBakeManagerSubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0CE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStickerBakerHandle*                    CallFunc_StartBake_ReturnValue;                    // 0x0CE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStickerBakerHandle*                    CallFunc_StartBake_ReturnValue_1;                  // 0x0CF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_14;                 // 0x0CF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECarStatusType                                CallFunc_GetCarStatusType_ReturnValue;             // 0x0CF9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CFA[0x6];                                      // 0x0CFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IDriverAnimator>       CallFunc_SetRideableStatusType_self_CastInput;     // 0x0D00(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckChangeParam_ChangedDriverId;         // 0x0D10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckChangeParam_ChangedVehicleType;      // 0x0D11(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckChangeParam_ChangedFrontPartsId;     // 0x0D12(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckChangeParam_ChangedRearPartsId;      // 0x0D13(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckChangeParam_ChangedTirePartsId;      // 0x0D14(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_15;                 // 0x0D15(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x0D16(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0D17(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStickerBakeManagerSubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0D18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStickerBakerHandle*                    CallFunc_StartBake_ReturnValue_2;                  // 0x0D20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_16;                 // 0x0D28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_17;                 // 0x0D29(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D2A[0x6];                                      // 0x0D2A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStickerBakerHandle*                    CallFunc_StartBake_ReturnValue_3;                  // 0x0D30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_12;                   // 0x0D38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D39[0x7];                                      // 0x0D39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast; // 0x0D40(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FST_RacerDataForPreview                K2Node_MakeStruct_ST_RacerDataForPreview;          // 0x0D38(0x000D)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_11;                   // 0x0D45(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0D46(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_12;                   // 0x0D47(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast; // 0x0D48(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MenuRacerLobby_C_SetAll) == 0x000010, "Wrong alignment on BP_MenuRacerLobby_C_SetAll");
 static_assert(sizeof(BP_MenuRacerLobby_C_SetAll) == 0x000D50, "Wrong size on BP_MenuRacerLobby_C_SetAll");
@@ -740,105 +745,105 @@ static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, bIsFrontStickerChanged) == 0x
 static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, bIsRearMeshChanged) == 0x000085, "Member 'BP_MenuRacerLobby_C_SetAll::bIsRearMeshChanged' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, bIsFrontMeshChanged) == 0x000086, "Member 'BP_MenuRacerLobby_C_SetAll::bIsFrontMeshChanged' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, OldCustomizeData) == 0x000088, "Member 'BP_MenuRacerLobby_C_SetAll::OldCustomizeData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000100, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000108, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_MakeStruct_ContentItem) == 0x000120, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_MakeStruct_ContentItem' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetIsItemReleased_IsReleased) == 0x00012C, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetIsItemReleased_IsReleased' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue) == 0x00012D, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetActorScale3D_ReturnValue) == 0x000130, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BreakVector_X) == 0x000148, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BreakVector_Y) == 0x000150, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BreakVector_Z) == 0x000158, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_DoubleToVector_ReturnValue_1) == 0x000160, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_DoubleToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue) == 0x000178, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000180, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_1) == 0x000198, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_2) == 0x000199, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Not_PreBool_ReturnValue) == 0x00019A, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_1) == 0x00019B, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_3) == 0x00019C, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_2) == 0x00019D, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_3) == 0x00019E, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_MakeTransform_ReturnValue) == 0x0001A0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000200, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_FinishSpawningActor_ReturnValue) == 0x000208, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Concat_StrStr_ReturnValue) == 0x000210, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_MakeLiteralByte_ReturnValue) == 0x000220, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_4) == 0x000221, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_4) == 0x000222, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_5) == 0x000223, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_6) == 0x000224, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_7) == 0x000225, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000226, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDriverData_DriverData) == 0x000228, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDriverData_DriverData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDriverData_bFind) == 0x0005B8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDriverData_bFind' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_5) == 0x0005B9, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_6) == 0x0005BA, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x0005BC, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x0005C0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetEnumeratorName_ReturnValue) == 0x0005C4, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x0005D0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_OutRow) == 0x0006C8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000728, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000730, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDriverData_OutDriverData) == 0x000828, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDriverData_OutDriverData' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000BB8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000BC0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000BC8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000C28, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000C2C, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsStickerChanged_ReturnValue) == 0x000C30, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsStickerChanged_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000C31, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsStickerChanged_ReturnValue_1) == 0x000C32, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsStickerChanged_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x000C34, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000C38, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_8) == 0x000C39, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_9) == 0x000C3A, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, Temp_bool_Variable) == 0x000C3B, "Member 'BP_MenuRacerLobby_C_SetAll::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_10) == 0x000C3C, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_11) == 0x000C3D, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue) == 0x000C40, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue_1) == 0x000C44, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue_2) == 0x000C48, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue_3) == 0x000C4C, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_7) == 0x000C50, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_8) == 0x000C51, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_OutRow_2) == 0x000C58, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_OutRow_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_ReturnValue_2) == 0x000CB8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_9) == 0x000CB9, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_10) == 0x000CBA, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_12) == 0x000CBB, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_13) == 0x000CBC, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, Temp_byte_Variable) == 0x000CBD, "Member 'BP_MenuRacerLobby_C_SetAll::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, Temp_byte_Variable_1) == 0x000CBE, "Member 'BP_MenuRacerLobby_C_SetAll::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000CBF, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_Select_Default) == 0x000CC0, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_Select_Default_1) == 0x000CC8, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetHornID_ReturnValue) == 0x000CD0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetHornID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000CD1, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000CD8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_StartBake_ReturnValue) == 0x000CE0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_StartBake_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_StartBake_ReturnValue_1) == 0x000CE8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_StartBake_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_14) == 0x000CF0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetCarStatusType_ReturnValue) == 0x000CF1, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetCarStatusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_SetRideableStatusType_self_CastInput) == 0x000CF8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_SetRideableStatusType_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedDriverId) == 0x000D08, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedDriverId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedVehicleType) == 0x000D09, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedVehicleType' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedFrontPartsId) == 0x000D0A, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedFrontPartsId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedRearPartsId) == 0x000D0B, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedRearPartsId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedTirePartsId) == 0x000D0C, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedTirePartsId' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_15) == 0x000D0D, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_11) == 0x000D0E, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Not_PreBool_ReturnValue_1) == 0x000D0F, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_MakeStruct_ST_RacerDataForPreview) == 0x000D10, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_MakeStruct_ST_RacerDataForPreview' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_16) == 0x000D1D, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_17) == 0x000D1E, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000D1F, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000D20, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_StartBake_ReturnValue_2) == 0x000D28, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_StartBake_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetActorScale3D_ReturnValue) == 0x000100, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BreakVector_X) == 0x000118, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BreakVector_Y) == 0x000120, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BreakVector_Z) == 0x000128, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000130, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000138, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_MakeStruct_ContentItem) == 0x000150, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_MakeStruct_ContentItem' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_MakeTransform_ReturnValue) == 0x000160, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetIsItemReleased_IsReleased) == 0x0001C0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetIsItemReleased_IsReleased' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001C8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001D0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue) == 0x0001D8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_DoubleToVector_ReturnValue_1) == 0x0001E0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_DoubleToVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0001F8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_1) == 0x000210, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue) == 0x000211, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Not_PreBool_ReturnValue) == 0x000212, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_1) == 0x000213, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_OutRow) == 0x000218, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000278, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_2) == 0x000279, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Concat_StrStr_ReturnValue) == 0x000280, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000290, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000388, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000480, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetEnumeratorName_ReturnValue) == 0x000484, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDriverData_OutDriverData) == 0x000490, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDriverData_OutDriverData' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000820, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000880, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000884, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_OutRow_2) == 0x000890, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_OutRow_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDataTableRowFromName_ReturnValue_2) == 0x0008F0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDataTableRowFromName_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_2) == 0x0008F1, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_3) == 0x0008F2, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_MakeLiteralByte_ReturnValue) == 0x0008F3, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_3) == 0x0008F4, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_4) == 0x0008F5, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_5) == 0x0008F6, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_6) == 0x0008F7, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_7) == 0x0008F8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0008F9, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDriverData_DriverData) == 0x000900, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDriverData_DriverData' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetDriverData_bFind) == 0x000C90, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetDriverData_bFind' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_4) == 0x000C91, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_5) == 0x000C92, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000C94, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000C98, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000C9C, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsStickerChanged_ReturnValue) == 0x000CA0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsStickerChanged_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000CA1, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsStickerChanged_ReturnValue_1) == 0x000CA2, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsStickerChanged_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_ByteToInt_ReturnValue_4) == 0x000CA4, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_ByteToInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000CA8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_8) == 0x000CA9, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_9) == 0x000CAA, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, Temp_bool_Variable) == 0x000CAB, "Member 'BP_MenuRacerLobby_C_SetAll::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_10) == 0x000CAC, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_11) == 0x000CAD, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue) == 0x000CB0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue_1) == 0x000CB4, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue_2) == 0x000CB8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetStickerSize_ReturnValue_3) == 0x000CBC, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetStickerSize_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_6) == 0x000CC0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_7) == 0x000CC1, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_8) == 0x000CC2, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_9) == 0x000CC3, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_12) == 0x000CC4, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_12' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_13) == 0x000CC5, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_13' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, Temp_byte_Variable) == 0x000CC6, "Member 'BP_MenuRacerLobby_C_SetAll::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, Temp_byte_Variable_1) == 0x000CC7, "Member 'BP_MenuRacerLobby_C_SetAll::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000CC8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_Select_Default) == 0x000CC9, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_Select_Default_1) == 0x000CD0, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetHornID_ReturnValue) == 0x000CD8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetHornID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000CD9, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000CE0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_StartBake_ReturnValue) == 0x000CE8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_StartBake_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_StartBake_ReturnValue_1) == 0x000CF0, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_StartBake_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_14) == 0x000CF8, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_14' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetCarStatusType_ReturnValue) == 0x000CF9, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetCarStatusType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_SetRideableStatusType_self_CastInput) == 0x000D00, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_SetRideableStatusType_self_CastInput' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedDriverId) == 0x000D10, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedDriverId' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedVehicleType) == 0x000D11, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedVehicleType' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedFrontPartsId) == 0x000D12, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedFrontPartsId' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedRearPartsId) == 0x000D13, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedRearPartsId' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_CheckChangeParam_ChangedTirePartsId) == 0x000D14, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_CheckChangeParam_ChangedTirePartsId' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_15) == 0x000D15, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_10) == 0x000D16, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Not_PreBool_ReturnValue_1) == 0x000D17, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000D18, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_StartBake_ReturnValue_2) == 0x000D20, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_StartBake_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_16) == 0x000D28, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_BooleanOR_ReturnValue_17) == 0x000D29, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_BooleanOR_ReturnValue_17' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_StartBake_ReturnValue_3) == 0x000D30, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_StartBake_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_12) == 0x000D38, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast) == 0x000D40, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, K2Node_MakeStruct_ST_RacerDataForPreview) == 0x000D38, "Member 'BP_MenuRacerLobby_C_SetAll::K2Node_MakeStruct_ST_RacerDataForPreview' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_11) == 0x000D45, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000D46, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_IsValid_ReturnValue_12) == 0x000D47, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SetAll, CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast) == 0x000D48, "Member 'BP_MenuRacerLobby_C_SetAll::CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast' has a wrong offset!");
 
 // Function BP_MenuRacerLobby.BP_MenuRacerLobby_C.SetBoneSetting
 // 0x0040 (0x0040 - 0x0000)
@@ -978,17 +983,19 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MenuDriverPawn_C*                   K2Node_DynamicCast_AsBP_Menu_Driver_Pawn;          // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MenuRacerLobby_C_SpawnDriverActor) == 0x000010, "Wrong alignment on BP_MenuRacerLobby_C_SpawnDriverActor");
 static_assert(sizeof(BP_MenuRacerLobby_C_SpawnDriverActor) == 0x0000A0, "Wrong size on BP_MenuRacerLobby_C_SpawnDriverActor");
@@ -1000,14 +1007,16 @@ static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_EqualEqual
 static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000005, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000006, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000007, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x000008, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue) == 0x000009, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue) == 0x000070, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue_1) == 0x000070, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_AddComponent_ReturnValue) == 0x000078, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue_1) == 0x000080, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue_2) == 0x000081, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue_2) == 0x000080, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue_3) == 0x000081, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, K2Node_DynamicCast_AsBP_Menu_Driver_Pawn) == 0x000088, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::K2Node_DynamicCast_AsBP_Menu_Driver_Pawn' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue_3) == 0x000091, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerLobby_C_SpawnDriverActor, CallFunc_BooleanOR_ReturnValue_4) == 0x000091, "Member 'BP_MenuRacerLobby_C_SpawnDriverActor::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
 
 // Function BP_MenuRacerLobby.BP_MenuRacerLobby_C.SpawnHoverboard
 // 0x0080 (0x0080 - 0x0000)

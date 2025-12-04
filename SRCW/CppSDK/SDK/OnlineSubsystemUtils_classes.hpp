@@ -97,6 +97,26 @@ static_assert(sizeof(UAchievementWriteCallbackProxy) == 0x000080, "Wrong size on
 static_assert(offsetof(UAchievementWriteCallbackProxy, OnSuccess) == 0x000030, "Member 'UAchievementWriteCallbackProxy::OnSuccess' has a wrong offset!");
 static_assert(offsetof(UAchievementWriteCallbackProxy, OnFailure) == 0x000040, "Member 'UAchievementWriteCallbackProxy::OnFailure' has a wrong offset!");
 
+// Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
+// 0x0158 (0x0180 - 0x0028)
+class OnlineSubsystemUtils::UOnlineEngineInterfaceImpl final : public UOnlineEngineInterface
+{
+public:
+	uint8                                         Pad_28[0x158];                                     // 0x0028(0x0158)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl", true>();
+	}
+	static class OnlineSubsystemUtils::UOnlineEngineInterfaceImpl* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<OnlineSubsystemUtils::UOnlineEngineInterfaceImpl>();
+	}
+};
+static_assert(alignof(OnlineSubsystemUtils::UOnlineEngineInterfaceImpl) == 0x000008, "Wrong alignment on OnlineSubsystemUtils::UOnlineEngineInterfaceImpl");
+static_assert(sizeof(OnlineSubsystemUtils::UOnlineEngineInterfaceImpl) == 0x000180, "Wrong size on OnlineSubsystemUtils::UOnlineEngineInterfaceImpl");
+
 // Class OnlineSubsystemUtils.ConnectionCallbackProxy
 // 0x0048 (0x0078 - 0x0030)
 class UConnectionCallbackProxy final : public UOnlineBlueprintCallProxyBase
@@ -1187,26 +1207,6 @@ public:
 };
 static_assert(alignof(UTurnBasedBlueprintLibrary) == 0x000008, "Wrong alignment on UTurnBasedBlueprintLibrary");
 static_assert(sizeof(UTurnBasedBlueprintLibrary) == 0x000028, "Wrong size on UTurnBasedBlueprintLibrary");
-
-// Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
-// 0x0158 (0x0180 - 0x0028)
-class OnlineSubsystemUtils::UOnlineEngineInterfaceImpl final : public UOnlineEngineInterface
-{
-public:
-	uint8                                         Pad_28[0x158];                                     // 0x0028(0x0158)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl", true>();
-	}
-	static class OnlineSubsystemUtils::UOnlineEngineInterfaceImpl* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<OnlineSubsystemUtils::UOnlineEngineInterfaceImpl>();
-	}
-};
-static_assert(alignof(OnlineSubsystemUtils::UOnlineEngineInterfaceImpl) == 0x000008, "Wrong alignment on OnlineSubsystemUtils::UOnlineEngineInterfaceImpl");
-static_assert(sizeof(OnlineSubsystemUtils::UOnlineEngineInterfaceImpl) == 0x000180, "Wrong size on OnlineSubsystemUtils::UOnlineEngineInterfaceImpl");
 
 // Class OnlineSubsystemUtils.VoipListenerSynthComponent
 // 0x0060 (0x08F0 - 0x0890)

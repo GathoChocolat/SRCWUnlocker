@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_GadgetIcon_Cost01_Icon_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GadgetIcon_Cost01_Icon_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_GadgetIcon_Cost01_Icon_C::ExecuteUbergraph_WBP_GadgetIcon_Cost01_Icon(
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.OnInitWidgetRef
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetIcon_Cost01_Icon_C::OnInitWidgetRef()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetIcon_Cost01_Icon_C", "OnInitWidgetRef");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -111,28 +111,6 @@ void UWBP_GadgetIcon_Cost01_Icon_C::SetCostVisible(bool bInIsVisible)
 }
 
 
-// Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.SetGadgetKitBase
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const int32                             InSizeX                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const bool                              bInGadgetKit                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GadgetIcon_Cost01_Icon_C::SetGadgetKitBase(const int32 InSizeX, const bool bInGadgetKit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GadgetIcon_Cost01_Icon_C", "SetGadgetKitBase");
-
-	Params::WBP_GadgetIcon_Cost01_Icon_C_SetGadgetKitBase Parms{};
-
-	Parms.InSizeX = InSizeX;
-	Parms.bInGadgetKit = bInGadgetKit;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.SetTexture
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -148,28 +126,6 @@ void UWBP_GadgetIcon_Cost01_Icon_C::SetTexture(class UTexture2D* InTexture)
 	Params::WBP_GadgetIcon_Cost01_Icon_C_SetTexture Parms{};
 
 	Parms.InTexture = InTexture;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GadgetIcon_Cost01_Icon.WBP_GadgetIcon_Cost01_Icon_C.SetupByGadgetId
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGadgetId                               InGadgetId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInSetShape                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GadgetIcon_Cost01_Icon_C::SetupByGadgetId(EGadgetId InGadgetId, bool bInSetShape)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GadgetIcon_Cost01_Icon_C", "SetupByGadgetId");
-
-	Params::WBP_GadgetIcon_Cost01_Icon_C_SetupByGadgetId Parms{};
-
-	Parms.InGadgetId = InGadgetId;
-	Parms.bInSetShape = bInSetShape;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

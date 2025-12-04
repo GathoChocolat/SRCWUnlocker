@@ -51,6 +51,26 @@ void UWBP_HonorTitle_Plate_C::ExecuteUbergraph_WBP_HonorTitle_Plate(int32 EntryP
 }
 
 
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HonorTitle_Plate_C::OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HonorTitle_Plate_C", "OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8");
+
+	Params::WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.OnLoaded_EEF55983447D6E2AAAF1AB9849C4A735
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -86,6 +106,56 @@ void UWBP_HonorTitle_Plate_C::SetHonorTitle(int32 InHonorId)
 	Params::WBP_HonorTitle_Plate_C_SetHonorTitle Parms{};
 
 	Parms.InHonorId = InHonorId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupLegendCompeHonorTitle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UObject>           PlateImageTexture2D                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// EHonorTitleFontColor                    FontColor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      HonorTitleVB                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   RoundCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HonorTitle_Plate_C::SetupLegendCompeHonorTitle(TSoftObjectPtr<class UObject> PlateImageTexture2D, EHonorTitleFontColor FontColor, const class FText& HonorTitleVB, int32 RoundCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HonorTitle_Plate_C", "SetupLegendCompeHonorTitle");
+
+	Params::WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle Parms{};
+
+	Parms.PlateImageTexture2D = PlateImageTexture2D;
+	Parms.FontColor = FontColor;
+	Parms.HonorTitleVB = std::move(HonorTitleVB);
+	Parms.RoundCount = RoundCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupNormalHonorTitlePlate
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UObject>           PlateImageTexture2D                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// EHonorTitleFontColor                    FontColor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      HonorTitleVB                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_HonorTitle_Plate_C::SetupNormalHonorTitlePlate(TSoftObjectPtr<class UObject> PlateImageTexture2D, EHonorTitleFontColor FontColor, const class FText& HonorTitleVB)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HonorTitle_Plate_C", "SetupNormalHonorTitlePlate");
+
+	Params::WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate Parms{};
+
+	Parms.PlateImageTexture2D = PlateImageTexture2D;
+	Parms.FontColor = FontColor;
+	Parms.HonorTitleVB = std::move(HonorTitleVB);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -24,35 +24,34 @@ struct WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBt
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0004(0x0004)()
-	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate;          // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBaseCore* Button)> K2Node_CreateDelegate_OutputDelegate_1;    // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x0028(0x0004)()
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBaseCore*                 K2Node_CustomEvent_Button;                         // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBaseCore*                 K2Node_CustomEvent_Button;                         // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate;          // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UUnionUIButtonBaseCore* Button)> K2Node_CreateDelegate_OutputDelegate_1;    // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0030(0x0004)()
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn) == 0x000008, "Wrong alignment on WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn");
 static_assert(sizeof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn) == 0x000060, "Wrong size on WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn");
 static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, EntryPoint) == 0x000000, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, CallFunc_SoundPlay_ReturnValue_1) == 0x000028, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, CallFunc_HasAnyUserFocus_ReturnValue) == 0x000038, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000040, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_Event_IsDesignTime) == 0x000049, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CustomEvent_Button_1) == 0x000050, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CustomEvent_Button) == 0x000058, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CustomEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CustomEvent_Button) == 0x000008, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CustomEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, CallFunc_SoundPlay_ReturnValue) == 0x000030, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, CallFunc_HasAnyUserFocus_ReturnValue) == 0x000040, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000048, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_Event_IsDesignTime) == 0x000051, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn, K2Node_CustomEvent_Button_1) == 0x000058, "Member 'WBP_PartyRace_Sub_PresetBtn_C_ExecuteUbergraph_WBP_PartyRace_Sub_PresetBtn::K2Node_CustomEvent_Button_1' has a wrong offset!");
 
 // Function WBP_PartyRace_Sub_PresetBtn.WBP_PartyRace_Sub_PresetBtn_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_FestaInfo.WBP_FestaInfo_C
-// 0x0048 (0x0328 - 0x02E0)
+// 0x0050 (0x0330 - 0x02E0)
 class UWBP_FestaInfo_C final : public UUserWidget
 {
 public:
@@ -29,12 +29,14 @@ public:
 	class UImage*                                 UVScroll_02;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 UVScroll_03;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 UVScroll_04;                                       // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 WhiteBase;                                         // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TopInfo_Sub_HeldPop_C*             WBP_TopInfo_Sub_HeldPop;                           // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 WhiteBase;                                         // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void SetSchedule(const class FText& Schedule);
 	void SetTextureBG(class UTexture2D* Texture);
 	void SetTitle(const class FText& Title);
+	void SetupHeldPop();
 
 public:
 	static class UClass* StaticClass()
@@ -47,7 +49,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_FestaInfo_C) == 0x000008, "Wrong alignment on UWBP_FestaInfo_C");
-static_assert(sizeof(UWBP_FestaInfo_C) == 0x000328, "Wrong size on UWBP_FestaInfo_C");
+static_assert(sizeof(UWBP_FestaInfo_C) == 0x000330, "Wrong size on UWBP_FestaInfo_C");
 static_assert(offsetof(UWBP_FestaInfo_C, BlueBase) == 0x0002E0, "Member 'UWBP_FestaInfo_C::BlueBase' has a wrong offset!");
 static_assert(offsetof(UWBP_FestaInfo_C, DMY_EventInfo) == 0x0002E8, "Member 'UWBP_FestaInfo_C::DMY_EventInfo' has a wrong offset!");
 static_assert(offsetof(UWBP_FestaInfo_C, TXT_Day) == 0x0002F0, "Member 'UWBP_FestaInfo_C::TXT_Day' has a wrong offset!");
@@ -56,7 +58,8 @@ static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_01) == 0x000300, "Member 'UWBP
 static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_02) == 0x000308, "Member 'UWBP_FestaInfo_C::UVScroll_02' has a wrong offset!");
 static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_03) == 0x000310, "Member 'UWBP_FestaInfo_C::UVScroll_03' has a wrong offset!");
 static_assert(offsetof(UWBP_FestaInfo_C, UVScroll_04) == 0x000318, "Member 'UWBP_FestaInfo_C::UVScroll_04' has a wrong offset!");
-static_assert(offsetof(UWBP_FestaInfo_C, WhiteBase) == 0x000320, "Member 'UWBP_FestaInfo_C::WhiteBase' has a wrong offset!");
+static_assert(offsetof(UWBP_FestaInfo_C, WBP_TopInfo_Sub_HeldPop) == 0x000320, "Member 'UWBP_FestaInfo_C::WBP_TopInfo_Sub_HeldPop' has a wrong offset!");
+static_assert(offsetof(UWBP_FestaInfo_C, WhiteBase) == 0x000328, "Member 'UWBP_FestaInfo_C::WhiteBase' has a wrong offset!");
 
 }
 

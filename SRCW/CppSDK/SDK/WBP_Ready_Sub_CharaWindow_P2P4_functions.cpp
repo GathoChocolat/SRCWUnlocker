@@ -37,26 +37,6 @@ void UWBP_Ready_Sub_CharaWindow_P2P4_C::ExecuteUbergraph_WBP_Ready_Sub_CharaWind
 }
 
 
-// Function WBP_Ready_Sub_CharaWindow_P2P4.WBP_Ready_Sub_CharaWindow_P2P4_C.OnLoaded_1A052A2E46605EDA6BF87989A069EFF0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ready_Sub_CharaWindow_P2P4_C::OnLoaded_1A052A2E46605EDA6BF87989A069EFF0(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ready_Sub_CharaWindow_P2P4_C", "OnLoaded_1A052A2E46605EDA6BF87989A069EFF0");
-
-	Params::WBP_Ready_Sub_CharaWindow_P2P4_C_OnLoaded_1A052A2E46605EDA6BF87989A069EFF0 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Ready_Sub_CharaWindow_P2P4.WBP_Ready_Sub_CharaWindow_P2P4_C.SetCharacterIconCheckMark
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -91,23 +71,41 @@ void UWBP_Ready_Sub_CharaWindow_P2P4_C::SetCharacterIconData()
 }
 
 
-// Function WBP_Ready_Sub_CharaWindow_P2P4.WBP_Ready_Sub_CharaWindow_P2P4_C.SetCharacterIconTexture
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ready_Sub_CharaWindow_P2P4.WBP_Ready_Sub_CharaWindow_P2P4_C.SetCharacterIconTextureObj
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const TSoftObjectPtr<class UTexture2D>& Texture                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
-// const class FText&                      Name_0                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class UTexture2D*                 InTexture                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ready_Sub_CharaWindow_P2P4_C::SetCharacterIconTexture(const TSoftObjectPtr<class UTexture2D>& Texture, const class FText& Name_0)
+void UWBP_Ready_Sub_CharaWindow_P2P4_C::SetCharacterIconTextureObj(const class UTexture2D* InTexture)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ready_Sub_CharaWindow_P2P4_C", "SetCharacterIconTexture");
+		Func = Class->GetFunction("WBP_Ready_Sub_CharaWindow_P2P4_C", "SetCharacterIconTextureObj");
 
-	Params::WBP_Ready_Sub_CharaWindow_P2P4_C_SetCharacterIconTexture Parms{};
+	Params::WBP_Ready_Sub_CharaWindow_P2P4_C_SetCharacterIconTextureObj Parms{};
 
-	Parms.Texture = Texture;
-	Parms.Name_0 = std::move(Name_0);
+	Parms.InTexture = InTexture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ready_Sub_CharaWindow_P2P4.WBP_Ready_Sub_CharaWindow_P2P4_C.SetCharacterName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InName                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Ready_Sub_CharaWindow_P2P4_C::SetCharacterName(const class FText& InName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ready_Sub_CharaWindow_P2P4_C", "SetCharacterName");
+
+	Params::WBP_Ready_Sub_CharaWindow_P2P4_C_SetCharacterName Parms{};
+
+	Parms.InName = std::move(InName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

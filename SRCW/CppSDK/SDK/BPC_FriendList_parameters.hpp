@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -158,6 +158,7 @@ public:
 	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0440(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListSetupParameterData          K2Node_MakeStruct_FriendListSetupParameterData;    // 0x0449(0x0005)(NoDestructor)
 };
 static_assert(alignof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList) == 0x000008, "Wrong alignment on BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList");
 static_assert(sizeof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList) == 0x000450, "Wrong size on BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList");
@@ -256,6 +257,7 @@ static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFun
 static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, CallFunc_IsValid_ReturnValue_11) == 0x000438, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
 static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000440, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
 static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_DynamicCast_bSuccess_9) == 0x000448, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
+static_assert(offsetof(BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList, K2Node_MakeStruct_FriendListSetupParameterData) == 0x000449, "Member 'BPC_FriendList_C_ExecuteUbergraph_BPC_FriendList::K2Node_MakeStruct_FriendListSetupParameterData' has a wrong offset!");
 
 // Function BPC_FriendList.BPC_FriendList_C.OnAppNetSendInvitationComplete
 // 0x0070 (0x0070 - 0x0000)

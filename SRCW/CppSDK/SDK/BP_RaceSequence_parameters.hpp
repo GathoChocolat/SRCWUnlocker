@@ -12,11 +12,11 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UnionLib_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionRun_structs.hpp"
 
 
 namespace SDK::Params
@@ -281,98 +281,104 @@ struct BP_RaceSequence_C_ChangeSubEvent final
 public:
 	EMainSubCourseIndex                           NextMainSubState;                                  // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RacerId;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RacerID;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EStageCourseMainSubMapInfo                    CurrentMainSubState;                               // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMainSubMapInfo                    CallFunc_ChangeSubMapTexture_MainSubState;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalPlayer_ReturnValue;                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocalPlayer_ReturnValue;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetCurrentDomainIndex_OutCurrentDomainIndex; // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMainSubMapInfo                    CallFunc_ChangeSubMapTexture_MainSubState;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_RaceSequence_C_ChangeSubEvent) == 0x000008, "Wrong alignment on BP_RaceSequence_C_ChangeSubEvent");
 static_assert(sizeof(BP_RaceSequence_C_ChangeSubEvent) == 0x000038, "Wrong size on BP_RaceSequence_C_ChangeSubEvent");
 static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, NextMainSubState) == 0x000000, "Member 'BP_RaceSequence_C_ChangeSubEvent::NextMainSubState' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, RacerId) == 0x000004, "Member 'BP_RaceSequence_C_ChangeSubEvent::RacerId' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, RacerID) == 0x000004, "Member 'BP_RaceSequence_C_ChangeSubEvent::RacerID' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CurrentMainSubState) == 0x000008, "Member 'BP_RaceSequence_C_ChangeSubEvent::CurrentMainSubState' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_GetRacersRef_ReturnValue) == 0x000010, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_GetRacersRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_ChangeSubMapTexture_MainSubState) == 0x000018, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_ChangeSubMapTexture_MainSubState' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_GetRacer_ReturnValue) == 0x000020, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000028, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_IsLocalPlayer_ReturnValue) == 0x000030, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_IsLocalPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_GetRacer_ReturnValue) == 0x000018, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000020, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_IsLocalPlayer_ReturnValue) == 0x000028, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_IsLocalPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_GetCurrentDomainIndex_OutCurrentDomainIndex) == 0x00002C, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_GetCurrentDomainIndex_OutCurrentDomainIndex' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubEvent, CallFunc_ChangeSubMapTexture_MainSubState) == 0x000030, "Member 'BP_RaceSequence_C_ChangeSubEvent::CallFunc_ChangeSubMapTexture_MainSubState' has a wrong offset!");
 
 // Function BP_RaceSequence.BP_RaceSequence_C.ChangeSubMapTexture
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct BP_RaceSequence_C_ChangeSubMapTexture final
 {
 public:
-	EMainSubCourseIndex                           NextMainSubState;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMainSubMapInfo                    MainSubState;                                      // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMainSubMapInfo                    CurrentMainSubState;                               // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERaceType                                     Temp_byte_Variable;                                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStageCourseMapParam                   CallFunc_Map_Find_Value;                           // 0x0020(0x0028)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRaceDebugParamFinalLap_ReturnValue;    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0050(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IUnionRaceUIInterface> CallFunc_SetCourseSetting_self_CastInput;          // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue;          // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMapInfo                           K2Node_Select_Default;                             // 0x009C(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_5;            // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMapInfo                           K2Node_Select_Default_1;                           // 0x009E(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageCourseMapInfo                           K2Node_Select_Default_2;                           // 0x009F(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DomainIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMainSubCourseIndex                           NextMainSubState;                                  // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMainSubMapInfo                    MainSubState;                                      // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMainSubMapInfo                    CurrentMainSubState;                               // 0x0006(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERaceType                                     Temp_byte_Variable;                                // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStageCourseMapParam                   CallFunc_Map_Find_Value;                           // 0x0028(0x0028)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRaceDebugParamFinalLap_ReturnValue;    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0058(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IUnionRaceUIInterface> CallFunc_SetCourseSetting_self_CastInput;          // 0x0088(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue;          // 0x00A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMapInfo                           K2Node_Select_Default;                             // 0x00A4(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_5;            // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMapInfo                           K2Node_Select_Default_1;                           // 0x00A6(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageCourseMapInfo                           K2Node_Select_Default_2;                           // 0x00A7(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_RaceSequence_C_ChangeSubMapTexture) == 0x000008, "Wrong alignment on BP_RaceSequence_C_ChangeSubMapTexture");
-static_assert(sizeof(BP_RaceSequence_C_ChangeSubMapTexture) == 0x0000A8, "Wrong size on BP_RaceSequence_C_ChangeSubMapTexture");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, NextMainSubState) == 0x000000, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::NextMainSubState' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, MainSubState) == 0x000001, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::MainSubState' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CurrentMainSubState) == 0x000002, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CurrentMainSubState' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue) == 0x000003, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000004, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000005, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000006, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, Temp_int_Variable) == 0x000008, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, Temp_byte_Variable) == 0x00000C, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x00000D, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetRaceHUDRef_ReturnValue) == 0x000010, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetRaceHUDRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Map_Find_Value) == 0x000020, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Map_Find_ReturnValue) == 0x000048, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetRaceDebugParamFinalLap_ReturnValue) == 0x000049, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetRaceDebugParamFinalLap_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000050, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000078, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_SetCourseSetting_self_CastInput) == 0x000080, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_SetCourseSetting_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000090, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Add_IntInt_ReturnValue) == 0x000094, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, Temp_bool_Variable) == 0x000098, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_IntToByte_ReturnValue) == 0x000099, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetValidValue_ReturnValue) == 0x00009A, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetSelectedRaceType_ReturnValue) == 0x00009B, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetSelectedRaceType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_Select_Default) == 0x00009C, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x00009D, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_Select_Default_1) == 0x00009E, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_Select_Default_2) == 0x00009F, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_SwitchEnum_CmpSuccess) == 0x0000A0, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(sizeof(BP_RaceSequence_C_ChangeSubMapTexture) == 0x0000B0, "Wrong size on BP_RaceSequence_C_ChangeSubMapTexture");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, DomainIndex) == 0x000000, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::DomainIndex' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, NextMainSubState) == 0x000004, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::NextMainSubState' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, MainSubState) == 0x000005, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::MainSubState' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CurrentMainSubState) == 0x000006, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CurrentMainSubState' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue) == 0x000007, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000008, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000009, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, Temp_int_Variable) == 0x00000C, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000010, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000011, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, Temp_byte_Variable) == 0x000012, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000013, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetRaceHUDRef_ReturnValue) == 0x000018, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetRaceHUDRef_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Map_Find_Value) == 0x000028, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Map_Find_ReturnValue) == 0x000050, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetRaceDebugParamFinalLap_ReturnValue) == 0x000051, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetRaceDebugParamFinalLap_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000058, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000080, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_SetCourseSetting_self_CastInput) == 0x000088, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_SetCourseSetting_self_CastInput' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000098, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, Temp_bool_Variable) == 0x0000A0, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000A1, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetValidValue_ReturnValue) == 0x0000A2, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_GetSelectedRaceType_ReturnValue) == 0x0000A3, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_GetSelectedRaceType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_Select_Default) == 0x0000A4, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x0000A5, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_Select_Default_1) == 0x0000A6, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_Select_Default_2) == 0x0000A7, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ChangeSubMapTexture, K2Node_SwitchEnum_CmpSuccess) == 0x0000A8, "Member 'BP_RaceSequence_C_ChangeSubMapTexture::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function BP_RaceSequence.BP_RaceSequence_C.Chara Machine COMROM
 // 0x0188 (0x0188 - 0x0000)
@@ -678,132 +684,132 @@ static_assert(offsetof(BP_RaceSequence_C_DebugOverride, CallFunc_Less_IntInt_Ret
 static_assert(offsetof(BP_RaceSequence_C_DebugOverride, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00045C, "Member 'BP_RaceSequence_C_DebugOverride::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 
 // Function BP_RaceSequence.BP_RaceSequence_C.ExecuteUbergraph_BP_RaceSequence
-// 0x0D90 (0x0D90 - 0x0000)
+// 0x0E10 (0x0E10 - 0x0000)
 struct BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAppRaceEventManager*                   CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRacerCount_ReturnValue;                // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class UObject*                          Temp_object_Variable;                              // 0x0040(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsShippingBuild_ReturnValue;              // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_System_Loading_BG_C*               K2Node_DynamicCast_AsWBP_System_Loading_BG;        // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsShippingBuild_ReturnValue_1;            // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_System_Loading_BG_C*               K2Node_DynamicCast_AsWBP_System_Loading_BG_1;      // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsShippingBuild_ReturnValue_2;            // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6A[0x6];                                       // 0x006A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_System_BlackBoard_C*               CallFunc_Create_ReturnValue;                       // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable;                               // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded;                         // 0x0080(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_RacerIndex_1;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue;                 // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue;                     // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue;         // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsShippingBuild_ReturnValue_3;            // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EVehicleDisplayMode                           CallFunc_GetVehicleDisplayMode_ReturnValue;        // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BB[0x1];                                       // 0x00BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_RacerIndex;                     // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsShippingBuild_ReturnValue_4;            // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue_1;               // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue_1;                   // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue_1;       // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionStatsManager*                     CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EVehicleDisplayMode                           CallFunc_GetVehicleDisplayMode_ReturnValue_1;      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F2[0x2];                                       // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_EventId;                        // 0x00F4(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_Value;                          // 0x00F8(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x00FC(0x0004)()
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAppRaceEventManager*                   CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRacerCount_ReturnValue;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UObject*                          Temp_object_Variable;                              // 0x0038(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsShippingBuild_ReturnValue;              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_System_Loading_BG_C*               K2Node_DynamicCast_AsWBP_System_Loading_BG;        // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsShippingBuild_ReturnValue_1;            // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_System_Loading_BG_C*               K2Node_DynamicCast_AsWBP_System_Loading_BG_1;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsShippingBuild_ReturnValue_2;            // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_System_BlackBoard_C*               CallFunc_Create_ReturnValue;                       // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable;                               // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded;                         // 0x0078(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_RacerIndex_1;                   // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue;                     // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue;         // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsShippingBuild_ReturnValue_3;            // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EVehicleDisplayMode                           CallFunc_GetVehicleDisplayMode_ReturnValue;        // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B3[0x1];                                       // 0x00B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_RacerIndex;                     // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsShippingBuild_ReturnValue_4;            // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue_1;               // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacer*                            CallFunc_GetRacer_ReturnValue_1;                   // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue_1;       // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionStatsManager*                     CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EVehicleDisplayMode                           CallFunc_GetVehicleDisplayMode_ReturnValue_1;      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_EventId;                        // 0x00EC(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_Value;                          // 0x00F0(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x00F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x00F6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F7[0x1];                                       // 0x00F7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x00F8(0x0004)()
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue_2;               // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable_1;                             // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue_2;       // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_ClassDynamicCast_AsRace_Standings;          // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue_2;               // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue_2;       // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x0138(0x0004)()
-	bool                                          CallFunc_IsLocalPlayer_ReturnValue;                // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x013D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13E[0x2];                                      // 0x013E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue_3;               // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded_1;                       // 0x0148(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ConfigValue;            // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolFromConfig_ReturnValue;            // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_153[0x1];                                      // 0x0153(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetIntFromConfig_ConfigValue;             // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetIntFromConfig_ReturnValue;             // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x015A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRaceRivalByRacerIndex_ReturnValue;      // 0x015B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAppRacePlayerResultData               CallFunc_GetAppRacePlayerResultData_OutData;       // 0x0160(0x00B8)()
-	EOutputExecsPin_SuccessFailed                 CallFunc_GetAppRacePlayerResultData_OutExecsPin;   // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21A[0x2];                                      // 0x021A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 Value)>                  K2Node_CreateDelegate_OutputDelegate;              // 0x021C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x022C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0238(0x0390)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C9[0x3];                                      // 0x05C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetSelectedPlayerCount_ReturnValue;       // 0x05CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_2;                             // 0x05D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_ClassDynamicCast_AsRace_Standings_1;        // 0x05D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess_1;                // 0x05E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5E1[0x3];                                      // 0x05E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x05E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded_2;                       // 0x05E8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_1;              // 0x05F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocalPlayer_ReturnValue;                // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_123[0x1];                                      // 0x0123(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_1;                  // 0x0124(0x0004)()
+	class UUnionRacers*                           CallFunc_GetRacersRef_ReturnValue_3;               // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded_1;                       // 0x0130(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ConfigValue;            // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolFromConfig_ReturnValue;            // 0x013A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13B[0x1];                                      // 0x013B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetIntFromConfig_ConfigValue;             // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIntFromConfig_ReturnValue;             // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRaceRivalByRacerIndex_ReturnValue;      // 0x0143(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAppRacePlayerResultData               CallFunc_GetAppRacePlayerResultData_OutData;       // 0x0148(0x00C0)()
+	EOutputExecsPin_SuccessFailed                 CallFunc_GetAppRacePlayerResultData_OutExecsPin;   // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_209[0x3];                                      // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 Value)>                  K2Node_CreateDelegate_OutputDelegate;              // 0x020C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetSelectedPlayerCount_ReturnValue;       // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0230(0x0390)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x05C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C1[0x3];                                      // 0x05C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Temp_class_Variable_2;                             // 0x05C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_ClassDynamicCast_AsRace_Standings_1;        // 0x05D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess_1;                // 0x05D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue;                // 0x05E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x05E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5E9[0x7];                                      // 0x05E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded_2;                       // 0x05F0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	uint8                                         Pad_5F8[0x8];                                      // 0x05F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0600(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0660(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_669[0x7];                                      // 0x0669(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRacerCount_ReturnValue_1;              // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_66C[0x4];                                      // 0x066C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARaceStandings*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0670(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRacerCount_ReturnValue_1;              // 0x0678(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x067C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x067D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_4;                    // 0x067E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x067F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_681[0x3];                                      // 0x0681(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0684(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_Stop_ReturnValue;                         // 0x0688(0x0004)()
-	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x068C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_68D[0x3];                                      // 0x068D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_2;              // 0x0690(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0679(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_4;                    // 0x067A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x067B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x067C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_67D[0x3];                                      // 0x067D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0680(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_Stop_ReturnValue;                         // 0x0684(0x0004)()
+	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0688(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_689[0x7];                                      // 0x0689(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_1;              // 0x0690(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_FooterMenu_C*                      CallFunc_Create_ReturnValue_1;                     // 0x0698(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetIsOnlineGameMode_ReturnValue;          // 0x06A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x06A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -834,158 +840,158 @@ public:
 	int32                                         Temp_int_Variable_1;                               // 0x0740(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0744(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_745[0x3];                                      // 0x0745(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetCurrentRaceCount_ReturnValue;          // 0x0748(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x074C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ContainsLevel_ReturnValue;                // 0x074D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74E[0x2];                                      // 0x074E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_3;                       // 0x0750(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_6;                             // 0x0758(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x0760(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_2;       // 0x0770(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ContainsLevel_ReturnValue_1;              // 0x0780(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_781[0xF];                                      // 0x0781(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x0790(0x0490)()
-	EViewSplitMode                                Temp_byte_Variable;                                // 0x0C20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C21[0x7];                                      // 0x0C21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 K2Node_Select_Default_1;                           // 0x0C28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CallFunc_Create_ReturnValue_2;                     // 0x0C30(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<bool>                                  CallFunc_GetRedStarRingAcquisitionPerStage_ReturnValue; // 0x0C38(0x0010)(ReferenceParm)
-	class UUnionRaceUI*                           K2Node_DynamicCast_AsUnion_Race_UI;                // 0x0C48(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0C50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EViewSplitMode                                Temp_byte_Variable_1;                              // 0x0C51(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EViewSplitMode                                Temp_byte_Variable_2;                              // 0x0C52(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C53[0x1];                                      // 0x0C53(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const EMainSubCourseIndex& Value1, int32 Value2)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0C54(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_DomainIndex_1;                        // 0x0C64(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRaceCourseMapInfo                     K2Node_Event_MapInfo_1;                            // 0x0C68(0x0050)(ConstParm)
-	int32                                         K2Node_Event_DomainIndex;                          // 0x0CB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CBC[0x4];                                      // 0x0CBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRaceCourseSubMapInfo                  K2Node_Event_MapInfo;                              // 0x0CC0(0x0050)(ConstParm)
-	bool                                          CallFunc_LoadDriverVoice_ReturnValue;              // 0x0D10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D11[0x3];                                      // 0x0D11(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetSelectedPlayerCount_ReturnValue_1;     // 0x0D14(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EViewSplitMode                                Temp_byte_Variable_3;                              // 0x0D18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0D19(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EViewSplitMode                                Temp_byte_Variable_4;                              // 0x0D1A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0D1B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_4;     // 0x0D1C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EViewSplitMode                                Temp_byte_Variable_5;                              // 0x0D2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D2D[0x3];                                      // 0x0D2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_3;              // 0x0D30(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Player01_C*               K2Node_DynamicCast_AsWBP_Race_HUD_Player_01;       // 0x0D38(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0D40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D41[0x3];                                      // 0x0D41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_GetRacePauseMenuInSESoundHandle_ReturnValue; // 0x0D44(0x0004)()
-	struct FSoundHandle                           CallFunc_Stop_ReturnValue_1;                       // 0x0D48(0x0004)()
-	struct FSoundHandle                           K2Node_MakeStruct_SoundHandle;                     // 0x0D4C(0x0004)()
-	int32                                         Temp_int_Variable_2;                               // 0x0D50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EViewSplitMode                                K2Node_Select_Default_2;                           // 0x0D54(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D55[0x3];                                      // 0x0D55(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_5;       // 0x0D58(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Delay;                          // 0x0D68(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_6;            // 0x0D70(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_4;              // 0x0D80(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RetriggerableDelay_Duration_ImplicitCast; // 0x0D88(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_3;                       // 0x0748(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x0750(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_2;       // 0x0760(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ContainsLevel_ReturnValue;                // 0x0770(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_771[0x7];                                      // 0x0771(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 Temp_class_Variable_6;                             // 0x0778(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x0780(0x0500)()
+	EViewSplitMode                                Temp_byte_Variable;                                // 0x0C80(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C81[0x7];                                      // 0x0C81(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<bool>                                  CallFunc_GetRedStarRingAcquisitionPerStage_ReturnValue; // 0x0C88(0x0010)(ReferenceParm)
+	class UClass*                                 K2Node_Select_Default_1;                           // 0x0C98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_Create_ReturnValue_2;                     // 0x0CA0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EViewSplitMode                                Temp_byte_Variable_1;                              // 0x0CA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CA9[0x7];                                      // 0x0CA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceUI*                           K2Node_DynamicCast_AsUnion_Race_UI;                // 0x0CB0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0CB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CB9[0x3];                                      // 0x0CB9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const EMainSubCourseIndex& Value1, int32 Value2)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0CBC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_DomainIndex_1;                        // 0x0CCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRaceCourseMapInfo                     K2Node_Event_MapInfo_1;                            // 0x0CD0(0x0050)(ConstParm)
+	int32                                         K2Node_Event_DomainIndex;                          // 0x0D20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D24[0x4];                                      // 0x0D24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRaceCourseSubMapInfo                  K2Node_Event_MapInfo;                              // 0x0D28(0x0050)(ConstParm)
+	EViewSplitMode                                Temp_byte_Variable_2;                              // 0x0D78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LoadDriverVoice_ReturnValue;              // 0x0D79(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D7A[0x2];                                      // 0x0D7A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetSelectedPlayerCount_ReturnValue_1;     // 0x0D7C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EViewSplitMode                                Temp_byte_Variable_3;                              // 0x0D80(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0D81(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EViewSplitMode                                Temp_byte_Variable_4;                              // 0x0D82(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0D83(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_4;     // 0x0D84(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D94[0x4];                                      // 0x0D94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_2;              // 0x0D98(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_GetRacePauseMenuInSESoundHandle_ReturnValue; // 0x0DA0(0x0004)()
+	uint8                                         Pad_DA4[0x4];                                      // 0x0DA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Race_HUD_Player01_C*               K2Node_DynamicCast_AsWBP_Race_HUD_Player_01;       // 0x0DA8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0DB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DB1[0x3];                                      // 0x0DB1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_Stop_ReturnValue_1;                       // 0x0DB4(0x0004)()
+	struct FSoundHandle                           K2Node_MakeStruct_SoundHandle;                     // 0x0DB8(0x0004)()
+	EViewSplitMode                                Temp_byte_Variable_5;                              // 0x0DBC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DBD[0x3];                                      // 0x0DBD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_2;                               // 0x0DC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_5;       // 0x0DC4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EViewSplitMode                                K2Node_Select_Default_2;                           // 0x0DD4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DD5[0x3];                                      // 0x0DD5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_CustomEvent_Delay;                          // 0x0DD8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_6;            // 0x0DE0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_3;              // 0x0DF0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUnionRaceUI*                           CallFunc_GetRaceHUDRef_ReturnValue_4;              // 0x0DF8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetSelectedPlayerCountWithOnline_ReturnValue; // 0x0E00(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RetriggerableDelay_Duration_ImplicitCast; // 0x0E04(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence) == 0x000010, "Wrong alignment on BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence");
-static_assert(sizeof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence) == 0x000D90, "Wrong size on BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence");
+static_assert(sizeof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence) == 0x000E10, "Wrong size on BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, EntryPoint) == 0x000000, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue) == 0x000008, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_MakeLiteralByte_ReturnValue) == 0x000010, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_1) == 0x00001C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Array_Index_Variable) == 0x000024, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000028, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerCount_ReturnValue) == 0x000030, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_bool_Variable) == 0x000034, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Variable) == 0x000038, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Add_IntInt_ReturnValue_1) == 0x00003C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_object_Variable) == 0x000040, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue) == 0x000048, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_2) == 0x000049, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsWBP_System_Loading_BG) == 0x000050, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsWBP_System_Loading_BG' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_1) == 0x000059, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_3) == 0x00005A, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsWBP_System_Loading_BG_1) == 0x000060, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsWBP_System_Loading_BG_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess_1) == 0x000068, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_2) == 0x000069, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Create_ReturnValue) == 0x000070, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_class_Variable) == 0x000078, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded) == 0x000080, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_RacerIndex_1) == 0x000088, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_RacerIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue) == 0x000090, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000098, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacer_ReturnValue) == 0x0000A0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0000A8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerStatusObject_ReturnValue) == 0x0000B0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_3) == 0x0000B8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetVehicleDisplayMode_ReturnValue) == 0x0000B9, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetVehicleDisplayMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess) == 0x0000BA, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_RacerIndex) == 0x0000BC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_RacerIndex' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_4) == 0x0000C0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue_1) == 0x0000C8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacer_ReturnValue_1) == 0x0000D0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0000D8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerStatusObject_ReturnValue_1) == 0x0000E0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerStatusObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x0000E8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetVehicleDisplayMode_ReturnValue_1) == 0x0000F0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetVehicleDisplayMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000F1, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_EventId) == 0x0000F4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_EventId' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Value) == 0x0000F8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Value' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_SoundPlay_ReturnValue) == 0x0000FC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Conv_IntToByte_ReturnValue) == 0x000100, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetValidValue_ReturnValue) == 0x000101, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_1) == 0x000010, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Array_Index_Variable) == 0x000018, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000020, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerCount_ReturnValue) == 0x000028, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_bool_Variable) == 0x00002C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Variable) == 0x000030, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Add_IntInt_ReturnValue_1) == 0x000034, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_object_Variable) == 0x000038, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue) == 0x000040, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_2) == 0x000041, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsWBP_System_Loading_BG) == 0x000048, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsWBP_System_Loading_BG' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_1) == 0x000051, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_3) == 0x000052, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsWBP_System_Loading_BG_1) == 0x000058, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsWBP_System_Loading_BG_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess_1) == 0x000060, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_2) == 0x000061, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Create_ReturnValue) == 0x000068, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_class_Variable) == 0x000070, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_class_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded) == 0x000078, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_RacerIndex_1) == 0x000080, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_RacerIndex_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue) == 0x000088, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000090, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacer_ReturnValue) == 0x000098, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x0000A0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerStatusObject_ReturnValue) == 0x0000A8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_3) == 0x0000B0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetVehicleDisplayMode_ReturnValue) == 0x0000B1, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetVehicleDisplayMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess) == 0x0000B2, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_RacerIndex) == 0x0000B4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_RacerIndex' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsShippingBuild_ReturnValue_4) == 0x0000B8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsShippingBuild_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue_1) == 0x0000C0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacer_ReturnValue_1) == 0x0000C8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0000D0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerStatusObject_ReturnValue_1) == 0x0000D8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerStatusObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x0000E0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetVehicleDisplayMode_ReturnValue_1) == 0x0000E8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetVehicleDisplayMode_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_EventId) == 0x0000EC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_EventId' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Value) == 0x0000F0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Value' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000F4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000F5, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetValidValue_ReturnValue) == 0x0000F6, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_SoundPlay_ReturnValue) == 0x0000F8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_2) == 0x0000FC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue_2) == 0x000100, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_class_Variable_1) == 0x000108, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_2) == 0x000110, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerStatusObject_ReturnValue_2) == 0x000110, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerStatusObject_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_ClassDynamicCast_AsRace_Standings) == 0x000118, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_ClassDynamicCast_AsRace_Standings' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_ClassDynamicCast_bSuccess) == 0x000120, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue_2) == 0x000128, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerStatusObject_ReturnValue_2) == 0x000130, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerStatusObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_SoundPlay_ReturnValue_1) == 0x000138, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsLocalPlayer_ReturnValue) == 0x00013C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_BooleanAND_ReturnValue) == 0x00013D, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue_3) == 0x000140, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded_1) == 0x000148, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValidClass_ReturnValue) == 0x000150, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetBoolFromConfig_ConfigValue) == 0x000151, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetBoolFromConfig_ConfigValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetBoolFromConfig_ReturnValue) == 0x000152, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetBoolFromConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetIntFromConfig_ConfigValue) == 0x000154, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetIntFromConfig_ConfigValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetIntFromConfig_ReturnValue) == 0x000158, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetIntFromConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_BooleanAND_ReturnValue_1) == 0x000159, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Greater_IntInt_ReturnValue) == 0x00015A, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsRaceRivalByRacerIndex_ReturnValue) == 0x00015B, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsRaceRivalByRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetAppRacePlayerResultData_OutData) == 0x000160, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetAppRacePlayerResultData_OutData' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetAppRacePlayerResultData_OutExecsPin) == 0x000218, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetAppRacePlayerResultData_OutExecsPin' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_3) == 0x000219, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate) == 0x00021C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetEnumeratorName_ReturnValue) == 0x00022C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetDataTableRowFromName_OutRow) == 0x000238, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0005C8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x0005CC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_class_Variable_2) == 0x0005D0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_ClassDynamicCast_AsRace_Standings_1) == 0x0005D8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_ClassDynamicCast_AsRace_Standings_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_ClassDynamicCast_bSuccess_1) == 0x0005E0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Add_IntInt_ReturnValue_2) == 0x0005E4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded_2) == 0x0005E8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_1) == 0x0005F0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsLocalPlayer_ReturnValue) == 0x000121, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsLocalPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_BooleanAND_ReturnValue) == 0x000122, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_SoundPlay_ReturnValue_1) == 0x000124, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_SoundPlay_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacersRef_ReturnValue_3) == 0x000128, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacersRef_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded_1) == 0x000130, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValidClass_ReturnValue) == 0x000138, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetBoolFromConfig_ConfigValue) == 0x000139, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetBoolFromConfig_ConfigValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetBoolFromConfig_ReturnValue) == 0x00013A, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetBoolFromConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetIntFromConfig_ConfigValue) == 0x00013C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetIntFromConfig_ConfigValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetIntFromConfig_ReturnValue) == 0x000140, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetIntFromConfig_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_BooleanAND_ReturnValue_1) == 0x000141, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Greater_IntInt_ReturnValue) == 0x000142, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsRaceRivalByRacerIndex_ReturnValue) == 0x000143, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsRaceRivalByRacerIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetAppRacePlayerResultData_OutData) == 0x000148, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetAppRacePlayerResultData_OutData' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetAppRacePlayerResultData_OutExecsPin) == 0x000208, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetAppRacePlayerResultData_OutExecsPin' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate) == 0x00020C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_3) == 0x00021C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetEnumeratorName_ReturnValue) == 0x000220, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetSelectedPlayerCount_ReturnValue) == 0x000228, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetSelectedPlayerCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetDataTableRowFromName_OutRow) == 0x000230, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0005C0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Add_IntInt_ReturnValue_2) == 0x0005C4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_class_Variable_2) == 0x0005C8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_class_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_ClassDynamicCast_AsRace_Standings_1) == 0x0005D0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_ClassDynamicCast_AsRace_Standings_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_ClassDynamicCast_bSuccess_1) == 0x0005D8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue) == 0x0005E0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_4) == 0x0005E8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded_2) == 0x0005F0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded_2' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_MakeTransform_ReturnValue) == 0x000600, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000660, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_4) == 0x000668, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerCount_ReturnValue_1) == 0x000668, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerCount_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_FinishSpawningActor_ReturnValue) == 0x000670, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacerCount_ReturnValue_1) == 0x000678, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacerCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00067C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_EndPlayReason) == 0x00067D, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_4) == 0x00067E, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_5) == 0x00067F, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000680, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Array_Add_ReturnValue) == 0x000684, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Stop_ReturnValue) == 0x000688, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Stop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsPlaying_ReturnValue) == 0x00068C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_2) == 0x000690, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_EndPlayReason) == 0x000678, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_EndPlayReason' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000679, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_SwitchEnum_CmpSuccess_4) == 0x00067A, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_SwitchEnum_CmpSuccess_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsValid_ReturnValue_5) == 0x00067B, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00067C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Array_Add_ReturnValue) == 0x000680, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Stop_ReturnValue) == 0x000684, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Stop_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_IsPlaying_ReturnValue) == 0x000688, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_1) == 0x000690, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Create_ReturnValue_1) == 0x000698, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Create_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetIsOnlineGameMode_ReturnValue) == 0x0006A0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetIsOnlineGameMode_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x0006A1, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
@@ -1010,49 +1016,48 @@ static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallF
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_MakeLiteralName_ReturnValue_2) == 0x000738, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_MakeLiteralName_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Variable_1) == 0x000740, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Variable_1' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000744, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetCurrentRaceCount_ReturnValue) == 0x000748, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetCurrentRaceCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00074C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_ContainsLevel_ReturnValue) == 0x00074D, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_ContainsLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded_3) == 0x000750, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_class_Variable_6) == 0x000758, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_class_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x000760, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x000770, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_ContainsLevel_ReturnValue_1) == 0x000780, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_ContainsLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetAppRaceConfigData_OutData) == 0x000790, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetAppRaceConfigData_OutData' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable) == 0x000C20, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Select_Default_1) == 0x000C28, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Create_ReturnValue_2) == 0x000C30, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRedStarRingAcquisitionPerStage_ReturnValue) == 0x000C38, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRedStarRingAcquisitionPerStage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsUnion_Race_UI) == 0x000C48, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsUnion_Race_UI' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess_2) == 0x000C50, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_1) == 0x000C51, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_2) == 0x000C52, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_3) == 0x000C54, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_DomainIndex_1) == 0x000C64, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_DomainIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_MapInfo_1) == 0x000C68, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_MapInfo_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_DomainIndex) == 0x000CB8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_DomainIndex' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_MapInfo) == 0x000CC0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_MapInfo' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_LoadDriverVoice_ReturnValue) == 0x000D10, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_LoadDriverVoice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetSelectedPlayerCount_ReturnValue_1) == 0x000D14, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetSelectedPlayerCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_3) == 0x000D18, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000D19, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_4) == 0x000D1A, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_FadeDirection) == 0x000D1B, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_4) == 0x000D1C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_5) == 0x000D2C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_3) == 0x000D30, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsWBP_Race_HUD_Player_01) == 0x000D38, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsWBP_Race_HUD_Player_01' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess_3) == 0x000D40, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacePauseMenuInSESoundHandle_ReturnValue) == 0x000D44, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacePauseMenuInSESoundHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Stop_ReturnValue_1) == 0x000D48, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Stop_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_MakeStruct_SoundHandle) == 0x000D4C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_MakeStruct_SoundHandle' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Variable_2) == 0x000D50, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Select_Default_2) == 0x000D54, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_5) == 0x000D58, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Delay) == 0x000D68, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Delay' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_6) == 0x000D70, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_4) == 0x000D80, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_RetriggerableDelay_Duration_ImplicitCast) == 0x000D88, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_RetriggerableDelay_Duration_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Loaded_3) == 0x000748, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Loaded_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_1) == 0x000750, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_2) == 0x000760, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_ContainsLevel_ReturnValue) == 0x000770, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_ContainsLevel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_class_Variable_6) == 0x000778, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_class_Variable_6' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetAppRaceConfigData_OutData) == 0x000780, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetAppRaceConfigData_OutData' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable) == 0x000C80, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRedStarRingAcquisitionPerStage_ReturnValue) == 0x000C88, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRedStarRingAcquisitionPerStage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Select_Default_1) == 0x000C98, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Create_ReturnValue_2) == 0x000CA0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_1) == 0x000CA8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsUnion_Race_UI) == 0x000CB0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsUnion_Race_UI' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess_2) == 0x000CB8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_3) == 0x000CBC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_DomainIndex_1) == 0x000CCC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_DomainIndex_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_MapInfo_1) == 0x000CD0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_MapInfo_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_DomainIndex) == 0x000D20, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_DomainIndex' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Event_MapInfo) == 0x000D28, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Event_MapInfo' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_2) == 0x000D78, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_LoadDriverVoice_ReturnValue) == 0x000D79, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_LoadDriverVoice_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetSelectedPlayerCount_ReturnValue_1) == 0x000D7C, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetSelectedPlayerCount_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_3) == 0x000D80, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000D81, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_4) == 0x000D82, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_FadeDirection) == 0x000D83, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_4) == 0x000D84, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_2) == 0x000D98, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRacePauseMenuInSESoundHandle_ReturnValue) == 0x000DA0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRacePauseMenuInSESoundHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_AsWBP_Race_HUD_Player_01) == 0x000DA8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_AsWBP_Race_HUD_Player_01' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_DynamicCast_bSuccess_3) == 0x000DB0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_Stop_ReturnValue_1) == 0x000DB4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_Stop_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_MakeStruct_SoundHandle) == 0x000DB8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_MakeStruct_SoundHandle' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_byte_Variable_5) == 0x000DBC, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, Temp_int_Variable_2) == 0x000DC0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_5) == 0x000DC4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_Select_Default_2) == 0x000DD4, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CustomEvent_Delay) == 0x000DD8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CustomEvent_Delay' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, K2Node_CreateDelegate_OutputDelegate_6) == 0x000DE0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_3) == 0x000DF0, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetRaceHUDRef_ReturnValue_4) == 0x000DF8, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetRaceHUDRef_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_GetSelectedPlayerCountWithOnline_ReturnValue) == 0x000E00, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_GetSelectedPlayerCountWithOnline_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence, CallFunc_RetriggerableDelay_Duration_ImplicitCast) == 0x000E04, "Member 'BP_RaceSequence_C_ExecuteUbergraph_BP_RaceSequence::CallFunc_RetriggerableDelay_Duration_ImplicitCast' has a wrong offset!");
 
 // Function BP_RaceSequence.BP_RaceSequence_C.FinishExitFade
 // 0x0001 (0x0001 - 0x0000)
@@ -1141,7 +1146,7 @@ static_assert(sizeof(BP_RaceSequence_C_GetMovieSkipDelaySeconds) == 0x000008, "W
 static_assert(offsetof(BP_RaceSequence_C_GetMovieSkipDelaySeconds, Seconds) == 0x000000, "Member 'BP_RaceSequence_C_GetMovieSkipDelaySeconds::Seconds' has a wrong offset!");
 
 // Function BP_RaceSequence.BP_RaceSequence_C.GetRaceBGMLabel
-// 0x0590 (0x0590 - 0x0000)
+// 0x0600 (0x0600 - 0x0000)
 struct BP_RaceSequence_C_GetRaceBGMLabel final
 {
 public:
@@ -1153,18 +1158,18 @@ public:
 	ERaceType                                     CallFunc_GetSelectedRaceType_ReturnValue;          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BA[0x6];                                       // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x00C0(0x0490)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_551[0x7];                                      // 0x0551(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Map_Find_Value;                           // 0x0558(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0569(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_56A[0x6];                                      // 0x056A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetBGMNameFromLevel_BGMName;              // 0x0570(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsOnCourseEditor_Retval;                  // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAppRaceConfigData                     CallFunc_GetAppRaceConfigData_OutData;             // 0x00C0(0x0500)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x05C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C1[0x7];                                      // 0x05C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Map_Find_Value;                           // 0x05C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x05D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x05D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5DA[0x6];                                      // 0x05DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetBGMNameFromLevel_BGMName;              // 0x05E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsOnCourseEditor_Retval;                  // 0x05F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_RaceSequence_C_GetRaceBGMLabel) == 0x000010, "Wrong alignment on BP_RaceSequence_C_GetRaceBGMLabel");
-static_assert(sizeof(BP_RaceSequence_C_GetRaceBGMLabel) == 0x000590, "Wrong size on BP_RaceSequence_C_GetRaceBGMLabel");
+static_assert(sizeof(BP_RaceSequence_C_GetRaceBGMLabel) == 0x000600, "Wrong size on BP_RaceSequence_C_GetRaceBGMLabel");
 static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, IsIntro) == 0x000000, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::IsIntro' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, Label) == 0x000008, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::Label' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, GPLabelMap) == 0x000018, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::GPLabelMap' has a wrong offset!");
@@ -1172,12 +1177,12 @@ static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, K2Node_MakeVariable_Ma
 static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_GetSelectedRaceType_ReturnValue) == 0x0000B8, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_GetSelectedRaceType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B9, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_GetAppRaceConfigData_OutData) == 0x0000C0, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_GetAppRaceConfigData_OutData' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000550, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_Map_Find_Value) == 0x000558, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_Map_Find_ReturnValue) == 0x000568, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000569, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_GetBGMNameFromLevel_BGMName) == 0x000570, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_GetBGMNameFromLevel_BGMName' has a wrong offset!");
-static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_IsOnCourseEditor_Retval) == 0x000580, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_IsOnCourseEditor_Retval' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0005C0, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_Map_Find_Value) == 0x0005C8, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_Map_Find_ReturnValue) == 0x0005D8, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0005D9, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_GetBGMNameFromLevel_BGMName) == 0x0005E0, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_GetBGMNameFromLevel_BGMName' has a wrong offset!");
+static_assert(offsetof(BP_RaceSequence_C_GetRaceBGMLabel, CallFunc_IsOnCourseEditor_Retval) == 0x0005F0, "Member 'BP_RaceSequence_C_GetRaceBGMLabel::CallFunc_IsOnCourseEditor_Retval' has a wrong offset!");
 
 // Function BP_RaceSequence.BP_RaceSequence_C.GetRaceEndMenuContentId
 // 0x0001 (0x0001 - 0x0000)

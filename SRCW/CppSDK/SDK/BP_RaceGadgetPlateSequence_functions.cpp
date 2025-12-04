@@ -168,5 +168,25 @@ void ABP_RaceGadgetPlateSequence_C::Retry_GadgetLvUpWindow()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function BP_RaceGadgetPlateSequence.BP_RaceGadgetPlateSequence_C.SetGadgetPlateWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_EndMenu_GudgetLv_Window_C*   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RaceGadgetPlateSequence_C::SetGadgetPlateWidget(class UWBP_EndMenu_GudgetLv_Window_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RaceGadgetPlateSequence_C", "SetGadgetPlateWidget");
+
+	Params::BP_RaceGadgetPlateSequence_C_SetGadgetPlateWidget Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

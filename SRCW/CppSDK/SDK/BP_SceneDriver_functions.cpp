@@ -85,21 +85,41 @@ void ABP_SceneDriver_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function BP_SceneDriver.BP_SceneDriver_C.SetEnableGfur
+// Function BP_SceneDriver.BP_SceneDriver_C.SetEnableGFur
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SceneDriver_C::SetEnableGfur(bool Enable)
+void ABP_SceneDriver_C::SetEnableGFur(bool Enable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SceneDriver_C", "SetEnableGfur");
+		Func = Class->GetFunction("BP_SceneDriver_C", "SetEnableGFur");
 
-	Params::BP_SceneDriver_C_SetEnableGfur Parms{};
+	Params::BP_SceneDriver_C_SetEnableGFur Parms{};
 
 	Parms.Enable = Enable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SceneDriver.BP_SceneDriver_C.SetupCharacterById
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EDriverId                               In_DriverId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SceneDriver_C::SetupCharacterById(EDriverId In_DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SceneDriver_C", "SetupCharacterById");
+
+	Params::BP_SceneDriver_C_SetupCharacterById Parms{};
+
+	Parms.In_DriverId = In_DriverId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

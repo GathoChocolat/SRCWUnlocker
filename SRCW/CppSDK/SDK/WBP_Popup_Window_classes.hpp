@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionUI_classes.hpp"
 
@@ -45,6 +45,7 @@ public:
 	double                                        ButtonControlTimer;                                // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        ButtonControlDelayTime;                            // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EnableInput;                                       // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnableButtonControl;                               // 0x0471(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AddFocusButton(const TArray<class UUnionUIButtonBase*>& ButtonArray);
@@ -183,6 +184,7 @@ static_assert(offsetof(UWBP_Popup_Window_C, ButtonControlState) == 0x00045C, "Me
 static_assert(offsetof(UWBP_Popup_Window_C, ButtonControlTimer) == 0x000460, "Member 'UWBP_Popup_Window_C::ButtonControlTimer' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Window_C, ButtonControlDelayTime) == 0x000468, "Member 'UWBP_Popup_Window_C::ButtonControlDelayTime' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Window_C, EnableInput) == 0x000470, "Member 'UWBP_Popup_Window_C::EnableInput' has a wrong offset!");
+static_assert(offsetof(UWBP_Popup_Window_C, EnableButtonControl) == 0x000471, "Member 'UWBP_Popup_Window_C::EnableButtonControl' has a wrong offset!");
 
 }
 

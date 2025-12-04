@@ -76,5 +76,19 @@ void UWBP_FestaInfo_C::SetTitle(const class FText& Title)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_FestaInfo.WBP_FestaInfo_C.SetupHeldPop
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaInfo_C::SetupHeldPop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaInfo_C", "SetupHeldPop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

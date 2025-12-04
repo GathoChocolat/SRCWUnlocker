@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.DisplaySlot
-// 0x00C0 (0x00C0 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot final
 {
 public:
@@ -28,160 +28,180 @@ public:
 	EGadgetId                                     gadgetId;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsNotEnable;                                       // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsKit;                                             // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_3;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_4;                              // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_8;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_9;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_5;                              // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_10;                             // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_11;                             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_6;                              // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_12;                             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_13;                             // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_7;                              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_14;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_15;                             // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_8;                              // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_16;                             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_17;                             // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_4;                           // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_5;                           // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_6;                           // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_8;                           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_18;                             // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_19;                             // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_9;                              // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_20;                             // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_9;                           // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_21;                             // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_10;                             // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_10;                          // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_3;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_4;         // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_5;         // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_6;         // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_7;         // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_8;         // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_9;         // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_10;        // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_11;        // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_12;        // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_13;        // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_22;                             // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_23;                             // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x00B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x00B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_2;                 // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_11;                             // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_11;                          // 0x00BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_3;                 // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_5;          // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_3;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_8;                              // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_9;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_10;                             // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_11;                             // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_5;                              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_12;                             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_13;                             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_6;                              // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_14;                             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_15;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_7;                              // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_16;                             // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_17;                             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_8;                              // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_18;                             // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_19;                             // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_9;                              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_20;                             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_21;                             // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_10;                             // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_4;                           // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_5;                           // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_6;                           // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_8;                           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_9;                           // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_10;                          // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_22;                             // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_23;                             // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_11;                             // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_11;                          // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_12;                             // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     K2Node_Select_Default_12;                          // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_3;         // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_4;         // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_5;         // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_6;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_7;         // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_8;         // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_9;         // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_10;        // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_11;        // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_12;        // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_13;        // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x00E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_2;                 // 0x00F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_13;                             // 0x00F3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     K2Node_Select_Default_13;                          // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_3;                 // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_5;          // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot");
-static_assert(sizeof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot) == 0x0000C0, "Wrong size on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot");
+static_assert(sizeof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot) == 0x000108, "Wrong size on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, SlotIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::SlotIndex' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, SlotNum) == 0x000004, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::SlotNum' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, gadgetId) == 0x000008, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::gadgetId' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, IsNotEnable) == 0x000009, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::IsNotEnable' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, IsKit) == 0x00000A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::IsKit' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable) == 0x00000B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable) == 0x00000C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_1) == 0x00000D, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_1) == 0x00000E, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_2) == 0x00000F, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_3) == 0x000010, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_2) == 0x000011, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_4) == 0x000012, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_5) == 0x000013, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_3) == 0x000014, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_6) == 0x000015, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_7) == 0x000016, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_4) == 0x000017, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_8) == 0x000018, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_9) == 0x000019, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_5) == 0x00001A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_10) == 0x00001B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_11) == 0x00001C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_6) == 0x00001D, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_12) == 0x00001E, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_12' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_13) == 0x00001F, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_13' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_7) == 0x000020, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_14) == 0x000021, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_14' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_15) == 0x000022, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_15' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_8) == 0x000023, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_16) == 0x000024, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_16' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_17) == 0x000025, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_17' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000030, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default) == 0x000038, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_1) == 0x000039, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_2) == 0x00003A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_3) == 0x00003B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_4) == 0x00003C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_5) == 0x00003D, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_6) == 0x00003E, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_7) == 0x00003F, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_8) == 0x000040, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_18) == 0x000041, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_18' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_19) == 0x000042, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_19' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_9) == 0x000043, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_9' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_20) == 0x000044, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_20' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_9) == 0x000045, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_9' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_21) == 0x000046, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_21' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_10) == 0x000047, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_10' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_10) == 0x000048, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_10' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000050, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_3) == 0x000058, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_4) == 0x000060, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_5) == 0x000068, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_6) == 0x000070, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_7) == 0x000078, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_8) == 0x000080, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_9) == 0x000088, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_10) == 0x000090, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_11) == 0x000098, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_12) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_13) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_22) == 0x0000B0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_22' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B1, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess) == 0x0000B2, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000B3, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess_1) == 0x0000B4, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_23) == 0x0000B5, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_23' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0000B6, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x0000B7, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess_2) == 0x0000B8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_11) == 0x0000B9, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_11' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x0000BA, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_11) == 0x0000BB, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_11' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess_3) == 0x0000BC, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_5) == 0x0000BD, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable) == 0x00000B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_1) == 0x00000C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable) == 0x00000D, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_2) == 0x00000E, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_3) == 0x00000F, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_1) == 0x000010, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_4) == 0x000011, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_5) == 0x000012, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_2) == 0x000013, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_6) == 0x000014, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_6' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_7) == 0x000015, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_7' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_3) == 0x000016, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_8) == 0x000017, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_8' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_9) == 0x000018, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_9' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_4) == 0x000019, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_10) == 0x00001A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_10' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_11) == 0x00001B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_11' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_5) == 0x00001C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_12) == 0x00001D, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_12' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_13) == 0x00001E, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_13' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_6) == 0x00001F, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_14) == 0x000020, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_14' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_15) == 0x000021, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_15' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_7) == 0x000022, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_7' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_16) == 0x000023, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_16' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_17) == 0x000024, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_17' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_8) == 0x000025, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_8' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_18) == 0x000026, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_18' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_19) == 0x000027, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_19' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_9) == 0x000028, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_9' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_20) == 0x000029, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_20' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_21) == 0x00002A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_21' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_10) == 0x00002B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_10' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000038, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default) == 0x000040, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_1) == 0x000041, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_2) == 0x000042, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_3) == 0x000043, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_4) == 0x000044, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_5) == 0x000045, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_6) == 0x000046, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_6' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_7) == 0x000047, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_7' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_8) == 0x000048, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_8' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_9) == 0x000049, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_9' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_10) == 0x00004A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_10' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_22) == 0x00004B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_22' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_byte_Variable_23) == 0x00004C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_byte_Variable_23' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_11) == 0x00004D, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_11' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_object_Variable) == 0x000050, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_11) == 0x000058, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_11' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_object_Variable_1) == 0x000060, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_12) == 0x000068, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_12' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_12) == 0x000070, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_12' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000078, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_3) == 0x000080, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_4) == 0x000088, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_5) == 0x000090, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_6) == 0x000098, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_7) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_8) == 0x0000A8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_9) == 0x0000B0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_10) == 0x0000B8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_11) == 0x0000C0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_12) == 0x0000C8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_12' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_GetDynamicMaterial_ReturnValue_13) == 0x0000D0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_GetDynamicMaterial_ReturnValue_13' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_object_Variable_2) == 0x0000D8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000E0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess) == 0x0000E1, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000E2, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess_1) == 0x0000E3, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_object_Variable_3) == 0x0000E8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x0000F1, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess_2) == 0x0000F2, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, Temp_bool_Variable_13) == 0x0000F3, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::Temp_bool_Variable_13' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x0000F4, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_Select_Default_13) == 0x0000F8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_Select_Default_13' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, K2Node_SwitchInteger_CmpSuccess_3) == 0x000100, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::K2Node_SwitchInteger_CmpSuccess_3' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot, CallFunc_EqualEqual_IntInt_ReturnValue_5) == 0x000101, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_DisplaySlot::CallFunc_EqualEqual_IntInt_ReturnValue_5' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.ExecuteUbergraph_WBP_Race_HUD_Sub_GadgetIcon_Simple
 // 0x0018 (0x0018 - 0x0000)
@@ -244,6 +264,35 @@ static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlot, K2Node_Sele
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlot, K2Node_Select_Default_2) == 0x000040, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlot::K2Node_Select_Default_2' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlot, K2Node_Select_Default_3) == 0x000048, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlot::K2Node_Select_Default_3' has a wrong offset!");
 
+// Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.GetSlotEX
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX final
+{
+public:
+	int32                                         SlotSize;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SlotIndex;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBorder*                                Slot_0;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Icon;                                              // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 TargetIcon;                                        // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UBorder*                                TargetSlot;                                        // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX");
+static_assert(sizeof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX) == 0x000030, "Wrong size on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, SlotSize) == 0x000000, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::SlotSize' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, SlotIndex) == 0x000004, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::SlotIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, Slot_0) == 0x000008, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::Slot_0' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, Icon) == 0x000010, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::Icon' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, TargetIcon) == 0x000018, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::TargetIcon' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, TargetSlot) == 0x000020, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::TargetSlot' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000029, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, K2Node_SwitchInteger_CmpSuccess) == 0x00002A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX, K2Node_SwitchInteger_CmpSuccess_1) == 0x00002B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
+
 // Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.Initialize
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_Race_HUD_Sub_GadgetIcon_Simple_C_Initialize final
@@ -300,6 +349,59 @@ static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetEffectiveIcon, Ca
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetEffectiveIcon, CallFunc_Map_Find_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetEffectiveIcon::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetEffectiveIcon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetEffectiveIcon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetEffectiveIcon, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000028, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetEffectiveIcon::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+
+// Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.SetGadgetEX
+// 0x0128 (0x0128 - 0x0000)
+struct WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX final
+{
+public:
+	int32                                         NextIndex;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EGadgetId>                             CallFunc_GetAdditionalGadgetIds_ReturnValue;       // 0x0010(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     CallFunc_Array_Get_Item;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGadgetData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0030(0x00C0)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIsGadgetReleased_ReturnValue;          // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F2[0x2];                                       // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBorder*                                CallFunc_GetSlotEX_Slot;                           // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 CallFunc_GetSlotEX_Icon;                           // 0x0108(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGadgetKit_ReturnValue;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX");
+static_assert(sizeof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX) == 0x000128, "Wrong size on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, NextIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::NextIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetAdditionalGadgetIds_ReturnValue) == 0x000010, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetAdditionalGadgetIds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_Array_Get_Item) == 0x000024, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_Greater_IntInt_ReturnValue) == 0x000025, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetEnumeratorName_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetDataTableRowFromName_OutRow) == 0x000030, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000F0, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetIsGadgetReleased_ReturnValue) == 0x0000F1, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetIsGadgetReleased_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_Array_Length_ReturnValue_1) == 0x0000F4, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000F8, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_Less_IntInt_ReturnValue) == 0x0000FC, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetSlotEX_Slot) == 0x000100, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetSlotEX_Slot' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetSlotEX_Icon) == 0x000108, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetSlotEX_Icon' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_IsGadgetKit_ReturnValue) == 0x000110, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_IsGadgetKit_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000118, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX, CallFunc_IsValid_ReturnValue) == 0x000120, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetGadgetEX::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.SetGhostPlateData
 // 0x0128 (0x0128 - 0x0000)
@@ -384,7 +486,7 @@ static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetLockPlate, CallFu
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetLockPlate, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000058, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetLockPlate::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.SetPlateData
-// 0x0168 (0x0168 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData final
 {
 public:
@@ -397,38 +499,41 @@ public:
 	EGadgetPlateId                                NewLocalVar;                                       // 0x0029(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetRacerIndexByPlayerID_ReturnValue;      // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGadgetPlateUIData                     CallFunc_GetRacerGadgetPlateData_OutGadgetPlateData; // 0x0030(0x0028)()
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUserGadgetData                        CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(NoDestructor)
-	bool                                          CallFunc_GetIsGadgetReleased_ReturnValue;          // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGadgetPlateUIData                     CallFunc_GetRacerGadgetPlateData_OutGadgetPlateData; // 0x0038(0x0028)()
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     Temp_byte_Variable;                                // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EGadgetId                                     K2Node_Select_Default;                             // 0x007B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x007C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGadgetData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0088(0x00C0)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14A[0x2];                                      // 0x014A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UImage*                                 CallFunc_GetSlot_IconSlot;                         // 0x0158(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGadgetKit_ReturnValue;                  // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNotEnableGadget_ReturnValue;            // 0x0162(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0163(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUserGadgetData                        CallFunc_Array_Get_Item;                           // 0x006C(0x0008)(NoDestructor)
+	bool                                          CallFunc_GetIsGadgetReleased_ReturnValue;          // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     Temp_byte_Variable;                                // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGadgetId                                     K2Node_Select_Default;                             // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_86[0x2];                                       // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGadgetData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0090(0x00C0)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_152[0x2];                                      // 0x0152(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UImage*                                 CallFunc_GetSlot_IconSlot;                         // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGadgetKit_ReturnValue;                  // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNotEnableGadget_ReturnValue;            // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x016B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData");
-static_assert(sizeof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData) == 0x000168, "Wrong size on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData");
+static_assert(sizeof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData) == 0x000170, "Wrong size on WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, PlayerIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, IsGhostReplay) == 0x000004, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::IsGhostReplay' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, GhostGadgetData) == 0x000008, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::GhostGadgetData' has a wrong offset!");
@@ -436,30 +541,30 @@ static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, TmpOve
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, IsOverride) == 0x000028, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::IsOverride' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, NewLocalVar) == 0x000029, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::NewLocalVar' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetRacerIndexByPlayerID_ReturnValue) == 0x00002C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetRacerIndexByPlayerID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetRacerGadgetPlateData_OutGadgetPlateData) == 0x000030, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetRacerGadgetPlateData_OutGadgetPlateData' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_int_Array_Index_Variable) == 0x000058, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Array_Get_Item) == 0x000060, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetIsGadgetReleased_ReturnValue) == 0x000068, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetIsGadgetReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_int_Loop_Counter_Variable) == 0x00006C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_bool_Variable) == 0x000070, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Less_IntInt_ReturnValue) == 0x000071, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Add_IntInt_ReturnValue) == 0x000074, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000078, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000079, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_byte_Variable) == 0x00007A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, K2Node_Select_Default) == 0x00007B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetEnumeratorName_ReturnValue) == 0x00007C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetDataTableRowFromName_OutRow) == 0x000088, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000148, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Not_PreBool_ReturnValue) == 0x000149, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Subtract_IntInt_ReturnValue) == 0x00014C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_BooleanAND_ReturnValue) == 0x000150, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetSlot_IconSlot) == 0x000158, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetSlot_IconSlot' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_IsGadgetKit_ReturnValue) == 0x000160, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_IsGadgetKit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000161, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_IsNotEnableGadget_ReturnValue) == 0x000162, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_IsNotEnableGadget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_BooleanOR_ReturnValue) == 0x000163, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetRacerGadgetPlateData_OutGadgetPlateData) == 0x000038, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetRacerGadgetPlateData_OutGadgetPlateData' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetSelectedGameModeId_ReturnValue) == 0x000060, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetSelectedGameModeId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_int_Array_Index_Variable) == 0x000064, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000068, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Array_Get_Item) == 0x00006C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetIsGadgetReleased_ReturnValue) == 0x000074, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetIsGadgetReleased_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_int_Loop_Counter_Variable) == 0x000078, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_bool_Variable) == 0x00007C, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Less_IntInt_ReturnValue) == 0x00007D, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Add_IntInt_ReturnValue) == 0x000080, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, Temp_byte_Variable) == 0x000084, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, K2Node_Select_Default) == 0x000085, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetEnumeratorName_ReturnValue) == 0x000088, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetDataTableRowFromName_OutRow) == 0x000090, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000150, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Not_PreBool_ReturnValue) == 0x000151, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_Subtract_IntInt_ReturnValue) == 0x000154, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_BooleanAND_ReturnValue) == 0x000158, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_GetSlot_IconSlot) == 0x000160, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_GetSlot_IconSlot' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_IsGadgetKit_ReturnValue) == 0x000168, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_IsGadgetKit_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000169, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_IsNotEnableGadget_ReturnValue) == 0x00016A, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_IsNotEnableGadget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData, CallFunc_BooleanOR_ReturnValue) == 0x00016B, "Member 'WBP_Race_HUD_Sub_GadgetIcon_Simple_C_SetPlateData::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 }
 

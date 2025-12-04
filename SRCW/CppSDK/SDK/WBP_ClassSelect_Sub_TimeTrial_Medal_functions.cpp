@@ -51,35 +51,13 @@ void UWBP_ClassSelect_Sub_TimeTrial_Medal_C::ExecuteUbergraph_WBP_ClassSelect_Su
 }
 
 
-// Function WBP_ClassSelect_Sub_TimeTrial_Medal.WBP_ClassSelect_Sub_TimeTrial_Medal_C.SetTimeTrialDLCMedalCount
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   DLCMedalCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   DLCMedalMax                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ClassSelect_Sub_TimeTrial_Medal_C::SetTimeTrialDLCMedalCount(int32 DLCMedalCount, int32 DLCMedalMax)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ClassSelect_Sub_TimeTrial_Medal_C", "SetTimeTrialDLCMedalCount");
-
-	Params::WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialDLCMedalCount Parms{};
-
-	Parms.DLCMedalCount = DLCMedalCount;
-	Parms.DLCMedalMax = DLCMedalMax;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ClassSelect_Sub_TimeTrial_Medal.WBP_ClassSelect_Sub_TimeTrial_Medal_C.SetTimeTrialMedalCount
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NormalMedalCount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NormalMedalMax                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MedalCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MedalMax                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ClassSelect_Sub_TimeTrial_Medal_C::SetTimeTrialMedalCount(int32 NormalMedalCount, int32 NormalMedalMax)
+void UWBP_ClassSelect_Sub_TimeTrial_Medal_C::SetTimeTrialMedalCount(int32 MedalCount, int32 MedalMax)
 {
 	static class UFunction* Func = nullptr;
 
@@ -88,8 +66,8 @@ void UWBP_ClassSelect_Sub_TimeTrial_Medal_C::SetTimeTrialMedalCount(int32 Normal
 
 	Params::WBP_ClassSelect_Sub_TimeTrial_Medal_C_SetTimeTrialMedalCount Parms{};
 
-	Parms.NormalMedalCount = NormalMedalCount;
-	Parms.NormalMedalMax = NormalMedalMax;
+	Parms.MedalCount = MedalCount;
+	Parms.MedalMax = MedalMax;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

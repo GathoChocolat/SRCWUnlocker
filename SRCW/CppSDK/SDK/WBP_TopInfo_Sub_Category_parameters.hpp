@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UNION_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -141,6 +141,17 @@ static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupFreecontentInfo, Title) =
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupFreecontentInfo, Schedule) == 0x000010, "Member 'WBP_TopInfo_Sub_Category_C_SetupFreecontentInfo::Schedule' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupFreecontentInfo, Texture) == 0x000020, "Member 'WBP_TopInfo_Sub_Category_C_SetupFreecontentInfo::Texture' has a wrong offset!");
 
+// Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.SetupLegendInfo
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_TopInfo_Sub_Category_C_SetupLegendInfo final
+{
+public:
+	struct FLegendCompeInfoDispData               DispData;                                          // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_TopInfo_Sub_Category_C_SetupLegendInfo) == 0x000008, "Wrong alignment on WBP_TopInfo_Sub_Category_C_SetupLegendInfo");
+static_assert(sizeof(WBP_TopInfo_Sub_Category_C_SetupLegendInfo) == 0x000030, "Wrong size on WBP_TopInfo_Sub_Category_C_SetupLegendInfo");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupLegendInfo, DispData) == 0x000000, "Member 'WBP_TopInfo_Sub_Category_C_SetupLegendInfo::DispData' has a wrong offset!");
+
 // Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.SetupWorldMatchInfo
 // 0x0068 (0x0068 - 0x0000)
 struct WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo final
@@ -158,12 +169,12 @@ public:
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRateRankUIData                        CallFunc_GetRateRankUIData_ReturnValue;            // 0x0024(0x000C)(NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_InRangeB_ImplicitCast;    // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FClamp_Value_ImplicitCast;                // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_MapRangeClamped_InRangeA_ImplicitCast;    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -178,50 +189,39 @@ static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000021, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_GetRateRankUIData_ReturnValue) == 0x000024, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_GetRateRankUIData_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_BooleanOR_ReturnValue) == 0x000030, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_MapRangeClamped_ReturnValue) == 0x000038, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_FTrunc_ReturnValue) == 0x000040, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_FTrunc_ReturnValue) == 0x000034, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_FClamp_ReturnValue) == 0x000038, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_MapRangeClamped_ReturnValue) == 0x000040, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, K2Node_Select_Default) == 0x000048, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_MapRangeClamped_InRangeB_ImplicitCast) == 0x000050, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_MapRangeClamped_InRangeB_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_FClamp_Value_ImplicitCast) == 0x000050, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_FClamp_Value_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_FTrunc_A_ImplicitCast) == 0x000058, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo, CallFunc_MapRangeClamped_InRangeA_ImplicitCast) == 0x000060, "Member 'WBP_TopInfo_Sub_Category_C_SetupWorldMatchInfo::CallFunc_MapRangeClamped_InRangeA_ImplicitCast' has a wrong offset!");
 
 // Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.UpdateButtonAnim
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct WBP_TopInfo_Sub_Category_C_UpdateButtonAnim final
 {
 public:
-	bool                                          IsWorldMatch;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETopInfoWidgetPageCategory                    Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSelect;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Popup_Sub_Btn_Standard_C*          L_Target;                                          // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim) == 0x000008, "Wrong alignment on WBP_TopInfo_Sub_Category_C_UpdateButtonAnim");
-static_assert(sizeof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim) == 0x000020, "Wrong size on WBP_TopInfo_Sub_Category_C_UpdateButtonAnim");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, IsWorldMatch) == 0x000000, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::IsWorldMatch' has a wrong offset!");
+static_assert(sizeof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim) == 0x000028, "Wrong size on WBP_TopInfo_Sub_Category_C_UpdateButtonAnim");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, Category) == 0x000000, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::Category' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, IsSelect) == 0x000001, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::IsSelect' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, L_Target) == 0x000008, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::L_Target' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, CallFunc_PlayAnimationForward_ReturnValue) == 0x000010, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000018, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.UpdateButtonFocus
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_TopInfo_Sub_Category_C_UpdateButtonFocus final
-{
-public:
-	ETopInfoWidgetPageCategory                    PageCategory;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonFocus;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_TopInfo_Sub_Category_C_UpdateButtonFocus) == 0x000001, "Wrong alignment on WBP_TopInfo_Sub_Category_C_UpdateButtonFocus");
-static_assert(sizeof(WBP_TopInfo_Sub_Category_C_UpdateButtonFocus) == 0x000003, "Wrong size on WBP_TopInfo_Sub_Category_C_UpdateButtonFocus");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonFocus, PageCategory) == 0x000000, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonFocus::PageCategory' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonFocus, ButtonFocus) == 0x000001, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonFocus::ButtonFocus' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonFocus, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonFocus::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, CallFunc_PlayAnimationForward_ReturnValue) == 0x000018, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdateButtonAnim, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000020, "Member 'WBP_TopInfo_Sub_Category_C_UpdateButtonAnim::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
 
 // Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.UpdatePageDisplay
-// 0x0010 (0x0010 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct WBP_TopInfo_Sub_Category_C_UpdatePageDisplay final
 {
 public:
@@ -229,24 +229,21 @@ public:
 	bool                                          ButtonFocus;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsNew;                                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay) == 0x000004, "Wrong alignment on WBP_TopInfo_Sub_Category_C_UpdatePageDisplay");
-static_assert(sizeof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay) == 0x000010, "Wrong size on WBP_TopInfo_Sub_Category_C_UpdatePageDisplay");
+static_assert(sizeof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay) == 0x00000C, "Wrong size on WBP_TopInfo_Sub_Category_C_UpdatePageDisplay");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, PageCategory) == 0x000000, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::PageCategory' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, ButtonFocus) == 0x000001, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::ButtonFocus' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, IsNew) == 0x000002, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::IsNew' has a wrong offset!");
 static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, Temp_byte_Variable) == 0x000003, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000008, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, Temp_byte_Variable_1) == 0x00000C, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, Temp_bool_Variable) == 0x00000D, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, K2Node_Select_Default) == 0x00000E, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, Temp_byte_Variable_1) == 0x000008, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, Temp_bool_Variable) == 0x000009, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_TopInfo_Sub_Category_C_UpdatePageDisplay, K2Node_Select_Default) == 0x00000A, "Member 'WBP_TopInfo_Sub_Category_C_UpdatePageDisplay::K2Node_Select_Default' has a wrong offset!");
 
 }
 

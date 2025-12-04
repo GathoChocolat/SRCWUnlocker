@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -482,7 +482,7 @@ static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_
 static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000060, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDirverIcon::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetDisplayInfo
-// 0x04B8 (0x04B8 - 0x0000)
+// 0x08B0 (0x08B0 - 0x0000)
 struct WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo final
 {
 public:
@@ -491,98 +491,120 @@ public:
 	TArray<int32>                                 CallFunc_Map_Keys_Keys;                            // 0x0008(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverId                                     Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRacerIndexByPlayerID_ReturnValue;      // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacer*                            CallFunc_Map_Find_Value;                           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue;         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetGroupIndex_ReturnValue;                // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue;          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item;                           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionRacer*                            CallFunc_Map_Find_Value_1;                         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue_1;       // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRaceParkRivalRacerSkin_ReturnValue;     // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRacerIndex_OutRacerIndex;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetIsCharacterReleased_ReturnValue;       // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue_1;            // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetGroupIndex_ReturnValue_1;              // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverId                                     Temp_byte_Variable;                                // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EDriverId                                     K2Node_Select_Default;                             // 0x008E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8F[0x1];                                       // 0x008F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionRacers*                           CallFunc_GetUnionRacers_ReturnValue;               // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x00A0(0x0390)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431[0x7];                                      // 0x0431(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0438(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x0440(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0458(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_461[0x7];                                      // 0x0461(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0468(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1; // 0x0490(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0030(0x0390)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x03C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D1[0x7];                                      // 0x03D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E1[0x7];                                      // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x03E8(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_411[0x3];                                      // 0x0411(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0414(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0418(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRacerIndexByPlayerID_ReturnValue;      // 0x041C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacer*                            CallFunc_Map_Find_Value;                           // 0x0420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_429[0x7];                                      // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue;         // 0x0430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetGroupIndex_ReturnValue;                // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x043C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerRacerIndex_ReturnValue;          // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item;                           // 0x0444(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUnionRacer*                            CallFunc_Map_Find_Value_1;                         // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0451(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_452[0x6];                                      // 0x0452(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionRacerStatusObject*                CallFunc_GetRacerStatusObject_ReturnValue_1;       // 0x0458(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRaceParkRivalRacerSkin_ReturnValue;     // 0x0464(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_465[0x3];                                      // 0x0465(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRacerIndex_OutRacerIndex;              // 0x0468(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIsCharacterReleased_ReturnValue;       // 0x046C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_46D[0x3];                                      // 0x046D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0470(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue_1;            // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EDriverId                                     K2Node_Select_Default;                             // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_479[0x3];                                      // 0x0479(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetGroupIndex_ReturnValue_1;              // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetEnumeratorName_ReturnValue_1;          // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_489[0x7];                                      // 0x0489(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0490(0x0390)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0820(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_821[0x7];                                      // 0x0821(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x0828(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_2;         // 0x0830(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0838(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0840(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_841[0x7];                                      // 0x0841(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_2;                    // 0x0848(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0850(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_851[0x7];                                      // 0x0851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1; // 0x0858(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2; // 0x0880(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	class UUnionRacers*                           CallFunc_GetUnionRacers_ReturnValue;               // 0x08A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo");
-static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo) == 0x0004B8, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo");
+static_assert(sizeof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo) == 0x0008B0, "Wrong size on WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo");
 static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, PlayerIndex) == 0x000000, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Keys_Keys) == 0x000008, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Keys_Keys' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_bool_Variable) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Length_ReturnValue_1) == 0x000024, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Add_ReturnValue) == 0x000028, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerIndexByPlayerID_ReturnValue) == 0x00002C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerIndexByPlayerID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_Value) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_ReturnValue) == 0x000038, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000040, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetGroupIndex_ReturnValue) == 0x000048, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetGroupIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_int_Variable) == 0x00004C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetPlayerRacerIndex_ReturnValue) == 0x000050, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetPlayerRacerIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Get_Item) == 0x000054, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_Value_1) == 0x000058, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_ReturnValue_1) == 0x000060, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000061, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerStatusObject_ReturnValue_1) == 0x000068, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerStatusObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_IsRaceParkRivalRacerSkin_ReturnValue) == 0x000074, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_IsRaceParkRivalRacerSkin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerIndex_OutRacerIndex) == 0x000078, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerIndex_OutRacerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetIsCharacterReleased_ReturnValue) == 0x00007C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetIsCharacterReleased_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_AddUnique_ReturnValue) == 0x000080, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_AddUnique_ReturnValue_1) == 0x000084, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_AddUnique_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetGroupIndex_ReturnValue_1) == 0x000088, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetGroupIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_byte_Variable) == 0x00008C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00008D, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_Select_Default) == 0x00008E, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetUnionRacers_ReturnValue) == 0x000090, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetUnionRacers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetEnumeratorName_ReturnValue) == 0x000098, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000A0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000430, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000438, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000440, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D) == 0x000448, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess) == 0x000450, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D_1) == 0x000458, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess_1) == 0x000460, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000468, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1) == 0x000490, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_byte_Variable) == 0x000020, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_MakeLiteralByte_ReturnValue) == 0x000021, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetEnumeratorName_ReturnValue) == 0x000024, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetEnumeratorName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_OutRow) == 0x000030, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0003C0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x0003C8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_IsValid_ReturnValue) == 0x0003D0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D) == 0x0003D8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess) == 0x0003E0, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x0003E8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_bool_Variable) == 0x000410, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Length_ReturnValue_1) == 0x000414, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Add_ReturnValue) == 0x000418, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerIndexByPlayerID_ReturnValue) == 0x00041C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerIndexByPlayerID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_Value) == 0x000420, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_ReturnValue) == 0x000428, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerStatusObject_ReturnValue) == 0x000430, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerStatusObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetGroupIndex_ReturnValue) == 0x000438, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetGroupIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, Temp_int_Variable) == 0x00043C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetPlayerRacerIndex_ReturnValue) == 0x000440, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetPlayerRacerIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_Get_Item) == 0x000444, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_Value_1) == 0x000448, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Map_Find_ReturnValue_1) == 0x000450, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000451, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerStatusObject_ReturnValue_1) == 0x000458, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerStatusObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Add_IntInt_ReturnValue) == 0x000460, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_IsRaceParkRivalRacerSkin_ReturnValue) == 0x000464, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_IsRaceParkRivalRacerSkin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetRacerIndex_OutRacerIndex) == 0x000468, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetRacerIndex_OutRacerIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetIsCharacterReleased_ReturnValue) == 0x00046C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetIsCharacterReleased_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_AddUnique_ReturnValue) == 0x000470, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Array_AddUnique_ReturnValue_1) == 0x000474, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Array_AddUnique_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_Select_Default) == 0x000478, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetGroupIndex_ReturnValue_1) == 0x00047C, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetGroupIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetEnumeratorName_ReturnValue_1) == 0x000480, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetEnumeratorName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000488, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000490, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000820, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue_1) == 0x000828, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_LoadAsset_Blocking_ReturnValue_2) == 0x000830, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_LoadAsset_Blocking_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D_1) == 0x000838, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess_1) == 0x000840, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_As_____2D_2) == 0x000848, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_As_____2D_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, K2Node_DynamicCast_bSuccess_2) == 0x000850, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1) == 0x000858, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2) == 0x000880, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo, CallFunc_GetUnionRacers_ReturnValue) == 0x0008A8, "Member 'WBP_Race_HUD_Sub_Festa_TeamHUD_C_SetDisplayInfo::CallFunc_GetUnionRacers_ReturnValue' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_Festa_TeamHUD.WBP_Race_HUD_Sub_Festa_TeamHUD_C.SetModeBattleRush
 // 0x0001 (0x0001 - 0x0000)

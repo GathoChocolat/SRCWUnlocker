@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -37,13 +37,14 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_Pict;                               // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EnableBlinkLoopAnim;                               // 0x0364(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          bVisible;                                          // 0x0365(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_CMN_MessageBar(int32 EntryPoint);
 	void PlayInAnim();
 	void PlayOutAnim();
 	void SetText(const class FText& InText);
-	void SetupDisableGadgetMessage();
+	void SetupDisableGadgetMessage(bool bEnableBlinkLoop);
 	void SetWaitingTextVisible(bool bInIsVisible);
 	void SetWarningIconVisible(bool bInIsVisible);
 	void SetWidgetSwitcherActiveWidgetIndex(int32 Index_0);
@@ -77,6 +78,7 @@ static_assert(offsetof(UWBP_CMN_MessageBar_C, TXT_Waiting_Before) == 0x000350, "
 static_assert(offsetof(UWBP_CMN_MessageBar_C, WidgetSwitcher_Pict) == 0x000358, "Member 'UWBP_CMN_MessageBar_C::WidgetSwitcher_Pict' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_MessageBar_C, Count) == 0x000360, "Member 'UWBP_CMN_MessageBar_C::Count' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_MessageBar_C, EnableBlinkLoopAnim) == 0x000364, "Member 'UWBP_CMN_MessageBar_C::EnableBlinkLoopAnim' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_MessageBar_C, bVisible) == 0x000365, "Member 'UWBP_CMN_MessageBar_C::bVisible' has a wrong offset!");
 
 }
 

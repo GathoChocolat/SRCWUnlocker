@@ -447,6 +447,26 @@ void UWBP_CourseSelect_TimeTrial_C::OnStageDecisionEvent(EStageId SelectedStageI
 }
 
 
+// Function WBP_CourseSelect_TimeTrial.WBP_CourseSelect_TimeTrial_C.OnStoreShortcutPressed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EStageId                                StageId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CourseSelect_TimeTrial_C::OnStoreShortcutPressed(EStageId StageId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CourseSelect_TimeTrial_C", "OnStoreShortcutPressed");
+
+	Params::WBP_CourseSelect_TimeTrial_C_OnStoreShortcutPressed Parms{};
+
+	Parms.StageId = StageId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_CourseSelect_TimeTrial.WBP_CourseSelect_TimeTrial_C.OnThumbnailLeftButtonClicked
 // (BlueprintCallable, BlueprintEvent)
 

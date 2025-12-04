@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 
 
@@ -29,16 +29,18 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                OwnerPawn;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MenuDriverPawn_C_CreateDriver) == 0x000008, "Wrong alignment on BP_MenuDriverPawn_C_CreateDriver");
 static_assert(sizeof(BP_MenuDriverPawn_C_CreateDriver) == 0x000018, "Wrong size on BP_MenuDriverPawn_C_CreateDriver");
 static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, ID) == 0x000000, "Member 'BP_MenuDriverPawn_C_CreateDriver::ID' has a wrong offset!");
 static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, OwnerPawn) == 0x000008, "Member 'BP_MenuDriverPawn_C_CreateDriver::OwnerPawn' has a wrong offset!");
 static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000010, "Member 'BP_MenuDriverPawn_C_CreateDriver::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_MenuDriverPawn_C_CreateDriver::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000012, "Member 'BP_MenuDriverPawn_C_CreateDriver::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000011, "Member 'BP_MenuDriverPawn_C_CreateDriver::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_MenuDriverPawn_C_CreateDriver::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuDriverPawn_C_CreateDriver, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000013, "Member 'BP_MenuDriverPawn_C_CreateDriver::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
 
 // Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.ExecuteUbergraph_BP_MenuDriverPawn
 // 0x04A0 (0x04A0 - 0x0000)
@@ -531,16 +533,16 @@ static_assert(alignof(BP_MenuDriverPawn_C_SetAnimClass) == 0x000008, "Wrong alig
 static_assert(sizeof(BP_MenuDriverPawn_C_SetAnimClass) == 0x000008, "Wrong size on BP_MenuDriverPawn_C_SetAnimClass");
 static_assert(offsetof(BP_MenuDriverPawn_C_SetAnimClass, NewClass) == 0x000000, "Member 'BP_MenuDriverPawn_C_SetAnimClass::NewClass' has a wrong offset!");
 
-// Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.SetEnableGfur
+// Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.SetEnableGFur
 // 0x0001 (0x0001 - 0x0000)
-struct BP_MenuDriverPawn_C_SetEnableGfur final
+struct BP_MenuDriverPawn_C_SetEnableGFur final
 {
 public:
 	bool                                          Condition;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MenuDriverPawn_C_SetEnableGfur) == 0x000001, "Wrong alignment on BP_MenuDriverPawn_C_SetEnableGfur");
-static_assert(sizeof(BP_MenuDriverPawn_C_SetEnableGfur) == 0x000001, "Wrong size on BP_MenuDriverPawn_C_SetEnableGfur");
-static_assert(offsetof(BP_MenuDriverPawn_C_SetEnableGfur, Condition) == 0x000000, "Member 'BP_MenuDriverPawn_C_SetEnableGfur::Condition' has a wrong offset!");
+static_assert(alignof(BP_MenuDriverPawn_C_SetEnableGFur) == 0x000001, "Wrong alignment on BP_MenuDriverPawn_C_SetEnableGFur");
+static_assert(sizeof(BP_MenuDriverPawn_C_SetEnableGFur) == 0x000001, "Wrong size on BP_MenuDriverPawn_C_SetEnableGFur");
+static_assert(offsetof(BP_MenuDriverPawn_C_SetEnableGFur, Condition) == 0x000000, "Member 'BP_MenuDriverPawn_C_SetEnableGFur::Condition' has a wrong offset!");
 
 // Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.SetLightingChannels
 // 0x0003 (0x0003 - 0x0000)

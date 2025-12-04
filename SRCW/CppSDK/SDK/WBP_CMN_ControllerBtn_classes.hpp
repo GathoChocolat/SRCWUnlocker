@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CMN_ControllerBtn.WBP_CMN_ControllerBtn_C
-// 0x0030 (0x0360 - 0x0330)
+// 0x0030 (0x0368 - 0x0338)
 class UWBP_CMN_ControllerBtn_C final : public UCommonMenuControllerUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 base;                                              // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_Black;                                        // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               DSP_LongPressBtn;                                  // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Gauge;                                             // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         NewVar;                                            // 0x0358(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 base;                                              // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Black;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               DSP_LongPressBtn;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Gauge;                                             // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         NewVar;                                            // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -47,13 +47,13 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CMN_ControllerBtn_C) == 0x000008, "Wrong alignment on UWBP_CMN_ControllerBtn_C");
-static_assert(sizeof(UWBP_CMN_ControllerBtn_C) == 0x000360, "Wrong size on UWBP_CMN_ControllerBtn_C");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, UberGraphFrame) == 0x000330, "Member 'UWBP_CMN_ControllerBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, base) == 0x000338, "Member 'UWBP_CMN_ControllerBtn_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, Base_Black) == 0x000340, "Member 'UWBP_CMN_ControllerBtn_C::Base_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, DSP_LongPressBtn) == 0x000348, "Member 'UWBP_CMN_ControllerBtn_C::DSP_LongPressBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, Gauge) == 0x000350, "Member 'UWBP_CMN_ControllerBtn_C::Gauge' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_ControllerBtn_C, NewVar) == 0x000358, "Member 'UWBP_CMN_ControllerBtn_C::NewVar' has a wrong offset!");
+static_assert(sizeof(UWBP_CMN_ControllerBtn_C) == 0x000368, "Wrong size on UWBP_CMN_ControllerBtn_C");
+static_assert(offsetof(UWBP_CMN_ControllerBtn_C, UberGraphFrame) == 0x000338, "Member 'UWBP_CMN_ControllerBtn_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_ControllerBtn_C, base) == 0x000340, "Member 'UWBP_CMN_ControllerBtn_C::base' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_ControllerBtn_C, Base_Black) == 0x000348, "Member 'UWBP_CMN_ControllerBtn_C::Base_Black' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_ControllerBtn_C, DSP_LongPressBtn) == 0x000350, "Member 'UWBP_CMN_ControllerBtn_C::DSP_LongPressBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_ControllerBtn_C, Gauge) == 0x000358, "Member 'UWBP_CMN_ControllerBtn_C::Gauge' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_ControllerBtn_C, NewVar) == 0x000360, "Member 'UWBP_CMN_ControllerBtn_C::NewVar' has a wrong offset!");
 
 }
 

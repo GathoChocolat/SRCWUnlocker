@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Zero2_In;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero1_In;                                          // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Zero0_in;                                          // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero0_In;                                          // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 BG;                                                // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BG_Black;                                          // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 DashPanel;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -72,7 +72,7 @@ static_assert(sizeof(UWBP_EventTip_Festa_Monitor_Festa_C) == 0x0003D0, "Wrong si
 static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Zero2_In) == 0x0002E8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Zero2_In' has a wrong offset!");
 static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Zero1_In) == 0x0002F0, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Zero1_In' has a wrong offset!");
-static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Zero0_in) == 0x0002F8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Zero0_in' has a wrong offset!");
+static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, Zero0_In) == 0x0002F8, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::Zero0_In' has a wrong offset!");
 static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, BG) == 0x000300, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::BG' has a wrong offset!");
 static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, BG_Black) == 0x000308, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::BG_Black' has a wrong offset!");
 static_assert(offsetof(UWBP_EventTip_Festa_Monitor_Festa_C, DashPanel) == 0x000310, "Member 'UWBP_EventTip_Festa_Monitor_Festa_C::DashPanel' has a wrong offset!");

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "UMG_structs.hpp"
-#include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionLib_structs.hpp"
+#include "UnionUI_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -931,50 +931,51 @@ public:
 	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_26;    // 0x0E64(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_27;    // 0x0E74(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_28;           // 0x0E84(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E94[0x4];                                      // 0x0E94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsReadHint_ReturnValue_2;                 // 0x0E94(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_21;               // 0x0E95(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E96[0x2];                                      // 0x0E96(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_6;                          // 0x0E98(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0EA8(0x0010)()
 	bool                                          CallFunc_IsValid_ReturnValue_14;                   // 0x0EB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_EB9[0x7];                                      // 0x0EB9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_9;           // 0x0EC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_15;     // 0x0EC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC9[0x7];                                      // 0x0EC9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGrandPrixSequence*                     K2Node_DynamicCast_AsGrand_Prix_Sequence_6;        // 0x0ED0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_32;                    // 0x0ED8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_17;       // 0x0ED9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_15;                   // 0x0EDA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EDB[0x5];                                      // 0x0EDB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Temp_class_Variable_2;                             // 0x0EE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_ClassDynamicCast_AsWBP_Course_Select_Sub_Rival_Cutin; // 0x0EE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess_2;                // 0x0EF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EF1[0x7];                                      // 0x0EF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded_1;                       // 0x0EF8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class UWBP_CourseSelect_Sub_RivalCutin_C*     CallFunc_Create_ReturnValue_2;                     // 0x0F00(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_10;          // 0x0F08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_16;     // 0x0F10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F11[0x7];                                      // 0x0F11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGrandPrixSequence*                     K2Node_DynamicCast_AsGrand_Prix_Sequence_7;        // 0x0F18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_33;                    // 0x0F20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_18;       // 0x0F21(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_16;                   // 0x0F22(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F23[0x5];                                      // 0x0F23(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveDataManageSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue_5;   // 0x0F28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x0F30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F31[0x3];                                      // 0x0F31(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0F34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0F38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F39[0x7];                                      // 0x0F39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_6;   // 0x0F40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_17;                   // 0x0F48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F49[0x7];                                      // 0x0F49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EStageId>                              CallFunc_GetSelectedStageIds_ReturnValue;          // 0x0F50(0x0010)(ReferenceParm)
-	EStageId                                      CallFunc_Array_Random_OutItem;                     // 0x0F60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F61[0x3];                                      // 0x0F61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0F64(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetForceEnableMCEvent_ReturnValue_1;      // 0x0F68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERaceSettingSpecialMCEvent                    CallFunc_GetRaceSettingMCEvent_ReturnValue;        // 0x0F69(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_9;                    // 0x0F6A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F6B[0x5];                                      // 0x0F6B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGrandPrixSequence*                     K2Node_DynamicCast_AsGrand_Prix_Sequence_6;        // 0x0EC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_32;                    // 0x0ED0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_15;     // 0x0ED1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_17;       // 0x0ED2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_15;                   // 0x0ED3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_ED4[0x4];                                      // 0x0ED4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 Temp_class_Variable_2;                             // 0x0ED8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_ClassDynamicCast_AsWBP_Course_Select_Sub_Rival_Cutin; // 0x0EE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess_2;                // 0x0EE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EE9[0x7];                                      // 0x0EE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UObject>                    K2Node_CustomEvent_Loaded_1;                       // 0x0EF0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	class UWBP_CourseSelect_Sub_RivalCutin_C*     CallFunc_Create_ReturnValue_2;                     // 0x0EF8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_10;          // 0x0F00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_16;     // 0x0F08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F09[0x7];                                      // 0x0F09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGrandPrixSequence*                     K2Node_DynamicCast_AsGrand_Prix_Sequence_7;        // 0x0F10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_33;                    // 0x0F18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_18;       // 0x0F19(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_16;                   // 0x0F1A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F1B[0x5];                                      // 0x0F1B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveDataManageSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue_5;   // 0x0F20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x0F28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F29[0x3];                                      // 0x0F29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0F2C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0F30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F31[0x7];                                      // 0x0F31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_6;   // 0x0F38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_17;                   // 0x0F40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F41[0x7];                                      // 0x0F41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EStageId>                              CallFunc_GetSelectedStageIds_ReturnValue;          // 0x0F48(0x0010)(ReferenceParm)
+	EStageId                                      CallFunc_Array_Random_OutItem;                     // 0x0F58(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F59[0x3];                                      // 0x0F59(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0F5C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetForceEnableMCEvent_ReturnValue_1;      // 0x0F60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERaceSettingSpecialMCEvent                    CallFunc_GetRaceSettingMCEvent_ReturnValue;        // 0x0F61(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_9;                    // 0x0F62(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F63[0xD];                                      // 0x0F63(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0F70(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue_17;     // 0x0FD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_FD1[0x7];                                      // 0x0FD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1400,38 +1401,40 @@ static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, Cal
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_CreateDelegate_OutputDelegate_26) == 0x000E64, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_CreateDelegate_OutputDelegate_26' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_CreateDelegate_OutputDelegate_27) == 0x000E74, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_CreateDelegate_OutputDelegate_27' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_CreateDelegate_OutputDelegate_28) == 0x000E84, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_CreateDelegate_OutputDelegate_28' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsReadHint_ReturnValue_2) == 0x000E94, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsReadHint_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Not_PreBool_ReturnValue_21) == 0x000E95, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Not_PreBool_ReturnValue_21' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_MakeArray_Array_6) == 0x000E98, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_MakeArray_Array_6' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Format_ReturnValue_2) == 0x000EA8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Format_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsValid_ReturnValue_14) == 0x000EB8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetOwnerSequence_ReturnValue_9) == 0x000EC0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetOwnerSequence_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetSelectedGameModeId_ReturnValue_15) == 0x000EC8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetSelectedGameModeId_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_AsGrand_Prix_Sequence_6) == 0x000ED0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_AsGrand_Prix_Sequence_6' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_bSuccess_32) == 0x000ED8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_bSuccess_32' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_EqualEqual_ByteByte_ReturnValue_17) == 0x000ED9, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_EqualEqual_ByteByte_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsValid_ReturnValue_15) == 0x000EDA, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, Temp_class_Variable_2) == 0x000EE0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_ClassDynamicCast_AsWBP_Course_Select_Sub_Rival_Cutin) == 0x000EE8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_ClassDynamicCast_AsWBP_Course_Select_Sub_Rival_Cutin' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_ClassDynamicCast_bSuccess_2) == 0x000EF0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_ClassDynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_CustomEvent_Loaded_1) == 0x000EF8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Create_ReturnValue_2) == 0x000F00, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetOwnerSequence_ReturnValue_10) == 0x000F08, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetOwnerSequence_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetSelectedGameModeId_ReturnValue_16) == 0x000F10, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetSelectedGameModeId_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_AsGrand_Prix_Sequence_7) == 0x000F18, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_AsGrand_Prix_Sequence_7' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_bSuccess_33) == 0x000F20, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_bSuccess_33' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_EqualEqual_ByteByte_ReturnValue_18) == 0x000F21, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_EqualEqual_ByteByte_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsValid_ReturnValue_16) == 0x000F22, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x000F28, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000F30, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Array_Add_ReturnValue) == 0x000F34, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_CustomEvent_FadeDirection) == 0x000F38, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x000F40, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsValid_ReturnValue_17) == 0x000F48, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetSelectedStageIds_ReturnValue) == 0x000F50, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetSelectedStageIds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Array_Random_OutItem) == 0x000F60, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Array_Random_OutIndex) == 0x000F64, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetForceEnableMCEvent_ReturnValue_1) == 0x000F68, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetForceEnableMCEvent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetRaceSettingMCEvent_ReturnValue) == 0x000F69, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetRaceSettingMCEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_SwitchEnum_CmpSuccess_9) == 0x000F6A, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_SwitchEnum_CmpSuccess_9' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_AsGrand_Prix_Sequence_6) == 0x000EC8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_AsGrand_Prix_Sequence_6' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_bSuccess_32) == 0x000ED0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_bSuccess_32' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetSelectedGameModeId_ReturnValue_15) == 0x000ED1, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetSelectedGameModeId_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_EqualEqual_ByteByte_ReturnValue_17) == 0x000ED2, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_EqualEqual_ByteByte_ReturnValue_17' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsValid_ReturnValue_15) == 0x000ED3, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, Temp_class_Variable_2) == 0x000ED8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::Temp_class_Variable_2' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_ClassDynamicCast_AsWBP_Course_Select_Sub_Rival_Cutin) == 0x000EE0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_ClassDynamicCast_AsWBP_Course_Select_Sub_Rival_Cutin' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_ClassDynamicCast_bSuccess_2) == 0x000EE8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_ClassDynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_CustomEvent_Loaded_1) == 0x000EF0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Create_ReturnValue_2) == 0x000EF8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetOwnerSequence_ReturnValue_10) == 0x000F00, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetOwnerSequence_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetSelectedGameModeId_ReturnValue_16) == 0x000F08, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetSelectedGameModeId_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_AsGrand_Prix_Sequence_7) == 0x000F10, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_AsGrand_Prix_Sequence_7' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_DynamicCast_bSuccess_33) == 0x000F18, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_DynamicCast_bSuccess_33' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_EqualEqual_ByteByte_ReturnValue_18) == 0x000F19, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_EqualEqual_ByteByte_ReturnValue_18' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsValid_ReturnValue_16) == 0x000F1A, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x000F20, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x000F28, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Array_Add_ReturnValue) == 0x000F2C, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_CustomEvent_FadeDirection) == 0x000F30, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x000F38, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_IsValid_ReturnValue_17) == 0x000F40, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetSelectedStageIds_ReturnValue) == 0x000F48, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetSelectedStageIds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Array_Random_OutItem) == 0x000F58, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_Array_Random_OutIndex) == 0x000F5C, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetForceEnableMCEvent_ReturnValue_1) == 0x000F60, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetForceEnableMCEvent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetRaceSettingMCEvent_ReturnValue) == 0x000F61, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetRaceSettingMCEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, K2Node_SwitchEnum_CmpSuccess_9) == 0x000F62, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::K2Node_SwitchEnum_CmpSuccess_9' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_MakeTransform_ReturnValue) == 0x000F70, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_GetSelectedGameModeId_ReturnValue_17) == 0x000FD0, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_GetSelectedGameModeId_ReturnValue_17' has a wrong offset!");
 static_assert(offsetof(BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000FD8, "Member 'BPC_SelectCourse_C_ExecuteUbergraph_BPC_SelectCourse::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");

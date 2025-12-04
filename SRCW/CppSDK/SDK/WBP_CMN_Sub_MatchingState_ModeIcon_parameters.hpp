@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function WBP_CMN_Sub_MatchingState_ModeIcon.WBP_CMN_Sub_MatchingState_ModeIcon_C.ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon
-// 0x0028 (0x0028 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon final
 {
 public:
@@ -27,16 +27,14 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetTerminologyTextByText_ReturnValue;     // 0x0018(0x0010)()
 };
 static_assert(alignof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon) == 0x000028, "Wrong size on WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon");
+static_assert(sizeof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon) == 0x000018, "Wrong size on WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon, EntryPoint) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon, Temp_bool_Variable) == 0x000004, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon, K2Node_Event_bIsInAnim) == 0x000005, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon::K2Node_Event_bIsInAnim' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon, K2Node_Select_Default) == 0x000008, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000018, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
 
 // Function WBP_CMN_Sub_MatchingState_ModeIcon.WBP_CMN_Sub_MatchingState_ModeIcon_C.PlayModeIconAnim
 // 0x0018 (0x0018 - 0x0000)
@@ -70,7 +68,7 @@ static_assert(sizeof(WBP_CMN_Sub_MatchingState_ModeIcon_C_PlayOnlineModeIconAnim
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_PlayOnlineModeIconAnim, bIsInAnim) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_PlayOnlineModeIconAnim::bIsInAnim' has a wrong offset!");
 
 // Function WBP_CMN_Sub_MatchingState_ModeIcon.WBP_CMN_Sub_MatchingState_ModeIcon_C.SetModeIcon
-// 0x0020 (0x0020 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon final
 {
 public:
@@ -84,10 +82,14 @@ public:
 	int32                                         Temp_int_Variable_3;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_4;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_5;                               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0020(0x0010)()
+	int32                                         K2Node_Select_Default;                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetTerminologyTextByText_ReturnValue;     // 0x0038(0x0010)()
 };
-static_assert(alignof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon) == 0x000004, "Wrong alignment on WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon");
-static_assert(sizeof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon) == 0x000020, "Wrong size on WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon");
+static_assert(alignof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon) == 0x000008, "Wrong alignment on WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon");
+static_assert(sizeof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon) == 0x000048, "Wrong size on WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, InOnlineGameMode) == 0x000000, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::InOnlineGameMode' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, Temp_byte_Variable) == 0x000001, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -97,7 +99,9 @@ static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, Temp_in
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, Temp_int_Variable_3) == 0x000010, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::Temp_int_Variable_3' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, Temp_int_Variable_4) == 0x000014, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::Temp_int_Variable_4' has a wrong offset!");
 static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, Temp_int_Variable_5) == 0x000018, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, K2Node_Select_Default) == 0x00001C, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, CallFunc_MakeLiteralText_ReturnValue) == 0x000020, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, K2Node_Select_Default) == 0x000030, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon, CallFunc_GetTerminologyTextByText_ReturnValue) == 0x000038, "Member 'WBP_CMN_Sub_MatchingState_ModeIcon_C_SetModeIcon::CallFunc_GetTerminologyTextByText_ReturnValue' has a wrong offset!");
 
 }
 

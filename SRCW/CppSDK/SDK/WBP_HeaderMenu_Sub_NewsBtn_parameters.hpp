@@ -17,17 +17,138 @@ namespace SDK::Params
 {
 
 // Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn
-// 0x0014 (0x0014 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UObject*>                        CallFunc_GetRegisteredSubMenu_ReturnValue;         // 0x0040(0x0010)(ReferenceParm)
+	class UObject*                                CallFunc_GetRegisteredMenu_ReturnValue;            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn) == 0x000004, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn");
-static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn) == 0x000014, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn");
+static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn");
+static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn) == 0x000070, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn");
 static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, EntryPoint) == 0x000000, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, K2Node_DynamicCast_AsApp_Player_Controller) == 0x000030, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_GetRegisteredSubMenu_ReturnValue) == 0x000040, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_GetRegisteredSubMenu_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_GetRegisteredMenu_ReturnValue) == 0x000050, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_GetRegisteredMenu_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_IsValid_ReturnValue_1) == 0x000060, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_IsValid_ReturnValue_2) == 0x000061, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Array_Length_ReturnValue) == 0x000064, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+
+// Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.FireButtonEvent
+// 0x0148 (0x0148 - 0x0000)
+struct WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent final
+{
+public:
+	class UObject*                                Object;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface; // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_1; // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_2; // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_3; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_4; // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_5; // 0x0088(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_6; // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_7; // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_8; // 0x00D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_9; // 0x00E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_10; // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuInputRecieveInterface> K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_11; // 0x0118(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue_1;             // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue_2;             // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue_3;             // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue_4;             // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue_5;             // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent) == 0x000008, "Wrong alignment on WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent");
+static_assert(sizeof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent) == 0x000148, "Wrong size on WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, Object) == 0x000000, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::Object' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue) == 0x000008, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface) == 0x000010, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_1) == 0x000028, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_1' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_2) == 0x000040, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_2' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_2) == 0x000050, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_3) == 0x000058, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_3' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_3) == 0x000068, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_4) == 0x000070, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_4' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_4) == 0x000080, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_5) == 0x000088, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_5' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_5) == 0x000098, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_6) == 0x0000A0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_6' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_6) == 0x0000B0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_7) == 0x0000B8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_7' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_7) == 0x0000C8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_8) == 0x0000D0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_8' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_8) == 0x0000E0, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_9) == 0x0000E8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_9' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_9) == 0x0000F8, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_10) == 0x000100, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_10' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_10) == 0x000110, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_11) == 0x000118, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_AsMenu_Input_Recieve_Interface_11' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_DynamicCast_bSuccess_11) == 0x000128, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x00012C, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_IsValid_ReturnValue) == 0x000130, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_2) == 0x000134, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, K2Node_SwitchEnum_CmpSuccess) == 0x000138, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_3) == 0x00013C, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_4) == 0x000140, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent, CallFunc_MakeLiteralInt_ReturnValue_5) == 0x000144, "Member 'WBP_HeaderMenu_Sub_NewsBtn_C_FireButtonEvent::CallFunc_MakeLiteralInt_ReturnValue_5' has a wrong offset!");
 
 // Function WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C.PressButtonAnimation
 // 0x0008 (0x0008 - 0x0000)

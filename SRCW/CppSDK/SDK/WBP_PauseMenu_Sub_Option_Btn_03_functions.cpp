@@ -51,6 +51,20 @@ void UWBP_PauseMenu_Sub_Option_Btn_03_C::ExecuteUbergraph_WBP_PauseMenu_Sub_Opti
 }
 
 
+// Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.Initialize
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PauseMenu_Sub_Option_Btn_03_C::Initialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PauseMenu_Sub_Option_Btn_03_C", "Initialize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PauseMenu_Sub_Option_Btn_03.WBP_PauseMenu_Sub_Option_Btn_03_C.PlayOnOffAnimation
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

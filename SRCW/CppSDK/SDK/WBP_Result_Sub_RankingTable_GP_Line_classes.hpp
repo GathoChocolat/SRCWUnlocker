@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "UnionLib_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionRun_classes.hpp"
-#include "UnionLib_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -78,6 +78,7 @@ public:
 	void DelayStartResult_GP_TotalPoint_In();
 	void EnterExitIdle();
 	void ExecuteUbergraph_WBP_Result_Sub_RankingTable_GP_Line(int32 EntryPoint);
+	void ExitOutAnimationFinish();
 	void ExitProc();
 	void Finished_26DDDFEF4AA047C3BAFC0586FBA709B6();
 	void Finished_9BF783D74A7E7515B77DB4BB8915144B();

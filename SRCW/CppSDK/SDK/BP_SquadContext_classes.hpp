@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SquadContext.BP_SquadContext_C
-// 0x0058 (0x04D8 - 0x0480)
+// 0x0058 (0x0528 - 0x04D0)
 class UBP_SquadContext_C final : public USquadContext
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TMulticastInlineDelegate<void(bool Successful)> OnCreateSquad;                                   // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(bool Successful)> OnConnectSquad;                                  // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(bool Successful, const struct FSearchLobbyResult& SearchResult)> OnSearchSquad; // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnDestroySquad;                                    // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(bool Successful)> OnSendInvitationSquad;                           // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TMulticastInlineDelegate<void(bool Successful)> OnCreateSquad;                                   // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool Successful)> OnConnectSquad;                                  // 0x04E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool Successful, const struct FSearchLobbyResult& SearchResult)> OnSearchSquad; // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnDestroySquad;                                    // 0x0508(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool Successful)> OnSendInvitationSquad;                           // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_BP_SquadContext(int32 EntryPoint);
@@ -48,13 +48,13 @@ public:
 	}
 };
 static_assert(alignof(UBP_SquadContext_C) == 0x000008, "Wrong alignment on UBP_SquadContext_C");
-static_assert(sizeof(UBP_SquadContext_C) == 0x0004D8, "Wrong size on UBP_SquadContext_C");
-static_assert(offsetof(UBP_SquadContext_C, UberGraphFrame) == 0x000480, "Member 'UBP_SquadContext_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnCreateSquad) == 0x000488, "Member 'UBP_SquadContext_C::OnCreateSquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnConnectSquad) == 0x000498, "Member 'UBP_SquadContext_C::OnConnectSquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnSearchSquad) == 0x0004A8, "Member 'UBP_SquadContext_C::OnSearchSquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnDestroySquad) == 0x0004B8, "Member 'UBP_SquadContext_C::OnDestroySquad' has a wrong offset!");
-static_assert(offsetof(UBP_SquadContext_C, OnSendInvitationSquad) == 0x0004C8, "Member 'UBP_SquadContext_C::OnSendInvitationSquad' has a wrong offset!");
+static_assert(sizeof(UBP_SquadContext_C) == 0x000528, "Wrong size on UBP_SquadContext_C");
+static_assert(offsetof(UBP_SquadContext_C, UberGraphFrame) == 0x0004D0, "Member 'UBP_SquadContext_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_SquadContext_C, OnCreateSquad) == 0x0004D8, "Member 'UBP_SquadContext_C::OnCreateSquad' has a wrong offset!");
+static_assert(offsetof(UBP_SquadContext_C, OnConnectSquad) == 0x0004E8, "Member 'UBP_SquadContext_C::OnConnectSquad' has a wrong offset!");
+static_assert(offsetof(UBP_SquadContext_C, OnSearchSquad) == 0x0004F8, "Member 'UBP_SquadContext_C::OnSearchSquad' has a wrong offset!");
+static_assert(offsetof(UBP_SquadContext_C, OnDestroySquad) == 0x000508, "Member 'UBP_SquadContext_C::OnDestroySquad' has a wrong offset!");
+static_assert(offsetof(UBP_SquadContext_C, OnSendInvitationSquad) == 0x000518, "Member 'UBP_SquadContext_C::OnSendInvitationSquad' has a wrong offset!");
 
 }
 

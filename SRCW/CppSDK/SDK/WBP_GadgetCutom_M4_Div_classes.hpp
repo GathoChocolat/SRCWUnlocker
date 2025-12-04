@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -64,6 +64,8 @@ public:
 public:
 	void ExecuteUbergraph_WBP_GadgetCutom_M4_Div(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void SequenceEvent();
+	void SequenceEvent__ENTRYPOINTWBP_GadgetCutom_M4_Div();
 	void SetPlateWindowZorderHigherThanSelectWindow(int32 InPlayerControllerIndex, bool bPlateWindowHigher);
 	void Setup(const struct FGadgetCustomizeWindowData& InWindowData, const bool bInFestaSpecialRule);
 

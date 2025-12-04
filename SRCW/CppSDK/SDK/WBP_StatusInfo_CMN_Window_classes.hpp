@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -21,42 +21,51 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_StatusInfo_CMN_Window.WBP_StatusInfo_CMN_Window_C
-// 0x00D0 (0x0980 - 0x08B0)
+// 0x0118 (0x0570 - 0x0458)
 class UWBP_StatusInfo_CMN_Window_C final : public UFestaInfoWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       StatusInfo_Out;                                    // 0x08B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       StatusInfo_Loop;                                   // 0x08C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       StatusInfo_In;                                     // 0x08C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 BaseWindow;                                        // 0x08D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 BG_Black;                                          // 0x08D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 FooterBase;                                        // 0x08E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 HeaderBase;                                        // 0x08E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_FooterAccept;                     // 0x08F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction_FooterBack;                       // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_FooterAccept;                              // 0x0900(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone;                                          // 0x0908(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Event_Period;                                  // 0x0910(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Title_Detail;                                  // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn_01;                   // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn_02;                   // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_Tab_C*              WBP_StatusInfo_Sub_Tab;                            // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_InfoWindow;                         // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              CloseEventDispatcher;                              // 0x0940(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          IsOpenRankingPlayerDetail;                         // 0x0950(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOpenRuleDetail;                                  // 0x0951(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOpenPointRewardDetail;                           // 0x0952(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_953[0x1];                                      // 0x0953(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SpecialRuleCounter;                                // 0x0954(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MouseInputRewardTargetIndex;                       // 0x0958(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsMouseInputRewardMove;                            // 0x095C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_95D[0x3];                                      // 0x095D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           UpKeyTimerHandle;                                  // 0x0960(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           DownKeyTimerHandle;                                // 0x0968(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         WhenFocusingLastOrFirstLineKeyTime;                // 0x0970(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NormalKeyTime;                                     // 0x0974(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bActionExecuteReady;                               // 0x0978(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0458(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       StatusInfo_Right_In;                               // 0x0460(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       StatusInfo_Left_In;                                // 0x0468(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       StatusInfo_Out;                                    // 0x0470(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       StatusInfo_Loop;                                   // 0x0478(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       StatusInfo_In;                                     // 0x0480(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Arrow_03;                                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Arrow_04;                                          // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BaseWindow;                                        // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BG_Black;                                          // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               DSP_Overlay_Arrow;                                 // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FooterBase;                                        // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 HeaderBase;                                        // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         LeftArrowMouseInteraction;                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction_FooterAccept;                     // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction_FooterBack;                       // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Footer;                                    // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_FooterAccept;                              // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         RightArrowMouseInteraction;                        // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone;                                          // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Event_Period;                                  // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Title_Detail;                                  // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Title_LegendRound;                             // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn_01;                   // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn_02;                   // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_Tab_C*              WBP_StatusInfo_Sub_Tab;                            // 0x0520(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_InfoWindow;                         // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              CloseEventDispatcher;                              // 0x0530(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsOpenRankingPlayerDetail;                         // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOpenRuleDetail;                                  // 0x0541(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOpenPointRewardDetail;                           // 0x0542(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_543[0x1];                                      // 0x0543(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SpecialRuleCounter;                                // 0x0544(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MouseInputRewardTargetIndex;                       // 0x0548(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsMouseInputRewardMove;                            // 0x054C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54D[0x3];                                      // 0x054D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           UpKeyTimerHandle;                                  // 0x0550(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           DownKeyTimerHandle;                                // 0x0558(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         WhenFocusingLastOrFirstLineKeyTime;                // 0x0560(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NormalKeyTime;                                     // 0x0564(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bActionExecuteReady;                               // 0x0568(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BndEvt__WBP_StatusInfo_CMN_Window_MouseInteraction_FooterAccept_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
@@ -67,9 +76,11 @@ public:
 	void DisplayRuleDetail();
 	void DisplayRuleDetailDirectry();
 	void ExecuteUbergraph_WBP_StatusInfo_CMN_Window(int32 EntryPoint);
+	class FText Get_Legend_Compe_Title_Detail_Text(EEventInfoWidgetPageCategory Category);
 	void GetDateString(const struct FDateTime& DateTime, class FText* DateText);
 	bool IsDisplayRanking();
 	void LeftKeyPressedLoop();
+	void LeftPressedLoop_SeasonChange();
 	void MouseClickBind();
 	void MouseClicked();
 	void OnAcceptKeyPressed();
@@ -96,6 +107,7 @@ public:
 	void OnFaceButtonTopReleasedWithPlayerId(const int32& PlayerControllerIndex);
 	void OnFinished_InAnim();
 	void OnFinished_OutAnim();
+	void OnFinishedScrollAnim();
 	void OnHovered_PointReward(int32 ButtonIndex, int32 ViewTopDataIndex, int32 SelectDataIndex);
 	void OnHovered_Rule(int32 RuleIndex);
 	void OnInitialized();
@@ -125,11 +137,13 @@ public:
 	void OnMouseInput_MoveSelectReward();
 	void OnMouseInput_OpenPFProfile();
 	void OnMouseUnhovered_PointReward();
+	void OnNextLegendCompeSeasonChange();
 	void OnPFProfileError();
 	void OnPFProfileErrorClose();
 	void OnPointRewardDetailClosed();
 	void OnPointRewardDetailOpened();
 	void OnPressed_Tab(int32 TabIndex);
+	void OnPrevLegendCompeSeasonChange();
 	void OnRankingDownKeyLoopInput();
 	void OnRankingDownKeyWaitEnd();
 	void OnRankingPlatformChange();
@@ -163,8 +177,10 @@ public:
 	void OnUpKeyReleasedWithPlayerId(const int32& PlayerControllerIndex);
 	void Open();
 	void OpenPointRewardDetail_MouseInput();
+	void Request_Legend_Compe_Season_Change(bool isNext);
 	void ResetInputData();
 	void RightKeyPressedLoop();
+	void RightPressedLoop_SeasonChange();
 	void SelectNextRule();
 	void SelectPrevRule();
 	void SelectRuleDirectly(int32 RuleIndex);
@@ -173,6 +189,8 @@ public:
 	void SetPlatformText();
 	void SetupFinalResult(int32 Ranking, int32 Point, class UTexture2D* TextureBG);
 	void SetupFriendRanking();
+	void SetupLegendCompeResultInfomation(const struct FLegendCompeRewardResultData& InDispData, EGameEventPhase EventPhase, bool IsPlayed);
+	void SetupLobbyInfoMode();
 	void SetupOtherResult(const TArray<struct FFestaStreakRewardUIData>& InStreakRewardData, const TArray<struct FFestaRankingRewardUIData>& InRankingRewardData);
 	void SetupPointResult(int32 Point, const TArray<struct FFestaPointRewardUIData>& InPointRewardData, class UTexture2D* TextureBG);
 	void SetupRuleInfomation(EGroupRaceRule DefaultRule, const TArray<struct FFestaRuleInfomation>& RuleDataArray);
@@ -196,37 +214,46 @@ public:
 	}
 };
 static_assert(alignof(UWBP_StatusInfo_CMN_Window_C) == 0x000008, "Wrong alignment on UWBP_StatusInfo_CMN_Window_C");
-static_assert(sizeof(UWBP_StatusInfo_CMN_Window_C) == 0x000980, "Wrong size on UWBP_StatusInfo_CMN_Window_C");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, UberGraphFrame) == 0x0008B0, "Member 'UWBP_StatusInfo_CMN_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Out) == 0x0008B8, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Loop) == 0x0008C0, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_In) == 0x0008C8, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_In' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, BaseWindow) == 0x0008D0, "Member 'UWBP_StatusInfo_CMN_Window_C::BaseWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, BG_Black) == 0x0008D8, "Member 'UWBP_StatusInfo_CMN_Window_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, FooterBase) == 0x0008E0, "Member 'UWBP_StatusInfo_CMN_Window_C::FooterBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, HeaderBase) == 0x0008E8, "Member 'UWBP_StatusInfo_CMN_Window_C::HeaderBase' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInteraction_FooterAccept) == 0x0008F0, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInteraction_FooterAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInteraction_FooterBack) == 0x0008F8, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInteraction_FooterBack' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Overlay_FooterAccept) == 0x000900, "Member 'UWBP_StatusInfo_CMN_Window_C::Overlay_FooterAccept' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, SafeZone) == 0x000908, "Member 'UWBP_StatusInfo_CMN_Window_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Event_Period) == 0x000910, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Event_Period' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Title_Detail) == 0x000918, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Title_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_FooterMenu_Sub_CommonBtn_01) == 0x000920, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_FooterMenu_Sub_CommonBtn_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_FooterMenu_Sub_CommonBtn_02) == 0x000928, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_FooterMenu_Sub_CommonBtn_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_StatusInfo_Sub_Tab) == 0x000930, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_StatusInfo_Sub_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WidgetSwitcher_InfoWindow) == 0x000938, "Member 'UWBP_StatusInfo_CMN_Window_C::WidgetSwitcher_InfoWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, CloseEventDispatcher) == 0x000940, "Member 'UWBP_StatusInfo_CMN_Window_C::CloseEventDispatcher' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenRankingPlayerDetail) == 0x000950, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenRankingPlayerDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenRuleDetail) == 0x000951, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenRuleDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenPointRewardDetail) == 0x000952, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenPointRewardDetail' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, SpecialRuleCounter) == 0x000954, "Member 'UWBP_StatusInfo_CMN_Window_C::SpecialRuleCounter' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInputRewardTargetIndex) == 0x000958, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInputRewardTargetIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsMouseInputRewardMove) == 0x00095C, "Member 'UWBP_StatusInfo_CMN_Window_C::IsMouseInputRewardMove' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, UpKeyTimerHandle) == 0x000960, "Member 'UWBP_StatusInfo_CMN_Window_C::UpKeyTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, DownKeyTimerHandle) == 0x000968, "Member 'UWBP_StatusInfo_CMN_Window_C::DownKeyTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WhenFocusingLastOrFirstLineKeyTime) == 0x000970, "Member 'UWBP_StatusInfo_CMN_Window_C::WhenFocusingLastOrFirstLineKeyTime' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, NormalKeyTime) == 0x000974, "Member 'UWBP_StatusInfo_CMN_Window_C::NormalKeyTime' has a wrong offset!");
-static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, bActionExecuteReady) == 0x000978, "Member 'UWBP_StatusInfo_CMN_Window_C::bActionExecuteReady' has a wrong offset!");
+static_assert(sizeof(UWBP_StatusInfo_CMN_Window_C) == 0x000570, "Wrong size on UWBP_StatusInfo_CMN_Window_C");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, UberGraphFrame) == 0x000458, "Member 'UWBP_StatusInfo_CMN_Window_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Right_In) == 0x000460, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Right_In' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Left_In) == 0x000468, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Left_In' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Out) == 0x000470, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Out' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_Loop) == 0x000478, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_Loop' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, StatusInfo_In) == 0x000480, "Member 'UWBP_StatusInfo_CMN_Window_C::StatusInfo_In' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Arrow_03) == 0x000488, "Member 'UWBP_StatusInfo_CMN_Window_C::Arrow_03' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Arrow_04) == 0x000490, "Member 'UWBP_StatusInfo_CMN_Window_C::Arrow_04' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, BaseWindow) == 0x000498, "Member 'UWBP_StatusInfo_CMN_Window_C::BaseWindow' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, BG_Black) == 0x0004A0, "Member 'UWBP_StatusInfo_CMN_Window_C::BG_Black' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, DSP_Overlay_Arrow) == 0x0004A8, "Member 'UWBP_StatusInfo_CMN_Window_C::DSP_Overlay_Arrow' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, FooterBase) == 0x0004B0, "Member 'UWBP_StatusInfo_CMN_Window_C::FooterBase' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, HeaderBase) == 0x0004B8, "Member 'UWBP_StatusInfo_CMN_Window_C::HeaderBase' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, LeftArrowMouseInteraction) == 0x0004C0, "Member 'UWBP_StatusInfo_CMN_Window_C::LeftArrowMouseInteraction' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInteraction_FooterAccept) == 0x0004C8, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInteraction_FooterAccept' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInteraction_FooterBack) == 0x0004D0, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInteraction_FooterBack' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Overlay_Footer) == 0x0004D8, "Member 'UWBP_StatusInfo_CMN_Window_C::Overlay_Footer' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, Overlay_FooterAccept) == 0x0004E0, "Member 'UWBP_StatusInfo_CMN_Window_C::Overlay_FooterAccept' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, RightArrowMouseInteraction) == 0x0004E8, "Member 'UWBP_StatusInfo_CMN_Window_C::RightArrowMouseInteraction' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, SafeZone) == 0x0004F0, "Member 'UWBP_StatusInfo_CMN_Window_C::SafeZone' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Event_Period) == 0x0004F8, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Event_Period' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Title_Detail) == 0x000500, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Title_Detail' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, TXT_Title_LegendRound) == 0x000508, "Member 'UWBP_StatusInfo_CMN_Window_C::TXT_Title_LegendRound' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_FooterMenu_Sub_CommonBtn_01) == 0x000510, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_FooterMenu_Sub_CommonBtn_01' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_FooterMenu_Sub_CommonBtn_02) == 0x000518, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_FooterMenu_Sub_CommonBtn_02' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WBP_StatusInfo_Sub_Tab) == 0x000520, "Member 'UWBP_StatusInfo_CMN_Window_C::WBP_StatusInfo_Sub_Tab' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WidgetSwitcher_InfoWindow) == 0x000528, "Member 'UWBP_StatusInfo_CMN_Window_C::WidgetSwitcher_InfoWindow' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, CloseEventDispatcher) == 0x000530, "Member 'UWBP_StatusInfo_CMN_Window_C::CloseEventDispatcher' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenRankingPlayerDetail) == 0x000540, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenRankingPlayerDetail' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenRuleDetail) == 0x000541, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenRuleDetail' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsOpenPointRewardDetail) == 0x000542, "Member 'UWBP_StatusInfo_CMN_Window_C::IsOpenPointRewardDetail' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, SpecialRuleCounter) == 0x000544, "Member 'UWBP_StatusInfo_CMN_Window_C::SpecialRuleCounter' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, MouseInputRewardTargetIndex) == 0x000548, "Member 'UWBP_StatusInfo_CMN_Window_C::MouseInputRewardTargetIndex' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, IsMouseInputRewardMove) == 0x00054C, "Member 'UWBP_StatusInfo_CMN_Window_C::IsMouseInputRewardMove' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, UpKeyTimerHandle) == 0x000550, "Member 'UWBP_StatusInfo_CMN_Window_C::UpKeyTimerHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, DownKeyTimerHandle) == 0x000558, "Member 'UWBP_StatusInfo_CMN_Window_C::DownKeyTimerHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, WhenFocusingLastOrFirstLineKeyTime) == 0x000560, "Member 'UWBP_StatusInfo_CMN_Window_C::WhenFocusingLastOrFirstLineKeyTime' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, NormalKeyTime) == 0x000564, "Member 'UWBP_StatusInfo_CMN_Window_C::NormalKeyTime' has a wrong offset!");
+static_assert(offsetof(UWBP_StatusInfo_CMN_Window_C, bActionExecuteReady) == 0x000568, "Member 'UWBP_StatusInfo_CMN_Window_C::bActionExecuteReady' has a wrong offset!");
 
 }
 

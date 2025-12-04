@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -39,8 +39,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x03E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x03E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x03E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x03E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7[0x1];                                      // 0x03E7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E6[0x2];                                      // 0x03E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver) == 0x000008, "Wrong alignment on BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver");
@@ -60,7 +59,6 @@ static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, K2Node_
 static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_Array_Length_ReturnValue) == 0x0003E0, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_Less_IntInt_ReturnValue) == 0x0003E4, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0003E5, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x0003E6, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver, K2Node_Event_DeltaSeconds) == 0x0003E8, "Member 'BP_SceneDriver_C_ExecuteUbergraph_BP_SceneDriver::K2Node_Event_DeltaSeconds' has a wrong offset!");
 
 // Function BP_SceneDriver.BP_SceneDriver_C.ReceiveTick
@@ -74,16 +72,42 @@ static_assert(alignof(BP_SceneDriver_C_ReceiveTick) == 0x000004, "Wrong alignmen
 static_assert(sizeof(BP_SceneDriver_C_ReceiveTick) == 0x000004, "Wrong size on BP_SceneDriver_C_ReceiveTick");
 static_assert(offsetof(BP_SceneDriver_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_SceneDriver_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-// Function BP_SceneDriver.BP_SceneDriver_C.SetEnableGfur
+// Function BP_SceneDriver.BP_SceneDriver_C.SetEnableGFur
 // 0x0001 (0x0001 - 0x0000)
-struct BP_SceneDriver_C_SetEnableGfur final
+struct BP_SceneDriver_C_SetEnableGFur final
 {
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SceneDriver_C_SetEnableGfur) == 0x000001, "Wrong alignment on BP_SceneDriver_C_SetEnableGfur");
-static_assert(sizeof(BP_SceneDriver_C_SetEnableGfur) == 0x000001, "Wrong size on BP_SceneDriver_C_SetEnableGfur");
-static_assert(offsetof(BP_SceneDriver_C_SetEnableGfur, Enable) == 0x000000, "Member 'BP_SceneDriver_C_SetEnableGfur::Enable' has a wrong offset!");
+static_assert(alignof(BP_SceneDriver_C_SetEnableGFur) == 0x000001, "Wrong alignment on BP_SceneDriver_C_SetEnableGFur");
+static_assert(sizeof(BP_SceneDriver_C_SetEnableGFur) == 0x000001, "Wrong size on BP_SceneDriver_C_SetEnableGFur");
+static_assert(offsetof(BP_SceneDriver_C_SetEnableGFur, Enable) == 0x000000, "Member 'BP_SceneDriver_C_SetEnableGFur::Enable' has a wrong offset!");
+
+// Function BP_SceneDriver.BP_SceneDriver_C.SetupCharacterById
+// 0x0018 (0x0018 - 0x0000)
+struct BP_SceneDriver_C_SetupCharacterById final
+{
+public:
+	EDriverId                                     In_DriverId;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UUnionSettings*                   CallFunc_GetGameSettings_ReturnValue;              // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetGFurEnable_ReturnValue;                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Select_Default;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SceneDriver_C_SetupCharacterById) == 0x000008, "Wrong alignment on BP_SceneDriver_C_SetupCharacterById");
+static_assert(sizeof(BP_SceneDriver_C_SetupCharacterById) == 0x000018, "Wrong size on BP_SceneDriver_C_SetupCharacterById");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, In_DriverId) == 0x000000, "Member 'BP_SceneDriver_C_SetupCharacterById::In_DriverId' has a wrong offset!");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, Temp_bool_Variable) == 0x000001, "Member 'BP_SceneDriver_C_SetupCharacterById::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'BP_SceneDriver_C_SetupCharacterById::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, Temp_bool_Variable_1) == 0x000003, "Member 'BP_SceneDriver_C_SetupCharacterById::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, CallFunc_GetGameSettings_ReturnValue) == 0x000008, "Member 'BP_SceneDriver_C_SetupCharacterById::CallFunc_GetGameSettings_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, CallFunc_GetGFurEnable_ReturnValue) == 0x000010, "Member 'BP_SceneDriver_C_SetupCharacterById::CallFunc_GetGFurEnable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_SceneDriver_C_SetupCharacterById::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_SceneDriver_C_SetupCharacterById, K2Node_Select_Default) == 0x000012, "Member 'BP_SceneDriver_C_SetupCharacterById::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_SceneDriver.BP_SceneDriver_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)

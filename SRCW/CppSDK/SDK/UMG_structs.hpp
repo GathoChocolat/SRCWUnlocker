@@ -212,17 +212,33 @@ enum class EBindingKind : uint8
 	EBindingKind_MAX                         = 2,
 };
 
-// ScriptStruct UMG.RichTextStyleRow
-// 0x0348 (0x0350 - 0x0008)
-struct FRichTextStyleRow final : public FTableRowBase
+// ScriptStruct UMG.AnchorData
+// 0x0040 (0x0040 - 0x0000)
+struct FAnchorData final
 {
 public:
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTextBlockStyle                        TextStyle;                                         // 0x0010(0x0340)(Edit, NativeAccessSpecifierPublic)
+	struct FMargin                                Offsets;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAnchors                               Anchors;                                           // 0x0010(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              Alignment;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRichTextStyleRow) == 0x000010, "Wrong alignment on FRichTextStyleRow");
-static_assert(sizeof(FRichTextStyleRow) == 0x000350, "Wrong size on FRichTextStyleRow");
-static_assert(offsetof(FRichTextStyleRow, TextStyle) == 0x000010, "Member 'FRichTextStyleRow::TextStyle' has a wrong offset!");
+static_assert(alignof(FAnchorData) == 0x000008, "Wrong alignment on FAnchorData");
+static_assert(sizeof(FAnchorData) == 0x000040, "Wrong size on FAnchorData");
+static_assert(offsetof(FAnchorData, Offsets) == 0x000000, "Member 'FAnchorData::Offsets' has a wrong offset!");
+static_assert(offsetof(FAnchorData, Anchors) == 0x000010, "Member 'FAnchorData::Anchors' has a wrong offset!");
+static_assert(offsetof(FAnchorData, Alignment) == 0x000030, "Member 'FAnchorData::Alignment' has a wrong offset!");
+
+// ScriptStruct UMG.WidgetChild
+// 0x0010 (0x0010 - 0x0000)
+struct FWidgetChild final
+{
+public:
+	class FName                                   WidgetName;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TWeakObjectPtr<class UWidget>                 WidgetPtr;                                         // 0x0008(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+};
+static_assert(alignof(FWidgetChild) == 0x000004, "Wrong alignment on FWidgetChild");
+static_assert(sizeof(FWidgetChild) == 0x000010, "Wrong size on FWidgetChild");
+static_assert(offsetof(FWidgetChild, WidgetName) == 0x000000, "Member 'FWidgetChild::WidgetName' has a wrong offset!");
+static_assert(offsetof(FWidgetChild, WidgetPtr) == 0x000008, "Member 'FWidgetChild::WidgetPtr' has a wrong offset!");
 
 // ScriptStruct UMG.EventReply
 // 0x00B8 (0x00B8 - 0x0000)
@@ -234,15 +250,15 @@ public:
 static_assert(alignof(FEventReply) == 0x000008, "Wrong alignment on FEventReply");
 static_assert(sizeof(FEventReply) == 0x0000B8, "Wrong size on FEventReply");
 
-// ScriptStruct UMG.WidgetEventField
-// 0x0001 (0x0001 - 0x0000)
-struct FWidgetEventField final
+// ScriptStruct UMG.PaintContext
+// 0x0030 (0x0030 - 0x0000)
+struct alignas(0x08) FPaintContext final
 {
 public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWidgetEventField) == 0x000001, "Wrong alignment on FWidgetEventField");
-static_assert(sizeof(FWidgetEventField) == 0x000001, "Wrong size on FWidgetEventField");
+static_assert(alignof(FPaintContext) == 0x000008, "Wrong alignment on FPaintContext");
+static_assert(sizeof(FPaintContext) == 0x000030, "Wrong size on FPaintContext");
 
 // ScriptStruct UMG.WidgetTransform
 // 0x0038 (0x0038 - 0x0000)
@@ -309,6 +325,18 @@ static_assert(offsetof(FAnimationEventBinding, Delegate) == 0x000008, "Member 'F
 static_assert(offsetof(FAnimationEventBinding, AnimationEvent) == 0x000018, "Member 'FAnimationEventBinding::AnimationEvent' has a wrong offset!");
 static_assert(offsetof(FAnimationEventBinding, UserTag) == 0x00001C, "Member 'FAnimationEventBinding::UserTag' has a wrong offset!");
 
+// ScriptStruct UMG.QueuedWidgetAnimationTransition
+// 0x0038 (0x0038 - 0x0000)
+struct FQueuedWidgetAnimationTransition final
+{
+public:
+	class UWidgetAnimation*                       WidgetAnimation;                                   // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8[0x30];                                       // 0x0008(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FQueuedWidgetAnimationTransition) == 0x000008, "Wrong alignment on FQueuedWidgetAnimationTransition");
+static_assert(sizeof(FQueuedWidgetAnimationTransition) == 0x000038, "Wrong size on FQueuedWidgetAnimationTransition");
+static_assert(offsetof(FQueuedWidgetAnimationTransition, WidgetAnimation) == 0x000000, "Member 'FQueuedWidgetAnimationTransition::WidgetAnimation' has a wrong offset!");
+
 // ScriptStruct UMG.RadialBoxSettings
 // 0x0010 (0x0010 - 0x0000)
 struct FRadialBoxSettings final
@@ -327,56 +355,6 @@ static_assert(offsetof(FRadialBoxSettings, bDistributeItemsEvenly) == 0x000004, 
 static_assert(offsetof(FRadialBoxSettings, AngleBetweenItems) == 0x000008, "Member 'FRadialBoxSettings::AngleBetweenItems' has a wrong offset!");
 static_assert(offsetof(FRadialBoxSettings, SectorCentralAngle) == 0x00000C, "Member 'FRadialBoxSettings::SectorCentralAngle' has a wrong offset!");
 
-// ScriptStruct UMG.PaintContext
-// 0x0030 (0x0030 - 0x0000)
-struct alignas(0x08) FPaintContext final
-{
-public:
-	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FPaintContext) == 0x000008, "Wrong alignment on FPaintContext");
-static_assert(sizeof(FPaintContext) == 0x000030, "Wrong size on FPaintContext");
-
-// ScriptStruct UMG.WidgetChild
-// 0x0010 (0x0010 - 0x0000)
-struct FWidgetChild final
-{
-public:
-	class FName                                   WidgetName;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TWeakObjectPtr<class UWidget>                 WidgetPtr;                                         // 0x0008(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-};
-static_assert(alignof(FWidgetChild) == 0x000004, "Wrong alignment on FWidgetChild");
-static_assert(sizeof(FWidgetChild) == 0x000010, "Wrong size on FWidgetChild");
-static_assert(offsetof(FWidgetChild, WidgetName) == 0x000000, "Member 'FWidgetChild::WidgetName' has a wrong offset!");
-static_assert(offsetof(FWidgetChild, WidgetPtr) == 0x000008, "Member 'FWidgetChild::WidgetPtr' has a wrong offset!");
-
-// ScriptStruct UMG.QueuedWidgetAnimationTransition
-// 0x0038 (0x0038 - 0x0000)
-struct FQueuedWidgetAnimationTransition final
-{
-public:
-	class UWidgetAnimation*                       WidgetAnimation;                                   // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x30];                                       // 0x0008(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FQueuedWidgetAnimationTransition) == 0x000008, "Wrong alignment on FQueuedWidgetAnimationTransition");
-static_assert(sizeof(FQueuedWidgetAnimationTransition) == 0x000038, "Wrong size on FQueuedWidgetAnimationTransition");
-static_assert(offsetof(FQueuedWidgetAnimationTransition, WidgetAnimation) == 0x000000, "Member 'FQueuedWidgetAnimationTransition::WidgetAnimation' has a wrong offset!");
-
-// ScriptStruct UMG.AnchorData
-// 0x0040 (0x0040 - 0x0000)
-struct FAnchorData final
-{
-public:
-	struct FMargin                                Offsets;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FAnchors                               Anchors;                                           // 0x0010(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              Alignment;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAnchorData) == 0x000008, "Wrong alignment on FAnchorData");
-static_assert(sizeof(FAnchorData) == 0x000040, "Wrong size on FAnchorData");
-static_assert(offsetof(FAnchorData, Offsets) == 0x000000, "Member 'FAnchorData::Offsets' has a wrong offset!");
-static_assert(offsetof(FAnchorData, Anchors) == 0x000010, "Member 'FAnchorData::Anchors' has a wrong offset!");
-static_assert(offsetof(FAnchorData, Alignment) == 0x000030, "Member 'FAnchorData::Alignment' has a wrong offset!");
-
 // ScriptStruct UMG.SlateChildSize
 // 0x0008 (0x0008 - 0x0000)
 struct FSlateChildSize final
@@ -390,6 +368,16 @@ static_assert(alignof(FSlateChildSize) == 0x000004, "Wrong alignment on FSlateCh
 static_assert(sizeof(FSlateChildSize) == 0x000008, "Wrong size on FSlateChildSize");
 static_assert(offsetof(FSlateChildSize, Value) == 0x000000, "Member 'FSlateChildSize::Value' has a wrong offset!");
 static_assert(offsetof(FSlateChildSize, SizeRule) == 0x000004, "Member 'FSlateChildSize::SizeRule' has a wrong offset!");
+
+// ScriptStruct UMG.WidgetEventField
+// 0x0001 (0x0001 - 0x0000)
+struct FWidgetEventField final
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FWidgetEventField) == 0x000001, "Wrong alignment on FWidgetEventField");
+static_assert(sizeof(FWidgetEventField) == 0x000001, "Wrong size on FWidgetEventField");
 
 // ScriptStruct UMG.WidgetNavigationData
 // 0x0024 (0x0024 - 0x0000)
@@ -517,6 +505,18 @@ static_assert(alignof(FUserWidgetPool) == 0x000008, "Wrong alignment on FUserWid
 static_assert(sizeof(FUserWidgetPool) == 0x000088, "Wrong size on FUserWidgetPool");
 static_assert(offsetof(FUserWidgetPool, ActiveWidgets) == 0x000000, "Member 'FUserWidgetPool::ActiveWidgets' has a wrong offset!");
 static_assert(offsetof(FUserWidgetPool, InactiveWidgets) == 0x000010, "Member 'FUserWidgetPool::InactiveWidgets' has a wrong offset!");
+
+// ScriptStruct UMG.RichTextStyleRow
+// 0x0348 (0x0350 - 0x0008)
+struct FRichTextStyleRow final : public FTableRowBase
+{
+public:
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTextBlockStyle                        TextStyle;                                         // 0x0010(0x0340)(Edit, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FRichTextStyleRow) == 0x000010, "Wrong alignment on FRichTextStyleRow");
+static_assert(sizeof(FRichTextStyleRow) == 0x000350, "Wrong size on FRichTextStyleRow");
+static_assert(offsetof(FRichTextStyleRow, TextStyle) == 0x000010, "Member 'FRichTextStyleRow::TextStyle' has a wrong offset!");
 
 // ScriptStruct UMG.RichImageRow
 // 0x00D8 (0x00E0 - 0x0008)

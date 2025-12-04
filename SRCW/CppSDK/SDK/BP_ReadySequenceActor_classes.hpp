@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionLib_structs.hpp"
+#include "UNION_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -61,7 +61,7 @@ public:
 	void Check_Permission_Input(int32 PlayerIndex, bool* bISPermission);
 	void CheckInputEvent(class UObject* Object, const int32& PlayerControllerIndex);
 	void CheckTimeTrialDisableGadget(bool* bIsValid);
-	void CreateReadyWidget(bool Optimize);
+	void CreateReadyWidget(bool Optimize, bool bLoadCharaTexture);
 	void DisableOptionChange();
 	void ExecuteUbergraph_BP_ReadySequenceActor(int32 EntryPoint);
 	void GadgetSetForMouse(int32 SlotIndex);
@@ -71,9 +71,17 @@ public:
 	void IsDiffSettings(bool* AppDiff, bool* OptionDiff);
 	void LastCheckEvent();
 	void LeftEvent(class UObject* Object, const int32& PlayerControllerIndex);
+	void LoadCharaTexture_00(TSoftObjectPtr<class UTexture2D> TextureObj);
+	void LoadCharaTexture_01(TSoftObjectPtr<class UTexture2D> TextureObj);
+	void LoadCharaTexture_02(TSoftObjectPtr<class UTexture2D> TextureObj);
+	void LoadCharaTexture_03(TSoftObjectPtr<class UTexture2D> TextureObj);
 	void MouseInputSetUpEvent();
 	void OnDecide_PopupWindow(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void OnGoAnimationFinished();
+	void OnLoaded_120D4D5844F1C53050532AB4297571D6(class UObject* Loaded);
+	void OnLoaded_328D561845C8ED3620B5B5B4AF6AD4DC(class UObject* Loaded);
+	void OnLoaded_C7D8F95244BF69FFBD6F1E8A8F26D9CB(class UObject* Loaded);
+	void OnLoaded_F89C5B884D3D3BA9426375B8B92F997B(class UObject* Loaded);
 	void OnSpecialPressedWithPlayerIdEvent_イベント(class UObject* Object, const int32& PlayerControllerIndex);
 	void OptionChangeEvent(class UObject* Object, const int32& PlayerControllerIndex);
 	void OptionClick();
@@ -93,7 +101,7 @@ public:
 	void SetReadyFlag(int32 PlayerIndex);
 	void SetUpCharacterInformation();
 	void SetupCharaInfo();
-	void SetupCreateWidget(bool Optimize);
+	void SetupCreateWidget(bool Optimize, bool bLoadCharaTexture);
 	void SetUpGadgetIconMouseInp_ut(ESlateVisibility InVisibility);
 	void SetupGadgetPlateWindow();
 	void SetUpOptionEvent();
@@ -101,6 +109,7 @@ public:
 	void SetUpParamWindowEvent(class UObject* Object, const int32& PlayerControllerIndex);
 	void SetUpPlayersParam(int32 PlayerIndex);
 	void SetVisibleCharaMachineParam(int32 PlayerIndex, bool Visible);
+	void StartSetUpPlayersParam();
 	void TimeTrialWarningPopup();
 	void UnbindInputEvent();
 

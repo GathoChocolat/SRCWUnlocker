@@ -475,6 +475,29 @@ void UWBP_Popup_Window_Text_Scroll_C::OnDownKeyReleasedWithPlayerId(const int32&
 }
 
 
+// Function WBP_Popup_Window_Text_Scroll.WBP_Popup_Window_Text_Scroll_C.OnDownNavigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Popup_Window_Text_Scroll_C::OnDownNavigation(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Popup_Window_Text_Scroll_C", "OnDownNavigation");
+
+	Params::WBP_Popup_Window_Text_Scroll_C_OnDownNavigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function WBP_Popup_Window_Text_Scroll.WBP_Popup_Window_Text_Scroll_C.OnFaceButtonLeftPressed
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -622,6 +645,31 @@ void UWBP_Popup_Window_Text_Scroll_C::OnFinishedOutAnimation()
 		Func = Class->GetFunction("WBP_Popup_Window_Text_Scroll_C", "OnFinishedOutAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Popup_Window_Text_Scroll.WBP_Popup_Window_Text_Scroll_C.OnFocusReceived
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FFocusEvent&               InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_Popup_Window_Text_Scroll_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Popup_Window_Text_Scroll_C", "OnFocusReceived");
+
+	Params::WBP_Popup_Window_Text_Scroll_C_OnFocusReceived Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InFocusEvent = std::move(InFocusEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -1272,6 +1320,29 @@ void UWBP_Popup_Window_Text_Scroll_C::OnUpKeyReleasedWithPlayerId(const int32& P
 	Parms.PlayerControllerIndex_0 = PlayerControllerIndex_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Popup_Window_Text_Scroll.WBP_Popup_Window_Text_Scroll_C.OnUpNavigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Popup_Window_Text_Scroll_C::OnUpNavigation(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Popup_Window_Text_Scroll_C", "OnUpNavigation");
+
+	Params::WBP_Popup_Window_Text_Scroll_C_OnUpNavigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

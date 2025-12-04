@@ -330,32 +330,6 @@ void UBPC_PreNotice_C::Call_DodonpaEvent_FestaIntro()
 }
 
 
-// Function BPC_PreNotice.BPC_PreNotice_C.OnReceiveCheckCompensation
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class FString&                    ApiName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    RequestData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    ResponseData                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    Error                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_PreNotice_C::OnReceiveCheckCompensation(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_PreNotice_C", "OnReceiveCheckCompensation");
-
-	Params::BPC_PreNotice_C_OnReceiveCheckCompensation Parms{};
-
-	Parms.ApiName = std::move(ApiName);
-	Parms.RequestData = std::move(RequestData);
-	Parms.ResponseData = std::move(ResponseData);
-	Parms.Error = Error;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BPC_PreNotice.BPC_PreNotice_C.OnEndFade_FestaIntro
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -566,17 +540,29 @@ void UBPC_PreNotice_C::OnInitializeFlow_TutorialCheck()
 }
 
 
-// Function BPC_PreNotice.BPC_PreNotice_C.OnInitializeFlow_Compensation
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function BPC_PreNotice.BPC_PreNotice_C.OnReceiveCheckCompensation
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class FString&                    ApiName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    RequestData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    ResponseData                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    Error                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPC_PreNotice_C::OnInitializeFlow_Compensation()
+void UBPC_PreNotice_C::OnReceiveCheckCompensation(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_PreNotice_C", "OnInitializeFlow_Compensation");
+		Func = Class->GetFunction("BPC_PreNotice_C", "OnReceiveCheckCompensation");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BPC_PreNotice_C_OnReceiveCheckCompensation Parms{};
+
+	Parms.ApiName = std::move(ApiName);
+	Parms.RequestData = std::move(RequestData);
+	Parms.ResponseData = std::move(ResponseData);
+	Parms.Error = Error;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -627,6 +613,114 @@ void UBPC_PreNotice_C::OnErrorPopupWindowClose(class UUnionUIButtonBase* Button,
 	Parms.ButtonIndex = ButtonIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_PreNotice.BPC_PreNotice_C.OnDodonpaEventEnd_LegendInfo
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EMenuSequenceSubState                   State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_PreNotice_C::OnDodonpaEventEnd_LegendInfo(EMenuSequenceSubState State)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_PreNotice_C", "OnDodonpaEventEnd_LegendInfo");
+
+	Params::BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo Parms{};
+
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_PreNotice.BPC_PreNotice_C.Call_DodonpaEvent_LegendInfo
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_PreNotice_C::Call_DodonpaEvent_LegendInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_PreNotice_C", "Call_DodonpaEvent_LegendInfo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_PreNotice.BPC_PreNotice_C.OnEndFade_LegendInfo
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUnionUIFadeDirection                   FadeDirection                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_PreNotice_C::OnEndFade_LegendInfo(EUnionUIFadeDirection FadeDirection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_PreNotice_C", "OnEndFade_LegendInfo");
+
+	Params::BPC_PreNotice_C_OnEndFade_LegendInfo Parms{};
+
+	Parms.FadeDirection = FadeDirection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_PreNotice.BPC_PreNotice_C.OnInitializeFlow_LegendCompeEndReward
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_PreNotice_C::OnInitializeFlow_LegendCompeEndReward()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_PreNotice_C", "OnInitializeFlow_LegendCompeEndReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_PreNotice.BPC_PreNotice_C.OnReceiveCheckLegendCompeReward
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class FString&                    ApiName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    RequestData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    ResponseData                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    Error                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_PreNotice_C::OnReceiveCheckLegendCompeReward(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_PreNotice_C", "OnReceiveCheckLegendCompeReward");
+
+	Params::BPC_PreNotice_C_OnReceiveCheckLegendCompeReward Parms{};
+
+	Parms.ApiName = std::move(ApiName);
+	Parms.RequestData = std::move(RequestData);
+	Parms.ResponseData = std::move(ResponseData);
+	Parms.Error = Error;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPC_PreNotice.BPC_PreNotice_C.OnInitializeFlow_Compensation
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UBPC_PreNotice_C::OnInitializeFlow_Compensation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_PreNotice_C", "OnInitializeFlow_Compensation");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

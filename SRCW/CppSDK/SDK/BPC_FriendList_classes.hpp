@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_FriendList.BPC_FriendList_C
-// 0x0020 (0x0168 - 0x0148)
+// 0x0028 (0x0170 - 0x0148)
 class UBPC_FriendList_C final : public UFriendListState
 {
 public:
@@ -28,6 +28,7 @@ public:
 	bool                                          bLobbySequence;                                    // 0x0158(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 LobbySquadParentActor;                             // 0x0160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	ELobbyType                                    Current_Lobby_Type;                                // 0x0168(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CREATEDELEGATE_PROXYFUNCTION_0(const struct FLobbyId& TargetLobbyId);
@@ -62,11 +63,12 @@ public:
 	}
 };
 static_assert(alignof(UBPC_FriendList_C) == 0x000008, "Wrong alignment on UBPC_FriendList_C");
-static_assert(sizeof(UBPC_FriendList_C) == 0x000168, "Wrong size on UBPC_FriendList_C");
+static_assert(sizeof(UBPC_FriendList_C) == 0x000170, "Wrong size on UBPC_FriendList_C");
 static_assert(offsetof(UBPC_FriendList_C, UberGraphFrame) == 0x000148, "Member 'UBPC_FriendList_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBPC_FriendList_C, MenuSequence) == 0x000150, "Member 'UBPC_FriendList_C::MenuSequence' has a wrong offset!");
 static_assert(offsetof(UBPC_FriendList_C, bLobbySequence) == 0x000158, "Member 'UBPC_FriendList_C::bLobbySequence' has a wrong offset!");
 static_assert(offsetof(UBPC_FriendList_C, LobbySquadParentActor) == 0x000160, "Member 'UBPC_FriendList_C::LobbySquadParentActor' has a wrong offset!");
+static_assert(offsetof(UBPC_FriendList_C, Current_Lobby_Type) == 0x000168, "Member 'UBPC_FriendList_C::Current_Lobby_Type' has a wrong offset!");
 
 }
 

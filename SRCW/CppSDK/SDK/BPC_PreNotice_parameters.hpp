@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -196,23 +196,6 @@ static_assert(alignof(BPC_PreNotice_C_OnDodonpaEvent_FestaIntro) == 0x000001, "W
 static_assert(sizeof(BPC_PreNotice_C_OnDodonpaEvent_FestaIntro) == 0x000001, "Wrong size on BPC_PreNotice_C_OnDodonpaEvent_FestaIntro");
 static_assert(offsetof(BPC_PreNotice_C_OnDodonpaEvent_FestaIntro, State) == 0x000000, "Member 'BPC_PreNotice_C_OnDodonpaEvent_FestaIntro::State' has a wrong offset!");
 
-// Function BPC_PreNotice.BPC_PreNotice_C.OnReceiveCheckCompensation
-// 0x0038 (0x0038 - 0x0000)
-struct BPC_PreNotice_C_OnReceiveCheckCompensation final
-{
-public:
-	class FString                                 ApiName;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 RequestData;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BPC_PreNotice_C_OnReceiveCheckCompensation) == 0x000008, "Wrong alignment on BPC_PreNotice_C_OnReceiveCheckCompensation");
-static_assert(sizeof(BPC_PreNotice_C_OnReceiveCheckCompensation) == 0x000038, "Wrong size on BPC_PreNotice_C_OnReceiveCheckCompensation");
-static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, ApiName) == 0x000000, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, RequestData) == 0x000010, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, ResponseData) == 0x000020, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, Error) == 0x000030, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::Error' has a wrong offset!");
-
 // Function BPC_PreNotice.BPC_PreNotice_C.OnEndFade_FestaIntro
 // 0x0001 (0x0001 - 0x0000)
 struct BPC_PreNotice_C_OnEndFade_FestaIntro final
@@ -261,6 +244,23 @@ static_assert(offsetof(BPC_PreNotice_C_OnDecisionStreamingInstall, Button) == 0x
 static_assert(offsetof(BPC_PreNotice_C_OnDecisionStreamingInstall, PanelIndex) == 0x000008, "Member 'BPC_PreNotice_C_OnDecisionStreamingInstall::PanelIndex' has a wrong offset!");
 static_assert(offsetof(BPC_PreNotice_C_OnDecisionStreamingInstall, ButtonIndex) == 0x00000C, "Member 'BPC_PreNotice_C_OnDecisionStreamingInstall::ButtonIndex' has a wrong offset!");
 
+// Function BPC_PreNotice.BPC_PreNotice_C.OnReceiveCheckCompensation
+// 0x0038 (0x0038 - 0x0000)
+struct BPC_PreNotice_C_OnReceiveCheckCompensation final
+{
+public:
+	class FString                                 ApiName;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 RequestData;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BPC_PreNotice_C_OnReceiveCheckCompensation) == 0x000008, "Wrong alignment on BPC_PreNotice_C_OnReceiveCheckCompensation");
+static_assert(sizeof(BPC_PreNotice_C_OnReceiveCheckCompensation) == 0x000038, "Wrong size on BPC_PreNotice_C_OnReceiveCheckCompensation");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, ApiName) == 0x000000, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::ApiName' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, RequestData) == 0x000010, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::RequestData' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, ResponseData) == 0x000020, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::ResponseData' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckCompensation, Error) == 0x000030, "Member 'BPC_PreNotice_C_OnReceiveCheckCompensation::Error' has a wrong offset!");
+
 // Function BPC_PreNotice.BPC_PreNotice_C.OnReceiveCheckFestaReward
 // 0x0038 (0x0038 - 0x0000)
 struct BPC_PreNotice_C_OnReceiveCheckFestaReward final
@@ -293,6 +293,45 @@ static_assert(offsetof(BPC_PreNotice_C_OnErrorPopupWindowClose, Button) == 0x000
 static_assert(offsetof(BPC_PreNotice_C_OnErrorPopupWindowClose, PanelIndex) == 0x000008, "Member 'BPC_PreNotice_C_OnErrorPopupWindowClose::PanelIndex' has a wrong offset!");
 static_assert(offsetof(BPC_PreNotice_C_OnErrorPopupWindowClose, ButtonIndex) == 0x00000C, "Member 'BPC_PreNotice_C_OnErrorPopupWindowClose::ButtonIndex' has a wrong offset!");
 
+// Function BPC_PreNotice.BPC_PreNotice_C.OnDodonpaEventEnd_LegendInfo
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo final
+{
+public:
+	EMenuSequenceSubState                         State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo) == 0x000001, "Wrong alignment on BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo");
+static_assert(sizeof(BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo) == 0x000001, "Wrong size on BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo");
+static_assert(offsetof(BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo, State) == 0x000000, "Member 'BPC_PreNotice_C_OnDodonpaEventEnd_LegendInfo::State' has a wrong offset!");
+
+// Function BPC_PreNotice.BPC_PreNotice_C.OnEndFade_LegendInfo
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_PreNotice_C_OnEndFade_LegendInfo final
+{
+public:
+	EUnionUIFadeDirection                         FadeDirection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BPC_PreNotice_C_OnEndFade_LegendInfo) == 0x000001, "Wrong alignment on BPC_PreNotice_C_OnEndFade_LegendInfo");
+static_assert(sizeof(BPC_PreNotice_C_OnEndFade_LegendInfo) == 0x000001, "Wrong size on BPC_PreNotice_C_OnEndFade_LegendInfo");
+static_assert(offsetof(BPC_PreNotice_C_OnEndFade_LegendInfo, FadeDirection) == 0x000000, "Member 'BPC_PreNotice_C_OnEndFade_LegendInfo::FadeDirection' has a wrong offset!");
+
+// Function BPC_PreNotice.BPC_PreNotice_C.OnReceiveCheckLegendCompeReward
+// 0x0038 (0x0038 - 0x0000)
+struct BPC_PreNotice_C_OnReceiveCheckLegendCompeReward final
+{
+public:
+	class FString                                 ApiName;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 RequestData;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 ResponseData;                                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Error;                                             // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BPC_PreNotice_C_OnReceiveCheckLegendCompeReward) == 0x000008, "Wrong alignment on BPC_PreNotice_C_OnReceiveCheckLegendCompeReward");
+static_assert(sizeof(BPC_PreNotice_C_OnReceiveCheckLegendCompeReward) == 0x000038, "Wrong size on BPC_PreNotice_C_OnReceiveCheckLegendCompeReward");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckLegendCompeReward, ApiName) == 0x000000, "Member 'BPC_PreNotice_C_OnReceiveCheckLegendCompeReward::ApiName' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckLegendCompeReward, RequestData) == 0x000010, "Member 'BPC_PreNotice_C_OnReceiveCheckLegendCompeReward::RequestData' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckLegendCompeReward, ResponseData) == 0x000020, "Member 'BPC_PreNotice_C_OnReceiveCheckLegendCompeReward::ResponseData' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_OnReceiveCheckLegendCompeReward, Error) == 0x000030, "Member 'BPC_PreNotice_C_OnReceiveCheckLegendCompeReward::Error' has a wrong offset!");
+
 // Function BPC_PreNotice.BPC_PreNotice_C.OnAttentionPopupWindowDecision
 // 0x0010 (0x0010 - 0x0000)
 struct BPC_PreNotice_C_OnAttentionPopupWindowDecision final
@@ -309,417 +348,468 @@ static_assert(offsetof(BPC_PreNotice_C_OnAttentionPopupWindowDecision, PanelInde
 static_assert(offsetof(BPC_PreNotice_C_OnAttentionPopupWindowDecision, ButtonIndex) == 0x00000C, "Member 'BPC_PreNotice_C_OnAttentionPopupWindowDecision::ButtonIndex' has a wrong offset!");
 
 // Function BPC_PreNotice.BPC_PreNotice_C.ExecuteUbergraph_BPC_PreNotice
-// 0x0640 (0x0640 - 0x0000)
+// 0x0780 (0x0780 - 0x0000)
 struct BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACameraActor*                           CallFunc_GetDodonpaEventCamera_Camera;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EMenuSequenceSubState State)>  K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_1;           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_1;       // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_2;           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_2;       // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_3;                // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EMenuSequenceSubState State)>  K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_StartCompensationWindow_OutIsOpenWindow;  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_1;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_1;       // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_4;                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACameraActor*                           CallFunc_GetDodonpaEventCamera_Camera;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESlateVisibility InVisibility)> K2Node_CreateDelegate_OutputDelegate_1;           // 0x0050(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_2;     // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EMenuSequenceSubState State)>  K2Node_CreateDelegate_OutputDelegate_1;            // 0x0078(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESlateVisibility InVisibility)> K2Node_CreateDelegate_OutputDelegate_2;           // 0x0088(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_3;     // 0x0098(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_2;           // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_2;       // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStartDLCInfomation_ReturnValue;         // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStartFestaInfomation_ReturnValue;       // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStartLegendInfomation_ReturnValue;      // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckDodonpaEventCondition_ReturnValue;   // 0x009E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuSequenceSubState                         K2Node_CustomEvent_State_2;                        // 0x009F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuSequenceSubState                         K2Node_CustomEvent_State_1;                        // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FCompensationGetCompensationsResponse_ReceivableCompensationData> CallFunc_CreateCanUseCompensationDataArray_OutCanUseReceiveData; // 0x00A8(0x0010)(ReferenceParm)
 	TArray<struct FRewardGetWindowParamWithTitle> CallFunc_CreateCanUseCompensationDataArray_OutWindowParamData; // 0x00B8(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsStartDLCInfomation_ReturnValue;         // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStartFestaInfomation_ReturnValue;       // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStartLegendInfomation_ReturnValue;      // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_StartCompensationWindow_OutIsOpenWindow;  // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckDodonpaEventCondition_ReturnValue;   // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMenuSequenceSubState                         K2Node_CustomEvent_State_1;                        // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMenuSequenceSubState                         K2Node_CustomEvent_State;                          // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMenuSoundSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_ApiName_1;                            // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_RequestData_1;                        // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_ResponseData_1;                       // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_Error_1;                              // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetPFLobbyInviteAccepted_ReturnValue;     // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_2;                // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_123[0x5];                                      // 0x0123(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UOnlineActivitySubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_1;                // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasInviteOnly_ReturnValue;                // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_132[0x6];                                      // 0x0132(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_3;           // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence;           // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_4;           // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_3;       // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence_1;         // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_172[0x6];                                      // 0x0172(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_5;           // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_4;       // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStartedStreamingInstall_ReturnValue;    // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18B[0x1];                                      // 0x018B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_4; // 0x018C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x01A8(0x0010)()
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PanelIndex_1;                   // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex_1;                  // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIPopupWindowManager*             CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIPopupWindowBase*                CallFunc_CreatePopupWindow_ReturnValue;            // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface; // 0x01D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1; // 0x01F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_3;                // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_2;                // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CA[0x6];                                       // 0x00CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_3;           // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence;           // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_4;           // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_3;       // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence_1;         // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection_1;                // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10A[0x6];                                      // 0x010A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_5;           // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_4;       // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStartedStreamingInstall_ReturnValue;    // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_122[0x2];                                      // 0x0122(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EMenuSequenceSubState State)>  K2Node_CreateDelegate_OutputDelegate_3;            // 0x0124(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_4;     // 0x0134(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMenuSoundSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_1;          // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPFLobbyInviteAccepted_ReturnValue;     // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UOnlineActivitySubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0168(0x0010)()
+	bool                                          CallFunc_HasInviteOnly_ReturnValue;                // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button_1;                       // 0x0180(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PanelIndex_1;                   // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex_1;                  // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetTutorialPopupDispFlag_ReturnValue;     // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_5; // 0x0194(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStartGetDLCFreeContent_ReturnValue;     // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A5[0x3];                                      // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_6;           // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence_2;         // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_5;       // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGrandPrixLeast1Play_ReturnValue;        // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckDodonpaEventCondition_ReturnValue_1; // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonRaceMenuContentId                      CallFunc_GetLastSelectedRaceMenu_ReturnValue;      // 0x01CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFestaForceStart_isForceStart;           // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckDodonpaEventCondition_ReturnValue_2; // 0x01D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x01D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIPopupWindowManager*             CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIPopupWindowBase*                CallFunc_CreatePopupWindow_ReturnValue;            // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface; // 0x01F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2; // 0x0208(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1; // 0x0208(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3; // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2; // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4; // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3; // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_249[0x7];                                      // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5; // 0x0250(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetTutorialPopupDispFlag_ReturnValue;     // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SendCheckCompensationRequest_OutSendSuccess; // 0x0262(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_263[0xD];                                      // 0x0263(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0270(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x02D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_CommonConnectingUI_C*               CallFunc_FinishSpawningActor_ReturnValue;          // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStartGetDLCFreeContent_ReturnValue;     // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_6;           // 0x02E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence_2;         // 0x02F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_5;       // 0x0300(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_14;                    // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsTryGetCompensation_ReturnValue;         // 0x0309(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x030A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30B[0x1];                                      // 0x030B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGrandPrixLeast1Play_ReturnValue;        // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckDodonpaEventCondition_ReturnValue_1; // 0x0311(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonRaceMenuContentId                      CallFunc_GetLastSelectedRaceMenu_ReturnValue;      // 0x0312(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsFestaForceStart_isForceStart;           // 0x0313(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0315(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0316(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0317(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckDodonpaEventCondition_ReturnValue_2; // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_319[0x7];                                      // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x0320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_329[0x7];                                      // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_3;          // 0x0330(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33C[0x4];                                      // 0x033C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x0340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckFestaStartDateTime_ReturnValue;      // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0349(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue; // 0x034A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckLoggedin_ReturnValue;                // 0x034B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetLocalDataFestaId_ReturnValue;          // 0x034C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerFestaPoint_ReturnValue;          // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_354[0x4];                                      // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x0358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_5;   // 0x0360(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1; // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_6;   // 0x0370(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsConfirmedNoticeStreamingInstall_ReturnValue; // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_379[0x3];                                      // 0x0379(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_5; // 0x037C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x038C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x038D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSendFestaEndResult_ReturnValue;         // 0x038E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckLoggedin_ReturnValue_1;              // 0x038F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0390(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x03A0(0x0010)()
-	class FString                                 K2Node_Event_ApiName;                              // 0x03B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_RequestData;                          // 0x03C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_ResponseData;                         // 0x03D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_Error;                                // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue; // 0x03E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E2[0x6];                                      // 0x03E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_Event_Button;                               // 0x03E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_PanelIndex;                           // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_ButtonIndex;                          // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStartRaceDisableGadgetInfomation_ReturnValue; // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x03F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA[0x6];                                      // 0x03FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_4;          // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_6; // 0x0410(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0420(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0430(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x0440(0x0010)()
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_7;   // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x0458(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x0468(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_6;            // 0x0478(0x0010)()
-	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_5;          // 0x0488(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FText>                           K2Node_MakeArray_Array_1;                          // 0x0490(0x0010)(ConstParm, ReferenceParm)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A1[0x3];                                      // 0x04A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_3;             // 0x04A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x04A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Popup_Window_Tutorial_C*           CallFunc_Create_ReturnValue;                       // 0x04B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIPopupWindowManager*             CallFunc_GetGameInstanceSubsystem_ReturnValue_8;   // 0x04C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x04D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUnionUIPopupWindowBase*                CallFunc_CreatePopupWindow_ReturnValue_1;          // 0x0530(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0538(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6; // 0x0540(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_15;                    // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_551[0x7];                                      // 0x0551(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_CommonConnectingUI_C*               CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0558(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7; // 0x0560(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_16;                    // 0x0570(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_571[0x7];                                      // 0x0571(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8; // 0x0578(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_17;                    // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9; // 0x0590(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_18;                    // 0x05A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5A1[0x7];                                      // 0x05A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10; // 0x05A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_19;                    // 0x05B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5B9[0x7];                                      // 0x05B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_9;   // 0x05C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDebugMode_ReturnValue;                  // 0x05C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5CA[0x2];                                      // 0x05CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_7;     // 0x05CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_8;     // 0x05DC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_10;  // 0x05F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_9;     // 0x05F8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_7;           // 0x0608(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence_3;         // 0x0610(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_20;                    // 0x0618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_619[0x7];                                      // 0x0619(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_8;           // 0x0620(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_6;       // 0x0628(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_21;                    // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4; // 0x0250(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5; // 0x0268(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_14;                    // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_ApiName_2;                            // 0x0280(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_RequestData_2;                        // 0x0290(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_ResponseData_2;                       // 0x02A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_Error_2;                              // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckLoggedin_ReturnValue;                // 0x02B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x02B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2B3[0xD];                                      // 0x02B3(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x02C0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetLocalDataFestaId_ReturnValue;          // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_CommonConnectingUI_C*               CallFunc_FinishSpawningActor_ReturnValue;          // 0x0330(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerFestaPoint_ReturnValue;          // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SendCheckCompensationRequest_OutSendSuccess; // 0x033C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSendFestaEndResult_ReturnValue;         // 0x033D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_33E[0x2];                                      // 0x033E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_6;     // 0x0340(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckLoggedin_ReturnValue_1;              // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_351[0x7];                                      // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0358(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0368(0x0010)()
+	class FString                                 K2Node_Event_ApiName_1;                            // 0x0378(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_RequestData_1;                        // 0x0388(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_ResponseData_1;                       // 0x0398(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_Error_1;                              // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue; // 0x03A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AA[0x6];                                      // 0x03AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_Event_Button;                               // 0x03B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_PanelIndex;                           // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_ButtonIndex;                          // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStartRaceDisableGadgetInfomation_ReturnValue; // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x03C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuSequenceSubState                         K2Node_CustomEvent_State;                          // 0x03C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C3[0x5];                                      // 0x03C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_3;   // 0x03C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EUnionUIFadeDirection                         K2Node_CustomEvent_FadeDirection;                  // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldPlayLegendDodonpaNotice_ReturnValue; // 0x03D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsTryGetCompensation_ReturnValue;         // 0x03D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D3[0x5];                                      // 0x03D3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x03D8(0x0010)()
+	TDelegate<void(EMenuSequenceSubState State)>  K2Node_CreateDelegate_OutputDelegate_7;            // 0x03E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x03F8(0x0010)()
+	bool                                          CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue_1; // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_ApiName;                              // 0x0410(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_RequestData;                          // 0x0420(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_ResponseData;                         // 0x0430(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_Error;                                // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_441[0x3];                                      // 0x0441(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_8; // 0x0444(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_454[0xC];                                      // 0x0454(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0460(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x04C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_9;     // 0x04C8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_CommonConnectingUI_C*               CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x04D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue; // 0x04E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E2[0x2];                                      // 0x04E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_2;          // 0x04E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1; // 0x04F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4F1[0x7];                                      // 0x04F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_3;          // 0x04F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0500(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_501[0x3];                                      // 0x0501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0504(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UForceNextSequenceManagerSubsytem*      CallFunc_GetWorldSubsystem_ReturnValue_4;          // 0x0508(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue_4;   // 0x0510(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckFestaStartDateTime_ReturnValue;      // 0x0518(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_519[0x7];                                      // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_5;   // 0x0520(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRequestLegendCompeEnable_ReturnValue;   // 0x0529(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldDebugRequestLegendCompeEndResult_ReturnValue; // 0x052A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52B[0x5];                                      // 0x052B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0530(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_6;   // 0x0538(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_7;   // 0x0540(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsConfirmedNoticeStreamingInstall_ReturnValue; // 0x0548(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_549[0x3];                                      // 0x0549(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_10; // 0x054C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x055C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x055D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55E[0x2];                                      // 0x055E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate_11; // 0x0560(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x0570(0x0010)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0580(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0590(0x0010)()
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_8;   // 0x05A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_6;            // 0x05A8(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_7;            // 0x05B8(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_8;            // 0x05C8(0x0010)()
+	class UMenuWorldSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue_5;          // 0x05D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FText>                           K2Node_MakeArray_Array_1;                          // 0x05E0(0x0010)(ConstParm, ReferenceParm)
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x05F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x05F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x05FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0600(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_601[0x7];                                      // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Popup_Window_Tutorial_C*           CallFunc_Create_ReturnValue;                       // 0x0608(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x0610(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_611[0xF];                                      // 0x0611(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0620(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_3;             // 0x0680(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_684[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0688(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_CommonConnectingUI_C*               CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0690(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0698(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_699[0x7];                                      // 0x0699(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIPopupWindowManager*             CallFunc_GetGameInstanceSubsystem_ReturnValue_9;   // 0x06A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAppDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue_10;  // 0x06A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionUIPopupWindowBase*                CallFunc_CreatePopupWindow_ReturnValue_1;          // 0x06B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDebugMode_ReturnValue;                  // 0x06B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6B9[0x7];                                      // 0x06B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6; // 0x06C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_15;                    // 0x06D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6D1[0x7];                                      // 0x06D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7; // 0x06D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_16;                    // 0x06E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6E9[0x7];                                      // 0x06E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8; // 0x06F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_17;                    // 0x0700(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_701[0x7];                                      // 0x0701(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9; // 0x0708(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_18;                    // 0x0718(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_719[0x7];                                      // 0x0719(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IMenuPopupWindowInterface> K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10; // 0x0720(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_19;                    // 0x0730(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_731[0x7];                                      // 0x0731(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUITransitionManager*              CallFunc_GetGameInstanceSubsystem_ReturnValue_11;  // 0x0738(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_12;    // 0x0740(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_7;           // 0x0750(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_OnlineSequence_C*                   K2Node_DynamicCast_AsBP_Online_Sequence_3;         // 0x0758(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_20;                    // 0x0760(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_761[0x7];                                      // 0x0761(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwnerSequence_ReturnValue_8;           // 0x0768(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_TopMenuSequence_C*                  K2Node_DynamicCast_AsBP_Top_Menu_Sequence_6;       // 0x0770(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_21;                    // 0x0778(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice) == 0x000010, "Wrong alignment on BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice");
-static_assert(sizeof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice) == 0x000640, "Wrong size on BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice");
+static_assert(sizeof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice) == 0x000780, "Wrong size on BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice");
 static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, EntryPoint) == 0x000000, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_InVisibility) == 0x000004, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_InVisibility' has a wrong offset!");
 static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue) == 0x000008, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence) == 0x000018, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetDodonpaEventCamera_Camera) == 0x000028, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetDodonpaEventCamera_Camera' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_1) == 0x000040, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_1) == 0x000048, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_1) == 0x000050, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_InVisibility) == 0x000051, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_2) == 0x000058, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_2) == 0x000060, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_2) == 0x000068, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue_1) == 0x000069, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection_3) == 0x00006A, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence) == 0x000010, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_StartCompensationWindow_OutIsOpenWindow) == 0x00002C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_StartCompensationWindow_OutIsOpenWindow' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_1) == 0x000030, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_1) == 0x000038, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection_4) == 0x000041, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetDodonpaEventCamera_Camera) == 0x000048, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetDodonpaEventCamera_Camera' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_1) == 0x000050, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_2) == 0x000060, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000070, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_1) == 0x000078, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_2) == 0x000088, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_3) == 0x000098, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPlayerController_ReturnValue) == 0x000078, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_2) == 0x000080, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue_1) == 0x000088, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_2) == 0x000090, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_2) == 0x000098, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartDLCInfomation_ReturnValue) == 0x000099, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartDLCInfomation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartFestaInfomation_ReturnValue) == 0x00009A, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartFestaInfomation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartLegendInfomation_ReturnValue) == 0x00009B, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartLegendInfomation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanOR_ReturnValue) == 0x00009C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanOR_ReturnValue_1) == 0x00009D, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckDodonpaEventCondition_ReturnValue) == 0x00009E, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckDodonpaEventCondition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_State_2) == 0x00009F, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_State_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_State_1) == 0x0000A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_State_1' has a wrong offset!");
 static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreateCanUseCompensationDataArray_OutCanUseReceiveData) == 0x0000A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreateCanUseCompensationDataArray_OutCanUseReceiveData' has a wrong offset!");
 static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreateCanUseCompensationDataArray_OutWindowParamData) == 0x0000B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreateCanUseCompensationDataArray_OutWindowParamData' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartDLCInfomation_ReturnValue) == 0x0000C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartDLCInfomation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartFestaInfomation_ReturnValue) == 0x0000C9, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartFestaInfomation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartLegendInfomation_ReturnValue) == 0x0000CA, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartLegendInfomation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanOR_ReturnValue) == 0x0000CB, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_StartCompensationWindow_OutIsOpenWindow) == 0x0000CC, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_StartCompensationWindow_OutIsOpenWindow' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanOR_ReturnValue_1) == 0x0000CD, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckDodonpaEventCondition_ReturnValue) == 0x0000CE, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckDodonpaEventCondition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_State_1) == 0x0000CF, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_State_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_State) == 0x0000D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_State' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue) == 0x0000D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ApiName_1) == 0x0000E0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ApiName_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_RequestData_1) == 0x0000F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_RequestData_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ResponseData_1) == 0x000100, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ResponseData_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_Error_1) == 0x000110, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_Error_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000118, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Not_PreBool_ReturnValue) == 0x000120, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPFLobbyInviteAccepted_ReturnValue) == 0x000121, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPFLobbyInviteAccepted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection_2) == 0x000122, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000128, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection_1) == 0x000130, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_HasInviteOnly_ReturnValue) == 0x000131, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_HasInviteOnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_3) == 0x000138, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence) == 0x000140, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_3) == 0x000148, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_4) == 0x000150, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_3) == 0x000158, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_4) == 0x000160, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence_1) == 0x000168, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_5) == 0x000170, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection) == 0x000171, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_5) == 0x000178, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_4) == 0x000180, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_6) == 0x000188, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartedStreamingInstall_ReturnValue) == 0x000189, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartedStreamingInstall_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue) == 0x00018A, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_4) == 0x00018C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00019C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue_2) == 0x0001A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue) == 0x0001A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_Button_1) == 0x0001B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_PanelIndex_1) == 0x0001C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_ButtonIndex_1) == 0x0001C4, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x0001C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreatePopupWindow_ReturnValue) == 0x0001D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x0001D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_7) == 0x0001E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x0001F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_8) == 0x000200, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000208, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_9) == 0x000218, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000220, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_10) == 0x000230, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000238, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_11) == 0x000248, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5) == 0x000250, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_12) == 0x000260, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetTutorialPopupDispFlag_ReturnValue) == 0x000261, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetTutorialPopupDispFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_SendCheckCompensationRequest_OutSendSuccess) == 0x000262, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_SendCheckCompensationRequest_OutSendSuccess' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeTransform_ReturnValue) == 0x000270, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0002D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_FinishSpawningActor_ReturnValue) == 0x0002D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartGetDLCFreeContent_ReturnValue) == 0x0002E0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartGetDLCFreeContent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_6) == 0x0002E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence_2) == 0x0002F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_13) == 0x0002F8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_5) == 0x000300, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_14) == 0x000308, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsTryGetCompensation_ReturnValue) == 0x000309, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsTryGetCompensation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x00030A, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00030C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x000310, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckDodonpaEventCondition_ReturnValue_1) == 0x000311, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckDodonpaEventCondition_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetLastSelectedRaceMenu_ReturnValue) == 0x000312, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetLastSelectedRaceMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsFestaForceStart_isForceStart) == 0x000313, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsFestaForceStart_isForceStart' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000314, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Not_PreBool_ReturnValue_1) == 0x000315, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue) == 0x000316, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue_1) == 0x000317, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckDodonpaEventCondition_ReturnValue_2) == 0x000318, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckDodonpaEventCondition_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x000320, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000328, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x000330, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000338, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x000340, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckFestaStartDateTime_ReturnValue) == 0x000348, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckFestaStartDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue_2) == 0x000349, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue) == 0x00034A, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckLoggedin_ReturnValue) == 0x00034B, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckLoggedin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetLocalDataFestaId_ReturnValue) == 0x00034C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetLocalDataFestaId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPlayerFestaPoint_ReturnValue) == 0x000350, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPlayerFestaPoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x000358, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x000360, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1) == 0x000368, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x000370, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsConfirmedNoticeStreamingInstall_ReturnValue) == 0x000378, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsConfirmedNoticeStreamingInstall_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_5) == 0x00037C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Not_PreBool_ReturnValue_2) == 0x00038C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue_3) == 0x00038D, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsSendFestaEndResult_ReturnValue) == 0x00038E, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsSendFestaEndResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckLoggedin_ReturnValue_1) == 0x00038F, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckLoggedin_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000390, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0003A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ApiName) == 0x0003B0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ApiName' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_RequestData) == 0x0003C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_RequestData' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ResponseData) == 0x0003D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ResponseData' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_Error) == 0x0003E0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_Error' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue) == 0x0003E1, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_Button) == 0x0003E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_Button' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_PanelIndex) == 0x0003F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ButtonIndex) == 0x0003F4, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartRaceDisableGadgetInfomation_ReturnValue) == 0x0003F8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartRaceDisableGadgetInfomation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanOR_ReturnValue_2) == 0x0003F9, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_4) == 0x000400, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPlayerController_ReturnValue_1) == 0x000408, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_6) == 0x000410, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_MakeArray_Array) == 0x000420, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Format_ReturnValue) == 0x000430, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000440, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_7) == 0x000450, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000458, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000468, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_6) == 0x000478, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_5) == 0x000488, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_MakeArray_Array_1) == 0x000490, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x0004A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x0004A4, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_Button) == 0x0004A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_PanelIndex) == 0x0004B0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_ButtonIndex) == 0x0004B4, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Create_ReturnValue) == 0x0004B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0004C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_8) == 0x0004C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeTransform_ReturnValue_1) == 0x0004D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreatePopupWindow_ReturnValue_1) == 0x000530, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreatePopupWindow_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000538, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6) == 0x000540, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_15) == 0x000550, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000558, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7) == 0x000560, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_16) == 0x000570, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8) == 0x000578, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_17) == 0x000588, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9) == 0x000590, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_18) == 0x0005A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_18' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10) == 0x0005A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_19) == 0x0005B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_19' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_9) == 0x0005C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue_3) == 0x0005C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsDebugMode_ReturnValue) == 0x0005C9, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsDebugMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_7) == 0x0005CC, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_8) == 0x0005DC, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_10) == 0x0005F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_9) == 0x0005F8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_7) == 0x000608, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence_3) == 0x000610, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence_3' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_20) == 0x000618, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_20' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_8) == 0x000620, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_6) == 0x000628, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_6' has a wrong offset!");
-static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_21) == 0x000630, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_21' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection_3) == 0x0000C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection_2) == 0x0000C9, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_3) == 0x0000D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence) == 0x0000D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_3) == 0x0000E0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_4) == 0x0000E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_3) == 0x0000F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_4) == 0x0000F8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence_1) == 0x000100, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_5) == 0x000108, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection_1) == 0x000109, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_5) == 0x000110, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_4) == 0x000118, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_6) == 0x000120, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartedStreamingInstall_ReturnValue) == 0x000121, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartedStreamingInstall_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_3) == 0x000124, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_4) == 0x000134, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000148, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_1) == 0x000150, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPFLobbyInviteAccepted_ReturnValue) == 0x000158, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPFLobbyInviteAccepted_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000160, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue) == 0x000168, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_HasInviteOnly_ReturnValue) == 0x000178, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_HasInviteOnly_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_Button_1) == 0x000180, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_PanelIndex_1) == 0x000188, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_PanelIndex_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_ButtonIndex_1) == 0x00018C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_ButtonIndex_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetTutorialPopupDispFlag_ReturnValue) == 0x000190, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetTutorialPopupDispFlag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_5) == 0x000194, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartGetDLCFreeContent_ReturnValue) == 0x0001A4, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartGetDLCFreeContent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_6) == 0x0001A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence_2) == 0x0001B0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_7) == 0x0001B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_5) == 0x0001C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_8) == 0x0001C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsGrandPrixLeast1Play_ReturnValue) == 0x0001C9, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsGrandPrixLeast1Play_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckDodonpaEventCondition_ReturnValue_1) == 0x0001CA, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckDodonpaEventCondition_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetLastSelectedRaceMenu_ReturnValue) == 0x0001CB, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetLastSelectedRaceMenu_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsFestaForceStart_isForceStart) == 0x0001CC, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsFestaForceStart_isForceStart' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001CD, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Not_PreBool_ReturnValue) == 0x0001CE, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue) == 0x0001CF, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue_1) == 0x0001D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue_2) == 0x0001D1, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckDodonpaEventCondition_ReturnValue_2) == 0x0001D2, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckDodonpaEventCondition_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue) == 0x0001D3, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_2) == 0x0001D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreatePopupWindow_ReturnValue) == 0x0001E0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreatePopupWindow_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0001E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface) == 0x0001F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_9) == 0x000200, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1) == 0x000208, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_10) == 0x000218, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2) == 0x000220, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_11) == 0x000230, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3) == 0x000238, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_12) == 0x000248, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4) == 0x000250, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_13) == 0x000260, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5) == 0x000268, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_14) == 0x000278, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ApiName_2) == 0x000280, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ApiName_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_RequestData_2) == 0x000290, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_RequestData_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ResponseData_2) == 0x0002A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ResponseData_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_Error_2) == 0x0002B0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_Error_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckLoggedin_ReturnValue) == 0x0002B1, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckLoggedin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Not_PreBool_ReturnValue_1) == 0x0002B2, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeTransform_ReturnValue) == 0x0002C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000320, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetLocalDataFestaId_ReturnValue) == 0x000328, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetLocalDataFestaId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_FinishSpawningActor_ReturnValue) == 0x000330, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPlayerFestaPoint_ReturnValue) == 0x000338, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPlayerFestaPoint_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_SendCheckCompensationRequest_OutSendSuccess) == 0x00033C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_SendCheckCompensationRequest_OutSendSuccess' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsSendFestaEndResult_ReturnValue) == 0x00033D, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsSendFestaEndResult_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_6) == 0x000340, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckLoggedin_ReturnValue_1) == 0x000350, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckLoggedin_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000358, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000368, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ApiName_1) == 0x000378, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ApiName_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_RequestData_1) == 0x000388, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_RequestData_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ResponseData_1) == 0x000398, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ResponseData_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_Error_1) == 0x0003A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_Error_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue) == 0x0003A9, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_Button) == 0x0003B0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_Button' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_PanelIndex) == 0x0003B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_PanelIndex' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ButtonIndex) == 0x0003BC, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ButtonIndex' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsStartRaceDisableGadgetInfomation_ReturnValue) == 0x0003C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsStartRaceDisableGadgetInfomation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanOR_ReturnValue_2) == 0x0003C1, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_State) == 0x0003C2, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_State' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_3) == 0x0003C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_FadeDirection) == 0x0003D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_FadeDirection' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_ShouldPlayLegendDodonpaNotice_ReturnValue) == 0x0003D1, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_ShouldPlayLegendDodonpaNotice_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsTryGetCompensation_ReturnValue) == 0x0003D2, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsTryGetCompensation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0003D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_7) == 0x0003E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_4) == 0x0003F8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue_1) == 0x000408, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreateLoggedinErrorPopupWindow_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ApiName) == 0x000410, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ApiName' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_RequestData) == 0x000420, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_RequestData' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_ResponseData) == 0x000430, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_ResponseData' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_Event_Error) == 0x000440, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_Event_Error' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_8) == 0x000444, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeTransform_ReturnValue_1) == 0x000460, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0004C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_9) == 0x0004C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0004D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x0004E0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue) == 0x0004E1, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x0004E4, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_2) == 0x0004E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1) == 0x0004F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsSkipDodonpaEventMilestoneVersion_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_3) == 0x0004F8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000500, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000504, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_4) == 0x000508, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_4) == 0x000510, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CheckFestaStartDateTime_ReturnValue) == 0x000518, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CheckFestaStartDateTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_5) == 0x000520, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue_2) == 0x000528, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsRequestLegendCompeEnable_ReturnValue) == 0x000529, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsRequestLegendCompeEnable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_ShouldDebugRequestLegendCompeEndResult_ReturnValue) == 0x00052A, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_ShouldDebugRequestLegendCompeEndResult_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetPlayerController_ReturnValue_1) == 0x000530, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_6) == 0x000538, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_7) == 0x000540, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsConfirmedNoticeStreamingInstall_ReturnValue) == 0x000548, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsConfirmedNoticeStreamingInstall_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_10) == 0x00054C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Not_PreBool_ReturnValue_2) == 0x00055C, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BooleanAND_ReturnValue_3) == 0x00055D, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_11) == 0x000560, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000570, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_MakeArray_Array) == 0x000580, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Format_ReturnValue) == 0x000590, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_8) == 0x0005A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_6) == 0x0005A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_7) == 0x0005B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralText_ReturnValue_8) == 0x0005C8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralText_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetWorldSubsystem_ReturnValue_5) == 0x0005D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetWorldSubsystem_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_MakeArray_Array_1) == 0x0005E0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_Button) == 0x0005F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_Button' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_PanelIndex) == 0x0005F8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CustomEvent_ButtonIndex) == 0x0005FC, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000600, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Create_ReturnValue) == 0x000608, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000610, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_MakeTransform_ReturnValue_2) == 0x000620, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_Conv_ByteToInt_ReturnValue_3) == 0x000680, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_Conv_ByteToInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000688, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000690, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsValid_ReturnValue_3) == 0x000698, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_9) == 0x0006A0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_10) == 0x0006A8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_CreatePopupWindow_ReturnValue_1) == 0x0006B0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_CreatePopupWindow_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_IsDebugMode_ReturnValue) == 0x0006B8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_IsDebugMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6) == 0x0006C0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_6' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_15) == 0x0006D0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7) == 0x0006D8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_7' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_16) == 0x0006E8, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8) == 0x0006F0, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_8' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_17) == 0x000700, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9) == 0x000708, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_9' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_18) == 0x000718, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_18' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10) == 0x000720, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsMenu_Popup_Window_Interface_10' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_19) == 0x000730, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_19' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetGameInstanceSubsystem_ReturnValue_11) == 0x000738, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetGameInstanceSubsystem_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_CreateDelegate_OutputDelegate_12) == 0x000740, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_7) == 0x000750, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Online_Sequence_3) == 0x000758, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Online_Sequence_3' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_20) == 0x000760, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_20' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, CallFunc_GetOwnerSequence_ReturnValue_8) == 0x000768, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::CallFunc_GetOwnerSequence_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_AsBP_Top_Menu_Sequence_6) == 0x000770, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_AsBP_Top_Menu_Sequence_6' has a wrong offset!");
+static_assert(offsetof(BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice, K2Node_DynamicCast_bSuccess_21) == 0x000778, "Member 'BPC_PreNotice_C_ExecuteUbergraph_BPC_PreNotice::K2Node_DynamicCast_bSuccess_21' has a wrong offset!");
 
 }
 

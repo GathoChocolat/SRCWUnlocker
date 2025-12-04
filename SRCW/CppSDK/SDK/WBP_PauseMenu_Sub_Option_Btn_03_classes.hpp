@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -38,6 +38,7 @@ public:
 public:
 	void BndEvt__WBP_PauseMenu_Sub_Option_Btn_03_MouseInteraction_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void ExecuteUbergraph_WBP_PauseMenu_Sub_Option_Btn_03(int32 EntryPoint);
+	void Initialize();
 	void PlayOnOffAnimation(bool bIsOn, bool SeEnabled);
 	void PlaySeOnOff(int32 PlayerCount, int32 PlayerIndex);
 	void SetControlerButtonIndex(EControllerButtonTextureIndex In_Controller_Button_Index);

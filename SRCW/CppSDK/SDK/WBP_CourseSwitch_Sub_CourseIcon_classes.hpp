@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -47,26 +47,26 @@ public:
 	bool                                          IsGuest;                                           // 0x052C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
+	void CheckIsGuest(bool IsGuest_0);
 	void Construct();
-	void OnFocus_Imp(class UUnionUIButtonBase* Button);
-	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
-	void OnBackKeyPressed();
-	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void ExecuteUbergraph_WBP_CourseSwitch_Sub_CourseIcon(int32 EntryPoint);
+	void FocusLost();
 	void OnAcceptKeyPressed();
+	void OnBackKeyPressed();
+	void OnFocus_Imp(class UUnionUIButtonBase* Button);
+	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
+	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 	void OnLeftShoulderPressed();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnMouseDown();
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnRightShoulderPressed();
+	void OnUpdatedBP();
+	void SetDecision();
 	void SetFocusBP(bool bIsFocus_0);
 	void SetSelectBP(bool bIsSelect);
-	void FocusLost();
-	void SetDecision();
-	void OnUpdatedBP();
-	void OnRightShoulderPressed();
 	void SetSelectSoundOffCountBP(int32 Count);
-	void CheckIsGuest(bool IsGuest_0);
-	void ExecuteUbergraph_WBP_CourseSwitch_Sub_CourseIcon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -17,6 +17,34 @@
 namespace SDK
 {
 
+// Function WBP_PartyRace_Sub_Option_Line.WBP_PartyRace_Sub_Option_Line_C.UnbindMouseInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PartyRace_Sub_Option_Line_C::UnbindMouseInteraction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyRace_Sub_Option_Line_C", "UnbindMouseInteraction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PartyRace_Sub_Option_Line.WBP_PartyRace_Sub_Option_Line_C.SetupMouseInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PartyRace_Sub_Option_Line_C::SetupMouseInteraction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyRace_Sub_Option_Line_C", "SetupMouseInteraction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PartyRace_Sub_Option_Line.WBP_PartyRace_Sub_Option_Line_C.CourseSelectWhenOffline
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

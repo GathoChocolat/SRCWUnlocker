@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "EMachineSelectMode_structs.hpp"
+#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -194,6 +194,22 @@ public:
 static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_GetMode) == 0x000001, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_GetMode");
 static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_GetMode) == 0x000001, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_GetMode");
 static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_GetMode, OutMode) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_GetMode::OutMode' has a wrong offset!");
+
+// Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.OnInitWidgetRefCategoryNg
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg final
+{
+public:
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0018(0x0010)()
+};
+static_assert(alignof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg) == 0x000008, "Wrong alignment on WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg");
+static_assert(sizeof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg) == 0x000028, "Wrong size on WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg");
+static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg, K2Node_MakeArray_Array) == 0x000000, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg, CallFunc_Format_ReturnValue) == 0x000018, "Member 'WBP_GadgetCustom_Sub_TypeBox_C_OnInitWidgetRefCategoryNg::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function WBP_GadgetCustom_Sub_TypeBox.WBP_GadgetCustom_Sub_TypeBox_C.OnInitWidgetReference
 // 0x00C0 (0x00C0 - 0x0000)

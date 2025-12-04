@@ -274,6 +274,20 @@ void UWBP_CMN_PullDownMenu_C::Open()
 }
 
 
+// Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CMN_PullDownMenu_C::Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CMN_PullDownMenu_C", "Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CMN_PullDownMenu.WBP_CMN_PullDownMenu_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

@@ -12,9 +12,9 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UnionRun_classes.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -55,7 +55,7 @@ public:
 	void Finished_FC6E36BE4C35D35D9FF3A2A1B1F6D5FF();
 	void GetItemIcon(int32 Idx, class UWBP_Race_HUD_Sub_ItemIcon_C** ItemIcon);
 	void GetItemIconByItemInfoType(EItemInfoType ItemInfoType, class UWBP_Race_HUD_Sub_ItemIcon_C** ItemIcon);
-	void GetItemIconByItemInfoTypeSimple(EItemInfoType ItemInfoType, class UWBP_Race_HUD_Sub_ItemIcon_Simple_C** newParam);
+	void GetItemIconByItemInfoTypeSimple(EItemInfoType ItemInfoType, class UWBP_Race_HUD_Sub_ItemIcon_Simple_C** ItemIcon);
 	void GetItemIconSimple(int32 Idx, class UWBP_Race_HUD_Sub_ItemIcon_Simple_C** newParam);
 	void Initialize();
 	void ItemLost(EItemInfoType ItemInfoType, int32 LostItemCount);
@@ -78,7 +78,7 @@ public:
 	void StopLottery(int32 PlayerIndex_0, EItemInfoType ItemInfoType);
 	void TradeCoolTimeStart();
 	void Update_Gadget_Info(int32 PlayerIndex_0);
-	void UpdateIrregularInfiniteItem(class UUnionRacerStatusObject* RacerStatusObject);
+	void UpdateIrregularInfiniteItem(const class UUnionRacerStatusObject* RacerStatusObjet);
 	void UpdateTradeIcon();
 	void UseItem(int32 ItemId, int32 PlayerIndex_0);
 

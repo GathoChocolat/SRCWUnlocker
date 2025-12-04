@@ -11,25 +11,24 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
-#include "UnionUI_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HeaderMenu_Sub_NewsBtn.WBP_HeaderMenu_Sub_NewsBtn_C
-// 0x0078 (0x04F8 - 0x0480)
-class UWBP_HeaderMenu_Sub_NewsBtn_C final : public UUnionUIButtonBase
+// 0x0070 (0x04F8 - 0x0488)
+class UWBP_HeaderMenu_Sub_NewsBtn_C final : public UCommonMenuSubNewsBtn
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 BtnBase;                                           // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DSP_Icon_New;                                      // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteractionBtn;                               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_25;                                        // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_News;                                          // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_ControllerBtn_C*               WBP_CMN_ControllerBtn;                             // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0488(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 BtnBase;                                           // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DSP_Icon_New;                                      // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteractionBtn;                               // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_25;                                        // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_News;                                          // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_FooterMenu_Sub_ControllerBtn_C*    WBP_FooterMenu_Sub_ControllerBtn;                  // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_FooterMenu_Sub_ControllerCross_C*  WBP_FooterMenu_Sub_ControllerCross;                // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_FooterMenu_Sub_Key_C*              WBP_FooterMenu_Sub_Key;                            // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,6 +41,7 @@ public:
 public:
 	void Construct();
 	void ExecuteUbergraph_WBP_HeaderMenu_Sub_NewsBtn(int32 EntryPoint);
+	void FireButtonEvent(class UObject* Object);
 	void OnMouseClickEvent();
 	void PressButtonAnimation();
 	void Set_Icon_Visibility(ESlateVisibility Visibility_0);
@@ -59,13 +59,12 @@ public:
 };
 static_assert(alignof(UWBP_HeaderMenu_Sub_NewsBtn_C) == 0x000008, "Wrong alignment on UWBP_HeaderMenu_Sub_NewsBtn_C");
 static_assert(sizeof(UWBP_HeaderMenu_Sub_NewsBtn_C) == 0x0004F8, "Wrong size on UWBP_HeaderMenu_Sub_NewsBtn_C");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, UberGraphFrame) == 0x000480, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, BtnBase) == 0x000488, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::BtnBase' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, DSP_Icon_New) == 0x000490, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::DSP_Icon_New' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, MouseInteractionBtn) == 0x000498, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::MouseInteractionBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, SizeBox_25) == 0x0004A0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::SizeBox_25' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, TXT_News) == 0x0004A8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::TXT_News' has a wrong offset!");
-static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_CMN_ControllerBtn) == 0x0004B0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_CMN_ControllerBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, UberGraphFrame) == 0x000488, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, BtnBase) == 0x000490, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::BtnBase' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, DSP_Icon_New) == 0x000498, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::DSP_Icon_New' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, MouseInteractionBtn) == 0x0004A0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::MouseInteractionBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, SizeBox_25) == 0x0004A8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::SizeBox_25' has a wrong offset!");
+static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, TXT_News) == 0x0004B0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::TXT_News' has a wrong offset!");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_FooterMenu_Sub_ControllerBtn) == 0x0004B8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_FooterMenu_Sub_ControllerBtn' has a wrong offset!");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_FooterMenu_Sub_ControllerCross) == 0x0004C0, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_FooterMenu_Sub_ControllerCross' has a wrong offset!");
 static_assert(offsetof(UWBP_HeaderMenu_Sub_NewsBtn_C, WBP_FooterMenu_Sub_Key) == 0x0004C8, "Member 'UWBP_HeaderMenu_Sub_NewsBtn_C::WBP_FooterMenu_Sub_Key' has a wrong offset!");

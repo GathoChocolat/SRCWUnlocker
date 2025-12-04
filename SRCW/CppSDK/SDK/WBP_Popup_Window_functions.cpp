@@ -1843,7 +1843,7 @@ void UWBP_Popup_Window_C::UnregisterMainMenu()
 
 
 // Function WBP_Popup_Window.WBP_Popup_Window_C.UpdateButtonControlDelay
-// (Public, BlueprintCallable, BlueprintEvent)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // double                                  InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

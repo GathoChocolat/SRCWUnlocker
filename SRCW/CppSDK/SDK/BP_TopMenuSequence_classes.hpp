@@ -10,52 +10,53 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UnionLib_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 #include "UnionRun_structs.hpp"
-#include "UnionLib_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TopMenuSequence.BP_TopMenuSequence_C
-// 0x00A0 (0x04D8 - 0x0438)
+// 0x00A8 (0x04E0 - 0x0438)
 class ABP_TopMenuSequence_C final : public ATopMenuSequence
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0438(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBPC_Etcetera_C*                        BPC_Etcetera;                                      // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_DodonpaEventState_C*               BPC_DodonpaEventState;                             // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_NoticePopup_C*                     BPC_NoticePopup;                                   // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_PlayerProfile_C*                   BPC_PlayerProfile;                                 // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_GadgetCustomize2State_C*           BPC_GadgetCustomize2State;                         // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_GetDLCFreeContent_C*               BPC_GetDLCFreeContent;                             // 0x0468(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_NoticeEventEnd_C*                  BPC_NoticeEventEnd;                                // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_PreNotice_C*                       BPC_PreNotice;                                     // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_FriendList_C*                      BPC_FriendList;                                    // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBPC_LobbyPlayerList_C*                 BPC_LobbyPlayerList;                               // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UWBP_TopMenu_C*                         TopMenu;                                           // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   LobbyLevel;                                        // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 MainCamera;                                        // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UHintPopupWindow*                       TipsWindow;                                        // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AMenuCameraManager*                     CameraManager;                                     // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	ETopMenuSequenceState                         BackToState;                                       // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EHintId                                       UnLockSubMenuTipsID;                               // 0x04B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bTopGameModeToCharamachine;                        // 0x04BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bTopSubModeToCharamachine;                         // 0x04BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDisableInAnimationFlag;                           // 0x04BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsAlone;                                          // 0x04BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4BE[0x2];                                      // 0x04BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        GarageDisableTime;                                 // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsPlayerListInputFlag;                            // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C9[0x3];                                      // 0x04C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SelectedPlayerCountCache;                          // 0x04CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsCPUBoostFlag;                                   // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBPC_LegendCompeNoticeEventEnd_C*       BPC_LegendCompeNoticeEventEnd;                     // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_Etcetera_C*                        BPC_Etcetera;                                      // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_DodonpaEventState_C*               BPC_DodonpaEventState;                             // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_NoticePopup_C*                     BPC_NoticePopup;                                   // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_PlayerProfile_C*                   BPC_PlayerProfile;                                 // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_GadgetCustomize2State_C*           BPC_GadgetCustomize2State;                         // 0x0468(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_GetDLCFreeContent_C*               BPC_GetDLCFreeContent;                             // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_NoticeEventEnd_C*                  BPC_NoticeEventEnd;                                // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_PreNotice_C*                       BPC_PreNotice;                                     // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_FriendList_C*                      BPC_FriendList;                                    // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBPC_LobbyPlayerList_C*                 BPC_LobbyPlayerList;                               // 0x0490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWBP_TopMenu_C*                         TopMenu;                                           // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   LobbyLevel;                                        // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 MainCamera;                                        // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UHintPopupWindow*                       TipsWindow;                                        // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AMenuCameraManager*                     CameraManager;                                     // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	ETopMenuSequenceState                         BackToState;                                       // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHintId                                       UnLockSubMenuTipsID;                               // 0x04C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bTopGameModeToCharamachine;                        // 0x04C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bTopSubModeToCharamachine;                         // 0x04C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDisableInAnimationFlag;                           // 0x04C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsAlone;                                          // 0x04C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C6[0x2];                                      // 0x04C6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        GarageDisableTime;                                 // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsPlayerListInputFlag;                            // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D1[0x3];                                      // 0x04D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SelectedPlayerCountCache;                          // 0x04D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsCPUBoostFlag;                                   // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AttachMainCamera();
@@ -84,13 +85,12 @@ public:
 	void FinishiedFadeToSelectedGameMode(EUnionUIFadeDirection FadeDirection);
 	void ForceTransitionPartyRace(EMenuSequenceSubState State);
 	void GadgetCustom_DodonpaEvent_End();
-	void GetMachineTypes(ECarStatusType InCarStatus, TArray<EMachineId>* OutMachineIds);
 	class UObject* GetOwnerMenuSequence();
 	void GetPlayerName(class FString* playerName);
-	void GetPlayerProfileData(int32 InPlayerIndex, struct FLobbyPlayerData* OutValue);
 	void GetTipsHintId(EHintId* OutTipsHintId);
 	void GotoOnlineFromFriendList();
 	void InitBinds();
+	void IsShowAddGadgetTips(EGadgetPlateId InGadgetPlateRank, EUnionRomVersion InVersionNum, bool* bOutShowTips);
 	void IsTipsHint(bool* OutTipsFlag);
 	void LoggedinErrorWindow();
 	void NextSelectPlayMode();
@@ -165,6 +165,7 @@ public:
 	void SetupBaseWidget();
 	void SetupSubLevel(class ULevelStreaming* SubLevel);
 	void StreamingInstallErrorWindow();
+	void UpdateTimeTable();
 
 public:
 	static class UClass* StaticClass()
@@ -177,33 +178,34 @@ public:
 	}
 };
 static_assert(alignof(ABP_TopMenuSequence_C) == 0x000008, "Wrong alignment on ABP_TopMenuSequence_C");
-static_assert(sizeof(ABP_TopMenuSequence_C) == 0x0004D8, "Wrong size on ABP_TopMenuSequence_C");
+static_assert(sizeof(ABP_TopMenuSequence_C) == 0x0004E0, "Wrong size on ABP_TopMenuSequence_C");
 static_assert(offsetof(ABP_TopMenuSequence_C, UberGraphFrame) == 0x000438, "Member 'ABP_TopMenuSequence_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_Etcetera) == 0x000440, "Member 'ABP_TopMenuSequence_C::BPC_Etcetera' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_DodonpaEventState) == 0x000448, "Member 'ABP_TopMenuSequence_C::BPC_DodonpaEventState' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_NoticePopup) == 0x000450, "Member 'ABP_TopMenuSequence_C::BPC_NoticePopup' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_PlayerProfile) == 0x000458, "Member 'ABP_TopMenuSequence_C::BPC_PlayerProfile' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_GadgetCustomize2State) == 0x000460, "Member 'ABP_TopMenuSequence_C::BPC_GadgetCustomize2State' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_GetDLCFreeContent) == 0x000468, "Member 'ABP_TopMenuSequence_C::BPC_GetDLCFreeContent' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_NoticeEventEnd) == 0x000470, "Member 'ABP_TopMenuSequence_C::BPC_NoticeEventEnd' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_PreNotice) == 0x000478, "Member 'ABP_TopMenuSequence_C::BPC_PreNotice' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_FriendList) == 0x000480, "Member 'ABP_TopMenuSequence_C::BPC_FriendList' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BPC_LobbyPlayerList) == 0x000488, "Member 'ABP_TopMenuSequence_C::BPC_LobbyPlayerList' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, TopMenu) == 0x000490, "Member 'ABP_TopMenuSequence_C::TopMenu' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, LobbyLevel) == 0x000498, "Member 'ABP_TopMenuSequence_C::LobbyLevel' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, MainCamera) == 0x0004A0, "Member 'ABP_TopMenuSequence_C::MainCamera' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, TipsWindow) == 0x0004A8, "Member 'ABP_TopMenuSequence_C::TipsWindow' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, CameraManager) == 0x0004B0, "Member 'ABP_TopMenuSequence_C::CameraManager' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, BackToState) == 0x0004B8, "Member 'ABP_TopMenuSequence_C::BackToState' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, UnLockSubMenuTipsID) == 0x0004B9, "Member 'ABP_TopMenuSequence_C::UnLockSubMenuTipsID' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, bTopGameModeToCharamachine) == 0x0004BA, "Member 'ABP_TopMenuSequence_C::bTopGameModeToCharamachine' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, bTopSubModeToCharamachine) == 0x0004BB, "Member 'ABP_TopMenuSequence_C::bTopSubModeToCharamachine' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, bDisableInAnimationFlag) == 0x0004BC, "Member 'ABP_TopMenuSequence_C::bDisableInAnimationFlag' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, bIsAlone) == 0x0004BD, "Member 'ABP_TopMenuSequence_C::bIsAlone' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, GarageDisableTime) == 0x0004C0, "Member 'ABP_TopMenuSequence_C::GarageDisableTime' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, bIsPlayerListInputFlag) == 0x0004C8, "Member 'ABP_TopMenuSequence_C::bIsPlayerListInputFlag' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, SelectedPlayerCountCache) == 0x0004CC, "Member 'ABP_TopMenuSequence_C::SelectedPlayerCountCache' has a wrong offset!");
-static_assert(offsetof(ABP_TopMenuSequence_C, bIsCPUBoostFlag) == 0x0004D0, "Member 'ABP_TopMenuSequence_C::bIsCPUBoostFlag' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_LegendCompeNoticeEventEnd) == 0x000440, "Member 'ABP_TopMenuSequence_C::BPC_LegendCompeNoticeEventEnd' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_Etcetera) == 0x000448, "Member 'ABP_TopMenuSequence_C::BPC_Etcetera' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_DodonpaEventState) == 0x000450, "Member 'ABP_TopMenuSequence_C::BPC_DodonpaEventState' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_NoticePopup) == 0x000458, "Member 'ABP_TopMenuSequence_C::BPC_NoticePopup' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_PlayerProfile) == 0x000460, "Member 'ABP_TopMenuSequence_C::BPC_PlayerProfile' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_GadgetCustomize2State) == 0x000468, "Member 'ABP_TopMenuSequence_C::BPC_GadgetCustomize2State' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_GetDLCFreeContent) == 0x000470, "Member 'ABP_TopMenuSequence_C::BPC_GetDLCFreeContent' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_NoticeEventEnd) == 0x000478, "Member 'ABP_TopMenuSequence_C::BPC_NoticeEventEnd' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_PreNotice) == 0x000480, "Member 'ABP_TopMenuSequence_C::BPC_PreNotice' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_FriendList) == 0x000488, "Member 'ABP_TopMenuSequence_C::BPC_FriendList' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BPC_LobbyPlayerList) == 0x000490, "Member 'ABP_TopMenuSequence_C::BPC_LobbyPlayerList' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, TopMenu) == 0x000498, "Member 'ABP_TopMenuSequence_C::TopMenu' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, LobbyLevel) == 0x0004A0, "Member 'ABP_TopMenuSequence_C::LobbyLevel' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, MainCamera) == 0x0004A8, "Member 'ABP_TopMenuSequence_C::MainCamera' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, TipsWindow) == 0x0004B0, "Member 'ABP_TopMenuSequence_C::TipsWindow' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, CameraManager) == 0x0004B8, "Member 'ABP_TopMenuSequence_C::CameraManager' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, BackToState) == 0x0004C0, "Member 'ABP_TopMenuSequence_C::BackToState' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, UnLockSubMenuTipsID) == 0x0004C1, "Member 'ABP_TopMenuSequence_C::UnLockSubMenuTipsID' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, bTopGameModeToCharamachine) == 0x0004C2, "Member 'ABP_TopMenuSequence_C::bTopGameModeToCharamachine' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, bTopSubModeToCharamachine) == 0x0004C3, "Member 'ABP_TopMenuSequence_C::bTopSubModeToCharamachine' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, bDisableInAnimationFlag) == 0x0004C4, "Member 'ABP_TopMenuSequence_C::bDisableInAnimationFlag' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, bIsAlone) == 0x0004C5, "Member 'ABP_TopMenuSequence_C::bIsAlone' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, GarageDisableTime) == 0x0004C8, "Member 'ABP_TopMenuSequence_C::GarageDisableTime' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, bIsPlayerListInputFlag) == 0x0004D0, "Member 'ABP_TopMenuSequence_C::bIsPlayerListInputFlag' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, SelectedPlayerCountCache) == 0x0004D4, "Member 'ABP_TopMenuSequence_C::SelectedPlayerCountCache' has a wrong offset!");
+static_assert(offsetof(ABP_TopMenuSequence_C, bIsCPUBoostFlag) == 0x0004D8, "Member 'ABP_TopMenuSequence_C::bIsCPUBoostFlag' has a wrong offset!");
 
 }
 

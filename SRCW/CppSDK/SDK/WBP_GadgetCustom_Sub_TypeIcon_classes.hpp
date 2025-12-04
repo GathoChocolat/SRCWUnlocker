@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK

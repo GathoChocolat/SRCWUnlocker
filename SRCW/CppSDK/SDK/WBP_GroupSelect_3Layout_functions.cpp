@@ -17,43 +17,43 @@
 namespace SDK
 {
 
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.BndEvt__WBP_GroupSelect_3Layout_Team1MouseInteraction_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.BndEvt__WBP_GroupSelect_3Layout_Team1MouseInteraction_K2Node_ComponentBoundEvent_3_OnButtonPressedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UWBP_GroupSelect_3Layout_C::BndEvt__WBP_GroupSelect_3Layout_Team1MouseInteraction_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+void UWBP_GroupSelect_3Layout_C::BndEvt__WBP_GroupSelect_3Layout_Team1MouseInteraction_K2Node_ComponentBoundEvent_3_OnButtonPressedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "BndEvt__WBP_GroupSelect_3Layout_Team1MouseInteraction_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "BndEvt__WBP_GroupSelect_3Layout_Team1MouseInteraction_K2Node_ComponentBoundEvent_3_OnButtonPressedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.BndEvt__WBP_GroupSelect_3Layout_Team2MouseInteraction_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
+// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.BndEvt__WBP_GroupSelect_3Layout_Team2MouseInteraction_K2Node_ComponentBoundEvent_4_OnButtonPressedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UWBP_GroupSelect_3Layout_C::BndEvt__WBP_GroupSelect_3Layout_Team2MouseInteraction_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
+void UWBP_GroupSelect_3Layout_C::BndEvt__WBP_GroupSelect_3Layout_Team2MouseInteraction_K2Node_ComponentBoundEvent_4_OnButtonPressedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "BndEvt__WBP_GroupSelect_3Layout_Team2MouseInteraction_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "BndEvt__WBP_GroupSelect_3Layout_Team2MouseInteraction_K2Node_ComponentBoundEvent_4_OnButtonPressedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.BndEvt__WBP_GroupSelect_3Layout_Team3MouseInteraction_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
+// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.BndEvt__WBP_GroupSelect_3Layout_Team3MouseInteraction_K2Node_ComponentBoundEvent_5_OnButtonPressedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UWBP_GroupSelect_3Layout_C::BndEvt__WBP_GroupSelect_3Layout_Team3MouseInteraction_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
+void UWBP_GroupSelect_3Layout_C::BndEvt__WBP_GroupSelect_3Layout_Team3MouseInteraction_K2Node_ComponentBoundEvent_5_OnButtonPressedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "BndEvt__WBP_GroupSelect_3Layout_Team3MouseInteraction_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "BndEvt__WBP_GroupSelect_3Layout_Team3MouseInteraction_K2Node_ComponentBoundEvent_5_OnButtonPressedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -68,20 +68,6 @@ void UWBP_GroupSelect_3Layout_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.DeleteController
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupSelect_3Layout_C::DeleteController()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "DeleteController");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,34 +113,6 @@ void UWBP_GroupSelect_3Layout_C::ExecuteUbergraph_WBP_GroupSelect_3Layout(int32 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.FinishMove
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupSelect_3Layout_C::FinishMove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "FinishMove");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.FinishPlateMoving
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupSelect_3Layout_C::FinishPlateMoving()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "FinishPlateMoving");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -240,20 +198,6 @@ void UWBP_GroupSelect_3Layout_C::OnDecisionEvent_Event(class UUnionUIButtonBase*
 }
 
 
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.OnDecisionOutAnimFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupSelect_3Layout_C::OnDecisionOutAnimFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "OnDecisionOutAnimFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.OnDirectionEvent_Event
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -285,6 +229,20 @@ void UWBP_GroupSelect_3Layout_C::OnInAnimFinished()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "OnInAnimFinished");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.PlayOutAnimationEvent
+// (Event, Public, BlueprintEvent)
+
+void UWBP_GroupSelect_3Layout_C::PlayOutAnimationEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "PlayOutAnimationEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -332,34 +290,6 @@ void UWBP_GroupSelect_3Layout_C::SetComHide()
 }
 
 
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.SetUpAfterDecsition
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupSelect_3Layout_C::SetUpAfterDecsition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "SetUpAfterDecsition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.StartWatchPlateMoveFinish
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupSelect_3Layout_C::StartWatchPlateMoveFinish()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "StartWatchPlateMoveFinish");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.UpdateComponents
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -369,20 +299,6 @@ void UWBP_GroupSelect_3Layout_C::UpdateComponents()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "UpdateComponents");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GroupSelect_3Layout.WBP_GroupSelect_3Layout_C.WatchPlateMoveFinish
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_GroupSelect_3Layout_C::WatchPlateMoveFinish()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GroupSelect_3Layout_C", "WatchPlateMoveFinish");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

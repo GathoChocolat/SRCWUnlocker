@@ -18,55 +18,104 @@ namespace SDK::Params
 {
 
 // Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.ExecuteUbergraph_WBP_HonorTitle_Plate
-// 0x00D0 (0x00D0 - 0x0000)
+// 0x01A8 (0x01A8 - 0x0000)
 struct WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHonorTitleListData                    K2Node_Event_SetupData;                            // 0x0018(0x0050)(ConstParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EHonorTitleFontColor                          Temp_byte_Variable;                                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionFontScroll*                       K2Node_Select_Default;                             // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	TDelegate<void(ESlateVisibility InVisibility)> K2Node_CreateDelegate_OutputDelegate_1;           // 0x0098(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable;                              // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHonorTitleListData                    K2Node_Event_SetupData;                            // 0x0008(0x0058)(ConstParm)
+	TDelegate<void(ESlateVisibility InVisibility)> K2Node_CreateDelegate_OutputDelegate;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_CustomEvent_InVisibility;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UObject>                 K2Node_CustomEvent_PlateImageTexture2D_1;          // 0x0078(0x0028)(HasGetValueTypeHash)
+	EHonorTitleFontColor                          K2Node_CustomEvent_FontColor_1;                    // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_CustomEvent_HonorTitleVB_1;                 // 0x00A8(0x0010)()
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UObject>                 K2Node_CustomEvent_PlateImageTexture2D;            // 0x00C0(0x0028)(HasGetValueTypeHash)
+	EHonorTitleFontColor                          K2Node_CustomEvent_FontColor;                      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_CustomEvent_HonorTitleVB;                   // 0x00F0(0x0010)()
+	int32                                         K2Node_CustomEvent_RoundCount;                     // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0108(0x0010)()
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHonorTitleFontColor                          Temp_byte_Variable;                                // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionFontScroll*                       K2Node_Select_Default;                             // 0x0120(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	EHonorTitleFontColor                          Temp_byte_Variable_1;                              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable;                              // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_152[0x6];                                      // 0x0152(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUnionFontScroll*                       K2Node_Select_Default_1;                           // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_1;            // 0x0168(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_2;            // 0x0178(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_1;                            // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded_1;                       // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D_1;                    // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate) == 0x000008, "Wrong alignment on WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate");
-static_assert(sizeof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate) == 0x0000D0, "Wrong size on WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate");
+static_assert(sizeof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate) == 0x0001A8, "Wrong size on WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate");
 static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, EntryPoint) == 0x000000, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_Event_SetupData) == 0x000018, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_Event_SetupData' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00006C, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_IsValid_ReturnValue_1) == 0x000070, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000078, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_Loaded) == 0x000080, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, Temp_byte_Variable) == 0x000088, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_Select_Default) == 0x000090, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CreateDelegate_OutputDelegate_1) == 0x000098, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_InVisibility) == 0x0000A8, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_InVisibility' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, Temp_object_Variable) == 0x0000B0, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0000B8, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_DynamicCast_As_____2D) == 0x0000C0, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_DynamicCast_As_____2D' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x0000C9, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_BooleanAND_ReturnValue) == 0x0000CA, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_Event_SetupData) == 0x000008, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_Event_SetupData' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CreateDelegate_OutputDelegate) == 0x000060, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_InVisibility) == 0x000070, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_InVisibility' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000071, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000072, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_BooleanAND_ReturnValue) == 0x000073, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_PlateImageTexture2D_1) == 0x000078, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_PlateImageTexture2D_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_FontColor_1) == 0x0000A0, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_FontColor_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_HonorTitleVB_1) == 0x0000A8, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_HonorTitleVB_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000B8, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_PlateImageTexture2D) == 0x0000C0, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_PlateImageTexture2D' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_FontColor) == 0x0000E8, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_FontColor' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_HonorTitleVB) == 0x0000F0, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_HonorTitleVB' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_RoundCount) == 0x000100, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_RoundCount' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_Conv_IntToText_ReturnValue) == 0x000108, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000118, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, Temp_byte_Variable) == 0x00011C, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_Select_Default) == 0x000120, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, Temp_byte_Variable_1) == 0x000128, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, Temp_object_Variable) == 0x000130, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_DynamicCast_As_____2D) == 0x000138, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_DynamicCast_As_____2D' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_DynamicCast_bSuccess) == 0x000140, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_Loaded) == 0x000148, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_Loaded' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_IsValid_ReturnValue) == 0x000150, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_IsValid_ReturnValue_1) == 0x000151, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000158, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_Select_Default_1) == 0x000160, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CreateDelegate_OutputDelegate_1) == 0x000168, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CreateDelegate_OutputDelegate_2) == 0x000178, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, Temp_object_Variable_1) == 0x000188, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_CustomEvent_Loaded_1) == 0x000190, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_DynamicCast_As_____2D_1) == 0x000198, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_DynamicCast_As_____2D_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, K2Node_DynamicCast_bSuccess_1) == 0x0001A0, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate, CallFunc_IsValid_ReturnValue_2) == 0x0001A1, "Member 'WBP_HonorTitle_Plate_C_ExecuteUbergraph_WBP_HonorTitle_Plate::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8) == 0x000008, "Wrong alignment on WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8");
+static_assert(sizeof(WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8) == 0x000008, "Wrong size on WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8, Loaded) == 0x000000, "Member 'WBP_HonorTitle_Plate_C_OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8::Loaded' has a wrong offset!");
 
 // Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.OnLoaded_EEF55983447D6E2AAAF1AB9849C4A735
 // 0x0008 (0x0008 - 0x0000)
@@ -80,7 +129,7 @@ static_assert(sizeof(WBP_HonorTitle_Plate_C_OnLoaded_EEF55983447D6E2AAAF1AB9849C
 static_assert(offsetof(WBP_HonorTitle_Plate_C_OnLoaded_EEF55983447D6E2AAAF1AB9849C4A735, Loaded) == 0x000000, "Member 'WBP_HonorTitle_Plate_C_OnLoaded_EEF55983447D6E2AAAF1AB9849C4A735::Loaded' has a wrong offset!");
 
 // Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetHonorTitle
-// 0x0088 (0x0088 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct WBP_HonorTitle_Plate_C_SetHonorTitle final
 {
 public:
@@ -96,11 +145,11 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHonorTitleListData                    CallFunc_Map_Find_Value;                           // 0x0030(0x0050)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHonorTitleListData                    CallFunc_Map_Find_Value;                           // 0x0030(0x0058)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_HonorTitle_Plate_C_SetHonorTitle) == 0x000008, "Wrong alignment on WBP_HonorTitle_Plate_C_SetHonorTitle");
-static_assert(sizeof(WBP_HonorTitle_Plate_C_SetHonorTitle) == 0x000088, "Wrong size on WBP_HonorTitle_Plate_C_SetHonorTitle");
+static_assert(sizeof(WBP_HonorTitle_Plate_C_SetHonorTitle) == 0x000090, "Wrong size on WBP_HonorTitle_Plate_C_SetHonorTitle");
 static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, InHonorId) == 0x000000, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::InHonorId' has a wrong offset!");
 static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, SetHonorTitleId) == 0x000004, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::SetHonorTitleId' has a wrong offset!");
 static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, CallFunc_GetIsHonorTitleReleased_ReturnValue) == 0x000008, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::CallFunc_GetIsHonorTitleReleased_ReturnValue' has a wrong offset!");
@@ -111,17 +160,51 @@ static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, K2Node_DynamicCast_
 static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, CallFunc_IsValid_ReturnValue_1) == 0x000029, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, CallFunc_Map_Find_Value) == 0x000030, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, CallFunc_Map_Find_ReturnValue) == 0x000080, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetHonorTitle, CallFunc_Map_Find_ReturnValue) == 0x000088, "Member 'WBP_HonorTitle_Plate_C_SetHonorTitle::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupLegendCompeHonorTitle
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle final
+{
+public:
+	TSoftObjectPtr<class UObject>                 PlateImageTexture2D;                               // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	EHonorTitleFontColor                          FontColor;                                         // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   HonorTitleVB;                                      // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         RoundCount;                                        // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle) == 0x000008, "Wrong alignment on WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle");
+static_assert(sizeof(WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle) == 0x000048, "Wrong size on WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle, PlateImageTexture2D) == 0x000000, "Member 'WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle::PlateImageTexture2D' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle, FontColor) == 0x000028, "Member 'WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle::FontColor' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle, HonorTitleVB) == 0x000030, "Member 'WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle::HonorTitleVB' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle, RoundCount) == 0x000040, "Member 'WBP_HonorTitle_Plate_C_SetupLegendCompeHonorTitle::RoundCount' has a wrong offset!");
+
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupNormalHonorTitlePlate
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate final
+{
+public:
+	TSoftObjectPtr<class UObject>                 PlateImageTexture2D;                               // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	EHonorTitleFontColor                          FontColor;                                         // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   HonorTitleVB;                                      // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate) == 0x000008, "Wrong alignment on WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate");
+static_assert(sizeof(WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate) == 0x000040, "Wrong size on WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate, PlateImageTexture2D) == 0x000000, "Member 'WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate::PlateImageTexture2D' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate, FontColor) == 0x000028, "Member 'WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate::FontColor' has a wrong offset!");
+static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate, HonorTitleVB) == 0x000030, "Member 'WBP_HonorTitle_Plate_C_SetupNormalHonorTitlePlate::HonorTitleVB' has a wrong offset!");
 
 // Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupTitlePlate
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_HonorTitle_Plate_C_SetupTitlePlate final
 {
 public:
-	struct FHonorTitleListData                    SetUpData;                                         // 0x0000(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FHonorTitleListData                    SetUpData;                                         // 0x0000(0x0058)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(WBP_HonorTitle_Plate_C_SetupTitlePlate) == 0x000008, "Wrong alignment on WBP_HonorTitle_Plate_C_SetupTitlePlate");
-static_assert(sizeof(WBP_HonorTitle_Plate_C_SetupTitlePlate) == 0x000050, "Wrong size on WBP_HonorTitle_Plate_C_SetupTitlePlate");
+static_assert(sizeof(WBP_HonorTitle_Plate_C_SetupTitlePlate) == 0x000058, "Wrong size on WBP_HonorTitle_Plate_C_SetupTitlePlate");
 static_assert(offsetof(WBP_HonorTitle_Plate_C_SetupTitlePlate, SetUpData) == 0x000000, "Member 'WBP_HonorTitle_Plate_C_SetupTitlePlate::SetUpData' has a wrong offset!");
 
 // Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.UpdateWhenVisbilityChanged

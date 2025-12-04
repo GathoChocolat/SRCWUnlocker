@@ -105,6 +105,36 @@ void UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::GetSlot(int32 SlotIndex, int32 SlotN
 }
 
 
+// Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.GetSlotEX
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   SlotSize                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SlotIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UBorder**                         Slot_0                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UImage**                          Icon                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::GetSlotEX(int32 SlotSize, int32 SlotIndex, class UBorder** Slot_0, class UImage** Icon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_GadgetIcon_Simple_C", "GetSlotEX");
+
+	Params::WBP_Race_HUD_Sub_GadgetIcon_Simple_C_GetSlotEX Parms{};
+
+	Parms.SlotSize = SlotSize;
+	Parms.SlotIndex = SlotIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Slot_0 != nullptr)
+		*Slot_0 = Parms.Slot_0;
+
+	if (Icon != nullptr)
+		*Icon = Parms.Icon;
+}
+
+
 // Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -114,6 +144,20 @@ void UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::Initialize()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Race_HUD_Sub_GadgetIcon_Simple_C", "Initialize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.InitializeEX
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::InitializeEX()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_GadgetIcon_Simple_C", "InitializeEX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -160,6 +204,20 @@ void UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::SetEffectiveIcon(EGadgetId gadgetId,
 	Parms.IsEffective = IsEffective;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Race_HUD_Sub_GadgetIcon_Simple.WBP_Race_HUD_Sub_GadgetIcon_Simple_C.SetGadgetEX
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Race_HUD_Sub_GadgetIcon_Simple_C::SetGadgetEX()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_GadgetIcon_Simple_C", "SetGadgetEX");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

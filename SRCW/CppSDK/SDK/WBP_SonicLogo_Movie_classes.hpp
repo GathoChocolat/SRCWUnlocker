@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CriWareRuntime_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -47,6 +47,7 @@ public:
 	void FinishedMovie();
 	void InitialiseMovie(const int32 MovieListIndex);
 	void OnMovieClosedEvent();
+	void ResetMoviePanelOpacity();
 	void SkipAdvertiseLogo();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 

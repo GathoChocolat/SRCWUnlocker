@@ -141,8 +141,9 @@ public:
 	struct FKey                                   CallFunc_GetKeyAccel_ReturnValue;                  // 0x0020(0x0018)(ConstParm, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPlayControlKeyboard_ReturnValue;        // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetKey_Success;                           // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetKey_Success_1;                         // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetKey_IsSuccess;                         // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetKey_Success;                           // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetKey_Success_1;                         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey) == 0x000008, "Wrong alignment on WBP_Race_StartDash_Sub_ArcGauge_C_SetKey");
 static_assert(sizeof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey) == 0x000040, "Wrong size on WBP_Race_StartDash_Sub_ArcGauge_C_SetKey");
@@ -151,8 +152,9 @@ static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, PlayerControlle
 static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_GetKeyAccel_ReturnValue) == 0x000020, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_GetKeyAccel_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_IsPlayControlKeyboard_ReturnValue) == 0x000038, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_IsPlayControlKeyboard_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_Not_PreBool_ReturnValue) == 0x000039, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_Success) == 0x00003A, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_Success' has a wrong offset!");
-static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_Success_1) == 0x00003B, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_Success_1' has a wrong offset!");
+static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_IsSuccess) == 0x00003A, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_IsSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_Success) == 0x00003B, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_Success' has a wrong offset!");
+static_assert(offsetof(WBP_Race_StartDash_Sub_ArcGauge_C_SetKey, CallFunc_SetKey_Success_1) == 0x00003C, "Member 'WBP_Race_StartDash_Sub_ArcGauge_C_SetKey::CallFunc_SetKey_Success_1' has a wrong offset!");
 
 // Function WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C.SetParcentMyGauge
 // 0x0030 (0x0030 - 0x0000)

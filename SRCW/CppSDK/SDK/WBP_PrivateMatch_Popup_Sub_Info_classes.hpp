@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PrivateMatch_Popup_Sub_Info.WBP_PrivateMatch_Popup_Sub_Info_C
-// 0x00D0 (0x03B0 - 0x02E0)
+// 0x00D8 (0x03B8 - 0x02E0)
 class UWBP_PrivateMatch_Popup_Sub_Info_C final : public UUserWidget
 {
 public:
@@ -49,6 +49,7 @@ public:
 	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrivateMatchPopup*                     Private_Match_Popup;                               // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              PopupOutAnimFinishEvent;                           // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	EPrivateMatchShowMenuType                     OpenShowMenuType;                                  // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CompletedGoAnimationFinish();
@@ -73,6 +74,7 @@ public:
 	void SetButtonsText(const TArray<class FText>& InTextArray);
 	void SetInitFocusButton();
 	void SetLoadingText(const class FText& InText);
+	void SetOpenShowMenuType(EPrivateMatchShowMenuType InMenuType);
 	void SetParentPopupWidget(class UPrivateMatchPopup* PrivateMatchPopup);
 	void SetupCompletedInfo(bool bJoin_0);
 	void SetUploadCount(int32 UploadCount, int32 MaxCount);
@@ -94,7 +96,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_PrivateMatch_Popup_Sub_Info_C) == 0x000008, "Wrong alignment on UWBP_PrivateMatch_Popup_Sub_Info_C");
-static_assert(sizeof(UWBP_PrivateMatch_Popup_Sub_Info_C) == 0x0003B0, "Wrong size on UWBP_PrivateMatch_Popup_Sub_Info_C");
+static_assert(sizeof(UWBP_PrivateMatch_Popup_Sub_Info_C) == 0x0003B8, "Wrong size on UWBP_PrivateMatch_Popup_Sub_Info_C");
 static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Info_Out) == 0x0002E8, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Info_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Info_Loop) == 0x0002F0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Info_Loop' has a wrong offset!");
@@ -120,6 +122,7 @@ static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, WS_Information) == 0x
 static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, bJoin) == 0x000390, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::bJoin' has a wrong offset!");
 static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, Private_Match_Popup) == 0x000398, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::Private_Match_Popup' has a wrong offset!");
 static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, PopupOutAnimFinishEvent) == 0x0003A0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::PopupOutAnimFinishEvent' has a wrong offset!");
+static_assert(offsetof(UWBP_PrivateMatch_Popup_Sub_Info_C, OpenShowMenuType) == 0x0003B0, "Member 'UWBP_PrivateMatch_Popup_Sub_Info_C::OpenShowMenuType' has a wrong offset!");
 
 }
 

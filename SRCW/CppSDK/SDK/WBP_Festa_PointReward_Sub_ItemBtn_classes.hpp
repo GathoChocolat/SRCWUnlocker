@@ -12,8 +12,8 @@
 
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -66,7 +66,7 @@ public:
 	void SetDisplaySelect(bool IsSelect);
 	void SetFestaEventInfoDisplaySelect(bool IsSelect);
 	void SetFestaPoint(int32 InFestaPoint);
-	void SetItemIcon(ERewardType rewardType, class UTexture2D* Texture);
+	void SetItemIcon(ERewardType rewardType, int32 InItemId, class UTexture2D* Texture);
 	void SetItemIconActiveWidgetIndex(ERewardType InRewardType);
 	void SetItemIconTexture(class UTexture2D* InItemIconTexture);
 	void SetItemNum(bool IsDesplay, int32 InItemNum);
@@ -74,7 +74,7 @@ public:
 	void StopAnim();
 	void StopPlayingAnimation(class UWidgetAnimation* InWidgetAnimation);
 	void UpdateFestaEventInfoSelect(int32 RewardDataIndex, int32 SelectButtonIndex);
-	void UpdateReward(ERewardType rewardType, class UTexture2D* Texture, bool IsNumDisplay, int32 Num, int32 RewardFestaPoint, int32 PlayerFestaPoint, int32 isNext);
+	void UpdateReward(ERewardType rewardType, int32 InItemId, class UTexture2D* Texture, bool IsNumDisplay, int32 Num, int32 RewardFestaPoint, int32 PlayerFestaPoint, int32 isNext);
 	void UpdateRewardFromFestaPointRewardUIData(const struct FFestaPointRewardUIData& UIData, int32 PlayerFestaPoint);
 	void UpdateSelect(int32 RewardDataIndex, int32 SelectButtonIndex);
 

@@ -31,20 +31,6 @@ void UWBP_EndMenu_GudgetLv_Window_C::BindFullScreenMouseClick()
 }
 
 
-// Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_EndMenu_GudgetLv_Window_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EndMenu_GudgetLv_Window_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.ExecuteUbergraph_WBP_EndMenu_GudgetLv_Window
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -258,6 +244,20 @@ void UWBP_EndMenu_GudgetLv_Window_C::SetGadgetRaceCountReward()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_EndMenu_GudgetLv_Window_C", "SetGadgetRaceCountReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EndMenu_GudgetLv_Window.WBP_EndMenu_GudgetLv_Window_C.SetupWidget
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EndMenu_GudgetLv_Window_C::SetupWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EndMenu_GudgetLv_Window_C", "SetupWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

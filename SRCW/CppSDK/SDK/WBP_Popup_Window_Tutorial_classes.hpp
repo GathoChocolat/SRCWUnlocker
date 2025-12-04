@@ -11,16 +11,16 @@
 #include "Basic.hpp"
 
 #include "CriWareRuntime_structs.hpp"
-#include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Popup_Window_Tutorial.WBP_Popup_Window_Tutorial_C
-// 0x00E8 (0x0430 - 0x0348)
+// 0x00F8 (0x0440 - 0x0348)
 class UWBP_Popup_Window_Tutorial_C final : public UPopupWindowTutorial
 {
 public:
@@ -63,6 +63,8 @@ public:
 	bool                                          IsRealClosing;                                     // 0x042A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsOkClosing;                                       // 0x042B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsOkSupend;                                        // 0x042C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42D[0x3];                                      // 0x042D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnPlayMovieComplete;                               // 0x0430(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void CheckOkClosing(bool* newParam);
@@ -106,7 +108,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Popup_Window_Tutorial_C) == 0x000008, "Wrong alignment on UWBP_Popup_Window_Tutorial_C");
-static_assert(sizeof(UWBP_Popup_Window_Tutorial_C) == 0x000430, "Wrong size on UWBP_Popup_Window_Tutorial_C");
+static_assert(sizeof(UWBP_Popup_Window_Tutorial_C) == 0x000440, "Wrong size on UWBP_Popup_Window_Tutorial_C");
 static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, UberGraphFrame) == 0x000348, "Member 'UWBP_Popup_Window_Tutorial_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Info_Out) == 0x000350, "Member 'UWBP_Popup_Window_Tutorial_C::Info_Out' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, Info_In) == 0x000358, "Member 'UWBP_Popup_Window_Tutorial_C::Info_In' has a wrong offset!");
@@ -143,6 +145,7 @@ static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, PlatformType) == 0x000429, 
 static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsRealClosing) == 0x00042A, "Member 'UWBP_Popup_Window_Tutorial_C::IsRealClosing' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsOkClosing) == 0x00042B, "Member 'UWBP_Popup_Window_Tutorial_C::IsOkClosing' has a wrong offset!");
 static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, IsOkSupend) == 0x00042C, "Member 'UWBP_Popup_Window_Tutorial_C::IsOkSupend' has a wrong offset!");
+static_assert(offsetof(UWBP_Popup_Window_Tutorial_C, OnPlayMovieComplete) == 0x000430, "Member 'UWBP_Popup_Window_Tutorial_C::OnPlayMovieComplete' has a wrong offset!");
 
 }
 

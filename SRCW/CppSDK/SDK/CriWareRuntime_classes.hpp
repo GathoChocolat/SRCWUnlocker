@@ -1194,7 +1194,7 @@ static_assert(alignof(UCriWareInitializer) == 0x000008, "Wrong alignment on UCri
 static_assert(sizeof(UCriWareInitializer) == 0x000028, "Wrong size on UCriWareInitializer");
 
 // Class CriWareRuntime.CriWarePluginSettings
-// 0x0540 (0x0568 - 0x0028)
+// 0x0570 (0x0598 - 0x0028)
 class UCriWarePluginSettings final : public UObject
 {
 public:
@@ -1355,36 +1355,48 @@ public:
 	uint8                                         Pad_3B8[0x4];                                      // 0x03B8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Switch_OpusStreamingVoiceSamplingRate;             // 0x03BC(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C0[0x4];                                      // 0x03C0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          InitializeMana;                                    // 0x03C4(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C5[0x1];                                      // 0x03C5(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          EnableDecodeSkip;                                  // 0x03C6(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C7[0x1];                                      // 0x03C7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxDecoderHandles;                                 // 0x03C8(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3CC[0x4];                                      // 0x03CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxManaBPS;                                        // 0x03D0(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D4[0x4];                                      // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxManaStreams;                                    // 0x03D8(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3DC[0x4];                                      // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          UseH264Decoder;                                    // 0x03E0(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E1[0x1];                                      // 0x03E1(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          UseDecoderOutputBuffers;                           // 0x03E2(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E3[0x1];                                      // 0x03E3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          ForceSoftwareDecodingOnXboxOne;                    // 0x03E4(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E5[0x1];                                      // 0x03E5(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          ForceSoftwareDecodingOnXboxSeries;                 // 0x03E6(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E7[0x1];                                      // 0x03E7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          ForceDisableManaStreamerManager;                   // 0x03E8(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E9[0x1];                                      // 0x03E9(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          InitializeAdxLipSync;                              // 0x03EA(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3EB[0x1];                                      // 0x03EB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxNumAnalyzerHandles;                             // 0x03EC(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Kando_NumOpusMemoryVoices;                         // 0x03C4(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C8[0x4];                                      // 0x03C8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Kando_OpusMemoryVoiceNumChannels;                  // 0x03CC(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D0[0x4];                                      // 0x03D0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Kando_OpusMemoryVoiceSamplingRate;                 // 0x03D4(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D8[0x4];                                      // 0x03D8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Kando_NumOpusStreamingVoices;                      // 0x03DC(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E0[0x4];                                      // 0x03E0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Kando_OpusStreamingVoiceNumChannels;               // 0x03E4(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E8[0x4];                                      // 0x03E8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Kando_OpusStreamingVoiceSamplingRate;              // 0x03EC(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3F0[0x4];                                      // 0x03F0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bUseManaStartupMovies;                             // 0x03F4(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bWaitForMoviesToComplete;                          // 0x03F5(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bMoviesAreSkippable;                               // 0x03F6(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          InitializeMana;                                    // 0x03F4(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3F5[0x1];                                      // 0x03F5(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          EnableDecodeSkip;                                  // 0x03F6(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3F7[0x1];                                      // 0x03F7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         StartupMovies;                                     // 0x03F8(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_408[0x160];                                    // 0x0408(0x0160)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         MaxDecoderHandles;                                 // 0x03F8(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxManaBPS;                                        // 0x0400(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxManaStreams;                                    // 0x0408(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          UseH264Decoder;                                    // 0x0410(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_411[0x1];                                      // 0x0411(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          UseDecoderOutputBuffers;                           // 0x0412(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_413[0x1];                                      // 0x0413(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          ForceSoftwareDecodingOnXboxOne;                    // 0x0414(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_415[0x1];                                      // 0x0415(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          ForceSoftwareDecodingOnXboxSeries;                 // 0x0416(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_417[0x1];                                      // 0x0417(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          ForceDisableManaStreamerManager;                   // 0x0418(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_419[0x1];                                      // 0x0419(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          InitializeAdxLipSync;                              // 0x041A(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41B[0x1];                                      // 0x041B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxNumAnalyzerHandles;                             // 0x041C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_420[0x4];                                      // 0x0420(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bUseManaStartupMovies;                             // 0x0424(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bWaitForMoviesToComplete;                          // 0x0425(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bMoviesAreSkippable;                               // 0x0426(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_427[0x1];                                      // 0x0427(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         StartupMovies;                                     // 0x0428(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, AdvancedDisplay, NativeAccessSpecifierPublic)
+	uint8                                         Pad_438[0x160];                                    // 0x0438(0x0160)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1397,7 +1409,7 @@ public:
 	}
 };
 static_assert(alignof(UCriWarePluginSettings) == 0x000008, "Wrong alignment on UCriWarePluginSettings");
-static_assert(sizeof(UCriWarePluginSettings) == 0x000568, "Wrong size on UCriWarePluginSettings");
+static_assert(sizeof(UCriWarePluginSettings) == 0x000598, "Wrong size on UCriWarePluginSettings");
 static_assert(offsetof(UCriWarePluginSettings, bNoExistCriWareIni) == 0x000028, "Member 'UCriWarePluginSettings::bNoExistCriWareIni' has a wrong offset!");
 static_assert(offsetof(UCriWarePluginSettings, bEditableCriWareAdxLipSyncSetting) == 0x000029, "Member 'UCriWarePluginSettings::bEditableCriWareAdxLipSyncSetting' has a wrong offset!");
 static_assert(offsetof(UCriWarePluginSettings, NonAssetContentDir) == 0x000030, "Member 'UCriWarePluginSettings::NonAssetContentDir' has a wrong offset!");
@@ -1482,22 +1494,28 @@ static_assert(offsetof(UCriWarePluginSettings, Switch_OpusMemoryVoiceSamplingRat
 static_assert(offsetof(UCriWarePluginSettings, Switch_NumOpusStreamingVoices) == 0x0003AC, "Member 'UCriWarePluginSettings::Switch_NumOpusStreamingVoices' has a wrong offset!");
 static_assert(offsetof(UCriWarePluginSettings, Switch_OpusStreamingVoiceNumChannels) == 0x0003B4, "Member 'UCriWarePluginSettings::Switch_OpusStreamingVoiceNumChannels' has a wrong offset!");
 static_assert(offsetof(UCriWarePluginSettings, Switch_OpusStreamingVoiceSamplingRate) == 0x0003BC, "Member 'UCriWarePluginSettings::Switch_OpusStreamingVoiceSamplingRate' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, InitializeMana) == 0x0003C4, "Member 'UCriWarePluginSettings::InitializeMana' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, EnableDecodeSkip) == 0x0003C6, "Member 'UCriWarePluginSettings::EnableDecodeSkip' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxDecoderHandles) == 0x0003C8, "Member 'UCriWarePluginSettings::MaxDecoderHandles' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxManaBPS) == 0x0003D0, "Member 'UCriWarePluginSettings::MaxManaBPS' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxManaStreams) == 0x0003D8, "Member 'UCriWarePluginSettings::MaxManaStreams' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, UseH264Decoder) == 0x0003E0, "Member 'UCriWarePluginSettings::UseH264Decoder' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, UseDecoderOutputBuffers) == 0x0003E2, "Member 'UCriWarePluginSettings::UseDecoderOutputBuffers' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, ForceSoftwareDecodingOnXboxOne) == 0x0003E4, "Member 'UCriWarePluginSettings::ForceSoftwareDecodingOnXboxOne' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, ForceSoftwareDecodingOnXboxSeries) == 0x0003E6, "Member 'UCriWarePluginSettings::ForceSoftwareDecodingOnXboxSeries' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, ForceDisableManaStreamerManager) == 0x0003E8, "Member 'UCriWarePluginSettings::ForceDisableManaStreamerManager' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, InitializeAdxLipSync) == 0x0003EA, "Member 'UCriWarePluginSettings::InitializeAdxLipSync' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, MaxNumAnalyzerHandles) == 0x0003EC, "Member 'UCriWarePluginSettings::MaxNumAnalyzerHandles' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, bUseManaStartupMovies) == 0x0003F4, "Member 'UCriWarePluginSettings::bUseManaStartupMovies' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, bWaitForMoviesToComplete) == 0x0003F5, "Member 'UCriWarePluginSettings::bWaitForMoviesToComplete' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, bMoviesAreSkippable) == 0x0003F6, "Member 'UCriWarePluginSettings::bMoviesAreSkippable' has a wrong offset!");
-static_assert(offsetof(UCriWarePluginSettings, StartupMovies) == 0x0003F8, "Member 'UCriWarePluginSettings::StartupMovies' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, Kando_NumOpusMemoryVoices) == 0x0003C4, "Member 'UCriWarePluginSettings::Kando_NumOpusMemoryVoices' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, Kando_OpusMemoryVoiceNumChannels) == 0x0003CC, "Member 'UCriWarePluginSettings::Kando_OpusMemoryVoiceNumChannels' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, Kando_OpusMemoryVoiceSamplingRate) == 0x0003D4, "Member 'UCriWarePluginSettings::Kando_OpusMemoryVoiceSamplingRate' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, Kando_NumOpusStreamingVoices) == 0x0003DC, "Member 'UCriWarePluginSettings::Kando_NumOpusStreamingVoices' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, Kando_OpusStreamingVoiceNumChannels) == 0x0003E4, "Member 'UCriWarePluginSettings::Kando_OpusStreamingVoiceNumChannels' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, Kando_OpusStreamingVoiceSamplingRate) == 0x0003EC, "Member 'UCriWarePluginSettings::Kando_OpusStreamingVoiceSamplingRate' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, InitializeMana) == 0x0003F4, "Member 'UCriWarePluginSettings::InitializeMana' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, EnableDecodeSkip) == 0x0003F6, "Member 'UCriWarePluginSettings::EnableDecodeSkip' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, MaxDecoderHandles) == 0x0003F8, "Member 'UCriWarePluginSettings::MaxDecoderHandles' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, MaxManaBPS) == 0x000400, "Member 'UCriWarePluginSettings::MaxManaBPS' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, MaxManaStreams) == 0x000408, "Member 'UCriWarePluginSettings::MaxManaStreams' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, UseH264Decoder) == 0x000410, "Member 'UCriWarePluginSettings::UseH264Decoder' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, UseDecoderOutputBuffers) == 0x000412, "Member 'UCriWarePluginSettings::UseDecoderOutputBuffers' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, ForceSoftwareDecodingOnXboxOne) == 0x000414, "Member 'UCriWarePluginSettings::ForceSoftwareDecodingOnXboxOne' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, ForceSoftwareDecodingOnXboxSeries) == 0x000416, "Member 'UCriWarePluginSettings::ForceSoftwareDecodingOnXboxSeries' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, ForceDisableManaStreamerManager) == 0x000418, "Member 'UCriWarePluginSettings::ForceDisableManaStreamerManager' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, InitializeAdxLipSync) == 0x00041A, "Member 'UCriWarePluginSettings::InitializeAdxLipSync' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, MaxNumAnalyzerHandles) == 0x00041C, "Member 'UCriWarePluginSettings::MaxNumAnalyzerHandles' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, bUseManaStartupMovies) == 0x000424, "Member 'UCriWarePluginSettings::bUseManaStartupMovies' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, bWaitForMoviesToComplete) == 0x000425, "Member 'UCriWarePluginSettings::bWaitForMoviesToComplete' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, bMoviesAreSkippable) == 0x000426, "Member 'UCriWarePluginSettings::bMoviesAreSkippable' has a wrong offset!");
+static_assert(offsetof(UCriWarePluginSettings, StartupMovies) == 0x000428, "Member 'UCriWarePluginSettings::StartupMovies' has a wrong offset!");
 
 // Class CriWareRuntime.ManaComponent
 // 0x0200 (0x02A0 - 0x00A0)

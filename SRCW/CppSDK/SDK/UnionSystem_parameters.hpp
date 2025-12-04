@@ -23,36 +23,6 @@
 namespace SDK::Params
 {
 
-// Function UnionSystem.UnionStaticMeshComponent.ChangeMaterial
-// 0x0010 (0x0010 - 0x0000)
-struct UnionStaticMeshComponent_ChangeMaterial final
-{
-public:
-	int32                                         MaterialID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bChange;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     InMaterial;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(UnionStaticMeshComponent_ChangeMaterial) == 0x000008, "Wrong alignment on UnionStaticMeshComponent_ChangeMaterial");
-static_assert(sizeof(UnionStaticMeshComponent_ChangeMaterial) == 0x000010, "Wrong size on UnionStaticMeshComponent_ChangeMaterial");
-static_assert(offsetof(UnionStaticMeshComponent_ChangeMaterial, MaterialID) == 0x000000, "Member 'UnionStaticMeshComponent_ChangeMaterial::MaterialID' has a wrong offset!");
-static_assert(offsetof(UnionStaticMeshComponent_ChangeMaterial, bChange) == 0x000004, "Member 'UnionStaticMeshComponent_ChangeMaterial::bChange' has a wrong offset!");
-static_assert(offsetof(UnionStaticMeshComponent_ChangeMaterial, InMaterial) == 0x000008, "Member 'UnionStaticMeshComponent_ChangeMaterial::InMaterial' has a wrong offset!");
-
-// Function UnionSystem.UnionStaticMeshComponent.IsNotChangedMaterial
-// 0x0008 (0x0008 - 0x0000)
-struct UnionStaticMeshComponent_IsNotChangedMaterial final
-{
-public:
-	int32                                         MaterialID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(UnionStaticMeshComponent_IsNotChangedMaterial) == 0x000004, "Wrong alignment on UnionStaticMeshComponent_IsNotChangedMaterial");
-static_assert(sizeof(UnionStaticMeshComponent_IsNotChangedMaterial) == 0x000008, "Wrong size on UnionStaticMeshComponent_IsNotChangedMaterial");
-static_assert(offsetof(UnionStaticMeshComponent_IsNotChangedMaterial, MaterialID) == 0x000000, "Member 'UnionStaticMeshComponent_IsNotChangedMaterial::MaterialID' has a wrong offset!");
-static_assert(offsetof(UnionStaticMeshComponent_IsNotChangedMaterial, ReturnValue) == 0x000004, "Member 'UnionStaticMeshComponent_IsNotChangedMaterial::ReturnValue' has a wrong offset!");
-
 // Function UnionSystem.AppControllerInputManager.GetMenuPlayerController
 // 0x0010 (0x0010 - 0x0000)
 struct AppControllerInputManager_GetMenuPlayerController final
@@ -446,6 +416,19 @@ public:
 static_assert(alignof(AppFunctionLibrary_IsPre2ndRom) == 0x000001, "Wrong alignment on AppFunctionLibrary_IsPre2ndRom");
 static_assert(sizeof(AppFunctionLibrary_IsPre2ndRom) == 0x000001, "Wrong size on AppFunctionLibrary_IsPre2ndRom");
 static_assert(offsetof(AppFunctionLibrary_IsPre2ndRom, ReturnValue) == 0x000000, "Member 'AppFunctionLibrary_IsPre2ndRom::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.AppFunctionLibrary.IsReachedTargetVersion
+// 0x0002 (0x0002 - 0x0000)
+struct AppFunctionLibrary_IsReachedTargetVersion final
+{
+public:
+	EUnionRomVersion                              TargetVersion;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AppFunctionLibrary_IsReachedTargetVersion) == 0x000001, "Wrong alignment on AppFunctionLibrary_IsReachedTargetVersion");
+static_assert(sizeof(AppFunctionLibrary_IsReachedTargetVersion) == 0x000002, "Wrong size on AppFunctionLibrary_IsReachedTargetVersion");
+static_assert(offsetof(AppFunctionLibrary_IsReachedTargetVersion, TargetVersion) == 0x000000, "Member 'AppFunctionLibrary_IsReachedTargetVersion::TargetVersion' has a wrong offset!");
+static_assert(offsetof(AppFunctionLibrary_IsReachedTargetVersion, ReturnValue) == 0x000001, "Member 'AppFunctionLibrary_IsReachedTargetVersion::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.AppFunctionLibrary.IsShippingBuild
 // 0x0001 (0x0001 - 0x0000)
@@ -857,575 +840,225 @@ static_assert(sizeof(ChallengeStatsUtility_SetChallengeStats) == 0x000008, "Wron
 static_assert(offsetof(ChallengeStatsUtility_SetChallengeStats, InChallengeId) == 0x000000, "Member 'ChallengeStatsUtility_SetChallengeStats::InChallengeId' has a wrong offset!");
 static_assert(offsetof(ChallengeStatsUtility_SetChallengeStats, InValue) == 0x000004, "Member 'ChallengeStatsUtility_SetChallengeStats::InValue' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.GetEnablePrelaunchAnotherStageLotteryMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_GetAnimationIn final
 {
 public:
-	EMilestoneVersion                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_GetAnimationIn) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_GetAnimationIn");
+static_assert(sizeof(MenuPopupWindowInterface_GetAnimationIn) == 0x000008, "Wrong size on MenuPopupWindowInterface_GetAnimationIn");
+static_assert(offsetof(MenuPopupWindowInterface_GetAnimationIn, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetAnimationIn::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.GetGrandPrixRivalDriverIds
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_GetAnimationLoop final
+{
+public:
+	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MenuPopupWindowInterface_GetAnimationLoop) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_GetAnimationLoop");
+static_assert(sizeof(MenuPopupWindowInterface_GetAnimationLoop) == 0x000008, "Wrong size on MenuPopupWindowInterface_GetAnimationLoop");
+static_assert(offsetof(MenuPopupWindowInterface_GetAnimationLoop, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetAnimationLoop::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_GetAnimationOut final
+{
+public:
+	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MenuPopupWindowInterface_GetAnimationOut) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_GetAnimationOut");
+static_assert(sizeof(MenuPopupWindowInterface_GetAnimationOut) == 0x000008, "Wrong size on MenuPopupWindowInterface_GetAnimationOut");
+static_assert(offsetof(MenuPopupWindowInterface_GetAnimationOut, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetAnimationOut::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_GetPopupWindowButtonType final
+{
+public:
+	EPopupWindowButtonType                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MenuPopupWindowInterface_GetPopupWindowButtonType) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_GetPopupWindowButtonType");
+static_assert(sizeof(MenuPopupWindowInterface_GetPopupWindowButtonType) == 0x000001, "Wrong size on MenuPopupWindowInterface_GetPopupWindowButtonType");
+static_assert(offsetof(MenuPopupWindowInterface_GetPopupWindowButtonType, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetPopupWindowButtonType::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_GetPopupWindowType final
+{
+public:
+	EPopupWindowType                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MenuPopupWindowInterface_GetPopupWindowType) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_GetPopupWindowType");
+static_assert(sizeof(MenuPopupWindowInterface_GetPopupWindowType) == 0x000001, "Wrong size on MenuPopupWindowInterface_GetPopupWindowType");
+static_assert(offsetof(MenuPopupWindowInterface_GetPopupWindowType, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetPopupWindowType::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MenuPopupWindowInterface.InitParam
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_InitParam final
+{
+public:
+	EPopupWindowButtonType                        ButtonType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MenuPopupWindowInterface_InitParam) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_InitParam");
+static_assert(sizeof(MenuPopupWindowInterface_InitParam) == 0x000001, "Wrong size on MenuPopupWindowInterface_InitParam");
+static_assert(offsetof(MenuPopupWindowInterface_InitParam, ButtonType) == 0x000000, "Member 'MenuPopupWindowInterface_InitParam::ButtonType' has a wrong offset!");
+
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
+// 0x0004 (0x0004 - 0x0000)
+struct MenuPopupWindowInterface_SetButtonControlDelayTime final
+{
+public:
+	float                                         InTime;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MenuPopupWindowInterface_SetButtonControlDelayTime) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetButtonControlDelayTime");
+static_assert(sizeof(MenuPopupWindowInterface_SetButtonControlDelayTime) == 0x000004, "Wrong size on MenuPopupWindowInterface_SetButtonControlDelayTime");
+static_assert(offsetof(MenuPopupWindowInterface_SetButtonControlDelayTime, InTime) == 0x000000, "Member 'MenuPopupWindowInterface_SetButtonControlDelayTime::InTime' has a wrong offset!");
+
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
 // 0x0010 (0x0010 - 0x0000)
-struct MilestoneUtil_GetGrandPrixRivalDriverIds final
+struct MenuPopupWindowInterface_SetButtonText final
 {
 public:
-	TArray<EDriverId>                             ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	TArray<class FText>                           BtnTextArray;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_GetGrandPrixRivalDriverIds) == 0x000008, "Wrong alignment on MilestoneUtil_GetGrandPrixRivalDriverIds");
-static_assert(sizeof(MilestoneUtil_GetGrandPrixRivalDriverIds) == 0x000010, "Wrong size on MilestoneUtil_GetGrandPrixRivalDriverIds");
-static_assert(offsetof(MilestoneUtil_GetGrandPrixRivalDriverIds, ReturnValue) == 0x000000, "Member 'MilestoneUtil_GetGrandPrixRivalDriverIds::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetButtonText) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetButtonText");
+static_assert(sizeof(MenuPopupWindowInterface_SetButtonText) == 0x000010, "Wrong size on MenuPopupWindowInterface_SetButtonText");
+static_assert(offsetof(MenuPopupWindowInterface_SetButtonText, BtnTextArray) == 0x000000, "Member 'MenuPopupWindowInterface_SetButtonText::BtnTextArray' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.GetRivalByMilestoneVersion
+// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
 // 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_GetRivalByMilestoneVersion final
+struct MenuPopupWindowInterface_SetDisplayFooterButton final
 {
 public:
-	EDriverId                                     ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          InDisplay;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_GetRivalByMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_GetRivalByMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_GetRivalByMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_GetRivalByMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_GetRivalByMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_GetRivalByMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetDisplayFooterButton) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_SetDisplayFooterButton");
+static_assert(sizeof(MenuPopupWindowInterface_SetDisplayFooterButton) == 0x000001, "Wrong size on MenuPopupWindowInterface_SetDisplayFooterButton");
+static_assert(offsetof(MenuPopupWindowInterface_SetDisplayFooterButton, InDisplay) == 0x000000, "Member 'MenuPopupWindowInterface_SetDisplayFooterButton::InDisplay' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsAlreadyGrandPrixLeast1Play
+// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_SetDonpaTicketCount final
+{
+public:
+	int32                                         CurrentCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AfterCount;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MenuPopupWindowInterface_SetDonpaTicketCount) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetDonpaTicketCount");
+static_assert(sizeof(MenuPopupWindowInterface_SetDonpaTicketCount) == 0x000008, "Wrong size on MenuPopupWindowInterface_SetDonpaTicketCount");
+static_assert(offsetof(MenuPopupWindowInterface_SetDonpaTicketCount, CurrentCount) == 0x000000, "Member 'MenuPopupWindowInterface_SetDonpaTicketCount::CurrentCount' has a wrong offset!");
+static_assert(offsetof(MenuPopupWindowInterface_SetDonpaTicketCount, AfterCount) == 0x000004, "Member 'MenuPopupWindowInterface_SetDonpaTicketCount::AfterCount' has a wrong offset!");
+
+// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
 // 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsAlreadyGrandPrixLeast1Play final
+struct MenuPopupWindowInterface_SetEnableInput final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          InEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsAlreadyGrandPrixLeast1Play) == 0x000001, "Wrong alignment on MilestoneUtil_IsAlreadyGrandPrixLeast1Play");
-static_assert(sizeof(MilestoneUtil_IsAlreadyGrandPrixLeast1Play) == 0x000001, "Wrong size on MilestoneUtil_IsAlreadyGrandPrixLeast1Play");
-static_assert(offsetof(MilestoneUtil_IsAlreadyGrandPrixLeast1Play, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsAlreadyGrandPrixLeast1Play::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetEnableInput) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_SetEnableInput");
+static_assert(sizeof(MenuPopupWindowInterface_SetEnableInput) == 0x000001, "Wrong size on MenuPopupWindowInterface_SetEnableInput");
+static_assert(offsetof(MenuPopupWindowInterface_SetEnableInput, InEnable) == 0x000000, "Member 'MenuPopupWindowInterface_SetEnableInput::InEnable' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsCharaIconLockCover
-// 0x0002 (0x0002 - 0x0000)
-struct MilestoneUtil_IsCharaIconLockCover final
+// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
+// 0x0018 (0x0018 - 0x0000)
+struct MenuPopupWindowInterface_SetFooterMenuBtn final
 {
 public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BtnIconIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BtnIconType;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   BtnText;                                           // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsCharaIconLockCover) == 0x000001, "Wrong alignment on MilestoneUtil_IsCharaIconLockCover");
-static_assert(sizeof(MilestoneUtil_IsCharaIconLockCover) == 0x000002, "Wrong size on MilestoneUtil_IsCharaIconLockCover");
-static_assert(offsetof(MilestoneUtil_IsCharaIconLockCover, DriverId) == 0x000000, "Member 'MilestoneUtil_IsCharaIconLockCover::DriverId' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsCharaIconLockCover, ReturnValue) == 0x000001, "Member 'MilestoneUtil_IsCharaIconLockCover::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetFooterMenuBtn) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetFooterMenuBtn");
+static_assert(sizeof(MenuPopupWindowInterface_SetFooterMenuBtn) == 0x000018, "Wrong size on MenuPopupWindowInterface_SetFooterMenuBtn");
+static_assert(offsetof(MenuPopupWindowInterface_SetFooterMenuBtn, BtnIconIndex) == 0x000000, "Member 'MenuPopupWindowInterface_SetFooterMenuBtn::BtnIconIndex' has a wrong offset!");
+static_assert(offsetof(MenuPopupWindowInterface_SetFooterMenuBtn, BtnIconType) == 0x000004, "Member 'MenuPopupWindowInterface_SetFooterMenuBtn::BtnIconType' has a wrong offset!");
+static_assert(offsetof(MenuPopupWindowInterface_SetFooterMenuBtn, BtnText) == 0x000008, "Member 'MenuPopupWindowInterface_SetFooterMenuBtn::BtnText' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsCloseCourseInRaceParkCustomMatchMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
+// 0x0010 (0x0010 - 0x0000)
+struct MenuPopupWindowInterface_SetImageButtonSelectText final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetImageButtonSelectText) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetImageButtonSelectText");
+static_assert(sizeof(MenuPopupWindowInterface_SetImageButtonSelectText) == 0x000010, "Wrong size on MenuPopupWindowInterface_SetImageButtonSelectText");
+static_assert(offsetof(MenuPopupWindowInterface_SetImageButtonSelectText, InText) == 0x000000, "Member 'MenuPopupWindowInterface_SetImageButtonSelectText::InText' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsDisableDecisionInRaceParkMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_SetImageTexture final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UTexture2D*                       Texture2D;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetImageTexture) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetImageTexture");
+static_assert(sizeof(MenuPopupWindowInterface_SetImageTexture) == 0x000008, "Wrong size on MenuPopupWindowInterface_SetImageTexture");
+static_assert(offsetof(MenuPopupWindowInterface_SetImageTexture, Texture2D) == 0x000000, "Member 'MenuPopupWindowInterface_SetImageTexture::Texture2D' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraChallengeMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
+// 0x0004 (0x0004 - 0x0000)
+struct MenuPopupWindowInterface_SetInitialFocusButtonIndex final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetInitialFocusButtonIndex) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetInitialFocusButtonIndex");
+static_assert(sizeof(MenuPopupWindowInterface_SetInitialFocusButtonIndex) == 0x000004, "Wrong size on MenuPopupWindowInterface_SetInitialFocusButtonIndex");
+static_assert(offsetof(MenuPopupWindowInterface_SetInitialFocusButtonIndex, InButtonIndex) == 0x000000, "Member 'MenuPopupWindowInterface_SetInitialFocusButtonIndex::InButtonIndex' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraHintMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableEtceteraHintMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
+// 0x0004 (0x0004 - 0x0000)
+struct MenuPopupWindowInterface_SetPopupInfoDisplayIndex final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsDisableEtceteraHintMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraHintMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableEtceteraHintMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraHintMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableEtceteraHintMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraHintMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetPopupInfoDisplayIndex) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetPopupInfoDisplayIndex");
+static_assert(sizeof(MenuPopupWindowInterface_SetPopupInfoDisplayIndex) == 0x000004, "Wrong size on MenuPopupWindowInterface_SetPopupInfoDisplayIndex");
+static_assert(offsetof(MenuPopupWindowInterface_SetPopupInfoDisplayIndex, Index_0) == 0x000000, "Member 'MenuPopupWindowInterface_SetPopupInfoDisplayIndex::Index_0' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraOthersMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Btn01IconIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Btn02IconIndex;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex");
+static_assert(sizeof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex) == 0x000008, "Wrong size on MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex");
+static_assert(offsetof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex, Btn01IconIndex) == 0x000000, "Member 'MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex::Btn01IconIndex' has a wrong offset!");
+static_assert(offsetof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex, Btn02IconIndex) == 0x000004, "Member 'MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex::Btn02IconIndex' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraStoreMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
+// 0x0010 (0x0010 - 0x0000)
+struct MenuPopupWindowInterface_SetTextMessege final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetTextMessege) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetTextMessege");
+static_assert(sizeof(MenuPopupWindowInterface_SetTextMessege) == 0x000010, "Wrong size on MenuPopupWindowInterface_SetTextMessege");
+static_assert(offsetof(MenuPopupWindowInterface_SetTextMessege, Text) == 0x000000, "Member 'MenuPopupWindowInterface_SetTextMessege::Text' has a wrong offset!");
 
-// Function UnionSystem.MilestoneUtil.IsDisableEtceteraTitleMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion final
+// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
+// 0x0018 (0x0018 - 0x0000)
+struct MenuPopupWindowInterface_SetTextTitle final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          Attension;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableFestaMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableFestaMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableFestaMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableFestaMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableFestaMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableFestaMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableFestaMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableFestaMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableFriendlistMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableFriendlistMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableFriendlistMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableFriendlistMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableFriendlistMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableFriendlistMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableFriendlistMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableFriendlistMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse2MilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse3MilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourseMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableGrandPrixMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableGrandPrixMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableHornAuraTabMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableHornAuraTabMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableHornAuraTabMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableHornAuraTabMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableHornAuraTabMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableHornAuraTabMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableHornAuraTabMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableHornAuraTabMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableRaceParkMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableRaceParkMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableRaceParkMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableRaceParkMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableRaceParkMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableRaceParkMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableRaceParkMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableRaceParkMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableRaceParkRivalOnOffMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableSelectTimeTrialMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableTimeTrialMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableTimeTrialMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableTimeTrialMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTimeTrialMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableTimeTrialMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTimeTrialMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableTimeTrialMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTimeTrialMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableTopMenuFestaRuleMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableTopMenuNewsMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsDisableTrialMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsDisableTrialMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsDisableTrialMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTrialMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsDisableTrialMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTrialMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsDisableTrialMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTrialMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableAdvertiseRatingMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableEtceteraFullGameStoreMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableResetSaveDataMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableResetSaveDataMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableResetSaveDataMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableResetSaveDataMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableResetSaveDataMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableResetSaveDataMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableResetSaveDataMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableResetSaveDataMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableSpecificTitleDebugCommandMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableThumbnailCollaboRaceMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableTitleDemoMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableTitleDemoMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableTitleDemoMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTitleDemoMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableTitleDemoMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTitleDemoMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableTitleDemoMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTitleDemoMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableTitleStoreMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableTitleStoreMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableTitleStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTitleStoreMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableTitleStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTitleStoreMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableTitleStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTitleStoreMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStoreMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStorePopupAutoMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsExclusionGhostUpDownloadEventMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsForceEnableTopMenuNewsMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsHiddenCharacter
-// 0x0002 (0x0002 - 0x0000)
-struct MilestoneUtil_IsHiddenCharacter final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsHiddenCharacter) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenCharacter");
-static_assert(sizeof(MilestoneUtil_IsHiddenCharacter) == 0x000002, "Wrong size on MilestoneUtil_IsHiddenCharacter");
-static_assert(offsetof(MilestoneUtil_IsHiddenCharacter, DriverId) == 0x000000, "Member 'MilestoneUtil_IsHiddenCharacter::DriverId' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsHiddenCharacter, ReturnValue) == 0x000001, "Member 'MilestoneUtil_IsHiddenCharacter::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsHiddenMachineParts
-// 0x0002 (0x0002 - 0x0000)
-struct MilestoneUtil_IsHiddenMachineParts final
-{
-public:
-	EMachineId                                    MachineId;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsHiddenMachineParts) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenMachineParts");
-static_assert(sizeof(MilestoneUtil_IsHiddenMachineParts) == 0x000002, "Wrong size on MilestoneUtil_IsHiddenMachineParts");
-static_assert(offsetof(MilestoneUtil_IsHiddenMachineParts, MachineId) == 0x000000, "Member 'MilestoneUtil_IsHiddenMachineParts::MachineId' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsHiddenMachineParts, ReturnValue) == 0x000001, "Member 'MilestoneUtil_IsHiddenMachineParts::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsHiddenRomVerMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsHiddenRomVerMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsHiddenRomVerMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenRomVerMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsHiddenRomVerMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsHiddenRomVerMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsHiddenRomVerMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsHiddenRomVerMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsHiddenWebManualQRcodeMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsInitialMachineParts
-// 0x0014 (0x0014 - 0x0000)
-struct MilestoneUtil_IsInitialMachineParts final
-{
-public:
-	EMachineId                                    MachineId;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         FrontPrice;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RearPrice;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TirePrice;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(MilestoneUtil_IsInitialMachineParts) == 0x000004, "Wrong alignment on MilestoneUtil_IsInitialMachineParts");
-static_assert(sizeof(MilestoneUtil_IsInitialMachineParts) == 0x000014, "Wrong size on MilestoneUtil_IsInitialMachineParts");
-static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, MachineId) == 0x000000, "Member 'MilestoneUtil_IsInitialMachineParts::MachineId' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, FrontPrice) == 0x000004, "Member 'MilestoneUtil_IsInitialMachineParts::FrontPrice' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, RearPrice) == 0x000008, "Member 'MilestoneUtil_IsInitialMachineParts::RearPrice' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, TirePrice) == 0x00000C, "Member 'MilestoneUtil_IsInitialMachineParts::TirePrice' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, ReturnValue) == 0x000010, "Member 'MilestoneUtil_IsInitialMachineParts::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsLimitDonpaTicketMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsLimitDonpaTicketMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsLimitDonpaTicketMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsLimitDonpaTicketMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsLimitDonpaTicketMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsLimitDonpaTicketMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsLimitDonpaTicketMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsLimitDonpaTicketMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsLimitRewardInRaceParkMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsOfflineMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsOfflineMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsOfflineMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsOfflineMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsOfflineMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsOfflineMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsOfflineMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsOfflineMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsRaceUnLockedMilestoneVersion
-// 0x0003 (0x0003 - 0x0000)
-struct MilestoneUtil_IsRaceUnLockedMilestoneVersion final
-{
-public:
-	EGameModeId                                   InGameModeId;                                      // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EStageId                                      InStageId;                                         // 0x0001(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsRaceUnLockedMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsRaceUnLockedMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsRaceUnLockedMilestoneVersion) == 0x000003, "Wrong size on MilestoneUtil_IsRaceUnLockedMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsRaceUnLockedMilestoneVersion, InGameModeId) == 0x000000, "Member 'MilestoneUtil_IsRaceUnLockedMilestoneVersion::InGameModeId' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsRaceUnLockedMilestoneVersion, InStageId) == 0x000001, "Member 'MilestoneUtil_IsRaceUnLockedMilestoneVersion::InStageId' has a wrong offset!");
-static_assert(offsetof(MilestoneUtil_IsRaceUnLockedMilestoneVersion, ReturnValue) == 0x000002, "Member 'MilestoneUtil_IsRaceUnLockedMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsSkipDodonpaEventMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsSkipDodonpaEventMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsSkipDodonpaEventMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsSkipDodonpaEventMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsSkipDodonpaEventMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsSkipDodonpaEventMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsSkipDodonpaEventMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsSkipDodonpaEventMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsSkipSelectPlayNumMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsTopMenuAccessLoginSuccessOnly
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsTopMenuAccessLoginSuccessOnly final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsTopMenuAccessLoginSuccessOnly) == 0x000001, "Wrong alignment on MilestoneUtil_IsTopMenuAccessLoginSuccessOnly");
-static_assert(sizeof(MilestoneUtil_IsTopMenuAccessLoginSuccessOnly) == 0x000001, "Wrong size on MilestoneUtil_IsTopMenuAccessLoginSuccessOnly");
-static_assert(offsetof(MilestoneUtil_IsTopMenuAccessLoginSuccessOnly, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsTopMenuAccessLoginSuccessOnly::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MilestoneUtil.IsVisibleCompanyNameMilestoneVersion
-// 0x0001 (0x0001 - 0x0000)
-struct MilestoneUtil_IsVisibleCompanyNameMilestoneVersion final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MilestoneUtil_IsVisibleCompanyNameMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsVisibleCompanyNameMilestoneVersion");
-static_assert(sizeof(MilestoneUtil_IsVisibleCompanyNameMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsVisibleCompanyNameMilestoneVersion");
-static_assert(offsetof(MilestoneUtil_IsVisibleCompanyNameMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsVisibleCompanyNameMilestoneVersion::ReturnValue' has a wrong offset!");
+static_assert(alignof(MenuPopupWindowInterface_SetTextTitle) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetTextTitle");
+static_assert(sizeof(MenuPopupWindowInterface_SetTextTitle) == 0x000018, "Wrong size on MenuPopupWindowInterface_SetTextTitle");
+static_assert(offsetof(MenuPopupWindowInterface_SetTextTitle, Text) == 0x000000, "Member 'MenuPopupWindowInterface_SetTextTitle::Text' has a wrong offset!");
+static_assert(offsetof(MenuPopupWindowInterface_SetTextTitle, Attension) == 0x000010, "Member 'MenuPopupWindowInterface_SetTextTitle::Attension' has a wrong offset!");
 
 // Function UnionSystem.AppGameInstance.Set2ndRom
 // 0x0001 (0x0001 - 0x0000)
@@ -1460,92 +1093,85 @@ static_assert(alignof(AppGameInstance_GetVCSRevisionStr) == 0x000008, "Wrong ali
 static_assert(sizeof(AppGameInstance_GetVCSRevisionStr) == 0x000010, "Wrong size on AppGameInstance_GetVCSRevisionStr");
 static_assert(offsetof(AppGameInstance_GetVCSRevisionStr, OutVCSString) == 0x000000, "Member 'AppGameInstance_GetVCSRevisionStr::OutVCSString' has a wrong offset!");
 
-// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleAndIdWithRarity
-// 0x0028 (0x0028 - 0x0000)
-struct HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity final
+// Function UnionSystem.HashHelper.HashIntoByteArray
+// 0x0020 (0x0020 - 0x0000)
+struct HashHelper_HashIntoByteArray final
 {
 public:
-	int32                                         Rarity;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Data;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<uint8>                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HashHelper_HashIntoByteArray) == 0x000008, "Wrong alignment on HashHelper_HashIntoByteArray");
+static_assert(sizeof(HashHelper_HashIntoByteArray) == 0x000020, "Wrong size on HashHelper_HashIntoByteArray");
+static_assert(offsetof(HashHelper_HashIntoByteArray, Data) == 0x000000, "Member 'HashHelper_HashIntoByteArray::Data' has a wrong offset!");
+static_assert(offsetof(HashHelper_HashIntoByteArray, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoByteArray::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HashHelper.HashIntoByteArrayFromByteArray
+// 0x0020 (0x0020 - 0x0000)
+struct HashHelper_HashIntoByteArrayFromByteArray final
+{
+public:
+	TArray<uint8>                                 Bytes;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<uint8>                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HashHelper_HashIntoByteArrayFromByteArray) == 0x000008, "Wrong alignment on HashHelper_HashIntoByteArrayFromByteArray");
+static_assert(sizeof(HashHelper_HashIntoByteArrayFromByteArray) == 0x000020, "Wrong size on HashHelper_HashIntoByteArrayFromByteArray");
+static_assert(offsetof(HashHelper_HashIntoByteArrayFromByteArray, Bytes) == 0x000000, "Member 'HashHelper_HashIntoByteArrayFromByteArray::Bytes' has a wrong offset!");
+static_assert(offsetof(HashHelper_HashIntoByteArrayFromByteArray, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoByteArrayFromByteArray::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HashHelper.HashIntoTextString
+// 0x0020 (0x0020 - 0x0000)
+struct HashHelper_HashIntoTextString final
+{
+public:
+	class FString                                 Data;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HashHelper_HashIntoTextString) == 0x000008, "Wrong alignment on HashHelper_HashIntoTextString");
+static_assert(sizeof(HashHelper_HashIntoTextString) == 0x000020, "Wrong size on HashHelper_HashIntoTextString");
+static_assert(offsetof(HashHelper_HashIntoTextString, Data) == 0x000000, "Member 'HashHelper_HashIntoTextString::Data' has a wrong offset!");
+static_assert(offsetof(HashHelper_HashIntoTextString, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoTextString::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HashHelper.HashIntoTextStringFromByteArray
+// 0x0020 (0x0020 - 0x0000)
+struct HashHelper_HashIntoTextStringFromByteArray final
+{
+public:
+	TArray<uint8>                                 Bytes;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HashHelper_HashIntoTextStringFromByteArray) == 0x000008, "Wrong alignment on HashHelper_HashIntoTextStringFromByteArray");
+static_assert(sizeof(HashHelper_HashIntoTextStringFromByteArray) == 0x000020, "Wrong size on HashHelper_HashIntoTextStringFromByteArray");
+static_assert(offsetof(HashHelper_HashIntoTextStringFromByteArray, Bytes) == 0x000000, "Member 'HashHelper_HashIntoTextStringFromByteArray::Bytes' has a wrong offset!");
+static_assert(offsetof(HashHelper_HashIntoTextStringFromByteArray, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoTextStringFromByteArray::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.JukeboxDataAsset.GetAlbumData
+// 0x0078 (0x0078 - 0x0000)
+struct JukeboxDataAsset_GetAlbumData final
+{
+public:
+	int32                                         AlbumID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 outHonorTitleIdArray;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FHonorTitleListData>            ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	struct FAlbumData                             ReturnValue;                                       // 0x0008(0x0070)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity");
-static_assert(sizeof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity) == 0x000028, "Wrong size on HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity");
-static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity, Rarity) == 0x000000, "Member 'HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity::Rarity' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity, outHonorTitleIdArray) == 0x000008, "Member 'HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity::outHonorTitleIdArray' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity, ReturnValue) == 0x000018, "Member 'HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity::ReturnValue' has a wrong offset!");
+static_assert(alignof(JukeboxDataAsset_GetAlbumData) == 0x000008, "Wrong alignment on JukeboxDataAsset_GetAlbumData");
+static_assert(sizeof(JukeboxDataAsset_GetAlbumData) == 0x000078, "Wrong size on JukeboxDataAsset_GetAlbumData");
+static_assert(offsetof(JukeboxDataAsset_GetAlbumData, AlbumID) == 0x000000, "Member 'JukeboxDataAsset_GetAlbumData::AlbumID' has a wrong offset!");
+static_assert(offsetof(JukeboxDataAsset_GetAlbumData, ReturnValue) == 0x000008, "Member 'JukeboxDataAsset_GetAlbumData::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleWithRarity
-// 0x0018 (0x0018 - 0x0000)
-struct HonorTitleListDataAsset_GetAllHonorTitleWithRarity final
+// Function UnionSystem.JukeboxDataAsset.GetTrackData
+// 0x00B0 (0x00B0 - 0x0000)
+struct JukeboxDataAsset_GetTrackData final
 {
 public:
-	int32                                         Rarity;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TrackID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FHonorTitleListData>            ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	struct FTrackData                             ReturnValue;                                       // 0x0008(0x00A8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetAllHonorTitleWithRarity");
-static_assert(sizeof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity) == 0x000018, "Wrong size on HonorTitleListDataAsset_GetAllHonorTitleWithRarity");
-static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity, Rarity) == 0x000000, "Member 'HonorTitleListDataAsset_GetAllHonorTitleWithRarity::Rarity' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity, ReturnValue) == 0x000008, "Member 'HonorTitleListDataAsset_GetAllHonorTitleWithRarity::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitlePlate
-// 0x0030 (0x0030 - 0x0000)
-struct HonorTitleListDataAsset_GetHonorTitlePlate final
-{
-public:
-	int32                                         HonorTitleId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              ReturnValue;                                       // 0x0008(0x0028)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(HonorTitleListDataAsset_GetHonorTitlePlate) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetHonorTitlePlate");
-static_assert(sizeof(HonorTitleListDataAsset_GetHonorTitlePlate) == 0x000030, "Wrong size on HonorTitleListDataAsset_GetHonorTitlePlate");
-static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitlePlate, HonorTitleId) == 0x000000, "Member 'HonorTitleListDataAsset_GetHonorTitlePlate::HonorTitleId' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitlePlate, ReturnValue) == 0x000008, "Member 'HonorTitleListDataAsset_GetHonorTitlePlate::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleRarity
-// 0x0008 (0x0008 - 0x0000)
-struct HonorTitleListDataAsset_GetHonorTitleRarity final
-{
-public:
-	int32                                         HonorTitleId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(HonorTitleListDataAsset_GetHonorTitleRarity) == 0x000004, "Wrong alignment on HonorTitleListDataAsset_GetHonorTitleRarity");
-static_assert(sizeof(HonorTitleListDataAsset_GetHonorTitleRarity) == 0x000008, "Wrong size on HonorTitleListDataAsset_GetHonorTitleRarity");
-static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleRarity, HonorTitleId) == 0x000000, "Member 'HonorTitleListDataAsset_GetHonorTitleRarity::HonorTitleId' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleRarity, ReturnValue) == 0x000004, "Member 'HonorTitleListDataAsset_GetHonorTitleRarity::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleVBName
-// 0x0018 (0x0018 - 0x0000)
-struct HonorTitleListDataAsset_GetHonorTitleVBName final
-{
-public:
-	int32                                         HonorTitleId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsValid;                                           // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(HonorTitleListDataAsset_GetHonorTitleVBName) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetHonorTitleVBName");
-static_assert(sizeof(HonorTitleListDataAsset_GetHonorTitleVBName) == 0x000018, "Wrong size on HonorTitleListDataAsset_GetHonorTitleVBName");
-static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleVBName, HonorTitleId) == 0x000000, "Member 'HonorTitleListDataAsset_GetHonorTitleVBName::HonorTitleId' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleVBName, IsValid) == 0x000004, "Member 'HonorTitleListDataAsset_GetHonorTitleVBName::IsValid' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleVBName, ReturnValue) == 0x000008, "Member 'HonorTitleListDataAsset_GetHonorTitleVBName::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.HonorTitleListDataAsset.GetIsHonorTitleDLC
-// 0x0008 (0x0008 - 0x0000)
-struct HonorTitleListDataAsset_GetIsHonorTitleDLC final
-{
-public:
-	int32                                         HonorTitleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(HonorTitleListDataAsset_GetIsHonorTitleDLC) == 0x000004, "Wrong alignment on HonorTitleListDataAsset_GetIsHonorTitleDLC");
-static_assert(sizeof(HonorTitleListDataAsset_GetIsHonorTitleDLC) == 0x000008, "Wrong size on HonorTitleListDataAsset_GetIsHonorTitleDLC");
-static_assert(offsetof(HonorTitleListDataAsset_GetIsHonorTitleDLC, HonorTitleIndex) == 0x000000, "Member 'HonorTitleListDataAsset_GetIsHonorTitleDLC::HonorTitleIndex' has a wrong offset!");
-static_assert(offsetof(HonorTitleListDataAsset_GetIsHonorTitleDLC, ReturnValue) == 0x000004, "Member 'HonorTitleListDataAsset_GetIsHonorTitleDLC::ReturnValue' has a wrong offset!");
+static_assert(alignof(JukeboxDataAsset_GetTrackData) == 0x000008, "Wrong alignment on JukeboxDataAsset_GetTrackData");
+static_assert(sizeof(JukeboxDataAsset_GetTrackData) == 0x0000B0, "Wrong size on JukeboxDataAsset_GetTrackData");
+static_assert(offsetof(JukeboxDataAsset_GetTrackData, TrackID) == 0x000000, "Member 'JukeboxDataAsset_GetTrackData::TrackID' has a wrong offset!");
+static_assert(offsetof(JukeboxDataAsset_GetTrackData, ReturnValue) == 0x000008, "Member 'JukeboxDataAsset_GetTrackData::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.AtomListenerFocusPointForCamera.SetCamera
 // 0x0008 (0x0008 - 0x0000)
@@ -2442,28 +2068,6 @@ static_assert(sizeof(AppPlayerControllerSubsystem_GetControllerTextureIndexFromF
 static_assert(offsetof(AppPlayerControllerSubsystem_GetControllerTextureIndexFromFKey, InKey) == 0x000000, "Member 'AppPlayerControllerSubsystem_GetControllerTextureIndexFromFKey::InKey' has a wrong offset!");
 static_assert(offsetof(AppPlayerControllerSubsystem_GetControllerTextureIndexFromFKey, ReturnValue) == 0x000018, "Member 'AppPlayerControllerSubsystem_GetControllerTextureIndexFromFKey::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentButtonTextureType
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerControllerSubsystem_GetCurrentButtonTextureType final
-{
-public:
-	EControllerButtonTextureType                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AppPlayerControllerSubsystem_GetCurrentButtonTextureType) == 0x000001, "Wrong alignment on AppPlayerControllerSubsystem_GetCurrentButtonTextureType");
-static_assert(sizeof(AppPlayerControllerSubsystem_GetCurrentButtonTextureType) == 0x000001, "Wrong size on AppPlayerControllerSubsystem_GetCurrentButtonTextureType");
-static_assert(offsetof(AppPlayerControllerSubsystem_GetCurrentButtonTextureType, ReturnValue) == 0x000000, "Member 'AppPlayerControllerSubsystem_GetCurrentButtonTextureType::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentDeviceTexture
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerControllerSubsystem_GetCurrentDeviceTexture final
-{
-public:
-	class UTexture2D*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AppPlayerControllerSubsystem_GetCurrentDeviceTexture) == 0x000008, "Wrong alignment on AppPlayerControllerSubsystem_GetCurrentDeviceTexture");
-static_assert(sizeof(AppPlayerControllerSubsystem_GetCurrentDeviceTexture) == 0x000008, "Wrong size on AppPlayerControllerSubsystem_GetCurrentDeviceTexture");
-static_assert(offsetof(AppPlayerControllerSubsystem_GetCurrentDeviceTexture, ReturnValue) == 0x000000, "Member 'AppPlayerControllerSubsystem_GetCurrentDeviceTexture::ReturnValue' has a wrong offset!");
-
 // Function UnionSystem.AppPlayerControllerSubsystem.GetMenuKeyboardButtonTexture
 // 0x0008 (0x0008 - 0x0000)
 struct AppPlayerControllerSubsystem_GetMenuKeyboardButtonTexture final
@@ -2563,6 +2167,28 @@ static_assert(alignof(AppPlayerControllerSubsystem_UpdateButtonMaterialByDeviceT
 static_assert(sizeof(AppPlayerControllerSubsystem_UpdateButtonMaterialByDeviceType) == 0x000001, "Wrong size on AppPlayerControllerSubsystem_UpdateButtonMaterialByDeviceType");
 static_assert(offsetof(AppPlayerControllerSubsystem_UpdateButtonMaterialByDeviceType, DeviceType) == 0x000000, "Member 'AppPlayerControllerSubsystem_UpdateButtonMaterialByDeviceType::DeviceType' has a wrong offset!");
 
+// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentButtonTextureType
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerControllerSubsystem_GetCurrentButtonTextureType final
+{
+public:
+	EControllerButtonTextureType                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AppPlayerControllerSubsystem_GetCurrentButtonTextureType) == 0x000001, "Wrong alignment on AppPlayerControllerSubsystem_GetCurrentButtonTextureType");
+static_assert(sizeof(AppPlayerControllerSubsystem_GetCurrentButtonTextureType) == 0x000001, "Wrong size on AppPlayerControllerSubsystem_GetCurrentButtonTextureType");
+static_assert(offsetof(AppPlayerControllerSubsystem_GetCurrentButtonTextureType, ReturnValue) == 0x000000, "Member 'AppPlayerControllerSubsystem_GetCurrentButtonTextureType::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentDeviceTexture
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerControllerSubsystem_GetCurrentDeviceTexture final
+{
+public:
+	class UTexture2D*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AppPlayerControllerSubsystem_GetCurrentDeviceTexture) == 0x000008, "Wrong alignment on AppPlayerControllerSubsystem_GetCurrentDeviceTexture");
+static_assert(sizeof(AppPlayerControllerSubsystem_GetCurrentDeviceTexture) == 0x000008, "Wrong size on AppPlayerControllerSubsystem_GetCurrentDeviceTexture");
+static_assert(offsetof(AppPlayerControllerSubsystem_GetCurrentDeviceTexture, ReturnValue) == 0x000000, "Member 'AppPlayerControllerSubsystem_GetCurrentDeviceTexture::ReturnValue' has a wrong offset!");
+
 // Function UnionSystem.AppPlayerControllerSubsystem.GetCurrentDisplayKeytopPattern
 // 0x0008 (0x0008 - 0x0000)
 struct AppPlayerControllerSubsystem_GetCurrentDisplayKeytopPattern final
@@ -2599,6 +2225,31 @@ static_assert(alignof(AppSaveGameHelper_AddCompensationData) == 0x000004, "Wrong
 static_assert(sizeof(AppSaveGameHelper_AddCompensationData) == 0x000004, "Wrong size on AppSaveGameHelper_AddCompensationData");
 static_assert(offsetof(AppSaveGameHelper_AddCompensationData, ID) == 0x000000, "Member 'AppSaveGameHelper_AddCompensationData::ID' has a wrong offset!");
 
+// Function UnionSystem.AppSaveGameHelper.AddLegendCompeEnteredSeason
+// 0x0008 (0x0008 - 0x0000)
+struct AppSaveGameHelper_AddLegendCompeEnteredSeason final
+{
+public:
+	int32                                         InSeason;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AppSaveGameHelper_AddLegendCompeEnteredSeason) == 0x000004, "Wrong alignment on AppSaveGameHelper_AddLegendCompeEnteredSeason");
+static_assert(sizeof(AppSaveGameHelper_AddLegendCompeEnteredSeason) == 0x000008, "Wrong size on AppSaveGameHelper_AddLegendCompeEnteredSeason");
+static_assert(offsetof(AppSaveGameHelper_AddLegendCompeEnteredSeason, InSeason) == 0x000000, "Member 'AppSaveGameHelper_AddLegendCompeEnteredSeason::InSeason' has a wrong offset!");
+static_assert(offsetof(AppSaveGameHelper_AddLegendCompeEnteredSeason, ReturnValue) == 0x000004, "Member 'AppSaveGameHelper_AddLegendCompeEnteredSeason::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.AppSaveGameHelper.AddLegendCompeRecievedFinalResultSeason
+// 0x0004 (0x0004 - 0x0000)
+struct AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason final
+{
+public:
+	int32                                         InSeason;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason) == 0x000004, "Wrong alignment on AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason");
+static_assert(sizeof(AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason) == 0x000004, "Wrong size on AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason");
+static_assert(offsetof(AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason, InSeason) == 0x000000, "Member 'AppSaveGameHelper_AddLegendCompeRecievedFinalResultSeason::InSeason' has a wrong offset!");
+
 // Function UnionSystem.AppSaveGameHelper.AddRaceStatsValue
 // 0x0008 (0x0008 - 0x0000)
 struct AppSaveGameHelper_AddRaceStatsValue final
@@ -2634,6 +2285,17 @@ public:
 static_assert(alignof(AppSaveGameHelper_AddRivalWinCount) == 0x000001, "Wrong alignment on AppSaveGameHelper_AddRivalWinCount");
 static_assert(sizeof(AppSaveGameHelper_AddRivalWinCount) == 0x000001, "Wrong size on AppSaveGameHelper_AddRivalWinCount");
 static_assert(offsetof(AppSaveGameHelper_AddRivalWinCount, DriverId) == 0x000000, "Member 'AppSaveGameHelper_AddRivalWinCount::DriverId' has a wrong offset!");
+
+// Function UnionSystem.AppSaveGameHelper.CalcLegendCompeNeedFinalResultSeason
+// 0x0010 (0x0010 - 0x0000)
+struct AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason final
+{
+public:
+	TArray<int32>                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason) == 0x000008, "Wrong alignment on AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason");
+static_assert(sizeof(AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason) == 0x000010, "Wrong size on AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason");
+static_assert(offsetof(AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason, ReturnValue) == 0x000000, "Member 'AppSaveGameHelper_CalcLegendCompeNeedFinalResultSeason::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.AppSaveGameHelper.CheckRewardGetDisplayRequest
 // 0x0002 (0x0002 - 0x0000)
@@ -2931,14 +2593,14 @@ static_assert(sizeof(AppSaveGameHelper_GetHonorTitleIndex) == 0x000004, "Wrong s
 static_assert(offsetof(AppSaveGameHelper_GetHonorTitleIndex, ReturnValue) == 0x000000, "Member 'AppSaveGameHelper_GetHonorTitleIndex::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.AppSaveGameHelper.GetHonorTitleInfo
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct AppSaveGameHelper_GetHonorTitleInfo final
 {
 public:
-	struct FHonorTitleListData                    ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FHonorTitleListData                    ReturnValue;                                       // 0x0000(0x0058)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AppSaveGameHelper_GetHonorTitleInfo) == 0x000008, "Wrong alignment on AppSaveGameHelper_GetHonorTitleInfo");
-static_assert(sizeof(AppSaveGameHelper_GetHonorTitleInfo) == 0x000050, "Wrong size on AppSaveGameHelper_GetHonorTitleInfo");
+static_assert(sizeof(AppSaveGameHelper_GetHonorTitleInfo) == 0x000058, "Wrong size on AppSaveGameHelper_GetHonorTitleInfo");
 static_assert(offsetof(AppSaveGameHelper_GetHonorTitleInfo, ReturnValue) == 0x000000, "Member 'AppSaveGameHelper_GetHonorTitleInfo::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.AppSaveGameHelper.GetHonorTitleUnlock
@@ -3014,6 +2676,17 @@ static_assert(alignof(AppSaveGameHelper_GetItemSwitchSettingSave) == 0x000008, "
 static_assert(sizeof(AppSaveGameHelper_GetItemSwitchSettingSave) == 0x000018, "Wrong size on AppSaveGameHelper_GetItemSwitchSettingSave");
 static_assert(offsetof(AppSaveGameHelper_GetItemSwitchSettingSave, InGameModeId) == 0x000000, "Member 'AppSaveGameHelper_GetItemSwitchSettingSave::InGameModeId' has a wrong offset!");
 static_assert(offsetof(AppSaveGameHelper_GetItemSwitchSettingSave, ReturnValue) == 0x000008, "Member 'AppSaveGameHelper_GetItemSwitchSettingSave::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.AppSaveGameHelper.GetLegendCompeEnteredSeason
+// 0x0010 (0x0010 - 0x0000)
+struct AppSaveGameHelper_GetLegendCompeEnteredSeason final
+{
+public:
+	TArray<int32>                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AppSaveGameHelper_GetLegendCompeEnteredSeason) == 0x000008, "Wrong alignment on AppSaveGameHelper_GetLegendCompeEnteredSeason");
+static_assert(sizeof(AppSaveGameHelper_GetLegendCompeEnteredSeason) == 0x000010, "Wrong size on AppSaveGameHelper_GetLegendCompeEnteredSeason");
+static_assert(offsetof(AppSaveGameHelper_GetLegendCompeEnteredSeason, ReturnValue) == 0x000000, "Member 'AppSaveGameHelper_GetLegendCompeEnteredSeason::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.AppSaveGameHelper.GetMachineColorPresetAll
 // 0x0010 (0x0010 - 0x0000)
@@ -4746,6 +4419,23 @@ static_assert(sizeof(AppTimeUtil_MakeDateTimeText) == 0x000018, "Wrong size on A
 static_assert(offsetof(AppTimeUtil_MakeDateTimeText, DateTime) == 0x000000, "Member 'AppTimeUtil_MakeDateTimeText::DateTime' has a wrong offset!");
 static_assert(offsetof(AppTimeUtil_MakeDateTimeText, ReturnValue) == 0x000008, "Member 'AppTimeUtil_MakeDateTimeText::ReturnValue' has a wrong offset!");
 
+// Function UnionSystem.AppTimeUtil.ReplaceDateTimePlaceholder
+// 0x0030 (0x0030 - 0x0000)
+struct AppTimeUtil_ReplaceDateTimePlaceholder final
+{
+public:
+	class FText                                   BaseText;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FDateTime                              StartDateLocalTime;                                // 0x0010(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              EndDateLocalTime;                                  // 0x0018(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AppTimeUtil_ReplaceDateTimePlaceholder) == 0x000008, "Wrong alignment on AppTimeUtil_ReplaceDateTimePlaceholder");
+static_assert(sizeof(AppTimeUtil_ReplaceDateTimePlaceholder) == 0x000030, "Wrong size on AppTimeUtil_ReplaceDateTimePlaceholder");
+static_assert(offsetof(AppTimeUtil_ReplaceDateTimePlaceholder, BaseText) == 0x000000, "Member 'AppTimeUtil_ReplaceDateTimePlaceholder::BaseText' has a wrong offset!");
+static_assert(offsetof(AppTimeUtil_ReplaceDateTimePlaceholder, StartDateLocalTime) == 0x000010, "Member 'AppTimeUtil_ReplaceDateTimePlaceholder::StartDateLocalTime' has a wrong offset!");
+static_assert(offsetof(AppTimeUtil_ReplaceDateTimePlaceholder, EndDateLocalTime) == 0x000018, "Member 'AppTimeUtil_ReplaceDateTimePlaceholder::EndDateLocalTime' has a wrong offset!");
+static_assert(offsetof(AppTimeUtil_ReplaceDateTimePlaceholder, ReturnValue) == 0x000020, "Member 'AppTimeUtil_ReplaceDateTimePlaceholder::ReturnValue' has a wrong offset!");
+
 // Function UnionSystem.AppTimeUtil.Sub_DateTimeDateTime
 // 0x0018 (0x0018 - 0x0000)
 struct AppTimeUtil_Sub_DateTimeDateTime final
@@ -4870,14 +4560,14 @@ static_assert(offsetof(AuthSubsystem_OnCompleteUserGetDataRequest, ResponseData)
 static_assert(offsetof(AuthSubsystem_OnCompleteUserGetDataRequest, Error) == 0x000030, "Member 'AuthSubsystem_OnCompleteUserGetDataRequest::Error' has a wrong offset!");
 
 // Function UnionSystem.AuthSubsystem.SetCachedAppUserBaseData
-// 0x0100 (0x0100 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct AuthSubsystem_SetCachedAppUserBaseData final
 {
 public:
-	struct FUserGetDataResponse                   Response;                                          // 0x0000(0x0100)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FUserGetDataResponse                   Response;                                          // 0x0000(0x0108)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AuthSubsystem_SetCachedAppUserBaseData) == 0x000008, "Wrong alignment on AuthSubsystem_SetCachedAppUserBaseData");
-static_assert(sizeof(AuthSubsystem_SetCachedAppUserBaseData) == 0x000100, "Wrong size on AuthSubsystem_SetCachedAppUserBaseData");
+static_assert(sizeof(AuthSubsystem_SetCachedAppUserBaseData) == 0x000108, "Wrong size on AuthSubsystem_SetCachedAppUserBaseData");
 static_assert(offsetof(AuthSubsystem_SetCachedAppUserBaseData, Response) == 0x000000, "Member 'AuthSubsystem_SetCachedAppUserBaseData::Response' has a wrong offset!");
 
 // Function UnionSystem.AuthSubsystem.SetCachedAppUserFairPlayPointData
@@ -5562,6 +5252,17 @@ static_assert(alignof(DebugOnlineAutoPlaySetting_GetDebugAutoPlayMode) == 0x0000
 static_assert(sizeof(DebugOnlineAutoPlaySetting_GetDebugAutoPlayMode) == 0x000004, "Wrong size on DebugOnlineAutoPlaySetting_GetDebugAutoPlayMode");
 static_assert(offsetof(DebugOnlineAutoPlaySetting_GetDebugAutoPlayMode, ReturnValue) == 0x000000, "Member 'DebugOnlineAutoPlaySetting_GetDebugAutoPlayMode::ReturnValue' has a wrong offset!");
 
+// Function UnionSystem.DebugOnlineAutoPlaySetting.GetMaxDebugAutoPlayModeNum
+// 0x0004 (0x0004 - 0x0000)
+struct DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum) == 0x000004, "Wrong alignment on DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum");
+static_assert(sizeof(DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum) == 0x000004, "Wrong size on DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum");
+static_assert(offsetof(DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum, ReturnValue) == 0x000000, "Member 'DebugOnlineAutoPlaySetting_GetMaxDebugAutoPlayModeNum::ReturnValue' has a wrong offset!");
+
 // Function UnionSystem.DebugOnlineAutoPlaySetting.IsDebugAutoPlay
 // 0x0001 (0x0001 - 0x0000)
 struct DebugOnlineAutoPlaySetting_IsDebugAutoPlay final
@@ -5572,6 +5273,17 @@ public:
 static_assert(alignof(DebugOnlineAutoPlaySetting_IsDebugAutoPlay) == 0x000001, "Wrong alignment on DebugOnlineAutoPlaySetting_IsDebugAutoPlay");
 static_assert(sizeof(DebugOnlineAutoPlaySetting_IsDebugAutoPlay) == 0x000001, "Wrong size on DebugOnlineAutoPlaySetting_IsDebugAutoPlay");
 static_assert(offsetof(DebugOnlineAutoPlaySetting_IsDebugAutoPlay, ReturnValue) == 0x000000, "Member 'DebugOnlineAutoPlaySetting_IsDebugAutoPlay::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.DebugOnlineAutoPlaySetting.IsDebugAutoPlayMonkeyTest
+// 0x0001 (0x0001 - 0x0000)
+struct DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest) == 0x000001, "Wrong alignment on DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest");
+static_assert(sizeof(DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest) == 0x000001, "Wrong size on DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest");
+static_assert(offsetof(DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest, ReturnValue) == 0x000000, "Member 'DebugOnlineAutoPlaySetting_IsDebugAutoPlayMonkeyTest::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.DebugOnlineAutoPlaySetting.IsDebugAutoPlayShortRace
 // 0x0001 (0x0001 - 0x0000)
@@ -5605,6 +5317,17 @@ public:
 static_assert(alignof(DebugOnlineAutoPlaySetting_SetDebugAutoPlayMode) == 0x000004, "Wrong alignment on DebugOnlineAutoPlaySetting_SetDebugAutoPlayMode");
 static_assert(sizeof(DebugOnlineAutoPlaySetting_SetDebugAutoPlayMode) == 0x000004, "Wrong size on DebugOnlineAutoPlaySetting_SetDebugAutoPlayMode");
 static_assert(offsetof(DebugOnlineAutoPlaySetting_SetDebugAutoPlayMode, Mode) == 0x000000, "Member 'DebugOnlineAutoPlaySetting_SetDebugAutoPlayMode::Mode' has a wrong offset!");
+
+// Function UnionSystem.DebugOnlineAutoPlaySetting.SetDebugAutoPlayMonkeyTest
+// 0x0001 (0x0001 - 0x0000)
+struct DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest final
+{
+public:
+	bool                                          flg;                                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest) == 0x000001, "Wrong alignment on DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest");
+static_assert(sizeof(DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest) == 0x000001, "Wrong size on DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest");
+static_assert(offsetof(DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest, flg) == 0x000000, "Member 'DebugOnlineAutoPlaySetting_SetDebugAutoPlayMonkeyTest::flg' has a wrong offset!");
 
 // Function UnionSystem.DebugOnlineAutoPlaySetting.SetDebugAutoPlayShortRace
 // 0x0001 (0x0001 - 0x0000)
@@ -7131,20 +6854,72 @@ static_assert(sizeof(FriendSubsystem_GetReceivedLobbyInvitationCount) == 0x00000
 static_assert(offsetof(FriendSubsystem_GetReceivedLobbyInvitationCount, ReturnValue) == 0x000000, "Member 'FriendSubsystem_GetReceivedLobbyInvitationCount::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.FriendSubsystem.GetUserSearchDataByProductUserId
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct FriendSubsystem_GetUserSearchDataByProductUserId final
 {
 public:
 	class FString                                 ProductUserId;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCommon_UserSearchData                 OutUserSearchData;                                 // 0x0010(0x00D8)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x00E8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FCommon_UserSearchData                 OutUserSearchData;                                 // 0x0010(0x00E0)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FriendSubsystem_GetUserSearchDataByProductUserId) == 0x000008, "Wrong alignment on FriendSubsystem_GetUserSearchDataByProductUserId");
-static_assert(sizeof(FriendSubsystem_GetUserSearchDataByProductUserId) == 0x0000F0, "Wrong size on FriendSubsystem_GetUserSearchDataByProductUserId");
+static_assert(sizeof(FriendSubsystem_GetUserSearchDataByProductUserId) == 0x0000F8, "Wrong size on FriendSubsystem_GetUserSearchDataByProductUserId");
 static_assert(offsetof(FriendSubsystem_GetUserSearchDataByProductUserId, ProductUserId) == 0x000000, "Member 'FriendSubsystem_GetUserSearchDataByProductUserId::ProductUserId' has a wrong offset!");
 static_assert(offsetof(FriendSubsystem_GetUserSearchDataByProductUserId, OutUserSearchData) == 0x000010, "Member 'FriendSubsystem_GetUserSearchDataByProductUserId::OutUserSearchData' has a wrong offset!");
-static_assert(offsetof(FriendSubsystem_GetUserSearchDataByProductUserId, ReturnValue) == 0x0000E8, "Member 'FriendSubsystem_GetUserSearchDataByProductUserId::ReturnValue' has a wrong offset!");
+static_assert(offsetof(FriendSubsystem_GetUserSearchDataByProductUserId, ReturnValue) == 0x0000F0, "Member 'FriendSubsystem_GetUserSearchDataByProductUserId::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.GadgetSettingData.GadgetMenuCategory
+// 0x0002 (0x0002 - 0x0000)
+struct GadgetSettingData_GadgetMenuCategory final
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGadgetMenuCategory                           ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GadgetSettingData_GadgetMenuCategory) == 0x000001, "Wrong alignment on GadgetSettingData_GadgetMenuCategory");
+static_assert(sizeof(GadgetSettingData_GadgetMenuCategory) == 0x000002, "Wrong size on GadgetSettingData_GadgetMenuCategory");
+static_assert(offsetof(GadgetSettingData_GadgetMenuCategory, gadgetId) == 0x000000, "Member 'GadgetSettingData_GadgetMenuCategory::gadgetId' has a wrong offset!");
+static_assert(offsetof(GadgetSettingData_GadgetMenuCategory, ReturnValue) == 0x000001, "Member 'GadgetSettingData_GadgetMenuCategory::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.GadgetSettingData.IsEquippable
+// 0x0002 (0x0002 - 0x0000)
+struct GadgetSettingData_IsEquippable final
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GadgetSettingData_IsEquippable) == 0x000001, "Wrong alignment on GadgetSettingData_IsEquippable");
+static_assert(sizeof(GadgetSettingData_IsEquippable) == 0x000002, "Wrong size on GadgetSettingData_IsEquippable");
+static_assert(offsetof(GadgetSettingData_IsEquippable, gadgetId) == 0x000000, "Member 'GadgetSettingData_IsEquippable::gadgetId' has a wrong offset!");
+static_assert(offsetof(GadgetSettingData_IsEquippable, ReturnValue) == 0x000001, "Member 'GadgetSettingData_IsEquippable::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.GadgetSettingData.IsGadgetKit
+// 0x0002 (0x0002 - 0x0000)
+struct GadgetSettingData_IsGadgetKit final
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GadgetSettingData_IsGadgetKit) == 0x000001, "Wrong alignment on GadgetSettingData_IsGadgetKit");
+static_assert(sizeof(GadgetSettingData_IsGadgetKit) == 0x000002, "Wrong size on GadgetSettingData_IsGadgetKit");
+static_assert(offsetof(GadgetSettingData_IsGadgetKit, gadgetId) == 0x000000, "Member 'GadgetSettingData_IsGadgetKit::gadgetId' has a wrong offset!");
+static_assert(offsetof(GadgetSettingData_IsGadgetKit, ReturnValue) == 0x000001, "Member 'GadgetSettingData_IsGadgetKit::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.GadgetSettingData.IsHiddenGadget
+// 0x0002 (0x0002 - 0x0000)
+struct GadgetSettingData_IsHiddenGadget final
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GadgetSettingData_IsHiddenGadget) == 0x000001, "Wrong alignment on GadgetSettingData_IsHiddenGadget");
+static_assert(sizeof(GadgetSettingData_IsHiddenGadget) == 0x000002, "Wrong size on GadgetSettingData_IsHiddenGadget");
+static_assert(offsetof(GadgetSettingData_IsHiddenGadget, gadgetId) == 0x000000, "Member 'GadgetSettingData_IsHiddenGadget::gadgetId' has a wrong offset!");
+static_assert(offsetof(GadgetSettingData_IsHiddenGadget, ReturnValue) == 0x000001, "Member 'GadgetSettingData_IsHiddenGadget::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.GameActivitySubsystem.ChangeActivityAvailability
 // 0x0030 (0x0030 - 0x0000)
@@ -7626,6 +7401,17 @@ static_assert(alignof(GhostSubSystem_SetGhostRequestFailed) == 0x000001, "Wrong 
 static_assert(sizeof(GhostSubSystem_SetGhostRequestFailed) == 0x000001, "Wrong size on GhostSubSystem_SetGhostRequestFailed");
 static_assert(offsetof(GhostSubSystem_SetGhostRequestFailed, InFailed) == 0x000000, "Member 'GhostSubSystem_SetGhostRequestFailed::InFailed' has a wrong offset!");
 
+// Function UnionSystem.GhostSubSystem.GetDebugEnableGhostUploadCancel
+// 0x0001 (0x0001 - 0x0000)
+struct GhostSubSystem_GetDebugEnableGhostUploadCancel final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GhostSubSystem_GetDebugEnableGhostUploadCancel) == 0x000001, "Wrong alignment on GhostSubSystem_GetDebugEnableGhostUploadCancel");
+static_assert(sizeof(GhostSubSystem_GetDebugEnableGhostUploadCancel) == 0x000001, "Wrong size on GhostSubSystem_GetDebugEnableGhostUploadCancel");
+static_assert(offsetof(GhostSubSystem_GetDebugEnableGhostUploadCancel, ReturnValue) == 0x000000, "Member 'GhostSubSystem_GetDebugEnableGhostUploadCancel::ReturnValue' has a wrong offset!");
+
 // Function UnionSystem.GhostSubSystem.IsGhostRequestFailed
 // 0x0001 (0x0001 - 0x0000)
 struct GhostSubSystem_IsGhostRequestFailed final
@@ -7682,57 +7468,108 @@ static_assert(sizeof(UIColorInfoDataAsset_GetUIColorInfo) == 0x000028, "Wrong si
 static_assert(offsetof(UIColorInfoDataAsset_GetUIColorInfo, colorId) == 0x000000, "Member 'UIColorInfoDataAsset_GetUIColorInfo::colorId' has a wrong offset!");
 static_assert(offsetof(UIColorInfoDataAsset_GetUIColorInfo, ReturnValue) == 0x000008, "Member 'UIColorInfoDataAsset_GetUIColorInfo::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.HashHelper.HashIntoByteArray
-// 0x0020 (0x0020 - 0x0000)
-struct HashHelper_HashIntoByteArray final
+// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleAndIdWithRarity
+// 0x0028 (0x0028 - 0x0000)
+struct HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity final
 {
 public:
-	class FString                                 Data;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<uint8>                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	int32                                         Rarity;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 outHonorTitleIdArray;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FHonorTitleListData>            ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HashHelper_HashIntoByteArray) == 0x000008, "Wrong alignment on HashHelper_HashIntoByteArray");
-static_assert(sizeof(HashHelper_HashIntoByteArray) == 0x000020, "Wrong size on HashHelper_HashIntoByteArray");
-static_assert(offsetof(HashHelper_HashIntoByteArray, Data) == 0x000000, "Member 'HashHelper_HashIntoByteArray::Data' has a wrong offset!");
-static_assert(offsetof(HashHelper_HashIntoByteArray, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoByteArray::ReturnValue' has a wrong offset!");
+static_assert(alignof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity");
+static_assert(sizeof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity) == 0x000028, "Wrong size on HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity");
+static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity, Rarity) == 0x000000, "Member 'HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity::Rarity' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity, outHonorTitleIdArray) == 0x000008, "Member 'HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity::outHonorTitleIdArray' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity, ReturnValue) == 0x000018, "Member 'HonorTitleListDataAsset_GetAllHonorTitleAndIdWithRarity::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.HashHelper.HashIntoByteArrayFromByteArray
-// 0x0020 (0x0020 - 0x0000)
-struct HashHelper_HashIntoByteArrayFromByteArray final
+// Function UnionSystem.HonorTitleListDataAsset.GetAllHonorTitleWithRarity
+// 0x0018 (0x0018 - 0x0000)
+struct HonorTitleListDataAsset_GetAllHonorTitleWithRarity final
 {
 public:
-	TArray<uint8>                                 Bytes;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<uint8>                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	int32                                         Rarity;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FHonorTitleListData>            ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HashHelper_HashIntoByteArrayFromByteArray) == 0x000008, "Wrong alignment on HashHelper_HashIntoByteArrayFromByteArray");
-static_assert(sizeof(HashHelper_HashIntoByteArrayFromByteArray) == 0x000020, "Wrong size on HashHelper_HashIntoByteArrayFromByteArray");
-static_assert(offsetof(HashHelper_HashIntoByteArrayFromByteArray, Bytes) == 0x000000, "Member 'HashHelper_HashIntoByteArrayFromByteArray::Bytes' has a wrong offset!");
-static_assert(offsetof(HashHelper_HashIntoByteArrayFromByteArray, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoByteArrayFromByteArray::ReturnValue' has a wrong offset!");
+static_assert(alignof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetAllHonorTitleWithRarity");
+static_assert(sizeof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity) == 0x000018, "Wrong size on HonorTitleListDataAsset_GetAllHonorTitleWithRarity");
+static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity, Rarity) == 0x000000, "Member 'HonorTitleListDataAsset_GetAllHonorTitleWithRarity::Rarity' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetAllHonorTitleWithRarity, ReturnValue) == 0x000008, "Member 'HonorTitleListDataAsset_GetAllHonorTitleWithRarity::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.HashHelper.HashIntoTextString
-// 0x0020 (0x0020 - 0x0000)
-struct HashHelper_HashIntoTextString final
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleLegendCompeInfo
+// 0x000C (0x000C - 0x0000)
+struct HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo final
 {
 public:
-	class FString                                 Data;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HonorTitleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLegendCompe;                                     // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RoundNum;                                          // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HashHelper_HashIntoTextString) == 0x000008, "Wrong alignment on HashHelper_HashIntoTextString");
-static_assert(sizeof(HashHelper_HashIntoTextString) == 0x000020, "Wrong size on HashHelper_HashIntoTextString");
-static_assert(offsetof(HashHelper_HashIntoTextString, Data) == 0x000000, "Member 'HashHelper_HashIntoTextString::Data' has a wrong offset!");
-static_assert(offsetof(HashHelper_HashIntoTextString, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoTextString::ReturnValue' has a wrong offset!");
+static_assert(alignof(HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo) == 0x000004, "Wrong alignment on HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo");
+static_assert(sizeof(HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo) == 0x00000C, "Wrong size on HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo, HonorTitleIndex) == 0x000000, "Member 'HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo::HonorTitleIndex' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo, IsLegendCompe) == 0x000004, "Member 'HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo::IsLegendCompe' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo, RoundNum) == 0x000008, "Member 'HonorTitleListDataAsset_GetHonorTitleLegendCompeInfo::RoundNum' has a wrong offset!");
 
-// Function UnionSystem.HashHelper.HashIntoTextStringFromByteArray
-// 0x0020 (0x0020 - 0x0000)
-struct HashHelper_HashIntoTextStringFromByteArray final
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitlePlate
+// 0x0030 (0x0030 - 0x0000)
+struct HonorTitleListDataAsset_GetHonorTitlePlate final
 {
 public:
-	TArray<uint8>                                 Bytes;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HonorTitleId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              ReturnValue;                                       // 0x0008(0x0028)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HashHelper_HashIntoTextStringFromByteArray) == 0x000008, "Wrong alignment on HashHelper_HashIntoTextStringFromByteArray");
-static_assert(sizeof(HashHelper_HashIntoTextStringFromByteArray) == 0x000020, "Wrong size on HashHelper_HashIntoTextStringFromByteArray");
-static_assert(offsetof(HashHelper_HashIntoTextStringFromByteArray, Bytes) == 0x000000, "Member 'HashHelper_HashIntoTextStringFromByteArray::Bytes' has a wrong offset!");
-static_assert(offsetof(HashHelper_HashIntoTextStringFromByteArray, ReturnValue) == 0x000010, "Member 'HashHelper_HashIntoTextStringFromByteArray::ReturnValue' has a wrong offset!");
+static_assert(alignof(HonorTitleListDataAsset_GetHonorTitlePlate) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetHonorTitlePlate");
+static_assert(sizeof(HonorTitleListDataAsset_GetHonorTitlePlate) == 0x000030, "Wrong size on HonorTitleListDataAsset_GetHonorTitlePlate");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitlePlate, HonorTitleId) == 0x000000, "Member 'HonorTitleListDataAsset_GetHonorTitlePlate::HonorTitleId' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitlePlate, ReturnValue) == 0x000008, "Member 'HonorTitleListDataAsset_GetHonorTitlePlate::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleRarity
+// 0x0008 (0x0008 - 0x0000)
+struct HonorTitleListDataAsset_GetHonorTitleRarity final
+{
+public:
+	int32                                         HonorTitleId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HonorTitleListDataAsset_GetHonorTitleRarity) == 0x000004, "Wrong alignment on HonorTitleListDataAsset_GetHonorTitleRarity");
+static_assert(sizeof(HonorTitleListDataAsset_GetHonorTitleRarity) == 0x000008, "Wrong size on HonorTitleListDataAsset_GetHonorTitleRarity");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleRarity, HonorTitleId) == 0x000000, "Member 'HonorTitleListDataAsset_GetHonorTitleRarity::HonorTitleId' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleRarity, ReturnValue) == 0x000004, "Member 'HonorTitleListDataAsset_GetHonorTitleRarity::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HonorTitleListDataAsset.GetHonorTitleVBName
+// 0x0018 (0x0018 - 0x0000)
+struct HonorTitleListDataAsset_GetHonorTitleVBName final
+{
+public:
+	int32                                         HonorTitleId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsValid;                                           // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HonorTitleListDataAsset_GetHonorTitleVBName) == 0x000008, "Wrong alignment on HonorTitleListDataAsset_GetHonorTitleVBName");
+static_assert(sizeof(HonorTitleListDataAsset_GetHonorTitleVBName) == 0x000018, "Wrong size on HonorTitleListDataAsset_GetHonorTitleVBName");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleVBName, HonorTitleId) == 0x000000, "Member 'HonorTitleListDataAsset_GetHonorTitleVBName::HonorTitleId' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleVBName, IsValid) == 0x000004, "Member 'HonorTitleListDataAsset_GetHonorTitleVBName::IsValid' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetHonorTitleVBName, ReturnValue) == 0x000008, "Member 'HonorTitleListDataAsset_GetHonorTitleVBName::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HonorTitleListDataAsset.GetIsHonorTitleDLC
+// 0x0008 (0x0008 - 0x0000)
+struct HonorTitleListDataAsset_GetIsHonorTitleDLC final
+{
+public:
+	int32                                         HonorTitleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(HonorTitleListDataAsset_GetIsHonorTitleDLC) == 0x000004, "Wrong alignment on HonorTitleListDataAsset_GetIsHonorTitleDLC");
+static_assert(sizeof(HonorTitleListDataAsset_GetIsHonorTitleDLC) == 0x000008, "Wrong size on HonorTitleListDataAsset_GetIsHonorTitleDLC");
+static_assert(offsetof(HonorTitleListDataAsset_GetIsHonorTitleDLC, HonorTitleIndex) == 0x000000, "Member 'HonorTitleListDataAsset_GetIsHonorTitleDLC::HonorTitleIndex' has a wrong offset!");
+static_assert(offsetof(HonorTitleListDataAsset_GetIsHonorTitleDLC, ReturnValue) == 0x000004, "Member 'HonorTitleListDataAsset_GetIsHonorTitleDLC::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.GetCurrentUserId
 // 0x0018 (0x0018 - 0x0000)
@@ -7819,14 +7656,14 @@ static_assert(sizeof(HttpHelper_LoginContextInitializeForMaintenance) == 0x00001
 static_assert(offsetof(HttpHelper_LoginContextInitializeForMaintenance, ProviderId) == 0x000000, "Member 'HttpHelper_LoginContextInitializeForMaintenance::ProviderId' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.LoginContextUpdate
-// 0x0090 (0x0090 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct HttpHelper_LoginContextUpdate final
 {
 public:
-	struct FLoginCheckResponse                    Response;                                          // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FLoginCheckResponse                    Response;                                          // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_LoginContextUpdate) == 0x000008, "Wrong alignment on HttpHelper_LoginContextUpdate");
-static_assert(sizeof(HttpHelper_LoginContextUpdate) == 0x000090, "Wrong size on HttpHelper_LoginContextUpdate");
+static_assert(sizeof(HttpHelper_LoginContextUpdate) == 0x0000A0, "Wrong size on HttpHelper_LoginContextUpdate");
 static_assert(offsetof(HttpHelper_LoginContextUpdate, Response) == 0x000000, "Member 'HttpHelper_LoginContextUpdate::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_CntReplayGetSignedUrl
@@ -7875,6 +7712,51 @@ static_assert(sizeof(HttpHelper_Parse_DebugChangeFairPlayPoint) == 0x000018, "Wr
 static_assert(offsetof(HttpHelper_Parse_DebugChangeFairPlayPoint, OutData) == 0x000000, "Member 'HttpHelper_Parse_DebugChangeFairPlayPoint::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_DebugChangeFairPlayPoint, ResCode) == 0x000010, "Member 'HttpHelper_Parse_DebugChangeFairPlayPoint::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_DebugChangeFairPlayPoint, Response) == 0x000014, "Member 'HttpHelper_Parse_DebugChangeFairPlayPoint::Response' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Parse_DebugChangeFestaLastOrder
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Parse_DebugChangeFestaLastOrder final
+{
+public:
+	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderResponse     Response;                                          // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Parse_DebugChangeFestaLastOrder) == 0x000008, "Wrong alignment on HttpHelper_Parse_DebugChangeFestaLastOrder");
+static_assert(sizeof(HttpHelper_Parse_DebugChangeFestaLastOrder) == 0x000018, "Wrong size on HttpHelper_Parse_DebugChangeFestaLastOrder");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeFestaLastOrder, OutData) == 0x000000, "Member 'HttpHelper_Parse_DebugChangeFestaLastOrder::OutData' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeFestaLastOrder, ResCode) == 0x000010, "Member 'HttpHelper_Parse_DebugChangeFestaLastOrder::ResCode' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeFestaLastOrder, Response) == 0x000014, "Member 'HttpHelper_Parse_DebugChangeFestaLastOrder::Response' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Parse_DebugChangeLegendCompeLastOrder
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Parse_DebugChangeLegendCompeLastOrder final
+{
+public:
+	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderResponse Response;                                        // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Parse_DebugChangeLegendCompeLastOrder) == 0x000008, "Wrong alignment on HttpHelper_Parse_DebugChangeLegendCompeLastOrder");
+static_assert(sizeof(HttpHelper_Parse_DebugChangeLegendCompeLastOrder) == 0x000018, "Wrong size on HttpHelper_Parse_DebugChangeLegendCompeLastOrder");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeLegendCompeLastOrder, OutData) == 0x000000, "Member 'HttpHelper_Parse_DebugChangeLegendCompeLastOrder::OutData' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeLegendCompeLastOrder, ResCode) == 0x000010, "Member 'HttpHelper_Parse_DebugChangeLegendCompeLastOrder::ResCode' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeLegendCompeLastOrder, Response) == 0x000014, "Member 'HttpHelper_Parse_DebugChangeLegendCompeLastOrder::Response' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Parse_DebugChangeLegendCompeRate
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Parse_DebugChangeLegendCompeRate final
+{
+public:
+	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateResponse    Response;                                          // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Parse_DebugChangeLegendCompeRate) == 0x000008, "Wrong alignment on HttpHelper_Parse_DebugChangeLegendCompeRate");
+static_assert(sizeof(HttpHelper_Parse_DebugChangeLegendCompeRate) == 0x000018, "Wrong size on HttpHelper_Parse_DebugChangeLegendCompeRate");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeLegendCompeRate, OutData) == 0x000000, "Member 'HttpHelper_Parse_DebugChangeLegendCompeRate::OutData' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeLegendCompeRate, ResCode) == 0x000010, "Member 'HttpHelper_Parse_DebugChangeLegendCompeRate::ResCode' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Parse_DebugChangeLegendCompeRate, Response) == 0x000014, "Member 'HttpHelper_Parse_DebugChangeLegendCompeRate::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_DebugChangeRankMatchRate
 // 0x0018 (0x0018 - 0x0000)
@@ -8036,17 +7918,17 @@ static_assert(offsetof(HttpHelper_Parse_FestaFestaTop, ResCode) == 0x000010, "Me
 static_assert(offsetof(HttpHelper_Parse_FestaFestaTop, Response) == 0x000018, "Member 'HttpHelper_Parse_FestaFestaTop::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_FriendAcceptFriend
-// 0x0480 (0x0480 - 0x0000)
+// 0x0488 (0x0488 - 0x0000)
 struct HttpHelper_Parse_FriendAcceptFriend final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendAcceptFriendResponse            Response;                                          // 0x0018(0x0468)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFriendAcceptFriendResponse            Response;                                          // 0x0018(0x0470)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_FriendAcceptFriend) == 0x000008, "Wrong alignment on HttpHelper_Parse_FriendAcceptFriend");
-static_assert(sizeof(HttpHelper_Parse_FriendAcceptFriend) == 0x000480, "Wrong size on HttpHelper_Parse_FriendAcceptFriend");
+static_assert(sizeof(HttpHelper_Parse_FriendAcceptFriend) == 0x000488, "Wrong size on HttpHelper_Parse_FriendAcceptFriend");
 static_assert(offsetof(HttpHelper_Parse_FriendAcceptFriend, OutData) == 0x000000, "Member 'HttpHelper_Parse_FriendAcceptFriend::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_FriendAcceptFriend, ResCode) == 0x000010, "Member 'HttpHelper_Parse_FriendAcceptFriend::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_FriendAcceptFriend, Response) == 0x000018, "Member 'HttpHelper_Parse_FriendAcceptFriend::Response' has a wrong offset!");
@@ -8148,17 +8030,17 @@ static_assert(offsetof(HttpHelper_Parse_FriendRejectFriend, ResCode) == 0x000010
 static_assert(offsetof(HttpHelper_Parse_FriendRejectFriend, Response) == 0x000014, "Member 'HttpHelper_Parse_FriendRejectFriend::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_FriendRequestFriend
-// 0x0480 (0x0480 - 0x0000)
+// 0x0488 (0x0488 - 0x0000)
 struct HttpHelper_Parse_FriendRequestFriend final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendRequestFriendResponse           Response;                                          // 0x0018(0x0468)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFriendRequestFriendResponse           Response;                                          // 0x0018(0x0470)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_FriendRequestFriend) == 0x000008, "Wrong alignment on HttpHelper_Parse_FriendRequestFriend");
-static_assert(sizeof(HttpHelper_Parse_FriendRequestFriend) == 0x000480, "Wrong size on HttpHelper_Parse_FriendRequestFriend");
+static_assert(sizeof(HttpHelper_Parse_FriendRequestFriend) == 0x000488, "Wrong size on HttpHelper_Parse_FriendRequestFriend");
 static_assert(offsetof(HttpHelper_Parse_FriendRequestFriend, OutData) == 0x000000, "Member 'HttpHelper_Parse_FriendRequestFriend::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_FriendRequestFriend, ResCode) == 0x000010, "Member 'HttpHelper_Parse_FriendRequestFriend::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_FriendRequestFriend, Response) == 0x000018, "Member 'HttpHelper_Parse_FriendRequestFriend::Response' has a wrong offset!");
@@ -8228,17 +8110,17 @@ static_assert(offsetof(HttpHelper_Parse_HealthCheck, ResCode) == 0x000010, "Memb
 static_assert(offsetof(HttpHelper_Parse_HealthCheck, Response) == 0x000014, "Member 'HttpHelper_Parse_HealthCheck::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_LegendCompeCheckLegendCompeReward
-// 0x0028 (0x0028 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct HttpHelper_Parse_LegendCompeCheckLegendCompeReward final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLegendCompeCheckLegendCompeRewardResponse Response;                                      // 0x0018(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FLegendCompeCheckLegendCompeRewardResponse Response;                                      // 0x0018(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_LegendCompeCheckLegendCompeReward) == 0x000008, "Wrong alignment on HttpHelper_Parse_LegendCompeCheckLegendCompeReward");
-static_assert(sizeof(HttpHelper_Parse_LegendCompeCheckLegendCompeReward) == 0x000028, "Wrong size on HttpHelper_Parse_LegendCompeCheckLegendCompeReward");
+static_assert(sizeof(HttpHelper_Parse_LegendCompeCheckLegendCompeReward) == 0x000030, "Wrong size on HttpHelper_Parse_LegendCompeCheckLegendCompeReward");
 static_assert(offsetof(HttpHelper_Parse_LegendCompeCheckLegendCompeReward, OutData) == 0x000000, "Member 'HttpHelper_Parse_LegendCompeCheckLegendCompeReward::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_LegendCompeCheckLegendCompeReward, ResCode) == 0x000010, "Member 'HttpHelper_Parse_LegendCompeCheckLegendCompeReward::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_LegendCompeCheckLegendCompeReward, Response) == 0x000018, "Member 'HttpHelper_Parse_LegendCompeCheckLegendCompeReward::Response' has a wrong offset!");
@@ -8308,17 +8190,17 @@ static_assert(offsetof(HttpHelper_Parse_LobbyRemoveLobby, ResCode) == 0x000010, 
 static_assert(offsetof(HttpHelper_Parse_LobbyRemoveLobby, Response) == 0x000014, "Member 'HttpHelper_Parse_LobbyRemoveLobby::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_LoginCheck
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct HttpHelper_Parse_LoginCheck final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLoginCheckResponse                    Response;                                          // 0x0018(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FLoginCheckResponse                    Response;                                          // 0x0018(0x00A0)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_LoginCheck) == 0x000008, "Wrong alignment on HttpHelper_Parse_LoginCheck");
-static_assert(sizeof(HttpHelper_Parse_LoginCheck) == 0x0000A8, "Wrong size on HttpHelper_Parse_LoginCheck");
+static_assert(sizeof(HttpHelper_Parse_LoginCheck) == 0x0000B8, "Wrong size on HttpHelper_Parse_LoginCheck");
 static_assert(offsetof(HttpHelper_Parse_LoginCheck, OutData) == 0x000000, "Member 'HttpHelper_Parse_LoginCheck::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_LoginCheck, ResCode) == 0x000010, "Member 'HttpHelper_Parse_LoginCheck::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_LoginCheck, Response) == 0x000018, "Member 'HttpHelper_Parse_LoginCheck::Response' has a wrong offset!");
@@ -8340,17 +8222,17 @@ static_assert(offsetof(HttpHelper_Parse_MasterDataGetMaintenanceSchedule, ResCod
 static_assert(offsetof(HttpHelper_Parse_MasterDataGetMaintenanceSchedule, Response) == 0x000014, "Member 'HttpHelper_Parse_MasterDataGetMaintenanceSchedule::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_MasterDataGetMasterData
-// 0x02D8 (0x02D8 - 0x0000)
+// 0x02E8 (0x02E8 - 0x0000)
 struct HttpHelper_Parse_MasterDataGetMasterData final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0018(0x02C0)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0018(0x02D0)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_MasterDataGetMasterData) == 0x000008, "Wrong alignment on HttpHelper_Parse_MasterDataGetMasterData");
-static_assert(sizeof(HttpHelper_Parse_MasterDataGetMasterData) == 0x0002D8, "Wrong size on HttpHelper_Parse_MasterDataGetMasterData");
+static_assert(sizeof(HttpHelper_Parse_MasterDataGetMasterData) == 0x0002E8, "Wrong size on HttpHelper_Parse_MasterDataGetMasterData");
 static_assert(offsetof(HttpHelper_Parse_MasterDataGetMasterData, OutData) == 0x000000, "Member 'HttpHelper_Parse_MasterDataGetMasterData::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_MasterDataGetMasterData, ResCode) == 0x000010, "Member 'HttpHelper_Parse_MasterDataGetMasterData::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_MasterDataGetMasterData, Response) == 0x000018, "Member 'HttpHelper_Parse_MasterDataGetMasterData::Response' has a wrong offset!");
@@ -8372,17 +8254,17 @@ static_assert(offsetof(HttpHelper_Parse_MasterDataGetVersion, ResCode) == 0x0000
 static_assert(offsetof(HttpHelper_Parse_MasterDataGetVersion, Response) == 0x000018, "Member 'HttpHelper_Parse_MasterDataGetVersion::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_MatchmakingDescribe
-// 0x0110 (0x0110 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct HttpHelper_Parse_MatchmakingDescribe final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMatchmakingDescribeResponse           Response;                                          // 0x0018(0x00F8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FMatchmakingDescribeResponse           Response;                                          // 0x0018(0x0108)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_MatchmakingDescribe) == 0x000008, "Wrong alignment on HttpHelper_Parse_MatchmakingDescribe");
-static_assert(sizeof(HttpHelper_Parse_MatchmakingDescribe) == 0x000110, "Wrong size on HttpHelper_Parse_MatchmakingDescribe");
+static_assert(sizeof(HttpHelper_Parse_MatchmakingDescribe) == 0x000120, "Wrong size on HttpHelper_Parse_MatchmakingDescribe");
 static_assert(offsetof(HttpHelper_Parse_MatchmakingDescribe, OutData) == 0x000000, "Member 'HttpHelper_Parse_MatchmakingDescribe::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_MatchmakingDescribe, ResCode) == 0x000010, "Member 'HttpHelper_Parse_MatchmakingDescribe::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_MatchmakingDescribe, Response) == 0x000018, "Member 'HttpHelper_Parse_MatchmakingDescribe::Response' has a wrong offset!");
@@ -8852,32 +8734,32 @@ static_assert(offsetof(HttpHelper_Parse_StartSaveRankMatchStart, ResCode) == 0x0
 static_assert(offsetof(HttpHelper_Parse_StartSaveRankMatchStart, Response) == 0x000018, "Member 'HttpHelper_Parse_StartSaveRankMatchStart::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_UserGetData
-// 0x0118 (0x0118 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct HttpHelper_Parse_UserGetData final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserGetDataResponse                   Response;                                          // 0x0018(0x0100)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FUserGetDataResponse                   Response;                                          // 0x0018(0x0108)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_UserGetData) == 0x000008, "Wrong alignment on HttpHelper_Parse_UserGetData");
-static_assert(sizeof(HttpHelper_Parse_UserGetData) == 0x000118, "Wrong size on HttpHelper_Parse_UserGetData");
+static_assert(sizeof(HttpHelper_Parse_UserGetData) == 0x000120, "Wrong size on HttpHelper_Parse_UserGetData");
 static_assert(offsetof(HttpHelper_Parse_UserGetData, OutData) == 0x000000, "Member 'HttpHelper_Parse_UserGetData::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_UserGetData, ResCode) == 0x000010, "Member 'HttpHelper_Parse_UserGetData::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_UserGetData, Response) == 0x000018, "Member 'HttpHelper_Parse_UserGetData::Response' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Parse_UserGetPartsData
-// 0x0018 (0x0018 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct HttpHelper_Parse_UserGetPartsData final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FUserGetPartsDataResponse              Response;                                          // 0x0014(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUserGetPartsDataResponse              Response;                                          // 0x0014(0x000C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HttpHelper_Parse_UserGetPartsData) == 0x000008, "Wrong alignment on HttpHelper_Parse_UserGetPartsData");
-static_assert(sizeof(HttpHelper_Parse_UserGetPartsData) == 0x000018, "Wrong size on HttpHelper_Parse_UserGetPartsData");
+static_assert(sizeof(HttpHelper_Parse_UserGetPartsData) == 0x000020, "Wrong size on HttpHelper_Parse_UserGetPartsData");
 static_assert(offsetof(HttpHelper_Parse_UserGetPartsData, OutData) == 0x000000, "Member 'HttpHelper_Parse_UserGetPartsData::OutData' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_UserGetPartsData, ResCode) == 0x000010, "Member 'HttpHelper_Parse_UserGetPartsData::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Parse_UserGetPartsData, Response) == 0x000014, "Member 'HttpHelper_Parse_UserGetPartsData::Response' has a wrong offset!");
@@ -9068,6 +8950,69 @@ static_assert(offsetof(HttpHelper_Receive_DebugChangeFairPlayPoint, OutError) ==
 static_assert(offsetof(HttpHelper_Receive_DebugChangeFairPlayPoint, ResCode) == 0x000008, "Member 'HttpHelper_Receive_DebugChangeFairPlayPoint::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_DebugChangeFairPlayPoint, Response) == 0x00000C, "Member 'HttpHelper_Receive_DebugChangeFairPlayPoint::Response' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_DebugChangeFairPlayPoint, ReturnValue) == 0x000010, "Member 'HttpHelper_Receive_DebugChangeFairPlayPoint::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Receive_DebugChangeFestaLastOrder
+// 0x0014 (0x0014 - 0x0000)
+struct HttpHelper_Receive_DebugChangeFestaLastOrder final
+{
+public:
+	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderResponse     Response;                                          // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(HttpHelper_Receive_DebugChangeFestaLastOrder) == 0x000004, "Wrong alignment on HttpHelper_Receive_DebugChangeFestaLastOrder");
+static_assert(sizeof(HttpHelper_Receive_DebugChangeFestaLastOrder) == 0x000014, "Wrong size on HttpHelper_Receive_DebugChangeFestaLastOrder");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeFestaLastOrder, Handle) == 0x000000, "Member 'HttpHelper_Receive_DebugChangeFestaLastOrder::Handle' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeFestaLastOrder, OutError) == 0x000004, "Member 'HttpHelper_Receive_DebugChangeFestaLastOrder::OutError' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeFestaLastOrder, ResCode) == 0x000008, "Member 'HttpHelper_Receive_DebugChangeFestaLastOrder::ResCode' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeFestaLastOrder, Response) == 0x00000C, "Member 'HttpHelper_Receive_DebugChangeFestaLastOrder::Response' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeFestaLastOrder, ReturnValue) == 0x000010, "Member 'HttpHelper_Receive_DebugChangeFestaLastOrder::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Receive_DebugChangeLegendCompeLastOrder
+// 0x0014 (0x0014 - 0x0000)
+struct HttpHelper_Receive_DebugChangeLegendCompeLastOrder final
+{
+public:
+	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderResponse Response;                                        // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(HttpHelper_Receive_DebugChangeLegendCompeLastOrder) == 0x000004, "Wrong alignment on HttpHelper_Receive_DebugChangeLegendCompeLastOrder");
+static_assert(sizeof(HttpHelper_Receive_DebugChangeLegendCompeLastOrder) == 0x000014, "Wrong size on HttpHelper_Receive_DebugChangeLegendCompeLastOrder");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeLastOrder, Handle) == 0x000000, "Member 'HttpHelper_Receive_DebugChangeLegendCompeLastOrder::Handle' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeLastOrder, OutError) == 0x000004, "Member 'HttpHelper_Receive_DebugChangeLegendCompeLastOrder::OutError' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeLastOrder, ResCode) == 0x000008, "Member 'HttpHelper_Receive_DebugChangeLegendCompeLastOrder::ResCode' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeLastOrder, Response) == 0x00000C, "Member 'HttpHelper_Receive_DebugChangeLegendCompeLastOrder::Response' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeLastOrder, ReturnValue) == 0x000010, "Member 'HttpHelper_Receive_DebugChangeLegendCompeLastOrder::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Receive_DebugChangeLegendCompeRate
+// 0x0014 (0x0014 - 0x0000)
+struct HttpHelper_Receive_DebugChangeLegendCompeRate final
+{
+public:
+	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateResponse    Response;                                          // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(HttpHelper_Receive_DebugChangeLegendCompeRate) == 0x000004, "Wrong alignment on HttpHelper_Receive_DebugChangeLegendCompeRate");
+static_assert(sizeof(HttpHelper_Receive_DebugChangeLegendCompeRate) == 0x000014, "Wrong size on HttpHelper_Receive_DebugChangeLegendCompeRate");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeRate, Handle) == 0x000000, "Member 'HttpHelper_Receive_DebugChangeLegendCompeRate::Handle' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeRate, OutError) == 0x000004, "Member 'HttpHelper_Receive_DebugChangeLegendCompeRate::OutError' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeRate, ResCode) == 0x000008, "Member 'HttpHelper_Receive_DebugChangeLegendCompeRate::ResCode' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeRate, Response) == 0x00000C, "Member 'HttpHelper_Receive_DebugChangeLegendCompeRate::Response' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_DebugChangeLegendCompeRate, ReturnValue) == 0x000010, "Member 'HttpHelper_Receive_DebugChangeLegendCompeRate::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_DebugChangeRankMatchRate
 // 0x0014 (0x0014 - 0x0000)
@@ -9287,7 +9232,7 @@ static_assert(offsetof(HttpHelper_Receive_FestaFestaTop, Response) == 0x000010, 
 static_assert(offsetof(HttpHelper_Receive_FestaFestaTop, ReturnValue) == 0x000058, "Member 'HttpHelper_Receive_FestaFestaTop::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_FriendAcceptFriend
-// 0x0480 (0x0480 - 0x0000)
+// 0x0488 (0x0488 - 0x0000)
 struct HttpHelper_Receive_FriendAcceptFriend final
 {
 public:
@@ -9296,17 +9241,17 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendAcceptFriendResponse            Response;                                          // 0x0010(0x0468)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0478(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_479[0x7];                                      // 0x0479(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FFriendAcceptFriendResponse            Response;                                          // 0x0010(0x0470)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0480(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_481[0x7];                                      // 0x0481(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_FriendAcceptFriend) == 0x000008, "Wrong alignment on HttpHelper_Receive_FriendAcceptFriend");
-static_assert(sizeof(HttpHelper_Receive_FriendAcceptFriend) == 0x000480, "Wrong size on HttpHelper_Receive_FriendAcceptFriend");
+static_assert(sizeof(HttpHelper_Receive_FriendAcceptFriend) == 0x000488, "Wrong size on HttpHelper_Receive_FriendAcceptFriend");
 static_assert(offsetof(HttpHelper_Receive_FriendAcceptFriend, Handle) == 0x000000, "Member 'HttpHelper_Receive_FriendAcceptFriend::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_FriendAcceptFriend, OutError) == 0x000004, "Member 'HttpHelper_Receive_FriendAcceptFriend::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_FriendAcceptFriend, ResCode) == 0x000008, "Member 'HttpHelper_Receive_FriendAcceptFriend::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_FriendAcceptFriend, Response) == 0x000010, "Member 'HttpHelper_Receive_FriendAcceptFriend::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_FriendAcceptFriend, ReturnValue) == 0x000478, "Member 'HttpHelper_Receive_FriendAcceptFriend::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_FriendAcceptFriend, ReturnValue) == 0x000480, "Member 'HttpHelper_Receive_FriendAcceptFriend::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_FriendApplyFriend
 // 0x0078 (0x0078 - 0x0000)
@@ -9438,7 +9383,7 @@ static_assert(offsetof(HttpHelper_Receive_FriendRejectFriend, Response) == 0x000
 static_assert(offsetof(HttpHelper_Receive_FriendRejectFriend, ReturnValue) == 0x00000D, "Member 'HttpHelper_Receive_FriendRejectFriend::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_FriendRequestFriend
-// 0x0480 (0x0480 - 0x0000)
+// 0x0488 (0x0488 - 0x0000)
 struct HttpHelper_Receive_FriendRequestFriend final
 {
 public:
@@ -9447,17 +9392,17 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendRequestFriendResponse           Response;                                          // 0x0010(0x0468)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0478(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_479[0x7];                                      // 0x0479(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FFriendRequestFriendResponse           Response;                                          // 0x0010(0x0470)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0480(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_481[0x7];                                      // 0x0481(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_FriendRequestFriend) == 0x000008, "Wrong alignment on HttpHelper_Receive_FriendRequestFriend");
-static_assert(sizeof(HttpHelper_Receive_FriendRequestFriend) == 0x000480, "Wrong size on HttpHelper_Receive_FriendRequestFriend");
+static_assert(sizeof(HttpHelper_Receive_FriendRequestFriend) == 0x000488, "Wrong size on HttpHelper_Receive_FriendRequestFriend");
 static_assert(offsetof(HttpHelper_Receive_FriendRequestFriend, Handle) == 0x000000, "Member 'HttpHelper_Receive_FriendRequestFriend::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_FriendRequestFriend, OutError) == 0x000004, "Member 'HttpHelper_Receive_FriendRequestFriend::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_FriendRequestFriend, ResCode) == 0x000008, "Member 'HttpHelper_Receive_FriendRequestFriend::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_FriendRequestFriend, Response) == 0x000010, "Member 'HttpHelper_Receive_FriendRequestFriend::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_FriendRequestFriend, ReturnValue) == 0x000478, "Member 'HttpHelper_Receive_FriendRequestFriend::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_FriendRequestFriend, ReturnValue) == 0x000480, "Member 'HttpHelper_Receive_FriendRequestFriend::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_FriendUnfriend
 // 0x0010 (0x0010 - 0x0000)
@@ -9546,7 +9491,7 @@ static_assert(offsetof(HttpHelper_Receive_HealthCheck, Response) == 0x00000C, "M
 static_assert(offsetof(HttpHelper_Receive_HealthCheck, ReturnValue) == 0x00000D, "Member 'HttpHelper_Receive_HealthCheck::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_LegendCompeCheckLegendCompeReward
-// 0x0028 (0x0028 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct HttpHelper_Receive_LegendCompeCheckLegendCompeReward final
 {
 public:
@@ -9555,17 +9500,17 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLegendCompeCheckLegendCompeRewardResponse Response;                                      // 0x0010(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FLegendCompeCheckLegendCompeRewardResponse Response;                                      // 0x0010(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward) == 0x000008, "Wrong alignment on HttpHelper_Receive_LegendCompeCheckLegendCompeReward");
-static_assert(sizeof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward) == 0x000028, "Wrong size on HttpHelper_Receive_LegendCompeCheckLegendCompeReward");
+static_assert(sizeof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward) == 0x000030, "Wrong size on HttpHelper_Receive_LegendCompeCheckLegendCompeReward");
 static_assert(offsetof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward, Handle) == 0x000000, "Member 'HttpHelper_Receive_LegendCompeCheckLegendCompeReward::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward, OutError) == 0x000004, "Member 'HttpHelper_Receive_LegendCompeCheckLegendCompeReward::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward, ResCode) == 0x000008, "Member 'HttpHelper_Receive_LegendCompeCheckLegendCompeReward::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward, Response) == 0x000010, "Member 'HttpHelper_Receive_LegendCompeCheckLegendCompeReward::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward, ReturnValue) == 0x000020, "Member 'HttpHelper_Receive_LegendCompeCheckLegendCompeReward::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_LegendCompeCheckLegendCompeReward, ReturnValue) == 0x000028, "Member 'HttpHelper_Receive_LegendCompeCheckLegendCompeReward::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_LobbyGenerateLobby
 // 0x0040 (0x0040 - 0x0000)
@@ -9655,7 +9600,7 @@ static_assert(offsetof(HttpHelper_Receive_LobbyRemoveLobby, Response) == 0x00000
 static_assert(offsetof(HttpHelper_Receive_LobbyRemoveLobby, ReturnValue) == 0x00000D, "Member 'HttpHelper_Receive_LobbyRemoveLobby::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_LoginCheck
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct HttpHelper_Receive_LoginCheck final
 {
 public:
@@ -9664,17 +9609,17 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLoginCheckResponse                    Response;                                          // 0x0010(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FLoginCheckResponse                    Response;                                          // 0x0010(0x00A0)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_LoginCheck) == 0x000008, "Wrong alignment on HttpHelper_Receive_LoginCheck");
-static_assert(sizeof(HttpHelper_Receive_LoginCheck) == 0x0000A8, "Wrong size on HttpHelper_Receive_LoginCheck");
+static_assert(sizeof(HttpHelper_Receive_LoginCheck) == 0x0000B8, "Wrong size on HttpHelper_Receive_LoginCheck");
 static_assert(offsetof(HttpHelper_Receive_LoginCheck, Handle) == 0x000000, "Member 'HttpHelper_Receive_LoginCheck::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_LoginCheck, OutError) == 0x000004, "Member 'HttpHelper_Receive_LoginCheck::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_LoginCheck, ResCode) == 0x000008, "Member 'HttpHelper_Receive_LoginCheck::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_LoginCheck, Response) == 0x000010, "Member 'HttpHelper_Receive_LoginCheck::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_LoginCheck, ReturnValue) == 0x0000A0, "Member 'HttpHelper_Receive_LoginCheck::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_LoginCheck, ReturnValue) == 0x0000B0, "Member 'HttpHelper_Receive_LoginCheck::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_MasterDataGetMaintenanceSchedule
 // 0x0010 (0x0010 - 0x0000)
@@ -9698,7 +9643,7 @@ static_assert(offsetof(HttpHelper_Receive_MasterDataGetMaintenanceSchedule, Resp
 static_assert(offsetof(HttpHelper_Receive_MasterDataGetMaintenanceSchedule, ReturnValue) == 0x00000D, "Member 'HttpHelper_Receive_MasterDataGetMaintenanceSchedule::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_MasterDataGetMasterData
-// 0x02D8 (0x02D8 - 0x0000)
+// 0x02E8 (0x02E8 - 0x0000)
 struct HttpHelper_Receive_MasterDataGetMasterData final
 {
 public:
@@ -9707,17 +9652,17 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0010(0x02C0)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x02D0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0010(0x02D0)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x02E0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_MasterDataGetMasterData) == 0x000008, "Wrong alignment on HttpHelper_Receive_MasterDataGetMasterData");
-static_assert(sizeof(HttpHelper_Receive_MasterDataGetMasterData) == 0x0002D8, "Wrong size on HttpHelper_Receive_MasterDataGetMasterData");
+static_assert(sizeof(HttpHelper_Receive_MasterDataGetMasterData) == 0x0002E8, "Wrong size on HttpHelper_Receive_MasterDataGetMasterData");
 static_assert(offsetof(HttpHelper_Receive_MasterDataGetMasterData, Handle) == 0x000000, "Member 'HttpHelper_Receive_MasterDataGetMasterData::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_MasterDataGetMasterData, OutError) == 0x000004, "Member 'HttpHelper_Receive_MasterDataGetMasterData::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_MasterDataGetMasterData, ResCode) == 0x000008, "Member 'HttpHelper_Receive_MasterDataGetMasterData::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_MasterDataGetMasterData, Response) == 0x000010, "Member 'HttpHelper_Receive_MasterDataGetMasterData::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_MasterDataGetMasterData, ReturnValue) == 0x0002D0, "Member 'HttpHelper_Receive_MasterDataGetMasterData::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_MasterDataGetMasterData, ReturnValue) == 0x0002E0, "Member 'HttpHelper_Receive_MasterDataGetMasterData::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_MasterDataGetVersion
 // 0x0028 (0x0028 - 0x0000)
@@ -9742,7 +9687,7 @@ static_assert(offsetof(HttpHelper_Receive_MasterDataGetVersion, Response) == 0x0
 static_assert(offsetof(HttpHelper_Receive_MasterDataGetVersion, ReturnValue) == 0x000020, "Member 'HttpHelper_Receive_MasterDataGetVersion::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_MatchmakingDescribe
-// 0x0110 (0x0110 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct HttpHelper_Receive_MatchmakingDescribe final
 {
 public:
@@ -9751,17 +9696,17 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMatchmakingDescribeResponse           Response;                                          // 0x0010(0x00F8)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0108(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMatchmakingDescribeResponse           Response;                                          // 0x0010(0x0108)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0118(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_MatchmakingDescribe) == 0x000008, "Wrong alignment on HttpHelper_Receive_MatchmakingDescribe");
-static_assert(sizeof(HttpHelper_Receive_MatchmakingDescribe) == 0x000110, "Wrong size on HttpHelper_Receive_MatchmakingDescribe");
+static_assert(sizeof(HttpHelper_Receive_MatchmakingDescribe) == 0x000120, "Wrong size on HttpHelper_Receive_MatchmakingDescribe");
 static_assert(offsetof(HttpHelper_Receive_MatchmakingDescribe, Handle) == 0x000000, "Member 'HttpHelper_Receive_MatchmakingDescribe::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_MatchmakingDescribe, OutError) == 0x000004, "Member 'HttpHelper_Receive_MatchmakingDescribe::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_MatchmakingDescribe, ResCode) == 0x000008, "Member 'HttpHelper_Receive_MatchmakingDescribe::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_MatchmakingDescribe, Response) == 0x000010, "Member 'HttpHelper_Receive_MatchmakingDescribe::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_MatchmakingDescribe, ReturnValue) == 0x000108, "Member 'HttpHelper_Receive_MatchmakingDescribe::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_MatchmakingDescribe, ReturnValue) == 0x000118, "Member 'HttpHelper_Receive_MatchmakingDescribe::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_MatchmakingStop
 // 0x0010 (0x0010 - 0x0000)
@@ -10398,7 +10343,7 @@ static_assert(offsetof(HttpHelper_Receive_StartSaveRankMatchStart, Response) == 
 static_assert(offsetof(HttpHelper_Receive_StartSaveRankMatchStart, ReturnValue) == 0x000020, "Member 'HttpHelper_Receive_StartSaveRankMatchStart::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_UserGetData
-// 0x0118 (0x0118 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct HttpHelper_Receive_UserGetData final
 {
 public:
@@ -10407,20 +10352,20 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserGetDataResponse                   Response;                                          // 0x0010(0x0100)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0110(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FUserGetDataResponse                   Response;                                          // 0x0010(0x0108)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0118(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_UserGetData) == 0x000008, "Wrong alignment on HttpHelper_Receive_UserGetData");
-static_assert(sizeof(HttpHelper_Receive_UserGetData) == 0x000118, "Wrong size on HttpHelper_Receive_UserGetData");
+static_assert(sizeof(HttpHelper_Receive_UserGetData) == 0x000120, "Wrong size on HttpHelper_Receive_UserGetData");
 static_assert(offsetof(HttpHelper_Receive_UserGetData, Handle) == 0x000000, "Member 'HttpHelper_Receive_UserGetData::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_UserGetData, OutError) == 0x000004, "Member 'HttpHelper_Receive_UserGetData::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_UserGetData, ResCode) == 0x000008, "Member 'HttpHelper_Receive_UserGetData::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_UserGetData, Response) == 0x000010, "Member 'HttpHelper_Receive_UserGetData::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_UserGetData, ReturnValue) == 0x000110, "Member 'HttpHelper_Receive_UserGetData::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_UserGetData, ReturnValue) == 0x000118, "Member 'HttpHelper_Receive_UserGetData::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_UserGetPartsData
-// 0x0014 (0x0014 - 0x0000)
+// 0x001C (0x001C - 0x0000)
 struct HttpHelper_Receive_UserGetPartsData final
 {
 public:
@@ -10428,17 +10373,17 @@ public:
 	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FUserGetPartsDataResponse              Response;                                          // 0x000C(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FUserGetPartsDataResponse              Response;                                          // 0x000C(0x000C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpHelper_Receive_UserGetPartsData) == 0x000004, "Wrong alignment on HttpHelper_Receive_UserGetPartsData");
-static_assert(sizeof(HttpHelper_Receive_UserGetPartsData) == 0x000014, "Wrong size on HttpHelper_Receive_UserGetPartsData");
+static_assert(sizeof(HttpHelper_Receive_UserGetPartsData) == 0x00001C, "Wrong size on HttpHelper_Receive_UserGetPartsData");
 static_assert(offsetof(HttpHelper_Receive_UserGetPartsData, Handle) == 0x000000, "Member 'HttpHelper_Receive_UserGetPartsData::Handle' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_UserGetPartsData, OutError) == 0x000004, "Member 'HttpHelper_Receive_UserGetPartsData::OutError' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_UserGetPartsData, ResCode) == 0x000008, "Member 'HttpHelper_Receive_UserGetPartsData::ResCode' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Receive_UserGetPartsData, Response) == 0x00000C, "Member 'HttpHelper_Receive_UserGetPartsData::Response' has a wrong offset!");
-static_assert(offsetof(HttpHelper_Receive_UserGetPartsData, ReturnValue) == 0x000010, "Member 'HttpHelper_Receive_UserGetPartsData::ReturnValue' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Receive_UserGetPartsData, ReturnValue) == 0x000018, "Member 'HttpHelper_Receive_UserGetPartsData::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Receive_UserGetUserIdsByPuid
 // 0x0028 (0x0028 - 0x0000)
@@ -10753,6 +10698,162 @@ static_assert(alignof(HttpHelper_Send_DebugChangeFairPlayPoint_NoResend) == 0x00
 static_assert(sizeof(HttpHelper_Send_DebugChangeFairPlayPoint_NoResend) == 0x000008, "Wrong size on HttpHelper_Send_DebugChangeFairPlayPoint_NoResend");
 static_assert(offsetof(HttpHelper_Send_DebugChangeFairPlayPoint_NoResend, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeFairPlayPoint_NoResend::Request' has a wrong offset!");
 static_assert(offsetof(HttpHelper_Send_DebugChangeFairPlayPoint_NoResend, ReturnValue) == 0x000004, "Member 'HttpHelper_Send_DebugChangeFairPlayPoint_NoResend::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder
+// 0x000C (0x000C - 0x0000)
+struct HttpHelper_Send_DebugChangeFestaLastOrder final
+{
+public:
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeFestaLastOrder) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeFestaLastOrder");
+static_assert(sizeof(HttpHelper_Send_DebugChangeFestaLastOrder) == 0x00000C, "Wrong size on HttpHelper_Send_DebugChangeFestaLastOrder");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder, ReturnValue) == 0x000008, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_Callbacked
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked final
+{
+public:
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked");
+static_assert(sizeof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked) == 0x000018, "Wrong size on HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked, Callback) == 0x000008, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked::Callback' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_Callbacked_NoResend
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend final
+{
+public:
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend");
+static_assert(sizeof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend) == 0x000018, "Wrong size on HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend, Callback) == 0x000008, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend::Callback' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_NoResend
+// 0x000C (0x000C - 0x0000)
+struct HttpHelper_Send_DebugChangeFestaLastOrder_NoResend final
+{
+public:
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeFestaLastOrder_NoResend) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeFestaLastOrder_NoResend");
+static_assert(sizeof(HttpHelper_Send_DebugChangeFestaLastOrder_NoResend) == 0x00000C, "Wrong size on HttpHelper_Send_DebugChangeFestaLastOrder_NoResend");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder_NoResend, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder_NoResend::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeFestaLastOrder_NoResend, ReturnValue) == 0x000008, "Member 'HttpHelper_Send_DebugChangeFestaLastOrder_NoResend::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder
+// 0x000C (0x000C - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeLastOrder final
+{
+public:
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeLastOrder) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeLastOrder");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeLastOrder) == 0x00000C, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeLastOrder");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder, ReturnValue) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_Callbacked
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked final
+{
+public:
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked) == 0x000018, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked, Callback) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked::Callback' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend final
+{
+public:
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend) == 0x000018, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend, Callback) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend::Callback' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_NoResend
+// 0x000C (0x000C - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend final
+{
+public:
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend) == 0x00000C, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend, ReturnValue) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate
+// 0x000C (0x000C - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeRate final
+{
+public:
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeRate) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeRate");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeRate) == 0x00000C, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeRate");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate, ReturnValue) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_Callbacked
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked final
+{
+public:
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked) == 0x000018, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked, Callback) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked::Callback' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_Callbacked_NoResend
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend final
+{
+public:
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend) == 0x000018, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend, Callback) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend::Callback' has a wrong offset!");
+
+// Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_NoResend
+// 0x000C (0x000C - 0x0000)
+struct HttpHelper_Send_DebugChangeLegendCompeRate_NoResend final
+{
+public:
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(HttpHelper_Send_DebugChangeLegendCompeRate_NoResend) == 0x000004, "Wrong alignment on HttpHelper_Send_DebugChangeLegendCompeRate_NoResend");
+static_assert(sizeof(HttpHelper_Send_DebugChangeLegendCompeRate_NoResend) == 0x00000C, "Wrong size on HttpHelper_Send_DebugChangeLegendCompeRate_NoResend");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate_NoResend, Request) == 0x000000, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate_NoResend::Request' has a wrong offset!");
+static_assert(offsetof(HttpHelper_Send_DebugChangeLegendCompeRate_NoResend, ReturnValue) == 0x000008, "Member 'HttpHelper_Send_DebugChangeLegendCompeRate_NoResend::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.HttpHelper.Send_DebugChangeRankMatchRate
 // 0x0008 (0x0008 - 0x0000)
@@ -14784,34 +14885,6 @@ static_assert(offsetof(InformManager_InformAboutAbuse, reasonMemo) == 0x000018, 
 static_assert(offsetof(InformManager_InformAboutAbuse, GameMode) == 0x000028, "Member 'InformManager_InformAboutAbuse::GameMode' has a wrong offset!");
 static_assert(offsetof(InformManager_InformAboutAbuse, entryRaceId) == 0x000030, "Member 'InformManager_InformAboutAbuse::entryRaceId' has a wrong offset!");
 
-// Function UnionSystem.JukeboxDataAsset.GetAlbumData
-// 0x0078 (0x0078 - 0x0000)
-struct JukeboxDataAsset_GetAlbumData final
-{
-public:
-	int32                                         AlbumID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAlbumData                             ReturnValue;                                       // 0x0008(0x0070)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(JukeboxDataAsset_GetAlbumData) == 0x000008, "Wrong alignment on JukeboxDataAsset_GetAlbumData");
-static_assert(sizeof(JukeboxDataAsset_GetAlbumData) == 0x000078, "Wrong size on JukeboxDataAsset_GetAlbumData");
-static_assert(offsetof(JukeboxDataAsset_GetAlbumData, AlbumID) == 0x000000, "Member 'JukeboxDataAsset_GetAlbumData::AlbumID' has a wrong offset!");
-static_assert(offsetof(JukeboxDataAsset_GetAlbumData, ReturnValue) == 0x000008, "Member 'JukeboxDataAsset_GetAlbumData::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.JukeboxDataAsset.GetTrackData
-// 0x00B0 (0x00B0 - 0x0000)
-struct JukeboxDataAsset_GetTrackData final
-{
-public:
-	int32                                         TrackID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTrackData                             ReturnValue;                                       // 0x0008(0x00A8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(JukeboxDataAsset_GetTrackData) == 0x000008, "Wrong alignment on JukeboxDataAsset_GetTrackData");
-static_assert(sizeof(JukeboxDataAsset_GetTrackData) == 0x0000B0, "Wrong size on JukeboxDataAsset_GetTrackData");
-static_assert(offsetof(JukeboxDataAsset_GetTrackData, TrackID) == 0x000000, "Member 'JukeboxDataAsset_GetTrackData::TrackID' has a wrong offset!");
-static_assert(offsetof(JukeboxDataAsset_GetTrackData, ReturnValue) == 0x000008, "Member 'JukeboxDataAsset_GetTrackData::ReturnValue' has a wrong offset!");
-
 // Function UnionSystem.KeyConfigItem.SetPrimaryKey
 // 0x0018 (0x0018 - 0x0000)
 struct KeyConfigItem_SetPrimaryKey final
@@ -15354,6 +15427,17 @@ public:
 static_assert(alignof(LobbyContextBase_InitializeNoLobbyInfo) == 0x000004, "Wrong alignment on LobbyContextBase_InitializeNoLobbyInfo");
 static_assert(sizeof(LobbyContextBase_InitializeNoLobbyInfo) == 0x000004, "Wrong size on LobbyContextBase_InitializeNoLobbyInfo");
 static_assert(offsetof(LobbyContextBase_InitializeNoLobbyInfo, LocalUserNum) == 0x000000, "Member 'LobbyContextBase_InitializeNoLobbyInfo::LocalUserNum' has a wrong offset!");
+
+// Function UnionSystem.LobbyContextBase.IsSetShortLobbyId
+// 0x0001 (0x0001 - 0x0000)
+struct LobbyContextBase_IsSetShortLobbyId final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(LobbyContextBase_IsSetShortLobbyId) == 0x000001, "Wrong alignment on LobbyContextBase_IsSetShortLobbyId");
+static_assert(sizeof(LobbyContextBase_IsSetShortLobbyId) == 0x000001, "Wrong size on LobbyContextBase_IsSetShortLobbyId");
+static_assert(offsetof(LobbyContextBase_IsSetShortLobbyId, ReturnValue) == 0x000000, "Member 'LobbyContextBase_IsSetShortLobbyId::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.LobbyContextBase.Join
 // 0x0020 (0x0020 - 0x0000)
@@ -18166,225 +18250,575 @@ static_assert(alignof(MenuPlayerController_GetMenuDirectionKeyEnable) == 0x00000
 static_assert(sizeof(MenuPlayerController_GetMenuDirectionKeyEnable) == 0x000001, "Wrong size on MenuPlayerController_GetMenuDirectionKeyEnable");
 static_assert(offsetof(MenuPlayerController_GetMenuDirectionKeyEnable, ReturnValue) == 0x000000, "Member 'MenuPlayerController_GetMenuDirectionKeyEnable::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_GetAnimationIn final
-{
-public:
-	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MenuPopupWindowInterface_GetAnimationIn) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_GetAnimationIn");
-static_assert(sizeof(MenuPopupWindowInterface_GetAnimationIn) == 0x000008, "Wrong size on MenuPopupWindowInterface_GetAnimationIn");
-static_assert(offsetof(MenuPopupWindowInterface_GetAnimationIn, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetAnimationIn::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_GetAnimationLoop final
-{
-public:
-	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MenuPopupWindowInterface_GetAnimationLoop) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_GetAnimationLoop");
-static_assert(sizeof(MenuPopupWindowInterface_GetAnimationLoop) == 0x000008, "Wrong size on MenuPopupWindowInterface_GetAnimationLoop");
-static_assert(offsetof(MenuPopupWindowInterface_GetAnimationLoop, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetAnimationLoop::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_GetAnimationOut final
-{
-public:
-	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MenuPopupWindowInterface_GetAnimationOut) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_GetAnimationOut");
-static_assert(sizeof(MenuPopupWindowInterface_GetAnimationOut) == 0x000008, "Wrong size on MenuPopupWindowInterface_GetAnimationOut");
-static_assert(offsetof(MenuPopupWindowInterface_GetAnimationOut, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetAnimationOut::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
+// Function UnionSystem.MilestoneUtil.GetEnablePrelaunchAnotherStageLotteryMilestoneVersion
 // 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_GetPopupWindowButtonType final
+struct MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion final
 {
 public:
-	EPopupWindowButtonType                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMilestoneVersion                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_GetPopupWindowButtonType) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_GetPopupWindowButtonType");
-static_assert(sizeof(MenuPopupWindowInterface_GetPopupWindowButtonType) == 0x000001, "Wrong size on MenuPopupWindowInterface_GetPopupWindowButtonType");
-static_assert(offsetof(MenuPopupWindowInterface_GetPopupWindowButtonType, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetPopupWindowButtonType::ReturnValue' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_GetEnablePrelaunchAnotherStageLotteryMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_GetPopupWindowType final
-{
-public:
-	EPopupWindowType                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MenuPopupWindowInterface_GetPopupWindowType) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_GetPopupWindowType");
-static_assert(sizeof(MenuPopupWindowInterface_GetPopupWindowType) == 0x000001, "Wrong size on MenuPopupWindowInterface_GetPopupWindowType");
-static_assert(offsetof(MenuPopupWindowInterface_GetPopupWindowType, ReturnValue) == 0x000000, "Member 'MenuPopupWindowInterface_GetPopupWindowType::ReturnValue' has a wrong offset!");
-
-// Function UnionSystem.MenuPopupWindowInterface.InitParam
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_InitParam final
-{
-public:
-	EPopupWindowButtonType                        ButtonType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MenuPopupWindowInterface_InitParam) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_InitParam");
-static_assert(sizeof(MenuPopupWindowInterface_InitParam) == 0x000001, "Wrong size on MenuPopupWindowInterface_InitParam");
-static_assert(offsetof(MenuPopupWindowInterface_InitParam, ButtonType) == 0x000000, "Member 'MenuPopupWindowInterface_InitParam::ButtonType' has a wrong offset!");
-
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
-// 0x0004 (0x0004 - 0x0000)
-struct MenuPopupWindowInterface_SetButtonControlDelayTime final
-{
-public:
-	float                                         InTime;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MenuPopupWindowInterface_SetButtonControlDelayTime) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetButtonControlDelayTime");
-static_assert(sizeof(MenuPopupWindowInterface_SetButtonControlDelayTime) == 0x000004, "Wrong size on MenuPopupWindowInterface_SetButtonControlDelayTime");
-static_assert(offsetof(MenuPopupWindowInterface_SetButtonControlDelayTime, InTime) == 0x000000, "Member 'MenuPopupWindowInterface_SetButtonControlDelayTime::InTime' has a wrong offset!");
-
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
+// Function UnionSystem.MilestoneUtil.GetGrandPrixRivalDriverIds
 // 0x0010 (0x0010 - 0x0000)
-struct MenuPopupWindowInterface_SetButtonText final
+struct MilestoneUtil_GetGrandPrixRivalDriverIds final
 {
 public:
-	TArray<class FText>                           BtnTextArray;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<EDriverId>                             ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetButtonText) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetButtonText");
-static_assert(sizeof(MenuPopupWindowInterface_SetButtonText) == 0x000010, "Wrong size on MenuPopupWindowInterface_SetButtonText");
-static_assert(offsetof(MenuPopupWindowInterface_SetButtonText, BtnTextArray) == 0x000000, "Member 'MenuPopupWindowInterface_SetButtonText::BtnTextArray' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_GetGrandPrixRivalDriverIds) == 0x000008, "Wrong alignment on MilestoneUtil_GetGrandPrixRivalDriverIds");
+static_assert(sizeof(MilestoneUtil_GetGrandPrixRivalDriverIds) == 0x000010, "Wrong size on MilestoneUtil_GetGrandPrixRivalDriverIds");
+static_assert(offsetof(MilestoneUtil_GetGrandPrixRivalDriverIds, ReturnValue) == 0x000000, "Member 'MilestoneUtil_GetGrandPrixRivalDriverIds::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
+// Function UnionSystem.MilestoneUtil.GetRivalByMilestoneVersion
 // 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_SetDisplayFooterButton final
+struct MilestoneUtil_GetRivalByMilestoneVersion final
 {
 public:
-	bool                                          InDisplay;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetDisplayFooterButton) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_SetDisplayFooterButton");
-static_assert(sizeof(MenuPopupWindowInterface_SetDisplayFooterButton) == 0x000001, "Wrong size on MenuPopupWindowInterface_SetDisplayFooterButton");
-static_assert(offsetof(MenuPopupWindowInterface_SetDisplayFooterButton, InDisplay) == 0x000000, "Member 'MenuPopupWindowInterface_SetDisplayFooterButton::InDisplay' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_GetRivalByMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_GetRivalByMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_GetRivalByMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_GetRivalByMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_GetRivalByMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_GetRivalByMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_SetDonpaTicketCount final
-{
-public:
-	int32                                         CurrentCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AfterCount;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(MenuPopupWindowInterface_SetDonpaTicketCount) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetDonpaTicketCount");
-static_assert(sizeof(MenuPopupWindowInterface_SetDonpaTicketCount) == 0x000008, "Wrong size on MenuPopupWindowInterface_SetDonpaTicketCount");
-static_assert(offsetof(MenuPopupWindowInterface_SetDonpaTicketCount, CurrentCount) == 0x000000, "Member 'MenuPopupWindowInterface_SetDonpaTicketCount::CurrentCount' has a wrong offset!");
-static_assert(offsetof(MenuPopupWindowInterface_SetDonpaTicketCount, AfterCount) == 0x000004, "Member 'MenuPopupWindowInterface_SetDonpaTicketCount::AfterCount' has a wrong offset!");
-
-// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
+// Function UnionSystem.MilestoneUtil.IsAlreadyGrandPrixLeast1Play
 // 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_SetEnableInput final
+struct MilestoneUtil_IsAlreadyGrandPrixLeast1Play final
 {
 public:
-	bool                                          InEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetEnableInput) == 0x000001, "Wrong alignment on MenuPopupWindowInterface_SetEnableInput");
-static_assert(sizeof(MenuPopupWindowInterface_SetEnableInput) == 0x000001, "Wrong size on MenuPopupWindowInterface_SetEnableInput");
-static_assert(offsetof(MenuPopupWindowInterface_SetEnableInput, InEnable) == 0x000000, "Member 'MenuPopupWindowInterface_SetEnableInput::InEnable' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsAlreadyGrandPrixLeast1Play) == 0x000001, "Wrong alignment on MilestoneUtil_IsAlreadyGrandPrixLeast1Play");
+static_assert(sizeof(MilestoneUtil_IsAlreadyGrandPrixLeast1Play) == 0x000001, "Wrong size on MilestoneUtil_IsAlreadyGrandPrixLeast1Play");
+static_assert(offsetof(MilestoneUtil_IsAlreadyGrandPrixLeast1Play, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsAlreadyGrandPrixLeast1Play::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
-// 0x0018 (0x0018 - 0x0000)
-struct MenuPopupWindowInterface_SetFooterMenuBtn final
+// Function UnionSystem.MilestoneUtil.IsCharaIconLockCover
+// 0x0002 (0x0002 - 0x0000)
+struct MilestoneUtil_IsCharaIconLockCover final
 {
 public:
-	int32                                         BtnIconIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BtnIconType;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   BtnText;                                           // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetFooterMenuBtn) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetFooterMenuBtn");
-static_assert(sizeof(MenuPopupWindowInterface_SetFooterMenuBtn) == 0x000018, "Wrong size on MenuPopupWindowInterface_SetFooterMenuBtn");
-static_assert(offsetof(MenuPopupWindowInterface_SetFooterMenuBtn, BtnIconIndex) == 0x000000, "Member 'MenuPopupWindowInterface_SetFooterMenuBtn::BtnIconIndex' has a wrong offset!");
-static_assert(offsetof(MenuPopupWindowInterface_SetFooterMenuBtn, BtnIconType) == 0x000004, "Member 'MenuPopupWindowInterface_SetFooterMenuBtn::BtnIconType' has a wrong offset!");
-static_assert(offsetof(MenuPopupWindowInterface_SetFooterMenuBtn, BtnText) == 0x000008, "Member 'MenuPopupWindowInterface_SetFooterMenuBtn::BtnText' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsCharaIconLockCover) == 0x000001, "Wrong alignment on MilestoneUtil_IsCharaIconLockCover");
+static_assert(sizeof(MilestoneUtil_IsCharaIconLockCover) == 0x000002, "Wrong size on MilestoneUtil_IsCharaIconLockCover");
+static_assert(offsetof(MilestoneUtil_IsCharaIconLockCover, DriverId) == 0x000000, "Member 'MilestoneUtil_IsCharaIconLockCover::DriverId' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsCharaIconLockCover, ReturnValue) == 0x000001, "Member 'MilestoneUtil_IsCharaIconLockCover::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
-// 0x0010 (0x0010 - 0x0000)
-struct MenuPopupWindowInterface_SetImageButtonSelectText final
+// Function UnionSystem.MilestoneUtil.IsCloseCourseInRaceParkCustomMatchMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion final
 {
 public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetImageButtonSelectText) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetImageButtonSelectText");
-static_assert(sizeof(MenuPopupWindowInterface_SetImageButtonSelectText) == 0x000010, "Wrong size on MenuPopupWindowInterface_SetImageButtonSelectText");
-static_assert(offsetof(MenuPopupWindowInterface_SetImageButtonSelectText, InText) == 0x000000, "Member 'MenuPopupWindowInterface_SetImageButtonSelectText::InText' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsCloseCourseInRaceParkCustomMatchMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_SetImageTexture final
+// Function UnionSystem.MilestoneUtil.IsDisableDecisionInRaceParkMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion final
 {
 public:
-	const class UTexture2D*                       Texture2D;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetImageTexture) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetImageTexture");
-static_assert(sizeof(MenuPopupWindowInterface_SetImageTexture) == 0x000008, "Wrong size on MenuPopupWindowInterface_SetImageTexture");
-static_assert(offsetof(MenuPopupWindowInterface_SetImageTexture, Texture2D) == 0x000000, "Member 'MenuPopupWindowInterface_SetImageTexture::Texture2D' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableDecisionInRaceParkMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
-// 0x0004 (0x0004 - 0x0000)
-struct MenuPopupWindowInterface_SetInitialFocusButtonIndex final
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraChallengeMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion final
 {
 public:
-	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetInitialFocusButtonIndex) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetInitialFocusButtonIndex");
-static_assert(sizeof(MenuPopupWindowInterface_SetInitialFocusButtonIndex) == 0x000004, "Wrong size on MenuPopupWindowInterface_SetInitialFocusButtonIndex");
-static_assert(offsetof(MenuPopupWindowInterface_SetInitialFocusButtonIndex, InButtonIndex) == 0x000000, "Member 'MenuPopupWindowInterface_SetInitialFocusButtonIndex::InButtonIndex' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraChallengeMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
-// 0x0004 (0x0004 - 0x0000)
-struct MenuPopupWindowInterface_SetPopupInfoDisplayIndex final
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraHintMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableEtceteraHintMilestoneVersion final
 {
 public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetPopupInfoDisplayIndex) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetPopupInfoDisplayIndex");
-static_assert(sizeof(MenuPopupWindowInterface_SetPopupInfoDisplayIndex) == 0x000004, "Wrong size on MenuPopupWindowInterface_SetPopupInfoDisplayIndex");
-static_assert(offsetof(MenuPopupWindowInterface_SetPopupInfoDisplayIndex, Index_0) == 0x000000, "Member 'MenuPopupWindowInterface_SetPopupInfoDisplayIndex::Index_0' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsDisableEtceteraHintMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraHintMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableEtceteraHintMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraHintMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableEtceteraHintMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraHintMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex final
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraOthersMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion final
 {
 public:
-	int32                                         Btn01IconIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Btn02IconIndex;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex) == 0x000004, "Wrong alignment on MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex");
-static_assert(sizeof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex) == 0x000008, "Wrong size on MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex");
-static_assert(offsetof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex, Btn01IconIndex) == 0x000000, "Member 'MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex::Btn01IconIndex' has a wrong offset!");
-static_assert(offsetof(MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex, Btn02IconIndex) == 0x000004, "Member 'MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex::Btn02IconIndex' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraOthersMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
-// 0x0010 (0x0010 - 0x0000)
-struct MenuPopupWindowInterface_SetTextMessege final
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraStoreMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetTextMessege) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetTextMessege");
-static_assert(sizeof(MenuPopupWindowInterface_SetTextMessege) == 0x000010, "Wrong size on MenuPopupWindowInterface_SetTextMessege");
-static_assert(offsetof(MenuPopupWindowInterface_SetTextMessege, Text) == 0x000000, "Member 'MenuPopupWindowInterface_SetTextMessege::Text' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraStoreMilestoneVersion::ReturnValue' has a wrong offset!");
 
-// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
-// 0x0018 (0x0018 - 0x0000)
-struct MenuPopupWindowInterface_SetTextTitle final
+// Function UnionSystem.MilestoneUtil.IsDisableEtceteraTitleMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          Attension;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MenuPopupWindowInterface_SetTextTitle) == 0x000008, "Wrong alignment on MenuPopupWindowInterface_SetTextTitle");
-static_assert(sizeof(MenuPopupWindowInterface_SetTextTitle) == 0x000018, "Wrong size on MenuPopupWindowInterface_SetTextTitle");
-static_assert(offsetof(MenuPopupWindowInterface_SetTextTitle, Text) == 0x000000, "Member 'MenuPopupWindowInterface_SetTextTitle::Text' has a wrong offset!");
-static_assert(offsetof(MenuPopupWindowInterface_SetTextTitle, Attension) == 0x000010, "Member 'MenuPopupWindowInterface_SetTextTitle::Attension' has a wrong offset!");
+static_assert(alignof(MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableEtceteraTitleMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableFestaMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableFestaMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableFestaMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableFestaMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableFestaMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableFestaMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableFestaMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableFestaMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableFriendlistMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableFriendlistMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableFriendlistMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableFriendlistMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableFriendlistMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableFriendlistMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableFriendlistMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableFriendlistMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse2MilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixCourse2MilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourse3MilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixCourse3MilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixCourseMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixCourseMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableGrandPrixMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableGrandPrixMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableGrandPrixMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableGrandPrixMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableGrandPrixMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableGrandPrixMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableGrandPrixMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableGrandPrixMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableHornAuraTabMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableHornAuraTabMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableHornAuraTabMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableHornAuraTabMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableHornAuraTabMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableHornAuraTabMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableHornAuraTabMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableHornAuraTabMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableRaceParkMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableRaceParkMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableRaceParkMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableRaceParkMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableRaceParkMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableRaceParkMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableRaceParkMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableRaceParkMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableRaceParkRivalOnOffMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableRaceParkRivalOnOffMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableSelectTimeTrialMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableSelectTimeTrialMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableTimeTrialMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableTimeTrialMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableTimeTrialMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTimeTrialMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableTimeTrialMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTimeTrialMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableTimeTrialMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTimeTrialMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableTopMenuFestaRuleMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTopMenuFestaRuleMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableTopMenuNewsMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTopMenuNewsMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsDisableTrialMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsDisableTrialMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsDisableTrialMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsDisableTrialMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsDisableTrialMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsDisableTrialMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsDisableTrialMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsDisableTrialMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableAdvertiseRatingMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableAdvertiseRatingMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableEtceteraFullGameStoreMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableEtceteraFullGameStoreMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableResetSaveDataMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableResetSaveDataMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableResetSaveDataMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableResetSaveDataMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableResetSaveDataMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableResetSaveDataMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableResetSaveDataMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableResetSaveDataMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableSpecificTitleDebugCommandMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableSpecificTitleDebugCommandMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableThumbnailCollaboRaceMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableThumbnailCollaboRaceMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableTitleDemoMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableTitleDemoMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableTitleDemoMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTitleDemoMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableTitleDemoMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTitleDemoMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableTitleDemoMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTitleDemoMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableTitleStoreMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableTitleStoreMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableTitleStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTitleStoreMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableTitleStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTitleStoreMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableTitleStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTitleStoreMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStoreMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTopMenuStoreMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsEnableTopMenuStorePopupAutoMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsEnableTopMenuStorePopupAutoMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsExclusionGhostUpDownloadEventMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsExclusionGhostUpDownloadEventMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsForceEnableTopMenuNewsMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsForceEnableTopMenuNewsMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsHiddenCharacter
+// 0x0002 (0x0002 - 0x0000)
+struct MilestoneUtil_IsHiddenCharacter final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsHiddenCharacter) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenCharacter");
+static_assert(sizeof(MilestoneUtil_IsHiddenCharacter) == 0x000002, "Wrong size on MilestoneUtil_IsHiddenCharacter");
+static_assert(offsetof(MilestoneUtil_IsHiddenCharacter, DriverId) == 0x000000, "Member 'MilestoneUtil_IsHiddenCharacter::DriverId' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsHiddenCharacter, ReturnValue) == 0x000001, "Member 'MilestoneUtil_IsHiddenCharacter::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsHiddenMachineParts
+// 0x0002 (0x0002 - 0x0000)
+struct MilestoneUtil_IsHiddenMachineParts final
+{
+public:
+	EMachineId                                    MachineId;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsHiddenMachineParts) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenMachineParts");
+static_assert(sizeof(MilestoneUtil_IsHiddenMachineParts) == 0x000002, "Wrong size on MilestoneUtil_IsHiddenMachineParts");
+static_assert(offsetof(MilestoneUtil_IsHiddenMachineParts, MachineId) == 0x000000, "Member 'MilestoneUtil_IsHiddenMachineParts::MachineId' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsHiddenMachineParts, ReturnValue) == 0x000001, "Member 'MilestoneUtil_IsHiddenMachineParts::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsHiddenRomVerMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsHiddenRomVerMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsHiddenRomVerMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenRomVerMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsHiddenRomVerMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsHiddenRomVerMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsHiddenRomVerMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsHiddenRomVerMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsHiddenWebManualQRcodeMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsHiddenWebManualQRcodeMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsInitialMachineParts
+// 0x0014 (0x0014 - 0x0000)
+struct MilestoneUtil_IsInitialMachineParts final
+{
+public:
+	EMachineId                                    MachineId;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         FrontPrice;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RearPrice;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TirePrice;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(MilestoneUtil_IsInitialMachineParts) == 0x000004, "Wrong alignment on MilestoneUtil_IsInitialMachineParts");
+static_assert(sizeof(MilestoneUtil_IsInitialMachineParts) == 0x000014, "Wrong size on MilestoneUtil_IsInitialMachineParts");
+static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, MachineId) == 0x000000, "Member 'MilestoneUtil_IsInitialMachineParts::MachineId' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, FrontPrice) == 0x000004, "Member 'MilestoneUtil_IsInitialMachineParts::FrontPrice' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, RearPrice) == 0x000008, "Member 'MilestoneUtil_IsInitialMachineParts::RearPrice' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, TirePrice) == 0x00000C, "Member 'MilestoneUtil_IsInitialMachineParts::TirePrice' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsInitialMachineParts, ReturnValue) == 0x000010, "Member 'MilestoneUtil_IsInitialMachineParts::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsLimitDonpaTicketMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsLimitDonpaTicketMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsLimitDonpaTicketMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsLimitDonpaTicketMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsLimitDonpaTicketMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsLimitDonpaTicketMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsLimitDonpaTicketMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsLimitDonpaTicketMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsLimitRewardInRaceParkMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsLimitRewardInRaceParkMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsOfflineMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsOfflineMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsOfflineMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsOfflineMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsOfflineMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsOfflineMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsOfflineMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsOfflineMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsRaceUnLockedMilestoneVersion
+// 0x0003 (0x0003 - 0x0000)
+struct MilestoneUtil_IsRaceUnLockedMilestoneVersion final
+{
+public:
+	EGameModeId                                   InGameModeId;                                      // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EStageId                                      InStageId;                                         // 0x0001(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsRaceUnLockedMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsRaceUnLockedMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsRaceUnLockedMilestoneVersion) == 0x000003, "Wrong size on MilestoneUtil_IsRaceUnLockedMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsRaceUnLockedMilestoneVersion, InGameModeId) == 0x000000, "Member 'MilestoneUtil_IsRaceUnLockedMilestoneVersion::InGameModeId' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsRaceUnLockedMilestoneVersion, InStageId) == 0x000001, "Member 'MilestoneUtil_IsRaceUnLockedMilestoneVersion::InStageId' has a wrong offset!");
+static_assert(offsetof(MilestoneUtil_IsRaceUnLockedMilestoneVersion, ReturnValue) == 0x000002, "Member 'MilestoneUtil_IsRaceUnLockedMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsSkipDodonpaEventMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsSkipDodonpaEventMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsSkipDodonpaEventMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsSkipDodonpaEventMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsSkipDodonpaEventMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsSkipDodonpaEventMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsSkipDodonpaEventMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsSkipDodonpaEventMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsSkipSelectPlayNumMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsSkipSelectPlayNumMilestoneVersion::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsTopMenuAccessLoginSuccessOnly
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsTopMenuAccessLoginSuccessOnly final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsTopMenuAccessLoginSuccessOnly) == 0x000001, "Wrong alignment on MilestoneUtil_IsTopMenuAccessLoginSuccessOnly");
+static_assert(sizeof(MilestoneUtil_IsTopMenuAccessLoginSuccessOnly) == 0x000001, "Wrong size on MilestoneUtil_IsTopMenuAccessLoginSuccessOnly");
+static_assert(offsetof(MilestoneUtil_IsTopMenuAccessLoginSuccessOnly, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsTopMenuAccessLoginSuccessOnly::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.MilestoneUtil.IsVisibleCompanyNameMilestoneVersion
+// 0x0001 (0x0001 - 0x0000)
+struct MilestoneUtil_IsVisibleCompanyNameMilestoneVersion final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(MilestoneUtil_IsVisibleCompanyNameMilestoneVersion) == 0x000001, "Wrong alignment on MilestoneUtil_IsVisibleCompanyNameMilestoneVersion");
+static_assert(sizeof(MilestoneUtil_IsVisibleCompanyNameMilestoneVersion) == 0x000001, "Wrong size on MilestoneUtil_IsVisibleCompanyNameMilestoneVersion");
+static_assert(offsetof(MilestoneUtil_IsVisibleCompanyNameMilestoneVersion, ReturnValue) == 0x000000, "Member 'MilestoneUtil_IsVisibleCompanyNameMilestoneVersion::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.MovieFunctionLibrary.GetMovieList
 // 0x0008 (0x0008 - 0x0000)
@@ -18450,14 +18884,14 @@ static_assert(offsetof(NetMasterDataManageSubsystem_GetGeneralizedParamData, Out
 static_assert(offsetof(NetMasterDataManageSubsystem_GetGeneralizedParamData, ReturnValue) == 0x000040, "Member 'NetMasterDataManageSubsystem_GetGeneralizedParamData::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.NetMasterDataManageSubsystem.GetMasterData
-// 0x02C0 (0x02C0 - 0x0000)
+// 0x02D0 (0x02D0 - 0x0000)
 struct NetMasterDataManageSubsystem_GetMasterData final
 {
 public:
-	struct FMasterDataGetMasterDataResponse       ReturnValue;                                       // 0x0000(0x02C0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FMasterDataGetMasterDataResponse       ReturnValue;                                       // 0x0000(0x02D0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NetMasterDataManageSubsystem_GetMasterData) == 0x000008, "Wrong alignment on NetMasterDataManageSubsystem_GetMasterData");
-static_assert(sizeof(NetMasterDataManageSubsystem_GetMasterData) == 0x0002C0, "Wrong size on NetMasterDataManageSubsystem_GetMasterData");
+static_assert(sizeof(NetMasterDataManageSubsystem_GetMasterData) == 0x0002D0, "Wrong size on NetMasterDataManageSubsystem_GetMasterData");
 static_assert(offsetof(NetMasterDataManageSubsystem_GetMasterData, ReturnValue) == 0x000000, "Member 'NetMasterDataManageSubsystem_GetMasterData::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.NetMasterDataManageSubsystem.HasDifferentialData
@@ -19213,6 +19647,20 @@ static_assert(sizeof(PlaylogHelper_CRM_PutCustomMachinePartsSpot) == 0x000198, "
 static_assert(offsetof(PlaylogHelper_CRM_PutCustomMachinePartsSpot, Data) == 0x000000, "Member 'PlaylogHelper_CRM_PutCustomMachinePartsSpot::Data' has a wrong offset!");
 static_assert(offsetof(PlaylogHelper_CRM_PutCustomMachinePartsSpot, ReturnValue) == 0x000190, "Member 'PlaylogHelper_CRM_PutCustomMachinePartsSpot::ReturnValue' has a wrong offset!");
 
+// Function UnionSystem.PlaylogHelper.CRM_PutDebugOnlineP2PConnect
+// 0x0058 (0x0058 - 0x0000)
+struct PlaylogHelper_CRM_PutDebugOnlineP2PConnect final
+{
+public:
+	struct FCRM_DebugOnlineP2PConnect             Data;                                              // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(PlaylogHelper_CRM_PutDebugOnlineP2PConnect) == 0x000008, "Wrong alignment on PlaylogHelper_CRM_PutDebugOnlineP2PConnect");
+static_assert(sizeof(PlaylogHelper_CRM_PutDebugOnlineP2PConnect) == 0x000058, "Wrong size on PlaylogHelper_CRM_PutDebugOnlineP2PConnect");
+static_assert(offsetof(PlaylogHelper_CRM_PutDebugOnlineP2PConnect, Data) == 0x000000, "Member 'PlaylogHelper_CRM_PutDebugOnlineP2PConnect::Data' has a wrong offset!");
+static_assert(offsetof(PlaylogHelper_CRM_PutDebugOnlineP2PConnect, ReturnValue) == 0x000050, "Member 'PlaylogHelper_CRM_PutDebugOnlineP2PConnect::ReturnValue' has a wrong offset!");
+
 // Function UnionSystem.PlaylogHelper.CRM_PutDlc
 // 0x0028 (0x0028 - 0x0000)
 struct PlaylogHelper_CRM_PutDlc final
@@ -19436,6 +19884,20 @@ static_assert(alignof(PlaylogHelper_CRM_PutMatchingResult) == 0x000008, "Wrong a
 static_assert(sizeof(PlaylogHelper_CRM_PutMatchingResult) == 0x000098, "Wrong size on PlaylogHelper_CRM_PutMatchingResult");
 static_assert(offsetof(PlaylogHelper_CRM_PutMatchingResult, Data) == 0x000000, "Member 'PlaylogHelper_CRM_PutMatchingResult::Data' has a wrong offset!");
 static_assert(offsetof(PlaylogHelper_CRM_PutMatchingResult, ReturnValue) == 0x000090, "Member 'PlaylogHelper_CRM_PutMatchingResult::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.PlaylogHelper.CRM_PutOnlineMatch
+// 0x00A8 (0x00A8 - 0x0000)
+struct PlaylogHelper_CRM_PutOnlineMatch final
+{
+public:
+	struct FCRM_OnlineMatch                       Data;                                              // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(PlaylogHelper_CRM_PutOnlineMatch) == 0x000008, "Wrong alignment on PlaylogHelper_CRM_PutOnlineMatch");
+static_assert(sizeof(PlaylogHelper_CRM_PutOnlineMatch) == 0x0000A8, "Wrong size on PlaylogHelper_CRM_PutOnlineMatch");
+static_assert(offsetof(PlaylogHelper_CRM_PutOnlineMatch, Data) == 0x000000, "Member 'PlaylogHelper_CRM_PutOnlineMatch::Data' has a wrong offset!");
+static_assert(offsetof(PlaylogHelper_CRM_PutOnlineMatch, ReturnValue) == 0x0000A0, "Member 'PlaylogHelper_CRM_PutOnlineMatch::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.PlaylogHelper.CRM_PutParty
 // 0x0070 (0x0070 - 0x0000)
@@ -22444,6 +22906,17 @@ static_assert(sizeof(StageIdUtilityLibrary_StringToStageId) == 0x000018, "Wrong 
 static_assert(offsetof(StageIdUtilityLibrary_StringToStageId, String) == 0x000000, "Member 'StageIdUtilityLibrary_StringToStageId::String' has a wrong offset!");
 static_assert(offsetof(StageIdUtilityLibrary_StringToStageId, ReturnValue) == 0x000010, "Member 'StageIdUtilityLibrary_StringToStageId::ReturnValue' has a wrong offset!");
 
+// Function UnionSystem.SwitchPlatformUtility.IsSwitch2
+// 0x0001 (0x0001 - 0x0000)
+struct SwitchPlatformUtility_IsSwitch2 final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SwitchPlatformUtility_IsSwitch2) == 0x000001, "Wrong alignment on SwitchPlatformUtility_IsSwitch2");
+static_assert(sizeof(SwitchPlatformUtility_IsSwitch2) == 0x000001, "Wrong size on SwitchPlatformUtility_IsSwitch2");
+static_assert(offsetof(SwitchPlatformUtility_IsSwitch2, ReturnValue) == 0x000000, "Member 'SwitchPlatformUtility_IsSwitch2::ReturnValue' has a wrong offset!");
+
 // Function UnionSystem.SwitchPlatformUtility.SetCPUBoostModeEnabled
 // 0x0001 (0x0001 - 0x0000)
 struct SwitchPlatformUtility_SetCPUBoostModeEnabled final
@@ -22454,6 +22927,35 @@ public:
 static_assert(alignof(SwitchPlatformUtility_SetCPUBoostModeEnabled) == 0x000001, "Wrong alignment on SwitchPlatformUtility_SetCPUBoostModeEnabled");
 static_assert(sizeof(SwitchPlatformUtility_SetCPUBoostModeEnabled) == 0x000001, "Wrong size on SwitchPlatformUtility_SetCPUBoostModeEnabled");
 static_assert(offsetof(SwitchPlatformUtility_SetCPUBoostModeEnabled, bEnable) == 0x000000, "Member 'SwitchPlatformUtility_SetCPUBoostModeEnabled::bEnable' has a wrong offset!");
+
+// Function UnionSystem.TimeTrialVariousLibrary.AdjustTimeTrialByVersion
+// 0x0002 (0x0002 - 0x0000)
+struct TimeTrialVariousLibrary_AdjustTimeTrialByVersion final
+{
+public:
+	EStageId                                      InStageId;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESpeedClassId                                 InSpeedClassId;                                    // 0x0001(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TimeTrialVariousLibrary_AdjustTimeTrialByVersion) == 0x000001, "Wrong alignment on TimeTrialVariousLibrary_AdjustTimeTrialByVersion");
+static_assert(sizeof(TimeTrialVariousLibrary_AdjustTimeTrialByVersion) == 0x000002, "Wrong size on TimeTrialVariousLibrary_AdjustTimeTrialByVersion");
+static_assert(offsetof(TimeTrialVariousLibrary_AdjustTimeTrialByVersion, InStageId) == 0x000000, "Member 'TimeTrialVariousLibrary_AdjustTimeTrialByVersion::InStageId' has a wrong offset!");
+static_assert(offsetof(TimeTrialVariousLibrary_AdjustTimeTrialByVersion, InSpeedClassId) == 0x000001, "Member 'TimeTrialVariousLibrary_AdjustTimeTrialByVersion::InSpeedClassId' has a wrong offset!");
+
+// Function UnionSystem.TimeTrialVariousLibrary.AdjustUploadFlagByVersion
+// 0x0008 (0x0008 - 0x0000)
+struct TimeTrialVariousLibrary_AdjustUploadFlagByVersion final
+{
+public:
+	EStageId                                      InStageId;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESpeedClassId                                 InSpeedClassId;                                    // 0x0001(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InCheckVersion;                                    // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(TimeTrialVariousLibrary_AdjustUploadFlagByVersion) == 0x000004, "Wrong alignment on TimeTrialVariousLibrary_AdjustUploadFlagByVersion");
+static_assert(sizeof(TimeTrialVariousLibrary_AdjustUploadFlagByVersion) == 0x000008, "Wrong size on TimeTrialVariousLibrary_AdjustUploadFlagByVersion");
+static_assert(offsetof(TimeTrialVariousLibrary_AdjustUploadFlagByVersion, InStageId) == 0x000000, "Member 'TimeTrialVariousLibrary_AdjustUploadFlagByVersion::InStageId' has a wrong offset!");
+static_assert(offsetof(TimeTrialVariousLibrary_AdjustUploadFlagByVersion, InSpeedClassId) == 0x000001, "Member 'TimeTrialVariousLibrary_AdjustUploadFlagByVersion::InSpeedClassId' has a wrong offset!");
+static_assert(offsetof(TimeTrialVariousLibrary_AdjustUploadFlagByVersion, InCheckVersion) == 0x000004, "Member 'TimeTrialVariousLibrary_AdjustUploadFlagByVersion::InCheckVersion' has a wrong offset!");
 
 // Function UnionSystem.TimeTrialVariousLibrary.CheckForNewRecord
 // 0x0008 (0x0008 - 0x0000)
@@ -22829,6 +23331,36 @@ public:
 static_assert(alignof(UISubsystem_GetRewardDisplayWidget) == 0x000008, "Wrong alignment on UISubsystem_GetRewardDisplayWidget");
 static_assert(sizeof(UISubsystem_GetRewardDisplayWidget) == 0x000008, "Wrong size on UISubsystem_GetRewardDisplayWidget");
 static_assert(offsetof(UISubsystem_GetRewardDisplayWidget, ReturnValue) == 0x000000, "Member 'UISubsystem_GetRewardDisplayWidget::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.UnionStaticMeshComponent.ChangeMaterial
+// 0x0010 (0x0010 - 0x0000)
+struct UnionStaticMeshComponent_ChangeMaterial final
+{
+public:
+	int32                                         MaterialID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bChange;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     InMaterial;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionStaticMeshComponent_ChangeMaterial) == 0x000008, "Wrong alignment on UnionStaticMeshComponent_ChangeMaterial");
+static_assert(sizeof(UnionStaticMeshComponent_ChangeMaterial) == 0x000010, "Wrong size on UnionStaticMeshComponent_ChangeMaterial");
+static_assert(offsetof(UnionStaticMeshComponent_ChangeMaterial, MaterialID) == 0x000000, "Member 'UnionStaticMeshComponent_ChangeMaterial::MaterialID' has a wrong offset!");
+static_assert(offsetof(UnionStaticMeshComponent_ChangeMaterial, bChange) == 0x000004, "Member 'UnionStaticMeshComponent_ChangeMaterial::bChange' has a wrong offset!");
+static_assert(offsetof(UnionStaticMeshComponent_ChangeMaterial, InMaterial) == 0x000008, "Member 'UnionStaticMeshComponent_ChangeMaterial::InMaterial' has a wrong offset!");
+
+// Function UnionSystem.UnionStaticMeshComponent.IsNotChangedMaterial
+// 0x0008 (0x0008 - 0x0000)
+struct UnionStaticMeshComponent_IsNotChangedMaterial final
+{
+public:
+	int32                                         MaterialID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(UnionStaticMeshComponent_IsNotChangedMaterial) == 0x000004, "Wrong alignment on UnionStaticMeshComponent_IsNotChangedMaterial");
+static_assert(sizeof(UnionStaticMeshComponent_IsNotChangedMaterial) == 0x000008, "Wrong size on UnionStaticMeshComponent_IsNotChangedMaterial");
+static_assert(offsetof(UnionStaticMeshComponent_IsNotChangedMaterial, MaterialID) == 0x000000, "Member 'UnionStaticMeshComponent_IsNotChangedMaterial::MaterialID' has a wrong offset!");
+static_assert(offsetof(UnionStaticMeshComponent_IsNotChangedMaterial, ReturnValue) == 0x000004, "Member 'UnionStaticMeshComponent_IsNotChangedMaterial::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.UnionAtomComponent.OnStatusChangedFunc
 // 0x0010 (0x0010 - 0x0000)
@@ -23398,7 +23930,8 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         AppendId;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NetworkDelayLevel;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	EPopupWindowType                              WindowType;                                        // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(UnionErrorUtils_GetOnlineErrorBodyText) == 0x000008, "Wrong alignment on UnionErrorUtils_GetOnlineErrorBodyText");
@@ -23406,6 +23939,7 @@ static_assert(sizeof(UnionErrorUtils_GetOnlineErrorBodyText) == 0x000020, "Wrong
 static_assert(offsetof(UnionErrorUtils_GetOnlineErrorBodyText, ErrorID) == 0x000000, "Member 'UnionErrorUtils_GetOnlineErrorBodyText::ErrorID' has a wrong offset!");
 static_assert(offsetof(UnionErrorUtils_GetOnlineErrorBodyText, AppendId) == 0x000004, "Member 'UnionErrorUtils_GetOnlineErrorBodyText::AppendId' has a wrong offset!");
 static_assert(offsetof(UnionErrorUtils_GetOnlineErrorBodyText, NetworkDelayLevel) == 0x000008, "Member 'UnionErrorUtils_GetOnlineErrorBodyText::NetworkDelayLevel' has a wrong offset!");
+static_assert(offsetof(UnionErrorUtils_GetOnlineErrorBodyText, WindowType) == 0x00000C, "Member 'UnionErrorUtils_GetOnlineErrorBodyText::WindowType' has a wrong offset!");
 static_assert(offsetof(UnionErrorUtils_GetOnlineErrorBodyText, ReturnValue) == 0x000010, "Member 'UnionErrorUtils_GetOnlineErrorBodyText::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.UnionErrorUtils.GetOnlineErrorReturnMenuText
@@ -25769,6 +26303,17 @@ static_assert(alignof(UnionSettings_SetEnableBlur) == 0x000001, "Wrong alignment
 static_assert(sizeof(UnionSettings_SetEnableBlur) == 0x000001, "Wrong size on UnionSettings_SetEnableBlur");
 static_assert(offsetof(UnionSettings_SetEnableBlur, Enable) == 0x000000, "Member 'UnionSettings_SetEnableBlur::Enable' has a wrong offset!");
 
+// Function UnionSystem.UnionSettings.SetEnableGFur
+// 0x0001 (0x0001 - 0x0000)
+struct UnionSettings_SetEnableGFur final
+{
+public:
+	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionSettings_SetEnableGFur) == 0x000001, "Wrong alignment on UnionSettings_SetEnableGFur");
+static_assert(sizeof(UnionSettings_SetEnableGFur) == 0x000001, "Wrong size on UnionSettings_SetEnableGFur");
+static_assert(offsetof(UnionSettings_SetEnableGFur, Enable) == 0x000000, "Member 'UnionSettings_SetEnableGFur::Enable' has a wrong offset!");
+
 // Function UnionSystem.UnionSettings.SetMinLoDBias
 // 0x0004 (0x0004 - 0x0000)
 struct UnionSettings_SetMinLoDBias final
@@ -26068,6 +26613,20 @@ static_assert(sizeof(UnionStatsManager_GetMachineStatsEventValue) == 0x000008, "
 static_assert(offsetof(UnionStatsManager_GetMachineStatsEventValue, StatsEventId) == 0x000000, "Member 'UnionStatsManager_GetMachineStatsEventValue::StatsEventId' has a wrong offset!");
 static_assert(offsetof(UnionStatsManager_GetMachineStatsEventValue, MachineId) == 0x000001, "Member 'UnionStatsManager_GetMachineStatsEventValue::MachineId' has a wrong offset!");
 static_assert(offsetof(UnionStatsManager_GetMachineStatsEventValue, ReturnValue) == 0x000004, "Member 'UnionStatsManager_GetMachineStatsEventValue::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.UnionStatsManager.GetMachineUsedType
+// 0x0008 (0x0008 - 0x0000)
+struct UnionStatsManager_GetMachineUsedType final
+{
+public:
+	EDriverType                                   machineType;                                       // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionStatsManager_GetMachineUsedType) == 0x000004, "Wrong alignment on UnionStatsManager_GetMachineUsedType");
+static_assert(sizeof(UnionStatsManager_GetMachineUsedType) == 0x000008, "Wrong size on UnionStatsManager_GetMachineUsedType");
+static_assert(offsetof(UnionStatsManager_GetMachineUsedType, machineType) == 0x000000, "Member 'UnionStatsManager_GetMachineUsedType::machineType' has a wrong offset!");
+static_assert(offsetof(UnionStatsManager_GetMachineUsedType, ReturnValue) == 0x000004, "Member 'UnionStatsManager_GetMachineUsedType::ReturnValue' has a wrong offset!");
 
 // Function UnionSystem.UnionStatsManager.GetResultHonorList
 // 0x0018 (0x0018 - 0x0000)
@@ -26742,6 +27301,17 @@ static_assert(alignof(UnionSystemBP_RemoveLevel) == 0x000008, "Wrong alignment o
 static_assert(sizeof(UnionSystemBP_RemoveLevel) == 0x000010, "Wrong size on UnionSystemBP_RemoveLevel");
 static_assert(offsetof(UnionSystemBP_RemoveLevel, StreamingLevel) == 0x000000, "Member 'UnionSystemBP_RemoveLevel::StreamingLevel' has a wrong offset!");
 static_assert(offsetof(UnionSystemBP_RemoveLevel, ReturnValue) == 0x000008, "Member 'UnionSystemBP_RemoveLevel::ReturnValue' has a wrong offset!");
+
+// Function UnionSystem.UnionSystemBP.RemoveLevelByNameContain
+// 0x0010 (0x0010 - 0x0000)
+struct UnionSystemBP_RemoveLevelByNameContain final
+{
+public:
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(UnionSystemBP_RemoveLevelByNameContain) == 0x000008, "Wrong alignment on UnionSystemBP_RemoveLevelByNameContain");
+static_assert(sizeof(UnionSystemBP_RemoveLevelByNameContain) == 0x000010, "Wrong size on UnionSystemBP_RemoveLevelByNameContain");
+static_assert(offsetof(UnionSystemBP_RemoveLevelByNameContain, Name_0) == 0x000000, "Member 'UnionSystemBP_RemoveLevelByNameContain::Name_0' has a wrong offset!");
 
 // Function UnionSystem.UnionSystemBP.SaveGameToSlot
 // 0x0020 (0x0020 - 0x0000)

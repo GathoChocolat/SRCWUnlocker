@@ -101,6 +101,20 @@ void UWBP_Race_Sub_BtnGuide_C::DispOnUseItemGuide(int32 PlayerIndex, bool IsFeve
 }
 
 
+// Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.EndKeyboardSwitchingAnim
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Race_Sub_BtnGuide_C::EndKeyboardSwitchingAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_Sub_BtnGuide_C", "EndKeyboardSwitchingAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.ExecuteUbergraph_WBP_Race_Sub_BtnGuide
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -309,20 +323,44 @@ void UWBP_Race_Sub_BtnGuide_C::SetFaceBtnKey(const struct FKey& NewKey, bool* Is
 }
 
 
-// Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetKey
+// Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetGamepadBtnOption
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FKey&                      NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   IsSuccess                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_Sub_BtnGuide_C::SetGamepadBtnOption(const struct FKey& NewKey, bool* IsSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_Sub_BtnGuide_C", "SetGamepadBtnOption");
+
+	Params::WBP_Race_Sub_BtnGuide_C_SetGamepadBtnOption Parms{};
+
+	Parms.NewKey = std::move(NewKey);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsSuccess != nullptr)
+		*IsSuccess = Parms.IsSuccess;
+}
+
+
+// Function WBP_Race_Sub_BtnGuide.WBP_Race_Sub_BtnGuide_C.SetKeyboardKey
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FKey&                      InKey                                                  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // int32                                   PlayerControllerIndex_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_Sub_BtnGuide_C::SetKey(const struct FKey& InKey, int32 PlayerControllerIndex_0)
+void UWBP_Race_Sub_BtnGuide_C::SetKeyboardKey(const struct FKey& InKey, int32 PlayerControllerIndex_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Race_Sub_BtnGuide_C", "SetKey");
+		Func = Class->GetFunction("WBP_Race_Sub_BtnGuide_C", "SetKeyboardKey");
 
-	Params::WBP_Race_Sub_BtnGuide_C_SetKey Parms{};
+	Params::WBP_Race_Sub_BtnGuide_C_SetKeyboardKey Parms{};
 
 	Parms.InKey = std::move(InKey);
 	Parms.PlayerControllerIndex_0 = PlayerControllerIndex_0;

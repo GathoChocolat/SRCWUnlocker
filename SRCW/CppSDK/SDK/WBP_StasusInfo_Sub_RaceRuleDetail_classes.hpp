@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -19,37 +19,37 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_StasusInfo_Sub_RaceRuleDetail.WBP_StasusInfo_Sub_RaceRuleDetail_C
-// 0x00D0 (0x0408 - 0x0338)
+// 0x00D0 (0x0418 - 0x0348)
 class UWBP_StasusInfo_Sub_RaceRuleDetail_C final : public UFestaRuleInfoWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Out;                                               // 0x0340(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       InLoop;                                            // 0x0348(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 base;                                              // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 base_1;                                            // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_Footer;                                       // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_SP;                                           // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 BaseWindow;                                        // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 BG_Black;                                          // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DMY_RaceRuleIcon;                                  // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DMY_RuleImage;                                     // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Line_01;                                           // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Line_02;                                           // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionUIButton*                         MouseInteraction;                                  // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RaceFlag;                                          // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RaceFlag_Left;                                     // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RaceFlag_Right;                                    // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_RuleName;                                      // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn;                      // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C* WBP_StasusIfo_Sub_RaceRuleDetail_Text_01;        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C* WBP_StasusIfo_Sub_RaceRuleDetail_Text_02;        // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C* WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_01;  // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IsOpened;                                          // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EnableInput;                                       // 0x03F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F2[0x6];                                      // 0x03F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnClosed;                                          // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0348(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Out;                                               // 0x0350(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       InLoop;                                            // 0x0358(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 base;                                              // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 base_1;                                            // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Footer;                                       // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_SP;                                           // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BaseWindow;                                        // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BG_Black;                                          // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DMY_RaceRuleIcon;                                  // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DMY_RuleImage;                                     // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Line_01;                                           // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Line_02;                                           // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionUIButton*                         MouseInteraction;                                  // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RaceFlag;                                          // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RaceFlag_Left;                                     // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RaceFlag_Right;                                    // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_RuleName;                                      // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn;                      // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C* WBP_StasusIfo_Sub_RaceRuleDetail_Text_01;        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StasusIfo_Sub_RaceRuleDetail_Text_C* WBP_StasusIfo_Sub_RaceRuleDetail_Text_02;        // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_RaceRuleDetail_Gadget_C* WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_01;  // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          IsOpened;                                          // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnableInput;                                       // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_402[0x6];                                      // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnClosed;                                          // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	bool CanWidgetClose();
@@ -81,33 +81,33 @@ public:
 	}
 };
 static_assert(alignof(UWBP_StasusInfo_Sub_RaceRuleDetail_C) == 0x000008, "Wrong alignment on UWBP_StasusInfo_Sub_RaceRuleDetail_C");
-static_assert(sizeof(UWBP_StasusInfo_Sub_RaceRuleDetail_C) == 0x000408, "Wrong size on UWBP_StasusInfo_Sub_RaceRuleDetail_C");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, UberGraphFrame) == 0x000338, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Out) == 0x000340, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Out' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, InLoop) == 0x000348, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::InLoop' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, base) == 0x000350, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::base' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, base_1) == 0x000358, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::base_1' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Base_Footer) == 0x000360, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Base_Footer' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Base_SP) == 0x000368, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Base_SP' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, BaseWindow) == 0x000370, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::BaseWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, BG_Black) == 0x000378, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, DMY_RaceRuleIcon) == 0x000380, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::DMY_RaceRuleIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, DMY_RuleImage) == 0x000388, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::DMY_RuleImage' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Line_01) == 0x000390, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Line_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Line_02) == 0x000398, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Line_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, MouseInteraction) == 0x0003A0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::MouseInteraction' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, RaceFlag) == 0x0003A8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::RaceFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, RaceFlag_Left) == 0x0003B0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::RaceFlag_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, RaceFlag_Right) == 0x0003B8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::RaceFlag_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, TXT_RuleName) == 0x0003C0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::TXT_RuleName' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_FooterMenu_Sub_CommonBtn) == 0x0003C8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_StasusIfo_Sub_RaceRuleDetail_Text_01) == 0x0003D0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_StasusIfo_Sub_RaceRuleDetail_Text_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_StasusIfo_Sub_RaceRuleDetail_Text_02) == 0x0003D8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_StasusIfo_Sub_RaceRuleDetail_Text_02' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_01) == 0x0003E0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_01' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WidgetSwitcher_0) == 0x0003E8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, IsOpened) == 0x0003F0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::IsOpened' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, EnableInput) == 0x0003F1, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::EnableInput' has a wrong offset!");
-static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, OnClosed) == 0x0003F8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::OnClosed' has a wrong offset!");
+static_assert(sizeof(UWBP_StasusInfo_Sub_RaceRuleDetail_C) == 0x000418, "Wrong size on UWBP_StasusInfo_Sub_RaceRuleDetail_C");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, UberGraphFrame) == 0x000348, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Out) == 0x000350, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Out' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, InLoop) == 0x000358, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::InLoop' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, base) == 0x000360, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::base' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, base_1) == 0x000368, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::base_1' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Base_Footer) == 0x000370, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Base_Footer' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Base_SP) == 0x000378, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Base_SP' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, BaseWindow) == 0x000380, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::BaseWindow' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, BG_Black) == 0x000388, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::BG_Black' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, DMY_RaceRuleIcon) == 0x000390, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::DMY_RaceRuleIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, DMY_RuleImage) == 0x000398, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::DMY_RuleImage' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Line_01) == 0x0003A0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Line_01' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, Line_02) == 0x0003A8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::Line_02' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, MouseInteraction) == 0x0003B0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::MouseInteraction' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, RaceFlag) == 0x0003B8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::RaceFlag' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, RaceFlag_Left) == 0x0003C0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::RaceFlag_Left' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, RaceFlag_Right) == 0x0003C8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::RaceFlag_Right' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, TXT_RuleName) == 0x0003D0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::TXT_RuleName' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_FooterMenu_Sub_CommonBtn) == 0x0003D8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_StasusIfo_Sub_RaceRuleDetail_Text_01) == 0x0003E0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_StasusIfo_Sub_RaceRuleDetail_Text_01' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_StasusIfo_Sub_RaceRuleDetail_Text_02) == 0x0003E8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_StasusIfo_Sub_RaceRuleDetail_Text_02' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_01) == 0x0003F0, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WBP_StatusInfo_Sub_RaceRuleDetail_Gadget_01' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, WidgetSwitcher_0) == 0x0003F8, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::WidgetSwitcher_0' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, IsOpened) == 0x000400, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::IsOpened' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, EnableInput) == 0x000401, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::EnableInput' has a wrong offset!");
+static_assert(offsetof(UWBP_StasusInfo_Sub_RaceRuleDetail_C, OnClosed) == 0x000408, "Member 'UWBP_StasusInfo_Sub_RaceRuleDetail_C::OnClosed' has a wrong offset!");
 
 }
 

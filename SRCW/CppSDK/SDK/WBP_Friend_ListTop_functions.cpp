@@ -722,12 +722,9 @@ void UWBP_Friend_ListTop_C::SetRacerInfoWidgetVisible(bool bInVisible)
 // int32                                   InLocalUserNumber                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EFriendListCategory                     InInitialCategory                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   InZOrder                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInLobbySequence                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInLobbyInvitationSendEnable                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInLobbyInvitationAcceptEnable                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInLobbyInvitationRejectEnable                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FFriendListSetupParameterData&SetupParameterData                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_Friend_ListTop_C::Setup(int32 InLocalUserNumber, EFriendListCategory InInitialCategory, int32 InZOrder, bool bInLobbySequence, bool bInLobbyInvitationSendEnable, bool bInLobbyInvitationAcceptEnable, bool bInLobbyInvitationRejectEnable)
+void UWBP_Friend_ListTop_C::Setup(int32 InLocalUserNumber, EFriendListCategory InInitialCategory, int32 InZOrder, const struct FFriendListSetupParameterData& SetupParameterData)
 {
 	static class UFunction* Func = nullptr;
 
@@ -739,10 +736,7 @@ void UWBP_Friend_ListTop_C::Setup(int32 InLocalUserNumber, EFriendListCategory I
 	Parms.InLocalUserNumber = InLocalUserNumber;
 	Parms.InInitialCategory = InInitialCategory;
 	Parms.InZOrder = InZOrder;
-	Parms.bInLobbySequence = bInLobbySequence;
-	Parms.bInLobbyInvitationSendEnable = bInLobbyInvitationSendEnable;
-	Parms.bInLobbyInvitationAcceptEnable = bInLobbyInvitationAcceptEnable;
-	Parms.bInLobbyInvitationRejectEnable = bInLobbyInvitationRejectEnable;
+	Parms.SetupParameterData = std::move(SetupParameterData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

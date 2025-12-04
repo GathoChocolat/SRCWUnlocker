@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -48,7 +48,7 @@ static_assert(offsetof(BPC_AppNet_C_CheckInvitationNoticeDisplay, CallFunc_Check
 static_assert(offsetof(BPC_AppNet_C_CheckInvitationNoticeDisplay, CallFunc_IsValid_ReturnValue) == 0x00000A, "Member 'BPC_AppNet_C_CheckInvitationNoticeDisplay::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BPC_AppNet.BPC_AppNet_C.ExecuteUbergraph_BPC_AppNet
-// 0x0B50 (0x0B50 - 0x0000)
+// 0x0B60 (0x0B60 - 0x0000)
 struct BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet final
 {
 public:
@@ -269,20 +269,20 @@ public:
 	class ULobbySubsystem*                        CallFunc_GetGameInstanceSubsystem_ReturnValue_14;  // 0x0A38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_19;                   // 0x0A40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A41[0x7];                                      // 0x0A41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCommon_UserSearchData                 CallFunc_GetUserSearchDataByProductUserId_OutUserSearchData; // 0x0A48(0x00D8)()
-	bool                                          CallFunc_GetUserSearchDataByProductUserId_ReturnValue; // 0x0B20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B21[0x7];                                      // 0x0B21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FCommon_UserSearchData>         K2Node_MakeArray_Array_3;                          // 0x0B28(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_ShouldSendSessionInvitePlatform_ReturnValue; // 0x0B38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_20;                   // 0x0B39(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_Successful;                     // 0x0B3A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_21;                   // 0x0B3B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B3C[0x4];                                      // 0x0B3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_SquadContext_C*                     CallFunc_GetSqueadContext_SquadContext;            // 0x0B40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0B48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FCommon_UserSearchData                 CallFunc_GetUserSearchDataByProductUserId_OutUserSearchData; // 0x0A48(0x00E0)()
+	bool                                          CallFunc_GetUserSearchDataByProductUserId_ReturnValue; // 0x0B28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B29[0x7];                                      // 0x0B29(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FCommon_UserSearchData>         K2Node_MakeArray_Array_3;                          // 0x0B30(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_ShouldSendSessionInvitePlatform_ReturnValue; // 0x0B40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_20;                   // 0x0B41(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Successful;                     // 0x0B42(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_21;                   // 0x0B43(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B44[0x4];                                      // 0x0B44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_SquadContext_C*                     CallFunc_GetSqueadContext_SquadContext;            // 0x0B48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0B50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet) == 0x000010, "Wrong alignment on BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet");
-static_assert(sizeof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet) == 0x000B50, "Wrong size on BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet");
+static_assert(sizeof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet) == 0x000B60, "Wrong size on BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet");
 static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, EntryPoint) == 0x000000, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_ShouldCreateSquad_ReturnValue) == 0x000004, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_ShouldCreateSquad_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_Create_ReturnValue' has a wrong offset!");
@@ -463,14 +463,14 @@ static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_GetWor
 static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_GetGameInstanceSubsystem_ReturnValue_14) == 0x000A38, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_GetGameInstanceSubsystem_ReturnValue_14' has a wrong offset!");
 static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_IsValid_ReturnValue_19) == 0x000A40, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_IsValid_ReturnValue_19' has a wrong offset!");
 static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_GetUserSearchDataByProductUserId_OutUserSearchData) == 0x000A48, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_GetUserSearchDataByProductUserId_OutUserSearchData' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_GetUserSearchDataByProductUserId_ReturnValue) == 0x000B20, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_GetUserSearchDataByProductUserId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, K2Node_MakeArray_Array_3) == 0x000B28, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_ShouldSendSessionInvitePlatform_ReturnValue) == 0x000B38, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_ShouldSendSessionInvitePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_IsValid_ReturnValue_20) == 0x000B39, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_IsValid_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, K2Node_CustomEvent_Successful) == 0x000B3A, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::K2Node_CustomEvent_Successful' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_IsValid_ReturnValue_21) == 0x000B3B, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_IsValid_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_GetSqueadContext_SquadContext) == 0x000B40, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_GetSqueadContext_SquadContext' has a wrong offset!");
-static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_IsJoining_ReturnValue) == 0x000B48, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_IsJoining_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_GetUserSearchDataByProductUserId_ReturnValue) == 0x000B28, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_GetUserSearchDataByProductUserId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, K2Node_MakeArray_Array_3) == 0x000B30, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::K2Node_MakeArray_Array_3' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_ShouldSendSessionInvitePlatform_ReturnValue) == 0x000B40, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_ShouldSendSessionInvitePlatform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_IsValid_ReturnValue_20) == 0x000B41, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_IsValid_ReturnValue_20' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, K2Node_CustomEvent_Successful) == 0x000B42, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::K2Node_CustomEvent_Successful' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_IsValid_ReturnValue_21) == 0x000B43, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_IsValid_ReturnValue_21' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_GetSqueadContext_SquadContext) == 0x000B48, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_GetSqueadContext_SquadContext' has a wrong offset!");
+static_assert(offsetof(BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet, CallFunc_IsJoining_ReturnValue) == 0x000B50, "Member 'BPC_AppNet_C_ExecuteUbergraph_BPC_AppNet::CallFunc_IsJoining_ReturnValue' has a wrong offset!");
 
 // Function BPC_AppNet.BPC_AppNet_C.GetFriendMatchLobbyContext
 // 0x0030 (0x0030 - 0x0000)

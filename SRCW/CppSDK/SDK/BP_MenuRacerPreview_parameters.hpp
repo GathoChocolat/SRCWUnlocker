@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "UNION_structs.hpp"
 
 
 namespace SDK::Params
@@ -823,15 +823,17 @@ public:
 	class UStickerBakerHandle*                    StickerBakerHandle;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsCompleteSetSticker;                              // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsHandleDead_ReturnValue;                 // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue_1;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue_2;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue_1;          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue_2;          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue_3;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue_3;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue_1;          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue_2;                   // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AUnionStickerBaker*                     CallFunc_GetBaker_ReturnValue_3;                   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue_2;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               CallFunc_GetStickerTexture_ReturnValue_3;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsBakingComplete_ReturnValue;             // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsHoverboard_ReturnValue;                 // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -840,14 +842,16 @@ static_assert(sizeof(BP_MenuRacerPreview_C_Polling_Set_Sticker) == 0x000058, "Wr
 static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, StickerBakerHandle) == 0x000000, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::StickerBakerHandle' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, IsCompleteSetSticker) == 0x000008, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::IsCompleteSetSticker' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsHandleDead_ReturnValue) == 0x00000A, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsHandleDead_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_Not_PreBool_ReturnValue) == 0x00000B, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue) == 0x000010, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_1) == 0x000018, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_2) == 0x000020, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue) == 0x000028, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_1) == 0x000030, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_2) == 0x000038, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_3) == 0x000040, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_3) == 0x000048, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue) == 0x000020, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_1) == 0x000028, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_2) == 0x000030, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetBaker_ReturnValue_3) == 0x000038, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetBaker_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_2) == 0x000040, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_GetStickerTexture_ReturnValue_3) == 0x000048, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_GetStickerTexture_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsBakingComplete_ReturnValue) == 0x000050, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsBakingComplete_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MenuRacerPreview_C_Polling_Set_Sticker, CallFunc_IsHoverboard_ReturnValue) == 0x000051, "Member 'BP_MenuRacerPreview_C_Polling_Set_Sticker::CallFunc_IsHoverboard_ReturnValue' has a wrong offset!");
 

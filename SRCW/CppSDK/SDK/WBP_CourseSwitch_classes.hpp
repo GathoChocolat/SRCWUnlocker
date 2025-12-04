@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -46,6 +46,8 @@ public:
 	class UUnionUIPopupWindowBase*                PopupWindow;                                       // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              OnCancel;                                          // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsGuest;                                           // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F9[0x3];                                      // 0x03F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LastFocusedCursorIndex;                            // 0x03FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ChangeTagImpl(EPartyRaceCourseSwitchTag Tag, EPartyRaceCourseSwitchBtnType NowBtnType);
@@ -103,6 +105,7 @@ static_assert(offsetof(UWBP_CourseSwitch_C, OnClosed) == 0x0003D0, "Member 'UWBP
 static_assert(offsetof(UWBP_CourseSwitch_C, PopupWindow) == 0x0003E0, "Member 'UWBP_CourseSwitch_C::PopupWindow' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSwitch_C, OnCancel) == 0x0003E8, "Member 'UWBP_CourseSwitch_C::OnCancel' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSwitch_C, IsGuest) == 0x0003F8, "Member 'UWBP_CourseSwitch_C::IsGuest' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSwitch_C, LastFocusedCursorIndex) == 0x0003FC, "Member 'UWBP_CourseSwitch_C::LastFocusedCursorIndex' has a wrong offset!");
 
 }
 

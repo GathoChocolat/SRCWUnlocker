@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_EventEndInfo_CMN_window.WBP_EventEndInfo_CMN_window_C
-// 0x0078 (0x0358 - 0x02E0)
+// 0x0098 (0x0378 - 0x02E0)
 class UWBP_EventEndInfo_CMN_window_C final : public UEventEndInfoWidgetBase
 {
 public:
@@ -30,15 +30,21 @@ public:
 	class UImage*                                 Base_Header;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BaseWindow;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BG_Black;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Event_Period;                                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Title_Detail;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_EventEndInfo_Sub_Details_C*        WBP_EventEndInfo_Sub_Details;                      // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn;                      // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnFinishedEvent;                                   // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	int32                                         Ranking;                                           // 0x0350(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Point;                                             // 0x0354(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        EndInfoSwitcher;                                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Event_Period;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Title_Detail;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_EventEndInfo_Sub_Details_C*        WBP_EventEndInfo_Sub_Details;                      // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_EventEndInfo_Sub_Details_Legend_C* WBP_EventEndInfo_Sub_Details_Legend;               // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FooterMenu_Sub_CommonBtn_C*        WBP_FooterMenu_Sub_CommonBtn;                      // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnFinishedEvent;                                   // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	int32                                         Ranking;                                           // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Point;                                             // 0x0364(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUEventEndInfoSubDetailWidgetBase*      Active_Event_End_Info_Widget;                      // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         EventType;                                         // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                         SeasonNumber;                                      // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Construct();
 	void ExecuteUbergraph_WBP_EventEndInfo_CMN_window(int32 EntryPoint);
 	void FinishedPointDisplay();
 	void FinishedRankingDisplay();
@@ -102,11 +108,12 @@ public:
 	void OnUpKeyReleased();
 	void OnUpKeyReleasedWithPlayerId(const int32& PlayerControllerIndex);
 	void OutAnimationEnd();
-	void SetFestaName(const class FText& FestaName);
+	void Set_Event_Name(const class FText& FestaName);
 	void SetRankingLabelText(const class FText& RankingLavelText);
 	void SetRankingTitleText(const class FText& TitleName);
 	void SetResult(int32 Ranking_0, int32 Point_0);
 	void SetSchedule(const struct FDateTime& StartTime, const struct FDateTime& endTime);
+	void SetSeasonNumber();
 	void SetTextureBG(class UTexture2D* Texture);
 	void SilentFocusReady(bool bOnce);
 
@@ -121,7 +128,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_EventEndInfo_CMN_window_C) == 0x000008, "Wrong alignment on UWBP_EventEndInfo_CMN_window_C");
-static_assert(sizeof(UWBP_EventEndInfo_CMN_window_C) == 0x000358, "Wrong size on UWBP_EventEndInfo_CMN_window_C");
+static_assert(sizeof(UWBP_EventEndInfo_CMN_window_C) == 0x000378, "Wrong size on UWBP_EventEndInfo_CMN_window_C");
 static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_EventEndInfo_CMN_window_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Out) == 0x0002E8, "Member 'UWBP_EventEndInfo_CMN_window_C::Out' has a wrong offset!");
 static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Loop) == 0x0002F0, "Member 'UWBP_EventEndInfo_CMN_window_C::Loop' has a wrong offset!");
@@ -130,13 +137,18 @@ static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Base_Footer) == 0x000300,
 static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Base_Header) == 0x000308, "Member 'UWBP_EventEndInfo_CMN_window_C::Base_Header' has a wrong offset!");
 static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, BaseWindow) == 0x000310, "Member 'UWBP_EventEndInfo_CMN_window_C::BaseWindow' has a wrong offset!");
 static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, BG_Black) == 0x000318, "Member 'UWBP_EventEndInfo_CMN_window_C::BG_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, TXT_Event_Period) == 0x000320, "Member 'UWBP_EventEndInfo_CMN_window_C::TXT_Event_Period' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, TXT_Title_Detail) == 0x000328, "Member 'UWBP_EventEndInfo_CMN_window_C::TXT_Title_Detail' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_EventEndInfo_Sub_Details) == 0x000330, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_EventEndInfo_Sub_Details' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000338, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, OnFinishedEvent) == 0x000340, "Member 'UWBP_EventEndInfo_CMN_window_C::OnFinishedEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Ranking) == 0x000350, "Member 'UWBP_EventEndInfo_CMN_window_C::Ranking' has a wrong offset!");
-static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Point) == 0x000354, "Member 'UWBP_EventEndInfo_CMN_window_C::Point' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, EndInfoSwitcher) == 0x000320, "Member 'UWBP_EventEndInfo_CMN_window_C::EndInfoSwitcher' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, TXT_Event_Period) == 0x000328, "Member 'UWBP_EventEndInfo_CMN_window_C::TXT_Event_Period' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, TXT_Title_Detail) == 0x000330, "Member 'UWBP_EventEndInfo_CMN_window_C::TXT_Title_Detail' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_EventEndInfo_Sub_Details) == 0x000338, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_EventEndInfo_Sub_Details' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_EventEndInfo_Sub_Details_Legend) == 0x000340, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_EventEndInfo_Sub_Details_Legend' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, WBP_FooterMenu_Sub_CommonBtn) == 0x000348, "Member 'UWBP_EventEndInfo_CMN_window_C::WBP_FooterMenu_Sub_CommonBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, OnFinishedEvent) == 0x000350, "Member 'UWBP_EventEndInfo_CMN_window_C::OnFinishedEvent' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Ranking) == 0x000360, "Member 'UWBP_EventEndInfo_CMN_window_C::Ranking' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Point) == 0x000364, "Member 'UWBP_EventEndInfo_CMN_window_C::Point' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, Active_Event_End_Info_Widget) == 0x000368, "Member 'UWBP_EventEndInfo_CMN_window_C::Active_Event_End_Info_Widget' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, EventType) == 0x000370, "Member 'UWBP_EventEndInfo_CMN_window_C::EventType' has a wrong offset!");
+static_assert(offsetof(UWBP_EventEndInfo_CMN_window_C, SeasonNumber) == 0x000374, "Member 'UWBP_EventEndInfo_CMN_window_C::SeasonNumber' has a wrong offset!");
 
 }
 

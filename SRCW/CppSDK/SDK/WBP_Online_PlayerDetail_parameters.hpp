@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
 #include "UMG_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
@@ -60,68 +60,67 @@ public:
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2; // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLobbyPlayerData                       K2Node_Event_InPlayerData;                         // 0x00D8(0x00F8)()
-	EBlockPlayerState                             K2Node_Event_InBlockType;                          // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsOwn;                             // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsSendNice;                        // 0x01D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsNPC;                             // 0x01D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_InNiceCount_1;                        // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_InProductUserId;                      // 0x01D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsOwnHost;                         // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMatchingLobbyType                            K2Node_Event_InLobbyType;                          // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA[0x6];                                      // 0x01EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_InPlatformID;                         // 0x01F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_InPlatform;                           // 0x0200(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsEnableBlockWindowButton;         // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0212(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0213(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_3;  // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3; // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0228(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_6;                              // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x023A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23B[0x5];                                      // 0x023B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_4;  // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4; // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0252(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x0253(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x0254(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_255[0x3];                                      // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Event_InNiceCount;                          // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x025D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x025E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x025F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLobbyPlayerData                       K2Node_Event_InPlayerData;                         // 0x00D8(0x0100)()
+	EBlockPlayerState                             K2Node_Event_InBlockType;                          // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsOwn;                             // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsSendNice;                        // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsNPC;                             // 0x01DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_InNiceCount_1;                        // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_InProductUserId;                      // 0x01E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsOwnHost;                         // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMatchingLobbyType                            K2Node_Event_InLobbyType;                          // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F2[0x6];                                      // 0x01F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_InPlatformID;                         // 0x01F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_InPlatform;                           // 0x0208(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsEnableBlockWindowButton;         // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21B[0x1];                                      // 0x021B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x021C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_3;  // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3; // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_242[0x6];                                      // 0x0242(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_4;  // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4; // 0x0250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x025A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25B[0x1];                                      // 0x025B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_InNiceCount;                          // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_6;                              // 0x0262(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0263(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0265(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x0266(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_267[0x1];                                      // 0x0267(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAppPlayerController*                   CallFunc_GetAppPlayerController_ReturnValue;       // 0x0268(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_7;                  // 0x0272(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x0272(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select_Default_1;                           // 0x0273(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select_Default_2;                           // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0275(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_276[0x2];                                      // 0x0276(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0278(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0289(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x028A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0289(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x028A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x028B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x028D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x028D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x028E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x028F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_8;                  // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_7;                              // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x0292(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0293(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0294(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x0295(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0292(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_7;                              // 0x0293(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x0294(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0295(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0296(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_297[0x1];                                      // 0x0297(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0298(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -161,61 +160,59 @@ static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_Pla
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2) == 0x0000C8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_2) == 0x0000D0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlayerData) == 0x0000D8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlayerData' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InBlockType) == 0x0001D0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsOwn) == 0x0001D1, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsOwn' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsSendNice) == 0x0001D2, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsSendNice' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsNPC) == 0x0001D3, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsNPC' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InNiceCount_1) == 0x0001D4, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InNiceCount_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InProductUserId) == 0x0001D8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InProductUserId' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsOwnHost) == 0x0001E8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsOwnHost' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InLobbyType) == 0x0001E9, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InLobbyType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlatformID) == 0x0001F0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlatformID' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlatform) == 0x000200, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsEnableBlockWindowButton) == 0x000210, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsEnableBlockWindowButton' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000211, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue) == 0x000212, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_1) == 0x000213, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_3) == 0x000218, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3) == 0x000220, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_3) == 0x000228, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_3) == 0x000238, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_6) == 0x000239, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_2) == 0x00023A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_4) == 0x000240, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4) == 0x000248, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_4) == 0x000250, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_3) == 0x000251, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default) == 0x000252, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_4) == 0x000253, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_5) == 0x000254, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InNiceCount) == 0x000258, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InNiceCount' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00025C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00025D, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue) == 0x00025E, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue) == 0x00025F, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_6) == 0x000260, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InBlockType) == 0x0001D8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InBlockType' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsOwn) == 0x0001D9, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsOwn' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsSendNice) == 0x0001DA, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsSendNice' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsNPC) == 0x0001DB, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsNPC' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InNiceCount_1) == 0x0001DC, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InNiceCount_1' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InProductUserId) == 0x0001E0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InProductUserId' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsOwnHost) == 0x0001F0, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsOwnHost' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InLobbyType) == 0x0001F1, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InLobbyType' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlatformID) == 0x0001F8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlatformID' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InPlatform) == 0x000208, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InPlatform' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_bInIsEnableBlockWindowButton) == 0x000218, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_bInIsEnableBlockWindowButton' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000219, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue) == 0x00021A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_3) == 0x00021C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_3) == 0x000230, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_3' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3) == 0x000238, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_3) == 0x000240, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_1) == 0x000241, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_Result_4) == 0x000248, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_Result_4' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4) == 0x000250, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_IsValid_ReturnValue_4) == 0x000258, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_2) == 0x000259, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_3) == 0x00025A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_InNiceCount) == 0x00025C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_InNiceCount' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000260, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000261, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_6) == 0x000262, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_6' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue) == 0x000263, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue) == 0x000264, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default) == 0x000265, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_4) == 0x000266, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_GetAppPlayerController_ReturnValue) == 0x000268, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_GetAppPlayerController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000270, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000271, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_7) == 0x000272, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_5) == 0x000272, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default_1) == 0x000273, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default_1' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default_2) == 0x000274, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default_2' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_byte_Variable_2) == 0x000275, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_byte_Variable_2' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_4) == 0x000278, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_byte_Variable_3) == 0x000288, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_1) == 0x000289, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_2) == 0x00028A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_1) == 0x000288, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_2) == 0x000289, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_1) == 0x00028A, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x00028B, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_1) == 0x00028C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x00028D, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x00028C, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_byte_Variable_3) == 0x00028D, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_byte_Variable_3' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_3) == 0x00028E, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_2) == 0x00028F, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_8) == 0x000290, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_7) == 0x000291, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_4) == 0x000292, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_3) == 0x000293, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default_3) == 0x000294, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_4) == 0x000295, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanOR_ReturnValue_6) == 0x000290, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_Not_PreBool_ReturnValue_4) == 0x000291, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_3) == 0x000292, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, Temp_bool_Variable_7) == 0x000293, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::Temp_bool_Variable_7' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, CallFunc_BooleanAND_ReturnValue_4) == 0x000294, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Select_Default_3) == 0x000295, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Select_Default_3' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_Event_IsDesignTime) == 0x000296, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_5) == 0x000298, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail, K2Node_CreateDelegate_OutputDelegate_6) == 0x0002A8, "Member 'WBP_Online_PlayerDetail_C_ExecuteUbergraph_WBP_Online_PlayerDetail::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
@@ -243,76 +240,76 @@ static_assert(sizeof(WBP_Online_PlayerDetail_C_PreConstruct) == 0x000001, "Wrong
 static_assert(offsetof(WBP_Online_PlayerDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function WBP_Online_PlayerDetail.WBP_Online_PlayerDetail_C.Set Lobby Player Data
-// 0x0118 (0x0118 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data final
 {
 public:
-	struct FLobbyPlayerData                       InPlayerData;                                      // 0x0000(0x00F8)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          bIsBlocked;                                        // 0x00F8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsOwn;                                            // 0x00F9(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSentNice;                                       // 0x00FA(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FB[0x1];                                       // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NiceCounts;                                        // 0x00FC(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 ProductUserId_0;                                   // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	EBlockPlayerState                             BlockType;                                         // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsNPC;                                            // 0x0111(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0115(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0116(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0117(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLobbyPlayerData                       InPlayerData;                                      // 0x0000(0x0100)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          bIsBlocked;                                        // 0x0100(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsOwn;                                            // 0x0101(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSentNice;                                       // 0x0102(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_103[0x1];                                      // 0x0103(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NiceCounts;                                        // 0x0104(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 ProductUserId_0;                                   // 0x0108(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	EBlockPlayerState                             BlockType;                                         // 0x0118(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsNPC;                                            // 0x0119(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x011B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x011D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x011E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x011F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data) == 0x000008, "Wrong alignment on WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data");
-static_assert(sizeof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data) == 0x000118, "Wrong size on WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data");
+static_assert(sizeof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data) == 0x000120, "Wrong size on WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, InPlayerData) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::InPlayerData' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsBlocked) == 0x0000F8, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsBlocked' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsOwn) == 0x0000F9, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsOwn' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsSentNice) == 0x0000FA, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsSentNice' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, NiceCounts) == 0x0000FC, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::NiceCounts' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, ProductUserId_0) == 0x000100, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::ProductUserId_0' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, BlockType) == 0x000110, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::BlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsNPC) == 0x000111, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsNPC' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_bool_Variable) == 0x000112, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_byte_Variable) == 0x000113, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_byte_Variable_1) == 0x000114, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, CallFunc_BooleanOR_ReturnValue) == 0x000115, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, CallFunc_BooleanOR_ReturnValue_1) == 0x000116, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, K2Node_Select_Default) == 0x000117, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsBlocked) == 0x000100, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsBlocked' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsOwn) == 0x000101, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsOwn' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsSentNice) == 0x000102, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsSentNice' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, NiceCounts) == 0x000104, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::NiceCounts' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, ProductUserId_0) == 0x000108, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::ProductUserId_0' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, BlockType) == 0x000118, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::BlockType' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, bIsNPC) == 0x000119, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::bIsNPC' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_bool_Variable) == 0x00011A, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_byte_Variable) == 0x00011B, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, Temp_byte_Variable_1) == 0x00011C, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, CallFunc_BooleanOR_ReturnValue) == 0x00011D, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, CallFunc_BooleanOR_ReturnValue_1) == 0x00011E, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data, K2Node_Select_Default) == 0x00011F, "Member 'WBP_Online_PlayerDetail_C_Set_Lobby_Player_Data::K2Node_Select_Default' has a wrong offset!");
 
 // Function WBP_Online_PlayerDetail.WBP_Online_PlayerDetail_C.SetPlayerDetailData
-// 0x0140 (0x0140 - 0x0000)
+// 0x0148 (0x0148 - 0x0000)
 struct WBP_Online_PlayerDetail_C_SetPlayerDetailData final
 {
 public:
-	struct FLobbyPlayerData                       InPlayerData;                                      // 0x0000(0x00F8)(BlueprintVisible, BlueprintReadOnly, Parm)
-	EBlockPlayerState                             InBlockType;                                       // 0x00F8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInIsOwn;                                          // 0x00F9(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInIsSendNice;                                     // 0x00FA(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInIsNPC;                                          // 0x00FB(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InNiceCount;                                       // 0x00FC(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 InProductUserId;                                   // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          bInIsOwnHost;                                      // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMatchingLobbyType                            InLobbyType;                                       // 0x0111(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_112[0x6];                                      // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 InPlatformId;                                      // 0x0118(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 InPlatform;                                        // 0x0128(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          bInIsEnableBlockWindowButton;                      // 0x0138(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLobbyPlayerData                       InPlayerData;                                      // 0x0000(0x0100)(BlueprintVisible, BlueprintReadOnly, Parm)
+	EBlockPlayerState                             InBlockType;                                       // 0x0100(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsOwn;                                          // 0x0101(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsSendNice;                                     // 0x0102(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsNPC;                                          // 0x0103(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InNiceCount;                                       // 0x0104(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 InProductUserId;                                   // 0x0108(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          bInIsOwnHost;                                      // 0x0118(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMatchingLobbyType                            InLobbyType;                                       // 0x0119(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11A[0x6];                                      // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 InPlatformId;                                      // 0x0120(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 InPlatform;                                        // 0x0130(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          bInIsEnableBlockWindowButton;                      // 0x0140(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Online_PlayerDetail_C_SetPlayerDetailData) == 0x000008, "Wrong alignment on WBP_Online_PlayerDetail_C_SetPlayerDetailData");
-static_assert(sizeof(WBP_Online_PlayerDetail_C_SetPlayerDetailData) == 0x000140, "Wrong size on WBP_Online_PlayerDetail_C_SetPlayerDetailData");
+static_assert(sizeof(WBP_Online_PlayerDetail_C_SetPlayerDetailData) == 0x000148, "Wrong size on WBP_Online_PlayerDetail_C_SetPlayerDetailData");
 static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlayerData) == 0x000000, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlayerData' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InBlockType) == 0x0000F8, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsOwn) == 0x0000F9, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsOwn' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsSendNice) == 0x0000FA, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsSendNice' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsNPC) == 0x0000FB, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsNPC' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InNiceCount) == 0x0000FC, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InNiceCount' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InProductUserId) == 0x000100, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InProductUserId' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsOwnHost) == 0x000110, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsOwnHost' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InLobbyType) == 0x000111, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InLobbyType' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlatformId) == 0x000118, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlatformId' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlatform) == 0x000128, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsEnableBlockWindowButton) == 0x000138, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsEnableBlockWindowButton' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InBlockType) == 0x000100, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InBlockType' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsOwn) == 0x000101, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsOwn' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsSendNice) == 0x000102, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsSendNice' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsNPC) == 0x000103, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsNPC' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InNiceCount) == 0x000104, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InNiceCount' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InProductUserId) == 0x000108, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InProductUserId' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsOwnHost) == 0x000118, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsOwnHost' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InLobbyType) == 0x000119, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InLobbyType' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlatformId) == 0x000120, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlatformId' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, InPlatform) == 0x000130, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::InPlatform' has a wrong offset!");
+static_assert(offsetof(WBP_Online_PlayerDetail_C_SetPlayerDetailData, bInIsEnableBlockWindowButton) == 0x000140, "Member 'WBP_Online_PlayerDetail_C_SetPlayerDetailData::bInIsEnableBlockWindowButton' has a wrong offset!");
 
 }
 

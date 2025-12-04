@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,33 +20,45 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C
-// 0x0080 (0x0380 - 0x0300)
+// 0x00C8 (0x03C8 - 0x0300)
 class UWBP_HonorTitle_Plate_C final : public UHonorTitlePlateUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWBP_FontScroll_C*                      BronzeFont;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      DefaultFont;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DMY_HonorTitle;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      GoldFont;                                          // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      RainbowFont;                                       // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FontScroll_C*                      SilverFont;                                        // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher;                                    // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         CurrentIndex;                                      // 0x0340(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_344[0x4];                                      // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           SetupTextScrollTimerHandle;                        // 0x0348(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           SetupTextDisappearTimerHandle;                     // 0x0350(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           StartScrollTimingTimerHandle;                      // 0x0358(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         DelayTime;                                         // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_364[0x4];                                      // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              FinishLoad;                                        // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          IsSetUp;                                           // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      BronzeFont_LegendCompe;                            // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      DefaultFont;                                       // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      DefaultFont_LegendCompe;                           // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DMY_HonorTitle;                                    // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DMY_HonorTitle_Legend;                             // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      GoldFont;                                          // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      GoldFont_LegendCompe;                              // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      RainbowFont;                                       // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      RainbowFont_LegendCompe;                           // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             RoundCountText;                                    // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      SilverFont;                                        // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FontScroll_C*                      SilverFont_LegendCompe;                            // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher;                                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_LegendCompeFont;                    // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Overlay;                            // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         CurrentIndex;                                      // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_38C[0x4];                                      // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           SetupTextScrollTimerHandle;                        // 0x0390(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           SetupTextDisappearTimerHandle;                     // 0x0398(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           StartScrollTimingTimerHandle;                      // 0x03A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                         DelayTime;                                         // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AC[0x4];                                      // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              FinishLoad;                                        // 0x03B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsSetUp;                                           // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Construct();
 	void ExecuteUbergraph_WBP_HonorTitle_Plate(int32 EntryPoint);
+	void OnLoaded_BB0FBEFC4AB0250706392F9C5C9D14C8(class UObject* Loaded);
 	void OnLoaded_EEF55983447D6E2AAAF1AB9849C4A735(class UObject* Loaded);
 	void SetHonorTitle(int32 InHonorId);
+	void SetupLegendCompeHonorTitle(TSoftObjectPtr<class UObject> PlateImageTexture2D, EHonorTitleFontColor FontColor, const class FText& HonorTitleVB, int32 RoundCount);
+	void SetupNormalHonorTitlePlate(TSoftObjectPtr<class UObject> PlateImageTexture2D, EHonorTitleFontColor FontColor, const class FText& HonorTitleVB);
 	void SetupTitlePlate(const struct FHonorTitleListData& SetUpData);
 	void StartTextScroll();
 	void StopTextScroll();
@@ -63,22 +75,31 @@ public:
 	}
 };
 static_assert(alignof(UWBP_HonorTitle_Plate_C) == 0x000008, "Wrong alignment on UWBP_HonorTitle_Plate_C");
-static_assert(sizeof(UWBP_HonorTitle_Plate_C) == 0x000380, "Wrong size on UWBP_HonorTitle_Plate_C");
+static_assert(sizeof(UWBP_HonorTitle_Plate_C) == 0x0003C8, "Wrong size on UWBP_HonorTitle_Plate_C");
 static_assert(offsetof(UWBP_HonorTitle_Plate_C, UberGraphFrame) == 0x000300, "Member 'UWBP_HonorTitle_Plate_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_HonorTitle_Plate_C, BronzeFont) == 0x000308, "Member 'UWBP_HonorTitle_Plate_C::BronzeFont' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, DefaultFont) == 0x000310, "Member 'UWBP_HonorTitle_Plate_C::DefaultFont' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, DMY_HonorTitle) == 0x000318, "Member 'UWBP_HonorTitle_Plate_C::DMY_HonorTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, GoldFont) == 0x000320, "Member 'UWBP_HonorTitle_Plate_C::GoldFont' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, RainbowFont) == 0x000328, "Member 'UWBP_HonorTitle_Plate_C::RainbowFont' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, SilverFont) == 0x000330, "Member 'UWBP_HonorTitle_Plate_C::SilverFont' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, WidgetSwitcher) == 0x000338, "Member 'UWBP_HonorTitle_Plate_C::WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, CurrentIndex) == 0x000340, "Member 'UWBP_HonorTitle_Plate_C::CurrentIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, SetupTextScrollTimerHandle) == 0x000348, "Member 'UWBP_HonorTitle_Plate_C::SetupTextScrollTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, SetupTextDisappearTimerHandle) == 0x000350, "Member 'UWBP_HonorTitle_Plate_C::SetupTextDisappearTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, StartScrollTimingTimerHandle) == 0x000358, "Member 'UWBP_HonorTitle_Plate_C::StartScrollTimingTimerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, DelayTime) == 0x000360, "Member 'UWBP_HonorTitle_Plate_C::DelayTime' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, FinishLoad) == 0x000368, "Member 'UWBP_HonorTitle_Plate_C::FinishLoad' has a wrong offset!");
-static_assert(offsetof(UWBP_HonorTitle_Plate_C, IsSetUp) == 0x000378, "Member 'UWBP_HonorTitle_Plate_C::IsSetUp' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, BronzeFont_LegendCompe) == 0x000310, "Member 'UWBP_HonorTitle_Plate_C::BronzeFont_LegendCompe' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, DefaultFont) == 0x000318, "Member 'UWBP_HonorTitle_Plate_C::DefaultFont' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, DefaultFont_LegendCompe) == 0x000320, "Member 'UWBP_HonorTitle_Plate_C::DefaultFont_LegendCompe' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, DMY_HonorTitle) == 0x000328, "Member 'UWBP_HonorTitle_Plate_C::DMY_HonorTitle' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, DMY_HonorTitle_Legend) == 0x000330, "Member 'UWBP_HonorTitle_Plate_C::DMY_HonorTitle_Legend' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, GoldFont) == 0x000338, "Member 'UWBP_HonorTitle_Plate_C::GoldFont' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, GoldFont_LegendCompe) == 0x000340, "Member 'UWBP_HonorTitle_Plate_C::GoldFont_LegendCompe' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, RainbowFont) == 0x000348, "Member 'UWBP_HonorTitle_Plate_C::RainbowFont' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, RainbowFont_LegendCompe) == 0x000350, "Member 'UWBP_HonorTitle_Plate_C::RainbowFont_LegendCompe' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, RoundCountText) == 0x000358, "Member 'UWBP_HonorTitle_Plate_C::RoundCountText' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, SilverFont) == 0x000360, "Member 'UWBP_HonorTitle_Plate_C::SilverFont' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, SilverFont_LegendCompe) == 0x000368, "Member 'UWBP_HonorTitle_Plate_C::SilverFont_LegendCompe' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, WidgetSwitcher) == 0x000370, "Member 'UWBP_HonorTitle_Plate_C::WidgetSwitcher' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, WidgetSwitcher_LegendCompeFont) == 0x000378, "Member 'UWBP_HonorTitle_Plate_C::WidgetSwitcher_LegendCompeFont' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, WidgetSwitcher_Overlay) == 0x000380, "Member 'UWBP_HonorTitle_Plate_C::WidgetSwitcher_Overlay' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, CurrentIndex) == 0x000388, "Member 'UWBP_HonorTitle_Plate_C::CurrentIndex' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, SetupTextScrollTimerHandle) == 0x000390, "Member 'UWBP_HonorTitle_Plate_C::SetupTextScrollTimerHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, SetupTextDisappearTimerHandle) == 0x000398, "Member 'UWBP_HonorTitle_Plate_C::SetupTextDisappearTimerHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, StartScrollTimingTimerHandle) == 0x0003A0, "Member 'UWBP_HonorTitle_Plate_C::StartScrollTimingTimerHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, DelayTime) == 0x0003A8, "Member 'UWBP_HonorTitle_Plate_C::DelayTime' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, FinishLoad) == 0x0003B0, "Member 'UWBP_HonorTitle_Plate_C::FinishLoad' has a wrong offset!");
+static_assert(offsetof(UWBP_HonorTitle_Plate_C, IsSetUp) == 0x0003C0, "Member 'UWBP_HonorTitle_Plate_C::IsSetUp' has a wrong offset!");
 
 }
 

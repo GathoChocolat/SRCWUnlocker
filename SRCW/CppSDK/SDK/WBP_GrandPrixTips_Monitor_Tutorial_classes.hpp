@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -23,11 +23,11 @@ class UWBP_GrandPrixTips_Monitor_Tutorial_C final : public UDodonpaEventDisplayW
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Zero4_in;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero4_In;                                          // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero3_2_In;                                        // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero2_2_In;                                        // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Zero1_In;                                          // 0x0300(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Zero0_in;                                          // 0x0308(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Zero0_In;                                          // 0x0308(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Character;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 CircleSpread;                                      // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Eff_10;                                            // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -84,11 +84,11 @@ public:
 static_assert(alignof(UWBP_GrandPrixTips_Monitor_Tutorial_C) == 0x000008, "Wrong alignment on UWBP_GrandPrixTips_Monitor_Tutorial_C");
 static_assert(sizeof(UWBP_GrandPrixTips_Monitor_Tutorial_C) == 0x000438, "Wrong size on UWBP_GrandPrixTips_Monitor_Tutorial_C");
 static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Zero4_in) == 0x0002E8, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Zero4_in' has a wrong offset!");
+static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Zero4_In) == 0x0002E8, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Zero4_In' has a wrong offset!");
 static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Zero3_2_In) == 0x0002F0, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Zero3_2_In' has a wrong offset!");
 static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Zero2_2_In) == 0x0002F8, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Zero2_2_In' has a wrong offset!");
 static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Zero1_In) == 0x000300, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Zero1_In' has a wrong offset!");
-static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Zero0_in) == 0x000308, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Zero0_in' has a wrong offset!");
+static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Zero0_In) == 0x000308, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Zero0_In' has a wrong offset!");
 static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Character) == 0x000310, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Character' has a wrong offset!");
 static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, CircleSpread) == 0x000318, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::CircleSpread' has a wrong offset!");
 static_assert(offsetof(UWBP_GrandPrixTips_Monitor_Tutorial_C, Eff_10) == 0x000320, "Member 'UWBP_GrandPrixTips_Monitor_Tutorial_C::Eff_10' has a wrong offset!");

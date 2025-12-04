@@ -331,31 +331,6 @@ enum class EWidgetManZLayer : uint8
 	EWidgetManZLayer_MAX                     = 4,
 };
 
-// ScriptStruct UnionUI.UnionLoadingCourseImage
-// 0x0050 (0x0058 - 0x0008)
-struct FUnionLoadingCourseImage final : public FTableRowBase
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              CourseBG;                                          // 0x0008(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UTexture2D>              CourseIcon;                                        // 0x0030(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FUnionLoadingCourseImage) == 0x000008, "Wrong alignment on FUnionLoadingCourseImage");
-static_assert(sizeof(FUnionLoadingCourseImage) == 0x000058, "Wrong size on FUnionLoadingCourseImage");
-static_assert(offsetof(FUnionLoadingCourseImage, CourseBG) == 0x000008, "Member 'FUnionLoadingCourseImage::CourseBG' has a wrong offset!");
-static_assert(offsetof(FUnionLoadingCourseImage, CourseIcon) == 0x000030, "Member 'FUnionLoadingCourseImage::CourseIcon' has a wrong offset!");
-
-// ScriptStruct UnionUI.TaggedString
-// 0x0018 (0x0018 - 0x0000)
-struct FTaggedString final
-{
-public:
-	class FString                                 Content;                                           // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FTaggedString) == 0x000008, "Wrong alignment on FTaggedString");
-static_assert(sizeof(FTaggedString) == 0x000018, "Wrong size on FTaggedString");
-static_assert(offsetof(FTaggedString, Content) == 0x000000, "Member 'FTaggedString::Content' has a wrong offset!");
-
 // ScriptStruct UnionUI.UnionUIGridLayoutButtonData
 // 0x0038 (0x0038 - 0x0000)
 struct FUnionUIGridLayoutButtonData final
@@ -382,6 +357,19 @@ static_assert(offsetof(FUnionUIGridLayoutButtonData, WidgetUp) == 0x000018, "Mem
 static_assert(offsetof(FUnionUIGridLayoutButtonData, WidgetRight) == 0x000020, "Member 'FUnionUIGridLayoutButtonData::WidgetRight' has a wrong offset!");
 static_assert(offsetof(FUnionUIGridLayoutButtonData, WidgetDown) == 0x000028, "Member 'FUnionUIGridLayoutButtonData::WidgetDown' has a wrong offset!");
 static_assert(offsetof(FUnionUIGridLayoutButtonData, WidgetLeft) == 0x000030, "Member 'FUnionUIGridLayoutButtonData::WidgetLeft' has a wrong offset!");
+
+// ScriptStruct UnionUI.UnionLoadingCourseImage
+// 0x0050 (0x0058 - 0x0008)
+struct FUnionLoadingCourseImage final : public FTableRowBase
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              CourseBG;                                          // 0x0008(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              CourseIcon;                                        // 0x0030(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FUnionLoadingCourseImage) == 0x000008, "Wrong alignment on FUnionLoadingCourseImage");
+static_assert(sizeof(FUnionLoadingCourseImage) == 0x000058, "Wrong size on FUnionLoadingCourseImage");
+static_assert(offsetof(FUnionLoadingCourseImage, CourseBG) == 0x000008, "Member 'FUnionLoadingCourseImage::CourseBG' has a wrong offset!");
+static_assert(offsetof(FUnionLoadingCourseImage, CourseIcon) == 0x000030, "Member 'FUnionLoadingCourseImage::CourseIcon' has a wrong offset!");
 
 // ScriptStruct UnionUI.UnionRichImageRow
 // 0x0010 (0x00F0 - 0x00E0)
@@ -508,6 +496,18 @@ static_assert(offsetof(FUnionUIGridNavigationBuilderButtonData, bLeft) == 0x0000
 static_assert(offsetof(FUnionUIGridNavigationBuilderButtonData, bRight) == 0x000011, "Member 'FUnionUIGridNavigationBuilderButtonData::bRight' has a wrong offset!");
 static_assert(offsetof(FUnionUIGridNavigationBuilderButtonData, bUp) == 0x000012, "Member 'FUnionUIGridNavigationBuilderButtonData::bUp' has a wrong offset!");
 static_assert(offsetof(FUnionUIGridNavigationBuilderButtonData, bDown) == 0x000013, "Member 'FUnionUIGridNavigationBuilderButtonData::bDown' has a wrong offset!");
+
+// ScriptStruct UnionUI.TaggedString
+// 0x0018 (0x0018 - 0x0000)
+struct FTaggedString final
+{
+public:
+	class FString                                 Content;                                           // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FTaggedString) == 0x000008, "Wrong alignment on FTaggedString");
+static_assert(sizeof(FTaggedString) == 0x000018, "Wrong size on FTaggedString");
+static_assert(offsetof(FTaggedString, Content) == 0x000000, "Member 'FTaggedString::Content' has a wrong offset!");
 
 // ScriptStruct UnionUI.WidgetEventDispatcherStocker
 // 0x0010 (0x0010 - 0x0000)

@@ -59,7 +59,7 @@ public:
 	uint8                                         Pad_3E9[0x7];                                      // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void(EStageId StageId, int32 Index)> On3PieceStageIconFocusEvent;       // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void(EStageId StageId, int32 PanelIndex, int32 ButtonIndex)> OnCrossWorldStageIconFocusEvent; // 0x0400(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(EStageId StageId)> OnStoreShortcutClickedDelegate;                 // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(EStageId StageId)> OnStoreShortcutPressedDelegate;                 // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void BindEventCourseSelect();
@@ -70,11 +70,11 @@ public:
 	void Get3pieceStageIds(EStageId* StageCourseId, EStageId* StageCourseId1, EStageId* StageCourseId2);
 	void Is_3Piece_Enable_Course(int32 Index_0, bool* bEnableCourse);
 	void IsCrossWorldEnableCourse(int32 InPanelIndex, int32 InButtonIndex, bool* bEnableCourse);
+	void On_Store_Shortcut_Pressed(EStageId StageId);
 	void OnCancel(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void OnDecision(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void OnFocusCrossWorldThumbnail(EStageId StageId, int32 PanelIndex, int32 ButtonIndex);
 	void OnFocusThumbnail(EStageId StageCourseId, int32 ButtonIndex);
-	void OnStoreShortcutClicked(EStageId StageId);
 	void Set_Time_Trial_3Pieace_Course(TArray<EStageId>& InCourseId, double OpenThreshold, bool bForceHidden, bool bForceInvalid, TArray<ETimeTrialClearRankId>& InTimeTrialClearRanks);
 	void Set3PieceCourseId(int32 InIndex, EStageId InCourseId, double OpenThreshold, bool bForceHidden, bool bForceInvalid);
 	void Set3PieceLastFocusIndex(int32 InButtonIndex);
@@ -135,7 +135,7 @@ static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, NewVar_1) == 0
 static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, IsEventBind) == 0x0003E8, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::IsEventBind' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, On3PieceStageIconFocusEvent) == 0x0003F0, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::On3PieceStageIconFocusEvent' has a wrong offset!");
 static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnCrossWorldStageIconFocusEvent) == 0x000400, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnCrossWorldStageIconFocusEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnStoreShortcutClickedDelegate) == 0x000410, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnStoreShortcutClickedDelegate' has a wrong offset!");
+static_assert(offsetof(UWBP_CourseSelect_Sub_ThumbnailSelecter_C, OnStoreShortcutPressedDelegate) == 0x000410, "Member 'UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnStoreShortcutPressedDelegate' has a wrong offset!");
 
 }
 

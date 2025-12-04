@@ -10,9 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -114,7 +115,7 @@ public:
 	void SetButtonFocusType(EButtonFocusType ButtonFocusType);
 	void SetButtonsInteractableState(class UUnionUIButtonsPanel* Buttons, bool bIsInteractable);
 	void SettingGrayOutButton(int32 SwitcherIndex, int32 ButtonIndex);
-	void Setup(int32 SwitcherIndex);
+	void Setup(int32 SwitcherIndex, EPrivateMatchShowMenuType OpenShowMenuType);
 	void SetupButtonsPanels();
 	void SetupCompletedWindow(bool bJoin);
 	void SetupWaitingWindow(bool bJoin);

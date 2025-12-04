@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
 
@@ -22,108 +22,108 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Race_HUD_Player01.WBP_Race_HUD_Player01_C
-// 0x0328 (0x09A0 - 0x0678)
+// 0x0328 (0x09A8 - 0x0680)
 class UWBP_Race_HUD_Player01_C final : public UUnionRaceUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0678(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       HUD_Out;                                           // 0x0680(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       HUD_Loop;                                          // 0x0688(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       HUD_In;                                            // 0x0690(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                           CanvasPanel_HUD;                                   // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           CanvasPanel_ItemWarningArea;                       // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           CanvasPanel_StartInfo;                             // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           CLIP_TextDirection;                                // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DSP_ItemWarning_Belt;                              // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Panel;                                             // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_TimeTrial;                             // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PauseMenu_C*                       WBP_PauseMenu;                                     // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_AirTrickText_C*               WBP_Race_AirTrickText;                             // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_GoalText_C*                   WBP_Race_GoalText;                                 // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_CourseMap_C*              WBP_Race_HUD_CourseMap;                            // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Aming_C*              WBP_Race_HUD_Sub_Aiming;                           // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_BasicOperation_C*     WBP_Race_HUD_Sub_BasicOperation;                   // 0x06F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Boost_C*              WBP_Race_HUD_Sub_Boost;                            // 0x0700(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Charahead_C*          WBP_Race_HUD_Sub_Charahead_01;                     // 0x0708(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Ring_C*               WBP_Race_HUD_Sub_Coin;                             // 0x0710(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C* WBP_Race_HUD_Sub_Festa_TeamGroup_P1;               // 0x0718(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Festa_TeamHUD_C*      WBP_Race_HUD_Sub_Festa_TeamHUD;                    // 0x0720(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_GadgetIcon_Simple_C*  WBP_Race_HUD_Sub_GadgetIcon_Simple;                // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_HitInfo_C*            WBP_Race_HUD_Sub_HitInfo;                          // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemIconSet_Simple_C* WBP_Race_HUD_Sub_ItemIconSet_Simple;               // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_ItemWarning_C*        WBP_Race_HUD_Sub_ItemWarning;                      // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_LAP_C*                WBP_Race_HUD_Sub_LAP;                              // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UObject*                                WBP_Race_HUD_Sub_PlayerName;                       // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Rank_C*               WBP_Race_HUD_Sub_Rank;                             // 0x0758(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Rival_RaceStart_C*    WBP_Race_HUD_Sub_Rival_RaceStart;                  // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_RSR_5rings_Simple_C*  WBP_Race_HUD_Sub_RSR_5rings_Simple;                // 0x0768(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_SpeedNum_C*           WBP_Race_HUD_Sub_SpeedNum;                         // 0x0770(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Aming_C*              WBP_Race_HUD_Sub_Targeted;                         // 0x0778(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_TextBalloon_C*        WBP_Race_HUD_Sub_TextBalloon;                      // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_Time_C*               WBP_Race_HUD_Sub_Time;                             // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_TimeTrial_Time_C*     WBP_Race_HUD_Sub_TimeTrial_Time;                   // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C* WBP_Race_HUD_Sub_TimeTrial_TimeDiff;               // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C* WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header; // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_StartDash_C*                  WBP_Race_StartDash;                                // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_StartText_C*                  WBP_Race_StartText;                                // 0x07B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Race_Sub_BtnGuide_C*               WBP_Race_Sub_BtnGuide;                             // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FVector2D                              SafeZoneSize;                                      // 0x07C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              WarningMovePos;                                    // 0x07D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DebugTmpFlag;                                      // 0x07E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7E1[0x7];                                      // 0x07E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        DebugElapsedTime;                                  // 0x07E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        DebugIntervalTime;                                 // 0x07F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bMinimapDefault;                                   // 0x07F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERaceInfoStateType                            In_New_State;                                      // 0x07F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7FA[0x6];                                      // 0x07FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnchorData                            WarningLayout;                                     // 0x0800(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FWidgetTransform                       WarningTransform;                                  // 0x0840(0x0038)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FVector2D                              WarningPosition;                                   // 0x0878(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<bool>                                  YellowDrillShortTimeFlag;                          // 0x0888(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TSoftObjectPtr<class UTexture2D>              PanelDebugTexture;                                 // 0x0898(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          TmpEnable;                                         // 0x08C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C1[0x7];                                      // 0x08C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        tmpFloat;                                          // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         LostItemRacerId;                                   // 0x08D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EItemId                                       LostItemId;                                        // 0x08D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8D5[0x3];                                      // 0x08D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        ManualAimingScale;                                 // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsKeepScale;                                       // 0x08E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8E1[0x7];                                      // 0x08E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 ShuffleRacerIndex;                                 // 0x08E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsGoal;                                            // 0x08F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8F9[0x7];                                      // 0x08F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 GeneralAttInt;                                     // 0x0900(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsEnableVisibilityRank;                            // 0x0910(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnableVisibilityItemIcon;                        // 0x0911(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnableVisibilityRankNum;                         // 0x0912(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnableVisibilityLap;                             // 0x0913(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnableVisibilityHitInfo;                         // 0x0914(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnableVisibilityTextBalloon;                     // 0x0915(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_916[0x2];                                      // 0x0916(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        ChargeGaugePer;                                    // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsTimeTrial;                                       // 0x0920(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_921[0x7];                                      // 0x0921(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector2D>                      TimeTrialLapPos;                                   // 0x0928(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	TArray<class UWBP_Race_HUD_Sub_TimeTrial_LAP_Time_C*> TimeTrailTimeLap;                          // 0x0938(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FVector2D                              ScreenViewportSize;                                // 0x0948(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ViewAspect;                                        // 0x0958(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              TimeTrialMainPos;                                  // 0x0968(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMenuSpeedClassId                             SpeedClassId;                                      // 0x0978(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStageId                                      StageId;                                           // 0x0979(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DebugCourseMapHidden;                              // 0x097A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsInBoostCharge;                                   // 0x097B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnableVisibilityTeamRank;                        // 0x097C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOnControlRelease;                                // 0x097D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOnControlItemUse;                                // 0x097E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOnControlGuideFlight;                            // 0x097F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOnRaceActionTutorial;                            // 0x0980(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFeverControl;                                    // 0x0981(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsSuggestUpInput;                                  // 0x0982(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETutorialAction                               tutorialAction;                                    // 0x0983(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_984[0x4];                                      // 0x0984(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserGadgetPresetData                  GhostGadgetPresetData;                             // 0x0988(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsExecChargeEffect;                                // 0x0998(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0680(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       HUD_Out;                                           // 0x0688(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       HUD_Loop;                                          // 0x0690(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       HUD_In;                                            // 0x0698(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_HUD;                                   // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_ItemWarningArea;                       // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_StartInfo;                             // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CLIP_TextDirection;                                // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DSP_ItemWarning_Belt;                              // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Panel;                                             // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_TimeTrial;                             // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PauseMenu_C*                       WBP_PauseMenu;                                     // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_AirTrickText_C*               WBP_Race_AirTrickText;                             // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_GoalText_C*                   WBP_Race_GoalText;                                 // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_CourseMap_C*              WBP_Race_HUD_CourseMap;                            // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Aming_C*              WBP_Race_HUD_Sub_Aiming;                           // 0x06F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_BasicOperation_C*     WBP_Race_HUD_Sub_BasicOperation;                   // 0x0700(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Boost_C*              WBP_Race_HUD_Sub_Boost;                            // 0x0708(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Charahead_C*          WBP_Race_HUD_Sub_Charahead_01;                     // 0x0710(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Ring_C*               WBP_Race_HUD_Sub_Coin;                             // 0x0718(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Festa_TeamGroup_P1_C* WBP_Race_HUD_Sub_Festa_TeamGroup_P1;               // 0x0720(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Festa_TeamHUD_C*      WBP_Race_HUD_Sub_Festa_TeamHUD;                    // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_GadgetIcon_Simple_C*  WBP_Race_HUD_Sub_GadgetIcon_Simple;                // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_HitInfo_C*            WBP_Race_HUD_Sub_HitInfo;                          // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemIconSet_Simple_C* WBP_Race_HUD_Sub_ItemIconSet_Simple;               // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_ItemWarning_C*        WBP_Race_HUD_Sub_ItemWarning;                      // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_LAP_C*                WBP_Race_HUD_Sub_LAP;                              // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UObject*                                WBP_Race_HUD_Sub_PlayerName;                       // 0x0758(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Rank_C*               WBP_Race_HUD_Sub_Rank;                             // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Rival_RaceStart_C*    WBP_Race_HUD_Sub_Rival_RaceStart;                  // 0x0768(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_RSR_5rings_Simple_C*  WBP_Race_HUD_Sub_RSR_5rings_Simple;                // 0x0770(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_SpeedNum_C*           WBP_Race_HUD_Sub_SpeedNum;                         // 0x0778(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Aming_C*              WBP_Race_HUD_Sub_Targeted;                         // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_TextBalloon_C*        WBP_Race_HUD_Sub_TextBalloon;                      // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_Time_C*               WBP_Race_HUD_Sub_Time;                             // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_TimeTrial_Time_C*     WBP_Race_HUD_Sub_TimeTrial_Time;                   // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_TimeTrial_TimeDiff_C* WBP_Race_HUD_Sub_TimeTrial_TimeDiff;               // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C* WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header; // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_StartDash_C*                  WBP_Race_StartDash;                                // 0x07B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_StartText_C*                  WBP_Race_StartText;                                // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Race_Sub_BtnGuide_C*               WBP_Race_Sub_BtnGuide;                             // 0x07C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FVector2D                              SafeZoneSize;                                      // 0x07C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              WarningMovePos;                                    // 0x07D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DebugTmpFlag;                                      // 0x07E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7E9[0x7];                                      // 0x07E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        DebugElapsedTime;                                  // 0x07F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        DebugIntervalTime;                                 // 0x07F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bMinimapDefault;                                   // 0x0800(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERaceInfoStateType                            In_New_State;                                      // 0x0801(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_802[0x6];                                      // 0x0802(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnchorData                            WarningLayout;                                     // 0x0808(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FWidgetTransform                       WarningTransform;                                  // 0x0848(0x0038)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FVector2D                              WarningPosition;                                   // 0x0880(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<bool>                                  YellowDrillShortTimeFlag;                          // 0x0890(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TSoftObjectPtr<class UTexture2D>              PanelDebugTexture;                                 // 0x08A0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          TmpEnable;                                         // 0x08C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C9[0x7];                                      // 0x08C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        tmpFloat;                                          // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LostItemRacerId;                                   // 0x08D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EItemId                                       LostItemId;                                        // 0x08DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8DD[0x3];                                      // 0x08DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        ManualAimingScale;                                 // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsKeepScale;                                       // 0x08E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8E9[0x7];                                      // 0x08E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 ShuffleRacerIndex;                                 // 0x08F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsGoal;                                            // 0x0900(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_901[0x7];                                      // 0x0901(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 GeneralAttInt;                                     // 0x0908(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsEnableVisibilityRank;                            // 0x0918(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnableVisibilityItemIcon;                        // 0x0919(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnableVisibilityRankNum;                         // 0x091A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnableVisibilityLap;                             // 0x091B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnableVisibilityHitInfo;                         // 0x091C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnableVisibilityTextBalloon;                     // 0x091D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91E[0x2];                                      // 0x091E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        ChargeGaugePer;                                    // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsTimeTrial;                                       // 0x0928(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_929[0x7];                                      // 0x0929(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector2D>                      TimeTrialLapPos;                                   // 0x0930(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	TArray<class UWBP_Race_HUD_Sub_TimeTrial_LAP_Time_C*> TimeTrailTimeLap;                          // 0x0940(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FVector2D                              ScreenViewportSize;                                // 0x0950(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ViewAspect;                                        // 0x0960(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              TimeTrialMainPos;                                  // 0x0970(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMenuSpeedClassId                             SpeedClassId;                                      // 0x0980(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStageId                                      StageId;                                           // 0x0981(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DebugCourseMapHidden;                              // 0x0982(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsInBoostCharge;                                   // 0x0983(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnableVisibilityTeamRank;                        // 0x0984(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOnControlRelease;                                // 0x0985(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOnControlItemUse;                                // 0x0986(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOnControlGuideFlight;                            // 0x0987(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOnRaceActionTutorial;                            // 0x0988(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFeverControl;                                    // 0x0989(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsSuggestUpInput;                                  // 0x098A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETutorialAction                               tutorialAction;                                    // 0x098B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_98C[0x4];                                      // 0x098C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUserGadgetPresetData                  GhostGadgetPresetData;                             // 0x0990(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsExecChargeEffect;                                // 0x09A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AddCourseMapActor(class AActor* InAttackItem, EItemId InItemId);
@@ -212,11 +212,12 @@ public:
 	void SetItemLifeTimeRate(int32 PlayerControllerIndex, EItemInfoType ItemInfoType, float NewRate);
 	void SetItemPanelActive(int32 PlayerControllerIndex, bool bActive);
 	void SetItemPanelVisible(int32 PlayerControllerIndex, bool bVisible);
+	void SetItemRemainCount(int32 PlayerControllerIndex, EItemInfoType ItemInfoType, float RemainCount, float MaxCount);
 	void SetItemWarningUIVisible(bool bVisible);
 	void SetLapTimeInfo(int32 Minutes, int32 Seconds, int32 MilliSec);
 	void SetLapUIVisible(bool bVisible);
-	void SetLostItemInfo(int32 RacerId, EItemId ItemId);
-	void SetManualAimingUIVisible(int32 PlayerControllerIndex, bool bVisible, float Scale, bool IsScaleKeepInHoming);
+	void SetLostItemInfo(int32 RacerID, EItemId ItemId);
+	void SetManualAimingUIVisible(int32 PlayerControllerIndex, bool bVisible, float Scale, bool IsScaleKeepInHoming, EItemId ItemId);
 	void SetMinimapIconItem(const int32& RacerIndex, const EItemId& InItemId);
 	void SetMinimapIconType(const int32& RacerIndex, const EMinimapIconType& InMinimapIconType);
 	void SetMiniMapVisibility(bool bVisible);
@@ -261,7 +262,6 @@ public:
 	void UpdateAimUIScale(int32 PlayerIndex, const struct FVector& AimLocation);
 	void UpdateCharge(int32 PlayerControllerIndex, int32 Level, float Rate);
 	void UpdateHomingAimTargetedLocation(int32 PlayerControllerIndex, const struct FVector& PlayerLocation);
-	void UpdateIrregularInfiniteItem(int32 PlayerControllerIndex);
 	void UpdateManualAimingUILocation(int32 PlayerControllerIndex, const struct FVector& Location, const struct FMatrix& Rotation);
 	void UpdateRank(int32 PlayerControllerIndex, int32 ChangeAmount);
 	void UpdateReturnDashButton();
@@ -280,96 +280,96 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Race_HUD_Player01_C) == 0x000008, "Wrong alignment on UWBP_Race_HUD_Player01_C");
-static_assert(sizeof(UWBP_Race_HUD_Player01_C) == 0x0009A0, "Wrong size on UWBP_Race_HUD_Player01_C");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, UberGraphFrame) == 0x000678, "Member 'UWBP_Race_HUD_Player01_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, HUD_Out) == 0x000680, "Member 'UWBP_Race_HUD_Player01_C::HUD_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, HUD_Loop) == 0x000688, "Member 'UWBP_Race_HUD_Player01_C::HUD_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, HUD_In) == 0x000690, "Member 'UWBP_Race_HUD_Player01_C::HUD_In' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, CanvasPanel_HUD) == 0x000698, "Member 'UWBP_Race_HUD_Player01_C::CanvasPanel_HUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, CanvasPanel_ItemWarningArea) == 0x0006A0, "Member 'UWBP_Race_HUD_Player01_C::CanvasPanel_ItemWarningArea' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, CanvasPanel_StartInfo) == 0x0006A8, "Member 'UWBP_Race_HUD_Player01_C::CanvasPanel_StartInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, CLIP_TextDirection) == 0x0006B0, "Member 'UWBP_Race_HUD_Player01_C::CLIP_TextDirection' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, DSP_ItemWarning_Belt) == 0x0006B8, "Member 'UWBP_Race_HUD_Player01_C::DSP_ItemWarning_Belt' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, Panel) == 0x0006C0, "Member 'UWBP_Race_HUD_Player01_C::Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, VerticalBox_TimeTrial) == 0x0006C8, "Member 'UWBP_Race_HUD_Player01_C::VerticalBox_TimeTrial' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_PauseMenu) == 0x0006D0, "Member 'UWBP_Race_HUD_Player01_C::WBP_PauseMenu' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_AirTrickText) == 0x0006D8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_AirTrickText' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_GoalText) == 0x0006E0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_GoalText' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_CourseMap) == 0x0006E8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_CourseMap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Aiming) == 0x0006F0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Aiming' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_BasicOperation) == 0x0006F8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_BasicOperation' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Boost) == 0x000700, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Boost' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Charahead_01) == 0x000708, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Charahead_01' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Coin) == 0x000710, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Coin' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Festa_TeamGroup_P1) == 0x000718, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Festa_TeamGroup_P1' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Festa_TeamHUD) == 0x000720, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Festa_TeamHUD' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_GadgetIcon_Simple) == 0x000728, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_GadgetIcon_Simple' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_HitInfo) == 0x000730, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_HitInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_ItemIconSet_Simple) == 0x000738, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_ItemIconSet_Simple' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_ItemWarning) == 0x000740, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_ItemWarning' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_LAP) == 0x000748, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_LAP' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_PlayerName) == 0x000750, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Rank) == 0x000758, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Rank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Rival_RaceStart) == 0x000760, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Rival_RaceStart' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_RSR_5rings_Simple) == 0x000768, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_RSR_5rings_Simple' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_SpeedNum) == 0x000770, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_SpeedNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Targeted) == 0x000778, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Targeted' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TextBalloon) == 0x000780, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TextBalloon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Time) == 0x000788, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TimeTrial_Time) == 0x000790, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TimeTrial_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TimeTrial_TimeDiff) == 0x000798, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TimeTrial_TimeDiff' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header) == 0x0007A0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_StartDash) == 0x0007A8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_StartDash' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_StartText) == 0x0007B0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_StartText' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_Sub_BtnGuide) == 0x0007B8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_Sub_BtnGuide' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, SafeZoneSize) == 0x0007C0, "Member 'UWBP_Race_HUD_Player01_C::SafeZoneSize' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningMovePos) == 0x0007D0, "Member 'UWBP_Race_HUD_Player01_C::WarningMovePos' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugTmpFlag) == 0x0007E0, "Member 'UWBP_Race_HUD_Player01_C::DebugTmpFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugElapsedTime) == 0x0007E8, "Member 'UWBP_Race_HUD_Player01_C::DebugElapsedTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugIntervalTime) == 0x0007F0, "Member 'UWBP_Race_HUD_Player01_C::DebugIntervalTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, bMinimapDefault) == 0x0007F8, "Member 'UWBP_Race_HUD_Player01_C::bMinimapDefault' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, In_New_State) == 0x0007F9, "Member 'UWBP_Race_HUD_Player01_C::In_New_State' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningLayout) == 0x000800, "Member 'UWBP_Race_HUD_Player01_C::WarningLayout' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningTransform) == 0x000840, "Member 'UWBP_Race_HUD_Player01_C::WarningTransform' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningPosition) == 0x000878, "Member 'UWBP_Race_HUD_Player01_C::WarningPosition' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, YellowDrillShortTimeFlag) == 0x000888, "Member 'UWBP_Race_HUD_Player01_C::YellowDrillShortTimeFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, PanelDebugTexture) == 0x000898, "Member 'UWBP_Race_HUD_Player01_C::PanelDebugTexture' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, TmpEnable) == 0x0008C0, "Member 'UWBP_Race_HUD_Player01_C::TmpEnable' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, tmpFloat) == 0x0008C8, "Member 'UWBP_Race_HUD_Player01_C::tmpFloat' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, LostItemRacerId) == 0x0008D0, "Member 'UWBP_Race_HUD_Player01_C::LostItemRacerId' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, LostItemId) == 0x0008D4, "Member 'UWBP_Race_HUD_Player01_C::LostItemId' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, ManualAimingScale) == 0x0008D8, "Member 'UWBP_Race_HUD_Player01_C::ManualAimingScale' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsKeepScale) == 0x0008E0, "Member 'UWBP_Race_HUD_Player01_C::IsKeepScale' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, ShuffleRacerIndex) == 0x0008E8, "Member 'UWBP_Race_HUD_Player01_C::ShuffleRacerIndex' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsGoal) == 0x0008F8, "Member 'UWBP_Race_HUD_Player01_C::IsGoal' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, GeneralAttInt) == 0x000900, "Member 'UWBP_Race_HUD_Player01_C::GeneralAttInt' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityRank) == 0x000910, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityRank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityItemIcon) == 0x000911, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityItemIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityRankNum) == 0x000912, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityRankNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityLap) == 0x000913, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityLap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityHitInfo) == 0x000914, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityHitInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityTextBalloon) == 0x000915, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityTextBalloon' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, ChargeGaugePer) == 0x000918, "Member 'UWBP_Race_HUD_Player01_C::ChargeGaugePer' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsTimeTrial) == 0x000920, "Member 'UWBP_Race_HUD_Player01_C::IsTimeTrial' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, TimeTrialLapPos) == 0x000928, "Member 'UWBP_Race_HUD_Player01_C::TimeTrialLapPos' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, TimeTrailTimeLap) == 0x000938, "Member 'UWBP_Race_HUD_Player01_C::TimeTrailTimeLap' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, ScreenViewportSize) == 0x000948, "Member 'UWBP_Race_HUD_Player01_C::ScreenViewportSize' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, ViewAspect) == 0x000958, "Member 'UWBP_Race_HUD_Player01_C::ViewAspect' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, TimeTrialMainPos) == 0x000968, "Member 'UWBP_Race_HUD_Player01_C::TimeTrialMainPos' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, SpeedClassId) == 0x000978, "Member 'UWBP_Race_HUD_Player01_C::SpeedClassId' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, StageId) == 0x000979, "Member 'UWBP_Race_HUD_Player01_C::StageId' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugCourseMapHidden) == 0x00097A, "Member 'UWBP_Race_HUD_Player01_C::DebugCourseMapHidden' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsInBoostCharge) == 0x00097B, "Member 'UWBP_Race_HUD_Player01_C::IsInBoostCharge' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityTeamRank) == 0x00097C, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityTeamRank' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnControlRelease) == 0x00097D, "Member 'UWBP_Race_HUD_Player01_C::IsOnControlRelease' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnControlItemUse) == 0x00097E, "Member 'UWBP_Race_HUD_Player01_C::IsOnControlItemUse' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnControlGuideFlight) == 0x00097F, "Member 'UWBP_Race_HUD_Player01_C::IsOnControlGuideFlight' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnRaceActionTutorial) == 0x000980, "Member 'UWBP_Race_HUD_Player01_C::IsOnRaceActionTutorial' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsFeverControl) == 0x000981, "Member 'UWBP_Race_HUD_Player01_C::IsFeverControl' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsSuggestUpInput) == 0x000982, "Member 'UWBP_Race_HUD_Player01_C::IsSuggestUpInput' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, tutorialAction) == 0x000983, "Member 'UWBP_Race_HUD_Player01_C::tutorialAction' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, GhostGadgetPresetData) == 0x000988, "Member 'UWBP_Race_HUD_Player01_C::GhostGadgetPresetData' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsExecChargeEffect) == 0x000998, "Member 'UWBP_Race_HUD_Player01_C::IsExecChargeEffect' has a wrong offset!");
+static_assert(sizeof(UWBP_Race_HUD_Player01_C) == 0x0009A8, "Wrong size on UWBP_Race_HUD_Player01_C");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, UberGraphFrame) == 0x000680, "Member 'UWBP_Race_HUD_Player01_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, HUD_Out) == 0x000688, "Member 'UWBP_Race_HUD_Player01_C::HUD_Out' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, HUD_Loop) == 0x000690, "Member 'UWBP_Race_HUD_Player01_C::HUD_Loop' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, HUD_In) == 0x000698, "Member 'UWBP_Race_HUD_Player01_C::HUD_In' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, CanvasPanel_HUD) == 0x0006A0, "Member 'UWBP_Race_HUD_Player01_C::CanvasPanel_HUD' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, CanvasPanel_ItemWarningArea) == 0x0006A8, "Member 'UWBP_Race_HUD_Player01_C::CanvasPanel_ItemWarningArea' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, CanvasPanel_StartInfo) == 0x0006B0, "Member 'UWBP_Race_HUD_Player01_C::CanvasPanel_StartInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, CLIP_TextDirection) == 0x0006B8, "Member 'UWBP_Race_HUD_Player01_C::CLIP_TextDirection' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, DSP_ItemWarning_Belt) == 0x0006C0, "Member 'UWBP_Race_HUD_Player01_C::DSP_ItemWarning_Belt' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, Panel) == 0x0006C8, "Member 'UWBP_Race_HUD_Player01_C::Panel' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, VerticalBox_TimeTrial) == 0x0006D0, "Member 'UWBP_Race_HUD_Player01_C::VerticalBox_TimeTrial' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_PauseMenu) == 0x0006D8, "Member 'UWBP_Race_HUD_Player01_C::WBP_PauseMenu' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_AirTrickText) == 0x0006E0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_AirTrickText' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_GoalText) == 0x0006E8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_GoalText' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_CourseMap) == 0x0006F0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_CourseMap' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Aiming) == 0x0006F8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Aiming' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_BasicOperation) == 0x000700, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_BasicOperation' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Boost) == 0x000708, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Boost' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Charahead_01) == 0x000710, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Charahead_01' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Coin) == 0x000718, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Coin' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Festa_TeamGroup_P1) == 0x000720, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Festa_TeamGroup_P1' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Festa_TeamHUD) == 0x000728, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Festa_TeamHUD' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_GadgetIcon_Simple) == 0x000730, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_GadgetIcon_Simple' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_HitInfo) == 0x000738, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_HitInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_ItemIconSet_Simple) == 0x000740, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_ItemIconSet_Simple' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_ItemWarning) == 0x000748, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_ItemWarning' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_LAP) == 0x000750, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_LAP' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_PlayerName) == 0x000758, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_PlayerName' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Rank) == 0x000760, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Rank' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Rival_RaceStart) == 0x000768, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Rival_RaceStart' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_RSR_5rings_Simple) == 0x000770, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_RSR_5rings_Simple' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_SpeedNum) == 0x000778, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_SpeedNum' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Targeted) == 0x000780, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Targeted' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TextBalloon) == 0x000788, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TextBalloon' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_Time) == 0x000790, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_Time' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TimeTrial_Time) == 0x000798, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TimeTrial_Time' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TimeTrial_TimeDiff) == 0x0007A0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TimeTrial_TimeDiff' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header) == 0x0007A8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_StartDash) == 0x0007B0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_StartDash' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_StartText) == 0x0007B8, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_StartText' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WBP_Race_Sub_BtnGuide) == 0x0007C0, "Member 'UWBP_Race_HUD_Player01_C::WBP_Race_Sub_BtnGuide' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, SafeZoneSize) == 0x0007C8, "Member 'UWBP_Race_HUD_Player01_C::SafeZoneSize' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningMovePos) == 0x0007D8, "Member 'UWBP_Race_HUD_Player01_C::WarningMovePos' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugTmpFlag) == 0x0007E8, "Member 'UWBP_Race_HUD_Player01_C::DebugTmpFlag' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugElapsedTime) == 0x0007F0, "Member 'UWBP_Race_HUD_Player01_C::DebugElapsedTime' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugIntervalTime) == 0x0007F8, "Member 'UWBP_Race_HUD_Player01_C::DebugIntervalTime' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, bMinimapDefault) == 0x000800, "Member 'UWBP_Race_HUD_Player01_C::bMinimapDefault' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, In_New_State) == 0x000801, "Member 'UWBP_Race_HUD_Player01_C::In_New_State' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningLayout) == 0x000808, "Member 'UWBP_Race_HUD_Player01_C::WarningLayout' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningTransform) == 0x000848, "Member 'UWBP_Race_HUD_Player01_C::WarningTransform' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, WarningPosition) == 0x000880, "Member 'UWBP_Race_HUD_Player01_C::WarningPosition' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, YellowDrillShortTimeFlag) == 0x000890, "Member 'UWBP_Race_HUD_Player01_C::YellowDrillShortTimeFlag' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, PanelDebugTexture) == 0x0008A0, "Member 'UWBP_Race_HUD_Player01_C::PanelDebugTexture' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, TmpEnable) == 0x0008C8, "Member 'UWBP_Race_HUD_Player01_C::TmpEnable' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, tmpFloat) == 0x0008D0, "Member 'UWBP_Race_HUD_Player01_C::tmpFloat' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, LostItemRacerId) == 0x0008D8, "Member 'UWBP_Race_HUD_Player01_C::LostItemRacerId' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, LostItemId) == 0x0008DC, "Member 'UWBP_Race_HUD_Player01_C::LostItemId' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, ManualAimingScale) == 0x0008E0, "Member 'UWBP_Race_HUD_Player01_C::ManualAimingScale' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsKeepScale) == 0x0008E8, "Member 'UWBP_Race_HUD_Player01_C::IsKeepScale' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, ShuffleRacerIndex) == 0x0008F0, "Member 'UWBP_Race_HUD_Player01_C::ShuffleRacerIndex' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsGoal) == 0x000900, "Member 'UWBP_Race_HUD_Player01_C::IsGoal' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, GeneralAttInt) == 0x000908, "Member 'UWBP_Race_HUD_Player01_C::GeneralAttInt' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityRank) == 0x000918, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityRank' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityItemIcon) == 0x000919, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityItemIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityRankNum) == 0x00091A, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityRankNum' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityLap) == 0x00091B, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityLap' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityHitInfo) == 0x00091C, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityHitInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityTextBalloon) == 0x00091D, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityTextBalloon' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, ChargeGaugePer) == 0x000920, "Member 'UWBP_Race_HUD_Player01_C::ChargeGaugePer' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsTimeTrial) == 0x000928, "Member 'UWBP_Race_HUD_Player01_C::IsTimeTrial' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, TimeTrialLapPos) == 0x000930, "Member 'UWBP_Race_HUD_Player01_C::TimeTrialLapPos' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, TimeTrailTimeLap) == 0x000940, "Member 'UWBP_Race_HUD_Player01_C::TimeTrailTimeLap' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, ScreenViewportSize) == 0x000950, "Member 'UWBP_Race_HUD_Player01_C::ScreenViewportSize' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, ViewAspect) == 0x000960, "Member 'UWBP_Race_HUD_Player01_C::ViewAspect' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, TimeTrialMainPos) == 0x000970, "Member 'UWBP_Race_HUD_Player01_C::TimeTrialMainPos' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, SpeedClassId) == 0x000980, "Member 'UWBP_Race_HUD_Player01_C::SpeedClassId' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, StageId) == 0x000981, "Member 'UWBP_Race_HUD_Player01_C::StageId' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, DebugCourseMapHidden) == 0x000982, "Member 'UWBP_Race_HUD_Player01_C::DebugCourseMapHidden' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsInBoostCharge) == 0x000983, "Member 'UWBP_Race_HUD_Player01_C::IsInBoostCharge' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsEnableVisibilityTeamRank) == 0x000984, "Member 'UWBP_Race_HUD_Player01_C::IsEnableVisibilityTeamRank' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnControlRelease) == 0x000985, "Member 'UWBP_Race_HUD_Player01_C::IsOnControlRelease' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnControlItemUse) == 0x000986, "Member 'UWBP_Race_HUD_Player01_C::IsOnControlItemUse' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnControlGuideFlight) == 0x000987, "Member 'UWBP_Race_HUD_Player01_C::IsOnControlGuideFlight' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsOnRaceActionTutorial) == 0x000988, "Member 'UWBP_Race_HUD_Player01_C::IsOnRaceActionTutorial' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsFeverControl) == 0x000989, "Member 'UWBP_Race_HUD_Player01_C::IsFeverControl' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsSuggestUpInput) == 0x00098A, "Member 'UWBP_Race_HUD_Player01_C::IsSuggestUpInput' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, tutorialAction) == 0x00098B, "Member 'UWBP_Race_HUD_Player01_C::tutorialAction' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, GhostGadgetPresetData) == 0x000990, "Member 'UWBP_Race_HUD_Player01_C::GhostGadgetPresetData' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_HUD_Player01_C, IsExecChargeEffect) == 0x0009A0, "Member 'UWBP_Race_HUD_Player01_C::IsExecChargeEffect' has a wrong offset!");
 
 }
 

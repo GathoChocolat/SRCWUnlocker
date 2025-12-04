@@ -230,10 +230,10 @@ void UWBP_ClassSelect_Sub_Btn_Class_C::SetMenuSpeedClass(EMenuSpeedClassId InMen
 // Function WBP_ClassSelect_Sub_Btn_Class.WBP_ClassSelect_Sub_Btn_Class_C.SetTimeTrialMedalCount
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NormalMedalCount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NormalMedalMax                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MedalCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MedalMax                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ClassSelect_Sub_Btn_Class_C::SetTimeTrialMedalCount(int32 NormalMedalCount, int32 NormalMedalMax)
+void UWBP_ClassSelect_Sub_Btn_Class_C::SetTimeTrialMedalCount(int32 MedalCount, int32 MedalMax)
 {
 	static class UFunction* Func = nullptr;
 
@@ -242,8 +242,8 @@ void UWBP_ClassSelect_Sub_Btn_Class_C::SetTimeTrialMedalCount(int32 NormalMedalC
 
 	Params::WBP_ClassSelect_Sub_Btn_Class_C_SetTimeTrialMedalCount Parms{};
 
-	Parms.NormalMedalCount = NormalMedalCount;
-	Parms.NormalMedalMax = NormalMedalMax;
+	Parms.MedalCount = MedalCount;
+	Parms.MedalMax = MedalMax;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

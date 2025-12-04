@@ -399,19 +399,19 @@ void ABP_MenuDriverPawn_C::SetAnimClass(const class UClass* NewClass)
 }
 
 
-// Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.SetEnableGfur
+// Function BP_MenuDriverPawn.BP_MenuDriverPawn_C.SetEnableGFur
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Condition                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MenuDriverPawn_C::SetEnableGfur(bool Condition)
+void ABP_MenuDriverPawn_C::SetEnableGFur(bool Condition)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MenuDriverPawn_C", "SetEnableGfur");
+		Func = Class->GetFunction("BP_MenuDriverPawn_C", "SetEnableGFur");
 
-	Params::BP_MenuDriverPawn_C_SetEnableGfur Parms{};
+	Params::BP_MenuDriverPawn_C_SetEnableGFur Parms{};
 
 	Parms.Condition = Condition;
 

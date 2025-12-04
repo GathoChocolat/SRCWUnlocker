@@ -131,9 +131,9 @@ void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::GetItemIconByItemInfoType(EItemInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EItemInfoType                           ItemInfoType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_Race_HUD_Sub_ItemIcon_Simple_C**newParam                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Race_HUD_Sub_ItemIcon_Simple_C**ItemIcon                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::GetItemIconByItemInfoTypeSimple(EItemInfoType ItemInfoType, class UWBP_Race_HUD_Sub_ItemIcon_Simple_C** newParam)
+void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::GetItemIconByItemInfoTypeSimple(EItemInfoType ItemInfoType, class UWBP_Race_HUD_Sub_ItemIcon_Simple_C** ItemIcon)
 {
 	static class UFunction* Func = nullptr;
 
@@ -146,8 +146,8 @@ void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::GetItemIconByItemInfoTypeSimple(EIt
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (newParam != nullptr)
-		*newParam = Parms.newParam;
+	if (ItemIcon != nullptr)
+		*ItemIcon = Parms.ItemIcon;
 }
 
 
@@ -592,11 +592,11 @@ void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::Update_Gadget_Info(int32 PlayerInde
 
 
 // Function WBP_Race_HUD_Sub_ItemIconSet_Simple.WBP_Race_HUD_Sub_ItemIconSet_Simple_C.UpdateIrregularInfiniteItem
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class UUnionRacerStatusObject*          RacerStatusObject                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class UUnionRacerStatusObject*    RacerStatusObjet                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::UpdateIrregularInfiniteItem(class UUnionRacerStatusObject* RacerStatusObject)
+void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::UpdateIrregularInfiniteItem(const class UUnionRacerStatusObject* RacerStatusObjet)
 {
 	static class UFunction* Func = nullptr;
 
@@ -605,7 +605,7 @@ void UWBP_Race_HUD_Sub_ItemIconSet_Simple_C::UpdateIrregularInfiniteItem(class U
 
 	Params::WBP_Race_HUD_Sub_ItemIconSet_Simple_C_UpdateIrregularInfiniteItem Parms{};
 
-	Parms.RacerStatusObject = RacerStatusObject;
+	Parms.RacerStatusObjet = RacerStatusObjet;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

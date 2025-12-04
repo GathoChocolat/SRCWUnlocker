@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_GadgetCustom_Sub_SkillPlate.WBP_GadgetCustom_Sub_SkillPlate_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_GadgetCustom_Sub_SkillPlate.WBP_GadgetCustom_Sub_SkillPlate_C.ChangeGlobalInvalidation
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const int32                             InValue                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GadgetCustom_Sub_SkillPlate_C::Construct()
+void UWBP_GadgetCustom_Sub_SkillPlate_C::ChangeGlobalInvalidation(const int32 InValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GadgetCustom_Sub_SkillPlate_C", "Construct");
+		Func = Class->GetFunction("WBP_GadgetCustom_Sub_SkillPlate_C", "ChangeGlobalInvalidation");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_GadgetCustom_Sub_SkillPlate_C_ChangeGlobalInvalidation Parms{};
+
+	Parms.InValue = InValue;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,6 +57,20 @@ void UWBP_GadgetCustom_Sub_SkillPlate_C::ExecuteUbergraph_WBP_GadgetCustom_Sub_S
 }
 
 
+// Function WBP_GadgetCustom_Sub_SkillPlate.WBP_GadgetCustom_Sub_SkillPlate_C.OnNativeConstInitWidgetRef
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetCustom_Sub_SkillPlate_C::OnNativeConstInitWidgetRef()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCustom_Sub_SkillPlate_C", "OnNativeConstInitWidgetRef");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_GadgetCustom_Sub_SkillPlate.WBP_GadgetCustom_Sub_SkillPlate_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -66,26 +86,6 @@ void UWBP_GadgetCustom_Sub_SkillPlate_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_GadgetCustom_Sub_SkillPlate_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GadgetCustom_Sub_SkillPlate.WBP_GadgetCustom_Sub_SkillPlate_C.Setup
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGadgetDetailWindowData&   InWindowData                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_GadgetCustom_Sub_SkillPlate_C::Setup(const struct FGadgetDetailWindowData& InWindowData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GadgetCustom_Sub_SkillPlate_C", "Setup");
-
-	Params::WBP_GadgetCustom_Sub_SkillPlate_C_Setup Parms{};
-
-	Parms.InWindowData = std::move(InWindowData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

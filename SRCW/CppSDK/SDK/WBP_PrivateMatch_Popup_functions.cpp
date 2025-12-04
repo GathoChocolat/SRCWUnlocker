@@ -1378,8 +1378,9 @@ void UWBP_PrivateMatch_Popup_C::SettingGrayOutButton(int32 SwitcherIndex, int32 
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   SwitcherIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPrivateMatchShowMenuType               OpenShowMenuType                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PrivateMatch_Popup_C::Setup(int32 SwitcherIndex)
+void UWBP_PrivateMatch_Popup_C::Setup(int32 SwitcherIndex, EPrivateMatchShowMenuType OpenShowMenuType)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1389,6 +1390,7 @@ void UWBP_PrivateMatch_Popup_C::Setup(int32 SwitcherIndex)
 	Params::WBP_PrivateMatch_Popup_C_Setup Parms{};
 
 	Parms.SwitcherIndex = SwitcherIndex;
+	Parms.OpenShowMenuType = OpenShowMenuType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

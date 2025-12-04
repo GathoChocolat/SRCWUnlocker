@@ -32,7 +32,7 @@ void UWBP_CMN_Sub_MatchingState_ModeIcon_C::Construct()
 
 
 // Function WBP_CMN_Sub_MatchingState_ModeIcon.WBP_CMN_Sub_MatchingState_ModeIcon_C.ExecuteUbergraph_WBP_CMN_Sub_MatchingState_ModeIcon
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -92,7 +92,7 @@ void UWBP_CMN_Sub_MatchingState_ModeIcon_C::PlayOnlineModeIconAnim(bool bIsInAni
 
 
 // Function WBP_CMN_Sub_MatchingState_ModeIcon.WBP_CMN_Sub_MatchingState_ModeIcon_C.SetModeIcon
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EOnlineGameMode                         InOnlineGameMode                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -66,6 +66,7 @@ public:
 	void OnRightShoulderPressed();
 	void OnUpKeyPressed();
 	void Open();
+	void Reset();
 	void Setup(const struct FST_PullDownMenuData& InMenuData);
 	void UpdateItems();
 	void WidgetAnimationEvt_PullDown_Down_to_Up_K2Node_WidgetAnimationEvent_0();

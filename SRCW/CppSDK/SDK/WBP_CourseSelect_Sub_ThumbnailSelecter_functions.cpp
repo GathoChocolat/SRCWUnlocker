@@ -182,6 +182,26 @@ void UWBP_CourseSelect_Sub_ThumbnailSelecter_C::IsCrossWorldEnableCourse(int32 I
 }
 
 
+// Function WBP_CourseSelect_Sub_ThumbnailSelecter.WBP_CourseSelect_Sub_ThumbnailSelecter_C.On Store Shortcut Pressed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EStageId                                StageId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CourseSelect_Sub_ThumbnailSelecter_C::On_Store_Shortcut_Pressed(EStageId StageId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CourseSelect_Sub_ThumbnailSelecter_C", "On Store Shortcut Pressed");
+
+	Params::WBP_CourseSelect_Sub_ThumbnailSelecter_C_On_Store_Shortcut_Pressed Parms{};
+
+	Parms.StageId = StageId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_CourseSelect_Sub_ThumbnailSelecter.WBP_CourseSelect_Sub_ThumbnailSelecter_C.OnCancel
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -271,26 +291,6 @@ void UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnFocusThumbnail(EStageId StageC
 
 	Parms.StageCourseId = StageCourseId;
 	Parms.ButtonIndex = ButtonIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CourseSelect_Sub_ThumbnailSelecter.WBP_CourseSelect_Sub_ThumbnailSelecter_C.OnStoreShortcutClicked
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EStageId                                StageId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CourseSelect_Sub_ThumbnailSelecter_C::OnStoreShortcutClicked(EStageId StageId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CourseSelect_Sub_ThumbnailSelecter_C", "OnStoreShortcutClicked");
-
-	Params::WBP_CourseSelect_Sub_ThumbnailSelecter_C_OnStoreShortcutClicked Parms{};
-
-	Parms.StageId = StageId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

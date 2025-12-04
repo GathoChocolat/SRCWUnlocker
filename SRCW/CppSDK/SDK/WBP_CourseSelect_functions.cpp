@@ -645,19 +645,19 @@ void UWBP_CourseSelect_C::OnStageIconFocusEvent_Event_0(int32 PanelIndex, int32 
 }
 
 
-// Function WBP_CourseSelect.WBP_CourseSelect_C.OnStoreShortcutClicked
+// Function WBP_CourseSelect.WBP_CourseSelect_C.OnStoreShortcutPressed
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EStageId                                StageId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CourseSelect_C::OnStoreShortcutClicked(EStageId StageId)
+void UWBP_CourseSelect_C::OnStoreShortcutPressed(EStageId StageId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CourseSelect_C", "OnStoreShortcutClicked");
+		Func = Class->GetFunction("WBP_CourseSelect_C", "OnStoreShortcutPressed");
 
-	Params::WBP_CourseSelect_C_OnStoreShortcutClicked Parms{};
+	Params::WBP_CourseSelect_C_OnStoreShortcutPressed Parms{};
 
 	Parms.StageId = StageId;
 

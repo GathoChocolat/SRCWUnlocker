@@ -72,17 +72,19 @@ static_assert(offsetof(BP_HoldItemVAT_C_ExecuteUbergraph_BP_HoldItemVAT, EntryPo
 static_assert(offsetof(BP_HoldItemVAT_C_ExecuteUbergraph_BP_HoldItemVAT, K2Node_Event_Param) == 0x000004, "Member 'BP_HoldItemVAT_C_ExecuteUbergraph_BP_HoldItemVAT::K2Node_Event_Param' has a wrong offset!");
 
 // Function BP_HoldItemVAT.BP_HoldItemVAT_C.PlayRareItemEffect
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BP_HoldItemVAT_C_PlayRareItemEffect final
 {
 public:
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HoldItemVAT_C_PlayRareItemEffect) == 0x000008, "Wrong alignment on BP_HoldItemVAT_C_PlayRareItemEffect");
-static_assert(sizeof(BP_HoldItemVAT_C_PlayRareItemEffect) == 0x000010, "Wrong size on BP_HoldItemVAT_C_PlayRareItemEffect");
+static_assert(sizeof(BP_HoldItemVAT_C_PlayRareItemEffect) == 0x000018, "Wrong size on BP_HoldItemVAT_C_PlayRareItemEffect");
 static_assert(offsetof(BP_HoldItemVAT_C_PlayRareItemEffect, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000000, "Member 'BP_HoldItemVAT_C_PlayRareItemEffect::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_HoldItemVAT_C_PlayRareItemEffect, CallFunc_SpawnSystemAttached_ReturnValue) == 0x000008, "Member 'BP_HoldItemVAT_C_PlayRareItemEffect::CallFunc_SpawnSystemAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HoldItemVAT_C_PlayRareItemEffect, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_HoldItemVAT_C_PlayRareItemEffect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BP_HoldItemVAT.BP_HoldItemVAT_C.GetMeshComponent
 // 0x0008 (0x0008 - 0x0000)

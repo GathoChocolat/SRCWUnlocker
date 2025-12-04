@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -31,7 +31,7 @@ static_assert(sizeof(WBP_Friend_ListTop_C_EndDisplay) == 0x000001, "Wrong size o
 static_assert(offsetof(WBP_Friend_ListTop_C_EndDisplay, PlayCloseSound) == 0x000000, "Member 'WBP_Friend_ListTop_C_EndDisplay::PlayCloseSound' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.ExecuteUbergraph_WBP_Friend_ListTop
-// 0x0600 (0x0600 - 0x0000)
+// 0x0618 (0x0618 - 0x0000)
 struct WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop final
 {
 public:
@@ -60,12 +60,9 @@ public:
 	EFriendListCategory                           K2Node_Event_InInitialCategory;                    // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Event_InZOrder;                             // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInLobbySequence;                     // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInLobbyInvitationSendEnable;         // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInLobbyInvitationAcceptEnable;       // 0x00BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInLobbyInvitationRejectEnable;       // 0x00BF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_PlayCloseSound;                 // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFriendListSetupParameterData          K2Node_Event_SetupParameterData;                   // 0x00BC(0x0005)(NoDestructor)
+	bool                                          K2Node_CustomEvent_PlayCloseSound;                 // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C2[0x2];                                       // 0x00C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const struct FLobbyId& TargetLobbyId)> K2Node_CreateDelegate_OutputDelegate_8;    // 0x00C4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bInEnable;                            // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -127,40 +124,40 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_15;           // 0x02A0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bInVisible;                           // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo_1;             // 0x02B8(0x00E8)(ConstParm)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A1[0x7];                                      // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo;               // 0x03A8(0x00E8)()
-	EBlockPlayerState                             CallFunc_GetRacerData_OutBlockType;                // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLobbyPlayerData                       CallFunc_GetRacerData_OutRacerData;                // 0x0498(0x00F8)()
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x0590(0x0004)()
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x0594(0x0004)()
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0598(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x05A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x05A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x05B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x05B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5B2[0x6];                                      // 0x05B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x05B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x05C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x05C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x05D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5D1[0x7];                                      // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller_1;      // 0x05D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x05E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x05E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x05F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x05F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_UnregisterMainMenu_ReturnValue;           // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x05F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x05FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x05FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x05FC(0x0004)()
+	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo_1;             // 0x02B8(0x00F0)(ConstParm)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A9[0x7];                                      // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFriendListPlayerInfo                  K2Node_CustomEvent_InListPlayerInfo;               // 0x03B0(0x00F0)()
+	EBlockPlayerState                             CallFunc_GetRacerInfoData_OutBlockPlayerState;     // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLobbyPlayerData                       CallFunc_GetRacerInfoData_OutLobbyPlayerData;      // 0x04A8(0x0100)()
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_2;                  // 0x05A8(0x0004)()
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_3;                  // 0x05AC(0x0004)()
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x05B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x05B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x05C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x05C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5CA[0x6];                                      // 0x05CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x05D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x05D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller;        // 0x05E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x05E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5E9[0x7];                                      // 0x05E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AAppPlayerController*                   K2Node_DynamicCast_AsApp_Player_Controller_1;      // 0x05F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5F9[0x7];                                      // 0x05F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnionUIButtonBase*                     K2Node_CustomEvent_Button;                         // 0x0600(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_PanelIndex;                     // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x060C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_UnregisterMainMenu_ReturnValue;           // 0x0610(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x0611(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0612(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0613(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue_4;                  // 0x0614(0x0004)()
 };
 static_assert(alignof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop) == 0x000008, "Wrong alignment on WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop");
-static_assert(sizeof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop) == 0x000600, "Wrong size on WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop");
+static_assert(sizeof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop) == 0x000618, "Wrong size on WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, EntryPoint) == 0x000000, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_SoundPlay_ReturnValue) == 0x000004, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_SoundPlay_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -181,11 +178,8 @@ static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop,
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_InLocalUserNumber) == 0x0000B0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_InLocalUserNumber' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_InInitialCategory) == 0x0000B4, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_InInitialCategory' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_InZOrder) == 0x0000B8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_InZOrder' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_bInLobbySequence) == 0x0000BC, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_bInLobbySequence' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_bInLobbyInvitationSendEnable) == 0x0000BD, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_bInLobbyInvitationSendEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_bInLobbyInvitationAcceptEnable) == 0x0000BE, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_bInLobbyInvitationAcceptEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_bInLobbyInvitationRejectEnable) == 0x0000BF, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_bInLobbyInvitationRejectEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_PlayCloseSound) == 0x0000C0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_PlayCloseSound' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_SetupParameterData) == 0x0000BC, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_SetupParameterData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_PlayCloseSound) == 0x0000C1, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_PlayCloseSound' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CreateDelegate_OutputDelegate_8) == 0x0000C4, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_bInEnable) == 0x0000D4, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_bInEnable' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_TargetUserId) == 0x0000D8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_TargetUserId' has a wrong offset!");
@@ -236,31 +230,31 @@ static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop,
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CreateDelegate_OutputDelegate_15) == 0x0002A0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Event_bInVisible) == 0x0002B0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Event_bInVisible' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_InListPlayerInfo_1) == 0x0002B8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_InListPlayerInfo_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Select_Default_1) == 0x0003A0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_InListPlayerInfo) == 0x0003A8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_InListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetRacerData_OutBlockType) == 0x000490, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetRacerData_OutBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetRacerData_OutRacerData) == 0x000498, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetRacerData_OutRacerData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_SoundPlay_ReturnValue_2) == 0x000590, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_SoundPlay_ReturnValue_3) == 0x000594, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetOwningPlayer_ReturnValue) == 0x000598, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0005A0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0005A8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, Temp_byte_Variable_4) == 0x0005B0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_IsValid_ReturnValue) == 0x0005B1, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetPlayerController_ReturnValue) == 0x0005B8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetPlayerController_ReturnValue_1) == 0x0005C0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0005C8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_bSuccess) == 0x0005D0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0005D8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_bSuccess_1) == 0x0005E0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_Button) == 0x0005E8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_PanelIndex) == 0x0005F0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_ButtonIndex) == 0x0005F4, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_UnregisterMainMenu_ReturnValue) == 0x0005F8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, Temp_byte_Variable_5) == 0x0005F9, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, Temp_bool_Variable_2) == 0x0005FA, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Select_Default_2) == 0x0005FB, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_SoundPlay_ReturnValue_4) == 0x0005FC, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Select_Default_1) == 0x0003A8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_InListPlayerInfo) == 0x0003B0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_InListPlayerInfo' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetRacerInfoData_OutBlockPlayerState) == 0x0004A0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetRacerInfoData_OutBlockPlayerState' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetRacerInfoData_OutLobbyPlayerData) == 0x0004A8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetRacerInfoData_OutLobbyPlayerData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_SoundPlay_ReturnValue_2) == 0x0005A8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_SoundPlay_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_SoundPlay_ReturnValue_3) == 0x0005AC, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_SoundPlay_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetOwningPlayer_ReturnValue) == 0x0005B0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0005B8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0005C0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, Temp_byte_Variable_4) == 0x0005C8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_IsValid_ReturnValue) == 0x0005C9, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetPlayerController_ReturnValue) == 0x0005D0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_GetPlayerController_ReturnValue_1) == 0x0005D8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_AsApp_Player_Controller) == 0x0005E0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_AsApp_Player_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_bSuccess) == 0x0005E8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_AsApp_Player_Controller_1) == 0x0005F0, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_AsApp_Player_Controller_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_DynamicCast_bSuccess_1) == 0x0005F8, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_Button) == 0x000600, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_PanelIndex) == 0x000608, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_PanelIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_CustomEvent_ButtonIndex) == 0x00060C, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_UnregisterMainMenu_ReturnValue) == 0x000610, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_UnregisterMainMenu_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, Temp_byte_Variable_5) == 0x000611, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, Temp_bool_Variable_2) == 0x000612, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, K2Node_Select_Default_2) == 0x000613, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop, CallFunc_SoundPlay_ReturnValue_4) == 0x000614, "Member 'WBP_Friend_ListTop_C_ExecuteUbergraph_WBP_Friend_ListTop::CallFunc_SoundPlay_ReturnValue_4' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.Get Platform Type
 // 0x0004 (0x0004 - 0x0000)
@@ -299,49 +293,49 @@ static_assert(offsetof(WBP_Friend_ListTop_C_GetBlockType, RetBlockType) == 0x000
 static_assert(offsetof(WBP_Friend_ListTop_C_GetBlockType, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'WBP_Friend_ListTop_C_GetBlockType::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.GetRacerData
-// 0x0368 (0x0368 - 0x0000)
+// 0x0388 (0x0388 - 0x0000)
 struct WBP_Friend_ListTop_C_GetRacerData final
 {
 public:
-	struct FFriendListPlayerInfo                  InFriendListPlayerInfo;                            // 0x0000(0x00E8)(BlueprintVisible, BlueprintReadOnly, Parm)
-	EBlockPlayerState                             OutBlockType;                                      // 0x00E8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLobbyPlayerData                       OutRacerData;                                      // 0x00F0(0x00F8)(Parm, OutParm)
-	class FString                                 RetPlayerName;                                     // 0x01E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	TArray<int32>                                 RetArrayUsedMachineCount;                          // 0x01F8(0x0010)(Edit, BlueprintVisible)
-	TArray<struct FUsageCountChara>               RetArrayUsageCountChara;                           // 0x0208(0x0010)(Edit, BlueprintVisible)
-	int32                                         RetTitleId;                                        // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAppSupportedPlatform                         RetPlatform;                                       // 0x021C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERateRank                                     RetRank;                                           // 0x021D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EBlockPlayerState                             RetBlockType;                                      // 0x021E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERateRank                                     CallFunc_GetRank_OutRateRank;                      // 0x021F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 CallFunc_GetUseMachineTypeCounts_OutUsedMachineCount; // 0x0220(0x0010)(ReferenceParm)
-	TArray<struct FUsageCountChara>               CallFunc_GetUseCharacterCounts_OutUsageCountChara; // 0x0230(0x0010)(ReferenceParm)
-	EBlockPlayerState                             CallFunc_GetBlockType_OutBlockType;                // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAppSupportedPlatform                         CallFunc_Get_Platform_Type_OutPlatformType;        // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_242[0x6];                                      // 0x0242(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLobbyRacerInfoData                    K2Node_MakeStruct_LobbyRacerInfoData;              // 0x0248(0x0028)()
-	struct FLobbyPlayerData                       K2Node_MakeStruct_LobbyPlayerData;                 // 0x0270(0x00F8)()
+	struct FFriendListPlayerInfo                  InFriendListPlayerInfo;                            // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	EBlockPlayerState                             OutBlockType;                                      // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLobbyPlayerData                       OutRacerData;                                      // 0x00F8(0x0100)(Parm, OutParm)
+	class FString                                 RetPlayerName;                                     // 0x01F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	TArray<int32>                                 RetArrayUsedMachineCount;                          // 0x0208(0x0010)(Edit, BlueprintVisible)
+	TArray<struct FUsageCountChara>               RetArrayUsageCountChara;                           // 0x0218(0x0010)(Edit, BlueprintVisible)
+	int32                                         RetTitleId;                                        // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAppSupportedPlatform                         RetPlatform;                                       // 0x022C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERateRank                                     RetRank;                                           // 0x022D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EBlockPlayerState                             RetBlockType;                                      // 0x022E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERateRank                                     CallFunc_GetRank_OutRateRank;                      // 0x022F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<int32>                                 CallFunc_GetUseMachineTypeCounts_OutUsedMachineCount; // 0x0230(0x0010)(ReferenceParm)
+	TArray<struct FUsageCountChara>               CallFunc_GetUseCharacterCounts_OutUsageCountChara; // 0x0240(0x0010)(ReferenceParm)
+	EBlockPlayerState                             CallFunc_GetBlockType_OutBlockType;                // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAppSupportedPlatform                         CallFunc_Get_Platform_Type_OutPlatformType;        // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_252[0x6];                                      // 0x0252(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLobbyRacerInfoData                    K2Node_MakeStruct_LobbyRacerInfoData;              // 0x0258(0x0030)()
+	struct FLobbyPlayerData                       K2Node_MakeStruct_LobbyPlayerData;                 // 0x0288(0x0100)()
 };
 static_assert(alignof(WBP_Friend_ListTop_C_GetRacerData) == 0x000008, "Wrong alignment on WBP_Friend_ListTop_C_GetRacerData");
-static_assert(sizeof(WBP_Friend_ListTop_C_GetRacerData) == 0x000368, "Wrong size on WBP_Friend_ListTop_C_GetRacerData");
+static_assert(sizeof(WBP_Friend_ListTop_C_GetRacerData) == 0x000388, "Wrong size on WBP_Friend_ListTop_C_GetRacerData");
 static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, InFriendListPlayerInfo) == 0x000000, "Member 'WBP_Friend_ListTop_C_GetRacerData::InFriendListPlayerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, OutBlockType) == 0x0000E8, "Member 'WBP_Friend_ListTop_C_GetRacerData::OutBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, OutRacerData) == 0x0000F0, "Member 'WBP_Friend_ListTop_C_GetRacerData::OutRacerData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetPlayerName) == 0x0001E8, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetPlayerName' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetArrayUsedMachineCount) == 0x0001F8, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetArrayUsedMachineCount' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetArrayUsageCountChara) == 0x000208, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetArrayUsageCountChara' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetTitleId) == 0x000218, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetTitleId' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetPlatform) == 0x00021C, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetPlatform' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetRank) == 0x00021D, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetRank' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetBlockType) == 0x00021E, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetRank_OutRateRank) == 0x00021F, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetRank_OutRateRank' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetUseMachineTypeCounts_OutUsedMachineCount) == 0x000220, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetUseMachineTypeCounts_OutUsedMachineCount' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetUseCharacterCounts_OutUsageCountChara) == 0x000230, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetUseCharacterCounts_OutUsageCountChara' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetBlockType_OutBlockType) == 0x000240, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetBlockType_OutBlockType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_Get_Platform_Type_OutPlatformType) == 0x000241, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_Get_Platform_Type_OutPlatformType' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, K2Node_MakeStruct_LobbyRacerInfoData) == 0x000248, "Member 'WBP_Friend_ListTop_C_GetRacerData::K2Node_MakeStruct_LobbyRacerInfoData' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, K2Node_MakeStruct_LobbyPlayerData) == 0x000270, "Member 'WBP_Friend_ListTop_C_GetRacerData::K2Node_MakeStruct_LobbyPlayerData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, OutBlockType) == 0x0000F0, "Member 'WBP_Friend_ListTop_C_GetRacerData::OutBlockType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, OutRacerData) == 0x0000F8, "Member 'WBP_Friend_ListTop_C_GetRacerData::OutRacerData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetPlayerName) == 0x0001F8, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetPlayerName' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetArrayUsedMachineCount) == 0x000208, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetArrayUsedMachineCount' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetArrayUsageCountChara) == 0x000218, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetArrayUsageCountChara' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetTitleId) == 0x000228, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetTitleId' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetPlatform) == 0x00022C, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetPlatform' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetRank) == 0x00022D, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetRank' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, RetBlockType) == 0x00022E, "Member 'WBP_Friend_ListTop_C_GetRacerData::RetBlockType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetRank_OutRateRank) == 0x00022F, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetRank_OutRateRank' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetUseMachineTypeCounts_OutUsedMachineCount) == 0x000230, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetUseMachineTypeCounts_OutUsedMachineCount' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetUseCharacterCounts_OutUsageCountChara) == 0x000240, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetUseCharacterCounts_OutUsageCountChara' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_GetBlockType_OutBlockType) == 0x000250, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_GetBlockType_OutBlockType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, CallFunc_Get_Platform_Type_OutPlatformType) == 0x000251, "Member 'WBP_Friend_ListTop_C_GetRacerData::CallFunc_Get_Platform_Type_OutPlatformType' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, K2Node_MakeStruct_LobbyRacerInfoData) == 0x000258, "Member 'WBP_Friend_ListTop_C_GetRacerData::K2Node_MakeStruct_LobbyRacerInfoData' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_GetRacerData, K2Node_MakeStruct_LobbyPlayerData) == 0x000288, "Member 'WBP_Friend_ListTop_C_GetRacerData::K2Node_MakeStruct_LobbyPlayerData' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.GetRank
 // 0x0008 (0x0008 - 0x0000)
@@ -598,14 +592,14 @@ static_assert(offsetof(WBP_Friend_ListTop_C_OnPlayerIconSelectStart, InBgColorId
 static_assert(offsetof(WBP_Friend_ListTop_C_OnPlayerIconSelectStart, bInIconSelect) == 0x000008, "Member 'WBP_Friend_ListTop_C_OnPlayerIconSelectStart::bInIconSelect' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.OnRacerInfoDisplayStart
-// 0x00E8 (0x00E8 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct WBP_Friend_ListTop_C_OnRacerInfoDisplayStart final
 {
 public:
-	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00F0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 static_assert(alignof(WBP_Friend_ListTop_C_OnRacerInfoDisplayStart) == 0x000008, "Wrong alignment on WBP_Friend_ListTop_C_OnRacerInfoDisplayStart");
-static_assert(sizeof(WBP_Friend_ListTop_C_OnRacerInfoDisplayStart) == 0x0000E8, "Wrong size on WBP_Friend_ListTop_C_OnRacerInfoDisplayStart");
+static_assert(sizeof(WBP_Friend_ListTop_C_OnRacerInfoDisplayStart) == 0x0000F0, "Wrong size on WBP_Friend_ListTop_C_OnRacerInfoDisplayStart");
 static_assert(offsetof(WBP_Friend_ListTop_C_OnRacerInfoDisplayStart, InListPlayerInfo) == 0x000000, "Member 'WBP_Friend_ListTop_C_OnRacerInfoDisplayStart::InListPlayerInfo' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.RacerInfoEnd
@@ -668,7 +662,7 @@ static_assert(sizeof(WBP_Friend_ListTop_C_SetRacerInfoWidgetVisible) == 0x000001
 static_assert(offsetof(WBP_Friend_ListTop_C_SetRacerInfoWidgetVisible, bInVisible) == 0x000000, "Member 'WBP_Friend_ListTop_C_SetRacerInfoWidgetVisible::bInVisible' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.Setup
-// 0x0010 (0x0010 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct WBP_Friend_ListTop_C_Setup final
 {
 public:
@@ -676,20 +670,14 @@ public:
 	EFriendListCategory                           InInitialCategory;                                 // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InZOrder;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInLobbySequence;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInLobbyInvitationSendEnable;                      // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInLobbyInvitationAcceptEnable;                    // 0x000E(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInLobbyInvitationRejectEnable;                    // 0x000F(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListSetupParameterData          SetupParameterData;                                // 0x000C(0x0005)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
 static_assert(alignof(WBP_Friend_ListTop_C_Setup) == 0x000004, "Wrong alignment on WBP_Friend_ListTop_C_Setup");
-static_assert(sizeof(WBP_Friend_ListTop_C_Setup) == 0x000010, "Wrong size on WBP_Friend_ListTop_C_Setup");
+static_assert(sizeof(WBP_Friend_ListTop_C_Setup) == 0x000014, "Wrong size on WBP_Friend_ListTop_C_Setup");
 static_assert(offsetof(WBP_Friend_ListTop_C_Setup, InLocalUserNumber) == 0x000000, "Member 'WBP_Friend_ListTop_C_Setup::InLocalUserNumber' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_Setup, InInitialCategory) == 0x000004, "Member 'WBP_Friend_ListTop_C_Setup::InInitialCategory' has a wrong offset!");
 static_assert(offsetof(WBP_Friend_ListTop_C_Setup, InZOrder) == 0x000008, "Member 'WBP_Friend_ListTop_C_Setup::InZOrder' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_Setup, bInLobbySequence) == 0x00000C, "Member 'WBP_Friend_ListTop_C_Setup::bInLobbySequence' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_Setup, bInLobbyInvitationSendEnable) == 0x00000D, "Member 'WBP_Friend_ListTop_C_Setup::bInLobbyInvitationSendEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_Setup, bInLobbyInvitationAcceptEnable) == 0x00000E, "Member 'WBP_Friend_ListTop_C_Setup::bInLobbyInvitationAcceptEnable' has a wrong offset!");
-static_assert(offsetof(WBP_Friend_ListTop_C_Setup, bInLobbyInvitationRejectEnable) == 0x00000F, "Member 'WBP_Friend_ListTop_C_Setup::bInLobbyInvitationRejectEnable' has a wrong offset!");
+static_assert(offsetof(WBP_Friend_ListTop_C_Setup, SetupParameterData) == 0x00000C, "Member 'WBP_Friend_ListTop_C_Setup::SetupParameterData' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.SetupFairPlayPointWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -723,14 +711,14 @@ static_assert(offsetof(WBP_Friend_ListTop_C_SetupPlayerIconList, InBgColorId) ==
 static_assert(offsetof(WBP_Friend_ListTop_C_SetupPlayerIconList, bInPlayerIconSelect) == 0x000008, "Member 'WBP_Friend_ListTop_C_SetupPlayerIconList::bInPlayerIconSelect' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.SetupRacerInfoWidget
-// 0x00E8 (0x00E8 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct WBP_Friend_ListTop_C_SetupRacerInfoWidget final
 {
 public:
-	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00E8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 static_assert(alignof(WBP_Friend_ListTop_C_SetupRacerInfoWidget) == 0x000008, "Wrong alignment on WBP_Friend_ListTop_C_SetupRacerInfoWidget");
-static_assert(sizeof(WBP_Friend_ListTop_C_SetupRacerInfoWidget) == 0x0000E8, "Wrong size on WBP_Friend_ListTop_C_SetupRacerInfoWidget");
+static_assert(sizeof(WBP_Friend_ListTop_C_SetupRacerInfoWidget) == 0x0000F0, "Wrong size on WBP_Friend_ListTop_C_SetupRacerInfoWidget");
 static_assert(offsetof(WBP_Friend_ListTop_C_SetupRacerInfoWidget, InListPlayerInfo) == 0x000000, "Member 'WBP_Friend_ListTop_C_SetupRacerInfoWidget::InListPlayerInfo' has a wrong offset!");
 
 // Function WBP_Friend_ListTop.WBP_Friend_ListTop_C.UpdateLobbyIdDisplay

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UnionRun_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
+#include "UnionRun_structs.hpp"
 
 
 namespace SDK
@@ -96,6 +96,8 @@ public:
 	void OnLoaded_85DA89AA4A74182281DE208A88B1AA18(class UObject* Loaded);
 	void OnLoaded_DAE0F2D042E1EE8E981273800B5808ED(class UObject* Loaded);
 	void OnLoaded_F240FC9447C9A18C546668AD2026A89D(class UObject* Loaded);
+	void OnLoaded_1881E30949760AF8F517E1A8502FCB2D(class UObject* Loaded);
+	void OnLoaded_85DA89AA4A74182281DE208ADD16DAE7(class UObject* Loaded);
 	void Completed_0236B9464600658108D0BDBEFF5198A5(const TArray<class UObject*>& Loaded);
 	void OnLoaded_74D1CC7A4F84EBED1C5CFC8D43B48DB7(class UObject* Loaded);
 	void OnLoaded_FFB6617641135AD0D32A768FC1989049(class UObject* Loaded);
@@ -110,19 +112,17 @@ public:
 	void OnLoaded_0226E8684E9F4CF1912DD2B08BCDD432(class UObject* Loaded);
 	void OnLoaded_44C233E04C497E898A6EE68EA5506F5A(class UObject* Loaded);
 	void OnLoaded_2099005542700D2022F146817F7CD551(class UObject* Loaded);
-	void OnLoaded_1881E30949760AF8F517E1A8502FCB2D(class UObject* Loaded);
-	void OnLoaded_85DA89AA4A74182281DE208ADD16DAE7(class UObject* Loaded);
+	void OnLoaded_DAE0F2D042E1EE8E981273805EFF7812(class UObject* Loaded);
 	void OnLoaded_697F5A3248F5E8F3196B0098EA6A45BF(class UObject* Loaded);
 	void OnLoaded_470FF1454207867BDDE76AB7420F01A4(class UObject* Loaded);
 	void OnLoaded_9FF53A5440DBF220AB61D1A2BE554E6B(class UObject* Loaded);
 	void OnLoaded_D6D8FBBE4351F56F8B516DAE7F6C1B0F(class UObject* Loaded);
-	void OnLoaded_DAE0F2D042E1EE8E981273805EFF7812(class UObject* Loaded);
+	void OnLoaded_F240FC9447C9A18C546668AD7581D862(class UObject* Loaded);
+	void Completed_C44C0BCB4761CE1EEC04BEB933867411(const TArray<class UObject*>& Loaded);
 	void OnLoaded_F240FC9447C9A18C546668AD9F028A2B(class UObject* Loaded);
 	void OnLoaded_DAE0F2D042E1EE8E98127380B47C2A5B(class UObject* Loaded);
 	void OnLoaded_85DA89AA4A74182281DE208A379588AE(class UObject* Loaded);
 	void OnLoaded_1881E30949760AF8F517E1A8BAAC9964(class UObject* Loaded);
-	void Completed_C44C0BCB4761CE1EEC04BEB933867411(const TArray<class UObject*>& Loaded);
-	void OnLoaded_F240FC9447C9A18C546668AD7581D862(class UObject* Loaded);
 	void OnInitState();
 	void OnLoadedStageAsset(int32 StageIndex);
 	void OnExitState();

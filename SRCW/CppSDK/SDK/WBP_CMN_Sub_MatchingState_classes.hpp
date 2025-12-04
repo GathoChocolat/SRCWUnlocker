@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,35 +20,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CMN_Sub_MatchingState.WBP_CMN_Sub_MatchingState_C
-// 0x00C0 (0x04E8 - 0x0428)
+// 0x00C0 (0x04F0 - 0x0430)
 class UWBP_CMN_Sub_MatchingState_C final : public ULobbyMatchingUIState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0428(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       MatchingState_Out;                                 // 0x0430(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       MatchingState_Loop_Matching;                       // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       MatchingState_Change_Matching;                     // 0x0440(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       MatchingState_Loop_Remind;                         // 0x0448(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       MatchingState_Loop;                                // 0x0450(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       MatchingState_In;                                  // 0x0458(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Base_Effect;                                       // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_Frame;                                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_Matching;                                     // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_Normal;                                       // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DSP_Icon_Friend;                                   // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UThrobber*                              DSP_Throbber_dot;                                  // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_0;                                         // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_57;                                        // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Message;                                       // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_01;            // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_02;            // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_03;            // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_04;            // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CMN_Sub_MatchingState_ModeIcon_C*  WBP_CMN_Sub_MatchingState_ModeIcon;                // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UWBP_CMN_Sub_MatchingState_CharaIcon_C*> MatchingIconArray;                         // 0x04D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	bool                                          bIsSetGameMode;                                    // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsPlayStartMatchingForward;                       // 0x04E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsPlayedRemind;                                   // 0x04E2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       MatchingState_Out;                                 // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       MatchingState_Loop_Matching;                       // 0x0440(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       MatchingState_Change_Matching;                     // 0x0448(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       MatchingState_Loop_Remind;                         // 0x0450(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       MatchingState_Loop;                                // 0x0458(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       MatchingState_In;                                  // 0x0460(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Base_Effect;                                       // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Frame;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Matching;                                     // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Normal;                                       // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DSP_Icon_Friend;                                   // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UThrobber*                              DSP_Throbber_dot;                                  // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_0;                                         // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_57;                                        // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Message;                                       // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_01;            // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_02;            // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_03;            // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_Sub_MatchingState_CharaIcon_C* WBP_CMN_Sub_MatchingState_CharaIcon_04;            // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_Sub_MatchingState_ModeIcon_C*  WBP_CMN_Sub_MatchingState_ModeIcon;                // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UWBP_CMN_Sub_MatchingState_CharaIcon_C*> MatchingIconArray;                         // 0x04D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	bool                                          bIsSetGameMode;                                    // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsPlayStartMatchingForward;                       // 0x04E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsPlayedRemind;                                   // 0x04EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ChangeMatchingAnim(bool bIsStartMatching);
@@ -73,32 +73,32 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CMN_Sub_MatchingState_C) == 0x000008, "Wrong alignment on UWBP_CMN_Sub_MatchingState_C");
-static_assert(sizeof(UWBP_CMN_Sub_MatchingState_C) == 0x0004E8, "Wrong size on UWBP_CMN_Sub_MatchingState_C");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, UberGraphFrame) == 0x000428, "Member 'UWBP_CMN_Sub_MatchingState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Out) == 0x000430, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Out' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop_Matching) == 0x000438, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop_Matching' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Change_Matching) == 0x000440, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Change_Matching' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop_Remind) == 0x000448, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop_Remind' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop) == 0x000450, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_In) == 0x000458, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_In' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Effect) == 0x000460, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Frame) == 0x000468, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Matching) == 0x000470, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Matching' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Normal) == 0x000478, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, DSP_Icon_Friend) == 0x000480, "Member 'UWBP_CMN_Sub_MatchingState_C::DSP_Icon_Friend' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, DSP_Throbber_dot) == 0x000488, "Member 'UWBP_CMN_Sub_MatchingState_C::DSP_Throbber_dot' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Overlay_0) == 0x000490, "Member 'UWBP_CMN_Sub_MatchingState_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, SizeBox_57) == 0x000498, "Member 'UWBP_CMN_Sub_MatchingState_C::SizeBox_57' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, TXT_Message) == 0x0004A0, "Member 'UWBP_CMN_Sub_MatchingState_C::TXT_Message' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_01) == 0x0004A8, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_01' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_02) == 0x0004B0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_02' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_03) == 0x0004B8, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_03' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_04) == 0x0004C0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_04' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_ModeIcon) == 0x0004C8, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_ModeIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingIconArray) == 0x0004D0, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingIconArray' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsSetGameMode) == 0x0004E0, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsSetGameMode' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsPlayStartMatchingForward) == 0x0004E1, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsPlayStartMatchingForward' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsPlayedRemind) == 0x0004E2, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsPlayedRemind' has a wrong offset!");
+static_assert(sizeof(UWBP_CMN_Sub_MatchingState_C) == 0x0004F0, "Wrong size on UWBP_CMN_Sub_MatchingState_C");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, UberGraphFrame) == 0x000430, "Member 'UWBP_CMN_Sub_MatchingState_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Out) == 0x000438, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Out' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop_Matching) == 0x000440, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop_Matching' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Change_Matching) == 0x000448, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Change_Matching' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop_Remind) == 0x000450, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop_Remind' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_Loop) == 0x000458, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_Loop' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingState_In) == 0x000460, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingState_In' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Effect) == 0x000468, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Effect' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Frame) == 0x000470, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Frame' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Matching) == 0x000478, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Matching' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Base_Normal) == 0x000480, "Member 'UWBP_CMN_Sub_MatchingState_C::Base_Normal' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, DSP_Icon_Friend) == 0x000488, "Member 'UWBP_CMN_Sub_MatchingState_C::DSP_Icon_Friend' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, DSP_Throbber_dot) == 0x000490, "Member 'UWBP_CMN_Sub_MatchingState_C::DSP_Throbber_dot' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, Overlay_0) == 0x000498, "Member 'UWBP_CMN_Sub_MatchingState_C::Overlay_0' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, SizeBox_57) == 0x0004A0, "Member 'UWBP_CMN_Sub_MatchingState_C::SizeBox_57' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, TXT_Message) == 0x0004A8, "Member 'UWBP_CMN_Sub_MatchingState_C::TXT_Message' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_01) == 0x0004B0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_01' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_02) == 0x0004B8, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_02' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_03) == 0x0004C0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_03' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_CharaIcon_04) == 0x0004C8, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_CharaIcon_04' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, WBP_CMN_Sub_MatchingState_ModeIcon) == 0x0004D0, "Member 'UWBP_CMN_Sub_MatchingState_C::WBP_CMN_Sub_MatchingState_ModeIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, MatchingIconArray) == 0x0004D8, "Member 'UWBP_CMN_Sub_MatchingState_C::MatchingIconArray' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsSetGameMode) == 0x0004E8, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsSetGameMode' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsPlayStartMatchingForward) == 0x0004E9, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsPlayStartMatchingForward' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_Sub_MatchingState_C, bIsPlayedRemind) == 0x0004EA, "Member 'UWBP_CMN_Sub_MatchingState_C::bIsPlayedRemind' has a wrong offset!");
 
 }
 

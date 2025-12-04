@@ -10,11 +10,28 @@
 
 #include "Basic.hpp"
 
+#include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Change Aiming UI
+// 0x000C (0x000C - 0x0000)
+struct WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI final
+{
+public:
+	EItemId                                       Item;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Get_Manual_Aiming_UI_Widget_Index_index;  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI");
+static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI) == 0x00000C, "Wrong size on WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI, Item) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI::Item' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI, CallFunc_Get_Manual_Aiming_UI_Widget_Index_index) == 0x000004, "Member 'WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI::CallFunc_Get_Manual_Aiming_UI_Widget_Index_index' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI, K2Node_SwitchInteger_CmpSuccess) == 0x000008, "Member 'WBP_Race_HUD_Sub_Aming_C_Change_Aiming_UI::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.ExecuteUbergraph_WBP_Race_HUD_Sub_Aming
 // 0x0004 (0x0004 - 0x0000)
@@ -26,6 +43,22 @@ public:
 static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Aming) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Aming");
 static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Aming) == 0x000004, "Wrong size on WBP_Race_HUD_Sub_Aming_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Aming");
 static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Aming, EntryPoint) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_ExecuteUbergraph_WBP_Race_HUD_Sub_Aming::EntryPoint' has a wrong offset!");
+
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Get Manual Aiming UI Widget Index
+// 0x000C (0x000C - 0x0000)
+struct WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index final
+{
+public:
+	EItemId                                       ItemId;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index");
+static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index) == 0x00000C, "Wrong size on WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index, ItemId) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index::ItemId' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index, Index_0) == 0x000004, "Member 'WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index::Index_0' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index, K2Node_SwitchEnum_CmpSuccess) == 0x000008, "Member 'WBP_Race_HUD_Sub_Aming_C_Get_Manual_Aiming_UI_Widget_Index::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.PlayAnimationHoming
 // 0x0008 (0x0008 - 0x0000)
@@ -71,16 +104,51 @@ static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_PlayAnimManualKeep) == 0x000008, 
 static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_PlayAnimManualKeep) == 0x000008, "Wrong size on WBP_Race_HUD_Sub_Aming_C_PlayAnimManualKeep");
 static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_PlayAnimManualKeep, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_PlayAnimManualKeep::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Set Default UI Material Param Index
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index");
+static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index, Value) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index::Value' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Default_UI_Material_Param_Index::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+
+// Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Set Item Remain Count
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count final
+{
+public:
+	double                                        remain;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count");
+static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count, remain) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count::remain' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Item_Remain_Count::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+
 // Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.Set Manual Aiming
-// 0x0001 (0x0001 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming final
 {
 public:
 	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Get_Manual_Aiming_UI_Widget_Index_index;  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming) == 0x000001, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming");
-static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming) == 0x000001, "Wrong size on WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming");
+static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming) == 0x000004, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming");
+static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming) == 0x00000C, "Wrong size on WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming");
 static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming, IsVisible_0) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming::IsVisible_0' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming, CallFunc_Get_Manual_Aiming_UI_Widget_Index_index) == 0x000004, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming::CallFunc_Get_Manual_Aiming_UI_Widget_Index_index' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Aming_C_Set_Manual_Aiming::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function WBP_Race_HUD_Sub_Aming.WBP_Race_HUD_Sub_Aming_C.SetAfterHomingVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -109,12 +177,12 @@ static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_SetBeforeHomingNotAnim, CallFunc
 struct WBP_Race_HUD_Sub_Aming_C_SetIconScale final
 {
 public:
-	double                                        Scale;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Scale_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Race_HUD_Sub_Aming_C_SetIconScale) == 0x000008, "Wrong alignment on WBP_Race_HUD_Sub_Aming_C_SetIconScale");
 static_assert(sizeof(WBP_Race_HUD_Sub_Aming_C_SetIconScale) == 0x000018, "Wrong size on WBP_Race_HUD_Sub_Aming_C_SetIconScale");
-static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_SetIconScale, Scale) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_SetIconScale::Scale' has a wrong offset!");
+static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_SetIconScale, Scale_0) == 0x000000, "Member 'WBP_Race_HUD_Sub_Aming_C_SetIconScale::Scale_0' has a wrong offset!");
 static_assert(offsetof(WBP_Race_HUD_Sub_Aming_C_SetIconScale, CallFunc_MakeVector2D_ReturnValue) == 0x000008, "Member 'WBP_Race_HUD_Sub_Aming_C_SetIconScale::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 }

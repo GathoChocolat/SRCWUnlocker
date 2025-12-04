@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_RaceMasterDataAccessor.BP_RaceMasterDataAccessor_C
-// 0x0008 (0x0150 - 0x0148)
+// 0x0008 (0x0160 - 0x0158)
 class UBP_RaceMasterDataAccessor_C final : public URaceMasterDataAccessor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0148(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0158(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_RaceMasterDataAccessor(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(UBP_RaceMasterDataAccessor_C) == 0x000008, "Wrong alignment on UBP_RaceMasterDataAccessor_C");
-static_assert(sizeof(UBP_RaceMasterDataAccessor_C) == 0x000150, "Wrong size on UBP_RaceMasterDataAccessor_C");
-static_assert(offsetof(UBP_RaceMasterDataAccessor_C, UberGraphFrame) == 0x000148, "Member 'UBP_RaceMasterDataAccessor_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UBP_RaceMasterDataAccessor_C) == 0x000160, "Wrong size on UBP_RaceMasterDataAccessor_C");
+static_assert(offsetof(UBP_RaceMasterDataAccessor_C, UberGraphFrame) == 0x000158, "Member 'UBP_RaceMasterDataAccessor_C::UberGraphFrame' has a wrong offset!");
 
 }
 

@@ -78,6 +78,17 @@ static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online, CallFunc_GetLastFocusedButton_ReturnValue) == 0x000018, "Member 'WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online::CallFunc_GetLastFocusedButton_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online, K2Node_CustomEvent_InFocus) == 0x000020, "Member 'WBP_TimeTrial_Sub_Online_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online::K2Node_CustomEvent_InFocus' has a wrong offset!");
 
+// Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.OnFirstFocus
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_TimeTrial_Sub_Online_C_OnFirstFocus final
+{
+public:
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_TimeTrial_Sub_Online_C_OnFirstFocus) == 0x000008, "Wrong alignment on WBP_TimeTrial_Sub_Online_C_OnFirstFocus");
+static_assert(sizeof(WBP_TimeTrial_Sub_Online_C_OnFirstFocus) == 0x000008, "Wrong size on WBP_TimeTrial_Sub_Online_C_OnFirstFocus");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_OnFirstFocus, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'WBP_TimeTrial_Sub_Online_C_OnFirstFocus::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+
 // Function WBP_TimeTrial_Sub_Online.WBP_TimeTrial_Sub_Online_C.SetIsFocusable
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_TimeTrial_Sub_Online_C_SetIsFocusable final
@@ -124,34 +135,34 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x00C6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C7[0x1];                                       // 0x00C7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00C8(0x0010)()
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x00E0(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x00D8(0x0010)()
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x00F0(0x0010)()
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLineGuideDisable_ReturnValue;           // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGhostMachineDisable_ReturnValue;        // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x010B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_ConvertClockCountToLapTimeText_ReturnValue; // 0x0110(0x0010)()
-	int32                                         Temp_int_Variable;                                 // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default;                             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUserGadgetData                        K2Node_Select_Default_1;                           // 0x012C(0x0008)(ConstParm, NoDestructor)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1; // 0x0138(0x0010)()
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_TimeTrial_Sub_Lap_C*>       K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWBP_TimeTrial_Sub_Lap_C*               CallFunc_Array_Get_Item_1;                         // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x016C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_MakeLiteralBool_ReturnValue;              // 0x016D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16E[0x2];                                      // 0x016E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLineGuideDisable_ReturnValue;           // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGhostMachineDisable_ReturnValue;        // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_112[0x6];                                      // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_ConvertClockCountToLapTimeText_ReturnValue; // 0x0118(0x0010)()
+	int32                                         Temp_int_Variable;                                 // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default;                             // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FUserGadgetData                        K2Node_Select_Default_1;                           // 0x0134(0x0008)(ConstParm, NoDestructor)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1; // 0x0140(0x0010)()
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_TimeTrial_Sub_Lap_C*>       K2Node_MakeArray_Array;                            // 0x0158(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWBP_TimeTrial_Sub_Lap_C*               CallFunc_Array_Get_Item_1;                         // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_MakeLiteralBool_ReturnValue;              // 0x0175(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_176[0x2];                                      // 0x0176(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUnionUIButtonBase*>             K2Node_MakeArray_Array_1;                          // 0x0180(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UUnionUIButtonsPanel*                   CallFunc_SetupButtonsPanel_ReturnValue;            // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
@@ -180,28 +191,27 @@ static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_F
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C5, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000C6, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralText_ReturnValue) == 0x0000C8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000D8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000E0, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000D8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000E8, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0000F0, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000100, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsLineGuideDisable_ReturnValue) == 0x000108, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsLineGuideDisable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsGhostMachineDisable_ReturnValue) == 0x000109, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsGhostMachineDisable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Not_PreBool_ReturnValue) == 0x00010A, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Not_PreBool_ReturnValue_1) == 0x00010B, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_ConvertClockCountToLapTimeText_ReturnValue) == 0x000110, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_ConvertClockCountToLapTimeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_int_Variable) == 0x000120, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_bool_Variable) == 0x000124, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_Select_Default) == 0x000128, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_Select_Default_1) == 0x00012C, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1) == 0x000138, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Add_ReturnValue) == 0x000148, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_MakeArray_Array) == 0x000150, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Get_Item_1) == 0x000160, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Length_ReturnValue_1) == 0x000168, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Less_IntInt_ReturnValue_1) == 0x00016C, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralBool_ReturnValue) == 0x00016D, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralInt_ReturnValue) == 0x000170, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_GetOwningPlayer_ReturnValue) == 0x000178, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsLineGuideDisable_ReturnValue) == 0x000100, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsLineGuideDisable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Not_PreBool_ReturnValue) == 0x000101, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000108, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_IsGhostMachineDisable_ReturnValue) == 0x000110, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_IsGhostMachineDisable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Not_PreBool_ReturnValue_1) == 0x000111, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_ConvertClockCountToLapTimeText_ReturnValue) == 0x000118, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_ConvertClockCountToLapTimeText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_int_Variable) == 0x000128, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, Temp_bool_Variable) == 0x00012C, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_Select_Default) == 0x000130, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_Select_Default_1) == 0x000134, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1) == 0x000140, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_ConvertClockCountToLapTimeText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Add_ReturnValue) == 0x000150, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_MakeArray_Array) == 0x000158, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Get_Item_1) == 0x000168, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Array_Length_ReturnValue_1) == 0x000170, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_Less_IntInt_ReturnValue_1) == 0x000174, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralBool_ReturnValue) == 0x000175, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_MakeLiteralInt_ReturnValue) == 0x000178, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, K2Node_MakeArray_Array_1) == 0x000180, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel, CallFunc_SetupButtonsPanel_ReturnValue) == 0x000190, "Member 'WBP_TimeTrial_Sub_Online_C_Setup_Online_Panel::CallFunc_SetupButtonsPanel_ReturnValue' has a wrong offset!");
 

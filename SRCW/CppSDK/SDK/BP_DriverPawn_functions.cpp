@@ -187,19 +187,19 @@ void ABP_DriverPawn_C::SetAnimClass(const class UClass* NewClass)
 }
 
 
-// Function BP_DriverPawn.BP_DriverPawn_C.SetEnableGfur
+// Function BP_DriverPawn.BP_DriverPawn_C.SetEnableGFur
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DriverPawn_C::SetEnableGfur(bool Enable)
+void ABP_DriverPawn_C::SetEnableGFur(bool Enable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DriverPawn_C", "SetEnableGfur");
+		Func = Class->GetFunction("BP_DriverPawn_C", "SetEnableGFur");
 
-	Params::BP_DriverPawn_C_SetEnableGfur Parms{};
+	Params::BP_DriverPawn_C_SetEnableGFur Parms{};
 
 	Parms.Enable = Enable;
 
@@ -270,6 +270,26 @@ void ABP_DriverPawn_C::SetRideableStatusType(ECarStatusType StatusType)
 	Params::BP_DriverPawn_C_SetRideableStatusType Parms{};
 
 	Parms.StatusType = StatusType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DriverPawn.BP_DriverPawn_C.SetupCharacterById
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EDriverId                               In_DriverId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DriverPawn_C::SetupCharacterById(EDriverId In_DriverId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_DriverPawn_C", "SetupCharacterById");
+
+	Params::BP_DriverPawn_C_SetupCharacterById Parms{};
+
+	Parms.In_DriverId = In_DriverId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

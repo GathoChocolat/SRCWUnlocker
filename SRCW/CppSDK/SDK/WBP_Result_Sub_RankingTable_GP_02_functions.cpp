@@ -129,6 +129,51 @@ void UWBP_Result_Sub_RankingTable_GP_02_C::ExecuteUbergraph_WBP_Result_Sub_Ranki
 }
 
 
+// Function WBP_Result_Sub_RankingTable_GP_02.WBP_Result_Sub_RankingTable_GP_02_C.GetHonorTitleId
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RacerIndex_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  HonorTitleId                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_Sub_RankingTable_GP_02_C::GetHonorTitleId(int32 RacerIndex_0, int32* HonorTitleId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_Sub_RankingTable_GP_02_C", "GetHonorTitleId");
+
+	Params::WBP_Result_Sub_RankingTable_GP_02_C_GetHonorTitleId Parms{};
+
+	Parms.RacerIndex_0 = RacerIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (HonorTitleId != nullptr)
+		*HonorTitleId = Parms.HonorTitleId;
+}
+
+
+// Function WBP_Result_Sub_RankingTable_GP_02.WBP_Result_Sub_RankingTable_GP_02_C.GetLegendGrade
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ELegendCompeRateGrade*                  LegendGrade                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_Sub_RankingTable_GP_02_C::GetLegendGrade(ELegendCompeRateGrade* LegendGrade)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_Sub_RankingTable_GP_02_C", "GetLegendGrade");
+
+	Params::WBP_Result_Sub_RankingTable_GP_02_C_GetLegendGrade Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (LegendGrade != nullptr)
+		*LegendGrade = Parms.LegendGrade;
+}
+
+
 // Function WBP_Result_Sub_RankingTable_GP_02.WBP_Result_Sub_RankingTable_GP_02_C.GetRateRank_impl
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1279,6 +1324,26 @@ void UWBP_Result_Sub_RankingTable_GP_02_C::SetTotalPointValue(int32 TotalPoint_0
 	Params::WBP_Result_Sub_RankingTable_GP_02_C_SetTotalPointValue Parms{};
 
 	Parms.TotalPoint_0 = TotalPoint_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Result_Sub_RankingTable_GP_02.WBP_Result_Sub_RankingTable_GP_02_C.SetupVisibleSettingByGameMode
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EGameModeId                             GameMode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_Sub_RankingTable_GP_02_C::SetupVisibleSettingByGameMode(EGameModeId GameMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_Sub_RankingTable_GP_02_C", "SetupVisibleSettingByGameMode");
+
+	Params::WBP_Result_Sub_RankingTable_GP_02_C_SetupVisibleSettingByGameMode Parms{};
+
+	Parms.GameMode = GameMode;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,26 +10,80 @@
 
 #include "Basic.hpp"
 
-#include "UMG_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_LegendInfo.WBP_LegendInfo_C
-// 0x0048 (0x0328 - 0x02E0)
-class UWBP_LegendInfo_C final : public UUserWidget
+// 0x0190 (0x04A0 - 0x0310)
+class UWBP_LegendInfo_C final : public ULegendCompeInfoWidget
 {
 public:
-	class UImage*                                 BlueBase;                                          // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DMY_EventInfo;                                     // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Day;                                           // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_Title;                                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 UVScroll_01;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 UVScroll_02;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 UVScroll_03;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 UVScroll_04;                                       // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 WhiteBase;                                         // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0310(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Aten;                                              // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 base;                                              // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_R;                                            // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Text;                                         // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Top;                                          // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BlueBase;                                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_AddWave;                                       // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_AddWave_1;                                     // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_Ptcl;                                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_Ptcl_1;                                        // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_Ptcl_2;                                        // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_Ptcl_3;                                        // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Eff_Ptcl_01;                                       // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_1000;                                        // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_0001;                                        // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_0010;                                        // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Grade_0100;                                        // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 hyphen_01;                                         // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 hyphen_02;                                         // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 hyphen_03;                                         // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 hyphen_04;                                         // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LegendInfo;                                        // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LegendInfo_BG;                                     // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_0;                                         // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_FooterInfo;                                    // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_HeaderCondition;                               // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_JoinInfo;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_LegendGrade;                                   // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_LegendGrade_1;                                 // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_LegendRank;                                    // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Next;                                          // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Num;                                           // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Period;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Round;                                         // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Round_NUM;                                     // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_Title;                                         // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 UVScroll_01;                                       // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 UVScroll_02;                                       // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 UVScroll_03;                                       // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 UVScroll_04;                                       // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate_01;                           // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HonorTitle_Plate_C*                WBP_HonorTitle_Plate_02;                           // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Popup_Sub_Btn_Standard_C*          WBP_Popup_Sub_Btn_Standard;                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ResultRate_Sub_RankIcon_C*         WBP_ResultRate_Sub_RankIcon;                       // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ResultRate_Sub_RankIcon_C*         WBP_ResultRate_Sub_RankIcon_LegendInfo;            // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TopInfo_Sub_HeldPop_C*             WBP_TopInfo_Sub_HeldPop;                           // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 WhiteBase;                                         // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Grade;                              // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Info;                               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+
+public:
+	void ExecuteUbergraph_WBP_LegendInfo(int32 EntryPoint);
+	void FireFocusEvent();
+	void FireUnfocusEvent();
+	void OnInitialized();
+	void SetCurrentRateNumber();
+	void SetInfoDispData(const struct FLegendCompeInfoDispData& InDispData);
+	void SetPopupDispState(EGameEventPhase Phase);
+	void SetRateDispState(EGameEventPhase Phase, bool IsPlayed, bool IsQualified);
 
 public:
 	static class UClass* StaticClass()
@@ -42,16 +96,57 @@ public:
 	}
 };
 static_assert(alignof(UWBP_LegendInfo_C) == 0x000008, "Wrong alignment on UWBP_LegendInfo_C");
-static_assert(sizeof(UWBP_LegendInfo_C) == 0x000328, "Wrong size on UWBP_LegendInfo_C");
-static_assert(offsetof(UWBP_LegendInfo_C, BlueBase) == 0x0002E0, "Member 'UWBP_LegendInfo_C::BlueBase' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, DMY_EventInfo) == 0x0002E8, "Member 'UWBP_LegendInfo_C::DMY_EventInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, TXT_Day) == 0x0002F0, "Member 'UWBP_LegendInfo_C::TXT_Day' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, TXT_Title) == 0x0002F8, "Member 'UWBP_LegendInfo_C::TXT_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_01) == 0x000300, "Member 'UWBP_LegendInfo_C::UVScroll_01' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_02) == 0x000308, "Member 'UWBP_LegendInfo_C::UVScroll_02' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_03) == 0x000310, "Member 'UWBP_LegendInfo_C::UVScroll_03' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_04) == 0x000318, "Member 'UWBP_LegendInfo_C::UVScroll_04' has a wrong offset!");
-static_assert(offsetof(UWBP_LegendInfo_C, WhiteBase) == 0x000320, "Member 'UWBP_LegendInfo_C::WhiteBase' has a wrong offset!");
+static_assert(sizeof(UWBP_LegendInfo_C) == 0x0004A0, "Wrong size on UWBP_LegendInfo_C");
+static_assert(offsetof(UWBP_LegendInfo_C, UberGraphFrame) == 0x000310, "Member 'UWBP_LegendInfo_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Aten) == 0x000318, "Member 'UWBP_LegendInfo_C::Aten' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, base) == 0x000320, "Member 'UWBP_LegendInfo_C::base' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Base_R) == 0x000328, "Member 'UWBP_LegendInfo_C::Base_R' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Base_Text) == 0x000330, "Member 'UWBP_LegendInfo_C::Base_Text' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Base_Top) == 0x000338, "Member 'UWBP_LegendInfo_C::Base_Top' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, BlueBase) == 0x000340, "Member 'UWBP_LegendInfo_C::BlueBase' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Eff_AddWave) == 0x000348, "Member 'UWBP_LegendInfo_C::Eff_AddWave' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Eff_AddWave_1) == 0x000350, "Member 'UWBP_LegendInfo_C::Eff_AddWave_1' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Eff_Ptcl) == 0x000358, "Member 'UWBP_LegendInfo_C::Eff_Ptcl' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Eff_Ptcl_1) == 0x000360, "Member 'UWBP_LegendInfo_C::Eff_Ptcl_1' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Eff_Ptcl_2) == 0x000368, "Member 'UWBP_LegendInfo_C::Eff_Ptcl_2' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Eff_Ptcl_3) == 0x000370, "Member 'UWBP_LegendInfo_C::Eff_Ptcl_3' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Eff_Ptcl_01) == 0x000378, "Member 'UWBP_LegendInfo_C::Eff_Ptcl_01' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Grade_1000) == 0x000380, "Member 'UWBP_LegendInfo_C::Grade_1000' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Grade_0001) == 0x000388, "Member 'UWBP_LegendInfo_C::Grade_0001' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Grade_0010) == 0x000390, "Member 'UWBP_LegendInfo_C::Grade_0010' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Grade_0100) == 0x000398, "Member 'UWBP_LegendInfo_C::Grade_0100' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, hyphen_01) == 0x0003A0, "Member 'UWBP_LegendInfo_C::hyphen_01' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, hyphen_02) == 0x0003A8, "Member 'UWBP_LegendInfo_C::hyphen_02' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, hyphen_03) == 0x0003B0, "Member 'UWBP_LegendInfo_C::hyphen_03' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, hyphen_04) == 0x0003B8, "Member 'UWBP_LegendInfo_C::hyphen_04' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, LegendInfo) == 0x0003C0, "Member 'UWBP_LegendInfo_C::LegendInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, LegendInfo_BG) == 0x0003C8, "Member 'UWBP_LegendInfo_C::LegendInfo_BG' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, Overlay_0) == 0x0003D0, "Member 'UWBP_LegendInfo_C::Overlay_0' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_FooterInfo) == 0x0003D8, "Member 'UWBP_LegendInfo_C::TXT_FooterInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_HeaderCondition) == 0x0003E0, "Member 'UWBP_LegendInfo_C::TXT_HeaderCondition' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_JoinInfo) == 0x0003E8, "Member 'UWBP_LegendInfo_C::TXT_JoinInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_LegendGrade) == 0x0003F0, "Member 'UWBP_LegendInfo_C::TXT_LegendGrade' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_LegendGrade_1) == 0x0003F8, "Member 'UWBP_LegendInfo_C::TXT_LegendGrade_1' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_LegendRank) == 0x000400, "Member 'UWBP_LegendInfo_C::TXT_LegendRank' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_Next) == 0x000408, "Member 'UWBP_LegendInfo_C::TXT_Next' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_Num) == 0x000410, "Member 'UWBP_LegendInfo_C::TXT_Num' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_Period) == 0x000418, "Member 'UWBP_LegendInfo_C::TXT_Period' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_Round) == 0x000420, "Member 'UWBP_LegendInfo_C::TXT_Round' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_Round_NUM) == 0x000428, "Member 'UWBP_LegendInfo_C::TXT_Round_NUM' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, TXT_Title) == 0x000430, "Member 'UWBP_LegendInfo_C::TXT_Title' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_01) == 0x000438, "Member 'UWBP_LegendInfo_C::UVScroll_01' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_02) == 0x000440, "Member 'UWBP_LegendInfo_C::UVScroll_02' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_03) == 0x000448, "Member 'UWBP_LegendInfo_C::UVScroll_03' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, UVScroll_04) == 0x000450, "Member 'UWBP_LegendInfo_C::UVScroll_04' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WBP_HonorTitle_Plate_01) == 0x000458, "Member 'UWBP_LegendInfo_C::WBP_HonorTitle_Plate_01' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WBP_HonorTitle_Plate_02) == 0x000460, "Member 'UWBP_LegendInfo_C::WBP_HonorTitle_Plate_02' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WBP_Popup_Sub_Btn_Standard) == 0x000468, "Member 'UWBP_LegendInfo_C::WBP_Popup_Sub_Btn_Standard' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WBP_ResultRate_Sub_RankIcon) == 0x000470, "Member 'UWBP_LegendInfo_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WBP_ResultRate_Sub_RankIcon_LegendInfo) == 0x000478, "Member 'UWBP_LegendInfo_C::WBP_ResultRate_Sub_RankIcon_LegendInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WBP_TopInfo_Sub_HeldPop) == 0x000480, "Member 'UWBP_LegendInfo_C::WBP_TopInfo_Sub_HeldPop' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WhiteBase) == 0x000488, "Member 'UWBP_LegendInfo_C::WhiteBase' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WidgetSwitcher_Grade) == 0x000490, "Member 'UWBP_LegendInfo_C::WidgetSwitcher_Grade' has a wrong offset!");
+static_assert(offsetof(UWBP_LegendInfo_C, WidgetSwitcher_Info) == 0x000498, "Member 'UWBP_LegendInfo_C::WidgetSwitcher_Info' has a wrong offset!");
 
 }
 

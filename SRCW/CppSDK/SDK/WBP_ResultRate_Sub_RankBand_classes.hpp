@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
@@ -30,7 +30,7 @@ public:
 	class UImage*                                 Base_C;                                            // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Base_D;                                            // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Base_E;                                            // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Base_LEGEND;                                       // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Legend;                                       // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 RankBand_Base;                                     // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 RateGaugeArrow_01;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_ResultRate_Sub_RankIcon_C*         WBP_ResultRate_Sub_RankIcon;                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -76,7 +76,7 @@ static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, Base_B) == 0x000300, "Mem
 static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, Base_C) == 0x000308, "Member 'UWBP_ResultRate_Sub_RankBand_C::Base_C' has a wrong offset!");
 static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, Base_D) == 0x000310, "Member 'UWBP_ResultRate_Sub_RankBand_C::Base_D' has a wrong offset!");
 static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, Base_E) == 0x000318, "Member 'UWBP_ResultRate_Sub_RankBand_C::Base_E' has a wrong offset!");
-static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, Base_LEGEND) == 0x000320, "Member 'UWBP_ResultRate_Sub_RankBand_C::Base_LEGEND' has a wrong offset!");
+static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, Base_Legend) == 0x000320, "Member 'UWBP_ResultRate_Sub_RankBand_C::Base_Legend' has a wrong offset!");
 static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, RankBand_Base) == 0x000328, "Member 'UWBP_ResultRate_Sub_RankBand_C::RankBand_Base' has a wrong offset!");
 static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, RateGaugeArrow_01) == 0x000330, "Member 'UWBP_ResultRate_Sub_RankBand_C::RateGaugeArrow_01' has a wrong offset!");
 static_assert(offsetof(UWBP_ResultRate_Sub_RankBand_C, WBP_ResultRate_Sub_RankIcon) == 0x000338, "Member 'UWBP_ResultRate_Sub_RankBand_C::WBP_ResultRate_Sub_RankIcon' has a wrong offset!");

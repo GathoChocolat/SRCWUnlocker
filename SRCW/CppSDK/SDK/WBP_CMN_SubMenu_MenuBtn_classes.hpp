@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -42,7 +42,6 @@ public:
 public:
 	void Check_Button_Selectable(ECommonMenuButtonType InMenuButtonType, bool* bOutSelectable);
 	void Check_Chara_Machine_New(bool* NewFlag);
-	void CheckDisableGadgetList(bool* IsDisableListAvailable, TArray<int32>* RefGadgetIds);
 	void ExecuteUbergraph_WBP_CMN_SubMenu_MenuBtn(int32 EntryPoint);
 	void InitializeNewIcon();
 	void IsDisableGadgetEquipped(bool* DisableListEquipped);

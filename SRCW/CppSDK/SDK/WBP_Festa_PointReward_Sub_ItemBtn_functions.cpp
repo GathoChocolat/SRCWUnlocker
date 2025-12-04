@@ -403,9 +403,10 @@ void UWBP_Festa_PointReward_Sub_ItemBtn_C::SetFestaPoint(int32 InFestaPoint)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // ERewardType                             rewardType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InItemId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Festa_PointReward_Sub_ItemBtn_C::SetItemIcon(ERewardType rewardType, class UTexture2D* Texture)
+void UWBP_Festa_PointReward_Sub_ItemBtn_C::SetItemIcon(ERewardType rewardType, int32 InItemId, class UTexture2D* Texture)
 {
 	static class UFunction* Func = nullptr;
 
@@ -415,6 +416,7 @@ void UWBP_Festa_PointReward_Sub_ItemBtn_C::SetItemIcon(ERewardType rewardType, c
 	Params::WBP_Festa_PointReward_Sub_ItemBtn_C_SetItemIcon Parms{};
 
 	Parms.rewardType = rewardType;
+	Parms.InItemId = InItemId;
 	Parms.Texture = Texture;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -557,6 +559,7 @@ void UWBP_Festa_PointReward_Sub_ItemBtn_C::UpdateFestaEventInfoSelect(int32 Rewa
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // ERewardType                             rewardType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InItemId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsNumDisplay                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Num                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -564,7 +567,7 @@ void UWBP_Festa_PointReward_Sub_ItemBtn_C::UpdateFestaEventInfoSelect(int32 Rewa
 // int32                                   PlayerFestaPoint                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   isNext                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Festa_PointReward_Sub_ItemBtn_C::UpdateReward(ERewardType rewardType, class UTexture2D* Texture, bool IsNumDisplay, int32 Num, int32 RewardFestaPoint, int32 PlayerFestaPoint, int32 isNext)
+void UWBP_Festa_PointReward_Sub_ItemBtn_C::UpdateReward(ERewardType rewardType, int32 InItemId, class UTexture2D* Texture, bool IsNumDisplay, int32 Num, int32 RewardFestaPoint, int32 PlayerFestaPoint, int32 isNext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -574,6 +577,7 @@ void UWBP_Festa_PointReward_Sub_ItemBtn_C::UpdateReward(ERewardType rewardType, 
 	Params::WBP_Festa_PointReward_Sub_ItemBtn_C_UpdateReward Parms{};
 
 	Parms.rewardType = rewardType;
+	Parms.InItemId = InItemId;
 	Parms.Texture = Texture;
 	Parms.IsNumDisplay = IsNumDisplay;
 	Parms.Num = Num;

@@ -62,31 +62,6 @@ void UWBP_CMN_SubMenu_MenuBtn_C::Check_Chara_Machine_New(bool* NewFlag)
 }
 
 
-// Function WBP_CMN_SubMenu_MenuBtn.WBP_CMN_SubMenu_MenuBtn_C.CheckDisableGadgetList
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   IsDisableListAvailable                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<int32>*                          RefGadgetIds                                           (Parm, OutParm)
-
-void UWBP_CMN_SubMenu_MenuBtn_C::CheckDisableGadgetList(bool* IsDisableListAvailable, TArray<int32>* RefGadgetIds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CMN_SubMenu_MenuBtn_C", "CheckDisableGadgetList");
-
-	Params::WBP_CMN_SubMenu_MenuBtn_C_CheckDisableGadgetList Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsDisableListAvailable != nullptr)
-		*IsDisableListAvailable = Parms.IsDisableListAvailable;
-
-	if (RefGadgetIds != nullptr)
-		*RefGadgetIds = std::move(Parms.RefGadgetIds);
-}
-
-
 // Function WBP_CMN_SubMenu_MenuBtn.WBP_CMN_SubMenu_MenuBtn_C.ExecuteUbergraph_WBP_CMN_SubMenu_MenuBtn
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:

@@ -31,6 +31,20 @@ void UWBP_GadgetCustom_Sub_GadgetPlate_C::BindDelegateEvents()
 }
 
 
+// Function WBP_GadgetCustom_Sub_GadgetPlate.WBP_GadgetCustom_Sub_GadgetPlate_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_GadgetCustom_Sub_GadgetPlate_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCustom_Sub_GadgetPlate_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_GadgetCustom_Sub_GadgetPlate.WBP_GadgetCustom_Sub_GadgetPlate_C.ExecuteUbergraph_WBP_GadgetCustom_Sub_GadgetPlate
 // (Final, UbergraphFunction)
 // Parameters:
@@ -235,6 +249,20 @@ void UWBP_GadgetCustom_Sub_GadgetPlate_C::PlayTabSound()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_GadgetCustom_Sub_GadgetPlate_C", "PlayTabSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GadgetCustom_Sub_GadgetPlate.WBP_GadgetCustom_Sub_GadgetPlate_C.Refresh
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_GadgetCustom_Sub_GadgetPlate_C::Refresh()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GadgetCustom_Sub_GadgetPlate_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

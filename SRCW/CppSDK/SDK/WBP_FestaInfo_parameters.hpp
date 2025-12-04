@@ -49,5 +49,23 @@ static_assert(alignof(WBP_FestaInfo_C_SetTitle) == 0x000008, "Wrong alignment on
 static_assert(sizeof(WBP_FestaInfo_C_SetTitle) == 0x000010, "Wrong size on WBP_FestaInfo_C_SetTitle");
 static_assert(offsetof(WBP_FestaInfo_C_SetTitle, Title) == 0x000000, "Member 'WBP_FestaInfo_C_SetTitle::Title' has a wrong offset!");
 
+// Function WBP_FestaInfo.WBP_FestaInfo_C.SetupHeldPop
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_FestaInfo_C_SetupHeldPop final
+{
+public:
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckStartNoticeDateTime_ReturnValue;     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckFestaStartDateTime_ReturnValue;      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FestaInfo_C_SetupHeldPop) == 0x000008, "Wrong alignment on WBP_FestaInfo_C_SetupHeldPop");
+static_assert(sizeof(WBP_FestaInfo_C_SetupHeldPop) == 0x000010, "Wrong size on WBP_FestaInfo_C_SetupHeldPop");
+static_assert(offsetof(WBP_FestaInfo_C_SetupHeldPop, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000000, "Member 'WBP_FestaInfo_C_SetupHeldPop::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FestaInfo_C_SetupHeldPop, CallFunc_CheckStartNoticeDateTime_ReturnValue) == 0x000008, "Member 'WBP_FestaInfo_C_SetupHeldPop::CallFunc_CheckStartNoticeDateTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FestaInfo_C_SetupHeldPop, CallFunc_CheckFestaStartDateTime_ReturnValue) == 0x000009, "Member 'WBP_FestaInfo_C_SetupHeldPop::CallFunc_CheckFestaStartDateTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FestaInfo_C_SetupHeldPop, CallFunc_SelectInt_ReturnValue) == 0x00000C, "Member 'WBP_FestaInfo_C_SetupHeldPop::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UNION_structs.hpp"
 #include "UnionRun_structs.hpp"
 
 
@@ -39,37 +39,20 @@ static_assert(offsetof(BP_DriverPawn_C_BindCurvesMaterialPlayer, CallFunc_BindCu
 static_assert(offsetof(BP_DriverPawn_C_BindCurvesMaterialPlayer, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000014, "Member 'BP_DriverPawn_C_BindCurvesMaterialPlayer::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_DriverPawn.BP_DriverPawn_C.CreateDriver
-// 0x0028 (0x0028 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BP_DriverPawn_C_CreateDriver final
 {
 public:
 	EDriverId                                     ID;                                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                OwnerPawn;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetupComponent_ReturnValue;               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UUnionSettings*                   CallFunc_GetGameSettings_ReturnValue;              // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetGFurEnable_ReturnValue;                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Select_Default;                             // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetupComponent_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_DriverPawn_C_CreateDriver) == 0x000008, "Wrong alignment on BP_DriverPawn_C_CreateDriver");
-static_assert(sizeof(BP_DriverPawn_C_CreateDriver) == 0x000028, "Wrong size on BP_DriverPawn_C_CreateDriver");
+static_assert(sizeof(BP_DriverPawn_C_CreateDriver) == 0x000018, "Wrong size on BP_DriverPawn_C_CreateDriver");
 static_assert(offsetof(BP_DriverPawn_C_CreateDriver, ID) == 0x000000, "Member 'BP_DriverPawn_C_CreateDriver::ID' has a wrong offset!");
 static_assert(offsetof(BP_DriverPawn_C_CreateDriver, OwnerPawn) == 0x000008, "Member 'BP_DriverPawn_C_CreateDriver::OwnerPawn' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000010, "Member 'BP_DriverPawn_C_CreateDriver::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, Temp_bool_Variable) == 0x000011, "Member 'BP_DriverPawn_C_CreateDriver::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, CallFunc_SetupComponent_ReturnValue) == 0x000012, "Member 'BP_DriverPawn_C_CreateDriver::CallFunc_SetupComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, CallFunc_GetGameSettings_ReturnValue) == 0x000018, "Member 'BP_DriverPawn_C_CreateDriver::CallFunc_GetGameSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, Temp_bool_Variable_1) == 0x000020, "Member 'BP_DriverPawn_C_CreateDriver::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, CallFunc_GetGFurEnable_ReturnValue) == 0x000021, "Member 'BP_DriverPawn_C_CreateDriver::CallFunc_GetGFurEnable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, CallFunc_IsValid_ReturnValue) == 0x000022, "Member 'BP_DriverPawn_C_CreateDriver::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, K2Node_Select_Default) == 0x000023, "Member 'BP_DriverPawn_C_CreateDriver::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_DriverPawn_C_CreateDriver, CallFunc_BooleanAND_ReturnValue) == 0x000024, "Member 'BP_DriverPawn_C_CreateDriver::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_CreateDriver, CallFunc_SetupComponent_ReturnValue) == 0x000010, "Member 'BP_DriverPawn_C_CreateDriver::CallFunc_SetupComponent_ReturnValue' has a wrong offset!");
 
 // Function BP_DriverPawn.BP_DriverPawn_C.ExecuteUbergraph_BP_DriverPawn
 // 0x0050 (0x0050 - 0x0000)
@@ -196,16 +179,18 @@ static_assert(alignof(BP_DriverPawn_C_SetAnimClass) == 0x000008, "Wrong alignmen
 static_assert(sizeof(BP_DriverPawn_C_SetAnimClass) == 0x000008, "Wrong size on BP_DriverPawn_C_SetAnimClass");
 static_assert(offsetof(BP_DriverPawn_C_SetAnimClass, NewClass) == 0x000000, "Member 'BP_DriverPawn_C_SetAnimClass::NewClass' has a wrong offset!");
 
-// Function BP_DriverPawn.BP_DriverPawn_C.SetEnableGfur
-// 0x0001 (0x0001 - 0x0000)
-struct BP_DriverPawn_C_SetEnableGfur final
+// Function BP_DriverPawn.BP_DriverPawn_C.SetEnableGFur
+// 0x0002 (0x0002 - 0x0000)
+struct BP_DriverPawn_C_SetEnableGFur final
 {
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DriverPawn_C_SetEnableGfur) == 0x000001, "Wrong alignment on BP_DriverPawn_C_SetEnableGfur");
-static_assert(sizeof(BP_DriverPawn_C_SetEnableGfur) == 0x000001, "Wrong size on BP_DriverPawn_C_SetEnableGfur");
-static_assert(offsetof(BP_DriverPawn_C_SetEnableGfur, Enable) == 0x000000, "Member 'BP_DriverPawn_C_SetEnableGfur::Enable' has a wrong offset!");
+static_assert(alignof(BP_DriverPawn_C_SetEnableGFur) == 0x000001, "Wrong alignment on BP_DriverPawn_C_SetEnableGFur");
+static_assert(sizeof(BP_DriverPawn_C_SetEnableGFur) == 0x000002, "Wrong size on BP_DriverPawn_C_SetEnableGFur");
+static_assert(offsetof(BP_DriverPawn_C_SetEnableGFur, Enable) == 0x000000, "Member 'BP_DriverPawn_C_SetEnableGFur::Enable' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetEnableGFur, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'BP_DriverPawn_C_SetEnableGFur::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BP_DriverPawn.BP_DriverPawn_C.SetItemParam
 // 0x0014 (0x0014 - 0x0000)
@@ -249,6 +234,34 @@ public:
 static_assert(alignof(BP_DriverPawn_C_SetRideableStatusType) == 0x000001, "Wrong alignment on BP_DriverPawn_C_SetRideableStatusType");
 static_assert(sizeof(BP_DriverPawn_C_SetRideableStatusType) == 0x000001, "Wrong size on BP_DriverPawn_C_SetRideableStatusType");
 static_assert(offsetof(BP_DriverPawn_C_SetRideableStatusType, StatusType) == 0x000000, "Member 'BP_DriverPawn_C_SetRideableStatusType::StatusType' has a wrong offset!");
+
+// Function BP_DriverPawn.BP_DriverPawn_C.SetupCharacterById
+// 0x0018 (0x0018 - 0x0000)
+struct BP_DriverPawn_C_SetupCharacterById final
+{
+public:
+	EDriverId                                     In_DriverId;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UUnionSettings*                   CallFunc_GetGameSettings_ReturnValue;              // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetGFurEnable_ReturnValue;                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Select_Default;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_DriverPawn_C_SetupCharacterById) == 0x000008, "Wrong alignment on BP_DriverPawn_C_SetupCharacterById");
+static_assert(sizeof(BP_DriverPawn_C_SetupCharacterById) == 0x000018, "Wrong size on BP_DriverPawn_C_SetupCharacterById");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, In_DriverId) == 0x000000, "Member 'BP_DriverPawn_C_SetupCharacterById::In_DriverId' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, Temp_bool_Variable) == 0x000001, "Member 'BP_DriverPawn_C_SetupCharacterById::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'BP_DriverPawn_C_SetupCharacterById::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, K2Node_SwitchEnum_CmpSuccess) == 0x000003, "Member 'BP_DriverPawn_C_SetupCharacterById::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, Temp_bool_Variable_1) == 0x000004, "Member 'BP_DriverPawn_C_SetupCharacterById::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, CallFunc_GetGameSettings_ReturnValue) == 0x000008, "Member 'BP_DriverPawn_C_SetupCharacterById::CallFunc_GetGameSettings_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_DriverPawn_C_SetupCharacterById::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, CallFunc_GetGFurEnable_ReturnValue) == 0x000011, "Member 'BP_DriverPawn_C_SetupCharacterById::CallFunc_GetGFurEnable_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_DriverPawn_C_SetupCharacterById, K2Node_Select_Default) == 0x000012, "Member 'BP_DriverPawn_C_SetupCharacterById::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_DriverPawn.BP_DriverPawn_C.UseItem
 // 0x0002 (0x0002 - 0x0000)

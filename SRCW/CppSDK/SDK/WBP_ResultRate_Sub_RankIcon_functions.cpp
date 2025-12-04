@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -32,6 +32,46 @@ void UWBP_ResultRate_Sub_RankIcon_C::ExecuteUbergraph_WBP_ResultRate_Sub_RankIco
 	Params::WBP_ResultRate_Sub_RankIcon_C_ExecuteUbergraph_WBP_ResultRate_Sub_RankIcon Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.OnLoaded_C50783C54ECCC47D92BB0CA0355D1832
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RankIcon_C::OnLoaded_C50783C54ECCC47D92BB0CA0355D1832(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankIcon_C", "OnLoaded_C50783C54ECCC47D92BB0CA0355D1832");
+
+	Params::WBP_ResultRate_Sub_RankIcon_C_OnLoaded_C50783C54ECCC47D92BB0CA0355D1832 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RankIcon_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankIcon_C", "PreConstruct");
+
+	Params::WBP_ResultRate_Sub_RankIcon_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,6 +97,26 @@ void UWBP_ResultRate_Sub_RankIcon_C::Set_Rank_SText_Impl(const class FText& Num)
 }
 
 
+// Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetLegendCompeGrade
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ELegendCompeRateGrade                   gradeValue                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RankIcon_C::SetLegendCompeGrade(ELegendCompeRateGrade gradeValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankIcon_C", "SetLegendCompeGrade");
+
+	Params::WBP_ResultRate_Sub_RankIcon_C_SetLegendCompeGrade Parms{};
+
+	Parms.gradeValue = gradeValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetLegendNumHide
 // (BlueprintCallable, BlueprintEvent)
 
@@ -72,7 +132,7 @@ void UWBP_ResultRate_Sub_RankIcon_C::SetLegendNumHide()
 
 
 // Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetRankImpl
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // ERateRank                               RateRank                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -104,6 +164,50 @@ void UWBP_ResultRate_Sub_RankIcon_C::SetRateRank(ERateRank InRateRank)
 		Func = Class->GetFunction("WBP_ResultRate_Sub_RankIcon_C", "SetRateRank");
 
 	Params::WBP_ResultRate_Sub_RankIcon_C_SetRateRank Parms{};
+
+	Parms.InRateRank = InRateRank;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetRateRankText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class URichTextBlock*                   BaseText                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class URichTextBlock*                   Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const ERateRank&                        RankRate                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RankIcon_C::SetRateRankText(class URichTextBlock* BaseText, class URichTextBlock* Text, const ERateRank& RankRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankIcon_C", "SetRateRankText");
+
+	Params::WBP_ResultRate_Sub_RankIcon_C_SetRateRankText Parms{};
+
+	Parms.BaseText = BaseText;
+	Parms.Text = Text;
+	Parms.RankRate = RankRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RankIcon.WBP_ResultRate_Sub_RankIcon_C.SetupRateRankText
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ERateRank                               InRateRank                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RankIcon_C::SetupRateRankText(ERateRank InRateRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RankIcon_C", "SetupRateRankText");
+
+	Params::WBP_ResultRate_Sub_RankIcon_C_SetupRateRankText Parms{};
 
 	Parms.InRateRank = InRateRank;
 

@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "UnionSystem_structs.hpp"
+#include "UnionLib_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
+#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
-#include "UnionUI_structs.hpp"
-#include "UnionLib_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_RaceSequence.BP_RaceSequence_C
-// 0x02A8 (0x06E8 - 0x0440)
+// 0x0268 (0x06A8 - 0x0440)
 class ABP_RaceSequence_C final : public ARaceSequence
 {
 public:
@@ -78,16 +78,16 @@ public:
 	bool                                          bOverrideDriverId;                                 // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, struct FRaceCourseMapInfo>        DomainIndex_MapTexture;                            // 0x05E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRaceCourseSubMapInfo                  RaceCourseSubMapInfo;                              // 0x0638(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TSoftClassPtr<class UClass>                   LoadingRaceStandingsClassRef;                      // 0x0688(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	class UClass*                                 As_Race_Standings;                                 // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FSoundHandle                           RaceSilenceSoundHandle;                            // 0x06B8(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                         Pad_6BC[0x4];                                      // 0x06BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UObject*>                        CharaIcons;                                        // 0x06C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         Tmp;                                               // 0x06D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6D4[0x4];                                      // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 LoadRaceEndMenuSequence;                           // 0x06D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UWBP_System_BlackBoard_C*               BlackBoard;                                        // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FRaceCourseSubMapInfo>          RaceCourseSubMapInfo;                              // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TSoftClassPtr<class UClass>                   LoadingRaceStandingsClassRef;                      // 0x0648(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	class UClass*                                 As_Race_Standings;                                 // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FSoundHandle                           RaceSilenceSoundHandle;                            // 0x0678(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance)
+	uint8                                         Pad_67C[0x4];                                      // 0x067C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UObject*>                        CharaIcons;                                        // 0x0680(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         Tmp;                                               // 0x0690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_694[0x4];                                      // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 LoadRaceEndMenuSequence;                           // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_System_BlackBoard_C*               BlackBoard;                                        // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AfterReadyStatusObject();
@@ -98,8 +98,8 @@ public:
 	void BindRaceBGMEvent(class UAppRaceEventManager* AppRaceEventManager);
 	void BindSilenceSoundEvent(class UAppRaceEventManager* AppRaceEventManager);
 	void ChangeDomainPre1st(int32 RacerIndex);
-	void ChangeSubEvent(const EMainSubCourseIndex& NextMainSubState, int32 RacerId);
-	void ChangeSubMapTexture(EMainSubCourseIndex NextMainSubState, EStageCourseMainSubMapInfo* MainSubState);
+	void ChangeSubEvent(const EMainSubCourseIndex& NextMainSubState, int32 RacerID);
+	void ChangeSubMapTexture(int32 DomainIndex, EMainSubCourseIndex NextMainSubState, EStageCourseMainSubMapInfo* MainSubState);
 	void Chara_Machine_COMROM();
 	void CheckDebugGenericVar();
 	void ConvertIndexToDriverId(int32 Index_0, EDriverId* ID);
@@ -186,7 +186,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_RaceSequence_C) == 0x000008, "Wrong alignment on ABP_RaceSequence_C");
-static_assert(sizeof(ABP_RaceSequence_C) == 0x0006E8, "Wrong size on ABP_RaceSequence_C");
+static_assert(sizeof(ABP_RaceSequence_C) == 0x0006A8, "Wrong size on ABP_RaceSequence_C");
 static_assert(offsetof(ABP_RaceSequence_C, UberGraphFrame) == 0x000440, "Member 'ABP_RaceSequence_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABP_RaceSequence_C, BPC_RaceSequenceStateSave) == 0x000448, "Member 'ABP_RaceSequence_C::BPC_RaceSequenceStateSave' has a wrong offset!");
 static_assert(offsetof(ABP_RaceSequence_C, BPC_RaceSequenceStateDriverGetting) == 0x000450, "Member 'ABP_RaceSequence_C::BPC_RaceSequenceStateDriverGetting' has a wrong offset!");
@@ -236,13 +236,13 @@ static_assert(offsetof(ABP_RaceSequence_C, OverrideDriverIds) == 0x0005D0, "Memb
 static_assert(offsetof(ABP_RaceSequence_C, bOverrideDriverId) == 0x0005E0, "Member 'ABP_RaceSequence_C::bOverrideDriverId' has a wrong offset!");
 static_assert(offsetof(ABP_RaceSequence_C, DomainIndex_MapTexture) == 0x0005E8, "Member 'ABP_RaceSequence_C::DomainIndex_MapTexture' has a wrong offset!");
 static_assert(offsetof(ABP_RaceSequence_C, RaceCourseSubMapInfo) == 0x000638, "Member 'ABP_RaceSequence_C::RaceCourseSubMapInfo' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequence_C, LoadingRaceStandingsClassRef) == 0x000688, "Member 'ABP_RaceSequence_C::LoadingRaceStandingsClassRef' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequence_C, As_Race_Standings) == 0x0006B0, "Member 'ABP_RaceSequence_C::As_Race_Standings' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequence_C, RaceSilenceSoundHandle) == 0x0006B8, "Member 'ABP_RaceSequence_C::RaceSilenceSoundHandle' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequence_C, CharaIcons) == 0x0006C0, "Member 'ABP_RaceSequence_C::CharaIcons' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequence_C, Tmp) == 0x0006D0, "Member 'ABP_RaceSequence_C::Tmp' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequence_C, LoadRaceEndMenuSequence) == 0x0006D8, "Member 'ABP_RaceSequence_C::LoadRaceEndMenuSequence' has a wrong offset!");
-static_assert(offsetof(ABP_RaceSequence_C, BlackBoard) == 0x0006E0, "Member 'ABP_RaceSequence_C::BlackBoard' has a wrong offset!");
+static_assert(offsetof(ABP_RaceSequence_C, LoadingRaceStandingsClassRef) == 0x000648, "Member 'ABP_RaceSequence_C::LoadingRaceStandingsClassRef' has a wrong offset!");
+static_assert(offsetof(ABP_RaceSequence_C, As_Race_Standings) == 0x000670, "Member 'ABP_RaceSequence_C::As_Race_Standings' has a wrong offset!");
+static_assert(offsetof(ABP_RaceSequence_C, RaceSilenceSoundHandle) == 0x000678, "Member 'ABP_RaceSequence_C::RaceSilenceSoundHandle' has a wrong offset!");
+static_assert(offsetof(ABP_RaceSequence_C, CharaIcons) == 0x000680, "Member 'ABP_RaceSequence_C::CharaIcons' has a wrong offset!");
+static_assert(offsetof(ABP_RaceSequence_C, Tmp) == 0x000690, "Member 'ABP_RaceSequence_C::Tmp' has a wrong offset!");
+static_assert(offsetof(ABP_RaceSequence_C, LoadRaceEndMenuSequence) == 0x000698, "Member 'ABP_RaceSequence_C::LoadRaceEndMenuSequence' has a wrong offset!");
+static_assert(offsetof(ABP_RaceSequence_C, BlackBoard) == 0x0006A0, "Member 'ABP_RaceSequence_C::BlackBoard' has a wrong offset!");
 
 }
 

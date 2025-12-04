@@ -11,22 +11,21 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CMN_SubMenu.WBP_CMN_SubMenu_C
-// 0x0018 (0x0420 - 0x0408)
+// 0x0010 (0x0420 - 0x0410)
 class UWBP_CMN_SubMenu_C final : public UCommonMenuSubMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0408(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_CMN_SubMenu_List_C*                WBP_CMN_SubMenu_List;                              // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UUnionUIButtonsPanel*                   ButtonPanel;                                       // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -53,8 +52,7 @@ public:
 };
 static_assert(alignof(UWBP_CMN_SubMenu_C) == 0x000008, "Wrong alignment on UWBP_CMN_SubMenu_C");
 static_assert(sizeof(UWBP_CMN_SubMenu_C) == 0x000420, "Wrong size on UWBP_CMN_SubMenu_C");
-static_assert(offsetof(UWBP_CMN_SubMenu_C, UberGraphFrame) == 0x000408, "Member 'UWBP_CMN_SubMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CMN_SubMenu_C, WBP_CMN_SubMenu_List) == 0x000410, "Member 'UWBP_CMN_SubMenu_C::WBP_CMN_SubMenu_List' has a wrong offset!");
+static_assert(offsetof(UWBP_CMN_SubMenu_C, UberGraphFrame) == 0x000410, "Member 'UWBP_CMN_SubMenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CMN_SubMenu_C, ButtonPanel) == 0x000418, "Member 'UWBP_CMN_SubMenu_C::ButtonPanel' has a wrong offset!");
 
 }

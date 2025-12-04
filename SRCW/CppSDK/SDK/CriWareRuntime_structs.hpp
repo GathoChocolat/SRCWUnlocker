@@ -387,52 +387,26 @@ enum class EAtomFormat : uint8
 	EAtomFormat_MAX                          = 13,
 };
 
-// ScriptStruct CriWareRuntime.ManaPlayerTrackOptions
-// 0x0018 (0x0018 - 0x0000)
-struct FManaPlayerTrackOptions final
-{
-public:
-	int32                                         Audio;                                             // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SubAudio;                                          // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExtraAudio;                                        // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Subtitle;                                          // 0x000C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Video;                                             // 0x0010(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Alpha;                                             // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FManaPlayerTrackOptions) == 0x000004, "Wrong alignment on FManaPlayerTrackOptions");
-static_assert(sizeof(FManaPlayerTrackOptions) == 0x000018, "Wrong size on FManaPlayerTrackOptions");
-static_assert(offsetof(FManaPlayerTrackOptions, Audio) == 0x000000, "Member 'FManaPlayerTrackOptions::Audio' has a wrong offset!");
-static_assert(offsetof(FManaPlayerTrackOptions, SubAudio) == 0x000004, "Member 'FManaPlayerTrackOptions::SubAudio' has a wrong offset!");
-static_assert(offsetof(FManaPlayerTrackOptions, ExtraAudio) == 0x000008, "Member 'FManaPlayerTrackOptions::ExtraAudio' has a wrong offset!");
-static_assert(offsetof(FManaPlayerTrackOptions, Subtitle) == 0x00000C, "Member 'FManaPlayerTrackOptions::Subtitle' has a wrong offset!");
-static_assert(offsetof(FManaPlayerTrackOptions, Video) == 0x000010, "Member 'FManaPlayerTrackOptions::Video' has a wrong offset!");
-static_assert(offsetof(FManaPlayerTrackOptions, Alpha) == 0x000014, "Member 'FManaPlayerTrackOptions::Alpha' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.ManaPlayerOptions
+// ScriptStruct CriWareRuntime.AtomAisacInfo
 // 0x0030 (0x0030 - 0x0000)
-struct FManaPlayerOptions final
+struct FAtomAisacInfo final
 {
 public:
-	struct FManaPlayerTrackOptions                Tracks;                                            // 0x0000(0x0018)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FTimespan                              SeekTime;                                          // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EManaPlayerOptionBooleanOverride              PlayOnOpen;                                        // 0x0020(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EManaPlayerOptionBooleanOverride              Loop;                                              // 0x0021(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EManaPlaybackTimer                            PlaybackTimer;                                     // 0x0022(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EManaMaxFrameDrop                             MaxFrameDrop;                                      // 0x0023(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EManaFrameAction                              EndFrameAction;                                    // 0x0024(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAtomComponent*                         TimeSyncedSource;                                  // 0x0028(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultControlFlag;                                // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DefaultControlValue;                               // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ControlId;                                         // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ControlName;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FManaPlayerOptions) == 0x000008, "Wrong alignment on FManaPlayerOptions");
-static_assert(sizeof(FManaPlayerOptions) == 0x000030, "Wrong size on FManaPlayerOptions");
-static_assert(offsetof(FManaPlayerOptions, Tracks) == 0x000000, "Member 'FManaPlayerOptions::Tracks' has a wrong offset!");
-static_assert(offsetof(FManaPlayerOptions, SeekTime) == 0x000018, "Member 'FManaPlayerOptions::SeekTime' has a wrong offset!");
-static_assert(offsetof(FManaPlayerOptions, PlayOnOpen) == 0x000020, "Member 'FManaPlayerOptions::PlayOnOpen' has a wrong offset!");
-static_assert(offsetof(FManaPlayerOptions, Loop) == 0x000021, "Member 'FManaPlayerOptions::Loop' has a wrong offset!");
-static_assert(offsetof(FManaPlayerOptions, PlaybackTimer) == 0x000022, "Member 'FManaPlayerOptions::PlaybackTimer' has a wrong offset!");
-static_assert(offsetof(FManaPlayerOptions, MaxFrameDrop) == 0x000023, "Member 'FManaPlayerOptions::MaxFrameDrop' has a wrong offset!");
-static_assert(offsetof(FManaPlayerOptions, EndFrameAction) == 0x000024, "Member 'FManaPlayerOptions::EndFrameAction' has a wrong offset!");
-static_assert(offsetof(FManaPlayerOptions, TimeSyncedSource) == 0x000028, "Member 'FManaPlayerOptions::TimeSyncedSource' has a wrong offset!");
+static_assert(alignof(FAtomAisacInfo) == 0x000008, "Wrong alignment on FAtomAisacInfo");
+static_assert(sizeof(FAtomAisacInfo) == 0x000030, "Wrong size on FAtomAisacInfo");
+static_assert(offsetof(FAtomAisacInfo, Name) == 0x000000, "Member 'FAtomAisacInfo::Name' has a wrong offset!");
+static_assert(offsetof(FAtomAisacInfo, DefaultControlFlag) == 0x000010, "Member 'FAtomAisacInfo::DefaultControlFlag' has a wrong offset!");
+static_assert(offsetof(FAtomAisacInfo, DefaultControlValue) == 0x000014, "Member 'FAtomAisacInfo::DefaultControlValue' has a wrong offset!");
+static_assert(offsetof(FAtomAisacInfo, ControlId) == 0x000018, "Member 'FAtomAisacInfo::ControlId' has a wrong offset!");
+static_assert(offsetof(FAtomAisacInfo, ControlName) == 0x000020, "Member 'FAtomAisacInfo::ControlName' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.BusSendLevelParam
 // 0x0008 (0x0008 - 0x0000)
@@ -528,19 +502,34 @@ static_assert(offsetof(FAtomAppliedValueParam, BlockIndex) == 0x000048, "Member 
 static_assert(offsetof(FAtomAppliedValueParam, AtomSelectorParam) == 0x000050, "Member 'FAtomAppliedValueParam::AtomSelectorParam' has a wrong offset!");
 static_assert(offsetof(FAtomAppliedValueParam, AsrRackIDs) == 0x000070, "Member 'FAtomAppliedValueParam::AsrRackIDs' has a wrong offset!");
 
-// ScriptStruct CriWareRuntime.AtomGameVariableParam
-// 0x0018 (0x0018 - 0x0000)
-struct FAtomGameVariableParam final
+// ScriptStruct CriWareRuntime.AtomCueInfoSelectorParam
+// 0x0020 (0x0020 - 0x0000)
+struct FAtomCueInfoSelectorParam final
 {
 public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 Label;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAtomGameVariableParam) == 0x000008, "Wrong alignment on FAtomGameVariableParam");
-static_assert(sizeof(FAtomGameVariableParam) == 0x000018, "Wrong size on FAtomGameVariableParam");
-static_assert(offsetof(FAtomGameVariableParam, Name) == 0x000000, "Member 'FAtomGameVariableParam::Name' has a wrong offset!");
-static_assert(offsetof(FAtomGameVariableParam, Value) == 0x000010, "Member 'FAtomGameVariableParam::Value' has a wrong offset!");
+static_assert(alignof(FAtomCueInfoSelectorParam) == 0x000008, "Wrong alignment on FAtomCueInfoSelectorParam");
+static_assert(sizeof(FAtomCueInfoSelectorParam) == 0x000020, "Wrong size on FAtomCueInfoSelectorParam");
+static_assert(offsetof(FAtomCueInfoSelectorParam, Name) == 0x000000, "Member 'FAtomCueInfoSelectorParam::Name' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfoSelectorParam, Label) == 0x000010, "Member 'FAtomCueInfoSelectorParam::Label' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomCueInfoTrackParam
+// 0x0038 (0x0038 - 0x0000)
+struct FAtomCueInfoTrackParam final
+{
+public:
+	float                                         Volume;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAtomCueInfoSelectorParam              Selector;                                          // 0x0018(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomCueInfoTrackParam) == 0x000008, "Wrong alignment on FAtomCueInfoTrackParam");
+static_assert(sizeof(FAtomCueInfoTrackParam) == 0x000038, "Wrong size on FAtomCueInfoTrackParam");
+static_assert(offsetof(FAtomCueInfoTrackParam, Volume) == 0x000000, "Member 'FAtomCueInfoTrackParam::Volume' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfoTrackParam, Name) == 0x000008, "Member 'FAtomCueInfoTrackParam::Name' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfoTrackParam, Selector) == 0x000018, "Member 'FAtomCueInfoTrackParam::Selector' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.ManaEventPointInfo
 // 0x0028 (0x0028 - 0x0000)
@@ -558,233 +547,6 @@ static_assert(offsetof(FManaEventPointInfo, Name) == 0x000000, "Member 'FManaEve
 static_assert(offsetof(FManaEventPointInfo, Time) == 0x000010, "Member 'FManaEventPointInfo::Time' has a wrong offset!");
 static_assert(offsetof(FManaEventPointInfo, Type) == 0x000014, "Member 'FManaEventPointInfo::Type' has a wrong offset!");
 static_assert(offsetof(FManaEventPointInfo, Parameter) == 0x000018, "Member 'FManaEventPointInfo::Parameter' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomOutputPortDataTable
-// 0x0018 (0x0020 - 0x0008)
-struct FAtomOutputPortDataTable final : public FTableRowBase
-{
-public:
-	class FString                                 OutputPortName;                                    // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AsrRackID;                                         // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESpeakerType                                  SpeakerType;                                       // 0x001C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAtomOutputPortDataTable) == 0x000008, "Wrong alignment on FAtomOutputPortDataTable");
-static_assert(sizeof(FAtomOutputPortDataTable) == 0x000020, "Wrong size on FAtomOutputPortDataTable");
-static_assert(offsetof(FAtomOutputPortDataTable, OutputPortName) == 0x000008, "Member 'FAtomOutputPortDataTable::OutputPortName' has a wrong offset!");
-static_assert(offsetof(FAtomOutputPortDataTable, AsrRackID) == 0x000018, "Member 'FAtomOutputPortDataTable::AsrRackID' has a wrong offset!");
-static_assert(offsetof(FAtomOutputPortDataTable, SpeakerType) == 0x00001C, "Member 'FAtomOutputPortDataTable::SpeakerType' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomStringWithComment
-// 0x0010 (0x0010 - 0x0000)
-struct FAtomStringWithComment final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomStringWithComment) == 0x000008, "Wrong alignment on FAtomStringWithComment");
-static_assert(sizeof(FAtomStringWithComment) == 0x000010, "Wrong size on FAtomStringWithComment");
-static_assert(offsetof(FAtomStringWithComment, Name) == 0x000000, "Member 'FAtomStringWithComment::Name' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomSelectorSettingsParam
-// 0x0030 (0x0030 - 0x0000)
-struct FAtomSelectorSettingsParam final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DefaultSelectorLabel;                              // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FAtomStringWithComment>         Labels;                                            // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomSelectorSettingsParam) == 0x000008, "Wrong alignment on FAtomSelectorSettingsParam");
-static_assert(sizeof(FAtomSelectorSettingsParam) == 0x000030, "Wrong size on FAtomSelectorSettingsParam");
-static_assert(offsetof(FAtomSelectorSettingsParam, Name) == 0x000000, "Member 'FAtomSelectorSettingsParam::Name' has a wrong offset!");
-static_assert(offsetof(FAtomSelectorSettingsParam, DefaultSelectorLabel) == 0x000010, "Member 'FAtomSelectorSettingsParam::DefaultSelectorLabel' has a wrong offset!");
-static_assert(offsetof(FAtomSelectorSettingsParam, Labels) == 0x000020, "Member 'FAtomSelectorSettingsParam::Labels' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomAisacControlSettingsParam
-// 0x0018 (0x0018 - 0x0000)
-struct FAtomAisacControlSettingsParam final
-{
-public:
-	int32                                         ID;                                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomAisacControlSettingsParam) == 0x000008, "Wrong alignment on FAtomAisacControlSettingsParam");
-static_assert(sizeof(FAtomAisacControlSettingsParam) == 0x000018, "Wrong size on FAtomAisacControlSettingsParam");
-static_assert(offsetof(FAtomAisacControlSettingsParam, ID) == 0x000000, "Member 'FAtomAisacControlSettingsParam::ID' has a wrong offset!");
-static_assert(offsetof(FAtomAisacControlSettingsParam, Name) == 0x000008, "Member 'FAtomAisacControlSettingsParam::Name' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomGlobalAisacSettingsParam
-// 0x0010 (0x0010 - 0x0000)
-struct FAtomGlobalAisacSettingsParam final
-{
-public:
-	class FString                                 AisacControl;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomGlobalAisacSettingsParam) == 0x000008, "Wrong alignment on FAtomGlobalAisacSettingsParam");
-static_assert(sizeof(FAtomGlobalAisacSettingsParam) == 0x000010, "Wrong size on FAtomGlobalAisacSettingsParam");
-static_assert(offsetof(FAtomGlobalAisacSettingsParam, AisacControl) == 0x000000, "Member 'FAtomGlobalAisacSettingsParam::AisacControl' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomCategoryParam
-// 0x0030 (0x0030 - 0x0000)
-struct FAtomCategoryParam final
-{
-public:
-	int32                                         ID;                                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Group;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Volume;                                            // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAtomCategoryParam) == 0x000008, "Wrong alignment on FAtomCategoryParam");
-static_assert(sizeof(FAtomCategoryParam) == 0x000030, "Wrong size on FAtomCategoryParam");
-static_assert(offsetof(FAtomCategoryParam, ID) == 0x000000, "Member 'FAtomCategoryParam::ID' has a wrong offset!");
-static_assert(offsetof(FAtomCategoryParam, Name) == 0x000008, "Member 'FAtomCategoryParam::Name' has a wrong offset!");
-static_assert(offsetof(FAtomCategoryParam, Group) == 0x000018, "Member 'FAtomCategoryParam::Group' has a wrong offset!");
-static_assert(offsetof(FAtomCategoryParam, Volume) == 0x000028, "Member 'FAtomCategoryParam::Volume' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomDspBusSettingsParam
-// 0x0030 (0x0030 - 0x0000)
-struct FAtomDspBusSettingsParam final
-{
-public:
-	class FString                                 BusSettingsName;                                   // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FAtomStringWithComment>         Snapshot;                                          // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FAtomStringWithComment>         Bus;                                               // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomDspBusSettingsParam) == 0x000008, "Wrong alignment on FAtomDspBusSettingsParam");
-static_assert(sizeof(FAtomDspBusSettingsParam) == 0x000030, "Wrong size on FAtomDspBusSettingsParam");
-static_assert(offsetof(FAtomDspBusSettingsParam, BusSettingsName) == 0x000000, "Member 'FAtomDspBusSettingsParam::BusSettingsName' has a wrong offset!");
-static_assert(offsetof(FAtomDspBusSettingsParam, Snapshot) == 0x000010, "Member 'FAtomDspBusSettingsParam::Snapshot' has a wrong offset!");
-static_assert(offsetof(FAtomDspBusSettingsParam, Bus) == 0x000020, "Member 'FAtomDspBusSettingsParam::Bus' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomConfigDataTable
-// 0x00B0 (0x00B8 - 0x0008)
-struct FAtomConfigDataTable : public FTableRowBase
-{
-public:
-	class FString                                 BuildDate;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumCategoriesPerPlayback;                          // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumCategories;                                     // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumAisacControls;                                  // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumGlobalAisacs;                                   // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumVoiceLimitGroups;                               // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumDspBusSettings;                                 // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumDspBusSettingSnapshots;                         // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumDspBus;                                         // 0x0034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumGameVariables;                                  // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumSelectors;                                      // 0x003C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NumReacts;                                         // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAtomSelectorSettingsParam>     Selector;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FAtomAisacControlSettingsParam> AisacControl;                                      // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FAtomGameVariableParam>         GameVariable;                                      // 0x0068(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FAtomGlobalAisacSettingsParam>  GlobalAisac;                                       // 0x0078(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FAtomCategoryParam>             Category;                                          // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FAtomDspBusSettingsParam>       DspBusSettings;                                    // 0x0098(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<struct FAtomStringWithComment>         React;                                             // 0x00A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomConfigDataTable) == 0x000008, "Wrong alignment on FAtomConfigDataTable");
-static_assert(sizeof(FAtomConfigDataTable) == 0x0000B8, "Wrong size on FAtomConfigDataTable");
-static_assert(offsetof(FAtomConfigDataTable, BuildDate) == 0x000008, "Member 'FAtomConfigDataTable::BuildDate' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumCategoriesPerPlayback) == 0x000018, "Member 'FAtomConfigDataTable::NumCategoriesPerPlayback' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumCategories) == 0x00001C, "Member 'FAtomConfigDataTable::NumCategories' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumAisacControls) == 0x000020, "Member 'FAtomConfigDataTable::NumAisacControls' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumGlobalAisacs) == 0x000024, "Member 'FAtomConfigDataTable::NumGlobalAisacs' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumVoiceLimitGroups) == 0x000028, "Member 'FAtomConfigDataTable::NumVoiceLimitGroups' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumDspBusSettings) == 0x00002C, "Member 'FAtomConfigDataTable::NumDspBusSettings' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumDspBusSettingSnapshots) == 0x000030, "Member 'FAtomConfigDataTable::NumDspBusSettingSnapshots' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumDspBus) == 0x000034, "Member 'FAtomConfigDataTable::NumDspBus' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumGameVariables) == 0x000038, "Member 'FAtomConfigDataTable::NumGameVariables' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumSelectors) == 0x00003C, "Member 'FAtomConfigDataTable::NumSelectors' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, NumReacts) == 0x000040, "Member 'FAtomConfigDataTable::NumReacts' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, Selector) == 0x000048, "Member 'FAtomConfigDataTable::Selector' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, AisacControl) == 0x000058, "Member 'FAtomConfigDataTable::AisacControl' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, GameVariable) == 0x000068, "Member 'FAtomConfigDataTable::GameVariable' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, GlobalAisac) == 0x000078, "Member 'FAtomConfigDataTable::GlobalAisac' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, Category) == 0x000088, "Member 'FAtomConfigDataTable::Category' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, DspBusSettings) == 0x000098, "Member 'FAtomConfigDataTable::DspBusSettings' has a wrong offset!");
-static_assert(offsetof(FAtomConfigDataTable, React) == 0x0000A8, "Member 'FAtomConfigDataTable::React' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomBeatSyncInfo
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x08) FAtomBeatSyncInfo final
-{
-public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAtomBeatSyncInfo) == 0x000008, "Wrong alignment on FAtomBeatSyncInfo");
-static_assert(sizeof(FAtomBeatSyncInfo) == 0x000028, "Wrong size on FAtomBeatSyncInfo");
-
-// ScriptStruct CriWareRuntime.AtomAttenuationDistanceParam
-// 0x0008 (0x0008 - 0x0000)
-struct FAtomAttenuationDistanceParam final
-{
-public:
-	float                                         MinDistance;                                       // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxDistance;                                       // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomAttenuationDistanceParam) == 0x000004, "Wrong alignment on FAtomAttenuationDistanceParam");
-static_assert(sizeof(FAtomAttenuationDistanceParam) == 0x000008, "Wrong size on FAtomAttenuationDistanceParam");
-static_assert(offsetof(FAtomAttenuationDistanceParam, MinDistance) == 0x000000, "Member 'FAtomAttenuationDistanceParam::MinDistance' has a wrong offset!");
-static_assert(offsetof(FAtomAttenuationDistanceParam, MaxDistance) == 0x000004, "Member 'FAtomAttenuationDistanceParam::MaxDistance' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomSequenceInfo
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x08) FAtomSequenceInfo final
-{
-public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAtomSequenceInfo) == 0x000008, "Wrong alignment on FAtomSequenceInfo");
-static_assert(sizeof(FAtomSequenceInfo) == 0x000028, "Wrong size on FAtomSequenceInfo");
-
-// ScriptStruct CriWareRuntime.AtomAisacControlWithVelocityParam
-// 0x0018 (0x0018 - 0x0000)
-struct FAtomAisacControlWithVelocityParam final
-{
-public:
-	class FString                                 AisacControlName;                                  // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinVelocity;                                       // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxVelocity;                                       // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomAisacControlWithVelocityParam) == 0x000008, "Wrong alignment on FAtomAisacControlWithVelocityParam");
-static_assert(sizeof(FAtomAisacControlWithVelocityParam) == 0x000018, "Wrong size on FAtomAisacControlWithVelocityParam");
-static_assert(offsetof(FAtomAisacControlWithVelocityParam, AisacControlName) == 0x000000, "Member 'FAtomAisacControlWithVelocityParam::AisacControlName' has a wrong offset!");
-static_assert(offsetof(FAtomAisacControlWithVelocityParam, MinVelocity) == 0x000010, "Member 'FAtomAisacControlWithVelocityParam::MinVelocity' has a wrong offset!");
-static_assert(offsetof(FAtomAisacControlWithVelocityParam, MaxVelocity) == 0x000014, "Member 'FAtomAisacControlWithVelocityParam::MaxVelocity' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomAisacControlParam
-// 0x0018 (0x0018 - 0x0000)
-struct FAtomAisacControlParam final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAtomAisacControlParam) == 0x000008, "Wrong alignment on FAtomAisacControlParam");
-static_assert(sizeof(FAtomAisacControlParam) == 0x000018, "Wrong size on FAtomAisacControlParam");
-static_assert(offsetof(FAtomAisacControlParam, Name) == 0x000000, "Member 'FAtomAisacControlParam::Name' has a wrong offset!");
-static_assert(offsetof(FAtomAisacControlParam, Value) == 0x000010, "Member 'FAtomAisacControlParam::Value' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.CriWareErrorInfo
-// 0x0028 (0x0028 - 0x0000)
-struct FCriWareErrorInfo final
-{
-public:
-	class FString                                 ErrorID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECriWareErrorType                             ErrorType;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Message;                                           // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCriWareErrorInfo) == 0x000008, "Wrong alignment on FCriWareErrorInfo");
-static_assert(sizeof(FCriWareErrorInfo) == 0x000028, "Wrong size on FCriWareErrorInfo");
-static_assert(offsetof(FCriWareErrorInfo, ErrorID) == 0x000000, "Member 'FCriWareErrorInfo::ErrorID' has a wrong offset!");
-static_assert(offsetof(FCriWareErrorInfo, ErrorType) == 0x000010, "Member 'FCriWareErrorInfo::ErrorType' has a wrong offset!");
-static_assert(offsetof(FCriWareErrorInfo, Message) == 0x000018, "Member 'FCriWareErrorInfo::Message' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.SnapshotSwitchSettings
 // 0x0038 (0x0038 - 0x0000)
@@ -808,6 +570,40 @@ static_assert(offsetof(FSnapshotSwitchSettings, DspBusSettingsName) == 0x000008,
 static_assert(offsetof(FSnapshotSwitchSettings, SnapshotID) == 0x000018, "Member 'FSnapshotSwitchSettings::SnapshotID' has a wrong offset!");
 static_assert(offsetof(FSnapshotSwitchSettings, SnapshotName) == 0x000020, "Member 'FSnapshotSwitchSettings::SnapshotName' has a wrong offset!");
 static_assert(offsetof(FSnapshotSwitchSettings, FadeTime) == 0x000030, "Member 'FSnapshotSwitchSettings::FadeTime' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomBeatSyncInfo
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FAtomBeatSyncInfo final
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAtomBeatSyncInfo) == 0x000008, "Wrong alignment on FAtomBeatSyncInfo");
+static_assert(sizeof(FAtomBeatSyncInfo) == 0x000028, "Wrong size on FAtomBeatSyncInfo");
+
+// ScriptStruct CriWareRuntime.AtomSequenceInfo
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FAtomSequenceInfo final
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAtomSequenceInfo) == 0x000008, "Wrong alignment on FAtomSequenceInfo");
+static_assert(sizeof(FAtomSequenceInfo) == 0x000028, "Wrong size on FAtomSequenceInfo");
+
+// ScriptStruct CriWareRuntime.AtomAisacControlSettingsParam
+// 0x0018 (0x0018 - 0x0000)
+struct FAtomAisacControlSettingsParam final
+{
+public:
+	int32                                         ID;                                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomAisacControlSettingsParam) == 0x000008, "Wrong alignment on FAtomAisacControlSettingsParam");
+static_assert(sizeof(FAtomAisacControlSettingsParam) == 0x000018, "Wrong size on FAtomAisacControlSettingsParam");
+static_assert(offsetof(FAtomAisacControlSettingsParam, ID) == 0x000000, "Member 'FAtomAisacControlSettingsParam::ID' has a wrong offset!");
+static_assert(offsetof(FAtomAisacControlSettingsParam, Name) == 0x000008, "Member 'FAtomAisacControlSettingsParam::Name' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.BusSendInterpolationSettings
 // 0x0048 (0x0048 - 0x0000)
@@ -834,6 +630,21 @@ static_assert(offsetof(FBusSendInterpolationSettings, BusName) == 0x000020, "Mem
 static_assert(offsetof(FBusSendInterpolationSettings, BusSendLevelForInside) == 0x000030, "Member 'FBusSendInterpolationSettings::BusSendLevelForInside' has a wrong offset!");
 static_assert(offsetof(FBusSendInterpolationSettings, BusSendLevelForOutside) == 0x000034, "Member 'FBusSendInterpolationSettings::BusSendLevelForOutside' has a wrong offset!");
 static_assert(offsetof(FBusSendInterpolationSettings, Width) == 0x000038, "Member 'FBusSendInterpolationSettings::Width' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomAisacControlWithVelocityParam
+// 0x0018 (0x0018 - 0x0000)
+struct FAtomAisacControlWithVelocityParam final
+{
+public:
+	class FString                                 AisacControlName;                                  // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinVelocity;                                       // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxVelocity;                                       // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomAisacControlWithVelocityParam) == 0x000008, "Wrong alignment on FAtomAisacControlWithVelocityParam");
+static_assert(sizeof(FAtomAisacControlWithVelocityParam) == 0x000018, "Wrong size on FAtomAisacControlWithVelocityParam");
+static_assert(offsetof(FAtomAisacControlWithVelocityParam, AisacControlName) == 0x000000, "Member 'FAtomAisacControlWithVelocityParam::AisacControlName' has a wrong offset!");
+static_assert(offsetof(FAtomAisacControlWithVelocityParam, MinVelocity) == 0x000010, "Member 'FAtomAisacControlWithVelocityParam::MinVelocity' has a wrong offset!");
+static_assert(offsetof(FAtomAisacControlWithVelocityParam, MaxVelocity) == 0x000014, "Member 'FAtomAisacControlWithVelocityParam::MaxVelocity' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.AisacControlInterpolationSettings
 // 0x0030 (0x0030 - 0x0000)
@@ -885,63 +696,35 @@ static_assert(offsetof(FAtomAudioVolumeParameters, SnapshotSwitchSettings) == 0x
 static_assert(offsetof(FAtomAudioVolumeParameters, BusSendInterpolateSettings) == 0x000020, "Member 'FAtomAudioVolumeParameters::BusSendInterpolateSettings' has a wrong offset!");
 static_assert(offsetof(FAtomAudioVolumeParameters, AisacControlInterpolateSettings) == 0x000030, "Member 'FAtomAudioVolumeParameters::AisacControlInterpolateSettings' has a wrong offset!");
 
-// ScriptStruct CriWareRuntime.AtomCueInfo
-// 0x0060 (0x0060 - 0x0000)
-struct FAtomCueInfo final
-{
-public:
-	int32                                         ID;                                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HeaderVisibility;                                  // 0x0004(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTimespan                              Duration;                                          // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UserData;                                          // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         CategoryNames;                                     // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	TArray<class FString>                         AisacControlNames;                                 // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	struct FAtomAttenuationDistanceParam          AttenuationDistance;                               // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         bLooping : 1;                                      // 0x0058(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bIsParameterPalletAssigned : 1;                    // 0x0058(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAtomCueInfo) == 0x000008, "Wrong alignment on FAtomCueInfo");
-static_assert(sizeof(FAtomCueInfo) == 0x000060, "Wrong size on FAtomCueInfo");
-static_assert(offsetof(FAtomCueInfo, ID) == 0x000000, "Member 'FAtomCueInfo::ID' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfo, HeaderVisibility) == 0x000004, "Member 'FAtomCueInfo::HeaderVisibility' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfo, Name) == 0x000008, "Member 'FAtomCueInfo::Name' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfo, Duration) == 0x000018, "Member 'FAtomCueInfo::Duration' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfo, UserData) == 0x000020, "Member 'FAtomCueInfo::UserData' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfo, CategoryNames) == 0x000030, "Member 'FAtomCueInfo::CategoryNames' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfo, AisacControlNames) == 0x000040, "Member 'FAtomCueInfo::AisacControlNames' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfo, AttenuationDistance) == 0x000050, "Member 'FAtomCueInfo::AttenuationDistance' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomAisacInfo
-// 0x0030 (0x0030 - 0x0000)
-struct FAtomAisacInfo final
+// ScriptStruct CriWareRuntime.AtomAisacControlParam
+// 0x0018 (0x0018 - 0x0000)
+struct FAtomAisacControlParam final
 {
 public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DefaultControlFlag;                                // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DefaultControlValue;                               // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ControlId;                                         // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ControlName;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAtomAisacInfo) == 0x000008, "Wrong alignment on FAtomAisacInfo");
-static_assert(sizeof(FAtomAisacInfo) == 0x000030, "Wrong size on FAtomAisacInfo");
-static_assert(offsetof(FAtomAisacInfo, Name) == 0x000000, "Member 'FAtomAisacInfo::Name' has a wrong offset!");
-static_assert(offsetof(FAtomAisacInfo, DefaultControlFlag) == 0x000010, "Member 'FAtomAisacInfo::DefaultControlFlag' has a wrong offset!");
-static_assert(offsetof(FAtomAisacInfo, DefaultControlValue) == 0x000014, "Member 'FAtomAisacInfo::DefaultControlValue' has a wrong offset!");
-static_assert(offsetof(FAtomAisacInfo, ControlId) == 0x000018, "Member 'FAtomAisacInfo::ControlId' has a wrong offset!");
-static_assert(offsetof(FAtomAisacInfo, ControlName) == 0x000020, "Member 'FAtomAisacInfo::ControlName' has a wrong offset!");
+static_assert(alignof(FAtomAisacControlParam) == 0x000008, "Wrong alignment on FAtomAisacControlParam");
+static_assert(sizeof(FAtomAisacControlParam) == 0x000018, "Wrong size on FAtomAisacControlParam");
+static_assert(offsetof(FAtomAisacControlParam, Name) == 0x000000, "Member 'FAtomAisacControlParam::Name' has a wrong offset!");
+static_assert(offsetof(FAtomAisacControlParam, Value) == 0x000010, "Member 'FAtomAisacControlParam::Value' has a wrong offset!");
 
-// ScriptStruct CriWareRuntime.AcfDataTable
-// 0x0000 (0x00B8 - 0x00B8)
-struct FAcfDataTable final : public FAtomConfigDataTable
+// ScriptStruct CriWareRuntime.CriWareErrorInfo
+// 0x0028 (0x0028 - 0x0000)
+struct FCriWareErrorInfo final
 {
+public:
+	class FString                                 ErrorID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECriWareErrorType                             ErrorType;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Message;                                           // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAcfDataTable) == 0x000008, "Wrong alignment on FAcfDataTable");
-static_assert(sizeof(FAcfDataTable) == 0x0000B8, "Wrong size on FAcfDataTable");
+static_assert(alignof(FCriWareErrorInfo) == 0x000008, "Wrong alignment on FCriWareErrorInfo");
+static_assert(sizeof(FCriWareErrorInfo) == 0x000028, "Wrong size on FCriWareErrorInfo");
+static_assert(offsetof(FCriWareErrorInfo, ErrorID) == 0x000000, "Member 'FCriWareErrorInfo::ErrorID' has a wrong offset!");
+static_assert(offsetof(FCriWareErrorInfo, ErrorType) == 0x000010, "Member 'FCriWareErrorInfo::ErrorType' has a wrong offset!");
+static_assert(offsetof(FCriWareErrorInfo, Message) == 0x000018, "Member 'FCriWareErrorInfo::Message' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.AtomCueInfoCategoryParam
 // 0x0010 (0x0010 - 0x0000)
@@ -953,35 +736,6 @@ public:
 static_assert(alignof(FAtomCueInfoCategoryParam) == 0x000008, "Wrong alignment on FAtomCueInfoCategoryParam");
 static_assert(sizeof(FAtomCueInfoCategoryParam) == 0x000010, "Wrong size on FAtomCueInfoCategoryParam");
 static_assert(offsetof(FAtomCueInfoCategoryParam, Name) == 0x000000, "Member 'FAtomCueInfoCategoryParam::Name' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomCueInfoSelectorParam
-// 0x0020 (0x0020 - 0x0000)
-struct FAtomCueInfoSelectorParam final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Label;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomCueInfoSelectorParam) == 0x000008, "Wrong alignment on FAtomCueInfoSelectorParam");
-static_assert(sizeof(FAtomCueInfoSelectorParam) == 0x000020, "Wrong size on FAtomCueInfoSelectorParam");
-static_assert(offsetof(FAtomCueInfoSelectorParam, Name) == 0x000000, "Member 'FAtomCueInfoSelectorParam::Name' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfoSelectorParam, Label) == 0x000010, "Member 'FAtomCueInfoSelectorParam::Label' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomCueInfoTrackParam
-// 0x0038 (0x0038 - 0x0000)
-struct FAtomCueInfoTrackParam final
-{
-public:
-	float                                         Volume;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAtomCueInfoSelectorParam              Selector;                                          // 0x0018(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomCueInfoTrackParam) == 0x000008, "Wrong alignment on FAtomCueInfoTrackParam");
-static_assert(sizeof(FAtomCueInfoTrackParam) == 0x000038, "Wrong size on FAtomCueInfoTrackParam");
-static_assert(offsetof(FAtomCueInfoTrackParam, Volume) == 0x000000, "Member 'FAtomCueInfoTrackParam::Volume' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfoTrackParam, Name) == 0x000008, "Member 'FAtomCueInfoTrackParam::Name' has a wrong offset!");
-static_assert(offsetof(FAtomCueInfoTrackParam, Selector) == 0x000018, "Member 'FAtomCueInfoTrackParam::Selector' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.AtomCueInfoBusSendParam
 // 0x0018 (0x0018 - 0x0000)
@@ -1097,6 +851,269 @@ static_assert(offsetof(FAtomCueInfoDataTable, Blocks) == 0x0000D0, "Member 'FAto
 static_assert(offsetof(FAtomCueInfoDataTable, AttachedSelector) == 0x0000E0, "Member 'FAtomCueInfoDataTable::AttachedSelector' has a wrong offset!");
 static_assert(offsetof(FAtomCueInfoDataTable, AttachedAisacControl) == 0x0000F0, "Member 'FAtomCueInfoDataTable::AttachedAisacControl' has a wrong offset!");
 
+// ScriptStruct CriWareRuntime.ManaPlayerTrackOptions
+// 0x0018 (0x0018 - 0x0000)
+struct FManaPlayerTrackOptions final
+{
+public:
+	int32                                         Audio;                                             // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SubAudio;                                          // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraAudio;                                        // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Subtitle;                                          // 0x000C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Video;                                             // 0x0010(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Alpha;                                             // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FManaPlayerTrackOptions) == 0x000004, "Wrong alignment on FManaPlayerTrackOptions");
+static_assert(sizeof(FManaPlayerTrackOptions) == 0x000018, "Wrong size on FManaPlayerTrackOptions");
+static_assert(offsetof(FManaPlayerTrackOptions, Audio) == 0x000000, "Member 'FManaPlayerTrackOptions::Audio' has a wrong offset!");
+static_assert(offsetof(FManaPlayerTrackOptions, SubAudio) == 0x000004, "Member 'FManaPlayerTrackOptions::SubAudio' has a wrong offset!");
+static_assert(offsetof(FManaPlayerTrackOptions, ExtraAudio) == 0x000008, "Member 'FManaPlayerTrackOptions::ExtraAudio' has a wrong offset!");
+static_assert(offsetof(FManaPlayerTrackOptions, Subtitle) == 0x00000C, "Member 'FManaPlayerTrackOptions::Subtitle' has a wrong offset!");
+static_assert(offsetof(FManaPlayerTrackOptions, Video) == 0x000010, "Member 'FManaPlayerTrackOptions::Video' has a wrong offset!");
+static_assert(offsetof(FManaPlayerTrackOptions, Alpha) == 0x000014, "Member 'FManaPlayerTrackOptions::Alpha' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.ManaPlayerOptions
+// 0x0030 (0x0030 - 0x0000)
+struct FManaPlayerOptions final
+{
+public:
+	struct FManaPlayerTrackOptions                Tracks;                                            // 0x0000(0x0018)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FTimespan                              SeekTime;                                          // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EManaPlayerOptionBooleanOverride              PlayOnOpen;                                        // 0x0020(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EManaPlayerOptionBooleanOverride              Loop;                                              // 0x0021(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EManaPlaybackTimer                            PlaybackTimer;                                     // 0x0022(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EManaMaxFrameDrop                             MaxFrameDrop;                                      // 0x0023(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EManaFrameAction                              EndFrameAction;                                    // 0x0024(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAtomComponent*                         TimeSyncedSource;                                  // 0x0028(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FManaPlayerOptions) == 0x000008, "Wrong alignment on FManaPlayerOptions");
+static_assert(sizeof(FManaPlayerOptions) == 0x000030, "Wrong size on FManaPlayerOptions");
+static_assert(offsetof(FManaPlayerOptions, Tracks) == 0x000000, "Member 'FManaPlayerOptions::Tracks' has a wrong offset!");
+static_assert(offsetof(FManaPlayerOptions, SeekTime) == 0x000018, "Member 'FManaPlayerOptions::SeekTime' has a wrong offset!");
+static_assert(offsetof(FManaPlayerOptions, PlayOnOpen) == 0x000020, "Member 'FManaPlayerOptions::PlayOnOpen' has a wrong offset!");
+static_assert(offsetof(FManaPlayerOptions, Loop) == 0x000021, "Member 'FManaPlayerOptions::Loop' has a wrong offset!");
+static_assert(offsetof(FManaPlayerOptions, PlaybackTimer) == 0x000022, "Member 'FManaPlayerOptions::PlaybackTimer' has a wrong offset!");
+static_assert(offsetof(FManaPlayerOptions, MaxFrameDrop) == 0x000023, "Member 'FManaPlayerOptions::MaxFrameDrop' has a wrong offset!");
+static_assert(offsetof(FManaPlayerOptions, EndFrameAction) == 0x000024, "Member 'FManaPlayerOptions::EndFrameAction' has a wrong offset!");
+static_assert(offsetof(FManaPlayerOptions, TimeSyncedSource) == 0x000028, "Member 'FManaPlayerOptions::TimeSyncedSource' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomListenerFocusPointInfo
+// 0x0018 (0x0018 - 0x0000)
+struct FAtomListenerFocusPointInfo final
+{
+public:
+	TWeakObjectPtr<class AActor>                  TargetActor;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TWeakObjectPtr<class USceneComponent>         TargetComponent;                                   // 0x0008(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceLevel;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DirectionLevel;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomListenerFocusPointInfo) == 0x000004, "Wrong alignment on FAtomListenerFocusPointInfo");
+static_assert(sizeof(FAtomListenerFocusPointInfo) == 0x000018, "Wrong size on FAtomListenerFocusPointInfo");
+static_assert(offsetof(FAtomListenerFocusPointInfo, TargetActor) == 0x000000, "Member 'FAtomListenerFocusPointInfo::TargetActor' has a wrong offset!");
+static_assert(offsetof(FAtomListenerFocusPointInfo, TargetComponent) == 0x000008, "Member 'FAtomListenerFocusPointInfo::TargetComponent' has a wrong offset!");
+static_assert(offsetof(FAtomListenerFocusPointInfo, DistanceLevel) == 0x000010, "Member 'FAtomListenerFocusPointInfo::DistanceLevel' has a wrong offset!");
+static_assert(offsetof(FAtomListenerFocusPointInfo, DirectionLevel) == 0x000014, "Member 'FAtomListenerFocusPointInfo::DirectionLevel' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomAttenuationDistanceParam
+// 0x0008 (0x0008 - 0x0000)
+struct FAtomAttenuationDistanceParam final
+{
+public:
+	float                                         MinDistance;                                       // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDistance;                                       // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomAttenuationDistanceParam) == 0x000004, "Wrong alignment on FAtomAttenuationDistanceParam");
+static_assert(sizeof(FAtomAttenuationDistanceParam) == 0x000008, "Wrong size on FAtomAttenuationDistanceParam");
+static_assert(offsetof(FAtomAttenuationDistanceParam, MinDistance) == 0x000000, "Member 'FAtomAttenuationDistanceParam::MinDistance' has a wrong offset!");
+static_assert(offsetof(FAtomAttenuationDistanceParam, MaxDistance) == 0x000004, "Member 'FAtomAttenuationDistanceParam::MaxDistance' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomCueInfo
+// 0x0060 (0x0060 - 0x0000)
+struct FAtomCueInfo final
+{
+public:
+	int32                                         ID;                                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          HeaderVisibility;                                  // 0x0004(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              Duration;                                          // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserData;                                          // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         CategoryNames;                                     // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<class FString>                         AisacControlNames;                                 // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	struct FAtomAttenuationDistanceParam          AttenuationDistance;                               // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         bLooping : 1;                                      // 0x0058(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bIsParameterPalletAssigned : 1;                    // 0x0058(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAtomCueInfo) == 0x000008, "Wrong alignment on FAtomCueInfo");
+static_assert(sizeof(FAtomCueInfo) == 0x000060, "Wrong size on FAtomCueInfo");
+static_assert(offsetof(FAtomCueInfo, ID) == 0x000000, "Member 'FAtomCueInfo::ID' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfo, HeaderVisibility) == 0x000004, "Member 'FAtomCueInfo::HeaderVisibility' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfo, Name) == 0x000008, "Member 'FAtomCueInfo::Name' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfo, Duration) == 0x000018, "Member 'FAtomCueInfo::Duration' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfo, UserData) == 0x000020, "Member 'FAtomCueInfo::UserData' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfo, CategoryNames) == 0x000030, "Member 'FAtomCueInfo::CategoryNames' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfo, AisacControlNames) == 0x000040, "Member 'FAtomCueInfo::AisacControlNames' has a wrong offset!");
+static_assert(offsetof(FAtomCueInfo, AttenuationDistance) == 0x000050, "Member 'FAtomCueInfo::AttenuationDistance' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomStringWithComment
+// 0x0010 (0x0010 - 0x0000)
+struct FAtomStringWithComment final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomStringWithComment) == 0x000008, "Wrong alignment on FAtomStringWithComment");
+static_assert(sizeof(FAtomStringWithComment) == 0x000010, "Wrong size on FAtomStringWithComment");
+static_assert(offsetof(FAtomStringWithComment, Name) == 0x000000, "Member 'FAtomStringWithComment::Name' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomSelectorSettingsParam
+// 0x0030 (0x0030 - 0x0000)
+struct FAtomSelectorSettingsParam final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DefaultSelectorLabel;                              // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAtomStringWithComment>         Labels;                                            // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomSelectorSettingsParam) == 0x000008, "Wrong alignment on FAtomSelectorSettingsParam");
+static_assert(sizeof(FAtomSelectorSettingsParam) == 0x000030, "Wrong size on FAtomSelectorSettingsParam");
+static_assert(offsetof(FAtomSelectorSettingsParam, Name) == 0x000000, "Member 'FAtomSelectorSettingsParam::Name' has a wrong offset!");
+static_assert(offsetof(FAtomSelectorSettingsParam, DefaultSelectorLabel) == 0x000010, "Member 'FAtomSelectorSettingsParam::DefaultSelectorLabel' has a wrong offset!");
+static_assert(offsetof(FAtomSelectorSettingsParam, Labels) == 0x000020, "Member 'FAtomSelectorSettingsParam::Labels' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomGameVariableParam
+// 0x0018 (0x0018 - 0x0000)
+struct FAtomGameVariableParam final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAtomGameVariableParam) == 0x000008, "Wrong alignment on FAtomGameVariableParam");
+static_assert(sizeof(FAtomGameVariableParam) == 0x000018, "Wrong size on FAtomGameVariableParam");
+static_assert(offsetof(FAtomGameVariableParam, Name) == 0x000000, "Member 'FAtomGameVariableParam::Name' has a wrong offset!");
+static_assert(offsetof(FAtomGameVariableParam, Value) == 0x000010, "Member 'FAtomGameVariableParam::Value' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomGlobalAisacSettingsParam
+// 0x0010 (0x0010 - 0x0000)
+struct FAtomGlobalAisacSettingsParam final
+{
+public:
+	class FString                                 AisacControl;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomGlobalAisacSettingsParam) == 0x000008, "Wrong alignment on FAtomGlobalAisacSettingsParam");
+static_assert(sizeof(FAtomGlobalAisacSettingsParam) == 0x000010, "Wrong size on FAtomGlobalAisacSettingsParam");
+static_assert(offsetof(FAtomGlobalAisacSettingsParam, AisacControl) == 0x000000, "Member 'FAtomGlobalAisacSettingsParam::AisacControl' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomCategoryParam
+// 0x0030 (0x0030 - 0x0000)
+struct FAtomCategoryParam final
+{
+public:
+	int32                                         ID;                                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Group;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Volume;                                            // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAtomCategoryParam) == 0x000008, "Wrong alignment on FAtomCategoryParam");
+static_assert(sizeof(FAtomCategoryParam) == 0x000030, "Wrong size on FAtomCategoryParam");
+static_assert(offsetof(FAtomCategoryParam, ID) == 0x000000, "Member 'FAtomCategoryParam::ID' has a wrong offset!");
+static_assert(offsetof(FAtomCategoryParam, Name) == 0x000008, "Member 'FAtomCategoryParam::Name' has a wrong offset!");
+static_assert(offsetof(FAtomCategoryParam, Group) == 0x000018, "Member 'FAtomCategoryParam::Group' has a wrong offset!");
+static_assert(offsetof(FAtomCategoryParam, Volume) == 0x000028, "Member 'FAtomCategoryParam::Volume' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomDspBusSettingsParam
+// 0x0030 (0x0030 - 0x0000)
+struct FAtomDspBusSettingsParam final
+{
+public:
+	class FString                                 BusSettingsName;                                   // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAtomStringWithComment>         Snapshot;                                          // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FAtomStringWithComment>         Bus;                                               // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomDspBusSettingsParam) == 0x000008, "Wrong alignment on FAtomDspBusSettingsParam");
+static_assert(sizeof(FAtomDspBusSettingsParam) == 0x000030, "Wrong size on FAtomDspBusSettingsParam");
+static_assert(offsetof(FAtomDspBusSettingsParam, BusSettingsName) == 0x000000, "Member 'FAtomDspBusSettingsParam::BusSettingsName' has a wrong offset!");
+static_assert(offsetof(FAtomDspBusSettingsParam, Snapshot) == 0x000010, "Member 'FAtomDspBusSettingsParam::Snapshot' has a wrong offset!");
+static_assert(offsetof(FAtomDspBusSettingsParam, Bus) == 0x000020, "Member 'FAtomDspBusSettingsParam::Bus' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AtomConfigDataTable
+// 0x00B0 (0x00B8 - 0x0008)
+struct FAtomConfigDataTable : public FTableRowBase
+{
+public:
+	class FString                                 BuildDate;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumCategoriesPerPlayback;                          // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumCategories;                                     // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumAisacControls;                                  // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumGlobalAisacs;                                   // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumVoiceLimitGroups;                               // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumDspBusSettings;                                 // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumDspBusSettingSnapshots;                         // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumDspBus;                                         // 0x0034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumGameVariables;                                  // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumSelectors;                                      // 0x003C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumReacts;                                         // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FAtomSelectorSettingsParam>     Selector;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FAtomAisacControlSettingsParam> AisacControl;                                      // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FAtomGameVariableParam>         GameVariable;                                      // 0x0068(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FAtomGlobalAisacSettingsParam>  GlobalAisac;                                       // 0x0078(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FAtomCategoryParam>             Category;                                          // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FAtomDspBusSettingsParam>       DspBusSettings;                                    // 0x0098(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	TArray<struct FAtomStringWithComment>         React;                                             // 0x00A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAtomConfigDataTable) == 0x000008, "Wrong alignment on FAtomConfigDataTable");
+static_assert(sizeof(FAtomConfigDataTable) == 0x0000B8, "Wrong size on FAtomConfigDataTable");
+static_assert(offsetof(FAtomConfigDataTable, BuildDate) == 0x000008, "Member 'FAtomConfigDataTable::BuildDate' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumCategoriesPerPlayback) == 0x000018, "Member 'FAtomConfigDataTable::NumCategoriesPerPlayback' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumCategories) == 0x00001C, "Member 'FAtomConfigDataTable::NumCategories' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumAisacControls) == 0x000020, "Member 'FAtomConfigDataTable::NumAisacControls' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumGlobalAisacs) == 0x000024, "Member 'FAtomConfigDataTable::NumGlobalAisacs' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumVoiceLimitGroups) == 0x000028, "Member 'FAtomConfigDataTable::NumVoiceLimitGroups' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumDspBusSettings) == 0x00002C, "Member 'FAtomConfigDataTable::NumDspBusSettings' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumDspBusSettingSnapshots) == 0x000030, "Member 'FAtomConfigDataTable::NumDspBusSettingSnapshots' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumDspBus) == 0x000034, "Member 'FAtomConfigDataTable::NumDspBus' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumGameVariables) == 0x000038, "Member 'FAtomConfigDataTable::NumGameVariables' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumSelectors) == 0x00003C, "Member 'FAtomConfigDataTable::NumSelectors' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, NumReacts) == 0x000040, "Member 'FAtomConfigDataTable::NumReacts' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, Selector) == 0x000048, "Member 'FAtomConfigDataTable::Selector' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, AisacControl) == 0x000058, "Member 'FAtomConfigDataTable::AisacControl' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, GameVariable) == 0x000068, "Member 'FAtomConfigDataTable::GameVariable' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, GlobalAisac) == 0x000078, "Member 'FAtomConfigDataTable::GlobalAisac' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, Category) == 0x000088, "Member 'FAtomConfigDataTable::Category' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, DspBusSettings) == 0x000098, "Member 'FAtomConfigDataTable::DspBusSettings' has a wrong offset!");
+static_assert(offsetof(FAtomConfigDataTable, React) == 0x0000A8, "Member 'FAtomConfigDataTable::React' has a wrong offset!");
+
+// ScriptStruct CriWareRuntime.AcfDataTable
+// 0x0000 (0x00B8 - 0x00B8)
+struct FAcfDataTable final : public FAtomConfigDataTable
+{
+};
+static_assert(alignof(FAcfDataTable) == 0x000008, "Wrong alignment on FAcfDataTable");
+static_assert(sizeof(FAcfDataTable) == 0x0000B8, "Wrong size on FAcfDataTable");
+
+// ScriptStruct CriWareRuntime.AtomOutputPortDataTable
+// 0x0018 (0x0020 - 0x0008)
+struct FAtomOutputPortDataTable final : public FTableRowBase
+{
+public:
+	class FString                                 OutputPortName;                                    // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AsrRackID;                                         // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESpeakerType                                  SpeakerType;                                       // 0x001C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAtomOutputPortDataTable) == 0x000008, "Wrong alignment on FAtomOutputPortDataTable");
+static_assert(sizeof(FAtomOutputPortDataTable) == 0x000020, "Wrong size on FAtomOutputPortDataTable");
+static_assert(offsetof(FAtomOutputPortDataTable, OutputPortName) == 0x000008, "Member 'FAtomOutputPortDataTable::OutputPortName' has a wrong offset!");
+static_assert(offsetof(FAtomOutputPortDataTable, AsrRackID) == 0x000018, "Member 'FAtomOutputPortDataTable::AsrRackID' has a wrong offset!");
+static_assert(offsetof(FAtomOutputPortDataTable, SpeakerType) == 0x00001C, "Member 'FAtomOutputPortDataTable::SpeakerType' has a wrong offset!");
+
 // ScriptStruct CriWareRuntime.AtomCueSheetDataTable
 // 0x0068 (0x0070 - 0x0008)
 struct FAtomCueSheetDataTable final : public FTableRowBase
@@ -1126,23 +1143,6 @@ static_assert(offsetof(FAtomCueSheetDataTable, NumCueLimits) == 0x000040, "Membe
 static_assert(offsetof(FAtomCueSheetDataTable, PriorityType) == 0x000048, "Member 'FAtomCueSheetDataTable::PriorityType' has a wrong offset!");
 static_assert(offsetof(FAtomCueSheetDataTable, PriorityTypeIndex) == 0x000058, "Member 'FAtomCueSheetDataTable::PriorityTypeIndex' has a wrong offset!");
 static_assert(offsetof(FAtomCueSheetDataTable, Cue) == 0x000060, "Member 'FAtomCueSheetDataTable::Cue' has a wrong offset!");
-
-// ScriptStruct CriWareRuntime.AtomListenerFocusPointInfo
-// 0x0018 (0x0018 - 0x0000)
-struct FAtomListenerFocusPointInfo final
-{
-public:
-	TWeakObjectPtr<class AActor>                  TargetActor;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TWeakObjectPtr<class USceneComponent>         TargetComponent;                                   // 0x0008(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceLevel;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DirectionLevel;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAtomListenerFocusPointInfo) == 0x000004, "Wrong alignment on FAtomListenerFocusPointInfo");
-static_assert(sizeof(FAtomListenerFocusPointInfo) == 0x000018, "Wrong size on FAtomListenerFocusPointInfo");
-static_assert(offsetof(FAtomListenerFocusPointInfo, TargetActor) == 0x000000, "Member 'FAtomListenerFocusPointInfo::TargetActor' has a wrong offset!");
-static_assert(offsetof(FAtomListenerFocusPointInfo, TargetComponent) == 0x000008, "Member 'FAtomListenerFocusPointInfo::TargetComponent' has a wrong offset!");
-static_assert(offsetof(FAtomListenerFocusPointInfo, DistanceLevel) == 0x000010, "Member 'FAtomListenerFocusPointInfo::DistanceLevel' has a wrong offset!");
-static_assert(offsetof(FAtomListenerFocusPointInfo, DirectionLevel) == 0x000014, "Member 'FAtomListenerFocusPointInfo::DirectionLevel' has a wrong offset!");
 
 // ScriptStruct CriWareRuntime.AtomProfileItem
 // 0x0088 (0x0088 - 0x0000)

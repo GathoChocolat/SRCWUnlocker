@@ -66,7 +66,7 @@ void UWBP_TopInfo_Sub_Category_C::OnInitialized()
 
 
 // Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.SetSwitcherIndex
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -189,6 +189,26 @@ void UWBP_TopInfo_Sub_Category_C::SetupFreecontentInfo(const class FText& Title,
 }
 
 
+// Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.SetupLegendInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FLegendCompeInfoDispData&  DispData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_TopInfo_Sub_Category_C::SetupLegendInfo(const struct FLegendCompeInfoDispData& DispData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TopInfo_Sub_Category_C", "SetupLegendInfo");
+
+	Params::WBP_TopInfo_Sub_Category_C_SetupLegendInfo Parms{};
+
+	Parms.DispData = std::move(DispData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.SetupWorldMatchInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -206,10 +226,10 @@ void UWBP_TopInfo_Sub_Category_C::SetupWorldMatchInfo()
 // Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.UpdateButtonAnim
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsWorldMatch                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ETopInfoWidgetPageCategory              Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsSelect                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TopInfo_Sub_Category_C::UpdateButtonAnim(bool IsWorldMatch, bool IsSelect)
+void UWBP_TopInfo_Sub_Category_C::UpdateButtonAnim(ETopInfoWidgetPageCategory Category, bool IsSelect)
 {
 	static class UFunction* Func = nullptr;
 
@@ -218,30 +238,8 @@ void UWBP_TopInfo_Sub_Category_C::UpdateButtonAnim(bool IsWorldMatch, bool IsSel
 
 	Params::WBP_TopInfo_Sub_Category_C_UpdateButtonAnim Parms{};
 
-	Parms.IsWorldMatch = IsWorldMatch;
+	Parms.Category = Category;
 	Parms.IsSelect = IsSelect;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.UpdateButtonFocus
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ETopInfoWidgetPageCategory              PageCategory                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ButtonFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TopInfo_Sub_Category_C::UpdateButtonFocus(ETopInfoWidgetPageCategory PageCategory, bool ButtonFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TopInfo_Sub_Category_C", "UpdateButtonFocus");
-
-	Params::WBP_TopInfo_Sub_Category_C_UpdateButtonFocus Parms{};
-
-	Parms.PageCategory = PageCategory;
-	Parms.ButtonFocus = ButtonFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

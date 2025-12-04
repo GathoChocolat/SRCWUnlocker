@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Race_StartDash_Sub_ArcGauge.WBP_Race_StartDash_Sub_ArcGauge_C
-// 0x0080 (0x0398 - 0x0318)
+// 0x0088 (0x03A0 - 0x0318)
 class UWBP_Race_StartDash_Sub_ArcGauge_C final : public URaceUISubStartGauge
 {
 public:
@@ -35,9 +35,10 @@ public:
 	class UWBP_Race_Sub_Btn_Key_C*                WBP_Race_StartDash_Sub_Btn;                        // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Race_Sub_Btn_Cross_C*              WBP_Race_StartDash_Sub_Btn_Cross;                  // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Race_Sub_Btn_LR_C*                 WBP_Race_StartDash_Sub_Btn_LR;                     // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_Btn;                                // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               GaugeMat;                                          // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            ButtonWB;                                          // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Race_Sub_Btn_Option_C*             WBP_Race_Sub_Btn_Option;                           // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_Btn;                                // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               GaugeMat;                                          // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            ButtonWB;                                          // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Construct();
@@ -64,7 +65,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Race_StartDash_Sub_ArcGauge_C) == 0x000008, "Wrong alignment on UWBP_Race_StartDash_Sub_ArcGauge_C");
-static_assert(sizeof(UWBP_Race_StartDash_Sub_ArcGauge_C) == 0x000398, "Wrong size on UWBP_Race_StartDash_Sub_ArcGauge_C");
+static_assert(sizeof(UWBP_Race_StartDash_Sub_ArcGauge_C) == 0x0003A0, "Wrong size on UWBP_Race_StartDash_Sub_ArcGauge_C");
 static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, UberGraphFrame) == 0x000318, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, TestGaurgeAnim) == 0x000320, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::TestGaurgeAnim' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, Arrow) == 0x000328, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::Arrow' has a wrong offset!");
@@ -78,9 +79,10 @@ static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, Success_Green) == 0x0
 static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_StartDash_Sub_Btn) == 0x000368, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_StartDash_Sub_Btn' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_StartDash_Sub_Btn_Cross) == 0x000370, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_StartDash_Sub_Btn_Cross' has a wrong offset!");
 static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_StartDash_Sub_Btn_LR) == 0x000378, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_StartDash_Sub_Btn_LR' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WidgetSwitcher_Btn) == 0x000380, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WidgetSwitcher_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, GaugeMat) == 0x000388, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::GaugeMat' has a wrong offset!");
-static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, ButtonWB) == 0x000390, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::ButtonWB' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WBP_Race_Sub_Btn_Option) == 0x000380, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WBP_Race_Sub_Btn_Option' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, WidgetSwitcher_Btn) == 0x000388, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::WidgetSwitcher_Btn' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, GaugeMat) == 0x000390, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::GaugeMat' has a wrong offset!");
+static_assert(offsetof(UWBP_Race_StartDash_Sub_ArcGauge_C, ButtonWB) == 0x000398, "Member 'UWBP_Race_StartDash_Sub_ArcGauge_C::ButtonWB' has a wrong offset!");
 
 }
 

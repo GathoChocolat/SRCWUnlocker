@@ -1386,13 +1386,12 @@ void UWBP_TopInfo_C::SetupFestaInfo(const class FText& Title, const struct FDate
 // Function WBP_TopInfo.WBP_TopInfo_C.SetupLegendInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      Title                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 // const struct FDateTime&                 StartTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FDateTime&                 endTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       TextureBG                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsNew                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLegendCompeInfoDispData&  DispData                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_TopInfo_C::SetupLegendInfo(const class FText& Title, const struct FDateTime& StartTime, const struct FDateTime& endTime, class UTexture2D* TextureBG, bool IsNew)
+void UWBP_TopInfo_C::SetupLegendInfo(const struct FDateTime& StartTime, const struct FDateTime& endTime, bool IsNew, const struct FLegendCompeInfoDispData& DispData)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1401,11 +1400,10 @@ void UWBP_TopInfo_C::SetupLegendInfo(const class FText& Title, const struct FDat
 
 	Params::WBP_TopInfo_C_SetupLegendInfo Parms{};
 
-	Parms.Title = std::move(Title);
 	Parms.StartTime = std::move(StartTime);
 	Parms.endTime = std::move(endTime);
-	Parms.TextureBG = TextureBG;
 	Parms.IsNew = IsNew;
+	Parms.DispData = std::move(DispData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

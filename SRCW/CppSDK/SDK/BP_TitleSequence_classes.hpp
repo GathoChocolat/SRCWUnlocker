@@ -11,17 +11,17 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TitleSequence.BP_TitleSequence_C
-// 0x00E8 (0x0488 - 0x03A0)
+// 0x00F0 (0x0490 - 0x03A0)
 class ABP_TitleSequence_C final : public ATitleSequence
 {
 public:
@@ -53,6 +53,8 @@ public:
 	class UUnionUIPopupWindowBase*                UpdateWindow;                                      // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UUnionUIPopupWindowBase*                GameQuitWindow;                                    // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsInputBound;                                     // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_481[0x7];                                      // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTermConditionsDataAsset*               TermsConditionDataAsset;                           // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindMouseClicked();
@@ -150,7 +152,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_TitleSequence_C) == 0x000008, "Wrong alignment on ABP_TitleSequence_C");
-static_assert(sizeof(ABP_TitleSequence_C) == 0x000488, "Wrong size on ABP_TitleSequence_C");
+static_assert(sizeof(ABP_TitleSequence_C) == 0x000490, "Wrong size on ABP_TitleSequence_C");
 static_assert(offsetof(ABP_TitleSequence_C, UberGraphFrame) == 0x0003A0, "Member 'ABP_TitleSequence_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABP_TitleSequence_C, WaitTime) == 0x0003A8, "Member 'ABP_TitleSequence_C::WaitTime' has a wrong offset!");
 static_assert(offsetof(ABP_TitleSequence_C, WaitTime_TitleTop) == 0x0003B0, "Member 'ABP_TitleSequence_C::WaitTime_TitleTop' has a wrong offset!");
@@ -178,6 +180,7 @@ static_assert(offsetof(ABP_TitleSequence_C, bTitleLogoLoaded) == 0x000468, "Memb
 static_assert(offsetof(ABP_TitleSequence_C, UpdateWindow) == 0x000470, "Member 'ABP_TitleSequence_C::UpdateWindow' has a wrong offset!");
 static_assert(offsetof(ABP_TitleSequence_C, GameQuitWindow) == 0x000478, "Member 'ABP_TitleSequence_C::GameQuitWindow' has a wrong offset!");
 static_assert(offsetof(ABP_TitleSequence_C, bIsInputBound) == 0x000480, "Member 'ABP_TitleSequence_C::bIsInputBound' has a wrong offset!");
+static_assert(offsetof(ABP_TitleSequence_C, TermsConditionDataAsset) == 0x000488, "Member 'ABP_TitleSequence_C::TermsConditionDataAsset' has a wrong offset!");
 
 }
 

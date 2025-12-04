@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "MovieSceneTracks_structs.hpp"
-#include "MovieSceneTracks_classes.hpp"
-#include "AnimationCore_structs.hpp"
 #include "RigVM_structs.hpp"
 #include "RigVM_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "ControlRig_structs.hpp"
+#include "MovieSceneTracks_structs.hpp"
+#include "MovieSceneTracks_classes.hpp"
+#include "AnimationCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Constraints_structs.hpp"
@@ -745,27 +745,6 @@ static_assert(offsetof(UControlRigShapeLibrary, XRayMaterial) == 0x0000F8, "Memb
 static_assert(offsetof(UControlRigShapeLibrary, MaterialColorParameter) == 0x000120, "Member 'UControlRigShapeLibrary::MaterialColorParameter' has a wrong offset!");
 static_assert(offsetof(UControlRigShapeLibrary, Shapes) == 0x000128, "Member 'UControlRigShapeLibrary::Shapes' has a wrong offset!");
 
-// Class ControlRig.ControlRigPoseProjectSettings
-// 0x0010 (0x0038 - 0x0028)
-class UControlRigPoseProjectSettings final : public UObject
-{
-public:
-	TArray<struct FDirectoryPath>                 RootSaveDirs;                                      // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ControlRigPoseProjectSettings">();
-	}
-	static class UControlRigPoseProjectSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UControlRigPoseProjectSettings>();
-	}
-};
-static_assert(alignof(UControlRigPoseProjectSettings) == 0x000008, "Wrong alignment on UControlRigPoseProjectSettings");
-static_assert(sizeof(UControlRigPoseProjectSettings) == 0x000038, "Wrong size on UControlRigPoseProjectSettings");
-static_assert(offsetof(UControlRigPoseProjectSettings, RootSaveDirs) == 0x000028, "Member 'UControlRigPoseProjectSettings::RootSaveDirs' has a wrong offset!");
-
 // Class ControlRig.ControlRigTestData
 // 0x0128 (0x0150 - 0x0028)
 class UControlRigTestData final : public UObject
@@ -832,48 +811,6 @@ public:
 static_assert(alignof(UControlRigValidator) == 0x000008, "Wrong alignment on UControlRigValidator");
 static_assert(sizeof(UControlRigValidator) == 0x000068, "Wrong size on UControlRigValidator");
 static_assert(offsetof(UControlRigValidator, Passes) == 0x000028, "Member 'UControlRigValidator::Passes' has a wrong offset!");
-
-// Class ControlRig.MovieSceneControlRigParameterSection
-// 0x0278 (0x03D0 - 0x0158)
-class UMovieSceneControlRigParameterSection final : public UMovieSceneParameterSection
-{
-public:
-	uint8                                         Pad_158[0x48];                                     // 0x0158(0x0048)(Fixing Size After Last Property [ Dumper-7 ])
-	class UControlRig*                            ControlRig;                                        // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSubclassOf<class UControlRig>                ControlRigClass;                                   // 0x01A8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<bool>                                  ControlsMask;                                      // 0x01B0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FMovieSceneTransformMask               TransformMask;                                     // 0x01C0(0x0004)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMovieSceneFloatChannel                Weight;                                            // 0x01C8(0x0110)(NativeAccessSpecifierPublic)
-	TMap<class FName, struct FChannelMapInfo>     ControlChannelMap;                                 // 0x02D8(0x0050)(NativeAccessSpecifierPublic)
-	TArray<struct FEnumParameterNameAndCurve>     EnumParameterNamesAndCurves;                       // 0x0328(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FIntegerParameterNameAndCurve>  IntegerParameterNamesAndCurves;                    // 0x0338(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FSpaceControlNameAndChannel>    SpaceChannels;                                     // 0x0348(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FConstraintAndActiveChannel>    ConstraintsChannels;                               // 0x0358(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_368[0x68];                                     // 0x0368(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MovieSceneControlRigParameterSection">();
-	}
-	static class UMovieSceneControlRigParameterSection* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieSceneControlRigParameterSection>();
-	}
-};
-static_assert(alignof(UMovieSceneControlRigParameterSection) == 0x000008, "Wrong alignment on UMovieSceneControlRigParameterSection");
-static_assert(sizeof(UMovieSceneControlRigParameterSection) == 0x0003D0, "Wrong size on UMovieSceneControlRigParameterSection");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlRig) == 0x0001A0, "Member 'UMovieSceneControlRigParameterSection::ControlRig' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlRigClass) == 0x0001A8, "Member 'UMovieSceneControlRigParameterSection::ControlRigClass' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlsMask) == 0x0001B0, "Member 'UMovieSceneControlRigParameterSection::ControlsMask' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, TransformMask) == 0x0001C0, "Member 'UMovieSceneControlRigParameterSection::TransformMask' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, Weight) == 0x0001C8, "Member 'UMovieSceneControlRigParameterSection::Weight' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlChannelMap) == 0x0002D8, "Member 'UMovieSceneControlRigParameterSection::ControlChannelMap' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, EnumParameterNamesAndCurves) == 0x000328, "Member 'UMovieSceneControlRigParameterSection::EnumParameterNamesAndCurves' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, IntegerParameterNamesAndCurves) == 0x000338, "Member 'UMovieSceneControlRigParameterSection::IntegerParameterNamesAndCurves' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, SpaceChannels) == 0x000348, "Member 'UMovieSceneControlRigParameterSection::SpaceChannels' has a wrong offset!");
-static_assert(offsetof(UMovieSceneControlRigParameterSection, ConstraintsChannels) == 0x000358, "Member 'UMovieSceneControlRigParameterSection::ConstraintsChannels' has a wrong offset!");
 
 // Class ControlRig.ControlRigValidationPass
 // 0x0000 (0x0028 - 0x0028)
@@ -968,37 +905,6 @@ public:
 };
 static_assert(alignof(UAdditiveControlRig) == 0x000008, "Wrong alignment on UAdditiveControlRig");
 static_assert(sizeof(UAdditiveControlRig) == 0x000AB8, "Wrong size on UAdditiveControlRig");
-
-// Class ControlRig.ControlRigPoseAsset
-// 0x0060 (0x0088 - 0x0028)
-class UControlRigPoseAsset final : public UObject
-{
-public:
-	struct FControlRigControlPose                 Pose;                                              // 0x0028(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	void GetCurrentPose(class UControlRig* InControlRig, struct FControlRigControlPose* OutPose);
-	void PastePose(class UControlRig* InControlRig, bool bDoKey, bool bDoMirror);
-	void ReplaceControlName(const class FName& CurrentName, const class FName& NewName);
-	void SavePose(class UControlRig* InControlRig, bool bUseAll);
-	void SelectControls(class UControlRig* InControlRig, bool bDoMirror);
-
-	bool DoesMirrorMatch(class UControlRig* ControlRig, const class FName& ControlName) const;
-	TArray<class FName> GetControlNames() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ControlRigPoseAsset">();
-	}
-	static class UControlRigPoseAsset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UControlRigPoseAsset>();
-	}
-};
-static_assert(alignof(UControlRigPoseAsset) == 0x000008, "Wrong alignment on UControlRigPoseAsset");
-static_assert(sizeof(UControlRigPoseAsset) == 0x000088, "Wrong size on UControlRigPoseAsset");
-static_assert(offsetof(UControlRigPoseAsset, Pose) == 0x000028, "Member 'UControlRigPoseAsset::Pose' has a wrong offset!");
 
 // Class ControlRig.FKControlRig
 // 0x0040 (0x0AE8 - 0x0AA8)
@@ -1097,6 +1003,48 @@ public:
 static_assert(alignof(UControlRigLayerInstance) == 0x000010, "Wrong alignment on UControlRigLayerInstance");
 static_assert(sizeof(UControlRigLayerInstance) == 0x000370, "Wrong size on UControlRigLayerInstance");
 
+// Class ControlRig.MovieSceneControlRigParameterSection
+// 0x0278 (0x03D0 - 0x0158)
+class UMovieSceneControlRigParameterSection final : public UMovieSceneParameterSection
+{
+public:
+	uint8                                         Pad_158[0x48];                                     // 0x0158(0x0048)(Fixing Size After Last Property [ Dumper-7 ])
+	class UControlRig*                            ControlRig;                                        // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class UControlRig>                ControlRigClass;                                   // 0x01A8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<bool>                                  ControlsMask;                                      // 0x01B0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FMovieSceneTransformMask               TransformMask;                                     // 0x01C0(0x0004)(NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMovieSceneFloatChannel                Weight;                                            // 0x01C8(0x0110)(NativeAccessSpecifierPublic)
+	TMap<class FName, struct FChannelMapInfo>     ControlChannelMap;                                 // 0x02D8(0x0050)(NativeAccessSpecifierPublic)
+	TArray<struct FEnumParameterNameAndCurve>     EnumParameterNamesAndCurves;                       // 0x0328(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FIntegerParameterNameAndCurve>  IntegerParameterNamesAndCurves;                    // 0x0338(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FSpaceControlNameAndChannel>    SpaceChannels;                                     // 0x0348(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FConstraintAndActiveChannel>    ConstraintsChannels;                               // 0x0358(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_368[0x68];                                     // 0x0368(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MovieSceneControlRigParameterSection">();
+	}
+	static class UMovieSceneControlRigParameterSection* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieSceneControlRigParameterSection>();
+	}
+};
+static_assert(alignof(UMovieSceneControlRigParameterSection) == 0x000008, "Wrong alignment on UMovieSceneControlRigParameterSection");
+static_assert(sizeof(UMovieSceneControlRigParameterSection) == 0x0003D0, "Wrong size on UMovieSceneControlRigParameterSection");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlRig) == 0x0001A0, "Member 'UMovieSceneControlRigParameterSection::ControlRig' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlRigClass) == 0x0001A8, "Member 'UMovieSceneControlRigParameterSection::ControlRigClass' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlsMask) == 0x0001B0, "Member 'UMovieSceneControlRigParameterSection::ControlsMask' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, TransformMask) == 0x0001C0, "Member 'UMovieSceneControlRigParameterSection::TransformMask' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, Weight) == 0x0001C8, "Member 'UMovieSceneControlRigParameterSection::Weight' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, ControlChannelMap) == 0x0002D8, "Member 'UMovieSceneControlRigParameterSection::ControlChannelMap' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, EnumParameterNamesAndCurves) == 0x000328, "Member 'UMovieSceneControlRigParameterSection::EnumParameterNamesAndCurves' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, IntegerParameterNamesAndCurves) == 0x000338, "Member 'UMovieSceneControlRigParameterSection::IntegerParameterNamesAndCurves' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, SpaceChannels) == 0x000348, "Member 'UMovieSceneControlRigParameterSection::SpaceChannels' has a wrong offset!");
+static_assert(offsetof(UMovieSceneControlRigParameterSection, ConstraintsChannels) == 0x000358, "Member 'UMovieSceneControlRigParameterSection::ConstraintsChannels' has a wrong offset!");
+
 // Class ControlRig.MovieSceneControlRigParameterTrack
 // 0x0110 (0x01A8 - 0x0098)
 class UMovieSceneControlRigParameterTrack final : public UMovieSceneNameableTrack
@@ -1166,6 +1114,37 @@ public:
 static_assert(alignof(UControlRigEditorSettings) == 0x000008, "Wrong alignment on UControlRigEditorSettings");
 static_assert(sizeof(UControlRigEditorSettings) == 0x000038, "Wrong size on UControlRigEditorSettings");
 
+// Class ControlRig.ControlRigPoseAsset
+// 0x0060 (0x0088 - 0x0028)
+class UControlRigPoseAsset final : public UObject
+{
+public:
+	struct FControlRigControlPose                 Pose;                                              // 0x0028(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	void GetCurrentPose(class UControlRig* InControlRig, struct FControlRigControlPose* OutPose);
+	void PastePose(class UControlRig* InControlRig, bool bDoKey, bool bDoMirror);
+	void ReplaceControlName(const class FName& CurrentName, const class FName& NewName);
+	void SavePose(class UControlRig* InControlRig, bool bUseAll);
+	void SelectControls(class UControlRig* InControlRig, bool bDoMirror);
+
+	bool DoesMirrorMatch(class UControlRig* ControlRig, const class FName& ControlName) const;
+	TArray<class FName> GetControlNames() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ControlRigPoseAsset">();
+	}
+	static class UControlRigPoseAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UControlRigPoseAsset>();
+	}
+};
+static_assert(alignof(UControlRigPoseAsset) == 0x000008, "Wrong alignment on UControlRigPoseAsset");
+static_assert(sizeof(UControlRigPoseAsset) == 0x000088, "Wrong size on UControlRigPoseAsset");
+static_assert(offsetof(UControlRigPoseAsset, Pose) == 0x000028, "Member 'UControlRigPoseAsset::Pose' has a wrong offset!");
+
 // Class ControlRig.ControlRigPoseMirrorSettings
 // 0x0028 (0x0050 - 0x0028)
 class UControlRigPoseMirrorSettings final : public UObject
@@ -1193,6 +1172,27 @@ static_assert(offsetof(UControlRigPoseMirrorSettings, RightSide) == 0x000028, "M
 static_assert(offsetof(UControlRigPoseMirrorSettings, LeftSide) == 0x000038, "Member 'UControlRigPoseMirrorSettings::LeftSide' has a wrong offset!");
 static_assert(offsetof(UControlRigPoseMirrorSettings, MirrorAxis) == 0x000048, "Member 'UControlRigPoseMirrorSettings::MirrorAxis' has a wrong offset!");
 static_assert(offsetof(UControlRigPoseMirrorSettings, AxisToFlip) == 0x000049, "Member 'UControlRigPoseMirrorSettings::AxisToFlip' has a wrong offset!");
+
+// Class ControlRig.ControlRigPoseProjectSettings
+// 0x0010 (0x0038 - 0x0028)
+class UControlRigPoseProjectSettings final : public UObject
+{
+public:
+	TArray<struct FDirectoryPath>                 RootSaveDirs;                                      // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ControlRigPoseProjectSettings">();
+	}
+	static class UControlRigPoseProjectSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UControlRigPoseProjectSettings>();
+	}
+};
+static_assert(alignof(UControlRigPoseProjectSettings) == 0x000008, "Wrong alignment on UControlRigPoseProjectSettings");
+static_assert(sizeof(UControlRigPoseProjectSettings) == 0x000038, "Wrong size on UControlRigPoseProjectSettings");
+static_assert(offsetof(UControlRigPoseProjectSettings, RootSaveDirs) == 0x000028, "Member 'UControlRigPoseProjectSettings::RootSaveDirs' has a wrong offset!");
 
 // Class ControlRig.ControlRigWorkflowOptions
 // 0x0018 (0x00B0 - 0x0098)

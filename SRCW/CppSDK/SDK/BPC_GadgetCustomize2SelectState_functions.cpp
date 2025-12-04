@@ -17,6 +17,54 @@
 namespace SDK
 {
 
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlaySoundGadgetAttachCancel
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBPC_GadgetCustomize2SelectState_C::PlaySoundGadgetAttachCancel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "PlaySoundGadgetAttachCancel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.PlaySoundGadgetAttach
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBPC_GadgetCustomize2SelectState_C::PlaySoundGadgetAttach()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "PlaySoundGadgetAttach");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.SetSequenceDirty
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const bool                              InDirty                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_GadgetCustomize2SelectState_C::SetSequenceDirty(const bool InDirty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "SetSequenceDirty");
+
+	Params::BPC_GadgetCustomize2SelectState_C_SetSequenceDirty Parms{};
+
+	Parms.InDirty = InDirty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.UpdateGadgetDetailWindowFromGadgetPlateLastFocus
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -382,7 +430,7 @@ void UBPC_GadgetCustomize2SelectState_C::SetPlateWindowInValidIcons(int32 InPlay
 
 
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.Custom Window on Item Focused
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   InPlayerIndex_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EGadgetId                               InGadgetId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1086,6 +1134,68 @@ void UBPC_GadgetCustomize2SelectState_C::GadgetTabSelect(int32 InPlayerIndex_0, 
 }
 
 
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.OnInitState
+// (Event, Public, BlueprintEvent)
+
+void UBPC_GadgetCustomize2SelectState_C::OnInitState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "OnInitState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.OnExitState
+// (Event, Public, BlueprintEvent)
+
+void UBPC_GadgetCustomize2SelectState_C::OnExitState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "OnExitState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.ShowTipsWindow
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_GadgetCustomize2SelectState_C::ShowTipsWindow()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "ShowTipsWindow");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.Finished_SequenceBegin_FadeOut
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUnionUIFadeDirection                   FadeDirection                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPC_GadgetCustomize2SelectState_C::Finished_SequenceBegin_FadeOut(EUnionUIFadeDirection FadeDirection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "Finished_SequenceBegin_FadeOut");
+
+	Params::BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut Parms{};
+
+	Parms.FadeDirection = FadeDirection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.GadgetCustomWindow_OnSctollStart
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1159,68 +1269,6 @@ void UBPC_GadgetCustomize2SelectState_C::GadgetCustomWindow_OnGadgetCategoryDeci
 	Parms.SelectedGadgetCategory = SelectedGadgetCategory;
 	Parms.SelectedGadgetId = SelectedGadgetId;
 	Parms.SelectedGadgetState = SelectedGadgetState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.OnInitState
-// (Event, Public, BlueprintEvent)
-
-void UBPC_GadgetCustomize2SelectState_C::OnInitState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "OnInitState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.OnExitState
-// (Event, Public, BlueprintEvent)
-
-void UBPC_GadgetCustomize2SelectState_C::OnExitState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "OnExitState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.ShowTipsWindow
-// (BlueprintCallable, BlueprintEvent)
-
-void UBPC_GadgetCustomize2SelectState_C::ShowTipsWindow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "ShowTipsWindow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPC_GadgetCustomize2SelectState.BPC_GadgetCustomize2SelectState_C.Finished_SequenceBegin_FadeOut
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUnionUIFadeDirection                   FadeDirection                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_GadgetCustomize2SelectState_C::Finished_SequenceBegin_FadeOut(EUnionUIFadeDirection FadeDirection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_GadgetCustomize2SelectState_C", "Finished_SequenceBegin_FadeOut");
-
-	Params::BPC_GadgetCustomize2SelectState_C_Finished_SequenceBegin_FadeOut Parms{};
-
-	Parms.FadeDirection = FadeDirection;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

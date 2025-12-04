@@ -256,8 +256,11 @@ void UWBP_HeaderMenu_C::SetChallengeNotice(TArray<struct FChallengeStruct>& InPa
 // int32                                   InWinCounts                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ERateRank                               InRateRank                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   InRankPercent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsShowingLegendCompeIcon                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ELegendCompeRateGrade                   LegendGrade                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InLegendRate                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HeaderMenu_C::SetHeaderUserData(const class FText& InUserName, int32 InHonorId, ECrossplayPlatform InPlatformId, int32 InWinCounts, ERateRank InRateRank, float InRankPercent)
+void UWBP_HeaderMenu_C::SetHeaderUserData(const class FText& InUserName, int32 InHonorId, ECrossplayPlatform InPlatformId, int32 InWinCounts, ERateRank InRateRank, float InRankPercent, bool IsShowingLegendCompeIcon, ELegendCompeRateGrade LegendGrade, int32 InLegendRate)
 {
 	static class UFunction* Func = nullptr;
 
@@ -272,6 +275,9 @@ void UWBP_HeaderMenu_C::SetHeaderUserData(const class FText& InUserName, int32 I
 	Parms.InWinCounts = InWinCounts;
 	Parms.InRateRank = InRateRank;
 	Parms.InRankPercent = InRankPercent;
+	Parms.IsShowingLegendCompeIcon = IsShowingLegendCompeIcon;
+	Parms.LegendGrade = LegendGrade;
+	Parms.InLegendRate = InLegendRate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -318,20 +324,6 @@ void UWBP_HeaderMenu_C::SetOnlineGameMode(EOnlineGameMode InOnlineGameMode, bool
 	Parms.bIsMulti = bIsMulti;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HeaderMenu.WBP_HeaderMenu_C.SetRuleTimeTableVisible
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeaderMenu_C::SetRuleTimeTableVisible()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeaderMenu_C", "SetRuleTimeTableVisible");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

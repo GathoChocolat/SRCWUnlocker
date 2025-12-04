@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -36,9 +36,9 @@ public:
 public:
 	void CreateErrorWindow(const class FText& InMessage);
 	void Finished_EE235D9843DAC19A31BA1DB14707FAB0();
-	void SubCommandFinalize();
 	void OnFaceButtonTopPressedEvent(class UObject* Object);
 	void OnFaceButtonLeftPressedEvent(class UObject* Object);
+	void SubCommandFinalize();
 	void UnbindEventSubCommand();
 	void BindEventSubCommand();
 	void OnGhostOptionPressed();
@@ -60,9 +60,9 @@ public:
 	void BackSequenceState();
 	void BindEventOnline();
 	void BindEventOffline();
-	void SubCommandInitialize();
 	void HashErrorWindow_OnDecide(class UUnionUIButtonBase* Button, int32 PanelIndex, int32 ButtonIndex);
 	void OnGhostHashCheckCompleted(bool bIsGhostHashOK);
+	void SubCommandInitialize();
 	void SetInputEnable(bool InInputEnable);
 	void OnOpenError();
 	void OnShowPfProfileErrorWindowEnd();

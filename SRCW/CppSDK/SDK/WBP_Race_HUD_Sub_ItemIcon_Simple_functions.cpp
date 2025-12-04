@@ -212,7 +212,7 @@ void UWBP_Race_HUD_Sub_ItemIcon_Simple_C::LotteryDecideFinished()
 
 
 // Function WBP_Race_HUD_Sub_ItemIcon_Simple.WBP_Race_HUD_Sub_ItemIcon_Simple_C.LotterySeqStart
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    LotterySound                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -334,6 +334,26 @@ void UWBP_Race_HUD_Sub_ItemIcon_Simple_C::SetAlignment(bool bRightSide)
 	Params::WBP_Race_HUD_Sub_ItemIcon_Simple_C_SetAlignment Parms{};
 
 	Parms.bRightSide = bRightSide;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Race_HUD_Sub_ItemIcon_Simple.WBP_Race_HUD_Sub_ItemIcon_Simple_C.SetChargeGaugeRate
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Sub_ItemIcon_Simple_C::SetChargeGaugeRate(float Rate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Sub_ItemIcon_Simple_C", "SetChargeGaugeRate");
+
+	Params::WBP_Race_HUD_Sub_ItemIcon_Simple_C_SetChargeGaugeRate Parms{};
+
+	Parms.Rate = Rate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

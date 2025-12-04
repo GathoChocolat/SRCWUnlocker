@@ -1802,6 +1802,32 @@ void UWBP_Race_HUD_Player01_C::SetItemPanelVisible(int32 PlayerControllerIndex, 
 }
 
 
+// Function WBP_Race_HUD_Player01.WBP_Race_HUD_Player01_C.SetItemRemainCount
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EItemInfoType                           ItemInfoType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   RemainCount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   MaxCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Race_HUD_Player01_C::SetItemRemainCount(int32 PlayerControllerIndex, EItemInfoType ItemInfoType, float RemainCount, float MaxCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Race_HUD_Player01_C", "SetItemRemainCount");
+
+	Params::WBP_Race_HUD_Player01_C_SetItemRemainCount Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+	Parms.ItemInfoType = ItemInfoType;
+	Parms.RemainCount = RemainCount;
+	Parms.MaxCount = MaxCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Race_HUD_Player01.WBP_Race_HUD_Player01_C.SetItemWarningUIVisible
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1869,10 +1895,10 @@ void UWBP_Race_HUD_Player01_C::SetLapUIVisible(bool bVisible)
 // Function WBP_Race_HUD_Player01.WBP_Race_HUD_Player01_C.SetLostItemInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   RacerId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   RacerID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EItemId                                 ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_HUD_Player01_C::SetLostItemInfo(int32 RacerId, EItemId ItemId)
+void UWBP_Race_HUD_Player01_C::SetLostItemInfo(int32 RacerID, EItemId ItemId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1881,7 +1907,7 @@ void UWBP_Race_HUD_Player01_C::SetLostItemInfo(int32 RacerId, EItemId ItemId)
 
 	Params::WBP_Race_HUD_Player01_C_SetLostItemInfo Parms{};
 
-	Parms.RacerId = RacerId;
+	Parms.RacerID = RacerID;
 	Parms.ItemId = ItemId;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1895,8 +1921,9 @@ void UWBP_Race_HUD_Player01_C::SetLostItemInfo(int32 RacerId, EItemId ItemId)
 // bool                                    bVisible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Scale                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsScaleKeepInHoming                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EItemId                                 ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_HUD_Player01_C::SetManualAimingUIVisible(int32 PlayerControllerIndex, bool bVisible, float Scale, bool IsScaleKeepInHoming)
+void UWBP_Race_HUD_Player01_C::SetManualAimingUIVisible(int32 PlayerControllerIndex, bool bVisible, float Scale, bool IsScaleKeepInHoming, EItemId ItemId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1909,6 +1936,7 @@ void UWBP_Race_HUD_Player01_C::SetManualAimingUIVisible(int32 PlayerControllerIn
 	Parms.bVisible = bVisible;
 	Parms.Scale = Scale;
 	Parms.IsScaleKeepInHoming = IsScaleKeepInHoming;
+	Parms.ItemId = ItemId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -2871,26 +2899,6 @@ void UWBP_Race_HUD_Player01_C::UpdateHomingAimTargetedLocation(int32 PlayerContr
 
 	Parms.PlayerControllerIndex = PlayerControllerIndex;
 	Parms.PlayerLocation = std::move(PlayerLocation);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Race_HUD_Player01.WBP_Race_HUD_Player01_C.UpdateIrregularInfiniteItem
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Race_HUD_Player01_C::UpdateIrregularInfiniteItem(int32 PlayerControllerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Race_HUD_Player01_C", "UpdateIrregularInfiniteItem");
-
-	Params::WBP_Race_HUD_Player01_C_UpdateIrregularInfiniteItem Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

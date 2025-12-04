@@ -243,6 +243,26 @@ void UWBP_StatusInfo_PlayerDetail_C::SetupDetailData(int32 DriverId, const struc
 }
 
 
+// Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupLegendCompeIcon
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                                   RankRate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StatusInfo_PlayerDetail_C::SetupLegendCompeIcon(int32 RankRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_StatusInfo_PlayerDetail_C", "SetupLegendCompeIcon");
+
+	Params::WBP_StatusInfo_PlayerDetail_C_SetupLegendCompeIcon Parms{};
+
+	Parms.RankRate = RankRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.SetupMachineInfo
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
