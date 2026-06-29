@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_structs.hpp"
-#include "UNION_structs.hpp"
-#include "UNION_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UNION_structs.hpp"
+#include "UNION_classes.hpp"
+#include "UnionRun_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "UnionLib_structs.hpp"
 
@@ -98,7 +98,7 @@ public:
 	void BindRaceBGMEvent(class UAppRaceEventManager* AppRaceEventManager);
 	void BindSilenceSoundEvent(class UAppRaceEventManager* AppRaceEventManager);
 	void ChangeDomainPre1st(int32 RacerIndex);
-	void ChangeSubEvent(const EMainSubCourseIndex& NextMainSubState, int32 RacerId);
+	void ChangeSubEvent(const EMainSubCourseIndex& NextMainSubState, int32 RacerID);
 	void ChangeSubMapTexture(int32 DomainIndex, EMainSubCourseIndex NextMainSubState, EStageCourseMainSubMapInfo* MainSubState);
 	void Chara_Machine_COMROM();
 	void CheckDebugGenericVar();

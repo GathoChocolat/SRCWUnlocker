@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C
-// 0x0050 (0x0170 - 0x0120)
+// 0x0058 (0x0178 - 0x0120)
 class UBPC_RaceSequenceStateSendRaceStart_C final : public URaceSequenceStateSendRaceStart
 {
 public:
@@ -37,6 +37,7 @@ public:
 	ESequenceSubType                              SubSequenceType;                                   // 0x015E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15F[0x1];                                      // 0x015F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         Entry_Online_User_Ids;                             // 0x0160(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         OrderParam;                                        // 0x0170(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindRecvLobbyAttributeEvent();
@@ -61,6 +62,7 @@ public:
 	void StartPlatformGameMatch();
 	void SyncEntryRaceId();
 	void SyncEntryRaceIdForFesta();
+	void TryCommonNextState();
 	void TryFestaNextState();
 
 public:

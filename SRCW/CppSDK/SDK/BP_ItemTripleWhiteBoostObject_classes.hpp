@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemTripleWhiteBoostObject.BP_ItemTripleWhiteBoostObject_C
-// 0x0010 (0x05E0 - 0x05D0)
+// 0x0010 (0x0620 - 0x0610)
 class ABP_ItemTripleWhiteBoostObject_C final : public AItemTripleWhiteBoostObject
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0610(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

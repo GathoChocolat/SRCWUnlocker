@@ -36,6 +36,10 @@ public:
 	void Construct();
 	void ExecuteUbergraph_WBP_CMN_PlayerDetail_Sub_Info_Gadget(int32 EntryPoint);
 	void SetGadgetList(const struct FGadgetPlateUIData& InPlateUIData, TArray<EGadgetId>& DisableGadgetList);
+	void SetupGadgetListDefaultSlots(const struct FGadgetPlateUIData& InGadgetPlateUIData, TArray<EGadgetId>& InDisableGadgetList, TArray<class UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C*>& InOutList, int32 InTotalCost, int32 InDisableSlotSize, int32* OutNewTotalCost, int32* OutNewDisableSlotSize);
+	void SetupGadgetListEmptySlots(const struct FGadgetPlateUIData& InGadgetPlateUIData, TArray<class UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C*>& InOutList, int32 InTotalCost);
+	void SetupGadgetListInvalidSlots(TArray<class UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C*>& InOutList, int32 InInvalidSlotCount);
+	void SetupGadgetListLockSlots(TArray<class UWBP_CMN_PlayerDetail_Sub_Info_Gadget_List_C*>& InOutList);
 
 public:
 	static class UClass* StaticClass()

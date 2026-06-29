@@ -10,16 +10,17 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function WBP_LegendInfo.WBP_LegendInfo_C.ExecuteUbergraph_WBP_LegendInfo
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct WBP_LegendInfo_C_ExecuteUbergraph_WBP_LegendInfo final
 {
 public:
@@ -32,16 +33,21 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_5;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLegendCompeInfoDispData               K2Node_Event_InDispData;                           // 0x0010(0x0030)(ConstParm)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0040(0x0010)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0050(0x0010)()
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0068(0x0010)()
-	class FText                                   CallFunc_GetEmptyText_ReturnValue;                 // 0x0078(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0088(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0010)()
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCurrentLegendCompeEntryRankRate_ReturnValue; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLegendCompeInfoDispData               K2Node_Event_InDispData;                           // 0x0020(0x0030)(ConstParm)
+	ERateRank                                     CallFunc_GetRateToRank_ReturnValue;                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0058(0x0010)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0068(0x0010)()
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0080(0x0010)()
+	class FText                                   CallFunc_GetEmptyText_ReturnValue;                 // 0x0090(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00F8(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_LegendInfo_C_ExecuteUbergraph_WBP_LegendInfo;
 
@@ -77,30 +83,6 @@ public:
 	struct FLegendCompeInfoDispData               InDispData;                                        // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 DUMPER7_ASSERTS_WBP_LegendInfo_C_SetInfoDispData;
-
-// Function WBP_LegendInfo.WBP_LegendInfo_C.SetPopupDispState
-// 0x000C (0x000C - 0x0000)
-struct WBP_LegendInfo_C_SetPopupDispState final
-{
-public:
-	EGameEventPhase                               Phase;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SwitcherIndex;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_LegendInfo_C_SetPopupDispState;
-
-// Function WBP_LegendInfo.WBP_LegendInfo_C.SetRateDispState
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_LegendInfo_C_SetRateDispState final
-{
-public:
-	EGameEventPhase                               Phase;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsPlayed;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsQualified;                                       // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_LegendInfo_C_SetRateDispState;
 
 }
 

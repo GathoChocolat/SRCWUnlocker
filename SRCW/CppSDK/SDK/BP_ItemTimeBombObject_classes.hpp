@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemTimeBombObject.BP_ItemTimeBombObject_C
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x0600 - 0x0600)
 class ABP_ItemTimeBombObject_C final : public AItemTimeBombObject
 {
 public:

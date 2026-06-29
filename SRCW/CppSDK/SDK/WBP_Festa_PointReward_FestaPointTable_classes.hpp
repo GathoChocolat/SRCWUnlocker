@@ -43,7 +43,7 @@ public:
 
 public:
 	void AddPoint(int32 Add, int32 NextAdd, int32 NextTotal);
-	void CloseReward(bool bIsBonus);
+	void CloseReward(bool bPlayCloseAnim, bool bIsBonus);
 	void Construct();
 	void ExecuteUbergraph_WBP_Festa_PointReward_FestaPointTable(int32 EntryPoint);
 	void Open(bool isBonus, int32 NowPoint, int32 NextPoint);

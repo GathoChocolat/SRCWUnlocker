@@ -65,6 +65,34 @@ void UWBP_RaceBefore_VoltageMaxInfo_C::OnOutAnimFinished()
 }
 
 
+// Function WBP_RaceBefore_VoltageMaxInfo.WBP_RaceBefore_VoltageMaxInfo_C.SetupLegendCompeChanupText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RaceBefore_VoltageMaxInfo_C::SetupLegendCompeChanupText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RaceBefore_VoltageMaxInfo_C", "SetupLegendCompeChanupText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RaceBefore_VoltageMaxInfo.WBP_RaceBefore_VoltageMaxInfo_C.SetupRankMatchChanupText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RaceBefore_VoltageMaxInfo_C::SetupRankMatchChanupText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RaceBefore_VoltageMaxInfo_C", "SetupRankMatchChanupText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_RaceBefore_VoltageMaxInfo.WBP_RaceBefore_VoltageMaxInfo_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:

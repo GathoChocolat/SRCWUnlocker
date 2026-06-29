@@ -57,6 +57,28 @@ void UWBP_ResultRate_Sub_RateGauge_C::Set_Now_Rate_Impl(double newParam)
 }
 
 
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetChanceUpIconEnable
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   RatioValue                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RateGauge_C::SetChanceUpIconEnable(bool IsEnable, int32 RatioValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetChanceUpIconEnable");
+
+	Params::WBP_ResultRate_Sub_RateGauge_C_SetChanceUpIconEnable Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.RatioValue = RatioValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetCurrentAndNextLimitRate
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -182,6 +204,28 @@ void UWBP_ResultRate_Sub_RateGauge_C::SetRateBaseImpl(double RateUp_0, double Ra
 	Parms.RateDown_0 = RateDown_0;
 	Parms.RateRankUp = RateRankUp;
 	Parms.RateRankDown = RateRankDown;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultRate_Sub_RateGauge.WBP_ResultRate_Sub_RateGauge_C.SetUpChanceUpInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InRatioValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_Sub_RateGauge_C::SetUpChanceUpInfo(bool IsEnable, int32 InRatioValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_Sub_RateGauge_C", "SetUpChanceUpInfo");
+
+	Params::WBP_ResultRate_Sub_RateGauge_C_SetUpChanceUpInfo Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.InRatioValue = InRatioValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

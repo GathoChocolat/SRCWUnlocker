@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function WBP_TimeTrial_Sub_Online_Ghost.WBP_TimeTrial_Sub_Online_Ghost_C.ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost
-// 0x0410 (0x0410 - 0x0000)
+// 0x0418 (0x0418 - 0x0000)
 struct WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost final
 {
 public:
@@ -45,12 +45,12 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EDriverId                                     K2Node_Select_Default_1;                           // 0x0061(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverData                            CallFunc_GetDriverData_OutDriverData;              // 0x0068(0x0390)()
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_409[0x3];                                      // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x040C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDriverData                            CallFunc_GetDriverData_OutDriverData;              // 0x0068(0x0398)()
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_As_____2D;                      // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_411[0x3];                                      // 0x0411(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0414(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_TimeTrial_Sub_Online_Ghost_C_ExecuteUbergraph_WBP_TimeTrial_Sub_Online_Ghost;
 

@@ -112,49 +112,5 @@ void UWBP_LegendInfo_C::SetInfoDispData(const struct FLegendCompeInfoDispData& I
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-
-// Function WBP_LegendInfo.WBP_LegendInfo_C.SetPopupDispState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGameEventPhase                         Phase                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LegendInfo_C::SetPopupDispState(EGameEventPhase Phase)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LegendInfo_C", "SetPopupDispState");
-
-	Params::WBP_LegendInfo_C_SetPopupDispState Parms{};
-
-	Parms.Phase = Phase;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LegendInfo.WBP_LegendInfo_C.SetRateDispState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGameEventPhase                         Phase                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsPlayed                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsQualified                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LegendInfo_C::SetRateDispState(EGameEventPhase Phase, bool IsPlayed, bool IsQualified)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LegendInfo_C", "SetRateDispState");
-
-	Params::WBP_LegendInfo_C_SetRateDispState Parms{};
-
-	Parms.Phase = Phase;
-	Parms.IsPlayed = IsPlayed;
-	Parms.IsQualified = IsQualified;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
 }
 

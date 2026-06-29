@@ -11,20 +11,20 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UnionRun_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UnionRun_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemThornBallObject.BP_ItemThornBallObject_C
-// 0x0010 (0x0740 - 0x0730)
+// 0x0010 (0x0780 - 0x0770)
 class ABP_ItemThornBallObject_C final : public AItemThornBallObject
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0730(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Niagara;                                           // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0770(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Niagara;                                           // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_ItemThornBallObject(int32 EntryPoint);

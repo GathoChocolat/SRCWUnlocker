@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.AddPointProcess
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::AddPointProcess()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "AddPointProcess");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.BndEvt__WBP_FestaResult_PointReward_Button_front_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -42,6 +56,29 @@ void UWBP_FestaResult_PointReward_C::BndEvt__WBP_FestaResult_PointReward_Button_
 		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "BndEvt__WBP_FestaResult_PointReward_Button_front_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.CalcAddDisplayTicket
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   AddTicketNum                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+int32 UWBP_FestaResult_PointReward_C::CalcAddDisplayTicket(int32 AddTicketNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "CalcAddDisplayTicket");
+
+	Params::WBP_FestaResult_PointReward_C_CalcAddDisplayTicket Parms{};
+
+	Parms.AddTicketNum = AddTicketNum;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -82,6 +119,48 @@ void UWBP_FestaResult_PointReward_C::ContributionMain()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ContributionMain");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ContributionMain_1
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ContributionMain_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ContributionMain_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ContributionMain_2
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ContributionMain_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ContributionMain_2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ContributionMain_3
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ContributionMain_3()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ContributionMain_3");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,20 +234,6 @@ void UWBP_FestaResult_PointReward_C::ExecuteUbergraph_WBP_FestaResult_PointRewar
 }
 
 
-// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.FestaPointReward
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_FestaResult_PointReward_C::FestaPointReward()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "FestaPointReward");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.GetFestaDriverId_impl
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -190,6 +255,35 @@ void UWBP_FestaResult_PointReward_C::GetFestaDriverId_impl(int32 RacerIndex, EDr
 
 	if (DriverId != nullptr)
 		*DriverId = Parms.DriverId;
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.GetFestaResultPointRewardArray
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<struct FFestaPointRewardUIData>* OutRewardDataArray                                     (Parm, OutParm)
+// int32*                                  OutIndexOffset                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FFestaPointRewardUIData>* OutStreakRewardArray                                   (Parm, OutParm)
+
+void UWBP_FestaResult_PointReward_C::GetFestaResultPointRewardArray(TArray<struct FFestaPointRewardUIData>* OutRewardDataArray, int32* OutIndexOffset, TArray<struct FFestaPointRewardUIData>* OutStreakRewardArray)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "GetFestaResultPointRewardArray");
+
+	Params::WBP_FestaResult_PointReward_C_GetFestaResultPointRewardArray Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutRewardDataArray != nullptr)
+		*OutRewardDataArray = std::move(Parms.OutRewardDataArray);
+
+	if (OutIndexOffset != nullptr)
+		*OutIndexOffset = Parms.OutIndexOffset;
+
+	if (OutStreakRewardArray != nullptr)
+		*OutStreakRewardArray = std::move(Parms.OutStreakRewardArray);
 }
 
 
@@ -215,6 +309,34 @@ void UWBP_FestaResult_PointReward_C::GetResultPlayingStageId(EStageId* OutStageI
 
 	if (OutTransform != nullptr)
 		*OutTransform = std::move(Parms.OutTransform);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.GetRewardPostProcess
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::GetRewardPostProcess()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "GetRewardPostProcess");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.GetStreakRewardProcess
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::GetStreakRewardProcess()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "GetStreakRewardProcess");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -245,7 +367,7 @@ void UWBP_FestaResult_PointReward_C::Is_List_Exist_Driver_Id(int32 Index_0, EDri
 
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.Is Load Ok
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool*                                   bIsLoadOk                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -262,6 +384,26 @@ void UWBP_FestaResult_PointReward_C::Is_Load_Ok(bool* bIsLoadOk)
 
 	if (bIsLoadOk != nullptr)
 		*bIsLoadOk = Parms.bIsLoadOk;
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.IsBonusRace
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_FestaResult_PointReward_C::IsBonusRace()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "IsBonusRace");
+
+	Params::WBP_FestaResult_PointReward_C_IsBonusRace Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -341,6 +483,20 @@ void UWBP_FestaResult_PointReward_C::Open()
 }
 
 
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.OpenPointReward
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::OpenPointReward()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "OpenPointReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.OpenTeamRankText
 // (BlueprintCallable, BlueprintEvent)
 
@@ -375,15 +531,57 @@ void UWBP_FestaResult_PointReward_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.RewardProcess
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.RewardProcess_GetPointReward
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_FestaResult_PointReward_C::RewardProcess()
+void UWBP_FestaResult_PointReward_C::RewardProcess_GetPointReward()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "RewardProcess");
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "RewardProcess_GetPointReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.RewardProcessMain
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::RewardProcessMain()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "RewardProcessMain");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.RewardProcessMain_1
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::RewardProcessMain_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "RewardProcessMain_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.RewardProcessMain_2
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::RewardProcessMain_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "RewardProcessMain_2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -424,11 +622,11 @@ void UWBP_FestaResult_PointReward_C::SetDonpaTicketGetWindow(int32 TicketAdd)
 
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.SetItemWindowPos
-// (BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  posX                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  X                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_FestaResult_PointReward_C::SetItemWindowPos(double posX)
+void UWBP_FestaResult_PointReward_C::SetItemWindowPos(double X)
 {
 	static class UFunction* Func = nullptr;
 
@@ -437,7 +635,7 @@ void UWBP_FestaResult_PointReward_C::SetItemWindowPos(double posX)
 
 	Params::WBP_FestaResult_PointReward_C_SetItemWindowPos Parms{};
 
-	Parms.posX = posX;
+	Parms.X = X;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -465,15 +663,21 @@ void UWBP_FestaResult_PointReward_C::SetPartyColorIndex(int32 ColorIndex)
 
 // Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.SetRankUpRewardGetWindow
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RewardIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_FestaResult_PointReward_C::SetRankUpRewardGetWindow()
+void UWBP_FestaResult_PointReward_C::SetRankUpRewardGetWindow(int32 RewardIndex_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "SetRankUpRewardGetWindow");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_FestaResult_PointReward_C_SetRankUpRewardGetWindow Parms{};
+
+	Parms.RewardIndex_0 = RewardIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -527,21 +731,161 @@ void UWBP_FestaResult_PointReward_C::SetupResultBG()
 }
 
 
-// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.UpdateItemWindow
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointReward_1stFrame
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGetReward                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_FestaResult_PointReward_C::UpdateItemWindow(bool bIsGetReward)
+void UWBP_FestaResult_PointReward_C::ShowFestaPointReward_1stFrame()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "UpdateItemWindow");
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointReward_1stFrame");
 
-	Params::WBP_FestaResult_PointReward_C_UpdateItemWindow Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsGetReward = bIsGetReward;
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointReward_Initialize
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointReward_Initialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointReward_Initialize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointReward_PlayLevelSequencePlayer
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointReward_PlayLevelSequencePlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointReward_PlayLevelSequencePlayer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointReward_PlayPointUpChance
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointReward_PlayPointUpChance()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointReward_PlayPointUpChance");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointRewardMain
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointRewardMain()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointRewardMain");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointRewardMain_1
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointRewardMain_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointRewardMain_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointRewardMain_2
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointRewardMain_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointRewardMain_2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointRewardMain_3
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointRewardMain_3()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointRewardMain_3");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointRewardMain_4
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointRewardMain_4()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointRewardMain_4");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.ShowFestaPointRewardMain_5
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_FestaResult_PointReward_C::ShowFestaPointRewardMain_5()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "ShowFestaPointRewardMain_5");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_FestaResult_PointReward.WBP_FestaResult_PointReward_C.Update Item Window
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsGetReward                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_FestaResult_PointReward_C::Update_Item_Window(bool IsGetReward)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FestaResult_PointReward_C", "Update Item Window");
+
+	Params::WBP_FestaResult_PointReward_C_Update_Item_Window Parms{};
+
+	Parms.IsGetReward = IsGetReward;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

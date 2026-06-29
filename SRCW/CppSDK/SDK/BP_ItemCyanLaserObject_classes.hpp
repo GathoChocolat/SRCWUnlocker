@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemCyanLaserObject.BP_ItemCyanLaserObject_C
-// 0x0000 (0x0810 - 0x0810)
+// 0x0000 (0x0850 - 0x0850)
 class ABP_ItemCyanLaserObject_C final : public AItemCyanLaserObject
 {
 public:

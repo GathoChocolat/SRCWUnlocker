@@ -103,11 +103,13 @@ public:
 DUMPER7_ASSERTS_WBP_TopInfo_Sub_Category_C_SetupFreecontentInfo;
 
 // Function WBP_TopInfo_Sub_Category.WBP_TopInfo_Sub_Category_C.SetupLegendInfo
-// 0x0030 (0x0030 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct WBP_TopInfo_Sub_Category_C_SetupLegendInfo final
 {
 public:
 	struct FLegendCompeInfoDispData               DispData;                                          // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UNetMasterDataManageSubsystem*          CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetLegendCompeId_ReturnValue;             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_TopInfo_Sub_Category_C_SetupLegendInfo;
 

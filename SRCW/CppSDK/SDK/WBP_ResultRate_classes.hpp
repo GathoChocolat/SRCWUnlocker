@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
 
 
 namespace SDK
@@ -65,6 +65,7 @@ public:
 	void SetNextRewardIcon(ERateRank CurrentRank);
 	void SetOpenTipsWindow(bool InOpenWindow);
 	void SetResultIcon(int32 IconIndex);
+	void SetupChanceUpRatio(int32 ChanceUpRatio);
 	void SetupLimitValue(int32 CurrentRankLimit, int32 NextRankLimit);
 
 public:

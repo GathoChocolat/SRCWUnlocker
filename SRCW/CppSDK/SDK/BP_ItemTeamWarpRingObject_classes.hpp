@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemTeamWarpRingObject.BP_ItemTeamWarpRingObject_C
-// 0x0000 (0x0780 - 0x0780)
+// 0x0000 (0x07C0 - 0x07C0)
 class ABP_ItemTeamWarpRingObject_C final : public AItemTeamWarpRingObject
 {
 public:

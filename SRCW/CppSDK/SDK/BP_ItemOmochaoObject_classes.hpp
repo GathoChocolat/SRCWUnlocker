@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemOmochaoObject.BP_ItemOmochaoObject_C
-// 0x0000 (0x0780 - 0x0780)
+// 0x0000 (0x07C0 - 0x07C0)
 class ABP_ItemOmochaoObject_C final : public AItemOmochaoObject
 {
 public:

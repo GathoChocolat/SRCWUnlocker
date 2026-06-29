@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // Class mariaUploadPlugin.MariaEpicIdentitySequence
-// 0x0020 (0x0050 - 0x0030)
+// 0x0028 (0x0058 - 0x0030)
 class UMariaEpicIdentitySequence final : public UBlueprintAsyncActionBase
 {
 public:
 	TMulticastInlineDelegate<void(bool Success)>  Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x18];                                      // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UMariaEpicIdentitySequence* LoginEOS(class UObject* WorldContextObject, class APlayerController* PlayerController, EMariaEpicLoginType LoginType, const class FString& ID, const class FString& Token);
@@ -167,6 +167,8 @@ public:
 	static void AddEventParameterMapStrings(const class FString& Key, const TMap<class FString, class FString>& Value);
 	static void AddEventParameterStrings(const class FString& Key, const class FString& Value);
 	static void AddEventParameterTable(const class FString& Key, const TArray<struct FMariaTableRow>& Value);
+	static bool AddGrantedGeneralReward(const class FString& IncentiveID);
+	static bool AddGrantedTwitchReward(const class FString& BenefitID);
 	static void AddUserParameterArrayFloat(const class FString& Key, const TArray<float>& Value);
 	static void AddUserParameterArrayInteger(const class FString& Key, const TArray<int32>& Value);
 	static void AddUserParameterArrayStrings(const class FString& Key, const TArray<class FString>& Value);
@@ -178,6 +180,7 @@ public:
 	static void AddUserParameterMapStrings(const class FString& Key, const TMap<class FString, class FString>& Value);
 	static void AddUserParameterStrings(const class FString& Key, const class FString& Value);
 	static void AddUserParameterTable(const class FString& Key, const TArray<struct FMariaTableRow>& Value);
+	static bool CancelRewardApi();
 	static bool CanStartLogging();
 	static void ChangeInitializeAuthSeqPhaseTo0();
 	static bool CheckSegaAccountLinkStatus();
@@ -186,6 +189,7 @@ public:
 	static int32 GetAccessTokenElapsedSeconds();
 	static int32 GetAccessTokenErrorCount();
 	static int32 GetAccessTokenNgCount();
+	static void GetGeneralRewards(TArray<struct FMariaGeneralReward>* Rewards);
 	static EMariaDevelopLogCategory GetLogCategoryThreshold();
 	static int32 GetMessagesNumInQueue();
 	static class FString GetNetworkAccount_Epic();
@@ -197,9 +201,14 @@ public:
 	static int32 GetPostErrorCount();
 	static int32 GetPostNgCount();
 	static int32 GetRecoveryWaitModeCount();
+	static EMariaRewardApiResult GetRewardFetchApiResult();
+	static EMariaRewardApiResult GetRewardSubmitApiResult();
 	static class FString GetSegaAccountID();
 	static EMariaSegaAccountType GetSegaAccountType();
 	static int32 GetSentMessagesNum();
+	static EMariaTwitchRewardAuthResult GetTwitchRewardAuthResult();
+	static void GetTwitchRewards(TArray<struct FMariaTwitchReward>* Rewards);
+	static EMariaUserAge GetUserAge();
 	static class FString GetUserID();
 	static bool Initialize();
 	static bool InitializeNNLibraries();
@@ -238,6 +247,7 @@ public:
 	static void SetAuthenticateDevMode_Steam(EMariaDevMode DevMode);
 	static void SetAuthenticateDevMode_Switch(EMariaDevMode DevMode);
 	static void SetDevMode(EMariaDevMode LogAuthDevMode, EMariaDevMode SegaAccountDevMode);
+	static void SetDummySegaAccountStatus(EMariaDummySegaAccountStatus Status);
 	static void SetHaltSending(bool Halt);
 	static void SetHeartbeatDelay(int32 Seconds);
 	static void SetInFocus(bool InFocus);
@@ -252,23 +262,29 @@ public:
 	static bool SetNetworkAccountFromUniqueNetID_Epic(const struct FUniqueNetIdRepl& UniqueNetId);
 	static void SetPendingUntilNetworkAvailable_Switch(bool Enable);
 	static void SetRecoveryWaitModeSpan(int32 SecondsForNg, int32 SecondsForError);
+	static bool SetRewardClientParam(const class FString& ID, const class FString& Secret);
 	static void SetSaveSlot(int32 Slot);
 	static void SetSegaAccountDevMode(EMariaDevMode DevMode);
 	static bool SetSegaAccountLinkTarget(EMariaSegaAccountLinkTarget LinkTarget);
 	static void SetSendQueueDelay(int32 Milliseconds);
 	static void SetSteamEncryptedAppTicket(const TArray<uint8>& Ticket);
 	static void SetSuspended(bool Suspended);
+	static bool SetThreadCoreMask_Switch(int32 IdealCore, uint8 AffinityMask);
 	static void SetupSteamEncryptedAppTicketAsync(class UObject* WorldContextObject, TDelegate<void(bool Success)> Completed);
+	static void SetUserAge(EMariaUserAge UserAge);
 	static void SetUserAllowGuests_GDK(bool Allow);
 	static void SetUserID(const class FString& UserId);
 	static void SetUserPickMode_GDK(EMariaXboxUserPickMode PickMode);
 	static void ShutdownLogging();
 	static bool StartLogging();
+	static bool StartRewardFetchApi();
+	static bool StartRewardSubmitApi();
 	static void TerminateNNLibraries();
 	static void TerminateUltThread();
 	static void UseAccountAuthInteraction_Switch(bool Enable);
 	static void UseEnsureNSAAvailable(bool Enable);
 	static void UseSegaAccountOnWindows(bool Enable);
+	static bool WaitRewardApi();
 
 public:
 	static class UClass* StaticClass()

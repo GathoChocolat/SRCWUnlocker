@@ -460,7 +460,7 @@ void UBPC_RaceSequenceStateSendRaceStart_C::StartPlatformGameMatch()
 
 
 // Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.SyncEntryRaceId
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
 void UBPC_RaceSequenceStateSendRaceStart_C::SyncEntryRaceId()
 {
@@ -482,6 +482,20 @@ void UBPC_RaceSequenceStateSendRaceStart_C::SyncEntryRaceIdForFesta()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BPC_RaceSequenceStateSendRaceStart_C", "SyncEntryRaceIdForFesta");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPC_RaceSequenceStateSendRaceStart.BPC_RaceSequenceStateSendRaceStart_C.TryCommonNextState
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_RaceSequenceStateSendRaceStart_C::TryCommonNextState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_RaceSequenceStateSendRaceStart_C", "TryCommonNextState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -46,7 +46,7 @@ public:
 public:
 	void ExecuteUbergraph_WBP_GadgetInfo(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
-	void SetDetailText(int32 TextIndex);
+	void SetDetailText(int32 textIndex);
 	void SetGudgetInfo(EEventInfomationType EventInfomation, const TArray<int32>& GadgetIds);
 	void UpdateFooter();
 

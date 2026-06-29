@@ -144,26 +144,6 @@ void UBPC_LegendCompeNoticeEventEnd_C::NoReward()
 }
 
 
-// Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.OnSaveComplete
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESaveDataStatus                         Status                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPC_LegendCompeNoticeEventEnd_C::OnSaveComplete(ESaveDataStatus Status)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_LegendCompeNoticeEventEnd_C", "OnSaveComplete");
-
-	Params::BPC_LegendCompeNoticeEventEnd_C_OnSaveComplete Parms{};
-
-	Parms.Status = Status;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.StartClaimRankingRewards
 // (BlueprintCallable, BlueprintEvent)
 
@@ -234,6 +214,20 @@ void UBPC_LegendCompeNoticeEventEnd_C::OnInitState()
 }
 
 
+// Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.FinishNoticeEventEnd
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPC_LegendCompeNoticeEventEnd_C::FinishNoticeEventEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPC_LegendCompeNoticeEventEnd_C", "FinishNoticeEventEnd");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.ShowDonpaTicketDiff
 // (BlueprintCallable, BlueprintEvent)
 
@@ -248,17 +242,23 @@ void UBPC_LegendCompeNoticeEventEnd_C::ShowDonpaTicketDiff()
 }
 
 
-// Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.FinishNoticeEventEnd
+// Function BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C.OnSaveComplete
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESaveDataStatus                         Status                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPC_LegendCompeNoticeEventEnd_C::FinishNoticeEventEnd()
+void UBPC_LegendCompeNoticeEventEnd_C::OnSaveComplete(ESaveDataStatus Status)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_LegendCompeNoticeEventEnd_C", "FinishNoticeEventEnd");
+		Func = Class->GetFunction("BPC_LegendCompeNoticeEventEnd_C", "OnSaveComplete");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BPC_LegendCompeNoticeEventEnd_C_OnSaveComplete Parms{};
+
+	Parms.Status = Status;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

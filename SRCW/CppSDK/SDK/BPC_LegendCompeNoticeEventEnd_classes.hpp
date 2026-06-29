@@ -22,7 +22,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BPC_LegendCompeNoticeEventEnd.BPC_LegendCompeNoticeEventEnd_C
 // 0x00C0 (0x01E8 - 0x0128)
-class UBPC_LegendCompeNoticeEventEnd_C final : public UNoticeEventEndState
+class UBPC_LegendCompeNoticeEventEnd_C final : public ULegendCompeNoticeEventEndState
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0128(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -49,14 +49,14 @@ public:
 	void Set_Footer_Visibility(bool IsVisible);
 	void OnFinishedFade(EUnionUIFadeDirection FadeDirection);
 	void NoReward();
-	void OnSaveComplete(ESaveDataStatus Status);
 	void StartClaimRankingRewards();
 	void OnClosed_EventEndWidget();
 	void OnClosed_ItemGet();
 	void OnExitState();
 	void OnInitState();
-	void ShowDonpaTicketDiff();
 	void FinishNoticeEventEnd();
+	void ShowDonpaTicketDiff();
+	void OnSaveComplete(ESaveDataStatus Status);
 	void ExecuteUbergraph_BPC_LegendCompeNoticeEventEnd(int32 EntryPoint);
 
 public:

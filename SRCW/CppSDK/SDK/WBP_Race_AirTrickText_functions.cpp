@@ -134,8 +134,9 @@ void UWBP_Race_AirTrickText_C::SetAirTrickInfo(int32 SuccessCount)
 // int32                                   SuccessCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   SuccessBonusCount                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsGhostView                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    JustLanding                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_AirTrickText_C::SetAirTrickInfoAndFireAnimation(int32 SuccessCount, int32 SuccessBonusCount, bool IsGhostView)
+void UWBP_Race_AirTrickText_C::SetAirTrickInfoAndFireAnimation(int32 SuccessCount, int32 SuccessBonusCount, bool IsGhostView, bool JustLanding)
 {
 	static class UFunction* Func = nullptr;
 
@@ -147,6 +148,7 @@ void UWBP_Race_AirTrickText_C::SetAirTrickInfoAndFireAnimation(int32 SuccessCoun
 	Parms.SuccessCount = SuccessCount;
 	Parms.SuccessBonusCount = SuccessBonusCount;
 	Parms.IsGhostView = IsGhostView;
+	Parms.JustLanding = JustLanding;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

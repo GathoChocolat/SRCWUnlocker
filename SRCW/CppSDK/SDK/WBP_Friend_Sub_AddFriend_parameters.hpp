@@ -10,116 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionUI_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GetNumberInputWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget final
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.AddListItemWidgetByListItemIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex final
 {
 public:
-	class UFriendListNumberInputWidget*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnFocusReceived
-// 0x01C0 (0x01C0 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_OnFocusReceived final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
-	int32                                         CallFunc_GetUserIndexByFocusEvent_ReturnValue;     // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnFocusReceived;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GetScrollBoxWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget final
-{
-public:
-	class UScrollBox*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnListItemDecisionDown
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetupListItemWidgetSingle
-// 0x0100 (0x0100 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle final
-{
-public:
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    InItemListWidget;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0008(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         InButtonIndex;                                     // 0x00F8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnListItemCancelDown
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.FocusListItemWidget
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_FocusListItemWidget final
-{
-public:
-	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_FocusListItemWidget;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnButtonDecisionEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnNumberInputWidgetDecision
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnUserSearchSuccess
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess final
-{
-public:
-	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess;
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.ExecuteAfterConfirmWidget
 // 0x000C (0x000C - 0x0000)
@@ -132,81 +41,6 @@ public:
 	bool                                          bInCanceled;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_ExecuteAfterConfirmWidget;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.AddListItemWidgetByListItemIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex final
-{
-public:
-	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_AddListItemWidgetByListItemIndex;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetButtonControlEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetWidgetFocus
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_SetWidgetFocus final
-{
-public:
-	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInPlayFocusSound;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetWidgetFocus;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetListItemWidgetInteractableState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetListItemWidgetButtonChangeableState
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState final
-{
-public:
-	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bEnable;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnDirectionEvent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_OnDirectionEvent final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnDirectionEvent;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GenerateSubMenu
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_GenerateSubMenu final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GenerateSubMenu;
-
-// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetScrollBoxVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility final
-{
-public:
-	ESlateVisibility                              Param;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.ExecuteUbergraph_WBP_Friend_Sub_AddFriend
 // 0x07F8 (0x07F8 - 0x0000)
@@ -391,6 +225,172 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x07E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_ExecuteUbergraph_WBP_Friend_Sub_AddFriend;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.FocusListItemWidget
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_FocusListItemWidget final
+{
+public:
+	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_FocusListItemWidget;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GenerateSubMenu
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_GenerateSubMenu final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GenerateSubMenu;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GetNumberInputWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget final
+{
+public:
+	class UFriendListNumberInputWidget*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GetNumberInputWidget;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.GetScrollBoxWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget final
+{
+public:
+	class UScrollBox*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_GetScrollBoxWidget;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnButtonDecisionEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnButtonDecisionEvent;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnDirectionEvent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_OnDirectionEvent final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnDirectionEvent;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnFocusReceived
+// 0x01C0 (0x01C0 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
+	int32                                         CallFunc_GetUserIndexByFocusEvent_ReturnValue;     // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnFocusReceived;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnListItemCancelDown
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnListItemCancelDown;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnListItemDecisionDown
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnListItemDecisionDown;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnNumberInputWidgetDecision
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnNumberInputWidgetDecision;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.OnUserSearchSuccess
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess final
+{
+public:
+	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_OnUserSearchSuccess;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetButtonControlEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetButtonControlEnable;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetListItemWidgetButtonChangeableState
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState final
+{
+public:
+	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnable;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetListItemWidgetButtonChangeableState;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetListItemWidgetInteractableState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetListItemWidgetInteractableState;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetScrollBoxVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility final
+{
+public:
+	ESlateVisibility                              Param;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetScrollBoxVisibility;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetupListItemWidgetSingle
+// 0x0100 (0x0100 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle final
+{
+public:
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    InItemListWidget;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0008(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         InButtonIndex;                                     // 0x00F8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetupListItemWidgetSingle;
+
+// Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.SetWidgetFocus
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_AddFriend_C_SetWidgetFocus final
+{
+public:
+	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInPlayFocusSound;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_AddFriend_C_SetWidgetFocus;
 
 // Function WBP_Friend_Sub_AddFriend.WBP_Friend_Sub_AddFriend_C.CheckButtonWidgetExist
 // 0x0001 (0x0001 - 0x0000)

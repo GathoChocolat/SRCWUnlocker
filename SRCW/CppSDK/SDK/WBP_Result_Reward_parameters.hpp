@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.ExecuteUbergraph_WBP_Result_Reward
-// 0x02F0 (0x02F0 - 0x0000)
+// 0x02F8 (0x02F8 - 0x0000)
 struct WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward final
 {
 public:
@@ -127,7 +127,10 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x02E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USoundAtomCue*                          K2Node_Select_Default_6;                           // 0x02E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x02E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2EA[0x6];                                      // 0x02EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundAtomCue*                          K2Node_Select_Default_6;                           // 0x02F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Result_Reward_C_ExecuteUbergraph_WBP_Result_Reward;
 
@@ -229,12 +232,19 @@ public:
 DUMPER7_ASSERTS_WBP_Result_Reward_C_PlayPlayerSE;
 
 // Function WBP_Result_Reward.WBP_Result_Reward_C.SetRewardInfo
-// 0x0020 (0x0020 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct WBP_Result_Reward_C_SetRewardInfo final
 {
 public:
 	TArray<struct FRewardRedStarRingData>         RSRList;                                           // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<struct FResultRewardItemInfo>          CallFunc_MakeResultRewardItemInfos_Output;         // 0x0010(0x0010)(ReferenceParm)
+	EGameModeId                                   CallFunc_GetSelectedGameModeId_ReturnValue;        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FResultRewardItemInfo>          CallFunc_MakeOnlineResultRewardItemInfos_Output;   // 0x0018(0x0010)(ReferenceParm)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FResultRewardItemInfo>          CallFunc_MakeResultRewardItemInfos_Output;         // 0x0030(0x0010)(ReferenceParm)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Result_Reward_C_SetRewardInfo;
 

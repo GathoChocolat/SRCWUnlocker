@@ -45,6 +45,28 @@ public:
 };
 DUMPER7_ASSERTS_ABP_Cream_Physics_C_HoverboardControlRogLayer;
 
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.HoverboardItemHoldBlendLeft
+// 0x0030 (0x0030 - 0x0000)
+struct ABP_Cream_Physics_C_HoverboardItemHoldBlendLeft final
+{
+public:
+	struct FPoseLink                              BasePose;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              LeftHoldPose;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              HoverboardItemHoldBlendLeft_0;                     // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_Cream_Physics_C_HoverboardItemHoldBlendLeft;
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.HoverboardItemHoldBlendRight
+// 0x0030 (0x0030 - 0x0000)
+struct ABP_Cream_Physics_C_HoverboardItemHoldBlendRight final
+{
+public:
+	struct FPoseLink                              BasePose;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              RightHoldPose;                                     // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              HoverboardItemHoldBlendRight_0;                    // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_Cream_Physics_C_HoverboardItemHoldBlendRight;
+
 // Function ABP_Cream_Physics.ABP_Cream_Physics_C.KawaiiPhysicsLayer
 // 0x0020 (0x0020 - 0x0000)
 struct ABP_Cream_Physics_C_KawaiiPhysicsLayer final
@@ -54,6 +76,42 @@ public:
 	struct FPoseLink                              KawaiiPhysicsLayer_0;                              // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
 DUMPER7_ASSERTS_ABP_Cream_Physics_C_KawaiiPhysicsLayer;
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.MachineItemHoldBlendLeft
+// 0x0030 (0x0030 - 0x0000)
+struct ABP_Cream_Physics_C_MachineItemHoldBlendLeft final
+{
+public:
+	struct FPoseLink                              BasePose;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              LeftHoldPose;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              MachineItemHoldBlendLeft_0;                        // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_Cream_Physics_C_MachineItemHoldBlendLeft;
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.MachineItemHoldBlendRight
+// 0x0030 (0x0030 - 0x0000)
+struct ABP_Cream_Physics_C_MachineItemHoldBlendRight final
+{
+public:
+	struct FPoseLink                              BasePose;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              LeftHoldPose;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              MachineItemHoldBlendRight_0;                       // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_Cream_Physics_C_MachineItemHoldBlendRight;
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.MenuFacialOverride
+// 0x0048 (0x0048 - 0x0000)
+struct ABP_Cream_Physics_C_MenuFacialOverride final
+{
+public:
+	struct FPoseLink                              MenuFinalPose;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	bool                                          InPlayingMontage;                                  // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPoseLink                              MenuDefaltFace;                                    // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              MenuOverrideFace;                                  // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              MenuFacialOverride_0;                              // 0x0038(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_Cream_Physics_C_MenuFacialOverride;
 
 // Function ABP_Cream_Physics.ABP_Cream_Physics_C.ScaleFaceLayer
 // 0x0028 (0x0028 - 0x0000)

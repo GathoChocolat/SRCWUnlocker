@@ -221,6 +221,28 @@ public:
 };
 DUMPER7_ASSERTS_MariaUpload_AddEventParameterTable;
 
+// Function mariaUploadPlugin.MariaUpload.AddGrantedGeneralReward
+// 0x0018 (0x0018 - 0x0000)
+struct MariaUpload_AddGrantedGeneralReward final
+{
+public:
+	class FString                                 IncentiveID;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_MariaUpload_AddGrantedGeneralReward;
+
+// Function mariaUploadPlugin.MariaUpload.AddGrantedTwitchReward
+// 0x0018 (0x0018 - 0x0000)
+struct MariaUpload_AddGrantedTwitchReward final
+{
+public:
+	class FString                                 BenefitID;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_MariaUpload_AddGrantedTwitchReward;
+
 // Function mariaUploadPlugin.MariaUpload.AddUserParameterArrayFloat
 // 0x0020 (0x0020 - 0x0000)
 struct MariaUpload_AddUserParameterArrayFloat final
@@ -333,6 +355,15 @@ public:
 };
 DUMPER7_ASSERTS_MariaUpload_AddUserParameterTable;
 
+// Function mariaUploadPlugin.MariaUpload.CancelRewardApi
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_CancelRewardApi final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_CancelRewardApi;
+
 // Function mariaUploadPlugin.MariaUpload.CanStartLogging
 // 0x0001 (0x0001 - 0x0000)
 struct MariaUpload_CanStartLogging final
@@ -398,6 +429,15 @@ public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MariaUpload_GetAccessTokenNgCount;
+
+// Function mariaUploadPlugin.MariaUpload.GetGeneralRewards
+// 0x0010 (0x0010 - 0x0000)
+struct MariaUpload_GetGeneralRewards final
+{
+public:
+	TArray<struct FMariaGeneralReward>            Rewards;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_GetGeneralRewards;
 
 // Function mariaUploadPlugin.MariaUpload.GetLogCategoryThreshold
 // 0x0001 (0x0001 - 0x0000)
@@ -498,6 +538,24 @@ public:
 };
 DUMPER7_ASSERTS_MariaUpload_GetRecoveryWaitModeCount;
 
+// Function mariaUploadPlugin.MariaUpload.GetRewardFetchApiResult
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_GetRewardFetchApiResult final
+{
+public:
+	EMariaRewardApiResult                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_GetRewardFetchApiResult;
+
+// Function mariaUploadPlugin.MariaUpload.GetRewardSubmitApiResult
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_GetRewardSubmitApiResult final
+{
+public:
+	EMariaRewardApiResult                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_GetRewardSubmitApiResult;
+
 // Function mariaUploadPlugin.MariaUpload.GetSegaAccountID
 // 0x0010 (0x0010 - 0x0000)
 struct MariaUpload_GetSegaAccountID final
@@ -524,6 +582,33 @@ public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MariaUpload_GetSentMessagesNum;
+
+// Function mariaUploadPlugin.MariaUpload.GetTwitchRewardAuthResult
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_GetTwitchRewardAuthResult final
+{
+public:
+	EMariaTwitchRewardAuthResult                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_GetTwitchRewardAuthResult;
+
+// Function mariaUploadPlugin.MariaUpload.GetTwitchRewards
+// 0x0010 (0x0010 - 0x0000)
+struct MariaUpload_GetTwitchRewards final
+{
+public:
+	TArray<struct FMariaTwitchReward>             Rewards;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_GetTwitchRewards;
+
+// Function mariaUploadPlugin.MariaUpload.GetUserAge
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_GetUserAge final
+{
+public:
+	EMariaUserAge                                 ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_GetUserAge;
 
 // Function mariaUploadPlugin.MariaUpload.GetUserID
 // 0x0010 (0x0010 - 0x0000)
@@ -845,6 +930,15 @@ public:
 };
 DUMPER7_ASSERTS_MariaUpload_SetDevMode;
 
+// Function mariaUploadPlugin.MariaUpload.SetDummySegaAccountStatus
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_SetDummySegaAccountStatus final
+{
+public:
+	EMariaDummySegaAccountStatus                  Status;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_SetDummySegaAccountStatus;
+
 // Function mariaUploadPlugin.MariaUpload.SetHaltSending
 // 0x0001 (0x0001 - 0x0000)
 struct MariaUpload_SetHaltSending final
@@ -969,6 +1063,18 @@ public:
 };
 DUMPER7_ASSERTS_MariaUpload_SetRecoveryWaitModeSpan;
 
+// Function mariaUploadPlugin.MariaUpload.SetRewardClientParam
+// 0x0028 (0x0028 - 0x0000)
+struct MariaUpload_SetRewardClientParam final
+{
+public:
+	class FString                                 ID;                                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Secret;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_MariaUpload_SetRewardClientParam;
+
 // Function mariaUploadPlugin.MariaUpload.SetSaveSlot
 // 0x0004 (0x0004 - 0x0000)
 struct MariaUpload_SetSaveSlot final
@@ -1024,6 +1130,18 @@ public:
 };
 DUMPER7_ASSERTS_MariaUpload_SetSuspended;
 
+// Function mariaUploadPlugin.MariaUpload.SetThreadCoreMask_Switch
+// 0x0008 (0x0008 - 0x0000)
+struct MariaUpload_SetThreadCoreMask_Switch final
+{
+public:
+	int32                                         IdealCore;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         AffinityMask;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_MariaUpload_SetThreadCoreMask_Switch;
+
 // Function mariaUploadPlugin.MariaUpload.SetupSteamEncryptedAppTicketAsync
 // 0x0018 (0x0018 - 0x0000)
 struct MariaUpload_SetupSteamEncryptedAppTicketAsync final
@@ -1033,6 +1151,15 @@ public:
 	TDelegate<void(bool Success)>                 Completed;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MariaUpload_SetupSteamEncryptedAppTicketAsync;
+
+// Function mariaUploadPlugin.MariaUpload.SetUserAge
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_SetUserAge final
+{
+public:
+	EMariaUserAge                                 UserAge;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_SetUserAge;
 
 // Function mariaUploadPlugin.MariaUpload.SetUserAllowGuests_GDK
 // 0x0001 (0x0001 - 0x0000)
@@ -1070,6 +1197,24 @@ public:
 };
 DUMPER7_ASSERTS_MariaUpload_StartLogging;
 
+// Function mariaUploadPlugin.MariaUpload.StartRewardFetchApi
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_StartRewardFetchApi final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_StartRewardFetchApi;
+
+// Function mariaUploadPlugin.MariaUpload.StartRewardSubmitApi
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_StartRewardSubmitApi final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_StartRewardSubmitApi;
+
 // Function mariaUploadPlugin.MariaUpload.UseAccountAuthInteraction_Switch
 // 0x0001 (0x0001 - 0x0000)
 struct MariaUpload_UseAccountAuthInteraction_Switch final
@@ -1096,6 +1241,15 @@ public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MariaUpload_UseSegaAccountOnWindows;
+
+// Function mariaUploadPlugin.MariaUpload.WaitRewardApi
+// 0x0001 (0x0001 - 0x0000)
+struct MariaUpload_WaitRewardApi final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MariaUpload_WaitRewardApi;
 
 }
 

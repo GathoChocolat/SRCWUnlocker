@@ -501,182 +501,400 @@ public:
 };
 DUMPER7_ASSERTS_CollectHelper_CollectStringData;
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_GetAnimationIn final
-{
-public:
-	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_GetAnimationIn;
-
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_GetAnimationLoop final
-{
-public:
-	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_GetAnimationLoop;
-
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_GetAnimationOut final
-{
-public:
-	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_GetAnimationOut;
-
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_GetPopupWindowButtonType final
-{
-public:
-	EPopupWindowButtonType                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_GetPopupWindowButtonType;
-
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_GetPopupWindowType final
-{
-public:
-	EPopupWindowType                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_GetPopupWindowType;
-
-// Function UnionSystem.MenuPopupWindowInterface.InitParam
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_InitParam final
-{
-public:
-	EPopupWindowButtonType                        ButtonType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_InitParam;
-
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
-// 0x0004 (0x0004 - 0x0000)
-struct MenuPopupWindowInterface_SetButtonControlDelayTime final
-{
-public:
-	float                                         InTime;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetButtonControlDelayTime;
-
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
+// Function UnionSystem.AppPlayerController.AddRegisterSubMenu
 // 0x0010 (0x0010 - 0x0000)
-struct MenuPopupWindowInterface_SetButtonText final
+struct AppPlayerController_AddRegisterSubMenu final
 {
 public:
-	TArray<class FText>                           BtnTextArray;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	class UObject*                                InMenuObject;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InPriority;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetButtonText;
+DUMPER7_ASSERTS_AppPlayerController_AddRegisterSubMenu;
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
+// Function UnionSystem.AppPlayerController.CalcIsMousePositionInViewport
 // 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_SetDisplayFooterButton final
+struct AppPlayerController_CalcIsMousePositionInViewport final
 {
 public:
-	bool                                          InDisplay;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetDisplayFooterButton;
+DUMPER7_ASSERTS_AppPlayerController_CalcIsMousePositionInViewport;
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
+// Function UnionSystem.AppPlayerController.CalcTutorialControllerType
+// 0x0002 (0x0002 - 0x0000)
+struct AppPlayerController_CalcTutorialControllerType final
+{
+public:
+	uint8                                         Type;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Platform;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_CalcTutorialControllerType;
+
+// Function UnionSystem.AppPlayerController.DoInputMenu
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_DoInputMenu final
+{
+public:
+	EMenuInputKey                                 InKey;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_DoInputMenu;
+
+// Function UnionSystem.AppPlayerController.GetCurrentInputType
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_GetCurrentInputType final
+{
+public:
+	EAppControllerInputType                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetCurrentInputType;
+
+// Function UnionSystem.AppPlayerController.GetLastHoveredObject
 // 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_SetDonpaTicketCount final
+struct AppPlayerController_GetLastHoveredObject final
 {
 public:
-	int32                                         CurrentCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AfterCount;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetDonpaTicketCount;
+DUMPER7_ASSERTS_AppPlayerController_GetLastHoveredObject;
 
-// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPopupWindowInterface_SetEnableInput final
+// Function UnionSystem.AppPlayerController.GetMappableKeyByMappingName
+// 0x0020 (0x0020 - 0x0000)
+struct AppPlayerController_GetMappableKeyByMappingName final
 {
 public:
-	bool                                          InEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   MappingName;                                       // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetEnableInput;
+DUMPER7_ASSERTS_AppPlayerController_GetMappableKeyByMappingName;
 
-// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
+// Function UnionSystem.AppPlayerController.GetMenuConfigKey
+// 0x0028 (0x0028 - 0x0000)
+struct AppPlayerController_GetMenuConfigKey final
+{
+public:
+	class FName                                   InActionName;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGamepad;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAnalog;                                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetMenuConfigKey;
+
+// Function UnionSystem.AppPlayerController.GetRaceConfigKey
+// 0x0028 (0x0028 - 0x0000)
+struct AppPlayerController_GetRaceConfigKey final
+{
+public:
+	class FName                                   InActionName;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPrimary;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGamepad;                                         // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetRaceConfigKey;
+
+// Function UnionSystem.AppPlayerController.OnChangeControllerInputType
+// 0x0002 (0x0002 - 0x0000)
+struct AppPlayerController_OnChangeControllerInputType final
+{
+public:
+	EAppControllerInputType                       BeforeType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAppControllerInputType                       AfterType;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_OnChangeControllerInputType;
+
+// Function UnionSystem.AppPlayerController.OnLeftStickVectorAxisEvent
 // 0x0018 (0x0018 - 0x0000)
-struct MenuPopupWindowInterface_SetFooterMenuBtn final
+struct AppPlayerController_OnLeftStickVectorAxisEvent final
 {
 public:
-	int32                                         BtnIconIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BtnIconType;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   BtnText;                                           // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector                                InStickVector;                                     // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetFooterMenuBtn;
+DUMPER7_ASSERTS_AppPlayerController_OnLeftStickVectorAxisEvent;
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
+// Function UnionSystem.AppPlayerController.OnMousePointer
+// 0x0078 (0x0078 - 0x0000)
+struct AppPlayerController_OnMousePointer final
+{
+public:
+	struct FPointerEvent                          InPointerEvent;                                    // 0x0000(0x0078)(Parm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_OnMousePointer;
+
+// Function UnionSystem.AppPlayerController.OnMousePointerEventBP
+// 0x0078 (0x0078 - 0x0000)
+struct AppPlayerController_OnMousePointerEventBP final
+{
+public:
+	struct FPointerEvent                          InPointerEvent;                                    // 0x0000(0x0078)(Parm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_OnMousePointerEventBP;
+
+// Function UnionSystem.AppPlayerController.OnMousePointerUp
+// 0x0078 (0x0078 - 0x0000)
+struct AppPlayerController_OnMousePointerUp final
+{
+public:
+	struct FPointerEvent                          InPointerEvent;                                    // 0x0000(0x0078)(Parm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_OnMousePointerUp;
+
+// Function UnionSystem.AppPlayerController.RegisterMainMenu
 // 0x0010 (0x0010 - 0x0000)
-struct MenuPopupWindowInterface_SetImageButtonSelectText final
+struct AppPlayerController_RegisterMainMenu final
 {
 public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UObject*                                InObject;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMainMenuRegistPriority                       InPriority;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetImageButtonSelectText;
+DUMPER7_ASSERTS_AppPlayerController_RegisterMainMenu;
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_SetImageTexture final
-{
-public:
-	const class UTexture2D*                       Texture2D;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetImageTexture;
-
-// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
-// 0x0004 (0x0004 - 0x0000)
-struct MenuPopupWindowInterface_SetInitialFocusButtonIndex final
-{
-public:
-	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetInitialFocusButtonIndex;
-
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
-// 0x0004 (0x0004 - 0x0000)
-struct MenuPopupWindowInterface_SetPopupInfoDisplayIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetPopupInfoDisplayIndex;
-
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
-// 0x0008 (0x0008 - 0x0000)
-struct MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex final
-{
-public:
-	int32                                         Btn01IconIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Btn02IconIndex;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex;
-
-// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
+// Function UnionSystem.AppPlayerController.RegisterMenu
 // 0x0010 (0x0010 - 0x0000)
-struct MenuPopupWindowInterface_SetTextMessege final
+struct AppPlayerController_RegisterMenu final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UObject*                                InMenuObject;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InPriority;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetTextMessege;
+DUMPER7_ASSERTS_AppPlayerController_RegisterMenu;
 
-// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
-// 0x0018 (0x0018 - 0x0000)
-struct MenuPopupWindowInterface_SetTextTitle final
+// Function UnionSystem.AppPlayerController.SetCurrentInputConfig
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_SetCurrentInputConfig final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          Attension;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FName                                   InputConfigName;                                   // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MenuPopupWindowInterface_SetTextTitle;
+DUMPER7_ASSERTS_AppPlayerController_SetCurrentInputConfig;
+
+// Function UnionSystem.AppPlayerController.SetEnableMainMenu
+// 0x0010 (0x0010 - 0x0000)
+struct AppPlayerController_SetEnableMainMenu final
+{
+public:
+	const class UObject*                          InObject;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnable;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenu;
+
+// Function UnionSystem.AppPlayerController.SetEnableMainMenuAll
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_SetEnableMainMenuAll final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenuAll;
+
+// Function UnionSystem.AppPlayerController.SetEnableMainMenuLowerPriority
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_SetEnableMainMenuLowerPriority final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenuLowerPriority;
+
+// Function UnionSystem.AppPlayerController.SetEnableMainMenuUpperPriority
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_SetEnableMainMenuUpperPriority final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenuUpperPriority;
+
+// Function UnionSystem.AppPlayerController.SetEnableSubMenu
+// 0x0010 (0x0010 - 0x0000)
+struct AppPlayerController_SetEnableSubMenu final
+{
+public:
+	const class UObject*                          InObject;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnable;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenu;
+
+// Function UnionSystem.AppPlayerController.SetEnableSubMenuAll
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_SetEnableSubMenuAll final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenuAll;
+
+// Function UnionSystem.AppPlayerController.SetEnableSubMenuLowerPriority
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_SetEnableSubMenuLowerPriority final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenuLowerPriority;
+
+// Function UnionSystem.AppPlayerController.SetEnableSubMenuUpperPriority
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_SetEnableSubMenuUpperPriority final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenuUpperPriority;
+
+// Function UnionSystem.AppPlayerController.SetForceNonConsumeMouseEvent
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_SetForceNonConsumeMouseEvent final
+{
+public:
+	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetForceNonConsumeMouseEvent;
+
+// Function UnionSystem.AppPlayerController.SetInputBlocked
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_SetInputBlocked final
+{
+public:
+	bool                                          InBlocked;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetInputBlocked;
+
+// Function UnionSystem.AppPlayerController.SetLastHoveredObject
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_SetLastHoveredObject final
+{
+public:
+	class UObject*                                HoveredObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_SetLastHoveredObject;
+
+// Function UnionSystem.AppPlayerController.UnregisterMainMenu
+// 0x0010 (0x0010 - 0x0000)
+struct AppPlayerController_UnregisterMainMenu final
+{
+public:
+	const class UObject*                          InObject;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_AppPlayerController_UnregisterMainMenu;
+
+// Function UnionSystem.AppPlayerController.UnregisterSingleMenu
+// 0x0010 (0x0010 - 0x0000)
+struct AppPlayerController_UnregisterSingleMenu final
+{
+public:
+	const class UObject*                          InMenuObject;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_AppPlayerController_UnregisterSingleMenu;
+
+// Function UnionSystem.AppPlayerController.UnregisterSingleSubMenu
+// 0x0010 (0x0010 - 0x0000)
+struct AppPlayerController_UnregisterSingleSubMenu final
+{
+public:
+	const class UObject*                          InMenuObject;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_AppPlayerController_UnregisterSingleSubMenu;
+
+// Function UnionSystem.AppPlayerController.GetLeftMouseButtonPressing
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_GetLeftMouseButtonPressing final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetLeftMouseButtonPressing;
+
+// Function UnionSystem.AppPlayerController.GetLeftStickAxisValue
+// 0x0010 (0x0010 - 0x0000)
+struct AppPlayerController_GetLeftStickAxisValue final
+{
+public:
+	struct FVector2D                              ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetLeftStickAxisValue;
+
+// Function UnionSystem.AppPlayerController.GetRegisteredMenu
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_GetRegisteredMenu final
+{
+public:
+	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetRegisteredMenu;
+
+// Function UnionSystem.AppPlayerController.GetRegisteredSubMenu
+// 0x0010 (0x0010 - 0x0000)
+struct AppPlayerController_GetRegisteredSubMenu final
+{
+public:
+	TArray<class UObject*>                        ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetRegisteredSubMenu;
+
+// Function UnionSystem.AppPlayerController.GetSystemFocusedWidgetName
+// 0x0008 (0x0008 - 0x0000)
+struct AppPlayerController_GetSystemFocusedWidgetName final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_GetSystemFocusedWidgetName;
+
+// Function UnionSystem.AppPlayerController.OnIsMenuInputEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_OnIsMenuInputEnabled final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_OnIsMenuInputEnabled;
+
+// Function UnionSystem.AppPlayerController.OnIsSubMenuInputEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct AppPlayerController_OnIsSubMenuInputEnabled final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AppPlayerController_OnIsSubMenuInputEnabled;
+
+// Function UnionSystem.MenuPlayerController.SetMenuDirectionKeyEnable
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPlayerController_SetMenuDirectionKeyEnable final
+{
+public:
+	bool                                          bEnableDirection;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPlayerController_SetMenuDirectionKeyEnable;
+
+// Function UnionSystem.MenuPlayerController.GetMenuDirectionKeyEnable
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPlayerController_GetMenuDirectionKeyEnable final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPlayerController_GetMenuDirectionKeyEnable;
 
 // Function UnionSystem.AppGameInstance.Set2ndRom
 // 0x0001 (0x0001 - 0x0000)
@@ -793,6 +1011,120 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HonorTitleListDataAsset_GetIsHonorTitleDLC;
+
+// Function UnionSystem.SessionManager.GetDisplayCode
+// 0x0018 (0x0018 - 0x0000)
+struct SessionManager_GetDisplayCode final
+{
+public:
+	class FString                                 displayCode;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SessionManager_GetDisplayCode;
+
+// Function UnionSystem.SessionManager.GetExternalAddressRegionName
+// 0x0018 (0x0018 - 0x0000)
+struct SessionManager_GetExternalAddressRegionName final
+{
+public:
+	class FString                                 AddressRegionName;                                 // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SessionManager_GetExternalAddressRegionName;
+
+// Function UnionSystem.SessionManager.GetFairPlayPoint
+// 0x0008 (0x0008 - 0x0000)
+struct SessionManager_GetFairPlayPoint final
+{
+public:
+	int32                                         OutFairPlayPoint;                                  // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SessionManager_GetFairPlayPoint;
+
+// Function UnionSystem.SessionManager.GetIsBan
+// 0x0002 (0x0002 - 0x0000)
+struct SessionManager_GetIsBan final
+{
+public:
+	bool                                          bOutIsBan;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SessionManager_GetIsBan;
+
+// Function UnionSystem.SessionManager.GetLoginComplete
+// 0x0001 (0x0001 - 0x0000)
+struct SessionManager_GetLoginComplete final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SessionManager_GetLoginComplete;
+
+// Function UnionSystem.SessionManager.GetPenaltyEndTime
+// 0x0018 (0x0018 - 0x0000)
+struct SessionManager_GetPenaltyEndTime final
+{
+public:
+	class FString                                 endTime;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SessionManager_GetPenaltyEndTime;
+
+// Function UnionSystem.SessionManager.GetRegionCode
+// 0x0018 (0x0018 - 0x0000)
+struct SessionManager_GetRegionCode final
+{
+public:
+	class FString                                 regionCode;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SessionManager_GetRegionCode;
+
+// Function UnionSystem.SessionManager.GetResponseCodeAbstract
+// 0x0001 (0x0001 - 0x0000)
+struct SessionManager_GetResponseCodeAbstract final
+{
+public:
+	EResponseCodeAbstract                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SessionManager_GetResponseCodeAbstract;
+
+// Function UnionSystem.SessionManager.GetSwitchOnlineCode
+// 0x0008 (0x0008 - 0x0000)
+struct SessionManager_GetSwitchOnlineCode final
+{
+public:
+	int32                                         switchOnlineCode;                                  // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SessionManager_GetSwitchOnlineCode;
+
+// Function UnionSystem.SessionManager.GetUserID
+// 0x0018 (0x0018 - 0x0000)
+struct SessionManager_GetUserID final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SessionManager_GetUserID;
+
+// Function UnionSystem.SessionManager.StartLogin
+// 0x0010 (0x0010 - 0x0000)
+struct SessionManager_StartLogin final
+{
+public:
+	TDelegate<void(bool Error, bool SavedataDeleted)> Callback;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SessionManager_StartLogin;
 
 // Function UnionSystem.AppListenerFocusPoint.SetupComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -1183,383 +1515,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AppOptionConfigSaveGameHelper_WriteRaceAdditionalSettingForSave;
-
-// Function UnionSystem.AppPlayerController.AddRegisterSubMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_AddRegisterSubMenu final
-{
-public:
-	class UObject*                                InMenuObject;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InPriority;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_AddRegisterSubMenu;
-
-// Function UnionSystem.AppPlayerController.CalcIsMousePositionInViewport
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_CalcIsMousePositionInViewport final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_CalcIsMousePositionInViewport;
-
-// Function UnionSystem.AppPlayerController.CalcTutorialControllerType
-// 0x0002 (0x0002 - 0x0000)
-struct AppPlayerController_CalcTutorialControllerType final
-{
-public:
-	uint8                                         Type;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Platform;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_CalcTutorialControllerType;
-
-// Function UnionSystem.AppPlayerController.DoInputMenu
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_DoInputMenu final
-{
-public:
-	EMenuInputKey                                 InKey;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_DoInputMenu;
-
-// Function UnionSystem.AppPlayerController.GetCurrentInputType
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_GetCurrentInputType final
-{
-public:
-	EAppControllerInputType                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetCurrentInputType;
-
-// Function UnionSystem.AppPlayerController.GetLastHoveredObject
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_GetLastHoveredObject final
-{
-public:
-	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetLastHoveredObject;
-
-// Function UnionSystem.AppPlayerController.GetMappableKeyByMappingName
-// 0x0020 (0x0020 - 0x0000)
-struct AppPlayerController_GetMappableKeyByMappingName final
-{
-public:
-	class FName                                   MappingName;                                       // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetMappableKeyByMappingName;
-
-// Function UnionSystem.AppPlayerController.GetMenuConfigKey
-// 0x0028 (0x0028 - 0x0000)
-struct AppPlayerController_GetMenuConfigKey final
-{
-public:
-	class FName                                   InActionName;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGamepad;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAnalog;                                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetMenuConfigKey;
-
-// Function UnionSystem.AppPlayerController.GetRaceConfigKey
-// 0x0028 (0x0028 - 0x0000)
-struct AppPlayerController_GetRaceConfigKey final
-{
-public:
-	class FName                                   InActionName;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPrimary;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGamepad;                                         // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetRaceConfigKey;
-
-// Function UnionSystem.AppPlayerController.OnChangeControllerInputType
-// 0x0002 (0x0002 - 0x0000)
-struct AppPlayerController_OnChangeControllerInputType final
-{
-public:
-	EAppControllerInputType                       BeforeType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAppControllerInputType                       AfterType;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_OnChangeControllerInputType;
-
-// Function UnionSystem.AppPlayerController.OnLeftStickVectorAxisEvent
-// 0x0018 (0x0018 - 0x0000)
-struct AppPlayerController_OnLeftStickVectorAxisEvent final
-{
-public:
-	struct FVector                                InStickVector;                                     // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_OnLeftStickVectorAxisEvent;
-
-// Function UnionSystem.AppPlayerController.OnMousePointer
-// 0x0078 (0x0078 - 0x0000)
-struct AppPlayerController_OnMousePointer final
-{
-public:
-	struct FPointerEvent                          InPointerEvent;                                    // 0x0000(0x0078)(Parm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_OnMousePointer;
-
-// Function UnionSystem.AppPlayerController.OnMousePointerEventBP
-// 0x0078 (0x0078 - 0x0000)
-struct AppPlayerController_OnMousePointerEventBP final
-{
-public:
-	struct FPointerEvent                          InPointerEvent;                                    // 0x0000(0x0078)(Parm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_OnMousePointerEventBP;
-
-// Function UnionSystem.AppPlayerController.OnMousePointerUp
-// 0x0078 (0x0078 - 0x0000)
-struct AppPlayerController_OnMousePointerUp final
-{
-public:
-	struct FPointerEvent                          InPointerEvent;                                    // 0x0000(0x0078)(Parm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_OnMousePointerUp;
-
-// Function UnionSystem.AppPlayerController.RegisterMainMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_RegisterMainMenu final
-{
-public:
-	class UObject*                                InObject;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMainMenuRegistPriority                       InPriority;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_RegisterMainMenu;
-
-// Function UnionSystem.AppPlayerController.RegisterMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_RegisterMenu final
-{
-public:
-	class UObject*                                InMenuObject;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InPriority;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_RegisterMenu;
-
-// Function UnionSystem.AppPlayerController.SetCurrentInputConfig
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_SetCurrentInputConfig final
-{
-public:
-	class FName                                   InputConfigName;                                   // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetCurrentInputConfig;
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_SetEnableMainMenu final
-{
-public:
-	const class UObject*                          InObject;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnable;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenu;
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenuAll
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_SetEnableMainMenuAll final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenuAll;
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenuLowerPriority
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_SetEnableMainMenuLowerPriority final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenuLowerPriority;
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenuUpperPriority
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_SetEnableMainMenuUpperPriority final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableMainMenuUpperPriority;
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_SetEnableSubMenu final
-{
-public:
-	const class UObject*                          InObject;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnable;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenu;
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenuAll
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_SetEnableSubMenuAll final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenuAll;
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenuLowerPriority
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_SetEnableSubMenuLowerPriority final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenuLowerPriority;
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenuUpperPriority
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_SetEnableSubMenuUpperPriority final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InPrioirty;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetEnableSubMenuUpperPriority;
-
-// Function UnionSystem.AppPlayerController.SetForceNonConsumeMouseEvent
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_SetForceNonConsumeMouseEvent final
-{
-public:
-	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetForceNonConsumeMouseEvent;
-
-// Function UnionSystem.AppPlayerController.SetInputBlocked
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_SetInputBlocked final
-{
-public:
-	bool                                          InBlocked;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetInputBlocked;
-
-// Function UnionSystem.AppPlayerController.SetLastHoveredObject
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_SetLastHoveredObject final
-{
-public:
-	class UObject*                                HoveredObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_SetLastHoveredObject;
-
-// Function UnionSystem.AppPlayerController.UnregisterMainMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_UnregisterMainMenu final
-{
-public:
-	const class UObject*                          InObject;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_UnregisterMainMenu;
-
-// Function UnionSystem.AppPlayerController.UnregisterSingleMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_UnregisterSingleMenu final
-{
-public:
-	const class UObject*                          InMenuObject;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_UnregisterSingleMenu;
-
-// Function UnionSystem.AppPlayerController.UnregisterSingleSubMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_UnregisterSingleSubMenu final
-{
-public:
-	const class UObject*                          InMenuObject;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AppPlayerController_UnregisterSingleSubMenu;
-
-// Function UnionSystem.AppPlayerController.GetLeftMouseButtonPressing
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_GetLeftMouseButtonPressing final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetLeftMouseButtonPressing;
-
-// Function UnionSystem.AppPlayerController.GetLeftStickAxisValue
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_GetLeftStickAxisValue final
-{
-public:
-	struct FVector2D                              ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetLeftStickAxisValue;
-
-// Function UnionSystem.AppPlayerController.GetRegisteredMenu
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_GetRegisteredMenu final
-{
-public:
-	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetRegisteredMenu;
-
-// Function UnionSystem.AppPlayerController.GetRegisteredSubMenu
-// 0x0010 (0x0010 - 0x0000)
-struct AppPlayerController_GetRegisteredSubMenu final
-{
-public:
-	TArray<class UObject*>                        ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetRegisteredSubMenu;
-
-// Function UnionSystem.AppPlayerController.GetSystemFocusedWidgetName
-// 0x0008 (0x0008 - 0x0000)
-struct AppPlayerController_GetSystemFocusedWidgetName final
-{
-public:
-	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_GetSystemFocusedWidgetName;
-
-// Function UnionSystem.AppPlayerController.OnIsMenuInputEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_OnIsMenuInputEnabled final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_OnIsMenuInputEnabled;
-
-// Function UnionSystem.AppPlayerController.OnIsSubMenuInputEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct AppPlayerController_OnIsSubMenuInputEnabled final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AppPlayerController_OnIsSubMenuInputEnabled;
 
 // Function UnionSystem.AppPlayerControllerSubsystem.AddDeviceChangeInterface
 // 0x0010 (0x0010 - 0x0000)
@@ -2050,11 +2005,11 @@ public:
 DUMPER7_ASSERTS_AppSaveGameHelper_GetHonorTitleIndex;
 
 // Function UnionSystem.AppSaveGameHelper.GetHonorTitleInfo
-// 0x0060 (0x0060 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct AppSaveGameHelper_GetHonorTitleInfo final
 {
 public:
-	struct FHonorTitleListData                    ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FHonorTitleListData                    ReturnValue;                                       // 0x0000(0x0068)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AppSaveGameHelper_GetHonorTitleInfo;
 
@@ -3659,13 +3614,22 @@ public:
 DUMPER7_ASSERTS_AuthSubsystem_OnCompleteUserGetDataRequest;
 
 // Function UnionSystem.AuthSubsystem.SetCachedAppUserBaseData
-// 0x0140 (0x0140 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct AuthSubsystem_SetCachedAppUserBaseData final
 {
 public:
-	struct FUserGetDataResponse                   Response;                                          // 0x0000(0x0140)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FUserGetDataResponse                   Response;                                          // 0x0000(0x0150)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AuthSubsystem_SetCachedAppUserBaseData;
+
+// Function UnionSystem.AuthSubsystem.SetCachedAppUserCrmId
+// 0x0010 (0x0010 - 0x0000)
+struct AuthSubsystem_SetCachedAppUserCrmId final
+{
+public:
+	class FString                                 CrmId;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AuthSubsystem_SetCachedAppUserCrmId;
 
 // Function UnionSystem.AuthSubsystem.SetCachedAppUserFairPlayPointData
 // 0x0020 (0x0020 - 0x0000)
@@ -3728,13 +3692,22 @@ public:
 DUMPER7_ASSERTS_AuthSubsystem_GetAuthenticatedWith;
 
 // Function UnionSystem.AuthSubsystem.GetCachedAppUserBaseData
-// 0x0078 (0x0078 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct AuthSubsystem_GetCachedAppUserBaseData final
 {
 public:
-	struct FAppUserBaseData                       ReturnValue;                                       // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FAppUserBaseData                       ReturnValue;                                       // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AuthSubsystem_GetCachedAppUserBaseData;
+
+// Function UnionSystem.AuthSubsystem.GetCachedAppUserCrmId
+// 0x0010 (0x0010 - 0x0000)
+struct AuthSubsystem_GetCachedAppUserCrmId final
+{
+public:
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AuthSubsystem_GetCachedAppUserCrmId;
 
 // Function UnionSystem.AuthSubsystem.GetEOSAuthToken
 // 0x0018 (0x0018 - 0x0000)
@@ -3812,6 +3785,15 @@ public:
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AuthSubsystem_GetPlatformToken;
+
+// Function UnionSystem.AuthSubsystem.HasCachedAppUserCrmId
+// 0x0001 (0x0001 - 0x0000)
+struct AuthSubsystem_HasCachedAppUserCrmId final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AuthSubsystem_HasCachedAppUserCrmId;
 
 // Function UnionSystem.AuthSubsystem.IsLoggedIn
 // 0x0008 (0x0008 - 0x0000)
@@ -4256,12 +4238,14 @@ public:
 DUMPER7_ASSERTS_DebugImportantLogPanel_AddLog;
 
 // Function UnionSystem.DebugImportantLogSubsystem.AddImportantLog
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct DebugImportantLogSubsystem_AddImportantLog final
 {
 public:
 	class FString                                 LogLocation;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LogString;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LogConsole;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_DebugImportantLogSubsystem_AddImportantLog;
 
@@ -4293,12 +4277,14 @@ public:
 DUMPER7_ASSERTS_DebugImportantLogSubsystem_SetImportantLogPanelVisible;
 
 // Function UnionSystem.DebugImportantLogUtil.AddImportantLog
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct DebugImportantLogUtil_AddImportantLog final
 {
 public:
 	class FString                                 LogLocation;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LogString;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LogConsole;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_DebugImportantLogUtil_AddImportantLog;
 
@@ -4494,13 +4480,13 @@ public:
 DUMPER7_ASSERTS_LobbyMemberContextBase_Compare;
 
 // Function UnionSystem.LobbyMemberContextBase.GetAppUserBaseData
-// 0x0080 (0x0080 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct LobbyMemberContextBase_GetAppUserBaseData final
 {
 public:
-	struct FAppUserBaseData                       OutAppUserBaseData;                                // 0x0000(0x0078)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FAppUserBaseData                       OutAppUserBaseData;                                // 0x0000(0x0088)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_LobbyMemberContextBase_GetAppUserBaseData;
 
@@ -5633,7 +5619,7 @@ public:
 	int32                                         LocalUserNum;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActivityObjectIdData                  ActivityIdData;                                    // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FEndActivityOption                     Option;                                            // 0x0020(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FEndActivityOption                     Option;                                            // 0x0020(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const struct FUniqueNetIdRepl& PlatformUserId, EGameModeId ActivityId, EGameActivityOutcomeType Outcome, bool bSuccess)> OnComplete; // 0x0024(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -6205,7 +6191,7 @@ struct HttpHelper_Parse_DebugChangeFestaLastOrder final
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDebugChangeFestaLastOrderResponse     Response;                                          // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderResponse     Response;                                          // 0x0014(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_DebugChangeFestaLastOrder;
 
@@ -6216,7 +6202,7 @@ struct HttpHelper_Parse_DebugChangeLegendCompeLastOrder final
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDebugChangeLegendCompeLastOrderResponse Response;                                        // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderResponse Response;                                        // 0x0014(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_DebugChangeLegendCompeLastOrder;
 
@@ -6227,7 +6213,7 @@ struct HttpHelper_Parse_DebugChangeLegendCompeRate final
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDebugChangeLegendCompeRateResponse    Response;                                          // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateResponse    Response;                                          // 0x0014(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_DebugChangeLegendCompeRate;
 
@@ -6339,14 +6325,14 @@ public:
 DUMPER7_ASSERTS_HttpHelper_Parse_FestaCheckFestaReward;
 
 // Function UnionSystem.HttpHelper.Parse_FestaFestaTop
-// 0x0068 (0x0068 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct HttpHelper_Parse_FestaFestaTop final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFestaFestaTopResponse                 Response;                                          // 0x0018(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFestaFestaTopResponse                 Response;                                          // 0x0018(0x0058)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_FestaFestaTop;
 
@@ -6579,14 +6565,14 @@ public:
 DUMPER7_ASSERTS_HttpHelper_Parse_MasterDataGetMaintenanceSchedule;
 
 // Function UnionSystem.HttpHelper.Parse_MasterDataGetMasterData
-// 0x02F8 (0x02F8 - 0x0000)
+// 0x0328 (0x0328 - 0x0000)
 struct HttpHelper_Parse_MasterDataGetMasterData final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0018(0x02E0)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0018(0x0310)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_MasterDataGetMasterData;
 
@@ -6842,39 +6828,75 @@ public:
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_RankingGetRankingTimeTrial;
 
+// Function UnionSystem.HttpHelper.Parse_ReceiveRewardGetReceivedRewards
+// 0x0028 (0x0028 - 0x0000)
+struct HttpHelper_Parse_ReceiveRewardGetReceivedRewards final
+{
+public:
+	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FReceiveRewardGetReceivedRewardsResponse Response;                                        // 0x0018(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Parse_ReceiveRewardGetReceivedRewards;
+
+// Function UnionSystem.HttpHelper.Parse_ReceiveRewardGetRewards
+// 0x0030 (0x0030 - 0x0000)
+struct HttpHelper_Parse_ReceiveRewardGetRewards final
+{
+public:
+	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FReceiveRewardGetRewardsResponse       Response;                                          // 0x0018(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Parse_ReceiveRewardGetRewards;
+
+// Function UnionSystem.HttpHelper.Parse_ReceiveRewardSaveRewards
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Parse_ReceiveRewardSaveRewards final
+{
+public:
+	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FReceiveRewardSaveRewardsResponse      Response;                                          // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Parse_ReceiveRewardSaveRewards;
+
 // Function UnionSystem.HttpHelper.Parse_ResultSaveFestaResult
-// 0x0178 (0x0178 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct HttpHelper_Parse_ResultSaveFestaResult final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResultSaveFestaResultResponse         Response;                                          // 0x0018(0x0160)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FResultSaveFestaResultResponse         Response;                                          // 0x0018(0x0178)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_ResultSaveFestaResult;
 
 // Function UnionSystem.HttpHelper.Parse_ResultSaveLegendCompeResult
-// 0x0110 (0x0110 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct HttpHelper_Parse_ResultSaveLegendCompeResult final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResultSaveLegendCompeResultResponse   Response;                                          // 0x0018(0x00F8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FResultSaveLegendCompeResultResponse   Response;                                          // 0x0018(0x0100)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_ResultSaveLegendCompeResult;
 
 // Function UnionSystem.HttpHelper.Parse_ResultSaveRankMatchResult
-// 0x0110 (0x0110 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct HttpHelper_Parse_ResultSaveRankMatchResult final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResultSaveRankMatchResultResponse     Response;                                          // 0x0018(0x00F8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FResultSaveRankMatchResultResponse     Response;                                          // 0x0018(0x0100)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_ResultSaveRankMatchResult;
 
@@ -6939,38 +6961,38 @@ public:
 DUMPER7_ASSERTS_HttpHelper_Parse_StartSaveFestaStart;
 
 // Function UnionSystem.HttpHelper.Parse_StartSaveLegendCompeStart
-// 0x0028 (0x0028 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct HttpHelper_Parse_StartSaveLegendCompeStart final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveLegendCompeStartResponse     Response;                                          // 0x0018(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FStartSaveLegendCompeStartResponse     Response;                                          // 0x0018(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_StartSaveLegendCompeStart;
 
 // Function UnionSystem.HttpHelper.Parse_StartSaveRankMatchStart
-// 0x0028 (0x0028 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct HttpHelper_Parse_StartSaveRankMatchStart final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveRankMatchStartResponse       Response;                                          // 0x0018(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FStartSaveRankMatchStartResponse       Response;                                          // 0x0018(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_StartSaveRankMatchStart;
 
 // Function UnionSystem.HttpHelper.Parse_UserGetData
-// 0x0158 (0x0158 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct HttpHelper_Parse_UserGetData final
 {
 public:
 	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserGetDataResponse                   Response;                                          // 0x0018(0x0140)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FUserGetDataResponse                   Response;                                          // 0x0018(0x0150)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_UserGetData;
 
@@ -7068,6 +7090,18 @@ public:
 };
 DUMPER7_ASSERTS_HttpHelper_Parse_UserSaveUserNetworkSettings;
 
+// Function UnionSystem.HttpHelper.Parse_UserSgAccountLink
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Parse_UserSgAccountLink final
+{
+public:
+	class FString                                 OutData;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ResCode;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUserSgAccountLinkResponse             Response;                                          // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Parse_UserSgAccountLink;
+
 // Function UnionSystem.HttpHelper.QueryServerTime
 // 0x0010 (0x0010 - 0x0000)
 struct HttpHelper_QueryServerTime final
@@ -7148,7 +7182,7 @@ public:
 	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDebugChangeFestaLastOrderResponse     Response;                                          // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderResponse     Response;                                          // 0x000C(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
@@ -7163,7 +7197,7 @@ public:
 	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDebugChangeLegendCompeLastOrderResponse Response;                                        // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderResponse Response;                                        // 0x000C(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
@@ -7178,7 +7212,7 @@ public:
 	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDebugChangeLegendCompeRateResponse    Response;                                          // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateResponse    Response;                                          // 0x000C(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
@@ -7326,7 +7360,7 @@ public:
 DUMPER7_ASSERTS_HttpHelper_Receive_FestaCheckFestaReward;
 
 // Function UnionSystem.HttpHelper.Receive_FestaFestaTop
-// 0x0068 (0x0068 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct HttpHelper_Receive_FestaFestaTop final
 {
 public:
@@ -7335,9 +7369,9 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFestaFestaTopResponse                 Response;                                          // 0x0010(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FFestaFestaTopResponse                 Response;                                          // 0x0010(0x0058)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_FestaFestaTop;
 
@@ -7639,7 +7673,7 @@ public:
 DUMPER7_ASSERTS_HttpHelper_Receive_MasterDataGetMaintenanceSchedule;
 
 // Function UnionSystem.HttpHelper.Receive_MasterDataGetMasterData
-// 0x02F8 (0x02F8 - 0x0000)
+// 0x0328 (0x0328 - 0x0000)
 struct HttpHelper_Receive_MasterDataGetMasterData final
 {
 public:
@@ -7648,9 +7682,9 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0010(0x02E0)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x02F0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMasterDataGetMasterDataResponse       Response;                                          // 0x0010(0x0310)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0320(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_MasterDataGetMasterData;
 
@@ -7987,8 +8021,55 @@ public:
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_RankingGetRankingTimeTrial;
 
+// Function UnionSystem.HttpHelper.Receive_ReceiveRewardGetReceivedRewards
+// 0x0028 (0x0028 - 0x0000)
+struct HttpHelper_Receive_ReceiveRewardGetReceivedRewards final
+{
+public:
+	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FReceiveRewardGetReceivedRewardsResponse Response;                                        // 0x0010(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Receive_ReceiveRewardGetReceivedRewards;
+
+// Function UnionSystem.HttpHelper.Receive_ReceiveRewardGetRewards
+// 0x0030 (0x0030 - 0x0000)
+struct HttpHelper_Receive_ReceiveRewardGetRewards final
+{
+public:
+	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FReceiveRewardGetRewardsResponse       Response;                                          // 0x0010(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Receive_ReceiveRewardGetRewards;
+
+// Function UnionSystem.HttpHelper.Receive_ReceiveRewardSaveRewards
+// 0x0010 (0x0010 - 0x0000)
+struct HttpHelper_Receive_ReceiveRewardSaveRewards final
+{
+public:
+	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FReceiveRewardSaveRewardsResponse      Response;                                          // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x000D(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Receive_ReceiveRewardSaveRewards;
+
 // Function UnionSystem.HttpHelper.Receive_ResultSaveFestaResult
-// 0x0178 (0x0178 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct HttpHelper_Receive_ResultSaveFestaResult final
 {
 public:
@@ -7997,14 +8078,14 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResultSaveFestaResultResponse         Response;                                          // 0x0010(0x0160)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0170(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FResultSaveFestaResultResponse         Response;                                          // 0x0010(0x0178)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0188(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_ResultSaveFestaResult;
 
 // Function UnionSystem.HttpHelper.Receive_ResultSaveLegendCompeResult
-// 0x0110 (0x0110 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct HttpHelper_Receive_ResultSaveLegendCompeResult final
 {
 public:
@@ -8013,14 +8094,14 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResultSaveLegendCompeResultResponse   Response;                                          // 0x0010(0x00F8)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0108(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FResultSaveLegendCompeResultResponse   Response;                                          // 0x0010(0x0100)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0110(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_ResultSaveLegendCompeResult;
 
 // Function UnionSystem.HttpHelper.Receive_ResultSaveRankMatchResult
-// 0x0110 (0x0110 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct HttpHelper_Receive_ResultSaveRankMatchResult final
 {
 public:
@@ -8029,9 +8110,9 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResultSaveRankMatchResultResponse     Response;                                          // 0x0010(0x00F8)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0108(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FResultSaveRankMatchResultResponse     Response;                                          // 0x0010(0x0100)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0110(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_ResultSaveRankMatchResult;
 
@@ -8115,7 +8196,7 @@ public:
 DUMPER7_ASSERTS_HttpHelper_Receive_StartSaveFestaStart;
 
 // Function UnionSystem.HttpHelper.Receive_StartSaveLegendCompeStart
-// 0x0028 (0x0028 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct HttpHelper_Receive_StartSaveLegendCompeStart final
 {
 public:
@@ -8124,14 +8205,14 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveLegendCompeStartResponse     Response;                                          // 0x0010(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FStartSaveLegendCompeStartResponse     Response;                                          // 0x0010(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_StartSaveLegendCompeStart;
 
 // Function UnionSystem.HttpHelper.Receive_StartSaveRankMatchStart
-// 0x0028 (0x0028 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct HttpHelper_Receive_StartSaveRankMatchStart final
 {
 public:
@@ -8140,14 +8221,14 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStartSaveRankMatchStartResponse       Response;                                          // 0x0010(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FStartSaveRankMatchStartResponse       Response;                                          // 0x0010(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_StartSaveRankMatchStart;
 
 // Function UnionSystem.HttpHelper.Receive_UserGetData
-// 0x0158 (0x0158 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct HttpHelper_Receive_UserGetData final
 {
 public:
@@ -8156,9 +8237,9 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserGetDataResponse                   Response;                                          // 0x0010(0x0140)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0150(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FUserGetDataResponse                   Response;                                          // 0x0010(0x0150)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0160(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_UserGetData;
 
@@ -8286,6 +8367,21 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Receive_UserSaveUserNetworkSettings;
+
+// Function UnionSystem.HttpHelper.Receive_UserSgAccountLink
+// 0x0010 (0x0010 - 0x0000)
+struct HttpHelper_Receive_UserSgAccountLink final
+{
+public:
+	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OutError;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResCode;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUserSgAccountLinkResponse             Response;                                          // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x000D(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Receive_UserSgAccountLink;
 
 // Function UnionSystem.HttpHelper.Send_CntReplayGetSignedUrl
 // 0x0008 (0x0008 - 0x0000)
@@ -8460,7 +8556,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFairPlayPoint_NoResend;
 struct HttpHelper_Send_DebugChangeFestaLastOrder final
 {
 public:
-	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder;
@@ -8470,7 +8566,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder;
 struct HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked final
 {
 public:
-	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked;
@@ -8480,7 +8576,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked;
 struct HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend final
 {
 public:
-	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend;
@@ -8490,7 +8586,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder_Callbacked_NoResend;
 struct HttpHelper_Send_DebugChangeFestaLastOrder_NoResend final
 {
 public:
-	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeFestaLastOrderRequest      Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder_NoResend;
@@ -8500,7 +8596,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeFestaLastOrder_NoResend;
 struct HttpHelper_Send_DebugChangeLegendCompeLastOrder final
 {
 public:
-	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder;
@@ -8510,7 +8606,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder;
 struct HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked final
 {
 public:
-	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked;
@@ -8520,7 +8616,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked;
 struct HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend final
 {
 public:
-	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend;
@@ -8530,7 +8626,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder_Callbacked_NoRes
 struct HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend final
 {
 public:
-	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeLastOrderRequest Request;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend;
@@ -8540,7 +8636,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeLastOrder_NoResend;
 struct HttpHelper_Send_DebugChangeLegendCompeRate final
 {
 public:
-	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeRate;
@@ -8550,7 +8646,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeRate;
 struct HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked final
 {
 public:
-	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked;
@@ -8560,7 +8656,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked;
 struct HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend final
 {
 public:
-	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend;
@@ -8570,7 +8666,7 @@ DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeRate_Callbacked_NoResend;
 struct HttpHelper_Send_DebugChangeLegendCompeRate_NoResend final
 {
 public:
-	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDebugChangeLegendCompeRateRequest     Request;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_DebugChangeLegendCompeRate_NoResend;
@@ -10721,45 +10817,173 @@ public:
 };
 DUMPER7_ASSERTS_HttpHelper_Send_RankingGetRankingTimeTrial_NoResend;
 
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetReceivedRewards final
+{
+public:
+	struct FReceiveRewardGetReceivedRewardsRequest Request;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetReceivedRewards;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards_Callbacked
+// 0x0020 (0x0020 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetReceivedRewards_Callbacked final
+{
+public:
+	struct FReceiveRewardGetReceivedRewardsRequest Request;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetReceivedRewards_Callbacked;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend
+// 0x0020 (0x0020 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend final
+{
+public:
+	struct FReceiveRewardGetReceivedRewardsRequest Request;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards_NoResend
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetReceivedRewards_NoResend final
+{
+public:
+	struct FReceiveRewardGetReceivedRewardsRequest Request;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetReceivedRewards_NoResend;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards
+// 0x0008 (0x0008 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetRewards final
+{
+public:
+	struct FReceiveRewardGetRewardsRequest        Request;                                           // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetRewards;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards_Callbacked
+// 0x0014 (0x0014 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetRewards_Callbacked final
+{
+public:
+	struct FReceiveRewardGetRewardsRequest        Request;                                           // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0004(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetRewards_Callbacked;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards_Callbacked_NoResend
+// 0x0014 (0x0014 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetRewards_Callbacked_NoResend final
+{
+public:
+	struct FReceiveRewardGetRewardsRequest        Request;                                           // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0004(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetRewards_Callbacked_NoResend;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards_NoResend
+// 0x0008 (0x0008 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardGetRewards_NoResend final
+{
+public:
+	struct FReceiveRewardGetRewardsRequest        Request;                                           // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardGetRewards_NoResend;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardSaveRewards final
+{
+public:
+	struct FReceiveRewardSaveRewardsRequest       Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardSaveRewards;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards_Callbacked
+// 0x0020 (0x0020 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardSaveRewards_Callbacked final
+{
+public:
+	struct FReceiveRewardSaveRewardsRequest       Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardSaveRewards_Callbacked;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards_Callbacked_NoResend
+// 0x0020 (0x0020 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardSaveRewards_Callbacked_NoResend final
+{
+public:
+	struct FReceiveRewardSaveRewardsRequest       Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardSaveRewards_Callbacked_NoResend;
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards_NoResend
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_ReceiveRewardSaveRewards_NoResend final
+{
+public:
+	struct FReceiveRewardSaveRewardsRequest       Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Send_ReceiveRewardSaveRewards_NoResend;
+
 // Function UnionSystem.HttpHelper.Send_ResultSaveFestaResult
-// 0x0420 (0x0420 - 0x0000)
+// 0x0430 (0x0430 - 0x0000)
 struct HttpHelper_Send_ResultSaveFestaResult final
 {
 public:
-	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0418)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0418(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0428)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0428(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_42C[0x4];                                      // 0x042C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Send_ResultSaveFestaResult;
 
 // Function UnionSystem.HttpHelper.Send_ResultSaveFestaResult_Callbacked
-// 0x0428 (0x0428 - 0x0000)
+// 0x0438 (0x0438 - 0x0000)
 struct HttpHelper_Send_ResultSaveFestaResult_Callbacked final
 {
 public:
-	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0418)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0418(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0428)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0428(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_ResultSaveFestaResult_Callbacked;
 
 // Function UnionSystem.HttpHelper.Send_ResultSaveFestaResult_Callbacked_NoResend
-// 0x0428 (0x0428 - 0x0000)
+// 0x0438 (0x0438 - 0x0000)
 struct HttpHelper_Send_ResultSaveFestaResult_Callbacked_NoResend final
 {
 public:
-	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0418)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0418(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0428)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0428(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_HttpHelper_Send_ResultSaveFestaResult_Callbacked_NoResend;
 
 // Function UnionSystem.HttpHelper.Send_ResultSaveFestaResult_NoResend
-// 0x0420 (0x0420 - 0x0000)
+// 0x0430 (0x0430 - 0x0000)
 struct HttpHelper_Send_ResultSaveFestaResult_NoResend final
 {
 public:
-	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0418)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0418(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FResultSaveFestaResultRequest          Request;                                           // 0x0000(0x0428)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0428(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_42C[0x4];                                      // 0x042C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_HttpHelper_Send_ResultSaveFestaResult_NoResend;
 
@@ -11521,6 +11745,48 @@ public:
 };
 DUMPER7_ASSERTS_HttpHelper_Send_UserSaveUserNetworkSettings_NoResend;
 
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_UserSgAccountLink final
+{
+public:
+	struct FUserSgAccountLinkRequest              Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Send_UserSgAccountLink;
+
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink_Callbacked
+// 0x0020 (0x0020 - 0x0000)
+struct HttpHelper_Send_UserSgAccountLink_Callbacked final
+{
+public:
+	struct FUserSgAccountLinkRequest              Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_UserSgAccountLink_Callbacked;
+
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink_Callbacked_NoResend
+// 0x0020 (0x0020 - 0x0000)
+struct HttpHelper_Send_UserSgAccountLink_Callbacked_NoResend final
+{
+public:
+	struct FUserSgAccountLinkRequest              Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback; // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_HttpHelper_Send_UserSgAccountLink_Callbacked_NoResend;
+
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink_NoResend
+// 0x0018 (0x0018 - 0x0000)
+struct HttpHelper_Send_UserSgAccountLink_NoResend final
+{
+public:
+	struct FUserSgAccountLinkRequest              Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_HttpHelper_Send_UserSgAccountLink_NoResend;
+
 // Function UnionSystem.HttpHelper.TransferDataForDownload
 // 0x0048 (0x0048 - 0x0000)
 struct HttpHelper_TransferDataForDownload final
@@ -12018,6 +12284,64 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_KeyConfigPressAnyKey_IsGamepadKey;
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeChanceDetailText
+// 0x0020 (0x0020 - 0x0000)
+struct LegendCompeChanceUpUtil_GetLegendCompeChanceDetailText final
+{
+public:
+	ELegendCompeChanceUpType                      ChanceUpType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         order;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Ratio;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LegendCompeChanceUpUtil_GetLegendCompeChanceDetailText;
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeChanceUpRatioText
+// 0x0018 (0x0018 - 0x0000)
+struct LegendCompeChanceUpUtil_GetLegendCompeChanceUpRatioText final
+{
+public:
+	int32                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LegendCompeChanceUpUtil_GetLegendCompeChanceUpRatioText;
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeChanceUpTypeText
+// 0x0018 (0x0018 - 0x0000)
+struct LegendCompeChanceUpUtil_GetLegendCompeChanceUpTypeText final
+{
+public:
+	ELegendCompeChanceUpType                      ChanceUpType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LegendCompeChanceUpUtil_GetLegendCompeChanceUpTypeText;
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeOrderText
+// 0x0018 (0x0018 - 0x0000)
+struct LegendCompeChanceUpUtil_GetLegendCompeOrderText final
+{
+public:
+	int32                                         order;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LegendCompeChanceUpUtil_GetLegendCompeOrderText;
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompePointText
+// 0x0018 (0x0018 - 0x0000)
+struct LegendCompeChanceUpUtil_GetLegendCompePointText final
+{
+public:
+	int32                                         Point;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LegendCompeChanceUpUtil_GetLegendCompePointText;
 
 // Function UnionSystem.LobbyContextBase.BeginTransaction
 // 0x0001 (0x0001 - 0x0000)
@@ -14339,23 +14663,182 @@ public:
 };
 DUMPER7_ASSERTS_MenuInputRecieveInterface_SilentFocusReady;
 
-// Function UnionSystem.MenuPlayerController.SetMenuDirectionKeyEnable
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPlayerController_SetMenuDirectionKeyEnable final
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_GetAnimationIn final
 {
 public:
-	bool                                          bEnableDirection;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MenuPlayerController_SetMenuDirectionKeyEnable;
+DUMPER7_ASSERTS_MenuPopupWindowInterface_GetAnimationIn;
 
-// Function UnionSystem.MenuPlayerController.GetMenuDirectionKeyEnable
-// 0x0001 (0x0001 - 0x0000)
-struct MenuPlayerController_GetMenuDirectionKeyEnable final
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_GetAnimationLoop final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MenuPlayerController_GetMenuDirectionKeyEnable;
+DUMPER7_ASSERTS_MenuPopupWindowInterface_GetAnimationLoop;
+
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_GetAnimationOut final
+{
+public:
+	class UWidgetAnimation*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_GetAnimationOut;
+
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_GetPopupWindowButtonType final
+{
+public:
+	EPopupWindowButtonType                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_GetPopupWindowButtonType;
+
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_GetPopupWindowType final
+{
+public:
+	EPopupWindowType                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_GetPopupWindowType;
+
+// Function UnionSystem.MenuPopupWindowInterface.InitParam
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_InitParam final
+{
+public:
+	EPopupWindowButtonType                        ButtonType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_InitParam;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
+// 0x0004 (0x0004 - 0x0000)
+struct MenuPopupWindowInterface_SetButtonControlDelayTime final
+{
+public:
+	float                                         InTime;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetButtonControlDelayTime;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
+// 0x0010 (0x0010 - 0x0000)
+struct MenuPopupWindowInterface_SetButtonText final
+{
+public:
+	TArray<class FText>                           BtnTextArray;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetButtonText;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_SetDisplayFooterButton final
+{
+public:
+	bool                                          InDisplay;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetDisplayFooterButton;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_SetDonpaTicketCount final
+{
+public:
+	int32                                         CurrentCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AfterCount;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetDonpaTicketCount;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
+// 0x0001 (0x0001 - 0x0000)
+struct MenuPopupWindowInterface_SetEnableInput final
+{
+public:
+	bool                                          InEnable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetEnableInput;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
+// 0x0018 (0x0018 - 0x0000)
+struct MenuPopupWindowInterface_SetFooterMenuBtn final
+{
+public:
+	int32                                         BtnIconIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BtnIconType;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   BtnText;                                           // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetFooterMenuBtn;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
+// 0x0010 (0x0010 - 0x0000)
+struct MenuPopupWindowInterface_SetImageButtonSelectText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetImageButtonSelectText;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_SetImageTexture final
+{
+public:
+	const class UTexture2D*                       Texture2D;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetImageTexture;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
+// 0x0004 (0x0004 - 0x0000)
+struct MenuPopupWindowInterface_SetInitialFocusButtonIndex final
+{
+public:
+	int32                                         InButtonIndex;                                     // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetInitialFocusButtonIndex;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
+// 0x0004 (0x0004 - 0x0000)
+struct MenuPopupWindowInterface_SetPopupInfoDisplayIndex final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetPopupInfoDisplayIndex;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
+// 0x0008 (0x0008 - 0x0000)
+struct MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex final
+{
+public:
+	int32                                         Btn01IconIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Btn02IconIndex;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
+// 0x0010 (0x0010 - 0x0000)
+struct MenuPopupWindowInterface_SetTextMessege final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetTextMessege;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
+// 0x0018 (0x0018 - 0x0000)
+struct MenuPopupWindowInterface_SetTextTitle final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          Attension;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_MenuPopupWindowInterface_SetTextTitle;
 
 // Function UnionSystem.MilestoneUtil.GetEnablePrelaunchAnotherStageLotteryMilestoneVersion
 // 0x0001 (0x0001 - 0x0000)
@@ -14866,11 +15349,11 @@ public:
 DUMPER7_ASSERTS_NetMasterDataManageSubsystem_GetGeneralizedParamData;
 
 // Function UnionSystem.NetMasterDataManageSubsystem.GetMasterData
-// 0x02E0 (0x02E0 - 0x0000)
+// 0x0310 (0x0310 - 0x0000)
 struct NetMasterDataManageSubsystem_GetMasterData final
 {
 public:
-	struct FMasterDataGetMasterDataResponse       ReturnValue;                                       // 0x0000(0x02E0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FMasterDataGetMasterDataResponse       ReturnValue;                                       // 0x0000(0x0310)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_NetMasterDataManageSubsystem_GetMasterData;
 
@@ -16659,6 +17142,19 @@ public:
 };
 DUMPER7_ASSERTS_PlaylogManager_OnUrl;
 
+// Function UnionSystem.PlaylogManager.OnUserSgAccountLinkComplete
+// 0x0038 (0x0038 - 0x0000)
+struct PlaylogManager_OnUserSgAccountLinkComplete final
+{
+public:
+	class FString                                 ApiName;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RequestData;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ResponseData;                                      // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Error;                                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_PlaylogManager_OnUserSgAccountLinkComplete;
+
 // Function UnionSystem.PlaylogManager.SteamOnSetupComplete
 // 0x0001 (0x0001 - 0x0000)
 struct PlaylogManager_SteamOnSetupComplete final
@@ -16934,6 +17430,64 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_RankingSubsystem_GetRankingTimeTrial;
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchChanceDetailText
+// 0x0020 (0x0020 - 0x0000)
+struct RankMatchChanceupUtil_GetRankMatchChanceDetailText final
+{
+public:
+	ERankMachChanceUpType                         ChanceUpType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         order;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Ratio;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RankMatchChanceupUtil_GetRankMatchChanceDetailText;
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchChanceUpRatioText
+// 0x0018 (0x0018 - 0x0000)
+struct RankMatchChanceupUtil_GetRankMatchChanceUpRatioText final
+{
+public:
+	int32                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RankMatchChanceupUtil_GetRankMatchChanceUpRatioText;
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchChanceUpTypeText
+// 0x0018 (0x0018 - 0x0000)
+struct RankMatchChanceupUtil_GetRankMatchChanceUpTypeText final
+{
+public:
+	ERankMachChanceUpType                         ChanceUpType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RankMatchChanceupUtil_GetRankMatchChanceUpTypeText;
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchOrderText
+// 0x0018 (0x0018 - 0x0000)
+struct RankMatchChanceupUtil_GetRankMatchOrderText final
+{
+public:
+	int32                                         Ratio;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RankMatchChanceupUtil_GetRankMatchOrderText;
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchPointText
+// 0x0018 (0x0018 - 0x0000)
+struct RankMatchChanceupUtil_GetRankMatchPointText final
+{
+public:
+	int32                                         Point;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_RankMatchChanceupUtil_GetRankMatchPointText;
 
 // Function UnionSystem.ResponseCodeHttp.IsOkProper
 // 0x0008 (0x0008 - 0x0000)
@@ -17557,120 +18111,6 @@ public:
 	bool                                          bVisibility;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_SequenceParameterActor_SetSequenceVisibility_;
-
-// Function UnionSystem.SessionManager.GetDisplayCode
-// 0x0018 (0x0018 - 0x0000)
-struct SessionManager_GetDisplayCode final
-{
-public:
-	class FString                                 displayCode;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SessionManager_GetDisplayCode;
-
-// Function UnionSystem.SessionManager.GetExternalAddressRegionName
-// 0x0018 (0x0018 - 0x0000)
-struct SessionManager_GetExternalAddressRegionName final
-{
-public:
-	class FString                                 AddressRegionName;                                 // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SessionManager_GetExternalAddressRegionName;
-
-// Function UnionSystem.SessionManager.GetFairPlayPoint
-// 0x0008 (0x0008 - 0x0000)
-struct SessionManager_GetFairPlayPoint final
-{
-public:
-	int32                                         OutFairPlayPoint;                                  // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SessionManager_GetFairPlayPoint;
-
-// Function UnionSystem.SessionManager.GetIsBan
-// 0x0002 (0x0002 - 0x0000)
-struct SessionManager_GetIsBan final
-{
-public:
-	bool                                          bOutIsBan;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SessionManager_GetIsBan;
-
-// Function UnionSystem.SessionManager.GetLoginComplete
-// 0x0001 (0x0001 - 0x0000)
-struct SessionManager_GetLoginComplete final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SessionManager_GetLoginComplete;
-
-// Function UnionSystem.SessionManager.GetPenaltyEndTime
-// 0x0018 (0x0018 - 0x0000)
-struct SessionManager_GetPenaltyEndTime final
-{
-public:
-	class FString                                 endTime;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SessionManager_GetPenaltyEndTime;
-
-// Function UnionSystem.SessionManager.GetRegionCode
-// 0x0018 (0x0018 - 0x0000)
-struct SessionManager_GetRegionCode final
-{
-public:
-	class FString                                 regionCode;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SessionManager_GetRegionCode;
-
-// Function UnionSystem.SessionManager.GetResponseCodeAbstract
-// 0x0001 (0x0001 - 0x0000)
-struct SessionManager_GetResponseCodeAbstract final
-{
-public:
-	EResponseCodeAbstract                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SessionManager_GetResponseCodeAbstract;
-
-// Function UnionSystem.SessionManager.GetSwitchOnlineCode
-// 0x0008 (0x0008 - 0x0000)
-struct SessionManager_GetSwitchOnlineCode final
-{
-public:
-	int32                                         switchOnlineCode;                                  // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SessionManager_GetSwitchOnlineCode;
-
-// Function UnionSystem.SessionManager.GetUserID
-// 0x0018 (0x0018 - 0x0000)
-struct SessionManager_GetUserID final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_SessionManager_GetUserID;
-
-// Function UnionSystem.SessionManager.StartLogin
-// 0x0010 (0x0010 - 0x0000)
-struct SessionManager_StartLogin final
-{
-public:
-	TDelegate<void(bool Error, bool SavedataDeleted)> Callback;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_SessionManager_StartLogin;
 
 // Function UnionSystem.UnionSpeedClassLibrary.GetMaxSpeedByClass
 // 0x0008 (0x0008 - 0x0000)
@@ -19195,6 +19635,18 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_UnionGraph_Dump;
+
+// Function UnionSystem.UnionLocalizationTextLibrary.GetText
+// 0x0018 (0x0018 - 0x0000)
+struct UnionLocalizationTextLibrary_GetText final
+{
+public:
+	EUnionLocalizationTextType                    Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         textIndex;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_UnionLocalizationTextLibrary_GetText;
 
 // Function UnionSystem.UnionManaPlayer.Create
 // 0x0020 (0x0020 - 0x0000)

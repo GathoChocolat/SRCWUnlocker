@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "InputCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UnionUI_structs.hpp"
@@ -385,7 +385,7 @@ public:
 DUMPER7_ASSERTS_BPC_RaceSequenceStateResultRival_C_UnbindFullScreenMouseClick;
 
 // Function BPC_RaceSequenceStateResultRival.BPC_RaceSequenceStateResultRival_C.GetRivalMessageFromTable
-// 0x0650 (0x0650 - 0x0000)
+// 0x0658 (0x0658 - 0x0000)
 struct BPC_RaceSequenceStateResultRival_C_GetRivalMessageFromTable final
 {
 public:
@@ -412,23 +412,23 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0150(0x0048)(HasGetValueTypeHash)
 	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01A0(0x0010)(ReferenceParm)
-	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x01B0(0x0390)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_541[0x7];                                      // 0x0541(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0548(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0558(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_TextFromStringTable_ReturnValue;          // 0x0568(0x0010)()
-	struct FSoftObjectPath                        CallFunc_Conv_SoftObjRefToSoftObjPath_ReturnValue; // 0x0578(0x0020)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_BreakSoftObjectPath_PathString;           // 0x0598(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPerformRivalOutcome                          Temp_byte_Variable_1;                              // 0x05B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5B1[0x7];                                      // 0x05B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_1;                           // 0x05B8(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x05C8(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0610(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0620(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0630(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_TextFromStringTable_ReturnValue_1;        // 0x0640(0x0010)()
+	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x01B0(0x0398)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0548(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_549[0x7];                                      // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0550(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0560(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_TextFromStringTable_ReturnValue;          // 0x0570(0x0010)()
+	struct FSoftObjectPath                        CallFunc_Conv_SoftObjRefToSoftObjPath_ReturnValue; // 0x0580(0x0020)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_BreakSoftObjectPath_PathString;           // 0x05A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPerformRivalOutcome                          Temp_byte_Variable_1;                              // 0x05B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5B9[0x7];                                      // 0x05B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_1;                           // 0x05C0(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x05D0(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0618(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0628(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0638(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_TextFromStringTable_ReturnValue_1;        // 0x0648(0x0010)()
 };
 DUMPER7_ASSERTS_BPC_RaceSequenceStateResultRival_C_GetRivalMessageFromTable;
 

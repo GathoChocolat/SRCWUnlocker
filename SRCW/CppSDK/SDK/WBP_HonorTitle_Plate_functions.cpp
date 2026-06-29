@@ -161,6 +161,34 @@ void UWBP_HonorTitle_Plate_C::SetupNormalHonorTitlePlate(TSoftObjectPtr<class UO
 }
 
 
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupOtherTypeHonorTitle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UObject>           PlateImageTexture2D                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// EHonorTitleFontColor                    FontColor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      HonorTitleVB                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// EHonorTitleDisplayControlCategory       DisplayControlCategory                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DisplayControlSubParam                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HonorTitle_Plate_C::SetupOtherTypeHonorTitle(TSoftObjectPtr<class UObject> PlateImageTexture2D, EHonorTitleFontColor FontColor, const class FText& HonorTitleVB, EHonorTitleDisplayControlCategory DisplayControlCategory, int32 DisplayControlSubParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HonorTitle_Plate_C", "SetupOtherTypeHonorTitle");
+
+	Params::WBP_HonorTitle_Plate_C_SetupOtherTypeHonorTitle Parms{};
+
+	Parms.PlateImageTexture2D = PlateImageTexture2D;
+	Parms.FontColor = FontColor;
+	Parms.HonorTitleVB = std::move(HonorTitleVB);
+	Parms.DisplayControlCategory = DisplayControlCategory;
+	Parms.DisplayControlSubParam = DisplayControlSubParam;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupTitlePlate
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -176,6 +204,28 @@ void UWBP_HonorTitle_Plate_C::SetupTitlePlate(const struct FHonorTitleListData& 
 	Params::WBP_HonorTitle_Plate_C_SetupTitlePlate Parms{};
 
 	Parms.SetUpData = std::move(SetUpData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HonorTitle_Plate.WBP_HonorTitle_Plate_C.SetupTournamentHonorTitle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      HonorTitleVB                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   DisplayControlSubParam                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HonorTitle_Plate_C::SetupTournamentHonorTitle(const class FText& HonorTitleVB, int32 DisplayControlSubParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HonorTitle_Plate_C", "SetupTournamentHonorTitle");
+
+	Params::WBP_HonorTitle_Plate_C_SetupTournamentHonorTitle Parms{};
+
+	Parms.HonorTitleVB = std::move(HonorTitleVB);
+	Parms.DisplayControlSubParam = DisplayControlSubParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

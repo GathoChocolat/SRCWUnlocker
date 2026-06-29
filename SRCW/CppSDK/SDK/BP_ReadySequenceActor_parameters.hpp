@@ -871,7 +871,7 @@ public:
 DUMPER7_ASSERTS_BP_ReadySequenceActor_C_SetUpParamWindowEvent;
 
 // Function BP_ReadySequenceActor.BP_ReadySequenceActor_C.SetUpPlayersParam
-// 0x03D0 (0x03D0 - 0x0000)
+// 0x03D8 (0x03D8 - 0x0000)
 struct BP_ReadySequenceActor_C_SetUpPlayersParam final
 {
 public:
@@ -887,8 +887,8 @@ public:
 	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetDriverId_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0038(0x0390)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0038(0x0398)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_ReadySequenceActor_C_SetUpPlayersParam;
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UnionSystem_structs.hpp"
-#include "UnionRun_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UnionRun_classes.hpp"
 
 
 namespace SDK
@@ -29,10 +29,10 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_CharaHead;                          // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          IsRival;                                           // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Player1PNumText;                                   // 0x0310(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Player2PNumText;                                   // 0x0320(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Player3PNumText;                                   // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Player4PNumText;                                   // 0x0340(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   TextPlayerNum1;                                    // 0x0310(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   TextPlayerNum2;                                    // 0x0320(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   TextPlayerNum3;                                    // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   TextPlayerNum4;                                    // 0x0340(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_Race_HUD_Sub_Charahead(int32 EntryPoint);

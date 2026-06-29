@@ -1308,24 +1308,70 @@ class FString UCollectHelper::CollectStringData(const class FString& Name_0, con
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.AddRegisterSubMenu
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          InMenuObject                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InPriority                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationIn()
+void AAppPlayerController::AddRegisterSubMenu(class UObject* InMenuObject, int32 InPriority)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationIn");
+		Func = Class->GetFunction("AppPlayerController", "AddRegisterSubMenu");
 
-	Params::MenuPopupWindowInterface_GetAnimationIn Parms{};
+	Params::AppPlayerController_AddRegisterSubMenu Parms{};
+
+	Parms.InMenuObject = InMenuObject;
+	Parms.InPriority = InPriority;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.ApplyOptionControllerSettings
+// (Final, Native, Public, BlueprintCallable)
+
+void AAppPlayerController::ApplyOptionControllerSettings()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "ApplyOptionControllerSettings");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.CalcIsMousePositionInViewport
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AAppPlayerController::CalcIsMousePositionInViewport()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "CalcIsMousePositionInViewport");
+
+	Params::AppPlayerController_CalcIsMousePositionInViewport Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1333,24 +1379,98 @@ class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationIn()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.CalcTutorialControllerType
+// (Final, Native, Private, HasOutParams, BlueprintCallable)
 // Parameters:
-// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8*                                  Type                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8*                                  Platform                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationLoop()
+void AAppPlayerController::CalcTutorialControllerType(uint8* Type, uint8* Platform)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationLoop");
+		Func = Class->GetFunction("AppPlayerController", "CalcTutorialControllerType");
 
-	Params::MenuPopupWindowInterface_GetAnimationLoop Parms{};
+	Params::AppPlayerController_CalcTutorialControllerType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Type != nullptr)
+		*Type = Parms.Type;
+
+	if (Platform != nullptr)
+		*Platform = Parms.Platform;
+}
+
+
+// Function UnionSystem.AppPlayerController.ClearUserFocus
+// (Final, Native, Public, BlueprintCallable)
+
+void AAppPlayerController::ClearUserFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "ClearUserFocus");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.DoInputMenu
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EMenuInputKey                           InKey                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AAppPlayerController::DoInputMenu(EMenuInputKey InKey)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "DoInputMenu");
+
+	Params::AppPlayerController_DoInputMenu Parms{};
+
+	Parms.InKey = InKey;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.GetCurrentInputType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EAppControllerInputType                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EAppControllerInputType AAppPlayerController::GetCurrentInputType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "GetCurrentInputType");
+
+	Params::AppPlayerController_GetCurrentInputType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1358,24 +1478,24 @@ class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationLoop()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.GetLastHoveredObject
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationOut()
+class UObject* AAppPlayerController::GetLastHoveredObject()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationOut");
+		Func = Class->GetFunction("AppPlayerController", "GetLastHoveredObject");
 
-	Params::MenuPopupWindowInterface_GetAnimationOut Parms{};
+	Params::AppPlayerController_GetLastHoveredObject Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1383,24 +1503,27 @@ class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationOut()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.GetMappableKeyByMappingName
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EPopupWindowButtonType                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      MappingName                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EPopupWindowButtonType IMenuPopupWindowInterface::GetPopupWindowButtonType()
+struct FKey AAppPlayerController::GetMappableKeyByMappingName(const class FName& MappingName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowButtonType");
+		Func = Class->GetFunction("AppPlayerController", "GetMappableKeyByMappingName");
 
-	Params::MenuPopupWindowInterface_GetPopupWindowButtonType Parms{};
+	Params::AppPlayerController_GetMappableKeyByMappingName Parms{};
+
+	Parms.MappingName = MappingName;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1408,24 +1531,31 @@ EPopupWindowButtonType IMenuPopupWindowInterface::GetPopupWindowButtonType()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.GetMenuConfigKey
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EPopupWindowType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      InActionName                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsGamepad                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsAnalog                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EPopupWindowType IMenuPopupWindowInterface::GetPopupWindowType()
+struct FKey AAppPlayerController::GetMenuConfigKey(const class FName& InActionName, bool IsGamepad, bool IsAnalog)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowType");
+		Func = Class->GetFunction("AppPlayerController", "GetMenuConfigKey");
 
-	Params::MenuPopupWindowInterface_GetPopupWindowType Parms{};
+	Params::AppPlayerController_GetMenuConfigKey Parms{};
+
+	Parms.InActionName = InActionName;
+	Parms.IsGamepad = IsGamepad;
+	Parms.IsAnalog = IsAnalog;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1433,382 +1563,912 @@ EPopupWindowType IMenuPopupWindowInterface::GetPopupWindowType()
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.InitParam
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.GetRaceConfigKey
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EPopupWindowButtonType                  ButtonType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      InActionName                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsPrimary                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsGamepad                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::InitParam(EPopupWindowButtonType ButtonType)
+struct FKey AAppPlayerController::GetRaceConfigKey(const class FName& InActionName, bool IsPrimary, bool IsGamepad)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "InitParam");
+		Func = Class->GetFunction("AppPlayerController", "GetRaceConfigKey");
 
-	Params::MenuPopupWindowInterface_InitParam Parms{};
+	Params::AppPlayerController_GetRaceConfigKey Parms{};
 
-	Parms.ButtonType = ButtonType;
+	Parms.InActionName = InActionName;
+	Parms.IsPrimary = IsPrimary;
+	Parms.IsGamepad = IsGamepad;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.OnApplicationHasReactivated
+// (Final, Native, Private)
+
+void AAppPlayerController::OnApplicationHasReactivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "OnApplicationHasReactivated");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.PlayAnimationIn
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.OnChangeControllerInputType
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EAppControllerInputType                 BeforeType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAppControllerInputType                 AfterType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::PlayAnimationIn()
+void AAppPlayerController::OnChangeControllerInputType(EAppControllerInputType BeforeType, EAppControllerInputType AfterType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "PlayAnimationIn");
+		Func = Class->GetFunction("AppPlayerController", "OnChangeControllerInputType");
+
+	Params::AppPlayerController_OnChangeControllerInputType Parms{};
+
+	Parms.BeforeType = BeforeType;
+	Parms.AfterType = AfterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionSystem.AppPlayerController.OnLeftMousePressed
+// (Final, Native, Private)
+
+void AAppPlayerController::OnLeftMousePressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "OnLeftMousePressed");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.OnLeftStickVectorAxisEvent
+// (Final, Native, Private, HasDefaults)
 // Parameters:
-// float                                   InTime                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InStickVector                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetButtonControlDelayTime(float InTime)
+void AAppPlayerController::OnLeftStickVectorAxisEvent(const struct FVector& InStickVector)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonControlDelayTime");
+		Func = Class->GetFunction("AppPlayerController", "OnLeftStickVectorAxisEvent");
 
-	Params::MenuPopupWindowInterface_SetButtonControlDelayTime Parms{};
+	Params::AppPlayerController_OnLeftStickVectorAxisEvent Parms{};
 
-	Parms.InTime = InTime;
+	Parms.InStickVector = std::move(InStickVector);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.OnMousePointer
+// (Native, Protected)
 // Parameters:
-// const TArray<class FText>&              BtnTextArray                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FPointerEvent&             InPointerEvent                                         (Parm, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetButtonText(const TArray<class FText>& BtnTextArray)
+void AAppPlayerController::OnMousePointer(const struct FPointerEvent& InPointerEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonText");
+		Func = Class->GetFunction("AppPlayerController", "OnMousePointer");
 
-	Params::MenuPopupWindowInterface_SetButtonText Parms{};
+	Params::AppPlayerController_OnMousePointer Parms{};
 
-	Parms.BtnTextArray = std::move(BtnTextArray);
+	Parms.InPointerEvent = std::move(InPointerEvent);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.OnMousePointerEventBP
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// const bool                              InDisplay                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FPointerEvent&             InPointerEvent                                         (Parm, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetDisplayFooterButton(const bool InDisplay)
+void AAppPlayerController::OnMousePointerEventBP(const struct FPointerEvent& InPointerEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDisplayFooterButton");
+		Func = Class->GetFunction("AppPlayerController", "OnMousePointerEventBP");
 
-	Params::MenuPopupWindowInterface_SetDisplayFooterButton Parms{};
+	Params::AppPlayerController_OnMousePointerEventBP Parms{};
 
-	Parms.InDisplay = InDisplay;
+	Parms.InPointerEvent = std::move(InPointerEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function UnionSystem.AppPlayerController.OnMousePointerUp
+// (Native, Protected)
+// Parameters:
+// const struct FPointerEvent&             InPointerEvent                                         (Parm, NativeAccessSpecifierPublic)
+
+void AAppPlayerController::OnMousePointerUp(const struct FPointerEvent& InPointerEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "OnMousePointerUp");
+
+	Params::AppPlayerController_OnMousePointerUp Parms{};
+
+	Parms.InPointerEvent = std::move(InPointerEvent);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.RegisterMainMenu
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   CurrentCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AfterCount                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          InObject                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EMainMenuRegistPriority                 InPriority                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetDonpaTicketCount(int32 CurrentCount, int32 AfterCount)
+void AAppPlayerController::RegisterMainMenu(class UObject* InObject, EMainMenuRegistPriority InPriority)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDonpaTicketCount");
+		Func = Class->GetFunction("AppPlayerController", "RegisterMainMenu");
 
-	Params::MenuPopupWindowInterface_SetDonpaTicketCount Parms{};
+	Params::AppPlayerController_RegisterMainMenu Parms{};
 
-	Parms.CurrentCount = CurrentCount;
-	Parms.AfterCount = AfterCount;
+	Parms.InObject = InObject;
+	Parms.InPriority = InPriority;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.RegisterMenu
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    InEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          InMenuObject                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InPriority                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetEnableInput(bool InEnable)
+void AAppPlayerController::RegisterMenu(class UObject* InMenuObject, int32 InPriority)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetEnableInput");
+		Func = Class->GetFunction("AppPlayerController", "RegisterMenu");
 
-	Params::MenuPopupWindowInterface_SetEnableInput Parms{};
+	Params::AppPlayerController_RegisterMenu Parms{};
 
-	Parms.InEnable = InEnable;
+	Parms.InMenuObject = InMenuObject;
+	Parms.InPriority = InPriority;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetCurrentInputConfig
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   BtnIconIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   BtnIconType                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FText&                      BtnText                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FName                       InputConfigName                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetFooterMenuBtn(int32 BtnIconIndex, int32 BtnIconType, const class FText& BtnText)
+void AAppPlayerController::SetCurrentInputConfig(const class FName InputConfigName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetFooterMenuBtn");
+		Func = Class->GetFunction("AppPlayerController", "SetCurrentInputConfig");
 
-	Params::MenuPopupWindowInterface_SetFooterMenuBtn Parms{};
+	Params::AppPlayerController_SetCurrentInputConfig Parms{};
 
-	Parms.BtnIconIndex = BtnIconIndex;
-	Parms.BtnIconType = BtnIconType;
-	Parms.BtnText = std::move(BtnText);
+	Parms.InputConfigName = InputConfigName;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetEnableMainMenu
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class FText&                      InText                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const class UObject*                    InObject                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetImageButtonSelectText(const class FText& InText)
+void AAppPlayerController::SetEnableMainMenu(const class UObject* InObject, bool IsEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageButtonSelectText");
+		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenu");
 
-	Params::MenuPopupWindowInterface_SetImageButtonSelectText Parms{};
+	Params::AppPlayerController_SetEnableMainMenu Parms{};
 
-	Parms.InText = std::move(InText);
+	Parms.InObject = InObject;
+	Parms.IsEnable = IsEnable;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetEnableMainMenuAll
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class UTexture2D*                 Texture2D                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetImageTexture(const class UTexture2D* Texture2D)
+void AAppPlayerController::SetEnableMainMenuAll(bool IsEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageTexture");
+		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenuAll");
 
-	Params::MenuPopupWindowInterface_SetImageTexture Parms{};
+	Params::AppPlayerController_SetEnableMainMenuAll Parms{};
 
-	Parms.Texture2D = Texture2D;
+	Parms.IsEnable = IsEnable;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetEnableMainMenuLowerPriority
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const int32                             InButtonIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetInitialFocusButtonIndex(const int32 InButtonIndex)
+void AAppPlayerController::SetEnableMainMenuLowerPriority(bool IsEnable, int32 InPrioirty)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetInitialFocusButtonIndex");
+		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenuLowerPriority");
 
-	Params::MenuPopupWindowInterface_SetInitialFocusButtonIndex Parms{};
+	Params::AppPlayerController_SetEnableMainMenuLowerPriority Parms{};
 
-	Parms.InButtonIndex = InButtonIndex;
+	Parms.IsEnable = IsEnable;
+	Parms.InPrioirty = InPrioirty;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetEnableMainMenuUpperPriority
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetPopupInfoDisplayIndex(int32 Index_0)
+void AAppPlayerController::SetEnableMainMenuUpperPriority(bool IsEnable, int32 InPrioirty)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoDisplayIndex");
+		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenuUpperPriority");
 
-	Params::MenuPopupWindowInterface_SetPopupInfoDisplayIndex Parms{};
+	Params::AppPlayerController_SetEnableMainMenuUpperPriority Parms{};
 
-	Parms.Index_0 = Index_0;
+	Parms.IsEnable = IsEnable;
+	Parms.InPrioirty = InPrioirty;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetEnableSubMenu
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Btn01IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Btn02IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    InObject                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetPopupInfoMainMenuButtonIconIndex(int32 Btn01IconIndex, int32 Btn02IconIndex)
+void AAppPlayerController::SetEnableSubMenu(const class UObject* InObject, bool IsEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoMainMenuButtonIconIndex");
+		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenu");
 
-	Params::MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex Parms{};
+	Params::AppPlayerController_SetEnableSubMenu Parms{};
 
-	Parms.Btn01IconIndex = Btn01IconIndex;
-	Parms.Btn02IconIndex = Btn02IconIndex;
+	Parms.InObject = InObject;
+	Parms.IsEnable = IsEnable;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetEnableSubMenuAll
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetTextMessege(const class FText& Text)
+void AAppPlayerController::SetEnableSubMenuAll(bool IsEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextMessege");
+		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenuAll");
 
-	Params::MenuPopupWindowInterface_SetTextMessege Parms{};
+	Params::AppPlayerController_SetEnableSubMenuAll Parms{};
 
-	Parms.Text = std::move(Text);
+	Parms.IsEnable = IsEnable;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UnionSystem.AppPlayerController.SetEnableSubMenuLowerPriority
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    Attension                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IMenuPopupWindowInterface::SetTextTitle(const class FText& Text, bool Attension)
+void AAppPlayerController::SetEnableSubMenuLowerPriority(bool IsEnable, int32 InPrioirty)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextTitle");
+		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenuLowerPriority");
 
-	Params::MenuPopupWindowInterface_SetTextTitle Parms{};
+	Params::AppPlayerController_SetEnableSubMenuLowerPriority Parms{};
 
-	Parms.Text = std::move(Text);
-	Parms.Attension = Attension;
+	Parms.IsEnable = IsEnable;
+	Parms.InPrioirty = InPrioirty;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	AsUObject()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.SetEnableSubMenuUpperPriority
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AAppPlayerController::SetEnableSubMenuUpperPriority(bool IsEnable, int32 InPrioirty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenuUpperPriority");
+
+	Params::AppPlayerController_SetEnableSubMenuUpperPriority Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.InPrioirty = InPrioirty;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.SetForceNonConsumeMouseEvent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AAppPlayerController::SetForceNonConsumeMouseEvent(bool bEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "SetForceNonConsumeMouseEvent");
+
+	Params::AppPlayerController_SetForceNonConsumeMouseEvent Parms{};
+
+	Parms.bEnable = bEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.SetInputBlocked
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    InBlocked                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AAppPlayerController::SetInputBlocked(bool InBlocked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "SetInputBlocked");
+
+	Params::AppPlayerController_SetInputBlocked Parms{};
+
+	Parms.InBlocked = InBlocked;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.SetLastHoveredObject
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          HoveredObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AAppPlayerController::SetLastHoveredObject(class UObject* HoveredObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "SetLastHoveredObject");
+
+	Params::AppPlayerController_SetLastHoveredObject Parms{};
+
+	Parms.HoveredObject = HoveredObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.UnregisterMainMenu
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    InObject                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AAppPlayerController::UnregisterMainMenu(const class UObject* InObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "UnregisterMainMenu");
+
+	Params::AppPlayerController_UnregisterMainMenu Parms{};
+
+	Parms.InObject = InObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.UnregisterMainMenuAll
+// (Final, Native, Public, BlueprintCallable)
+
+void AAppPlayerController::UnregisterMainMenuAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "UnregisterMainMenuAll");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.UnregisterMenu
+// (Final, Native, Public, BlueprintCallable)
+
+void AAppPlayerController::UnregisterMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "UnregisterMenu");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.UnregisterSingleMenu
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    InMenuObject                                           (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AAppPlayerController::UnregisterSingleMenu(const class UObject* InMenuObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "UnregisterSingleMenu");
+
+	Params::AppPlayerController_UnregisterSingleMenu Parms{};
+
+	Parms.InMenuObject = InMenuObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.UnregisterSingleSubMenu
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    InMenuObject                                           (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AAppPlayerController::UnregisterSingleSubMenu(const class UObject* InMenuObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "UnregisterSingleSubMenu");
+
+	Params::AppPlayerController_UnregisterSingleSubMenu Parms{};
+
+	Parms.InMenuObject = InMenuObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.UnregisterSubMenu
+// (Final, Native, Public, BlueprintCallable)
+
+void AAppPlayerController::UnregisterSubMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "UnregisterSubMenu");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.AppPlayerController.GetLeftMouseButtonPressing
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AAppPlayerController::GetLeftMouseButtonPressing() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "GetLeftMouseButtonPressing");
+
+	Params::AppPlayerController_GetLeftMouseButtonPressing Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.GetLeftStickAxisValue
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector2D                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector2D AAppPlayerController::GetLeftStickAxisValue() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "GetLeftStickAxisValue");
+
+	Params::AppPlayerController_GetLeftStickAxisValue Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.GetRegisteredMenu
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* AAppPlayerController::GetRegisteredMenu() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "GetRegisteredMenu");
+
+	Params::AppPlayerController_GetRegisteredMenu Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.GetRegisteredSubMenu
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<class UObject*>                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<class UObject*> AAppPlayerController::GetRegisteredSubMenu() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "GetRegisteredSubMenu");
+
+	Params::AppPlayerController_GetRegisteredSubMenu Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.GetSystemFocusedWidgetName
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FName AAppPlayerController::GetSystemFocusedWidgetName() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "GetSystemFocusedWidgetName");
+
+	Params::AppPlayerController_GetSystemFocusedWidgetName Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.OnIsMenuInputEnabled
+// (Event, Public, BlueprintEvent, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AAppPlayerController::OnIsMenuInputEnabled() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "OnIsMenuInputEnabled");
+
+	Params::AppPlayerController_OnIsMenuInputEnabled Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AppPlayerController.OnIsSubMenuInputEnabled
+// (Event, Public, BlueprintEvent, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AAppPlayerController::OnIsSubMenuInputEnabled() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AppPlayerController", "OnIsSubMenuInputEnabled");
+
+	Params::AppPlayerController_OnIsSubMenuInputEnabled Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MenuPlayerController.SetMenuDirectionKeyEnable
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bEnableDirection                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMenuPlayerController::SetMenuDirectionKeyEnable(bool bEnableDirection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MenuPlayerController", "SetMenuDirectionKeyEnable");
+
+	Params::MenuPlayerController_SetMenuDirectionKeyEnable Parms{};
+
+	Parms.bEnableDirection = bEnableDirection;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPlayerController.GetMenuDirectionKeyEnable
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMenuPlayerController::GetMenuDirectionKeyEnable() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MenuPlayerController", "GetMenuDirectionKeyEnable");
+
+	Params::MenuPlayerController_GetMenuDirectionKeyEnable Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -2180,6 +2840,313 @@ bool UHonorTitleListDataAsset::GetIsHonorTitleDLC(int32 HonorTitleIndex) const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetDisplayCode
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class FString*                          displayCode                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetDisplayCode(class FString* displayCode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetDisplayCode");
+
+	Params::SessionManager_GetDisplayCode Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (displayCode != nullptr)
+		*displayCode = std::move(Parms.displayCode);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetExternalAddressRegionName
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class FString*                          AddressRegionName                                      (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetExternalAddressRegionName(class FString* AddressRegionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetExternalAddressRegionName");
+
+	Params::SessionManager_GetExternalAddressRegionName Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (AddressRegionName != nullptr)
+		*AddressRegionName = std::move(Parms.AddressRegionName);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetFairPlayPoint
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32*                                  OutFairPlayPoint                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetFairPlayPoint(int32* OutFairPlayPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetFairPlayPoint");
+
+	Params::SessionManager_GetFairPlayPoint Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutFairPlayPoint != nullptr)
+		*OutFairPlayPoint = Parms.OutFairPlayPoint;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetIsBan
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// bool*                                   bOutIsBan                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetIsBan(bool* bOutIsBan)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetIsBan");
+
+	Params::SessionManager_GetIsBan Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (bOutIsBan != nullptr)
+		*bOutIsBan = Parms.bOutIsBan;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetLoginComplete
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetLoginComplete()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetLoginComplete");
+
+	Params::SessionManager_GetLoginComplete Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetPenaltyEndTime
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class FString*                          endTime                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetPenaltyEndTime(class FString* endTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetPenaltyEndTime");
+
+	Params::SessionManager_GetPenaltyEndTime Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (endTime != nullptr)
+		*endTime = std::move(Parms.endTime);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetRegionCode
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class FString*                          regionCode                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetRegionCode(class FString* regionCode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetRegionCode");
+
+	Params::SessionManager_GetRegionCode Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (regionCode != nullptr)
+		*regionCode = std::move(Parms.regionCode);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetResponseCodeAbstract
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EResponseCodeAbstract                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EResponseCodeAbstract USessionManager::GetResponseCodeAbstract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetResponseCodeAbstract");
+
+	Params::SessionManager_GetResponseCodeAbstract Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetSwitchOnlineCode
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32*                                  switchOnlineCode                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetSwitchOnlineCode(int32* switchOnlineCode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetSwitchOnlineCode");
+
+	Params::SessionManager_GetSwitchOnlineCode Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (switchOnlineCode != nullptr)
+		*switchOnlineCode = Parms.switchOnlineCode;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.GetUserID
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class FString*                          UserId                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool USessionManager::GetUserID(class FString* UserId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "GetUserID");
+
+	Params::SessionManager_GetUserID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (UserId != nullptr)
+		*UserId = std::move(Parms.UserId);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.SessionManager.StartLogin
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TDelegate<void(bool Error, bool SavedataDeleted)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USessionManager::StartLogin(TDelegate<void(bool Error, bool SavedataDeleted)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SessionManager", "StartLogin");
+
+	Params::SessionManager_StartLogin Parms{};
+
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -3556,1120 +4523,6 @@ bool UAppOptionConfigSaveGameHelper::WriteRaceAdditionalSettingForSave(const str
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.AddRegisterSubMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          InMenuObject                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InPriority                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::AddRegisterSubMenu(class UObject* InMenuObject, int32 InPriority)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "AddRegisterSubMenu");
-
-	Params::AppPlayerController_AddRegisterSubMenu Parms{};
-
-	Parms.InMenuObject = InMenuObject;
-	Parms.InPriority = InPriority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.ApplyOptionControllerSettings
-// (Final, Native, Public, BlueprintCallable)
-
-void AAppPlayerController::ApplyOptionControllerSettings()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "ApplyOptionControllerSettings");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.CalcIsMousePositionInViewport
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AAppPlayerController::CalcIsMousePositionInViewport()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "CalcIsMousePositionInViewport");
-
-	Params::AppPlayerController_CalcIsMousePositionInViewport Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.CalcTutorialControllerType
-// (Final, Native, Private, HasOutParams, BlueprintCallable)
-// Parameters:
-// uint8*                                  Type                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint8*                                  Platform                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::CalcTutorialControllerType(uint8* Type, uint8* Platform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "CalcTutorialControllerType");
-
-	Params::AppPlayerController_CalcTutorialControllerType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (Type != nullptr)
-		*Type = Parms.Type;
-
-	if (Platform != nullptr)
-		*Platform = Parms.Platform;
-}
-
-
-// Function UnionSystem.AppPlayerController.ClearUserFocus
-// (Final, Native, Public, BlueprintCallable)
-
-void AAppPlayerController::ClearUserFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "ClearUserFocus");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.DoInputMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EMenuInputKey                           InKey                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::DoInputMenu(EMenuInputKey InKey)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "DoInputMenu");
-
-	Params::AppPlayerController_DoInputMenu Parms{};
-
-	Parms.InKey = InKey;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetCurrentInputType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EAppControllerInputType                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EAppControllerInputType AAppPlayerController::GetCurrentInputType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetCurrentInputType");
-
-	Params::AppPlayerController_GetCurrentInputType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetLastHoveredObject
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* AAppPlayerController::GetLastHoveredObject()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetLastHoveredObject");
-
-	Params::AppPlayerController_GetLastHoveredObject Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetMappableKeyByMappingName
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class FName&                      MappingName                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FKey AAppPlayerController::GetMappableKeyByMappingName(const class FName& MappingName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetMappableKeyByMappingName");
-
-	Params::AppPlayerController_GetMappableKeyByMappingName Parms{};
-
-	Parms.MappingName = MappingName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetMenuConfigKey
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class FName&                      InActionName                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsGamepad                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsAnalog                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FKey AAppPlayerController::GetMenuConfigKey(const class FName& InActionName, bool IsGamepad, bool IsAnalog)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetMenuConfigKey");
-
-	Params::AppPlayerController_GetMenuConfigKey Parms{};
-
-	Parms.InActionName = InActionName;
-	Parms.IsGamepad = IsGamepad;
-	Parms.IsAnalog = IsAnalog;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetRaceConfigKey
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class FName&                      InActionName                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsPrimary                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsGamepad                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FKey                             ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FKey AAppPlayerController::GetRaceConfigKey(const class FName& InActionName, bool IsPrimary, bool IsGamepad)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetRaceConfigKey");
-
-	Params::AppPlayerController_GetRaceConfigKey Parms{};
-
-	Parms.InActionName = InActionName;
-	Parms.IsPrimary = IsPrimary;
-	Parms.IsGamepad = IsGamepad;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.OnApplicationHasReactivated
-// (Final, Native, Private)
-
-void AAppPlayerController::OnApplicationHasReactivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnApplicationHasReactivated");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.OnChangeControllerInputType
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EAppControllerInputType                 BeforeType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAppControllerInputType                 AfterType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::OnChangeControllerInputType(EAppControllerInputType BeforeType, EAppControllerInputType AfterType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnChangeControllerInputType");
-
-	Params::AppPlayerController_OnChangeControllerInputType Parms{};
-
-	Parms.BeforeType = BeforeType;
-	Parms.AfterType = AfterType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionSystem.AppPlayerController.OnLeftMousePressed
-// (Final, Native, Private)
-
-void AAppPlayerController::OnLeftMousePressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnLeftMousePressed");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.OnLeftStickVectorAxisEvent
-// (Final, Native, Private, HasDefaults)
-// Parameters:
-// const struct FVector&                   InStickVector                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::OnLeftStickVectorAxisEvent(const struct FVector& InStickVector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnLeftStickVectorAxisEvent");
-
-	Params::AppPlayerController_OnLeftStickVectorAxisEvent Parms{};
-
-	Parms.InStickVector = std::move(InStickVector);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.OnMousePointer
-// (Native, Protected)
-// Parameters:
-// const struct FPointerEvent&             InPointerEvent                                         (Parm, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::OnMousePointer(const struct FPointerEvent& InPointerEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnMousePointer");
-
-	Params::AppPlayerController_OnMousePointer Parms{};
-
-	Parms.InPointerEvent = std::move(InPointerEvent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.OnMousePointerEventBP
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FPointerEvent&             InPointerEvent                                         (Parm, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::OnMousePointerEventBP(const struct FPointerEvent& InPointerEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnMousePointerEventBP");
-
-	Params::AppPlayerController_OnMousePointerEventBP Parms{};
-
-	Parms.InPointerEvent = std::move(InPointerEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UnionSystem.AppPlayerController.OnMousePointerUp
-// (Native, Protected)
-// Parameters:
-// const struct FPointerEvent&             InPointerEvent                                         (Parm, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::OnMousePointerUp(const struct FPointerEvent& InPointerEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnMousePointerUp");
-
-	Params::AppPlayerController_OnMousePointerUp Parms{};
-
-	Parms.InPointerEvent = std::move(InPointerEvent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.RegisterMainMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          InObject                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EMainMenuRegistPriority                 InPriority                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::RegisterMainMenu(class UObject* InObject, EMainMenuRegistPriority InPriority)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "RegisterMainMenu");
-
-	Params::AppPlayerController_RegisterMainMenu Parms{};
-
-	Parms.InObject = InObject;
-	Parms.InPriority = InPriority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.RegisterMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          InMenuObject                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InPriority                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::RegisterMenu(class UObject* InMenuObject, int32 InPriority)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "RegisterMenu");
-
-	Params::AppPlayerController_RegisterMenu Parms{};
-
-	Parms.InMenuObject = InMenuObject;
-	Parms.InPriority = InPriority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetCurrentInputConfig
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class FName                       InputConfigName                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetCurrentInputConfig(const class FName InputConfigName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetCurrentInputConfig");
-
-	Params::AppPlayerController_SetCurrentInputConfig Parms{};
-
-	Parms.InputConfigName = InputConfigName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    InObject                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableMainMenu(const class UObject* InObject, bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenu");
-
-	Params::AppPlayerController_SetEnableMainMenu Parms{};
-
-	Parms.InObject = InObject;
-	Parms.IsEnable = IsEnable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenuAll
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableMainMenuAll(bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenuAll");
-
-	Params::AppPlayerController_SetEnableMainMenuAll Parms{};
-
-	Parms.IsEnable = IsEnable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenuLowerPriority
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableMainMenuLowerPriority(bool IsEnable, int32 InPrioirty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenuLowerPriority");
-
-	Params::AppPlayerController_SetEnableMainMenuLowerPriority Parms{};
-
-	Parms.IsEnable = IsEnable;
-	Parms.InPrioirty = InPrioirty;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableMainMenuUpperPriority
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableMainMenuUpperPriority(bool IsEnable, int32 InPrioirty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableMainMenuUpperPriority");
-
-	Params::AppPlayerController_SetEnableMainMenuUpperPriority Parms{};
-
-	Parms.IsEnable = IsEnable;
-	Parms.InPrioirty = InPrioirty;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    InObject                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableSubMenu(const class UObject* InObject, bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenu");
-
-	Params::AppPlayerController_SetEnableSubMenu Parms{};
-
-	Parms.InObject = InObject;
-	Parms.IsEnable = IsEnable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenuAll
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableSubMenuAll(bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenuAll");
-
-	Params::AppPlayerController_SetEnableSubMenuAll Parms{};
-
-	Parms.IsEnable = IsEnable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenuLowerPriority
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableSubMenuLowerPriority(bool IsEnable, int32 InPrioirty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenuLowerPriority");
-
-	Params::AppPlayerController_SetEnableSubMenuLowerPriority Parms{};
-
-	Parms.IsEnable = IsEnable;
-	Parms.InPrioirty = InPrioirty;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetEnableSubMenuUpperPriority
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InPrioirty                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetEnableSubMenuUpperPriority(bool IsEnable, int32 InPrioirty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetEnableSubMenuUpperPriority");
-
-	Params::AppPlayerController_SetEnableSubMenuUpperPriority Parms{};
-
-	Parms.IsEnable = IsEnable;
-	Parms.InPrioirty = InPrioirty;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetForceNonConsumeMouseEvent
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetForceNonConsumeMouseEvent(bool bEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetForceNonConsumeMouseEvent");
-
-	Params::AppPlayerController_SetForceNonConsumeMouseEvent Parms{};
-
-	Parms.bEnable = bEnable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetInputBlocked
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    InBlocked                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetInputBlocked(bool InBlocked)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetInputBlocked");
-
-	Params::AppPlayerController_SetInputBlocked Parms{};
-
-	Parms.InBlocked = InBlocked;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.SetLastHoveredObject
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          HoveredObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAppPlayerController::SetLastHoveredObject(class UObject* HoveredObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "SetLastHoveredObject");
-
-	Params::AppPlayerController_SetLastHoveredObject Parms{};
-
-	Parms.HoveredObject = HoveredObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.UnregisterMainMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    InObject                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AAppPlayerController::UnregisterMainMenu(const class UObject* InObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "UnregisterMainMenu");
-
-	Params::AppPlayerController_UnregisterMainMenu Parms{};
-
-	Parms.InObject = InObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.UnregisterMainMenuAll
-// (Final, Native, Public, BlueprintCallable)
-
-void AAppPlayerController::UnregisterMainMenuAll()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "UnregisterMainMenuAll");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.UnregisterMenu
-// (Final, Native, Public, BlueprintCallable)
-
-void AAppPlayerController::UnregisterMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "UnregisterMenu");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.UnregisterSingleMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    InMenuObject                                           (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AAppPlayerController::UnregisterSingleMenu(const class UObject* InMenuObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "UnregisterSingleMenu");
-
-	Params::AppPlayerController_UnregisterSingleMenu Parms{};
-
-	Parms.InMenuObject = InMenuObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.UnregisterSingleSubMenu
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    InMenuObject                                           (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AAppPlayerController::UnregisterSingleSubMenu(const class UObject* InMenuObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "UnregisterSingleSubMenu");
-
-	Params::AppPlayerController_UnregisterSingleSubMenu Parms{};
-
-	Parms.InMenuObject = InMenuObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.UnregisterSubMenu
-// (Final, Native, Public, BlueprintCallable)
-
-void AAppPlayerController::UnregisterSubMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "UnregisterSubMenu");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetLeftMouseButtonPressing
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AAppPlayerController::GetLeftMouseButtonPressing() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetLeftMouseButtonPressing");
-
-	Params::AppPlayerController_GetLeftMouseButtonPressing Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetLeftStickAxisValue
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FVector2D                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector2D AAppPlayerController::GetLeftStickAxisValue() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetLeftStickAxisValue");
-
-	Params::AppPlayerController_GetLeftStickAxisValue Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetRegisteredMenu
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* AAppPlayerController::GetRegisteredMenu() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetRegisteredMenu");
-
-	Params::AppPlayerController_GetRegisteredMenu Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetRegisteredSubMenu
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TArray<class UObject*>                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<class UObject*> AAppPlayerController::GetRegisteredSubMenu() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetRegisteredSubMenu");
-
-	Params::AppPlayerController_GetRegisteredSubMenu Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.GetSystemFocusedWidgetName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FName AAppPlayerController::GetSystemFocusedWidgetName() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "GetSystemFocusedWidgetName");
-
-	Params::AppPlayerController_GetSystemFocusedWidgetName Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.OnIsMenuInputEnabled
-// (Event, Public, BlueprintEvent, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AAppPlayerController::OnIsMenuInputEnabled() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnIsMenuInputEnabled");
-
-	Params::AppPlayerController_OnIsMenuInputEnabled Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.AppPlayerController.OnIsSubMenuInputEnabled
-// (Event, Public, BlueprintEvent, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AAppPlayerController::OnIsSubMenuInputEnabled() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AppPlayerController", "OnIsSubMenuInputEnabled");
-
-	Params::AppPlayerController_OnIsSubMenuInputEnabled Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -10696,6 +10549,31 @@ void UAuthSubsystem::SetCachedAppUserBaseData(const struct FUserGetDataResponse&
 }
 
 
+// Function UnionSystem.AuthSubsystem.SetCachedAppUserCrmId
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    CrmId                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAuthSubsystem::SetCachedAppUserCrmId(const class FString& CrmId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AuthSubsystem", "SetCachedAppUserCrmId");
+
+	Params::AuthSubsystem_SetCachedAppUserCrmId Parms{};
+
+	Parms.CrmId = std::move(CrmId);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionSystem.AuthSubsystem.SetCachedAppUserFairPlayPointData
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -10903,6 +10781,31 @@ const struct FAppUserBaseData UAuthSubsystem::GetCachedAppUserBaseData() const
 }
 
 
+// Function UnionSystem.AuthSubsystem.GetCachedAppUserCrmId
+// (Final, Native, Public, BlueprintCallable, Const)
+// Parameters:
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UAuthSubsystem::GetCachedAppUserCrmId() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AuthSubsystem", "GetCachedAppUserCrmId");
+
+	Params::AuthSubsystem_GetCachedAppUserCrmId Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.AuthSubsystem.GetEOSAuthToken
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -11087,6 +10990,31 @@ class FString UAuthSubsystem::GetPlatformToken(int32 LocalUserNum) const
 	Params::AuthSubsystem_GetPlatformToken Parms{};
 
 	Parms.LocalUserNum = LocalUserNum;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.AuthSubsystem.HasCachedAppUserCrmId
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAuthSubsystem::HasCachedAppUserCrmId() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AuthSubsystem", "HasCachedAppUserCrmId");
+
+	Params::AuthSubsystem_HasCachedAppUserCrmId Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -12267,8 +12195,9 @@ void UDebugImportantLogPanel::AddLog(const class FString& ClassName, const class
 // Parameters:
 // const class FString&                    LogLocation                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const class FString&                    LogString                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    LogConsole                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDebugImportantLogSubsystem::AddImportantLog(const class FString& LogLocation, const class FString& LogString)
+void UDebugImportantLogSubsystem::AddImportantLog(const class FString& LogLocation, const class FString& LogString, bool LogConsole)
 {
 	static class UFunction* Func = nullptr;
 
@@ -12279,6 +12208,7 @@ void UDebugImportantLogSubsystem::AddImportantLog(const class FString& LogLocati
 
 	Parms.LogLocation = std::move(LogLocation);
 	Parms.LogString = std::move(LogString);
+	Parms.LogConsole = LogConsole;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -12369,8 +12299,9 @@ void UDebugImportantLogSubsystem::SetImportantLogPanelVisible(bool bNewVisible)
 // Parameters:
 // const class FString&                    LogLocation                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const class FString&                    LogString                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    LogConsole                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDebugImportantLogUtil::AddImportantLog(const class FString& LogLocation, const class FString& LogString)
+void UDebugImportantLogUtil::AddImportantLog(const class FString& LogLocation, const class FString& LogString, bool LogConsole)
 {
 	static class UFunction* Func = nullptr;
 
@@ -12381,6 +12312,7 @@ void UDebugImportantLogUtil::AddImportantLog(const class FString& LogLocation, c
 
 	Parms.LogLocation = std::move(LogLocation);
 	Parms.LogString = std::move(LogString);
+	Parms.LogConsole = LogConsole;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -16074,7 +16006,7 @@ void UGameActivitySubsystem::ChangeActivityAvailability(int32 LocalUserNum, cons
 // Parameters:
 // int32                                   LocalUserNum                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FActivityObjectIdData&     ActivityIdData                                         (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const struct FEndActivityOption&        Option                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FEndActivityOption&        Option                                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const struct FUniqueNetIdRepl& PlatformUserId, EGameModeId ActivityId, EGameActivityOutcomeType Outcome, bool bSuccess)>OnComplete                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGameActivitySubsystem::EndActivity(int32 LocalUserNum, const struct FActivityObjectIdData& ActivityIdData, const struct FEndActivityOption& Option, TDelegate<void(const struct FUniqueNetIdRepl& PlatformUserId, EGameModeId ActivityId, EGameActivityOutcomeType Outcome, bool bSuccess)> OnComplete)
@@ -17665,7 +17597,7 @@ void UHttpHelper::Parse_DebugChangeFairPlayPoint(const class FString& OutData, i
 // Parameters:
 // const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDebugChangeFestaLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FDebugChangeFestaLastOrderResponse*Response                                               (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Parse_DebugChangeFestaLastOrder(const class FString& OutData, int32* ResCode, struct FDebugChangeFestaLastOrderResponse* Response)
 {
@@ -17698,7 +17630,7 @@ void UHttpHelper::Parse_DebugChangeFestaLastOrder(const class FString& OutData, 
 // Parameters:
 // const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDebugChangeLegendCompeLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeLastOrderResponse*Response                                               (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Parse_DebugChangeLegendCompeLastOrder(const class FString& OutData, int32* ResCode, struct FDebugChangeLegendCompeLastOrderResponse* Response)
 {
@@ -17731,7 +17663,7 @@ void UHttpHelper::Parse_DebugChangeLegendCompeLastOrder(const class FString& Out
 // Parameters:
 // const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDebugChangeLegendCompeRateResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeRateResponse*Response                                               (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Parse_DebugChangeLegendCompeRate(const class FString& OutData, int32* ResCode, struct FDebugChangeLegendCompeRateResponse* Response)
 {
@@ -19442,6 +19374,105 @@ void UHttpHelper::Parse_RankingGetRankingTimeTrial(const class FString& OutData,
 }
 
 
+// Function UnionSystem.HttpHelper.Parse_ReceiveRewardGetReceivedRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FReceiveRewardGetReceivedRewardsResponse*Response                                               (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_ReceiveRewardGetReceivedRewards(const class FString& OutData, int32* ResCode, struct FReceiveRewardGetReceivedRewardsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_ReceiveRewardGetReceivedRewards");
+
+	Params::HttpHelper_Parse_ReceiveRewardGetReceivedRewards Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
+// Function UnionSystem.HttpHelper.Parse_ReceiveRewardGetRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FReceiveRewardGetRewardsResponse*Response                                               (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_ReceiveRewardGetRewards(const class FString& OutData, int32* ResCode, struct FReceiveRewardGetRewardsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_ReceiveRewardGetRewards");
+
+	Params::HttpHelper_Parse_ReceiveRewardGetRewards Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
+// Function UnionSystem.HttpHelper.Parse_ReceiveRewardSaveRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FReceiveRewardSaveRewardsResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_ReceiveRewardSaveRewards(const class FString& OutData, int32* ResCode, struct FReceiveRewardSaveRewardsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_ReceiveRewardSaveRewards");
+
+	Params::HttpHelper_Parse_ReceiveRewardSaveRewards Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
 // Function UnionSystem.HttpHelper.Parse_ResultSaveFestaResult
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -20069,6 +20100,39 @@ void UHttpHelper::Parse_UserSaveUserNetworkSettings(const class FString& OutData
 }
 
 
+// Function UnionSystem.HttpHelper.Parse_UserSgAccountLink
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    OutData                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FUserSgAccountLinkResponse*      Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Parse_UserSgAccountLink(const class FString& OutData, int32* ResCode, struct FUserSgAccountLinkResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Parse_UserSgAccountLink");
+
+	Params::HttpHelper_Parse_UserSgAccountLink Parms{};
+
+	Parms.OutData = std::move(OutData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+}
+
+
 // Function UnionSystem.HttpHelper.QueryServerTime
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -20260,7 +20324,7 @@ bool UHttpHelper::Receive_DebugChangeFairPlayPoint(int32 Handle, bool* OutError,
 // int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDebugChangeFestaLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FDebugChangeFestaLastOrderResponse*Response                                               (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UHttpHelper::Receive_DebugChangeFestaLastOrder(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeFestaLastOrderResponse* Response)
@@ -20300,7 +20364,7 @@ bool UHttpHelper::Receive_DebugChangeFestaLastOrder(int32 Handle, bool* OutError
 // int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDebugChangeLegendCompeLastOrderResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeLastOrderResponse*Response                                               (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UHttpHelper::Receive_DebugChangeLegendCompeLastOrder(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeLegendCompeLastOrderResponse* Response)
@@ -20340,7 +20404,7 @@ bool UHttpHelper::Receive_DebugChangeLegendCompeLastOrder(int32 Handle, bool* Ou
 // int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDebugChangeLegendCompeRateResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FDebugChangeLegendCompeRateResponse*Response                                               (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UHttpHelper::Receive_DebugChangeLegendCompeRate(int32 Handle, bool* OutError, int32* ResCode, struct FDebugChangeLegendCompeRateResponse* Response)
@@ -22414,6 +22478,126 @@ bool UHttpHelper::Receive_RankingGetRankingTimeTrial(int32 Handle, bool* OutErro
 }
 
 
+// Function UnionSystem.HttpHelper.Receive_ReceiveRewardGetReceivedRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FReceiveRewardGetReceivedRewardsResponse*Response                                               (Parm, OutParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_ReceiveRewardGetReceivedRewards(int32 Handle, bool* OutError, int32* ResCode, struct FReceiveRewardGetReceivedRewardsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_ReceiveRewardGetReceivedRewards");
+
+	Params::HttpHelper_Receive_ReceiveRewardGetReceivedRewards Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Receive_ReceiveRewardGetRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FReceiveRewardGetRewardsResponse*Response                                               (Parm, OutParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_ReceiveRewardGetRewards(int32 Handle, bool* OutError, int32* ResCode, struct FReceiveRewardGetRewardsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_ReceiveRewardGetRewards");
+
+	Params::HttpHelper_Receive_ReceiveRewardGetRewards Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Receive_ReceiveRewardSaveRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FReceiveRewardSaveRewardsResponse*Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_ReceiveRewardSaveRewards(int32 Handle, bool* OutError, int32* ResCode, struct FReceiveRewardSaveRewardsResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_ReceiveRewardSaveRewards");
+
+	Params::HttpHelper_Receive_ReceiveRewardSaveRewards Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.HttpHelper.Receive_ResultSaveFestaResult
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -23174,6 +23358,46 @@ bool UHttpHelper::Receive_UserSaveUserNetworkSettings(int32 Handle, bool* OutErr
 }
 
 
+// Function UnionSystem.HttpHelper.Receive_UserSgAccountLink
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Handle                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   OutError                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ResCode                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FUserSgAccountLinkResponse*      Response                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHttpHelper::Receive_UserSgAccountLink(int32 Handle, bool* OutError, int32* ResCode, struct FUserSgAccountLinkResponse* Response)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Receive_UserSgAccountLink");
+
+	Params::HttpHelper_Receive_UserSgAccountLink Parms{};
+
+	Parms.Handle = Handle;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutError != nullptr)
+		*OutError = Parms.OutError;
+
+	if (ResCode != nullptr)
+		*ResCode = Parms.ResCode;
+
+	if (Response != nullptr)
+		*Response = std::move(Parms.Response);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.HttpHelper.Send_CntReplayGetSignedUrl
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -23617,7 +23841,7 @@ int32 UHttpHelper::Send_DebugChangeFairPlayPoint_NoResend(const struct FDebugCha
 // Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_DebugChangeFestaLastOrder(const struct FDebugChangeFestaLastOrderRequest& Request)
@@ -23645,7 +23869,7 @@ int32 UHttpHelper::Send_DebugChangeFestaLastOrder(const struct FDebugChangeFesta
 // Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_Callbacked
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_DebugChangeFestaLastOrder_Callbacked(const struct FDebugChangeFestaLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -23672,7 +23896,7 @@ void UHttpHelper::Send_DebugChangeFestaLastOrder_Callbacked(const struct FDebugC
 // Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_Callbacked_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_DebugChangeFestaLastOrder_Callbacked_NoResend(const struct FDebugChangeFestaLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -23699,7 +23923,7 @@ void UHttpHelper::Send_DebugChangeFestaLastOrder_Callbacked_NoResend(const struc
 // Function UnionSystem.HttpHelper.Send_DebugChangeFestaLastOrder_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeFestaLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_DebugChangeFestaLastOrder_NoResend(const struct FDebugChangeFestaLastOrderRequest& Request)
@@ -23727,7 +23951,7 @@ int32 UHttpHelper::Send_DebugChangeFestaLastOrder_NoResend(const struct FDebugCh
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_DebugChangeLegendCompeLastOrder(const struct FDebugChangeLegendCompeLastOrderRequest& Request)
@@ -23755,7 +23979,7 @@ int32 UHttpHelper::Send_DebugChangeLegendCompeLastOrder(const struct FDebugChang
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_Callbacked
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_DebugChangeLegendCompeLastOrder_Callbacked(const struct FDebugChangeLegendCompeLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -23782,7 +24006,7 @@ void UHttpHelper::Send_DebugChangeLegendCompeLastOrder_Callbacked(const struct F
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend(const struct FDebugChangeLegendCompeLastOrderRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -23809,7 +24033,7 @@ void UHttpHelper::Send_DebugChangeLegendCompeLastOrder_Callbacked_NoResend(const
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeLastOrder_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeLastOrderRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_DebugChangeLegendCompeLastOrder_NoResend(const struct FDebugChangeLegendCompeLastOrderRequest& Request)
@@ -23837,7 +24061,7 @@ int32 UHttpHelper::Send_DebugChangeLegendCompeLastOrder_NoResend(const struct FD
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_DebugChangeLegendCompeRate(const struct FDebugChangeLegendCompeRateRequest& Request)
@@ -23865,7 +24089,7 @@ int32 UHttpHelper::Send_DebugChangeLegendCompeRate(const struct FDebugChangeLege
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_Callbacked
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_DebugChangeLegendCompeRate_Callbacked(const struct FDebugChangeLegendCompeRateRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -23892,7 +24116,7 @@ void UHttpHelper::Send_DebugChangeLegendCompeRate_Callbacked(const struct FDebug
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_Callbacked_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UHttpHelper::Send_DebugChangeLegendCompeRate_Callbacked_NoResend(const struct FDebugChangeLegendCompeRateRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
@@ -23919,7 +24143,7 @@ void UHttpHelper::Send_DebugChangeLegendCompeRate_Callbacked_NoResend(const stru
 // Function UnionSystem.HttpHelper.Send_DebugChangeLegendCompeRate_NoResend
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FDebugChangeLegendCompeRateRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 int32 UHttpHelper::Send_DebugChangeLegendCompeRate_NoResend(const struct FDebugChangeLegendCompeRateRequest& Request)
@@ -29554,6 +29778,336 @@ int32 UHttpHelper::Send_RankingGetRankingTimeTrial_NoResend(const struct FRankin
 }
 
 
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetReceivedRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_ReceiveRewardGetReceivedRewards(const struct FReceiveRewardGetReceivedRewardsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetReceivedRewards");
+
+	Params::HttpHelper_Send_ReceiveRewardGetReceivedRewards Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetReceivedRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_ReceiveRewardGetReceivedRewards_Callbacked(const struct FReceiveRewardGetReceivedRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetReceivedRewards_Callbacked");
+
+	Params::HttpHelper_Send_ReceiveRewardGetReceivedRewards_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetReceivedRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend(const struct FReceiveRewardGetReceivedRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetReceivedRewards_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetReceivedRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_ReceiveRewardGetReceivedRewards_NoResend(const struct FReceiveRewardGetReceivedRewardsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetReceivedRewards_NoResend");
+
+	Params::HttpHelper_Send_ReceiveRewardGetReceivedRewards_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_ReceiveRewardGetRewards(const struct FReceiveRewardGetRewardsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetRewards");
+
+	Params::HttpHelper_Send_ReceiveRewardGetRewards Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_ReceiveRewardGetRewards_Callbacked(const struct FReceiveRewardGetRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetRewards_Callbacked");
+
+	Params::HttpHelper_Send_ReceiveRewardGetRewards_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_ReceiveRewardGetRewards_Callbacked_NoResend(const struct FReceiveRewardGetRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetRewards_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_ReceiveRewardGetRewards_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardGetRewards_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardGetRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_ReceiveRewardGetRewards_NoResend(const struct FReceiveRewardGetRewardsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardGetRewards_NoResend");
+
+	Params::HttpHelper_Send_ReceiveRewardGetRewards_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardSaveRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_ReceiveRewardSaveRewards(const struct FReceiveRewardSaveRewardsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardSaveRewards");
+
+	Params::HttpHelper_Send_ReceiveRewardSaveRewards Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardSaveRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_ReceiveRewardSaveRewards_Callbacked(const struct FReceiveRewardSaveRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardSaveRewards_Callbacked");
+
+	Params::HttpHelper_Send_ReceiveRewardSaveRewards_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardSaveRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_ReceiveRewardSaveRewards_Callbacked_NoResend(const struct FReceiveRewardSaveRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardSaveRewards_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_ReceiveRewardSaveRewards_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_ReceiveRewardSaveRewards_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FReceiveRewardSaveRewardsRequest&Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_ReceiveRewardSaveRewards_NoResend(const struct FReceiveRewardSaveRewardsRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_ReceiveRewardSaveRewards_NoResend");
+
+	Params::HttpHelper_Send_ReceiveRewardSaveRewards_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.HttpHelper.Send_ResultSaveFestaResult
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -31644,6 +32198,116 @@ int32 UHttpHelper::Send_UserSaveUserNetworkSettings_NoResend(const struct FUserS
 }
 
 
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FUserSgAccountLinkRequest& Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_UserSgAccountLink(const struct FUserSgAccountLinkRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_UserSgAccountLink");
+
+	Params::HttpHelper_Send_UserSgAccountLink Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink_Callbacked
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FUserSgAccountLinkRequest& Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_UserSgAccountLink_Callbacked(const struct FUserSgAccountLinkRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_UserSgAccountLink_Callbacked");
+
+	Params::HttpHelper_Send_UserSgAccountLink_Callbacked Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink_Callbacked_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FUserSgAccountLinkRequest& Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHttpHelper::Send_UserSgAccountLink_Callbacked_NoResend(const struct FUserSgAccountLinkRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_UserSgAccountLink_Callbacked_NoResend");
+
+	Params::HttpHelper_Send_UserSgAccountLink_Callbacked_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+	Parms.Callback = Callback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.HttpHelper.Send_UserSgAccountLink_NoResend
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FUserSgAccountLinkRequest& Request                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UHttpHelper::Send_UserSgAccountLink_NoResend(const struct FUserSgAccountLinkRequest& Request)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("HttpHelper", "Send_UserSgAccountLink_NoResend");
+
+	Params::HttpHelper_Send_UserSgAccountLink_NoResend Parms{};
+
+	Parms.Request = std::move(Request);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UnionSystem.HttpHelper.TransferDataForDownload
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -33024,6 +33688,150 @@ bool UKeyConfigPressAnyKey::IsGamepadKey() const
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeChanceDetailText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// ELegendCompeChanceUpType                ChanceUpType                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   order                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText ULegendCompeChanceUpUtil::GetLegendCompeChanceDetailText(ELegendCompeChanceUpType ChanceUpType, int32 order, int32 Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LegendCompeChanceUpUtil", "GetLegendCompeChanceDetailText");
+
+	Params::LegendCompeChanceUpUtil_GetLegendCompeChanceDetailText Parms{};
+
+	Parms.ChanceUpType = ChanceUpType;
+	Parms.order = order;
+	Parms.Ratio = Ratio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeChanceUpRatioText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText ULegendCompeChanceUpUtil::GetLegendCompeChanceUpRatioText(int32 Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LegendCompeChanceUpUtil", "GetLegendCompeChanceUpRatioText");
+
+	Params::LegendCompeChanceUpUtil_GetLegendCompeChanceUpRatioText Parms{};
+
+	Parms.Ratio = Ratio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeChanceUpTypeText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// ELegendCompeChanceUpType                ChanceUpType                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText ULegendCompeChanceUpUtil::GetLegendCompeChanceUpTypeText(ELegendCompeChanceUpType ChanceUpType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LegendCompeChanceUpUtil", "GetLegendCompeChanceUpTypeText");
+
+	Params::LegendCompeChanceUpUtil_GetLegendCompeChanceUpTypeText Parms{};
+
+	Parms.ChanceUpType = ChanceUpType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompeOrderText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   order                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText ULegendCompeChanceUpUtil::GetLegendCompeOrderText(int32 order)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LegendCompeChanceUpUtil", "GetLegendCompeOrderText");
+
+	Params::LegendCompeChanceUpUtil_GetLegendCompeOrderText Parms{};
+
+	Parms.order = order;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.LegendCompeChanceUpUtil.GetLegendCompePointText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Point                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText ULegendCompeChanceUpUtil::GetLegendCompePointText(int32 Point)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LegendCompeChanceUpUtil", "GetLegendCompePointText");
+
+	Params::LegendCompeChanceUpUtil_GetLegendCompePointText Parms{};
+
+	Parms.Point = Point;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -39944,53 +40752,507 @@ void IMenuInputRecieveInterface::SilentFocusReady(bool bOnce)
 }
 
 
-// Function UnionSystem.MenuPlayerController.SetMenuDirectionKeyEnable
-// (Final, Native, Public, BlueprintCallable)
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationIn
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bEnableDirection                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AMenuPlayerController::SetMenuDirectionKeyEnable(bool bEnableDirection)
+class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationIn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MenuPlayerController", "SetMenuDirectionKeyEnable");
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationIn");
 
-	Params::MenuPlayerController_SetMenuDirectionKeyEnable Parms{};
-
-	Parms.bEnableDirection = bEnableDirection;
+	Params::MenuPopupWindowInterface_GetAnimationIn Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationLoop
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationLoop");
+
+	Params::MenuPopupWindowInterface_GetAnimationLoop Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.GetAnimationOut
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UWidgetAnimation* IMenuPopupWindowInterface::GetAnimationOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetAnimationOut");
+
+	Params::MenuPopupWindowInterface_GetAnimationOut Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowButtonType
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPopupWindowButtonType                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EPopupWindowButtonType IMenuPopupWindowInterface::GetPopupWindowButtonType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowButtonType");
+
+	Params::MenuPopupWindowInterface_GetPopupWindowButtonType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.GetPopupWindowType
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPopupWindowType                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EPopupWindowType IMenuPopupWindowInterface::GetPopupWindowType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "GetPopupWindowType");
+
+	Params::MenuPopupWindowInterface_GetPopupWindowType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.InitParam
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPopupWindowButtonType                  ButtonType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::InitParam(EPopupWindowButtonType ButtonType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "InitParam");
+
+	Params::MenuPopupWindowInterface_InitParam Parms{};
+
+	Parms.ButtonType = ButtonType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function UnionSystem.MenuPlayerController.GetMenuDirectionKeyEnable
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionSystem.MenuPopupWindowInterface.PlayAnimationIn
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 
-bool AMenuPlayerController::GetMenuDirectionKeyEnable() const
+void IMenuPopupWindowInterface::PlayAnimationIn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MenuPlayerController", "GetMenuDirectionKeyEnable");
-
-	Params::MenuPlayerController_GetMenuDirectionKeyEnable Parms{};
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "PlayAnimationIn");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
+}
 
-	return Parms.ReturnValue;
+
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonControlDelayTime
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   InTime                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetButtonControlDelayTime(float InTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonControlDelayTime");
+
+	Params::MenuPopupWindowInterface_SetButtonControlDelayTime Parms{};
+
+	Parms.InTime = InTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetButtonText
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class FText>&              BtnTextArray                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetButtonText(const TArray<class FText>& BtnTextArray)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetButtonText");
+
+	Params::MenuPopupWindowInterface_SetButtonText Parms{};
+
+	Parms.BtnTextArray = std::move(BtnTextArray);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetDisplayFooterButton
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const bool                              InDisplay                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetDisplayFooterButton(const bool InDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDisplayFooterButton");
+
+	Params::MenuPopupWindowInterface_SetDisplayFooterButton Parms{};
+
+	Parms.InDisplay = InDisplay;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetDonpaTicketCount
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   CurrentCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AfterCount                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetDonpaTicketCount(int32 CurrentCount, int32 AfterCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetDonpaTicketCount");
+
+	Params::MenuPopupWindowInterface_SetDonpaTicketCount Parms{};
+
+	Parms.CurrentCount = CurrentCount;
+	Parms.AfterCount = AfterCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetEnableInput
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InEnable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetEnableInput(bool InEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetEnableInput");
+
+	Params::MenuPopupWindowInterface_SetEnableInput Parms{};
+
+	Parms.InEnable = InEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetFooterMenuBtn
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   BtnIconIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   BtnIconType                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      BtnText                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetFooterMenuBtn(int32 BtnIconIndex, int32 BtnIconType, const class FText& BtnText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetFooterMenuBtn");
+
+	Params::MenuPopupWindowInterface_SetFooterMenuBtn Parms{};
+
+	Parms.BtnIconIndex = BtnIconIndex;
+	Parms.BtnIconType = BtnIconType;
+	Parms.BtnText = std::move(BtnText);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetImageButtonSelectText
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetImageButtonSelectText(const class FText& InText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageButtonSelectText");
+
+	Params::MenuPopupWindowInterface_SetImageButtonSelectText Parms{};
+
+	Parms.InText = std::move(InText);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetImageTexture
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UTexture2D*                 Texture2D                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetImageTexture(const class UTexture2D* Texture2D)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetImageTexture");
+
+	Params::MenuPopupWindowInterface_SetImageTexture Parms{};
+
+	Parms.Texture2D = Texture2D;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetInitialFocusButtonIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const int32                             InButtonIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetInitialFocusButtonIndex(const int32 InButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetInitialFocusButtonIndex");
+
+	Params::MenuPopupWindowInterface_SetInitialFocusButtonIndex Parms{};
+
+	Parms.InButtonIndex = InButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoDisplayIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetPopupInfoDisplayIndex(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoDisplayIndex");
+
+	Params::MenuPopupWindowInterface_SetPopupInfoDisplayIndex Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetPopupInfoMainMenuButtonIconIndex
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Btn01IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Btn02IconIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetPopupInfoMainMenuButtonIconIndex(int32 Btn01IconIndex, int32 Btn02IconIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetPopupInfoMainMenuButtonIconIndex");
+
+	Params::MenuPopupWindowInterface_SetPopupInfoMainMenuButtonIconIndex Parms{};
+
+	Parms.Btn01IconIndex = Btn01IconIndex;
+	Parms.Btn02IconIndex = Btn02IconIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetTextMessege
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetTextMessege(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextMessege");
+
+	Params::MenuPopupWindowInterface_SetTextMessege Parms{};
+
+	Parms.Text = std::move(Text);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionSystem.MenuPopupWindowInterface.SetTextTitle
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    Attension                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IMenuPopupWindowInterface::SetTextTitle(const class FText& Text, bool Attension)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("MenuPopupWindowInterface", "SetTextTitle");
+
+	Params::MenuPopupWindowInterface_SetTextTitle Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.Attension = Attension;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -46287,6 +47549,37 @@ void UPlaylogManager::OnUrl(const class FString& RegistrationURL)
 }
 
 
+// Function UnionSystem.PlaylogManager.OnUserSgAccountLinkComplete
+// (Final, Native, Private)
+// Parameters:
+// const class FString&                    ApiName                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    RequestData                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    ResponseData                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    Error                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPlaylogManager::OnUserSgAccountLinkComplete(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlaylogManager", "OnUserSgAccountLinkComplete");
+
+	Params::PlaylogManager_OnUserSgAccountLinkComplete Parms{};
+
+	Parms.ApiName = std::move(ApiName);
+	Parms.RequestData = std::move(RequestData);
+	Parms.ResponseData = std::move(ResponseData);
+	Parms.Error = Error;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionSystem.PlaylogManager.SteamOnSetupComplete
 // (Final, Native, Private)
 // Parameters:
@@ -47324,6 +48617,150 @@ bool URankingSubsystem::GetRankingTimeTrial(const class FString& FilePathFull, T
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchChanceDetailText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// ERankMachChanceUpType                   ChanceUpType                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   order                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText URankMatchChanceupUtil::GetRankMatchChanceDetailText(ERankMachChanceUpType ChanceUpType, int32 order, int32 Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RankMatchChanceupUtil", "GetRankMatchChanceDetailText");
+
+	Params::RankMatchChanceupUtil_GetRankMatchChanceDetailText Parms{};
+
+	Parms.ChanceUpType = ChanceUpType;
+	Parms.order = order;
+	Parms.Ratio = Ratio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchChanceUpRatioText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText URankMatchChanceupUtil::GetRankMatchChanceUpRatioText(int32 Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RankMatchChanceupUtil", "GetRankMatchChanceUpRatioText");
+
+	Params::RankMatchChanceupUtil_GetRankMatchChanceUpRatioText Parms{};
+
+	Parms.Ratio = Ratio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchChanceUpTypeText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// ERankMachChanceUpType                   ChanceUpType                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText URankMatchChanceupUtil::GetRankMatchChanceUpTypeText(ERankMachChanceUpType ChanceUpType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RankMatchChanceupUtil", "GetRankMatchChanceUpTypeText");
+
+	Params::RankMatchChanceupUtil_GetRankMatchChanceUpTypeText Parms{};
+
+	Parms.ChanceUpType = ChanceUpType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchOrderText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Ratio                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText URankMatchChanceupUtil::GetRankMatchOrderText(int32 Ratio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RankMatchChanceupUtil", "GetRankMatchOrderText");
+
+	Params::RankMatchChanceupUtil_GetRankMatchOrderText Parms{};
+
+	Parms.Ratio = Ratio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.RankMatchChanceupUtil.GetRankMatchPointText
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Point                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText URankMatchChanceupUtil::GetRankMatchPointText(int32 Point)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("RankMatchChanceupUtil", "GetRankMatchPointText");
+
+	Params::RankMatchChanceupUtil_GetRankMatchPointText Parms{};
+
+	Parms.Point = Point;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -49304,313 +50741,6 @@ void ASequenceParameterActor::SetSequenceVisibility_(bool bVisibility)
 	Params::SequenceParameterActor_SetSequenceVisibility_ Parms{};
 
 	Parms.bVisibility = bVisibility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionSystem.SessionManager.GetDisplayCode
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class FString*                          displayCode                                            (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetDisplayCode(class FString* displayCode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetDisplayCode");
-
-	Params::SessionManager_GetDisplayCode Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (displayCode != nullptr)
-		*displayCode = std::move(Parms.displayCode);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetExternalAddressRegionName
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class FString*                          AddressRegionName                                      (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetExternalAddressRegionName(class FString* AddressRegionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetExternalAddressRegionName");
-
-	Params::SessionManager_GetExternalAddressRegionName Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (AddressRegionName != nullptr)
-		*AddressRegionName = std::move(Parms.AddressRegionName);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetFairPlayPoint
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32*                                  OutFairPlayPoint                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetFairPlayPoint(int32* OutFairPlayPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetFairPlayPoint");
-
-	Params::SessionManager_GetFairPlayPoint Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutFairPlayPoint != nullptr)
-		*OutFairPlayPoint = Parms.OutFairPlayPoint;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetIsBan
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// bool*                                   bOutIsBan                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetIsBan(bool* bOutIsBan)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetIsBan");
-
-	Params::SessionManager_GetIsBan Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (bOutIsBan != nullptr)
-		*bOutIsBan = Parms.bOutIsBan;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetLoginComplete
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetLoginComplete()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetLoginComplete");
-
-	Params::SessionManager_GetLoginComplete Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetPenaltyEndTime
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class FString*                          endTime                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetPenaltyEndTime(class FString* endTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetPenaltyEndTime");
-
-	Params::SessionManager_GetPenaltyEndTime Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (endTime != nullptr)
-		*endTime = std::move(Parms.endTime);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetRegionCode
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class FString*                          regionCode                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetRegionCode(class FString* regionCode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetRegionCode");
-
-	Params::SessionManager_GetRegionCode Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (regionCode != nullptr)
-		*regionCode = std::move(Parms.regionCode);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetResponseCodeAbstract
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EResponseCodeAbstract                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EResponseCodeAbstract USessionManager::GetResponseCodeAbstract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetResponseCodeAbstract");
-
-	Params::SessionManager_GetResponseCodeAbstract Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetSwitchOnlineCode
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32*                                  switchOnlineCode                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetSwitchOnlineCode(int32* switchOnlineCode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetSwitchOnlineCode");
-
-	Params::SessionManager_GetSwitchOnlineCode Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (switchOnlineCode != nullptr)
-		*switchOnlineCode = Parms.switchOnlineCode;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.GetUserID
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class FString*                          UserId                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool USessionManager::GetUserID(class FString* UserId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "GetUserID");
-
-	Params::SessionManager_GetUserID Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (UserId != nullptr)
-		*UserId = std::move(Parms.UserId);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionSystem.SessionManager.StartLogin
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TDelegate<void(bool Error, bool SavedataDeleted)>Callback                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USessionManager::StartLogin(TDelegate<void(bool Error, bool SavedataDeleted)> Callback)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SessionManager", "StartLogin");
-
-	Params::SessionManager_StartLogin Parms{};
-
-	Parms.Callback = Callback;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -53995,6 +55125,36 @@ bool UUnionGraph::Dump(const class FString& Name_0)
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionSystem.UnionLocalizationTextLibrary.GetText
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// EUnionLocalizationTextType              Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8                                   textIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText UUnionLocalizationTextLibrary::GetText(EUnionLocalizationTextType Type, uint8 textIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("UnionLocalizationTextLibrary", "GetText");
+
+	Params::UnionLocalizationTextLibrary_GetText Parms{};
+
+	Parms.Type = Type;
+	Parms.textIndex = textIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

@@ -82,6 +82,58 @@ void UABP_Cream_Physics_C::HoverboardControlRogLayer(const struct FPoseLink& Hov
 }
 
 
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.HoverboardItemHoldBlendLeft
+// (HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FPoseLink&                 BasePose                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPoseLink&                 LeftHoldPose                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       HoverboardItemHoldBlendLeft_0                          (Parm, OutParm, NoDestructor)
+
+void UABP_Cream_Physics_C::HoverboardItemHoldBlendLeft(const struct FPoseLink& BasePose, const struct FPoseLink& LeftHoldPose, struct FPoseLink* HoverboardItemHoldBlendLeft_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Cream_Physics_C", "HoverboardItemHoldBlendLeft");
+
+	Params::ABP_Cream_Physics_C_HoverboardItemHoldBlendLeft Parms{};
+
+	Parms.BasePose = std::move(BasePose);
+	Parms.LeftHoldPose = std::move(LeftHoldPose);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (HoverboardItemHoldBlendLeft_0 != nullptr)
+		*HoverboardItemHoldBlendLeft_0 = std::move(Parms.HoverboardItemHoldBlendLeft_0);
+}
+
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.HoverboardItemHoldBlendRight
+// (HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FPoseLink&                 BasePose                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPoseLink&                 RightHoldPose                                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       HoverboardItemHoldBlendRight_0                         (Parm, OutParm, NoDestructor)
+
+void UABP_Cream_Physics_C::HoverboardItemHoldBlendRight(const struct FPoseLink& BasePose, const struct FPoseLink& RightHoldPose, struct FPoseLink* HoverboardItemHoldBlendRight_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Cream_Physics_C", "HoverboardItemHoldBlendRight");
+
+	Params::ABP_Cream_Physics_C_HoverboardItemHoldBlendRight Parms{};
+
+	Parms.BasePose = std::move(BasePose);
+	Parms.RightHoldPose = std::move(RightHoldPose);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (HoverboardItemHoldBlendRight_0 != nullptr)
+		*HoverboardItemHoldBlendRight_0 = std::move(Parms.HoverboardItemHoldBlendRight_0);
+}
+
+
 // Function ABP_Cream_Physics.ABP_Cream_Physics_C.KawaiiPhysicsLayer
 // (HasOutParams, BlueprintCallable)
 // Parameters:
@@ -103,6 +155,88 @@ void UABP_Cream_Physics_C::KawaiiPhysicsLayer(const struct FPoseLink& InPose, st
 
 	if (KawaiiPhysicsLayer_0 != nullptr)
 		*KawaiiPhysicsLayer_0 = std::move(Parms.KawaiiPhysicsLayer_0);
+}
+
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.MachineItemHoldBlendLeft
+// (HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FPoseLink&                 BasePose                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPoseLink&                 LeftHoldPose                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       MachineItemHoldBlendLeft_0                             (Parm, OutParm, NoDestructor)
+
+void UABP_Cream_Physics_C::MachineItemHoldBlendLeft(const struct FPoseLink& BasePose, const struct FPoseLink& LeftHoldPose, struct FPoseLink* MachineItemHoldBlendLeft_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Cream_Physics_C", "MachineItemHoldBlendLeft");
+
+	Params::ABP_Cream_Physics_C_MachineItemHoldBlendLeft Parms{};
+
+	Parms.BasePose = std::move(BasePose);
+	Parms.LeftHoldPose = std::move(LeftHoldPose);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MachineItemHoldBlendLeft_0 != nullptr)
+		*MachineItemHoldBlendLeft_0 = std::move(Parms.MachineItemHoldBlendLeft_0);
+}
+
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.MachineItemHoldBlendRight
+// (HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FPoseLink&                 BasePose                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPoseLink&                 LeftHoldPose                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       MachineItemHoldBlendRight_0                            (Parm, OutParm, NoDestructor)
+
+void UABP_Cream_Physics_C::MachineItemHoldBlendRight(const struct FPoseLink& BasePose, const struct FPoseLink& LeftHoldPose, struct FPoseLink* MachineItemHoldBlendRight_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Cream_Physics_C", "MachineItemHoldBlendRight");
+
+	Params::ABP_Cream_Physics_C_MachineItemHoldBlendRight Parms{};
+
+	Parms.BasePose = std::move(BasePose);
+	Parms.LeftHoldPose = std::move(LeftHoldPose);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MachineItemHoldBlendRight_0 != nullptr)
+		*MachineItemHoldBlendRight_0 = std::move(Parms.MachineItemHoldBlendRight_0);
+}
+
+
+// Function ABP_Cream_Physics.ABP_Cream_Physics_C.MenuFacialOverride
+// (HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FPoseLink&                 MenuFinalPose                                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// bool                                    InPlayingMontage                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPoseLink&                 MenuDefaltFace                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPoseLink&                 MenuOverrideFace                                       (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       MenuFacialOverride_0                                   (Parm, OutParm, NoDestructor)
+
+void UABP_Cream_Physics_C::MenuFacialOverride(const struct FPoseLink& MenuFinalPose, bool InPlayingMontage, const struct FPoseLink& MenuDefaltFace, const struct FPoseLink& MenuOverrideFace, struct FPoseLink* MenuFacialOverride_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Cream_Physics_C", "MenuFacialOverride");
+
+	Params::ABP_Cream_Physics_C_MenuFacialOverride Parms{};
+
+	Parms.MenuFinalPose = std::move(MenuFinalPose);
+	Parms.InPlayingMontage = InPlayingMontage;
+	Parms.MenuDefaltFace = std::move(MenuDefaltFace);
+	Parms.MenuOverrideFace = std::move(MenuOverrideFace);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MenuFacialOverride_0 != nullptr)
+		*MenuFacialOverride_0 = std::move(Parms.MenuFacialOverride_0);
 }
 
 

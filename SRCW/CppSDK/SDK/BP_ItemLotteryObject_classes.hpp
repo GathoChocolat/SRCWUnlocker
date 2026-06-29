@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemLotteryObject.BP_ItemLotteryObject_C
-// 0x0008 (0x13A8 - 0x13A0)
+// 0x0008 (0x13F8 - 0x13F0)
 class ABP_ItemLotteryObject_C final : public AItemLotteryObject
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x13A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x13F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

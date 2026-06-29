@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function WBP_Result_Sub_BonusCountIcon.WBP_Result_Sub_BonusCountIcon_C.ExecuteUbergraph_WBP_Result_Sub_BonusCountIcon
-// 0x00A0 (0x00A0 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct WBP_Result_Sub_BonusCountIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusCountIcon final
 {
 public:
@@ -28,8 +28,8 @@ public:
 	bool                                          K2Node_CustomEvent_bIs1st;                         // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0010)()
-	struct FMenuGroupRaceBonusData                CallFunc_GetMenuGroupBonusData_ReturnValue;        // 0x0028(0x0070)()
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FMenuGroupRaceBonusData                CallFunc_GetMenuGroupBonusData_ReturnValue;        // 0x0028(0x0080)()
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Result_Sub_BonusCountIcon_C_ExecuteUbergraph_WBP_Result_Sub_BonusCountIcon;
 

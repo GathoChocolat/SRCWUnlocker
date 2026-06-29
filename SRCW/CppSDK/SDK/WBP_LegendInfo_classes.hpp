@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
@@ -86,8 +87,6 @@ public:
 	void OnInitialized();
 	void SetCurrentRateNumber();
 	void SetInfoDispData(const struct FLegendCompeInfoDispData& InDispData);
-	void SetPopupDispState(EGameEventPhase Phase);
-	void SetRateDispState(EGameEventPhase Phase, bool IsPlayed, bool IsQualified);
 
 public:
 	static class UClass* StaticClass()

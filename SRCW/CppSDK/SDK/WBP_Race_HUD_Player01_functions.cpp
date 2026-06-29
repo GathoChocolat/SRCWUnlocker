@@ -1895,10 +1895,10 @@ void UWBP_Race_HUD_Player01_C::SetLapUIVisible(bool bVisible)
 // Function WBP_Race_HUD_Player01.WBP_Race_HUD_Player01_C.SetLostItemInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   RacerId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   RacerID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EItemId                                 ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Race_HUD_Player01_C::SetLostItemInfo(int32 RacerId, EItemId ItemId)
+void UWBP_Race_HUD_Player01_C::SetLostItemInfo(int32 RacerID, EItemId ItemId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1907,7 +1907,7 @@ void UWBP_Race_HUD_Player01_C::SetLostItemInfo(int32 RacerId, EItemId ItemId)
 
 	Params::WBP_Race_HUD_Player01_C_SetLostItemInfo Parms{};
 
-	Parms.RacerId = RacerId;
+	Parms.RacerID = RacerID;
 	Parms.ItemId = ItemId;
 
 	UObject::ProcessEvent(Func, &Parms);

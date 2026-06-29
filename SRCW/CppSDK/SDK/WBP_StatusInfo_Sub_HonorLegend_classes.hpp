@@ -13,13 +13,14 @@
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_StatusInfo_Sub_HonorLegend.WBP_StatusInfo_Sub_HonorLegend_C
-// 0x00D8 (0x0468 - 0x0390)
+// 0x00E0 (0x0470 - 0x0390)
 class UWBP_StatusInfo_Sub_HonorLegend_C final : public ULegendCompeRewardInfoSubWidget
 {
 public:
@@ -48,8 +49,9 @@ public:
 	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_02;                  // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_02_RankingLegend;    // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_03;                  // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_04;                  // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_05;                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_03_RankingLegend;    // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_04;                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_StatusInfo_Sub_HonorTable_01_C*    WBP_StatusInfo_Sub_HonorTable_05;                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_StatusInfo_Sub_HonorLegend(int32 EntryPoint);

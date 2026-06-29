@@ -19,23 +19,25 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Result_Reward.WBP_Result_Reward_C
-// 0x0078 (0x0358 - 0x02E0)
+// 0x0088 (0x0368 - 0x02E0)
 class UWBP_Result_Reward_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       InLoop;                                            // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UUnionRichTextBlock*                    TXT_RacerAward;                                    // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_01;             // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_02;             // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_03;             // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_04;             // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         CurrentItemIndex;                                  // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bRewardDispFinish;                                 // 0x031C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FResultRewardItemInfo>          ItemInfos;                                         // 0x0320(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
-	struct FResultRewardItemInfo                  CurrentItemInfo;                                   // 0x0330(0x0020)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
-	class UWBP_Result_Sub_DonpaTicket_Details_C*  CurrentItemWidget;                                 // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       PointUp_Pop_Inloop;                                // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       InLoop;                                            // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UUnionRichTextBlock*                    TXT_RacerAward;                                    // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CMN_ChancePop_C*                   WBP_CMN_ChancePop;                                 // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_01;             // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_02;             // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_03;             // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Result_Sub_DonpaTicket_Details_C*  WBP_Result_Sub_DonpaTicket_Details_04;             // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         CurrentItemIndex;                                  // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bRewardDispFinish;                                 // 0x032C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32D[0x3];                                      // 0x032D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FResultRewardItemInfo>          ItemInfos;                                         // 0x0330(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
+	struct FResultRewardItemInfo                  CurrentItemInfo;                                   // 0x0340(0x0020)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
+	class UWBP_Result_Sub_DonpaTicket_Details_C*  CurrentItemWidget;                                 // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CloseReward();

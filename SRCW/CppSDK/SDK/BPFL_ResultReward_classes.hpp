@@ -22,6 +22,7 @@ namespace SDK
 class UBPFL_ResultReward_C final : public UBlueprintFunctionLibrary
 {
 public:
+	static void MakeOnlineResultRewardItemInfos(TArray<struct FRewardRedStarRingData>& RSRList, class UObject* __WorldContext, TArray<struct FResultRewardItemInfo>* Output);
 	static void MakeResultRewardItemInfos(TArray<struct FRewardRedStarRingData>& RSRList, class UObject* __WorldContext, TArray<struct FResultRewardItemInfo>* Output);
 
 public:

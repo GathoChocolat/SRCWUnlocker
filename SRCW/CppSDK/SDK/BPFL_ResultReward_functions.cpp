@@ -17,6 +17,34 @@
 namespace SDK
 {
 
+// Function BPFL_ResultReward.BPFL_ResultReward_C.MakeOnlineResultRewardItemInfos
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FRewardRedStarRingData>&  RSRList                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FResultRewardItemInfo>*   Output                                                 (Parm, OutParm)
+
+void UBPFL_ResultReward_C::MakeOnlineResultRewardItemInfos(TArray<struct FRewardRedStarRingData>& RSRList, class UObject* __WorldContext, TArray<struct FResultRewardItemInfo>* Output)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BPFL_ResultReward_C", "MakeOnlineResultRewardItemInfos");
+
+	Params::BPFL_ResultReward_C_MakeOnlineResultRewardItemInfos Parms{};
+
+	Parms.RSRList = std::move(RSRList);
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	RSRList = std::move(Parms.RSRList);
+
+	if (Output != nullptr)
+		*Output = std::move(Parms.Output);
+}
+
+
 // Function BPFL_ResultReward.BPFL_ResultReward_C.MakeResultRewardItemInfos
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

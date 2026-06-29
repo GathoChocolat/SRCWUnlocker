@@ -91,7 +91,7 @@ public:
 DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C_OnVisibilityChangedEvent;
 
 // Function WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header.WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C.SetParam
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C_SetParam final
 {
 public:
@@ -107,19 +107,21 @@ public:
 	int32                                         Temp_int_Variable_5;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_6;                               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_7;                               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_8;                               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_9;                               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C_SetParam;
 
 // Function WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header.WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C.SetText
-// 0x00F8 (0x00F8 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C_SetText final
 {
 public:
@@ -133,14 +135,16 @@ public:
 	class FText                                   Temp_text_Variable_4;                              // 0x0048(0x0010)(ConstParm)
 	class FText                                   Temp_text_Variable_5;                              // 0x0058(0x0010)(ConstParm)
 	class FText                                   Temp_text_Variable_6;                              // 0x0068(0x0010)(ConstParm)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0078(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0088(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0098(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x00A8(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x00B8(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x00C8(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_6;            // 0x00D8(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x00E8(0x0010)(ConstParm)
+	class FText                                   Temp_text_Variable_7;                              // 0x0078(0x0010)(ConstParm)
+	class FText                                   Temp_text_Variable_8;                              // 0x0088(0x0010)(ConstParm)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0098(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x00A8(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x00B8(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x00C8(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x00D8(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x00E8(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_6;            // 0x00F8(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0108(0x0010)(ConstParm)
 };
 DUMPER7_ASSERTS_WBP_Race_HUD_Sub_TravelRing_ExitInfo_Header_C_SetText;
 

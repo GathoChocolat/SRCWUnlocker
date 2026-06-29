@@ -10,24 +10,72 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "UnionUI_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
+#include "UnionUI_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.AddListItemWidgetByListItemIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex final
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetShortLobbyIdButtonText
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText final
 {
 public:
-	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   OutText;                                           // 0x0000(0x0010)(Parm, OutParm)
+	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue;                // 0x0010(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsCreateShortLobbyIdText_ReturnValue;     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex;
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.IsOnlyJoinPublicLobby
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby final
+{
+public:
+	bool                                          bOutOnlyJoin;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bRetIsOnlyJoin;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetMemberCount_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.IsOnlyJoinPrivateLobby
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby final
+{
+public:
+	bool                                          bOutOnlyJoin;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bRetIsOnlyJoin;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ULobbyContextBase*                      CallFunc_GetPrivateLobbyContext_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetMemberCount_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetNumberInputWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget final
+{
+public:
+	class UFriendListNumberInputWidget*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget;
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.Check Lobby Join Attention
 // 0x0004 (0x0004 - 0x0000)
@@ -41,6 +89,88 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_Check_Lobby_Join_Attention;
 
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnFocusReceived
+// 0x01C0 (0x01C0 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
+	int32                                         CallFunc_GetUserIndexByFocusEvent_ReturnValue;     // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetScrollBoxWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget final
+{
+public:
+	class UScrollBox*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnListItemDecisionDown
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupListItemWidgetSingle
+// 0x0100 (0x0100 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle final
+{
+public:
+	class UWBP_Friend_Sub_PlayerPlate_Small_C*    InItemListWidget;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0008(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         InButtonIndex;                                     // 0x00F8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnListItemCancelDown
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.FocusListItemWidget
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget final
+{
+public:
+	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnNumberInputWidgetDecision
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnNumberInputWidgetDecision final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnNumberInputWidgetDecision;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnUserSearchSuccess
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess final
+{
+public:
+	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess;
+
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.ExecuteAfterConfirmWidget
 // 0x000C (0x000C - 0x0000)
 struct WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget final
@@ -52,6 +182,160 @@ public:
 	bool                                          bInCanceled;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_ExecuteAfterConfirmWidget;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnButtonDecisionEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdButtonDecisionEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetOwnLobbyIdText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText final
+{
+public:
+	class FString                                 InLobbyId;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          bInWaitDisplay;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.AddListItemWidgetByListItemIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex final
+{
+public:
+	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_AddListItemWidgetByListItemIndex;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetButtonControlEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.UpdateLobbyId
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId final
+{
+public:
+	class FString                                 InShortLobbyId;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          InRequestSuccess;                                  // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetInteractableState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetButtonChangeableState
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState final
+{
+public:
+	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnable;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetWidgetFocus
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus final
+{
+public:
+	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInPlayFocusSound;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnAttentionPopupWindowDecision
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupAttentionPopupWindow
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow final
+{
+public:
+	EFriendListCommandType                        InCommandType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdSearchSuccess
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess final
+{
+public:
+	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<struct FLobbyId>                       InLobbyIdData;                                     // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ELobbyType                                    InLobbyType;                                       // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetContentsControlEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetButtonControlEnableSingle
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle final
+{
+public:
+	class UWBP_Friend_SubMenu_Btn_C*              InSubMenuButton;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInEnable;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnDirectionChange
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange;
+
+// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetScrollBoxVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility final
+{
+public:
+	ESlateVisibility                              Param;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility;
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation
 // 0x09D8 (0x09D8 - 0x0000)
@@ -300,290 +584,6 @@ public:
 	class UWBP_Friend_Sub_PlayerPlate_C*          CallFunc_GetMainWidget_OutMainWidget_3;            // 0x09D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_ExecuteUbergraph_WBP_Friend_Sub_LobbyInvitation;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.FocusListItemWidget
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget final
-{
-public:
-	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_FocusListItemWidget;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetNumberInputWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget final
-{
-public:
-	class UFriendListNumberInputWidget*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_GetNumberInputWidget;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetScrollBoxWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget final
-{
-public:
-	class UScrollBox*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_GetScrollBoxWidget;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.GetShortLobbyIdButtonText
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText final
-{
-public:
-	class FText                                   OutText;                                           // 0x0000(0x0010)(Parm, OutParm)
-	const class UFriendListMainWidget*            CallFunc_GetMainWidget_ReturnValue;                // 0x0010(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsCreateShortLobbyIdText_ReturnValue;     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_GetShortLobbyIdButtonText;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.IsOnlyJoinPrivateLobby
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby final
-{
-public:
-	bool                                          bOutOnlyJoin;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bRetIsOnlyJoin;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULobbyContextBase*                      CallFunc_GetPrivateLobbyContext_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetMemberCount_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPrivateLobby;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.IsOnlyJoinPublicLobby
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby final
-{
-public:
-	bool                                          bOutOnlyJoin;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bRetIsOnlyJoin;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNetDataManageSubsystem*                CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ULobbyContextBase*                      CallFunc_GetPublicLobbyContext_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsJoining_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetMemberCount_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_IsOnlyJoinPublicLobby;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnAttentionPopupWindowDecision
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnAttentionPopupWindowDecision;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnButtonDecisionEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnButtonDecisionEvent;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnDirectionChange
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EUnionUIControlDir                            Dir;                                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnDirectionChange;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnFocusReceived
-// 0x01C0 (0x01C0 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
-	int32                                         CallFunc_GetUserIndexByFocusEvent_ReturnValue;     // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnFocusReceived;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnListItemCancelDown
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnListItemCancelDown;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnListItemDecisionDown
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnListItemDecisionDown;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdButtonDecisionEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdButtonDecisionEvent;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnLobbyIdSearchSuccess
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess final
-{
-public:
-	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<struct FLobbyId>                       InLobbyIdData;                                     // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ELobbyType                                    InLobbyType;                                       // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnLobbyIdSearchSuccess;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnNumberInputWidgetDecision
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnNumberInputWidgetDecision final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         PanelIndex;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ButtonIndex;                                       // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnNumberInputWidgetDecision;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.OnUserSearchSuccess
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess final
-{
-public:
-	TArray<struct FCommon_UserSearchData>         InUserSearchData;                                  // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_OnUserSearchSuccess;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetButtonControlEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnable;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetButtonControlEnableSingle
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle final
-{
-public:
-	class UWBP_Friend_SubMenu_Btn_C*              InSubMenuButton;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInEnable;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetButtonControlEnableSingle;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetContentsControlEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetContentsControlEnable;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetButtonChangeableState
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState final
-{
-public:
-	int32                                         InListItemIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bEnable;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetButtonChangeableState;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetListItemWidgetInteractableState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetListItemWidgetInteractableState;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetOwnLobbyIdText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText final
-{
-public:
-	class FString                                 InLobbyId;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          bInWaitDisplay;                                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetOwnLobbyIdText;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetScrollBoxVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility final
-{
-public:
-	ESlateVisibility                              Param;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetScrollBoxVisibility;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupAttentionPopupWindow
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow final
-{
-public:
-	EFriendListCommandType                        InCommandType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetupAttentionPopupWindow;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetupListItemWidgetSingle
-// 0x0100 (0x0100 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle final
-{
-public:
-	class UWBP_Friend_Sub_PlayerPlate_Small_C*    InItemListWidget;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0008(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         InButtonIndex;                                     // 0x00F8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetupListItemWidgetSingle;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.SetWidgetFocus
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus final
-{
-public:
-	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInPlayFocusSound;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_SetWidgetFocus;
-
-// Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.UpdateLobbyId
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId final
-{
-public:
-	class FString                                 InShortLobbyId;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          InRequestSuccess;                                  // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_LobbyInvitation_C_UpdateLobbyId;
 
 // Function WBP_Friend_Sub_LobbyInvitation.WBP_Friend_Sub_LobbyInvitation_C.CheckButtonWidgetExist
 // 0x0001 (0x0001 - 0x0000)

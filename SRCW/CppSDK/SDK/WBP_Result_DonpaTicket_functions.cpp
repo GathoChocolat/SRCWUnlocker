@@ -372,6 +372,26 @@ void UWBP_Result_DonpaTicket_C::SetAddDonpaTicketNum(int32 AddTicketNum, bool bI
 }
 
 
+// Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetChanceUpIconEnable
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_DonpaTicket_C::SetChanceUpIconEnable(bool IsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_DonpaTicket_C", "SetChanceUpIconEnable");
+
+	Params::WBP_Result_DonpaTicket_C_SetChanceUpIconEnable Parms{};
+
+	Parms.IsEnable = IsEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetForceCloseTime
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -407,6 +427,64 @@ void UWBP_Result_DonpaTicket_C::SetForceCloseTime_Imp(double Time)
 	Params::WBP_Result_DonpaTicket_C_SetForceCloseTime_Imp Parms{};
 
 	Parms.Time = Time;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetOpenDonpaTicket
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PrevNum                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_DonpaTicket_C::SetOpenDonpaTicket(int32 PrevNum, int32 CurNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_DonpaTicket_C", "SetOpenDonpaTicket");
+
+	Params::WBP_Result_DonpaTicket_C_SetOpenDonpaTicket Parms{};
+
+	Parms.PrevNum = PrevNum;
+	Parms.CurNum = CurNum;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetupChanceUpParam
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Result_DonpaTicket_C::SetupChanceUpParam()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_DonpaTicket_C", "SetupChanceUpParam");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Result_DonpaTicket.WBP_Result_DonpaTicket_C.SetupForOpenDonpaTicket
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PrevNum                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_DonpaTicket_C::SetupForOpenDonpaTicket(int32 PrevNum, int32 CurNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_DonpaTicket_C", "SetupForOpenDonpaTicket");
+
+	Params::WBP_Result_DonpaTicket_C_SetupForOpenDonpaTicket Parms{};
+
+	Parms.PrevNum = PrevNum;
+	Parms.CurNum = CurNum;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

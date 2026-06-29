@@ -345,6 +345,20 @@ void UWBP_EventEndInfo_Sub_Details_Legend_C::SetPointNumber(int32 Point)
 }
 
 
+// Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.SetQRTexture
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_EventEndInfo_Sub_Details_Legend_C::SetQRTexture()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EventEndInfo_Sub_Details_Legend_C", "SetQRTexture");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_EventEndInfo_Sub_Details_Legend.WBP_EventEndInfo_Sub_Details_Legend_C.SetRankingDisplay
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemBoxInstanceDomain0.BP_ItemBoxInstanceDomain0_C
-// 0x0000 (0x0470 - 0x0470)
+// 0x0000 (0x0480 - 0x0480)
 class ABP_ItemBoxInstanceDomain0_C final : public AItemBoxInstanceObject
 {
 public:

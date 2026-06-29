@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ABP_MetalSonic_Driver.ABP_MetalSonic_Driver_C
-// 0x0000 (0x5CE0 - 0x5CE0)
+// 0x0000 (0x5CF0 - 0x5CF0)
 class UABP_MetalSonic_Driver_C final : public UABPT_Driver_C
 {
 public:

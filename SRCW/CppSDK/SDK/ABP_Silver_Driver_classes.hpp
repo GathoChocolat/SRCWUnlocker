@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ABP_Silver_Driver.ABP_Silver_Driver_C
-// 0x0000 (0x5CE0 - 0x5CE0)
+// 0x0000 (0x5CF0 - 0x5CF0)
 class UABP_Silver_Driver_C final : public UABPT_Driver_C
 {
 public:

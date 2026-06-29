@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_classes.hpp"
 #include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UnionRun_classes.hpp"
 #include "UMG_structs.hpp"
 #include "UnionLib_structs.hpp"
 
@@ -81,6 +81,7 @@ public:
 	void ExitProc();
 	void Finished_26DDDFEF4AA047C3BAFC0586FBA709B6();
 	void Finished_9BF783D74A7E7515B77DB4BB8915144B();
+	void GetChanceUpOrderValue(int32* OutOrderValue);
 	void InitRankIndexLine();
 	void IsTipsState(bool* Result);
 	void NextLodingView();

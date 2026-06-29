@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemSlicerObject.BP_ItemSlicerObject_C
-// 0x0000 (0x0640 - 0x0640)
+// 0x0000 (0x0680 - 0x0680)
 class ABP_ItemSlicerObject_C final : public AItemSlicerObject
 {
 public:

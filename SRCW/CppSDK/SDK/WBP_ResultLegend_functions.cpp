@@ -275,6 +275,26 @@ void UWBP_ResultLegend_C::SetTargetGaugeValue(float TargetValue)
 }
 
 
+// Function WBP_ResultLegend.WBP_ResultLegend_C.SetupChanceUpRatio
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ChanceUpRatio                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultLegend_C::SetupChanceUpRatio(int32 ChanceUpRatio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultLegend_C", "SetupChanceUpRatio");
+
+	Params::WBP_ResultLegend_C_SetupChanceUpRatio Parms{};
+
+	Parms.ChanceUpRatio = ChanceUpRatio;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ResultLegend.WBP_ResultLegend_C.SetupLimitValue
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

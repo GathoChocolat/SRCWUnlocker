@@ -161,6 +161,26 @@ void UWBP_Result_Sub_DonpaTicket_Details_C::SetOtherRSR(int32 Index_0)
 }
 
 
+// Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.SetPlateType
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PlateIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_Sub_DonpaTicket_Details_C::SetPlateType(int32 PlateIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_Sub_DonpaTicket_Details_C", "SetPlateType");
+
+	Params::WBP_Result_Sub_DonpaTicket_Details_C_SetPlateType Parms{};
+
+	Parms.PlateIndex = PlateIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Result_Sub_DonpaTicket_Details.WBP_Result_Sub_DonpaTicket_Details_C.SetRank
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

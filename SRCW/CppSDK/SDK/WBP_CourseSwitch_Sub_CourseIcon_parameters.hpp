@@ -10,14 +10,110 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnMouseButtonDown
+// 0x0220 (0x0220 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0168(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseButtonDown;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnFocusReceived
+// 0x01C8 (0x01C8 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0108(0x0004)()
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0110(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusReceived;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnFocus_Imp
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_OnFocus_Imp final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnFocus_Imp;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnRemovedFromFocusPath;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnFocusLost
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusLost final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusLost;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnMouseEnter
+// 0x00B0 (0x00B0 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseEnter;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.SetFocusBP
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_SetFocusBP final
+{
+public:
+	bool                                          bIsFocus_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_SetFocusBP;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.SetSelectBP
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectBP final
+{
+public:
+	bool                                          bIsSelect;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectBP;
+
+// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.SetSelectSoundOffCountBP
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectSoundOffCountBP final
+{
+public:
+	int32                                         Count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectSoundOffCountBP;
 
 // Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.CheckIsGuest
 // 0x0001 (0x0001 - 0x0000)
@@ -86,102 +182,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0323(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_ExecuteUbergraph_WBP_CourseSwitch_Sub_CourseIcon;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnFocus_Imp
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_OnFocus_Imp final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnFocus_Imp;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnFocusLost
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusLost final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusLost;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnFocusReceived
-// 0x01C8 (0x01C8 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusReceived final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoundHandle                           CallFunc_SoundPlay_ReturnValue;                    // 0x0108(0x0004)()
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0110(0x00B8)()
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnFocusReceived;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnMouseButtonDown
-// 0x0220 (0x0220 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0168(0x00B8)()
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseButtonDown;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnMouseEnter
-// 0x00B0 (0x00B0 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseEnter final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnMouseEnter;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.OnRemovedFromFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_OnRemovedFromFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_OnRemovedFromFocusPath;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.SetFocusBP
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_SetFocusBP final
-{
-public:
-	bool                                          bIsFocus_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_SetFocusBP;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.SetSelectBP
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectBP final
-{
-public:
-	bool                                          bIsSelect;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectBP;
-
-// Function WBP_CourseSwitch_Sub_CourseIcon.WBP_CourseSwitch_Sub_CourseIcon_C.SetSelectSoundOffCountBP
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectSoundOffCountBP final
-{
-public:
-	int32                                         Count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CourseSwitch_Sub_CourseIcon_C_SetSelectSoundOffCountBP;
 
 }
 

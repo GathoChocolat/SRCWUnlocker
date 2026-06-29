@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_classes.hpp"
 #include "UnionSystem_structs.hpp"
+#include "UnionRun_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemKingBoomBooObject.BP_ItemKingBoomBooObject_C
-// 0x0010 (0x0A00 - 0x09F0)
+// 0x0010 (0x0A80 - 0x0A70)
 class ABP_ItemKingBoomBooObject_C final : public AItemKingBoomBooObject
 {
 public:
-	struct FSoundHandle                           MoveSoundHandle;                                   // 0x09F0(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSoundHandle                           MoveSoundHandle;                                   // 0x0A70(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	static class UClass* StaticClass()

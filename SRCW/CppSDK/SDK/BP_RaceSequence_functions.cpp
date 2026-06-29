@@ -159,9 +159,9 @@ void ABP_RaceSequence_C::ChangeDomainPre1st(int32 RacerIndex)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const EMainSubCourseIndex&              NextMainSubState                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   RacerId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   RacerID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RaceSequence_C::ChangeSubEvent(const EMainSubCourseIndex& NextMainSubState, int32 RacerId)
+void ABP_RaceSequence_C::ChangeSubEvent(const EMainSubCourseIndex& NextMainSubState, int32 RacerID)
 {
 	static class UFunction* Func = nullptr;
 
@@ -171,7 +171,7 @@ void ABP_RaceSequence_C::ChangeSubEvent(const EMainSubCourseIndex& NextMainSubSt
 	Params::BP_RaceSequence_C_ChangeSubEvent Parms{};
 
 	Parms.NextMainSubState = NextMainSubState;
-	Parms.RacerId = RacerId;
+	Parms.RacerID = RacerID;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

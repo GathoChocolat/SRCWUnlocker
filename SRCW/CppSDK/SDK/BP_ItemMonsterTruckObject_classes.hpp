@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemMonsterTruckObject.BP_ItemMonsterTruckObject_C
-// 0x0010 (0x0660 - 0x0650)
+// 0x0010 (0x06A0 - 0x0690)
 class ABP_ItemMonsterTruckObject_C final : public AItemMonsterTruckObject
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0650(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0690(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

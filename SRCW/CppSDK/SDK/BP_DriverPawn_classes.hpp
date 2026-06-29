@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
+#include "UnionRun_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DriverPawn.BP_DriverPawn_C
-// 0x0418 (0x0968 - 0x0550)
+// 0x0420 (0x0970 - 0x0550)
 class ABP_DriverPawn_C final : public ADriver
 {
 public:
@@ -38,10 +38,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnBindItem;                                        // 0x05A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bHoverboard;                                       // 0x05B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_5B9[0x7];                                      // 0x05B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDriverData                            DriverData;                                        // 0x05C0(0x0390)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          bUseRivalSkin;                                     // 0x0950(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_951[0x7];                                      // 0x0951(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UStaticMesh*>                    RefSteeringWheelMesh;                              // 0x0958(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDriverData                            DriverData;                                        // 0x05C0(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bUseRivalSkin;                                     // 0x0958(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_959[0x7];                                      // 0x0959(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UStaticMesh*>                    RefSteeringWheelMesh;                              // 0x0960(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void BindCurvesMaterialPlayer(class UCurveTable* In_CurveTable, ERacerMaterialAnimation In_Enum);

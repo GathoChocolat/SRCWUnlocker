@@ -91,6 +91,7 @@ void UnlockAll()
 		{
 			auto Title = static_cast<SDK::UHonorTitleListDataAsset*>(Obj);
 
+			// Unlock Honor Titles
 			for (const auto& t : Title->HonorTitleTableDataMap)
 			{
 				SDK::UAppSaveGameHelper::UnlockHonorTitle(t.Key());
@@ -98,12 +99,21 @@ void UnlockAll()
 		}
 	}
 
+	// Unlock Characters
 	for (int i = 0; i < (uint8_t)SDK::EDriverId::Num; i++)
 	{
 		SDK::UAppSaveGameHelper::SetDriverSelectable(SDK::EDriverId(i));
 		SDK::UAppSaveGameHelper::ClearDriverNew(SDK::EDriverId(i));
 	}
 
+	/*
+	* // Unlock Stages
+	for (int i = 0; i < (uint8_t)SDK::EStageId::Num; i++)
+	{
+	}
+	*/
+
+	// Other unlocks
 	SDK::UMachineCustomizeUtilityLibrary::StoreAllAura();
 	SDK::UMachineCustomizeUtilityLibrary::StoreAllHorn();
 	SDK::UMachineCustomizeUtilityLibrary::StoreAllMachineAssembly();

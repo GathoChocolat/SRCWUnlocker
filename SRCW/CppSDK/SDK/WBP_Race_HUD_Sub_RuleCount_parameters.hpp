@@ -51,13 +51,13 @@ public:
 DUMPER7_ASSERTS_WBP_Race_HUD_Sub_RuleCount_C_SetNum;
 
 // Function WBP_Race_HUD_Sub_RuleCount.WBP_Race_HUD_Sub_RuleCount_C.SetupRule
-// 0x0090 (0x0090 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct WBP_Race_HUD_Sub_RuleCount_C_SetupRule final
 {
 public:
 	class FText                                   SelectText;                                        // 0x0000(0x0010)(Edit, BlueprintVisible)
 	class FText                                   TextTouch;                                         // 0x0010(0x0010)(Edit, BlueprintVisible)
-	struct FMenuGroupRaceBonusData                CallFunc_GetGroupRaceBonusData_ReturnValue;        // 0x0020(0x0070)(ConstParm)
+	struct FMenuGroupRaceBonusData                CallFunc_GetGroupRaceBonusData_ReturnValue;        // 0x0020(0x0080)(ConstParm)
 };
 DUMPER7_ASSERTS_WBP_Race_HUD_Sub_RuleCount_C_SetupRule;
 

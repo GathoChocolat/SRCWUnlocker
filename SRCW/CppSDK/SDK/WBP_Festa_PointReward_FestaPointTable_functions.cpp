@@ -44,9 +44,10 @@ void UWBP_Festa_PointReward_FestaPointTable_C::AddPoint(int32 Add, int32 NextAdd
 // Function WBP_Festa_PointReward_FestaPointTable.WBP_Festa_PointReward_FestaPointTable_C.CloseReward
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
+// bool                                    bPlayCloseAnim                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsBonus                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Festa_PointReward_FestaPointTable_C::CloseReward(bool bIsBonus)
+void UWBP_Festa_PointReward_FestaPointTable_C::CloseReward(bool bPlayCloseAnim, bool bIsBonus)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55,6 +56,7 @@ void UWBP_Festa_PointReward_FestaPointTable_C::CloseReward(bool bIsBonus)
 
 	Params::WBP_Festa_PointReward_FestaPointTable_C_CloseReward Parms{};
 
+	Parms.bPlayCloseAnim = bPlayCloseAnim;
 	Parms.bIsBonus = bIsBonus;
 
 	UObject::ProcessEvent(Func, &Parms);

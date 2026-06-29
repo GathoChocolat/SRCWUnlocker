@@ -101,46 +101,6 @@ void UWBP_ResultLegend_Sub_Rate_C::Finished_FA3822794A885E4D1B40AE97B7C37967()
 }
 
 
-// Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.OnLoaded_614E58FB488C4503F994FF8A54908BA9
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResultLegend_Sub_Rate_C::OnLoaded_614E58FB488C4503F994FF8A54908BA9(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultLegend_Sub_Rate_C", "OnLoaded_614E58FB488C4503F994FF8A54908BA9");
-
-	Params::WBP_ResultLegend_Sub_Rate_C_OnLoaded_614E58FB488C4503F994FF8A54908BA9 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.OnLoaded_FF8DD9F649CD1B5C771F029C3341E817
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResultLegend_Sub_Rate_C::OnLoaded_FF8DD9F649CD1B5C771F029C3341E817(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResultLegend_Sub_Rate_C", "OnLoaded_FF8DD9F649CD1B5C771F029C3341E817");
-
-	Params::WBP_ResultLegend_Sub_Rate_C_OnLoaded_FF8DD9F649CD1B5C771F029C3341E817 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.PlayCountDownAnimation
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -259,6 +219,28 @@ void UWBP_ResultLegend_Sub_Rate_C::SequenceEvent__ENTRYPOINTWBP_ResultLegend_Sub
 }
 
 
+// Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.SetChanceUpIconEnable
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   RatioValue                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultLegend_Sub_Rate_C::SetChanceUpIconEnable(bool IsEnable, int32 RatioValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultLegend_Sub_Rate_C", "SetChanceUpIconEnable");
+
+	Params::WBP_ResultLegend_Sub_Rate_C_SetChanceUpIconEnable Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.RatioValue = RatioValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.SetGaugeCurrentAndNextGradeIcon
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -280,6 +262,28 @@ void UWBP_ResultLegend_Sub_Rate_C::SetGaugeCurrentAndNextGradeIcon(ELegendCompeR
 	Parms.CurrentGradeIcon = CurrentGradeIcon;
 	Parms.NextGradeIcon = NextGradeIcon;
 	Parms.LowestLimitGrade = LowestLimitGrade;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResultLegend_Sub_Rate.WBP_ResultLegend_Sub_Rate_C.SetUpChanceUpInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InRatioValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultLegend_Sub_Rate_C::SetUpChanceUpInfo(bool InEnable, int32 InRatioValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultLegend_Sub_Rate_C", "SetUpChanceUpInfo");
+
+	Params::WBP_ResultLegend_Sub_Rate_C_SetUpChanceUpInfo Parms{};
+
+	Parms.InEnable = InEnable;
+	Parms.InRatioValue = InRatioValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

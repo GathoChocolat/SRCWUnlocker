@@ -43,6 +43,7 @@ public:
 	void SetGaugeCurrentAndNextGradeIcon(ELegendCompeRateGrade PrevGradeIcon, ELegendCompeRateGrade CurrentGrade, ELegendCompeRateGrade NextGrade, bool LowestLimitGrade);
 	void SetResultIcon(int32 IconIndex);
 	void SetTargetGaugeValue(float TargetValue);
+	void SetupChanceUpRatio(int32 ChanceUpRatio);
 	void SetupLimitValue(int32 CurrentRankLimit, int32 NextRankLimit);
 	void StartAdjustingGaugeEvent();
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemBodyCutObject.BP_ItemBodyCutObject_C
-// 0x0000 (0x0950 - 0x0950)
+// 0x0000 (0x0990 - 0x0990)
 class ABP_ItemBodyCutObject_C final : public AItemBodyCutObject
 {
 public:

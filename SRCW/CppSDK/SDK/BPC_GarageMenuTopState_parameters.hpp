@@ -19,103 +19,6 @@
 namespace SDK::Params
 {
 
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.UpdateRacer
-// 0x03E0 (0x03E0 - 0x0000)
-struct BPC_GarageMenuTopState_C_UpdateRacer final
-{
-public:
-	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0008(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_1;            // 0x0060(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData; // 0x00B8(0x0078)()
-	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_2;            // 0x0130(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_3;            // 0x0188(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_4;            // 0x01E0(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_5;            // 0x0238(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_1; // 0x0290(0x0078)()
-	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_2; // 0x0308(0x0078)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_6;            // 0x0388(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_UpdateRacer;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnTurntableControlStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged final
-{
-public:
-	bool                                          bInIsControllable;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnParamWindowControlStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged final
-{
-public:
-	bool                                          bInIsControllable;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.TopWidget_OnDecisionAnimFinished
-// 0x0001 (0x0001 - 0x0000)
-struct BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished final
-{
-public:
-	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.TopWidget_OnFocus
-// 0x0001 (0x0001 - 0x0000)
-struct BPC_GarageMenuTopState_C_TopWidget_OnFocus final
-{
-public:
-	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_TopWidget_OnFocus;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.MachineCustomizeSequence_OnMachineFocused
-// 0x0001 (0x0001 - 0x0000)
-struct BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused final
-{
-public:
-	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnMachinePartsFocused
-// 0x0002 (0x0002 - 0x0000)
-struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused final
-{
-public:
-	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachinePartsType                             InMachinePartsType;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.MachineCustomizeSequence_OnShortcutCustomizeStarted
-// 0x0002 (0x0002 - 0x0000)
-struct BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted final
-{
-public:
-	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachinePartsType                             InMachinePartsType;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted;
-
-// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BPC_GarageMenuTopState_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_ReceiveEndPlay;
-
 // Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.ExecuteUbergraph_BPC_GarageMenuTopState
 // 0x05A8 (0x05A8 - 0x0000)
 struct BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState final
@@ -190,6 +93,103 @@ public:
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x05A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_ExecuteUbergraph_BPC_GarageMenuTopState;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnMachinePartsFocused
+// 0x0002 (0x0002 - 0x0000)
+struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused final
+{
+public:
+	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachinePartsType                             InMachinePartsType;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnMachinePartsFocused;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnParamWindowControlStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged final
+{
+public:
+	bool                                          bInIsControllable;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnParamWindowControlStateChanged;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.GadgetCustomizeSequence_OnTurntableControlStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged final
+{
+public:
+	bool                                          bInIsControllable;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_GadgetCustomizeSequence_OnTurntableControlStateChanged;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.MachineCustomizeSequence_OnMachineFocused
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused final
+{
+public:
+	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnMachineFocused;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.MachineCustomizeSequence_OnShortcutCustomizeStarted
+// 0x0002 (0x0002 - 0x0000)
+struct BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted final
+{
+public:
+	EMachineId                                    InMachineID;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachinePartsType                             InMachinePartsType;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_MachineCustomizeSequence_OnShortcutCustomizeStarted;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_GarageMenuTopState_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_ReceiveEndPlay;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.TopWidget_OnDecisionAnimFinished
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished final
+{
+public:
+	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_TopWidget_OnDecisionAnimFinished;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.TopWidget_OnFocus
+// 0x0001 (0x0001 - 0x0000)
+struct BPC_GarageMenuTopState_C_TopWidget_OnFocus final
+{
+public:
+	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_TopWidget_OnFocus;
+
+// Function BPC_GarageMenuTopState.BPC_GarageMenuTopState_C.UpdateRacer
+// 0x03E0 (0x03E0 - 0x0000)
+struct BPC_GarageMenuTopState_C_UpdateRacer final
+{
+public:
+	EGarageChildSequenceId                        InChildSequenceId;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData;              // 0x0008(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_1;            // 0x0060(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData; // 0x00B8(0x0078)()
+	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_2;            // 0x0130(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_3;            // 0x0188(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_4;            // 0x01E0(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_5;            // 0x0238(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_1; // 0x0290(0x0078)()
+	struct FUserMachineCustomizeData              CallFunc_GetMachineCustomizeDataById_OutUserMachineCustomizeData_2; // 0x0308(0x0078)()
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FST_GarageData                         CallFunc_GetGarageData_OutGarageData_6;            // 0x0388(0x0058)(ZeroConstructor, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPC_GarageMenuTopState_C_UpdateRacer;
 
 }
 

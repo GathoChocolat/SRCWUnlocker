@@ -60,15 +60,66 @@ enum class EMariaDevMode : uint8
 	EMariaDevMode_MAX                        = 4,
 };
 
-// Enum mariaUploadPlugin.EMariaEpicLoginType
+// Enum mariaUploadPlugin.EMariaDummySegaAccountStatus
 // NumValues: 0x0005
+enum class EMariaDummySegaAccountStatus : uint8
+{
+	None                                     = 0,
+	Banned                                   = 1,
+	FailCom                                  = 2,
+	FailResponse                             = 3,
+	EMariaDummySegaAccountStatus_MAX         = 4,
+};
+
+// Enum mariaUploadPlugin.EMariaEpicLoginType
+// NumValues: 0x0006
 enum class EMariaEpicLoginType : uint8
 {
 	Auto                                     = 0,
 	AccountPortal                            = 1,
 	ExchangeCode                             = 2,
 	Developer                                = 3,
-	EMariaEpicLoginType_MAX                  = 4,
+	PersistentAuth                           = 4,
+	EMariaEpicLoginType_MAX                  = 5,
+};
+
+// Enum mariaUploadPlugin.EMariaRewardApiResult
+// NumValues: 0x000A
+enum class EMariaRewardApiResult : uint8
+{
+	None                                     = 0,
+	Success                                  = 1,
+	Cancelled                                = 2,
+	Maintenance                              = 3,
+	FailAuth                                 = 4,
+	FailApi                                  = 5,
+	FailCom                                  = 6,
+	FailResponse                             = 7,
+	FailFormat                               = 8,
+	EMariaRewardApiResult_MAX                = 9,
+};
+
+// Enum mariaUploadPlugin.EMariaRewardStatus
+// NumValues: 0x0005
+enum class EMariaRewardStatus : uint8
+{
+	NotAchieved                              = 0,
+	Achieved                                 = 1,
+	GrantedToAnother                         = 2,
+	Granted                                  = 3,
+	EMariaRewardStatus_MAX                   = 4,
+};
+
+// Enum mariaUploadPlugin.EMariaRewardType
+// NumValues: 0x0006
+enum class EMariaRewardType : uint8
+{
+	Survey                                   = 0,
+	App                                      = 1,
+	Twitch                                   = 2,
+	SegaAccount                              = 3,
+	Unknown                                  = 4,
+	EMariaRewardType_MAX                     = 5,
 };
 
 // Enum mariaUploadPlugin.EMariaSegaAccountLinkTarget
@@ -90,6 +141,26 @@ enum class EMariaSegaAccountType : uint8
 	EMariaSegaAccountType_MAX                = 3,
 };
 
+// Enum mariaUploadPlugin.EMariaTwitchRewardAuthResult
+// NumValues: 0x0004
+enum class EMariaTwitchRewardAuthResult : uint8
+{
+	None                                     = 0,
+	Success                                  = 1,
+	Fail                                     = 2,
+	EMariaTwitchRewardAuthResult_MAX         = 3,
+};
+
+// Enum mariaUploadPlugin.EMariaUserAge
+// NumValues: 0x0004
+enum class EMariaUserAge : uint8
+{
+	None                                     = 0,
+	Minor                                    = 1,
+	Adult                                    = 2,
+	EMariaUserAge_MAX                        = 3,
+};
+
 // Enum mariaUploadPlugin.EMariaXboxUserPickMode
 // NumValues: 0x0004
 enum class EMariaXboxUserPickMode : uint8
@@ -99,6 +170,18 @@ enum class EMariaXboxUserPickMode : uint8
 	Pick                                     = 2,
 	EMariaXboxUserPickMode_MAX               = 3,
 };
+
+// ScriptStruct mariaUploadPlugin.MariaGeneralReward
+// 0x0018 (0x0018 - 0x0000)
+struct FMariaGeneralReward final
+{
+public:
+	class FString                                 IncentiveID;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMariaRewardType                              Type;                                              // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMariaRewardStatus                            Status;                                            // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMariaGeneralReward;
 
 // ScriptStruct mariaUploadPlugin.MariaQRCode
 // 0x0018 (0x0018 - 0x0000)
@@ -117,6 +200,27 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FMariaTableRow;
+
+// ScriptStruct mariaUploadPlugin.MariaTwitchRewardDrop
+// 0x0018 (0x0018 - 0x0000)
+struct FMariaTwitchRewardDrop final
+{
+public:
+	class FString                                 BenefitID;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMariaRewardStatus                            Status;                                            // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMariaTwitchRewardDrop;
+
+// ScriptStruct mariaUploadPlugin.MariaTwitchReward
+// 0x0020 (0x0020 - 0x0000)
+struct FMariaTwitchReward final
+{
+public:
+	class FString                                 IncentiveID;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMariaTwitchRewardDrop>         Drops;                                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMariaTwitchReward;
 
 }
 

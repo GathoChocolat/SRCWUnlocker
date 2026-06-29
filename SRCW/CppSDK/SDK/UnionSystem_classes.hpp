@@ -52,9 +52,9 @@ public:
 };
 DUMPER7_ASSERTS_UUnionAddOnBase;
 
-// Class UnionSystem.UnionAddOnSteam
+// Class UnionSystem.UnionAddOnNX
 // 0x0050 (0x0078 - 0x0028)
-class UUnionAddOnSteam final : public UUnionAddOnBase
+class UUnionAddOnNX final : public UUnionAddOnBase
 {
 public:
 	uint8                                         Pad_28[0x50];                                      // 0x0028(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -62,18 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("UnionAddOnSteam")
+		STATIC_CLASS_IMPL("UnionAddOnNX")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"UnionAddOnSteam")
+		STATIC_NAME_IMPL(L"UnionAddOnNX")
 	}
-	static class UUnionAddOnSteam* GetDefaultObj()
+	static class UUnionAddOnNX* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UUnionAddOnSteam>();
+		return GetDefaultObjImpl<UUnionAddOnNX>();
 	}
 };
-DUMPER7_ASSERTS_UUnionAddOnSteam;
+DUMPER7_ASSERTS_UUnionAddOnNX;
 
 // Class UnionSystem.AppControllerInputManager
 // 0x0018 (0x0058 - 0x0040)
@@ -218,56 +218,111 @@ public:
 };
 DUMPER7_ASSERTS_UCollectHelper;
 
-// Class UnionSystem.MenuPopupWindowInterface
-// 0x0000 (0x0000 - 0x0000)
-class IMenuPopupWindowInterface final
+// Class UnionSystem.AppPlayerController
+// 0x01D8 (0x0A30 - 0x0858)
+class AAppPlayerController : public APlayerController
 {
 public:
-	class UWidgetAnimation* GetAnimationIn();
-	class UWidgetAnimation* GetAnimationLoop();
-	class UWidgetAnimation* GetAnimationOut();
-	EPopupWindowButtonType GetPopupWindowButtonType();
-	EPopupWindowType GetPopupWindowType();
-	void InitParam(EPopupWindowButtonType ButtonType);
-	void PlayAnimationIn();
-	void SetButtonControlDelayTime(float InTime);
-	void SetButtonText(const TArray<class FText>& BtnTextArray);
-	void SetDisplayFooterButton(const bool InDisplay);
-	void SetDonpaTicketCount(int32 CurrentCount, int32 AfterCount);
-	void SetEnableInput(bool InEnable);
-	void SetFooterMenuBtn(int32 BtnIconIndex, int32 BtnIconType, const class FText& BtnText);
-	void SetImageButtonSelectText(const class FText& InText);
-	void SetImageTexture(const class UTexture2D* Texture2D);
-	void SetInitialFocusButtonIndex(const int32 InButtonIndex);
-	void SetPopupInfoDisplayIndex(int32 Index_0);
-	void SetPopupInfoMainMenuButtonIconIndex(int32 Btn01IconIndex, int32 Btn02IconIndex);
-	void SetTextMessege(const class FText& Text);
-	void SetTextTitle(const class FText& Text, bool Attension);
+	uint8                                         Pad_858[0x4];                                      // 0x0858(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   DefaultInputConfigName;                            // 0x085C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_864[0x4];                                      // 0x0864(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(EAppControllerInputType BeforeType, EAppControllerInputType AfterType)> OnChangeControllerInputTypeEvent; // 0x0868(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerEvent;  // 0x0878(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerUpEvent; // 0x0888(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnMouseFullScreenClickEvent;                       // 0x0898(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnMouseLeftButtonReleasedEvent;                    // 0x08A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8B8[0x100];                                    // 0x08B8(0x0100)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                LastHoveredObject;                                 // 0x09B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_9C0[0x70];                                     // 0x09C0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void AddRegisterSubMenu(class UObject* InMenuObject, int32 InPriority);
+	void ApplyOptionControllerSettings();
+	bool CalcIsMousePositionInViewport();
+	void CalcTutorialControllerType(uint8* Type, uint8* Platform);
+	void ClearUserFocus();
+	void DoInputMenu(EMenuInputKey InKey);
+	EAppControllerInputType GetCurrentInputType();
+	class UObject* GetLastHoveredObject();
+	struct FKey GetMappableKeyByMappingName(const class FName& MappingName);
+	struct FKey GetMenuConfigKey(const class FName& InActionName, bool IsGamepad, bool IsAnalog);
+	struct FKey GetRaceConfigKey(const class FName& InActionName, bool IsPrimary, bool IsGamepad);
+	void OnApplicationHasReactivated();
+	void OnChangeControllerInputType(EAppControllerInputType BeforeType, EAppControllerInputType AfterType);
+	void OnLeftMousePressed();
+	void OnLeftStickVectorAxisEvent(const struct FVector& InStickVector);
+	void OnMousePointer(const struct FPointerEvent& InPointerEvent);
+	void OnMousePointerEventBP(const struct FPointerEvent& InPointerEvent);
+	void OnMousePointerUp(const struct FPointerEvent& InPointerEvent);
+	void RegisterMainMenu(class UObject* InObject, EMainMenuRegistPriority InPriority);
+	void RegisterMenu(class UObject* InMenuObject, int32 InPriority);
+	void SetCurrentInputConfig(const class FName InputConfigName);
+	void SetEnableMainMenu(const class UObject* InObject, bool IsEnable);
+	void SetEnableMainMenuAll(bool IsEnable);
+	void SetEnableMainMenuLowerPriority(bool IsEnable, int32 InPrioirty);
+	void SetEnableMainMenuUpperPriority(bool IsEnable, int32 InPrioirty);
+	void SetEnableSubMenu(const class UObject* InObject, bool IsEnable);
+	void SetEnableSubMenuAll(bool IsEnable);
+	void SetEnableSubMenuLowerPriority(bool IsEnable, int32 InPrioirty);
+	void SetEnableSubMenuUpperPriority(bool IsEnable, int32 InPrioirty);
+	void SetForceNonConsumeMouseEvent(bool bEnable);
+	void SetInputBlocked(bool InBlocked);
+	void SetLastHoveredObject(class UObject* HoveredObject);
+	bool UnregisterMainMenu(const class UObject* InObject);
+	void UnregisterMainMenuAll();
+	void UnregisterMenu();
+	bool UnregisterSingleMenu(const class UObject* InMenuObject);
+	bool UnregisterSingleSubMenu(const class UObject* InMenuObject);
+	void UnregisterSubMenu();
+
+	bool GetLeftMouseButtonPressing() const;
+	struct FVector2D GetLeftStickAxisValue() const;
+	class UObject* GetRegisteredMenu() const;
+	TArray<class UObject*> GetRegisteredSubMenu() const;
+	class FName GetSystemFocusedWidgetName() const;
+	bool OnIsMenuInputEnabled() const;
+	bool OnIsSubMenuInputEnabled() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("MenuPopupWindowInterface")
+		STATIC_CLASS_IMPL("AppPlayerController")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"MenuPopupWindowInterface")
+		STATIC_NAME_IMPL(L"AppPlayerController")
 	}
-	static class IMenuPopupWindowInterface* GetDefaultObj()
+	static class AAppPlayerController* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<IMenuPopupWindowInterface>();
-	}
-
-	class UObject* AsUObject()
-	{
-		return reinterpret_cast<UObject*>(this);
-	}
-	const class UObject* AsUObject() const
-	{
-		return reinterpret_cast<const UObject*>(this);
+		return GetDefaultObjImpl<AAppPlayerController>();
 	}
 };
-DUMPER7_ASSERTS_IMenuPopupWindowInterface;
+DUMPER7_ASSERTS_AAppPlayerController;
+
+// Class UnionSystem.MenuPlayerController
+// 0x0000 (0x0A30 - 0x0A30)
+class AMenuPlayerController : public AAppPlayerController
+{
+public:
+	void SetMenuDirectionKeyEnable(bool bEnableDirection);
+
+	bool GetMenuDirectionKeyEnable() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MenuPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuPlayerController")
+	}
+	static class AMenuPlayerController* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMenuPlayerController>();
+	}
+};
+DUMPER7_ASSERTS_AMenuPlayerController;
 
 // Class UnionSystem.AppGameInstance
 // 0x0020 (0x01E0 - 0x01C0)
@@ -380,32 +435,41 @@ public:
 };
 DUMPER7_ASSERTS_UControllerButtonData;
 
-// Class UnionSystem.SimpleAnimationComponent
-// 0x0080 (0x0120 - 0x00A0)
-class alignas(0x10) USimpleAnimationComponent : public UActorComponent
+// Class UnionSystem.SessionManager
+// 0x0130 (0x0160 - 0x0030)
+class USessionManager final : public UGameInstanceSubsystem
 {
 public:
-	class UAnimSequence*                          Animation;                                         // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class USceneComponent*                        Target;                                            // 0x00A8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	float                                         PlayRate;                                          // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayOffsetInFrame;                                 // 0x00B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B8[0x68];                                      // 0x00B8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x130];                                     // 0x0030(0x0130)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool GetDisplayCode(class FString* displayCode);
+	bool GetExternalAddressRegionName(class FString* AddressRegionName);
+	bool GetFairPlayPoint(int32* OutFairPlayPoint);
+	bool GetIsBan(bool* bOutIsBan);
+	bool GetLoginComplete();
+	bool GetPenaltyEndTime(class FString* endTime);
+	bool GetRegionCode(class FString* regionCode);
+	EResponseCodeAbstract GetResponseCodeAbstract();
+	bool GetSwitchOnlineCode(int32* switchOnlineCode);
+	bool GetUserID(class FString* UserId);
+	void StartLogin(TDelegate<void(bool Error, bool SavedataDeleted)> Callback);
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("SimpleAnimationComponent")
+		STATIC_CLASS_IMPL("SessionManager")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"SimpleAnimationComponent")
+		STATIC_NAME_IMPL(L"SessionManager")
 	}
-	static class USimpleAnimationComponent* GetDefaultObj()
+	static class USessionManager* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<USimpleAnimationComponent>();
+		return GetDefaultObjImpl<USessionManager>();
 	}
 };
-DUMPER7_ASSERTS_USimpleAnimationComponent;
+DUMPER7_ASSERTS_USessionManager;
 
 // Class UnionSystem.AppListenerFocusPoint
 // 0x0000 (0x0240 - 0x0240)
@@ -507,87 +571,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UAppOptionConfigSaveGameHelper;
-
-// Class UnionSystem.AppPlayerController
-// 0x01D8 (0x0A30 - 0x0858)
-class AAppPlayerController : public APlayerController
-{
-public:
-	uint8                                         Pad_858[0x4];                                      // 0x0858(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   DefaultInputConfigName;                            // 0x085C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_864[0x4];                                      // 0x0864(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(EAppControllerInputType BeforeType, EAppControllerInputType AfterType)> OnChangeControllerInputTypeEvent; // 0x0868(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerEvent;  // 0x0878(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPointerEvent& InPointerEvent)> OnMousePointerUpEvent; // 0x0888(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnMouseFullScreenClickEvent;                       // 0x0898(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnMouseLeftButtonReleasedEvent;                    // 0x08A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8B8[0x100];                                    // 0x08B8(0x0100)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                LastHoveredObject;                                 // 0x09B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_9C0[0x70];                                     // 0x09C0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void AddRegisterSubMenu(class UObject* InMenuObject, int32 InPriority);
-	void ApplyOptionControllerSettings();
-	bool CalcIsMousePositionInViewport();
-	void CalcTutorialControllerType(uint8* Type, uint8* Platform);
-	void ClearUserFocus();
-	void DoInputMenu(EMenuInputKey InKey);
-	EAppControllerInputType GetCurrentInputType();
-	class UObject* GetLastHoveredObject();
-	struct FKey GetMappableKeyByMappingName(const class FName& MappingName);
-	struct FKey GetMenuConfigKey(const class FName& InActionName, bool IsGamepad, bool IsAnalog);
-	struct FKey GetRaceConfigKey(const class FName& InActionName, bool IsPrimary, bool IsGamepad);
-	void OnApplicationHasReactivated();
-	void OnChangeControllerInputType(EAppControllerInputType BeforeType, EAppControllerInputType AfterType);
-	void OnLeftMousePressed();
-	void OnLeftStickVectorAxisEvent(const struct FVector& InStickVector);
-	void OnMousePointer(const struct FPointerEvent& InPointerEvent);
-	void OnMousePointerEventBP(const struct FPointerEvent& InPointerEvent);
-	void OnMousePointerUp(const struct FPointerEvent& InPointerEvent);
-	void RegisterMainMenu(class UObject* InObject, EMainMenuRegistPriority InPriority);
-	void RegisterMenu(class UObject* InMenuObject, int32 InPriority);
-	void SetCurrentInputConfig(const class FName InputConfigName);
-	void SetEnableMainMenu(const class UObject* InObject, bool IsEnable);
-	void SetEnableMainMenuAll(bool IsEnable);
-	void SetEnableMainMenuLowerPriority(bool IsEnable, int32 InPrioirty);
-	void SetEnableMainMenuUpperPriority(bool IsEnable, int32 InPrioirty);
-	void SetEnableSubMenu(const class UObject* InObject, bool IsEnable);
-	void SetEnableSubMenuAll(bool IsEnable);
-	void SetEnableSubMenuLowerPriority(bool IsEnable, int32 InPrioirty);
-	void SetEnableSubMenuUpperPriority(bool IsEnable, int32 InPrioirty);
-	void SetForceNonConsumeMouseEvent(bool bEnable);
-	void SetInputBlocked(bool InBlocked);
-	void SetLastHoveredObject(class UObject* HoveredObject);
-	bool UnregisterMainMenu(const class UObject* InObject);
-	void UnregisterMainMenuAll();
-	void UnregisterMenu();
-	bool UnregisterSingleMenu(const class UObject* InMenuObject);
-	bool UnregisterSingleSubMenu(const class UObject* InMenuObject);
-	void UnregisterSubMenu();
-
-	bool GetLeftMouseButtonPressing() const;
-	struct FVector2D GetLeftStickAxisValue() const;
-	class UObject* GetRegisteredMenu() const;
-	TArray<class UObject*> GetRegisteredSubMenu() const;
-	class FName GetSystemFocusedWidgetName() const;
-	bool OnIsMenuInputEnabled() const;
-	bool OnIsSubMenuInputEnabled() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AppPlayerController")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AppPlayerController")
-	}
-	static class AAppPlayerController* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AAppPlayerController>();
-	}
-};
-DUMPER7_ASSERTS_AAppPlayerController;
 
 // Class UnionSystem.AppPlayerControllerSubsystem
 // 0x0288 (0x02B8 - 0x0030)
@@ -947,7 +930,7 @@ public:
 	struct FUserFriendShipData                    _UserFriendShipData;                               // 0x0BD0(0x0050)(NativeAccessSpecifierPublic)
 	struct FUserGadgetCustomizeData               _UserGadgetCustomizeData;                          // 0x0C20(0x0001)(NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C21[0x7];                                      // 0x0C21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUserActivityCardFlagData              _UserActivityCardFlagData;                         // 0x0C28(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUserActivityCardFlagData              _UserActivityCardFlagData;                         // 0x0C28(0x0028)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FCompensationData                      _CompensationData;                                 // 0x0C50(0x0010)(NativeAccessSpecifierPublic)
 	struct FUserLegendCompeData                   _UserLegendCompeData;                              // 0x0C60(0x0020)(NativeAccessSpecifierPublic)
 	struct FUserRestorationData                   _UserRestorationData;                              // 0x0C80(0x0050)(NativeAccessSpecifierPublic)
@@ -1057,11 +1040,11 @@ public:
 DUMPER7_ASSERTS_UAppViewUtil;
 
 // Class UnionSystem.AuthSubsystem
-// 0x00F0 (0x0120 - 0x0030)
+// 0x0100 (0x0130 - 0x0030)
 class UAuthSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0xF0];                                      // 0x0030(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x100];                                     // 0x0030(0x0100)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DebugGetOnlineToken(const class FString& Endpoint, int32 LocalUserNum);
@@ -1070,6 +1053,7 @@ public:
 	bool GetOnlineTokenFromnUniqueNetId(const struct FUniqueNetIdRepl& UserId, class FString* outToken);
 	void OnCompleteUserGetDataRequest(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void SetCachedAppUserBaseData(const struct FUserGetDataResponse& Response);
+	void SetCachedAppUserCrmId(const class FString& CrmId);
 	void SetCachedAppUserFairPlayPointData(const struct FFairPointCheckFairPointResponse& Response);
 	void SetupCachedAppUserBaseData();
 	void StartLogin(int32 LocalUserNum, TDelegate<void(int32 LocalUserNum, bool bWasSuccessful, const class FString& ErrorMessage)> OnComplete);
@@ -1079,6 +1063,7 @@ public:
 	struct FUniqueNetIdRepl CreateUniquePlayerId(const class FString& PlayerIdString) const;
 	class FString GetAuthenticatedWith(int32 LocalUserNum) const;
 	const struct FAppUserBaseData GetCachedAppUserBaseData() const;
+	class FString GetCachedAppUserCrmId() const;
 	class FString GetEOSAuthToken(int32 LocalUserNum) const;
 	class FString GetExternalAccountId(int32 LocalUserNum) const;
 	class FString GetLoggedInPlayerNickname(int32 LocalUserNum) const;
@@ -1086,6 +1071,7 @@ public:
 	class FString GetLoggedInUserIdString(int32 LocalUserNum) const;
 	class FString GetOnlineEnvironment(int32 LocalUserNum) const;
 	class FString GetPlatformToken(int32 LocalUserNum) const;
+	bool HasCachedAppUserCrmId() const;
 	bool IsLoggedIn(int32 LocalUserNum) const;
 	bool IsMatchLoggedInUserId(const class FString& ProductUserId) const;
 
@@ -1308,16 +1294,17 @@ public:
 DUMPER7_ASSERTS_UDebugImportantLogPanel;
 
 // Class UnionSystem.DebugImportantLogSubsystem
-// 0x0010 (0x0040 - 0x0030)
+// 0x0018 (0x0048 - 0x0030)
 class UDebugImportantLogSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	class UDebugImportantLogPanel*                ImportantLogPanel;                                 // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bPanelVisibility;                                  // 0x0038(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDebugImportantLogPanel*                ImportantLogPanel;                                 // 0x0038(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bPanelVisibility;                                  // 0x0040(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void AddImportantLog(const class FString& LogLocation, const class FString& LogString);
+	void AddImportantLog(const class FString& LogLocation, const class FString& LogString, bool LogConsole);
 	class UDebugImportantLogPanel* GetImportantLogPanel();
 	void SetImportantLogCount(int32 NewCount);
 	void SetImportantLogPanelVisible(bool bNewVisible);
@@ -1343,7 +1330,7 @@ DUMPER7_ASSERTS_UDebugImportantLogSubsystem;
 class UDebugImportantLogUtil final : public UBlueprintFunctionLibrary
 {
 public:
-	static void AddImportantLog(const class FString& LogLocation, const class FString& LogString);
+	static void AddImportantLog(const class FString& LogLocation, const class FString& LogString, bool LogConsole);
 	static void SetImportantLogCount(int32 NewCount);
 	static void SetImportantLogVisible(bool bNewVisible);
 
@@ -1754,12 +1741,11 @@ public:
 DUMPER7_ASSERTS_UFriendSubsystem;
 
 // Class UnionSystem.GadgetSettingData
-// 0x02D0 (0x0300 - 0x0030)
+// 0x0348 (0x0378 - 0x0030)
 class UGadgetSettingData final : public UDataAsset
 {
 public:
-	struct FGadgetSetting                         GadgetSettingTable[0x8F];                          // 0x0030(0x0005)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2FB[0x5];                                      // 0x02FB(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FGadgetSetting                         GadgetSettingTable[0xA8];                          // 0x0030(0x0005)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void UpdateGadgetSetting();
@@ -2227,6 +2213,9 @@ public:
 	static void Parse_RankingGetRankingLegendCompe(const class FString& OutData, int32* ResCode, struct FRankingGetRankingLegendCompeResponse* Response);
 	static void Parse_RankingGetRankingRankMatch(const class FString& OutData, int32* ResCode, struct FRankingGetRankingRankMatchResponse* Response);
 	static void Parse_RankingGetRankingTimeTrial(const class FString& OutData, int32* ResCode, struct FRankingGetRankingTimeTrialResponse* Response);
+	static void Parse_ReceiveRewardGetReceivedRewards(const class FString& OutData, int32* ResCode, struct FReceiveRewardGetReceivedRewardsResponse* Response);
+	static void Parse_ReceiveRewardGetRewards(const class FString& OutData, int32* ResCode, struct FReceiveRewardGetRewardsResponse* Response);
+	static void Parse_ReceiveRewardSaveRewards(const class FString& OutData, int32* ResCode, struct FReceiveRewardSaveRewardsResponse* Response);
 	static void Parse_ResultSaveFestaResult(const class FString& OutData, int32* ResCode, struct FResultSaveFestaResultResponse* Response);
 	static void Parse_ResultSaveLegendCompeResult(const class FString& OutData, int32* ResCode, struct FResultSaveLegendCompeResultResponse* Response);
 	static void Parse_ResultSaveRankMatchResult(const class FString& OutData, int32* ResCode, struct FResultSaveRankMatchResultResponse* Response);
@@ -2246,6 +2235,7 @@ public:
 	static void Parse_UserNintendoSwitchOnlineCheck(const class FString& OutData, int32* ResCode, struct FUserNintendoSwitchOnlineCheckResponse* Response);
 	static void Parse_UserSavePaidDlcOwnerships(const class FString& OutData, int32* ResCode, struct FUserSavePaidDlcOwnershipsResponse* Response);
 	static void Parse_UserSaveUserNetworkSettings(const class FString& OutData, int32* ResCode, struct FUserSaveUserNetworkSettingsResponse* Response);
+	static void Parse_UserSgAccountLink(const class FString& OutData, int32* ResCode, struct FUserSgAccountLinkResponse* Response);
 	static void QueryServerTime(TDelegate<void(const struct FDateTime& Timestamp, bool Error)> OnComplete);
 	static bool Receive_CntReplayGetSignedUrl(int32 Handle, bool* OutError, int32* ResCode, struct FCntReplayGetSignedUrlResponse* Response);
 	static bool Receive_CompensationGetCompensations(int32 Handle, bool* OutError, int32* ResCode, struct FCompensationGetCompensationsResponse* Response);
@@ -2305,6 +2295,9 @@ public:
 	static bool Receive_RankingGetRankingLegendCompe(int32 Handle, bool* OutError, int32* ResCode, struct FRankingGetRankingLegendCompeResponse* Response);
 	static bool Receive_RankingGetRankingRankMatch(int32 Handle, bool* OutError, int32* ResCode, struct FRankingGetRankingRankMatchResponse* Response);
 	static bool Receive_RankingGetRankingTimeTrial(int32 Handle, bool* OutError, int32* ResCode, struct FRankingGetRankingTimeTrialResponse* Response);
+	static bool Receive_ReceiveRewardGetReceivedRewards(int32 Handle, bool* OutError, int32* ResCode, struct FReceiveRewardGetReceivedRewardsResponse* Response);
+	static bool Receive_ReceiveRewardGetRewards(int32 Handle, bool* OutError, int32* ResCode, struct FReceiveRewardGetRewardsResponse* Response);
+	static bool Receive_ReceiveRewardSaveRewards(int32 Handle, bool* OutError, int32* ResCode, struct FReceiveRewardSaveRewardsResponse* Response);
 	static bool Receive_ResultSaveFestaResult(int32 Handle, bool* OutError, int32* ResCode, struct FResultSaveFestaResultResponse* Response);
 	static bool Receive_ResultSaveLegendCompeResult(int32 Handle, bool* OutError, int32* ResCode, struct FResultSaveLegendCompeResultResponse* Response);
 	static bool Receive_ResultSaveRankMatchResult(int32 Handle, bool* OutError, int32* ResCode, struct FResultSaveRankMatchResultResponse* Response);
@@ -2324,6 +2317,7 @@ public:
 	static bool Receive_UserNintendoSwitchOnlineCheck(int32 Handle, bool* OutError, int32* ResCode, struct FUserNintendoSwitchOnlineCheckResponse* Response);
 	static bool Receive_UserSavePaidDlcOwnerships(int32 Handle, bool* OutError, int32* ResCode, struct FUserSavePaidDlcOwnershipsResponse* Response);
 	static bool Receive_UserSaveUserNetworkSettings(int32 Handle, bool* OutError, int32* ResCode, struct FUserSaveUserNetworkSettingsResponse* Response);
+	static bool Receive_UserSgAccountLink(int32 Handle, bool* OutError, int32* ResCode, struct FUserSgAccountLinkResponse* Response);
 	static int32 Send_CntReplayGetSignedUrl(const struct FCntReplayGetSignedUrlRequest& Request);
 	static void Send_CntReplayGetSignedUrl_Callbacked(const struct FCntReplayGetSignedUrlRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static void Send_CntReplayGetSignedUrl_Callbacked_NoResend(const struct FCntReplayGetSignedUrlRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
@@ -2556,6 +2550,18 @@ public:
 	static void Send_RankingGetRankingTimeTrial_Callbacked(const struct FRankingGetRankingTimeTrialRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static void Send_RankingGetRankingTimeTrial_Callbacked_NoResend(const struct FRankingGetRankingTimeTrialRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static int32 Send_RankingGetRankingTimeTrial_NoResend(const struct FRankingGetRankingTimeTrialRequest& Request);
+	static int32 Send_ReceiveRewardGetReceivedRewards(const struct FReceiveRewardGetReceivedRewardsRequest& Request);
+	static void Send_ReceiveRewardGetReceivedRewards_Callbacked(const struct FReceiveRewardGetReceivedRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static void Send_ReceiveRewardGetReceivedRewards_Callbacked_NoResend(const struct FReceiveRewardGetReceivedRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static int32 Send_ReceiveRewardGetReceivedRewards_NoResend(const struct FReceiveRewardGetReceivedRewardsRequest& Request);
+	static int32 Send_ReceiveRewardGetRewards(const struct FReceiveRewardGetRewardsRequest& Request);
+	static void Send_ReceiveRewardGetRewards_Callbacked(const struct FReceiveRewardGetRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static void Send_ReceiveRewardGetRewards_Callbacked_NoResend(const struct FReceiveRewardGetRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static int32 Send_ReceiveRewardGetRewards_NoResend(const struct FReceiveRewardGetRewardsRequest& Request);
+	static int32 Send_ReceiveRewardSaveRewards(const struct FReceiveRewardSaveRewardsRequest& Request);
+	static void Send_ReceiveRewardSaveRewards_Callbacked(const struct FReceiveRewardSaveRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static void Send_ReceiveRewardSaveRewards_Callbacked_NoResend(const struct FReceiveRewardSaveRewardsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static int32 Send_ReceiveRewardSaveRewards_NoResend(const struct FReceiveRewardSaveRewardsRequest& Request);
 	static int32 Send_ResultSaveFestaResult(const struct FResultSaveFestaResultRequest& Request);
 	static void Send_ResultSaveFestaResult_Callbacked(const struct FResultSaveFestaResultRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static void Send_ResultSaveFestaResult_Callbacked_NoResend(const struct FResultSaveFestaResultRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
@@ -2632,6 +2638,10 @@ public:
 	static void Send_UserSaveUserNetworkSettings_Callbacked(const struct FUserSaveUserNetworkSettingsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static void Send_UserSaveUserNetworkSettings_Callbacked_NoResend(const struct FUserSaveUserNetworkSettingsRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
 	static int32 Send_UserSaveUserNetworkSettings_NoResend(const struct FUserSaveUserNetworkSettingsRequest& Request);
+	static int32 Send_UserSgAccountLink(const struct FUserSgAccountLinkRequest& Request);
+	static void Send_UserSgAccountLink_Callbacked(const struct FUserSgAccountLinkRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static void Send_UserSgAccountLink_Callbacked_NoResend(const struct FUserSgAccountLinkRequest& Request, TDelegate<void(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error)> Callback);
+	static int32 Send_UserSgAccountLink_NoResend(const struct FUserSgAccountLinkRequest& Request);
 	static int32 TransferDataForDownload(const class FString& Uri, TArray<uint8>* Bytes, TDelegate<void(int32 ResCode, bool Error)> OnComplete, TDelegate<void(int32 Length, float Rate)> OnProgress);
 	static int32 TransferDataForDownloadDetail(const class FString& Uri, TArray<uint8>* Bytes, TDelegate<void(int32 ResCode, int32 ContentLength, float ElapsedTime, bool Error)> OnComplete, TDelegate<void(int32 Length, float Rate)> OnProgress);
 	static const int32 TransferDataGetInvalidHandle();
@@ -2904,6 +2914,33 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UKeyConfigPressAnyKey;
+
+// Class UnionSystem.LegendCompeChanceUpUtil
+// 0x0000 (0x0028 - 0x0028)
+class ULegendCompeChanceUpUtil final : public UBlueprintFunctionLibrary
+{
+public:
+	static class FText GetLegendCompeChanceDetailText(ELegendCompeChanceUpType ChanceUpType, int32 order, int32 Ratio);
+	static class FText GetLegendCompeChanceUpRatioText(int32 Ratio);
+	static class FText GetLegendCompeChanceUpTypeText(ELegendCompeChanceUpType ChanceUpType);
+	static class FText GetLegendCompeOrderText(int32 order);
+	static class FText GetLegendCompePointText(int32 Point);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LegendCompeChanceUpUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegendCompeChanceUpUtil")
+	}
+	static class ULegendCompeChanceUpUtil* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULegendCompeChanceUpUtil>();
+	}
+};
+DUMPER7_ASSERTS_ULegendCompeChanceUpUtil;
 
 // Class UnionSystem.LobbyContextBase
 // 0x0258 (0x0280 - 0x0028)
@@ -3365,7 +3402,7 @@ public:
 DUMPER7_ASSERTS_UMachineIdUtilityLibrary;
 
 // Class UnionSystem.MasterDataHelper
-// 0x01D0 (0x01F8 - 0x0028)
+// 0x01E8 (0x0210 - 0x0028)
 class UMasterDataHelper : public UObject
 {
 public:
@@ -3427,6 +3464,8 @@ public:
 	class UDataTable*                             CueSheetIdTable;                                   // 0x01E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	class UDataTable*                             TimeTrialSonicSpeedClearTimeTable;                 // 0x01E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	class UDataTable*                             TimeTrialSuperSonicSpeedClearTimeTable;            // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UUnionLocalizationTextData*             LocalizationTextData;                              // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UStringTable*>                   LocalizationStringTableArray;                      // 0x0200(0x0010)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()
@@ -3781,30 +3820,56 @@ public:
 };
 DUMPER7_ASSERTS_IMenuInputRecieveInterface;
 
-// Class UnionSystem.MenuPlayerController
-// 0x0000 (0x0A30 - 0x0A30)
-class AMenuPlayerController : public AAppPlayerController
+// Class UnionSystem.MenuPopupWindowInterface
+// 0x0000 (0x0000 - 0x0000)
+class IMenuPopupWindowInterface final
 {
 public:
-	void SetMenuDirectionKeyEnable(bool bEnableDirection);
-
-	bool GetMenuDirectionKeyEnable() const;
+	class UWidgetAnimation* GetAnimationIn();
+	class UWidgetAnimation* GetAnimationLoop();
+	class UWidgetAnimation* GetAnimationOut();
+	EPopupWindowButtonType GetPopupWindowButtonType();
+	EPopupWindowType GetPopupWindowType();
+	void InitParam(EPopupWindowButtonType ButtonType);
+	void PlayAnimationIn();
+	void SetButtonControlDelayTime(float InTime);
+	void SetButtonText(const TArray<class FText>& BtnTextArray);
+	void SetDisplayFooterButton(const bool InDisplay);
+	void SetDonpaTicketCount(int32 CurrentCount, int32 AfterCount);
+	void SetEnableInput(bool InEnable);
+	void SetFooterMenuBtn(int32 BtnIconIndex, int32 BtnIconType, const class FText& BtnText);
+	void SetImageButtonSelectText(const class FText& InText);
+	void SetImageTexture(const class UTexture2D* Texture2D);
+	void SetInitialFocusButtonIndex(const int32 InButtonIndex);
+	void SetPopupInfoDisplayIndex(int32 Index_0);
+	void SetPopupInfoMainMenuButtonIconIndex(int32 Btn01IconIndex, int32 Btn02IconIndex);
+	void SetTextMessege(const class FText& Text);
+	void SetTextTitle(const class FText& Text, bool Attension);
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("MenuPlayerController")
+		STATIC_CLASS_IMPL("MenuPopupWindowInterface")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"MenuPlayerController")
+		STATIC_NAME_IMPL(L"MenuPopupWindowInterface")
 	}
-	static class AMenuPlayerController* GetDefaultObj()
+	static class IMenuPopupWindowInterface* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<AMenuPlayerController>();
+		return GetDefaultObjImpl<IMenuPopupWindowInterface>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
 	}
 };
-DUMPER7_ASSERTS_AMenuPlayerController;
+DUMPER7_ASSERTS_IMenuPopupWindowInterface;
 
 // Class UnionSystem.MilestoneUtil
 // 0x0000 (0x0028 - 0x0028)
@@ -3902,11 +3967,11 @@ public:
 DUMPER7_ASSERTS_UMovieFunctionLibrary;
 
 // Class UnionSystem.NetMasterDataManageSubsystem
-// 0x0420 (0x0450 - 0x0030)
+// 0x0468 (0x0498 - 0x0030)
 class UNetMasterDataManageSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0x420];                                     // 0x0030(0x0420)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x468];                                     // 0x0030(0x0468)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	const struct FMasterDataGetMasterDataResponse_MstFestaData GetCurrentFestaData(bool* bResult);
@@ -3967,14 +4032,14 @@ public:
 DUMPER7_ASSERTS_UNetPingSubsystem;
 
 // Class UnionSystem.NetSaveGame
-// 0x0300 (0x0328 - 0x0028)
+// 0x0330 (0x0358 - 0x0028)
 class UNetSaveGame final : public USaveGame
 {
 public:
 	struct FSaveDataHeader                        _Header;                                           // 0x0028(0x000C)(NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNetMasterDataVersionData              _LocalNetMasterDataVersion;                        // 0x0038(0x0010)(NativeAccessSpecifierPublic)
-	struct FAppLocalNetMasterData                 _LocalNetMasterData;                               // 0x0048(0x02E0)(NativeAccessSpecifierPublic)
+	struct FAppLocalNetMasterData                 _LocalNetMasterData;                               // 0x0048(0x0310)(NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -4278,7 +4343,7 @@ DUMPER7_ASSERTS_UP2PConnectionSubsystem;
 
 // Class UnionSystem.PlatformPrivilegeObject
 // 0x0068 (0x02F8 - 0x0290)
-class APlatformPrivilegeObject : public AActor
+class APlatformPrivilegeObject final : public AActor
 {
 public:
 	uint8                                         Pad_290[0x68];                                     // 0x0290(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -4554,18 +4619,19 @@ public:
 DUMPER7_ASSERTS_UPlaylogHelper;
 
 // Class UnionSystem.PlaylogManager
-// 0x0168 (0x0198 - 0x0030)
+// 0x0180 (0x01B0 - 0x0030)
 class UPlaylogManager final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0x148];                                     // 0x0030(0x0148)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CrmWidget;                                         // 0x0178(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TDelegate<void(bool Success)>                 SetupCompleteDelegate;                             // 0x0180(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_190[0x8];                                      // 0x0190(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x160];                                     // 0x0030(0x0160)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CrmWidget;                                         // 0x0190(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TDelegate<void(bool Success)>                 SetupCompleteDelegate;                             // 0x0198(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1A8[0x8];                                      // 0x01A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnId(const class FString& AccountID);
 	void OnUrl(const class FString& RegistrationURL);
+	void OnUserSgAccountLinkComplete(const class FString& ApiName, const class FString& RequestData, const class FString& ResponseData, bool Error);
 	void SteamOnSetupComplete(bool Success);
 
 public:
@@ -4849,6 +4915,33 @@ public:
 };
 DUMPER7_ASSERTS_URankingSubsystem;
 
+// Class UnionSystem.RankMatchChanceupUtil
+// 0x0000 (0x0028 - 0x0028)
+class URankMatchChanceupUtil final : public UBlueprintFunctionLibrary
+{
+public:
+	static class FText GetRankMatchChanceDetailText(ERankMachChanceUpType ChanceUpType, int32 order, int32 Ratio);
+	static class FText GetRankMatchChanceUpRatioText(int32 Ratio);
+	static class FText GetRankMatchChanceUpTypeText(ERankMachChanceUpType ChanceUpType);
+	static class FText GetRankMatchOrderText(int32 Ratio);
+	static class FText GetRankMatchPointText(int32 Point);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("RankMatchChanceupUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RankMatchChanceupUtil")
+	}
+	static class URankMatchChanceupUtil* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URankMatchChanceupUtil>();
+	}
+};
+DUMPER7_ASSERTS_URankMatchChanceupUtil;
+
 // Class UnionSystem.ReplaySaveGame
 // 0x0020 (0x0048 - 0x0028)
 class UReplaySaveGame final : public USaveGame
@@ -5088,42 +5181,6 @@ public:
 };
 DUMPER7_ASSERTS_USequenceTriggerComponent;
 
-// Class UnionSystem.SessionManager
-// 0x0130 (0x0160 - 0x0030)
-class USessionManager final : public UGameInstanceSubsystem
-{
-public:
-	uint8                                         Pad_30[0x130];                                     // 0x0030(0x0130)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool GetDisplayCode(class FString* displayCode);
-	bool GetExternalAddressRegionName(class FString* AddressRegionName);
-	bool GetFairPlayPoint(int32* OutFairPlayPoint);
-	bool GetIsBan(bool* bOutIsBan);
-	bool GetLoginComplete();
-	bool GetPenaltyEndTime(class FString* endTime);
-	bool GetRegionCode(class FString* regionCode);
-	EResponseCodeAbstract GetResponseCodeAbstract();
-	bool GetSwitchOnlineCode(int32* switchOnlineCode);
-	bool GetUserID(class FString* UserId);
-	void StartLogin(TDelegate<void(bool Error, bool SavedataDeleted)> Callback);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("SessionManager")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"SessionManager")
-	}
-	static class USessionManager* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USessionManager>();
-	}
-};
-DUMPER7_ASSERTS_USessionManager;
-
 // Class UnionSystem.ShareConfig
 // 0x0040 (0x0078 - 0x0038)
 class UShareConfig final : public UDeveloperSettings
@@ -5149,6 +5206,33 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UShareConfig;
+
+// Class UnionSystem.SimpleAnimationComponent
+// 0x0080 (0x0120 - 0x00A0)
+class alignas(0x10) USimpleAnimationComponent : public UActorComponent
+{
+public:
+	class UAnimSequence*                          Animation;                                         // 0x00A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class USceneComponent*                        Target;                                            // 0x00A8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	float                                         PlayRate;                                          // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayOffsetInFrame;                                 // 0x00B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B8[0x68];                                      // 0x00B8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SimpleAnimationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleAnimationComponent")
+	}
+	static class USimpleAnimationComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USimpleAnimationComponent>();
+	}
+};
+DUMPER7_ASSERTS_USimpleAnimationComponent;
 
 // Class UnionSystem.SimpleAnimEventComponent
 // 0x0020 (0x0140 - 0x0120)
@@ -5406,29 +5490,6 @@ public:
 };
 DUMPER7_ASSERTS_UUnionAddOnEpic;
 
-// Class UnionSystem.UnionAddOnNX
-// 0x0050 (0x0078 - 0x0028)
-class UUnionAddOnNX final : public UUnionAddOnBase
-{
-public:
-	uint8                                         Pad_28[0x50];                                      // 0x0028(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("UnionAddOnNX")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"UnionAddOnNX")
-	}
-	static class UUnionAddOnNX* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUnionAddOnNX>();
-	}
-};
-DUMPER7_ASSERTS_UUnionAddOnNX;
-
 // Class UnionSystem.UnionAddOnPS
 // 0x0098 (0x00C0 - 0x0028)
 class UUnionAddOnPS final : public UUnionAddOnBase
@@ -5451,6 +5512,29 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UUnionAddOnPS;
+
+// Class UnionSystem.UnionAddOnSteam
+// 0x0050 (0x0078 - 0x0028)
+class UUnionAddOnSteam final : public UUnionAddOnBase
+{
+public:
+	uint8                                         Pad_28[0x50];                                      // 0x0028(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UnionAddOnSteam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionAddOnSteam")
+	}
+	static class UUnionAddOnSteam* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionAddOnSteam>();
+	}
+};
+DUMPER7_ASSERTS_UUnionAddOnSteam;
 
 // Class UnionSystem.UnionStaticMeshComponent
 // 0x0000 (0x05E0 - 0x05E0)
@@ -5882,6 +5966,26 @@ public:
 };
 DUMPER7_ASSERTS_UUnionCueSheetIdDataAsset_04_Union;
 
+// Class UnionSystem.UnionCueSheetIdDataAsset_05_Union
+// 0x0000 (0x0030 - 0x0030)
+class UUnionCueSheetIdDataAsset_05_Union final : public UUnionCueSheetIdDataAsset
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UnionCueSheetIdDataAsset_05_Union")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionCueSheetIdDataAsset_05_Union")
+	}
+	static class UUnionCueSheetIdDataAsset_05_Union* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionCueSheetIdDataAsset_05_Union>();
+	}
+};
+DUMPER7_ASSERTS_UUnionCueSheetIdDataAsset_05_Union;
+
 // Class UnionSystem.UnionDateTime
 // 0x0000 (0x0028 - 0x0028)
 class UUnionDateTime final : public UBlueprintFunctionLibrary
@@ -6179,13 +6283,13 @@ public:
 DUMPER7_ASSERTS_UUnionExecuteConsoleCommandBP;
 
 // Class UnionSystem.UnionForceFeedbackManager
-// 0x01A8 (0x01D0 - 0x0028)
+// 0x0210 (0x0238 - 0x0028)
 class UUnionForceFeedbackManager final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class UForceFeedbackEffect*                   PresetForceFeedbackEffects[0x2C];                  // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_198[0x38];                                     // 0x0198(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_198[0xA0];                                     // 0x0198(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -6235,11 +6339,11 @@ public:
 DUMPER7_ASSERTS_UUnionForceFeedbackLibrary;
 
 // Class UnionSystem.UnionGameInstanceSubsystem
-// 0x0220 (0x0250 - 0x0030)
+// 0x0270 (0x02A0 - 0x0030)
 class UUnionGameInstanceSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_30[0x220];                                     // 0x0030(0x0220)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x270];                                     // 0x0030(0x0270)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool IsCastShadowDashPanel();
@@ -6342,6 +6446,52 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UInputModifierAxisToBool;
+
+// Class UnionSystem.UnionLocalizationTextData
+// 0x00E0 (0x0110 - 0x0030)
+class UUnionLocalizationTextData final : public UDataAsset
+{
+public:
+	class FText                                   FestaStatsTexts[0xE];                              // 0x0030(0x0010)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UnionLocalizationTextData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionLocalizationTextData")
+	}
+	static class UUnionLocalizationTextData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionLocalizationTextData>();
+	}
+};
+DUMPER7_ASSERTS_UUnionLocalizationTextData;
+
+// Class UnionSystem.UnionLocalizationTextLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UUnionLocalizationTextLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static class FText GetText(EUnionLocalizationTextType Type, uint8 textIndex);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UnionLocalizationTextLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UnionLocalizationTextLibrary")
+	}
+	static class UUnionLocalizationTextLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUnionLocalizationTextLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UUnionLocalizationTextLibrary;
 
 // Class UnionSystem.UnionManaPlayer
 // 0x00F0 (0x0118 - 0x0028)
@@ -7025,25 +7175,26 @@ public:
 DUMPER7_ASSERTS_UUnionSceneComponent;
 
 // Class UnionSystem.UnionSettings
-// 0x0258 (0x0290 - 0x0038)
+// 0x0250 (0x0288 - 0x0038)
 class UUnionSettings final : public UDeveloperSettings
 {
 public:
-	struct FUnionQualitySettings                  QualitySettings;                                   // 0x0038(0x0074)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	EViewResolution                               TravelRingResolution;                              // 0x00AC(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUnionTravelRingSettings               TravelRingSettings[0x3];                           // 0x00B0(0x0020)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	EShortcutViewScale                            ShortcutRingViewScale;                             // 0x0110(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMachineSettings                       MachineSettings;                                   // 0x0114(0x00B4)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	struct FUnionCastShadowSettings               CastShadowSettings[0x3];                           // 0x01C8(0x0003)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D1[0x3];                                      // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUnionRaceCarSettings                  RaceCarSettings;                                   // 0x01D4(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	struct FHoldItemSettings                      HoldItemSettings;                                  // 0x01E0(0x0060)(Edit, Config, NativeAccessSpecifierPublic)
-	struct FMenuSettings                          MenuSettings;                                      // 0x0240(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMatchingLobbySettings                 MatchingLobbySettings;                             // 0x0248(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	struct FIntPoint                              ScreenResolutionsEditor;                           // 0x0254(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25C[0x34];                                     // 0x025C(0x0034)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FUnionQualitySettings                  QualitySettings;                                   // 0x0038(0x0068)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	EViewResolution                               TravelRingResolution;                              // 0x00A0(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionTravelRingSettings               TravelRingSettings[0x3];                           // 0x00A4(0x0020)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	EShortcutViewScale                            ShortcutRingViewScale;                             // 0x0104(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMachineSettings                       MachineSettings;                                   // 0x0108(0x00B4)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUnionCastShadowSettings               CastShadowSettings[0x3];                           // 0x01BC(0x0003)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C5[0x3];                                      // 0x01C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionRaceCarSettings                  RaceCarSettings;                                   // 0x01C8(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHoldItemSettings                      HoldItemSettings;                                  // 0x01D8(0x0060)(Edit, Config, NativeAccessSpecifierPublic)
+	struct FMenuSettings                          MenuSettings;                                      // 0x0238(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMatchingLobbySettings                 MatchingLobbySettings;                             // 0x0240(0x000C)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FIntPoint                              ScreenResolutionsEditor;                           // 0x024C(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_254[0x34];                                     // 0x0254(0x0034)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetEnableBlur(bool Enable);
@@ -7192,7 +7343,7 @@ public:
 DUMPER7_ASSERTS_AUnionStaticMeshActor;
 
 // Class UnionSystem.UnionStatsManager
-// 0x08B8 (0x08E8 - 0x0030)
+// 0x0918 (0x0948 - 0x0030)
 class UUnionStatsManager final : public UGameInstanceSubsystem
 {
 public:
@@ -7203,7 +7354,7 @@ public:
 	TMulticastInlineDelegate<void(const EStatsEventId StatsEventId, const EDriverId DriverId, int32 StatsValue)> OnCharacterStatsEventUpdate; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const struct FHonorCommendationDataSetList& DataSetList)> OnHonorResultEvent; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	struct FHonorCommendationDataSetList          HonorList;                                         // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	uint8                                         Pad_98[0x850];                                     // 0x0098(0x0850)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_98[0x8B0];                                     // 0x0098(0x08B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 GetCharacterStatsEventValue(const EStatsEventId StatsEventId, const EDriverId DriverId);
@@ -7819,6 +7970,29 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UUnionWidgetUtility;
+
+// Class UnionSystem.WinDualSenseUtilSubsystem
+// 0x0038 (0x0068 - 0x0030)
+class UWinDualSenseUtilSubsystem final : public UGameInstanceSubsystem
+{
+public:
+	uint8                                         Pad_30[0x38];                                      // 0x0030(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("WinDualSenseUtilSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinDualSenseUtilSubsystem")
+	}
+	static class UWinDualSenseUtilSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWinDualSenseUtilSubsystem>();
+	}
+};
+DUMPER7_ASSERTS_UWinDualSenseUtilSubsystem;
 
 // Class UnionSystem.CommonNetworkSettings
 // 0x0008 (0x0040 - 0x0038)

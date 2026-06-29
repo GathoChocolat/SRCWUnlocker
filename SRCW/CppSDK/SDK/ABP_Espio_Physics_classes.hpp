@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "ControlRig_structs.hpp"
 #include "UNION_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "ControlRig_structs.hpp"
 
 
 namespace SDK

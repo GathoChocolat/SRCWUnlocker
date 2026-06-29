@@ -245,6 +245,27 @@ void UWBP_Result_Sub_RankingTable_GP_Line_C::Finished_9BF783D74A7E7515B77DB4BB89
 }
 
 
+// Function WBP_Result_Sub_RankingTable_GP_Line.WBP_Result_Sub_RankingTable_GP_Line_C.GetChanceUpOrderValue
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32*                                  OutOrderValue                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Result_Sub_RankingTable_GP_Line_C::GetChanceUpOrderValue(int32* OutOrderValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Result_Sub_RankingTable_GP_Line_C", "GetChanceUpOrderValue");
+
+	Params::WBP_Result_Sub_RankingTable_GP_Line_C_GetChanceUpOrderValue Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutOrderValue != nullptr)
+		*OutOrderValue = Parms.OutOrderValue;
+}
+
+
 // Function WBP_Result_Sub_RankingTable_GP_Line.WBP_Result_Sub_RankingTable_GP_Line_C.InitRankIndexLine
 // (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 

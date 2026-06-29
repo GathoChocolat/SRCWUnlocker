@@ -170,7 +170,7 @@ enum class ECarStatusType : uint8
 	CarStatusHandle                          = 2,
 	CarStatusPower                           = 3,
 	CarStatusDash                            = 4,
-	ECarStatusType_MAX                       = 5,
+	Max                                      = 5,
 };
 
 // Enum UnionRun.ERacerDriftState
@@ -185,7 +185,7 @@ enum class ERacerDriftState : uint8
 };
 
 // Enum UnionRun.EUnionSurfaceType
-// NumValues: 0x003A
+// NumValues: 0x003B
 enum class EUnionSurfaceType : uint8
 {
 	None                                     = 0,
@@ -245,7 +245,8 @@ enum class EUnionSurfaceType : uint8
 	Leaf                                     = 54,
 	Slime                                    = 55,
 	Electric                                 = 56,
-	Max                                      = 57,
+	WaterSlime                               = 57,
+	Max                                      = 58,
 };
 
 // Enum UnionRun.EColliderColliAxes
@@ -438,7 +439,7 @@ enum class EComPathFileType : uint8
 };
 
 // Enum UnionRun.EGimmickComPathType
-// NumValues: 0x0018
+// NumValues: 0x001B
 enum class EGimmickComPathType : uint8
 {
 	NONE                                     = 0,
@@ -464,7 +465,10 @@ enum class EGimmickComPathType : uint8
 	ENEMY09001M_UP                           = 20,
 	ENEMY09001M_MEDIUM                       = 21,
 	ENEMY09001M_DOWN                         = 22,
-	Max                                      = 23,
+	Ex07DASHRING_LEFT                        = 23,
+	Ex07DASHRING_CENTER                      = 24,
+	Ex07DASHRING_RIGHT                       = 25,
+	Max                                      = 26,
 };
 
 // Enum UnionRun.EUnionRacePostProcessEffectType
@@ -604,7 +608,7 @@ enum class ECourseObjType : uint8
 };
 
 // Enum UnionRun.ETimingGimmickType
-// NumValues: 0x000D
+// NumValues: 0x000E
 enum class ETimingGimmickType : uint8
 {
 	None                                     = 0,
@@ -618,8 +622,9 @@ enum class ETimingGimmickType : uint8
 	Enemy09003                               = 8,
 	Enemy09001A                              = 9,
 	Enemy09001M                              = 10,
-	Num                                      = 11,
-	ETimingGimmickType_MAX                   = 12,
+	Ex07DashRing                             = 11,
+	Num                                      = 12,
+	ETimingGimmickType_MAX                   = 13,
 };
 
 // Enum UnionRun.ELapDataType
@@ -746,6 +751,49 @@ enum class EEnemy_Extnd06_Object_06001_Type : uint8
 	Extnd06_Object_06002                     = 2,
 	Extnd06_Object_06003                     = 3,
 	EEnemy_Extnd06_Object_06001_MAX          = 4,
+};
+
+// Enum UnionRun.EEvolveEffectMachineType
+// NumValues: 0x0008
+enum class EEvolveEffectMachineType : uint8
+{
+	SpeedMachine                             = 0,
+	AccelMachine                             = 1,
+	HandleMachine                            = 2,
+	PowerMachine                             = 3,
+	DashMachine                              = 4,
+	MonsterTruck                             = 5,
+	Num                                      = 6,
+	EEvolveEffectMachineType_MAX             = 7,
+};
+
+// Enum UnionRun.ESpinDashEffectMachineType
+// NumValues: 0x0009
+enum class ESpinDashEffectMachineType : uint8
+{
+	None                                     = 0,
+	SpeedMachine                             = 1,
+	AccelMachine                             = 2,
+	HandleMachine                            = 3,
+	PowerMachine                             = 4,
+	DashMachine                              = 5,
+	MonsterTruck                             = 6,
+	Num                                      = 7,
+	ESpinDashEffectMachineType_MAX           = 8,
+};
+
+// Enum UnionRun.ESubstituteItemEffectMachineType
+// NumValues: 0x0008
+enum class ESubstituteItemEffectMachineType : uint8
+{
+	SpeedMachine                             = 0,
+	AccelMachine                             = 1,
+	HandleMachine                            = 2,
+	PowerMachine                             = 3,
+	DashMachine                              = 4,
+	MonsterTruck                             = 5,
+	Num                                      = 6,
+	ESubstituteItemEffectMachineType_MAX     = 7,
 };
 
 // Enum UnionRun.EGimmickBollardType
@@ -1893,7 +1941,7 @@ enum class EUnionRaceUIResultSceneState : uint8
 };
 
 // Enum UnionRun.ERandomObjType
-// NumValues: 0x0022
+// NumValues: 0x0024
 enum class ERandomObjType : uint8
 {
 	None                                     = 0,
@@ -1928,8 +1976,10 @@ enum class ERandomObjType : uint8
 	PumpkinItemBoo                           = 29,
 	Extnd09_Enemy09001_Attack                = 30,
 	Extnd09_Enemy09001_Move                  = 31,
-	Num                                      = 32,
-	ERandomObjType_MAX                       = 33,
+	Extnd07_FireDashPanel_Island             = 32,
+	Extnd07_FireDashPanel_Temple             = 33,
+	Num                                      = 34,
+	ERandomObjType_MAX                       = 35,
 };
 
 // Enum UnionRun.ESpecialObjGroup
@@ -2154,7 +2204,7 @@ enum class ECarCustomType : uint8
 };
 
 // Enum UnionRun.EVehicleControlEvent
-// NumValues: 0x0051
+// NumValues: 0x0055
 enum class EVehicleControlEvent : uint8
 {
 	None                                     = 0,
@@ -2237,7 +2287,11 @@ enum class EVehicleControlEvent : uint8
 	OnSlideSnow                              = 77,
 	OnRingEngineStart                        = 78,
 	OnDoubleRing                             = 79,
-	EVehicleControlEvent_MAX                 = 80,
+	OnAirArea                                = 80,
+	OnSpinDash                               = 81,
+	OnJustLanding                            = 82,
+	OnEvolve                                 = 83,
+	EVehicleControlEvent_MAX                 = 84,
 };
 
 // Enum UnionRun.EUhionRunAffectType
@@ -2410,17 +2464,6 @@ enum class EBreakSpeedType : uint8
 	EBreakSpeedType_MAX                      = 2,
 };
 
-// ScriptStruct UnionRun.ItemBoxCurringParameter
-// 0x0008 (0x0010 - 0x0008)
-struct FItemBoxCurringParameter final : public FTableRowBase
-{
-public:
-	EStageId                                      StageId;                                           // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CurringDistance;                                   // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FItemBoxCurringParameter;
-
 // ScriptStruct UnionRun.HitTriggerInfo
 // 0x0060 (0x0060 - 0x0000)
 struct alignas(0x08) FHitTriggerInfo final
@@ -2433,15 +2476,111 @@ public:
 };
 DUMPER7_ASSERTS_FHitTriggerInfo;
 
-// ScriptStruct UnionRun.GadgetUpperRingBonusInfo
-// 0x0008 (0x0008 - 0x0000)
-struct FGadgetUpperRingBonusInfo final
+// ScriptStruct UnionRun.SweetsShipCannonBallData
+// 0x0010 (0x0010 - 0x0000)
+struct FSweetsShipCannonBallData final
 {
 public:
-	int32                                         RingNum;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RingMax;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMesh*                            BallMesh;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UNiagaraSystem*                         BreakEffect;                                       // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 };
-DUMPER7_ASSERTS_FGadgetUpperRingBonusInfo;
+DUMPER7_ASSERTS_FSweetsShipCannonBallData;
+
+// ScriptStruct UnionRun.CourseSequenceSpawnActorInfo
+// 0x0080 (0x0080 - 0x0000)
+struct FCourseSequenceSpawnActorInfo final
+{
+public:
+	TSubclassOf<class AActor>                     spawnClass_;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             offsetTransform_;                                  // 0x0010(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   sequenceTriggerLabel_;                             // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_78[0x8];                                       // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FCourseSequenceSpawnActorInfo;
+
+// ScriptStruct UnionRun.RacerReactionVoice
+// 0x00A0 (0x00A0 - 0x0000)
+struct FRacerReactionVoice final
+{
+public:
+	EDriverId                                     VoiceChrId;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Guest;                                  // 0x0030(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Rival;                                  // 0x0058(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   TextId;                                            // 0x0080(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	ERacerReactionWindow                          WindowId;                                          // 0x0090(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     DriverId;                                          // 0x0091(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     RivalId;                                           // 0x0092(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESerifUISubCharaId                            SerifUISubCharaId;                                 // 0x0093(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     FaceId;                                            // 0x0094(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         FacialNo;                                          // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StageId;                                           // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerReactionVoice;
+
+// ScriptStruct UnionRun.RacerReactionVoicePack
+// 0x00B8 (0x00B8 - 0x0000)
+struct FRacerReactionVoicePack final
+{
+public:
+	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<bool>                                  SerifScreenIndexList;                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FRacerReactionVoice                    RacerReactionVoice;                                // 0x0018(0x00A0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerReactionVoicePack;
+
+// ScriptStruct UnionRun.RacerReactionVoiceList
+// 0x0010 (0x0010 - 0x0000)
+struct FRacerReactionVoiceList final
+{
+public:
+	TArray<struct FRacerReactionVoicePack>        VoiceList;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerReactionVoiceList;
+
+// ScriptStruct UnionRun.RacerReactionChrData
+// 0x0018 (0x0018 - 0x0000)
+struct FRacerReactionChrData final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRacerReactionVoiceList                list;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerReactionChrData;
+
+// ScriptStruct UnionRun.RacerReactionChrDataList
+// 0x0018 (0x0018 - 0x0000)
+struct FRacerReactionChrDataList final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRacerReactionChrData>          DataList;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerReactionChrDataList;
+
+// ScriptStruct UnionRun.RacerReactionTypeParam
+// 0x0050 (0x0050 - 0x0000)
+struct FRacerReactionTypeParam final
+{
+public:
+	ERacerReactionId                              ID;                                                // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerReactionPriority                        Priority;                                          // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CoolTime;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerReactionSplitDispType                   SplitDispType;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRacerReactionChrData>          RandomVoiceList;                                   // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FRacerReactionChrDataList>      ChrVoiceList;                                      // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FRacerReactionChrDataList>      LinkVoiceList;                                     // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FRacerReactionChrDataList>      RivalVoiceList;                                    // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerReactionTypeParam;
 
 // ScriptStruct UnionRun.ColliderHitResult
 // 0x0018 (0x0018 - 0x0000)
@@ -2455,18 +2594,37 @@ public:
 };
 DUMPER7_ASSERTS_FColliderHitResult;
 
-// ScriptStruct UnionRun.GuidedJumpParamTable
-// 0x0010 (0x0018 - 0x0008)
-struct FGuidedJumpParamTable final : public FTableRowBase
+// ScriptStruct UnionRun.CustomComSpeedComLevel
+// 0x0020 (0x0028 - 0x0008)
+struct FCustomComSpeedComLevel final : public FTableRowBase
 {
 public:
-	int32                                         ParamId;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsValid;                                          // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MargeNext;                                         // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LRHeightAdjust;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERaceSettingGrouping                          RaceSettingGrouping;                               // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERaceSettingComSpeed                          ComSpeedLevel;                                     // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NomalLv;                                           // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HighLv;                                            // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SonicLv;                                           // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SuperSonicLv;                                      // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MirrorLv;                                          // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EComLotteryRateDataTableType                  ItemTable;                                         // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EComPointDistanceTableType                    ItemDist;                                          // 0x0021(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FGuidedJumpParamTable;
+DUMPER7_ASSERTS_FCustomComSpeedComLevel;
+
+// ScriptStruct UnionRun.PlaneChargeTurnSpeedParams
+// 0x0014 (0x0014 - 0x0000)
+struct FPlaneChargeTurnSpeedParams final
+{
+public:
+	float                                         AngularAccel;                                      // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SwitchAngularAccel;                                // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngularSpeedMin;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngularSpeedCenter;                                // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngularSpeedMax;                                   // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPlaneChargeTurnSpeedParams;
 
 // ScriptStruct UnionRun.UnionRaceCustomParam
 // 0x0014 (0x0014 - 0x0000)
@@ -2481,121 +2639,36 @@ public:
 };
 DUMPER7_ASSERTS_FUnionRaceCustomParam;
 
-// ScriptStruct UnionRun.AnchorPhysicsParameter
-// 0x001C (0x001C - 0x0000)
-struct FAnchorPhysicsParameter final
+// ScriptStruct UnionRun.AreaDataCourseColContentsPart
+// 0x0028 (0x0028 - 0x0000)
+struct FAreaDataCourseColContentsPart final
 {
 public:
-	float                                         anchorLength;                                      // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Mass;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         movableLimitTop;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         movableLimitRangeYaw;                              // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         airRegistSpeedThresholdPitch;                      // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         airRegistSpeedThresholdYaw;                        // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         reboundPitch;                                      // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 TriIndices;                                        // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FVector3f                              AabbMin;                                           // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector3f                              AabbMax;                                           // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FAnchorPhysicsParameter;
+DUMPER7_ASSERTS_FAreaDataCourseColContentsPart;
 
-// ScriptStruct UnionRun.LotteryRateData
-// 0x0040 (0x0048 - 0x0008)
-struct FLotteryRateData final : public FTableRowBase
+// ScriptStruct UnionRun.AreaDataCourseColContentsGrid
+// 0x0068 (0x0068 - 0x0000)
+struct FAreaDataCourseColContentsGrid final
 {
 public:
-	int16                                         SingleWhiteBoostRatio;                             // 0x0008(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         DoubleWhiteBoostRatio;                             // 0x000A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         PackageRingRatio;                                  // 0x000C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         HominPunchRatio;                                   // 0x000E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         DoubleHominPunchRatio;                             // 0x0010(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         TripleHominPunchRatio;                             // 0x0012(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         YellowDrill;                                       // 0x0014(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         ThornBall;                                         // 0x0016(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         MonsterTruck;                                      // 0x0018(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         KingBoomBoo;                                       // 0x001A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         RocketPunch;                                       // 0x001C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         DoubleRocketPunch;                                 // 0x001E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         TripleRocketPunch;                                 // 0x0020(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         KingWhiteBoost;                                    // 0x0022(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         CyanLaser;                                         // 0x0024(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         VioletVoid;                                        // 0x0026(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Anchor;                                            // 0x0028(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         BodyCut;                                           // 0x002A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Slicer;                                            // 0x002C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Slime;                                             // 0x002E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Splash;                                            // 0x0030(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         DarkChao;                                          // 0x0032(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Magnet;                                            // 0x0034(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         BlackBomb;                                         // 0x0036(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         WarpRing;                                          // 0x0038(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         TeamWarpRing;                                      // 0x003A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Omochao;                                           // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Shield;                                            // 0x003E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         Weight;                                            // 0x0040(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          enableFlag;                                        // 0x0042(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FAreaDataCourseColContentsPart> Container;                                    // 0x0000(0x0050)(NativeAccessSpecifierPublic)
+	struct FVector3f                              AabbMin;                                           // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector3f                              AabbMax;                                           // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FLotteryRateData;
+DUMPER7_ASSERTS_FAreaDataCourseColContentsGrid;
 
-// ScriptStruct UnionRun.DistanceGroupLotteryRateDataTable
-// 0x0480 (0x0488 - 0x0008)
-struct FDistanceGroupLotteryRateDataTable final : public FTableRowBase
+// ScriptStruct UnionRun.AreaDataCourseColContentsCourseCollision
+// 0x0050 (0x0050 - 0x0000)
+struct FAreaDataCourseColContentsCourseCollision final
 {
 public:
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup1;                   // 0x0008(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup2;                   // 0x0050(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup3;                   // 0x0098(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup4;                   // 0x00E0(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup5;                   // 0x0128(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup6;                   // 0x0170(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup7;                   // 0x01B8(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup8;                   // 0x0200(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup9;                   // 0x0248(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup10;                  // 0x0290(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup11;                  // 0x02D8(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup12;                  // 0x0320(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup13;                  // 0x0368(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup14;                  // 0x03B0(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup15;                  // 0x03F8(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup16;                  // 0x0440(0x0048)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, struct FAreaDataCourseColContentsGrid> Container;                                    // 0x0000(0x0050)(NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FDistanceGroupLotteryRateDataTable;
-
-// ScriptStruct UnionRun.AbsorbedObjectInfo
-// 0x0150 (0x0150 - 0x0000)
-struct FAbsorbedObjectInfo final
-{
-public:
-	class AActor*                                 AbsorbedObject;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             InitialTransform;                                  // 0x0010(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTransform                             MeshOffsetTransform;                               // 0x0070(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                AbsorbTargetScale;                                 // 0x00D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMesh*                            Mesh;                                              // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	TMap<int32, class UMaterialInterface*>        ReplaceMeshMaterials;                              // 0x00F0(0x0050)(Edit, BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-	ETakeRingType                                 RingType;                                          // 0x0140(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RingNum;                                           // 0x0144(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemBoxType                                  ItemBoxType;                                       // 0x0148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemId                                       itemType;                                          // 0x0149(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bFroceStartFromCenter;                             // 0x014A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnlyVisibleHolder;                                // 0x014B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAbsorbedObjectInfo;
-
-// ScriptStruct UnionRun.UnionRaceReturnDashParam
-// 0x001C (0x001C - 0x0000)
-struct FUnionRaceReturnDashParam final
-{
-public:
-	float                                         RETURNDASH_SCORE_SUCCESSPIVOT_MIN;                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RETURNDASH_SCORE_SUCCESSPIVOT_MAX;                 // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RETURNDASH_SCORE_SUCCESSRANGE;                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RETURNDASH_SCORE_SPAWNOFFSET;                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RETURNDASH_SCORE_ACCELE;                           // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RETURNDASH_SCORE_RELEASE1;                         // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RETURNDASH_SCORE_RELEASE2;                         // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRaceReturnDashParam;
+DUMPER7_ASSERTS_FAreaDataCourseColContentsCourseCollision;
 
 // ScriptStruct UnionRun.ItemSpeedParam
 // 0x0010 (0x0010 - 0x0000)
@@ -2608,98 +2681,6 @@ public:
 	float                                         SuperSonicSpeed;                                   // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FItemSpeedParam;
-
-// ScriptStruct UnionRun.PackageRingVariationRateData
-// 0x000C (0x000C - 0x0000)
-struct FPackageRingVariationRateData final
-{
-public:
-	int32                                         Ring10_Rate;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Ring20_Rate;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Ring100_Rate;                                      // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPackageRingVariationRateData;
-
-// ScriptStruct UnionRun.PackageRingItemBoxVariationRateData
-// 0x0018 (0x0018 - 0x0000)
-struct FPackageRingItemBoxVariationRateData final
-{
-public:
-	struct FPackageRingVariationRateData          NormalBox;                                         // 0x0000(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPackageRingVariationRateData          SpecialBox;                                        // 0x000C(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPackageRingItemBoxVariationRateData;
-
-// ScriptStruct UnionRun.RankGroupPackageRingVariationRateDataTable
-// 0x0078 (0x0080 - 0x0008)
-struct FRankGroupPackageRingVariationRateDataTable final : public FTableRowBase
-{
-public:
-	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup1;         // 0x0008(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup2;         // 0x0020(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup3;         // 0x0038(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup4;         // 0x0050(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup5;         // 0x0068(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRankGroupPackageRingVariationRateDataTable;
-
-// ScriptStruct UnionRun.UnionRaceStartDashParam
-// 0x0030 (0x0030 - 0x0000)
-struct FUnionRaceStartDashParam final
-{
-public:
-	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         STARTDASH_SCORE_ACCELE;                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_SCORE_RELEASE1;                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_SCORE_RELEASE2;                          // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_LV3_PIVOT;                               // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_LV3_RANGE;                               // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_LV2_PIVOT;                               // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_LV2_RANGE;                               // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_NG1_PIVOT;                               // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_NG1_RANGE;                               // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_NG2_PIVOT;                               // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         STARTDASH_NG2_RANGE;                               // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRaceStartDashParam;
-
-// ScriptStruct UnionRun.UnionBtCollisionBinaryParameter
-// 0x0020 (0x0020 - 0x0000)
-struct FUnionBtCollisionBinaryParameter final
-{
-public:
-	int32                                         DataVersion;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Hash;                                              // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ChunkDataCount;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<uint8>                                 Data;                                              // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionBtCollisionBinaryParameter;
-
-// ScriptStruct UnionRun.DroppedRingPlacementInfo
-// 0x001C (0x001C - 0x0000)
-struct FDroppedRingPlacementInfo final
-{
-public:
-	float                                         FrontProhibitedRange;                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DropMaxCount;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableInertia;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         InertiaCoffi;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InertiaAddSpeed;                                   // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RandomnessLaunchAngle;                             // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Sky_LaunchAngleFor1stRing;                         // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDroppedRingPlacementInfo;
-
-// ScriptStruct UnionRun.EntryRacer
-// 0x0080 (0x0080 - 0x0000)
-struct alignas(0x08) FEntryRacer final
-{
-public:
-	uint8                                         Pad_0[0x80];                                       // 0x0000(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FEntryRacer;
 
 // ScriptStruct UnionRun.AttackedInfo
 // 0x0068 (0x0068 - 0x0000)
@@ -2728,31 +2709,77 @@ public:
 };
 DUMPER7_ASSERTS_FAttackedInfo;
 
-// ScriptStruct UnionRun.CyanLaserParam
-// 0x0018 (0x0018 - 0x0000)
-struct FCyanLaserParam final
+// ScriptStruct UnionRun.GadgetNotifyAttackInfo
+// 0x0008 (0x0070 - 0x0068)
+struct FGadgetNotifyAttackInfo final : public FAttackedInfo
 {
 public:
-	class UMaterialInstanceDynamic*               dmi_;                                              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bTakeDamagePlayer;                                 // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAttackSucceed;                                    // 0x0069(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bMultiHit;                                         // 0x006A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FCyanLaserParam;
+DUMPER7_ASSERTS_FGadgetNotifyAttackInfo;
 
-// ScriptStruct UnionRun.DebugPrintStringStruct
-// 0x0028 (0x0028 - 0x0000)
-struct FDebugPrintStringStruct final
+// ScriptStruct UnionRun.UnionRaceStartDashParam
+// 0x0030 (0x0030 - 0x0000)
+struct FUnionRaceStartDashParam final
 {
 public:
-	class FString                                 strBody;                                           // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         FontSize;                                          // 0x0010(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         posX;                                              // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         posY;                                              // 0x0018(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         colR;                                              // 0x001C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         colG;                                              // 0x0020(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         colB;                                              // 0x0024(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         STARTDASH_SCORE_ACCELE;                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_SCORE_RELEASE1;                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_SCORE_RELEASE2;                          // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_LV3_PIVOT;                               // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_LV3_RANGE;                               // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_LV2_PIVOT;                               // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_LV2_RANGE;                               // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_NG1_PIVOT;                               // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_NG1_RANGE;                               // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_NG2_PIVOT;                               // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         STARTDASH_NG2_RANGE;                               // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FDebugPrintStringStruct;
+DUMPER7_ASSERTS_FUnionRaceStartDashParam;
+
+// ScriptStruct UnionRun.ComAvoidParams
+// 0x0010 (0x0010 - 0x0000)
+struct FComAvoidParams final
+{
+public:
+	float                                         CarWidth;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AvoidMargin;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ThornBallAvoidWidth;                               // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MagnetAvoidWidth;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComAvoidParams;
+
+// ScriptStruct UnionRun.CreateItemInfo
+// 0x0018 (0x0018 - 0x0000)
+struct FCreateItemInfo final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 uclass;                                            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UItemObjectLayer*                       objLayer;                                          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCreateItemInfo;
+
+// ScriptStruct UnionRun.TremorParameter
+// 0x0020 (0x0028 - 0x0008)
+struct FTremorParameter final : public FTableRowBase
+{
+public:
+	ECameraTremorType                             CameraTremorType;                                  // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         targetUD;                                          // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         targetUDSpeed;                                     // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         targetUDTime;                                      // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         targetLR;                                          // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         targetLRSpeed;                                     // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         targetLRTime;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FTremorParameter;
 
 // ScriptStruct UnionRun.UnionTyreMarkInfo
 // 0x0060 (0x0060 - 0x0000)
@@ -2771,18 +2798,17 @@ public:
 };
 DUMPER7_ASSERTS_FUnionTyreMarkInfo;
 
-// ScriptStruct UnionRun.GadgetMachineTuneValueChange
-// 0x0014 (0x0014 - 0x0000)
-struct FGadgetMachineTuneValueChange final
+// ScriptStruct UnionRun.TravelRingMainCourseParamTable
+// 0x0018 (0x0020 - 0x0008)
+struct FTravelRingMainCourseParamTable final : public FTableRowBase
 {
 public:
-	int32                                         SpeedValue;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AccelValue;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HandlingValue;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PowerValue;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DashValue;                                         // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EStageId                                      StageId;                                           // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HeightOffset;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Comment;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetMachineTuneValueChange;
+DUMPER7_ASSERTS_FTravelRingMainCourseParamTable;
 
 // ScriptStruct UnionRun.ItemAimInfo
 // 0x0078 (0x0078 - 0x0000)
@@ -2793,35 +2819,59 @@ public:
 };
 DUMPER7_ASSERTS_FItemAimInfo;
 
-// ScriptStruct UnionRun.GadgetLotteryRateMagnificationCorrectionData
-// 0x0018 (0x0020 - 0x0008)
-struct FGadgetLotteryRateMagnificationCorrectionData final : public FTableRowBase
+// ScriptStruct UnionRun.RelativeMoveParameter
+// 0x000C (0x000C - 0x0000)
+struct FRelativeMoveParameter
 {
 public:
-	EGadgetId                                     gadgetId;                                          // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ModelMinScale;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ModelScaleTime;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RelativeMoveTime;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRelativeMoveParameter;
+
+// ScriptStruct UnionRun.ItemboxRelativeMoveParameter
+// 0x001C (0x0028 - 0x000C)
+struct FItemboxRelativeMoveParameter final : public FRelativeMoveParameter
+{
+public:
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                RelativeMoveOffset;                                // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FItemboxRelativeMoveParameter;
+
+// ScriptStruct UnionRun.ComGadgetEquipTableSetting
+// 0x0008 (0x0010 - 0x0008)
+struct FComGadgetEquipTableSetting final : public FTableRowBase
+{
+public:
+	EComGadgetEquipTableType                      TableType;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Magnification;                                     // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<EItemId>                               ItemIdList;                                        // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         GadgetEquipGr;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetLotteryRateMagnificationCorrectionData;
+DUMPER7_ASSERTS_FComGadgetEquipTableSetting;
 
-// ScriptStruct UnionRun.Extnd09SoundCueAsset
-// 0x0008 (0x0008 - 0x0000)
-struct FExtnd09SoundCueAsset final
+// ScriptStruct UnionRun.ComGadgetEquipRank
+// 0x0018 (0x0020 - 0x0008)
+struct FComGadgetEquipRank final : public FTableRowBase
 {
 public:
-	class USoundAtomCue*                          AttackSound;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	int32                                         Rank;                                              // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComGadgetEquipTableSetting            NormalRacerGadget;                                 // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FExtnd09SoundCueAsset;
+DUMPER7_ASSERTS_FComGadgetEquipRank;
 
-// ScriptStruct UnionRun.GadgetEnhanceOmochaoInfo
-// 0x0004 (0x0004 - 0x0000)
-struct FGadgetEnhanceOmochaoInfo final
+// ScriptStruct UnionRun.GroupHitInfo
+// 0x0058 (0x0058 - 0x0000)
+struct FGroupHitInfo final
 {
 public:
-	float                                         ActiveSeconds;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GroupIndex;                                        // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GroupBonusHitCount;                                // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            RacersHitCountList;                                // 0x0008(0x0050)(NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetEnhanceOmochaoInfo;
+DUMPER7_ASSERTS_FGroupHitInfo;
 
 // ScriptStruct UnionRun.ColliderHitWeaponResult
 // 0x0030 (0x0030 - 0x0000)
@@ -2832,56 +2882,6 @@ public:
 	uint8                                         Pad_1[0x2F];                                       // 0x0001(0x002F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FColliderHitWeaponResult;
-
-// ScriptStruct UnionRun.GroupBattlePersonalResult
-// 0x0014 (0x0014 - 0x0000)
-struct FGroupBattlePersonalResult final
-{
-public:
-	int32                                         GroupIndex;                                        // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RacerIndex;                                        // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Value;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Rank;                                              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Traction;                                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGroupBattlePersonalResult;
-
-// ScriptStruct UnionRun.GroupBattleResult
-// 0x0018 (0x0018 - 0x0000)
-struct FGroupBattleResult final
-{
-public:
-	EGroupBonusType                               BonusType;                                         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGroupBattlePersonalResult>     PersonalResultList;                                // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGroupBattleResult;
-
-// ScriptStruct UnionRun.StruckoutItemBoxParam
-// 0x0008 (0x0008 - 0x0000)
-struct FStruckoutItemBoxParam final
-{
-public:
-	EItemBoxType                                  BoxType;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RelocationWaitTime;                                // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FStruckoutItemBoxParam;
-
-// ScriptStruct UnionRun.RacerReactionInfo_TableRow
-// 0x0010 (0x0018 - 0x0008)
-struct FRacerReactionInfo_TableRow final : public FTableRowBase
-{
-public:
-	bool                                          bIsValid;                                          // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerReactionId                              ID;                                                // 0x0009(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerReactionPriority                        Priority;                                          // 0x000A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CoolTime;                                          // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerReactionSplitDispType                   SplitDispType;                                     // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRacerReactionInfo_TableRow;
 
 // ScriptStruct UnionRun.UnionSurfaceFlag
 // 0x001F (0x001F - 0x0000)
@@ -2922,6 +2922,42 @@ public:
 };
 DUMPER7_ASSERTS_FUnionSurfaceFlag;
 
+// ScriptStruct UnionRun.StruckoutItemBoxParam
+// 0x0008 (0x0008 - 0x0000)
+struct FStruckoutItemBoxParam final
+{
+public:
+	EItemBoxType                                  BoxType;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RelocationWaitTime;                                // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FStruckoutItemBoxParam;
+
+// ScriptStruct UnionRun.GadgetMachineTuneValueChange
+// 0x0014 (0x0014 - 0x0000)
+struct FGadgetMachineTuneValueChange final
+{
+public:
+	int32                                         SpeedValue;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AccelValue;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HandlingValue;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PowerValue;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DashValue;                                         // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetMachineTuneValueChange;
+
+// ScriptStruct UnionRun.GadgetRingEngineInfo
+// 0x0020 (0x0020 - 0x0000)
+struct FGadgetRingEngineInfo final
+{
+public:
+	int32                                         RingNum;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RingInterval;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGadgetMachineTuneValueChange          MachineParameterUp;                                // 0x000C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetRingEngineInfo;
+
 // ScriptStruct UnionRun.Collider
 // 0x0030 (0x0030 - 0x0000)
 struct FCollider final
@@ -2937,35 +2973,31 @@ public:
 };
 DUMPER7_ASSERTS_FCollider;
 
-// ScriptStruct UnionRun.WarpRingMoveInfo
-// 0x00F0 (0x00F0 - 0x0000)
-struct alignas(0x10) FWarpRingMoveInfo final
+// ScriptStruct UnionRun.DroppedRingPlacementInfo
+// 0x001C (0x001C - 0x0000)
+struct FDroppedRingPlacementInfo final
 {
 public:
-	uint8                                         Pad_0[0xF0];                                       // 0x0000(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         FrontProhibitedRange;                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DropMaxCount;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableInertia;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InertiaCoffi;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InertiaAddSpeed;                                   // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RandomnessLaunchAngle;                             // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Sky_LaunchAngleFor1stRing;                         // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FWarpRingMoveInfo;
+DUMPER7_ASSERTS_FDroppedRingPlacementInfo;
 
-// ScriptStruct UnionRun.DonutHoopPackageRingParam
-// 0x0001 (0x0001 - 0x0000)
-struct FDonutHoopPackageRingParam final
+// ScriptStruct UnionRun.RacerDamageDirectionInterference
+// 0x0008 (0x0008 - 0x0000)
+struct FRacerDamageDirectionInterference final
 {
 public:
-	EPackageRingType                              RingType;                                          // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HorizontalInterferenceRatio;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VerticalInterferenceRatio;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FDonutHoopPackageRingParam;
-
-// ScriptStruct UnionRun.GadgetNotifyAttackInfo
-// 0x0008 (0x0070 - 0x0068)
-struct FGadgetNotifyAttackInfo final : public FAttackedInfo
-{
-public:
-	bool                                          bTakeDamagePlayer;                                 // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAttackSucceed;                                    // 0x0069(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bMultiHit;                                         // 0x006A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FGadgetNotifyAttackInfo;
+DUMPER7_ASSERTS_FRacerDamageDirectionInterference;
 
 // ScriptStruct UnionRun.CollisionHitInfo
 // 0x0060 (0x0060 - 0x0000)
@@ -2990,57 +3022,68 @@ public:
 };
 DUMPER7_ASSERTS_FStaticBodyCapsuleParam;
 
-// ScriptStruct UnionRun.Enemy_Extnd06_Enemy06001_Size
-// 0x0020 (0x0020 - 0x0000)
-struct FEnemy_Extnd06_Enemy06001_Size final
+// ScriptStruct UnionRun.DonutHoopItemBoxParam
+// 0x0008 (0x0008 - 0x0000)
+struct FDonutHoopItemBoxParam final
 {
 public:
-	float                                         Height;                                            // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Radius;                                            // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Offset;                                            // 0x0008(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FEnemy_Extnd06_Enemy06001_Size;
-
-// ScriptStruct UnionRun.RaceActionTutorialTrigger
-// 0x0028 (0x0028 - 0x0000)
-struct FRaceActionTutorialTrigger final
-{
-public:
-	ETutorialAction                               tutorialAction;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemBoxType                                  ItemBoxType;                                       // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinTriggerRate;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxTriggerRate;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinTriggerGap;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxTriggerGap;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 RouteList;                                         // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         RelocationWaitTime;                                // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FRaceActionTutorialTrigger;
+DUMPER7_ASSERTS_FDonutHoopItemBoxParam;
 
-// ScriptStruct UnionRun.EnemySquidPhase2Attack
+// ScriptStruct UnionRun.CyanLaserMoveInfo
+// 0x0170 (0x0170 - 0x0000)
+struct alignas(0x10) FCyanLaserMoveInfo final
+{
+public:
+	uint8                                         Pad_0[0x170];                                      // 0x0000(0x0170)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FCyanLaserMoveInfo;
+
+// ScriptStruct UnionRun.UnionRaceTime
+// 0x0010 (0x0010 - 0x0000)
+struct FUnionRaceTime final
+{
+public:
+	int32                                         ClockCount;                                        // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MinutePart;                                        // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SecondPart;                                        // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MillimeterSecondPart;                              // 0x000C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRaceTime;
+
+// ScriptStruct UnionRun.UnionRaceStateParam
+// 0x00C0 (0x00C0 - 0x0000)
+struct FUnionRaceStateParam final
+{
+public:
+	struct FUnionRaceTime                         RaceWholeTime;                                     // 0x0000(0x0010)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	ERaceInfoStateType                            RaceStatus;                                        // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CountDownValue;                                    // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RacerCount;                                        // 0x0018(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SpeedClass;                                        // 0x001C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            RacerIndexRankMap;                                 // 0x0020(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            RacerIndexWorldMap;                                // 0x0070(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRaceStateParam;
+
+// ScriptStruct UnionRun.GadgetJustDashInfo
 // 0x001C (0x001C - 0x0000)
-struct FEnemySquidPhase2Attack final
+struct FGadgetJustDashInfo final
 {
 public:
-	float                                         LifeTime;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BulletSpeed_KPH;                                   // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MoveToPathTime;                                    // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AttackFirstDelayTime;                              // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AttackIntervalTime;                                // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x8];                                       // 0x0014(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         InputFrame;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostMulLv1;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostMulLv2;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostMulLv3;                                       // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostMulLv4;                                       // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddSpeed;                                          // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddSpeedDuration;                                  // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FEnemySquidPhase2Attack;
-
-// ScriptStruct UnionRun.GadgetBoatChargeJumpUpInfo
-// 0x000C (0x000C - 0x0000)
-struct FGadgetBoatChargeJumpUpInfo final
-{
-public:
-	float                                         AirTrickRateX;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AirTrickRateY;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AirTrickLimitNum;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGadgetBoatChargeJumpUpInfo;
+DUMPER7_ASSERTS_FGadgetJustDashInfo;
 
 // ScriptStruct UnionRun.StaticBodyCylinderParam
 // 0x0008 (0x0008 - 0x0000)
@@ -3052,17 +3095,32 @@ public:
 };
 DUMPER7_ASSERTS_FStaticBodyCylinderParam;
 
-// ScriptStruct UnionRun.TravelRingMainCourseParamTable
-// 0x0018 (0x0020 - 0x0008)
-struct FTravelRingMainCourseParamTable final : public FTableRowBase
+// ScriptStruct UnionRun.DonutHoopPackageRingParam
+// 0x0001 (0x0001 - 0x0000)
+struct FDonutHoopPackageRingParam final
 {
 public:
-	EStageId                                      StageId;                                           // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HeightOffset;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Comment;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	EPackageRingType                              RingType;                                          // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FTravelRingMainCourseParamTable;
+DUMPER7_ASSERTS_FDonutHoopPackageRingParam;
+
+// ScriptStruct UnionRun.DonutHoopParam
+// 0x0060 (0x0060 - 0x0000)
+struct FDonutHoopParam final
+{
+public:
+	class UStaticMesh*                            DonutMesh;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	EDonutHoopCenterObjectType                    CenterType;                                        // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDonutHoopPackageRingParam             PakcageRingParam;                                  // 0x0009(0x0001)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDonutHoopItemBoxParam                 ItemBoxParam;                                      // 0x000C(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LocationOffset;                                    // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               RotationOffset;                                    // 0x0030(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         LocationOffsetSuperRingRuleZOffset;                // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x14];                                      // 0x004C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FDonutHoopParam;
 
 // ScriptStruct UnionRun.StaticBodyBoxParam
 // 0x0018 (0x0018 - 0x0000)
@@ -3073,22 +3131,16 @@ public:
 };
 DUMPER7_ASSERTS_FStaticBodyBoxParam;
 
-// ScriptStruct UnionRun.GadgetShortenDamagetTimeInfo
-// 0x0024 (0x0024 - 0x0000)
-struct FGadgetShortenDamagetTimeInfo final
+// ScriptStruct UnionRun.ItemBoxMeshTable
+// 0x0030 (0x0038 - 0x0008)
+struct FItemBoxMeshTable final : public FTableRowBase
 {
 public:
-	int32                                         SpinTime1st;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SpinTime12th;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReduceDamageOnSpeedRatio;                          // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CrashReduceRatio;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ItemSpeedValueChangeRatio_Anchor;                  // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ItemSpeedValueChangeRatio_BodyCut;                 // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ItemSpeedValueChangeRatio_Slime;                   // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ItemSpeedValueChangeRatio_Magnet;                  // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ItemSpeedValueChangeRatio_Splash;                  // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemBoxType                                  ItemBoxType;                                       // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UStaticMesh>             ItemBoxMesh;                                       // 0x0010(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetShortenDamagetTimeInfo;
+DUMPER7_ASSERTS_FItemBoxMeshTable;
 
 // ScriptStruct UnionRun.StaticBodySphereParam
 // 0x0004 (0x0004 - 0x0000)
@@ -3098,28 +3150,6 @@ public:
 	float                                         Radius;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FStaticBodySphereParam;
-
-// ScriptStruct UnionRun.ColliderParam
-// 0x0000 (0x0000 - 0x0000)
-#pragma pack(push, 0x1)
-struct alignas(0x01) FColliderParam
-{
-};
-#pragma pack(pop)
-DUMPER7_ASSERTS_FColliderParam;
-
-// ScriptStruct UnionRun.CourseSequenceSpawnActorInfo
-// 0x0080 (0x0080 - 0x0000)
-struct FCourseSequenceSpawnActorInfo final
-{
-public:
-	TSubclassOf<class AActor>                     spawnClass_;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             offsetTransform_;                                  // 0x0010(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   sequenceTriggerLabel_;                             // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_78[0x8];                                       // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FCourseSequenceSpawnActorInfo;
 
 // ScriptStruct UnionRun.CollisionHitResultInfo
 // 0x0058 (0x0058 - 0x0000)
@@ -3133,32 +3163,15 @@ public:
 };
 DUMPER7_ASSERTS_FCollisionHitResultInfo;
 
-// ScriptStruct UnionRun.AttackReply
-// 0x0028 (0x0028 - 0x0000)
-struct FAttackReply final
-{
-public:
-	class FString                                 Tag;                                               // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AttackRacerIndex;                                  // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TakeDamageRacerIndex;                              // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerDamageType                              DamageType;                                        // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ElapsedTime;                                       // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RemainTime;                                        // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerDamageType                              OverwrittenByThisDamageType;                       // 0x0024(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAttackReply;
-
-// ScriptStruct UnionRun.FootCutParams
+// ScriptStruct UnionRun.GadgetExpandGetRingRangeInfo
 // 0x0008 (0x0008 - 0x0000)
-struct FFootCutParams final
+struct FGadgetExpandGetRingRangeInfo final
 {
 public:
-	float                                         TriggerTopRate;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WarpRate;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CollisionRadiusMag;                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CollisionHeightMag;                                // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FFootCutParams;
+DUMPER7_ASSERTS_FGadgetExpandGetRingRangeInfo;
 
 // ScriptStruct UnionRun.UnionVehicleRaceInput
 // 0x0048 (0x0048 - 0x0000)
@@ -3206,16 +3219,6 @@ public:
 };
 DUMPER7_ASSERTS_FAreaDataCourseColSettingsCount;
 
-// ScriptStruct UnionRun.GadgetStoleInfo
-// 0x0008 (0x0008 - 0x0000)
-struct FGadgetStoleInfo final
-{
-public:
-	int32                                         RingNum;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CoolDownTime;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGadgetStoleInfo;
-
 // ScriptStruct UnionRun.AreaDataCourseColSettings
 // 0x0050 (0x0050 - 0x0000)
 struct FAreaDataCourseColSettings final
@@ -3239,71 +3242,6 @@ public:
 };
 DUMPER7_ASSERTS_FAreaDataCourseColSettings;
 
-// ScriptStruct UnionRun.AreaDataCourseColContentsPart
-// 0x0028 (0x0028 - 0x0000)
-struct FAreaDataCourseColContentsPart final
-{
-public:
-	TArray<int32>                                 TriIndices;                                        // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FVector3f                              AabbMin;                                           // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector3f                              AabbMax;                                           // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAreaDataCourseColContentsPart;
-
-// ScriptStruct UnionRun.DarkChaoHoldItemData
-// 0x0090 (0x0098 - 0x0008)
-struct FDarkChaoHoldItemData final : public FTableRowBase
-{
-public:
-	EItemId                                       ItemId;                                            // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsRareItem;                                        // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MeshType;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsIncludeUsableTimes;                              // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UStaticMesh>             StaticMeshData;                                    // 0x0018(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMesh*                          SkeletalMeshData;                                  // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	TSubclassOf<class UAnimInstance>              AnimClass;                                         // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        AnimAsset;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UAnimationAsset*                        TwiceTimesAnimAsset;                               // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UAnimationAsset*                        OnceTimeAnimAsset;                                 // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	struct FVector                                RelativeScaleOffset;                               // 0x0068(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                RelativeLocationOffset;                            // 0x0080(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDarkChaoHoldItemData;
-
-// ScriptStruct UnionRun.AreaDataCourseColContentsGrid
-// 0x0068 (0x0068 - 0x0000)
-struct FAreaDataCourseColContentsGrid final
-{
-public:
-	TMap<int32, struct FAreaDataCourseColContentsPart> Container;                                    // 0x0000(0x0050)(NativeAccessSpecifierPublic)
-	struct FVector3f                              AabbMin;                                           // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector3f                              AabbMax;                                           // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAreaDataCourseColContentsGrid;
-
-// ScriptStruct UnionRun.AreaDataCourseColContentsCourseCollision
-// 0x0050 (0x0050 - 0x0000)
-struct FAreaDataCourseColContentsCourseCollision final
-{
-public:
-	TMap<int32, struct FAreaDataCourseColContentsGrid> Container;                                    // 0x0000(0x0050)(NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAreaDataCourseColContentsCourseCollision;
-
-// ScriptStruct UnionRun.PlaneTurnAppearanceParams
-// 0x0010 (0x0010 - 0x0000)
-struct FPlaneTurnAppearanceParams final
-{
-public:
-	float                                         MaxDegree;                                         // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngularSpeed;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SwitchAngularSpeed;                                // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngularAccelSec;                                   // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPlaneTurnAppearanceParams;
-
 // ScriptStruct UnionRun.AreaDataCourseColContents
 // 0x0050 (0x0050 - 0x0000)
 struct FAreaDataCourseColContents final
@@ -3313,33 +3251,22 @@ public:
 };
 DUMPER7_ASSERTS_FAreaDataCourseColContents;
 
-// ScriptStruct UnionRun.UnionRaceTickObjectData
-// 0x0030 (0x0030 - 0x0000)
-struct FUnionRaceTickObjectData final
+// ScriptStruct UnionRun.AttackReply
+// 0x0028 (0x0028 - 0x0000)
+struct FAttackReply final
 {
 public:
-	TArray<class ASkeletalMeshActor*>             SkeletalActors;                                    // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-	TArray<class USimpleAnimationComponent*>      SimpleAnimComponents;                              // 0x0010(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-	uint8                                         Pad_20[0x10];                                      // 0x0020(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 Tag;                                               // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AttackRacerIndex;                                  // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TakeDamageRacerIndex;                              // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerDamageType                              DamageType;                                        // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ElapsedTime;                                       // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RemainTime;                                        // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerDamageType                              OverwrittenByThisDamageType;                       // 0x0024(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FUnionRaceTickObjectData;
-
-// ScriptStruct UnionRun.TremorParameter
-// 0x0020 (0x0028 - 0x0008)
-struct FTremorParameter final : public FTableRowBase
-{
-public:
-	ECameraTremorType                             CameraTremorType;                                  // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         targetUD;                                          // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         targetUDSpeed;                                     // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         targetUDTime;                                      // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         targetLR;                                          // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         targetLRSpeed;                                     // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         targetLRTime;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FTremorParameter;
+DUMPER7_ASSERTS_FAttackReply;
 
 // ScriptStruct UnionRun.CameraPostEffectDataTable
 // 0x0008 (0x0010 - 0x0008)
@@ -3350,15 +3277,14 @@ public:
 };
 DUMPER7_ASSERTS_FCameraPostEffectDataTable;
 
-// ScriptStruct UnionRun.GadgetDashUpInfo
-// 0x0008 (0x0008 - 0x0000)
-struct FGadgetDashUpInfo final
+// ScriptStruct UnionRun.ColliderParam
+// 0x0000 (0x0000 - 0x0000)
+#pragma pack(push, 0x1)
+struct alignas(0x01) FColliderParam
 {
-public:
-	float                                         AddSpeed;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AccelMul;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetDashUpInfo;
+#pragma pack(pop)
+DUMPER7_ASSERTS_FColliderParam;
 
 // ScriptStruct UnionRun.TravelRingAnotherCourseParamTable
 // 0x0018 (0x0020 - 0x0008)
@@ -3372,61 +3298,6 @@ public:
 	class FText                                   Comment;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FTravelRingAnotherCourseParamTable;
-
-// ScriptStruct UnionRun.GadgetSuppressRunoffInfo
-// 0x0004 (0x0004 - 0x0000)
-struct FGadgetSuppressRunoffInfo final
-{
-public:
-	float                                         AddSpeed;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGadgetSuppressRunoffInfo;
-
-// ScriptStruct UnionRun.RelativeMoveParameter
-// 0x000C (0x000C - 0x0000)
-struct FRelativeMoveParameter
-{
-public:
-	float                                         ModelMinScale;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ModelScaleTime;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RelativeMoveTime;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRelativeMoveParameter;
-
-// ScriptStruct UnionRun.ItemboxRelativeMoveParameter
-// 0x001C (0x0028 - 0x000C)
-struct FItemboxRelativeMoveParameter final : public FRelativeMoveParameter
-{
-public:
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                RelativeMoveOffset;                                // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FItemboxRelativeMoveParameter;
-
-// ScriptStruct UnionRun.GroupRaceRuleLotteryRateRankGroupData
-// 0x0168 (0x0170 - 0x0008)
-struct FGroupRaceRuleLotteryRateRankGroupData final : public FTableRowBase
-{
-public:
-	struct FLotteryRateData                       LotteryRateData_RankGroup1;                        // 0x0008(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateData_RankGroup2;                        // 0x0050(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateData_RankGroup3;                        // 0x0098(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateData_RankGroup4;                        // 0x00E0(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FLotteryRateData                       LotteryRateData_RankGroup5;                        // 0x0128(0x0048)(Edit, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGroupRaceRuleLotteryRateRankGroupData;
-
-// ScriptStruct UnionRun.GroupRaceRuleLotteryRateData
-// 0x02E8 (0x02F0 - 0x0008)
-struct FGroupRaceRuleLotteryRateData final : public FTableRowBase
-{
-public:
-	EGroupRaceItemLotteryCorrectionType           CorrectionType;                                    // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGroupRaceRuleLotteryRateRankGroupData NormalBoxRankGroupData;                            // 0x0010(0x0170)(Edit, NativeAccessSpecifierPublic)
-	struct FGroupRaceRuleLotteryRateRankGroupData SpecialBoxRankGroupData;                           // 0x0180(0x0170)(Edit, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGroupRaceRuleLotteryRateData;
 
 // ScriptStruct UnionRun.DroppedRingLandJumpParameter
 // 0x0024 (0x0024 - 0x0000)
@@ -3478,16 +3349,30 @@ public:
 };
 DUMPER7_ASSERTS_FEnemySquidPhase1Attack;
 
-// ScriptStruct UnionRun.GadgetIDCRM
-// 0x0008 (0x0010 - 0x0008)
-struct FGadgetIDCRM final : public FTableRowBase
+// ScriptStruct UnionRun.EnemySquidPhase2Attack
+// 0x001C (0x001C - 0x0000)
+struct FEnemySquidPhase2Attack final
 {
 public:
-	EGadgetId                                     gadgetId;                                          // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CRMID;                                             // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LifeTime;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BulletSpeed_KPH;                                   // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MoveToPathTime;                                    // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AttackFirstDelayTime;                              // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AttackIntervalTime;                                // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x8];                                       // 0x0014(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FGadgetIDCRM;
+DUMPER7_ASSERTS_FEnemySquidPhase2Attack;
+
+// ScriptStruct UnionRun.Enemy_Extnd06_Enemy06001_Size
+// 0x0020 (0x0020 - 0x0000)
+struct FEnemy_Extnd06_Enemy06001_Size final
+{
+public:
+	float                                         Height;                                            // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Radius;                                            // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Offset;                                            // 0x0008(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FEnemy_Extnd06_Enemy06001_Size;
 
 // ScriptStruct UnionRun.Enemy_Extnd06_Object_06001_Size
 // 0x0020 (0x0020 - 0x0000)
@@ -3499,26 +3384,6 @@ public:
 	struct FVector                                Offset;                                            // 0x0008(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FEnemy_Extnd06_Object_06001_Size;
-
-// ScriptStruct UnionRun.RacerRankPackageRingVariationRateData
-// 0x0010 (0x0010 - 0x0000)
-struct FRacerRankPackageRingVariationRateData final
-{
-public:
-	TArray<struct FPackageRingVariationRateData>  ListByRacerRank;                                   // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerRankPackageRingVariationRateData;
-
-// ScriptStruct UnionRun.RacerRankPackageRingVariationRateDataTable
-// 0x0030 (0x0030 - 0x0000)
-struct FRacerRankPackageRingVariationRateDataTable final
-{
-public:
-	struct FRacerRankPackageRingVariationRateData VariationRateDatas_1stLap;                         // 0x0000(0x0010)(Edit, NativeAccessSpecifierPublic)
-	struct FRacerRankPackageRingVariationRateData VariationRateDatas_2ndLap;                         // 0x0010(0x0010)(Edit, NativeAccessSpecifierPublic)
-	struct FRacerRankPackageRingVariationRateData VariationRateDatas_3rdLap;                         // 0x0020(0x0010)(Edit, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerRankPackageRingVariationRateDataTable;
 
 // ScriptStruct UnionRun.BubbleItemBoxParam
 // 0x0008 (0x0008 - 0x0000)
@@ -3540,70 +3405,6 @@ public:
 };
 DUMPER7_ASSERTS_FBubblePackageRingParam;
 
-// ScriptStruct UnionRun.TeamBoostSecondData
-// 0x0008 (0x0010 - 0x0008)
-struct FTeamBoostSecondData final : public FTableRowBase
-{
-public:
-	float                                         DistanceFromTop;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostSeconds;                                      // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FTeamBoostSecondData;
-
-// ScriptStruct UnionRun.TeamBoostData
-// 0x00B8 (0x00C0 - 0x0008)
-struct FTeamBoostData final : public FTableRowBase
-{
-public:
-	EGameModeId                                   GameMode;                                          // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         GroupCount;                                        // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ThresholdCount;                                    // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BoostLevel;                                        // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostMul;                                          // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeamNearConnectThickness;                          // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeamFarConnectThickness;                           // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnergyChargeDist;                                  // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CatchUpMinDist;                                    // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CatchUpMaxDist;                                    // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CatchUpSpeed;                                      // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CatchUpAccelMul;                                   // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableCOMCatchUpSpeedInterp;                      // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableCOMCatchUpAccelInterp;                      // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FriendCOMCatchUpMinDist;                           // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FriendCOMCatchUpMaxDist;                           // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FriendCOMCatchUpSpeed;                             // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FriendCOMCatchUpAccelMul;                          // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnemyCOMCatchUpMinDist;                            // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnemyCOMCatchUpMaxDist;                            // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnemyCOMCatchUpSpeed;                              // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnemyCOMCatchUpAccelMul;                           // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TeamTouchDash_BoostLevel;                          // 0x005C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeamTouchDash_BoostSeconds;                        // 0x0060(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeamTouchDash_BoostMul;                            // 0x0064(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeamTouchDash_CoolDownSeconds;                     // 0x0068(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AscentGaugeSpeed;                                  // 0x006C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FTeamBoostSecondData>           BoostSecondList;                                   // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByItemHit;                           // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByAllTouchDash;                      // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByTouchDash;                         // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByDriftDash;                         // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByAirTrick;                          // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByDashPanel;                         // 0x0094(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByDriftCharge;                       // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByRing;                              // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueBySlipstream;                        // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueBySpinDrift;                         // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByDriftJustDash;                     // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByOddNumRank;                        // 0x00AC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByChargeDashLv1;                     // 0x00B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByChargeDashLv2;                     // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByChargeDashLv3;                     // 0x00B8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddEnergyValueByChargeDashLv4;                     // 0x00BC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FTeamBoostData;
-
 // ScriptStruct UnionRun.SBubbleBonusParam
 // 0x0070 (0x0070 - 0x0000)
 struct FSBubbleBonusParam final
@@ -3621,46 +3422,6 @@ public:
 };
 DUMPER7_ASSERTS_FSBubbleBonusParam;
 
-// ScriptStruct UnionRun.RingColliderParam
-// 0x0020 (0x0020 - 0x0000)
-struct FRingColliderParam final : public FColliderParam
-{
-public:
-	struct FVector                                Extents;                                           // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Radius;                                            // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PackageRingRadius;                                 // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRingColliderParam;
-
-// ScriptStruct UnionRun.DonutHoopItemBoxParam
-// 0x0008 (0x0008 - 0x0000)
-struct FDonutHoopItemBoxParam final
-{
-public:
-	EItemBoxType                                  ItemBoxType;                                       // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RelocationWaitTime;                                // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDonutHoopItemBoxParam;
-
-// ScriptStruct UnionRun.DonutHoopParam
-// 0x0060 (0x0060 - 0x0000)
-struct FDonutHoopParam final
-{
-public:
-	class UStaticMesh*                            DonutMesh;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	EDonutHoopCenterObjectType                    CenterType;                                        // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDonutHoopPackageRingParam             PakcageRingParam;                                  // 0x0009(0x0001)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDonutHoopItemBoxParam                 ItemBoxParam;                                      // 0x000C(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LocationOffset;                                    // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               RotationOffset;                                    // 0x0030(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         LocationOffsetSuperRingRuleZOffset;                // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4C[0x14];                                      // 0x004C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FDonutHoopParam;
-
 // ScriptStruct UnionRun.StruckoutPackageRingParam
 // 0x0001 (0x0001 - 0x0000)
 struct FStruckoutPackageRingParam final
@@ -3669,18 +3430,6 @@ public:
 	EPackageRingType                              RingType;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FStruckoutPackageRingParam;
-
-// ScriptStruct UnionRun.GadgetMachineTuneInfo
-// 0x00B8 (0x00B8 - 0x0000)
-struct FGadgetMachineTuneInfo final
-{
-public:
-	struct FGadgetMachineTuneValueChange          MachineTuneDefault;                                // 0x0000(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ECarStatusType, struct FGadgetMachineTuneValueChange> MachineTuneByCarStatusType;           // 0x0018(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMap<EDriverType, struct FGadgetMachineTuneValueChange> MachineTuneByDriverType;                 // 0x0068(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGadgetMachineTuneInfo;
 
 // ScriptStruct UnionRun.StruckoutRouteParam
 // 0x0040 (0x0040 - 0x0000)
@@ -3714,42 +3463,6 @@ public:
 };
 DUMPER7_ASSERTS_FEditorRouteTextFormat;
 
-// ScriptStruct UnionRun.RankGroupLotteryRateDataTable
-// 0x0D98 (0x0DA0 - 0x0008)
-struct FRankGroupLotteryRateDataTable final : public FTableRowBase
-{
-public:
-	struct FDistanceGroupLotteryRateDataTable     LotteryRateDatas_1stLap;                           // 0x0008(0x0488)(Edit, NativeAccessSpecifierPublic)
-	struct FDistanceGroupLotteryRateDataTable     LotteryRateDatas_2ndLap;                           // 0x0490(0x0488)(Edit, NativeAccessSpecifierPublic)
-	struct FDistanceGroupLotteryRateDataTable     LotteryRateDatas_3rdLap;                           // 0x0918(0x0488)(Edit, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRankGroupLotteryRateDataTable;
-
-// ScriptStruct UnionRun.RankGroupLotteryRateDataTableList
-// 0x4428 (0x4430 - 0x0008)
-struct FRankGroupLotteryRateDataTableList final : public FTableRowBase
-{
-public:
-	ELotteryRateType                              LotteryRateType;                                   // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup1;         // 0x0010(0x0DA0)(Edit, NativeAccessSpecifierPublic)
-	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup2;         // 0x0DB0(0x0DA0)(Edit, NativeAccessSpecifierPublic)
-	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup3;         // 0x1B50(0x0DA0)(Edit, NativeAccessSpecifierPublic)
-	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup4;         // 0x28F0(0x0DA0)(Edit, NativeAccessSpecifierPublic)
-	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup5;         // 0x3690(0x0DA0)(Edit, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRankGroupLotteryRateDataTableList;
-
-// ScriptStruct UnionRun.SweetsShipCannonBallData
-// 0x0010 (0x0010 - 0x0000)
-struct FSweetsShipCannonBallData final
-{
-public:
-	class UStaticMesh*                            BallMesh;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UNiagaraSystem*                         BreakEffect;                                       // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-};
-DUMPER7_ASSERTS_FSweetsShipCannonBallData;
-
 // ScriptStruct UnionRun.Gimmick_Extnd06_Barricade_Size
 // 0x0020 (0x0020 - 0x0000)
 struct FGimmick_Extnd06_Barricade_Size final
@@ -3761,6 +3474,21 @@ public:
 };
 DUMPER7_ASSERTS_FGimmick_Extnd06_Barricade_Size;
 
+// ScriptStruct UnionRun.AnchorPhysicsParameter
+// 0x001C (0x001C - 0x0000)
+struct FAnchorPhysicsParameter final
+{
+public:
+	float                                         anchorLength;                                      // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Mass;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         movableLimitTop;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         movableLimitRangeYaw;                              // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         airRegistSpeedThresholdPitch;                      // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         airRegistSpeedThresholdYaw;                        // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         reboundPitch;                                      // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAnchorPhysicsParameter;
+
 // ScriptStruct UnionRun.ItemBoxColliderParam
 // 0x0030 (0x0030 - 0x0000)
 struct FItemBoxColliderParam final : public FColliderParam
@@ -3770,18 +3498,6 @@ public:
 	struct FVector                                Extents;                                           // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FItemBoxColliderParam;
-
-// ScriptStruct UnionRun.UnionRaceTime
-// 0x0010 (0x0010 - 0x0000)
-struct FUnionRaceTime final
-{
-public:
-	int32                                         ClockCount;                                        // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MinutePart;                                        // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SecondPart;                                        // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MillimeterSecondPart;                              // 0x000C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRaceTime;
 
 // ScriptStruct UnionRun.BoundingItemBoxColliderParam
 // 0x0030 (0x0030 - 0x0000)
@@ -3793,39 +3509,35 @@ public:
 };
 DUMPER7_ASSERTS_FBoundingItemBoxColliderParam;
 
-// ScriptStruct UnionRun.GadgetBoostRingBonusInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FGadgetBoostRingBonusInfo final
+// ScriptStruct UnionRun.ItemBoxCurringParameter
+// 0x0008 (0x0010 - 0x0008)
+struct FItemBoxCurringParameter final : public FTableRowBase
 {
 public:
-	int32                                         RingNumLv1;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RingNumLv2;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RingNumLv3;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RingNumLv4;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EStageId                                      StageId;                                           // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CurringDistance;                                   // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetBoostRingBonusInfo;
+DUMPER7_ASSERTS_FItemBoxCurringParameter;
 
-// ScriptStruct UnionRun.GadgetBonusDashPanelComboInfo
+// ScriptStruct UnionRun.CyanLaserParam
 // 0x0018 (0x0018 - 0x0000)
-struct FGadgetBonusDashPanelComboInfo final
+struct FCyanLaserParam final
 {
 public:
-	struct FGadgetBoostRingBonusInfo              AddRingNum;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         MaxAddRingNum;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ComboValidTime;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               dmi_;                                              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FGadgetBonusDashPanelComboInfo;
+DUMPER7_ASSERTS_FCyanLaserParam;
 
-// ScriptStruct UnionRun.ItemBoxMeshTable
-// 0x0030 (0x0038 - 0x0008)
-struct FItemBoxMeshTable final : public FTableRowBase
+// ScriptStruct UnionRun.Extnd09SoundCueAsset
+// 0x0008 (0x0008 - 0x0000)
+struct FExtnd09SoundCueAsset final
 {
 public:
-	EItemBoxType                                  ItemBoxType;                                       // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UStaticMesh>             ItemBoxMesh;                                       // 0x0010(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USoundAtomCue*                          AttackSound;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 };
-DUMPER7_ASSERTS_FItemBoxMeshTable;
+DUMPER7_ASSERTS_FExtnd09SoundCueAsset;
 
 // ScriptStruct UnionRun.AbsorberInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -3839,14 +3551,37 @@ public:
 };
 DUMPER7_ASSERTS_FAbsorberInfo;
 
-// ScriptStruct UnionRun.CyanLaserMoveInfo
-// 0x0170 (0x0170 - 0x0000)
-struct alignas(0x10) FCyanLaserMoveInfo final
+// ScriptStruct UnionRun.AbsorbedObjectInfo
+// 0x0150 (0x0150 - 0x0000)
+struct FAbsorbedObjectInfo final
 {
 public:
-	uint8                                         Pad_0[0x170];                                      // 0x0000(0x0170)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AActor*                                 AbsorbedObject;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             InitialTransform;                                  // 0x0010(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTransform                             MeshOffsetTransform;                               // 0x0070(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                AbsorbTargetScale;                                 // 0x00D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMesh*                            Mesh;                                              // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TMap<int32, class UMaterialInterface*>        ReplaceMeshMaterials;                              // 0x00F0(0x0050)(Edit, BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	ETakeRingType                                 RingType;                                          // 0x0140(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RingNum;                                           // 0x0144(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemBoxType                                  ItemBoxType;                                       // 0x0148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemId                                       itemType;                                          // 0x0149(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bFroceStartFromCenter;                             // 0x014A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnlyVisibleHolder;                                // 0x014B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FCyanLaserMoveInfo;
+DUMPER7_ASSERTS_FAbsorbedObjectInfo;
+
+// ScriptStruct UnionRun.WarpRingMoveInfo
+// 0x00F0 (0x00F0 - 0x0000)
+struct alignas(0x10) FWarpRingMoveInfo final
+{
+public:
+	uint8                                         Pad_0[0xF0];                                       // 0x0000(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FWarpRingMoveInfo;
 
 // ScriptStruct UnionRun.WeakHomingParam
 // 0x000C (0x000C - 0x0000)
@@ -4040,6 +3775,22 @@ public:
 };
 DUMPER7_ASSERTS_FOnlineRaceReplay;
 
+// ScriptStruct UnionRun.RaceActionTutorialTrigger
+// 0x0028 (0x0028 - 0x0000)
+struct FRaceActionTutorialTrigger final
+{
+public:
+	ETutorialAction                               tutorialAction;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinTriggerRate;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxTriggerRate;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinTriggerGap;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxTriggerGap;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 RouteList;                                         // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRaceActionTutorialTrigger;
+
 // ScriptStruct UnionRun.RaceActionTutorialStageData
 // 0x0018 (0x0018 - 0x0000)
 struct FRaceActionTutorialStageData final
@@ -4132,6 +3883,17 @@ public:
 };
 DUMPER7_ASSERTS_FRaceUITimeTrialTime;
 
+// ScriptStruct UnionRun.RingColliderParam
+// 0x0020 (0x0020 - 0x0000)
+struct FRingColliderParam final : public FColliderParam
+{
+public:
+	struct FVector                                Extents;                                           // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Radius;                                            // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PackageRingRadius;                                 // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRingColliderParam;
+
 // ScriptStruct UnionRun.RingCircleHitInfo
 // 0x0010 (0x0010 - 0x0000)
 struct FRingCircleHitInfo final
@@ -4142,6 +3904,19 @@ public:
 	class AActor*                                 AbsorberObject;                                    // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 };
 DUMPER7_ASSERTS_FRingCircleHitInfo;
+
+// ScriptStruct UnionRun.UnionBtCollisionBinaryParameter
+// 0x0020 (0x0020 - 0x0000)
+struct FUnionBtCollisionBinaryParameter final
+{
+public:
+	int32                                         DataVersion;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Hash;                                              // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ChunkDataCount;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<uint8>                                 Data;                                              // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionBtCollisionBinaryParameter;
 
 // ScriptStruct UnionRun.RunChaseCameraParam
 // 0x0028 (0x0028 - 0x0000)
@@ -4225,6 +4000,19 @@ public:
 };
 DUMPER7_ASSERTS_FBounceParamTable;
 
+// ScriptStruct UnionRun.GuidedJumpParamTable
+// 0x0010 (0x0018 - 0x0008)
+struct FGuidedJumpParamTable final : public FTableRowBase
+{
+public:
+	int32                                         ParamId;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsValid;                                          // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MargeNext;                                         // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LRHeightAdjust;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGuidedJumpParamTable;
+
 // ScriptStruct UnionRun.RacerDamageReactionData
 // 0x0050 (0x0058 - 0x0008)
 struct FRacerDamageReactionData final : public FTableRowBase
@@ -4299,16 +4087,6 @@ public:
 };
 DUMPER7_ASSERTS_FRacerDamagePropertyChangeGroupData;
 
-// ScriptStruct UnionRun.RacerDamageDirectionInterference
-// 0x0008 (0x0008 - 0x0000)
-struct FRacerDamageDirectionInterference final
-{
-public:
-	float                                         HorizontalInterferenceRatio;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VerticalInterferenceRatio;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerDamageDirectionInterference;
-
 // ScriptStruct UnionRun.RacerDamageData
 // 0x0090 (0x0098 - 0x0008)
 struct FRacerDamageData final : public FTableRowBase
@@ -4321,7 +4099,7 @@ public:
 	int32                                         Priority;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRacerDamagePropertyChangeGroupData> PropertyChange;                               // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FRacerDamageDirectionInterference      DirectionInterference;                             // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRacerDamageDirectionInterference      DirectionInterference;                             // 0x0028(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Duration;                                          // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DamageInvincibleTime;                              // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ItemUnavailableTime;                               // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4385,6 +4163,21 @@ public:
 };
 DUMPER7_ASSERTS_FFireAttackItemInfo;
 
+// ScriptStruct UnionRun.FestaTeamResultInfo
+// 0x0014 (0x0014 - 0x0000)
+struct FFestaTeamResultInfo final
+{
+public:
+	bool                                          bIsWinner;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsMvp;                                            // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         AddPoint;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TeamBonusPoint;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalTeamPoint;                                    // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalTeamRank;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFestaTeamResultInfo;
+
 // ScriptStruct UnionRun.AttackItemResultInfo
 // 0x0028 (0x0028 - 0x0000)
 struct alignas(0x08) FAttackItemResultInfo final
@@ -4393,6 +4186,32 @@ public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAttackItemResultInfo;
+
+// ScriptStruct UnionRun.DebugPrintStringStruct
+// 0x0028 (0x0028 - 0x0000)
+struct FDebugPrintStringStruct final
+{
+public:
+	class FString                                 strBody;                                           // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         FontSize;                                          // 0x0010(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         posX;                                              // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         posY;                                              // 0x0018(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         colR;                                              // 0x001C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         colG;                                              // 0x0020(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         colB;                                              // 0x0024(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDebugPrintStringStruct;
+
+// ScriptStruct UnionRun.FootCutParams
+// 0x0008 (0x0008 - 0x0000)
+struct FFootCutParams final
+{
+public:
+	float                                         TriggerTopRate;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WarpRate;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFootCutParams;
 
 // ScriptStruct UnionRun.CallDroneInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -4418,6 +4237,15 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetRingPerformanceInfo;
 
+// ScriptStruct UnionRun.PlayerTotalResultData
+// 0x0058 (0x0058 - 0x0000)
+struct alignas(0x08) FPlayerTotalResultData final
+{
+public:
+	uint8                                         Pad_0[0x58];                                       // 0x0000(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPlayerTotalResultData;
+
 // ScriptStruct UnionRun.GadgetSimpleRingBonusInfo
 // 0x0004 (0x0004 - 0x0000)
 struct FGadgetSimpleRingBonusInfo final
@@ -4427,17 +4255,54 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetSimpleRingBonusInfo;
 
-// ScriptStruct UnionRun.GadgetRingEngineInfo
-// 0x0020 (0x0020 - 0x0000)
-struct FGadgetRingEngineInfo final
+// ScriptStruct UnionRun.UnionRaceHUDPlayerNameUI
+// 0x0010 (0x0010 - 0x0000)
+struct FUnionRaceHUDPlayerNameUI final
+{
+public:
+	TArray<class URaceUISubPlayerName*>           PlayerNameUI;                                      // 0x0000(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FUnionRaceHUDPlayerNameUI;
+
+// ScriptStruct UnionRun.GadgetUpperRingBonusInfo
+// 0x0008 (0x0008 - 0x0000)
+struct FGadgetUpperRingBonusInfo final
 {
 public:
 	int32                                         RingNum;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RingInterval;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGadgetMachineTuneValueChange          MachineParameterUp;                                // 0x000C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         RingMax;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetRingEngineInfo;
+DUMPER7_ASSERTS_FGadgetUpperRingBonusInfo;
+
+// ScriptStruct UnionRun.ReactionDirName
+// 0x0028 (0x0028 - 0x0000)
+struct FReactionDirName final
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DirName;                                           // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Filename;                                          // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FReactionDirName;
+
+// ScriptStruct UnionRun.ReactionDirName_TableRow
+// 0x0010 (0x0018 - 0x0008)
+struct FReactionDirName_TableRow final : public FTableRowBase
+{
+public:
+	TArray<struct FReactionDirName>               list;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FReactionDirName_TableRow;
+
+// ScriptStruct UnionRun.GadgetEnhanceOmochaoInfo
+// 0x0004 (0x0004 - 0x0000)
+struct FGadgetEnhanceOmochaoInfo final
+{
+public:
+	float                                         ActiveSeconds;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetEnhanceOmochaoInfo;
 
 // ScriptStruct UnionRun.GadgetIntervalRingInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -4451,6 +4316,36 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetIntervalRingInfo;
 
+// ScriptStruct UnionRun.UnionRaceStageDynamicData
+// 0x0070 (0x0070 - 0x0000)
+struct FUnionRaceStageDynamicData final
+{
+public:
+	TArray<class ULevel*>                         ObjectLevels;                                      // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	class UUnionBtCollisionBinaryAsset*           CollisionAsset;                                    // 0x0010(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UUnionNavigationBinaryDataAsset*        NavigationAsset;                                   // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UUnionRunPathBinaryDataAsset*           RunPathAsset;                                      // 0x0020(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UUnionComPathBinaryDataAsset*           ComPathAsset;                                      // 0x0028(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	bool                                          bUseOverwriteDirectionalLightParameter;            // 0x0030(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OverwriteDirectionalLightIntensity;                // 0x0034(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 OverwriteDirectionalLightColor;                    // 0x0038(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x34];                                      // 0x003C(0x0034)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FUnionRaceStageDynamicData;
+
+// ScriptStruct UnionRun.GadgetBoostRingBonusInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FGadgetBoostRingBonusInfo final
+{
+public:
+	int32                                         RingNumLv1;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RingNumLv2;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RingNumLv3;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RingNumLv4;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetBoostRingBonusInfo;
+
 // ScriptStruct UnionRun.GadgetSometimesDoubleRing
 // 0x0004 (0x0004 - 0x0000)
 struct FGadgetSometimesDoubleRing final
@@ -4459,6 +4354,15 @@ public:
 	float                                         Rate;                                              // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetSometimesDoubleRing;
+
+// ScriptStruct UnionRun.UnionRaceAppInfo
+// 0x0001 (0x0001 - 0x0000)
+struct FUnionRaceAppInfo final
+{
+public:
+	bool                                          bIsPausing;                                        // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRaceAppInfo;
 
 // ScriptStruct UnionRun.GadgetTradeStockInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -4478,6 +4382,29 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetEnhanceRocketPunchInfo;
 
+// ScriptStruct UnionRun.RacerReactionText
+// 0x00A0 (0x00A0 - 0x0000)
+struct FRacerReactionText final
+{
+public:
+	ERacerReactionId                              ID;                                                // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerReactionVoiceType                       VoiceType;                                         // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     DriverId;                                          // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     RivalId;                                           // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     VoiceChrId;                                        // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Guest;                                  // 0x0030(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Rival;                                  // 0x0058(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   TextTableId;                                       // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 TextId;                                            // 0x0088(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerReactionWindow                          WindowId;                                          // 0x0098(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDriverId                                     FaceId;                                            // 0x0099(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         StageId;                                           // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerReactionText;
+
 // ScriptStruct UnionRun.GadgetEnhanceThornBallInfo
 // 0x0004 (0x0004 - 0x0000)
 struct FGadgetEnhanceThornBallInfo final
@@ -4495,6 +4422,25 @@ public:
 	float                                         ShortenRatio;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetEnhanceBombInfo;
+
+// ScriptStruct UnionRun.UnionRaceStageRingGateData
+// 0x0078 (0x0078 - 0x0000)
+struct FUnionRaceStageRingGateData final
+{
+public:
+	class UMaterialInstance*                      FloorLeft;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterialInstance*                      FloorRight;                                        // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterialInstance*                      RingLeft;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterialInstance*                      RingRight;                                         // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterialInstance*                      MaterialEnter;                                     // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterialInstance*                      MaterialEnterAir;                                  // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UMaterialInstance*                      MaterialExit;                                      // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UMaterialInstance*>              ShortcutEnterMaterial;                             // 0x0038(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UStaticMesh*>                    ShortcutEnterMesh;                                 // 0x0048(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UMaterialInstance*>              ShortcutExitMaterial;                              // 0x0058(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UStaticMesh*>                    ShortcutExitMesh;                                  // 0x0068(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FUnionRaceStageRingGateData;
 
 // ScriptStruct UnionRun.GadgetDoubleItemOccasionallyInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -4516,6 +4462,38 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetUltimateDriftInfo;
 
+// ScriptStruct UnionRun.UnionJukeboxRaceBGMLapInfo
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FUnionJukeboxRaceBGMLapInfo final
+{
+public:
+	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FUnionJukeboxRaceBGMLapInfo;
+
+// ScriptStruct UnionRun.UnionJukeboxRaceBGM
+// 0x0010 (0x0010 - 0x0000)
+struct FUnionJukeboxRaceBGM final
+{
+public:
+	TArray<struct FUnionJukeboxRaceBGMLapInfo>    LapInfo;                                           // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionJukeboxRaceBGM;
+
+// ScriptStruct UnionRun.GadgetUltimateAirTrickInfo
+// 0x0014 (0x0014 - 0x0000)
+struct FGadgetUltimateAirTrickInfo final
+{
+public:
+	bool                                          bEnableInvincible;                                 // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InvincibleTime;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AirInvincibleTime;                                 // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RequireAirTrickCount;                              // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BoostLevel;                                        // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetUltimateAirTrickInfo;
+
 // ScriptStruct UnionRun.GadgetQuickAirtrickInfo
 // 0x0004 (0x0004 - 0x0000)
 struct FGadgetQuickAirtrickInfo final
@@ -4524,6 +4502,47 @@ public:
 	float                                         AirTrickPlayRate;                                  // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetQuickAirtrickInfo;
+
+// ScriptStruct UnionRun.UnionRaceDomainInfo
+// 0x0048 (0x0048 - 0x0000)
+struct FUnionRaceDomainInfo final
+{
+public:
+	int32                                         DomainIndex;                                       // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EStageId                                      StageId;                                           // 0x0004(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   StageName;                                         // 0x0008(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class FString                                 BGMName;                                           // 0x0018(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                LocationOffset;                                    // 0x0028(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LightChannel;                                      // 0x0040(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETravelRingScreenType                         TravelRingScreenType;                              // 0x0044(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EIrregularEventId                             IrregularEventId;                                  // 0x0045(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FUnionRaceDomainInfo;
+
+// ScriptStruct UnionRun.UnionRaceStageData
+// 0x0170 (0x0170 - 0x0000)
+struct FUnionRaceStageData final
+{
+public:
+	struct FUnionRaceStageRingGateData            RingGateData;                                      // 0x0000(0x0078)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUnionRaceStageDynamicData             BasicLapData;                                      // 0x0078(0x0070)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUnionRaceStageDynamicData             FinalLapData;                                      // 0x00E8(0x0070)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class ULineGuideDataAsset*                    LineGuide;                                         // 0x0158(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class ULevel*>                         OtherLevels;                                       // 0x0160(0x0010)(BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FUnionRaceStageData;
+
+// ScriptStruct UnionRun.UnionRaceDomainData
+// 0x01B8 (0x01B8 - 0x0000)
+struct FUnionRaceDomainData final
+{
+public:
+	struct FUnionRaceDomainInfo                   DomainInfo;                                        // 0x0000(0x0048)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUnionRaceStageData                    StageData;                                         // 0x0048(0x0170)(BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRaceDomainData;
 
 // ScriptStruct UnionRun.GadgetSkateDriftInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -4534,18 +4553,15 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetSkateDriftInfo;
 
-// ScriptStruct UnionRun.GadgetJustDashInfo
-// 0x0014 (0x0014 - 0x0000)
-struct FGadgetJustDashInfo final
+// ScriptStruct UnionRun.GadgetAirTrickChargeInfo
+// 0x0008 (0x0008 - 0x0000)
+struct FGadgetAirTrickChargeInfo final
 {
 public:
-	int32                                         InputFrame;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostMulLv1;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostMulLv2;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostMulLv3;                                       // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostMulLv4;                                       // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeUpSeconds;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeMul;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetJustDashInfo;
+DUMPER7_ASSERTS_FGadgetAirTrickChargeInfo;
 
 // ScriptStruct UnionRun.GadgetLevelChargeInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -4555,6 +4571,17 @@ public:
 	float                                         ChargeRate;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetLevelChargeInfo;
+
+// ScriptStruct UnionRun.UnionRaceRedStarRingParam
+// 0x0018 (0x0018 - 0x0000)
+struct FUnionRaceRedStarRingParam final
+{
+public:
+	bool                                          bEnableRedStarRing;                                // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FUserRedStarRingAcquisitionProperty> AcquisitionPerPlayer;                         // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRaceRedStarRingParam;
 
 // ScriptStruct UnionRun.GadgetSwitchDriftQuickChargeInfo
 // 0x000C (0x000C - 0x0000)
@@ -4578,6 +4605,16 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetHyperChargeInfo;
 
+// ScriptStruct UnionRun.ComSlimeCancelParams
+// 0x0008 (0x0008 - 0x0000)
+struct FComSlimeCancelParams final
+{
+public:
+	float                                         LineChangeRatio;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LineChangePerFrame;                                // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComSlimeCancelParams;
+
 // ScriptStruct UnionRun.GadgetSpinDriftInfo
 // 0x0004 (0x0004 - 0x0000)
 struct FGadgetSpinDriftInfo final
@@ -4586,6 +4623,99 @@ public:
 	int32                                         Power;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetSpinDriftInfo;
+
+// ScriptStruct UnionRun.GadgetLowChargeInfo
+// 0x000C (0x000C - 0x0000)
+struct FGadgetLowChargeInfo final
+{
+public:
+	float                                         ChargeRateDecrease;                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DurationBoostRate;                                 // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DurationEffectRate;                                // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetLowChargeInfo;
+
+// ScriptStruct UnionRun.PredictTestInfo
+// 0x0008 (0x0008 - 0x0000)
+struct FPredictTestInfo final
+{
+public:
+	bool                                          bIsEnable;                                         // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         TestCaseIndex;                                     // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPredictTestInfo;
+
+// ScriptStruct UnionRun.UnionRaceOverwriteStartTransform
+// 0x0070 (0x0070 - 0x0000)
+struct FUnionRaceOverwriteStartTransform final
+{
+public:
+	bool                                          bOverwrite;                                        // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             StartTransform;                                    // 0x0010(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRaceOverwriteStartTransform;
+
+// ScriptStruct UnionRun.UnionRaceDebugParam
+// 0x00A0 (0x00A0 - 0x0000)
+struct FUnionRaceDebugParam final
+{
+public:
+	ELotteryTableType                             DbgLotteryTableType;                               // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bApplyLocalPlayer;                                 // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bApplyAllPlayer;                                   // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsOnCourseEditor;                                 // 0x0003(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionRaceOverwriteStartTransform      OverwriteStartTransform;                           // 0x0010(0x0070)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         GenericParameter;                                  // 0x0080(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsDebugFinalLap;                                  // 0x0084(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsRaceTestMode;                                   // 0x0085(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_86[0x2];                                       // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 RaceTestConfigName;                                // 0x0088(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPredictTestInfo                       PredictTestInfo;                                   // 0x0098(0x0008)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRaceDebugParam;
+
+// ScriptStruct UnionRun.UnionRaceCreateParam
+// 0x0290 (0x0290 - 0x0000)
+struct FUnionRaceCreateParam final
+{
+public:
+	EGrandPrixId                                  GrandPrixId;                                       // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPartyRacePreset                              RaceParkPreset;                                    // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERaceType                                     RaceType;                                          // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCustomRaceSetting                     CustomRaceSetting;                                 // 0x0008(0x0128)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FTimeTrialSetting                      TimeTrialSetting;                                  // 0x0130(0x0030)(BlueprintVisible, NativeAccessSpecifierPublic)
+	EGameModeId                                   GameModeID;                                        // 0x0160(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_161[0x3];                                      // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LocalPlayerCount;                                  // 0x0164(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RacerCount;                                        // 0x0168(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESpeedClassId                                 SpeedClass;                                        // 0x016C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERaceMirrorSetting                            RaceMirrorSetting;                                 // 0x016D(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E[0x2];                                      // 0x016E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionRaceStartDashParam               StartDashParam;                                    // 0x0170(0x0030)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUnionJukeboxRaceBGM                   JukeboxRaceBGM;                                    // 0x01A0(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          GPFinalRandomMain;                                 // 0x01B0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B1[0xF];                                      // 0x01B1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUnionRaceDebugParam                   DebugParam;                                        // 0x01C0(0x00A0)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         P2PRaceTimeOut;                                    // 0x0260(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         P2PUnstableTime;                                   // 0x0264(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<EGadgetId>                             RaceDisableGadgetList;                             // 0x0268(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<EGadgetId>                             AdditionalGadgetList;                              // 0x0278(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_288[0x8];                                      // 0x0288(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FUnionRaceCreateParam;
+
+// ScriptStruct UnionRun.GadgetSwitchDriftKeepInfo
+// 0x0004 (0x0004 - 0x0000)
+struct FGadgetSwitchDriftKeepInfo final
+{
+public:
+	float                                         KeepRate;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetSwitchDriftKeepInfo;
 
 // ScriptStruct UnionRun.GadgetShortenDamageMotionInfo
 // 0x0008 (0x0008 - 0x0000)
@@ -4596,6 +4726,29 @@ public:
 	float                                         ShortenRatioNormalDamage;                          // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetShortenDamageMotionInfo;
+
+// ScriptStruct UnionRun.GadgetMachineTuneInfo
+// 0x00B8 (0x00B8 - 0x0000)
+struct FGadgetMachineTuneInfo final
+{
+public:
+	struct FGadgetMachineTuneValueChange          MachineTuneDefault;                                // 0x0000(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ECarStatusType, struct FGadgetMachineTuneValueChange> MachineTuneByCarStatusType;           // 0x0018(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<EDriverType, struct FGadgetMachineTuneValueChange> MachineTuneByDriverType;                 // 0x0068(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetMachineTuneInfo;
+
+// ScriptStruct UnionRun.GadgetMachineTuneEvolutionInfo
+// 0x000C (0x000C - 0x0000)
+struct FGadgetMachineTuneEvolutionInfo final
+{
+public:
+	int32                                         CountThreshold;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UpperMul;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UpperLimit;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetMachineTuneEvolutionInfo;
 
 // ScriptStruct UnionRun.GadgetTouchDashInfo
 // 0x000C (0x000C - 0x0000)
@@ -4619,15 +4772,121 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetEnforceSlipstreamInfo;
 
-// ScriptStruct UnionRun.GadgetImmuneItemDamageOnceInfo
+// ScriptStruct UnionRun.ComAvoidPolishingMachineParams
 // 0x0008 (0x0008 - 0x0000)
+struct FComAvoidPolishingMachineParams final
+{
+public:
+	float                                         RightPathMovePosARatioStart;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RightPathMovePosARatioEnd;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComAvoidPolishingMachineParams;
+
+// ScriptStruct UnionRun.ComAvoidEnemy09003Params
+// 0x0008 (0x0008 - 0x0000)
+struct FComAvoidEnemy09003Params final
+{
+public:
+	float                                         RightPathMovePosARatioStart;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RightPathMovePosARatioEnd;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComAvoidEnemy09003Params;
+
+// ScriptStruct UnionRun.ComAvoidEnemy09001AParams
+// 0x0008 (0x0008 - 0x0000)
+struct FComAvoidEnemy09001AParams final
+{
+public:
+	float                                         ChangePathShotRatio1;                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChangePathShotRatio2;                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComAvoidEnemy09001AParams;
+
+// ScriptStruct UnionRun.ComAvoid2BranchesParams
+// 0x0008 (0x0008 - 0x0000)
+struct FComAvoid2BranchesParams final
+{
+public:
+	float                                         RightPathMovePosARatioStart;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RightPathMovePosARatioEnd;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComAvoid2BranchesParams;
+
+// ScriptStruct UnionRun.ComAvoid3BranchesParams
+// 0x0010 (0x0010 - 0x0000)
+struct FComAvoid3BranchesParams final
+{
+public:
+	float                                         LeftPathMovePosARatioStart;                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LeftPathMovePosARatioEnd;                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RightPathMovePosARatioStart;                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RightPathMovePosARatioEnd;                         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComAvoid3BranchesParams;
+
+// ScriptStruct UnionRun.ComAvoidEx07DashRingParams
+// 0x0020 (0x0020 - 0x0000)
+struct FComAvoidEx07DashRingParams final
+{
+public:
+	struct FComAvoid2BranchesParams               Branches2_1;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComAvoid2BranchesParams               Branches2_2;                                       // 0x0008(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComAvoid3BranchesParams               Branches3;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComAvoidEx07DashRingParams;
+
+// ScriptStruct UnionRun.ComTimingGimmickParams
+// 0x0060 (0x0060 - 0x0000)
+struct FComTimingGimmickParams final
+{
+public:
+	float                                         DarkGaiaPhoenixComSpeedRate;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TentacleComSpeedRate;                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TentacleLeftPatternRandomId;                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BucketWheelComSpeedRate;                           // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeathEggComSpeedRate;                              // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BigTrainMoveRateForComBranch;                      // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BigTrainComBranchUnderRate;                        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Enemy04002ComSpeedRate;                            // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FComAvoidPolishingMachineParams        ComAvoidPolishingMachineParams;                    // 0x0020(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComAvoidEnemy09003Params              ComAvoidEnemy09003Params1;                         // 0x0028(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComAvoidEnemy09003Params              ComAvoidEnemy09003Params3;                         // 0x0030(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComAvoidEnemy09001AParams             ComAvoidEnemy09001AParams;                         // 0x0038(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComAvoidEx07DashRingParams            ComAvoidEx07DashRingParams;                        // 0x0040(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComTimingGimmickParams;
+
+// ScriptStruct UnionRun.GadgetImmuneItemDamageOnceInfo
+// 0x000C (0x000C - 0x0000)
 struct FGadgetImmuneItemDamageOnceInfo final
 {
 public:
 	float                                         ActiveTime;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CountDownTime;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Distance;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetImmuneItemDamageOnceInfo;
+
+// ScriptStruct UnionRun.GadgetTouchChargeInfo
+// 0x000C (0x000C - 0x0000)
+struct FGadgetTouchChargeInfo final
+{
+public:
+	float                                         CoolDownTime;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeUpSeconds;                                   // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeMul;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetTouchChargeInfo;
+
+// ScriptStruct UnionRun.GadgetDashUpInfo
+// 0x0008 (0x0008 - 0x0000)
+struct FGadgetDashUpInfo final
+{
+public:
+	float                                         AddSpeed;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AccelMul;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetDashUpInfo;
 
 // ScriptStruct UnionRun.GadgetUpperLimitInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -4638,6 +4897,16 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetUpperLimitInfo;
 
+// ScriptStruct UnionRun.GadgetStoleInfo
+// 0x0008 (0x0008 - 0x0000)
+struct FGadgetStoleInfo final
+{
+public:
+	int32                                         RingNum;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CoolDownTime;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetStoleInfo;
+
 // ScriptStruct UnionRun.GadgetGuardInfo
 // 0x0004 (0x0004 - 0x0000)
 struct FGadgetGuardInfo final
@@ -4647,15 +4916,41 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetGuardInfo;
 
-// ScriptStruct UnionRun.GadgetExpandGetRingRangeInfo
-// 0x0008 (0x0008 - 0x0000)
-struct FGadgetExpandGetRingRangeInfo final
+// ScriptStruct UnionRun.GadgetBonusDashPanelComboInfo
+// 0x0018 (0x0018 - 0x0000)
+struct FGadgetBonusDashPanelComboInfo final
 {
 public:
-	float                                         CollisionRadiusMag;                                // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CollisionHeightMag;                                // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGadgetBoostRingBonusInfo              AddRingNum;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         MaxAddRingNum;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ComboValidTime;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FGadgetExpandGetRingRangeInfo;
+DUMPER7_ASSERTS_FGadgetBonusDashPanelComboInfo;
+
+// ScriptStruct UnionRun.ComPresetGadget
+// 0x0010 (0x0018 - 0x0008)
+struct FComPresetGadget final : public FTableRowBase
+{
+public:
+	int32                                         GadgetEquipGr;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGadgetId                                     Slot1;                                             // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGadgetId                                     Slot2;                                             // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGadgetId                                     Slot3;                                             // 0x000E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGadgetId                                     Slot4;                                             // 0x000F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGadgetId                                     Slot5;                                             // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGadgetId                                     Slot6;                                             // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FComPresetGadget;
+
+// ScriptStruct UnionRun.GadgetSuppressRunoffInfo
+// 0x0004 (0x0004 - 0x0000)
+struct FGadgetSuppressRunoffInfo final
+{
+public:
+	float                                         AddSpeed;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetSuppressRunoffInfo;
 
 // ScriptStruct UnionRun.GadgetEnhanceHookTurnInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -4669,6 +4964,57 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetEnhanceHookTurnInfo;
 
+// ScriptStruct UnionRun.ComPaceParams
+// 0x0034 (0x0034 - 0x0000)
+struct FComPaceParams final
+{
+public:
+	float                                         base;                                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseSlow;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseStart;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartDash3;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartDash2;                                        // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartDash1;                                        // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartDash0;                                        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartDashMiss;                                     // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LinePosMin;                                        // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LinePosMax;                                        // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShortcutRatio;                                     // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemSkillLv;                                       // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CloseToStart;                                      // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComPaceParams;
+
+// ScriptStruct UnionRun.GadgetBoatChargeJumpUpInfo
+// 0x000C (0x000C - 0x0000)
+struct FGadgetBoatChargeJumpUpInfo final
+{
+public:
+	float                                         AirTrickRateX;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AirTrickRateY;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AirTrickLimitNum;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetBoatChargeJumpUpInfo;
+
+// ScriptStruct UnionRun.GadgetSpinDashInfo
+// 0x002C (0x002C - 0x0000)
+struct FGadgetSpinDashInfo final
+{
+public:
+	float                                         DeccelSpeed;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeccelRate;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinSeconds;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         JustSeconds;                                       // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeviationSeconds;                                  // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargingCurveRatio;                                // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FirstCharge;                                       // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinCharge;                                         // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxCharge;                                         // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SwitchCharge;                                      // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GripIncreaseRate;                                  // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetSpinDashInfo;
+
 // ScriptStruct UnionRun.GadgetItemNumInfo
 // 0x0004 (0x0004 - 0x0000)
 struct FGadgetItemNumInfo final
@@ -4677,6 +5023,34 @@ public:
 	int32                                         itemNum;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetItemNumInfo;
+
+// ScriptStruct UnionRun.GadgetShortenDamagetTimeInfo
+// 0x0024 (0x0024 - 0x0000)
+struct FGadgetShortenDamagetTimeInfo final
+{
+public:
+	int32                                         SpinTime1st;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SpinTime12th;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReduceDamageOnSpeedRatio;                          // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CrashReduceRatio;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ItemSpeedValueChangeRatio_Anchor;                  // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ItemSpeedValueChangeRatio_BodyCut;                 // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ItemSpeedValueChangeRatio_Slime;                   // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ItemSpeedValueChangeRatio_Magnet;                  // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ItemSpeedValueChangeRatio_Splash;                  // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetShortenDamagetTimeInfo;
+
+// ScriptStruct UnionRun.DriverTier
+// 0x0008 (0x0010 - 0x0008)
+struct FDriverTier final : public FTableRowBase
+{
+public:
+	EDriverId                                     DriverId;                                          // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Tier;                                              // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDriverTier;
 
 // ScriptStruct UnionRun.GadgetRecoveryBonusInfo
 // 0x000C (0x000C - 0x0000)
@@ -4699,6 +5073,16 @@ public:
 };
 DUMPER7_ASSERTS_FGadgetLowRankRingBonusInfo;
 
+// ScriptStruct UnionRun.UnionRaceHUDWarningPerPlayer
+// 0x0018 (0x0018 - 0x0000)
+struct FUnionRaceHUDWarningPerPlayer final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class URaceUISubApproachWarning*>      WarningInfoWidget;                                 // 0x0008(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FUnionRaceHUDWarningPerPlayer;
+
 // ScriptStruct UnionRun.GadgetVariousMemberInfo
 // 0x0008 (0x0008 - 0x0000)
 struct FGadgetVariousMemberInfo final
@@ -4707,6 +5091,17 @@ public:
 	class FName                                   ParamMapKey;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetVariousMemberInfo;
+
+// ScriptStruct UnionRun.GadgetIDCRM
+// 0x0008 (0x0010 - 0x0008)
+struct FGadgetIDCRM final : public FTableRowBase
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CrmId;                                             // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetIDCRM;
 
 // ScriptStruct UnionRun.GadgetVariousDefine
 // 0x0058 (0x0060 - 0x0008)
@@ -4738,6 +5133,33 @@ public:
 };
 DUMPER7_ASSERTS_FGimmickCurringParameter;
 
+// ScriptStruct UnionRun.ComBranchRingCondition
+// 0x0008 (0x0008 - 0x0000)
+struct FComBranchRingCondition final
+{
+public:
+	int32                                         Count;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Ratio;                                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComBranchRingCondition;
+
+// ScriptStruct UnionRun.ComBranchRingParams
+// 0x0044 (0x0044 - 0x0000)
+struct FComBranchRingParams final
+{
+public:
+	int32                                         NumCondition;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions1;                                       // 0x0004(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions2;                                       // 0x000C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions3;                                       // 0x0014(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions4;                                       // 0x001C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions5;                                       // 0x0024(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions6;                                       // 0x002C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions7;                                       // 0x0034(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FComBranchRingCondition                Conditions8;                                       // 0x003C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComBranchRingParams;
+
 // ScriptStruct UnionRun.HitInfo
 // 0x0008 (0x0008 - 0x0000)
 struct alignas(0x04) FHitInfo final
@@ -4747,16 +5169,14 @@ public:
 };
 DUMPER7_ASSERTS_FHitInfo;
 
-// ScriptStruct UnionRun.GroupHitInfo
-// 0x0058 (0x0058 - 0x0000)
-struct FGroupHitInfo final
+// ScriptStruct UnionRun.EntryRacer
+// 0x0080 (0x0080 - 0x0000)
+struct alignas(0x08) FEntryRacer final
 {
 public:
-	int32                                         GroupIndex;                                        // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GroupBonusHitCount;                                // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            RacersHitCountList;                                // 0x0008(0x0050)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_0[0x80];                                       // 0x0000(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FGroupHitInfo;
+DUMPER7_ASSERTS_FEntryRacer;
 
 // ScriptStruct UnionRun.GroupRingInfo
 // 0x00B0 (0x00B0 - 0x0000)
@@ -4771,6 +5191,68 @@ public:
 	TMap<int32, int32>                            RacersTotalGetRingCountList;                       // 0x0060(0x0050)(NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGroupRingInfo;
+
+// ScriptStruct UnionRun.FestaRacerResultInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FFestaRacerResultInfo final
+{
+public:
+	bool                                          bIsMvp;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BonusPoint;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsBonusPoint1st;                                  // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         TeamNo;                                            // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFestaRacerResultInfo;
+
+// ScriptStruct UnionRun.FestaResultInfo
+// 0x0040 (0x0040 - 0x0000)
+struct FFestaResultInfo final
+{
+public:
+	TArray<struct FFestaTeamResultInfo>           TeamList;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FFestaRacerResultInfo>          RacerList;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	class FText                                   TitleText;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   DetailText;                                        // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFestaResultInfo;
+
+// ScriptStruct UnionRun.GroupBattlePersonalResult
+// 0x0014 (0x0014 - 0x0000)
+struct FGroupBattlePersonalResult final
+{
+public:
+	int32                                         GroupIndex;                                        // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RacerIndex;                                        // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Value;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Rank;                                              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Traction;                                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGroupBattlePersonalResult;
+
+// ScriptStruct UnionRun.GroupBattleResult
+// 0x0018 (0x0018 - 0x0000)
+struct FGroupBattleResult final
+{
+public:
+	EGroupBonusType                               BonusType;                                         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGroupBattlePersonalResult>     PersonalResultList;                                // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGroupBattleResult;
+
+// ScriptStruct UnionRun.UnionRaceHUDItemIcons
+// 0x0018 (0x0018 - 0x0000)
+struct FUnionRaceHUDItemIcons final
+{
+public:
+	EUnionRaceHUDItemIconsState                   ItemIconsState;                                    // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class URaceUISubItemIcon*                     ItemIconMain;                                      // 0x0008(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class URaceUISubItemIcon*                     ItemIconSub;                                       // 0x0010(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FUnionRaceHUDItemIcons;
 
 // ScriptStruct UnionRun.EntryGroup
 // 0x0038 (0x0038 - 0x0000)
@@ -4791,6 +5273,28 @@ public:
 };
 DUMPER7_ASSERTS_FEntryGroup;
 
+// ScriptStruct UnionRun.TeamBoostSecondData
+// 0x0008 (0x0010 - 0x0008)
+struct FTeamBoostSecondData final : public FTableRowBase
+{
+public:
+	float                                         DistanceFromTop;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostSeconds;                                      // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FTeamBoostSecondData;
+
+// ScriptStruct UnionRun.ComGadgetEquipRivalTeamAndLevel
+// 0x0028 (0x0030 - 0x0008)
+struct FComGadgetEquipRivalTeamAndLevel final : public FTableRowBase
+{
+public:
+	ERivalTeamId                                  RivalTeam;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComGadgetEquipTableSetting            RivalRacerGadget;                                  // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FComGadgetEquipTableSetting            NormalRacerGadget;                                 // 0x0020(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FComGadgetEquipRivalTeamAndLevel;
+
 // ScriptStruct UnionRun.TeamBoostEnergyAddData
 // 0x0008 (0x0010 - 0x0008)
 struct FTeamBoostEnergyAddData final : public FTableRowBase
@@ -4801,6 +5305,60 @@ public:
 	int32                                         AddEnergyValue;                                    // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FTeamBoostEnergyAddData;
+
+// ScriptStruct UnionRun.TeamBoostData
+// 0x00B8 (0x00C0 - 0x0008)
+struct FTeamBoostData final : public FTableRowBase
+{
+public:
+	EGameModeId                                   GameMode;                                          // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         GroupCount;                                        // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ThresholdCount;                                    // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BoostLevel;                                        // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostMul;                                          // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeamNearConnectThickness;                          // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeamFarConnectThickness;                           // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnergyChargeDist;                                  // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CatchUpMinDist;                                    // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CatchUpMaxDist;                                    // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CatchUpSpeed;                                      // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CatchUpAccelMul;                                   // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableCOMCatchUpSpeedInterp;                      // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableCOMCatchUpAccelInterp;                      // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FriendCOMCatchUpMinDist;                           // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FriendCOMCatchUpMaxDist;                           // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FriendCOMCatchUpSpeed;                             // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FriendCOMCatchUpAccelMul;                          // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnemyCOMCatchUpMinDist;                            // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnemyCOMCatchUpMaxDist;                            // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnemyCOMCatchUpSpeed;                              // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnemyCOMCatchUpAccelMul;                           // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TeamTouchDash_BoostLevel;                          // 0x005C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeamTouchDash_BoostSeconds;                        // 0x0060(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeamTouchDash_BoostMul;                            // 0x0064(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeamTouchDash_CoolDownSeconds;                     // 0x0068(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AscentGaugeSpeed;                                  // 0x006C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FTeamBoostSecondData>           BoostSecondList;                                   // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByItemHit;                           // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByAllTouchDash;                      // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByTouchDash;                         // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByDriftDash;                         // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByAirTrick;                          // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByDashPanel;                         // 0x0094(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByDriftCharge;                       // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByRing;                              // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueBySlipstream;                        // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueBySpinDrift;                         // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByDriftJustDash;                     // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByOddNumRank;                        // 0x00AC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByChargeDashLv1;                     // 0x00B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByChargeDashLv2;                     // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByChargeDashLv3;                     // 0x00B8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddEnergyValueByChargeDashLv4;                     // 0x00BC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FTeamBoostData;
 
 // ScriptStruct UnionRun.MyAimData
 // 0x0030 (0x0030 - 0x0000)
@@ -4819,6 +5377,17 @@ public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FTargetedByItemData;
+
+// ScriptStruct UnionRun.UnionTakeRingInfo
+// 0x0008 (0x0008 - 0x0000)
+struct FUnionTakeRingInfo final
+{
+public:
+	int32                                         TakeRingCount;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETakeRingType                                 TakeRingFlags;                                     // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FUnionTakeRingInfo;
 
 // ScriptStruct UnionRun.TargetedByItemDataSet
 // 0x0040 (0x0040 - 0x0000)
@@ -4848,6 +5417,106 @@ public:
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FItemInfo4System;
+
+// ScriptStruct UnionRun.LotteryRateData
+// 0x0040 (0x0048 - 0x0008)
+struct FLotteryRateData final : public FTableRowBase
+{
+public:
+	int16                                         SingleWhiteBoostRatio;                             // 0x0008(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         DoubleWhiteBoostRatio;                             // 0x000A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         PackageRingRatio;                                  // 0x000C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         HominPunchRatio;                                   // 0x000E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         DoubleHominPunchRatio;                             // 0x0010(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         TripleHominPunchRatio;                             // 0x0012(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         YellowDrill;                                       // 0x0014(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         ThornBall;                                         // 0x0016(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         MonsterTruck;                                      // 0x0018(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         KingBoomBoo;                                       // 0x001A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         RocketPunch;                                       // 0x001C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         DoubleRocketPunch;                                 // 0x001E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         TripleRocketPunch;                                 // 0x0020(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         KingWhiteBoost;                                    // 0x0022(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         CyanLaser;                                         // 0x0024(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         VioletVoid;                                        // 0x0026(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Anchor;                                            // 0x0028(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         BodyCut;                                           // 0x002A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Slicer;                                            // 0x002C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Slime;                                             // 0x002E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Splash;                                            // 0x0030(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         DarkChao;                                          // 0x0032(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Magnet;                                            // 0x0034(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         BlackBomb;                                         // 0x0036(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         WarpRing;                                          // 0x0038(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         TeamWarpRing;                                      // 0x003A(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Omochao;                                           // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Shield;                                            // 0x003E(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         Weight;                                            // 0x0040(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          enableFlag;                                        // 0x0042(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FLotteryRateData;
+
+// ScriptStruct UnionRun.DistanceGroupLotteryRateDataTable
+// 0x0480 (0x0488 - 0x0008)
+struct FDistanceGroupLotteryRateDataTable final : public FTableRowBase
+{
+public:
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup1;                   // 0x0008(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup2;                   // 0x0050(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup3;                   // 0x0098(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup4;                   // 0x00E0(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup5;                   // 0x0128(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup6;                   // 0x0170(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup7;                   // 0x01B8(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup8;                   // 0x0200(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup9;                   // 0x0248(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup10;                  // 0x0290(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup11;                  // 0x02D8(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup12;                  // 0x0320(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup13;                  // 0x0368(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup14;                  // 0x03B0(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup15;                  // 0x03F8(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateDatas_DistanceGroup16;                  // 0x0440(0x0048)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDistanceGroupLotteryRateDataTable;
+
+// ScriptStruct UnionRun.RankGroupLotteryRateDataTable
+// 0x0D98 (0x0DA0 - 0x0008)
+struct FRankGroupLotteryRateDataTable final : public FTableRowBase
+{
+public:
+	struct FDistanceGroupLotteryRateDataTable     LotteryRateDatas_1stLap;                           // 0x0008(0x0488)(Edit, NativeAccessSpecifierPublic)
+	struct FDistanceGroupLotteryRateDataTable     LotteryRateDatas_2ndLap;                           // 0x0490(0x0488)(Edit, NativeAccessSpecifierPublic)
+	struct FDistanceGroupLotteryRateDataTable     LotteryRateDatas_3rdLap;                           // 0x0918(0x0488)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRankGroupLotteryRateDataTable;
+
+// ScriptStruct UnionRun.RankGroupLotteryRateDataTableList
+// 0x4428 (0x4430 - 0x0008)
+struct FRankGroupLotteryRateDataTableList final : public FTableRowBase
+{
+public:
+	ELotteryRateType                              LotteryRateType;                                   // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup1;         // 0x0010(0x0DA0)(Edit, NativeAccessSpecifierPublic)
+	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup2;         // 0x0DB0(0x0DA0)(Edit, NativeAccessSpecifierPublic)
+	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup3;         // 0x1B50(0x0DA0)(Edit, NativeAccessSpecifierPublic)
+	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup4;         // 0x28F0(0x0DA0)(Edit, NativeAccessSpecifierPublic)
+	struct FRankGroupLotteryRateDataTable         RankGroupLotteryRateDataTable__RankGroup5;         // 0x3690(0x0DA0)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRankGroupLotteryRateDataTableList;
+
+// ScriptStruct UnionRun.GhostMachineMaterialData
+// 0x0018 (0x0020 - 0x0008)
+struct FGhostMachineMaterialData final : public FTableRowBase
+{
+public:
+	class FString                                 SearchWord;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FrontOpacity;                                      // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FGhostMachineMaterialData;
 
 // ScriptStruct UnionRun.ComRankGroupLotteryRateDataList
 // 0x8868 (0x8870 - 0x0008)
@@ -4884,6 +5553,37 @@ public:
 };
 DUMPER7_ASSERTS_FPointDistanceData;
 
+// ScriptStruct UnionRun.SplineMoveSettingParam
+// 0x0068 (0x0068 - 0x0000)
+struct FSplineMoveSettingParam final
+{
+public:
+	class AActor*                                 SplineActor;                                       // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Speed;                                             // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESplineMoveLoopType                           LoopType;                                          // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InitPositionRate;                                  // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartWaitTime;                                     // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                OffsetLocation;                                    // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               OffsetRotator;                                     // 0x0030(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bUseLocalRotator;                                  // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseLocalRotatorRoll;                              // 0x0049(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseLocalRotatorPitch;                             // 0x004A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseLocalRotatorYaw;                               // 0x004B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bReverseStart;                                     // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bReverseMoveRot;                                   // 0x004D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            MoveCurve;                                         // 0x0050(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsCulling;                                        // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsCullingUpdate;                                  // 0x0059(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         UpdateWaitTime;                                    // 0x005C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIgnoreSplineRotator;                              // 0x0060(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOptimizedMode;                                    // 0x0061(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSplineMoveSettingParam;
+
 // ScriptStruct UnionRun.PlayerPointDistanceData
 // 0x0018 (0x0020 - 0x0008)
 struct FPlayerPointDistanceData final : public FTableRowBase
@@ -4910,6 +5610,20 @@ public:
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FComLevelCorrespondenceData;
+
+// ScriptStruct UnionRun.RoundTripMoveParams
+// 0x0014 (0x0014 - 0x0000)
+struct FRoundTripMoveParams final
+{
+public:
+	ERoundTripMoveType                            moveType_;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         easeCurve_;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         movingSeconds_;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         movingSpeed_;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         endWaitSeconds_;                                   // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRoundTripMoveParams;
 
 // ScriptStruct UnionRun.ComPointDistanceData
 // 0x0030 (0x0038 - 0x0008)
@@ -4957,6 +5671,18 @@ public:
 };
 DUMPER7_ASSERTS_FComPointDistanceDataList;
 
+// ScriptStruct UnionRun.RandomObjParamTable
+// 0x0028 (0x0030 - 0x0008)
+struct FRandomObjParamTable final : public FTableRowBase
+{
+public:
+	ERandomObjType                                ObjectType;                                        // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 RandomWeight;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_20[0x10];                                      // 0x0020(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRandomObjParamTable;
+
 // ScriptStruct UnionRun.GadgetLotteryRateData
 // 0x8868 (0x8870 - 0x0008)
 struct FGadgetLotteryRateData final : public FTableRowBase
@@ -4968,6 +5694,79 @@ public:
 	struct FRankGroupLotteryRateDataTableList     SpecialBox_RankGroupLotteryRateDataTable;          // 0x4440(0x4430)(Edit, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGadgetLotteryRateData;
+
+// ScriptStruct UnionRun.GadgetLotteryRateMagnificationCorrectionData
+// 0x0018 (0x0020 - 0x0008)
+struct FGadgetLotteryRateMagnificationCorrectionData final : public FTableRowBase
+{
+public:
+	EGadgetId                                     gadgetId;                                          // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Magnification;                                     // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<EItemId>                               ItemIdList;                                        // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGadgetLotteryRateMagnificationCorrectionData;
+
+// ScriptStruct UnionRun.SplineParam
+// 0x0014 (0x0014 - 0x0000)
+struct FSplineParam final
+{
+public:
+	bool                                          bHidden;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bPointCut;                                         // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCarRoute;                                         // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bBoatRoute;                                        // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bPlaneRoute;                                       // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShortCut;                                         // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSlide;                                            // 0x0006(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bNeverItem;                                        // 0x0007(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bNoItemRelease;                                    // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRunOff;                                           // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bGuidedJump;                                       // 0x000A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bYellowDrill;                                      // 0x000B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRespotInvalid;                                    // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInvalidSection;                                   // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInvalidAssist;                                    // 0x000E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERandomObjType                                RandomType;                                        // 0x000F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RandomId;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSplineParam;
+
+// ScriptStruct UnionRun.GroupRaceRuleLotteryRateRankGroupData
+// 0x0168 (0x0170 - 0x0008)
+struct FGroupRaceRuleLotteryRateRankGroupData final : public FTableRowBase
+{
+public:
+	struct FLotteryRateData                       LotteryRateData_RankGroup1;                        // 0x0008(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateData_RankGroup2;                        // 0x0050(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateData_RankGroup3;                        // 0x0098(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateData_RankGroup4;                        // 0x00E0(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FLotteryRateData                       LotteryRateData_RankGroup5;                        // 0x0128(0x0048)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGroupRaceRuleLotteryRateRankGroupData;
+
+// ScriptStruct UnionRun.GroupRaceRuleLotteryRateData
+// 0x02E8 (0x02F0 - 0x0008)
+struct FGroupRaceRuleLotteryRateData final : public FTableRowBase
+{
+public:
+	EGroupRaceItemLotteryCorrectionType           CorrectionType;                                    // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGroupRaceRuleLotteryRateRankGroupData NormalBoxRankGroupData;                            // 0x0010(0x0170)(Edit, NativeAccessSpecifierPublic)
+	struct FGroupRaceRuleLotteryRateRankGroupData SpecialBoxRankGroupData;                           // 0x0180(0x0170)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGroupRaceRuleLotteryRateData;
+
+// ScriptStruct UnionRun.MachineSurfaceSoundData
+// 0x0058 (0x0060 - 0x0008)
+struct FMachineSurfaceSoundData final : public FTableRowBase
+{
+public:
+	EVehicleSound                                 SoundType;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EUnionSurfaceType, TSoftObjectPtr<class USoundAtomCue>> CueMap;                             // 0x0010(0x0050)(Edit, BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMachineSurfaceSoundData;
 
 // ScriptStruct UnionRun.ReappearanceDifferentItemData
 // 0x0008 (0x0010 - 0x0008)
@@ -5006,6 +5805,31 @@ public:
 };
 DUMPER7_ASSERTS_FLimitingFactorData;
 
+// ScriptStruct UnionRun.SwingCameraTrigger
+// 0x000C (0x000C - 0x0000)
+struct FSwingCameraTrigger final
+{
+public:
+	bool                                          bAirValid;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLandingValid;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InElapsedRatio;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OutElapsedRatio;                                   // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSwingCameraTrigger;
+
+// ScriptStruct UnionRun.SwingCameraUnitPreset
+// 0x0040 (0x0040 - 0x0000)
+struct FSwingCameraUnitPreset final
+{
+public:
+	bool                                          bValid;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSwingCameraTrigger                    SuperDistance;                                     // 0x0004(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCameraParamTable                      CameraParams;                                      // 0x0010(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSwingCameraUnitPreset;
+
 // ScriptStruct UnionRun.LotteryItemBoxRateData
 // 0x000C (0x000C - 0x0000)
 struct FLotteryItemBoxRateData final
@@ -5016,6 +5840,82 @@ public:
 	int32                                         SpecialBox;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FLotteryItemBoxRateData;
+
+// ScriptStruct UnionRun.PackageRingVariationRateData
+// 0x000C (0x000C - 0x0000)
+struct FPackageRingVariationRateData final
+{
+public:
+	int32                                         Ring10_Rate;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Ring20_Rate;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Ring100_Rate;                                      // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPackageRingVariationRateData;
+
+// ScriptStruct UnionRun.UnionRunPathBinaryParameter
+// 0x0018 (0x0018 - 0x0000)
+struct FUnionRunPathBinaryParameter final
+{
+public:
+	int32                                         DataVersion;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ChunkDataCount;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<uint8>                                 Data;                                              // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FUnionRunPathBinaryParameter;
+
+// ScriptStruct UnionRun.PackageRingItemBoxVariationRateData
+// 0x0018 (0x0018 - 0x0000)
+struct FPackageRingItemBoxVariationRateData final
+{
+public:
+	struct FPackageRingVariationRateData          NormalBox;                                         // 0x0000(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPackageRingVariationRateData          SpecialBox;                                        // 0x000C(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPackageRingItemBoxVariationRateData;
+
+// ScriptStruct UnionRun.RankGroupPackageRingVariationRateDataTable
+// 0x0078 (0x0080 - 0x0008)
+struct FRankGroupPackageRingVariationRateDataTable final : public FTableRowBase
+{
+public:
+	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup1;         // 0x0008(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup2;         // 0x0020(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup3;         // 0x0038(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup4;         // 0x0050(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPackageRingItemBoxVariationRateData   PackageRingVariationRateData___RankGroup5;         // 0x0068(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRankGroupPackageRingVariationRateDataTable;
+
+// ScriptStruct UnionRun.MachineSoundData
+// 0x0030 (0x0038 - 0x0008)
+struct FMachineSoundData final : public FTableRowBase
+{
+public:
+	EVehicleSound                                 SoundType;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class USoundAtomCue>           Cue;                                               // 0x0010(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMachineSoundData;
+
+// ScriptStruct UnionRun.RacerRankPackageRingVariationRateData
+// 0x0010 (0x0010 - 0x0000)
+struct FRacerRankPackageRingVariationRateData final
+{
+public:
+	TArray<struct FPackageRingVariationRateData>  ListByRacerRank;                                   // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerRankPackageRingVariationRateData;
+
+// ScriptStruct UnionRun.RacerRankPackageRingVariationRateDataTable
+// 0x0030 (0x0030 - 0x0000)
+struct FRacerRankPackageRingVariationRateDataTable final
+{
+public:
+	struct FRacerRankPackageRingVariationRateData VariationRateDatas_1stLap;                         // 0x0000(0x0010)(Edit, NativeAccessSpecifierPublic)
+	struct FRacerRankPackageRingVariationRateData VariationRateDatas_2ndLap;                         // 0x0010(0x0010)(Edit, NativeAccessSpecifierPublic)
+	struct FRacerRankPackageRingVariationRateData VariationRateDatas_3rdLap;                         // 0x0020(0x0010)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRacerRankPackageRingVariationRateDataTable;
 
 // ScriptStruct UnionRun.ItemIrregularInfiniteData
 // 0x0018 (0x0020 - 0x0008)
@@ -5043,6 +5943,19 @@ public:
 };
 DUMPER7_ASSERTS_FItemBootData;
 
+// ScriptStruct UnionRun.MachineMaterialAnimationData
+// 0x0020 (0x0028 - 0x0008)
+struct FMachineMaterialAnimationData final : public FTableRowBase
+{
+public:
+	EVehicleMaterialAnimationType                 AnimationType;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveTable*                            CurveTable;                                        // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UDataTable*                             TargetMaterialTable;                               // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class FName                                   TargetTag;                                         // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMachineMaterialAnimationData;
+
 // ScriptStruct UnionRun.LotteryBubbleBonusItemRateData
 // 0x0020 (0x0028 - 0x0008)
 struct FLotteryBubbleBonusItemRateData final : public FTableRowBase
@@ -5058,6 +5971,45 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FLotteryBubbleBonusItemRateData;
+
+// ScriptStruct UnionRun.DarkChaoHoldItemData
+// 0x0090 (0x0098 - 0x0008)
+struct FDarkChaoHoldItemData final : public FTableRowBase
+{
+public:
+	EItemId                                       ItemId;                                            // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRareItem;                                        // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MeshType;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsIncludeUsableTimes;                              // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UStaticMesh>             StaticMeshData;                                    // 0x0018(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMesh*                          SkeletalMeshData;                                  // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TSubclassOf<class UAnimInstance>              AnimClass;                                         // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        AnimAsset;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UAnimationAsset*                        TwiceTimesAnimAsset;                               // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UAnimationAsset*                        OnceTimeAnimAsset;                                 // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	struct FVector                                RelativeScaleOffset;                               // 0x0068(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                RelativeLocationOffset;                            // 0x0080(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDarkChaoHoldItemData;
+
+// ScriptStruct UnionRun.VehicleModelDefine
+// 0x0068 (0x0068 - 0x0000)
+struct FVehicleModelDefine final
+{
+public:
+	EVehicleType                                  VehicleType;                                       // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECarStatusType                                CarStatusType;                                     // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECarCustomType                                CarCustomType;                                     // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ECarBodyPartType, int32>                 CarBodyPartMap;                                    // 0x0008(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         TireRotSpeedMax_30fps1Screen;                      // 0x0058(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TireRotSpeedMax_30fpsOther;                        // 0x005C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TireRotSpeedMax_60fps1Screen;                      // 0x0060(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TireRotSpeedMax_60fpsOther;                        // 0x0064(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FVehicleModelDefine;
 
 // ScriptStruct UnionRun.AvoidTargetRingData
 // 0x0010 (0x0018 - 0x0008)
@@ -5092,17 +6044,6 @@ public:
 };
 DUMPER7_ASSERTS_FLockOnParamMachineForm;
 
-// ScriptStruct UnionRun.CreateItemInfo
-// 0x0018 (0x0018 - 0x0000)
-struct FCreateItemInfo final
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 uclass;                                            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UItemObjectLayer*                       objLayer;                                          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCreateItemInfo;
-
 // ScriptStruct UnionRun.DashChargeParams
 // 0x0010 (0x0010 - 0x0000)
 struct FDashChargeParams final
@@ -5122,6 +6063,18 @@ public:
 	TArray<uint8>                                 Data;                                              // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FUnionNavigationBinaryParameter;
+
+// ScriptStruct UnionRun.PlaneTurnAppearanceParams
+// 0x0010 (0x0010 - 0x0000)
+struct FPlaneTurnAppearanceParams final
+{
+public:
+	float                                         MaxDegree;                                         // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngularSpeed;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SwitchAngularSpeed;                                // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngularAccelSec;                                   // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPlaneTurnAppearanceParams;
 
 // ScriptStruct UnionRun.PlaneChargeTurnAppearanceParams
 // 0x0018 (0x0018 - 0x0000)
@@ -5148,19 +6101,6 @@ public:
 	float                                         AngularSwitchAccelSec;                             // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FPlaneTurnSpeedParams;
-
-// ScriptStruct UnionRun.PlaneChargeTurnSpeedParams
-// 0x0014 (0x0014 - 0x0000)
-struct FPlaneChargeTurnSpeedParams final
-{
-public:
-	float                                         AngularAccel;                                      // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SwitchAngularAccel;                                // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngularSpeedMin;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngularSpeedCenter;                                // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngularSpeedMax;                                   // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPlaneChargeTurnSpeedParams;
 
 // ScriptStruct UnionRun.PlaneChargeTurnSpeedHandleParams
 // 0x0028 (0x0028 - 0x0000)
@@ -5203,6 +6143,19 @@ public:
 	float                                         IntervalSeconds;                                   // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FPlaneDamageReactionParams;
+
+// ScriptStruct UnionRun.DebugRaceWarpRow
+// 0x0048 (0x0050 - 0x0008)
+struct FDebugRaceWarpRow final : public FTableRowBase
+{
+public:
+	class FName                                   Name;                                              // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EStageId                                      Stage;                                             // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                WarpPos;                                           // 0x0018(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQuat                                  WarpRot;                                           // 0x0030(0x0020)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDebugRaceWarpRow;
 
 // ScriptStruct UnionRun.MinimapIconData
 // 0x0040 (0x0040 - 0x0000)
@@ -5257,71 +6210,6 @@ public:
 };
 DUMPER7_ASSERTS_FRaceReactionVoiceEtc;
 
-// ScriptStruct UnionRun.RacerReactionVoice
-// 0x00A0 (0x00A0 - 0x0000)
-struct FRacerReactionVoice final
-{
-public:
-	EDriverId                                     VoiceChrId;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Guest;                                  // 0x0030(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Rival;                                  // 0x0058(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   TextId;                                            // 0x0080(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	ERacerReactionWindow                          WindowId;                                          // 0x0090(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     DriverId;                                          // 0x0091(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     RivalId;                                           // 0x0092(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESerifUISubCharaId                            SerifUISubCharaId;                                 // 0x0093(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     FaceId;                                            // 0x0094(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         FacialNo;                                          // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StageId;                                           // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerReactionVoice;
-
-// ScriptStruct UnionRun.RacerReactionVoicePack
-// 0x00B8 (0x00B8 - 0x0000)
-struct FRacerReactionVoicePack final
-{
-public:
-	int32                                         RacerIndex;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<bool>                                  SerifScreenIndexList;                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FRacerReactionVoice                    RacerReactionVoice;                                // 0x0018(0x00A0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerReactionVoicePack;
-
-// ScriptStruct UnionRun.RacerReactionVoiceList
-// 0x0010 (0x0010 - 0x0000)
-struct FRacerReactionVoiceList final
-{
-public:
-	TArray<struct FRacerReactionVoicePack>        VoiceList;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerReactionVoiceList;
-
-// ScriptStruct UnionRun.RacerReactionChrData
-// 0x0018 (0x0018 - 0x0000)
-struct FRacerReactionChrData final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRacerReactionVoiceList                list;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerReactionChrData;
-
-// ScriptStruct UnionRun.RacerReactionChrDataList
-// 0x0018 (0x0018 - 0x0000)
-struct FRacerReactionChrDataList final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRacerReactionChrData>          DataList;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerReactionChrDataList;
-
 // ScriptStruct UnionRun.RacerReactionStageData
 // 0x0008 (0x0008 - 0x0000)
 struct FRacerReactionStageData final
@@ -5332,24 +6220,6 @@ public:
 	float                                         ElapsedRate;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FRacerReactionStageData;
-
-// ScriptStruct UnionRun.RacerReactionTypeParam
-// 0x0050 (0x0050 - 0x0000)
-struct FRacerReactionTypeParam final
-{
-public:
-	ERacerReactionId                              ID;                                                // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerReactionPriority                        Priority;                                          // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CoolTime;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerReactionSplitDispType                   SplitDispType;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRacerReactionChrData>          RandomVoiceList;                                   // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FRacerReactionChrDataList>      ChrVoiceList;                                      // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FRacerReactionChrDataList>      LinkVoiceList;                                     // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FRacerReactionChrDataList>      RivalVoiceList;                                    // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerReactionTypeParam;
 
 // ScriptStruct UnionRun.RacerReactionConfig
 // 0x0020 (0x0020 - 0x0000)
@@ -5400,6 +6270,21 @@ public:
 };
 DUMPER7_ASSERTS_FRacerReactionRecord;
 
+// ScriptStruct UnionRun.RacerReactionInfo_TableRow
+// 0x0010 (0x0018 - 0x0008)
+struct FRacerReactionInfo_TableRow final : public FTableRowBase
+{
+public:
+	bool                                          bIsValid;                                          // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerReactionId                              ID;                                                // 0x0009(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerReactionPriority                        Priority;                                          // 0x000A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CoolTime;                                          // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ERacerReactionSplitDispType                   SplitDispType;                                     // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRacerReactionInfo_TableRow;
+
 // ScriptStruct UnionRun.RacerReactionInfo
 // 0x000C (0x000C - 0x0000)
 struct FRacerReactionInfo final
@@ -5436,50 +6321,6 @@ public:
 };
 DUMPER7_ASSERTS_FRacerReactionText_TableRow;
 
-// ScriptStruct UnionRun.RacerReactionText
-// 0x00A0 (0x00A0 - 0x0000)
-struct FRacerReactionText final
-{
-public:
-	ERacerReactionId                              ID;                                                // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerReactionVoiceType                       VoiceType;                                         // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     DriverId;                                          // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     RivalId;                                           // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     VoiceChrId;                                        // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Guest;                                  // 0x0030(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class USoundAtomCue>           CueVoiceId_Rival;                                  // 0x0058(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   TextTableId;                                       // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 TextId;                                            // 0x0088(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERacerReactionWindow                          WindowId;                                          // 0x0098(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDriverId                                     FaceId;                                            // 0x0099(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         StageId;                                           // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRacerReactionText;
-
-// ScriptStruct UnionRun.ReactionDirName
-// 0x0028 (0x0028 - 0x0000)
-struct FReactionDirName final
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DirName;                                           // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Filename;                                          // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FReactionDirName;
-
-// ScriptStruct UnionRun.ReactionDirName_TableRow
-// 0x0010 (0x0018 - 0x0008)
-struct FReactionDirName_TableRow final : public FTableRowBase
-{
-public:
-	TArray<struct FReactionDirName>               list;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FReactionDirName_TableRow;
-
 // ScriptStruct UnionRun.RankSort
 // 0x0008 (0x0008 - 0x0000)
 struct alignas(0x04) FRankSort final
@@ -5489,179 +6330,31 @@ public:
 };
 DUMPER7_ASSERTS_FRankSort;
 
-// ScriptStruct UnionRun.UnionRaceAppInfo
-// 0x0001 (0x0001 - 0x0000)
-struct FUnionRaceAppInfo final
+// ScriptStruct UnionRun.UnionRaceReturnDashParam
+// 0x001C (0x001C - 0x0000)
+struct FUnionRaceReturnDashParam final
 {
 public:
-	bool                                          bIsPausing;                                        // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RETURNDASH_SCORE_SUCCESSPIVOT_MIN;                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RETURNDASH_SCORE_SUCCESSPIVOT_MAX;                 // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RETURNDASH_SCORE_SUCCESSRANGE;                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RETURNDASH_SCORE_SPAWNOFFSET;                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RETURNDASH_SCORE_ACCELE;                           // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RETURNDASH_SCORE_RELEASE1;                         // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RETURNDASH_SCORE_RELEASE2;                         // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FUnionRaceAppInfo;
+DUMPER7_ASSERTS_FUnionRaceReturnDashParam;
 
-// ScriptStruct UnionRun.UnionRaceStateParam
-// 0x00C0 (0x00C0 - 0x0000)
-struct FUnionRaceStateParam final
+// ScriptStruct UnionRun.UnionRaceTickObjectData
+// 0x0030 (0x0030 - 0x0000)
+struct FUnionRaceTickObjectData final
 {
 public:
-	struct FUnionRaceTime                         RaceWholeTime;                                     // 0x0000(0x0010)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	ERaceInfoStateType                            RaceStatus;                                        // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CountDownValue;                                    // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RacerCount;                                        // 0x0018(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SpeedClass;                                        // 0x001C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            RacerIndexRankMap;                                 // 0x0020(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            RacerIndexWorldMap;                                // 0x0070(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class ASkeletalMeshActor*>             SkeletalActors;                                    // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class USimpleAnimationComponent*>      SimpleAnimComponents;                              // 0x0010(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_20[0x10];                                      // 0x0020(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FUnionRaceStateParam;
-
-// ScriptStruct UnionRun.UnionRaceDomainInfo
-// 0x0048 (0x0048 - 0x0000)
-struct FUnionRaceDomainInfo final
-{
-public:
-	int32                                         DomainIndex;                                       // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EStageId                                      StageId;                                           // 0x0004(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   StageName;                                         // 0x0008(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                 BGMName;                                           // 0x0018(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                LocationOffset;                                    // 0x0028(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LightChannel;                                      // 0x0040(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETravelRingScreenType                         TravelRingScreenType;                              // 0x0044(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EIrregularEventId                             IrregularEventId;                                  // 0x0045(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FUnionRaceDomainInfo;
-
-// ScriptStruct UnionRun.UnionRaceStageRingGateData
-// 0x0078 (0x0078 - 0x0000)
-struct FUnionRaceStageRingGateData final
-{
-public:
-	class UMaterialInstance*                      FloorLeft;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UMaterialInstance*                      FloorRight;                                        // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UMaterialInstance*                      RingLeft;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UMaterialInstance*                      RingRight;                                         // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UMaterialInstance*                      MaterialEnter;                                     // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UMaterialInstance*                      MaterialEnterAir;                                  // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UMaterialInstance*                      MaterialExit;                                      // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	TArray<class UMaterialInstance*>              ShortcutEnterMaterial;                             // 0x0038(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-	TArray<class UStaticMesh*>                    ShortcutEnterMesh;                                 // 0x0048(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-	TArray<class UMaterialInstance*>              ShortcutExitMaterial;                              // 0x0058(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-	TArray<class UStaticMesh*>                    ShortcutExitMesh;                                  // 0x0068(0x0010)(Edit, BlueprintVisible, EditFixedSize, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-};
-DUMPER7_ASSERTS_FUnionRaceStageRingGateData;
-
-// ScriptStruct UnionRun.UnionRaceStageDynamicData
-// 0x0070 (0x0070 - 0x0000)
-struct FUnionRaceStageDynamicData final
-{
-public:
-	TArray<class ULevel*>                         ObjectLevels;                                      // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-	class UUnionBtCollisionBinaryAsset*           CollisionAsset;                                    // 0x0010(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UUnionNavigationBinaryDataAsset*        NavigationAsset;                                   // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UUnionRunPathBinaryDataAsset*           RunPathAsset;                                      // 0x0020(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UUnionComPathBinaryDataAsset*           ComPathAsset;                                      // 0x0028(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	bool                                          bUseOverwriteDirectionalLightParameter;            // 0x0030(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OverwriteDirectionalLightIntensity;                // 0x0034(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 OverwriteDirectionalLightColor;                    // 0x0038(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x34];                                      // 0x003C(0x0034)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FUnionRaceStageDynamicData;
-
-// ScriptStruct UnionRun.UnionRaceStageData
-// 0x0170 (0x0170 - 0x0000)
-struct FUnionRaceStageData final
-{
-public:
-	struct FUnionRaceStageRingGateData            RingGateData;                                      // 0x0000(0x0078)(BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUnionRaceStageDynamicData             BasicLapData;                                      // 0x0078(0x0070)(BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUnionRaceStageDynamicData             FinalLapData;                                      // 0x00E8(0x0070)(BlueprintVisible, NativeAccessSpecifierPublic)
-	class ULineGuideDataAsset*                    LineGuide;                                         // 0x0158(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	TArray<class ULevel*>                         OtherLevels;                                       // 0x0160(0x0010)(BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-};
-DUMPER7_ASSERTS_FUnionRaceStageData;
-
-// ScriptStruct UnionRun.UnionRaceDomainData
-// 0x01B8 (0x01B8 - 0x0000)
-struct FUnionRaceDomainData final
-{
-public:
-	struct FUnionRaceDomainInfo                   DomainInfo;                                        // 0x0000(0x0048)(BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUnionRaceStageData                    StageData;                                         // 0x0048(0x0170)(BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRaceDomainData;
-
-// ScriptStruct UnionRun.UnionRaceOverwriteStartTransform
-// 0x0070 (0x0070 - 0x0000)
-struct FUnionRaceOverwriteStartTransform final
-{
-public:
-	bool                                          bOverwrite;                                        // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             StartTransform;                                    // 0x0010(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRaceOverwriteStartTransform;
-
-// ScriptStruct UnionRun.PredictTestInfo
-// 0x0008 (0x0008 - 0x0000)
-struct FPredictTestInfo final
-{
-public:
-	bool                                          bIsEnable;                                         // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         TestCaseIndex;                                     // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPredictTestInfo;
-
-// ScriptStruct UnionRun.UnionRaceDebugParam
-// 0x00A0 (0x00A0 - 0x0000)
-struct FUnionRaceDebugParam final
-{
-public:
-	ELotteryTableType                             DbgLotteryTableType;                               // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bApplyLocalPlayer;                                 // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bApplyAllPlayer;                                   // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsOnCourseEditor;                                 // 0x0003(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUnionRaceOverwriteStartTransform      OverwriteStartTransform;                           // 0x0010(0x0070)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         GenericParameter;                                  // 0x0080(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsDebugFinalLap;                                  // 0x0084(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsRaceTestMode;                                   // 0x0085(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_86[0x2];                                       // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 RaceTestConfigName;                                // 0x0088(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPredictTestInfo                       PredictTestInfo;                                   // 0x0098(0x0008)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRaceDebugParam;
-
-// ScriptStruct UnionRun.UnionRaceRedStarRingParam
-// 0x0018 (0x0018 - 0x0000)
-struct FUnionRaceRedStarRingParam final
-{
-public:
-	bool                                          bEnableRedStarRing;                                // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FUserRedStarRingAcquisitionProperty> AcquisitionPerPlayer;                         // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRaceRedStarRingParam;
-
-// ScriptStruct UnionRun.UnionJukeboxRaceBGMLapInfo
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x08) FUnionJukeboxRaceBGMLapInfo final
-{
-public:
-	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FUnionJukeboxRaceBGMLapInfo;
-
-// ScriptStruct UnionRun.UnionJukeboxRaceBGM
-// 0x0010 (0x0010 - 0x0000)
-struct FUnionJukeboxRaceBGM final
-{
-public:
-	TArray<struct FUnionJukeboxRaceBGMLapInfo>    LapInfo;                                           // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionJukeboxRaceBGM;
+DUMPER7_ASSERTS_FUnionRaceTickObjectData;
 
 // ScriptStruct UnionRun.UnionRacePreCreateParam
 // 0x0050 (0x0050 - 0x0000)
@@ -5678,37 +6371,6 @@ public:
 	TSubclassOf<class UObject>                    PackageRingObjectPathPtr;                          // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 };
 DUMPER7_ASSERTS_FUnionRacePreCreateParam;
-
-// ScriptStruct UnionRun.UnionRaceCreateParam
-// 0x0290 (0x0290 - 0x0000)
-struct FUnionRaceCreateParam final
-{
-public:
-	EGrandPrixId                                  GrandPrixId;                                       // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPartyRacePreset                              RaceParkPreset;                                    // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERaceType                                     RaceType;                                          // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCustomRaceSetting                     CustomRaceSetting;                                 // 0x0008(0x0128)(BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FTimeTrialSetting                      TimeTrialSetting;                                  // 0x0130(0x0030)(BlueprintVisible, NativeAccessSpecifierPublic)
-	EGameModeId                                   GameModeID;                                        // 0x0160(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_161[0x3];                                      // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LocalPlayerCount;                                  // 0x0164(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RacerCount;                                        // 0x0168(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESpeedClassId                                 SpeedClass;                                        // 0x016C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERaceMirrorSetting                            RaceMirrorSetting;                                 // 0x016D(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16E[0x2];                                      // 0x016E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUnionRaceStartDashParam               StartDashParam;                                    // 0x0170(0x0030)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	struct FUnionJukeboxRaceBGM                   JukeboxRaceBGM;                                    // 0x01A0(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          GPFinalRandomMain;                                 // 0x01B0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B1[0xF];                                      // 0x01B1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUnionRaceDebugParam                   DebugParam;                                        // 0x01C0(0x00A0)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         P2PRaceTimeOut;                                    // 0x0260(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         P2PUnstableTime;                                   // 0x0264(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<EGadgetId>                             RaceDisableGadgetList;                             // 0x0268(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<EGadgetId>                             AdditionalGadgetList;                              // 0x0278(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_288[0x8];                                      // 0x0288(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FUnionRaceCreateParam;
 
 // ScriptStruct UnionRun.RivalLevelComLevel
 // 0x0020 (0x0028 - 0x0008)
@@ -5729,25 +6391,6 @@ public:
 };
 DUMPER7_ASSERTS_FRivalLevelComLevel;
 
-// ScriptStruct UnionRun.CustomComSpeedComLevel
-// 0x0020 (0x0028 - 0x0008)
-struct FCustomComSpeedComLevel final : public FTableRowBase
-{
-public:
-	ERaceSettingGrouping                          RaceSettingGrouping;                               // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERaceSettingComSpeed                          ComSpeedLevel;                                     // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NomalLv;                                           // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HighLv;                                            // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SonicLv;                                           // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SuperSonicLv;                                      // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MirrorLv;                                          // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EComLotteryRateDataTableType                  ItemTable;                                         // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EComPointDistanceTableType                    ItemDist;                                          // 0x0021(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FCustomComSpeedComLevel;
-
 // ScriptStruct UnionRun.RankComLevel
 // 0x0020 (0x0028 - 0x0008)
 struct FRankComLevel final : public FTableRowBase
@@ -5765,18 +6408,6 @@ public:
 };
 DUMPER7_ASSERTS_FRankComLevel;
 
-// ScriptStruct UnionRun.ComAvoidParams
-// 0x0010 (0x0010 - 0x0000)
-struct FComAvoidParams final
-{
-public:
-	float                                         CarWidth;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AvoidMargin;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ThornBallAvoidWidth;                               // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MagnetAvoidWidth;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComAvoidParams;
-
 // ScriptStruct UnionRun.ComResultParams
 // 0x0010 (0x0018 - 0x0008)
 struct FComResultParams final : public FTableRowBase
@@ -5790,16 +6421,6 @@ public:
 };
 DUMPER7_ASSERTS_FComResultParams;
 
-// ScriptStruct UnionRun.ComSlimeCancelParams
-// 0x0008 (0x0008 - 0x0000)
-struct FComSlimeCancelParams final
-{
-public:
-	float                                         LineChangeRatio;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LineChangePerFrame;                                // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComSlimeCancelParams;
-
 // ScriptStruct UnionRun.ComAvoidKingBoomBooPillarParams
 // 0x000C (0x000C - 0x0000)
 struct FComAvoidKingBoomBooPillarParams final
@@ -5811,56 +6432,6 @@ public:
 };
 DUMPER7_ASSERTS_FComAvoidKingBoomBooPillarParams;
 
-// ScriptStruct UnionRun.ComAvoidPolishingMachineParams
-// 0x0008 (0x0008 - 0x0000)
-struct FComAvoidPolishingMachineParams final
-{
-public:
-	float                                         RightPathMovePosARatioStart;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RightPathMovePosARatioEnd;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComAvoidPolishingMachineParams;
-
-// ScriptStruct UnionRun.ComAvoidEnemy09003Params
-// 0x0008 (0x0008 - 0x0000)
-struct FComAvoidEnemy09003Params final
-{
-public:
-	float                                         RightPathMovePosARatioStart;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RightPathMovePosARatioEnd;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComAvoidEnemy09003Params;
-
-// ScriptStruct UnionRun.ComAvoidEnemy09001AParams
-// 0x0008 (0x0008 - 0x0000)
-struct FComAvoidEnemy09001AParams final
-{
-public:
-	float                                         ChangePathShotRatio1;                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChangePathShotRatio2;                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComAvoidEnemy09001AParams;
-
-// ScriptStruct UnionRun.ComTimingGimmickParams
-// 0x0040 (0x0040 - 0x0000)
-struct FComTimingGimmickParams final
-{
-public:
-	float                                         DarkGaiaPhoenixComSpeedRate;                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TentacleComSpeedRate;                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TentacleLeftPatternRandomId;                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BucketWheelComSpeedRate;                           // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DeathEggComSpeedRate;                              // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BigTrainMoveRateForComBranch;                      // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BigTrainComBranchUnderRate;                        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Enemy04002ComSpeedRate;                            // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FComAvoidPolishingMachineParams        ComAvoidPolishingMachineParams;                    // 0x0020(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComAvoidEnemy09003Params              ComAvoidEnemy09003Params1;                         // 0x0028(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComAvoidEnemy09003Params              ComAvoidEnemy09003Params3;                         // 0x0030(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComAvoidEnemy09001AParams             ComAvoidEnemy09001AParams;                         // 0x0038(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComTimingGimmickParams;
-
 // ScriptStruct UnionRun.ComLotteryParams
 // 0x0004 (0x0004 - 0x0000)
 struct FComLotteryParams final
@@ -5869,54 +6440,6 @@ public:
 	int32                                         SpecialTypeSlotRank;                               // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FComLotteryParams;
-
-// ScriptStruct UnionRun.ComPaceParams
-// 0x0034 (0x0034 - 0x0000)
-struct FComPaceParams final
-{
-public:
-	float                                         base;                                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseSlow;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseStart;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartDash3;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartDash2;                                        // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartDash1;                                        // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartDash0;                                        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartDashMiss;                                     // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LinePosMin;                                        // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LinePosMax;                                        // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShortcutRatio;                                     // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemSkillLv;                                       // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CloseToStart;                                      // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComPaceParams;
-
-// ScriptStruct UnionRun.ComBranchRingCondition
-// 0x0008 (0x0008 - 0x0000)
-struct FComBranchRingCondition final
-{
-public:
-	int32                                         Count;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Ratio;                                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComBranchRingCondition;
-
-// ScriptStruct UnionRun.ComBranchRingParams
-// 0x0044 (0x0044 - 0x0000)
-struct FComBranchRingParams final
-{
-public:
-	int32                                         NumCondition;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions1;                                       // 0x0004(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions2;                                       // 0x000C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions3;                                       // 0x0014(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions4;                                       // 0x001C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions5;                                       // 0x0024(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions6;                                       // 0x002C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions7;                                       // 0x0034(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FComBranchRingCondition                Conditions8;                                       // 0x003C(0x0008)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComBranchRingParams;
 
 // ScriptStruct UnionRun.ComLevelParams
 // 0x02E8 (0x02F0 - 0x0008)
@@ -5952,17 +6475,6 @@ public:
 };
 DUMPER7_ASSERTS_FComLevelParams;
 
-// ScriptStruct UnionRun.DriverTier
-// 0x0008 (0x0010 - 0x0008)
-struct FDriverTier final : public FTableRowBase
-{
-public:
-	EDriverId                                     DriverId;                                          // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Tier;                                              // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDriverTier;
-
 // ScriptStruct UnionRun.FakeComName
 // 0x0018 (0x0020 - 0x0008)
 struct FFakeComName final : public FTableRowBase
@@ -5974,22 +6486,6 @@ public:
 };
 DUMPER7_ASSERTS_FFakeComName;
 
-// ScriptStruct UnionRun.ComPresetGadget
-// 0x0010 (0x0018 - 0x0008)
-struct FComPresetGadget final : public FTableRowBase
-{
-public:
-	int32                                         GadgetEquipGr;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGadgetId                                     Slot1;                                             // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGadgetId                                     Slot2;                                             // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGadgetId                                     Slot3;                                             // 0x000E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGadgetId                                     Slot4;                                             // 0x000F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGadgetId                                     Slot5;                                             // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGadgetId                                     Slot6;                                             // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FComPresetGadget;
-
 // ScriptStruct UnionRun.ComUseGadget
 // 0x0018 (0x0020 - 0x0008)
 struct FComUseGadget final : public FTableRowBase
@@ -6000,17 +6496,6 @@ public:
 	TArray<EGadgetId>                             ComUseGadget;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FComUseGadget;
-
-// ScriptStruct UnionRun.ComGadgetEquipTableSetting
-// 0x0008 (0x0010 - 0x0008)
-struct FComGadgetEquipTableSetting final : public FTableRowBase
-{
-public:
-	EComGadgetEquipTableType                      TableType;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         GadgetEquipGr;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComGadgetEquipTableSetting;
 
 // ScriptStruct UnionRun.ComGadgetEquipRivalLevel
 // 0x0028 (0x0030 - 0x0008)
@@ -6024,18 +6509,6 @@ public:
 };
 DUMPER7_ASSERTS_FComGadgetEquipRivalLevel;
 
-// ScriptStruct UnionRun.ComGadgetEquipRivalTeamAndLevel
-// 0x0028 (0x0030 - 0x0008)
-struct FComGadgetEquipRivalTeamAndLevel final : public FTableRowBase
-{
-public:
-	ERivalTeamId                                  RivalTeam;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FComGadgetEquipTableSetting            RivalRacerGadget;                                  // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FComGadgetEquipTableSetting            NormalRacerGadget;                                 // 0x0020(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComGadgetEquipRivalTeamAndLevel;
-
 // ScriptStruct UnionRun.ComGadgetEquipComSpeedLevel
 // 0x0018 (0x0020 - 0x0008)
 struct FComGadgetEquipComSpeedLevel final : public FTableRowBase
@@ -6046,17 +6519,6 @@ public:
 	struct FComGadgetEquipTableSetting            NormalRacerGadget;                                 // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FComGadgetEquipComSpeedLevel;
-
-// ScriptStruct UnionRun.ComGadgetEquipRank
-// 0x0018 (0x0020 - 0x0008)
-struct FComGadgetEquipRank final : public FTableRowBase
-{
-public:
-	int32                                         Rank;                                              // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FComGadgetEquipTableSetting            NormalRacerGadget;                                 // 0x0010(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FComGadgetEquipRank;
 
 // ScriptStruct UnionRun.ComGadgetEquipFestaRaceRule
 // 0x0018 (0x0020 - 0x0008)
@@ -6069,16 +6531,6 @@ public:
 };
 DUMPER7_ASSERTS_FComGadgetEquipFestaRaceRule;
 
-// ScriptStruct UnionRun.UnionRaceHUDWarningPerPlayer
-// 0x0018 (0x0018 - 0x0000)
-struct FUnionRaceHUDWarningPerPlayer final
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class URaceUISubApproachWarning*>      WarningInfoWidget;                                 // 0x0008(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-};
-DUMPER7_ASSERTS_FUnionRaceHUDWarningPerPlayer;
-
 // ScriptStruct UnionRun.UnionRaceHUDWarning
 // 0x0010 (0x0010 - 0x0000)
 struct FUnionRaceHUDWarning final
@@ -6088,18 +6540,6 @@ public:
 };
 DUMPER7_ASSERTS_FUnionRaceHUDWarning;
 
-// ScriptStruct UnionRun.UnionRaceHUDItemIcons
-// 0x0018 (0x0018 - 0x0000)
-struct FUnionRaceHUDItemIcons final
-{
-public:
-	EUnionRaceHUDItemIconsState                   ItemIconsState;                                    // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class URaceUISubItemIcon*                     ItemIconMain;                                      // 0x0008(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class URaceUISubItemIcon*                     ItemIconSub;                                       // 0x0010(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-};
-DUMPER7_ASSERTS_FUnionRaceHUDItemIcons;
-
 // ScriptStruct UnionRun.UnionRaceHUDGroupRingUI
 // 0x0010 (0x0010 - 0x0000)
 struct FUnionRaceHUDGroupRingUI final
@@ -6108,15 +6548,6 @@ public:
 	TArray<class URaceUISubGroupRing*>            RingCountUI;                                       // 0x0000(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 };
 DUMPER7_ASSERTS_FUnionRaceHUDGroupRingUI;
-
-// ScriptStruct UnionRun.UnionRaceHUDPlayerNameUI
-// 0x0010 (0x0010 - 0x0000)
-struct FUnionRaceHUDPlayerNameUI final
-{
-public:
-	TArray<class URaceUISubPlayerName*>           PlayerNameUI;                                      // 0x0000(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-};
-DUMPER7_ASSERTS_FUnionRaceHUDPlayerNameUI;
 
 // ScriptStruct UnionRun.FestaRacerContribution
 // 0x0014 (0x0014 - 0x0000)
@@ -6133,47 +6564,6 @@ public:
 };
 DUMPER7_ASSERTS_FFestaRacerContribution;
 
-// ScriptStruct UnionRun.FestaTeamResultInfo
-// 0x0014 (0x0014 - 0x0000)
-struct FFestaTeamResultInfo final
-{
-public:
-	bool                                          bIsWinner;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsMvp;                                            // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         AddPoint;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TeamBonusPoint;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalTeamPoint;                                    // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalTeamRank;                                     // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FFestaTeamResultInfo;
-
-// ScriptStruct UnionRun.FestaRacerResultInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FFestaRacerResultInfo final
-{
-public:
-	bool                                          bIsMvp;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BonusPoint;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsBonusPoint1st;                                  // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         TeamNo;                                            // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FFestaRacerResultInfo;
-
-// ScriptStruct UnionRun.FestaResultInfo
-// 0x0040 (0x0040 - 0x0000)
-struct FFestaResultInfo final
-{
-public:
-	TArray<struct FFestaTeamResultInfo>           TeamList;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FFestaRacerResultInfo>          RacerList;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	class FText                                   TitleText;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   DetailText;                                        // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FFestaResultInfo;
-
 // ScriptStruct UnionRun.PlayerRaceResultData
 // 0x0028 (0x0028 - 0x0000)
 struct alignas(0x08) FPlayerRaceResultData final
@@ -6182,15 +6572,6 @@ public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FPlayerRaceResultData;
-
-// ScriptStruct UnionRun.PlayerTotalResultData
-// 0x0058 (0x0058 - 0x0000)
-struct alignas(0x08) FPlayerTotalResultData final
-{
-public:
-	uint8                                         Pad_0[0x58];                                       // 0x0000(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPlayerTotalResultData;
 
 // ScriptStruct UnionRun.UIResultParam
 // 0x0008 (0x0010 - 0x0008)
@@ -6201,18 +6582,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FUIResultParam;
-
-// ScriptStruct UnionRun.RandomObjParamTable
-// 0x0028 (0x0030 - 0x0008)
-struct FRandomObjParamTable final : public FTableRowBase
-{
-public:
-	ERandomObjType                                ObjectType;                                        // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 RandomWeight;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20[0x10];                                      // 0x0020(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRandomObjParamTable;
 
 // ScriptStruct UnionRun.BreakObjectRandomParamTable
 // 0x0028 (0x0030 - 0x0008)
@@ -6226,17 +6595,6 @@ public:
 };
 DUMPER7_ASSERTS_FBreakObjectRandomParamTable;
 
-// ScriptStruct UnionRun.GhostMachineMaterialData
-// 0x0018 (0x0020 - 0x0008)
-struct FGhostMachineMaterialData final : public FTableRowBase
-{
-public:
-	class FString                                 SearchWord;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FrontOpacity;                                      // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FGhostMachineMaterialData;
-
 // ScriptStruct UnionRun.RingMeshTable
 // 0x0030 (0x0038 - 0x0008)
 struct FRingMeshTable final : public FTableRowBase
@@ -6247,17 +6605,6 @@ public:
 	TSoftObjectPtr<class UStaticMesh>             RingMesh;                                          // 0x0010(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FRingMeshTable;
-
-// ScriptStruct UnionRun.UnionTakeRingInfo
-// 0x0008 (0x0008 - 0x0000)
-struct FUnionTakeRingInfo final
-{
-public:
-	int32                                         TakeRingCount;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETakeRingType                                 TakeRingFlags;                                     // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FUnionTakeRingInfo;
 
 // ScriptStruct UnionRun.RingInitialHoldParam
 // 0x0038 (0x0040 - 0x0008)
@@ -6282,20 +6629,6 @@ public:
 };
 DUMPER7_ASSERTS_FRingInitialHoldParam;
 
-// ScriptStruct UnionRun.RoundTripMoveParams
-// 0x0014 (0x0014 - 0x0000)
-struct FRoundTripMoveParams final
-{
-public:
-	ERoundTripMoveType                            moveType_;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         easeCurve_;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         movingSeconds_;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         movingSpeed_;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         endWaitSeconds_;                                   // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRoundTripMoveParams;
-
 // ScriptStruct UnionRun.RoundTripMoveComponentParams
 // 0x0078 (0x0080 - 0x0008)
 struct FRoundTripMoveComponentParams final : public FTableRowBase
@@ -6318,17 +6651,6 @@ public:
 	float                                         startOffsetBySeconds_;                             // 0x007C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FRoundTripMoveComponentParams;
-
-// ScriptStruct UnionRun.UnionRunPathBinaryParameter
-// 0x0018 (0x0018 - 0x0000)
-struct FUnionRunPathBinaryParameter final
-{
-public:
-	int32                                         DataVersion;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ChunkDataCount;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<uint8>                                 Data;                                              // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FUnionRunPathBinaryParameter;
 
 // ScriptStruct UnionRun.CoursePathCreateParams
 // 0x0078 (0x0078 - 0x0000)
@@ -6354,31 +6676,6 @@ public:
 };
 DUMPER7_ASSERTS_FCoursePathCreateParams;
 
-// ScriptStruct UnionRun.SplineParam
-// 0x0014 (0x0014 - 0x0000)
-struct FSplineParam final
-{
-public:
-	bool                                          bHidden;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bPointCut;                                         // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCarRoute;                                         // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bBoatRoute;                                        // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bPlaneRoute;                                       // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShortCut;                                         // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSlide;                                            // 0x0006(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bNeverItem;                                        // 0x0007(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bNoItemRelease;                                    // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRunOff;                                           // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bGuidedJump;                                       // 0x000A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bYellowDrill;                                      // 0x000B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRespotInvalid;                                    // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInvalidSection;                                   // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInvalidAssist;                                    // 0x000E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ERandomObjType                                RandomType;                                        // 0x000F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RandomId;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSplineParam;
-
 // ScriptStruct UnionRun.SplinePointParam
 // 0x00C0 (0x00C0 - 0x0000)
 struct FSplinePointParam final
@@ -6401,62 +6698,6 @@ public:
 };
 DUMPER7_ASSERTS_FSplinePointParam;
 
-// ScriptStruct UnionRun.SplineMoveSettingParam
-// 0x0068 (0x0068 - 0x0000)
-struct FSplineMoveSettingParam final
-{
-public:
-	class AActor*                                 SplineActor;                                       // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Speed;                                             // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESplineMoveLoopType                           LoopType;                                          // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         InitPositionRate;                                  // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartWaitTime;                                     // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                OffsetLocation;                                    // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               OffsetRotator;                                     // 0x0030(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bUseLocalRotator;                                  // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseLocalRotatorRoll;                              // 0x0049(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseLocalRotatorPitch;                             // 0x004A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseLocalRotatorYaw;                               // 0x004B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bReverseStart;                                     // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bReverseMoveRot;                                   // 0x004D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            MoveCurve;                                         // 0x0050(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsCulling;                                        // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsCullingUpdate;                                  // 0x0059(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         UpdateWaitTime;                                    // 0x005C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIgnoreSplineRotator;                              // 0x0060(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOptimizedMode;                                    // 0x0061(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSplineMoveSettingParam;
-
-// ScriptStruct UnionRun.SwingCameraTrigger
-// 0x000C (0x000C - 0x0000)
-struct FSwingCameraTrigger final
-{
-public:
-	bool                                          bAirValid;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLandingValid;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         InElapsedRatio;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OutElapsedRatio;                                   // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSwingCameraTrigger;
-
-// ScriptStruct UnionRun.SwingCameraUnitPreset
-// 0x0040 (0x0040 - 0x0000)
-struct FSwingCameraUnitPreset final
-{
-public:
-	bool                                          bValid;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSwingCameraTrigger                    SuperDistance;                                     // 0x0004(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCameraParamTable                      CameraParams;                                      // 0x0010(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSwingCameraUnitPreset;
-
 // ScriptStruct UnionRun.SwingCameraStagePreset
 // 0x0010 (0x0010 - 0x0000)
 struct FSwingCameraStagePreset final
@@ -6465,23 +6706,6 @@ public:
 	TArray<struct FSwingCameraUnitPreset>         SwingCameraPresetList;                             // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FSwingCameraStagePreset;
-
-// ScriptStruct UnionRun.VehicleModelDefine
-// 0x0068 (0x0068 - 0x0000)
-struct FVehicleModelDefine final
-{
-public:
-	EVehicleType                                  VehicleType;                                       // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECarStatusType                                CarStatusType;                                     // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECarCustomType                                CarCustomType;                                     // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ECarBodyPartType, int32>                 CarBodyPartMap;                                    // 0x0008(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         TireRotSpeedMax_30fps1Screen;                      // 0x0058(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TireRotSpeedMax_30fpsOther;                        // 0x005C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TireRotSpeedMax_60fps1Screen;                      // 0x0060(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TireRotSpeedMax_60fpsOther;                        // 0x0064(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FVehicleModelDefine;
 
 // ScriptStruct UnionRun.VehiclePhysicsPart
 // 0x0050 (0x0050 - 0x0000)
@@ -6513,17 +6737,6 @@ public:
 };
 DUMPER7_ASSERTS_FVehiclePhysicsPart;
 
-// ScriptStruct UnionRun.MachineSoundData
-// 0x0030 (0x0038 - 0x0008)
-struct FMachineSoundData final : public FTableRowBase
-{
-public:
-	EVehicleSound                                 SoundType;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class USoundAtomCue>           Cue;                                               // 0x0010(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FMachineSoundData;
-
 // ScriptStruct UnionRun.MachineLevelSoundData
 // 0x0018 (0x0020 - 0x0008)
 struct FMachineLevelSoundData final : public FTableRowBase
@@ -6535,17 +6748,6 @@ public:
 };
 DUMPER7_ASSERTS_FMachineLevelSoundData;
 
-// ScriptStruct UnionRun.MachineSurfaceSoundData
-// 0x0058 (0x0060 - 0x0008)
-struct FMachineSurfaceSoundData final : public FTableRowBase
-{
-public:
-	EVehicleSound                                 SoundType;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EUnionSurfaceType, TSoftObjectPtr<class USoundAtomCue>> CueMap;                             // 0x0010(0x0050)(Edit, BlueprintVisible, UObjectWrapper, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FMachineSurfaceSoundData;
-
 // ScriptStruct UnionRun.MachineMaterialAnimationTargetData
 // 0x0028 (0x0030 - 0x0008)
 struct FMachineMaterialAnimationTargetData final : public FTableRowBase
@@ -6554,19 +6756,6 @@ public:
 	TSoftObjectPtr<class UMaterial>               TargetMatreial;                                    // 0x0008(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FMachineMaterialAnimationTargetData;
-
-// ScriptStruct UnionRun.MachineMaterialAnimationData
-// 0x0020 (0x0028 - 0x0008)
-struct FMachineMaterialAnimationData final : public FTableRowBase
-{
-public:
-	EVehicleMaterialAnimationType                 AnimationType;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveTable*                            CurveTable;                                        // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class UDataTable*                             TargetMaterialTable;                               // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-	class FName                                   TargetTag;                                         // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FMachineMaterialAnimationData;
 
 // ScriptStruct UnionRun.UnionVehicleSoundData
 // 0x0010 (0x0010 - 0x0000)

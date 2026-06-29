@@ -618,578 +618,6 @@ void UFontFunctionObject::CalcFontPoint(const EFontSizeType& InSrcFontType, cons
 }
 
 
-// Function UnionUI.WidgetManComponent.AddWidgetToTopAsGroup
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::AddWidgetToTopAsGroup(class UUserWidget* Widget, class UObject* Logic, bool* IsSucceeded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "AddWidgetToTopAsGroup");
-
-	Params::WidgetManComponent_AddWidgetToTopAsGroup Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Logic = Logic;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsSucceeded != nullptr)
-		*IsSucceeded = Parms.IsSucceeded;
-}
-
-
-// Function UnionUI.WidgetManComponent.AttachDebugStringObject
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UWidgetManDebugString*            DebugStringObjectRef                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::AttachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "AttachDebugStringObject");
-
-	Params::WidgetManComponent_AttachDebugStringObject Parms{};
-
-	Parms.DebugStringObjectRef = DebugStringObjectRef;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.DetachDebugStringObject
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UWidgetManDebugString*            DebugStringObjectRef                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::DetachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "DetachDebugStringObject");
-
-	Params::WidgetManComponent_DetachDebugStringObject Parms{};
-
-	Parms.DebugStringObjectRef = DebugStringObjectRef;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.EventBeginBaseWidget
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::EventBeginBaseWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "EventBeginBaseWidget");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.EventBeginDebug
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::EventBeginDebug()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "EventBeginDebug");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.EventBeginStack
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::EventBeginStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "EventBeginStack");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.EventDrawDebug
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::EventDrawDebug()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "EventDrawDebug");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.EventEndBaseWidget
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::EventEndBaseWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "EventEndBaseWidget");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.EventEndDebug
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::EventEndDebug()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "EventEndDebug");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.EventEndStack
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::EventEndStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "EventEndStack");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.FindWidget
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsFound                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  IndexFromTop                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  IndexInGroup                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::FindWidget(class UUserWidget* Widget, bool* IsFound, int32* IndexFromTop, int32* IndexInGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "FindWidget");
-
-	Params::WidgetManComponent_FindWidget Parms{};
-
-	Parms.Widget = Widget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsFound != nullptr)
-		*IsFound = Parms.IsFound;
-
-	if (IndexFromTop != nullptr)
-		*IndexFromTop = Parms.IndexFromTop;
-
-	if (IndexInGroup != nullptr)
-		*IndexInGroup = Parms.IndexInGroup;
-}
-
-
-// Function UnionUI.WidgetManComponent.GetTopWidget
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsSubWidget                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject**                         Logic                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::GetTopWidget(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, bool* IsSubWidget, class UObject** Logic)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "GetTopWidget");
-
-	Params::WidgetManComponent_GetTopWidget Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsSucceeded != nullptr)
-		*IsSucceeded = Parms.IsSucceeded;
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-
-	if (IsSubWidget != nullptr)
-		*IsSubWidget = Parms.IsSubWidget;
-
-	if (Logic != nullptr)
-		*Logic = Parms.Logic;
-}
-
-
-// Function UnionUI.WidgetManComponent.GetTopWidgetCount
-// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32*                                  WidgetCount                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::GetTopWidgetCount(int32* WidgetCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "GetTopWidgetCount");
-
-	Params::WidgetManComponent_GetTopWidgetCount Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (WidgetCount != nullptr)
-		*WidgetCount = Parms.WidgetCount;
-}
-
-
-// Function UnionUI.WidgetManComponent.NotifyLostPriority
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::NotifyLostPriority()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "NotifyLostPriority");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.NotifyPoped
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::NotifyPoped(class UUserWidget* Widget, class UObject* Logic)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "NotifyPoped");
-
-	Params::WidgetManComponent_NotifyPoped Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Logic = Logic;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.NotifyPushed
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::NotifyPushed(class UUserWidget* Widget, class UObject* Logic)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "NotifyPushed");
-
-	Params::WidgetManComponent_NotifyPushed Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Logic = Logic;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.NotifyRegainPriority
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::NotifyRegainPriority()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "NotifyRegainPriority");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.PopAllWidgets
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManComponent::PopAllWidgets()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "PopAllWidgets");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.PopWidget
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::PopWidget(bool* IsSucceeded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "PopWidget");
-
-	Params::WidgetManComponent_PopWidget Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsSucceeded != nullptr)
-		*IsSucceeded = Parms.IsSucceeded;
-}
-
-
-// Function UnionUI.WidgetManComponent.PushSubWidget
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      SubWidget                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::PushSubWidget(class UUserWidget* SubWidget, class UObject* Logic)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "PushSubWidget");
-
-	Params::WidgetManComponent_PushSubWidget Parms{};
-
-	Parms.SubWidget = SubWidget;
-	Parms.Logic = Logic;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManComponent.PushWidget
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EWidgetManZLayer                        ZLayer                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UWidgetManComponent::PushWidget(class UUserWidget* Widget, class UObject* Logic, EWidgetManZLayer ZLayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "PushWidget");
-
-	Params::WidgetManComponent_PushWidget Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Logic = Logic;
-	Parms.ZLayer = ZLayer;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.WidgetManComponent.SwapTopWidget
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::SwapTopWidget(class UUserWidget* Widget, bool* IsSucceeded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "SwapTopWidget");
-
-	Params::WidgetManComponent_SwapTopWidget Parms{};
-
-	Parms.Widget = Widget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsSucceeded != nullptr)
-		*IsSucceeded = Parms.IsSucceeded;
-}
-
-
-// Function UnionUI.WidgetManComponent.SwapTopWidgetByIndex
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   IndexFromTop                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManComponent::SwapTopWidgetByIndex(int32 IndexFromTop, bool* IsSucceeded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManComponent", "SwapTopWidgetByIndex");
-
-	Params::WidgetManComponent_SwapTopWidgetByIndex Parms{};
-
-	Parms.IndexFromTop = IndexFromTop;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (IsSucceeded != nullptr)
-		*IsSucceeded = Parms.IsSucceeded;
-}
-
-
 // Function UnionUI.MenuCameraManager.CameraCharaSlide
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1409,6 +837,233 @@ void AMenuCameraManager::SetUpCameraFOV(float InFOV)
 	Params::MenuCameraManager_SetUpCameraFOV Parms{};
 
 	Parms.InFOV = InFOV;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManDebugString.AppendDebugString
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::AppendDebugString(const class FString& InString)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "AppendDebugString");
+
+	Params::WidgetManDebugString_AppendDebugString Parms{};
+
+	Parms.InString = std::move(InString);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManDebugString.ClearDebugString
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManDebugString::ClearDebugString()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "ClearDebugString");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManDebugString.Draw_Internal
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FPaintContext*                   PaintContext                                           (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::Draw_Internal(struct FPaintContext* PaintContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "Draw_Internal");
+
+	Params::WidgetManDebugString_Draw_Internal Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (PaintContext != nullptr)
+		*PaintContext = std::move(Parms.PaintContext);
+}
+
+
+// Function UnionUI.WidgetManDebugString.GetDebugString
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FString*                          String                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::GetDebugString(class FString* String)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "GetDebugString");
+
+	Params::WidgetManDebugString_GetDebugString Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (String != nullptr)
+		*String = std::move(Parms.String);
+}
+
+
+// Function UnionUI.WidgetManDebugString.SetColor
+// (Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FLinearColor&              NewColor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::SetColor(const struct FLinearColor& NewColor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "SetColor");
+
+	Params::WidgetManDebugString_SetColor Parms{};
+
+	Parms.NewColor = std::move(NewColor);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManDebugString.SetFontSize
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   NewFontSize                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::SetFontSize(int32 NewFontSize)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "SetFontSize");
+
+	Params::WidgetManDebugString_SetFontSize Parms{};
+
+	Parms.NewFontSize = NewFontSize;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManDebugString.SetPosition
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   NewX                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   NewY                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::SetPosition(float NewX, float NewY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "SetPosition");
+
+	Params::WidgetManDebugString_SetPosition Parms{};
+
+	Parms.NewX = NewX;
+	Parms.NewY = NewY;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManDebugString.SetShadowColorAndOffset
+// (Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FLinearColor&              NewColor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   NewOffsetX                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   NewOffsetY                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::SetShadowColorAndOffset(const struct FLinearColor& NewColor, float NewOffsetX, float NewOffsetY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "SetShadowColorAndOffset");
+
+	Params::WidgetManDebugString_SetShadowColorAndOffset Parms{};
+
+	Parms.NewColor = std::move(NewColor);
+	Parms.NewOffsetX = NewOffsetX;
+	Parms.NewOffsetY = NewOffsetY;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManDebugString.SetShowHide
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    Show                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManDebugString::SetShowHide(bool Show)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManDebugString", "SetShowHide");
+
+	Params::WidgetManDebugString_SetShowHide Parms{};
+
+	Parms.Show = Show;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4718,6 +4373,69 @@ void UUnionUICrossFade::StartCapture()
 }
 
 
+// Function UnionUI.UnionUISequenceInterface.Begin
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void IUnionUISequenceInterface::Begin()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionUISequenceInterface", "Begin");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISequenceInterface.Close
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSelfRemove                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IUnionUISequenceInterface::Close(bool bSelfRemove)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionUISequenceInterface", "Close");
+
+	Params::UnionUISequenceInterface_Close Parms{};
+
+	Parms.bSelfRemove = bSelfRemove;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISequenceInterface.Init
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void IUnionUISequenceInterface::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("UnionUISequenceInterface", "Init");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UnionUI.UnionUIFade.AutoReverseFade
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -4822,6 +4540,578 @@ void UUnionUIFixedScrollBox::ScrollInternal()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("UnionUIFixedScrollBox", "ScrollInternal");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.AddButtonsPanel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonsPanel*             InAddButtonsPanel                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::AddButtonsPanel(class UUnionUIButtonsPanel* InAddButtonsPanel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "AddButtonsPanel");
+
+	Params::UnionUISceneBase_AddButtonsPanel Parms{};
+
+	Parms.InAddButtonsPanel = InAddButtonsPanel;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.CreateButtonsPanel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionUIButtonsPanel* UUnionUISceneBase::CreateButtonsPanel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "CreateButtonsPanel");
+
+	Params::UnionUISceneBase_CreateButtonsPanel Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.UnionUISceneBase.GetLastFocusedButton
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32*                                  OutLastFocusedButtonIndex                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUserWidget*                      ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUserWidget* UUnionUISceneBase::GetLastFocusedButton(int32* OutLastFocusedButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButton");
+
+	Params::UnionUISceneBase_GetLastFocusedButton Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutLastFocusedButtonIndex != nullptr)
+		*OutLastFocusedButtonIndex = Parms.OutLastFocusedButtonIndex;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.UnionUISceneBase.GetLastFocusedButtonByPlayerIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  OutLastFocusedButtonIndex                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUserWidget*                      ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUserWidget* UUnionUISceneBase::GetLastFocusedButtonByPlayerIndex(int32 PlayerControllerIndex, int32* OutLastFocusedButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButtonByPlayerIndex");
+
+	Params::UnionUISceneBase_GetLastFocusedButtonByPlayerIndex Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutLastFocusedButtonIndex != nullptr)
+		*OutLastFocusedButtonIndex = Parms.OutLastFocusedButtonIndex;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.UnionUISceneBase.GetLastFocusedButtonsPanel
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32*                                  OutLastFocusedButtonsPanelIndex                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionUIButtonsPanel* UUnionUISceneBase::GetLastFocusedButtonsPanel(int32* OutLastFocusedButtonsPanelIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButtonsPanel");
+
+	Params::UnionUISceneBase_GetLastFocusedButtonsPanel Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutLastFocusedButtonsPanelIndex != nullptr)
+		*OutLastFocusedButtonsPanelIndex = Parms.OutLastFocusedButtonsPanelIndex;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.UnionUISceneBase.GetLastFocusedButtonsPanelByPlayerIndex
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  OutLastFocusedButtonsPanelIndex                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionUIButtonsPanel* UUnionUISceneBase::GetLastFocusedButtonsPanelByPlayerIndex(int32 PlayerControllerIndex, int32* OutLastFocusedButtonsPanelIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButtonsPanelByPlayerIndex");
+
+	Params::UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex Parms{};
+
+	Parms.PlayerControllerIndex = PlayerControllerIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutLastFocusedButtonsPanelIndex != nullptr)
+		*OutLastFocusedButtonsPanelIndex = Parms.OutLastFocusedButtonsPanelIndex;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneCancelDownEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneCancelDownEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneCancelDownEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneCancelDownEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneCancelEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneCancelEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneCancelEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneCancelEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneDecisionDownEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneDecisionDownEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneDecisionDownEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneDecisionDownEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneDecisionEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneDecisionEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneDecisionEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneDecisionEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneDirectionEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EUnionUIControlDir                      Dir                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneDirectionEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex, EUnionUIControlDir Dir)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneDirectionEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneDirectionEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+	Parms.Dir = Dir;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneFaceTopEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneFaceTopEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneFaceTopEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneFaceTopEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneFocusEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneFocusEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneFocusEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneFocusEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneLeftShoulderEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneLeftShoulderEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneLeftShoulderEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneRightShoulderEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneRightShoulderEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneRightShoulderEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneRightShoulderEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.OnUISceneUnFocusEvent_Impl
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::OnUISceneUnFocusEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneUnFocusEvent_Impl");
+
+	Params::UnionUISceneBase_OnUISceneUnFocusEvent_Impl Parms{};
+
+	Parms.UnionButton = UnionButton;
+	Parms.ButtonIndex = ButtonIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.SetFocusSoundEnableAll
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::SetFocusSoundEnableAll(bool bEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "SetFocusSoundEnableAll");
+
+	Params::UnionUISceneBase_SetFocusSoundEnableAll Parms{};
+
+	Parms.bEnable = bEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.SetOwnerPlayerController
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InPanelIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APlayerController*                InPlayerController                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::SetOwnerPlayerController(int32 InPanelIndex, class APlayerController* InPlayerController)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "SetOwnerPlayerController");
+
+	Params::UnionUISceneBase_SetOwnerPlayerController Parms{};
+
+	Parms.InPanelIndex = InPanelIndex;
+	Parms.InPlayerController = InPlayerController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.SetUnFocusState
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InPanelIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUnionUISceneBase::SetUnFocusState(int32 InPanelIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "SetUnFocusState");
+
+	Params::UnionUISceneBase_SetUnFocusState Parms{};
+
+	Parms.InPanelIndex = InPanelIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.UnionUISceneBase.SetupButtonsPanel
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TArray<class UUnionUIButtonBase*>&Buttons                                                (Parm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const int32&                            InPanelIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool&                             InExclusiveFocus                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UUnionUIButtonsPanel* UUnionUISceneBase::SetupButtonsPanel(const TArray<class UUnionUIButtonBase*>& Buttons, const int32& InPanelIndex, const bool& InExclusiveFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "SetupButtonsPanel");
+
+	Params::UnionUISceneBase_SetupButtonsPanel Parms{};
+
+	Parms.Buttons = std::move(Buttons);
+	Parms.InPanelIndex = InPanelIndex;
+	Parms.InExclusiveFocus = InExclusiveFocus;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.UnionUISceneBase.UnbindAllEvent
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UUnionUISceneBase::UnbindAllEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUISceneBase", "UnbindAllEvent");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5572,94 +5862,15 @@ void UUnionUIListView::SetVerticalEntrySpacing(float InTopEntrySpacing, float In
 }
 
 
-// Function UnionUI.WidgetManBaseWidget.AddChild
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      ChildWidget                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UCanvasPanelSlot*                 ChildSlot                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ZOrder                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionUI.UnionUIRivalTransition.FinishedTransition
+// (Final, Native, Protected, BlueprintCallable)
 
-void UWidgetManBaseWidget::AddChild(class UUserWidget* ChildWidget, class UCanvasPanelSlot* ChildSlot, int32 ZOrder)
+void UUnionUIRivalTransition::FinishedTransition()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManBaseWidget", "AddChild");
-
-	Params::WidgetManBaseWidget_AddChild Parms{};
-
-	Parms.ChildWidget = ChildWidget;
-	Parms.ChildSlot = ChildSlot;
-	Parms.ZOrder = ZOrder;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManBaseWidget.AppendDebugString
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    String__const                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManBaseWidget::AppendDebugString(const class FString& String__const)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManBaseWidget", "AppendDebugString");
-
-	Params::WidgetManBaseWidget_AppendDebugString Parms{};
-
-	Parms.String__const = std::move(String__const);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManBaseWidget.AttachDebugStringObject
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UWidgetManDebugString*            DebugStringObject                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManBaseWidget::AttachDebugStringObject(class UWidgetManDebugString* DebugStringObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManBaseWidget", "AttachDebugStringObject");
-
-	Params::WidgetManBaseWidget_AttachDebugStringObject Parms{};
-
-	Parms.DebugStringObject = DebugStringObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManBaseWidget.ClearDebugString
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManBaseWidget::ClearDebugString()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManBaseWidget", "ClearDebugString");
+		Func = Class->GetFunction("UnionUIRivalTransition", "FinishedTransition");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5670,21 +5881,21 @@ void UWidgetManBaseWidget::ClearDebugString()
 }
 
 
-// Function UnionUI.WidgetManBaseWidget.DetachDebugStringObject
-// (Native, Public, BlueprintCallable)
+// Function UnionUI.UnionUIRivalTransition.SetTransitionType
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UWidgetManDebugString*            DebugStringObject                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ERivalTransitionType                    Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UWidgetManBaseWidget::DetachDebugStringObject(class UWidgetManDebugString* DebugStringObject)
+void UUnionUIRivalTransition::SetTransitionType(ERivalTransitionType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManBaseWidget", "DetachDebugStringObject");
+		Func = Class->GetFunction("UnionUIRivalTransition", "SetTransitionType");
 
-	Params::WidgetManBaseWidget_DetachDebugStringObject Parms{};
+	Params::UnionUIRivalTransition_SetTransitionType Parms{};
 
-	Parms.DebugStringObject = DebugStringObject;
+	Parms.Type = Type;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5695,32 +5906,31 @@ void UWidgetManBaseWidget::DetachDebugStringObject(class UWidgetManDebugString* 
 }
 
 
-// Function UnionUI.WidgetManBaseWidget.RemoveChild
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function UnionUI.UnionUIRivalTransition.StartTransition
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWidgetManBaseWidget::RemoveChild(class UUserWidget* Widget, bool* IsSucceeded)
+void UUnionUIRivalTransition::StartTransition()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManBaseWidget", "RemoveChild");
+		Func = Class->GetFunction("UnionUIRivalTransition", "StartTransition");
 
-	Params::WidgetManBaseWidget_RemoveChild Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Widget = Widget;
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+// Function UnionUI.UnionUIRivalTransition.StopTransitionAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void UUnionUIRivalTransition::StopTransitionAnimation()
+{
+	static class UFunction* Func = nullptr;
 
-	Func->FunctionFlags = Flgs;
+	if (Func == nullptr)
+		Func = Class->GetFunction("UnionUIRivalTransition", "StopTransitionAnimation");
 
-	if (IsSucceeded != nullptr)
-		*IsSucceeded = Parms.IsSucceeded;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -6117,69 +6327,6 @@ bool UUnionUILoopScrollBox::GetControllableFlag() const
 }
 
 
-// Function UnionUI.UnionUISequenceInterface.Begin
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void IUnionUISequenceInterface::Begin()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionUISequenceInterface", "Begin");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISequenceInterface.Close
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSelfRemove                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void IUnionUISequenceInterface::Close(bool bSelfRemove)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionUISequenceInterface", "Close");
-
-	Params::UnionUISequenceInterface_Close Parms{};
-
-	Parms.bSelfRemove = bSelfRemove;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISequenceInterface.Init
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void IUnionUISequenceInterface::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("UnionUISequenceInterface", "Init");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function UnionUI.UnionUIMovieTransition.CloseMovie
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -6259,578 +6406,6 @@ bool UUnionUIMovieTransition::IsPlayingMovie() const
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUISceneBase.AddButtonsPanel
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonsPanel*             InAddButtonsPanel                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::AddButtonsPanel(class UUnionUIButtonsPanel* InAddButtonsPanel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "AddButtonsPanel");
-
-	Params::UnionUISceneBase_AddButtonsPanel Parms{};
-
-	Parms.InAddButtonsPanel = InAddButtonsPanel;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.CreateButtonsPanel
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionUIButtonsPanel* UUnionUISceneBase::CreateButtonsPanel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "CreateButtonsPanel");
-
-	Params::UnionUISceneBase_CreateButtonsPanel Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUISceneBase.GetLastFocusedButton
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32*                                  OutLastFocusedButtonIndex                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUserWidget*                      ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUserWidget* UUnionUISceneBase::GetLastFocusedButton(int32* OutLastFocusedButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButton");
-
-	Params::UnionUISceneBase_GetLastFocusedButton Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutLastFocusedButtonIndex != nullptr)
-		*OutLastFocusedButtonIndex = Parms.OutLastFocusedButtonIndex;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUISceneBase.GetLastFocusedButtonByPlayerIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  OutLastFocusedButtonIndex                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUserWidget*                      ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUserWidget* UUnionUISceneBase::GetLastFocusedButtonByPlayerIndex(int32 PlayerControllerIndex, int32* OutLastFocusedButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButtonByPlayerIndex");
-
-	Params::UnionUISceneBase_GetLastFocusedButtonByPlayerIndex Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutLastFocusedButtonIndex != nullptr)
-		*OutLastFocusedButtonIndex = Parms.OutLastFocusedButtonIndex;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUISceneBase.GetLastFocusedButtonsPanel
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32*                                  OutLastFocusedButtonsPanelIndex                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionUIButtonsPanel* UUnionUISceneBase::GetLastFocusedButtonsPanel(int32* OutLastFocusedButtonsPanelIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButtonsPanel");
-
-	Params::UnionUISceneBase_GetLastFocusedButtonsPanel Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutLastFocusedButtonsPanelIndex != nullptr)
-		*OutLastFocusedButtonsPanelIndex = Parms.OutLastFocusedButtonsPanelIndex;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUISceneBase.GetLastFocusedButtonsPanelByPlayerIndex
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   PlayerControllerIndex                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  OutLastFocusedButtonsPanelIndex                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionUIButtonsPanel* UUnionUISceneBase::GetLastFocusedButtonsPanelByPlayerIndex(int32 PlayerControllerIndex, int32* OutLastFocusedButtonsPanelIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "GetLastFocusedButtonsPanelByPlayerIndex");
-
-	Params::UnionUISceneBase_GetLastFocusedButtonsPanelByPlayerIndex Parms{};
-
-	Parms.PlayerControllerIndex = PlayerControllerIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutLastFocusedButtonsPanelIndex != nullptr)
-		*OutLastFocusedButtonsPanelIndex = Parms.OutLastFocusedButtonsPanelIndex;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneCancelDownEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneCancelDownEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneCancelDownEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneCancelDownEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneCancelEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneCancelEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneCancelEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneCancelEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneDecisionDownEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneDecisionDownEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneDecisionDownEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneDecisionDownEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneDecisionEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneDecisionEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneDecisionEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneDecisionEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneDirectionEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EUnionUIControlDir                      Dir                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneDirectionEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex, EUnionUIControlDir Dir)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneDirectionEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneDirectionEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-	Parms.Dir = Dir;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneFaceTopEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneFaceTopEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneFaceTopEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneFaceTopEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneFocusEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneFocusEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneFocusEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneFocusEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneLeftShoulderEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneLeftShoulderEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneLeftShoulderEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneLeftShoulderEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneRightShoulderEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneRightShoulderEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneRightShoulderEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneRightShoulderEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.OnUISceneUnFocusEvent_Impl
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UUnionUIButtonBase*               UnionButton                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ButtonIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::OnUISceneUnFocusEvent_Impl(class UUnionUIButtonBase* UnionButton, int32 ButtonIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "OnUISceneUnFocusEvent_Impl");
-
-	Params::UnionUISceneBase_OnUISceneUnFocusEvent_Impl Parms{};
-
-	Parms.UnionButton = UnionButton;
-	Parms.ButtonIndex = ButtonIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.SetFocusSoundEnableAll
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::SetFocusSoundEnableAll(bool bEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "SetFocusSoundEnableAll");
-
-	Params::UnionUISceneBase_SetFocusSoundEnableAll Parms{};
-
-	Parms.bEnable = bEnable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.SetOwnerPlayerController
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InPanelIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APlayerController*                InPlayerController                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::SetOwnerPlayerController(int32 InPanelIndex, class APlayerController* InPlayerController)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "SetOwnerPlayerController");
-
-	Params::UnionUISceneBase_SetOwnerPlayerController Parms{};
-
-	Parms.InPanelIndex = InPanelIndex;
-	Parms.InPlayerController = InPlayerController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.SetUnFocusState
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InPanelIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUISceneBase::SetUnFocusState(int32 InPanelIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "SetUnFocusState");
-
-	Params::UnionUISceneBase_SetUnFocusState Parms{};
-
-	Parms.InPanelIndex = InPanelIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUISceneBase.SetupButtonsPanel
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<class UUnionUIButtonBase*>&Buttons                                                (Parm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const int32&                            InPanelIndex                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const bool&                             InExclusiveFocus                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUnionUIButtonsPanel*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UUnionUIButtonsPanel* UUnionUISceneBase::SetupButtonsPanel(const TArray<class UUnionUIButtonBase*>& Buttons, const int32& InPanelIndex, const bool& InExclusiveFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "SetupButtonsPanel");
-
-	Params::UnionUISceneBase_SetupButtonsPanel Parms{};
-
-	Parms.Buttons = std::move(Buttons);
-	Parms.InPanelIndex = InPanelIndex;
-	Parms.InExclusiveFocus = InExclusiveFocus;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUISceneBase.UnbindAllEvent
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UUnionUISceneBase::UnbindAllEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUISceneBase", "UnbindAllEvent");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -6956,281 +6531,6 @@ void UUnionUIPopupWindowManager::SetFocusExistPopupWindow()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.ClipboardCopy
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetFunctionLibrary::ClipboardCopy(const class FString& str)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ClipboardCopy");
-
-	Params::WidgetFunctionLibrary_ClipboardCopy Parms{};
-
-	Parms.str = std::move(str);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.ClipboardPaste
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class FString*                          Dest                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetFunctionLibrary::ClipboardPaste(class FString* Dest)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ClipboardPaste");
-
-	Params::WidgetFunctionLibrary_ClipboardPaste Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (Dest != nullptr)
-		*Dest = std::move(Parms.Dest);
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.ConvMilliSecondToMinute
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32                                   Millisecond                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UWidgetFunctionLibrary::ConvMilliSecondToMinute(int32 Millisecond)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ConvMilliSecondToMinute");
-
-	Params::WidgetFunctionLibrary_ConvMilliSecondToMinute Parms{};
-
-	Parms.Millisecond = Millisecond;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.ConvMilliSecondToSecond
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32                                   Millisecond                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UWidgetFunctionLibrary::ConvMilliSecondToSecond(int32 Millisecond)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ConvMilliSecondToSecond");
-
-	Params::WidgetFunctionLibrary_ConvMilliSecondToSecond Parms{};
-
-	Parms.Millisecond = Millisecond;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.CulcDigitNumber
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Num                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UWidgetFunctionLibrary::CulcDigitNumber(int32 Index_0, int32 Num)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "CulcDigitNumber");
-
-	Params::WidgetFunctionLibrary_CulcDigitNumber Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Num = Num;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.DrawWidgetToTarget
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UTextureRenderTarget2D*           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UUserWidget*                      WidgetToRender                                         (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector2D&                 DrawSize                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    UseGamma                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ETextureFilter                          Filter                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetFunctionLibrary::DrawWidgetToTarget(class UTextureRenderTarget2D* Target, class UUserWidget* WidgetToRender, const struct FVector2D& DrawSize, bool UseGamma, ETextureFilter Filter, float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "DrawWidgetToTarget");
-
-	Params::WidgetFunctionLibrary_DrawWidgetToTarget Parms{};
-
-	Parms.Target = Target;
-	Parms.WidgetToRender = WidgetToRender;
-	Parms.DrawSize = std::move(DrawSize);
-	Parms.UseGamma = UseGamma;
-	Parms.Filter = Filter;
-	Parms.DeltaTime = DeltaTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.ExportWidgetAsImage
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    Filename                                               (ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector2D&                 DrawSize                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const float                             Scale                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const EDesiredImageFormat               Format                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const bool                              bOverwriteFile                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const bool                              bAsync                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const ETextureFilter                    Filter                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const bool                              bUseGammaCorrection                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetFunctionLibrary::ExportWidgetAsImage(class UUserWidget* Widget, const class FString& Filename, const struct FVector2D& DrawSize, const float Scale, const EDesiredImageFormat Format, const bool bOverwriteFile, const bool bAsync, const ETextureFilter Filter, const bool bUseGammaCorrection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ExportWidgetAsImage");
-
-	Params::WidgetFunctionLibrary_ExportWidgetAsImage Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Filename = std::move(Filename);
-	Parms.DrawSize = std::move(DrawSize);
-	Parms.Scale = Scale;
-	Parms.Format = Format;
-	Parms.bOverwriteFile = bOverwriteFile;
-	Parms.bAsync = bAsync;
-	Parms.Filter = Filter;
-	Parms.bUseGammaCorrection = bUseGammaCorrection;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.GetWidgetCenterLocation
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UWidget*                          Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UWidget*                          ParentWidget                                           (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector2D*                       OutLocation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetFunctionLibrary::GetWidgetCenterLocation(class UWidget* Widget, class UWidget* ParentWidget, struct FVector2D* OutLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "GetWidgetCenterLocation");
-
-	Params::WidgetFunctionLibrary_GetWidgetCenterLocation Parms{};
-
-	Parms.Widget = Widget;
-	Parms.ParentWidget = ParentWidget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutLocation != nullptr)
-		*OutLocation = std::move(Parms.OutLocation);
-}
-
-
-// Function UnionUI.WidgetFunctionLibrary.GetWidgetZOrder
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// EWidgetZOrder                           Layer                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Priority                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  ZOrder                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetFunctionLibrary::GetWidgetZOrder(EWidgetZOrder Layer, int32 Priority, int32* ZOrder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "GetWidgetZOrder");
-
-	Params::WidgetFunctionLibrary_GetWidgetZOrder Parms{};
-
-	Parms.Layer = Layer;
-	Parms.Priority = Priority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (ZOrder != nullptr)
-		*ZOrder = Parms.ZOrder;
 }
 
 
@@ -7568,78 +6868,6 @@ bool UUnionRichTextBlock::GetScrollEnable() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function UnionUI.UnionUIRivalTransition.FinishedTransition
-// (Final, Native, Protected, BlueprintCallable)
-
-void UUnionUIRivalTransition::FinishedTransition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUIRivalTransition", "FinishedTransition");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUIRivalTransition.SetTransitionType
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ERivalTransitionType                    Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UUnionUIRivalTransition::SetTransitionType(ERivalTransitionType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUIRivalTransition", "SetTransitionType");
-
-	Params::UnionUIRivalTransition_SetTransitionType Parms{};
-
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.UnionUIRivalTransition.StartTransition
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UUnionUIRivalTransition::StartTransition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUIRivalTransition", "StartTransition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UnionUI.UnionUIRivalTransition.StopTransitionAnimation
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UUnionUIRivalTransition::StopTransitionAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnionUIRivalTransition", "StopTransitionAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -8769,6 +7997,1005 @@ void UUnionUIWheelMenu::WheelMenuSelectInput_Impl(class UObject* Object, const s
 }
 
 
+// Function UnionUI.WidgetFunctionLibrary.ClipboardCopy
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    str                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetFunctionLibrary::ClipboardCopy(const class FString& str)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ClipboardCopy");
+
+	Params::WidgetFunctionLibrary_ClipboardCopy Parms{};
+
+	Parms.str = std::move(str);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.ClipboardPaste
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class FString*                          Dest                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetFunctionLibrary::ClipboardPaste(class FString* Dest)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ClipboardPaste");
+
+	Params::WidgetFunctionLibrary_ClipboardPaste Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Dest != nullptr)
+		*Dest = std::move(Parms.Dest);
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.ConvMilliSecondToMinute
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   Millisecond                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UWidgetFunctionLibrary::ConvMilliSecondToMinute(int32 Millisecond)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ConvMilliSecondToMinute");
+
+	Params::WidgetFunctionLibrary_ConvMilliSecondToMinute Parms{};
+
+	Parms.Millisecond = Millisecond;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.ConvMilliSecondToSecond
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   Millisecond                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UWidgetFunctionLibrary::ConvMilliSecondToSecond(int32 Millisecond)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ConvMilliSecondToSecond");
+
+	Params::WidgetFunctionLibrary_ConvMilliSecondToSecond Parms{};
+
+	Parms.Millisecond = Millisecond;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.CulcDigitNumber
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Num                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UWidgetFunctionLibrary::CulcDigitNumber(int32 Index_0, int32 Num)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "CulcDigitNumber");
+
+	Params::WidgetFunctionLibrary_CulcDigitNumber Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.Num = Num;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.DrawWidgetToTarget
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UTextureRenderTarget2D*           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUserWidget*                      WidgetToRender                                         (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector2D&                 DrawSize                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    UseGamma                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ETextureFilter                          Filter                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetFunctionLibrary::DrawWidgetToTarget(class UTextureRenderTarget2D* Target, class UUserWidget* WidgetToRender, const struct FVector2D& DrawSize, bool UseGamma, ETextureFilter Filter, float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "DrawWidgetToTarget");
+
+	Params::WidgetFunctionLibrary_DrawWidgetToTarget Parms{};
+
+	Parms.Target = Target;
+	Parms.WidgetToRender = WidgetToRender;
+	Parms.DrawSize = std::move(DrawSize);
+	Parms.UseGamma = UseGamma;
+	Parms.Filter = Filter;
+	Parms.DeltaTime = DeltaTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.ExportWidgetAsImage
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Filename                                               (ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector2D&                 DrawSize                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float                             Scale                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EDesiredImageFormat               Format                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bOverwriteFile                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bAsync                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const ETextureFilter                    Filter                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bUseGammaCorrection                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetFunctionLibrary::ExportWidgetAsImage(class UUserWidget* Widget, const class FString& Filename, const struct FVector2D& DrawSize, const float Scale, const EDesiredImageFormat Format, const bool bOverwriteFile, const bool bAsync, const ETextureFilter Filter, const bool bUseGammaCorrection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "ExportWidgetAsImage");
+
+	Params::WidgetFunctionLibrary_ExportWidgetAsImage Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Filename = std::move(Filename);
+	Parms.DrawSize = std::move(DrawSize);
+	Parms.Scale = Scale;
+	Parms.Format = Format;
+	Parms.bOverwriteFile = bOverwriteFile;
+	Parms.bAsync = bAsync;
+	Parms.Filter = Filter;
+	Parms.bUseGammaCorrection = bUseGammaCorrection;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.GetWidgetCenterLocation
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UWidget*                          Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UWidget*                          ParentWidget                                           (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector2D*                       OutLocation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetFunctionLibrary::GetWidgetCenterLocation(class UWidget* Widget, class UWidget* ParentWidget, struct FVector2D* OutLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "GetWidgetCenterLocation");
+
+	Params::WidgetFunctionLibrary_GetWidgetCenterLocation Parms{};
+
+	Parms.Widget = Widget;
+	Parms.ParentWidget = ParentWidget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutLocation != nullptr)
+		*OutLocation = std::move(Parms.OutLocation);
+}
+
+
+// Function UnionUI.WidgetFunctionLibrary.GetWidgetZOrder
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// EWidgetZOrder                           Layer                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Priority                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  ZOrder                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetFunctionLibrary::GetWidgetZOrder(EWidgetZOrder Layer, int32 Priority, int32* ZOrder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WidgetFunctionLibrary", "GetWidgetZOrder");
+
+	Params::WidgetFunctionLibrary_GetWidgetZOrder Parms{};
+
+	Parms.Layer = Layer;
+	Parms.Priority = Priority;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ZOrder != nullptr)
+		*ZOrder = Parms.ZOrder;
+}
+
+
+// Function UnionUI.WidgetManBaseWidget.AddChild
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      ChildWidget                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UCanvasPanelSlot*                 ChildSlot                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ZOrder                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManBaseWidget::AddChild(class UUserWidget* ChildWidget, class UCanvasPanelSlot* ChildSlot, int32 ZOrder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManBaseWidget", "AddChild");
+
+	Params::WidgetManBaseWidget_AddChild Parms{};
+
+	Parms.ChildWidget = ChildWidget;
+	Parms.ChildSlot = ChildSlot;
+	Parms.ZOrder = ZOrder;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManBaseWidget.AppendDebugString
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    String__const                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManBaseWidget::AppendDebugString(const class FString& String__const)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManBaseWidget", "AppendDebugString");
+
+	Params::WidgetManBaseWidget_AppendDebugString Parms{};
+
+	Parms.String__const = std::move(String__const);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManBaseWidget.AttachDebugStringObject
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UWidgetManDebugString*            DebugStringObject                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManBaseWidget::AttachDebugStringObject(class UWidgetManDebugString* DebugStringObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManBaseWidget", "AttachDebugStringObject");
+
+	Params::WidgetManBaseWidget_AttachDebugStringObject Parms{};
+
+	Parms.DebugStringObject = DebugStringObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManBaseWidget.ClearDebugString
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManBaseWidget::ClearDebugString()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManBaseWidget", "ClearDebugString");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManBaseWidget.DetachDebugStringObject
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UWidgetManDebugString*            DebugStringObject                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManBaseWidget::DetachDebugStringObject(class UWidgetManDebugString* DebugStringObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManBaseWidget", "DetachDebugStringObject");
+
+	Params::WidgetManBaseWidget_DetachDebugStringObject Parms{};
+
+	Parms.DebugStringObject = DebugStringObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManBaseWidget.RemoveChild
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManBaseWidget::RemoveChild(class UUserWidget* Widget, bool* IsSucceeded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManBaseWidget", "RemoveChild");
+
+	Params::WidgetManBaseWidget_RemoveChild Parms{};
+
+	Parms.Widget = Widget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsSucceeded != nullptr)
+		*IsSucceeded = Parms.IsSucceeded;
+}
+
+
+// Function UnionUI.WidgetManComponent.AddWidgetToTopAsGroup
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::AddWidgetToTopAsGroup(class UUserWidget* Widget, class UObject* Logic, bool* IsSucceeded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "AddWidgetToTopAsGroup");
+
+	Params::WidgetManComponent_AddWidgetToTopAsGroup Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Logic = Logic;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsSucceeded != nullptr)
+		*IsSucceeded = Parms.IsSucceeded;
+}
+
+
+// Function UnionUI.WidgetManComponent.AttachDebugStringObject
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UWidgetManDebugString*            DebugStringObjectRef                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::AttachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "AttachDebugStringObject");
+
+	Params::WidgetManComponent_AttachDebugStringObject Parms{};
+
+	Parms.DebugStringObjectRef = DebugStringObjectRef;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.DetachDebugStringObject
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UWidgetManDebugString*            DebugStringObjectRef                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::DetachDebugStringObject(class UWidgetManDebugString* DebugStringObjectRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "DetachDebugStringObject");
+
+	Params::WidgetManComponent_DetachDebugStringObject Parms{};
+
+	Parms.DebugStringObjectRef = DebugStringObjectRef;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.EventBeginBaseWidget
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::EventBeginBaseWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "EventBeginBaseWidget");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.EventBeginDebug
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::EventBeginDebug()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "EventBeginDebug");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.EventBeginStack
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::EventBeginStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "EventBeginStack");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.EventDrawDebug
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::EventDrawDebug()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "EventDrawDebug");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.EventEndBaseWidget
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::EventEndBaseWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "EventEndBaseWidget");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.EventEndDebug
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::EventEndDebug()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "EventEndDebug");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.EventEndStack
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::EventEndStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "EventEndStack");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.FindWidget
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsFound                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  IndexFromTop                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  IndexInGroup                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::FindWidget(class UUserWidget* Widget, bool* IsFound, int32* IndexFromTop, int32* IndexInGroup)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "FindWidget");
+
+	Params::WidgetManComponent_FindWidget Parms{};
+
+	Parms.Widget = Widget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsFound != nullptr)
+		*IsFound = Parms.IsFound;
+
+	if (IndexFromTop != nullptr)
+		*IndexFromTop = Parms.IndexFromTop;
+
+	if (IndexInGroup != nullptr)
+		*IndexInGroup = Parms.IndexInGroup;
+}
+
+
+// Function UnionUI.WidgetManComponent.GetTopWidget
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsSubWidget                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject**                         Logic                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::GetTopWidget(int32 Index_0, bool* IsSucceeded, class UUserWidget** Widget, bool* IsSubWidget, class UObject** Logic)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "GetTopWidget");
+
+	Params::WidgetManComponent_GetTopWidget Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsSucceeded != nullptr)
+		*IsSucceeded = Parms.IsSucceeded;
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+
+	if (IsSubWidget != nullptr)
+		*IsSubWidget = Parms.IsSubWidget;
+
+	if (Logic != nullptr)
+		*Logic = Parms.Logic;
+}
+
+
+// Function UnionUI.WidgetManComponent.GetTopWidgetCount
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32*                                  WidgetCount                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::GetTopWidgetCount(int32* WidgetCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "GetTopWidgetCount");
+
+	Params::WidgetManComponent_GetTopWidgetCount Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (WidgetCount != nullptr)
+		*WidgetCount = Parms.WidgetCount;
+}
+
+
+// Function UnionUI.WidgetManComponent.NotifyLostPriority
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::NotifyLostPriority()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "NotifyLostPriority");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.NotifyPoped
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::NotifyPoped(class UUserWidget* Widget, class UObject* Logic)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "NotifyPoped");
+
+	Params::WidgetManComponent_NotifyPoped Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Logic = Logic;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.NotifyPushed
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::NotifyPushed(class UUserWidget* Widget, class UObject* Logic)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "NotifyPushed");
+
+	Params::WidgetManComponent_NotifyPushed Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Logic = Logic;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.NotifyRegainPriority
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::NotifyRegainPriority()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "NotifyRegainPriority");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.PopAllWidgets
+// (Native, Public, BlueprintCallable)
+
+void UWidgetManComponent::PopAllWidgets()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "PopAllWidgets");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.PopWidget
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::PopWidget(bool* IsSucceeded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "PopWidget");
+
+	Params::WidgetManComponent_PopWidget Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsSucceeded != nullptr)
+		*IsSucceeded = Parms.IsSucceeded;
+}
+
+
+// Function UnionUI.WidgetManComponent.PushSubWidget
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      SubWidget                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::PushSubWidget(class UUserWidget* SubWidget, class UObject* Logic)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "PushSubWidget");
+
+	Params::WidgetManComponent_PushSubWidget Parms{};
+
+	Parms.SubWidget = SubWidget;
+	Parms.Logic = Logic;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UnionUI.WidgetManComponent.PushWidget
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          Logic                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EWidgetManZLayer                        ZLayer                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UWidgetManComponent::PushWidget(class UUserWidget* Widget, class UObject* Logic, EWidgetManZLayer ZLayer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "PushWidget");
+
+	Params::WidgetManComponent_PushWidget Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Logic = Logic;
+	Parms.ZLayer = ZLayer;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UnionUI.WidgetManComponent.SwapTopWidget
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::SwapTopWidget(class UUserWidget* Widget, bool* IsSucceeded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "SwapTopWidget");
+
+	Params::WidgetManComponent_SwapTopWidget Parms{};
+
+	Parms.Widget = Widget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsSucceeded != nullptr)
+		*IsSucceeded = Parms.IsSucceeded;
+}
+
+
+// Function UnionUI.WidgetManComponent.SwapTopWidgetByIndex
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   IndexFromTop                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   IsSucceeded                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetManComponent::SwapTopWidgetByIndex(int32 IndexFromTop, bool* IsSucceeded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetManComponent", "SwapTopWidgetByIndex");
+
+	Params::WidgetManComponent_SwapTopWidgetByIndex Parms{};
+
+	Parms.IndexFromTop = IndexFromTop;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (IsSucceeded != nullptr)
+		*IsSucceeded = Parms.IsSucceeded;
+}
+
+
 // Function UnionUI.WidgetManContainer.AddWidget
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -8997,233 +9224,6 @@ void UWidgetManContainer::SetZOrder(int32 InZOrder)
 	Params::WidgetManContainer_SetZOrder Parms{};
 
 	Parms.InZOrder = InZOrder;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManDebugString.AppendDebugString
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::AppendDebugString(const class FString& InString)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "AppendDebugString");
-
-	Params::WidgetManDebugString_AppendDebugString Parms{};
-
-	Parms.InString = std::move(InString);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManDebugString.ClearDebugString
-// (Native, Public, BlueprintCallable)
-
-void UWidgetManDebugString::ClearDebugString()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "ClearDebugString");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManDebugString.Draw_Internal
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FPaintContext*                   PaintContext                                           (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::Draw_Internal(struct FPaintContext* PaintContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "Draw_Internal");
-
-	Params::WidgetManDebugString_Draw_Internal Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PaintContext != nullptr)
-		*PaintContext = std::move(Parms.PaintContext);
-}
-
-
-// Function UnionUI.WidgetManDebugString.GetDebugString
-// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class FString*                          String                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::GetDebugString(class FString* String)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "GetDebugString");
-
-	Params::WidgetManDebugString_GetDebugString Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (String != nullptr)
-		*String = std::move(Parms.String);
-}
-
-
-// Function UnionUI.WidgetManDebugString.SetColor
-// (Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FLinearColor&              NewColor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::SetColor(const struct FLinearColor& NewColor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "SetColor");
-
-	Params::WidgetManDebugString_SetColor Parms{};
-
-	Parms.NewColor = std::move(NewColor);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManDebugString.SetFontSize
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   NewFontSize                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::SetFontSize(int32 NewFontSize)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "SetFontSize");
-
-	Params::WidgetManDebugString_SetFontSize Parms{};
-
-	Parms.NewFontSize = NewFontSize;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManDebugString.SetPosition
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   NewX                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NewY                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::SetPosition(float NewX, float NewY)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "SetPosition");
-
-	Params::WidgetManDebugString_SetPosition Parms{};
-
-	Parms.NewX = NewX;
-	Parms.NewY = NewY;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManDebugString.SetShadowColorAndOffset
-// (Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FLinearColor&              NewColor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NewOffsetX                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NewOffsetY                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::SetShadowColorAndOffset(const struct FLinearColor& NewColor, float NewOffsetX, float NewOffsetY)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "SetShadowColorAndOffset");
-
-	Params::WidgetManDebugString_SetShadowColorAndOffset Parms{};
-
-	Parms.NewColor = std::move(NewColor);
-	Parms.NewOffsetX = NewOffsetX;
-	Parms.NewOffsetY = NewOffsetY;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UnionUI.WidgetManDebugString.SetShowHide
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    Show                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWidgetManDebugString::SetShowHide(bool Show)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetManDebugString", "SetShowHide");
-
-	Params::WidgetManDebugString_SetShowHide Parms{};
-
-	Parms.Show = Show;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -60,7 +60,7 @@ public:
 DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_ExecuteUbergraph_WBP_StatusInfo_PlayerDetail;
 
 // Function WBP_StatusInfo_PlayerDetail.WBP_StatusInfo_PlayerDetail_C.GetDriverData
-// 0x03F0 (0x03F0 - 0x0000)
+// 0x03F8 (0x03F8 - 0x0000)
 struct WBP_StatusInfo_PlayerDetail_C_GetDriverData final
 {
 public:
@@ -72,8 +72,8 @@ public:
 	TSoftObjectPtr<class UTexture2D>              IconTexture;                                       // 0x0020(0x0028)(Parm, OutParm, HasGetValueTypeHash)
 	class UMasterDataManageSubsystem*             CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_GetEnumeratorName_ReturnValue;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0058(0x0390)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDriverData                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0058(0x0398)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_StatusInfo_PlayerDetail_C_GetDriverData;
 

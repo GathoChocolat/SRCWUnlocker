@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemKingWhiteBoostObject.BP_ItemKingWhiteBoostObject_C
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x0610 - 0x0610)
 class ABP_ItemKingWhiteBoostObject_C final : public AItemKingWhiteBoostObject
 {
 public:

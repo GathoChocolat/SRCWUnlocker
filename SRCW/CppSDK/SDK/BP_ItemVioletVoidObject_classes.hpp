@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UnionRun_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemVioletVoidObject.BP_ItemVioletVoidObject_C
-// 0x0030 (0x0710 - 0x06E0)
+// 0x0030 (0x0750 - 0x0720)
 class ABP_ItemVioletVoidObject_C final : public AItemVioletVoidObject
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UUnionStaticMeshComponent*              Debug;                                             // 0x06E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	double                                        AppearAnimationTime;                               // 0x06F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        EatAnimationTime;                                  // 0x06F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        DisappearAnimationTime;                            // 0x0700(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0720(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UUnionStaticMeshComponent*              Debug;                                             // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	double                                        AppearAnimationTime;                               // 0x0730(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        EatAnimationTime;                                  // 0x0738(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        DisappearAnimationTime;                            // 0x0740(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_ItemVioletVoidObject(int32 EntryPoint);

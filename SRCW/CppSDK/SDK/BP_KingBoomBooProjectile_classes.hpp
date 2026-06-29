@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UnionRun_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_KingBoomBooProjectile.BP_KingBoomBooProjectile_C
-// 0x0010 (0x05F0 - 0x05E0)
+// 0x0010 (0x0630 - 0x0620)
 class ABP_KingBoomBooProjectile_C final : public AKingBoomBooProjectile
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0620(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_KingBoomBooProjectile(int32 EntryPoint);

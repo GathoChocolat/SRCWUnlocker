@@ -77,7 +77,7 @@ DUMPER7_ASSERTS_WBP_GadgetInfo_C_PreConstruct;
 struct WBP_GadgetInfo_C_SetDetailText final
 {
 public:
-	int32                                         TextIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         textIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_GadgetInfo_C_SetDetailText;
 

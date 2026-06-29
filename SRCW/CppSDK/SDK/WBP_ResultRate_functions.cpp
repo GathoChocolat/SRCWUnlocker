@@ -215,6 +215,26 @@ void UWBP_ResultRate_C::SetResultIcon(int32 IconIndex)
 }
 
 
+// Function WBP_ResultRate.WBP_ResultRate_C.SetupChanceUpRatio
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ChanceUpRatio                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResultRate_C::SetupChanceUpRatio(int32 ChanceUpRatio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResultRate_C", "SetupChanceUpRatio");
+
+	Params::WBP_ResultRate_C_SetupChanceUpRatio Parms{};
+
+	Parms.ChanceUpRatio = ChanceUpRatio;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ResultRate.WBP_ResultRate_C.SetupLimitValue
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

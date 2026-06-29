@@ -60,9 +60,9 @@ void UWBP_GadgetInfo_C::PreConstruct(bool IsDesignTime)
 // Function WBP_GadgetInfo.WBP_GadgetInfo_C.SetDetailText
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   TextIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   textIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GadgetInfo_C::SetDetailText(int32 TextIndex)
+void UWBP_GadgetInfo_C::SetDetailText(int32 textIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -71,7 +71,7 @@ void UWBP_GadgetInfo_C::SetDetailText(int32 TextIndex)
 
 	Params::WBP_GadgetInfo_C_SetDetailText Parms{};
 
-	Parms.TextIndex = TextIndex;
+	Parms.textIndex = textIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

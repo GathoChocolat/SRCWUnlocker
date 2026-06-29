@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemSplashProjectile.BP_ItemSplashProjectile_C
-// 0x0000 (0x0610 - 0x0610)
+// 0x0000 (0x0650 - 0x0650)
 class ABP_ItemSplashProjectile_C final : public AItemSplashProjectile
 {
 public:

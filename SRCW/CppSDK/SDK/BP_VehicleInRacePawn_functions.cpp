@@ -175,46 +175,6 @@ void ABP_VehicleInRacePawn_C::OnFadeOutInk(bool bIsPlay)
 }
 
 
-// Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnRainbowBlinkEnd
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bWithDriver                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_VehicleInRacePawn_C::OnRainbowBlinkEnd(bool bWithDriver)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleInRacePawn_C", "OnRainbowBlinkEnd");
-
-	Params::BP_VehicleInRacePawn_C_OnRainbowBlinkEnd Parms{};
-
-	Parms.bWithDriver = bWithDriver;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnRainbowBlinkStart
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bWithDriver                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_VehicleInRacePawn_C::OnRainbowBlinkStart(bool bWithDriver)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleInRacePawn_C", "OnRainbowBlinkStart");
-
-	Params::BP_VehicleInRacePawn_C_OnRainbowBlinkStart Parms{};
-
-	Parms.bWithDriver = bWithDriver;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.OnResultCamera
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -418,34 +378,6 @@ void ABP_VehicleInRacePawn_C::Timeline_FadeOut_Ink__UpdateFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_VehicleInRacePawn_C", "Timeline FadeOut Ink__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.Timeline Rainbow__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_VehicleInRacePawn_C::Timeline_Rainbow__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleInRacePawn_C", "Timeline Rainbow__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_VehicleInRacePawn.BP_VehicleInRacePawn_C.Timeline Rainbow__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_VehicleInRacePawn_C::Timeline_Rainbow__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleInRacePawn_C", "Timeline Rainbow__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

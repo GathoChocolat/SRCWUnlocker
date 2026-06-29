@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemShieldObject.BP_ItemShieldObject_C
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x0620 - 0x0620)
 class ABP_ItemShieldObject_C final : public AItemShieldObject
 {
 public:

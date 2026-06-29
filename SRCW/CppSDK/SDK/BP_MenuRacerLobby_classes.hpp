@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "UnionRun_structs.hpp"
+#include "UnionSystem_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UNION_classes.hpp"
-#include "UnionSystem_structs.hpp"
 #include "Engine_structs.hpp"
 #include "ST_RacerDataForPreview_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UnionRun_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MenuRacerLobby.BP_MenuRacerLobby_C
-// 0x0508 (0x0888 - 0x0380)
+// 0x0510 (0x0890 - 0x0380)
 class ABP_MenuRacerLobby_C final : public AMenuRacerLobby
 {
 public:
@@ -63,13 +63,13 @@ public:
 	class ABP_ChampionCrown_C*                    CrownActor;                                        // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UStickerBakerHandle*                    FrontStickerBakerHandle;                           // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UStickerBakerHandle*                    RearStickerBakerHandle;                            // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FDriverData                            CurrentDriverData;                                 // 0x0488(0x0390)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UNiagaraComponent*                      AuraEffectComponent;                               // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FDriverCrownDataTableStruct            CrownData;                                         // 0x0820(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance)
-	EMachineAuraId                                AuraId;                                            // 0x0880(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECarStatusType                                CarStatusType;                                     // 0x0881(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineColorPresetId                         OverRideMachineColor;                              // 0x0882(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsOverRideMachineColor;                           // 0x0883(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDriverData                            CurrentDriverData;                                 // 0x0488(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UNiagaraComponent*                      AuraEffectComponent;                               // 0x0820(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FDriverCrownDataTableStruct            CrownData;                                         // 0x0828(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance)
+	EMachineAuraId                                AuraId;                                            // 0x0888(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECarStatusType                                CarStatusType;                                     // 0x0889(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineColorPresetId                         OverRideMachineColor;                              // 0x088A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsOverRideMachineColor;                           // 0x088B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Attach_Driver();

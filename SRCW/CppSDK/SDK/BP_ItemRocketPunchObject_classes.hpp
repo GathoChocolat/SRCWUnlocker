@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ItemRocketPunchObject.BP_ItemRocketPunchObject_C
-// 0x0000 (0x0890 - 0x0890)
+// 0x0000 (0x08E0 - 0x08E0)
 class ABP_ItemRocketPunchObject_C final : public AItemRocketPunchObject
 {
 public:

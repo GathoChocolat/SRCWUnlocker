@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
+#include "UnionSystem_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionRun_classes.hpp"
-#include "Engine_structs.hpp"
-#include "UnionSystem_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -216,7 +216,7 @@ public:
 	void SetItemWarningUIVisible(bool bVisible);
 	void SetLapTimeInfo(int32 Minutes, int32 Seconds, int32 MilliSec);
 	void SetLapUIVisible(bool bVisible);
-	void SetLostItemInfo(int32 RacerId, EItemId ItemId);
+	void SetLostItemInfo(int32 RacerID, EItemId ItemId);
 	void SetManualAimingUIVisible(int32 PlayerControllerIndex, bool bVisible, float Scale, bool IsScaleKeepInHoming, EItemId ItemId);
 	void SetMinimapIconItem(const int32& RacerIndex, const EItemId& InItemId);
 	void SetMinimapIconType(const int32& RacerIndex, const EMinimapIconType& InMinimapIconType);
