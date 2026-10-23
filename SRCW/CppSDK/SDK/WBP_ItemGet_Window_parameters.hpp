@@ -85,7 +85,7 @@ public:
 	uint8                                         Pad_3E9[0x7];                                      // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_1;         // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         K2Node_CustomEvent_RewardType_3;                   // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineId                                    K2Node_CustomEvent_MachineID;                      // 0x03F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineId                                    K2Node_CustomEvent_MachineId;                      // 0x03F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3FA[0x6];                                      // 0x03FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              K2Node_CustomEvent_Itemtexture_1;                  // 0x0400(0x0028)(HasGetValueTypeHash)
 	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue_2;         // 0x0428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)

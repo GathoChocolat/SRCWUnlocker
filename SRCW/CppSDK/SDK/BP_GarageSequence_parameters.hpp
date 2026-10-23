@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "ST_GarageData_structs.hpp"
 #include "UnionLib_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ST_GarageData_structs.hpp"
 #include "UnionRun_structs.hpp"
 #include "UnionUI_structs.hpp"
 

@@ -15,9 +15,9 @@
 #include "UNION_structs.hpp"
 #include "UnionLib_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UnionRun_structs.hpp"
-#include "ST_RacerTransformOffset_structs.hpp"
 #include "UnionUI_structs.hpp"
+#include "ST_RacerTransformOffset_structs.hpp"
+#include "UnionRun_structs.hpp"
 
 
 namespace SDK::Params
@@ -76,11 +76,11 @@ public:
 	uint8                                         Pad_96[0x2];                                       // 0x0096(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_PlayerControllerIndex_1;        // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECarStatusType                                K2Node_CustomEvent_MachineType_1;                  // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineId                                    K2Node_CustomEvent_MachineID_1;                    // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineId                                    K2Node_CustomEvent_MachineId_1;                    // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9E[0x2];                                       // 0x009E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_PlayerControllerIndex;          // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECarStatusType                                K2Node_CustomEvent_MachineType;                    // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMachineId                                    K2Node_CustomEvent_MachineID;                      // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineId                                    K2Node_CustomEvent_MachineId;                      // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A6[0x2];                                       // 0x00A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EUnionUIFadeDirection FadeDirection)> K2Node_CreateDelegate_OutputDelegate_5;     // 0x00AC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)

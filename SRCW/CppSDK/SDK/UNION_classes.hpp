@@ -129,7 +129,7 @@ DUMPER7_ASSERTS_ASceneInputKeyHandler;
 
 // Class UNION.AdvertiseWidget
 // 0x0008 (0x03E0 - 0x03D8)
-class UAdvertiseWidget final : public UUnionUISceneBase
+class UAdvertiseWidget : public UUnionUISceneBase
 {
 public:
 	class UImage*                                 Controller_Info;                                   // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
@@ -2966,7 +2966,7 @@ DUMPER7_ASSERTS_UPartyRaceSubMenuBtn;
 
 // Class UNION.ChallengeAndTitleSequence
 // 0x0018 (0x0380 - 0x0368)
-class AChallengeAndTitleSequence : public AHierarchicalStateMachine
+class AChallengeAndTitleSequence final : public AHierarchicalStateMachine
 {
 public:
 	uint8                                         Pad_368[0x8];                                      // 0x0368(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4005,7 +4005,7 @@ DUMPER7_ASSERTS_UJukeboxTopWidget;
 
 // Class UNION.ChallengeSequence
 // 0x0080 (0x01A8 - 0x0128)
-class UChallengeSequence : public UMenuSequenceSubStateBase
+class UChallengeSequence final : public UMenuSequenceSubStateBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnBackEvent;                                       // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -8059,7 +8059,7 @@ DUMPER7_ASSERTS_AMonkeyTest;
 
 // Class UNION.MenuLightingLevel
 // 0x0008 (0x02A0 - 0x0298)
-class AMenuLightingLevel : public ALevelScriptActor
+class AMenuLightingLevel final : public ALevelScriptActor
 {
 public:
 	uint8                                         Pad_298[0x8];                                      // 0x0298(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -9912,7 +9912,7 @@ DUMPER7_ASSERTS_UCommonMenuSubNewsBtn;
 
 // Class UNION.TitleScene
 // 0x0028 (0x0400 - 0x03D8)
-class UTitleScene final : public UUnionUISceneBase
+class UTitleScene : public UUnionUISceneBase
 {
 public:
 	class UWidgetAnimation*                       Window_In;                                         // 0x03D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
@@ -12156,7 +12156,7 @@ DUMPER7_ASSERTS_URaceEndingSequenceStateBase;
 
 // Class UNION.HonorTitleSettingBtn
 // 0x0040 (0x04C0 - 0x0480)
-class UHonorTitleSettingBtn : public UUnionUIButtonBase
+class UHonorTitleSettingBtn final : public UUnionUIButtonBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnStartTextScroll;                                 // 0x0480(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -12214,7 +12214,7 @@ DUMPER7_ASSERTS_UEndingSequenceStateMain;
 
 // Class UNION.EndingStaffrollState
 // 0x0050 (0x0178 - 0x0128)
-class UEndingStaffrollState : public UMenuSequenceSubStateBase
+class UEndingStaffrollState final : public UMenuSequenceSubStateBase
 {
 public:
 	TSoftClassPtr<class UClass>                   _StaffrollComponentClass;                          // 0x0128(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -12436,7 +12436,7 @@ DUMPER7_ASSERTS_ULobbyCourseSelectRandomComponent;
 
 // Class UNION.EtceteraSequence
 // 0x0060 (0x03C8 - 0x0368)
-class AEtceteraSequence : public AHierarchicalStateMachine
+class AEtceteraSequence final : public AHierarchicalStateMachine
 {
 public:
 	uint8                                         Pad_368[0x8];                                      // 0x0368(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -13108,7 +13108,7 @@ DUMPER7_ASSERTS_UPlayerLevelUtilityLibrary;
 
 // Class UNION.HonorTitleSettingWindow
 // 0x0050 (0x0428 - 0x03D8)
-class UHonorTitleSettingWindow : public UUnionUISceneBase
+class UHonorTitleSettingWindow final : public UUnionUISceneBase
 {
 public:
 	class UHonorTitlePlateUserWidget*             HonorTitleSettingUserPlate;                        // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
@@ -13147,7 +13147,7 @@ DUMPER7_ASSERTS_UHonorTitleSettingWindow;
 
 // Class UNION.ExtraMenuButton
 // 0x0008 (0x0650 - 0x0648)
-class UExtraMenuButton : public UUnionUIButtonStandard
+class UExtraMenuButton final : public UUnionUIButtonStandard
 {
 public:
 	ECommonMenuButtonType                         ButtonType;                                        // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13177,7 +13177,7 @@ DUMPER7_ASSERTS_UExtraMenuButton;
 
 // Class UNION.ExtraMenuSceneBase
 // 0x0008 (0x03E0 - 0x03D8)
-class UExtraMenuSceneBase : public UUnionUISceneBase
+class UExtraMenuSceneBase final : public UUnionUISceneBase
 {
 public:
 	EOptionSequenceMainState                      ExtraMenuType;                                     // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13388,7 +13388,7 @@ DUMPER7_ASSERTS_UFestaConsecutiveRaceDataContext;
 
 // Class UNION.HonorTitleSettingTabBtn
 // 0x0020 (0x04A0 - 0x0480)
-class UHonorTitleSettingTabBtn : public UUnionUIButtonBase
+class UHonorTitleSettingTabBtn final : public UUnionUIButtonBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnActivateTabButtonEvent;                          // 0x0480(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -13697,7 +13697,7 @@ DUMPER7_ASSERTS_UFestaLobbyControlComponent;
 
 // Class UNION.JukeboxSequence
 // 0x0010 (0x0138 - 0x0128)
-class UJukeboxSequence : public UMenuSequenceSubStateBase
+class UJukeboxSequence final : public UMenuSequenceSubStateBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnBackEvent;                                       // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -14064,7 +14064,7 @@ DUMPER7_ASSERTS_UFestaRuleInfoWidgetBase;
 
 // Class UNION.FestaSignage
 // 0x0078 (0x0308 - 0x0290)
-class AFestaSignage : public AActor
+class AFestaSignage final : public AActor
 {
 public:
 	bool                                          bIsTopSignage;                                     // 0x0290(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -15086,7 +15086,7 @@ DUMPER7_ASSERTS_ULegendCompeRewardInfoSubWidget;
 
 // Class UNION.FriendShipState
 // 0x0000 (0x0128 - 0x0128)
-class UFriendShipState : public UMenuSequenceSubStateBase
+class UFriendShipState final : public UMenuSequenceSubStateBase
 {
 public:
 	int32 GetGivedTicket(EDriverId ID);
@@ -19151,7 +19151,7 @@ DUMPER7_ASSERTS_UMachineCustomCommonWindow;
 
 // Class UNION.HintSequence
 // 0x0050 (0x0178 - 0x0128)
-class UHintSequence : public UMenuSequenceSubStateBase
+class UHintSequence final : public UMenuSequenceSubStateBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnBackEvent;                                       // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -20428,7 +20428,7 @@ DUMPER7_ASSERTS_UResultRateRankSubRateWindow;
 
 // Class UNION.HonorTitleSequence
 // 0x0050 (0x0178 - 0x0128)
-class UHonorTitleSequence : public UMenuSequenceSubStateBase
+class UHonorTitleSequence final : public UMenuSequenceSubStateBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnReturnToOptionTopEvent;                          // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -20454,7 +20454,7 @@ DUMPER7_ASSERTS_UHonorTitleSequence;
 
 // Class UNION.HonorTitleSettingCategoryWidget
 // 0x0048 (0x0328 - 0x02E0)
-class UHonorTitleSettingCategoryWidget : public UUserWidget
+class UHonorTitleSettingCategoryWidget final : public UUserWidget
 {
 public:
 	TArray<class UHonorTitleSettingBtn*>          GeneratedHonorTitleButtonArray;                    // 0x02E0(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
@@ -20520,7 +20520,7 @@ DUMPER7_ASSERTS_URaceSequenceStateReady;
 
 // Class UNION.HonorTitleSettingTab
 // 0x0020 (0x0300 - 0x02E0)
-class UHonorTitleSettingTab : public UUserWidget
+class UHonorTitleSettingTab final : public UUserWidget
 {
 public:
 	TMulticastInlineDelegate<void(int32 CurrentTab)> OnChangeTabEvent;                               // 0x02E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -20548,7 +20548,7 @@ DUMPER7_ASSERTS_UHonorTitleSettingTab;
 
 // Class UNION.HonorTitleSettingThumbWindow
 // 0x0040 (0x0320 - 0x02E0)
-class UHonorTitleSettingThumbWindow : public UUserWidget
+class UHonorTitleSettingThumbWindow final : public UUserWidget
 {
 public:
 	TArray<class UHonorTitleSettingScrollBox*>    TabScrollBoxArray;                                 // 0x02E0(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
@@ -21471,7 +21471,7 @@ DUMPER7_ASSERTS_ULobbyEntryCheckState;
 
 // Class UNION.SaveDataSetting
 // 0x0078 (0x0308 - 0x0290)
-class ASaveDataSetting final : public AActor
+class ASaveDataSetting : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(bool bSuccess)> ConfigDataResultDelegate;                          // 0x0290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, BlueprintCallable, NativeAccessSpecifierProtected)
@@ -27456,7 +27456,7 @@ DUMPER7_ASSERTS_UReadyWindow;
 
 // Class UNION.OptionState
 // 0x0040 (0x0168 - 0x0128)
-class UOptionState : public UMenuSequenceSubStateBase
+class UOptionState final : public UMenuSequenceSubStateBase
 {
 public:
 	TSoftClassPtr<class UClass>                   OptionActorClass;                                  // 0x0128(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -31930,7 +31930,7 @@ DUMPER7_ASSERTS_UStickerTextureAsyncLoader;
 
 // Class UNION.StreamingInstallNotice
 // 0x0000 (0x02E0 - 0x02E0)
-class UStreamingInstallNotice : public UUserWidget
+class UStreamingInstallNotice final : public UUserWidget
 {
 public:
 	void PlayNoticeAnimation(bool Display);
@@ -32140,7 +32140,7 @@ DUMPER7_ASSERTS_ATimeTrialSequence;
 
 // Class UNION.TitleSequence
 // 0x0038 (0x03A0 - 0x0368)
-class ATitleSequence final : public AHierarchicalStateMachine
+class ATitleSequence : public AHierarchicalStateMachine
 {
 public:
 	uint8                                         Pad_368[0x8];                                      // 0x0368(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -32532,7 +32532,7 @@ DUMPER7_ASSERTS_UUnionMenuCheatManager;
 
 // Class UNION.UnionPlatformSaveDataTransferFromDemo
 // 0x0058 (0x02E8 - 0x0290)
-class AUnionPlatformSaveDataTransferFromDemo final : public AActor
+class AUnionPlatformSaveDataTransferFromDemo : public AActor
 {
 public:
 	class UUnionUIPopupWindowBase*                m_PopupWindow;                                     // 0x0290(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
@@ -32563,7 +32563,7 @@ DUMPER7_ASSERTS_AUnionPlatformSaveDataTransferFromDemo;
 
 // Class UNION.UnionPlatformSaveDataUpgradePS
 // 0x0060 (0x02F0 - 0x0290)
-class AUnionPlatformSaveDataUpgradePS final : public AActor
+class AUnionPlatformSaveDataUpgradePS : public AActor
 {
 public:
 	uint8                                         Pad_290[0x58];                                     // 0x0290(0x0058)(Fixing Size After Last Property [ Dumper-7 ])

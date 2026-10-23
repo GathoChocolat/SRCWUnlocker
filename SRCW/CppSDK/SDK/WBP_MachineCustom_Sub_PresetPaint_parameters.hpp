@@ -14,9 +14,9 @@
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UnionUI_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ST_ColorPresetSelectPageItemData_structs.hpp"
 #include "ST_ColorPresetSelectPageData_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params

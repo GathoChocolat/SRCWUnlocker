@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "UNION_classes.hpp"
+#include "ABP_MonsterTruck_SmallCockpit_structs.hpp"
 #include "Engine_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "ABP_MonsterTruck_SmallCockpit_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

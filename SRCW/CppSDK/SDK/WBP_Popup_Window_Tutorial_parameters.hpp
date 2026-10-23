@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "F_HintTutorialStructure_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "CriWareRuntime_structs.hpp"
 #include "UnionSystem_structs.hpp"
 #include "SlateCore_structs.hpp"

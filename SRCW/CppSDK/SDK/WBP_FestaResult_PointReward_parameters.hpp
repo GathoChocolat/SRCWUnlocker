@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 #include "UNION_structs.hpp"
 #include "UnionSystem_structs.hpp"
-#include "ST_FestaResultSceneData_structs.hpp"
 #include "UnionRun_structs.hpp"
+#include "ST_FestaResultSceneData_structs.hpp"
 #include "UnionUI_structs.hpp"
 #include "MovieScene_structs.hpp"
 
@@ -243,7 +243,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x1208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1209[0x7];                                     // 0x1209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUserMachineCustomizeData              K2Node_CustomEvent_CustomizeData;                  // 0x1210(0x0078)()
-	EMachineId                                    K2Node_CustomEvent_MachineID;                      // 0x1288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMachineId                                    K2Node_CustomEvent_MachineId;                      // 0x1288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1289[0x3];                                     // 0x1289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_PositionIndex;                  // 0x128C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_RacerIndex;                     // 0x1290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

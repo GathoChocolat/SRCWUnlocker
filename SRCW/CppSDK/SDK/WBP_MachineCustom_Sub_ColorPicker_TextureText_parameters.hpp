@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ST_ColorDetailWindowSurfaceItemData_structs.hpp"
 #include "UMG_structs.hpp"
+#include "ST_ColorDetailWindowSurfaceItemData_structs.hpp"
 
 
 namespace SDK::Params

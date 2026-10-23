@@ -17637,9 +17637,9 @@ public:
 };
 DUMPER7_ASSERTS_KismetMathLibrary_RGBLinearToHSV;
 
-// Function Engine.KismetMathLibrary.RGBToHSV
+// Function Engine.KismetMathLibrary.RGBtoHSV
 // 0x0020 (0x0020 - 0x0000)
-struct KismetMathLibrary_RGBToHSV final
+struct KismetMathLibrary_RGBtoHSV final
 {
 public:
 	struct FLinearColor                           InColor;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -17648,7 +17648,7 @@ public:
 	float                                         V;                                                 // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         A;                                                 // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_KismetMathLibrary_RGBToHSV;
+DUMPER7_ASSERTS_KismetMathLibrary_RGBtoHSV;
 
 // Function Engine.KismetMathLibrary.RGBToHSV_Vector
 // 0x0020 (0x0020 - 0x0000)

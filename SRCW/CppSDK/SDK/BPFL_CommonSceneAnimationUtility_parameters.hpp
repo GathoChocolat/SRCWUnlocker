@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ST_CharacterAnimationSettings_structs.hpp"
 #include "UnionSystem_structs.hpp"
+#include "ST_CharacterAnimationSettings_structs.hpp"
 
 
 namespace SDK::Params

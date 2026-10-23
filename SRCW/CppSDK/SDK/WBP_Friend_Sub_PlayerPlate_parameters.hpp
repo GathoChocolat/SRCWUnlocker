@@ -22,15 +22,27 @@
 namespace SDK::Params
 {
 
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.ChangePlayAnimation
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.LeftNavigationEvent
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation final
+struct WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent final
 {
 public:
-	class UWidgetAnimation*                       InStopAnimation;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       InPlayAnimation;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation;
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.RightNavigationEvent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent;
 
 // Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.Check Release Response InputType
 // 0x0028 (0x0028 - 0x0000)
@@ -48,6 +60,230 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_Check_Release_Response_InputType;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusReceived
+// 0x01B0 (0x01B0 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIcon
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon final
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              InIconTexture;                                     // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FLinearColor                           InBgColor;                                         // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNowPlaying;                                     // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerNameText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIdText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText final
+{
+public:
+	class FString                                 InPlayerId;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlatformIcon
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon final
+{
+public:
+	ECrossplayPlatform                            InPlatformType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerStatusIcon
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon final
+{
+public:
+	bool                                          bInAppBlock;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInPFBlock;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInvitationIconVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusAnimation
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetCursorVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.ChangePlayAnimation
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation final
+{
+public:
+	class UWidgetAnimation*                       InStopAnimation;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       InPlayAnimation;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_ChangePlayAnimation;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetMouseInteractionVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetDateText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetDateText final
+{
+public:
+	class FString                                 InDate;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetDateText;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetByListPlayerInfo
+// 0x00F8 (0x00F8 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo final
+{
+public:
+	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          InShowPlayerId;                                    // 0x00F0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetButtonFocusType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType final
+{
+public:
+	EButtonFocusType                              InButtonFocusType;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayDecisionSe
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIconVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyType final
+{
+public:
+	bool                                          bInFriendMatch;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyType;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInfoVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible final
+{
+public:
+	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusImpl
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl final
+{
+public:
+	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnAddedToFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusLost
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_OnFocusLost final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusLost;
+
+// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetWidgetFocus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus final
+{
+public:
+	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus;
 
 // Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate
 // 0x04B0 (0x04B0 - 0x0000)
@@ -243,242 +479,6 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_ExecuteUbergraph_WBP_Friend_Sub_PlayerPlate;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.LeftNavigationEvent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_LeftNavigationEvent;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnAddedToFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnAddedToFocusPath;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusImpl
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl final
-{
-public:
-	class UUnionUIButtonBase*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusImpl;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusLost
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnFocusLost final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusLost;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnFocusReceived
-// 0x01B0 (0x01B0 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x00F8(0x00B8)()
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnFocusReceived;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.OnRemovedFromFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_OnRemovedFromFocusPath;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.RightNavigationEvent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_RightNavigationEvent;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetButtonFocusType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType final
-{
-public:
-	EButtonFocusType                              InButtonFocusType;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetButtonFocusType;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetByListPlayerInfo
-// 0x00F8 (0x00F8 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo final
-{
-public:
-	struct FFriendListPlayerInfo                  InListPlayerInfo;                                  // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          InShowPlayerId;                                    // 0x00F0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetByListPlayerInfo;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetCursorVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetCursorVisible;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetDateText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetDateText final
-{
-public:
-	class FString                                 InDate;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetDateText;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusAnimation
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetFocusAnimation;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetFocusEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetFocusEnable;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInfoVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyInfoVisible;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyInvitationIconVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyInvitationIconVisible;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetLobbyType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetLobbyType final
-{
-public:
-	bool                                          bInFriendMatch;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetLobbyType;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetMouseInteractionVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetMouseInteractionVisible;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlatformIcon
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon final
-{
-public:
-	ECrossplayPlatform                            InPlatformType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlatformIcon;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayDecisionSe
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayDecisionSe;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIcon
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon final
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              InIconTexture;                                     // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FLinearColor                           InBgColor;                                         // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNowPlaying;                                     // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIcon;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIconVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible final
-{
-public:
-	bool                                          bInVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIconVisible;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerIdText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText final
-{
-public:
-	class FString                                 InPlayerId;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerIdText;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerNameText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerNameText;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetPlayerStatusIcon
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon final
-{
-public:
-	bool                                          bInAppBlock;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInPFBlock;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetPlayerStatusIcon;
-
-// Function WBP_Friend_Sub_PlayerPlate.WBP_Friend_Sub_PlayerPlate_C.SetWidgetFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus final
-{
-public:
-	bool                                          bInPlayFocusSound;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Friend_Sub_PlayerPlate_C_SetWidgetFocus;
 
 }
 

@@ -4343,7 +4343,7 @@ DUMPER7_ASSERTS_UP2PConnectionSubsystem;
 
 // Class UnionSystem.PlatformPrivilegeObject
 // 0x0068 (0x02F8 - 0x0290)
-class APlatformPrivilegeObject final : public AActor
+class APlatformPrivilegeObject : public AActor
 {
 public:
 	uint8                                         Pad_290[0x68];                                     // 0x0290(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
