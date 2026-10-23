@@ -41,7 +41,7 @@ git clone https://github.com/HAWGT/SRCW.git
 (or git clone https://github.com/GathoChocolat/SRCWUnlocker.git)
 
 3. Open the solution in Visual Studio  
-4. Build in **Release x64** (or debug)
+4. Build in **Release x64**
 5. Output DLL will be located in:
 
 /x64/Release/umpdc.dll
