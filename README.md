@@ -2,7 +2,7 @@
 
 > Unlocks everything in **Sonic Racing CrossWorlds** while removing red exclamation flags.
 
-To change which features will be unlocked, change the values of SRCWConfig in SRCW/Features.h beforehand.
+If you want to change which features will be unlocked, change the values of SRCWConfig in SRCW/Features.h before compiling it yourself. Then follow the steps in 'Usage' from 2.
 - True : unlocks the feature.
 - False : leaves it as it is.
 
